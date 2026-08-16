@@ -47,8 +47,6 @@ Returns an accessor function for setting an element in an array-like object supp
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 var arr = new Complex64Array( [ 1, 2, 3, 4 ] );
 
@@ -56,13 +54,7 @@ var set = accessorSetter( 'complex64' );
 set( arr, 1, new Complex64( 10.0, 11.0 ) );
 
 var v = arr.get( 1 );
-// returns <Complex64>
-
-var re = realf( v );
-// returns 10.0
-
-var im = imagf( v );
-// returns 11.0
+// returns <Complex64>[ 10.0, 11.0 ]
 ```
 
 The returned accessor function accepts the following arguments:
@@ -113,7 +105,7 @@ var arr = new Complex128Array( zeroTo( 10 ) );
 accessorSetter( dtype( arr ) )( arr, 2, new Complex128( 100.0, 101.0 ) );
 
 var v = arr.get( 2 );
-// returns <Complex128>
+// returns <Complex128>[ 100.0, 101.0 ]
 
 console.log( '%s', v.toString() );
 // => '100 + 101i'
@@ -122,7 +114,7 @@ arr = new Complex64Array( zeroTo( 10 ) );
 accessorSetter( dtype( arr ) )( arr, 4, new Complex64( 102.0, 103.0 ) );
 
 v = arr.get( 4 );
-// returns <Complex64>
+// returns <Complex64>[ 102.0, 103.0 ]
 
 console.log( '%s', v.toString() );
 // => '102 + 103i'

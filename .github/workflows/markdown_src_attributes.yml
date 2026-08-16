@@ -63,7 +63,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -98,13 +98,17 @@ jobs:
       # Log the results:
       - name: 'Log results'
         run: |
-          echo ${{ steps.results.outputs.failures }} >> "${{ env.LOG_FILE_FAILURES }}"
-          echo ${{ steps.results.outputs.warnings }} >> "${{ env.LOG_FILE_WARNINGS }}"
+          cat >> "${{ env.LOG_FILE_FAILURES }}" <<'STDLIB_FAILURES_EOF'
+          ${{ steps.results.outputs.failures }}
+          STDLIB_FAILURES_EOF
+          cat >> "${{ env.LOG_FILE_WARNINGS }}" <<'STDLIB_WARNINGS_EOF'
+          ${{ steps.results.outputs.warnings }}
+          STDLIB_WARNINGS_EOF
         timeout-minutes: 2
 
       # Fail the workflow if the status is not "success":
       - name: 'Check status'
-        if: ${{ steps.results.outputs.status }} != 'success'
+        if: ${{ steps.results.outputs.status != 'success' }}
         run: |
           exit 1
 
@@ -119,7 +123,7 @@ jobs:
       # Upload the log files:
       - name: 'Upload log files'
         # Pin action to full length commit SHA
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         if: always()
         with:
           # Define a name for the uploaded artifact:
@@ -134,11 +138,11 @@ jobs:
           retention-days: 10
         timeout-minutes: 10
 
-  # Define a job for sending notifications to Slack...
-  slack:
+  # Define a job for sending notifications to Zulip...
+  zulip:
 
     # Define a display name:
-    name: 'Slack notification'
+    name: 'Zulip notification'
 
     # Define the type of virtual host machine:
     runs-on: 'ubuntu-latest'
@@ -161,31 +165,34 @@ jobs:
       # Resolve notification data:
       - name: 'Resolve notification data'
         run: |
-          echo 'NOTIFICATION_STATUS=${{ needs.markdown_src_attributes.result}}' >> $GITHUB_ENV
           if [[ "${{ needs.markdown_src_attributes.result }}" = "success" ]]; then
-            echo 'NOTIFICATION_TEXT=**markdown_src_attributes** workflow succeeded' >> $GITHUB_ENV
-            echo 'NOTIFICATION_AUTHOR_NAME=Success' >> $GITHUB_ENV
+            echo 'NOTIFICATION_ICON=:check:' >> $GITHUB_ENV
+            echo 'NOTIFICATION_STATUS=succeeded' >> $GITHUB_ENV
           elif [[ "${{ needs.markdown_src_attributes.result }}" = "failure" ]]; then
-            echo 'NOTIFICATION_TEXT=**markdown_src_attributes** workflow failed' >> $GITHUB_ENV
-            echo 'NOTIFICATION_AUTHOR_NAME=Failure' >> $GITHUB_ENV
+            echo 'NOTIFICATION_ICON=:cross_mark:' >> $GITHUB_ENV
+            echo 'NOTIFICATION_STATUS=failed' >> $GITHUB_ENV
           elif [[ "${{ needs.markdown_src_attributes.result }}" = "cancelled" ]]; then
-            echo 'NOTIFICATION_TEXT=**markdown_src_attributes** workflow was canceled' >> $GITHUB_ENV
-            echo 'NOTIFICATION_AUTHOR_NAME=Canceled' >> $GITHUB_ENV
+            echo 'NOTIFICATION_ICON=:warning:' >> $GITHUB_ENV
+            echo 'NOTIFICATION_STATUS=was canceled' >> $GITHUB_ENV
           else
             exit 1
           fi
         timeout-minutes: 5
 
-      # Send notification to Slack:
+      # Send notification to Zulip:
       - name: 'Send notification'
         # Pin action to full length commit SHA
-        uses: 8398a7/action-slack@1750b5085f3ec60384090fb7c52965ef822e869e # v3.18.0
+        uses: zulip/github-actions-zulip/send-message@bd8ec52de371d139ae8313661b7d8318c19266aa # v2.0.1
         if: success()
         with:
-          status: "${{ env.NOTIFICATION_STATUS }}"
-          fields: repo,commit,message
-          text: "${{ env.NOTIFICATION_TEXT }}"
-          author_name: "${{ env.NOTIFICATION_AUTHOR_NAME }}"
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.REPO_SLACK_WEBHOOK_URL }}
+          api-key: ${{ secrets.ZULIP_API_KEY }}
+          email: 'github-actions-bot@stdlib.zulipchat.com'
+          organization-url: 'https://stdlib.zulipchat.com'
+          to: 'workflows'
+          type: 'stream'
+          topic: 'markdown-src-attributes'
+          content: |
+            ${{ env.NOTIFICATION_ICON }} **markdown_src_attributes** workflow ${{ env.NOTIFICATION_STATUS }}
+
+            **Run:** [View workflow run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
         timeout-minutes: 5

@@ -18,6 +18,8 @@
 
 // TypeScript Version: 4.1
 
+/* eslint-disable @typescript-eslint/consistent-type-definitions */
+
 /**
 * Data for individual worker.
 */

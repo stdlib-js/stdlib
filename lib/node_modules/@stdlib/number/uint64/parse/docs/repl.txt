@@ -1,0 +1,29 @@
+
+{{alias}}( str[, radix] )
+    Parses a string representation of a 64-bit unsigned integer.
+
+    Parameters
+    ----------
+    str: string
+        String representation of a 64-bit unsigned integer.
+
+    radix: integer (optional)
+        Radix (base) to use for string conversion (2-36). Default: 10.
+
+    Returns
+    -------
+    v: Uint64
+        64-bit unsigned integer.
+
+    Examples
+    --------
+    > var a = {{alias}}( '1234' )
+    <Uint64>[ 1234n ]
+    > a = {{alias}}( '0xffffffffffffffff' )
+    <Uint64>[ 18446744073709551615n ]
+    > a = {{alias}}( '123abcxyz', 36 )
+    <Uint64>[ 2984992324091n ]
+
+    See Also
+    --------
+

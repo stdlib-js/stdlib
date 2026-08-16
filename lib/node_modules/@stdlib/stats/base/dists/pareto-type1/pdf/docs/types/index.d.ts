@@ -117,7 +117,7 @@ interface PDF {
 *
 * @example
 * var y = pdf( 4.0, 1.0, 1.0 );
-* // returns ~0.044
+* // returns ~0.063
 *
 * y = pdf( 20.0, 1.0, 10.0 );
 * // returns 0.025

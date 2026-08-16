@@ -1,0 +1,250 @@
+{
+  "options": {
+    "task": "build",
+    "os": "linux",
+    "blas": "",
+    "wasm": false
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "os": "linux",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/dlacpy.c",
+        "./src/dlacpy_ndarray.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/lapack/base/shared",
+        "@stdlib/lapack/base/xerbla",
+        "@stdlib/ndarray/base/assert/is-row-major",
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-int32",
+        "@stdlib/napi/argv-strided-float64array2d"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "linux",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/dlacpy.c",
+        "./src/dlacpy_ndarray.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/lapack/base/shared",
+        "@stdlib/lapack/base/xerbla",
+        "@stdlib/ndarray/base/assert/is-row-major"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "linux",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/dlacpy.c",
+        "./src/dlacpy_ndarray.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/lapack/base/shared",
+        "@stdlib/lapack/base/xerbla",
+        "@stdlib/ndarray/base/assert/is-row-major"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "mac",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/dlacpy.c",
+        "./src/dlacpy_ndarray.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/lapack/base/shared",
+        "@stdlib/lapack/base/xerbla",
+        "@stdlib/ndarray/base/assert/is-row-major",
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-int32",
+        "@stdlib/napi/argv-strided-float64array2d"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "mac",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/dlacpy.c",
+        "./src/dlacpy_ndarray.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/lapack/base/shared",
+        "@stdlib/lapack/base/xerbla",
+        "@stdlib/ndarray/base/assert/is-row-major"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "mac",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/dlacpy.c",
+        "./src/dlacpy_ndarray.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/lapack/base/shared",
+        "@stdlib/lapack/base/xerbla",
+        "@stdlib/ndarray/base/assert/is-row-major"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "win",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/dlacpy.c",
+        "./src/dlacpy_ndarray.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/lapack/base/shared",
+        "@stdlib/lapack/base/xerbla",
+        "@stdlib/ndarray/base/assert/is-row-major",
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-int32",
+        "@stdlib/napi/argv-strided-float64array2d"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "win",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/dlacpy.c",
+        "./src/dlacpy_ndarray.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/lapack/base/shared",
+        "@stdlib/lapack/base/xerbla",
+        "@stdlib/ndarray/base/assert/is-row-major"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "win",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/dlacpy.c",
+        "./src/dlacpy_ndarray.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/lapack/base/shared",
+        "@stdlib/lapack/base/xerbla",
+        "@stdlib/ndarray/base/assert/is-row-major"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "",
+      "blas": "",
+      "wasm": true,
+      "src": [
+        "./src/dlacpy.c",
+        "./src/dlacpy_ndarray.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/lapack/base/shared",
+        "@stdlib/lapack/base/xerbla",
+        "@stdlib/ndarray/base/assert/is-row-major"
+      ]
+    }
+  ]
+}

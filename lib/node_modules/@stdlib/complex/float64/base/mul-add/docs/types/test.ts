@@ -465,4 +465,3 @@ import muladd = require( './index' );
 	muladd.strided( z1, 1, 0, z2, 1, 0, z3, 1, 0, out, 1 ); // $ExpectError
 	muladd.strided( z1, 1, 0, z2, 1, 0, z3, 1, 0, out, 1, 0, {} ); // $ExpectError
 }
-

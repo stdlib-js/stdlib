@@ -18,16 +18,15 @@
 
 #include "stdlib/math/base/special/binomcoeff.h"
 #include <stdio.h>
-#include <stdint.h>
 
 int main( void ) {
-	const int32_t a[] = { 24, 32, 48, 116, 33 };
-	const int32_t b[] = { 12, 6, 15, 52, 22 };
+	const float a[] = { 24.0f, 32.0f, 48.0f, 116.0f, 33.0f };
+	const float b[] = { 12.0f, 6.0f, 15.0f, 52.0f, 22.0f };
 
 	float out;
 	int i;
 	for ( i = 0; i < 5; i++ ) {
 		out = stdlib_base_binomcoeff( a[ i ], b[ i ] );
-		printf( "binomcoeff(%d, %d) = %f\n", a[ i ], b[ i ], out );
+		printf( "binomcoeff(%f, %f) = %f\n", a[ i ], b[ i ], out );
 	}
 }

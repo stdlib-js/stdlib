@@ -129,8 +129,8 @@ interface Namespace {
 	* var y = ns.logcdf( 2.0, 0.1 );
 	* // returns ~-1.708
 	*
-	* var mylogcdf = ns.logcdf.factory( 0.5 );
-	* y = mylogcdf( 3.0 );
+	* var mylogCDF = ns.logcdf.factory( 0.5 );
+	* y = mylogCDF( 3.0 );
 	* // returns ~-0.252
 	*/
 	logcdf: typeof logcdf;
@@ -146,12 +146,12 @@ interface Namespace {
 	* var y = ns.logpdf( 0.3, 4.0 );
 	* // returns ~0.186
 	*
-	* var mylogpdf = ns.logpdf.factory( 0.5 );
+	* var mylogPDF = ns.logpdf.factory( 0.5 );
 	*
-	* y = mylogpdf( 3.0 );
+	* y = mylogPDF( 3.0 );
 	* // returns ~-2.193
 	*
-	* y = mylogpdf( 1.0 );
+	* y = mylogPDF( 1.0 );
 	* // returns ~-1.193
 	*/
 	logpdf: typeof logpdf;

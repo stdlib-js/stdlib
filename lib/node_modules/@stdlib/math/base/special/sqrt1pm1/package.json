@@ -65,5 +65,83 @@
     "power",
     "number",
     "small"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "sqrt1pm1",
+      "alias": "sqrt1pm1",
+      "pkg_desc": "compute sqrt(1 + x) - 1",
+      "desc": "computes the principal square root of `1+x` minus one",
+      "short_desc": "sqrt(1 + x) - 1",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": -1,
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              0,
+              100
+            ]
+          },
+          "example_values": [
+            0,
+            0.01,
+            0.25,
+            0.5,
+            1,
+            2,
+            3,
+            4,
+            9,
+            16,
+            25,
+            36,
+            49,
+            64,
+            81,
+            100,
+            0.1,
+            10,
+            50,
+            99.99
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "square root",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "sqrt",
+        "sqrt1pm1",
+        "principal",
+        "square",
+        "root",
+        "power"
+      ],
+      "extra_keywords": [
+        "math.sqrt"
+      ]
+    }
+  }
 }

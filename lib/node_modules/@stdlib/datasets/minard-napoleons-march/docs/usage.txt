@@ -3,6 +3,7 @@ Usage: minard-napoleons-march [options]
 
 Options:
 
-  -h,    --help                Print this message.
-  -V,    --version             Print the package version.
-         --data name           Dataset name: army, cities, labels, rivers, temperature.
+  -h,   --help                Print this message.
+  -V,   --version             Print the package version.
+        --data name           Dataset name: army, cities, labels, rivers,
+                              temperature.

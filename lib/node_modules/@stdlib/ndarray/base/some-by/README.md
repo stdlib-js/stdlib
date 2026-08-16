@@ -88,7 +88,7 @@ The function accepts the following arguments:
 -   **predicate**: predicate function.
 -   **thisArg**: predicate function execution context (_optional_).
 
-Each provided ndarray should be an `object` with the following properties:
+Each provided ndarray should be an object with the following properties:
 
 -   **dtype**: data type.
 -   **data**: data buffer.

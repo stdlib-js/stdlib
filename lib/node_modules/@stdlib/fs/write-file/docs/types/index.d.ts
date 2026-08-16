@@ -100,7 +100,7 @@ interface WriteFile {
 	* @returns error object or null
 	*
 	* @example
-	* var err = writeFileSync( './beep/boop.txt', 'beep boop\n' );
+	* var err = writeFile.sync( './beep/boop.txt', 'beep boop\n' );
 	* if ( err instanceof Error ) {
 	*     throw err;
 	* }

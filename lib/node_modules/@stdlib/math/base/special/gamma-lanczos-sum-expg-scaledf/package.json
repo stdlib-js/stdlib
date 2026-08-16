@@ -69,5 +69,83 @@
     "rational",
     "factorial",
     "number"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "gammaLanczosSumExpGScaled",
+      "alias": "gammaLanczosSumExpGScaledf",
+      "pkg_desc": "calculate a scaled Lanczos sum for the approximation of the gamma function as a single precision floating-point number",
+      "desc": "calculates a scaled Lanczos sum for the approximation of the gamma function as a single precision floating-point number",
+      "short_desc": "scaled Lanczos sum for the approximation of the gamma function",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "float",
+            "dtype": "float32"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -10,
+              10
+            ]
+          },
+          "example_values": [
+            1,
+            3.5,
+            4.5,
+            -0.5,
+            2,
+            3,
+            -3.5,
+            0.1,
+            4,
+            1.5,
+            5,
+            0.5,
+            2.5,
+            -1.5,
+            -2.5,
+            50,
+            100,
+            -50.5,
+            -100.5,
+            2.2
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "function value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        }
+      },
+      "keywords": [
+        "gamma",
+        "lanczos",
+        "scaled",
+        "approx",
+        "approximation",
+        "polynomial",
+        "rational",
+        "factorial"
+      ],
+      "extra_keywords": []
+    }
+  }
 }

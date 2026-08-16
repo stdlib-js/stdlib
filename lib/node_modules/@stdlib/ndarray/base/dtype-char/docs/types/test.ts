@@ -26,7 +26,7 @@ import dtypeChar = require( './index' );
 	dtypeChar(); // $ExpectType Table
 }
 
-// The function returns string or null if provided a data type string...
+// The function returns a string or null if provided a data type string...
 {
 	dtypeChar( 'float64' ); // $ExpectType string | null
 	dtypeChar( 'generic' ); // $ExpectType string | null

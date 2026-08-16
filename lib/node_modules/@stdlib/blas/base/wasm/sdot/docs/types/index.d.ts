@@ -168,7 +168,7 @@ interface Module extends ModuleWrapper {
 	* mod.write( yptr, ones( N, dtype ) );
 	*
 	* // Perform computation:
-	* var dot = mod.main( N, 5.0, xptr, 1, yptr, 1 );
+	* var dot = mod.main( N, xptr, 1, yptr, 1 );
 	* // returns 15.0
 	*/
 	main( N: number, xptr: number, strideX: number, yptr: number, strideY: number ): number;
@@ -220,7 +220,7 @@ interface Module extends ModuleWrapper {
 	* mod.write( yptr, ones( N, dtype ) );
 	*
 	* // Perform computation:
-	* var dot = mod.ndarray( N, 5.0, xptr, 1, 0, yptr, 1, 0 );
+	* var dot = mod.ndarray( N, xptr, 1, 0, yptr, 1, 0 );
 	* // returns 15.0
 	*/
 	ndarray( N: number, xptr: number, strideX: number, offsetX: number, yptr: number, strideY: number, offsetY: number ): number;
@@ -269,7 +269,7 @@ interface Routine extends ModuleWrapper {
 	* var x = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 	* var y = new Float32Array( [ 1.0, 1.0, 1.0, 1.0, 1.0 ] );
 	*
-	* sdot.ndarray( x.length, x, 1, 0, y, 1, 0 );
+	* var dot = sdot.ndarray( x.length, x, 1, 0, y, 1, 0 );
 	* // returns 15.0
 	*/
 	ndarray( N: number, x: Float32Array, strideX: number, offsetX: number, y: Float32Array, strideY: number, offsetY: number ): number;

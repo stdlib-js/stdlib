@@ -1272,7 +1272,7 @@ interface Namespace {
 	* @example
 	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
-	* ns.function log( chunk ) {
+	* function log( chunk ) {
 	*    console.log( chunk.toString() );
 	* }
 	*
@@ -1287,7 +1287,7 @@ interface Namespace {
 	* @example
 	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
-	* ns.function log( chunk ) {
+	* function log( chunk ) {
 	*    console.log( chunk.toString() );
 	* }
 	*
@@ -1303,7 +1303,7 @@ interface Namespace {
 	* @example
 	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
-	* ns.function log( v ) {
+	* function log( v ) {
 	*    console.log( v );
 	* }
 	*
@@ -1318,34 +1318,34 @@ interface Namespace {
 	* @example
 	* var opts = {
 	*     'sep': ',',
-	*     'objectMode': ns.false,
+	*     'objectMode': false,
 	*     'encoding': 'utf8',
 	*     'highWaterMark': 64
 	* };
 	*
-	* var createStream = ns.f.ns.factory( 2.0, 5.0, opts );
+	* var createStream = ns.f.factory( 2.0, 5.0, opts );
 	*
 	* // Create 10 identically configured streams...
 	* var streams = [];
 	* var i;
-	* ns.for ( i = 0; i < 10; i++ ) {
+	* for ( i = 0; i < 10; i++ ) {
 	*     streams.push( createStream() );
 	* }
 	*
 	* @example
 	* var opts = {
 	*     'sep': ',',
-	*     'objectMode': ns.false,
+	*     'objectMode': false,
 	*     'encoding': 'utf8',
 	*     'highWaterMark': 64
 	* };
 	*
-	* var createStream = ns.f.ns.factory( opts );
+	* var createStream = ns.f.factory( opts );
 	*
 	* // Create 10 identically configured streams...
 	* var streams = [];
 	* var i;
-	* ns.for ( i = 0; i < 10; i++ ) {
+	* for ( i = 0; i < 10; i++ ) {
 	*     streams.push( createStream( 2.0, 5.0 ) );
 	* }
 	*/
@@ -3373,7 +3373,7 @@ interface Namespace {
 	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
-	*    console.log( chunk.ns.toString() );
+	*    console.log( chunk.toString() );
 	* }
 	*
 	* var opts = {
@@ -3388,7 +3388,7 @@ interface Namespace {
 	* var inspectStream = require( '@stdlib/streams/node/inspect-sink' );
 	*
 	* function log( chunk ) {
-	*    console.log( chunk.ns.toString() );
+	*    console.log( chunk.toString() );
 	* }
 	*
 	* var opts = {

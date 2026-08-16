@@ -1,0 +1,45 @@
+
+{{alias}}( [out,] W )
+    Returns an accumulator function which incrementally computes a moving
+    arithmetic mean and corrected sample standard deviation, ignoring `NaN`
+    values.
+
+    The `W` parameter defines the number of values over which to compute the
+    moving arithmetic mean and corrected sample standard deviation.
+
+    If provided a value, the accumulator function returns updated accumulated
+    values. If provided `NaN` or no value, the accumulator function returns the
+    current moving accumulated values.
+
+    As `W` values are needed to fill the window buffer, the first `W-1` returned
+    accumulated values are calculated from smaller sample sizes. Until the
+    window is full, each returned accumulated value is calculated from all
+    provided values.
+
+    Parameters
+    ----------
+    out: Array|TypedArray (optional)
+        Output array.
+
+    W: integer
+        Window size.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}( 3 );
+    > var v = accumulator()
+    null
+    > accumulator( 2.0 );
+    > accumulator( NaN );
+    > accumulator( -5.0 );
+    > v = accumulator()
+    [ -1.5, ~4.95 ]
+
+    See Also
+    --------
+

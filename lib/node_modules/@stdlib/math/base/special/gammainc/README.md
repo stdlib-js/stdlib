@@ -201,7 +201,7 @@ logEachMap( 'x: %0.4f, \t s: %0.4f, \t f(x,s): %0.4f', x, s, gammainc );
 
 #### stdlib_base_gammainc( x, a, regularized, upper )
 
-Evaluates the [incomplete gamma function][incomplete-gamma-function] for inputs `x` and `a`. The third and fourth parameters of the function can be used to specify whether instead to evaluate the non-regularized and/or upper incomplete gamma functions, respectively.
+Evaluates the [incomplete gamma function][incomplete-gamma-function] for inputs `x` and `a`.
 
 ```c
 double out = stdlib_base_gammainc( 0.0, 1.0, true, false );
@@ -215,8 +215,8 @@ The function accepts the following arguments:
 
 -   **x**: `[in] double` input value.
 -   **a**: `[in] double` input value.
--   **regularized**: `[in] bool` input value.
--   **upper**: `[in] bool` input value.
+-   **regularized**: `[in] bool` boolean indicating whether to evaluate a regularized incomplete gamma function.
+-   **upper**: `[in] bool` boolean indicating whether to evaluate the upper incomplete gamma function.
 
 ```c
 double stdlib_base_gammainc( const double x, const double a, const bool regularized, const bool upper );

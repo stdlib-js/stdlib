@@ -37,6 +37,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/napi/unary",
+        "@stdlib/math/base/assert/is-nonnegative-integerf",
         "@stdlib/constants/float32/max-safe-nth-fibonacci"
       ]
     },
@@ -51,6 +52,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/math/base/assert/is-nonnegative-integerf",
         "@stdlib/constants/float32/max-safe-nth-fibonacci"
       ]
     },
@@ -65,6 +67,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/math/base/assert/is-nonnegative-integerf",
         "@stdlib/constants/float32/max-safe-nth-fibonacci"
       ]
     }

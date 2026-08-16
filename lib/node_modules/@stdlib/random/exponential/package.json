@@ -68,6 +68,8 @@
     "seedable",
     "ndarray",
     "multidimensional",
-    "array"
+    "array",
+    "vector",
+    "matrix"
   ]
 }

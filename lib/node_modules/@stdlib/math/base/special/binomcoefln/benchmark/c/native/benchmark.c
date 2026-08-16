@@ -90,16 +90,16 @@ static double rand_double( void ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
-	int64_t n[ 100 ];
-	int64_t k[ 100 ];
+	double n[ 100 ];
+	double k[ 100 ];
 	double elapsed;
 	double y;
 	double t;
 	int i;
 
 	for ( i = 0; i < 100; i++ ) {
-		n[ i ] = (int64_t)round( 500.0 * rand_double() );
-		k[ i ] = (int64_t)round( 500.0 * rand_double() );
+		n[ i ] = round( 500.0 * rand_double() );
+		k[ i ] = round( 500.0 * rand_double() );
 	}
 
 	t = tic();

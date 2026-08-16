@@ -1,0 +1,18 @@
+
+{{alias}}()
+    Tests for native `Symbol.hasInstance` support.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an environment has native `Symbol.hasInstance`
+        support.
+
+    Examples
+    --------
+    > var bool = {{alias}}()
+    <boolean>
+
+    See Also
+    --------
+

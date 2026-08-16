@@ -32,7 +32,7 @@
 * var ctor = ctors( 'float' );
 * // returns null
 */
-declare function ctors( dtype: string ): Function | null;
+declare function ctors( dtype: any ): Function | null;
 
 
 // EXPORTS //

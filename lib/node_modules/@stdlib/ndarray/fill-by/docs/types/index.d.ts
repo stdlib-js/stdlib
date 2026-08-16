@@ -77,6 +77,7 @@ type Callback<T, U, V, ThisArg> = Nullary<U, ThisArg> | Unary<T, U, ThisArg> | B
 * @example
 * var zeros = require( '@stdlib/ndarray/zeros' );
 * var getData = require( '@stdlib/ndarray/data-buffer' );
+* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 *
 * function fcn() {
 *     return new Complex128( 10.0, 0.0 );

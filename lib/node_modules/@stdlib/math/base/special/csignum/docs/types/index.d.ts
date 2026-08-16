@@ -30,17 +30,9 @@ import { Complex128 } from '@stdlib/types/complex';
 *
 * @example
 * var Complex128 = require( '@stdlib/complex/float64/ctor' );
-* var real = require( '@stdlib/complex/float64/real' );
-* var imag = require( '@stdlib/complex/float64/imag' );
 *
 * var v = csignum( new Complex128( -4.2, 5.5 ) );
-* // returns <Complex128>
-*
-* var re = real( v );
-* // returns -0.6069136033622302
-*
-* var im = imag( v );
-* // returns 0.79476781392673
+* // returns <Complex128>[ -0.6069136033622302, 0.79476781392673 ]
 */
 declare function csignum( z: Complex128 ): Complex128;
 

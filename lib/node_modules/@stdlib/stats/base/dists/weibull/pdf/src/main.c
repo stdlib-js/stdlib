@@ -33,7 +33,7 @@
 *
 * @example
 * double y = stdlib_base_dists_weibull_pdf( 2.0, 1.0, 1.0 );
-* // returns ~0.037
+* // returns ~0.135
 */
 double stdlib_base_dists_weibull_pdf( const double x, const double k, const double lambda ) {
 	double xol;

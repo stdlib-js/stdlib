@@ -17,7 +17,10 @@
 */
 
 #include "stdlib/math/base/special/fibonaccif.h"
+#include "stdlib/math/base/assert/is_nonnegative_integerf.h"
 #include "stdlib/constants/float32/max_safe_nth_fibonacci.h"
+#include <stdint.h>
+#include <stdlib.h>
 
 static const int32_t fibonacci_value[ 37 ] = {
 	0,
@@ -66,12 +69,12 @@ static const int32_t fibonacci_value[ 37 ] = {
 * @return     output value
 *
 * @example
-* float out = stdlib_base_fibonaccif( 1 );
+* float out = stdlib_base_fibonaccif( 1.0f );
 * // returns 1.0f
 */
-float stdlib_base_fibonaccif( const int32_t n ) {
-	if ( n < 0 || n > STDLIB_CONSTANT_FLOAT32_MAX_SAFE_NTH_FIBONACCI ) {
-		return 0.0 / 0.0; // NaN
+float stdlib_base_fibonaccif( const float n ) {
+	if ( !stdlib_base_is_nonnegative_integerf( n ) || n > STDLIB_CONSTANT_FLOAT32_MAX_SAFE_NTH_FIBONACCI ) {
+		return 0.0f / 0.0f; // NaN
 	}
-	return fibonacci_value[ n ];
+	return fibonacci_value[ (size_t)n ];
 }

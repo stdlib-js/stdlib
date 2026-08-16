@@ -93,7 +93,7 @@ static double rand_double( void ) {
 static double benchmark( void ) {
 	uint16_t x[ 100 ];
 	double elapsed;
-	double y;
+	uint16_t y;
 	double t;
 	int i;
 

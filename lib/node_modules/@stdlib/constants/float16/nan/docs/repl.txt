@@ -1,0 +1,12 @@
+
+{{alias}}
+    Half-precision floating-point NaN.
+
+    Examples
+    --------
+    > {{alias}}
+    NaN
+
+    See Also
+    --------
+

@@ -67,5 +67,83 @@
     "euler",
     "power",
     "number"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "exp10",
+      "alias": "exp10",
+      "pkg_desc": "evaluate the base 10 exponential function for a double-precision floating-point number",
+      "desc": "evaluates the base 10 exponential function for a double-precision floating-point number",
+      "short_desc": "base 10 exponential function",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -3,
+              3
+            ]
+          },
+          "example_values": [
+            -2.87,
+            1.94,
+            -1.23,
+            0.58,
+            -0.41,
+            2.31,
+            -2.19,
+            0.07,
+            1.46,
+            -0.85,
+            2.79,
+            -1.61,
+            0.92,
+            -2.53,
+            1.17,
+            -0.12,
+            2.04,
+            -2.98,
+            0.36,
+            2.68
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "function value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "exp",
+        "exp10",
+        "base 10",
+        "exponential",
+        "euler",
+        "power"
+      ],
+      "extra_keywords": [
+        "math.exp"
+      ]
+    }
+  }
 }

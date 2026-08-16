@@ -124,7 +124,7 @@ float out = stdlib_base_vercosf( 0.0f );
 // returns 2.0f
 
 out = stdlib_base_vercosf( 3.141592653589793f / 2.0f );
-// returns 1.0f
+// returns ~1.0f
 ```
 
 The function accepts the following arguments:

@@ -94,7 +94,7 @@ type Callback = Nullary | Unary;
 *
 * function done( error ) {
 *     if ( error ) {
-*         throw error;
+*         console.log( error.message );
 *     }
 * }
 *
@@ -127,7 +127,7 @@ declare function parallel( files: Array<string>, clbk: Callback ): void;
 *
 * function done( error ) {
 *     if ( error ) {
-*         throw error;
+*         console.log( error.message );
 *     }
 * }
 *

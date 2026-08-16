@@ -25,6 +25,8 @@
 * @returns boolean indicating whether value is an Int32Array
 *
 * @example
+* var Int32Array = require( '@stdlib/array/int32' );
+*
 * var bool = isInt32Array( new Int32Array( 10 ) );
 * // returns true
 *

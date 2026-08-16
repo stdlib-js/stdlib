@@ -61,5 +61,78 @@
     "fresnel",
     "fresnels",
     "integral"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "fresnels",
+      "alias": "fresnels",
+      "pkg_desc": "compute the Fresnel integral S(x)",
+      "desc": "computes the Fresnel integral S(x)",
+      "short_desc": "Fresnel integral S(x)",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -10,
+              10
+            ]
+          },
+          "example_values": [
+            0,
+            1,
+            -1,
+            1.25,
+            2.1,
+            5.06,
+            -10,
+            0.75,
+            -0.66,
+            1.11,
+            2.24,
+            -0.707,
+            18.2,
+            27.9,
+            -0.9,
+            -0.5,
+            0.5,
+            7.72,
+            21,
+            -2
+          ]
+        }
+      ],
+      "returns": {
+        "desc": "function value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "fresnel",
+        "fresnels",
+        "sine",
+        "integral"
+      ],
+      "extra_keywords": []
+    }
+  }
 }

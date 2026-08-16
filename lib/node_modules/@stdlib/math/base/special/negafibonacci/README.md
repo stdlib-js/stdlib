@@ -191,19 +191,19 @@ for ( i = 0; i > -79; i-- ) {
 Computes the nth [negaFibonacci number][fibonacci-number].
 
 ```c
-double out = stdlib_base_negafibonacci( 0 );
-// returns 0
+double out = stdlib_base_negafibonacci( 0.0 );
+// returns 0.0
 
-out = stdlib_base_negafibonacci( -1 );
-// returns 1
+out = stdlib_base_negafibonacci( -1.0 );
+// returns 1.0
 ```
 
 The function accepts the following arguments:
 
--   **n**: `[in] int32_t` input value.
+-   **n**: `[in] double` input value.
 
 ```c
-double stdlib_base_negafibonacci( const int32_t n );
+double stdlib_base_negafibonacci( const double n );
 ```
 
 </section>
@@ -227,15 +227,14 @@ double stdlib_base_negafibonacci( const int32_t n );
 ```c
 #include "stdlib/math/base/special/negafibonacci.h"
 #include <stdio.h>
-#include <stdint.h>
 
 int main( void ) {
-    int32_t i;
+    double i;
     double v;
 
-    for ( i = 0; i > -79; i-- ) {
+    for ( i = 0.0; i > -79.0; i-- ) {
         v = stdlib_base_negafibonacci( i );
-        printf( "negafibonacci(%d) = %lf\n", i, v );
+        printf( "negafibonacci(%lf) = %lf\n", i, v );
     }
 }
 ```

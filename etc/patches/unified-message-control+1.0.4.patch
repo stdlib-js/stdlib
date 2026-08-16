@@ -1,0 +1,13 @@
+diff --git a/index.js b/index.js
+--- a/index.js
++++ b/index.js
+@@ -75,7 +75,7 @@ function messageControl(options) {
+       if (!mark || mark.name !== options.name) {
+         return
+       }
+
+-      ruleIds = mark.attributes.split(/\s/g)
++      ruleIds = mark.attributes.split(/\s/g).filter(Boolean)
+       verb = ruleIds.shift()
+       next = parent.children[position + 1]
+       pos = mark.node.position && mark.node.position.start

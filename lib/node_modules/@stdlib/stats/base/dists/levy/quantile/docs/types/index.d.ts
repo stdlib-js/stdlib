@@ -110,7 +110,7 @@ interface Quantile {
 *
 * @example
 * var y = quantile( 0.8, 0.0, 1.0 );
-* // returns ~1.386
+* // returns ~15.58
 *
 * var myQuantile = quantile.factory( 10.0, 2.0 );
 *

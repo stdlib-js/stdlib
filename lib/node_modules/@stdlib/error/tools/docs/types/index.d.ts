@@ -69,7 +69,7 @@ interface Namespace {
 	*     'url': 'https://stdlib.io/error-decoder.html'
 	* };
 	*
-	* var fcn = factory( opts );
+	* var fcn = ns.fmtprodmsgFactory( opts );
 	* // returns <Function>
 	*/
 	fmtprodmsgFactory: typeof fmtprodmsgFactory;
@@ -106,7 +106,7 @@ interface Namespace {
 	*
 	* @example
 	* var v = ns.msg2id( 'invalid option. `%s` option must be an array. Option: `%s`.' );
-	* // returns '8t'
+	* // returns '8Z'
 	*/
 	msg2id: typeof msg2id;
 
@@ -118,7 +118,7 @@ interface Namespace {
 	*
 	* @example
 	* var v = ns.pkg2id( '@stdlib/math/base/special/sin' );
-	* // returns '0H5'
+	* // returns '0YK'
 	*/
 	pkg2id: typeof pkg2id;
 }

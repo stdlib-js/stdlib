@@ -223,7 +223,7 @@ import sztest = require( './index' );
 	sztest.ndarray( x.length, 'two-sided', 0.05, undefined, 1.0, x, 1, 0, new Float32Results() ); // $ExpectError
 	sztest.ndarray( x.length, 'two-sided', 0.05, [], 1.0, x, 1, 0, new Float32Results() ); // $ExpectError
 	sztest.ndarray( x.length, 'two-sided', 0.05, {}, 1.0, x, 1, 0, new Float32Results() ); // $ExpectError
-	sztest.ndarray( x.length, 'two-sided', 0.05, ( x: number ): number => x, 1, 0.0, x, 1, 0, new Float32Results() ); // $ExpectError
+	sztest.ndarray( x.length, 'two-sided', 0.05, ( x: number ): number => x, 1.0, x, 1, 0, new Float32Results() ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fifth argument which is not a number...

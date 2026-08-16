@@ -37,7 +37,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/napi/unary",
-        "@stdlib/constants/float32/max-safe-nth-lucas"
+        "@stdlib/constants/float32/max-safe-nth-lucas",
+        "@stdlib/math/base/assert/is-nonnegative-integerf"
       ]
     },
     {
@@ -51,7 +52,8 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/constants/float32/max-safe-nth-lucas"
+        "@stdlib/constants/float32/max-safe-nth-lucas",
+        "@stdlib/math/base/assert/is-nonnegative-integerf"
       ]
     },
     {
@@ -65,7 +67,8 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/constants/float32/max-safe-nth-lucas"
+        "@stdlib/constants/float32/max-safe-nth-lucas",
+        "@stdlib/math/base/assert/is-nonnegative-integerf"
       ]
     }
   ]

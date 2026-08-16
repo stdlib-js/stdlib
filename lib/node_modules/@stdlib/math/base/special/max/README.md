@@ -156,7 +156,7 @@ double stdlib_base_max( const double x, const double y );
 
 <!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
-<section class="notes">    
+<section class="notes">
 
 </section>
 
@@ -164,7 +164,7 @@ double stdlib_base_max( const double x, const double y );
 
 <!-- C API usage examples. -->
 
-<section class="examples">   
+<section class="examples">
 
 ### Examples
 

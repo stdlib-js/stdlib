@@ -96,7 +96,7 @@ interface ModuleConstructor {
 	* // Specify a vector length:
 	* var N = 5;
 	*
-	* // Define pointer (i.e., byte offsets) for storing two vectors:
+	* // Define pointer (i.e., byte offsets) for storing vector:
 	* var xptr = 0;
 	*
 	* // Write vector values to module memory:

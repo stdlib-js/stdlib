@@ -1,0 +1,14 @@
+
+{{alias}}
+    Mask for the sign bit of a half-precision floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    32768
+    > {{alias:@stdlib/number/uint16/base/to-binary-string}}( {{alias}} )
+    '1000000000000000'
+
+    See Also
+    --------
+

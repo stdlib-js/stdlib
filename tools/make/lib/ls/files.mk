@@ -36,12 +36,26 @@ FIND_FILES_CMD ?= find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_FILES_FLAGS)
 FILES ?= $(shell $(FIND_FILES_CMD))
 
 
-# TARGETS #
+# RULES #
 
-# List all files.
+#/
+# Prints a list of files satisfying filter criteria.
 #
-# This target prints a list of all files, excluding the `node_modules`, `build`, `reports`, and hidden directories.
-
+# ## Notes
+#
+# -   This target prints a list of all files, excluding the `node_modules`, `build`, `reports`, and hidden directories.
+#
+# @param {string} [FILES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {string} [FILES_PATTERN] - file name pattern (e.g., `*.js`)
+#
+# @example
+# make list-files
+#
+# @example
+# make list-files FILES_FILTER='.*/math/base/special/abs/.*'
+#
+# @example
+# make list-files FILES_FILTER='.*/math/base/special/abs/.*' FILES_PATTERN='*.js'
 list-files:
 	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_FILES_FLAGS) $(find_print_list)
 

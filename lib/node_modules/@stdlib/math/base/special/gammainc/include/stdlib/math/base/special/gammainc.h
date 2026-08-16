@@ -29,7 +29,7 @@ extern "C" {
 #endif
 
 /**
-* Computes the incomplete gamma function. The upper tail is calculated via the modified Lentz's method for computing continued fractions, the lower tail using a power expansion.
+* Computes the incomplete gamma function.
 */
 double stdlib_base_gammainc( const double x, const double a, const bool regularized, const bool upper );
 

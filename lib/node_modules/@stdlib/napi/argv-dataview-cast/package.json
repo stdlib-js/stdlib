@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/napi/argv-datavoew",
+  "name": "@stdlib/napi/argv-dataview-cast",
   "version": "0.0.0",
   "description": "Convert a Node-API value corresponding to a DataView to a pointer having a specified data type.",
   "license": "Apache-2.0",

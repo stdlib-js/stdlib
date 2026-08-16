@@ -27,7 +27,6 @@ import Complex128Array = require( './index' );
 /**
 * Callback function.
 *
-* @private
 * @param v - input value
 * @returns output value
 */

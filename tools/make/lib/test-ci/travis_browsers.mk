@@ -33,6 +33,6 @@ TRAVIS_HEADLESS_BROWSER ?= xvfb-run
 # make test-browsers-travis
 #/
 test-browsers-travis: $(NODE_MODULES)
-	$(QUIET) $(TRAVIS_HEADLESS_BROWSER) make -f $(this_file) test-browsers
+	$(QUIET) $(TRAVIS_HEADLESS_BROWSER) $(MAKE) -f $(this_file) test-browsers
 
 .PHONY: test-browsers-travis

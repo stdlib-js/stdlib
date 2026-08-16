@@ -13,13 +13,13 @@
     - complex128: double-precision complex floating-point numbers.
     - bool: boolean values.
     - generic: values of any type.
+    - int8: signed 8-bit integers.
     - int16: signed 16-bit integers.
     - int32: signed 32-bit integers.
-    - int8: signed 8-bit integers.
-    - uint16: unsigned 16-bit integers.
-    - uint32: unsigned 32-bit integers.
     - uint8: unsigned 8-bit integers.
     - uint8c: unsigned clamped 8-bit integers.
+    - uint16: unsigned 16-bit integers.
+    - uint32: unsigned 32-bit integers.
     - binary: binary.
 
     The function supports the following data type "kinds":
@@ -62,6 +62,246 @@
     [...]
     > out = {{alias}}( 'floating_point_and_generic' )
     [...]
+
+
+{{alias}}.binary
+    Read-only property returning a data type instance representing a binary data
+    type.
+
+    Returns
+    -------
+    out: DataType
+        Data type instance.
+
+    Examples
+    --------
+    > var dt = {{alias}}.binary
+    <DataType>
+
+
+{{alias}}.boolean
+    Read-only property returning a data type instance representing a boolean
+    data type.
+
+    Returns
+    -------
+    out: DataType
+        Data type instance.
+
+    Examples
+    --------
+    > var dt = {{alias}}.boolean
+    <DataType>
+
+
+{{alias}}.complex32
+    Read-only property returning a data type instance representing a half-
+    precision complex floating-point number data type.
+
+    Returns
+    -------
+    out: DataType
+        Data type instance.
+
+    Examples
+    --------
+    > var dt = {{alias}}.complex32
+    <DataType>
+
+
+{{alias}}.complex64
+    Read-only property returning a data type instance representing a single-
+    precision complex floating-point number data type.
+
+    Returns
+    -------
+    out: DataType
+        Data type instance.
+
+    Examples
+    --------
+    > var dt = {{alias}}.complex64
+    <DataType>
+
+
+{{alias}}.complex128
+    Read-only property returning a data type instance representing a double-
+    precision complex floating-point number data type.
+
+    Returns
+    -------
+    out: DataType
+        Data type instance.
+
+    Examples
+    --------
+    > var dt = {{alias}}.complex128
+    <DataType>
+
+
+{{alias}}.float16
+    Read-only property returning a data type instance representing a half-
+    precision real-valued floating-point number data type.
+
+    Returns
+    -------
+    out: DataType
+        Data type instance.
+
+    Examples
+    --------
+    > var dt = {{alias}}.float16
+    <DataType>
+
+
+{{alias}}.float32
+    Read-only property returning a data type instance representing a single-
+    precision real-valued floating-point number data type.
+
+    Returns
+    -------
+    out: DataType
+        Data type instance.
+
+    Examples
+    --------
+    > var dt = {{alias}}.float32
+    <DataType>
+
+
+{{alias}}.float64
+    Read-only property returning a data type instance representing a double-
+    precision real-valued floating-point number data type.
+
+    Returns
+    -------
+    out: DataType
+        Data type instance.
+
+    Examples
+    --------
+    > var dt = {{alias}}.float64
+    <DataType>
+
+
+{{alias}}.generic
+    Read-only property returning a data type instance representing a "generic"
+    data type.
+
+    Returns
+    -------
+    out: DataType
+        Data type instance.
+
+    Examples
+    --------
+    > var dt = {{alias}}.generic
+    <DataType>
+
+
+{{alias}}.int8
+    Read-only property returning a data type instance representing a signed
+    8-bit integer data type.
+
+    Returns
+    -------
+    out: DataType
+        Data type instance.
+
+    Examples
+    --------
+    > var dt = {{alias}}.int8
+    <DataType>
+
+
+{{alias}}.int16
+    Read-only property returning a data type instance representing a signed
+    16-bit integer data type.
+
+    Returns
+    -------
+    out: DataType
+        Data type instance.
+
+    Examples
+    --------
+    > var dt = {{alias}}.int16
+    <DataType>
+
+
+{{alias}}.int32
+    Read-only property returning a data type instance representing a signed
+    32-bit integer data type.
+
+    Returns
+    -------
+    out: DataType
+        Data type instance.
+
+    Examples
+    --------
+    > var dt = {{alias}}.int32
+    <DataType>
+
+
+{{alias}}.uint8
+    Read-only property returning a data type instance representing an unsigned
+    8-bit integer data type.
+
+    Returns
+    -------
+    out: DataType
+        Data type instance.
+
+    Examples
+    --------
+    > var dt = {{alias}}.uint8
+    <DataType>
+
+
+{{alias}}.uint8c
+    Read-only property returning a data type instance representing an unsigned
+    clamped 8-bit integer data type.
+
+    Returns
+    -------
+    out: DataType
+        Data type instance.
+
+    Examples
+    --------
+    > var dt = {{alias}}.uint8c
+    <DataType>
+
+
+{{alias}}.uint16
+    Read-only property returning a data type instance representing an unsigned
+    16-bit integer data type.
+
+    Returns
+    -------
+    out: DataType
+        Data type instance.
+
+    Examples
+    --------
+    > var dt = {{alias}}.uint16
+    <DataType>
+
+
+{{alias}}.uint32
+    Read-only property returning a data type instance representing an unsigned
+    32-bit integer data type.
+
+    Returns
+    -------
+    out: DataType
+        Data type instance.
+
+    Examples
+    --------
+    > var dt = {{alias}}.uint32
+    <DataType>
 
     See Also
     --------

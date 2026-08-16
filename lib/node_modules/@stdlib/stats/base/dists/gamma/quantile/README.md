@@ -132,22 +132,18 @@ y = myquantile( 0.4 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var quantile = require( '@stdlib/stats/base/dists/gamma/quantile' );
 
-var alpha;
-var beta;
-var p;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var p = uniform( 20, 0.0, 1.0, opts );
+var alpha = uniform( 20, 0.0, 5.0, opts );
+var beta = uniform( 20, 0.0, 5.0, opts );
 
-for ( i = 0; i < 20; i++ ) {
-    p = randu();
-    alpha = randu() * 5.0;
-    beta = randu() * 5.0;
-    y = quantile( p, alpha, beta );
-    console.log( 'p: %d, α: %d, β: %d, Q(p;α,β): %d', p.toFixed( 4 ), alpha.toFixed( 4 ), beta.toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 'p: %0.4f, α: %0.4f, β: %0.4f, Q(p;α,β): %0.4f', p, alpha, beta, quantile );
 ```
 
 </section>

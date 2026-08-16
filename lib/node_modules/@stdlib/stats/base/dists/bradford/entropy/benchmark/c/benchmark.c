@@ -99,12 +99,9 @@ static double benchmark( void ) {
 	double y;
 	int i;
 
-	// Generate test data:
 	for ( i = 0; i < 100; i++ ) {
 		c[ i ] = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 10.0 );
 	}
-
-	// Run the benchmark:
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
 		y = stdlib_base_dists_bradford_entropy( c[ i % 100 ] );
@@ -125,21 +122,17 @@ static double benchmark( void ) {
 */
 int main( void ) {
 	double elapsed;
-	int count;
 	int i;
 
 	// Use the current time to seed the pseudorandom number generator:
 	srand( time( NULL ) );
 
 	print_version();
-	count = 0;
 	for ( i = 0; i < REPEATS; i++ ) {
-		count += 1;
 		printf( "# c::%s\n", NAME );
 		elapsed = benchmark();
-		printf( "ok %d benchmark finished\n", count );
 		print_results( elapsed );
-		printf( "\n" );
+		printf( "ok %d benchmark finished\n", i+1 );
 	}
-	print_summary( count, count );
+	print_summary( REPEATS, REPEATS );
 }

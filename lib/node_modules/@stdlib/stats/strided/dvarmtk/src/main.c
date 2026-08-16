@@ -24,29 +24,29 @@
 * Computes the variance of a double-precision floating-point strided array provided a known mean and using a one-pass textbook algorithm.
 *
 * @param N            number of indexed elements
-* @param mean         mean
 * @param correction   degrees of freedom adjustment
+* @param mean         mean
 * @param X            input array
 * @param strideX      stride length
 * @return             output value
 */
-double API_SUFFIX(stdlib_strided_dvarmtk)( const CBLAS_INT N, const double mean, const double correction, const double *X, const CBLAS_INT strideX ) {
+double API_SUFFIX(stdlib_strided_dvarmtk)( const CBLAS_INT N, const double correction, const double mean, const double *X, const CBLAS_INT strideX ) {
 	const CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
-	return API_SUFFIX(stdlib_strided_dvarmtk_ndarray)( N, mean, correction, X, strideX, ox );
+	return API_SUFFIX(stdlib_strided_dvarmtk_ndarray)( N, correction, mean, X, strideX, ox );
 }
 
 /**
 * Computes the variance of a double-precision floating-point strided array provided a known mean and using a one-pass textbook algorithm and alternative indexing semantics.
 *
 * @param N            number of indexed elements
-* @param mean         mean
 * @param correction   degrees of freedom adjustment
+* @param mean         mean
 * @param X            input array
 * @param strideX      stride length
 * @param offsetX      starting index for X
 * @return             output value
 */
-double API_SUFFIX(stdlib_strided_dvarmtk_ndarray)( const CBLAS_INT N, const double mean, const double correction, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+double API_SUFFIX(stdlib_strided_dvarmtk_ndarray)( const CBLAS_INT N, const double correction, const double mean, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
 	CBLAS_INT ix;
 	CBLAS_INT i;
 	double M2;

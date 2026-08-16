@@ -40,6 +40,7 @@
       "dependencies": [
         "@stdlib/math/base/napi/ternary",
         "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/assert/is-infinite",
         "@stdlib/math/base/special/atan2"
       ]
     },
@@ -57,6 +58,7 @@
       "dependencies": [
         "@stdlib/constants/float64/eps",
         "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/assert/is-infinite",
         "@stdlib/math/base/special/atan2"
       ]
     },
@@ -73,6 +75,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/assert/is-infinite",
         "@stdlib/math/base/special/atan2"
       ]
     }

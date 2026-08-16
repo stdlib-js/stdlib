@@ -62,5 +62,84 @@
     "round",
     "nearest",
     "number"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "ceil10",
+      "alias": "ceil10",
+      "pkg_desc": "round a number to the nearest power of 10 toward positive infinity",
+      "desc": "rounds a number to the nearest power of 10 toward positive infinity",
+      "short_desc": "",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -100,
+              100
+            ]
+          },
+          "example_values": [
+            64.78,
+            27.5,
+            0,
+            0.1,
+            -91.1,
+            18.2,
+            -13.5,
+            125,
+            -10.2,
+            11.3,
+            -12.4,
+            3.567,
+            -100.67,
+            15.7,
+            -162,
+            172.49,
+            -188.98,
+            19.11,
+            -200.23,
+            21.151
+          ]
+        }
+      ],
+      "output_policy": "real_and_generic",
+      "returns": {
+        "desc": "rounded value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "ceil",
+        "ceil10",
+        "round",
+        "power",
+        "ten",
+        "nearest",
+        "value"
+      ],
+      "extra_keywords": [
+        "math.ceil"
+      ]
+    }
+  }
 }

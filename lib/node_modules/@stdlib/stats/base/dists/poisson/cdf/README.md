@@ -115,6 +115,30 @@ y = mycdf( 8.0 );
 
 <!-- /.usage -->
 
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
+var cdf = require( '@stdlib/stats/base/dists/poisson/cdf' );
+
+var opts = {
+    'dtype': 'float64'
+};
+var lambda = uniform( 10, 0.0, 10.0, opts );
+var x = uniform( 10, 0.0, 10.0, opts );
+
+logEachMap( 'x: %0.4f, λ: %0.4f, F(x;λ): %0.4f', x, lambda, cdf );
+```
+
+</section>
+
+<!-- /.examples -->
+
 * * *
 
 <section class="c">
@@ -175,8 +199,8 @@ static double random_uniform( double min, double max ) {
 }
 
 int main( void ) {
-    double x;
     double lambda;
+    double x;
     double y;
     int i;
 
@@ -196,35 +220,6 @@ int main( void ) {
 </section>
 
 <!-- /.c -->
-
-* * *
-
-<section class="examples">
-
-## Examples
-
-<!-- eslint no-undef: "error" -->
-
-```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var cdf = require( '@stdlib/stats/base/dists/poisson/cdf' );
-
-var lambda;
-var x;
-var y;
-var i;
-
-for ( i = 0; i < 10; i++ ) {
-    x = randu() * 10.0;
-    lambda = randu() * 10.0;
-    y = cdf( x, lambda );
-    console.log( 'x: %d, λ: %d, F(x;λ): %d', x.toFixed( 4 ), lambda.toFixed( 4 ), y.toFixed( 4 ) );
-}
-```
-
-</section>
-
-<!-- /.examples -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the BLAS Level 1 routine `cscal`.
 */
-#ifndef CSCAL_H
-#define CSCAL_H
+#ifndef STDLIB_BLAS_BASE_CSCAL_H
+#define STDLIB_BLAS_BASE_CSCAL_H
 
 #include "stdlib/blas/base/shared.h"
 #include "stdlib/complex/float32/ctor.h"
@@ -46,4 +46,4 @@ void API_SUFFIX(c_cscal_ndarray)( const CBLAS_INT N, const stdlib_complex64_t al
 }
 #endif
 
-#endif // !CSCAL_H
+#endif // !STDLIB_BLAS_BASE_CSCAL_H

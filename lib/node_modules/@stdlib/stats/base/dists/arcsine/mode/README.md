@@ -26,7 +26,7 @@ limitations under the License.
 
 <section class="intro">
 
-The [mode][mode] for an [arcsine][arcsine-distribution] random variable with with minimum support `a` and maximum support `b` is
+The [mode][mode] for an [arcsine][arcsine-distribution] random variable with minimum support `a` and maximum support `b` is
 
 <!-- <equation class="equation" label="eq:arcsine_mode" align="center" raw="\operatorname{mode}\left( X \right) = \{ a, b \}" alt="Mode for an arcsine distribution."> -->
 

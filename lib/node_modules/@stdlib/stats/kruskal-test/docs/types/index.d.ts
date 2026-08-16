@@ -99,7 +99,7 @@ interface Results {
 *     'b', 'b', 'b', 'b',
 *     'c', 'c', 'c', 'c', 'c'
 * ];
-* varout = kruskalTest( arr, {
+* var out = kruskalTest( arr, {
 *     'groups': groups
 * });
 * // returns {...}

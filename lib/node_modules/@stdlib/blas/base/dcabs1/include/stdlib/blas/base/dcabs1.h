@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the  Level 1 routine `dcabs1`.
 */
-#ifndef DCABS1_H
-#define DCABS1_H
+#ifndef STDLIB_BLAS_BASE_DCABS1_H
+#define STDLIB_BLAS_BASE_DCABS1_H
 
 #include "stdlib/complex/float64/ctor.h"
 
@@ -40,4 +40,4 @@ double c_dcabs1( const stdlib_complex128_t z );
 }
 #endif
 
-#endif // !DCABS1_H
+#endif // !STDLIB_BLAS_BASE_DCABS1_H

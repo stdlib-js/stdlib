@@ -355,5 +355,3 @@ import add = require( './index' );
 	add.strided( z1, 1, 0, z2, 1, 0, out, 1 ); // $ExpectError
 	add.strided( z1, 1, 0, z2, 1, 0, out, 1, 0, {} ); // $ExpectError
 }
-
-

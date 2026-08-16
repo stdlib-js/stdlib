@@ -18,7 +18,6 @@
 
 #include "stdlib/math/base/special/fibonaccif.h"
 #include <stdlib.h>
-#include <stdint.h>
 #include <stdio.h>
 #include <math.h>
 #include <time.h>
@@ -92,14 +91,14 @@ static float rand_float( void ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	int32_t x;
 	double t;
-	double y;
+	float x;
+	float y;
 	int i;
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = (int32_t)floor( 36.0*rand_float() );
+		x = floorf( 36.0f*rand_float() );
 		y = stdlib_base_fibonaccif( x );
 		if ( y < 0 ) {
 			printf( "should return a nonnegative integer\n" );
