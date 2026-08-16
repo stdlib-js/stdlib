@@ -29,7 +29,7 @@ static const double LLN2 = -0.36651292058166432701243915823266946945426813397; /
 * @return        median
 *
 * @example
-* double y = stdlib_base_gumbel_median( 0.0, 1.0 );
+* double y = stdlib_base_dists_gumbel_median( 0.0, 1.0 );
 * // returns ~0.367
 */
 double stdlib_base_dists_gumbel_median( const double mu, const double beta ) {

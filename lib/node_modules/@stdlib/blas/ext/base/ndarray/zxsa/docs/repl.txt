@@ -1,0 +1,34 @@
+
+{{alias}}( arrays )
+    Subtracts a scalar constant from each element in a one-dimensional double-
+    precision complex floating-point ndarray.
+
+    The input ndarray is modified *in-place* (i.e., the input ndarray is
+    *mutated*).
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a zero-dimensional ndarray containing the scalar constant to subtract.
+
+    Returns
+    -------
+    out: ndarray
+        Input ndarray.
+
+    Examples
+    --------
+    > var buf = [ -2.0, 1.0, 3.0, -5.0 ];
+    > var x = new {{alias:@stdlib/ndarray/vector/complex128}}( buf );
+    > var opts = { 'dtype': 'complex128' };
+    > var a = new {{alias:@stdlib/complex/float64/ctor}}( 5.0, 0.0 );
+    > var alpha = {{alias:@stdlib/ndarray/from-scalar}}( a, opts );
+    > {{alias}}( [ x, alpha ] )
+    <ndarray>[ <Complex128>[ -7.0, 1.0 ], <Complex128>[ -2.0, -5.0 ] ]
+
+    See Also
+    --------
+

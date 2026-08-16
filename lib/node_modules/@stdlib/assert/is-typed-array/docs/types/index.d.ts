@@ -23,10 +23,10 @@
 import { TypedArray } from '@stdlib/types/array';
 
 /**
-* Tests if a value is a typed array.
+* Tests if a value is a built-in typed array.
 *
 * @param value - value to test
-* @returns boolean indicating if a value is a typed array
+* @returns boolean indicating if a value is a built-in typed array
 *
 * @example
 * var Int8Array = require( '@stdlib/array/int8' );

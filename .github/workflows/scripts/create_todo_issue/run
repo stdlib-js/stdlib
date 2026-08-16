@@ -1,0 +1,335 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2026 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Script to create a new todo issue from a /stdlib todo slash command.
+#
+# Environment variables:
+#
+#   GITHUB_TOKEN   GitHub token with permission to create issues and comments.
+#   COMMENT_BODY   Body of the /stdlib todo slash command comment.
+#   COMMENTER      GitHub login of the commenter.
+#   SOURCE_TYPE    Source context type: 'pr' or 'commit'.
+#   SOURCE_REF     Pull request number when SOURCE_TYPE is 'pr'; commit SHA when SOURCE_TYPE is 'commit'.
+
+# Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
+set -o pipefail
+
+
+# VARIABLES #
+
+# GitHub API base URL:
+github_api_url="https://api.github.com"
+
+# Repository owner and name:
+repo_owner="stdlib-js"
+repo_name="stdlib"
+
+# Convenience variable for a backtick character (avoids quoting issues in strings):
+bt='`'
+
+
+# FUNCTIONS #
+
+# Error handler.
+#
+# $1 - error status
+on_error() {
+	echo 'ERROR: An error was encountered during execution.' >&2
+	cleanup
+	exit "$1"
+}
+
+# Runs clean-up tasks.
+cleanup() {
+	if [ -n "${tmp_dir:-}" ]; then
+		rm -rf "${tmp_dir}"
+	fi
+}
+
+# Prints a success message.
+print_success() {
+	echo 'Success!' >&2
+}
+
+# Posts a comment on the source context (pull request or commit).
+#
+# $1 - comment body (plain text; will be JSON-encoded)
+post_source_comment() {
+	local endpoint
+	local payload
+	local body
+	body="$1"
+	payload="{\"body\":$(printf '%s' "${body}" | jq -R -s -c .)}"
+	if [ "${SOURCE_TYPE}" = "pr" ]; then
+		endpoint="${github_api_url}/repos/${repo_owner}/${repo_name}/issues/${SOURCE_REF}/comments"
+	else
+		endpoint="${github_api_url}/repos/${repo_owner}/${repo_name}/commits/${SOURCE_REF}/comments"
+	fi
+	curl -s -X POST \
+		-H "Authorization: token ${GITHUB_TOKEN}" \
+		-H "Accept: application/vnd.github+json" \
+		-H "Content-Type: application/json" \
+		-d "${payload}" \
+		"${endpoint}" \
+		> /dev/null
+}
+
+
+# Main execution sequence.
+main() {
+	local membership_status
+	local requested_label
+	local dropped_labels
+	local issue_response
+	local issue_payload
+	local stdlib_target
+	local dropped_list
+	local labels_json
+	local target_repo
+	local tmp_comment
+	local tmp_content
+	local first_line
+	local issue_body
+	local labels_raw
+	local provenance
+	local issue_url
+	local tmp_attrs
+	local body_raw
+	local content
+	local tmp_dir
+	local attrs
+	local label
+	local quote
+	local title
+	local body
+
+	# Validate required inputs:
+	if [ -z "${SOURCE_TYPE}" ]; then
+		echo "ERROR: SOURCE_TYPE is required." >&2
+		on_error 1
+	fi
+	if [ "${SOURCE_TYPE}" != "pr" ] && [ "${SOURCE_TYPE}" != "commit" ]; then
+		echo "ERROR: SOURCE_TYPE must be 'pr' or 'commit'." >&2
+		on_error 1
+	fi
+	if [ -z "${SOURCE_REF}" ]; then
+		echo "ERROR: SOURCE_REF is required." >&2
+		on_error 1
+	fi
+	if [ -z "${COMMENTER}" ]; then
+		echo "ERROR: COMMENTER is required." >&2
+		on_error 1
+	fi
+	if [ -z "${COMMENT_BODY}" ]; then
+		echo "ERROR: COMMENT_BODY is required." >&2
+		on_error 1
+	fi
+
+	# Verify the commenter is a member of the organization before processing any input:
+	membership_status=$(curl -s -o /dev/null -w "%{http_code}" \
+		-H "Authorization: token ${GITHUB_TOKEN}" \
+		-H "Accept: application/vnd.github+json" \
+		"${github_api_url}/orgs/${repo_owner}/members/${COMMENTER}")
+
+	if [ "${membership_status}" != "204" ]; then
+		echo "ERROR: Unexpected membership status: HTTP ${membership_status}" >&2
+		post_source_comment "@${COMMENTER}, you must be a member of the ${bt}${repo_owner}${bt} organization to use the ${bt}/stdlib todo${bt} command."
+		on_error 1
+	fi
+
+	# Create a temporary working directory:
+	tmp_dir=$(mktemp -d)
+	tmp_comment="${tmp_dir}/comment.txt"
+	tmp_attrs="${tmp_dir}/attrs.txt"
+	tmp_content="${tmp_dir}/content.txt"
+
+	# Write the comment body to a file to safely handle multi-line content:
+	printf '%s' "${COMMENT_BODY}" > "${tmp_comment}"
+
+	# Build a Markdown quote of the comment body for use in error replies:
+	quote=$(sed 's/^/> /' "${tmp_comment}")
+
+	# Use awk to extract the fenced code block and its attributes.
+	# Expected format: ```text {attrs}\n<content>```:
+	awk -v attrs_file="${tmp_attrs}" -v content_file="${tmp_content}" '
+		BEGIN { in_block = 0; first_line = 1 }
+		!in_block && /^```text[[:space:]]*\{/ {
+			match($0, /\{[^}]*\}/)
+			print substr($0, RSTART + 1, RLENGTH - 2) > attrs_file
+			in_block = 1
+			first_line = 1
+			next
+		}
+		in_block && /^```[[:space:]]*$/ {
+			in_block = 0
+			exit
+		}
+		in_block {
+			if (first_line) {
+				printf "%s", $0 > content_file
+				first_line = 0
+			} else {
+				printf "\n%s", $0 >> content_file
+			}
+		}
+	' "${tmp_comment}"
+
+	# Verify that a code block was found:
+	if [ ! -f "${tmp_attrs}" ]; then
+		post_source_comment "${quote}
+
+@${COMMENTER}, failed to parse the ${bt}/stdlib todo${bt} command. Expected a fenced code block with attributes; e.g.,
+
+${bt}${bt}${bt}
+/stdlib todo
+
+${bt}${bt}${bt}text {stdlib=public labels=\"foo,bar\"}
+[TODO]: Issue title
+
+Issue body
+${bt}${bt}${bt}
+${bt}${bt}${bt}"
+		on_error 1
+	fi
+
+	attrs=$(cat "${tmp_attrs}")
+	content=$(cat "${tmp_content}" 2>/dev/null || printf '')
+
+	# Parse the 'stdlib' attribute (values: 'public' or 'private'):
+	stdlib_target=$(printf '%s' "${attrs}" | grep -oiP '(?<=stdlib=)\w+' | tr '[:upper:]' '[:lower:]' || true)
+	if [ -z "${stdlib_target}" ]; then
+		stdlib_target="public"
+	fi
+
+	if [ "${stdlib_target}" != "public" ] && [ "${stdlib_target}" != "private" ]; then
+		post_source_comment "${quote}
+
+@${COMMENTER}, unrecognized ${bt}stdlib${bt} attribute value ${bt}${stdlib_target}${bt}. Valid values are ${bt}public${bt} (opens issue on ${bt}stdlib-js/stdlib${bt}) or ${bt}private${bt} (opens issue on the internal todo repository)."
+		on_error 1
+	fi
+
+	# Parse the 'labels' attribute (comma-separated list):
+	labels_raw=$(printf '%s' "${attrs}" | grep -oP '(?<=labels=")[^"]*' || true)
+	if [ -n "${labels_raw}" ]; then
+		labels_json=$(printf '%s' "${labels_raw}" | tr ',' '\n' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | grep -v '^$' | jq -R . | jq -s .)
+	else
+		labels_json='[]'
+	fi
+
+	# Parse the issue title from the '[<TAG>]: ...' line:
+	first_line=$(printf '%s' "${content}" | head -n 1)
+	title=$(printf '%s' "${first_line}" | grep -oP '^\[[^\]]+\]:[[:space:]]+\K\S.*' || true)
+	if [ -z "${title}" ]; then
+		post_source_comment "${quote}
+
+@${COMMENTER}, failed to parse the issue title. The first line of the code block must be of the form ${bt}[<TAG>]: Issue title${bt}."
+		on_error 1
+	fi
+
+	# Extract the issue body (lines after the title) and trim leading/trailing blank lines:
+	body_raw=$(printf '%s' "${content}" | tail -n +2)
+	body=$(printf '%s' "${body_raw}" | sed '/./,$!d' | tac | sed '/./,$!d' | tac)
+
+	# Determine the target repository:
+	if [ "${stdlib_target}" = "private" ]; then
+		target_repo="todo"
+	else
+		target_repo="stdlib"
+	fi
+
+	# Build provenance footer:
+	if [ "${SOURCE_TYPE}" = "pr" ]; then
+		provenance="---
+*Created via ${bt}/stdlib todo${bt} from [${repo_owner}/${repo_name}#${SOURCE_REF}](https://github.com/${repo_owner}/${repo_name}/pull/${SOURCE_REF}) by @${COMMENTER}.*"
+	else
+		provenance="---
+*Created via ${bt}/stdlib todo${bt} from [${repo_owner}/${repo_name}@${SOURCE_REF:0:7}](https://github.com/${repo_owner}/${repo_name}/commit/${SOURCE_REF}) by @${COMMENTER}.*"
+	fi
+
+	# Build the issue body with provenance footer:
+	if [ -n "${body}" ]; then
+		issue_body="${body}
+
+${provenance}"
+	else
+		issue_body="${provenance}"
+	fi
+
+	# Build issue creation JSON payload:
+	issue_payload=$(jq -n \
+		--arg title "${title}" \
+		--arg body "${issue_body}" \
+		--argjson labels "${labels_json}" \
+		'{"title": $title, "body": $body, "labels": $labels}')
+
+	# Create the issue:
+	issue_response=$(curl -s \
+		-X POST \
+		-H "Authorization: token ${GITHUB_TOKEN}" \
+		-H "Accept: application/vnd.github+json" \
+		-H "Content-Type: application/json" \
+		-d "${issue_payload}" \
+		"${github_api_url}/repos/${repo_owner}/${target_repo}/issues")
+
+	issue_url=$(printf '%s' "${issue_response}" | jq -r '.html_url // empty')
+	if [ -z "${issue_url}" ]; then
+		echo "ERROR: Failed to create issue. Response: ${issue_response}" >&2
+		on_error 1
+	fi
+
+	# Identify labels that were silently dropped (labels that do not exist in the target repo):
+	dropped_labels=()
+	while IFS= read -r requested_label; do
+		if [ -n "${requested_label}" ]; then
+			if ! printf '%s' "${issue_response}" | jq -e --arg l "${requested_label}" '[.labels[].name] | index($l) != null' > /dev/null 2>&1; then
+				dropped_labels+=("${requested_label}")
+			fi
+		fi
+	done < <(printf '%s' "${labels_json}" | jq -r '.[]')
+
+	# Post a confirmation comment:
+	if [ ${#dropped_labels[@]} -gt 0 ]; then
+		dropped_list=""
+		for label in "${dropped_labels[@]}"; do
+			if [ -n "${dropped_list}" ]; then
+				dropped_list="${dropped_list}, ${bt}${label}${bt}"
+			else
+				dropped_list="${bt}${label}${bt}"
+			fi
+		done
+		post_source_comment "@${COMMENTER}, the following issue has been created: ${issue_url}
+
+Please make any subsequent edits to the issue itself rather than by updating the todo comment.
+
+> [!WARNING]
+> The following labels were not applied because they do not exist on ${bt}${repo_owner}/${target_repo}${bt}: ${dropped_list}."
+	else
+		post_source_comment "@${COMMENTER}, the following issue has been created: ${issue_url}
+
+Please make any subsequent edits to the issue itself rather than by updating the todo comment."
+	fi
+
+	cleanup
+	print_success
+	exit 0
+}
+
+# Set an error handler to capture errors and perform any clean-up tasks:
+trap 'on_error $?' ERR
+
+main

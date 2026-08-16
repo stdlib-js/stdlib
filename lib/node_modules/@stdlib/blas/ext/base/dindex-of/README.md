@@ -222,7 +222,7 @@ Returns the first index of a specified search element in a double-precision floa
 ```c
 double x[] = { 1.0, 2.0, 3.0, 4.0 };
 
-int idx = stdlib_strided_dindex_of( 4, 3.0, x, 1, 0 );
+int idx = stdlib_strided_dindex_of_ndarray( 4, 3.0, x, 1, 0 );
 // returns 2
 ```
 

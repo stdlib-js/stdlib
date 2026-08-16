@@ -1,0 +1,29 @@
+
+{{alias}}( x )
+    Returns a read-only view of an input ndarray with singleton dimensions
+    removed.
+
+    The function always returns a new ndarray instance even if the input ndarray
+    does not contain any singleton dimensions.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var opts = { 'ndmin': 5 };
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ], opts )
+    <ndarray>[ [ [ [ [ 1, 2 ], [ 3, 4 ] ] ] ] ]
+    > var y = {{alias}}( x )
+    <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
+
+    See Also
+    --------
+

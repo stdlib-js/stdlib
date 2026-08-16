@@ -72,7 +72,7 @@ type Callback<T, U, V> = Nullary<U, V> | Unary<T, U, V> | Binary<T, U, V> | Tern
 */
 interface Flatten3dBy {
 	/**
-	* Flattens a three-dimensional nested array according to a callback function..
+	* Flattens a three-dimensional nested array according to a callback function.
 	*
 	* ## Notes
 	*

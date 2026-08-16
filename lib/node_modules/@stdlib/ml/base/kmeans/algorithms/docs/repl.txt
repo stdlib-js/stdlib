@@ -1,0 +1,22 @@
+
+{{alias}}()
+    Returns a list of k-means clustering algorithms.
+
+    The output array contains the following algorithms:
+
+    - lloyd: classic EM-style algorithm.
+    - elkan: optimized algorithm using triangle inequality.
+
+    Returns
+    -------
+    out: Array<string>
+        List of algorithms.
+
+    Examples
+    --------
+    > var out = {{alias}}()
+    [ 'lloyd', 'elkan' ]
+
+    See Also
+    --------
+
