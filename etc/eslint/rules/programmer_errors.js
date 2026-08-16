@@ -832,11 +832,25 @@ rules[ 'require-atomic-updates' ] = 'error';
 * @example
 * // Good...
 * var isnan = require( '@stdlib/math/base/assert/is-nan' );
+*
 * if ( isnan( x ) ) {
 *     // Do something...
 * }
 */
 rules[ 'use-isnan' ] = 'error';
+
+/**
+* Ensure JSDoc parameter names match function parameters.
+*
+* @name jsdoc/check-param-names
+* @memberof rules
+* @type {Array}
+* @see [check-param-names]{@link https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-param-names.md}
+*/
+rules[ 'jsdoc/check-param-names' ] = [ 'error', {
+	'allowExtraTrailingParamDocs': true,
+	'checkDestructured': false
+}];
 
 /**
 * Require a JSDoc description.
@@ -849,6 +863,19 @@ rules[ 'use-isnan' ] = 'error';
 rules[ 'jsdoc/require-description' ] = 'error';
 
 /**
+* Require JSDoc for function parameters.
+*
+* @name jsdoc/require-param
+* @memberof rules
+* @type {Array}
+* @see [require-param]{@link https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-param.md}
+*/
+rules[ 'jsdoc/require-param' ] = [ 'error', {
+	'checkDestructured': false,
+	'checkDestructuredRoots': false
+}];
+
+/**
 * Require `@param` description.
 *
 * @name jsdoc/require-param-description
@@ -857,6 +884,33 @@ rules[ 'jsdoc/require-description' ] = 'error';
 * @see [require-param-description]{@link https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-param-description.md}
 */
 rules[ 'jsdoc/require-param-description' ] = 'error';
+
+/**
+* Require `@param` type.
+*
+* @name jsdoc/require-param-type
+* @memberof rules
+* @type {string}
+* @see [require-param-type]{@link https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-param-type.md}
+*/
+rules[ 'jsdoc/require-param-type' ] = 'error';
+
+/**
+* Require `@returns` when a function returns a value.
+*
+* @name jsdoc/require-returns
+* @memberof rules
+* @type {Array}
+* @see [require-returns]{@link https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-returns.md}
+*/
+rules[ 'jsdoc/require-returns' ] = [ 'error', {
+	'checkGetters': false,
+	'contexts': [
+		'ArrowFunctionExpression:not([async=true])',
+		'FunctionDeclaration:not([async=true])',
+		'FunctionExpression:not([async=true])'
+	]
+}];
 
 /**
 * Require `@returns` type.

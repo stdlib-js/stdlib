@@ -74,6 +74,12 @@ var restrictedSyntaxConfig = [ 'error',
 */
 var overrides = [
 	{
+		'files': [ 'etc/eslint/rules/*.js' ],
+		'rules': {
+			'stdlib/jsdoc-doctest': 'off'
+		}
+	},
+	{
 		'files': [ '[a-z].js' ],
 		'rules': {
 			'stdlib/repl-namespace-order': 'error'

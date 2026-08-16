@@ -82,6 +82,28 @@ eslint.parserOptions = require( './parser-options' );
 */
 eslint.plugins = require( './plugins' );
 
+/**
+* Shared settings.
+*
+* @name settings
+* @memberof eslint
+* @type {Object}
+*/
+eslint.settings = {
+	'jsdoc': {
+		'contexts': [
+			'ArrowFunctionExpression',
+			'ClassDeclaration',
+			'ClassExpression',
+			'FunctionDeclaration',
+			'FunctionExpression'
+		],
+		'tagNamePreference': {
+			'class': 'constructor'
+		}
+	}
+};
+
 
 // EXPORTS //
 

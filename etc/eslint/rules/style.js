@@ -1859,7 +1859,8 @@ rules[ 'jsdoc/require-jsdoc' ] = [ 'error', {
 		'ClassDeclaration': true,
 		'MethodDefinition': true,
 		'ArrowFunctionExpression': true
-	}
+	},
+	'contexts': []
 }];
 
 /**
