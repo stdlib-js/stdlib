@@ -3322,469 +3322,469 @@ int main( void ) {
 	print_version();
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::instantiation\n", NAME );
+		printf( "# c::%s::instantiation\n", NAME );
 		elapsed = benchmark1();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::get:byteLength\n", NAME );
+		printf( "# c::%s::get:byteLength\n", NAME );
 		elapsed = benchmark2();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::get:data\n", NAME );
+		printf( "# c::%s::get:data\n", NAME );
 		elapsed = benchmark3();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::get:dtype\n", NAME );
+		printf( "# c::%s::get:dtype\n", NAME );
 		elapsed = benchmark4();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::get:flags\n", NAME );
+		printf( "# c::%s::get:flags\n", NAME );
 		elapsed = benchmark5();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::get:length\n", NAME );
+		printf( "# c::%s::get:length\n", NAME );
 		elapsed = benchmark6();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::get:ndims\n", NAME );
+		printf( "# c::%s::get:ndims\n", NAME );
 		elapsed = benchmark7();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::get:offset\n", NAME );
+		printf( "# c::%s::get:offset\n", NAME );
 		elapsed = benchmark8();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::get:order\n", NAME );
+		printf( "# c::%s::get:order\n", NAME );
 		elapsed = benchmark9();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::get:shape\n", NAME );
+		printf( "# c::%s::get:shape\n", NAME );
 		elapsed = benchmark10();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::get:strides\n", NAME );
+		printf( "# c::%s::get:strides\n", NAME );
 		elapsed = benchmark11();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::1d:get:mode=error\n", NAME );
+		printf( "# c::%s::1d:get:mode=error\n", NAME );
 		elapsed = benchmark12();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::1d:get:mode=wrap\n", NAME );
+		printf( "# c::%s::1d:get:mode=wrap\n", NAME );
 		elapsed = benchmark13();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::1d:get:mode=clamp\n", NAME );
+		printf( "# c::%s::1d:get:mode=clamp\n", NAME );
 		elapsed = benchmark14();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::2d:get:mode=error\n", NAME );
+		printf( "# c::%s::2d:get:mode=error\n", NAME );
 		elapsed = benchmark15();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::2d:get:mode=wrap\n", NAME );
+		printf( "# c::%s::2d:get:mode=wrap\n", NAME );
 		elapsed = benchmark16();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::2d:get:mode=clamp\n", NAME );
+		printf( "# c::%s::2d:get:mode=clamp\n", NAME );
 		elapsed = benchmark17();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::3d:get:mode=error\n", NAME );
+		printf( "# c::%s::3d:get:mode=error\n", NAME );
 		elapsed = benchmark18();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::3d:get:mode=wrap\n", NAME );
+		printf( "# c::%s::3d:get:mode=wrap\n", NAME );
 		elapsed = benchmark19();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::3d:get:mode=clamp\n", NAME );
+		printf( "# c::%s::3d:get:mode=clamp\n", NAME );
 		elapsed = benchmark20();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::4d:get:mode=error\n", NAME );
+		printf( "# c::%s::4d:get:mode=error\n", NAME );
 		elapsed = benchmark21();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::4d:get:mode=wrap\n", NAME );
+		printf( "# c::%s::4d:get:mode=wrap\n", NAME );
 		elapsed = benchmark22();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::4d:get:mode=clamp\n", NAME );
+		printf( "# c::%s::4d:get:mode=clamp\n", NAME );
 		elapsed = benchmark23();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::5d:get:mode=error\n", NAME );
+		printf( "# c::%s::5d:get:mode=error\n", NAME );
 		elapsed = benchmark24();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::5d:get:mode=wrap\n", NAME );
+		printf( "# c::%s::5d:get:mode=wrap\n", NAME );
 		elapsed = benchmark25();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::5d:get:mode=clamp\n", NAME );
+		printf( "# c::%s::5d:get:mode=clamp\n", NAME );
 		elapsed = benchmark26();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::1d:iget:mode=error\n", NAME );
+		printf( "# c::%s::1d:iget:mode=error\n", NAME );
 		elapsed = benchmark27();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::1d:iget:mode=wrap\n", NAME );
+		printf( "# c::%s::1d:iget:mode=wrap\n", NAME );
 		elapsed = benchmark28();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::1d:iget:mode=clamp\n", NAME );
+		printf( "# c::%s::1d:iget:mode=clamp\n", NAME );
 		elapsed = benchmark29();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::2d,all_positive_strides:iget:mode=error,order=row-major\n", NAME );
+		printf( "# c::%s::2d,all_positive_strides:iget:mode=error,order=row-major\n", NAME );
 		elapsed = benchmark30();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::2d,all_positive_strides:iget:mode=error,order=column-major\n", NAME );
+		printf( "# c::%s::2d,all_positive_strides:iget:mode=error,order=column-major\n", NAME );
 		elapsed = benchmark31();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::2d,all_negative_strides:iget:mode=error,order=row-major\n", NAME );
+		printf( "# c::%s::2d,all_negative_strides:iget:mode=error,order=row-major\n", NAME );
 		elapsed = benchmark32();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::2d,all_negative_strides:iget:mode=error,order=column-major\n", NAME );
+		printf( "# c::%s::2d,all_negative_strides:iget:mode=error,order=column-major\n", NAME );
 		elapsed = benchmark33();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::2d,mixed_sign_strides:iget:mode=error,order=row-major\n", NAME );
+		printf( "# c::%s::2d,mixed_sign_strides:iget:mode=error,order=row-major\n", NAME );
 		elapsed = benchmark34();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::2d,mixed_sign_strides:iget:mode=error,order=column-major\n", NAME );
+		printf( "# c::%s::2d,mixed_sign_strides:iget:mode=error,order=column-major\n", NAME );
 		elapsed = benchmark35();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::1d:set:mode=error\n", NAME );
+		printf( "# c::%s::1d:set:mode=error\n", NAME );
 		elapsed = benchmark36();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::1d:set:mode=wrap\n", NAME );
+		printf( "# c::%s::1d:set:mode=wrap\n", NAME );
 		elapsed = benchmark37();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::1d:set:mode=clamp\n", NAME );
+		printf( "# c::%s::1d:set:mode=clamp\n", NAME );
 		elapsed = benchmark38();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::2d:set:mode=error\n", NAME );
+		printf( "# c::%s::2d:set:mode=error\n", NAME );
 		elapsed = benchmark39();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::2d:set:mode=wrap\n", NAME );
+		printf( "# c::%s::2d:set:mode=wrap\n", NAME );
 		elapsed = benchmark40();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::2d:set:mode=clamp\n", NAME );
+		printf( "# c::%s::2d:set:mode=clamp\n", NAME );
 		elapsed = benchmark41();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::3d:set:mode=error\n", NAME );
+		printf( "# c::%s::3d:set:mode=error\n", NAME );
 		elapsed = benchmark42();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::3d:set:mode=wrap\n", NAME );
+		printf( "# c::%s::3d:set:mode=wrap\n", NAME );
 		elapsed = benchmark43();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::3d:set:mode=clamp\n", NAME );
+		printf( "# c::%s::3d:set:mode=clamp\n", NAME );
 		elapsed = benchmark44();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::4d:set:mode=error\n", NAME );
+		printf( "# c::%s::4d:set:mode=error\n", NAME );
 		elapsed = benchmark45();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::4d:set:mode=wrap\n", NAME );
+		printf( "# c::%s::4d:set:mode=wrap\n", NAME );
 		elapsed = benchmark46();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::4d:set:mode=clamp\n", NAME );
+		printf( "# c::%s::4d:set:mode=clamp\n", NAME );
 		elapsed = benchmark47();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::5d:set:mode=error\n", NAME );
+		printf( "# c::%s::5d:set:mode=error\n", NAME );
 		elapsed = benchmark48();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::5d:set:mode=wrap\n", NAME );
+		printf( "# c::%s::5d:set:mode=wrap\n", NAME );
 		elapsed = benchmark49();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::5d:set:mode=clamp\n", NAME );
+		printf( "# c::%s::5d:set:mode=clamp\n", NAME );
 		elapsed = benchmark50();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::1d:iset:mode=error\n", NAME );
+		printf( "# c::%s::1d:iset:mode=error\n", NAME );
 		elapsed = benchmark51();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::1d:iset:mode=wrap\n", NAME );
+		printf( "# c::%s::1d:iset:mode=wrap\n", NAME );
 		elapsed = benchmark52();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::1d:iset:mode=clamp\n", NAME );
+		printf( "# c::%s::1d:iset:mode=clamp\n", NAME );
 		elapsed = benchmark53();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::2d,all_positive_strides:iset:mode=error,order=row-major\n", NAME );
+		printf( "# c::%s::2d,all_positive_strides:iset:mode=error,order=row-major\n", NAME );
 		elapsed = benchmark54();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::2d,all_positive_strides:iset:mode=error,order=column-major\n", NAME );
+		printf( "# c::%s::2d,all_positive_strides:iset:mode=error,order=column-major\n", NAME );
 		elapsed = benchmark55();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::2d,all_negative_strides:iset:mode=error,order=row-major\n", NAME );
+		printf( "# c::%s::2d,all_negative_strides:iset:mode=error,order=row-major\n", NAME );
 		elapsed = benchmark56();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::2d,all_negative_strides:iset:mode=error,order=column-major\n", NAME );
+		printf( "# c::%s::2d,all_negative_strides:iset:mode=error,order=column-major\n", NAME );
 		elapsed = benchmark57();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::2d,mixed_sign_strides:iset:mode=error,order=row-major\n", NAME );
+		printf( "# c::%s::2d,mixed_sign_strides:iset:mode=error,order=row-major\n", NAME );
 		elapsed = benchmark58();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::2d,mixed_sign_strides:iset:mode=error,order=column-major\n", NAME );
+		printf( "# c::%s::2d,mixed_sign_strides:iset:mode=error,order=column-major\n", NAME );
 		elapsed = benchmark59();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::get:dimension\n", NAME );
+		printf( "# c::%s::get:dimension\n", NAME );
 		elapsed = benchmark60();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::get:stride\n", NAME );
+		printf( "# c::%s::get:stride\n", NAME );
 		elapsed = benchmark61();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::get:index_mode\n", NAME );
+		printf( "# c::%s::get:index_mode\n", NAME );
 		elapsed = benchmark62();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::get:submodes\n", NAME );
+		printf( "# c::%s::get:submodes\n", NAME );
 		elapsed = benchmark63();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::get:submode\n", NAME );
+		printf( "# c::%s::get:submode\n", NAME );
 		elapsed = benchmark64();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::get:byte_length_per_element\n", NAME );
+		printf( "# c::%s::get:byte_length_per_element\n", NAME );
 		elapsed = benchmark65();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::get:stride_elements\n", NAME );
+		printf( "# c::%s::get:stride_elements\n", NAME );
 		elapsed = benchmark66();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s::get:offset_elements\n", NAME );
+		printf( "# c::%s::get:offset_elements\n", NAME );
 		elapsed = benchmark67();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );

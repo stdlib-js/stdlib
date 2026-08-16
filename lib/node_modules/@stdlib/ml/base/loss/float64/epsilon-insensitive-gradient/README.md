@@ -33,7 +33,7 @@ The [epsilon insensitive loss gradient][epsilon-insensitive-loss-gradient] is de
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\frac{\partial \ell}{\partial w} =\begin{cases}-x &amp; \text{if } y - p &gt; \epsilon, \\x &amp; \text{if } p - y &gt; \epsilon, \\0 &amp; \text{otherwise.}\end{cases}" data-equation="eq:epsilon_insensitive_loss_gradient">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@01b5c399c14dd51bc91890dd5914d443f124bc1d/lib/node_modules/@stdlib/ml/base/loss/float64/epsilon-insensitive-gradient/docs/img/equation_epsilon_insensitive_loss_gradient.svg" alt="Equation for the epsilon insensitive loss gradient.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@2cee50a75da1437551b91682b8785dbae8ab897f/lib/node_modules/@stdlib/ml/base/loss/float64/epsilon-insensitive-gradient/docs/img/equation_epsilon_insensitive_loss_gradient.svg" alt="Equation for the epsilon insensitive loss gradient.">
     <br>
 </div> -->
 
