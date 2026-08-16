@@ -32,6 +32,11 @@ The natural [exponential function][exponential-function] minus one is defined as
 y = e^x - 1
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = e^x - 1" data-equation="eq:natural_exponential_function_minus_one">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@fd38562ead49148cba5e41f298c4f24ac9948da5/lib/node_modules/@stdlib/math/base/special/expm1f/docs/img/equation_natural_exponential_function_minus_one.svg" alt="Natural exponential function minus one.">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>
