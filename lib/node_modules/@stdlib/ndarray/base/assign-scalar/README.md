@@ -40,8 +40,6 @@ var assignScalar = require( '@stdlib/ndarray/base/assign-scalar' );
 
 Assigns a scalar value to every element of an output [ndarray][@stdlib/ndarray/base/ctor].
 
-<!-- eslint-disable max-len -->
-
 ```javascript
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 var Float64Array = require( '@stdlib/array/float64' );

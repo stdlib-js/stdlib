@@ -34,6 +34,7 @@
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/ln.h"
 #include "stdlib/constants/float64/pi_squared.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdint.h>
 
 // π^2 / 6
@@ -114,7 +115,7 @@ double stdlib_base_spence( const double x ) {
 	double z;
 
 	if ( stdlib_base_is_nan( x ) || x < 0.0 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( x == 1.0 ) {
 		return 0.0;

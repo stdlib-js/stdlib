@@ -52,8 +52,10 @@ function onRead( error, data ) {
 Synchronously reads the contents of a directory.
 
 ```javascript
+var isError = require( '@stdlib/assert/is-error' );
+
 var out = readDir.sync( __dirname );
-if ( out instanceof Error ) {
+if ( isError( out ) ) {
     throw out;
 }
 console.log( out );
@@ -70,6 +72,8 @@ console.log( out );
 
 -   The difference between this module and [`fs.readdirSync()`][fs] is that [`fs.readdirSync()`][fs] will throw if an `error` is encountered (e.g., if given a non-existent `path`) and this module will return an `error`. Hence, the following anti-pattern
 
+    <!-- eslint-disable no-restricted-syntax, n/no-sync -->
+
     ```javascript
     var fs = require( 'fs' );
 
@@ -81,16 +85,19 @@ console.log( out );
     }
     ```
 
+    <!-- eslint-enable no-restricted-syntax, n/no-sync -->
+
     can be replaced by an approach which addresses existence via `error` handling.
 
     ```javascript
+    var isError = require( '@stdlib/assert/is-error' );
     var readDir = require( '@stdlib/fs/read-dir' );
 
     var dir = '/path/to/dir';
 
     // Explicitly handle the error...
     dir = readDir.sync( dir );
-    if ( dir instanceof Error ) {
+    if ( isError( dir ) ) {
         // You choose what to do...
         throw dir;
     }
@@ -107,6 +114,7 @@ console.log( out );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
+var isError = require( '@stdlib/assert/is-error' );
 var readDir = require( '@stdlib/fs/read-dir' );
 
 /* Sync */
@@ -114,13 +122,13 @@ var readDir = require( '@stdlib/fs/read-dir' );
 var out = readDir.sync( __dirname );
 // returns <Array>
 
-console.log( out instanceof Error );
+console.log( isError( out ) );
 // => false
 
 out = readDir.sync( 'beepboop' );
 // returns <Error>
 
-console.log( out instanceof Error );
+console.log( isError( out ) );
 // => true
 
 /* Async */
