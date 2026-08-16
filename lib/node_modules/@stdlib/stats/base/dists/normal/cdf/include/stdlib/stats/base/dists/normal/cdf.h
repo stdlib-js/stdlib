@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the cumulative distribution function (CDF) for a normal distribution with mean µ and standard deviation σ at a value `x`.
+* Evaluates the cumulative distribution function (CDF) for a normal distribution with mean μ and standard deviation σ at a value `x`.
 */
 double stdlib_base_dists_normal_cdf( const double x, const double mu, const double sigma );
 

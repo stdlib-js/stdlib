@@ -42,7 +42,8 @@
         "@stdlib/constants/float64/pinf",
         "@stdlib/math/base/special/floor",
         "@stdlib/math/base/special/ldexp",
-        "@stdlib/constants/float64/min-base10-exponent"
+        "@stdlib/constants/float64/min-base10-exponent",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -61,7 +62,8 @@
         "@stdlib/constants/float64/pinf",
         "@stdlib/math/base/special/floor",
         "@stdlib/math/base/special/ldexp",
-        "@stdlib/constants/float64/min-base10-exponent"
+        "@stdlib/constants/float64/min-base10-exponent",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -80,7 +82,8 @@
         "@stdlib/constants/float64/pinf",
         "@stdlib/math/base/special/floor",
         "@stdlib/math/base/special/ldexp",
-        "@stdlib/constants/float64/min-base10-exponent"
+        "@stdlib/constants/float64/min-base10-exponent",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

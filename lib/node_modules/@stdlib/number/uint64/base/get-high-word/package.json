@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/number/uint64/base/get-high-word",
   "version": "0.0.0",
-  "description": "Return an unsigned 32-bit integer corresponding to the high 32-bit word of a 64-bit unsigned integer.",
+  "description": "Return a 32-bit unsigned integer corresponding to the high 32-bit word of a 64-bit unsigned integer.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

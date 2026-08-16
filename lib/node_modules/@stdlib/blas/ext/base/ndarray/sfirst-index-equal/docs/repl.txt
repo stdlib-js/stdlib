@@ -1,0 +1,32 @@
+
+{{alias}}( arrays )
+    Returns the index of the first element in a one-dimensional single-
+    precision floating-point ndarray equal to a corresponding element in
+    another one-dimensional single-precision floating-point ndarray.
+
+    When comparing elements, the function checks for equality using the strict
+    equality operator `===`. As a consequence, `NaN` values are considered
+    distinct, and `-0` and `+0` are considered the same.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - first one-dimensional input ndarray.
+        - second one-dimensional input ndarray.
+
+    Returns
+    -------
+    out: integer
+        Index.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/ndarray/vector/float32}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var y = new {{alias:@stdlib/ndarray/vector/float32}}( [ 0.0, 0.0, 3.0, 0.0 ] );
+    > {{alias}}( [ x, y ] )
+    2
+
+    See Also
+    --------
