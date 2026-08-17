@@ -1,0 +1,41 @@
+
+{{alias}}( ndims )
+    Returns a kernel for applying a one-dimensional strided array function to an
+    input ndarray and assigning results to an output ndarray using loop tiling.
+
+    The returned function has the following parameters:
+
+    - fcn: function which will be applied to a one-dimensional input subarray
+    and should update a one-dimensional output subarray with results.
+    - arrays: array containing one input ndarray descriptor and one output
+    ndarray descriptor, followed by any additional ndarray arguments.
+    - views: initialized ndarray descriptors representing sub-array views.
+    - shape: loop dimensions.
+    - stridesX: loop dimension strides for the input ndarray.
+    - stridesY: loop dimension strides for the output ndarray.
+    - strategyX: strategy for marshaling data to and from an input ndarray view.
+    - strategyY: strategy for marshaling data to and from an output ndarray
+    view.
+    - options: function options which are passed through to `fcn`.
+
+    If `ndims < 2` or greater than the maximum supported number of loop
+    dimensions, the function returns `null`.
+
+    Parameters
+    ----------
+    ndims: integer
+        Number of loop dimensions.
+
+    Returns
+    -------
+    fcn: Function|null
+        Kernel function.
+
+    Examples
+    --------
+    > var f = {{alias}}( 2 )
+    <Function>
+
+    See Also
+    --------
+
