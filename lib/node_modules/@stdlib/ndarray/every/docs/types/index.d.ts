@@ -77,10 +77,7 @@ interface Every {
 	*
 	* // Perform reduction:
 	* var out = every( x );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns true
+	* // returns <ndarray>[ true ]
 	*/
 	( x: ndarray, options?: Options ): boolndarray;
 
@@ -120,10 +117,7 @@ interface Every {
 	*
 	* // Perform reduction:
 	* var out = every.assign( x, y );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns true
+	* // returns <ndarray>[ true ]
 	*/
 	assign<T extends ndarray = ndarray>( x: ndarray, y: T, options?: BaseOptions ): T;
 }
@@ -158,10 +152,7 @@ interface Every {
 *
 * // Perform reduction:
 * var out = every( x );
-* // returns <ndarray>
-*
-* var v = out.get();
-* // returns true
+* // returns <ndarray>[ true ]
 *
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
@@ -190,10 +181,7 @@ interface Every {
 *
 * // Perform reduction:
 * var out = every.assign( x, y );
-* // returns <ndarray>
-*
-* var v = out.get();
-* // returns true
+* // returns <ndarray>[ true ]
 */
 declare var every: Every;
 
