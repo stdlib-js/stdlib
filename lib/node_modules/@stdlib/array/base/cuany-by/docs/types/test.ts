@@ -169,21 +169,21 @@ function isPositive( value: number ): boolean {
 	const x = [ false, false, true, false, false ];
 	const y = [ false, null, false, null, false, null, false, null, false, null ];
 
-	cuanyBy.assign( x, y , '1', 0, isPositive ); // $ExpectError
-	cuanyBy.assign( x, y , true, 0, isPositive ); // $ExpectError
-	cuanyBy.assign( x, y , false, 0, isPositive ); // $ExpectError
-	cuanyBy.assign( x, y , null, 0, isPositive ); // $ExpectError
-	cuanyBy.assign( x, y , void 0, isPositive ); // $ExpectError
-	cuanyBy.assign( x, y , {}, 0, isPositive ); // $ExpectError
-	cuanyBy.assign( x, y , [], 0, isPositive ); // $ExpectError
+	cuanyBy.assign( x, y, '1', 0, isPositive ); // $ExpectError
+	cuanyBy.assign( x, y, true, 0, isPositive ); // $ExpectError
+	cuanyBy.assign( x, y, false, 0, isPositive ); // $ExpectError
+	cuanyBy.assign( x, y, null, 0, isPositive ); // $ExpectError
+	cuanyBy.assign( x, y, void 0, isPositive ); // $ExpectError
+	cuanyBy.assign( x, y, {}, 0, isPositive ); // $ExpectError
+	cuanyBy.assign( x, y, [], 0, isPositive ); // $ExpectError
 
-	cuanyBy.assign( x, y , '1', 0, isPositive, {} ); // $ExpectError
-	cuanyBy.assign( x, y , true, 0, isPositive, {} ); // $ExpectError
-	cuanyBy.assign( x, y , false, 0, isPositive, {} ); // $ExpectError
-	cuanyBy.assign( x, y , null, 0, isPositive, {} ); // $ExpectError
-	cuanyBy.assign( x, y , void 0, isPositive, {} ); // $ExpectError
-	cuanyBy.assign( x, y , {}, 0, isPositive, {} ); // $ExpectError
-	cuanyBy.assign( x, y , [], 0, isPositive, {} ); // $ExpectError
+	cuanyBy.assign( x, y, '1', 0, isPositive, {} ); // $ExpectError
+	cuanyBy.assign( x, y, true, 0, isPositive, {} ); // $ExpectError
+	cuanyBy.assign( x, y, false, 0, isPositive, {} ); // $ExpectError
+	cuanyBy.assign( x, y, null, 0, isPositive, {} ); // $ExpectError
+	cuanyBy.assign( x, y, void 0, isPositive, {} ); // $ExpectError
+	cuanyBy.assign( x, y, {}, 0, isPositive, {} ); // $ExpectError
+	cuanyBy.assign( x, y, [], 0, isPositive, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the `assign` method is provided a fourth argument which is not a number...

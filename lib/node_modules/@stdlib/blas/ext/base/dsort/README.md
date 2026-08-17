@@ -116,7 +116,6 @@ dsort.ndarray( 3, 1.0, x, 1, 3 );
 -   If `N <= 0` or `order == 0.0`, both functions return `x` unchanged.
 -   The algorithm distinguishes between `-0` and `+0`. When sorted in increasing order, `-0` is sorted before `+0`. When sorted in decreasing order, `-0` is sorted after `+0`.
 -   The algorithm sorts `NaN` values to the end. When sorted in increasing order, `NaN` values are sorted last. When sorted in decreasing order, `NaN` values are sorted first.
--   The algorithm has space complexity `O(1)` and time complexity `O(N log2 N)`.
 -   The input strided array is sorted **in-place** (i.e., the input strided array is **mutated**).
 
 </section>

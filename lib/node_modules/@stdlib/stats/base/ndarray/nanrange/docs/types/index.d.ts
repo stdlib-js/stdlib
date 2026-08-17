@@ -20,24 +20,29 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ndarray } from '@stdlib/types/ndarray';
+import { typedndarray } from '@stdlib/types/ndarray';
 
 /**
 * Computes the range of a one-dimensional ndarray, ignoring `NaN` values.
 *
-* @param arrays - array-like object containing an input ndarray
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns range
 *
 * @example
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var vector = require( '@stdlib/ndarray/vector/ctor' );
 *
-* var xbuf = [ 1.0, -2.0, NaN, 2.0 ];
-* var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+* var x = vector( [ 1.0, -2.0, NaN, 2.0 ], 'generic' );
 *
 * var v = nanrange( [ x ] );
 * // returns 4.0
 */
-declare function nanrange<T extends ndarray = ndarray>( arrays: [ T ] ): number;
+declare function nanrange( arrays: [ typedndarray<number> ] ): number;
 
 
 // EXPORTS //

@@ -60,6 +60,8 @@ console.log( FLOAT16_PI_SQUARED );
 
 </section>
 
+<!-- /.examples -->
+
 <section class="related">
 
 </section>

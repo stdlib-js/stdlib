@@ -1,0 +1,35 @@
+
+{{alias}}( arrays )
+    Returns the first index of an element in a one-dimensional ndarray which is
+    not equal to a specified search element.
+
+    When searching for a search element, the function checks for inequality
+    using the strict inequality operator `!==`. As a consequence, `NaN` values
+    are considered distinct from all values (including other `NaN` values), and
+    `-0` and `+0` are considered the same.
+
+    If unable to find an element which is not equal to a specified search
+    element, the function returns `-1`.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a zero-dimensional ndarray containing the search element.
+
+    Returns
+    -------
+    out: integer
+        Index.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/vector/ctor}}( [ 1.0, 1.0, 3.0 ], 'generic' );
+    > var v = {{alias:@stdlib/ndarray/from-scalar}}( 1.0, { 'dtype': 'generic' } );
+    > {{alias}}( [ x, v ] )
+    2
+
+    See Also
+    --------

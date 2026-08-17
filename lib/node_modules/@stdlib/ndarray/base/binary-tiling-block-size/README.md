@@ -76,7 +76,7 @@ var bsize = binaryBlockSize( 'float64', 'float64', 'float64' );
 ```javascript
 var dtypes = require( '@stdlib/ndarray/dtypes' );
 var cartesianSquare = require( '@stdlib/array/base/cartesian-square' );
-var promotionRules = require( '@stdlib/ndarray/promotion-rules' );
+var promoteDataTypes = require( '@stdlib/ndarray/base/promote-dtypes' );
 var binaryBlockSize = require( '@stdlib/ndarray/base/binary-tiling-block-size' );
 
 // Generate a list of input ndarray dtype pairs:
@@ -88,8 +88,8 @@ var b;
 var i;
 console.log( 'block_size, xdtype, ydtype, zdtype' );
 for ( i = 0; i < dt.length; i++ ) {
-    t = promotionRules.apply( null, dt[ i ] );
-    dt[ i ].push( ( t === -1 ) ? 'generic' : t );
+    t = promoteDataTypes( dt[ i ] );
+    dt[ i ].push( ( t === null ) ? 'generic' : t );
     b = binaryBlockSize.apply( null, dt[ i ] );
     console.log( '%d, %s, %s, %s', b, dt[i][0], dt[i][1], dt[i][2] );
 }
