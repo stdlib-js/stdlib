@@ -32,6 +32,11 @@ The [inverse complementary error function][erfcinv] is defined as
 \mathop{\mathrm{erfc}}^{-1}(1-z) = \mathop{\mathrm{erf}}^{-1}(z)
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{erfc}^{-1}(1-z) = \operatorname{erf}^{-1}(z)" data-equation="eq:inverse_complementary_error_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@ed4c0691c112c821dc594a517a9787b42278ed89/lib/node_modules/@stdlib/math/base/special/erfcinvf/docs/img/equation_inverse_complementary_error_function.svg" alt="Inverse complementary error function.">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 where `erf^{-1}(z)` is the [inverse error function][@stdlib/math/base/special/erfinv].
