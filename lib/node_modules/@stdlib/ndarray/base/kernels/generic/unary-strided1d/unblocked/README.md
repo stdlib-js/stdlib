@@ -20,7 +20,7 @@ limitations under the License.
 
 # resolveKernel
 
-> Return a kernel for applying a one-dimensional strided array function to an input ndarray and assigning results to an output ndarray using loop blocking.
+> Return a kernel for applying a one-dimensional strided array function to an input ndarray and assigning results to an output ndarray.
 
 <section class="intro">
 
@@ -33,12 +33,12 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var resolveKernel = require( '@stdlib/ndarray/base/kernels/generic/unary-strided1d/blocked' );
+var resolveKernel = require( '@stdlib/ndarray/base/kernels/generic/unary-strided1d/unblocked' );
 ```
 
 #### resolveKernel( ndims )
 
-Returns a kernel for applying a one-dimensional strided array function to an input ndarray and assigning results to an output ndarray using loop blocking.
+Returns a kernel for applying a one-dimensional strided array function to an input ndarray and assigning results to an output ndarray.
 
 <!-- eslint-disable max-len -->
 
@@ -157,10 +157,10 @@ The function accepts the following arguments:
 
 -   **ndims**: number of loop dimensions.
 
-If the function is provided `ndims < 2` or a value greater than the maximum number of supported loop dimensions, the function returns `null`.
+If the function is provided an `ndims` value greater than the maximum number of supported loop dimensions, the function returns `null`.
 
 ```javascript
-var f = resolveKernel( 1 );
+var f = resolveKernel( 100000 );
 // returns null
 ```
 
@@ -197,8 +197,6 @@ var f = resolveKernel( 1 );
 
 -   The returned function iterates over ndarray elements according to the memory layout of the input ndarray.
 
--   For very high-dimensional ndarrays which are non-contiguous, one should consider copying the underlying data to contiguous memory before performing an operation in order to achieve better performance.
-
 </section>
 
 <!-- /.notes -->
@@ -216,7 +214,7 @@ var Float64Array = require( '@stdlib/array/float64' );
 var ndarray2array = require( '@stdlib/ndarray/base/to-array' );
 var gcusum = require( '@stdlib/blas/ext/base/ndarray/gcusum' );
 var strategy = require( '@stdlib/ndarray/base/kernels/generic/unary-strided1d/strategy' );
-var resolveKernel = require( '@stdlib/ndarray/base/kernels/generic/unary-strided1d/blocked' );
+var resolveKernel = require( '@stdlib/ndarray/base/kernels/generic/unary-strided1d/unblocked' );
 
 // Create data buffers:
 var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );

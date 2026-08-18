@@ -1,7 +1,7 @@
 
 {{alias}}( ndims )
     Returns a kernel for applying a one-dimensional strided array function to an
-    input ndarray and assigning results to an output ndarray using loop tiling.
+    input ndarray and assigning results to an output ndarray.
 
     The returned function has the following parameters:
 
@@ -18,8 +18,8 @@
     view.
     - options: function options which are passed through to `fcn`.
 
-    If `ndims < 2` or greater than the maximum supported number of loop
-    dimensions, the function returns `null`.
+    If `ndims` is greater than the maximum supported number of loop dimensions,
+    the function returns `null`.
 
     Parameters
     ----------
