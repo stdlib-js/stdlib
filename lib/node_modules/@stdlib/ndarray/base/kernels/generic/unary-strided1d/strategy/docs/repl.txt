@@ -1,0 +1,43 @@
+
+{{alias}}( x )
+    Returns an object for reshaping an ndarray as a one-dimensional strided
+    array view.
+
+    Parameters
+    ----------
+    x: Object
+        Descriptor.
+
+    Returns
+    -------
+    out: Object
+        Object containing an input and output strategy.
+
+    out.input: Function
+        Function providing a strategy for reshaping an input ndarray to a one-
+        dimensional input ndarray view prior to applying a one-dimensional
+        strided array function.
+
+    out.output: Function
+        Function providing a strategy for reshaping the results of a one-
+        dimensional strided array function to the shape of an input ndarray
+        after applying a one-dimensional strided array function. This function
+        should only be invoked for input ndarrays which are written to by the
+        one-dimensional strided array function.
+
+    Examples
+    --------
+    > var x = {
+    ...   'dtype': 'float64',
+    ...   'data': new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] ),
+    ...   'shape': [ 1 ],
+    ...   'strides': [ 1 ],
+    ...   'offset': 0,
+    ...   'order': 'row-major'
+    ... };
+    > var o = {{alias}}( x )
+    {...}
+
+    See Also
+    --------
+
