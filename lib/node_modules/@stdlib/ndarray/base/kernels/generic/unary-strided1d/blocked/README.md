@@ -215,6 +215,7 @@ var f = resolveKernel( 1 );
 var Float64Array = require( '@stdlib/array/float64' );
 var ndarray2array = require( '@stdlib/ndarray/base/to-array' );
 var gcusum = require( '@stdlib/blas/ext/base/ndarray/gcusum' );
+var strategy = require( '@stdlib/ndarray/base/kernels/generic/unary-strided1d/strategy' );
 var resolveKernel = require( '@stdlib/ndarray/base/kernels/generic/unary-strided1d/blocked' );
 
 // Create data buffers:
@@ -291,33 +292,15 @@ var views = [
     }
 ];
 
-// Define an input strategy:
-function inputStrategy( x ) {
-    return {
-        'dtype': x.dtype,
-        'data': x.data,
-        'shape': [ 4 ],
-        'strides': [ 1 ],
-        'offset': x.offset,
-        'order': x.order
-    };
-}
-
-// Define an output strategy:
-function outputStrategy( x ) {
-    return x;
-}
-
-var strategy = {
-    'input': inputStrategy,
-    'output': outputStrategy
-};
+// Resolve input/output strategies when iterating over sub-array views:
+var strategyX = strategy( views[ 0 ] );
+var strategyY = strategy( views[ 1 ] );
 
 // Resolve a kernel:
 var kernel = resolveKernel( 5 );
 
 // Apply strided function:
-kernel( gcusum, [ x, y, initial ], views, [ 1, 1, 1, 1, 3 ], [ 12, 12, 12, 12, 4 ], [ 12, 12, 12, 12, 4 ], strategy, strategy, {} );
+kernel( gcusum, [ x, y, initial ], views, [ 1, 1, 1, 1, 3 ], [ 12, 12, 12, 12, 4 ], [ 12, 12, 12, 12, 4 ], strategyX, strategyY, {} );
 
 console.log( ndarray2array( x.data, x.shape, x.strides, x.offset, x.order ) );
 console.log( ndarray2array( y.data, y.shape, y.strides, y.offset, y.order ) );
