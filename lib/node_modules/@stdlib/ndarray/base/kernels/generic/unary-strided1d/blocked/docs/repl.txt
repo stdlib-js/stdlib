@@ -9,7 +9,7 @@
     and should update a one-dimensional output subarray with results.
     - arrays: array containing one input ndarray descriptor and one output
     ndarray descriptor, followed by any additional ndarray arguments.
-    - views: initialized ndarray descriptors representing sub-array views.
+    - views: initialized ndarray descriptors representing subarray views.
     - shape: loop dimensions.
     - stridesX: loop dimension strides for the input ndarray.
     - stridesY: loop dimension strides for the output ndarray.
