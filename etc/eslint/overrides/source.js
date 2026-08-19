@@ -21,11 +21,17 @@
 // MAIN //
 
 /**
-* ESLint overrides for REPL namespace files.
+* ESLint overrides for JavaScript source files.
 *
 * @namespace overrides
 */
 var overrides = [
+	{
+		'files': [ 'etc/eslint/rules/*.js' ],
+		'rules': {
+			'stdlib/jsdoc-doctest': 'off'
+		}
+	},
 	{
 		'files': [ '[a-z].js' ],
 		'rules': {
