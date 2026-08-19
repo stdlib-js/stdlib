@@ -20,7 +20,21 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { RealOrComplexTypedArray, Complex128Array, Complex64Array, BooleanArray, DataType } from '@stdlib/types/array';
+import { RealOrComplexTypedArray, Float16Array, Complex128Array, Complex64Array, BooleanArray, DataType } from '@stdlib/types/array';
+
+/**
+* Returns the data type of an array.
+*
+* @param value - input value
+* @returns data type
+*
+* @example
+* var Float16Array = require( '@stdlib/array/float16' );
+*
+* var dt = dtype( new Float16Array( [ 1, 2, 3 ] ) );
+* // returns 'float16'
+*/
+declare function dtype<T extends Float16Array>( value: T ): 'float16'; // NOTE: this needs to come before `Float64Array` due to structural pattern matching between `Float64Array` and `Float16Array` being too close.
 
 /**
 * Returns the data type of an array.

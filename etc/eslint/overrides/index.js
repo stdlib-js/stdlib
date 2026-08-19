@@ -74,6 +74,12 @@ var restrictedSyntaxConfig = [ 'error',
 */
 var overrides = [
 	{
+		'files': [ 'etc/eslint/rules/*.js' ],
+		'rules': {
+			'stdlib/jsdoc-doctest': 'off'
+		}
+	},
+	{
 		'files': [ '[a-z].js' ],
 		'rules': {
 			'stdlib/repl-namespace-order': 'error'
@@ -89,7 +95,7 @@ var overrides = [
 				'skipComments': true
 			}],
 			'no-restricted-syntax': restrictedSyntaxConfig,
-			'require-jsdoc': 'off',
+			'jsdoc/require-jsdoc': 'off',
 			'stdlib/jsdoc-private-annotation': 'off',
 			'stdlib/jsdoc-doctest': 'off',
 			'stdlib/no-unnecessary-nested-functions': 'off'
@@ -101,7 +107,7 @@ var overrides = [
 			'no-new-wrappers': 'warn',
 			'vars-on-top': 'off',
 			'no-console': 'off',
-			'require-jsdoc': 'off',
+			'jsdoc/require-jsdoc': 'off',
 			'stdlib/jsdoc-private-annotation': 'off',
 			'stdlib/jsdoc-doctest': 'off',
 			'stdlib/no-unnecessary-nested-functions': 'off',
@@ -119,9 +125,10 @@ var overrides = [
 				'skipComments': true
 			}],
 			'no-restricted-syntax': restrictedSyntaxConfig,
-			'require-jsdoc': 'off',
+			'jsdoc/require-jsdoc': 'off',
 			'stdlib/jsdoc-private-annotation': 'off',
 			'stdlib/jsdoc-doctest': 'off',
+			'stdlib/no-single-property-require': 'off',
 			'stdlib/no-unnecessary-nested-functions': 'off',
 			'no-undefined': 'off'
 		}
@@ -155,14 +162,15 @@ var overrides = [
 			'no-tabs': 'error',
 			'no-undef': 'off',
 			'no-unused-vars': 'off',
-			'require-jsdoc': 'off',
+			'jsdoc/require-jsdoc': 'off',
 			'stdlib/jsdoc-private-annotation': 'off',
 			'stdlib/jsdoc-return-annotations-values': 'off',
+			'stdlib/no-single-property-require': 'off',
 			'stdlib/no-unnecessary-nested-functions': 'off',
 			'stdlib/return-annotations-values': 'off',
 			'strict': 'off',
 			'vars-on-top': 'off',
-			'node/no-unpublished-require': 'off'
+			'n/no-unpublished-require': 'off'
 		}
 	},
 	{

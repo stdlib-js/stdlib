@@ -29,8 +29,8 @@ import { typedndarray } from '@stdlib/types/ndarray';
 *
 * -   The function expects the following ndarrays:
 *
-*     -   a first one-dimensional input ndarray.
-*     -   a second one-dimensional input ndarray.
+*     -   first one-dimensional input ndarray.
+*     -   second one-dimensional input ndarray.
 *
 * @param arrays - array-like object containing ndarrays
 * @returns dot product

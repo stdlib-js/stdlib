@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the logarithm of the cumulative distribution function (CDF) for a Planck distribution with shape parameter `lambda`.
+* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a Planck distribution with shape parameter `lambda`.
 */
 double stdlib_base_dists_planck_logcdf( const double x, const double lambda );
 

@@ -128,5 +128,5 @@ float API_SUFFIX(stdlib_strided_ssumpw_ndarray)( const CBLAS_INT N, const float 
 	// Recurse by dividing by two, but avoiding non-multiples of unroll factor...
 	n = N / 2;
 	n -= n % 8;
-	return stdlib_strided_ssumpw_ndarray( n, X, strideX, ix ) + stdlib_strided_ssumpw_ndarray( N-n, X, strideX, ix+(n*strideX) );
+	return API_SUFFIX(stdlib_strided_ssumpw_ndarray)( n, X, strideX, ix ) + API_SUFFIX(stdlib_strided_ssumpw_ndarray)( N-n, X, strideX, ix+(n*strideX) );
 }

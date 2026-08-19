@@ -20,7 +20,7 @@ limitations under the License.
 
 # dznrm2
 
-> Compute the L2-norm of a complex double-precision floating-point vector.
+> Compute the L2-norm of a double-precision complex floating-point vector.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var dznrm2 = require( '@stdlib/blas/base/dznrm2' );
 
 #### dznrm2( N, x, strideX )
 
-Computes the L2-norm of a complex double-precision floating-point vector.
+Computes the L2-norm of a double-precision complex floating-point vector.
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
@@ -78,7 +78,7 @@ var norm = dznrm2( 2, x1, 1 );
 
 #### dznrm2.ndarray( N, x, strideX, offset )
 
-Computes the L2-norm of a complex double-precision floating-point vector using alternative indexing semantics.
+Computes the L2-norm of a double-precision complex floating-point vector using alternative indexing semantics.
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
@@ -175,7 +175,7 @@ console.log( norm );
 
 #### c_dznrm2( N, \*X, strideX )
 
-Computes the L2-norm of a complex double-precision floating-point vector.
+Computes the L2-norm of a double-precision complex floating-point vector.
 
 ```c
 const double X[] = { 0.3, 0.1, 0.5, 0.0, 0.0, 0.5, 0.0, 0.2 };
@@ -196,7 +196,7 @@ double c_dznrm2( const CBLAS_INT N, const void *X, const CBLAS_INT strideX );
 
 #### c_dznrm2_ndarray( N, \*X, strideX, offsetX )
 
-Computes the L2-norm of a complex double-precision floating-point vector using alternative indexing semantics.
+Computes the L2-norm of a double-precision complex floating-point vector using alternative indexing semantics.
 
 ```c
 const double X[] = { 0.3, 0.1, 0.5, 0.0, 0.0, 0.5, 0.0, 0.2 };

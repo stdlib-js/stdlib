@@ -20,6 +20,7 @@
 
 // ESLint plugins:
 var plugins = [
+	'jsdoc',
 	'n',
 	'stdlib',
 	'@cspell'

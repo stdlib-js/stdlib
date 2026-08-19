@@ -24,7 +24,7 @@
 * Returns the part of a string before the last occurrence of a specified substring.
 *
 * @param str - input string
-* @param search - search value
+* @param search - search string
 * @returns substring
 *
 * @example

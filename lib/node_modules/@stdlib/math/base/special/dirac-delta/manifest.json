@@ -38,7 +38,8 @@
       "dependencies": [
         "@stdlib/math/base/napi/unary",
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/constants/float64/pinf"
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -53,7 +54,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/constants/float64/pinf"
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -68,7 +70,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/constants/float64/pinf"
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

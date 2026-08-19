@@ -52,7 +52,7 @@ interface Fresnel {
 	* var v = fresnel( NaN );
 	* // returns [ NaN, NaN ]
 	*/
-	( x: number ): Array<number>;
+	( x: number ): [ number, number ];
 
 	/**
 	* Computes the Fresnel integrals S(x) and C(x) and assigns results to a provided output array.
