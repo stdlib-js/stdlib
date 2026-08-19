@@ -33,6 +33,6 @@ int main( void ) {
 	for ( i = 0; i < 25; i++ ) {
 		mu = random_uniform( 0.0, 1.0 );
 		v = stdlib_base_dists_degenerate_mean( mu );
-		printf( "µ: %lf, E(X;µ): %lf\n", mu, v );
+		printf( "μ: %lf, E(X;μ): %lf\n", mu, v );
 	}
 }

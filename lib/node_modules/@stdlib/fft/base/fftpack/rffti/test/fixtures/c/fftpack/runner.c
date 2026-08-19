@@ -194,9 +194,9 @@ void generate( const int *lengths, const int *offsets, const unsigned int num, c
 		}
 		rffti( n, wsave );
 
-		// Copy twiddle region into flat array (N-1 values starting at wsave[n]):
+		// Copy twiddle region into flat array (N values starting at wsave[n]):
 		off = offsets[ i ];
-		for ( j = 0; j < (unsigned int)( n - 1 ); j++ ) {
+		for ( j = 0; j < (unsigned int)n; j++ ) {
 			twiddles[ off + j ] = wsave[ n + j ];
 		}
 		free( wsave );
@@ -233,7 +233,7 @@ unsigned int compute_offsets( int *offsets, const int *lengths, const unsigned i
 	total = 0;
 	for ( i = 0; i < num; i++ ) {
 		offsets[ i ] = total;
-		total += lengths[ i ] - 1;
+		total += lengths[ i ];
 	}
 	return total;
 }

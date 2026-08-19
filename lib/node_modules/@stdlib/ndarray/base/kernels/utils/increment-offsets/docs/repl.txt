@@ -1,0 +1,27 @@
+
+{{alias}}( offsets, inc )
+    Increments index offsets according to a list of increments.
+
+    The function mutates the input array.
+
+    Parameters
+    ----------
+    offsets: ArrayLike<integer>
+        Index offsets.
+
+    inc: ArrayLike<integer>
+        Increments.
+
+    Returns
+    -------
+    out: ArrayLike<integer>
+        Input array.
+
+    Examples
+    --------
+    > var out = {{alias}}( [ 0, 1 ], [ 2, 3 ] )
+    [ 2, 4 ]
+
+    See Also
+    --------
+

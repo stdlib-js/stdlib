@@ -498,9 +498,9 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	*
 	* var arr = new Complex128Array( 3 );
 	*
-	* arr.set( [ 1.0 , 1.0 ], 0 );
-	* arr.set( [ 2.0 , 2.0 ], 1 );
-	* arr.set( [ 3.0 , 3.0 ], 2 );
+	* arr.set( [ 1.0, 1.0 ], 0 );
+	* arr.set( [ 2.0, 2.0 ], 1 );
+	* arr.set( [ 3.0, 3.0 ], 2 );
 	*
 	* var bool = arr.every( predicate );
 	* // returns true
@@ -1006,9 +1006,9 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	*
 	* var arr = new Complex128Array( 3 );
 	*
-	* arr.set( [ 1.0 , -1.0 ], 0 );
-	* arr.set( [ 2.0 , 2.0 ], 1 );
-	* arr.set( [ 3.0 , -3.0 ], 2 );
+	* arr.set( [ 1.0, -1.0 ], 0 );
+	* arr.set( [ 2.0, 2.0 ], 1 );
+	* arr.set( [ 3.0, -3.0 ], 2 );
 	*
 	* var bool = arr.some( predicate );
 	* // returns true

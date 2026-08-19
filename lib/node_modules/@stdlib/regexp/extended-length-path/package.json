@@ -57,6 +57,7 @@
     "expression",
     "path",
     "test",
+    "match",
     "file",
     "filename",
     "windows",
