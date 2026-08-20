@@ -16,6 +16,8 @@
 * limitations under the License.
 */
 
+/* eslint-disable n/no-unpublished-require */
+
 'use strict';
 
 // MODULES //
@@ -24,56 +26,24 @@ var globals = require( 'globals' );
 var pluginN = require( 'eslint-plugin-n' );
 var pluginCspell = require( '@cspell/eslint-plugin' );
 var pluginJsdoc = require( 'eslint-plugin-jsdoc' );
+var assign = require( './lib/node_modules/@stdlib/object/assign' );
 var stdlibPlugin = require( './lib/node_modules/@stdlib/_tools/eslint/rules/scripts/plugin.js' );
-var allRules = require( './etc/eslint/rules' );
-var overrides = require( './etc/eslint/overrides' );
+var restrictedSyntaxConfig = require( './etc/eslint/overrides/restricted_syntax.js' );
+var rules = require( './etc/eslint/rules' );
 
 
 // VARIABLES //
 
-var restrictedSyntaxConfig = overrides[ 2 ].rules[ 'no-restricted-syntax' ];
-var nonClonableRules = {};
-var rules = {};
-var val;
-var key;
-var i;
-
-
-// FUNCTIONS //
-
-/**
-* Tests whether a value can be structured-cloned.
-*
-* @private
-* @param {*} value - value to test
-* @returns {boolean} boolean indicating whether the value is clonable
-*/
-function isClonable( value ) {
-	try {
-		// eslint-disable-next-line n/no-unsupported-features/es-builtins
-		if ( typeof structuredClone === 'function' ) {
-			structuredClone( value );
-		}
-		return true;
-	} catch ( e ) {
-		return false;
-	}
-}
+var globalVars;
+var config;
 
 
 // MAIN //
 
-// Separate rules containing non-clonable values:
-for ( key in allRules ) {
-	val = allRules[ key ];
-	if ( isClonable( val ) ) {
-		rules[ key ] = val;
-	} else {
-		nonClonableRules[ key ] = val;
-	}
-}
+globalVars = assign( {}, globals.browser, globals.node );
+globalVars = assign( globalVars, globals.commonjs, globals.worker );
 
-module.exports = [
+config = [
 	// Global ignores:
 	{
 		'ignores': [
@@ -90,12 +60,7 @@ module.exports = [
 		'languageOptions': {
 			'ecmaVersion': 6,
 			'sourceType': 'script',
-			'globals': {
-				...globals.browser,
-				...globals.node,
-				...globals.commonjs,
-				...globals.worker
-			}
+			'globals': globalVars
 		},
 		'plugins': {
 			'n': pluginN,
@@ -159,3 +124,8 @@ module.exports = [
 		}
 	}
 ];
+
+
+// EXPORTS //
+
+module.exports = config;
