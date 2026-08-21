@@ -449,16 +449,22 @@ interface Namespace {
 	* -   The function expects the following ndarrays:
 	*
 	*     -   a one-dimensional input ndarray.
+	*     -   a zero-dimensional ndarray containing the index from which to begin searching.
 	*
 	* @param arrays - array-like object containing ndarrays
 	* @returns index
 	*
 	* @example
 	* var Complex64Vector = require( '@stdlib/ndarray/vector/complex64' );
+	* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 	*
 	* var x = new Complex64Vector( [ 0.0, 0.0, 0.0, 0.0, 3.0, 0.0, 2.0, 0.0 ] );
 	*
-	* var v = ns.cindexOfTruthy( [ x ] );
+	* var fromIndex = scalar2ndarray( 0, {
+	*     'dtype': 'generic'
+	* });
+	*
+	* var v = ns.cindexOfTruthy( [ x, fromIndex ] );
 	* // returns 2
 	*/
 	cindexOfTruthy: typeof cindexOfTruthy;
@@ -1318,6 +1324,7 @@ interface Namespace {
 	*
 	*     -   first one-dimensional input ndarray.
 	*     -   second one-dimensional input ndarray.
+	*     -   a zero-dimensional ndarray containing the index from which to begin searching.
 	*
 	* -   When comparing elements, the function checks for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct, and `-0` and `+0` are considered the same.
 	*
@@ -1326,11 +1333,16 @@ interface Namespace {
 	*
 	* @example
 	* var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
+	* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 	*
 	* var x = new Float64Vector( [ 1.0, 2.0, 3.0, 4.0 ] );
 	* var y = new Float64Vector( [ 0.0, 0.0, 3.0, 0.0 ] );
 	*
-	* var idx = ns.dfirstIndexEqual( [ x, y ] );
+	* var fromIndex = scalar2ndarray( 0, {
+	*     'dtype': 'generic'
+	* });
+	*
+	* var idx = ns.dfirstIndexEqual( [ x, y, fromIndex ] );
 	* // returns 2
 	*/
 	dfirstIndexEqual: typeof dfirstIndexEqual;
@@ -1344,6 +1356,7 @@ interface Namespace {
 	*
 	*     -   first one-dimensional input ndarray.
 	*     -   second one-dimensional input ndarray.
+	*     -   a zero-dimensional ndarray containing the index from which to begin searching.
 	*
 	* -   When comparing elements, the function checks whether an element in the first one-dimensional input ndarray is greater than a corresponding element in the second one-dimensional input ndarray using the greater-than operator `>`. As a consequence, comparisons involving `NaN` always evaluate to `false`.
 	*
@@ -1352,11 +1365,16 @@ interface Namespace {
 	*
 	* @example
 	* var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
+	* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 	*
 	* var x = new Float64Vector( [ 0.0, 0.0, 1.0, 0.0 ] );
 	* var y = new Float64Vector( [ 0.0, 0.0, 0.0, 0.0 ] );
 	*
-	* var idx = ns.dfirstIndexGreaterThan( [ x, y ] );
+	* var fromIndex = scalar2ndarray( 0, {
+	*     'dtype': 'generic'
+	* });
+	*
+	* var idx = ns.dfirstIndexGreaterThan( [ x, y, fromIndex ] );
 	* // returns 2
 	*/
 	dfirstIndexGreaterThan: typeof dfirstIndexGreaterThan;

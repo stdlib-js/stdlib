@@ -1,4 +1,4 @@
-/* eslint-disable stdlib/jsdoc-doctest-marker, stdlib/jsdoc-doctest, stdlib/jsdoc-example-require-spacing, stdlib/jsdoc-no-tabs */
+/* eslint-disable stdlib/jsdoc-doctest-marker, stdlib/jsdoc-example-require-spacing, stdlib/jsdoc-no-tabs */
 
 /**
 * @license Apache-2.0
@@ -1720,7 +1720,7 @@ rules[ 'stdlib/jsdoc-list-item-spacing' ] = 'error';
 */
 rules[ 'stdlib/jsdoc-markdown-remark' ] = [ 'error',
 	{
-		'config': require( './../../remark/.remarkrc.jsdoc.js' )
+		'configPath': require.resolve( './../../remark/.remarkrc.jsdoc.js' )
 	}
 ];
 
