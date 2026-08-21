@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/fft/base/fftpack",
+  "name": "@stdlib/fft/base/fftpack/ndarray",
   "version": "0.0.0",
   "description": "Lower-level ndarray wrappers for FFTPACK fast Fourier transform routines.",
   "license": "Apache-2.0",
