@@ -128,7 +128,7 @@ console.log( 'Sequence length: %d', N );
 
 console.log( 'Twiddle factors:' );
 var idx = zeroTo( 2*N, 'generic' );
-logEach( '  workspace[ %d ] = %d', idx, workspace.slice( 2*N, 4*N ) );
+logEach( '  workspace[ %d ] = %0.4f', idx, workspace.slice( 2*N, 4*N ) );
 
 console.log( 'Factorization:' );
 var nf = workspace[ (4*N)+1 ];
