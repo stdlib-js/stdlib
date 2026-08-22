@@ -149,9 +149,7 @@ var params = new Params({
     'fitIntercept': true
 });
 
-var str = params.toString({
-    'format': 'linear'
-});
+var str = params.toString();
 console.log( str );
 
 Params = paramsFactory( 'float32' );
@@ -167,9 +165,7 @@ params = new Params({
     'fitIntercept': true
 });
 
-str = params.toString({
-    'format': 'linear'
-});
+str = params.toString();
 console.log( str );
 ```
 
