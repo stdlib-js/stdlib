@@ -21,6 +21,7 @@
 # Note: keep the following in alphabetical order...
 include $(TOOLS_MAKE_LIB_DIR)/examples/c.mk
 include $(TOOLS_MAKE_LIB_DIR)/examples/cpp.mk
+include $(TOOLS_MAKE_LIB_DIR)/examples/doctest_c.mk
 include $(TOOLS_MAKE_LIB_DIR)/examples/javascript.mk
 include $(TOOLS_MAKE_LIB_DIR)/examples/markdown.mk
 
@@ -59,7 +60,7 @@ examples: examples-javascript
 # @example
 # make examples-lang EXAMPLES_FILTER=".*/blas/base/dasum/.*"
 #/
-examples-lang: examples-javascript examples-c examples-cpp
+examples-lang: examples-javascript examples-c examples-cpp doctest-c
 
 .PHONY: examples-lang
 
