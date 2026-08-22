@@ -205,7 +205,7 @@ Performs an in-place copy of elements within a single-precision complex floating
 ```c
 #include "stdlib/complex/float32/ctor.h"
 
-float x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
+float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f };
 float w[ 8 ];
 
 stdlib_strided_ccopy_within( 4, 2, 0, 2, (stdlib_complex64_t *)x, 1, (stdlib_complex64_t *)w, 1 );
@@ -237,7 +237,7 @@ Performs an in-place copy of elements within a single-precision complex floating
 ```c
 #include "stdlib/complex/float32/ctor.h"
 
-float x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
+float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f };
 float w[ 8 ];
 
 stdlib_strided_ccopy_within_ndarray( 3, 2, 0, 2, (stdlib_complex64_t *)x, 1, 1, (stdlib_complex64_t *)w, 1, 0 );
@@ -285,7 +285,7 @@ void stdlib_strided_ccopy_within_ndarray( const CBLAS_INT N, const CBLAS_INT tar
 
 int main( void ) {
     // Create a strided array:
-    float x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
+    float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f };
 
     // Create a workspace array:
     float w[ 8 ];
