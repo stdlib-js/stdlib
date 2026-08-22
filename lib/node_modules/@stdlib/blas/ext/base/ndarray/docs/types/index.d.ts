@@ -1452,16 +1452,22 @@ interface Namespace {
 	* -   The function expects the following ndarrays:
 	*
 	*     -   a one-dimensional input ndarray.
+	*     -   a zero-dimensional ndarray containing the index from which to begin searching.
 	*
 	* @param arrays - array-like object containing ndarrays
 	* @returns index
 	*
 	* @example
 	* var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
+	* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 	*
 	* var x = new Float64Vector( [ 1.0, 0.0, 3.0, 2.0 ] );
 	*
-	* var v = ns.dindexOfFalsy( [ x ] );
+	* var fromIndex = scalar2ndarray( 0, {
+	*     'dtype': 'generic'
+	* });
+	*
+	* var v = ns.dindexOfFalsy( [ x, fromIndex ] );
 	* // returns 1
 	*/
 	dindexOfFalsy: typeof dindexOfFalsy;
@@ -1475,6 +1481,7 @@ interface Namespace {
 	*
 	*     -   a one-dimensional input ndarray.
 	*     -   a zero-dimensional ndarray containing the search element.
+	*     -   a zero-dimensional ndarray containing the index from which to begin searching.
 	*
 	* @param arrays - array-like object containing ndarrays
 	* @returns index
@@ -1489,7 +1496,11 @@ interface Namespace {
 	*     'dtype': 'float64'
 	* });
 	*
-	* var v = ns.dindexOfNotEqual( [ x, searchElement ] );
+	* var fromIndex = scalar2ndarray( 0, {
+	*     'dtype': 'generic'
+	* });
+	*
+	* var v = ns.dindexOfNotEqual( [ x, searchElement, fromIndex ] );
 	* // returns 2
 	*/
 	dindexOfNotEqual: typeof dindexOfNotEqual;
@@ -1502,16 +1513,22 @@ interface Namespace {
 	* -   The function expects the following ndarrays:
 	*
 	*     -   a one-dimensional input ndarray.
+	*     -   a zero-dimensional ndarray containing the index from which to begin searching.
 	*
 	* @param arrays - array-like object containing ndarrays
 	* @returns index
 	*
 	* @example
 	* var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
+	* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 	*
 	* var x = new Float64Vector( [ 0.0, 0.0, 3.0, 2.0 ] );
 	*
-	* var v = ns.dindexOfTruthy( [ x ] );
+	* var fromIndex = scalar2ndarray( 0, {
+	*     'dtype': 'generic'
+	* });
+	*
+	* var v = ns.dindexOfTruthy( [ x, fromIndex ] );
 	* // returns 2
 	*/
 	dindexOfTruthy: typeof dindexOfTruthy;
@@ -1525,6 +1542,7 @@ interface Namespace {
 	*
 	*     -   first one-dimensional input ndarray.
 	*     -   second one-dimensional input ndarray.
+	*     -   a zero-dimensional ndarray containing the index from which to begin searching.
 	*
 	* -   When comparing elements, the function checks for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct, and `-0` and `+0` are considered the same.
 	*
@@ -1533,11 +1551,16 @@ interface Namespace {
 	*
 	* @example
 	* var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
+	* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 	*
 	* var x = new Float64Vector( [ 1.0, 2.0, 3.0, 4.0 ] );
 	* var y = new Float64Vector( [ 0.0, 0.0, 3.0, 0.0 ] );
 	*
-	* var idx = ns.dlastIndexEqual( [ x, y ] );
+	* var fromIndex = scalar2ndarray( 3, {
+	*     'dtype': 'generic'
+	* });
+	*
+	* var idx = ns.dlastIndexEqual( [ x, y, fromIndex ] );
 	* // returns 2
 	*/
 	dlastIndexEqual: typeof dlastIndexEqual;
@@ -1583,16 +1606,22 @@ interface Namespace {
 	* -   The function expects the following ndarrays:
 	*
 	*     -   a one-dimensional input ndarray.
+	*     -   a zero-dimensional ndarray containing the index from which to begin searching.
 	*
 	* @param arrays - array-like object containing ndarrays
 	* @returns index
 	*
 	* @example
 	* var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
+	* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 	*
 	* var x = new Float64Vector( [ 1.0, 0.0, 3.0, 0.0 ] );
 	*
-	* var v = ns.dlastIndexOfFalsy( [ x ] );
+	* var fromIndex = scalar2ndarray( 3, {
+	*     'dtype': 'generic'
+	* });
+	*
+	* var v = ns.dlastIndexOfFalsy( [ x, fromIndex ] );
 	* // returns 3
 	*/
 	dlastIndexOfFalsy: typeof dlastIndexOfFalsy;
