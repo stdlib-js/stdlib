@@ -163,3 +163,4 @@ This document may be reused under a [Creative Commons Attribution-ShareAlike 4.0
 </section>
 
 <!-- /.links -->
+# bounty-fix-ref: https://github.com/stdlib-js/stdlib/issues/14500
