@@ -19,6 +19,7 @@
 /* eslint-disable space-in-parens */
 
 import zeros = require( '@stdlib/ndarray/zeros' );
+import scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 import cindexOfTruthy = require( './index' );
 
 
@@ -29,8 +30,11 @@ import cindexOfTruthy = require( './index' );
 	const x = zeros( [ 10 ], {
 		'dtype': 'complex64'
 	});
+	const fromIndex = scalar2ndarray( 0, {
+		'dtype': 'generic'
+	});
 
-	cindexOfTruthy( [ x ] ); // $ExpectType number
+	cindexOfTruthy( [ x, fromIndex ] ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array of ndarrays...
@@ -51,7 +55,10 @@ import cindexOfTruthy = require( './index' );
 	const x = zeros( [ 10 ], {
 		'dtype': 'complex64'
 	});
+	const fromIndex = scalar2ndarray( 0, {
+		'dtype': 'generic'
+	});
 
 	cindexOfTruthy(); // $ExpectError
-	cindexOfTruthy( [ x ], {} ); // $ExpectError
+	cindexOfTruthy( [ x, fromIndex ], {} ); // $ExpectError
 }
