@@ -21,6 +21,7 @@
 # Note: keep in alphabetical order...
 include $(TOOLS_MAKE_LIB_DIR)/lint/c/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/conf/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/lint/dir/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/editorconfig.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/filenames.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/git/Makefile
