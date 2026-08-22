@@ -276,6 +276,28 @@ rules[ 'stdlib/empty-line-before-comment' ] = 'error';
 rules[ 'stdlib/eol-open-bracket-spacing' ] = 'error';
 
 /**
+* Require that format calls are provided an expected number of arguments.
+*
+* @name format-args
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var format = require( '@stdlib/string/format' );
+*
+* var str = format( '%s %s', 'foo' );
+*
+* @example
+* // Good...
+* var format = require( '@stdlib/string/format' );
+*
+* var str = format( '%s %s', 'foo', 'bar' );
+*/
+rules[ 'stdlib/format-args' ] = 'error';
+
+/**
 * Require blockquotes to have `2` character indentation.
 *
 * @name jsdoc-blockquote-indentation
