@@ -25,18 +25,30 @@ import { typedndarray } from '@stdlib/types/ndarray';
 /**
 * Returns the index of the first truthy element in a one-dimensional ndarray.
 *
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*     -   a zero-dimensional ndarray containing the index from which to begin searching.
+*
 * @param arrays - array-like object containing ndarrays
 * @returns index
 *
 * @example
 * var vector = require( '@stdlib/ndarray/vector/ctor' );
+* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 *
 * var x = vector( [ 0.0, 0.0, 3.0, 0.0, 4.0 ], 'generic' );
 *
-* var idx = gindexOfTruthy( [ x ] );
+* var fromIndex = scalar2ndarray( 0, {
+*     'dtype': 'generic'
+* });
+*
+* var idx = gindexOfTruthy( [ x, fromIndex ] );
 * // returns 2
 */
-declare function gindexOfTruthy( arrays: [ typedndarray<unknown> ] ): number;
+declare function gindexOfTruthy( arrays: [ typedndarray<unknown>, typedndarray<number> ] ): number;
 
 
 // EXPORTS //
