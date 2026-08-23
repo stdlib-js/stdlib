@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { float32ndarray } from '@stdlib/types/ndarray';
+import { float32ndarray, typedndarray } from '@stdlib/types/ndarray';
 
 /**
 * Returns the index of the first element in a one-dimensional single-precision floating-point ndarray which is less than a corresponding element in another one-dimensional single-precision floating-point ndarray.
@@ -31,6 +31,7 @@ import { float32ndarray } from '@stdlib/types/ndarray';
 *
 *     -   first one-dimensional input ndarray.
 *     -   second one-dimensional input ndarray.
+*     -   a zero-dimensional ndarray containing the index from which to begin searching.
 *
 * -   When comparing elements, the function checks whether an element in the first one-dimensional input ndarray is less than a corresponding element in the second one-dimensional input ndarray using the less-than operator `<`. As a consequence, comparisons involving `NaN` always evaluate to `false`.
 *
@@ -39,14 +40,19 @@ import { float32ndarray } from '@stdlib/types/ndarray';
 *
 * @example
 * var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
+* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 *
 * var x = new Float32Vector( [ 0.0, 0.0, 0.0, 0.0 ] );
 * var y = new Float32Vector( [ 0.0, 0.0, 1.0, 0.0 ] );
 *
-* var idx = sfirstIndexLessThan( [ x, y ] );
+* var fromIndex = scalar2ndarray( 0, {
+*     'dtype': 'generic'
+* });
+*
+* var idx = sfirstIndexLessThan( [ x, y, fromIndex ] );
 * // returns 2
 */
-declare function sfirstIndexLessThan( arrays: [ float32ndarray, float32ndarray ] ): number;
+declare function sfirstIndexLessThan( arrays: [ float32ndarray, float32ndarray, typedndarray<number> ] ): number;
 
 
 // EXPORTS //
