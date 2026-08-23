@@ -1,0 +1,56 @@
+
+{{alias}}( N, M, initial, si, oi, out, so, oo )
+    Factorizes a sequence length into a product of integers and stores the
+    results in a double-precision floating-point array.
+
+    Factorization results are stored in the output array sequentially, where
+    the first element contains the sequence length N, the second element
+    contains the number of factors into which N was decomposed, and subsequent
+    elements contain the individual integer factors.
+
+    Any remaining array space remains as unused storage.
+
+    Parameters
+    ----------
+    N: integer
+        Length of the sequence.
+
+    M: integer
+        Number of trial divisors.
+
+    initial: Float64Array
+        Array of initial trial divisors.
+
+    si: integer
+        Stride length for `initial`.
+
+    oi: integer
+        Starting index for `initial`.
+
+    out: Float64Array
+        Output array for storing factorization results.
+
+    so: integer
+        Stride length for `out`.
+
+    oo: integer
+        Starting index for `out`.
+
+    Returns
+    -------
+    numFactors: integer
+        Number of factors into which N was decomposed.
+
+    Examples
+    --------
+    > var N = 630;
+    > var initial = new {{alias:@stdlib/array/float64}}( [ 3.0, 4.0, 2.0, 5.0 ] );
+    > var factors = new {{alias:@stdlib/array/float64}}( 7 );
+    > var numFactors = {{alias}}( N, 4, initial, 1, 0, factors, 1, 0 )
+    5
+    > factors
+    <Float64Array>[ 630.0, 5.0, 2.0, 3.0, 3.0, 5.0, 7.0 ]
+
+    See Also
+    --------
+
