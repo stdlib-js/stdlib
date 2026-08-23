@@ -21,48 +21,7 @@
 // MODULES //
 
 var resolve = require( 'path' ).resolve;
-
-
-// VARIABLES //
-
-var restrictedSyntaxConfig = [ 'error',
-	'ArrowFunctionExpression',
-	'ClassBody',
-	'ClassDeclaration',
-	'ClassExpression',
-	'DebuggerStatement',
-	'ExperimentalRestProperty',
-	'ExperimentalSpreadProperty',
-
-	// 'FunctionExpression',
-	'LabeledStatement',
-	'RestElement',
-	'SpreadElement',
-	'TaggedTemplateExpression',
-	'TemplateElement',
-	'TemplateLiteral',
-	'WithStatement',
-	'YieldExpression',
-	'JSXIdentifier',
-	'JSXNamespacedName',
-	'JSXMemberExpression',
-	'JSXEmptyExpression',
-	'JSXExpressionContainer',
-	'JSXElement',
-	'JSXClosingElement',
-	'JSXOpeningElement',
-	'JSXAttribute',
-	'JSXSpreadAttribute',
-	'JSXText',
-	'ExportDefaultDeclaration',
-	'ExportNamedDeclaration',
-	'ExportAllDeclaration',
-	'ExportSpecifier',
-	'ImportDeclaration',
-	'ImportSpecifier',
-	'ImportDefaultSpecifier',
-	'ImportNamespaceSpecifier'
-];
+var restrictedSyntaxConfig = require( './restricted_syntax.js' );
 
 
 // MAIN //
