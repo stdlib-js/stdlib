@@ -1,0 +1,41 @@
+
+{{alias}}( arrays )
+    Performs an in-place copy of elements within a one-dimensional ndarray.
+
+    The input ndarray is copied *in-place* (i.e., the input ndarray is
+    *mutated*).
+
+    If the `start` and `target` index ranges do not overlap, the `workspace`
+    ndarray is unused and thus ignored.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a zero-dimensional ndarray specifying a target index.
+        - a zero-dimensional ndarray specifying a source start index
+        (inclusive).
+        - a zero-dimensional ndarray specifying a source end index
+        (exclusive).
+        - a one-dimensional workspace ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Input ndarray.
+
+    Examples
+    --------
+    > var opts = { 'dtype': 'generic' };
+    > var x = {{alias:@stdlib/ndarray/vector/ctor}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ], opts.dtype );
+    > var t = {{alias:@stdlib/ndarray/from-scalar}}( 3, opts );
+    > var s = {{alias:@stdlib/ndarray/from-scalar}}( 1, opts );
+    > var e = {{alias:@stdlib/ndarray/from-scalar}}( 4, opts );
+    > var w = {{alias:@stdlib/ndarray/zeros}}( [ 6 ], opts );
+    > {{alias}}( [ x, t, s, e, w ] )
+    <ndarray>[ 1.0, 2.0, 3.0, 2.0, 3.0, 4.0 ]
+
+    See Also
+    --------
