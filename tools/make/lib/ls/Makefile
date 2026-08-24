@@ -239,6 +239,13 @@ SVG_EQUATIONS_PATTERN ?= equation*.$(SVG_FILENAME_EXT)
 SVG_EQUATIONS_FILTER ?= .*/.*
 
 
+# Define a filename pattern for SVG figure files:
+SVG_FIGURES_PATTERN ?= fig*.$(SVG_FILENAME_EXT)
+
+# Define a filepath pattern for SVG figure files:
+SVG_FIGURES_FILTER ?= .*/.*
+
+
 # Define a filename pattern for TypeScript files:
 TYPESCRIPT_PATTERN ?= *.$(TYPESCRIPT_FILENAME_EXT)
 
@@ -441,6 +448,7 @@ include $(TOOLS_MAKE_LIB_DIR)/ls/python/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/ls/r/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/ls/shell/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/ls/svg_equations.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/svg_figures.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests_directories.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests_fixtures.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tools_tests_directories.mk
