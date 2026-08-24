@@ -1,0 +1,183 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2026 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+// TypeScript Version: 4.1
+
+/**
+* Interface describing SGD trainer parameters.
+*/
+interface Params {
+	/**
+	* Parameters specific to the regularization function being used.
+	*
+	* ## Notes
+	*
+	* -   Must be an array having length `2`, with any unused elements set to zero. The expected array contents depend on the penalty:
+	*
+	*     -   **l1**: `[ lambda, 0.0 ]`
+	*     -   **l2**: `[ lambda, 0.0 ]`
+	*     -   **elasticnet**: `[ lambda, l1Ratio ]`
+	*     -   **none**: `[ 0.0, 0.0 ]` (unused)
+	*
+	*     where:
+	*
+	*     -   **lambda**: regularization parameter which determines the amount of shrinkage inflicted on the model coefficients.
+	*     -   **l1Ratio**: mixing parameter on the interval `[0,1]` which determines the relative contribution of the L1 and L2 penalties.
+	*/
+	penaltyParams: Float64Array | Float32Array;
+
+	/**
+	* Parameters specific to the learning rate scheduler being used.
+	*
+	* ## Notes
+	*
+	* -   Must be an array having length `2`, with any unused elements set to zero. The expected array contents depend on the learning rate scheduler:
+	*
+	*     -   **basic**: `[ 0.0, 0.0 ]` (unused)
+	*     -   **constant**: `[ eta0, 0.0 ]`
+	*     -   **invscaling**: `[ eta0, powerT ]`
+	*     -   **pegasos**: `[ lambda, 0.0 ]`
+	*
+	*     where:
+	*
+	*     -   **eta0**: initial learning rate.
+	*     -   **powerT**: exponent controlling how quickly the learning rate decreases.
+	*     -   **lambda**: regularization parameter.
+	*/
+	learningRateParams: Float64Array | Float32Array;
+
+	/**
+	* Parameters specific to the loss function being used.
+	*
+	* ## Notes
+	*
+	* -   Must be an array having length `1`. The expected array contents depend on the loss function:
+	*
+	*     -   **epsilon-insensitive**: `[ epsilon ]`
+	*     -   **squared-epsilon-insensitive**: `[ epsilon ]`
+	*     -   **huber**: `[ threshold ]`
+	*     -   all other loss functions: `[ 0.0 ]` (unused)
+	*
+	*     where:
+	*
+	*     -   **epsilon**: insensitivity parameter (i.e., errors whose absolute value is less than `epsilon` incur no penalty).
+	*     -   **threshold**: error magnitude at which the loss transitions from squared-error loss to linear loss.
+	*/
+	lossFunctionParams: Float64Array | Float32Array;
+
+	/**
+	* Initial intercept value.
+	*
+	* ## Notes
+	*
+	* -   Only applicable when `fitIntercept` is `true`.
+	*/
+	intercept: number;
+
+	/**
+	* Maximum number of iterations to run.
+	*/
+	maxIter: number;
+
+	/**
+	* Regularization function.
+	*/
+	penalty: string;
+
+	/**
+	* Learning rate scheduler.
+	*/
+	learningRate: string;
+
+	/**
+	* Loss function.
+	*/
+	lossFunction: string;
+
+	/**
+	* Boolean indicating whether to include intercept.
+	*
+	* ## Notes
+	*
+	* -   If `true`, an element equal to one is implicitly added to each provided feature vector. If `false`, the model assumes that feature vectors are already centered.
+	*/
+	fitIntercept: boolean;
+}
+
+/**
+* Interface describing function options.
+*/
+interface Options {
+	/**
+	* Number of digits to display after decimal points. Default: 4.
+	*/
+	digits?: number;
+}
+
+/**
+* Serializes an SGD trainer parameters object as a formatted string.
+*
+* ## Notes
+*
+* -   Example output:
+*
+*     ```text
+*
+*     Stochastic Gradient Descent
+*
+*         penalty: l2
+*         learning rate: constant
+*         loss function: hinge
+*         lambda: 2.5000
+*         eta0: 0.0100
+*         fit intercept: true
+*         intercept: 0.0000
+*         max iterations: 1000
+*
+*     ```
+*
+* @param params - SGD trainer parameters object
+* @param options - options object
+* @param options.digits - number of digits to display after decimal points
+* @returns serialized parameters
+*
+* @example
+* var Float64Array = require( '@stdlib/array/float64' );
+*
+* var params = {
+*     'penaltyParams': new Float64Array( [ 2.5, 0.0 ] ),
+*     'learningRateParams': new Float64Array( [ 0.01, 0.0 ] ),
+*     'lossFunctionParams': new Float64Array( [ 0.0 ] ),
+*     'intercept': 0.0,
+*     'maxIter': 1000,
+*     'penalty': 'l2',
+*     'learningRate': 'constant',
+*     'lossFunction': 'hinge',
+*     'fitIntercept': true,
+*     'method': 'Stochastic Gradient Descent'
+* };
+*
+* var str = params2str( params );
+* // returns <string>
+*/
+declare function params2str( params: Params, options?: Options ): string;
+
+
+// EXPORTS //
+
+export = params2str;
