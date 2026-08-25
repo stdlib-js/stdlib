@@ -156,4 +156,4 @@ jobs:
             directories="$DIRECTORIES_CHANGED"
           fi
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/run_affected_benchmarks/run" "$directories"
-        timeout-minutes: 60
+        timeout-minutes: 90
