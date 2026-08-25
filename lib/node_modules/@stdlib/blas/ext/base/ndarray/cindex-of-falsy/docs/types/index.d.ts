@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { complex64ndarray } from '@stdlib/types/ndarray';
+import { complex64ndarray, typedndarray } from '@stdlib/types/ndarray';
 
 /**
 * Returns the index of the first falsy element in a one-dimensional single-precision complex floating-point ndarray.
@@ -30,19 +30,25 @@ import { complex64ndarray } from '@stdlib/types/ndarray';
 * -   The function expects the following ndarrays:
 *
 *     -   a one-dimensional input ndarray.
+*     -   a zero-dimensional ndarray containing the index from which to begin searching.
 *
 * @param arrays - array-like object containing ndarrays
 * @returns index
 *
 * @example
 * var Complex64Vector = require( '@stdlib/ndarray/vector/complex64' );
+* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 *
 * var x = new Complex64Vector( [ 1.0, 2.0, 0.0, 0.0, 3.0, 0.0, 2.0, 0.0 ] );
 *
-* var v = cindexOfFalsy( [ x ] );
+* var fromIndex = scalar2ndarray( 0, {
+*     'dtype': 'generic'
+* });
+*
+* var v = cindexOfFalsy( [ x, fromIndex ] );
 * // returns 1
 */
-declare function cindexOfFalsy( arrays: [ complex64ndarray ] ): number;
+declare function cindexOfFalsy( arrays: [ complex64ndarray, typedndarray<number> ] ): number;
 
 
 // EXPORTS //
