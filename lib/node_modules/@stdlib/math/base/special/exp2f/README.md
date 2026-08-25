@@ -33,7 +33,7 @@ y = 2^x
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="y = 2^x" data-equation="eq:base2_exponential_function">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@fd38562ead49148cba5e41f298c4f24ac9948da5/lib/node_modules/@stdlib/math/base/special/exp2f/docs/img/equation_base2_exponential_function.svg" alt="Base 2 exponential function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@59ded26cf977eb741b49ca66f32901fc903bac2d/lib/node_modules/@stdlib/math/base/special/exp2f/docs/img/equation_base2_exponential_function.svg" alt="Base 2 exponential function">
     <br>
 </div> -->
 
