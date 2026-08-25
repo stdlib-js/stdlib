@@ -61,11 +61,8 @@ config = [
 			'dist/',
 			'.git*',
 
-			// Un-ignore stdlib source:
-			'!**/node_modules/',
-
-			// Ignore third-party dependencies:
-			'node_modules/'
+			// Un-ignore stdlib source (nested `node_modules` directories remain ignored by ESLint's defaults):
+			'!lib/node_modules/'
 		]
 	},
 
