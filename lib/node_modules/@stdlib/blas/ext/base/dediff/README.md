@@ -163,19 +163,16 @@ var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var Float64Array = require( '@stdlib/array/float64' );
 var dediff = require( '@stdlib/blas/ext/base/dediff' );
 
-var x = discreteUniform( 10, -100, 100, {
+var opts = {
     'dtype': 'float64'
-});
+};
+var x = discreteUniform( 10, -100, 100, opts );
 console.log( 'Input array:', x );
 
-var p = discreteUniform( 2, -100, 100, {
-    'dtype': 'float64'
-});
+var p = discreteUniform( 2, -100, 100, opts );
 console.log( 'Prepend array:', p );
 
-var a = discreteUniform( 2, -100, 100, {
-    'dtype': 'float64'
-});
+var a = discreteUniform( 2, -100, 100, opts );
 console.log( 'Append array:', a );
 
 var out = new Float64Array( 13 );
