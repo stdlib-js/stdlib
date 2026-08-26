@@ -20,7 +20,15 @@
 
 // MODULES //
 
+var assign = require( './../../lib/node_modules/@stdlib/object/assign' );
 var defaults = require( './../../eslint.flat.config.js' );
+
+
+// VARIABLES //
+
+var config;
+var entry;
+var i;
 
 
 // MAIN //
@@ -28,13 +36,29 @@ var defaults = require( './../../eslint.flat.config.js' );
 /**
 * ESLint flat configuration for linting Markdown code blocks.
 */
-var config = [];
+config = [
+	// Allow linting code blocks belonging to files residing under `node_modules` directories (e.g., package files residing under `lib/node_modules`), which ESLint unconditionally ignores by default:
+	{
+		'ignores': [ '!**/node_modules/' ]
+	}
+];
 
-// Include the default configuration:
-config = config.concat( defaults );
+// Include the default configuration, ensuring that Markdown files are matched, as code blocks are linted using the path of the containing Markdown file:
+for ( i = 0; i < defaults.length; i++ ) {
+	entry = defaults[ i ];
+	if ( entry.files && entry.files.indexOf( '**/*.js' ) !== -1 ) {
+		entry = assign( {}, entry );
+		entry.files = entry.files.concat( [ '**/*.md' ] );
+	}
+	config.push( entry );
+}
 
 // Append configuration specific to Markdown code blocks:
 config.push({
+	'linterOptions': {
+		// Do not flag unused disable directives, as the remark plugin unconditionally injects a `stdlib/require-order` disable directive when prepending the main `require` statement to subsequent code blocks:
+		'reportUnusedDisableDirectives': 'off'
+	},
 	'rules': {
 		// Allow variables to be declared as needed:
 		'vars-on-top': 'off',

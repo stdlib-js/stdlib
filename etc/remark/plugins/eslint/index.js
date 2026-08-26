@@ -33,8 +33,7 @@ var opts = {
 	'config': config,
 	'rules': {
 		'stdlib/doctest': 'error' // enable otherwise disabled lint rule
-	},
-	'ignore': false
+	}
 };
 
 
