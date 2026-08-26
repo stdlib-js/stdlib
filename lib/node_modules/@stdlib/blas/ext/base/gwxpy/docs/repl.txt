@@ -1,0 +1,141 @@
+
+{{alias}}( N, x, strideX, y, strideY, w, strideW )
+    Adds elements of a strided array `x` to the corresponding elements of a
+    strided array `y` and assigns the results to elements in a strided array
+    `w`.
+
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N <= 0`, the function returns `w` unchanged.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: Array<number>|TypedArray
+        First input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    y: Array<number>|TypedArray
+        Second input array.
+
+    strideY: integer
+        Stride length for `y`.
+
+    w: Array<number>|TypedArray
+        Output array.
+
+    strideW: integer
+        Stride length for `w`.
+
+    Returns
+    -------
+    w: Array<number>|TypedArray
+        Output array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = [ 1.0, 2.0, 3.0, 4.0, 5.0 ];
+    > var y = [ 2.0, 3.0, 4.0, 5.0, 6.0 ];
+    > var w = [ 0.0, 0.0, 0.0, 0.0, 0.0 ];
+    > {{alias}}( x.length, x, 1, y, 1, w, 1 )
+    [ 3.0, 5.0, 7.0, 9.0, 11.0 ]
+
+    // Using `N` and stride parameters:
+    > x = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
+    > y = [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ];
+    > w = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+    > {{alias}}( 3, x, 2, y, 2, w, 2 )
+    [ 8.0, 0.0, 12.0, 0.0, 16.0, 0.0 ]
+
+    // Using view offsets:
+    > var bufX = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
+    > var bufY = [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ];
+    > var bufW = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+    > var x0 = new {{alias:@stdlib/array/float64}}( bufX );
+    > var y0 = new {{alias:@stdlib/array/float64}}( bufY );
+    > var w0 = new {{alias:@stdlib/array/float64}}( bufW );
+    > var offsetX = x0.BYTES_PER_ELEMENT * 1;
+    > var offsetY = y0.BYTES_PER_ELEMENT * 2;
+    > var offsetW = w0.BYTES_PER_ELEMENT * 3;
+    > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, offsetX );
+    > var y1 = new {{alias:@stdlib/array/float64}}( y0.buffer, offsetY );
+    > var w1 = new {{alias:@stdlib/array/float64}}( w0.buffer, offsetW );
+    > {{alias}}( 3, x1, 1, y1, 1, w1, 1 )
+    <Float64Array>[ 11.0, 13.0, 15.0 ]
+    > w0
+    <Float64Array>[ 0.0, 0.0, 0.0, 11.0, 13.0, 15.0 ]
+
+
+{{alias}}.ndarray( N, x,strideX,offsetX, y,strideY,offsetY, w,strideW,offsetW )
+    Adds elements of a strided array `x` to the corresponding elements of a
+    strided array `y` and assigns the results to elements in a strided array `w`
+    using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: Array<number>|TypedArray
+        First input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    offsetX: integer
+        Starting index for `x`.
+
+    y: Array<number>|TypedArray
+        Second input array.
+
+    strideY: integer
+        Stride length for `y`.
+
+    offsetY: integer
+        Starting index for `y`.
+
+    w: Array<number>|TypedArray
+        Output array.
+
+    strideW: integer
+        Stride length for `w`.
+
+    offsetW: integer
+        Starting index for `w`.
+
+    Returns
+    -------
+    w: Array<number>|TypedArray
+        Output array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = [ 1.0, 2.0, 3.0, 4.0, 5.0 ];
+    > var y = [ 2.0, 3.0, 4.0, 5.0, 6.0 ];
+    > var w = [ 0.0, 0.0, 0.0, 0.0, 0.0 ];
+    > {{alias}}.ndarray( x.length, x, 1, 0, y, 1, 0, w, 1, 0 )
+    [ 3.0, 5.0, 7.0, 9.0, 11.0 ]
+
+    // Using index offsets:
+    > x = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
+    > y = [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ];
+    > w = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+    > {{alias}}.ndarray( 3, x, 1, 3, y, 1, 3, w, 1, 3 )
+    [ 0.0, 0.0, 0.0, 14.0, 16.0, 18.0 ]
+
+    See Also
+    --------

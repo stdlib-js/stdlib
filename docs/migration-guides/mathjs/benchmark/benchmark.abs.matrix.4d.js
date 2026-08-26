@@ -29,6 +29,7 @@ var unary4d = require( '@stdlib/array/base/unary4d' );
 var unarynd = require( '@stdlib/array/base/unarynd' );
 var zeros4d = require( '@stdlib/array/base/zeros4d' );
 var zerosnd = require( '@stdlib/array/base/zerosnd' );
+var format = require( '@stdlib/string/format' );
 var array = require( '@stdlib/ndarray/array' );
 var uniform = require( '@stdlib/random/base/uniform' ).factory;
 var base = require( '@stdlib/math/base/special/abs' );
@@ -47,7 +48,7 @@ var opts = {
 
 // MAIN //
 
-bench( pkg+'::stdlib:math/special/abs:value=ndarray,dtype=generic,size=100,shape=(2,5,2,5)', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:math/special/abs:value=ndarray,dtype=generic,size=100,shape=(2,5,2,5)', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var i;
@@ -71,7 +72,7 @@ bench( pkg+'::stdlib:math/special/abs:value=ndarray,dtype=generic,size=100,shape
 	b.end();
 });
 
-bench( pkg+'::stdlib:array/base/unary4d:value=nested_array,dtype=generic,size=100,shape=(2,5,2,5)', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:array/base/unary4d:value=nested_array,dtype=generic,size=100,shape=(2,5,2,5)', pkg ), opts, function benchmark( b ) {
 	var sh;
 	var x;
 	var y;
@@ -96,7 +97,7 @@ bench( pkg+'::stdlib:array/base/unary4d:value=nested_array,dtype=generic,size=10
 	b.end();
 });
 
-bench( pkg+'::stdlib:array/base/unarynd:value=nested_array,dtype=generic,size=100,shape=(2,5,2,5)', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:array/base/unarynd:value=nested_array,dtype=generic,size=100,shape=(2,5,2,5)', pkg ), opts, function benchmark( b ) {
 	var sh;
 	var x;
 	var y;
@@ -121,7 +122,7 @@ bench( pkg+'::stdlib:array/base/unarynd:value=nested_array,dtype=generic,size=10
 	b.end();
 });
 
-bench( pkg+'::mathjs:abs:value=matrix,dtype=generic,size=100,shape=(2,5,2,5)', opts, function benchmark( b ) {
+bench( format( '%s::mathjs:abs:value=matrix,dtype=generic,size=100,shape=(2,5,2,5)', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var i;

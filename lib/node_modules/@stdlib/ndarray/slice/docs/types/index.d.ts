@@ -403,7 +403,6 @@ declare function slice( x: int32ndarray, s: ArrayLike<SliceArgument>, options?: 
 * Returns a read-only view of an input ndarray.
 *
 * @param x - input array
-* @param s - slice argument
 * @param slices - slice arguments
 * @param options - function options
 * @param options.strict - boolean indicating whether to enforce strict bounds checking
@@ -538,7 +537,6 @@ declare function slice( x: int16ndarray, s: ArrayLike<SliceArgument>, options?: 
 * Returns a read-only view of an input ndarray.
 *
 * @param x - input array
-* @param s - slice argument
 * @param slices - slice arguments
 * @param options - function options
 * @param options.strict - boolean indicating whether to enforce strict bounds checking
@@ -673,7 +671,6 @@ declare function slice( x: int8ndarray, s: ArrayLike<SliceArgument>, options?: O
 * Returns a read-only view of an input ndarray.
 *
 * @param x - input array
-* @param s - slice argument
 * @param slices - slice arguments
 * @param options - function options
 * @param options.strict - boolean indicating whether to enforce strict bounds checking
@@ -808,7 +805,6 @@ declare function slice( x: uint32ndarray, s: ArrayLike<SliceArgument>, options?:
 * Returns a read-only view of an input ndarray.
 *
 * @param x - input array
-* @param s - slice argument
 * @param slices - slice arguments
 * @param options - function options
 * @param options.strict - boolean indicating whether to enforce strict bounds checking
@@ -943,7 +939,6 @@ declare function slice( x: uint16ndarray, s: ArrayLike<SliceArgument>, options?:
 * Returns a read-only view of an input ndarray.
 *
 * @param x - input array
-* @param s - slice argument
 * @param slices - slice arguments
 * @param options - function options
 * @param options.strict - boolean indicating whether to enforce strict bounds checking
@@ -1078,7 +1073,6 @@ declare function slice( x: uint8ndarray, s: ArrayLike<SliceArgument>, options?: 
 * Returns a read-only view of an input ndarray.
 *
 * @param x - input array
-* @param s - slice argument
 * @param slices - slice arguments
 * @param options - function options
 * @param options.strict - boolean indicating whether to enforce strict bounds checking
@@ -1213,7 +1207,6 @@ declare function slice( x: uint8cndarray, s: ArrayLike<SliceArgument>, options?:
 * Returns a read-only view of an input ndarray.
 *
 * @param x - input array
-* @param s - slice argument
 * @param slices - slice arguments
 * @param options - function options
 * @param options.strict - boolean indicating whether to enforce strict bounds checking
@@ -1386,7 +1379,7 @@ declare function slice( x: complex128ndarray, ...slices: Array<SliceArgument | O
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
-* var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ], 'complex128' );
+* var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ], 'complex64' );
 * var shape = [ 3, 2 ];
 * var strides = [ 2, 1 ];
 * var offset = 0;

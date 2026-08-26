@@ -547,6 +547,69 @@ The function accepts the following arguments:
 void stdlib_math_base_napi_f_i( napi_env env, napi_callback_info info, int32_t (*fcn)( float ) );
 ```
 
+#### STDLIB_MATH_BASE_NAPI_MODULE_H_H( fcn )
+
+Macro for registering a Node-API module exporting an interface for invoking a unary function accepting and returning half-precision floating-point numbers.
+
+```c
+#include "stdlib/number/float16/ctor.h"
+
+static stdlib_float16_t identity( const stdlib_float16_t x ) {
+    return x;
+}
+
+// ...
+
+// Register a Node-API module:
+STDLIB_MATH_BASE_NAPI_MODULE_H_H( identity );
+```
+
+The macro expects the following arguments:
+
+-   **fcn**: `stdlib_float16_t (*fcn)( stdlib_float16_t )` unary function.
+
+When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
+
+#### stdlib_math_base_napi_h_h( env, info, fcn )
+
+Invokes a unary function accepting and returning half-precision floating-point numbers.
+
+```c
+#include "stdlib/number/float16/ctor.h"
+#include <node_api.h>
+
+// ...
+
+static stdlib_float16_t identity( const stdlib_float16_t x ) {
+    return x;
+}
+
+// ...
+
+/**
+* Receives JavaScript callback invocation data.
+*
+* @param env    environment under which the function is invoked
+* @param info   callback data
+* @return       Node-API value
+*/
+napi_value addon( napi_env env, napi_callback_info info ) {
+    return stdlib_math_base_napi_h_h( env, info, identity );
+}
+
+// ...
+```
+
+The function accepts the following arguments:
+
+-   **env**: `[in] napi_env` environment under which the function is invoked.
+-   **info**: `[in] napi_callback_info` callback data.
+-   **fcn**: `[in] stdlib_float16_t (*fcn)( stdlib_float16_t )` unary function.
+
+```c
+void stdlib_math_base_napi_h_h( napi_env env, napi_callback_info info, stdlib_float16_t (*fcn)( stdlib_float16_t ) );
+```
+
 #### STDLIB_MATH_BASE_NAPI_MODULE_I_D( fcn )
 
 Macro for registering a Node-API module exporting an interface for invoking a unary function accepting a signed 32-bit integer and returning a double-precision floating-point number.
