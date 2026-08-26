@@ -25,6 +25,7 @@
 #include "stdlib/math/base/special/abs.h"
 #include "stdlib/constants/float64/ninf.h"
 #include "stdlib/constants/float64/ln_two.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Computes the natural logarithm of \\( 1-\exp(-|x|) \\).
@@ -39,7 +40,7 @@
 double stdlib_base_log1mexp( const double x ) {
 	double ax;
 	if ( stdlib_base_is_nan( x ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( x == 0.0 ) {
 		return STDLIB_CONSTANT_FLOAT64_NINF;

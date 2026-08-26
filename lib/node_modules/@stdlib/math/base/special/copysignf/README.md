@@ -124,7 +124,7 @@ Returns a [single-precision floating-point number][ieee754] with the magnitude o
 float v = stdlib_base_copysignf( -3.0f, 10.0f );
 // returns 3.0f
 
-float v = stdlib_base_copysignf( 3.0f, -1.0f );
+v = stdlib_base_copysignf( 3.0f, -1.0f );
 // returns -3.0f
 ```
 

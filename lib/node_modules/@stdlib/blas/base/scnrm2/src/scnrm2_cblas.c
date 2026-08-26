@@ -23,7 +23,7 @@
 #include "stdlib/strided/base/min_view_buffer_index.h"
 
 /**
-* Computes the L2-norm of a complex single-precision floating-point vector.
+* Computes the L2-norm of a single-precision complex floating-point vector.
 *
 * @param N         number of indexed elements
 * @param X         input array
@@ -34,7 +34,7 @@ float API_SUFFIX(c_scnrm2)( const CBLAS_INT N, const void *X, const CBLAS_INT st
 }
 
 /**
-* Computes the L2-norm of a complex single-precision floating-point vector using alternative indexing semantics.
+* Computes the L2-norm of a single-precision complex floating-point vector using alternative indexing semantics.
 *
 * @param N         number of indexed elements
 * @param X         input array

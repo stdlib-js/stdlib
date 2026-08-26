@@ -31,7 +31,7 @@
 *
 * @example
 * double y = stdlib_base_dists_t_entropy( 9.0 );
-* // returns ~1.553
+* // returns ~1.533
 */
 double stdlib_base_dists_t_entropy( const double v ) {
 	double out;
