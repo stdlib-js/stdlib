@@ -35,7 +35,7 @@ type Iterator = Iter | IterableIterator;
 * @param iterator - input iterator
 * @param stride - stride
 * @param offset - offset
-* @param eager - boolean indicating whether to eagerly advance an input iterator when provided a non-zero `offset`
+* @param eager - boolean indicating whether to eagerly advance an input iterator when provided a non-zero `offset` (default: false)
 * @returns iterator
 *
 * @example

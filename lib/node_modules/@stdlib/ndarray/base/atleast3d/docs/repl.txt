@@ -1,0 +1,26 @@
+
+{{alias}}( arrays )
+    Converts a list of values (scalars and/or ndarrays) to ndarrays having at
+    least three dimensions.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject
+        List of scalars and/or ndarrays.
+
+    Returns
+    -------
+    out: Array<ndarray>
+        List of ndarrays.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ [ 1, 2 ] ], [ [ 3, 4 ] ] ] )
+    <ndarray>[ [ [ 1, 2 ] ], [ [ 3, 4 ] ] ]
+    > var y = {{alias:@stdlib/ndarray/from-scalar}}( 3.14 )
+    <ndarray>[ 3.14 ]
+    > var out = {{alias}}( [ x, y ] )
+    [ <ndarray>, <ndarray> ]
+
+    See Also
+    --------

@@ -32,7 +32,7 @@ static const double ONE_OVER_PI = 0.3183098861837907;
 * @return          evaluated CDF
 *
 * @example
-* double y = stdlib_base_cauchy_cdf( 4.0, 0.0, 2.0 );
+* double y = stdlib_base_dists_cauchy_cdf( 4.0, 0.0, 2.0 );
 * // returns ~0.852
 */
 double stdlib_base_dists_cauchy_cdf( const double x, const double x0, const double gamma ) {

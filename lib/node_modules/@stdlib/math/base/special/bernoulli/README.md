@@ -24,6 +24,8 @@ limitations under the License.
 
 <section class="intro">
 
+</section>
+
 <!-- /.intro -->
 
 <section class="usage">

@@ -147,7 +147,7 @@ Returns the [median][median] of a [Rayleigh][rayleigh-distribution] distribution
 
 ```c
 double out = stdlib_base_dists_rayleigh_median( 9.0 );
-// returns ~10.595
+// returns ~10.597
 ```
 
 The function accepts the following arguments:
