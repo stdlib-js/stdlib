@@ -28,7 +28,7 @@
 * Macro containing the preamble for a loop which applies a quinary function to strided array elements.
 *
 * @example
-* STDLIB_QUINARY_LOOP_PREMABLE {
+* STDLIB_QUINARY_LOOP_PREAMBLE {
 *     // Loop body...
 * }
 */
@@ -74,7 +74,7 @@
 * Macro containing the preamble for a loop which applies a quinary function to strided array elements and updates two strided output arrays.
 *
 * @example
-* STDLIB_QUINARY_LOOP_TWO_OUT_PREMABLE {
+* STDLIB_QUINARY_LOOP_TWO_OUT_PREAMBLE {
 *     // Loop body...
 * }
 */

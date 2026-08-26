@@ -38,6 +38,7 @@ import fliplr = require( './index' );
 	fliplr( empty( 'uint16', sh, order ), false ); // $ExpectType uint16ndarray
 	fliplr( empty( 'uint8', sh, order ), false ); // $ExpectType uint8ndarray
 	fliplr( empty( 'uint8c', sh, order ), false ); // $ExpectType uint8cndarray
+	fliplr( empty( 'generic', sh, order ), false ); // $ExpectType genericndarray<number>
 
 	fliplr( empty( 'float64', sh, order ), true ); // $ExpectType float64ndarray
 	fliplr( empty( 'float32', sh, order ), true ); // $ExpectType float32ndarray
@@ -50,6 +51,7 @@ import fliplr = require( './index' );
 	fliplr( empty( 'uint16', sh, order ), true ); // $ExpectType uint16ndarray
 	fliplr( empty( 'uint8', sh, order ), true ); // $ExpectType uint8ndarray
 	fliplr( empty( 'uint8c', sh, order ), true ); // $ExpectType uint8cndarray
+	fliplr( empty( 'generic', sh, order ), true ); // $ExpectType genericndarray<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an ndarray...

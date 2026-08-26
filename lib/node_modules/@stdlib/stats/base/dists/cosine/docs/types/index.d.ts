@@ -116,7 +116,7 @@ interface Namespace {
 	logcdf: typeof logcdf;
 
 	/**
-	* Raised cosine distribution logarithm of probability density function (PDF).
+	* Raised cosine distribution natural logarithm of probability density function (PDF).
 	*
 	* @param x - input value
 	* @param mu - location parameter

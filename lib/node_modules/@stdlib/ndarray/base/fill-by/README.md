@@ -41,38 +41,20 @@ var fillBy = require( '@stdlib/ndarray/base/fill-by' );
 Fills an input ndarray according to a callback function.
 
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
+var array = require( '@stdlib/ndarray/array' );
 
-function fcn( value ) {
-    return value * 10.0;
+function fcn() {
+    return 10.0;
 }
 
-// Create a data buffer:
-var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 5.0, 6.0 ] ] ] );
+// returns <ndarray>[ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 5.0, 6.0 ] ] ]
 
-// Define the shape of the input array:
-var shape = [ 3, 1, 2 ];
+var out = fillBy( x, fcn );
+// returns <ndarray>[ [ [ 10.0, 10.0 ] ], [ [ 10.0, 10.0 ] ], [ [ 10.0, 10.0 ] ] ]
 
-// Define the array strides:
-var sx = [ 2, 2, 1 ];
-
-// Define the index offset:
-var ox = 0;
-
-// Create the input ndarray-like object:
-var x = {
-    'dtype': 'float64',
-    'data': xbuf,
-    'shape': shape,
-    'strides': sx,
-    'offset': ox,
-    'order': 'row-major'
-};
-
-fillBy( x, fcn );
-
-console.log( x.data );
-// => <Float64Array>[ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0 ]
+var bool = ( out === x );
+// returns true
 ```
 
 The function accepts the following arguments:
@@ -86,57 +68,25 @@ To set the callback function execution context, provide a `thisArg`.
 <!-- eslint-disable no-invalid-this -->
 
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
+var array = require( '@stdlib/ndarray/array' );
 
 function fcn( value ) {
-    return value * this.factor;
+    return value * 10.0;
 }
 
-// Create a data buffer:
-var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-
-// Define the shape of the input array:
-var shape = [ 3, 1, 2 ];
-
-// Define the array strides:
-var sx = [ 2, 2, 1 ];
-
-// Define the index offset:
-var ox = 0;
-
-// Create the input ndarray-like object:
-var x = {
-    'dtype': 'float64',
-    'data': xbuf,
-    'shape': shape,
-    'strides': sx,
-    'offset': ox,
-    'order': 'row-major'
-};
+var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 5.0, 6.0 ] ] ] );
+// returns <ndarray>[ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 5.0, 6.0 ] ] ]
 
 var ctx = {
     'factor': 10.0
 };
-fillBy( x, fcn, ctx );
 
-console.log( x.data );
-// => <Float64Array>[ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0 ]
+var out = fillBy( x, fcn, ctx );
+// returns <ndarray>[ [ [ 10.0, 20.0 ] ], [ [ 30.0, 40.0 ] ], [ [ 50.0, 60.0 ] ] ]
+
+var bool = ( out === x );
+// returns true
 ```
-
-A provided ndarray should be an object with the following properties:
-
--   **dtype**: data type.
--   **data**: data buffer.
--   **shape**: dimensions.
--   **strides**: stride lengths.
--   **offset**: index offset.
--   **order**: specifies whether an ndarray is row-major (C-style) or column major (Fortran-style).
-
-The callback function is provided the following arguments:
-
--   **value**: current array element.
--   **indices**: current array element indices.
--   **arr**: the input ndarray.
 
 </section>
 
@@ -146,7 +96,23 @@ The callback function is provided the following arguments:
 
 ## Notes
 
+-   A provided ndarray should be an object with the following properties:
+
+    -   **dtype**: data type.
+    -   **data**: data buffer.
+    -   **shape**: dimensions.
+    -   **strides**: stride lengths.
+    -   **offset**: index offset.
+    -   **order**: specifies whether an ndarray is row-major (C-style) or column major (Fortran-style).
+
+-   The callback function is provided the following arguments:
+
+    -   **value**: current array element.
+    -   **indices**: current array element indices.
+    -   **arr**: the input ndarray.
+
 -   The function **mutates** the input ndarray.
+
 -   The function assumes that each element in the underlying input ndarray data buffer has one, and only one, corresponding element in input ndarray view (i.e., a provided ndarray is not a broadcasted ndarray view).
 
 </section>

@@ -39,7 +39,7 @@
 *     -   `S@`, `i@`, `j@`, `o@x#`, and `d@x#` where `@` corresponds to the loop number, with `0` being the innermost loop.
 *
 * @example
-* STDLIB_NDARRAY_ASSIGN_8D_BLOCKED_LOOP_PREMABLE {
+* STDLIB_NDARRAY_ASSIGN_8D_BLOCKED_LOOP_PREAMBLE {
 *     // Innermost loop body...
 * }
 * STDLIB_NDARRAY_ASSIGN_8D_BLOCKED_LOOP_EPILOGUE
@@ -263,7 +263,7 @@
 *     -   `S@`, `i@`, `j@`, `o@x#`, and `d@x#` where `@` corresponds to the loop number, with `0` being the innermost loop.
 *
 * @example
-* STDLIB_NDARRAY_ASSIGN_8D_BLOCKED_LOOP_TWO_OUT_PREMABLE {
+* STDLIB_NDARRAY_ASSIGN_8D_BLOCKED_LOOP_TWO_OUT_PREAMBLE {
 *     // Innermost loop body...
 * }
 * STDLIB_NDARRAY_ASSIGN_8D_BLOCKED_LOOP_EPILOGUE
@@ -524,7 +524,7 @@
 * Macro containing the epilogue for blocked nested loops which operate on elements of an eight-dimensional ndarray.
 *
 * @example
-* STDLIB_NDARRAY_ASSIGN_8D_BLOCKED_LOOP_PREMABLE {
+* STDLIB_NDARRAY_ASSIGN_8D_BLOCKED_LOOP_PREAMBLE {
 *     // Innermost loop body...
 * }
 * STDLIB_NDARRAY_ASSIGN_8D_BLOCKED_LOOP_EPILOGUE

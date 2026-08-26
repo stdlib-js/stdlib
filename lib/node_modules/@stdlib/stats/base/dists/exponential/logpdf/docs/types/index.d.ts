@@ -69,7 +69,7 @@ interface LogPDF {
 	( x: number, lambda: number ): number;
 
 	/**
-	* Returns a function for evaluating the natural logarithm of the probability density function (PDF) for an exponential distribution with parameter `lambda`.
+	* Returns a function for evaluating the natural logarithm of the probability density function (PDF) for an exponential distribution with rate parameter `lambda`.
 	*
 	* @param lambda - rate parameter
 	* @returns logarithm of probability density function (logPDF)

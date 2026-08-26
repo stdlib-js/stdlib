@@ -1,0 +1,153 @@
+
+{{alias}}( value )
+    64-bit unsigned integer constructor.
+
+    Parameters
+    ----------
+    value: integer|bigint
+        Integer value.
+
+    Returns
+    -------
+    v: Uint64
+        64-bit unsigned integer.
+
+    Examples
+    --------
+    > var x = new {{alias}}( 5 )
+    <Uint64>
+    > x.toString()
+    '5'
+
+
+{{alias}}.name
+    Constructor name.
+
+    Examples
+    --------
+    > var str = {{alias}}.name
+    'Uint64'
+
+
+{{alias}}.from( words )
+    Creates a new 64-bit unsigned integer from an array-like object containing a
+    high and low word.
+
+    Parameters
+    ----------
+    words: ArrayLikeObject
+        High and low words as 32-bit unsigned integers.
+
+    Returns
+    -------
+    v: Uint64
+        64-bit unsigned integer.
+
+    Examples
+    --------
+    > var v = {{alias}}.from( [ 1234, 5678 ] )
+    <Uint64>
+
+
+{{alias}}.of( high, low )
+    Creates a new 64-bit unsigned integer from a high and low word.
+
+    Parameters
+    ----------
+    high: integer
+        High word (32-bit unsigned integer).
+
+    low: integer
+        Low word (32-bit unsigned integer).
+
+    Returns
+    -------
+    v: Uint64
+        64-bit unsigned integer.
+
+    Examples
+    --------
+    > var v = {{alias}}.of( 1234, 5678 )
+    <Uint64>
+
+
+{{alias}}.BYTES_PER_ELEMENT
+    Size (in bytes) of the underlying value.
+
+    Returns
+    -------
+    s: integer
+        Size (in bytes) of the underlying value.
+
+    Examples
+    --------
+    > var s = {{alias}}.BYTES_PER_ELEMENT
+    8
+
+
+{{alias}}.prototype.BYTES_PER_ELEMENT
+    Size (in bytes) of the underlying value.
+
+    Returns
+    -------
+    s: integer
+        Size (in bytes) of the underlying value.
+
+    Examples
+    --------
+    > var x = new {{alias}}( 5 )
+    <Uint64>
+    > var s = x.BYTES_PER_ELEMENT
+    8
+
+
+{{alias}}.prototype.byteLength
+    Size (in bytes) of the underlying value.
+
+    Returns
+    -------
+    s: integer
+        Size (in bytes) of the underlying value.
+
+    Examples
+    --------
+    > var x = new {{alias}}( 5 )
+    <Uint64>
+    > var s = x.byteLength
+    8
+
+
+{{alias}}.prototype.hi
+    Returns the high 32-bit word of a 64-bit unsigned integer.
+
+    Returns
+    -------
+    w: integer
+        High word (32-bit unsigned integer).
+
+    Examples
+    --------
+    > var x = {{alias}}.from( [ 1234, 5678 ] )
+    <Uint64>
+    > var w = x.hi
+    1234
+
+
+{{alias}}.prototype.lo
+    Returns the low 32-bit word of a 64-bit unsigned integer.
+
+    Returns
+    -------
+    w: integer
+        Low word (32-bit unsigned integer).
+
+    Examples
+    --------
+    > var x = {{alias}}.from( [ 1234, 5678 ] )
+    <Uint64>
+    > var w = x.lo
+    5678
+
+    See Also
+    --------
+

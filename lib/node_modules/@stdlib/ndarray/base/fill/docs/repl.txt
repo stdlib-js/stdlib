@@ -20,7 +20,6 @@
         same kind (e.g., a scalar double-precision floating-point number can be
         used to fill a 'float32' input ndarray).
 
-
     Returns
     -------
     out: ndarrayLike

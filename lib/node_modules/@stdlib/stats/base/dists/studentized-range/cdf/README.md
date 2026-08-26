@@ -73,7 +73,7 @@ y = cdf( 2.0, 3.0, 1.5 );
 
 #### cdf.factory( r, v\[, nranges=1] )
 
-Returns a `function` for evaluating the [cdf][cdf] of a [studentized range][studentized-range] distribution with sample size `r` and `v` degrees of freedom. Optionally. Optionally, the number of groups whose maximum range is considered can be specified via the `nranges` parameter.
+Returns a `function` for evaluating the [cdf][cdf] of a [studentized range][studentized-range] distribution with sample size `r` and `v` degrees of freedom. Optionally, the number of groups whose maximum range is considered can be specified via the `nranges` parameter.
 
 ```javascript
 var mycdf = cdf.factory( 3.0, 2.0 );
