@@ -22,18 +22,26 @@
 
 // MODULES //
 
+var path = require( 'path' );
 var globals = require( 'globals' );
+var tsParser = require( '@typescript-eslint/parser' );
+var tsPlugin = require( '@typescript-eslint/eslint-plugin' );
+var stylisticTs = require( '@stylistic/eslint-plugin-ts' );
 var pluginN = require( 'eslint-plugin-n' );
 var pluginCspell = require( '@cspell/eslint-plugin' );
 var pluginJsdoc = require( 'eslint-plugin-jsdoc' );
+var pluginImport = require( 'eslint-plugin-import' );
+var pluginExpectType = require( 'eslint-plugin-expect-type' );
 var assign = require( './lib/node_modules/@stdlib/object/assign' );
 var stdlibPlugin = require( './lib/node_modules/@stdlib/_tools/eslint/rules/scripts/plugin.js' );
 var restrictedSyntaxConfig = require( './etc/eslint/overrides/restricted_syntax.js' );
 var rules = require( './etc/eslint/rules' );
+var tsRules = require( './etc/eslint/rules/typescript.js' );
 
 
 // VARIABLES //
 
+var tsGlobalVars;
 var globalVars;
 var config;
 
@@ -42,6 +50,7 @@ var config;
 
 globalVars = assign( {}, globals.browser, globals.node );
 globalVars = assign( globalVars, globals.commonjs, globals.worker );
+tsGlobalVars = assign( {}, globals.browser, globals.node );
 
 config = [
 	// Global ignores:
@@ -50,7 +59,10 @@ config = [
 			'**/build/',
 			'**/reports/',
 			'dist/',
-			'.git*'
+			'.git*',
+
+			// Un-ignore stdlib source (nested `node_modules` directories remain ignored by ESLint's defaults):
+			'!lib/node_modules/'
 		]
 	},
 
@@ -121,6 +133,36 @@ config = [
 				'skipComments': true
 			}],
 			'no-restricted-syntax': restrictedSyntaxConfig
+		}
+	},
+
+	// TypeScript declarations:
+	{
+		'files': [ '**/*.d.ts' ],
+		'languageOptions': {
+			'parser': tsParser,
+			'sourceType': 'module',
+			'parserOptions': {
+				'project': path.join( __dirname, 'tsconfig.json' )
+			},
+			'globals': tsGlobalVars
+		},
+		'plugins': {
+			'@typescript-eslint': tsPlugin,
+			'@stylistic/ts': stylisticTs,
+			'jsdoc': pluginJsdoc,
+			'import': pluginImport,
+			'expect-type': pluginExpectType,
+			'stdlib': stdlibPlugin
+		},
+		'rules': tsRules
+	},
+
+	// TypeScript test files:
+	{
+		'files': [ '**/test/**/*.ts' ],
+		'rules': {
+			'jsdoc/require-jsdoc': 'off'
 		}
 	}
 ];
