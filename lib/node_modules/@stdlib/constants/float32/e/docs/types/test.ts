@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-import E = require( './index' );
+import FLOAT32_E = require( './index' );
 
 
 // TESTS //
@@ -24,5 +24,5 @@ import E = require( './index' );
 // The export is a number...
 {
 	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
-	E; // $ExpectType number
+	FLOAT32_E; // $ExpectType number
 }

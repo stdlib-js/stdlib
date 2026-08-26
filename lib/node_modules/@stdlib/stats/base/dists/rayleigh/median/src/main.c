@@ -29,7 +29,7 @@ static const double SQRT2LN2 = 1.1774100225154747; // sqrt(2*ln(2))
 *
 * @example
 * double y = stdlib_base_dists_rayleigh_median( 9.0 );
-* // returns ~10.595
+* // returns ~10.597
 */
 double stdlib_base_dists_rayleigh_median( const double sigma ) {
 	if ( stdlib_base_is_nan( sigma ) || sigma < 0 ) {

@@ -47,9 +47,7 @@ interface Routine {
 	* var B = new Complex128Array( 4 );
 	*
 	* zlacpy( 'row-major', 'all', 2, 2, A, 2, B, 2 );
-	*
-	* var z = B.get( 0 );
-	* // returns <Complex128>[ 1.0, 2.0 ]
+	* // B => <Complex128Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ]
 	*/
 	( order: Layout, uplo: string, M: number, N: number, A: Complex128Array, LDA: number, B: Complex128Array, LDB: number ): Complex128Array;
 
@@ -76,9 +74,7 @@ interface Routine {
 	* var B = new Complex128Array( 12 );
 	*
 	* zlacpy.ndarray( 'all', 2, 2, A, 2, 1, 1, B, 2, 1, 2 );
-	*
-	* var z = B.get( 2 );
-	* // returns <Complex128>[ 3.0, 4.0 ]
+	* // B => <Complex128Array>[ 0.0, 0.0, 0.0, 0.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
 	*/
 	ndarray( uplo: string, M: number, N: number, A: Complex128Array, strideA1: number, strideA2: number, offsetA: number, B: Complex128Array, strideB1: number, strideB2: number, offsetB: number ): Complex128Array;
 }
@@ -99,13 +95,11 @@ interface Routine {
 * @example
 * var Complex128Array = require( '@stdlib/array/complex128' );
 *
-* var A = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+* var A = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 * var B = new Complex128Array( 4 );
 *
 * zlacpy( 'row-major', 'all', 2, 2, A, 2, B, 2 );
-*
-* var z = B.get( 0 );
-* // returns <Complex128>[ 1.0, 2.0 ]
+* // B => <Complex128Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ]
 *
 * @example
 * var Complex128Array = require( '@stdlib/array/complex128' );
@@ -114,9 +108,7 @@ interface Routine {
 * var B = new Complex128Array( 12 );
 *
 * zlacpy.ndarray( 'all', 2, 2, A, 2, 1, 1, B, 2, 1, 2 );
-*
-* var z = B.get( 2 );
-* // returns <Complex128>[ 3.0, 4.0 ]
+* // B => <Complex128Array>[ 0.0, 0.0, 0.0, 0.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
 */
 declare var zlacpy: Routine;
 

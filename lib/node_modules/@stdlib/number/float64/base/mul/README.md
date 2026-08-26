@@ -82,18 +82,14 @@ v = mul( NaN, NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var rand = require( '@stdlib/random/base/discrete-uniform' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var mul = require( '@stdlib/number/float64/base/mul' );
 
-var x;
-var y;
-var i;
+var x = discreteUniform( 100, -50, 50 );
+var y = discreteUniform( 100, -50, 50 );
 
-for ( i = 0; i < 100; i++ ) {
-    x = rand( -50, 50 );
-    y = rand( -50, 50 );
-    console.log( '%d x %d = %d', x, y, mul( x, y ) );
-}
+logEachMap( '%d x %d = %d', x, y, mul );
 ```
 
 </section>

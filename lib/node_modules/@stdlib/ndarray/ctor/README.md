@@ -721,6 +721,8 @@ str = JSON.stringify( arr.toJSON() );
 
 Structure holding ndarray data.
 
+<!-- run-disable -->
+
 ```c
 #include "stdlib/ndarray/dtypes.h"
 #include "stdlib/ndarray/index_modes.h"

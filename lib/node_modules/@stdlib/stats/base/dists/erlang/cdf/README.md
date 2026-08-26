@@ -164,6 +164,113 @@ logEachMap( 'x: %0.4f, k: %d, λ: %0.4f, F(x;k,λ): %0.4f', x, k, lambda, cdf );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/erlang/cdf.h"
+```
+
+#### stdlib_base_dists_erlang_cdf( x, k, lambda )
+
+Evaluates the [cumulative distribution function][cdf] (CDF) for an [Erlang][erlang-distribution] distribution with parameters `k` (shape parameter) and `lambda` (rate parameter).
+
+```c
+double y = stdlib_base_dists_erlang_cdf( 2.0, 1, 1.0 );
+// returns ~0.865
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **k**: `[in] double` shape parameter.
+-   **lambda**: `[in] double` rate parameter.
+
+```c
+double stdlib_base_dists_erlang_cdf( const double x, const double k, const double lambda );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/erlang/cdf.h"
+#include "stdlib/math/base/special/round.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double lambda;
+    double x;
+    double k;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        x = random_uniform( 0.0, 10.0 );
+        k = stdlib_base_round( random_uniform( 0.0, 10.0 ) );
+        lambda = random_uniform( 0.0, 5.0 );
+        y = stdlib_base_dists_erlang_cdf( x, k, lambda );
+        printf( "x: %lf, k: %lf, λ: %lf, F(x;k,λ): %lf\n", x, k, lambda, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
