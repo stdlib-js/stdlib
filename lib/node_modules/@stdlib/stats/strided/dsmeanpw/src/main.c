@@ -50,5 +50,5 @@ double API_SUFFIX(stdlib_strided_dsmeanpw_ndarray)( const CBLAS_INT N, const flo
 	if ( N == 1 || strideX == 0 ) {
 		return X[ offsetX ];
 	}
-	return stdlib_strided_dssumpw_ndarray( N, X, strideX, offsetX ) / (double)N;
+	return API_SUFFIX(stdlib_strided_dssumpw_ndarray)( N, X, strideX, offsetX ) / (double)N;
 }

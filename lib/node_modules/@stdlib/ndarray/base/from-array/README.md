@@ -45,13 +45,16 @@ var array2ndarray = require( '@stdlib/ndarray/base/from-array' );
 Returns a one-dimensional [ndarray][@stdlib/ndarray/base/ctor] which wraps a provided input array.
 
 ```javascript
+var getShape = require( '@stdlib/ndarray/shape' );
+var getDType = require( '@stdlib/ndarray/dtype' );
+
 var x = array2ndarray( [ 1, 2, 3 ], 'row-major' );
 // returns <ndarray>
 
-var sh = x.shape;
+var sh = getShape( x );
 // returns [ 3 ]
 
-var dt = x.dtype;
+var dt = String( getDType( x ) );
 // returns 'generic'
 ```
 
@@ -81,29 +84,29 @@ The function supports the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var dtype = require( '@stdlib/ndarray/dtype' );
+var getDType = require( '@stdlib/ndarray/dtype' );
 var typedarray = require( '@stdlib/array/typed' );
 var array2ndarray = require( '@stdlib/ndarray/base/from-array' );
 
 var buf = typedarray( 10, 'float64' );
 var x = array2ndarray( buf, 'row-major' );
-console.log( dtype( x ) );
-// => 'float64'
+var dt = String( getDType( x ) );
+// returns 'float64'
 
 buf = typedarray( 10, 'int32' );
 x = array2ndarray( buf, 'row-major' );
-console.log( dtype( x ) );
-// => 'int32'
+dt = String( getDType( x ) );
+// returns 'int32'
 
 buf = typedarray( 10, 'complex128' );
 x = array2ndarray( buf, 'row-major' );
-console.log( dtype( x ) );
-// => 'complex128'
+dt = String( getDType( x ) );
+// returns 'complex128'
 
 buf = typedarray( 10, 'bool' );
 x = array2ndarray( buf, 'row-major' );
-console.log( dtype( x ) );
-// => 'bool'
+dt = String( getDType( x ) );
+// returns 'bool'
 ```
 
 </section>

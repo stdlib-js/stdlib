@@ -1,0 +1,24 @@
+
+{{alias}}( dtypes )
+    Returns a loop block size for multi-dimensional array tiled loops.
+
+    Parameters
+    ----------
+    dtypes: Array<string|DataType>
+        List of input and output ndarray data types.
+
+    Returns
+    -------
+    out: integer
+        Block size.
+
+    Examples
+    --------
+    > var out = {{alias}}( [ 'float64', 'float64', 'float64', 'float64' ] )
+    <number>
+    > out = {{alias}}( [ 'float64', 'int32', 'float64', 'float64' ] )
+    <number>
+
+    See Also
+    --------
+

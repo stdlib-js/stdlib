@@ -46,11 +46,12 @@ Returns a list of array data types.
 
 ```javascript
 var out = dtypes();
-// e.g., returns [ 'float32', 'float64', ... ]
+// e.g., returns [ 'float16', 'float32', ... ]
 ```
 
 When not provided a data type "kind", the function returns an array containing the following data types:
 
+-   `float16`: half-precision floating-point numbers.
 -   `float32`: single-precision floating-point numbers.
 -   `float64`: double-precision floating-point numbers.
 -   `complex64`: single-precision complex floating-point numbers.

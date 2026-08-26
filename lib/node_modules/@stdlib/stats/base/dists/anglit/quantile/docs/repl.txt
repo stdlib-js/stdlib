@@ -1,0 +1,66 @@
+
+{{alias}}( p, μ, σ )
+    Evaluates the quantile function for an anglit distribution with location
+    parameter `μ` and scale parameter `σ`.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    If provided `NaN` for any argument, the function returns `NaN`.
+
+    If `σ < 0`, the function returns `NaN`.
+
+    If `σ` equals `0`, the function evaluates a degenerate distribution
+    centered at `μ`.
+
+    Parameters
+    ----------
+    p: number
+        Cumulative probability.
+
+    μ: number
+        Location parameter.
+
+    σ: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated quantile function.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.8, 0.0, 1.0 )
+    0.3217505543966422
+    > y = {{alias}}( 0.5, 4.0, 2.0 )
+    4.0
+    > y = {{alias}}( 1.1, 0.0, 1.0 )
+    NaN
+
+
+{{alias}}.factory( μ, σ )
+    Returns a function for evaluating the quantile function of an anglit
+    distribution with location parameter `μ` and scale parameter `σ`.
+
+    Parameters
+    ----------
+    μ: number
+        Location parameter.
+
+    σ: number
+        Scale parameter.
+
+    Returns
+    -------
+    quantile: Function
+        Quantile function.
+
+    Examples
+    --------
+    > var myQuantile = {{alias}}.factory( 2.0, 4.0 );
+    > var y = myQuantile( 0.8 )
+    3.287002217586569
+
+    See Also
+    --------
+

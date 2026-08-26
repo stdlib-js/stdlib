@@ -17,13 +17,9 @@
     Examples
     --------
     > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
-    <ndarray>
-    > {{alias:@stdlib/ndarray/to-array}}( x )
-    [ [ 1, 2 ], [ 3, 4 ] ]
+    <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
     > var y = {{alias}}( x )
-    <ndarray>
-    > {{alias:@stdlib/ndarray/to-array}}( y )
-    [ [ 2, 1 ], [ 4, 3 ] ]
+    <ndarray>[ [ 2, 1 ], [ 4, 3 ] ]
 
     See Also
     --------

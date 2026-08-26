@@ -56,8 +56,10 @@
     "structure",
     "array",
     "generic",
+    "test",
     "contains",
     "search",
-    "assert"
+    "assert",
+    "validate"
   ]
 }

@@ -151,14 +151,14 @@ import negativeBinomial = require( './index' );
 	negativeBinomial.factory( 20, 0.3, { 'prng': null } ); // $ExpectError
 	negativeBinomial.factory( 20, 0.3, { 'prng': [] } ); // $ExpectError
 	negativeBinomial.factory( 20, 0.3, { 'prng': {} } ); // $ExpectError
-	negativeBinomial.factory( 20, 0.3, { 'prng': true ); // $ExpectError
+	negativeBinomial.factory( 20, 0.3, { 'prng': true } ); // $ExpectError
 
 	negativeBinomial.factory( { 'prng': 123 } ); // $ExpectError
 	negativeBinomial.factory( { 'prng': 'abc' } ); // $ExpectError
 	negativeBinomial.factory( { 'prng': null } ); // $ExpectError
 	negativeBinomial.factory( { 'prng': [] } ); // $ExpectError
 	negativeBinomial.factory( { 'prng': {} } ); // $ExpectError
-	negativeBinomial.factory( { 'prng': true ); // $ExpectError
+	negativeBinomial.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -185,7 +185,7 @@ import negativeBinomial = require( './index' );
 	negativeBinomial.factory( 20, 0.3, { 'state': null } ); // $ExpectError
 	negativeBinomial.factory( 20, 0.3, { 'state': [] } ); // $ExpectError
 	negativeBinomial.factory( 20, 0.3, { 'state': {} } ); // $ExpectError
-	negativeBinomial.factory( 20, 0.3, { 'state': true ); // $ExpectError
+	negativeBinomial.factory( 20, 0.3, { 'state': true } ); // $ExpectError
 	negativeBinomial.factory( 20, 0.3, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	negativeBinomial.factory( { 'state': 123 } ); // $ExpectError
@@ -193,7 +193,7 @@ import negativeBinomial = require( './index' );
 	negativeBinomial.factory( { 'state': null } ); // $ExpectError
 	negativeBinomial.factory( { 'state': [] } ); // $ExpectError
 	negativeBinomial.factory( { 'state': {} } ); // $ExpectError
-	negativeBinomial.factory( { 'state': true ); // $ExpectError
+	negativeBinomial.factory( { 'state': true } ); // $ExpectError
 	negativeBinomial.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

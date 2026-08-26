@@ -32,7 +32,7 @@ extern "C" {
 /**
 * Determines if a buffer length is compatible with provided ndarray meta data.
 */
-int8_t stdlib_ndarray_is_buffer_length_compatible( enum STDLIB_NDARRAY_DTYPE dtype, int64_t len, int64_t ndims, int64_t *shape, int64_t *strides, int64_t offset );
+int8_t stdlib_ndarray_is_buffer_length_compatible( const enum STDLIB_NDARRAY_DTYPE dtype, const int64_t len, const int64_t ndims, const int64_t *shape, const int64_t *strides, const int64_t offset );
 
 #ifdef __cplusplus
 }
