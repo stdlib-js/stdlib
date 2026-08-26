@@ -4465,6 +4465,26 @@ rules[ 'stdlib/no-nested-require' ] = 'error';
 rules[ 'stdlib/no-unnecessary-nested-functions' ] = 'error';
 
 /**
+* Disallow format calls that do not perform string interpolation.
+*
+* @name no-unnecessary-format
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var format = require( '@stdlib/string/format' );
+*
+* throw new Error( format( 'invalid argument.' ) );
+*
+* @example
+* // Good...
+* throw new Error( 'invalid argument.' );
+*/
+rules[ 'stdlib/no-unnecessary-format' ] = 'error';
+
+/**
 * Disallow the use of the `new Array()` constructor.
 *
 * @name no-new-array
