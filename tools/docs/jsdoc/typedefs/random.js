@@ -45,3 +45,15 @@
 *
 * @type {Int32Array} PRNGStateMINSTD
 */
+
+/**
+* A pseudorandom number generator (PRNG) seed for the Xorshift32 PRNG.
+*
+* @type {(uinteger32|Collection<uinteger32>)} PRNGSeedXorshift32
+*/
+
+/**
+* A pseudorandom number generator (PRNG) state for the Xorshift32 PRNG.
+*
+* @type {Uint32Array} PRNGStateXorshift32
+*/
