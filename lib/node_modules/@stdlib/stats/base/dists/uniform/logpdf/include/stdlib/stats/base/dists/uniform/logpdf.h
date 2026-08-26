@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the logarithm of the probability density function (logpdf) for a uniform distribution with minimum support `a` and maximum support `b` at a value `x`.
+* Evaluates the natural logarithm of the probability density function (logpdf) for a uniform distribution with minimum support `a` and maximum support `b` at a value `x`.
 */
 double stdlib_base_dists_uniform_logpdf( const double x, const double a, const double b );
 

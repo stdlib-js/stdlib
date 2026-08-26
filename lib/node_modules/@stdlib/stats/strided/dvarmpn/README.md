@@ -267,7 +267,7 @@ Computes the [variance][variance] of a double-precision floating-point strided a
 const double x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
 
 double v = stdlib_strided_dvarmpn_ndarray( 4, 1.0, 1.25, x, 2, 0 );
-// returns 6.25
+// returns ~6.67
 ```
 
 The function accepts the following arguments:

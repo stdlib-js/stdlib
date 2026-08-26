@@ -23,8 +23,8 @@
 /**
 * Returns the excess kurtosis for a lognormal distribution with location `mu` and scale `sigma`.
 *
-* @param mu       input value
-* @param sigma    minimum support
+* @param mu       location parameter
+* @param sigma    scale parameter
 * @return         excess kurtosis
 *
 * @example

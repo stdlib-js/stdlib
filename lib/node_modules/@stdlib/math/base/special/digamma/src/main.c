@@ -35,6 +35,7 @@
 #include "stdlib/math/base/special/tan.h"
 #include "stdlib/math/base/special/ln.h"
 #include "stdlib/constants/float64/pi.h"
+#include "stdlib/constants/float64/nan.h"
 
 static const double MIN_SAFE_ASYMPTOTIC = 10.0; // BIG!
 static const double root1 = 1569415565.0 / 1073741824.0;
@@ -223,7 +224,7 @@ double stdlib_base_digamma( const double x ) {
 	double xc;
 
 	if ( stdlib_base_is_nan( x ) || x == 0.0 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 
 	// If `x` is negative, use reflection...
@@ -242,7 +243,7 @@ double stdlib_base_digamma( const double x ) {
 
 		// Check for evaluation at a negative pole:
 		if ( rem == 0.0 ) {
-			return 0.0 / 0.0; // NaN
+			return STDLIB_CONSTANT_FLOAT64_NAN;
 		}
 		tmp = STDLIB_CONSTANT_FLOAT64_PI / stdlib_base_tan( STDLIB_CONSTANT_FLOAT64_PI * rem );
 	} else {

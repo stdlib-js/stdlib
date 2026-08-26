@@ -228,8 +228,8 @@ void stdlib_strided_dcusumors( const CBLAS_INT N, double sum, const double *X, c
 Computes the cumulative sum of double-precision floating-point strided array elements using ordinary recursive summation and alternative indexing semantics.
 
 ```c
-const double x[] = { 1.0, 2.0, 3.0, 4.0 }
-double y[] = { 0.0, 0.0, 0.0, 0.0 }
+const double x[] = { 1.0, 2.0, 3.0, 4.0 };
+double y[] = { 0.0, 0.0, 0.0, 0.0 };
 
 stdlib_strided_dcusumors_ndarray( 4, 0.0, x, 1, 0, y, 1, 0 );
 ```
