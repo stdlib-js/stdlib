@@ -56,15 +56,6 @@ eslint.env = require( './env' );
 eslint.rules = require( './rules' );
 
 /**
-* Overrides.
-*
-* @name overrides
-* @memberof eslint
-* @type {Array}
-*/
-eslint.overrides = require( './overrides/source.js' );
-
-/**
 * Parser options.
 *
 * @name parserOptions
