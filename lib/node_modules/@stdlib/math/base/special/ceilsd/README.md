@@ -22,6 +22,22 @@ limitations under the License.
 
 > Round a numeric value to the nearest number toward positive infinity with N significant figures.
 
+<section class="intro">
+
+The function rounds a numeric value to the specified number of [significant figures][significant-figures] toward positive infinity
+
+<!-- <equation class="equation" label="eq:ceilsd_function" align="center" raw="y = \left\lceil x \cdot b^{n - \lfloor \log_b |x| \rfloor - 1} \right\rceil \cdot b^{\lfloor \log_b |x| \rfloor - n + 1}" alt="Round up to n significant figures"> -->
+
+```math
+y = \left\lceil x \cdot b^{n - \lfloor \log_b |x| \rfloor - 1} \right\rceil \cdot b^{\lfloor \log_b |x| \rfloor - n + 1}
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
@@ -191,6 +207,8 @@ int main( void ) {
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[significant-figures]: https://en.wikipedia.org/wiki/Significant_figures
 
 <!-- <related-links> -->
 

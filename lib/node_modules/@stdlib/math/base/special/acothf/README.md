@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the [inverse hyperbolic cotangent][hyperbolic-arctangent] of a single-precision floating-point number.
 
+<section class="intro">
+
+The [hyperbolic arccotangent][hyperbolic-arctangent] function is defined as
+
+<!-- <equation class="equation" label="eq:hyperbolic_arccotangent" align="center" raw="y = \operatorname{arccoth}(x) = \frac{1}{2} \ln\left(\frac{x+1}{x-1}\right)" alt="Hyperbolic arccotangent function"> -->
+
+```math
+y = \mathop{\mathrm{arccoth}}(x) = \frac{1}{2} \ln\left(\frac{x+1}{x-1}\right)
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

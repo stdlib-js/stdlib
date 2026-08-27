@@ -22,6 +22,20 @@ limitations under the License.
 
 > Round a numeric value to the nearest multiple of 10^n toward positive infinity.
 
+<section class="intro">
+
+<!-- <equation class="equation" label="eq:ceiln_function" align="center" raw="y = \left\lceil \frac{x}{10^n} \right\rceil \cdot 10^n" alt="Round up to n decimal places"> -->
+
+```math
+y = \left\lceil \frac{x}{10^n} \right\rceil \cdot 10^n
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

@@ -26,6 +26,14 @@ limitations under the License.
 
 <section class="intro">
 
+<!-- <equation class="equation" label="eq:minabsn_function" align="center" raw="y = \min(|x_1|, |x_2|, \ldots, |x_n|)" alt="Minimum absolute value of n values"> -->
+
+```math
+y = \min(|x_1|, |x_2|, \ldots, |x_n|)
+```
+
+<!-- </equation> -->
+
 </section>
 
 <!-- /.intro -->

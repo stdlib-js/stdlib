@@ -22,6 +22,20 @@ limitations under the License.
 
 > Round each component of a double-precision complex floating-point number to the nearest multiple of `10^n` toward positive infinity.
 
+<section class="intro">
+
+<!-- <equation class="equation" label="eq:cceiln_function" align="center" raw="\operatorname{cceiln}(a + bi, n) = \operatorname{ceiln}(a, n) + \operatorname{ceiln}(b, n)\,i" alt="Complex ceiling to n decimal places"> -->
+
+```math
+\mathop{\mathrm{cceiln}}(a + bi, n) = \mathop{\mathrm{ceiln}}(a, n) + \mathop{\mathrm{ceiln}}(b, n)\,i
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

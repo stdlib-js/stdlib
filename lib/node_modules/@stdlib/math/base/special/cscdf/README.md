@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the [cosecant][cosecant] of a single-precision floating-point number (in degrees).
 
+<section class="intro">
+
+The [cosecant][cosecant] of an angle measured in degrees is computed as
+
+<!-- <equation class="equation" label="eq:cosecant_degrees" align="center" raw="y = \csc\left(\frac{\pi x}{180}\right)" alt="Cosecant of an angle in degrees"> -->
+
+```math
+y = \csc\left(\frac{\pi x}{180}\right)
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the [arccosecant][arccosecant] of a single-precision floating-point number.
 
+<section class="intro">
+
+The [arccosecant][arccosecant] is defined as
+
+<!-- <equation class="equation" label="eq:arccosecant_function" align="center" raw="y = \operatorname{arccsc}(x) = \arcsin\left(\frac{1}{x}\right)" alt="Arccosecant function"> -->
+
+```math
+y = \mathop{\mathrm{arccsc}}(x) = \arcsin\left(\frac{1}{x}\right)
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
