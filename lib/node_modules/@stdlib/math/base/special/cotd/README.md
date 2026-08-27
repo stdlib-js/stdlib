@@ -24,6 +24,16 @@ limitations under the License.
 
 <section class="intro">
 
+The [cotangent][trigonometric-functions] of an angle measured in degrees is computed as
+
+<!-- <equation class="equation" label="eq:cotangent_degrees" align="center" raw="y = \cot\left(\frac{\pi x}{180}\right)" alt="Cotangent of an angle in degrees"> -->
+
+```math
+y = \cot\left(\frac{\pi x}{180}\right)
+```
+
+<!-- </equation> -->
+
 </section>
 
 <!-- /.intro -->

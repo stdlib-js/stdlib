@@ -24,6 +24,16 @@ limitations under the License.
 
 <section class="intro">
 
+The [sine][trigonometric-functions] of an angle measured in degrees is computed as
+
+<!-- <equation class="equation" label="eq:sine_degrees" align="center" raw="y = \sin\left(\frac{\pi x}{180}\right)" alt="Sine of an angle in degrees"> -->
+
+```math
+y = \sin\left(\frac{\pi x}{180}\right)
+```
+
+<!-- </equation> -->
+
 </section>
 
 <!-- /.intro -->
