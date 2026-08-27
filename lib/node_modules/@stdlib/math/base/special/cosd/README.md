@@ -24,6 +24,16 @@ limitations under the License.
 
 <section class="intro">
 
+The [cosine][trigonometric-functions] of an angle measured in degrees is computed as
+
+<!-- <equation class="equation" label="eq:cosine_degrees" align="center" raw="y = \cos\left(\frac{\pi x}{180}\right)" alt="Cosine of an angle in degrees"> -->
+
+```math
+y = \cos\left(\frac{\pi x}{180}\right)
+```
+
+<!-- </equation> -->
+
 </section>
 
 <!-- /.intro -->
