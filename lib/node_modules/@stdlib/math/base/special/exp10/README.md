@@ -22,6 +22,22 @@ limitations under the License.
 
 > Base `10` [exponential function][exponential-function].
 
+<section class="intro">
+
+The [base-10 exponential function][exponential-function] is defined as
+
+<!-- <equation class="equation" label="eq:base10_exponential_function" align="center" raw="y = 10^x" alt="Base-10 exponential function"> -->
+
+```math
+y = 10^x
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

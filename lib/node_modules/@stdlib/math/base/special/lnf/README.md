@@ -22,6 +22,22 @@ limitations under the License.
 
 > Evaluate the [natural logarithm][natural-logarithm] of a single-precision floating-point number.
 
+<section class="intro">
+
+The [natural logarithm][natural-logarithm] is defined as
+
+<!-- <equation class="equation" label="eq:natural_logarithm" align="center" raw="y = \ln(x) = \log_e(x)" alt="Natural logarithm definition"> -->
+
+```math
+y = \ln(x) = \log_e(x)
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

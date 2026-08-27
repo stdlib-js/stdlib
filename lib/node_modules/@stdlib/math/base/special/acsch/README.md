@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the [hyperbolic arccosecant][inverse-hyperbolic-functions] of a number.
 
+<section class="intro">
+
+The [inverse hyperbolic cosecant][inverse-hyperbolic-functions] function is defined as
+
+<!-- <equation class="equation" label="eq:hyperbolic_arccosecant" align="center" raw="y = \operatorname{arccsch}(x) = \ln\left(\frac{1}{x} + \frac{\sqrt{1 + x^2}}{|x|}\right)" alt="Hyperbolic arccosecant function"> -->
+
+```math
+y = \mathop{\mathrm{arccsch}}(x) = \ln\left(\frac{1}{x} + \frac{\sqrt{1 + x^2}}{|x|}\right)
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

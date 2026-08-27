@@ -24,6 +24,16 @@ limitations under the License.
 
 <section class="intro">
 
+The regularized [incomplete beta function][incomplete-beta-function] is defined as
+
+<!-- <equation class="equation" label="eq:incomplete_beta_function" align="center" raw="I_x(a, b) = \frac{B(x;\, a, b)}{B(a, b)} = \frac{1}{B(a, b)} \int_0^x t^{a-1}(1-t)^{b-1}\,dt" alt="Regularized incomplete beta function"> -->
+
+```math
+I_x(a, b) = \frac{B(x;\, a, b)}{B(a, b)} = \frac{1}{B(a, b)} \int_0^x t^{a-1}(1-t)^{b-1}\,dt
+```
+
+<!-- </equation> -->
+
 </section>
 
 <!-- /.intro -->
