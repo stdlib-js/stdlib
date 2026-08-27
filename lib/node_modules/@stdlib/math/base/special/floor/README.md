@@ -22,6 +22,22 @@ limitations under the License.
 
 > Round a double-precision floating-point number toward negative infinity.
 
+<section class="intro">
+
+The [floor function][floor-function] is defined as
+
+<!-- <equation class="equation" label="eq:floor_function" align="center" raw="y = \lfloor x \rfloor = \max\{ n \in \mathbb{Z} : n \leq x \}" alt="Floor function"> -->
+
+```math
+y = \lfloor x \rfloor = \max\{ n \in \mathbb{Z} : n \leq x \}
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
@@ -178,6 +194,8 @@ int main( void ) {
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[floor-function]: https://en.wikipedia.org/wiki/Floor_and_ceiling_functions
 
 <!-- <related-links> -->
 

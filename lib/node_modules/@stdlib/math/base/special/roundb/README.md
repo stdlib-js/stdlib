@@ -22,6 +22,20 @@ limitations under the License.
 
 > Round a numeric value to the nearest multiple of b^n on a linear scale.
 
+<section class="intro">
+
+<!-- <equation class="equation" label="eq:roundb_function" align="center" raw="y = \left\lfloor \frac{x}{b^n} + 0.5 \right\rfloor \cdot b^n" alt="Round to nearest multiple of b^n"> -->
+
+```math
+y = \left\lfloor \frac{x}{b^n} + 0.5 \right\rfloor \cdot b^n
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

@@ -24,6 +24,16 @@ limitations under the License.
 
 <section class="intro">
 
+The inverse of the regularized [incomplete beta function][incomplete-beta-function] is defined as
+
+<!-- <equation class="equation" label="eq:betaincinv_function" align="center" raw="x = I^{-1}(p;\, a, b) \quad \text{such that} \quad I_x(a, b) = p" alt="Inverse of the regularized incomplete beta function"> -->
+
+```math
+x = I^{-1}(p;\, a, b) \quad \text{such that} \quad I_x(a, b) = p
+```
+
+<!-- </equation> -->
+
 </section>
 
 <!-- /.intro -->

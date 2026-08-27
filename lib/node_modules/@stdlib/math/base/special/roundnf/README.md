@@ -22,6 +22,20 @@ limitations under the License.
 
 > Round a single-precision floating-point number to the nearest multiple of 10^n.
 
+<section class="intro">
+
+<!-- <equation class="equation" label="eq:roundn_function" align="center" raw="y = \left\lfloor \frac{x}{10^n} + 0.5 \right\rfloor \cdot 10^n" alt="Round to n decimal places"> -->
+
+```math
+y = \left\lfloor \frac{x}{10^n} + 0.5 \right\rfloor \cdot 10^n
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

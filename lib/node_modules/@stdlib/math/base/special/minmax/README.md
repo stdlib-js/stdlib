@@ -26,6 +26,14 @@ limitations under the License.
 
 <section class="intro">
 
+<!-- <equation class="equation" label="eq:minmax_function" align="center" raw="(m, M) = (\min(x, y),\; \max(x, y))" alt="Minimum and maximum of two values"> -->
+
+```math
+(m, M) = (\min(x, y),\; \max(x, y))
+```
+
+<!-- </equation> -->
+
 </section>
 
 <!-- /.intro -->

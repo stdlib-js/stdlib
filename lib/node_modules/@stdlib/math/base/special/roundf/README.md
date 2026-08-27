@@ -22,6 +22,20 @@ limitations under the License.
 
 > Round a single-precision floating-point number to the nearest integer.
 
+<section class="intro">
+
+<!-- <equation class="equation" label="eq:round_function" align="center" raw="y = \lfloor x + 0.5 \rfloor" alt="Round to nearest integer"> -->
+
+```math
+y = \lfloor x + 0.5 \rfloor
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

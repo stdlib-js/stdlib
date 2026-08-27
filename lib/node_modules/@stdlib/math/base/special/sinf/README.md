@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the [sine][sine] of a single-precision floating-point number (in radians).
 
+<section class="intro">
+
+The [sine][sine] function can be expressed as the infinite series
+
+<!-- <equation class="equation" label="eq:sine_function" align="center" raw="\sin(x) = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n+1)!} x^{2n+1} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots" alt="Sine function Taylor series expansion"> -->
+
+```math
+\sin(x) = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n+1)!} x^{2n+1} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

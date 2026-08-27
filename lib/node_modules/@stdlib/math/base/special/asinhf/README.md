@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the [hyperbolic arcsine][hyperbolic-arcsine] of a single-precision floating-point number.
 
+<section class="intro">
+
+The [hyperbolic arcsine][hyperbolic-arcsine] function is defined as
+
+<!-- <equation class="equation" label="eq:hyperbolic_arcsine" align="center" raw="y = \operatorname{arcsinh}(x) = \ln\left(x + \sqrt{x^2 + 1}\right)" alt="Hyperbolic arcsine function"> -->
+
+```math
+y = \mathop{\mathrm{arcsinh}}(x) = \ln\left(x + \sqrt{x^2 + 1}\right)
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
