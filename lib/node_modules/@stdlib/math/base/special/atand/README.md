@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the [arctangent][arctangent] in degrees of a double-precision floating-point number.
 
+<section class="intro">
+
+The [arctangent][arctangent] in degrees is defined as
+
+<!-- <equation class="equation" label="eq:arctangent_degrees" align="center" raw="y = \frac{180}{\pi} \arctan(x)" alt="Arctangent in degrees"> -->
+
+```math
+y = \frac{180}{\pi} \arctan(x)
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
