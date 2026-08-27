@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute `x * ln(y+1)` so that the result is `0` if `x = 0`.
 
+<section class="intro">
+
+The function computes `x * ln(1+y)`, returning `0` when `x = 0`
+
+<!-- <equation class="equation" label="eq:xlog1py_function" align="center" raw="f(x, y) = \begin{cases} x \cdot \ln(1 + y) & \textrm{if}\ x \neq 0 \\ 0 & \textrm{if}\ x = 0 \end{cases}" alt="x times the natural logarithm of one plus y"> -->
+
+```math
+f(x, y) = \begin{cases} x \cdot \ln(1 + y) & \textrm{if}\ x \neq 0 \\ 0 & \textrm{if}\ x = 0 \end{cases}
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
