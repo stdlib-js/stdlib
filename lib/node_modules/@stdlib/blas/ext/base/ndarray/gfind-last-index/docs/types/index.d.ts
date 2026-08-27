@@ -79,7 +79,7 @@ type Predicate<T, U, ThisArg> = Nullary<ThisArg> | Unary<T, ThisArg> | Binary<T,
 *
 * @param arrays - array-like object containing ndarrays
 * @param clbk - predicate function
-* @param thisArg - predicate execution context
+* @param thisArg - predicate function execution context
 * @returns index
 *
 * @example

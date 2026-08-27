@@ -20,7 +20,7 @@ limitations under the License.
 
 # zcopy
 
-> Copy values from one complex double-precision floating-point vector to another complex double-precision floating-point vector.
+> Copy values from one double-precision complex floating-point vector to another double-precision complex floating-point vector.
 
 <section class="usage">
 

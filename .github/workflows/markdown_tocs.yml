@@ -97,9 +97,11 @@ jobs:
 
       # Update namespace table of contents:
       - name: 'Update tables of contents'
+        env:
+          FILES: ${{ steps.namespace_files.outputs.files }}
         run: |
-          make markdown-namespace-tocs-files FILES="${{ steps.namespace_files.outputs.files }}"
-          make markdown-pkg-urls-files FILES="${{ steps.namespace_files.outputs.files }}"
+          make markdown-namespace-tocs-files FILES="$FILES"
+          make markdown-pkg-urls-files FILES="$FILES"
         timeout-minutes: 60
 
       # Disable Git hooks:

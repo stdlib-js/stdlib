@@ -22,6 +22,7 @@ limitations under the License.
 
 # Zen of stdlib
 
+```text
 Do one thing. Do it well.
 Embrace radical modularity.
 Favor composition over configuration.
@@ -56,6 +57,7 @@ Mistakes are infectious.
 Fix them early.
 
 Simple is beautiful.
+```
 
 * * *
 
