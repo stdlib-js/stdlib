@@ -24,6 +24,16 @@ limitations under the License.
 
 <section class="intro">
 
+The [tangent][trigonometric-functions] of an angle measured in degrees is computed as
+
+<!-- <equation class="equation" label="eq:tangent_degrees" align="center" raw="y = \tan\left(\frac{\pi x}{180}\right)" alt="Tangent of an angle in degrees"> -->
+
+```math
+y = \tan\left(\frac{\pi x}{180}\right)
+```
+
+<!-- </equation> -->
+
 </section>
 
 <!-- /.intro -->

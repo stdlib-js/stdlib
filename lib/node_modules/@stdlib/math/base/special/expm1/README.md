@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute `exp(x) - 1`.
 
+<section class="intro">
+
+The function computes `exp(x) - 1` accurately for small `x`
+
+<!-- <equation class="equation" label="eq:expm1_function" align="center" raw="y = e^x - 1" alt="Exponential function minus one"> -->
+
+```math
+y = e^x - 1
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the [inverse (arc) secant][arcsecant] of a number.
 
+<section class="intro">
+
+The [arcsecant][arcsecant] is defined as
+
+<!-- <equation class="equation" label="eq:arcsecant_function" align="center" raw="y = \operatorname{arcsec}(x) = \arccos\left(\frac{1}{x}\right)" alt="Arcsecant function"> -->
+
+```math
+y = \mathop{\mathrm{arcsec}}(x) = \arccos\left(\frac{1}{x}\right)
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

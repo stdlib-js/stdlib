@@ -26,6 +26,14 @@ limitations under the License.
 
 <section class="intro">
 
+<!-- <equation class="equation" label="eq:minabs_function" align="center" raw="z = \min(|x|, |y|)" alt="Minimum absolute value"> -->
+
+```math
+z = \min(|x|, |y|)
+```
+
+<!-- </equation> -->
+
 </section>
 
 <!-- /.intro -->

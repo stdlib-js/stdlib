@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the [hyperbolic cosine][hyperbolic-cosine] of a double-precision floating-point number.
 
+<section class="intro">
+
+The [hyperbolic cosine][hyperbolic-cosine] function is defined as
+
+<!-- <equation class="equation" label="eq:hyperbolic_cosine" align="center" raw="y = \cosh(x) = \frac{e^x + e^{-x}}{2}" alt="Hyperbolic cosine function"> -->
+
+```math
+y = \cosh(x) = \frac{e^x + e^{-x}}{2}
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

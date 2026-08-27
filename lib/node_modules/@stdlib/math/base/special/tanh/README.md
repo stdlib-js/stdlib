@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the [hyperbolic tangent][hyperbolic-tangent] of a double-precision floating-point number.
 
+<section class="intro">
+
+The [hyperbolic tangent][hyperbolic-tangent] function is defined as
+
+<!-- <equation class="equation" label="eq:hyperbolic_tangent" align="center" raw="y = \tanh(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}}" alt="Hyperbolic tangent function"> -->
+
+```math
+y = \tanh(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}}
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

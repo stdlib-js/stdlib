@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the base `b` [logarithm][logarithm] of a single-precision floating-point number.
 
+<section class="intro">
+
+The [logarithm][logarithm] with an arbitrary base is defined as
+
+<!-- <equation class="equation" label="eq:logarithm" align="center" raw="y = \log_b(x) \quad \text{such that} \quad b^y = x" alt="Logarithm with arbitrary base"> -->
+
+```math
+y = \log_b(x) \quad \text{such that} \quad b^y = x
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

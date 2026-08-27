@@ -22,6 +22,14 @@ limitations under the License.
 
 > Compute the [cosine][cosine] of a double-precision floating-point number on `[-π/4, π/4]`.
 
+<section class="intro">
+
+The function computes the [cosine][cosine] of a double-precision floating-point number on the interval `[-π/4, π/4]`. For arguments outside this range, use argument reduction before calling this kernel.
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
