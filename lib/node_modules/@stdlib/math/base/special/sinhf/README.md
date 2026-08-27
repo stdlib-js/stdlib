@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the [hyperbolic sine][hyperbolic-sine] of a single-precision floating-point number.
 
+<section class="intro">
+
+The [hyperbolic sine][hyperbolic-sine] function is defined as
+
+<!-- <equation class="equation" label="eq:hyperbolic_sine" align="center" raw="y = \sinh(x) = \frac{e^x - e^{-x}}{2}" alt="Hyperbolic sine function"> -->
+
+```math
+y = \sinh(x) = \frac{e^x - e^{-x}}{2}
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
