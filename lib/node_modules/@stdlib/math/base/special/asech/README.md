@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the [hyperbolic arcsecant][hyperbolic-arcsecant] of a number.
 
+<section class="intro">
+
+The [hyperbolic arcsecant][hyperbolic-arcsecant] function is defined as
+
+<!-- <equation class="equation" label="eq:hyperbolic_arcsecant" align="center" raw="y = \operatorname{arcsech}(x) = \ln\left(\frac{1 + \sqrt{1 - x^2}}{x}\right)" alt="Hyperbolic arcsecant function"> -->
+
+```math
+y = \mathop{\mathrm{arcsech}}(x) = \ln\left(\frac{1 + \sqrt{1 - x^2}}{x}\right)
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
