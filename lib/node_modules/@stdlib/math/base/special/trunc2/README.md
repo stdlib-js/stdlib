@@ -22,6 +22,20 @@ limitations under the License.
 
 > Round a numeric value to the nearest power of two toward zero.
 
+<section class="intro">
+
+<!-- <equation class="equation" label="eq:trunc2_function" align="center" raw="y = \operatorname{sgn}(x) \cdot 2^{\lfloor \log_2 |x| \rfloor}" alt="Truncate to nearest power of two"> -->
+
+```math
+y = \operatorname{sgn}(x) \cdot 2^{\lfloor \log_2 |x| \rfloor}
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

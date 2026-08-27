@@ -22,6 +22,20 @@ limitations under the License.
 
 > Round a numeric value to the nearest power of two toward negative infinity.
 
+<section class="intro">
+
+<!-- <equation class="equation" label="eq:floor2_function" align="center" raw="y = \begin{cases} 2^{\lfloor \log_2 x \rfloor} & \textrm{if}\ x > 0 \\ -2^{\lceil \log_2 |x| \rceil} & \textrm{if}\ x < 0 \end{cases}" alt="Round down to nearest power of two"> -->
+
+```math
+y = \begin{cases} 2^{\lfloor \log_2 x \rfloor} & \textrm{if}\ x > 0 \\ -2^{\lceil \log_2 |x| \rceil} & \textrm{if}\ x < 0 \end{cases}
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
