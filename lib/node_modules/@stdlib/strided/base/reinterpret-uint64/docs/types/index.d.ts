@@ -23,7 +23,7 @@
 import { Uint64Array } from '@stdlib/types/array';
 
 /**
-* Reinterprets a `Uint64Array` as a `Uint32Array`.
+* Reinterprets a `Uint64Array` as a `Uint32Array` of interleaved high and low words.
 *
 * @param x - input array
 * @param offset - starting index
