@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the [arcsine][arcsine] of a single-precision floating-point number.
 
+<section class="intro">
+
+The [arcsine][arcsine] function is defined as
+
+<!-- <equation class="equation" label="eq:arcsine_function" align="center" raw="y = \arcsin(x), \quad y \in \left[-\tfrac{\pi}{2}, \tfrac{\pi}{2}\right], \; x \in [-1, 1]" alt="Arcsine function definition with range and domain"> -->
+
+```math
+y = \arcsin(x), \quad y \in \left[-\tfrac{\pi}{2}, \tfrac{\pi}{2}\right], \; x \in [-1, 1]
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

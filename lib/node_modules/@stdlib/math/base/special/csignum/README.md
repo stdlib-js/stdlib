@@ -26,6 +26,16 @@ limitations under the License.
 
 <section class="intro">
 
+The [signum][signum] function of a complex number is defined as
+
+<!-- <equation class="equation" label="eq:csignum_function" align="center" raw="\operatorname{csignum}(z) = \begin{cases} \frac{z}{|z|} & \textrm{if}\ z \neq 0 \\ 0 & \textrm{if}\ z = 0 \end{cases}" alt="Complex signum function"> -->
+
+```math
+\mathop{\mathrm{csignum}}(z) = \begin{cases} \frac{z}{|z|} & \textrm{if}\ z \neq 0 \\ 0 & \textrm{if}\ z = 0 \end{cases}
+```
+
+<!-- </equation> -->
+
 </section>
 
 <!-- /.intro -->

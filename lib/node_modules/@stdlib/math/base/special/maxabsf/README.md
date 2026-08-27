@@ -26,6 +26,14 @@ limitations under the License.
 
 <section class="intro">
 
+<!-- <equation class="equation" label="eq:maxabs_function" align="center" raw="z = \max(|x|, |y|)" alt="Maximum absolute value"> -->
+
+```math
+z = \max(|x|, |y|)
+```
+
+<!-- </equation> -->
+
 </section>
 
 <!-- /.intro -->

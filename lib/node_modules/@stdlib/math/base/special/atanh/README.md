@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the [hyperbolic arctangent][hyperbolic-arctangent] of a double-precision floating-point number.
 
+<section class="intro">
+
+The [hyperbolic arctangent][hyperbolic-arctangent] function is defined as
+
+<!-- <equation class="equation" label="eq:hyperbolic_arctangent" align="center" raw="y = \operatorname{arctanh}(x) = \frac{1}{2} \ln\left(\frac{1+x}{1-x}\right)" alt="Hyperbolic arctangent function"> -->
+
+```math
+y = \mathop{\mathrm{arctanh}}(x) = \frac{1}{2} \ln\left(\frac{1+x}{1-x}\right)
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

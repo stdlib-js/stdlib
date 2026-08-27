@@ -24,6 +24,16 @@ limitations under the License.
 
 <section class="intro">
 
+The [cotangent][trigonometric-functions] function is defined as
+
+<!-- <equation class="equation" label="eq:cotangent_function" align="center" raw="y = \cot(x) = \frac{\cos(x)}{\sin(x)}" alt="Cotangent function"> -->
+
+```math
+y = \cot(x) = \frac{\cos(x)}{\sin(x)}
+```
+
+<!-- </equation> -->
+
 </section>
 
 <!-- /.intro -->

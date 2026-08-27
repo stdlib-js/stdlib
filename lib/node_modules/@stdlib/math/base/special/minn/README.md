@@ -26,6 +26,14 @@ limitations under the License.
 
 <section class="intro">
 
+<!-- <equation class="equation" label="eq:minn_function" align="center" raw="y = \min(x_1, x_2, \ldots, x_n)" alt="Minimum of n values"> -->
+
+```math
+y = \min(x_1, x_2, \ldots, x_n)
+```
+
+<!-- </equation> -->
+
 </section>
 
 <!-- /.intro -->
