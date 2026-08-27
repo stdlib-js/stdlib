@@ -22,6 +22,22 @@ limitations under the License.
 
 > Evaluate `ln(1+x) - x`.
 
+<section class="intro">
+
+The function computes `ln(1+x) - x` accurately for small `x`
+
+<!-- <equation class="equation" label="eq:log1pmx_function" align="center" raw="y = \ln(1 + x) - x" alt="Natural logarithm of one plus x minus x"> -->
+
+```math
+y = \ln(1 + x) - x
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
