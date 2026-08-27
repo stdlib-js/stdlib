@@ -22,6 +22,20 @@ limitations under the License.
 
 > Round a numeric value to the nearest power of 10 toward zero.
 
+<section class="intro">
+
+<!-- <equation class="equation" label="eq:trunc10_function" align="center" raw="y = \operatorname{sgn}(x) \cdot 10^{\lfloor \log_{10} |x| \rfloor}" alt="Truncate to nearest power of ten"> -->
+
+```math
+y = \operatorname{sgn}(x) \cdot 10^{\lfloor \log_{10} |x| \rfloor}
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

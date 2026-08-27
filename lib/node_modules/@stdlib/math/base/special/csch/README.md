@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the [hyperbolic cosecant][hyperbolic-functions] of a number.
 
+<section class="intro">
+
+The [hyperbolic cosecant][hyperbolic-functions] function is defined as
+
+<!-- <equation class="equation" label="eq:hyperbolic_cosecant" align="center" raw="y = \operatorname{csch}(x) = \frac{2}{e^x - e^{-x}}" alt="Hyperbolic cosecant function"> -->
+
+```math
+y = \mathop{\mathrm{csch}}(x) = \frac{2}{e^x - e^{-x}}
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

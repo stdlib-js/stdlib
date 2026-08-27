@@ -22,6 +22,20 @@ limitations under the License.
 
 > Round a numeric value to the nearest multiple of b^n toward zero.
 
+<section class="intro">
+
+<!-- <equation class="equation" label="eq:truncb_function" align="center" raw="y = \operatorname{trunc}\left(\frac{x}{b^n}\right) \cdot b^n" alt="Truncate to nearest multiple of b^n"> -->
+
+```math
+y = \mathop{\mathrm{trunc}}\left(\frac{x}{b^n}\right) \cdot b^n
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

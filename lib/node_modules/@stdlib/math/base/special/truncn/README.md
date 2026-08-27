@@ -22,6 +22,20 @@ limitations under the License.
 
 > Round a numeric value to the nearest multiple of 10^n toward zero.
 
+<section class="intro">
+
+<!-- <equation class="equation" label="eq:truncn_function" align="center" raw="y = \operatorname{trunc}\left(\frac{x}{10^n}\right) \cdot 10^n" alt="Truncate to n decimal places"> -->
+
+```math
+y = \mathop{\mathrm{trunc}}\left(\frac{x}{10^n}\right) \cdot 10^n
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

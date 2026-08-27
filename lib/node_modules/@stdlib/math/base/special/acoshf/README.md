@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the [hyperbolic arccosine][hyperbolic-arccosine] of a single-precision floating-point number.
 
+<section class="intro">
+
+The [hyperbolic arccosine][hyperbolic-arccosine] function is defined as
+
+<!-- <equation class="equation" label="eq:hyperbolic_arccosine" align="center" raw="y = \operatorname{arccosh}(x) = \ln\left(x + \sqrt{x^2 - 1}\right)" alt="Hyperbolic arccosine function"> -->
+
+```math
+y = \mathop{\mathrm{arccosh}}(x) = \ln\left(x + \sqrt{x^2 - 1}\right)
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

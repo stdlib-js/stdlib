@@ -26,6 +26,14 @@ limitations under the License.
 
 <section class="intro">
 
+<!-- <equation class="equation" label="eq:nanmax_function" align="center" raw="\operatorname{nanmax}(x, y) = \begin{cases} y & \textrm{if}\ x = \text{NaN} \\ x & \textrm{if}\ y = \text{NaN} \\ \max(x, y) & \textrm{otherwise} \end{cases}" alt="Maximum value ignoring NaN"> -->
+
+```math
+\mathop{\mathrm{nanmax}}(x, y) = \begin{cases} y & \textrm{if}\ x = \text{NaN} \\ x & \textrm{if}\ y = \text{NaN} \\ \max(x, y) & \textrm{otherwise} \end{cases}
+```
+
+<!-- </equation> -->
+
 </section>
 
 <!-- /.intro -->

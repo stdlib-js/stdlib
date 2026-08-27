@@ -22,6 +22,20 @@ limitations under the License.
 
 > Round each component of a single-precision complex floating-point number toward positive infinity.
 
+<section class="intro">
+
+<!-- <equation class="equation" label="eq:cceil_function" align="center" raw="\operatorname{cceil}(a + bi) = \lceil a \rceil + \lceil b \rceil i" alt="Complex ceiling function"> -->
+
+```math
+\mathop{\mathrm{cceil}}(a + bi) = \lceil a \rceil + \lceil b \rceil i
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the [inverse cotangent][arccotangent] of a single-precision floating-point number.
 
+<section class="intro">
+
+The [arccotangent][arccotangent] is defined as
+
+<!-- <equation class="equation" label="eq:arccotangent_function" align="center" raw="y = \operatorname{arccot}(x) = \arctan\left(\frac{1}{x}\right)" alt="Arccotangent function"> -->
+
+```math
+y = \mathop{\mathrm{arccot}}(x) = \arctan\left(\frac{1}{x}\right)
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
