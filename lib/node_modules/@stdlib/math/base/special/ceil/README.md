@@ -22,6 +22,22 @@ limitations under the License.
 
 > Round a double-precision floating-point number toward positive infinity.
 
+<section class="intro">
+
+The [ceiling function][ceiling-function] is defined as
+
+<!-- <equation class="equation" label="eq:ceiling_function" align="center" raw="y = \lceil x \rceil = \min\{ n \in \mathbb{Z} : n \geq x \}" alt="Ceiling function"> -->
+
+```math
+y = \lceil x \rceil = \min\{ n \in \mathbb{Z} : n \geq x \}
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
@@ -179,6 +195,8 @@ int main( void ) {
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[ceiling-function]: https://en.wikipedia.org/wiki/Floor_and_ceiling_functions
 
 <!-- <related-links> -->
 
