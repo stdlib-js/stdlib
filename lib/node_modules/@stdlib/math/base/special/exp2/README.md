@@ -22,6 +22,22 @@ limitations under the License.
 
 > Base `2` [exponential function][exponential-function].
 
+<section class="intro">
+
+The [base-2 exponential function][exponential-function] is defined as
+
+<!-- <equation class="equation" label="eq:base2_exponential_function" align="center" raw="y = 2^x" alt="Base-2 exponential function"> -->
+
+```math
+y = 2^x
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
