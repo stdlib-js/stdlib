@@ -24,6 +24,16 @@ limitations under the License.
 
 <section class="intro">
 
+The [Bernoulli numbers][bernoulli-number] are a sequence of rational numbers which are of importance in number theory and analysis
+
+<!-- <equation class="equation" label="eq:bernoulli_numbers" align="center" raw="\frac{t}{e^t - 1} = \sum_{n=0}^{\infty} B_n \frac{t^n}{n!}" alt="Bernoulli numbers generating function"> -->
+
+```math
+\frac{t}{e^t - 1} = \sum_{n=0}^{\infty} B_n \frac{t^n}{n!}
+```
+
+<!-- </equation> -->
+
 </section>
 
 <!-- /.intro -->

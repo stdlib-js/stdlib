@@ -24,6 +24,16 @@ limitations under the License.
 
 <section class="intro">
 
+The [falling factorial][falling-and-rising-factorials] (or Pochhammer's symbol for the descending factorial) is defined as
+
+<!-- <equation class="equation" label="eq:falling_factorial" align="center" raw="(x)_n = x(x-1)(x-2) \cdots (x-n+1) = \frac{x!}{(x-n)!}" alt="Falling factorial"> -->
+
+```math
+(x)_n = x(x-1)(x-2) \cdots (x-n+1) = \frac{x!}{(x-n)!}
+```
+
+<!-- </equation> -->
+
 </section>
 
 <!-- /.intro -->
