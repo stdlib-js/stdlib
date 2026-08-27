@@ -26,6 +26,14 @@ limitations under the License.
 
 <section class="intro">
 
+<!-- <equation class="equation" label="eq:cflipsign_function" align="center" raw="w = z \cdot \operatorname{sign}(y)" alt="Complex flip sign function"> -->
+
+```math
+w = z \cdot \mathop{\mathrm{sign}}(y)
+```
+
+<!-- </equation> -->
+
 </section>
 
 <!-- /.intro -->

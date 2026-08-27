@@ -22,6 +22,20 @@ limitations under the License.
 
 > Round each component of a double-precision complex floating-point number to the nearest integer.
 
+<section class="intro">
+
+<!-- <equation class="equation" label="eq:cround_function" align="center" raw="\operatorname{cround}(a + bi) = \lfloor a + 0.5 \rfloor + \lfloor b + 0.5 \rfloor i" alt="Complex round function"> -->
+
+```math
+\mathop{\mathrm{cround}}(a + bi) = \lfloor a + 0.5 \rfloor + \lfloor b + 0.5 \rfloor i
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

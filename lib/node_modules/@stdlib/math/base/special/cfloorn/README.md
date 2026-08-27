@@ -22,6 +22,20 @@ limitations under the License.
 
 > Round each component of a double-precision complex floating-point number to the nearest multiple of `10^n` toward negative infinity.
 
+<section class="intro">
+
+<!-- <equation class="equation" label="eq:cfloorn_function" align="center" raw="\operatorname{cfloorn}(a + bi, n) = \operatorname{floorn}(a, n) + \operatorname{floorn}(b, n)\,i" alt="Complex floor to n decimal places"> -->
+
+```math
+\mathop{\mathrm{cfloorn}}(a + bi, n) = \mathop{\mathrm{floorn}}(a, n) + \mathop{\mathrm{floorn}}(b, n)\,i
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
