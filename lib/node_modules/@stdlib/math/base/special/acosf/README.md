@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the [arccosine][arccosine] of a single-precision floating-point number.
 
+<section class="intro">
+
+The [arccosine][arccosine] function is defined as
+
+<!-- <equation class="equation" label="eq:arccosine_function" align="center" raw="y = \arccos(x), \quad y \in [0, \pi], \; x \in [-1, 1]" alt="Arccosine function definition with range and domain"> -->
+
+```math
+y = \arccos(x), \quad y \in [0, \pi], \; x \in [-1, 1]
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
