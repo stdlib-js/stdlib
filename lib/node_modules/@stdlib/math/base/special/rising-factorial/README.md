@@ -24,6 +24,16 @@ limitations under the License.
 
 <section class="intro">
 
+The [rising factorial][falling-and-rising-factorials] (or Pochhammer function) is defined as
+
+<!-- <equation class="equation" label="eq:rising_factorial" align="center" raw="x^{(n)} = x(x+1)(x+2) \cdots (x+n-1) = \frac{(x+n-1)!}{(x-1)!}" alt="Rising factorial"> -->
+
+```math
+x^{(n)} = x(x+1)(x+2) \cdots (x+n-1) = \frac{(x+n-1)!}{(x-1)!}
+```
+
+<!-- </equation> -->
+
 </section>
 
 <!-- /.intro -->
