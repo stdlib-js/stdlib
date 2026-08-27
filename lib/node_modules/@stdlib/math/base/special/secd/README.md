@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the [secant][secant] of an angle measured in degrees.
 
+<section class="intro">
+
+The [secant][secant] of an angle measured in degrees is computed as
+
+<!-- <equation class="equation" label="eq:secant_degrees" align="center" raw="y = \sec\left(\frac{\pi x}{180}\right) = \frac{1}{\cos\left(\frac{\pi x}{180}\right)}" alt="Secant of an angle in degrees"> -->
+
+```math
+y = \sec\left(\frac{\pi x}{180}\right) = \frac{1}{\cos\left(\frac{\pi x}{180}\right)}
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

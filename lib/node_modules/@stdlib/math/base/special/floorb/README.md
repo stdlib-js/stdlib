@@ -22,6 +22,20 @@ limitations under the License.
 
 > Round a numeric value to the nearest multiple of b^n toward negative infinity.
 
+<section class="intro">
+
+<!-- <equation class="equation" label="eq:floorb_function" align="center" raw="y = \left\lfloor \frac{x}{b^n} \right\rfloor \cdot b^n" alt="Round down to nearest multiple of b^n"> -->
+
+```math
+y = \left\lfloor \frac{x}{b^n} \right\rfloor \cdot b^n
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

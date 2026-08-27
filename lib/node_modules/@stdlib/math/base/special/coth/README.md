@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the [hyperbolic cotangent][hyperbolic-functions] of a number.
 
+<section class="intro">
+
+The [hyperbolic cotangent][hyperbolic-functions] function is defined as
+
+<!-- <equation class="equation" label="eq:hyperbolic_cotangent" align="center" raw="y = \coth(x) = \frac{e^x + e^{-x}}{e^x - e^{-x}}" alt="Hyperbolic cotangent function"> -->
+
+```math
+y = \coth(x) = \frac{e^x + e^{-x}}{e^x - e^{-x}}
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the [arccosine][arccosine] (in degrees) of a single-precision floating-point number.
 
+<section class="intro">
+
+The [arccosine][arccosine] in degrees is defined as
+
+<!-- <equation class="equation" label="eq:arccosine_degrees" align="center" raw="y = \frac{180}{\pi} \arccos(x)" alt="Arccosine in degrees"> -->
+
+```math
+y = \frac{180}{\pi} \arccos(x)
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

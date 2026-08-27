@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the ratio of two [gamma][@stdlib/math/base/special/gamma] functions.
 
+<section class="intro">
+
+The function computes the ratio of two [gamma functions][gamma-function]
+
+<!-- <equation class="equation" label="eq:gamma_delta_ratio" align="center" raw="y = \frac{\Gamma(x)}{\Gamma(x + \delta)}" alt="Ratio of two gamma functions"> -->
+
+```math
+y = \frac{\Gamma(x)}{\Gamma(x + \delta)}
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
@@ -183,6 +199,8 @@ int main( void ) {
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[gamma-function]: https://en.wikipedia.org/wiki/Gamma_function
 
 <!-- <related-links> -->
 

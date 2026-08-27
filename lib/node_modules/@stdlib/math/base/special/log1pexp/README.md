@@ -22,6 +22,22 @@ limitations under the License.
 
 > Evaluates the [natural logarithm][@stdlib/math/base/special/ln] of `1+exp(x)`.
 
+<section class="intro">
+
+The function computes the natural logarithm of `1+exp(x)`, also known as the softplus function
+
+<!-- <equation class="equation" label="eq:log1pexp_function" align="center" raw="y = \ln(1 + e^x)" alt="Natural logarithm of one plus exponential"> -->
+
+```math
+y = \ln(1 + e^x)
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

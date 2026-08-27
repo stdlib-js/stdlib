@@ -26,6 +26,14 @@ limitations under the License.
 
 <section class="intro">
 
+<!-- <equation class="equation" label="eq:minmaxabsn_function" align="center" raw="(m, M) = (\min(|x_1|, \ldots, |x_n|),\; \max(|x_1|, \ldots, |x_n|))" alt="Minimum and maximum absolute values of n values"> -->
+
+```math
+(m, M) = (\min(|x_1|, \ldots, |x_n|),\; \max(|x_1|, \ldots, |x_n|))
+```
+
+<!-- </equation> -->
+
 </section>
 
 <!-- /.intro -->

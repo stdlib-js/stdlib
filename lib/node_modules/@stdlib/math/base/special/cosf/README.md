@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the [cosine][cosine] of a single-precision floating-point number (in radians).
 
+<section class="intro">
+
+The [cosine][cosine] function can be expressed as the infinite series
+
+<!-- <equation class="equation" label="eq:cosine_function" align="center" raw="\cos(x) = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n)!} x^{2n} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots" alt="Cosine function Taylor series expansion"> -->
+
+```math
+\cos(x) = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n)!} x^{2n} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

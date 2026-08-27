@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the [arcsine][arcsine] (in degrees) of a double-precision floating-point number.
 
+<section class="intro">
+
+The [arcsine][arcsine] in degrees is defined as
+
+<!-- <equation class="equation" label="eq:arcsine_degrees" align="center" raw="y = \frac{180}{\pi} \arcsin(x)" alt="Arcsine in degrees"> -->
+
+```math
+y = \frac{180}{\pi} \arcsin(x)
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

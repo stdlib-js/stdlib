@@ -24,6 +24,16 @@ limitations under the License.
 
 <section class="intro">
 
+The [secant][trigonometric-functions] function is defined as
+
+<!-- <equation class="equation" label="eq:secant_function" align="center" raw="y = \sec(x) = \frac{1}{\cos(x)}" alt="Secant function"> -->
+
+```math
+y = \sec(x) = \frac{1}{\cos(x)}
+```
+
+<!-- </equation> -->
+
 </section>
 
 <!-- /.intro -->

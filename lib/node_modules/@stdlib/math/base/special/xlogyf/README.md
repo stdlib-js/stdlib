@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute `x * ln(y)` so that the result is `0` if `x = 0` for single-precision floating-point numbers `x` and `y`.
 
+<section class="intro">
+
+The function computes `x * ln(y)`, returning `0` when `x = 0`
+
+<!-- <equation class="equation" label="eq:xlogy_function" align="center" raw="f(x, y) = \begin{cases} x \cdot \ln(y) & \textrm{if}\ x \neq 0 \\ 0 & \textrm{if}\ x = 0 \end{cases}" alt="x times the natural logarithm of y"> -->
+
+```math
+f(x, y) = \begin{cases} x \cdot \ln(y) & \textrm{if}\ x \neq 0 \\ 0 & \textrm{if}\ x = 0 \end{cases}
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

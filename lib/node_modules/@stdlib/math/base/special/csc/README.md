@@ -24,6 +24,16 @@ limitations under the License.
 
 <section class="intro">
 
+The [cosecant][trigonometric-functions] function is defined as
+
+<!-- <equation class="equation" label="eq:cosecant_function" align="center" raw="y = \csc(x) = \frac{1}{\sin(x)}" alt="Cosecant function"> -->
+
+```math
+y = \csc(x) = \frac{1}{\sin(x)}
+```
+
+<!-- </equation> -->
+
 </section>
 
 <!-- /.intro -->

@@ -26,6 +26,14 @@ limitations under the License.
 
 <section class="intro">
 
+<!-- <equation class="equation" label="eq:nanmin_function" align="center" raw="\operatorname{nanmin}(x, y) = \begin{cases} y & \textrm{if}\ x = \text{NaN} \\ x & \textrm{if}\ y = \text{NaN} \\ \min(x, y) & \textrm{otherwise} \end{cases}" alt="Minimum value ignoring NaN"> -->
+
+```math
+\mathop{\mathrm{nanmin}}(x, y) = \begin{cases} y & \textrm{if}\ x = \text{NaN} \\ x & \textrm{if}\ y = \text{NaN} \\ \min(x, y) & \textrm{otherwise} \end{cases}
+```
+
+<!-- </equation> -->
+
 </section>
 
 <!-- /.intro -->
