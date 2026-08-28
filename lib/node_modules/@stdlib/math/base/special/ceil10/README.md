@@ -30,6 +30,11 @@ limitations under the License.
 y = \begin{cases} 10^{\lceil \log_{10} x \rceil} & \textrm{if}\ x > 0 \\ -10^{\lfloor \log_{10} |x| \rfloor} & \textrm{if}\ x < 0 \end{cases}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = \begin{cases} 10^{\lceil \log_{10} x \rceil} &amp; \textrm{if}\ x &gt; 0 \\ -10^{\lfloor \log_{10} |x| \rfloor} &amp; \textrm{if}\ x &lt; 0 \end{cases}" data-equation="eq:ceil10_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/ceil10/docs/img/equation_ceil10_function.svg" alt="Round up to nearest power of ten">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

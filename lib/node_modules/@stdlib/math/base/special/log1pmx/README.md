@@ -32,6 +32,11 @@ The function computes `ln(1+x) - x` accurately for small `x`
 y = \ln(1 + x) - x
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = \ln(1 + x) - x" data-equation="eq:log1pmx_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/log1pmx/docs/img/equation_log1pmx_function.svg" alt="Natural logarithm of one plus x minus x">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

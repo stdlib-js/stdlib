@@ -30,6 +30,11 @@ limitations under the License.
 y = \mathop{\mathrm{trunc}}\left(\frac{x}{b^n}\right) \cdot b^n
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = \operatorname{trunc}\left(\frac{x}{b^n}\right) \cdot b^n" data-equation="eq:truncb_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/truncb/docs/img/equation_truncb_function.svg" alt="Truncate to nearest multiple of b^n">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

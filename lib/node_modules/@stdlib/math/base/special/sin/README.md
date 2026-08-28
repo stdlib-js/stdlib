@@ -32,6 +32,11 @@ The [sine][sine] function can be expressed as the infinite series
 \sin(x) = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n+1)!} x^{2n+1} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\sin(x) = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n+1)!} x^{2n+1} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots" data-equation="eq:sine_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/sin/docs/img/equation_sine_function.svg" alt="Sine function Taylor series expansion">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

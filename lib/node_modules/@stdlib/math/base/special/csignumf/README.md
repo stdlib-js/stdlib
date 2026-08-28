@@ -34,6 +34,11 @@ The [signum][signum] function of a complex number is defined as
 \mathop{\mathrm{csignum}}(z) = \begin{cases} \frac{z}{|z|} & \textrm{if}\ z \neq 0 \\ 0 & \textrm{if}\ z = 0 \end{cases}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{csignum}(z) = \begin{cases} \frac{z}{|z|} &amp; \textrm{if}\ z \neq 0 \\ 0 &amp; \textrm{if}\ z = 0 \end{cases}" data-equation="eq:csignum_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/csignumf/docs/img/equation_csignum_function.svg" alt="Complex signum function">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

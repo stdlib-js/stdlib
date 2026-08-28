@@ -32,6 +32,11 @@ limitations under the License.
 w = z \cdot \mathop{\mathrm{sign}}(y)
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="w = z \cdot \operatorname{sign}(y)" data-equation="eq:cflipsign_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/cflipsign/docs/img/equation_cflipsign_function.svg" alt="Complex flip sign function">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

@@ -32,6 +32,11 @@ The [Bernoulli numbers][bernoulli-number] are a sequence of rational numbers whi
 \frac{t}{e^t - 1} = \sum_{n=0}^{\infty} B_n \frac{t^n}{n!}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\frac{t}{e^t - 1} = \sum_{n=0}^{\infty} B_n \frac{t^n}{n!}" data-equation="eq:bernoulli_numbers">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/bernoullif/docs/img/equation_bernoulli_numbers.svg" alt="Bernoulli numbers generating function">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

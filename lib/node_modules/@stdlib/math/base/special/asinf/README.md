@@ -32,6 +32,11 @@ The [arcsine][arcsine] function is defined as
 y = \arcsin(x), \quad y \in \left[-\tfrac{\pi}{2}, \tfrac{\pi}{2}\right], \; x \in [-1, 1]
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = \arcsin(x), \quad y \in \left[-\tfrac{\pi}{2}, \tfrac{\pi}{2}\right], \; x \in [-1, 1]" data-equation="eq:arcsine_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/asinf/docs/img/equation_arcsine_function.svg" alt="Arcsine function definition with range and domain">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

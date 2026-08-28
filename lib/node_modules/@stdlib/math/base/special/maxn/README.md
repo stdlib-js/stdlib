@@ -32,6 +32,11 @@ limitations under the License.
 y = \max(x_1, x_2, \ldots, x_n)
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = \max(x_1, x_2, \ldots, x_n)" data-equation="eq:maxn_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/maxn/docs/img/equation_maxn_function.svg" alt="Maximum of n values">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

@@ -32,6 +32,11 @@ The [polygamma][polygamma-function] function of order `n` is the `(n+1)`th deriv
 \psi^{(n)}(x) = \frac{d^{n+1}}{dx^{n+1}} \ln{\Gamma(x)}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\psi^{(n)}(x) = \frac{d^{n+1}}{dx^{n+1}} \ln{\Gamma(x)}" data-equation="eq:polygamma_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/polygamma/docs/img/equation_polygamma_function.svg" alt="Polygamma function">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

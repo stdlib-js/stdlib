@@ -32,6 +32,11 @@ The function rounds a numeric value to the specified number of [significant figu
 y = \mathop{\mathrm{trunc}}\left(x \cdot b^{n - \lfloor \log_b |x| \rfloor - 1}\right) \cdot b^{\lfloor \log_b |x| \rfloor - n + 1}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = \operatorname{trunc}\left(x \cdot b^{n - \lfloor \log_b |x| \rfloor - 1}\right) \cdot b^{\lfloor \log_b |x| \rfloor - n + 1}" data-equation="eq:truncsd_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/truncsd/docs/img/equation_truncsd_function.svg" alt="Truncate to n significant figures">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

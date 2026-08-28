@@ -30,6 +30,11 @@ limitations under the License.
 y = \left\lceil \frac{x}{10^n} \right\rceil \cdot 10^n
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = \left\lceil \frac{x}{10^n} \right\rceil \cdot 10^n" data-equation="eq:ceiln_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/ceiln/docs/img/equation_ceiln_function.svg" alt="Round up to n decimal places">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

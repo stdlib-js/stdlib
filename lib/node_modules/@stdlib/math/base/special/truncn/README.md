@@ -30,6 +30,11 @@ limitations under the License.
 y = \mathop{\mathrm{trunc}}\left(\frac{x}{10^n}\right) \cdot 10^n
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = \operatorname{trunc}\left(\frac{x}{10^n}\right) \cdot 10^n" data-equation="eq:truncn_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/truncn/docs/img/equation_truncn_function.svg" alt="Truncate to n decimal places">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>
