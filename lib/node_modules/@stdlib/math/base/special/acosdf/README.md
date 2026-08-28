@@ -32,6 +32,11 @@ The [arccosine][arccosine] in degrees is defined as
 y = \frac{180}{\pi} \arccos(x)
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = \frac{180}{\pi} \arccos(x)" data-equation="eq:arccosine_degrees">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/acosdf/docs/img/equation_arccosine_degrees.svg" alt="Arccosine in degrees">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

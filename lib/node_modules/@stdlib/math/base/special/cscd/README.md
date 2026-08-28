@@ -32,6 +32,11 @@ The [cosecant][cosecant] of an angle measured in degrees is computed as
 y = \csc\left(\frac{\pi x}{180}\right)
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = \csc\left(\frac{\pi x}{180}\right)" data-equation="eq:cosecant_degrees">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/cscd/docs/img/equation_cosecant_degrees.svg" alt="Cosecant of an angle in degrees">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

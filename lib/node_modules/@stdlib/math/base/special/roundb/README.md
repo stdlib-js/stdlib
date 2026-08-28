@@ -30,6 +30,11 @@ limitations under the License.
 y = \left\lfloor \frac{x}{b^n} + 0.5 \right\rfloor \cdot b^n
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = \left\lfloor \frac{x}{b^n} + 0.5 \right\rfloor \cdot b^n" data-equation="eq:roundb_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/roundb/docs/img/equation_roundb_function.svg" alt="Round to nearest multiple of b^n">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

@@ -32,6 +32,11 @@ The inverse of the regularized [incomplete beta function][incomplete-beta-functi
 x = I^{-1}(p;\, a, b) \quad \text{such that} \quad I_x(a, b) = p
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="x = I^{-1}(p;\, a, b) \quad \text{such that} \quad I_x(a, b) = p" data-equation="eq:betaincinv_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/betaincinv/docs/img/equation_betaincinv_function.svg" alt="Inverse of the regularized incomplete beta function">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

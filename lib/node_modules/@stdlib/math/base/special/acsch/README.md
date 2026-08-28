@@ -32,6 +32,11 @@ The [inverse hyperbolic cosecant][inverse-hyperbolic-functions] function is defi
 y = \mathop{\mathrm{arccsch}}(x) = \ln\left(\frac{1}{x} + \frac{\sqrt{1 + x^2}}{|x|}\right)
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = \operatorname{arccsch}(x) = \ln\left(\frac{1}{x} + \frac{\sqrt{1 + x^2}}{|x|}\right)" data-equation="eq:hyperbolic_arccosecant">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/acsch/docs/img/equation_hyperbolic_arccosecant.svg" alt="Hyperbolic arccosecant function">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

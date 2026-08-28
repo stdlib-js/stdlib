@@ -27,8 +27,13 @@ limitations under the License.
 <!-- <equation class="equation" label="eq:trunc2_function" align="center" raw="y = \operatorname{sgn}(x) \cdot 2^{\lfloor \log_2 |x| \rfloor}" alt="Truncate to nearest power of two"> -->
 
 ```math
-y = \operatorname{sgn}(x) \cdot 2^{\lfloor \log_2 |x| \rfloor}
+y = \mathop{\mathrm{sgn}}(x) \cdot 2^{\lfloor \log_2 |x| \rfloor}
 ```
+
+<!-- <div class="equation" align="center" data-raw-text="y = \operatorname{sgn}(x) \cdot 2^{\lfloor \log_2 |x| \rfloor}" data-equation="eq:trunc2_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/trunc2/docs/img/equation_trunc2_function.svg" alt="Truncate to nearest power of two">
+    <br>
+</div> -->
 
 <!-- </equation> -->
 

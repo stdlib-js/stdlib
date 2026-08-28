@@ -30,6 +30,11 @@ limitations under the License.
 y = \lfloor x + 0.5 \rfloor
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = \lfloor x + 0.5 \rfloor" data-equation="eq:round_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/round/docs/img/equation_round_function.svg" alt="Round to nearest integer">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

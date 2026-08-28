@@ -32,6 +32,11 @@ limitations under the License.
 (m, M) = (\min(|x|, |y|),\; \max(|x|, |y|))
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="(m, M) = (\min(|x|, |y|),\; \max(|x|, |y|))" data-equation="eq:minmaxabs_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/minmaxabsf/docs/img/equation_minmaxabs_function.svg" alt="Minimum and maximum absolute values">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

@@ -32,6 +32,11 @@ limitations under the License.
 z = \min(|x|, |y|)
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="z = \min(|x|, |y|)" data-equation="eq:minabs_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/minabs/docs/img/equation_minabs_function.svg" alt="Minimum absolute value">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>
