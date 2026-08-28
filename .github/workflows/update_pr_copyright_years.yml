@@ -116,8 +116,10 @@ jobs:
       # Update the copyright years:
       - name: 'Update copyright years'
         id: update-years
+        env:
+          FILES: ${{ steps.added-files.outputs.files }}
         run: |
-          files="${{ steps.added-files.outputs.files }}"
+          files="$FILES"
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/update_pr_copyright_years/run" "$files"
 
       # Disable Git hooks:

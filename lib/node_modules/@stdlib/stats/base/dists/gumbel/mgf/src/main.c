@@ -22,7 +22,7 @@
 #include "stdlib/math/base/special/exp.h"
 
 /**
-* Evaluates the moment-generating function (MGF) for a Gumbel distribution with location parameter `mu` and scale parameter `b` at a value `t`.
+* Evaluates the moment-generating function (MGF) for a Gumbel distribution with location parameter `mu` and scale parameter `beta` at a value `t`.
 *
 * @param t       input value
 * @param mu      location parameter

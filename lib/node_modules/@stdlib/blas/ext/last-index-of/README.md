@@ -187,18 +187,14 @@ The method accepts the following options:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var discreteUniform = require( '@stdlib/random/discrete-uniform' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
-var ndarray = require( '@stdlib/ndarray/ctor' );
 var lastIndexOf = require( '@stdlib/blas/ext/last-index-of' );
 
-// Generate an array of random numbers:
-var xbuf = discreteUniform( 10, 0, 20, {
+// Generate an ndarray of random numbers:
+var x = discreteUniform( [ 5, 2 ], 0, 20, {
     'dtype': 'float64'
 });
-
-// Wrap in an ndarray:
-var x = new ndarray( 'float64', xbuf, [ 5, 2 ], [ 2, 1 ], 0, 'row-major' );
 console.log( ndarray2array( x ) );
 
 // Perform operation:

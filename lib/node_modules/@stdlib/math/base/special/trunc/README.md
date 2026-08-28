@@ -22,6 +22,22 @@ limitations under the License.
 
 > Round a double-precision floating-point number toward zero.
 
+<section class="intro">
+
+The [truncation function][truncation] rounds a numeric value toward zero
+
+<!-- <equation class="equation" label="eq:truncation_function" align="center" raw="y = \operatorname{trunc}(x) = \begin{cases} \lfloor x \rfloor & \textrm{if}\ x \geq 0 \\ \lceil x \rceil & \textrm{if}\ x < 0 \end{cases}" alt="Truncation function"> -->
+
+```math
+y = \mathop{\mathrm{trunc}}(x) = \begin{cases} \lfloor x \rfloor & \textrm{if}\ x \geq 0 \\ \lceil x \rceil & \textrm{if}\ x < 0 \end{cases}
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
@@ -188,6 +204,8 @@ int main( void ) {
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[truncation]: https://en.wikipedia.org/wiki/Truncation
 
 <!-- <related-links> -->
 

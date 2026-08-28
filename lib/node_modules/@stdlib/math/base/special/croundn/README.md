@@ -22,6 +22,20 @@ limitations under the License.
 
 > Round each component of a double-precision complex floating-point number to the nearest multiple of `10^n`.
 
+<section class="intro">
+
+<!-- <equation class="equation" label="eq:croundn_function" align="center" raw="\operatorname{croundn}(a + bi, n) = \operatorname{roundn}(a, n) + \operatorname{roundn}(b, n)\,i" alt="Complex round to n decimal places"> -->
+
+```math
+\mathop{\mathrm{croundn}}(a + bi, n) = \mathop{\mathrm{roundn}}(a, n) + \mathop{\mathrm{roundn}}(b, n)\,i
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

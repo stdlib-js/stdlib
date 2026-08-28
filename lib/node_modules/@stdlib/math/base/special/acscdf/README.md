@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the [arccosecant][arccosecant] (in degrees) of a single-precision floating-point number.
 
+<section class="intro">
+
+The [arccosecant][arccosecant] in degrees is defined as
+
+<!-- <equation class="equation" label="eq:arccosecant_degrees" align="center" raw="y = \frac{180}{\pi} \operatorname{arccsc}(x)" alt="Arccosecant in degrees"> -->
+
+```math
+y = \frac{180}{\pi} \mathop{\mathrm{arccsc}}(x)
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

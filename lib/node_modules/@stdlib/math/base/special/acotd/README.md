@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the [arccotangent][arccotangent] in degrees of a double-precision floating-point number.
 
+<section class="intro">
+
+The [arccotangent][arccotangent] in degrees is defined as
+
+<!-- <equation class="equation" label="eq:arccotangent_degrees" align="center" raw="y = \frac{180}{\pi} \operatorname{arccot}(x)" alt="Arccotangent in degrees"> -->
+
+```math
+y = \frac{180}{\pi} \mathop{\mathrm{arccot}}(x)
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

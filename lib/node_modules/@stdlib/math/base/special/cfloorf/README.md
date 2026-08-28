@@ -22,6 +22,20 @@ limitations under the License.
 
 > Round each component of a single-precision complex floating-point number toward negative infinity.
 
+<section class="intro">
+
+<!-- <equation class="equation" label="eq:cfloor_function" align="center" raw="\operatorname{cfloor}(a + bi) = \lfloor a \rfloor + \lfloor b \rfloor i" alt="Complex floor function"> -->
+
+```math
+\mathop{\mathrm{cfloor}}(a + bi) = \lfloor a \rfloor + \lfloor b \rfloor i
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

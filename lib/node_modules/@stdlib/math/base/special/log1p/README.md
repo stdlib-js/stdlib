@@ -22,6 +22,22 @@ limitations under the License.
 
 > Evaluate the [natural logarithm][@stdlib/math/base/special/ln] of `1+x`.
 
+<section class="intro">
+
+The function computes the [natural logarithm][natural-logarithm] of `1+x` accurately for small `x`
+
+<!-- <equation class="equation" label="eq:log1p_function" align="center" raw="y = \ln(1 + x)" alt="Natural logarithm of one plus x"> -->
+
+```math
+y = \ln(1 + x)
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
@@ -196,6 +212,8 @@ int main( void ) {
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[natural-logarithm]: https://en.wikipedia.org/wiki/Natural_logarithm
 
 <!-- <related-links> -->
 

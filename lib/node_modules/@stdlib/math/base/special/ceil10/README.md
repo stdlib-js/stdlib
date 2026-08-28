@@ -22,6 +22,20 @@ limitations under the License.
 
 > Round a numeric value to the nearest power of 10 toward positive infinity.
 
+<section class="intro">
+
+<!-- <equation class="equation" label="eq:ceil10_function" align="center" raw="y = \begin{cases} 10^{\lceil \log_{10} x \rceil} & \textrm{if}\ x > 0 \\ -10^{\lfloor \log_{10} |x| \rfloor} & \textrm{if}\ x < 0 \end{cases}" alt="Round up to nearest power of ten"> -->
+
+```math
+y = \begin{cases} 10^{\lceil \log_{10} x \rceil} & \textrm{if}\ x > 0 \\ -10^{\lfloor \log_{10} |x| \rfloor} & \textrm{if}\ x < 0 \end{cases}
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

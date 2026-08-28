@@ -1,0 +1,109 @@
+
+{{alias}}( N, k, x, strideX, out, strideOut )
+    Cumulatively tests whether at least `k` elements in a single-precision
+    floating-point strided array are truthy.
+
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use a typed
+    array view.
+
+    If `N <= 0`, the function returns `out` unchanged.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    k: integer
+        Minimum number of truthy elements.
+
+    x: Float32Array
+        Input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    out: BooleanArray
+        Output array.
+
+    strideOut: integer
+        Stride length for `out`.
+
+    Returns
+    -------
+    out: BooleanArray
+        Output array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/float32}}( [ 0.0, 0.0, 1.0, 1.0, 1.0 ] );
+    > var out = new {{alias:@stdlib/array/bool}}( 5 );
+    > {{alias}}( x.length, 2, x, 1, out, 1 )
+    <BooleanArray>[ false, false, false, true, true ]
+
+    // Using `N` and stride parameters:
+    > x = new {{alias:@stdlib/array/float32}}( [ 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0 ] );
+    > out = new {{alias:@stdlib/array/bool}}( 4 );
+    > {{alias}}( 4, 2, x, 2, out, 1 )
+    <BooleanArray>[ false, false, false, true ]
+
+
+{{alias}}.ndarray( N, k, x, strideX, offsetX, out, strideOut, offsetOut )
+    Cumulatively tests whether at least `k` elements in a single-precision
+    floating-point strided array are truthy using alternative indexing
+    semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on
+    starting indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    k: integer
+        Minimum number of truthy elements.
+
+    x: Float32Array
+        Input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    offsetX: integer
+        Starting index for `x`.
+
+    out: BooleanArray
+        Output array.
+
+    strideOut: integer
+        Stride length for `out`.
+
+    offsetOut: integer
+        Starting index for `out`.
+
+    Returns
+    -------
+    out: BooleanArray
+        Output array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/float32}}( [ 0.0, 0.0, 1.0, 1.0, 1.0 ] );
+    > var out = new {{alias:@stdlib/array/bool}}( 5 );
+    > {{alias}}.ndarray( x.length, 2, x, 1, 0, out, 1, 0 )
+    <BooleanArray>[ false, false, false, true, true ]
+
+    // Advanced indexing:
+    > x = new {{alias:@stdlib/array/float32}}( [ 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0 ] );
+    > out = new {{alias:@stdlib/array/bool}}( 3 );
+    > {{alias}}.ndarray( 3, 1, x, 2, 2, out, 1, 0 )
+    <BooleanArray>[ false, true, true ]
+
+    See Also
+    --------

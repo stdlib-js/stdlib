@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the [hyperbolic secant][hyperbolic-functions] of a double-precision floating-point number.
 
+<section class="intro">
+
+The [hyperbolic secant][hyperbolic-functions] function is defined as
+
+<!-- <equation class="equation" label="eq:hyperbolic_secant" align="center" raw="y = \operatorname{sech}(x) = \frac{2}{e^x + e^{-x}}" alt="Hyperbolic secant function"> -->
+
+```math
+y = \mathop{\mathrm{sech}}(x) = \frac{2}{e^x + e^{-x}}
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

@@ -26,6 +26,14 @@ limitations under the License.
 
 <section class="intro">
 
+<!-- <equation class="equation" label="eq:maxabsn_function" align="center" raw="y = \max(|x_1|, |x_2|, \ldots, |x_n|)" alt="Maximum absolute value of n values"> -->
+
+```math
+y = \max(|x_1|, |x_2|, \ldots, |x_n|)
+```
+
+<!-- </equation> -->
+
 </section>
 
 <!-- /.intro -->

@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the [arcsecant][arcsecant] (in degrees) of a single-precision floating-point number.
 
+<section class="intro">
+
+The [arcsecant][arcsecant] in degrees is defined as
+
+<!-- <equation class="equation" label="eq:arcsecant_degrees" align="center" raw="y = \frac{180}{\pi} \operatorname{arcsec}(x)" alt="Arcsecant in degrees"> -->
+
+```math
+y = \frac{180}{\pi} \mathop{\mathrm{arcsec}}(x)
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

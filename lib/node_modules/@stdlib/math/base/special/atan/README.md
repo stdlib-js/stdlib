@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the [arctangent][arctangent] of a double-precision floating-point number.
 
+<section class="intro">
+
+The [arctangent][arctangent] function is defined as
+
+<!-- <equation class="equation" label="eq:arctangent_function" align="center" raw="y = \arctan(x), \quad y \in \left(-\tfrac{\pi}{2}, \tfrac{\pi}{2}\right)" alt="Arctangent function definition with range"> -->
+
+```math
+y = \arctan(x), \quad y \in \left(-\tfrac{\pi}{2}, \tfrac{\pi}{2}\right)
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

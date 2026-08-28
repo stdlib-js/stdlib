@@ -234,7 +234,7 @@ interface OptionsWithDType extends Options {
 }
 
 /**
-* Creates a ones-filled array having a specified shape and data type.
+* Creates a ones-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -243,7 +243,7 @@ interface OptionsWithDType extends Options {
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns ones-filled array
+* @returns ones-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -263,7 +263,7 @@ interface OptionsWithDType extends Options {
 declare function ones( shape: Shape | number, options: Float64Options ): float64ndarray;
 
 /**
-* Creates a ones-filled array having a specified shape and data type.
+* Creates a ones-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -272,7 +272,7 @@ declare function ones( shape: Shape | number, options: Float64Options ): float64
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns ones-filled array
+* @returns ones-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -292,7 +292,7 @@ declare function ones( shape: Shape | number, options: Float64Options ): float64
 declare function ones( shape: Shape | number, options: Float32Options ): float32ndarray;
 
 /**
-* Creates a ones-filled array having a specified shape and data type.
+* Creates a ones-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -301,7 +301,7 @@ declare function ones( shape: Shape | number, options: Float32Options ): float32
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns ones-filled array
+* @returns ones-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -321,7 +321,7 @@ declare function ones( shape: Shape | number, options: Float32Options ): float32
 declare function ones( shape: Shape | number, options: Complex128Options ): complex128ndarray;
 
 /**
-* Creates a ones-filled array having a specified shape and data type.
+* Creates a ones-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -330,7 +330,7 @@ declare function ones( shape: Shape | number, options: Complex128Options ): comp
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns ones-filled array
+* @returns ones-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -350,7 +350,7 @@ declare function ones( shape: Shape | number, options: Complex128Options ): comp
 declare function ones( shape: Shape | number, options: Complex64Options ): complex64ndarray;
 
 /**
-* Creates a ones-filled array having a specified shape and data type.
+* Creates a ones-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -359,7 +359,7 @@ declare function ones( shape: Shape | number, options: Complex64Options ): compl
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns ones-filled array
+* @returns ones-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -379,7 +379,7 @@ declare function ones( shape: Shape | number, options: Complex64Options ): compl
 declare function ones( shape: Shape | number, options: Int32Options ): int32ndarray;
 
 /**
-* Creates a ones-filled array having a specified shape and data type.
+* Creates a ones-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -388,7 +388,7 @@ declare function ones( shape: Shape | number, options: Int32Options ): int32ndar
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns ones-filled array
+* @returns ones-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -408,7 +408,7 @@ declare function ones( shape: Shape | number, options: Int32Options ): int32ndar
 declare function ones( shape: Shape | number, options: Int16Options ): int16ndarray;
 
 /**
-* Creates a ones-filled array having a specified shape and data type.
+* Creates a ones-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -417,7 +417,7 @@ declare function ones( shape: Shape | number, options: Int16Options ): int16ndar
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns ones-filled array
+* @returns ones-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -437,7 +437,7 @@ declare function ones( shape: Shape | number, options: Int16Options ): int16ndar
 declare function ones( shape: Shape | number, options: Int8Options ): int8ndarray;
 
 /**
-* Creates a ones-filled array having a specified shape and data type.
+* Creates a ones-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -446,7 +446,7 @@ declare function ones( shape: Shape | number, options: Int8Options ): int8ndarra
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns ones-filled array
+* @returns ones-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -466,7 +466,7 @@ declare function ones( shape: Shape | number, options: Int8Options ): int8ndarra
 declare function ones( shape: Shape | number, options: Uint32Options ): uint32ndarray;
 
 /**
-* Creates a ones-filled array having a specified shape and data type.
+* Creates a ones-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -475,7 +475,7 @@ declare function ones( shape: Shape | number, options: Uint32Options ): uint32nd
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns ones-filled array
+* @returns ones-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -495,7 +495,7 @@ declare function ones( shape: Shape | number, options: Uint32Options ): uint32nd
 declare function ones( shape: Shape | number, options: Uint16Options ): uint16ndarray;
 
 /**
-* Creates a ones-filled array having a specified shape and data type.
+* Creates a ones-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -504,7 +504,7 @@ declare function ones( shape: Shape | number, options: Uint16Options ): uint16nd
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns ones-filled array
+* @returns ones-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -524,7 +524,7 @@ declare function ones( shape: Shape | number, options: Uint16Options ): uint16nd
 declare function ones( shape: Shape | number, options: Uint8Options ): uint8ndarray;
 
 /**
-* Creates a ones-filled array having a specified shape and data type.
+* Creates a ones-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -533,7 +533,7 @@ declare function ones( shape: Shape | number, options: Uint8Options ): uint8ndar
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns ones-filled array
+* @returns ones-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -553,7 +553,7 @@ declare function ones( shape: Shape | number, options: Uint8Options ): uint8ndar
 declare function ones( shape: Shape | number, options: Uint8COptions ): uint8cndarray;
 
 /**
-* Creates a ones-filled array having a specified shape and data type.
+* Creates a ones-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -562,7 +562,7 @@ declare function ones( shape: Shape | number, options: Uint8COptions ): uint8cnd
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns ones-filled array
+* @returns ones-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -582,7 +582,7 @@ declare function ones( shape: Shape | number, options: Uint8COptions ): uint8cnd
 declare function ones( shape: Shape | number, options: GenericOptions ): genericndarray<number>;
 
 /**
-* Creates a ones-filled array having a specified shape and data type.
+* Creates a ones-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -591,7 +591,7 @@ declare function ones( shape: Shape | number, options: GenericOptions ): generic
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns ones-filled array
+* @returns ones-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -609,7 +609,7 @@ declare function ones( shape: Shape | number, options: GenericOptions ): generic
 declare function ones( shape: Shape | number, options?: Options ): float64ndarray;
 
 /**
-* Creates a ones-filled array having a specified shape and data type.
+* Creates a ones-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -618,7 +618,7 @@ declare function ones( shape: Shape | number, options?: Options ): float64ndarra
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns ones-filled array
+* @returns ones-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
