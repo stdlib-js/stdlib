@@ -32,6 +32,11 @@ The [arccotangent][arccotangent] in degrees is defined as
 y = \frac{180}{\pi} \mathop{\mathrm{arccot}}(x)
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = \frac{180}{\pi} \operatorname{arccot}(x)" data-equation="eq:arccotangent_degrees">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/acotd/docs/img/equation_arccotangent_degrees.svg" alt="Arccotangent in degrees">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

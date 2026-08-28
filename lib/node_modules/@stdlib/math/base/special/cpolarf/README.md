@@ -32,6 +32,11 @@ The function computes the [absolute value][absolute-value] and [phase][complex-n
 z = r e^{i\theta}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="z = r e^{i\theta}" data-equation="eq:cpolar_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/cpolarf/docs/img/equation_cpolar_function.svg" alt="Complex polar form">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 where `r = |z|` is the absolute value (modulus) and `θ` is the phase (argument).

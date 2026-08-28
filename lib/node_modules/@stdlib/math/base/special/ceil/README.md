@@ -32,6 +32,11 @@ The [ceiling function][ceiling-function] is defined as
 y = \lceil x \rceil = \min\{ n \in \mathbb{Z} : n \geq x \}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = \lceil x \rceil = \min\{ n \in \mathbb{Z} : n \geq x \}" data-equation="eq:ceiling_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/ceil/docs/img/equation_ceiling_function.svg" alt="Ceiling function">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

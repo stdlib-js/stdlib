@@ -30,6 +30,11 @@ limitations under the License.
 \mathop{\mathrm{cceiln}}(a + bi, n) = \mathop{\mathrm{ceiln}}(a, n) + \mathop{\mathrm{ceiln}}(b, n)\,i
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{cceiln}(a + bi, n) = \operatorname{ceiln}(a, n) + \operatorname{ceiln}(b, n)\,i" data-equation="eq:cceiln_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/cceiln/docs/img/equation_cceiln_function.svg" alt="Complex ceiling to n decimal places">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

@@ -32,6 +32,11 @@ The [base-2 exponential function][exponential-function] is defined as
 y = 2^x
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = 2^x" data-equation="eq:base2_exponential_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/exp2/docs/img/equation_base2_exponential_function.svg" alt="Base-2 exponential function">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

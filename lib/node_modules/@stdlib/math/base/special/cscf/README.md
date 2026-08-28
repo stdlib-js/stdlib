@@ -32,6 +32,11 @@ The [cosecant][trigonometric-functions] function is defined as
 y = \csc(x) = \frac{1}{\sin(x)}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = \csc(x) = \frac{1}{\sin(x)}" data-equation="eq:cosecant_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/cscf/docs/img/equation_cosecant_function.svg" alt="Cosecant function">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

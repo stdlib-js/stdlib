@@ -32,6 +32,11 @@ The [natural logarithm][natural-logarithm] is defined as
 y = \ln(x) = \log_e(x)
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = \ln(x) = \log_e(x)" data-equation="eq:natural_logarithm">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/ln/docs/img/equation_natural_logarithm.svg" alt="Natural logarithm definition">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>
