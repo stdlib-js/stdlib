@@ -32,6 +32,11 @@ The [hyperbolic arccosine][hyperbolic-arccosine] function is defined as
 y = \mathop{\mathrm{arccosh}}(x) = \ln\left(x + \sqrt{x^2 - 1}\right)
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = \operatorname{arccosh}(x) = \ln\left(x + \sqrt{x^2 - 1}\right)" data-equation="eq:hyperbolic_arccosine">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/acosh/docs/img/equation_hyperbolic_arccosine.svg" alt="Hyperbolic arccosine function">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

@@ -30,6 +30,11 @@ limitations under the License.
 \mathop{\mathrm{cfloor}}(a + bi) = \lfloor a \rfloor + \lfloor b \rfloor i
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{cfloor}(a + bi) = \lfloor a \rfloor + \lfloor b \rfloor i" data-equation="eq:cfloor_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/cfloorf/docs/img/equation_cfloor_function.svg" alt="Complex floor function">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

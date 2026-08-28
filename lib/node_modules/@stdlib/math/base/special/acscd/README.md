@@ -32,6 +32,11 @@ The [arccosecant][arccosecant] in degrees is defined as
 y = \frac{180}{\pi} \mathop{\mathrm{arccsc}}(x)
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = \frac{180}{\pi} \operatorname{arccsc}(x)" data-equation="eq:arccosecant_degrees">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/acscd/docs/img/equation_arccosecant_degrees.svg" alt="Arccosecant in degrees">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

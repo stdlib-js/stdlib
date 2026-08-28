@@ -32,6 +32,11 @@ The [falling factorial][falling-and-rising-factorials] (or Pochhammer's symbol f
 (x)_n = x(x-1)(x-2) \cdots (x-n+1) = \frac{x!}{(x-n)!}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="(x)_n = x(x-1)(x-2) \cdots (x-n+1) = \frac{x!}{(x-n)!}" data-equation="eq:falling_factorial">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/falling-factorial/docs/img/equation_falling_factorial.svg" alt="Falling factorial">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

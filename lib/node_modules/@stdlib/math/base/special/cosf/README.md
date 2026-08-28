@@ -32,6 +32,11 @@ The [cosine][cosine] function can be expressed as the infinite series
 \cos(x) = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n)!} x^{2n} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\cos(x) = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n)!} x^{2n} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots" data-equation="eq:cosine_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/cosf/docs/img/equation_cosine_function.svg" alt="Cosine function Taylor series expansion">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

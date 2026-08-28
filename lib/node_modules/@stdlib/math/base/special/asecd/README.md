@@ -32,6 +32,11 @@ The [arcsecant][arcsecant] in degrees is defined as
 y = \frac{180}{\pi} \mathop{\mathrm{arcsec}}(x)
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = \frac{180}{\pi} \operatorname{arcsec}(x)" data-equation="eq:arcsecant_degrees">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/asecd/docs/img/equation_arcsecant_degrees.svg" alt="Arcsecant in degrees">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

@@ -32,6 +32,11 @@ The [truncation function][truncation] rounds a numeric value toward zero
 y = \mathop{\mathrm{trunc}}(x) = \begin{cases} \lfloor x \rfloor & \textrm{if}\ x \geq 0 \\ \lceil x \rceil & \textrm{if}\ x < 0 \end{cases}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = \operatorname{trunc}(x) = \begin{cases} \lfloor x \rfloor &amp; \textrm{if}\ x \geq 0 \\ \lceil x \rceil &amp; \textrm{if}\ x &lt; 0 \end{cases}" data-equation="eq:truncation_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/trunc/docs/img/equation_truncation_function.svg" alt="Truncation function">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

@@ -32,6 +32,11 @@ The [hyperbolic cosine][hyperbolic-cosine] function is defined as
 y = \cosh(x) = \frac{e^x + e^{-x}}{2}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = \cosh(x) = \frac{e^x + e^{-x}}{2}" data-equation="eq:hyperbolic_cosine">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/coshf/docs/img/equation_hyperbolic_cosine.svg" alt="Hyperbolic cosine function">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>
