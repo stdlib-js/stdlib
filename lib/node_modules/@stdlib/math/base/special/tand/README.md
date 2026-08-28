@@ -32,6 +32,11 @@ The [tangent][trigonometric-functions] of an angle measured in degrees is comput
 y = \tan\left(\frac{\pi x}{180}\right)
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = \tan\left(\frac{\pi x}{180}\right)" data-equation="eq:tangent_degrees">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/tand/docs/img/equation_tangent_degrees.svg" alt="Tangent of an angle in degrees">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

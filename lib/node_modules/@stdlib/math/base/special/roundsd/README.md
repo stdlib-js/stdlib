@@ -32,6 +32,11 @@ The function rounds a numeric value to the specified number of [significant figu
 y = \left\lfloor x \cdot b^{n - \lfloor \log_b |x| \rfloor - 1} + 0.5 \right\rfloor \cdot b^{\lfloor \log_b |x| \rfloor - n + 1}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = \left\lfloor x \cdot b^{n - \lfloor \log_b |x| \rfloor - 1} + 0.5 \right\rfloor \cdot b^{\lfloor \log_b |x| \rfloor - n + 1}" data-equation="eq:roundsd_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/roundsd/docs/img/equation_roundsd_function.svg" alt="Round to n significant figures">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

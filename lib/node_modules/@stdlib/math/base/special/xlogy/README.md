@@ -32,6 +32,11 @@ The function computes `x * ln(y)`, returning `0` when `x = 0`
 f(x, y) = \begin{cases} x \cdot \ln(y) & \textrm{if}\ x \neq 0 \\ 0 & \textrm{if}\ x = 0 \end{cases}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="f(x, y) = \begin{cases} x \cdot \ln(y) &amp; \textrm{if}\ x \neq 0 \\ 0 &amp; \textrm{if}\ x = 0 \end{cases}" data-equation="eq:xlogy_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/xlogy/docs/img/equation_xlogy_function.svg" alt="x times the natural logarithm of y">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

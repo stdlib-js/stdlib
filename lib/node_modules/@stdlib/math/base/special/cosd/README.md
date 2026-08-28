@@ -32,6 +32,11 @@ The [cosine][trigonometric-functions] of an angle measured in degrees is compute
 y = \cos\left(\frac{\pi x}{180}\right)
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = \cos\left(\frac{\pi x}{180}\right)" data-equation="eq:cosine_degrees">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/cosd/docs/img/equation_cosine_degrees.svg" alt="Cosine of an angle in degrees">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

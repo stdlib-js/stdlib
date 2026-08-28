@@ -32,6 +32,11 @@ The function computes the [natural logarithm][natural-logarithm] of `1+x` accura
 y = \ln(1 + x)
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = \ln(1 + x)" data-equation="eq:log1p_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/log1p/docs/img/equation_log1p_function.svg" alt="Natural logarithm of one plus x">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

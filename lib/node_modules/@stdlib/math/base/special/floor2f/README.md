@@ -30,6 +30,11 @@ limitations under the License.
 y = \begin{cases} 2^{\lfloor \log_2 x \rfloor} & \textrm{if}\ x > 0 \\ -2^{\lceil \log_2 |x| \rceil} & \textrm{if}\ x < 0 \end{cases}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = \begin{cases} 2^{\lfloor \log_2 x \rfloor} &amp; \textrm{if}\ x &gt; 0 \\ -2^{\lceil \log_2 |x| \rceil} &amp; \textrm{if}\ x &lt; 0 \end{cases}" data-equation="eq:floor2_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/floor2f/docs/img/equation_floor2_function.svg" alt="Round down to nearest power of two">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

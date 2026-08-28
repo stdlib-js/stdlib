@@ -30,6 +30,11 @@ limitations under the License.
 \mathop{\mathrm{cfloorn}}(a + bi, n) = \mathop{\mathrm{floorn}}(a, n) + \mathop{\mathrm{floorn}}(b, n)\,i
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{cfloorn}(a + bi, n) = \operatorname{floorn}(a, n) + \operatorname{floorn}(b, n)\,i" data-equation="eq:cfloorn_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/cfloorn/docs/img/equation_cfloorn_function.svg" alt="Complex floor to n decimal places">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

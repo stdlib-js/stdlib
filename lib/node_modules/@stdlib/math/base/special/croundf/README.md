@@ -30,6 +30,11 @@ limitations under the License.
 \mathop{\mathrm{cround}}(a + bi) = \lfloor a + 0.5 \rfloor + \lfloor b + 0.5 \rfloor i
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{cround}(a + bi) = \lfloor a + 0.5 \rfloor + \lfloor b + 0.5 \rfloor i" data-equation="eq:cround_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/croundf/docs/img/equation_cround_function.svg" alt="Complex round function">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

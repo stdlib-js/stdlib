@@ -32,6 +32,11 @@ The [secant][trigonometric-functions] function is defined as
 y = \sec(x) = \frac{1}{\cos(x)}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = \sec(x) = \frac{1}{\cos(x)}" data-equation="eq:secant_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/secf/docs/img/equation_secant_function.svg" alt="Secant function">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

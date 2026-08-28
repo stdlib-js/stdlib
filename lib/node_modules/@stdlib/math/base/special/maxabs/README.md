@@ -32,6 +32,11 @@ limitations under the License.
 z = \max(|x|, |y|)
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="z = \max(|x|, |y|)" data-equation="eq:maxabs_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/maxabs/docs/img/equation_maxabs_function.svg" alt="Maximum absolute value">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>
