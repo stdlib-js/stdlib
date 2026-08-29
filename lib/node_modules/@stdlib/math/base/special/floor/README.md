@@ -33,7 +33,7 @@ y = \lfloor x \rfloor = \max\{ n \in \mathbb{Z} : n \leq x \}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="y = \lfloor x \rfloor = \max\{ n \in \mathbb{Z} : n \leq x \}" data-equation="eq:floor_function">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/floor/docs/img/equation_floor_function.svg" alt="Floor function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@85f48534ef6908bbcd982d48f1c5fbea3fb7aafd/lib/node_modules/@stdlib/math/base/special/floor/docs/img/equation_floor_function.svg" alt="Floor function">
     <br>
 </div> -->
 

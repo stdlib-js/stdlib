@@ -33,7 +33,7 @@ y = \min(x_1, x_2, \ldots, x_n)
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="y = \min(x_1, x_2, \ldots, x_n)" data-equation="eq:minn_function">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/minn/docs/img/equation_minn_function.svg" alt="Minimum of n values">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@85f48534ef6908bbcd982d48f1c5fbea3fb7aafd/lib/node_modules/@stdlib/math/base/special/minn/docs/img/equation_minn_function.svg" alt="Minimum of n values">
     <br>
 </div> -->
 
