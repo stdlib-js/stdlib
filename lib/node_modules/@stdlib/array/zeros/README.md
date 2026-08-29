@@ -53,6 +53,7 @@ The function recognizes the following data types:
 
 -   `float64`: double-precision floating-point numbers (IEEE 754)
 -   `float32`: single-precision floating-point numbers (IEEE 754)
+-   `float16`: half-precision floating-point numbers (IEEE 754)
 -   `complex128`: double-precision complex floating-point numbers
 -   `complex64`: single-precision complex floating-point numbers
 -   `int32`: 32-bit two's complement signed integers
@@ -96,7 +97,7 @@ var dtypes = require( '@stdlib/array/dtypes' );
 var zeros = require( '@stdlib/array/zeros' );
 
 // Get a list of array data types:
-var dt = dtypes();
+var dt = dtypes( 'numeric' );
 
 // Generate zero-filled arrays...
 var arr;

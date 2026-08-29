@@ -1,0 +1,36 @@
+
+{{alias}}()
+    Returns an accumulator function which incrementally computes a sample
+    covariance, ignoring `NaN` values.
+
+    If provided input values, the accumulator function returns an updated
+    sample covariance. If not provided input values, the accumulator function
+    returns the current sample covariance.
+
+    If an input value is `NaN`, the input pair is ignored and the accumulated
+    value remains unchanged.
+
+    Until at least two valid data pairs have been provided, the accumulator
+    function returns `null`.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}();
+    > var v = accumulator()
+    null
+    > v = accumulator( 2.0, 1.0 )
+    null
+    > v = accumulator( NaN, 5.0 )
+    null
+    > v = accumulator( 4.0, 5.0 )
+    4.0
+    > v = accumulator()
+    4.0
+
+    See Also
+    --------

@@ -165,18 +165,14 @@ The function accepts the following options:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var discreteUniform = require( '@stdlib/random/discrete-uniform' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
-var ndarray = require( '@stdlib/ndarray/ctor' );
 var toSortedhp = require( '@stdlib/blas/ext/to-sortedhp' );
 
-// Generate an array of random numbers:
-var xbuf = discreteUniform( 25, -20, 20, {
+// Generate an ndarray of random numbers:
+var x = discreteUniform( [ 5, 5 ], -20, 20, {
     'dtype': 'generic'
 });
-
-// Wrap in an ndarray:
-var x = new ndarray( 'generic', xbuf, [ 5, 5 ], [ 5, 1 ], 0, 'row-major' );
 console.log( ndarray2array( x ) );
 
 // Perform operation:

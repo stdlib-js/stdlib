@@ -1,0 +1,51 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2026 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+#include "stdlib/stats/base/dists/log-logistic/variance.h"
+#include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/math/base/special/sin.h"
+#include "stdlib/constants/float64/pi.h"
+
+/**
+* Returns the variance of a log-logistic distribution with scale parameter `alpha` and shape parameter `beta`.
+*
+* @param alpha    scale parameter
+* @param beta     shape parameter
+* @return         variance
+*
+* @example
+* double v = stdlib_base_dists_log_logistic_variance( 1.0, 3.0 );
+* // returns ~0.956
+*/
+double stdlib_base_dists_log_logistic_variance( const double alpha, const double beta ) {
+	double b2;
+	double b;
+	double s;
+	if (
+		stdlib_base_is_nan( alpha ) ||
+		stdlib_base_is_nan( beta ) ||
+		alpha <= 0.0 ||
+		beta <= 2.0
+	) {
+		return 0.0 / 0.0; // NaN
+	}
+	b = STDLIB_CONSTANT_FLOAT64_PI / beta;
+	b2 = 2.0 * b;
+	s = stdlib_base_sin( b );
+	return ( alpha * alpha ) * ( ( b2 / stdlib_base_sin( b2 ) ) - ( ( b * b ) / ( s * s ) ) );
+}

@@ -18,6 +18,10 @@
 
 // TypeScript Version: 4.1
 
+/// <reference types="@stdlib/types"/>
+
+import { Layout } from '@stdlib/types/blas';
+
 /**
 * Interface describing `scartesianSquare`.
 */
@@ -46,7 +50,7 @@ interface Routine {
 	* scartesianSquare( 'row-major', x.length, x, 1, out, 2 );
 	* // out => <Float32Array>[ 1.0, 1.0, 1.0, 2.0, 2.0, 1.0, 2.0, 2.0 ]
 	*/
-	( order: string, N: number, x: Float32Array, strideX: number, out: Float32Array, LDO: number ): Float32Array;
+	( order: Layout, N: number, x: Float32Array, strideX: number, out: Float32Array, LDO: number ): Float32Array;
 
 	/**
 	* Computes the Cartesian square for a single-precision floating-point strided array using alternative indexing semantics.

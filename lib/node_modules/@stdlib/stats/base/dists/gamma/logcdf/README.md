@@ -20,7 +20,7 @@ limitations under the License.
 
 # Logarithm of Cumulative Distribution Function
 
-> [Gamma][gamma-distribution] distribution logarithm of cumulative distribution function (CDF).
+> [Gamma][gamma-distribution] distribution natural logarithm of cumulative distribution function (CDF).
 
 <section class="intro">
 

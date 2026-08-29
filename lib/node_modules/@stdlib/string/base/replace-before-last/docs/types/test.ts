@@ -31,18 +31,18 @@ import replaceBeforeLast = require( './index' );
 // The compiler throws an error if the function is provided arguments having invalid types...
 {
 	replaceBeforeLast( true, 'd', 'foo', 100 ); // $ExpectError
-	replaceBeforeLast( false, 'd' , 'foo', 100 ); // $ExpectError
-	replaceBeforeLast( 3, 'd' , 'foo', 100 ); // $ExpectError
-	replaceBeforeLast( [], 'd' , 'foo', 100 ); // $ExpectError
-	replaceBeforeLast( {}, 'd' , 'foo', 100 ); // $ExpectError
+	replaceBeforeLast( false, 'd', 'foo', 100 ); // $ExpectError
+	replaceBeforeLast( 3, 'd', 'foo', 100 ); // $ExpectError
+	replaceBeforeLast( [], 'd', 'foo', 100 ); // $ExpectError
+	replaceBeforeLast( {}, 'd', 'foo', 100 ); // $ExpectError
 	replaceBeforeLast( ( x: number ): number => x, 'd', 'foo', 100 ); // $ExpectError
 
 	replaceBeforeLast( 'abc', true, 'foo', 10 ); // $ExpectError
 	replaceBeforeLast( 'abc', false, 'foo', 10 ); // $ExpectError
-	replaceBeforeLast( 'abc', 5 , 'foo', 10 ); // $ExpectError
+	replaceBeforeLast( 'abc', 5, 'foo', 10 ); // $ExpectError
 	replaceBeforeLast( 'abc', [], 'foo', 10 ); // $ExpectError
-	replaceBeforeLast( 'abc', {} , 'foo', 10 ); // $ExpectError
-	replaceBeforeLast( 'abc', ( x: number ): number => x , 'foo', 10 ); // $ExpectError
+	replaceBeforeLast( 'abc', {}, 'foo', 10 ); // $ExpectError
+	replaceBeforeLast( 'abc', ( x: number ): number => x, 'foo', 10 ); // $ExpectError
 
 	replaceBeforeLast( 'abc', 'd', true, 10 ); // $ExpectError
 	replaceBeforeLast( 'abc', 'd', false, 10 ); // $ExpectError

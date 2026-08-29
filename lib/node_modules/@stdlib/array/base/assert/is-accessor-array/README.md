@@ -91,6 +91,7 @@ var Int16Array = require( '@stdlib/array/int16' );
 var Uint16Array = require( '@stdlib/array/uint16' );
 var Int32Array = require( '@stdlib/array/int32' );
 var Uint32Array = require( '@stdlib/array/uint32' );
+var Float16Array = require( '@stdlib/array/float16' );
 var Float32Array = require( '@stdlib/array/float32' );
 var Float64Array = require( '@stdlib/array/float64' );
 var Complex128Array = require( '@stdlib/array/complex128' );
@@ -110,6 +111,9 @@ bool = isAccessorArray( new Float64Array( 10 ) );
 // returns false
 
 bool = isAccessorArray( new Float32Array( 10 ) );
+// returns false
+
+bool = isAccessorArray( new Float16Array( 10 ) );
 // returns false
 
 bool = isAccessorArray( new Int32Array( 10 ) );

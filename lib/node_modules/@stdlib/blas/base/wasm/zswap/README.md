@@ -20,7 +20,7 @@ limitations under the License.
 
 # zswap
 
-> Interchange two complex double-precision floating-point vectors.
+> Interchange two double-precision complex floating-point vectors.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var zswap = require( '@stdlib/blas/base/wasm/zswap' );
 
 #### zswap.main( N, x, strideX, y, strideY )
 
-Interchanges two complex double-precision floating-point vectors.
+Interchanges two double-precision complex floating-point vectors.
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
@@ -89,7 +89,7 @@ zswap.main( 2, x1, -2, y1, 1 );
 
 #### zswap.ndarray( N, x, strideX, offsetX, y, strideY, offsetY )
 
-Interchanges two complex double-precision floating-point vectors using alternative indexing semantics.
+Interchanges two double-precision complex floating-point vectors using alternative indexing semantics.
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
@@ -149,7 +149,7 @@ mod.initializeSync();
 
 #### zswap.Module.prototype.main( N, xp, sx, yp, sy )
 
-Interchanges two complex double-precision floating-point vectors.
+Interchanges two double-precision complex floating-point vectors.
 
 <!-- eslint-disable n/no-sync -->
 
@@ -220,7 +220,7 @@ The function has the following parameters:
 
 #### zswap.Module.prototype.ndarray( N, xp, sx, ox, yp, sy, oy )
 
-Interchanges two complex double-precision floating-point vectors using alternative indexing semantics.
+Interchanges two double-precision complex floating-point vectors using alternative indexing semantics.
 
 <!-- eslint-disable n/no-sync -->
 

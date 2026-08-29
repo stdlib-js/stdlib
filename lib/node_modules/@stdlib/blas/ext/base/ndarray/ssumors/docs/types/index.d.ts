@@ -23,7 +23,7 @@
 import { float32ndarray } from '@stdlib/types/ndarray';
 
 /**
-* Computes the sum of a one-dimensional single-precision floating-point ndarray using ordinary recursive summation.
+* Computes the sum of all elements in a one-dimensional single-precision floating-point ndarray using ordinary recursive summation.
 *
 * ## Notes
 *

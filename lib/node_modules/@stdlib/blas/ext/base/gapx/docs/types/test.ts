@@ -27,7 +27,7 @@ import gapx = require( './index' );
 	const x = new Float64Array( 10 );
 
 	gapx( x.length, 5.0, x, 1 ); // $ExpectType Float64Array
-	gapx( x.length, 5.0, new AccessorArray( x ), 1 ); // $ExpectType AccessorArray
+	gapx( x.length, 5.0, new AccessorArray( x ), 1 ); // $ExpectType AccessorArray<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -103,7 +103,7 @@ import gapx = require( './index' );
 	const x = new Float64Array( 10 );
 
 	gapx.ndarray( x.length, 5.0, x, 1, 0 ); // $ExpectType Float64Array
-	gapx.ndarray( x.length, 5.0, new AccessorArray( x ), 1, 0 ); // $ExpectType AccessorArray
+	gapx.ndarray( x.length, 5.0, new AccessorArray( x ), 1, 0 ); // $ExpectType AccessorArray<number>
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...
