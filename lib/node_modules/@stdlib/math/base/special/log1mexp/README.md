@@ -33,7 +33,7 @@ y = \ln(1 - e^{-|x|})
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="y = \ln(1 - e^{-|x|})" data-equation="eq:log1mexp_function">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/log1mexp/docs/img/equation_log1mexp_function.svg" alt="Natural logarithm of one minus exponential">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@85f48534ef6908bbcd982d48f1c5fbea3fb7aafd/lib/node_modules/@stdlib/math/base/special/log1mexp/docs/img/equation_log1mexp_function.svg" alt="Natural logarithm of one minus exponential">
     <br>
 </div> -->
 

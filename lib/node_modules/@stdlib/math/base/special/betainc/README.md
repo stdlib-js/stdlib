@@ -33,7 +33,7 @@ I_x(a, b) = \frac{B(x;\, a, b)}{B(a, b)} = \frac{1}{B(a, b)} \int_0^x t^{a-1}(1-
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="I_x(a, b) = \frac{B(x;\, a, b)}{B(a, b)} = \frac{1}{B(a, b)} \int_0^x t^{a-1}(1-t)^{b-1}\,dt" data-equation="eq:incomplete_beta_function">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/betainc/docs/img/equation_incomplete_beta_function.svg" alt="Regularized incomplete beta function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@85f48534ef6908bbcd982d48f1c5fbea3fb7aafd/lib/node_modules/@stdlib/math/base/special/betainc/docs/img/equation_incomplete_beta_function.svg" alt="Regularized incomplete beta function">
     <br>
 </div> -->
 

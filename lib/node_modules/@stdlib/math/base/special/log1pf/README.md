@@ -33,7 +33,7 @@ y = \ln(1 + x)
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="y = \ln(1 + x)" data-equation="eq:log1p_function">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/log1pf/docs/img/equation_log1p_function.svg" alt="Natural logarithm of one plus x">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@85f48534ef6908bbcd982d48f1c5fbea3fb7aafd/lib/node_modules/@stdlib/math/base/special/log1pf/docs/img/equation_log1p_function.svg" alt="Natural logarithm of one plus x">
     <br>
 </div> -->
 
