@@ -1,0 +1,10 @@
+---
+type: amend-message
+---
+feat: add C implementation for `stats/base/dists/negative-binomial/logpmf`
+
+PR-URL: #10132
+
+Signed-off-by: Philipp Burckhardt <pburckhardt@outlook.com>
+Co-authored-by: Philipp Burckhardt <pburckhardt@outlook.com>
+Reviewed-by: Athan Reines <kgryte@gmail.com>
