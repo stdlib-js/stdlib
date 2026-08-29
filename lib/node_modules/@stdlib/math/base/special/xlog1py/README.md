@@ -33,7 +33,7 @@ f(x, y) = \begin{cases} x \cdot \ln(1 + y) & \textrm{if}\ x \neq 0 \\ 0 & \textr
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="f(x, y) = \begin{cases} x \cdot \ln(1 + y) &amp; \textrm{if}\ x \neq 0 \\ 0 &amp; \textrm{if}\ x = 0 \end{cases}" data-equation="eq:xlog1py_function">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/xlog1py/docs/img/equation_xlog1py_function.svg" alt="x times the natural logarithm of one plus y">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@85f48534ef6908bbcd982d48f1c5fbea3fb7aafd/lib/node_modules/@stdlib/math/base/special/xlog1py/docs/img/equation_xlog1py_function.svg" alt="x times the natural logarithm of one plus y">
     <br>
 </div> -->
 

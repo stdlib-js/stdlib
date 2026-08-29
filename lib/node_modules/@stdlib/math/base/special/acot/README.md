@@ -33,7 +33,7 @@ y = \mathop{\mathrm{arccot}}(x) = \arctan\left(\frac{1}{x}\right)
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="y = \operatorname{arccot}(x) = \arctan\left(\frac{1}{x}\right)" data-equation="eq:arccotangent_function">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/acot/docs/img/equation_arccotangent_function.svg" alt="Arccotangent function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@85f48534ef6908bbcd982d48f1c5fbea3fb7aafd/lib/node_modules/@stdlib/math/base/special/acot/docs/img/equation_arccotangent_function.svg" alt="Arccotangent function">
     <br>
 </div> -->
 
