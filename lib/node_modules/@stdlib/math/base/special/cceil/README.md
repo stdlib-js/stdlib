@@ -31,7 +31,7 @@ limitations under the License.
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{cceil}(a + bi) = \lceil a \rceil + \lceil b \rceil i" data-equation="eq:cceil_function">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/cceil/docs/img/equation_cceil_function.svg" alt="Complex ceiling function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@85f48534ef6908bbcd982d48f1c5fbea3fb7aafd/lib/node_modules/@stdlib/math/base/special/cceil/docs/img/equation_cceil_function.svg" alt="Complex ceiling function">
     <br>
 </div> -->
 

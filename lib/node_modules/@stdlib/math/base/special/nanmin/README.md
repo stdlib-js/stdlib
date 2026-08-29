@@ -33,7 +33,7 @@ limitations under the License.
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{nanmin}(x, y) = \begin{cases} y &amp; \textrm{if}\ x = \text{NaN} \\ x &amp; \textrm{if}\ y = \text{NaN} \\ \min(x, y) &amp; \textrm{otherwise} \end{cases}" data-equation="eq:nanmin_function">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/nanmin/docs/img/equation_nanmin_function.svg" alt="Minimum value ignoring NaN">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@85f48534ef6908bbcd982d48f1c5fbea3fb7aafd/lib/node_modules/@stdlib/math/base/special/nanmin/docs/img/equation_nanmin_function.svg" alt="Minimum value ignoring NaN">
     <br>
 </div> -->
 
