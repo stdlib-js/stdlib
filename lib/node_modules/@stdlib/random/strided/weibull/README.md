@@ -47,9 +47,9 @@ weibull( out.length, [ 2.0 ], 0, [ 5.0 ], 0, out, 1 );
 The function has the following parameters:
 
 -   **N**: number of indexed elements.
--   **k**: scale parameter.
+-   **k**: shape parameter.
 -   **sk**: index increment for `k`.
--   **lambda**: shape parameter.
+-   **lambda**: scale parameter.
 -   **sl**: index increment for `lambda`.
 -   **out**: output array.
 -   **so**: index increment for `out`.
