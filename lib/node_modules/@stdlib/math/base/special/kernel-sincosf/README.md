@@ -22,6 +22,14 @@ limitations under the License.
 
 > Simultaneously compute the [sine][@stdlib/math/base/special/sinf] and [cosine][@stdlib/math/base/special/cosf] of an angle measured in radians on `[-π/4, π/4]` in single-precision floating-point format.
 
+<section class="intro">
+
+The function simultaneously computes the sine and cosine of a single-precision floating-point number on the interval `[-π/4, π/4]`. For arguments outside this range, use argument reduction before calling this kernel.
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
