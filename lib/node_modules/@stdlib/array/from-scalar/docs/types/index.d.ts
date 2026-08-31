@@ -21,7 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 import { ComplexLike, Complex64, Complex128 } from '@stdlib/types/complex';
-import { DataType, Complex128Array, Complex64Array, BooleanArray } from '@stdlib/types/array';
+import { DataType, Float16Array, Complex128Array, Complex64Array, BooleanArray } from '@stdlib/types/array';
 
 /**
 * Returns a single-element array containing a provided scalar value.
@@ -48,6 +48,19 @@ declare function scalar2array( value: number, dtype: 'float64' ): Float64Array; 
 * // returns <Float32Array>[ 1.0 ]
 */
 declare function scalar2array( value: number, dtype: 'float32' ): Float32Array;
+
+/**
+* Returns a single-element array containing a provided scalar value.
+*
+* @param value - scalar value
+* @param dtype - output array data type
+* @returns output array
+*
+* @example
+* var x = scalar2array( 1.0, 'float16' );
+* // returns <Float16Array>[ 1.0 ]
+*/
+declare function scalar2array( value: number, dtype: 'float16' ): Float16Array;
 
 /**
 * Returns a single-element array containing a provided scalar value.
