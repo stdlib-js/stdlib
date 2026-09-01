@@ -112,7 +112,7 @@ eslint.rules[ 'no-restricted-syntax' ] = [ 'error',
 *
 * @private
 */
-eslint.rules[ 'require-jsdoc' ] = 'off';
+eslint.rules[ 'jsdoc/require-jsdoc' ] = 'off';
 
 /**
 * Do not require `@private` annotations.
@@ -127,6 +127,13 @@ eslint.rules[ 'stdlib/jsdoc-private-annotation' ] = 'off';
 * @private
 */
 eslint.rules[ 'stdlib/jsdoc-doctest' ] = 'off';
+
+/**
+* When testing, allow requiring the package as a whole even though only a single property is used.
+*
+* @private
+*/
+eslint.rules[ 'stdlib/no-single-property-require' ] = 'off';
 
 /**
 * Do not enforce nested function elevation.

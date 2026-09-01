@@ -245,8 +245,6 @@ void API_SUFFIX(stdlib_strided_dvander)( const CBLAS_LAYOUT order, const double 
 Generates a double-precision floating-point Vandermonde matrix using alternative indexing semantics.
 
 ```c
-#include "stdlib/blas/base/shared.h"
-
 const double x[ 3 ] = { 1.0, 2.0, 3.0 };
 double Out[ 3*3 ] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
