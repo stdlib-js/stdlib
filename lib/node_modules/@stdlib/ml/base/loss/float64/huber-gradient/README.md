@@ -29,8 +29,13 @@ The [Huber loss gradient][huber-loss-gradient] is defined as
 <!-- <equation class="equation" label="eq:huber_loss_gradient" align="center" raw="\frac{\partial \ell}{\partial w} = \begin{cases} -(y-p)x & \text{if } \left|y-p\right| \leq \delta \\ -\delta\,\operatorname{sign}(y-p)\,x & \text{otherwise} \end{cases}" alt="Equation for the Huber loss gradient."> -->
 
 ```math
-\frac{\partial \ell}{\partial w} = \begin{cases} -(y-p)x & \text{if } \left|y-p\right| \leq \delta \\ -\delta\,\operatorname{sign}(y-p)\,x & \text{otherwise} \end{cases}
+\frac{\partial \ell}{\partial w} = \begin{cases} -(y-p)x & \text{if } \left|y-p\right| \leq \delta \\ -\delta\,\mathop{\mathrm{sign}}(y-p)\,x & \text{otherwise} \end{cases}
 ```
+
+<!-- <div class="equation" align="center" data-raw-text="\frac{\partial \ell}{\partial w} = \begin{cases} -(y-p)x &amp; \text{if } \left|y-p\right| \leq \delta \\ -\delta\,\operatorname{sign}(y-p)\,x &amp; \text{otherwise} \end{cases}" data-equation="eq:huber_loss_gradient">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@2c32eb273fa95e2fd832845e12f129c4a07d2741/lib/node_modules/@stdlib/ml/base/loss/float64/huber-gradient/docs/img/equation_huber_loss_gradient.svg" alt="Equation for the Huber loss gradient.">
+    <br>
+</div> -->
 
 <!-- </equation> -->
 

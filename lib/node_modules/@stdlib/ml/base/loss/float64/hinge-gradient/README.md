@@ -33,7 +33,7 @@ The [hinge loss gradient][hinge-loss-gradient] is defined as
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\frac{\partial \ell}{\partial w} = \begin{cases} -yx &amp; \text{if } yp \leq t \\ 0 &amp; \text{otherwise} \end{cases}" data-equation="eq:hinge_loss_gradient">
-    <img src="" alt="Equation for the hinge loss gradient.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@2c32eb273fa95e2fd832845e12f129c4a07d2741/lib/node_modules/@stdlib/ml/base/loss/float64/hinge-gradient/docs/img/equation_hinge_loss_gradient.svg" alt="Equation for the hinge loss gradient.">
     <br>
 </div> -->
 

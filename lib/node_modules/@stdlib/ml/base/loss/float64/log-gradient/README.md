@@ -32,6 +32,11 @@ The [log loss gradient][log-loss-gradient] is defined as
 \frac{\partial \ell}{\partial w} = -\frac{y}{1+e^{yp}}x
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\frac{\partial \ell}{\partial w} = -\frac{y}{1+e^{yp}}x" data-equation="eq:log_loss_gradient">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@2c32eb273fa95e2fd832845e12f129c4a07d2741/lib/node_modules/@stdlib/ml/base/loss/float64/log-gradient/docs/img/equation_log_loss_gradient.svg" alt="Equation for the log loss gradient.">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

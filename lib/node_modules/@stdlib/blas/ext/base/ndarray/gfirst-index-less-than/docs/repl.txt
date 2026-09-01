@@ -3,6 +3,10 @@
     Returns the index of the first element in a one-dimensional ndarray which is
     less than a corresponding element in another one-dimensional ndarray.
 
+    If a specified starting search index is negative, the function resolves the
+    starting search index by counting backward from the last element (where `-1`
+    refers to the last element).
+
     When comparing elements, the function checks whether an element in the first
     one-dimensional input ndarray is less than a corresponding element in the
     second one-dimensional input ndarray using the less-than operator `<`. As a
@@ -15,6 +19,8 @@
 
         - first one-dimensional input ndarray.
         - second one-dimensional input ndarray.
+        - a zero-dimensional ndarray containing the index from which to begin
+        searching.
 
     Returns
     -------
@@ -25,7 +31,8 @@
     --------
     > var x = {{alias:@stdlib/ndarray/vector/ctor}}( [ 0.0, 0.0, 0.0, 0.0 ], 'generic' );
     > var y = {{alias:@stdlib/ndarray/vector/ctor}}( [ 0.0, 0.0, 1.0, 0.0 ], 'generic' );
-    > {{alias}}( [ x, y ] )
+    > var i = {{alias:@stdlib/ndarray/from-scalar}}( 0, { 'dtype': 'generic' } );
+    > {{alias}}( [ x, y, i ] )
     2
 
     See Also
