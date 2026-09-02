@@ -1,0 +1,32 @@
+
+{{alias}}( arrays )
+    Fills a one-dimensional double-precision complex floating-point ndarray with
+    linearly spaced numeric elements which increment by `1` starting from a
+    specified value.
+
+    The input ndarray is modified *in-place* (i.e., the input ndarray is
+    *mutated*).
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a zero-dimensional ndarray containing a starting value.
+
+    Returns
+    -------
+    out: ndarray
+        Input ndarray.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/ndarray/vector/complex128}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > var s = new {{alias:@stdlib/complex/float64/ctor}}( 3.0, 0.0 );
+    > var start = {{alias:@stdlib/ndarray/from-scalar}}( s, { 'dtype': 'complex128' } );
+    > {{alias}}( [ x, start ] )
+    <ndarray>[ <Complex128>[ 3.0, 0.0 ], <Complex128>[ 4.0, 0.0 ] ]
+
+    See Also
+    --------

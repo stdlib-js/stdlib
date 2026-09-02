@@ -1,0 +1,9 @@
+---
+type: amend-message
+---
+bench: refactor to use dynamic memory allocation in `stats/base/sdsnanmean`
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/11604
+Ref: https://github.com/stdlib-js/stdlib/issues/8643
+
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>

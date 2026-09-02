@@ -329,6 +329,10 @@ int main( void ) {
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
+<!-- <related-links> -->
+
+<!-- </related-links> -->
+
 </section>
 
 <!-- /.links -->

@@ -92,7 +92,7 @@ interface Iterator<T> extends TypedIterator<T> {
 * Returns an iterator for generating pseudorandom numbers drawn from a Kumaraswamy's double bounded distribution.
 *
 * @param a - first shape parameter
-* @param b  - second shape parameter
+* @param b - second shape parameter
 * @param options - function options
 * @throws `a` must be a positive number
 * @throws `b` must be a positive number

@@ -1,0 +1,128 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2026 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# params2json
+
+> Serialize an SGD trainer parameters object as a JSON object.
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- Package usage documentation. -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var params2json = require( '@stdlib/ml/base/sgd/params/to-json' );
+```
+
+#### params2json( params )
+
+Serializes an SGD trainer parameters object as a JSON object.
+
+```javascript
+var Float64Params = require( '@stdlib/ml/base/sgd/params/float64' );
+
+var params = new Float64Params();
+
+// ...
+
+var o = params2json( params );
+// returns {...}
+```
+
+The function supports the following parameters:
+
+-   **params**: SGD trainer parameters object.
+
+</section>
+
+<!-- /.usage -->
+
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- Package usage examples. -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var Float64Params = require( '@stdlib/ml/base/sgd/params/float64' );
+var Float64Array = require( '@stdlib/array/float64' );
+var params2json = require( '@stdlib/ml/base/sgd/params/to-json' );
+
+var params = new Float64Params();
+params.penaltyParams = new Float64Array( [ 2.5, 0.0 ] );
+params.learningRateParams = new Float64Array( [ 0.01, 0.0 ] );
+params.lossFunctionParams = new Float64Array( [ 0.0 ] );
+params.intercept = 0.0;
+params.maxIter = 500;
+params.penalty = 'l2';
+params.learningRate = 'constant';
+params.lossFunction = 'hinge';
+params.fitIntercept = true;
+
+var o = params2json( params );
+console.log( o );
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+</section>
+
+<!-- /.links -->

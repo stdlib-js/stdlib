@@ -60,6 +60,7 @@
     "prob",
     "distribution",
     "dist",
-    "degenerate"
+    "degenerate",
+    "univariate"
   ]
 }
