@@ -101,6 +101,10 @@ arr = filled( 2.0, 10, 'float32' );
 setter( dtype( arr ) )( arr, 2, 100.0 );
 console.log( arr );
 
+arr = filled( 2.0, 10, 'float16' );
+setter( dtype( arr ) )( arr, 2, 100.0 );
+console.log( arr );
+
 arr = filled( 3, 10, 'int32' );
 setter( dtype( arr ) )( arr, 2, 100 );
 console.log( arr );
