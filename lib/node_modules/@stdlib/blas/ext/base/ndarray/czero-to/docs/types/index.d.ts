@@ -25,15 +25,19 @@ import { complex64ndarray } from '@stdlib/types/ndarray';
 /**
 * Fills a one-dimensional single-precision complex floating-point ndarray with linearly spaced numeric elements which increment by `1` starting from zero.
 *
-* @param arrays - array-like object containing a one-dimensional input ndarray
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns input ndarray
 *
 * @example
-* var Complex64Array = require( '@stdlib/array/complex64' );
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var Complex64Vector = require( '@stdlib/ndarray/vector/complex64' );
 *
-* var xbuf = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
-* var x = new ndarray( 'complex64', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+* var x = new Complex64Vector( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 *
 * var out = czeroTo( [ x ] );
 * // returns <ndarray>[ <Complex64>[ 0.0, 0.0 ], <Complex64>[ 1.0, 0.0 ], <Complex64>[ 2.0, 0.0 ], <Complex64>[ 3.0, 0.0 ] ]

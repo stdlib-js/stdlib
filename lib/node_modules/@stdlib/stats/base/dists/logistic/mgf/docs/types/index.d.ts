@@ -31,14 +31,14 @@ type Unary = ( t: number ) => number;
 */
 interface MGF {
 	/**
-	* Evaluates the moment-generating function (MGF) for a logistic distribution with mean `mu` and scale parameter `s` at a value `t`.
+	* Evaluates the moment-generating function (MGF) for a logistic distribution with location parameter `mu` and scale parameter `s` at a value `t`.
 	*
 	* ## Notes
 	*
 	* -   If provided `s < 0`, the function returns `NaN`.
 	*
 	* @param t - input value
-	* @param mu - mean
+	* @param mu - location parameter
 	* @param s - scale parameter
 	* @returns evaluated MGF
 	*
@@ -77,9 +77,9 @@ interface MGF {
 	( t: number, mu: number, s: number ): number;
 
 	/**
-	* Returns a function for evaluating the moment-generating function (MGF) of a logistic distribution with mean `mu` and scale parameter `s`.
+	* Returns a function for evaluating the moment-generating function (MGF) of a logistic distribution with location parameter `mu` and scale parameter `s`.
 	*
-	* @param mu - mean
+	* @param mu - location parameter
 	* @param s - scale parameter
 	* @returns MGF
 	*
@@ -96,10 +96,10 @@ interface MGF {
 }
 
 /**
-* Gamma distribution moment-generating function (MGF).
+* Logistic distribution moment-generating function (MGF).
 *
 * @param t - input value
-* @param mu - mean
+* @param mu - location parameter
 * @param s - scale parameter
 * @returns evaluated MGF
 *

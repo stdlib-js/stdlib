@@ -20,7 +20,7 @@ limitations under the License.
 
 # Logarithm of Probability Mass Function
 
-> Evaluate the logarithm of the [probability mass function][pmf] (PMF) for a Planck (discrete exponential) distribution.
+> Evaluate the natural logarithm of the [probability mass function][pmf] (PMF) for a Planck (discrete exponential) distribution.
 
 <section class="intro">
 
@@ -50,7 +50,7 @@ var logpmf = require( '@stdlib/stats/base/dists/planck/logpmf' );
 
 #### logpmf( x, lambda )
 
-Evaluates the logarithm of the [probability mass function][pmf] (PMF) of a Planck (discrete exponential) distribution with shape parameter `lambda`.
+Evaluates the natural logarithm of the [probability mass function][pmf] (PMF) of a Planck (discrete exponential) distribution with shape parameter `lambda`.
 
 ```javascript
 var y = logpmf( 4.0, 0.3 );

@@ -23,7 +23,7 @@
 * Returns the variance of an inverse gamma distribution.
 *
 * @param alpha    shape parameter
-* @param beta     rate parameter
+* @param beta     scale parameter
 * @return         variance
 *
 * @example

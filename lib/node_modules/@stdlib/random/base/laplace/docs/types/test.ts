@@ -151,14 +151,14 @@ import laplace = require( './index' );
 	laplace.factory( -2, 2, { 'prng': null } ); // $ExpectError
 	laplace.factory( -2, 2, { 'prng': [] } ); // $ExpectError
 	laplace.factory( -2, 2, { 'prng': {} } ); // $ExpectError
-	laplace.factory( -2, 2, { 'prng': true ); // $ExpectError
+	laplace.factory( -2, 2, { 'prng': true } ); // $ExpectError
 
 	laplace.factory( { 'prng': 123 } ); // $ExpectError
 	laplace.factory( { 'prng': 'abc' } ); // $ExpectError
 	laplace.factory( { 'prng': null } ); // $ExpectError
 	laplace.factory( { 'prng': [] } ); // $ExpectError
 	laplace.factory( { 'prng': {} } ); // $ExpectError
-	laplace.factory( { 'prng': true ); // $ExpectError
+	laplace.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -185,7 +185,7 @@ import laplace = require( './index' );
 	laplace.factory( -2, 2, { 'state': null } ); // $ExpectError
 	laplace.factory( -2, 2, { 'state': [] } ); // $ExpectError
 	laplace.factory( -2, 2, { 'state': {} } ); // $ExpectError
-	laplace.factory( -2, 2, { 'state': true ); // $ExpectError
+	laplace.factory( -2, 2, { 'state': true } ); // $ExpectError
 	laplace.factory( -2, 2, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	laplace.factory( { 'state': 123 } ); // $ExpectError
@@ -193,7 +193,7 @@ import laplace = require( './index' );
 	laplace.factory( { 'state': null } ); // $ExpectError
 	laplace.factory( { 'state': [] } ); // $ExpectError
 	laplace.factory( { 'state': {} } ); // $ExpectError
-	laplace.factory( { 'state': true ); // $ExpectError
+	laplace.factory( { 'state': true } ); // $ExpectError
 	laplace.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

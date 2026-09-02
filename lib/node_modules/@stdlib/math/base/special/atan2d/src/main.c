@@ -51,11 +51,11 @@
 * // returns 0.0
 *
 * @example
-* double v = stdlib_base_atan2d( 3.0, NaN );
+* double v = stdlib_base_atan2d( 3.0, 0.0/0.0 );
 * // returns NaN
 *
 * @example
-* double v = stdlib_base_atan2d( NaN, 2.0 );
+* double v = stdlib_base_atan2d( 0.0/0.0, 2.0 );
 * // returns NaN
 */
 double stdlib_base_atan2d( const double y, const double x ) {

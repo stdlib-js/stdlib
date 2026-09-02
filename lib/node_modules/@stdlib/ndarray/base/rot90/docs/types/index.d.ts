@@ -29,7 +29,7 @@ import { Collection } from '@stdlib/types/array';
 * ## Notes
 *
 * -   If `k > 0`, the function rotates the plane from the first specified dimension toward the second specified dimension. This means that, for a two-dimensional ndarray and `dims = [0, 1]`, the function rotates the plane counterclockwise.
-* -   If `k < 0`, the function rotates the plane from the second specified dimension toward the first specified dimension. This means that, for a two-dimensional ndarray and `dims = [1, 0]`, the function rotates the plane clockwise.
+* -   If `k < 0`, the function rotates the plane from the second specified dimension toward the first specified dimension. This means that, for a two-dimensional ndarray and `dims = [0, 1]`, the function rotates the plane clockwise.
 * -   Each provided dimension index must reside on the interval `[-ndims, ndims-1]`.
 *
 * @param x - input array
