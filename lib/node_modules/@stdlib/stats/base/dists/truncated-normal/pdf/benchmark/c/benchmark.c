@@ -93,12 +93,12 @@ static double random_uniform( const double min, const double max ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
-	double elapsed;
+	double sigma[ LEN ];
+	double mu[ LEN ];
 	double x[ LEN ];
 	double a[ LEN ];
 	double b[ LEN ];
-	double mu[ LEN ];
-	double sigma[ LEN ];
+	double elapsed;
 	double y;
 	double t;
 	int i;

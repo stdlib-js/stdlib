@@ -19,7 +19,7 @@
 #include "stdlib/stats/base/dists/truncated-normal/pdf.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/exp.h"
-#include "stdlib/math/base/special/pow.h"
+#include "stdlib/math/base/special/abs2.h"
 #include "stdlib/math/base/special/sqrt.h"
 #include "stdlib/stats/base/dists/normal/cdf.h"
 #include "stdlib/constants/float64/pi.h"
@@ -40,14 +40,12 @@
 * double y = stdlib_base_dists_truncated_normal_pdf( 0.9, 0.0, 1.0, 0.0, 1.0 );
 * // returns ~0.7795
 */
-
 double stdlib_base_dists_truncated_normal_pdf( const double x, const double a, const double b, const double mu, const double sigma ) {
 	double s2x2;
 	double A;
 	double B;
 	double C;
 
-	// Handle invalid input
 	if (
 		stdlib_base_is_nan( x ) ||
 		stdlib_base_is_nan( a ) ||
@@ -60,10 +58,10 @@ double stdlib_base_dists_truncated_normal_pdf( const double x, const double a, c
 	if ( x < a || x > b ) {
 		return 0.0;
 	}
-	s2x2 = 2.0 * stdlib_base_pow( sigma, 2.0 );
+	s2x2 = 2.0 * stdlib_base_abs2( sigma );
 	A = 1.0 / ( stdlib_base_sqrt( s2x2 * STDLIB_CONSTANT_FLOAT64_PI ) );
 	B = -1.0 / s2x2;
 	C = stdlib_base_dists_normal_cdf( ( b - mu ) / sigma, 0.0, 1.0 ) - stdlib_base_dists_normal_cdf( ( a - mu ) / sigma, 0.0, 1.0 );
 
-	return A * stdlib_base_exp( B * stdlib_base_pow( x - mu, 2.0 ) ) / C;
+	return A * stdlib_base_exp( B * stdlib_base_abs2( x - mu ) ) / C;
 }

@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Generate fixtures for truncated-normal/pdf."""
+"""Generate test fixtures."""
 
 import os
 import json
@@ -52,8 +52,8 @@ def gen(x, a, b, loc, sigma, name):  # pylint: disable=too-many-arguments,too-ma
     python> gen(x, a, b, loc, sigma, "data.json")
     ```
     """
-    # Compute PDF values using SciPy's truncated normal PDF
-    z = truncnorm.pdf(x, (a - loc) / sigma, (b - loc) / sigma, loc=loc, scale=sigma)
+    # Compute PDF values using SciPy's truncated normal PDF:
+    z = truncnorm.pdf(x, (a-loc)/sigma, (b-loc)/sigma, loc=loc, scale=sigma)
 
     # Store data to be written to file as a dictionary:
     data = {
@@ -79,21 +79,21 @@ def gen(x, a, b, loc, sigma, name):  # pylint: disable=too-many-arguments,too-ma
 
 def main():
     """Generate fixture data."""
-    # Generate valid `a` and `b` values
+    # Generate valid `a` and `b` values:
     a = np.random.uniform(-3, 0, 1000)  # Lower bounds
     b = np.random.uniform(0.5, 3, 1000)   # Upper bounds
     a, b = np.minimum(a, b), np.maximum(a, b)  # Ensure a < b
 
-    # Generate `x` values in a reasonable range
+    # Generate `x` values in a reasonable range:
     x = np.linspace(a.min(), b.max(), 1000)
 
-    # Generate `loc` (mu) values around 0
+    # Generate `loc` (mu) values around 0:
     loc = np.random.uniform(-1, 1, 1000)
 
-    # Generate positive `sigma`
+    # Generate positive `sigma`:
     sigma = np.random.uniform(0.5, 2, 1000)
 
-    # Generate fixtures
+    # Generate fixtures:
     gen(x, a, b, loc, sigma, "data.json")
 
 
