@@ -21,48 +21,7 @@
 // MODULES //
 
 var resolve = require( 'path' ).resolve;
-
-
-// VARIABLES //
-
-var restrictedSyntaxConfig = [ 'error',
-	'ArrowFunctionExpression',
-	'ClassBody',
-	'ClassDeclaration',
-	'ClassExpression',
-	'DebuggerStatement',
-	'ExperimentalRestProperty',
-	'ExperimentalSpreadProperty',
-
-	// 'FunctionExpression',
-	'LabeledStatement',
-	'RestElement',
-	'SpreadElement',
-	'TaggedTemplateExpression',
-	'TemplateElement',
-	'TemplateLiteral',
-	'WithStatement',
-	'YieldExpression',
-	'JSXIdentifier',
-	'JSXNamespacedName',
-	'JSXMemberExpression',
-	'JSXEmptyExpression',
-	'JSXExpressionContainer',
-	'JSXElement',
-	'JSXClosingElement',
-	'JSXOpeningElement',
-	'JSXAttribute',
-	'JSXSpreadAttribute',
-	'JSXText',
-	'ExportDefaultDeclaration',
-	'ExportNamedDeclaration',
-	'ExportAllDeclaration',
-	'ExportSpecifier',
-	'ImportDeclaration',
-	'ImportSpecifier',
-	'ImportDefaultSpecifier',
-	'ImportNamespaceSpecifier'
-];
+var restrictedSyntaxConfig = require( './restricted_syntax.js' );
 
 
 // MAIN //
@@ -73,6 +32,12 @@ var restrictedSyntaxConfig = [ 'error',
 * @namespace overrides
 */
 var overrides = [
+	{
+		'files': [ 'etc/eslint/rules/*.js' ],
+		'rules': {
+			'stdlib/jsdoc-doctest': 'off'
+		}
+	},
 	{
 		'files': [ '[a-z].js' ],
 		'rules': {
@@ -89,7 +54,7 @@ var overrides = [
 				'skipComments': true
 			}],
 			'no-restricted-syntax': restrictedSyntaxConfig,
-			'require-jsdoc': 'off',
+			'jsdoc/require-jsdoc': 'off',
 			'stdlib/jsdoc-private-annotation': 'off',
 			'stdlib/jsdoc-doctest': 'off',
 			'stdlib/no-unnecessary-nested-functions': 'off'
@@ -101,7 +66,7 @@ var overrides = [
 			'no-new-wrappers': 'warn',
 			'vars-on-top': 'off',
 			'no-console': 'off',
-			'require-jsdoc': 'off',
+			'jsdoc/require-jsdoc': 'off',
 			'stdlib/jsdoc-private-annotation': 'off',
 			'stdlib/jsdoc-doctest': 'off',
 			'stdlib/no-unnecessary-nested-functions': 'off',
@@ -119,9 +84,10 @@ var overrides = [
 				'skipComments': true
 			}],
 			'no-restricted-syntax': restrictedSyntaxConfig,
-			'require-jsdoc': 'off',
+			'jsdoc/require-jsdoc': 'off',
 			'stdlib/jsdoc-private-annotation': 'off',
 			'stdlib/jsdoc-doctest': 'off',
+			'stdlib/no-single-property-require': 'off',
 			'stdlib/no-unnecessary-nested-functions': 'off',
 			'no-undefined': 'off'
 		}
@@ -155,9 +121,10 @@ var overrides = [
 			'no-tabs': 'error',
 			'no-undef': 'off',
 			'no-unused-vars': 'off',
-			'require-jsdoc': 'off',
+			'jsdoc/require-jsdoc': 'off',
 			'stdlib/jsdoc-private-annotation': 'off',
 			'stdlib/jsdoc-return-annotations-values': 'off',
+			'stdlib/no-single-property-require': 'off',
 			'stdlib/no-unnecessary-nested-functions': 'off',
 			'stdlib/return-annotations-values': 'off',
 			'strict': 'off',

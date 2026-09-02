@@ -33,7 +33,7 @@ y = e^x
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="y = e^x" data-equation="eq:natural_exponential_function">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@3a6b2fe467c920a88f281944d6eb9370eb5cc4cb/lib/node_modules/@stdlib/math/base/special/expf/docs/img/equation_natural_exponential_function.svg" alt="Natural exponential function definition">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@dac85e0230cd4052f0ec097d58e3372d899782f6/lib/node_modules/@stdlib/math/base/special/expf/docs/img/equation_natural_exponential_function.svg" alt="Natural exponential function definition">
     <br>
 </div> -->
 
