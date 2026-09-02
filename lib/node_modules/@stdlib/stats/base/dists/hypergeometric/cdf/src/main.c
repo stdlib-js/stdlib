@@ -1,0 +1,93 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2026 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+#include "stdlib/stats/base/dists/hypergeometric/cdf.h"
+#include "stdlib/stats/base/dists/hypergeometric/pmf.h"
+#include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/math/base/assert/is_infinite.h"
+#include "stdlib/math/base/special/trunc.h"
+#include "stdlib/math/base/special/max.h"
+#include "stdlib/math/base/special/min.h"
+#include <stdint.h>
+
+/**
+* Evaluates the cumulative distribution function (CDF) for a hypergeometric distribution.
+*
+* @param x    input value
+* @param N    population size
+* @param K    subpopulation size
+* @param n    number of draws
+* @return     evaluated CDF
+*
+* @example
+* double y = stdlib_base_dists_hypergeometric_cdf( 1.0, 8, 4, 2 );
+* // returns ~0.786
+*/
+double stdlib_base_dists_hypergeometric_cdf(
+	const double x,
+	const int32_t N,
+	const int32_t K,
+	const int32_t n
+) {
+	double denom;
+	double num;
+	double ret;
+	double p;
+	int32_t upper;
+	int32_t lower;
+	int32_t xi;
+	int32_t i;
+
+	if (
+		stdlib_base_is_nan( x ) ||
+		N < 0 ||
+		K < 0 ||
+		n < 0 ||
+		K > N ||
+		n > N
+	) {
+		return 0.0 / 0.0;
+	}
+	if ( stdlib_base_is_infinite( x ) ) {
+		return ( x > 0.0 ) ? 1.0 : 0.0;
+	}
+
+	xi = (int32_t)stdlib_base_trunc( x );
+
+	lower = stdlib_base_max( 0, n + K - N );
+	upper = stdlib_base_min( n, K );
+
+	if ( xi < lower ) {
+		return 0.0;
+	}
+	if ( xi >= upper ) {
+		return 1.0;
+	}
+
+	p = stdlib_base_dists_hypergeometric_pmf( (double)xi, N, K, n );
+	ret = p;
+
+	for ( i = xi - 1; i >= lower; i-- ) {
+		num = (double)( i + 1 ) * (double)( N - K - ( n - i - 1 ) );
+		denom = (double)( K - i ) * (double)( n - i );
+		p = ( num / denom ) * p;
+		ret += p;
+	}
+
+	return stdlib_base_min( ret, 1.0 );
+}
