@@ -129,8 +129,8 @@ main() {
 		fi
 	done
 
-	# Note that benchmark discovery is intentionally scoped to each package's own `benchmark` directory so that changes to a namespace package do not trigger benchmarks for that namespace's sub-packages.
-	# Find all benchmark files in package directories:
+	# Find all benchmark files in package directories. Note that benchmark discovery is intentionally scoped to each package's own
+	# `benchmark` directory so that changes to a namespace package do not trigger benchmarks for that namespace's sub-packages:
 	js_bench_files=""
 	for dir in ${directories}; do
 		if [ -d "${dir}/benchmark" ]; then
