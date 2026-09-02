@@ -62,7 +62,7 @@ A returned [`struct`][@stdlib/dstructs/struct] constructor supports the followin
 
 -   **penaltyParams**: parameters specific to the regularization function being used. Must be an array having length `2`, with any unused elements set to zero. The expected array contents depend on `penalty`:
 
-    -   **l1**: : `[ lambda, 0.0 ]`
+    -   **l1**: `[ lambda, 0.0 ]`
     -   **l2**: `[ lambda, 0.0 ]`
     -   **elasticnet**: `[ lambda, l1Ratio ]`
     -   **none**: `[ 0.0, 0.0 ]` (unused)
