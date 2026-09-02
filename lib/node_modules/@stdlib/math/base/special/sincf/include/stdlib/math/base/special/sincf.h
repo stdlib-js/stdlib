@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Computes the normalized cardinal sine of a single-precision floating-point number (in radians).
+* Computes the normalized cardinal sine of a single-precision floating-point number.
 */
 float stdlib_base_sincf( const float x );
 

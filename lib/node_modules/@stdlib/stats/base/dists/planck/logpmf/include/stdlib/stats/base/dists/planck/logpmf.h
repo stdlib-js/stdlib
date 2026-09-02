@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the logarithm of the probability mass function (PMF) for a Planck distribution with shape parameter `lambda`.
+* Evaluates the natural logarithm of the probability mass function (PMF) for a Planck distribution with shape parameter `lambda`.
 */
 double stdlib_base_dists_planck_logpmf( const double x, const double lambda );
 

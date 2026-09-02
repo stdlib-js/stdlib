@@ -23,13 +23,13 @@
 
 int main( void ) {
 	// Specify the number of indexed elements:
-	int64_t N = 6;
+	const int64_t N = 6;
 
 	// Define a stride:
-	int64_t stride = -2;
+	const int64_t stride = -2;
 
 	// Define an offset:
-	int64_t offset = 100;
+	const int64_t offset = 100;
 
 	// Compute the minimum accessible index:
 	int64_t idx = stdlib_strided_min_view_buffer_index( N, stride, offset );

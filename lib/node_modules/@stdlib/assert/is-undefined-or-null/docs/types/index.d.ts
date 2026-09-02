@@ -22,7 +22,7 @@
 * Tests if a value is `undefined` or `null`.
 *
 * @param value - value to test
-* @returns boolean indicating whether value is undefined
+* @returns boolean indicating whether value is undefined or null
 *
 * @example
 * var bool = isUndefinedOrNull( undefined );

@@ -44,21 +44,19 @@
     > var zx = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0 ] );
     > var zy = new {{alias:@stdlib/array/complex128}}( [ 0.0, 0.0, 0.0, 0.0 ] );
     > var s = new {{alias:@stdlib/complex/float64/ctor}}( 0.3, 0.4 );
-    > {{alias}}( zx.length, zx, 1, zy, 1, 0.8, s );
-    > var z = zy.get( 0 )
-    <Complex128>[ ~-1.1, ~-0.2 ]
-    > z = zx.get( 0 )
-    <Complex128>[ ~0.8, ~1.6 ]
+    > {{alias}}( zx.length, zx, 1, zy, 1, 0.8, s )
+    <Complex128Array>[ ~-1.1, ~-0.2, ~-2.5, ~0.0 ]
+    > zx
+    <Complex128Array>[ ~0.8, ~1.6, ~2.4, ~3.2 ]
 
     // Advanced indexing:
     > zx = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
     > zy = new {{alias:@stdlib/array/complex128}}( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
     > var s = new {{alias:@stdlib/complex/float64/ctor}}( 0.3, 0.4 );
-    > {{alias}}( 2, zx, -2, zy, 1, 0.8, s );
-    > z = zy.get( 0 )
-    <Complex128>[ ~-3.9, ~0.2 ]
-    > z = zx.get( 2 )
-    <Complex128>[ ~4.0, ~4.8 ]
+    > {{alias}}( 2, zx, -2, zy, 1, 0.8, s )
+    <Complex128Array>[ ~-3.9, ~0.2, ~-1.1, ~-0.2, 0.0, 0.0, 0.0, 0.0 ]
+    > zx
+    <Complex128Array>[ ~0.8, ~1.6, 3.0, 4.0, ~4.0, ~4.8, 7.0, 8.0 ]
 
     // Using typed array views:
     > var zx0 = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
@@ -66,11 +64,10 @@
     > var zx1 = new {{alias:@stdlib/array/complex128}}( zx0.buffer, zx0.BYTES_PER_ELEMENT*1 );
     > var zy1 = new {{alias:@stdlib/array/complex128}}( zy0.buffer, zy0.BYTES_PER_ELEMENT*2 );
     > var s = new {{alias:@stdlib/complex/float64/ctor}}( 0.3, 0.4 );
-    > {{alias}}( 1, zx1, 1, zy1, 1, 0.8, s );
-    > z = zy0.get( 2 )
-    <Complex128>[ ~-2.5, ~0.0 ]
-    > z = zx0.get( 1 )
-    <Complex128>[ ~2.4, ~3.2 ]
+    > {{alias}}( 1, zx1, 1, zy1, 1, 0.8, s )
+    <Complex128Array>[ ~-2.5, ~0.0 ]
+    > zx0
+    <Complex128Array>[ 1.0, 2.0, ~2.4, ~3.2, 5.0, 6.0 ]
 
 
 {{alias}}.ndarray( N, zx, strideX, offsetX, zy, strideY, offsetY, c, s )
@@ -121,21 +118,19 @@
     > var zx = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0 ] );
     > var zy = new {{alias:@stdlib/array/complex128}}( [ 0.0, 0.0, 0.0, 0.0 ] );
     > var s = new {{alias:@stdlib/complex/float64/ctor}}( 0.3, 0.4 );
-    > {{alias}}.ndarray( zx.length, zx, 1, 0, zy, 1, 0, 0.8, s );
-    > var z = zy.get( 0 )
-    <Complex128>[ ~-1.1, ~-0.2 ]
-    > z = zx.get( 0 )
-    <Complex128>[ ~0.8, ~1.6 ]
+    > {{alias}}.ndarray( zx.length, zx, 1, 0, zy, 1, 0, 0.8, s )
+    <Complex128Array>[ ~-1.1, ~-0.2, ~-2.5, ~0.0 ]
+    > zx
+    <Complex128Array>[ ~0.8, ~1.6, ~2.4, ~3.2 ]
 
     // Advanced indexing:
     > zx = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
     > zy = new {{alias:@stdlib/array/complex128}}( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
     > var s = new {{alias:@stdlib/complex/float64/ctor}}( 0.3, 0.4 );
-    > {{alias}}.ndarray( 1, zx, 2, 1, zy, 2, 1, 0.8, s );
-    > z = zy.get( 1 )
-    <Complex128>[ ~-2.5, ~0.0 ]
-    > z = zx.get( 1 )
-    <Complex128>[ ~2.4, ~3.2 ]
+    > {{alias}}.ndarray( 1, zx, 2, 1, zy, 2, 1, 0.8, s )
+    <Complex128Array>[ 0.0, 0.0, ~-2.5, ~0.0, 0.0, 0.0 ]
+    > zx
+    <Complex128Array>[ 1.0, 2.0, ~2.4, ~3.2, 5.0, 6.0 ]
 
     See Also
     --------

@@ -43,11 +43,9 @@ var smidrange = require( '@stdlib/stats/base/ndarray/smidrange' );
 Computes the [mid-range][mid-range] of a one-dimensional single-precision floating-point ndarray.
 
 ```javascript
-var Float32Array = require( '@stdlib/array/float32' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
 
-var xbuf = new Float32Array( [ 1.0, 2.0, 5.0, 10.0 ] );
-var x = new ndarray( 'float32', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = new Float32Vector( [ 1.0, 2.0, 5.0, 10.0 ] );
 
 var v = smidrange( [ x ] );
 // returns 5.5
@@ -78,15 +76,14 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var uniform = require( '@stdlib/random/array/uniform' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var uniform = require( '@stdlib/random/uniform' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var smidrange = require( '@stdlib/stats/base/ndarray/smidrange' );
 
-var xbuf = uniform( 10, -50.0, 50.0, {
+var opts = {
     'dtype': 'float32'
-});
-var x = new ndarray( 'float32', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+};
+var x = uniform( [ 10 ], -50.0, 50.0, opts );
 console.log( ndarray2array( x ) );
 
 var v = smidrange( [ x ] );

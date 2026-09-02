@@ -31,6 +31,7 @@
 *
 * @example
 * var symbols = enumerablePropertySymbols( {} );
+* // returns []
 */
 declare function enumerablePropertySymbols( value: any ): Array<symbol>;
 
