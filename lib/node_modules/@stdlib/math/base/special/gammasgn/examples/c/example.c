@@ -28,6 +28,6 @@ int main( void ) {
 	for ( i = 0; i < 100; i++ ) {
 		x = ( (double)rand() / (double)RAND_MAX ) * 100.0;
 		v = stdlib_base_gammasgn( x );
-		printf( "gammasgn%lf = %lf\n", x, v );
+		printf( "gammasgn(%lf) = %lf\n", x, v );
 	}
 }

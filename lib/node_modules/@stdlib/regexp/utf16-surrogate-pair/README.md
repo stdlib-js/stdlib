@@ -32,7 +32,7 @@ var reUtf16SurrogatePair = require( '@stdlib/regexp/utf16-surrogate-pair' );
 
 #### reUtf16SurrogatePair()
 
-Returns a [regular expression][mdn-regexp] to match a [UTF-16][utf-16] surrogate pair. 
+Returns a [regular expression][mdn-regexp] to match a [UTF-16][utf-16] surrogate pair.
 
 ```javascript
 var RE_UTF16_SURROGATE_PAIR = reUtf16SurrogatePair();
@@ -43,7 +43,7 @@ var bool = RE_UTF16_SURROGATE_PAIR.test( 'abc\uD800\uDC00def' );
 
 #### reUtf16SurrogatePair.REGEXP
 
-[Regular expression][mdn-regexp] to match a [UTF-16][utf-16] surrogate pair. 
+[Regular expression][mdn-regexp] to match a [UTF-16][utf-16] surrogate pair.
 
 ```javascript
 var bool = reUtf16SurrogatePair.REGEXP.test( 'abc\uD800\uDC00def' );

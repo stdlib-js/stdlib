@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the BLAS Level 1 routine `dasum`.
 */
-#ifndef DASUM_H
-#define DASUM_H
+#ifndef STDLIB_BLAS_BASE_DASUM_H
+#define STDLIB_BLAS_BASE_DASUM_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -45,4 +45,4 @@ double API_SUFFIX(c_dasum_ndarray)( const CBLAS_INT N, const double *X, const CB
 }
 #endif
 
-#endif // !DASUM_H
+#endif // !STDLIB_BLAS_BASE_DASUM_H

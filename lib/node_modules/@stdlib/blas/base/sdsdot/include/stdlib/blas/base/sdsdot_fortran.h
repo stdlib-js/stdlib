@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the Fortran interface to the BLAS Level 1 routine `sdsdot`.
 */
-#ifndef SDSDOT_FORTRAN_H
-#define SDSDOT_FORTRAN_H
+#ifndef STDLIB_BLAS_BASE_SDSDOT_FORTRAN_H
+#define STDLIB_BLAS_BASE_SDSDOT_FORTRAN_H
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
@@ -38,4 +38,4 @@ void sdsdotsub( const int *, const float *, const float *, const int *, const fl
 }
 #endif
 
-#endif // !SDSDOT_FORTRAN_H
+#endif // !STDLIB_BLAS_BASE_SDSDOT_FORTRAN_H

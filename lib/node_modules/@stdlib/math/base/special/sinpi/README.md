@@ -59,15 +59,16 @@ y = sinpi( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/base/linspace' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var sinpi = require( '@stdlib/math/base/special/sinpi' );
 
-var x = linspace( -100.0, 100.0, 100 );
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, -100.0, 100.0, opts );
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( sinpi( x[ i ] ) );
-}
+logEachMap( 'sin( π * %0.4f ) = %0.4f', x, sinpi );
 ```
 
 </section>

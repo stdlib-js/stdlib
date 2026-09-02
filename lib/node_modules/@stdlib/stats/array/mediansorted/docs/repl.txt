@@ -1,0 +1,25 @@
+
+{{alias}}( x )
+    Computes the median value of a sorted array.
+
+    If provided an empty array, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: Array<number>|TypedArray
+        Input array.
+
+    Returns
+    -------
+    out: number
+        Median value.
+
+    Examples
+    --------
+    > var x = [ 1.0, 2.0, 3.0 ];
+    > {{alias}}( x )
+    2.0
+
+    See Also
+    --------
+

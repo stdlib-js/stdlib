@@ -1,0 +1,67 @@
+
+{{alias}}( addon, fallback )
+    Returns a function which dispatches to a native add-on applying a unary
+    function to an input ndarray.
+
+    The returned function has the following signature:
+
+        f( x, y )
+
+    where
+
+    - x: input ndarray.
+    - y: output ndarray.
+
+    To determine whether to dispatch to the `addon` function, the returned
+    dispatch function checks whether the underlying data buffers of provided
+    ndarrays are typed arrays.
+
+    If the underlying data buffers are typed arrays, the dispatch function
+    invokes the `addon` function; otherwise, the dispatch function invokes the
+    `fallback` function.
+
+    Parameters
+    ----------
+    addon: Function
+        Add-on interface. The function should have the following signature:
+
+            f( xbuf, metaX, ybuf, metaY )
+
+        where
+
+        - xbuf: input ndarray data buffer.
+        - metaX: serialized input ndarray meta data.
+        - ybuf: output ndarray data buffer.
+        - metaY: serialized output ndarray meta data.
+
+    fallback: Function
+        Fallback function. The function should have the following signature:
+
+            f( x, y )
+
+        where
+
+        - x: input ndarray.
+        - y: output ndarray.
+
+    Returns
+    -------
+    fcn: Function
+        Dispatch function.
+
+    Examples
+    --------
+    > function addon( xbuf, metaX, ybuf, metaY ) {
+    ...     // Call into native add-on...
+    ... };
+    > function fallback( x, y ) {
+    ...     // Fallback JavaScript implementation...
+    ... };
+    > var f = {{alias}}( addon, fallback );
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] );
+    > var y = {{alias:@stdlib/ndarray/zeros}}( [ 2, 2 ] );
+    > f( x, y );
+
+    See Also
+    --------
+

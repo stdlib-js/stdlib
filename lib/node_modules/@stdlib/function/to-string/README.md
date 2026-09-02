@@ -73,7 +73,7 @@ var str = function2string( add );
 
 -   If called on a function created by the [`Function`][@stdlib/function/ctor] constructor, the function returns the source code of a synthesized function declaration having the name "anonymous" and using the provided parameters and function body.
 
--   Starting in ES2018, the ECMAScript specification requires that the returned string contain the exact same source code as it was declared, including any whitespace and/or comments. If the host is unable to access the source code, the specification requires that the returned string be the native function string.  
+-   Starting in ES2018, the ECMAScript specification requires that the returned string contain the exact same source code as it was declared, including any whitespace and/or comments. If the host is unable to access the source code, the specification requires that the returned string be the native function string.
 
 </section>
 

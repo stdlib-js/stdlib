@@ -39,7 +39,7 @@ The [Lanczos approximation][lanczos-approximation] for the [gamma function][gamm
 
 <!-- </equation> -->
 
-where `g` is an [arbitrary constant][@stdlib/constants/float64/gamma-lanczos-g] and `L_g(n)` is the Lanczos sum. The scaled Lanczos sum is given by 
+where `g` is an [arbitrary constant][@stdlib/constants/float64/gamma-lanczos-g] and `L_g(n)` is the Lanczos sum. The scaled Lanczos sum is given by
 
 <!-- <equation class="equation" label="eq:scaled_lanczos_sum" align="center" raw="L_g(n) \cdot \exp(-g)" alt="Scaled Lanczos sum."> -->
 
@@ -101,15 +101,16 @@ v = gammaLanczosSumExpGScaled( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/base/linspace' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var gammaLanczosSumExpGScaled = require( '@stdlib/math/base/special/gamma-lanczos-sum-expg-scaled' );
 
-var x = linspace( -10.0, 10.0, 100 );
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, -10.0, 10.0, opts );
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( 'x: %d, f(x): %d', x[ i ], gammaLanczosSumExpGScaled( x[ i ] ) );
-}
+logEachMap( 'x: %0.4f, f(x): %0.4f', x, gammaLanczosSumExpGScaled );
 ```
 
 </section>

@@ -1,0 +1,79 @@
+
+{{alias}}( options, [requestListener] )
+    Returns a function to create an HTTP/2 server.
+
+    In addition to options documented below, the function supports any options
+    supported by `http2.createSecureServer`. Which server options are supported
+    depends on the Node.js version.
+
+    Either the `pfx` option or the `key`/`cert` options must be provided.
+
+    Parameters
+    ----------
+    options: Object
+        Options.
+
+    options.pfx: string|Buffer|Array<string|Buffer|Object> (optional)
+        PFX or PKCS12 encoded private key and certificate chain.
+
+    options.cert: string|Buffer|Array<string|Buffer> (optional)
+        Cert chains in PEM format.
+
+    options.key: string|Buffer|Array<string|Buffer|Object> (optional)
+        Private keys in PEM format.
+
+    options.port: integer (optional)
+        Server port. Default: `0` (i.e., randomly assigned).
+
+    options.maxport: integer (optional)
+        Max server port when port hunting. Default: `maxport = port`.
+
+    options.hostname: string (optional)
+        Server hostname.
+
+    options.address: string (optional)
+        Server address. Default: `'127.0.0.1'`.
+
+    requestListener: Function (optional)
+        Request callback.
+
+    Returns
+    -------
+    http2Server: Function
+        Function to create an HTTP/2 server.
+
+    Examples
+    --------
+    > function onRequest( request, response ) {
+    ...    console.log( request.url );
+    ...    response.end( 'OK' );
+    ... };
+    > var opts = { 'port': 7331, 'cert': '...', 'key': '...' };
+    > var boot = {{alias}}( opts, onRequest )
+    <Function>
+
+
+boot( done )
+    Creates an HTTP/2 server.
+
+    Parameters
+    ----------
+    done: Function
+        Callback to invoke after creating a server.
+
+    Examples
+    --------
+    > function done( error, server ) {
+    ...    if ( error ) {
+    ...        throw error;
+    ...    }
+    ...    console.log( 'Success!' );
+    ...    server.close();
+    ... };
+    > var opts = { 'cert': '...', 'key': '...' };
+    > var boot = {{alias}}( opts );
+    > boot( done );
+
+    See Also
+    --------
+

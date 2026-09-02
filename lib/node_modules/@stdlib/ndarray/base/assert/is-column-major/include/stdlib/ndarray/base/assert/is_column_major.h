@@ -31,7 +31,7 @@ extern "C" {
 /**
 * Determines if an array is column-major based on a provided stride array.
 */
-int8_t stdlib_ndarray_is_column_major( int64_t ndims, int64_t *strides );
+int8_t stdlib_ndarray_is_column_major( const int64_t ndims, const int64_t *strides );
 
 #ifdef __cplusplus
 }

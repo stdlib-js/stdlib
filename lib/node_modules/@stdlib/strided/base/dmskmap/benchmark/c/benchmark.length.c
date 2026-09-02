@@ -106,13 +106,16 @@ static double identity( const double x ) {
 * @return             elapsed time in seconds
 */
 static double benchmark( int iterations, int len ) {
-	uint8_t m[ len ];
 	double elapsed;
-	double x[ len ];
-	double y[ len ];
+	uint8_t *m;
+	double *x;
+	double *y;
 	double t;
 	int i;
 
+	m = (uint8_t *)malloc( len * sizeof( uint8_t ) );
+	x = (double *)malloc( len * sizeof( double ) );
+	y = (double *)malloc( len * sizeof( double ) );
 	for ( i = 0; i < len; i++ ) {
 		x[ i ] = ( rand_double()*200.0 ) - 100.0;
 		m[ i ] = i % 2;
@@ -130,6 +133,9 @@ static double benchmark( int iterations, int len ) {
 	if ( y[ i%len ] != y[ i%len ] ) {
 		printf( "should not return NaN\n" );
 	}
+	free( m );
+	free( x );
+	free( y );
 	return elapsed;
 }
 

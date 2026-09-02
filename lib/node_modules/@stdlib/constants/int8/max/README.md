@@ -32,7 +32,7 @@ var INT8_MAX = require( '@stdlib/constants/int8/max' );
 
 #### INT8_MAX
 
-Maximum 8-bit signed integer.
+Maximum signed 8-bit integer.
 
 ```javascript
 var bool = ( INT8_MAX === 127 );

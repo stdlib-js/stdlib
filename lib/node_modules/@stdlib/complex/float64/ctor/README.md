@@ -53,6 +53,15 @@ var z = new Complex128( 5.0, 3.0 );
 
 ## Properties
 
+#### Complex128.name
+
+Static property returning the constructor name.
+
+```javascript
+var str = Complex128.name;
+// returns 'Complex128'
+```
+
 #### Complex128.BYTES_PER_ELEMENT
 
 Size (in bytes) of each component.

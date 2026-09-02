@@ -26,7 +26,7 @@ import groupIndices = require( './index' );
 	const x = [ 1, 2, 3 ];
 	const g = [ 0, 0, 0 ];
 
-	groupIndices( x, g ); // $ExpectType IndicesResults<Key, number>
+	groupIndices( x, g ); // $ExpectType IndicesResults<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array...

@@ -1,0 +1,27 @@
+
+{{alias}}( x )
+    Computes the hyperbolic secant of a double-precision floating-point number.
+
+    Parameters
+    ----------
+    x: number
+        Input value (in radians).
+
+    Returns
+    -------
+    y: number
+        Hyperbolic secant.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.0 )
+    1.0
+    > y = {{alias}}( 2.0 )
+    ~0.2658
+    > y = {{alias}}( -2.0 )
+    ~0.2658
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------

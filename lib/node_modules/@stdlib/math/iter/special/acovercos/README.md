@@ -47,18 +47,18 @@ Returns an [iterator][mdn-iterator-protocol] which iteratively computes the [inv
 ```javascript
 var array2iterator = require( '@stdlib/array/to-iterator' );
 
-var x = [ 0.0, -3.141592653589793/2.0, -3.141592653589793/6.0 ];
+var x = [ 0.0, 3.141592653589793/2.0, 3.141592653589793/6.0 ];
 var it = iterAcovercos( array2iterator( x ) );
 // returns <Object>
 
 var r = it.next().value;
-// returns ~1.5708
+// returns ~-1.5708
 
 r = it.next().value;
-// returns ~-0.6075
+// returns ~0.6075
 
 r = it.next().value;
-// returns ~0.4966
+// returns ~-0.4966
 
 // ...
 ```
@@ -78,7 +78,7 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 
 ## Notes
 
--   The domain of inverse coversed cosine is restricted to `[-2,0]`. If an iterated value is outside of the domain, the returned [iterator][mdn-iterator-protocol] returns `NaN`.
+-   The domain of inverse coversed cosine is restricted to `[0,2]`. If an iterated value is outside of the domain, the returned [iterator][mdn-iterator-protocol] returns `NaN`.
 -   If an iterated value is non-numeric (including `NaN`), the returned [iterator][mdn-iterator-protocol] returns `NaN`. If non-numeric iterated values are possible, you are advised to provide an [`iterator`][mdn-iterator-protocol] which type checks and handles non-numeric values accordingly.
 -   If an environment supports `Symbol.iterator` **and** a provided [iterator][mdn-iterator-protocol] is iterable, the returned [iterator][mdn-iterator-protocol] is iterable.
 
@@ -99,7 +99,7 @@ var uniform = require( '@stdlib/random/iter/uniform' );
 var iterAcovercos = require( '@stdlib/math/iter/special/acovercos' );
 
 // Create a seeded iterator for generating pseudorandom numbers:
-var rand = uniform( -2.0, 0.0, {
+var rand = uniform( 0.0, 2.0, {
     'seed': 1234,
     'iter': 10
 });

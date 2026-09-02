@@ -1,0 +1,32 @@
+
+{{alias}}( x, y )
+    Subtracts two unsigned 32-bit integers `x` and `y`.
+
+    The function performs C-like subtraction of two unsigned 32-bit integers,
+    including wraparound semantics.
+
+    Parameters
+    ----------
+    x: integer
+        First unsigned 32-bit integer.
+
+    y: integer
+        Second unsigned 32-bit integer.
+
+    Returns
+    -------
+    z: integer
+        Result.
+
+    Examples
+    --------
+    > var v = {{alias}}( 5>>>0, 1>>>0 )
+    4
+    > v = {{alias}}( 5>>>0, 2>>>0 )
+    3
+    > v = {{alias}}( 5>>>0, 0>>>0 )
+    5
+
+    See Also
+    --------
+

@@ -75,13 +75,15 @@ static double tic( void ) {
 }
 
 /**
-* Generates a random number on the interval [0,1).
+* Generates a random number on the interval [min,max).
 *
-* @return random number
+* @param min    minimum value (inclusive)
+* @param max    maximum value (exclusive)
+* @return       random number
 */
-static double rand_double( void ) {
-	int r = rand();
-	return (double)r / ( (double)RAND_MAX + 1.0 );
+static double random_uniform( const double min, const double max ) {
+	double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+	return min + ( v*(max-min) );
 }
 
 /**
@@ -91,15 +93,18 @@ static double rand_double( void ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	double x;
+	double x[100];
 	double z;
 	double t;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = random_uniform( 0.7071067811865476, 1.4142135623730951 ); // ~[sqrt(2)/2, sqrt(2)]
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( rand_double() + 1.0 ) * 0.7071067811865476;
-		z = stdlib_base_kernel_log1p( x );
+		z = stdlib_base_kernel_log1p( x[ i%100 ] );
 		if ( z != z ) {
 			printf( "should not return NaN\n" );
 			break;
@@ -124,7 +129,7 @@ int main( void ) {
 
 	print_version();
 	for ( i = 0; i < REPEATS; i++ ) {
-		printf( "# c::%s\n", NAME );
+		printf( "# c::native::%s\n", NAME );
 		elapsed = benchmark();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", i+1 );

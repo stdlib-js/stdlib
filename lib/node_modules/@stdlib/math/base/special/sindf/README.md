@@ -1,0 +1,203 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2025 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# sindf
+
+> Compute the [sine][trigonometric-functions] of a single-precision floating-point number (in degrees).
+
+<section class="intro">
+
+The [sine][trigonometric-functions] of an angle measured in degrees is computed as
+
+<!-- <equation class="equation" label="eq:sine_degrees" align="center" raw="y = \sin\left(\frac{\pi x}{180}\right)" alt="Sine of an angle in degrees"> -->
+
+```math
+y = \sin\left(\frac{\pi x}{180}\right)
+```
+
+<!-- <div class="equation" align="center" data-raw-text="y = \sin\left(\frac{\pi x}{180}\right)" data-equation="eq:sine_degrees">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@85f48534ef6908bbcd982d48f1c5fbea3fb7aafd/lib/node_modules/@stdlib/math/base/special/sindf/docs/img/equation_sine_degrees.svg" alt="Sine of an angle in degrees">
+    <br>
+</div> -->
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var sindf = require( '@stdlib/math/base/special/sindf' );
+```
+
+#### sindf( x )
+
+Computes the [sine][trigonometric-functions] of a single-precision floating-point number (in degrees).
+
+```javascript
+var v = sindf( 0.0 );
+// returns 0.0
+
+v = sindf( 30.0 );
+// returns ~0.5
+
+v = sindf( 90.0 );
+// returns 1.0
+
+v = sindf( NaN );
+// returns NaN
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
+var sindf = require( '@stdlib/math/base/special/sindf' );
+
+var opts = {
+    'dtype': 'float32'
+};
+var x = uniform( 100, -180.0, 180.0, opts );
+
+logEachMap( 'sindf(%0.4f) = %0.4f', x, sindf );
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/sindf.h"
+```
+
+#### stdlib_base_sindf( x )
+
+Computes the [sine][trigonometric-functions] of a single-precision floating-point number (in degrees).
+
+```c
+float out = stdlib_base_sindf( 0.0f );
+// returns 0.0f
+
+out = stdlib_base_sindf( 30.0f );
+// returns ~0.5f
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] float` input value.
+
+```c
+float stdlib_base_sindf( const float x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/sindf.h"
+#include <stdio.h>
+
+int main( void ) {
+    const float x[] = { 0.0f, 30.0f, 45.0f, 60.0f, 90.0f };
+
+    float y;
+    int i;
+    for ( i = 0; i < 5; i++ ) {
+        y = stdlib_base_sindf( x[ i ] );
+        printf( "sindf(%f) = %f\n", x[ i ], y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+[trigonometric-functions]: https://en.wikipedia.org/wiki/Trigonometric_functions
+
+</section>
+
+<!-- /.links -->

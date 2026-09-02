@@ -1,0 +1,32 @@
+
+{{alias}}( x, y )
+    Multiplies two unsigned 8-bit integers `x` and `y`.
+
+    The function performs C-like multiplication of two unsigned 8-bit integers,
+    including wraparound semantics.
+
+    Parameters
+    ----------
+    x: integer
+        First input value.
+
+    y: integer
+        Second input value.
+
+    Returns
+    -------
+    z: integer
+        Result.
+
+    Examples
+    --------
+    > var v = {{alias}}( 5, 1 )
+    5
+    > v = {{alias}}( 5, 2 )
+    10
+    > v = {{alias}}( 5, 0 )
+    0
+
+    See Also
+    --------
+

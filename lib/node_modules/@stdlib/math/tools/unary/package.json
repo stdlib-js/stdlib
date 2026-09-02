@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/math/tools/unary",
   "version": "0.0.0",
-  "description": "Multiple dispatch for unary mathematical functions.",
+  "description": "Create a function which performs element-wise computation by applying a unary function to each element in an input ndarray.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -59,7 +59,8 @@
     "dispatch",
     "multimethod",
     "multimethods",
-    "ndarray"
+    "ndarray",
+    "ufunc"
   ],
   "__stdlib__": {}
 }

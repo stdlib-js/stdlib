@@ -43,7 +43,7 @@ interface Routine {
 	<T = unknown>( N: number, x: Collection<T>, strideX: number ): Collection<T>;
 
 	/**
-	* Reverses a strided array in-place. using alternative indexing semantics.
+	* Reverses a strided array in-place using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array

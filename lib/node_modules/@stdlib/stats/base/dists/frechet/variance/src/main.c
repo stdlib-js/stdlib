@@ -30,7 +30,7 @@
 * @return         variance
 *
 * @example
-* double y = stdlib_base_frechet_variance( 5.0, 2.0, 0.0 );
+* double y = stdlib_base_dists_frechet_variance( 5.0, 2.0, 0.0 );
 * // returns ~0.535
 */
 double stdlib_base_dists_frechet_variance( const double alpha, const double s, const double m ) {

@@ -19,7 +19,7 @@
 import JSON
 
 """
-    gen( domain, name )
+	gen( domain, name )
 
 Generate fixture data and write to file.
 
@@ -37,7 +37,7 @@ julia> gen( x, \"data.json\" );
 """
 function gen( domain, name )
 	x = collect( domain );
-	y = asin.( 1.0 .+ x );
+	y = asin.( x .- 1.0 );
 
 	# Store data to be written to file as a collection:
 	data = Dict([
@@ -62,9 +62,9 @@ file = @__FILE__;
 dir = dirname( file );
 
 # Generate fixture data for decimal values:
-x = range( -2.0, stop = 0.0, length = 2003 );
+x = range( 0.0, stop = 2.0, length = 2003 );
 gen( x, "data.json" );
 
-# Generate fixture data for small negative values:
-x = range( -1e-20, stop = -1e-28, length = 2003 );
-gen( x, "small_negative.json" );
+# Generate fixture data for small positive values:
+x = range( 1e-208, stop = 1e-200, length = 2003 );
+gen( x, "small_positive.json" );

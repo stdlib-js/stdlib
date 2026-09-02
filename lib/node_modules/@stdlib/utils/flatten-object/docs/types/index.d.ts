@@ -121,7 +121,7 @@ interface FlattenObject {
 * var obj = {'a':{'b':{'c':'d'}}};
 *
 * var out = flatten( obj );
-* // returns {'a|b':{'c':'d'}}
+* // returns {'a|b|c':'d'}
 */
 declare var flattenObject: FlattenObject;
 

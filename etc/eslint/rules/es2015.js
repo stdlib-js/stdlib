@@ -209,7 +209,7 @@ rules[ 'no-const-assign' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-duple-class-members]{@link https://eslint.org/docs/rules/no-dupe-class-members}
+* @see [no-dupe-class-members]{@link https://eslint.org/docs/rules/no-dupe-class-members}
 *
 * @example
 * // Bad...

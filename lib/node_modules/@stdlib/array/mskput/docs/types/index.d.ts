@@ -68,7 +68,7 @@ interface Options {
 * var x = new Int32Array( [ 1, 2, 3, 4 ] );
 *
 * var mask = [ 1, 0, 0, 1 ];
-* var values = [ 20, 30 ];
+* var values = new Int32Array( [ 20, 30 ] );
 *
 * var out = mskput( x, mask, values );
 * // returns <Int32Array>[ 1, 20, 30, 4 ]
@@ -81,7 +81,7 @@ interface Options {
 *
 * var x = new Int32Array( [ 1, 2, 3, 4 ] );
 *
-* var out = mskput( x, [ 1, 0, 0, 1 ], [ 30 ] );
+* var out = mskput( x, [ 1, 0, 0, 1 ], new Int32Array( [ 30 ] ) );
 * // returns <Int32Array>[ 1, 30, 30, 4 ]
 *
 * var bool = ( out === x );

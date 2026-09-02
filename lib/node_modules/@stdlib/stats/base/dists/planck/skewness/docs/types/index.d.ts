@@ -34,7 +34,7 @@
 *
 * @example
 * var v = skewness( 0.5 );
-* // returns ~2.5894
+* // returns ~2.063
 *
 * @example
 * var v = skewness( -1.1 );

@@ -32,30 +32,30 @@
 * @example
 * var toFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 *
-* var bool = isSameValueZerof( toFloat32( 3.14 ), toFloat32( 3.14 ) );
+* var bool = isSameValueZero( toFloat32( 3.14 ), toFloat32( 3.14 ) );
 * // returns true
 *
 * @example
 * var toFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 *
-* var bool = isSameValueZerof( toFloat32( -0.0 ), toFloat32( -0.0 ) );
+* var bool = isSameValueZero( toFloat32( -0.0 ), toFloat32( -0.0 ) );
 * // returns true
 *
 * @example
 * var toFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 *
-* var bool = isSameValueZerof( toFloat32( -0.0 ), toFloat32( 0.0 ) );
+* var bool = isSameValueZero( toFloat32( -0.0 ), toFloat32( 0.0 ) );
 * // returns true
 *
 * @example
 * var toFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 *
-* var bool = isSameValueZerof( toFloat32( NaN ), toFloat32( NaN ) );
+* var bool = isSameValueZero( toFloat32( NaN ), toFloat32( NaN ) );
 * // returns true
 */
-declare function isSameValueZerof( a: number, b: number ): boolean;
+declare function isSameValueZero( a: number, b: number ): boolean;
 
 
 // EXPORTS //
 
-export = isSameValueZerof;
+export = isSameValueZero;

@@ -232,7 +232,7 @@ The function accepts the following arguments:
 -   **strideX**: `[in] CBLAS_INT` index increment for `X`.
 -   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
 -   **Y**: `[inout] double*` output array.
--   **strideY**: `[in CBLAS_INT` index increment for `Y`.
+-   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
 -   **offsetY**: `[in] CBLAS_INT` starting index for `Y`.
 
 ```c

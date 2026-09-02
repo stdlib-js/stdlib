@@ -90,18 +90,21 @@ static double rand_double( void ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
+	double x[ 100 ];
+	double y[ 100 ];
 	double elapsed;
-	double x;
-	double y;
 	double r;
 	double t;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = rand_double() * 10.0;
+		y[ i ] = rand_double() * 10.0;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( ( rand_double() * 10.0 ) );
-		y = ( ( rand_double() * 10.0 ) );
-		r = stdlib_base_boxcox1p( x, y );
+		r = stdlib_base_boxcox1p( x[ i%100 ], y[ i%100 ] );
 		if ( r != r ) {
 			printf( "should not return NaN\n" );
 			break;

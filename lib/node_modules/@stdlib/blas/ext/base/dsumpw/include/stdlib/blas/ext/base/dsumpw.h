@@ -31,7 +31,7 @@ extern "C" {
 /**
 * Computes the sum of double-precision floating-point strided array elements using pairwise summation.
 */
-double API_SUFFIX(stdlib_strided_dsumpw)( const CBLAS_INT N, const double *X, const CBLAS_INT stride );
+double API_SUFFIX(stdlib_strided_dsumpw)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX );
 
 /**
 * Computes the sum of double-precision floating-point strided array elements using pairwise summation and alternative indexing semantics.

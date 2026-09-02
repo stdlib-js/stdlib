@@ -43,8 +43,8 @@
         Options.
 
     options.strict: boolean (optional)
-        Boolean indicating whether to enforce strict bounds checking.
-        Default: true.
+        Boolean indicating whether to enforce strict bounds checking. Default:
+        true.
 
     Returns
     -------

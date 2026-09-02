@@ -1,0 +1,26 @@
+
+{{alias}}( arrays )
+    Computes the maximum value of a sorted one-dimensional double-precision
+    floating-point ndarray.
+
+    If provided an empty ndarray, the function returns `NaN`.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing a one-dimensional input ndarray.
+
+    Returns
+    -------
+    out: number
+        Maximum value.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/ndarray/vector/float64}}( [ -2.0, 1.0, 2.0 ] );
+    > {{alias}}( [ x ] )
+    2.0
+
+    See Also
+    --------
+

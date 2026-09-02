@@ -98,7 +98,7 @@ Attached to each PRNG are the following properties:
 -   **seed**: the value used to seed the PRNG.
 -   **seedLength**: the length of the PRNG seed.
 -   **state**: the PRNG state.
--   **stateLength**: the length  of the PRNG state.
+-   **stateLength**: the length of the PRNG state.
 -   **byteLength**: the size of the PRNG state.
 -   **PRNG**: the underlying pseudorandom number generator.
 

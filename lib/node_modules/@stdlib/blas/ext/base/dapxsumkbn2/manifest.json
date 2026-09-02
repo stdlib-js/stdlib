@@ -36,7 +36,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/special/abs",
+        "@stdlib/blas/ext/base/dsumkbn2",
         "@stdlib/blas/base/shared",
         "@stdlib/strided/base/stride2offset",
         "@stdlib/napi/export",
@@ -58,7 +58,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/special/abs",
+        "@stdlib/blas/ext/base/dsumkbn2",
         "@stdlib/blas/base/shared",
         "@stdlib/strided/base/stride2offset"
       ]
@@ -74,7 +74,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/special/abs",
+        "@stdlib/blas/ext/base/dsumkbn2",
         "@stdlib/blas/base/shared",
         "@stdlib/strided/base/stride2offset"
       ]

@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/math/base/special/factorialln.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/math/base/assert/is_negative_integer.h"
 #include "stdlib/math/base/special/gammaln.h"
 
@@ -32,7 +33,7 @@
 */
 double stdlib_base_factorialln( const double x ) {
 	if ( stdlib_base_is_negative_integer( x ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	return stdlib_base_gammaln( x + 1.0 );
 }

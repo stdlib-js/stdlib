@@ -1,0 +1,16 @@
+
+{{alias}}
+    Symbol which specifies a method for converting an object to a primitive
+    value.
+
+    The symbol is only supported in ES6/ES2015+ environments. For non-supporting
+    environments, the value is `null`.
+
+    Examples
+    --------
+    > var s = {{alias}}
+    e.g., <symbol>
+
+    See Also
+    --------
+

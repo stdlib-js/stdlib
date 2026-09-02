@@ -35,6 +35,6 @@ int main( void ) {
 		a = random_uniform( 0.0, 10.0 );
 		b = random_uniform( a, 20.0 );
 		y = stdlib_base_dists_uniform_mean( a, b );
-		printf( "a: %lf , b: %lf , E(X;a,b): %lf\n", a, b, y );
+		printf( "a: %lf, b: %lf, E(X;a,b): %lf\n", a, b, y );
 	}
 }

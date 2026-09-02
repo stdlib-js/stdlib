@@ -1,0 +1,73 @@
+
+{{alias}}( N, x, strideX )
+    Computes the sum of double-precision complex floating-point strided array
+    elements using an improved Kahan–Babuška algorithm.
+
+    The `N` and stride parameters determine which elements in the strided array
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use a typed
+    array view.
+
+    If `N <= 0`, the function returns `0.0 + 0.0i`.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: Complex128Array
+        Input array.
+
+    strideX: integer
+        Stride length.
+
+    Returns
+    -------
+    out: Complex128
+        Sum.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/complex128}}( [ 1.0, -2.0, 2.0, 3.0 ] );
+    > {{alias}}( x.length, x, 1 )
+    <Complex128>[ 3.0, 1.0 ]
+
+
+{{alias}}.ndarray( N, x, strideX, offsetX )
+    Computes the sum of double-precision complex floating-point strided array
+    elements using an improved Kahan–Babuška algorithm and alternative indexing
+    semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameter supports indexing semantics based on a starting
+    index.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: Complex128Array
+        Input array.
+
+    strideX: integer
+        Stride length.
+
+    offsetX: integer
+        Starting index.
+
+    Returns
+    -------
+    out: Complex128
+        Sum.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/complex128}}( [ 1.0, -2.0, 2.0, 3.0 ] );
+    > {{alias}}.ndarray( x.length, x, 1, 0 )
+    <Complex128>[ 3.0, 1.0 ]
+
+    See Also
+    --------
+

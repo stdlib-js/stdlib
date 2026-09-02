@@ -16,6 +16,8 @@
 * limitations under the License.
 */
 
+/* eslint-disable stdlib/no-empty-lines-between-requires */
+
 'use strict';
 
 // MODULES //
@@ -62,7 +64,7 @@ eslint.rules[ 'no-console' ] = 'off';
 *
 * @private
 */
-eslint.rules[ 'require-jsdoc' ] = 'off';
+eslint.rules[ 'jsdoc/require-jsdoc' ] = 'off';
 
 /**
 * Do not require `@private` annotations.
@@ -91,6 +93,13 @@ eslint.rules[ 'stdlib/doctest' ] = 'error';
 * @private
 */
 eslint.rules[ 'stdlib/vars-order' ] = 'off';
+
+/**
+* Enforce that last `require` is a relative path.
+*
+* @private
+*/
+eslint.rules[ 'stdlib/require-last-path-relative' ] = 'error';
 
 
 // EXPORTS //

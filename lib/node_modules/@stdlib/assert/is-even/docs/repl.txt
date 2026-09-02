@@ -10,7 +10,7 @@
     Returns
     -------
     bool: boolean
-        Boolean indicating whether is an even number.
+        Boolean indicating whether value is an even number.
 
     Examples
     --------

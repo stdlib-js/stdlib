@@ -67,10 +67,10 @@ interface LoopOrderObject {
 *
 * -   The function assumes that the input and output ndarrays have the same shape. Hence, loop interchange order should only be determined **after** broadcasting.
 *
-* @param sh - array dimensions
-* @param sx - first input array stride lengths
-* @param sy - second input array stride lengths
-* @param sz - output array stride lengths
+* @param shape - array dimensions
+* @param stridesX - first input array stride lengths
+* @param stridesY - second input array stride lengths
+* @param stridesZ - output array stride lengths
 * @returns loop interchange data
 *
 * @example
@@ -80,7 +80,7 @@ interface LoopOrderObject {
 * var sy = [ 24, 8, 1 ]; // row-major
 * var sz = [ 1, -2, 6 ]; // column-major
 *
-* var o = loopOrder( sh, sx, sy, sz );
+* var o = binaryLoopOrder( sh, sx, sy, sz );
 * // returns {...}
 *
 * var ssh = o.sh;

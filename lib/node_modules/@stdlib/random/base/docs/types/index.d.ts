@@ -380,7 +380,7 @@ interface Namespace {
 	* // returns <number>
 	*
 	* @example
-	* var myf = ns.f.ns.factory( 1.5, 1.5 );
+	* var myf = ns.f.factory( 1.5, 1.5 );
 	*
 	* var v = myf();
 	* // returns <number>

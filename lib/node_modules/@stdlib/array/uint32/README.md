@@ -230,7 +230,7 @@ var arr = Uint32Array.from( [ 1, 2 ], mapFcn );
 A callback function is provided two arguments:
 
 -   `value`: source value.
--   `index`: source index..
+-   `index`: source index.
 
 To set the callback execution context, provide a `thisArg`.
 

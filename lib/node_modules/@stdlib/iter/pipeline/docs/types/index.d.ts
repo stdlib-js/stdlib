@@ -16,6 +16,8 @@
 * limitations under the License.
 */
 
+/* eslint-disable jsdoc/require-param, jsdoc/check-param-names */
+
 // TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>

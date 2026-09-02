@@ -22,7 +22,7 @@
       "relative": false
     }
   ],
- "confs": [
+  "confs": [
     {
       "src": [
         "./src/main.c"

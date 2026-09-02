@@ -19,17 +19,17 @@
 !> Wraps `dznrm2` as a subroutine.
 !
 ! @param {integer} N - number of indexed elements
-! @param {Array<complex<double>>} zx - input array
-! @param {integer} strideX - `zx` stride length
+! @param {Array<complex<double>>} x - input array
+! @param {integer} strideX - `x` stride length
 ! @param {double} nrm2 - L2-norm
 !<
-subroutine dznrm2sub( N, zx, strideX, nrm2 )
+subroutine dznrm2sub( N, x, strideX, nrm2 )
   implicit none
   ! ..
   ! External functions:
   interface
-    double precision function dznrm2( N, zx, strideX )
-      complex(kind=kind(0.0d0)) :: zx(*)
+    double precision function dznrm2( N, x, strideX )
+      complex(kind=kind(0.0d0)) :: x(*)
       integer :: strideX, N
     end function dznrm2
   end interface
@@ -39,9 +39,9 @@ subroutine dznrm2sub( N, zx, strideX, nrm2 )
   double precision :: nrm2
   ! ..
   ! Array arguments:
-  complex(kind=kind(0.0d0)) :: zx(*)
+  complex(kind=kind(0.0d0)) :: x(*)
   ! ..
   ! Compute the L2-norm:
-  nrm2 = dznrm2( N, zx, strideX )
+  nrm2 = dznrm2( N, x, strideX )
   return
 end subroutine dznrm2sub

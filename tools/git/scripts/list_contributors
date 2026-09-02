@@ -28,4 +28,4 @@
 #   - Exclude GitHub actions.
 # * `grep -v`
 #   - Exclude the stdlib bot.
-git shortlog -sne | cut -f 2 | sort | grep -v '^github-actions' | grep -v '^stdlib-bot'
+git shortlog -sne | cut -f 2 | sort -f | grep -v '^github-actions' | grep -v '^stdlib-bot'

@@ -2,7 +2,7 @@
 {{alias}}( iterator )
     Returns an iterator which iteratively computes the inverse coversed cosine.
 
-    The domain of inverse coversed cosine is restricted to [-2,0]. If an
+    The domain of inverse coversed cosine is restricted to [0,2]. If an
     iterated value is outside of the domain, the returned iterator returns
     `NaN`.
 
@@ -29,7 +29,7 @@
 
     Examples
     --------
-    > var it = {{alias}}( {{alias:@stdlib/random/iter/uniform}}( -2.0, 0.0 ) );
+    > var it = {{alias}}( {{alias:@stdlib/random/iter/uniform}}( 0.0, 2.0 ) );
     > var r = it.next().value
     <number>
     > r = it.next().value

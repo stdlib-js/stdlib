@@ -30,6 +30,6 @@
 * // returns 0.5f
 */
 float stdlib_base_rcbrtf( const float x ) {
-	// As the cube root is a fundamental numerical operation, compute in extend precision in order to avoid precision loss:
+	// As the cube root is a fundamental numerical operation, compute in extended precision in order to avoid precision loss:
 	return 1.0f / stdlib_base_cbrt( x );
 }

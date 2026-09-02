@@ -1,3 +1,5 @@
+/* eslint-disable stdlib/jsdoc-doctest-marker, stdlib/jsdoc-example-require-spacing, stdlib/jsdoc-no-tabs */
+
 /**
 * @license Apache-2.0
 *
@@ -15,8 +17,6 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-
-/* eslint-disable stdlib/jsdoc-doctest-marker, stdlib/jsdoc-doctest */
 
 'use strict';
 
@@ -96,6 +96,35 @@ rules[ 'stdlib/capitalized-comments' ] = [ 'warn', {
 * // returns 'Hello World'
 */
 rules[ 'stdlib/doctest' ] = 'off';
+
+/**
+* Enforce spacing in return annotations in single-line comments.
+*
+* @name doctest-annotation-spacing
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var v = 3.14;
+* // returns             3.14
+*
+* console.log( 'beep' );
+* //=> 'beep'
+*
+* var x = true;
+* //  returns true
+*
+* @example
+* // Good...
+* var v = 3.14;
+* // returns 3.14
+*
+* console.log( 'beep' );
+* // => 'beep'
+*/
+rules[ 'stdlib/doctest-annotation-spacing' ] = 'error';
 
 /**
 * Enforce marker style conventions for return annotations.
@@ -245,6 +274,28 @@ rules[ 'stdlib/empty-line-before-comment' ] = 'error';
 * }]);
 */
 rules[ 'stdlib/eol-open-bracket-spacing' ] = 'error';
+
+/**
+* Require that format calls are provided an expected number of arguments.
+*
+* @name format-args
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var format = require( '@stdlib/string/format' );
+*
+* var str = format( '%s %s', 'foo' );
+*
+* @example
+* // Good...
+* var format = require( '@stdlib/string/format' );
+*
+* var str = format( '%s %s', 'foo', 'bar' );
+*/
+rules[ 'stdlib/format-args' ] = 'error';
 
 /**
 * Require blockquotes to have `2` character indentation.
@@ -837,6 +888,49 @@ rules[ 'stdlib/jsdoc-emphasis-marker' ] = [ 'error', '_' ];
 * var ceil = Math.ceil;
 */
 rules[ 'stdlib/jsdoc-empty-line-before-example' ] = 'error';
+
+/**
+* Enforce empty lines between requires and code in JSDoc examples.
+*
+* @name jsdoc-example-require-spacing
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Fréchet distribution constructor.
+* *
+* * @module @stdlib/stats/base/dists/frechet/ctor
+* *
+* * @example
+* * var Frechet = require( '@stdlib/stats/base/dists/frechet/ctor' );
+* * var frechet = new Frechet( 1.0, 1.0, 0.5 );
+* *
+* * var y = frechet.cdf( 0.8 );
+* * // returns ~0.036
+* *\/
+*
+* @example
+* // Good...
+*
+* /**
+* * Fréchet distribution constructor.
+* *
+* * @module @stdlib/stats/base/dists/frechet/ctor
+* *
+* * @example
+* * var Frechet = require( '@stdlib/stats/base/dists/frechet/ctor' );
+* *
+* * var frechet = new Frechet( 1.0, 1.0, 0.5 );
+* *
+* * var y = frechet.cdf( 0.8 );
+* * // returns ~0.036
+* *\/
+*/
+rules[ 'stdlib/jsdoc-example-require-spacing' ] = 'error';
 
 /**
 * Require `\`` be used as the fenced code marker.
@@ -1648,7 +1742,7 @@ rules[ 'stdlib/jsdoc-list-item-spacing' ] = 'error';
 */
 rules[ 'stdlib/jsdoc-markdown-remark' ] = [ 'error',
 	{
-		'config': require( './../../remark/.remarkrc.jsdoc.js' )
+		'configPath': require.resolve( './../../remark/.remarkrc.jsdoc.js' )
 	}
 ];
 
@@ -4115,6 +4209,46 @@ rules[ 'stdlib/no-dynamic-require' ] = 'error';
 rules[ 'stdlib/no-empty-comments' ] = 'error';
 
 /**
+* Enforce no empty lines between module-level require statements.
+*
+* @name no-empty-lines-between-requires
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var foo = require( 'foo' );
+*
+* var bar = require( 'bar' );
+*
+* @example
+* // Good...
+* var foo = require( 'foo' );
+* var bar = require( 'bar' );
+*/
+rules[ 'stdlib/no-empty-lines-between-requires' ] = 'error';
+
+/**
+* Disallow string concatenation in error messages.
+*
+* @name no-error-string-concat
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* throw new Error( 'invalid argument. Value: `' + value + '`.' );
+*
+* @example
+* // Good...
+* throw new Error( 'unexpected error.' );
+* throw new Error( format( 'invalid argument. Value: `%s`.', value ) );
+*/
+rules[ 'stdlib/no-error-string-concat' ] = 'error';
+
+/**
 * Enforce that `require()` expressions are not immediately invoked.
 *
 * @name no-immediate-require
@@ -4185,6 +4319,30 @@ rules[ 'stdlib/no-internal-require' ] = 'error';
 * }
 */
 rules[ 'stdlib/no-multiple-empty-lines' ] = 'error';
+
+/**
+* Disallow usage of the built-in global `BigInt` literal syntax and constructor.
+*
+* @name no-builtin-big-int
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var x = BigInt( 123 );
+* console.log( typeof x );
+* // => 'bigint'
+*
+* @example
+* // Good...
+* var BigInt = require( '@stdlib/bigint/ctor' );
+*
+* var x = BigInt( 123 );
+* console.log( typeof x );
+* // => 'bigint'
+*/
+rules[ 'stdlib/no-builtin-big-int' ] = 'error';
 
 /**
 * Disallow usage of the built-in global `Math` object.
@@ -4266,6 +4424,97 @@ rules[ 'stdlib/no-dynamic-exports' ] = 'error';
 * var special = require( '@stdlib/math/base/special' );
 */
 rules[ 'stdlib/no-nested-require' ] = 'error';
+
+/**
+* Enforce moving inner function declarations to the highest possible scope.
+*
+* @name no-unnecessary-nested-functions
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* function outer() {
+*     function inner() {
+*         return 42;
+*     }
+*     return inner();
+* }
+*
+* @example
+* // Good...
+* function inner() {
+*     return 42;
+* }
+*
+* function outer() {
+*     return inner();
+* }
+*
+* @example
+* // Good (uses outer scope variable)...
+* function outer( x ) {
+*     var multiplier = 2;
+*     function inner() {
+*         return x * multiplier;
+*     }
+*     return inner();
+* }
+*/
+rules[ 'stdlib/no-unnecessary-nested-functions' ] = 'error';
+
+/**
+* Disallow format calls that do not perform string interpolation.
+*
+* @name no-unnecessary-format
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var format = require( '@stdlib/string/format' );
+*
+* throw new Error( format( 'invalid argument.' ) );
+*
+* @example
+* // Good...
+* throw new Error( 'invalid argument.' );
+*/
+rules[ 'stdlib/no-unnecessary-format' ] = 'error';
+
+/**
+* Disallow the use of the `new Array()` constructor.
+*
+* @name no-new-array
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var arr = new Array( 5 );
+* var i;
+* for ( i = 0; i < 5; i++ ) {
+*     arr[ i ] = i;
+* }
+*
+* console.log( arr );
+* // => [ 0, 1, 2, 3, 4 ]
+*
+* @example
+* // Good...
+* var arr = [];
+* var i;
+* for ( i = 0; i < 5; i++ ) {
+*     arr.push( i );
+* }
+*
+* console.log( arr );
+* // => [ 0, 1, 2, 3, 4 ]
+*/
+rules[ 'stdlib/no-new-array' ] = 'error';
 
 /**
 * Never allow a variable to be declared multiple times within the same scope or for built-in globals to be redeclared.
@@ -4381,6 +4630,34 @@ rules[ 'stdlib/no-require-index' ] = 'error';
 * var other = require( './other.js' );
 */
 rules[ 'stdlib/no-self-require' ] = 'error';
+
+/**
+* Enforce that a property is required directly when only a single property of a required module is used.
+*
+* ## Notes
+*
+* -   Requiring a property directly reduces bundle sizes during ESM tree-shaking via named imports.
+*
+* @name no-single-property-require
+* @memberof rules
+* @type {string}
+* @default 'warn'
+*
+* @example
+* // Bad...
+* var dcopy = require( '@stdlib/blas/base/dcopy' );
+*
+* dcopy.ndarray( x.length, x, 1, 0, y, 1, 0 );
+* dcopy.ndarray( y.length, y, 1, 0, z, 1, 0 );
+*
+* @example
+* // Good...
+* var dcopy = require( '@stdlib/blas/base/dcopy' ).ndarray;
+*
+* dcopy( x.length, x, 1, 0, y, 1, 0 );
+* dcopy( y.length, y, 1, 0, z, 1, 0 );
+*/
+rules[ 'stdlib/no-single-property-require' ] = 'warn';
 
 /**
 * Never allow unassigned `require()` calls.
@@ -4508,6 +4785,7 @@ rules[ 'stdlib/require-globals' ] = [ 'error', {
 		'Boolean',
 		'Buffer', // Node.js
 		'DataView',
+		'Float16Array', // ES16/ES2025
 		'Float32Array',
 		'Float64Array',
 		'Function',

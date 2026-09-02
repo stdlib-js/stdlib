@@ -1,0 +1,13 @@
+---
+type: amend-message
+---
+feat: add C implementation for `stats/base/dists/gumbel/skewness`
+
+PR-URL: #4650
+Closes: #3654
+
+Co-authored-by: Philipp Burckhardt <pburckhardt@outlook.com>
+Co-authored-by: stdlib-bot <noreply@stdlib.io>
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>
+Signed-off-by: Philipp Burckhardt <pburckhardt@outlook.com>
+Signed-off-by: Shabareesh Shetty <139731143+ShabiShett07@users.noreply.github.com>

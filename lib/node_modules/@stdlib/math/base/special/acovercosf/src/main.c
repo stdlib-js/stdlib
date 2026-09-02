@@ -27,8 +27,8 @@
 *
 * @example
 * float out = stdlib_base_acovercosf( 0.0f );
-* // returns ~1.5708f
+* // returns ~-1.5708f
 */
 float stdlib_base_acovercosf( const float x ) {
-	return stdlib_base_asinf( 1.0f + x );
+	return stdlib_base_asinf( x - 1.0f );
 }

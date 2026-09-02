@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the probability density function (PDF) for a triangular distribution with lower limit `a` and upper limit `b` and mode `c` at a value `x`.
+* Evaluates the probability density function (PDF) for a triangular distribution with lower limit `a`, upper limit `b`, and mode `c` at a value `x`.
 */
 double stdlib_base_dists_triangular_pdf( const double x, const double a, const double b, const double c );
 

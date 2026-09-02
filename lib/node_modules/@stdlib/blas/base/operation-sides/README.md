@@ -124,7 +124,7 @@ bool = isOperationSide( 'beep' );
 
 An enumeration of BLAS operation sides with the following fields:
 
--   **STDLIB_BLAS_LEFT**: a triangular matrix is on the left side of a matrix-matrix operation (e.g., `XA = B`, where `A` is a triangular matrix).
+-   **STDLIB_BLAS_LEFT**: a triangular matrix is on the left side of a matrix-matrix operation (e.g., `AX = B`, where `A` is a triangular matrix).
 -   **STDLIB_BLAS_RIGHT**: a triangular matrix is on the right side of a matrix-matrix operation (e.g., `XA = B`, where `A` is a triangular matrix).
 
 ```c

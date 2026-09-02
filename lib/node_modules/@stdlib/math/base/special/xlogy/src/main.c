@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+#include "stdlib/math/base/special/xlogy.h"
 #include "stdlib/math/base/special/ln.h"
 #include "stdlib/math/base/assert/is_nan.h"
 

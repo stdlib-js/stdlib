@@ -101,15 +101,18 @@ bool is_negative_zerof( float x ) {
 */
 static double benchmark( void ) {
 	double elapsed;
+	float x[ 100 ];
 	double t;
-	float x;
 	bool y;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = ( 100.0f*rand_float() ) - 50.0f;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( 100.0f*rand_float() ) - 50.0f;
-		y = is_negative_zerof( x );
+		y = is_negative_zerof( x[ i%100 ] );
 		if ( y != true && y != false ) {
 			printf( "should return true or false\n" );
 			break;

@@ -39,7 +39,7 @@ double API_SUFFIX(stdlib_strided_dnanasum)( const CBLAS_INT N, const double *X, 
 *
 * @param N        number of indexed elements
 * @param X        input array
-* @param strideX  index increment
+* @param strideX  stride length
 * @param offsetX  starting index
 * @return         output value
 */

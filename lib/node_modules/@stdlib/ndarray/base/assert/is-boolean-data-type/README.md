@@ -42,7 +42,7 @@ var isBooleanDataType = require( '@stdlib/ndarray/base/assert/is-boolean-data-ty
 
 #### isBooleanDataType( value )
 
-Tests if an input `value` is a supported ndarray boolean [data type][@stdlib/ndarray/dtypes].
+Tests if an input value is a supported ndarray boolean [data type][@stdlib/ndarray/dtypes].
 
 ```javascript
 var bool = isBooleanDataType( 'bool' );

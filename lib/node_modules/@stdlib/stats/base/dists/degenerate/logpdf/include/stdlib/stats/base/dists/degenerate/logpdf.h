@@ -29,7 +29,7 @@ extern "C" {
 /**
 * Evaluates the natural logarithm of the probability density function (logPDF) for a degenerate distribution centered at `mu`.
 */
-double stdlib_base_dists_degenerate_logpdf( const double x, const double mu);
+double stdlib_base_dists_degenerate_logpdf( const double x, const double mu );
 
 #ifdef __cplusplus
 }

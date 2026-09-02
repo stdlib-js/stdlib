@@ -45,7 +45,7 @@
         "@stdlib/math/base/special/log1p",
         "@stdlib/math/base/special/exp",
         "@stdlib/math/base/special/pow",
-        "@stdlib/constants/float64/max-safe-nth-factorial",
+        "@stdlib/constants/float64/max-nth-factorial",
         "@stdlib/constants/float64/eps",
         "@stdlib/constants/float64/e",
         "@stdlib/constants/float64/gamma-lanczos-g"
@@ -70,7 +70,7 @@
         "@stdlib/math/base/special/log1p",
         "@stdlib/math/base/special/exp",
         "@stdlib/math/base/special/pow",
-        "@stdlib/constants/float64/max-safe-nth-factorial",
+        "@stdlib/constants/float64/max-nth-factorial",
         "@stdlib/constants/float64/eps",
         "@stdlib/constants/float64/e",
         "@stdlib/constants/float64/gamma-lanczos-g"
@@ -95,7 +95,7 @@
         "@stdlib/math/base/special/log1p",
         "@stdlib/math/base/special/exp",
         "@stdlib/math/base/special/pow",
-        "@stdlib/constants/float64/max-safe-nth-factorial",
+        "@stdlib/constants/float64/max-nth-factorial",
         "@stdlib/constants/float64/eps",
         "@stdlib/constants/float64/e",
         "@stdlib/constants/float64/gamma-lanczos-g"

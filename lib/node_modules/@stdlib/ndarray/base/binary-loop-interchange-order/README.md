@@ -97,11 +97,15 @@ For all returned arrays, the first element corresponds to the innermost loop, an
 
 ## Examples
 
+<!-- eslint-disable max-len -->
+
 <!-- eslint no-undef: "error" -->
 
 ```javascript
 var array = require( '@stdlib/ndarray/array' );
-var loopOrder = require( '@stdlib/ndarray/base/binary-loop-interchange-order' );
+var getShape = require( '@stdlib/ndarray/shape' );
+var getStrides = require( '@stdlib/ndarray/strides' );
+var binaryLoopOrder = require( '@stdlib/ndarray/base/binary-loop-interchange-order' );
 
 // Create ndarrays:
 var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
@@ -109,7 +113,7 @@ var y = array( [ [ 5, 6 ], [ 7, 8 ] ] );
 var z = array( [ [ 0, 0 ], [ 0, 0 ] ] );
 
 // Resolve loop interchange data:
-var o = loopOrder( x.shape, x.strides, y.strides, z.strides );
+var o = binaryLoopOrder( getShape( x ), getStrides( x ), getStrides( y ), getStrides( z ) );
 // returns {...}
 
 console.log( o );

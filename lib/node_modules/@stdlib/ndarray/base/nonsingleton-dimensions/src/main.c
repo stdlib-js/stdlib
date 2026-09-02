@@ -35,7 +35,7 @@
 * int64_t n = stdlib_ndarray_nonsingleton_dimensions( ndims, shape );
 * // returns 1
 */
-int64_t stdlib_ndarray_nonsingleton_dimensions( int64_t ndims, int64_t *shape ) {
+int64_t stdlib_ndarray_nonsingleton_dimensions( const int64_t ndims, const int64_t *shape ) {
 	int64_t n;
 	int64_t i;
 

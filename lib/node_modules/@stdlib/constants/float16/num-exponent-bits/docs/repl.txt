@@ -1,0 +1,11 @@
+
+{{alias}}
+    Number of exponent bits for a half-precision floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    5
+
+    See Also
+    --------

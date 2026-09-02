@@ -63,7 +63,7 @@ dist = hammingDistance( '1638452297', '2311638451' );
 
 ## Notes
 
--   If the two strings differ in length, the [Hamming distance][hamming-distance] is not defined. Consequently, when provided two input strings of unequal length, the function returns a sentinel value of `-1`.  
+-   If the two strings differ in length, the [Hamming distance][hamming-distance] is not defined. Consequently, when provided two input strings of unequal length, the function returns a sentinel value of `-1`.
 -   As the function calculates the [Hamming distance][hamming-distance] by comparing UTF-16 code units, the function should behave as expected for strings composed of most characters. However, the function is likely to not behave as expected if strings contain visual characters composed of multiple Unicode code points, such as certain mathematical symbols and grapheme clusters (e.g., emojis).
 
 </section>

@@ -32,7 +32,7 @@ var reDirnamePosix = require( '@stdlib/regexp/dirname-posix' );
 
 #### reDirnamePosix()
 
-Returns a [regular expression][regexp] to capture a [POSIX][posix] path [dirname][dirname]. 
+Returns a [regular expression][regexp] to capture a [POSIX][posix] path [dirname][dirname].
 
 ```javascript
 var RE_DIRNAME_POSIX = reDirnamePosix();
@@ -42,7 +42,7 @@ var dir = RE_DIRNAME_POSIX.exec( 'foo/bar/index.js' )[ 1 ];
 
 #### reDirnamePosix.REGEXP
 
-[Regular expression][regexp] to capture a [POSIX][posix] path [dirname][dirname]. 
+[Regular expression][regexp] to capture a [POSIX][posix] path [dirname][dirname].
 
 ```javascript
 var dir = reDirnamePosix.REGEXP.exec( 'foo/bar/index.js' )[ 1 ];

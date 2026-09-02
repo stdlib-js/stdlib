@@ -18,6 +18,10 @@
 
 // TypeScript Version: 4.1
 
+/// <reference types="@stdlib/types"/>
+
+import { DataType } from '@stdlib/types/ndarray';
+
 /**
 * Returns a boolean indicating if a provided ndarray data type can be cast to another ndarray data type according to a specified casting mode.
 *
@@ -33,7 +37,7 @@
 * bool = isAllowedCast( 'float64', 'int32', 'safe' );
 * // returns false
 */
-declare function isAllowedCast( from: string, to: string, casting: string ): boolean;
+declare function isAllowedCast( from: DataType, to: DataType, casting: string ): boolean;
 
 
 // EXPORTS //

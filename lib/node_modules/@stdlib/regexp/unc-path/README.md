@@ -32,7 +32,7 @@ var reUncPath = require( '@stdlib/regexp/unc-path' );
 
 #### reUncPath()
 
-Returns a [regular expression][regexp] to parse a [UNC][unc] path. 
+Returns a [regular expression][regexp] to parse a [UNC][unc] path.
 
 ```javascript
 var RE_UNC_PATH = reUncPath();
@@ -71,7 +71,7 @@ parts = RE_UNC_PATH.exec( '\\\\server\\share' );
 
 #### reUncPath.REGEXP
 
-[Regular expression][regexp] to parse a [UNC][unc] path. 
+[Regular expression][regexp] to parse a [UNC][unc] path.
 
 ```javascript
 var parts = reUncPath.REGEXP.exec( '\\\\server\\share\\foo\\bar\\baz' )[ 1 ];

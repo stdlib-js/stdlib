@@ -25,178 +25,178 @@ import cscal = require( './index' );
 
 // The function returns a Complex64Array...
 {
-	const cx = new Complex64Array( 10 );
-	const ca = new Complex64( 2.0, 2.0 );
+	const x = new Complex64Array( 10 );
+	const alpha = new Complex64( 2.0, 2.0 );
 
-	cscal( cx.length, ca, cx, 1 ); // $ExpectType Complex64Array
+	cscal( x.length, alpha, x, 1 ); // $ExpectType Complex64Array
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
 {
-	const cx = new Complex64Array( 10 );
-	const ca = new Complex64( 2.0, 2.0 );
+	const x = new Complex64Array( 10 );
+	const alpha = new Complex64( 2.0, 2.0 );
 
-	cscal( '10', ca, cx, 1 ); // $ExpectError
-	cscal( true, ca, cx, 1 ); // $ExpectError
-	cscal( false, ca, cx, 1 ); // $ExpectError
-	cscal( null, ca, cx, 1 ); // $ExpectError
-	cscal( undefined, ca, cx, 1 ); // $ExpectError
-	cscal( [], ca, cx, 1 ); // $ExpectError
-	cscal( {}, ca, cx, 1 ); // $ExpectError
-	cscal( ( cx: number ): number => cx, ca, cx, 1 ); // $ExpectError
+	cscal( '10', alpha, x, 1 ); // $ExpectError
+	cscal( true, alpha, x, 1 ); // $ExpectError
+	cscal( false, alpha, x, 1 ); // $ExpectError
+	cscal( null, alpha, x, 1 ); // $ExpectError
+	cscal( undefined, alpha, x, 1 ); // $ExpectError
+	cscal( [], alpha, x, 1 ); // $ExpectError
+	cscal( {}, alpha, x, 1 ); // $ExpectError
+	cscal( ( x: number ): number => x, alpha, x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a complex number...
 {
-	const cx = new Complex64Array( 10 );
+	const x = new Complex64Array( 10 );
 
-	cscal( cx.length, 10, cx, 1 ); // $ExpectError
-	cscal( cx.length, '10', cx, 1 ); // $ExpectError
-	cscal( cx.length, true, cx, 1 ); // $ExpectError
-	cscal( cx.length, false, cx, 1 ); // $ExpectError
-	cscal( cx.length, null, cx, 1 ); // $ExpectError
-	cscal( cx.length, undefined, cx, 1 ); // $ExpectError
-	cscal( cx.length, [ '1' ], cx, 1 ); // $ExpectError
-	cscal( cx.length, {}, cx, 1 ); // $ExpectError
-	cscal( cx.length, ( cx: number ): number => cx, cx, 1 ); // $ExpectError
+	cscal( x.length, 10, x, 1 ); // $ExpectError
+	cscal( x.length, '10', x, 1 ); // $ExpectError
+	cscal( x.length, true, x, 1 ); // $ExpectError
+	cscal( x.length, false, x, 1 ); // $ExpectError
+	cscal( x.length, null, x, 1 ); // $ExpectError
+	cscal( x.length, undefined, x, 1 ); // $ExpectError
+	cscal( x.length, [ '1' ], x, 1 ); // $ExpectError
+	cscal( x.length, {}, x, 1 ); // $ExpectError
+	cscal( x.length, ( x: number ): number => x, x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not a Complex64Array...
 {
-	const cx = new Complex64Array( 10 );
-	const ca = new Complex64( 2.0, 2.0 );
+	const x = new Complex64Array( 10 );
+	const alpha = new Complex64( 2.0, 2.0 );
 
-	cscal( cx.length, ca, 10, 1 ); // $ExpectError
-	cscal( cx.length, ca, '10', 1 ); // $ExpectError
-	cscal( cx.length, ca, true, 1 ); // $ExpectError
-	cscal( cx.length, ca, false, 1 ); // $ExpectError
-	cscal( cx.length, ca, null, 1 ); // $ExpectError
-	cscal( cx.length, ca, undefined, 1 ); // $ExpectError
-	cscal( cx.length, ca, [ '1' ], 1 ); // $ExpectError
-	cscal( cx.length, ca, {}, 1 ); // $ExpectError
-	cscal( cx.length, ca, ( cx: number ): number => cx, 1 ); // $ExpectError
+	cscal( x.length, alpha, 10, 1 ); // $ExpectError
+	cscal( x.length, alpha, '10', 1 ); // $ExpectError
+	cscal( x.length, alpha, true, 1 ); // $ExpectError
+	cscal( x.length, alpha, false, 1 ); // $ExpectError
+	cscal( x.length, alpha, null, 1 ); // $ExpectError
+	cscal( x.length, alpha, undefined, 1 ); // $ExpectError
+	cscal( x.length, alpha, [ '1' ], 1 ); // $ExpectError
+	cscal( x.length, alpha, {}, 1 ); // $ExpectError
+	cscal( x.length, alpha, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fourth argument which is not a number...
 {
-	const cx = new Complex64Array( 10 );
-	const ca = new Complex64( 2.0, 2.0 );
+	const x = new Complex64Array( 10 );
+	const alpha = new Complex64( 2.0, 2.0 );
 
-	cscal( cx.length, ca, cx, '10' ); // $ExpectError
-	cscal( cx.length, ca, cx, true ); // $ExpectError
-	cscal( cx.length, ca, cx, false ); // $ExpectError
-	cscal( cx.length, ca, cx, null ); // $ExpectError
-	cscal( cx.length, ca, cx, undefined ); // $ExpectError
-	cscal( cx.length, ca, cx, [] ); // $ExpectError
-	cscal( cx.length, ca, cx, {} ); // $ExpectError
-	cscal( cx.length, ca, cx, ( cx: number ): number => cx ); // $ExpectError
+	cscal( x.length, alpha, x, '10' ); // $ExpectError
+	cscal( x.length, alpha, x, true ); // $ExpectError
+	cscal( x.length, alpha, x, false ); // $ExpectError
+	cscal( x.length, alpha, x, null ); // $ExpectError
+	cscal( x.length, alpha, x, undefined ); // $ExpectError
+	cscal( x.length, alpha, x, [] ); // $ExpectError
+	cscal( x.length, alpha, x, {} ); // $ExpectError
+	cscal( x.length, alpha, x, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
-	const cx = new Complex64Array( 10 );
-	const ca = new Complex64( 2.0, 2.0 );
+	const x = new Complex64Array( 10 );
+	const alpha = new Complex64( 2.0, 2.0 );
 
 	cscal(); // $ExpectError
-	cscal( cx.length ); // $ExpectError
-	cscal( cx.length, ca ); // $ExpectError
-	cscal( cx.length, ca, cx ); // $ExpectError
-	cscal( cx.length, ca, cx, 1, 10 ); // $ExpectError
+	cscal( x.length ); // $ExpectError
+	cscal( x.length, alpha ); // $ExpectError
+	cscal( x.length, alpha, x ); // $ExpectError
+	cscal( x.length, alpha, x, 1, 10 ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a Complex64Array...
 {
-	const cx = new Complex64Array( 10 );
-	const ca = new Complex64( 2.0, 2.0 );
+	const x = new Complex64Array( 10 );
+	const alpha = new Complex64( 2.0, 2.0 );
 
-	cscal.ndarray( cx.length, ca, cx, 1, 0 ); // $ExpectType Complex64Array
+	cscal.ndarray( x.length, alpha, x, 1, 0 ); // $ExpectType Complex64Array
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...
 {
-	const cx = new Complex64Array( 10 );
-	const ca = new Complex64( 2.0, 2.0 );
+	const x = new Complex64Array( 10 );
+	const alpha = new Complex64( 2.0, 2.0 );
 
-	cscal.ndarray( '10', ca, cx, 1, 0 ); // $ExpectError
-	cscal.ndarray( true, ca, cx, 1, 0 ); // $ExpectError
-	cscal.ndarray( false, ca, cx, 1, 0 ); // $ExpectError
-	cscal.ndarray( null, ca, cx, 1, 0 ); // $ExpectError
-	cscal.ndarray( undefined, ca, cx, 1, 0 ); // $ExpectError
-	cscal.ndarray( [], ca, cx, 1, 0 ); // $ExpectError
-	cscal.ndarray( {}, ca, cx, 1, 0 ); // $ExpectError
-	cscal.ndarray( ( cx: number ): number => cx, ca, cx, 1, 0 ); // $ExpectError
+	cscal.ndarray( '10', alpha, x, 1, 0 ); // $ExpectError
+	cscal.ndarray( true, alpha, x, 1, 0 ); // $ExpectError
+	cscal.ndarray( false, alpha, x, 1, 0 ); // $ExpectError
+	cscal.ndarray( null, alpha, x, 1, 0 ); // $ExpectError
+	cscal.ndarray( undefined, alpha, x, 1, 0 ); // $ExpectError
+	cscal.ndarray( [], alpha, x, 1, 0 ); // $ExpectError
+	cscal.ndarray( {}, alpha, x, 1, 0 ); // $ExpectError
+	cscal.ndarray( ( x: number ): number => x, alpha, x, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a second argument which is not a complex number...
 {
-	const cx = new Complex64Array( 10 );
+	const x = new Complex64Array( 10 );
 
-	cscal.ndarray( cx.length, 10, cx, 1, 0 ); // $ExpectError
-	cscal.ndarray( cx.length, '10', cx, 1, 0 ); // $ExpectError
-	cscal.ndarray( cx.length, true, cx, 1, 0 ); // $ExpectError
-	cscal.ndarray( cx.length, false, cx, 1, 0 ); // $ExpectError
-	cscal.ndarray( cx.length, null, cx, 1, 0 ); // $ExpectError
-	cscal.ndarray( cx.length, undefined, cx, 1, 0 ); // $ExpectError
-	cscal.ndarray( cx.length, [ '1' ], cx, 1, 0 ); // $ExpectError
-	cscal.ndarray( cx.length, {}, cx, 1, 0 ); // $ExpectError
-	cscal.ndarray( cx.length, ( cx: number ): number => cx, cx, 1, 0 ); // $ExpectError
+	cscal.ndarray( x.length, 10, x, 1, 0 ); // $ExpectError
+	cscal.ndarray( x.length, '10', x, 1, 0 ); // $ExpectError
+	cscal.ndarray( x.length, true, x, 1, 0 ); // $ExpectError
+	cscal.ndarray( x.length, false, x, 1, 0 ); // $ExpectError
+	cscal.ndarray( x.length, null, x, 1, 0 ); // $ExpectError
+	cscal.ndarray( x.length, undefined, x, 1, 0 ); // $ExpectError
+	cscal.ndarray( x.length, [ '1' ], x, 1, 0 ); // $ExpectError
+	cscal.ndarray( x.length, {}, x, 1, 0 ); // $ExpectError
+	cscal.ndarray( x.length, ( x: number ): number => x, x, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a third argument which is not a Complex64Array...
 {
-	const cx = new Complex64Array( 10 );
-	const ca = new Complex64( 2.0, 2.0 );
+	const x = new Complex64Array( 10 );
+	const alpha = new Complex64( 2.0, 2.0 );
 
-	cscal.ndarray( cx.length, ca, 10, 1, 0 ); // $ExpectError
-	cscal.ndarray( cx.length, ca, '10', 1, 0 ); // $ExpectError
-	cscal.ndarray( cx.length, ca, true, 1, 0 ); // $ExpectError
-	cscal.ndarray( cx.length, ca, false, 1, 0 ); // $ExpectError
-	cscal.ndarray( cx.length, ca, null, 1, 0 ); // $ExpectError
-	cscal.ndarray( cx.length, ca, undefined, 1, 0 ); // $ExpectError
-	cscal.ndarray( cx.length, ca, [ '1' ], 1, 0 ); // $ExpectError
-	cscal.ndarray( cx.length, ca, {}, 1, 0 ); // $ExpectError
-	cscal.ndarray( cx.length, ca, ( cx: number ): number => cx, 1, 0 ); // $ExpectError
+	cscal.ndarray( x.length, alpha, 10, 1, 0 ); // $ExpectError
+	cscal.ndarray( x.length, alpha, '10', 1, 0 ); // $ExpectError
+	cscal.ndarray( x.length, alpha, true, 1, 0 ); // $ExpectError
+	cscal.ndarray( x.length, alpha, false, 1, 0 ); // $ExpectError
+	cscal.ndarray( x.length, alpha, null, 1, 0 ); // $ExpectError
+	cscal.ndarray( x.length, alpha, undefined, 1, 0 ); // $ExpectError
+	cscal.ndarray( x.length, alpha, [ '1' ], 1, 0 ); // $ExpectError
+	cscal.ndarray( x.length, alpha, {}, 1, 0 ); // $ExpectError
+	cscal.ndarray( x.length, alpha, ( x: number ): number => x, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fourth argument which is not a number...
 {
-	const cx = new Complex64Array( 10 );
-	const ca = new Complex64( 2.0, 2.0 );
+	const x = new Complex64Array( 10 );
+	const alpha = new Complex64( 2.0, 2.0 );
 
-	cscal.ndarray( cx.length, ca, cx, '10', 0 ); // $ExpectError
-	cscal.ndarray( cx.length, ca, cx, true, 0 ); // $ExpectError
-	cscal.ndarray( cx.length, ca, cx, false, 0 ); // $ExpectError
-	cscal.ndarray( cx.length, ca, cx, null, 0 ); // $ExpectError
-	cscal.ndarray( cx.length, ca, cx, undefined, 0 ); // $ExpectError
-	cscal.ndarray( cx.length, ca, cx, [], 0 ); // $ExpectError
-	cscal.ndarray( cx.length, ca, cx, {}, 0 ); // $ExpectError
-	cscal.ndarray( cx.length, ca, cx, ( cx: number ): number => cx, 0 ); // $ExpectError
+	cscal.ndarray( x.length, alpha, x, '10', 0 ); // $ExpectError
+	cscal.ndarray( x.length, alpha, x, true, 0 ); // $ExpectError
+	cscal.ndarray( x.length, alpha, x, false, 0 ); // $ExpectError
+	cscal.ndarray( x.length, alpha, x, null, 0 ); // $ExpectError
+	cscal.ndarray( x.length, alpha, x, undefined, 0 ); // $ExpectError
+	cscal.ndarray( x.length, alpha, x, [], 0 ); // $ExpectError
+	cscal.ndarray( x.length, alpha, x, {}, 0 ); // $ExpectError
+	cscal.ndarray( x.length, alpha, x, ( x: number ): number => x, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fifth argument which is not a number...
 {
-	const cx = new Complex64Array( 10 );
-	const ca = new Complex64( 2.0, 2.0 );
+	const x = new Complex64Array( 10 );
+	const alpha = new Complex64( 2.0, 2.0 );
 
-	cscal.ndarray( cx.length, ca, cx, 1, '10' ); // $ExpectError
-	cscal.ndarray( cx.length, ca, cx, 1, true ); // $ExpectError
-	cscal.ndarray( cx.length, ca, cx, 1, false ); // $ExpectError
-	cscal.ndarray( cx.length, ca, cx, 1, null ); // $ExpectError
-	cscal.ndarray( cx.length, ca, cx, 1, undefined ); // $ExpectError
-	cscal.ndarray( cx.length, ca, cx, 1, [] ); // $ExpectError
-	cscal.ndarray( cx.length, ca, cx, 1, {} ); // $ExpectError
-	cscal.ndarray( cx.length, ca, cx, 1, ( cx: number ): number => cx ); // $ExpectError
+	cscal.ndarray( x.length, alpha, x, 1, '10' ); // $ExpectError
+	cscal.ndarray( x.length, alpha, x, 1, true ); // $ExpectError
+	cscal.ndarray( x.length, alpha, x, 1, false ); // $ExpectError
+	cscal.ndarray( x.length, alpha, x, 1, null ); // $ExpectError
+	cscal.ndarray( x.length, alpha, x, 1, undefined ); // $ExpectError
+	cscal.ndarray( x.length, alpha, x, 1, [] ); // $ExpectError
+	cscal.ndarray( x.length, alpha, x, 1, {} ); // $ExpectError
+	cscal.ndarray( x.length, alpha, x, 1, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided an unsupported number of arguments...
 {
-	const cx = new Complex64Array( 10 );
-	const ca = new Complex64( 2.0, 2.0 );
+	const x = new Complex64Array( 10 );
+	const alpha = new Complex64( 2.0, 2.0 );
 
 	cscal.ndarray(); // $ExpectError
-	cscal.ndarray( cx.length ); // $ExpectError
-	cscal.ndarray( cx.length, ca ); // $ExpectError
-	cscal.ndarray( cx.length, ca, cx ); // $ExpectError
-	cscal.ndarray( cx.length, ca, cx, 1 ); // $ExpectError
-	cscal.ndarray( cx.length, ca, cx, 1, 0, 10 ); // $ExpectError
+	cscal.ndarray( x.length ); // $ExpectError
+	cscal.ndarray( x.length, alpha ); // $ExpectError
+	cscal.ndarray( x.length, alpha, x ); // $ExpectError
+	cscal.ndarray( x.length, alpha, x, 1 ); // $ExpectError
+	cscal.ndarray( x.length, alpha, x, 1, 0, 10 ); // $ExpectError
 }

@@ -80,11 +80,11 @@ double API_SUFFIX(stdlib_strided_dssumpw_ndarray)( const CBLAS_INT N, const floa
 	if ( strideX == 0 ) {
 		return N * X[ 0 ];
 	}
-
 	if ( N < 8 ) {
 		// Use simple summation...
-		sum = 0.0;
-		for ( i = 0; i < N; i++ ) {
+		sum = (double)X[ ix ];
+		ix += strideX;
+		for ( i = 1; i < N; i++ ) {
 			sum += (double)X[ ix ];
 			ix += strideX;
 		}

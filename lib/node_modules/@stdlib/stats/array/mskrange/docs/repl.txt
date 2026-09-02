@@ -1,0 +1,35 @@
+
+{{alias}}( x, mask )
+    Computes the range of an array according to a mask.
+
+    If a `mask` array element is `0`, the corresponding element in `x` is
+    considered valid and included in computation.
+
+    If a `mask` array element is `1`, the corresponding element in `x` is
+    considered invalid/missing and excluded from computation.
+
+    If provided an empty array, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: Array<number>|TypedArray
+        Input array.
+
+    mask: Array<number>|TypedArray
+        Mask array.
+
+    Returns
+    -------
+    out: number
+        Range.
+
+    Examples
+    --------
+    > var x = [ 1.0, -2.0, 4.0, 2.0 ];
+    > var msk = [ 0, 0, 1, 0 ];
+    > {{alias}}( x, msk )
+    4.0
+
+    See Also
+    --------
+

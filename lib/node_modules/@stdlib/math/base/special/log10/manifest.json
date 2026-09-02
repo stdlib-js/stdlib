@@ -46,7 +46,8 @@
         "@stdlib/constants/float64/high-word-significand-mask",
         "@stdlib/number/float64/base/set-low-word",
         "@stdlib/math/base/special/kernel-log1p",
-        "@stdlib/math/base/assert/is-nan"
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -69,7 +70,8 @@
         "@stdlib/constants/float64/high-word-significand-mask",
         "@stdlib/number/float64/base/set-low-word",
         "@stdlib/math/base/special/kernel-log1p",
-        "@stdlib/math/base/assert/is-nan"
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -92,7 +94,8 @@
         "@stdlib/constants/float64/high-word-significand-mask",
         "@stdlib/number/float64/base/set-low-word",
         "@stdlib/math/base/special/kernel-log1p",
-        "@stdlib/math/base/assert/is-nan"
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

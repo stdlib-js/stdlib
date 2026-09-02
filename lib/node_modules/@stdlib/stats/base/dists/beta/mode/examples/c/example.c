@@ -35,6 +35,6 @@ int main( void ) {
 		alpha = random_uniform( 1.0, 11.0 );
 		beta = random_uniform( 1.0, 11.0 );
 		y = stdlib_base_dists_beta_mode( alpha, beta );
-		printf( "alpha: %lf, beta: %lf, mode(X;alpha,beta): %lf\n", alpha, beta, y );
+		printf( "α: %lf, β: %lf, mode(X;α,β): %lf\n", alpha, beta, y );
 	}
 }

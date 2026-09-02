@@ -26,7 +26,7 @@
 * @return     cosecant
 *
 * @example
-* double y = stdlib_base_cos( 3.141592653589793 / 2.0 );
+* double y = stdlib_base_csc( 3.141592653589793 / 2.0 );
 * // returns 1.0
 */
 double stdlib_base_csc( const double x ) {

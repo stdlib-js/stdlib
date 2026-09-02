@@ -55,11 +55,11 @@ void API_SUFFIX(c_scopy_ndarray)( const CBLAS_INT N, const float *X, const CBLAS
 				ix += strideX;
 				iy += strideY;
 			}
-			if ( N < 7 ) {
+			if ( N < M ) {
 				return;
 			}
 		}
-		for ( i = m; i < N; i += 7 ) {
+		for ( i = m; i < N; i += M ) {
 			Y[ iy ] = X[ ix ];
 			Y[ iy+1 ] = X[ ix+1 ];
 			Y[ iy+2 ] = X[ ix+2 ];

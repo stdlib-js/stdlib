@@ -55,7 +55,8 @@ type Iterator = Iter | IterableIterator;
 * v = it.next().value;
 * // returns true
 *
-* // ..
+* var bool = it.next().done;
+* // returns true
 */
 declare function iterCuSome( iterator: Iterator, n: number ): Iterator;
 

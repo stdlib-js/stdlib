@@ -1,0 +1,28 @@
+
+{{alias}}( obj )
+    Converts each object key to uppercase.
+
+    The function only transforms own properties. Hence, the function does not
+    transform inherited properties.
+
+    The function shallow copies key values.
+
+    Parameters
+    ----------
+    obj: Object
+        Source object.
+
+    Returns
+    -------
+    out: Object
+        New object.
+
+    Examples
+    --------
+    > var obj = { 'a': 1, 'b': 2 };
+    > var out = {{alias}}( obj )
+    { 'A': 1, 'B': 2 }
+
+    See Also
+    --------
+

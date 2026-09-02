@@ -44,7 +44,7 @@ var isComplexFloatingPointDataType = require( '@stdlib/ndarray/base/assert/is-co
 
 #### isComplexFloatingPointDataType( value )
 
-Tests if an input `value` is a supported ndarray complex-valued floating-point data type.
+Tests if an input value is a supported ndarray complex-valued floating-point data type.
 
 <!-- eslint-disable id-length -->
 

@@ -41,7 +41,8 @@
         "@stdlib/math/base/assert/is-infinite",
         "@stdlib/math/base/special/ceil",
         "@stdlib/math/base/special/ceiln",
-        "@stdlib/math/base/special/pow"
+        "@stdlib/math/base/special/pow",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -59,7 +60,8 @@
         "@stdlib/math/base/assert/is-infinite",
         "@stdlib/math/base/special/ceil",
         "@stdlib/math/base/special/ceiln",
-        "@stdlib/math/base/special/pow"
+        "@stdlib/math/base/special/pow",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -77,7 +79,8 @@
         "@stdlib/math/base/assert/is-infinite",
         "@stdlib/math/base/special/ceil",
         "@stdlib/math/base/special/ceiln",
-        "@stdlib/math/base/special/pow"
+        "@stdlib/math/base/special/pow",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

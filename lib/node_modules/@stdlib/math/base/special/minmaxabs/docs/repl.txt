@@ -31,7 +31,8 @@
 
 
 {{alias}}.assign( x, y, out, stride, offset )
-    Returns the minimum and maximum absolute values.
+    Returns the minimum and maximum absolute values and assigns results to a
+    provided output array.
 
     If any argument is `NaN`, the function returns `NaN` for both the minimum
     and maximum absolute values.

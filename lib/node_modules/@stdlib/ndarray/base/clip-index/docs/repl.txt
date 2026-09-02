@@ -1,0 +1,33 @@
+
+{{alias}}( idx, max )
+    Clips an index to the interval [0,max].
+
+    Negative indices are normalized according to `max + idx`.
+
+    Parameters
+    ----------
+    idx: integer
+        Index to clip.
+
+    max: integer
+        Maximum index value.
+
+    Returns
+    -------
+    out: integer
+        Clipped index.
+
+    Examples
+    --------
+    > var idx = {{alias}}( 2, 10 )
+    2
+    > idx = {{alias}}( -5, 10 )
+    5
+    > idx = {{alias}}( 15, 10 )
+    10
+    > idx = {{alias}}( -15, 10 )
+    0
+
+    See Also
+    --------
+

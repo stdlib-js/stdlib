@@ -25,7 +25,7 @@ int main( void ) {
 
 	bool b;
 	int i;
-	for ( i = 0; i < 6; i++ ) {
+	for ( i = 0; i < 8; i++ ) {
 		b = stdlib_base_is_prime( x[ i ] );
 		printf( "Value: %lf. Is Prime? %s.\n", x[ i ], ( b ) ? "True" : "False" );
 	}
