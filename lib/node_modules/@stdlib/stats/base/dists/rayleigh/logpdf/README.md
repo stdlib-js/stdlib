@@ -20,7 +20,7 @@ limitations under the License.
 
 # Logarithm of Probability Density Function
 
-> [Rayleigh][rayleigh-distribution] distribution logarithm of [probability density function][pdf] (PDF).
+> [Rayleigh][rayleigh-distribution] distribution natural logarithm of [probability density function][pdf] (PDF).
 
 <section class="intro">
 
@@ -55,7 +55,7 @@ var logpdf = require( '@stdlib/stats/base/dists/rayleigh/logpdf' );
 
 #### logpdf( x, sigma )
 
-Evaluates the logarithm of the [probability density function][pdf] for a [Rayleigh][rayleigh-distribution] distribution with scale parameter `sigma`.
+Evaluates the natural logarithm of the [probability density function][pdf] for a [Rayleigh][rayleigh-distribution] distribution with scale parameter `sigma`.
 
 ```javascript
 var y = logpdf( 0.3, 1.0 );
@@ -178,7 +178,7 @@ logEachMap( 'x: %0.4f, σ: %0.4f, ln(f(x;σ)): %0.4f', x, sigma, logpdf );
 
 #### stdlib_base_dists_rayleigh_logpdf( x, sigma )
 
-Evaluates the logarithm of the probability density function (PDF) for a Rayleigh distribution.
+Evaluates the natural logarithm of the probability density function (PDF) for a Rayleigh distribution.
 
 ```c
 double out = stdlib_base_dists_rayleigh_logpdf( 0.3, 1.0 );

@@ -26,7 +26,7 @@
 * @return     output value
 *
 * @example
-* out = stdlib_base_acothf( 2.0f );
+* float out = stdlib_base_acothf( 2.0f );
 * // returns ~0.5493f
 */
 float stdlib_base_acothf( const float x ) {
