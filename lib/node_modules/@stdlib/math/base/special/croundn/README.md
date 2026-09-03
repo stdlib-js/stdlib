@@ -31,7 +31,7 @@ limitations under the License.
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{croundn}(a + bi, n) = \operatorname{roundn}(a, n) + \operatorname{roundn}(b, n)\,i" data-equation="eq:croundn_function">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/croundn/docs/img/equation_croundn_function.svg" alt="Complex round to n decimal places">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@85f48534ef6908bbcd982d48f1c5fbea3fb7aafd/lib/node_modules/@stdlib/math/base/special/croundn/docs/img/equation_croundn_function.svg" alt="Complex round to n decimal places">
     <br>
 </div> -->
 

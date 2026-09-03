@@ -396,6 +396,8 @@ interface Namespace {
 	*     -   a one-dimensional input ndarray.
 	*     -   a zero-dimensional ndarray containing the search element.
 	*     -   a zero-dimensional ndarray containing the scalar constant.
+	*     -   a zero-dimensional ndarray containing the starting index (inclusive).
+	*     -   a zero-dimensional ndarray containing the ending index (exclusive).
 	*
 	* -   When comparing elements, the function checks for equality of real and imaginary components using the strict equality operator `===`. As a consequence, `NaN` components are considered distinct (i.e., as `NaN === NaN` always evaluates to `false`, elements having one or more `NaN` components are never replaced), and `-0` and `+0` are considered the same.
 	*
@@ -417,8 +419,16 @@ interface Namespace {
 	*     'dtype': 'complex64'
 	* });
 	*
-	* var out = ns.cfillEqual( [ x, searchElement, alpha ] );
-	* // returns <ndarray>[ <Complex64>[ 5.0, 5.0 ], <Complex64>[ -2.0, 3.0 ], <Complex64>[ 5.0, 5.0 ], <Complex64>[ 4.0, -6.0 ] ]
+	* var start = scalar2ndarray( 0, {
+	*     'dtype': 'generic'
+	* });
+	*
+	* var end = scalar2ndarray( 2, {
+	*     'dtype': 'generic'
+	* });
+	*
+	* var out = ns.cfillEqual( [ x, searchElement, alpha, start, end ] );
+	* // returns <ndarray>[ <Complex64>[ 5.0, 5.0 ], <Complex64>[ -2.0, 3.0 ], <Complex64>[ 0.0, 0.0 ], <Complex64>[ 4.0, -6.0 ] ]
 	*/
 	cfillEqual: typeof cfillEqual;
 
@@ -1328,6 +1338,8 @@ interface Namespace {
 	*     -   a one-dimensional input ndarray.
 	*     -   a zero-dimensional ndarray containing the search element.
 	*     -   a zero-dimensional ndarray containing the scalar constant.
+	*     -   a zero-dimensional ndarray containing the starting index (inclusive).
+	*     -   a zero-dimensional ndarray containing the ending index (exclusive).
 	*
 	* -   When comparing elements, the function checks for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct and `-0` and `+0` are considered the same.
 	*
@@ -1348,8 +1360,16 @@ interface Namespace {
 	*     'dtype': 'float64'
 	* });
 	*
-	* var out = ns.dfillEqual( [ x, searchElement, alpha ] );
-	* // returns <ndarray>[ 5.0, -2.0, 3.0, 5.0, 4.0, -6.0 ]
+	* var start = scalar2ndarray( 0, {
+	*     'dtype': 'generic'
+	* });
+	*
+	* var end = scalar2ndarray( 2, {
+	*     'dtype': 'generic'
+	* });
+	*
+	* var out = ns.dfillEqual( [ x, searchElement, alpha, start, end ] );
+	* // returns <ndarray>[ 5.0, -2.0, 3.0, 0.0, 4.0, -6.0 ]
 	*/
 	dfillEqual: typeof dfillEqual;
 
@@ -1362,6 +1382,8 @@ interface Namespace {
 	*
 	*     -   a one-dimensional input ndarray.
 	*     -   a zero-dimensional ndarray containing the scalar constant.
+	*     -   a zero-dimensional ndarray containing the starting index (inclusive).
+	*     -   a zero-dimensional ndarray containing the ending index (exclusive).
 	*
 	* @param arrays - array-like object containing ndarrays
 	* @returns input ndarray
@@ -1376,8 +1398,16 @@ interface Namespace {
 	*     'dtype': 'float64'
 	* });
 	*
-	* var out = ns.dfillNaN( [ x, alpha ] );
-	* // returns <ndarray>[ 0.0, -2.0, 3.0, 0.0, 4.0, -6.0 ]
+	* var start = scalar2ndarray( 0, {
+	*     'dtype': 'generic'
+	* });
+	*
+	* var end = scalar2ndarray( 2, {
+	*     'dtype': 'generic'
+	* });
+	*
+	* var out = ns.dfillNaN( [ x, alpha, start, end ] );
+	* // returns <ndarray>[ 0.0, -2.0, 3.0, NaN, 4.0, -6.0 ]
 	*/
 	dfillNaN: typeof dfillNaN;
 
@@ -1391,6 +1421,8 @@ interface Namespace {
 	*     -   a one-dimensional input ndarray.
 	*     -   a zero-dimensional ndarray containing the search element.
 	*     -   a zero-dimensional ndarray containing the scalar constant.
+	*     -   a zero-dimensional ndarray containing the starting index (inclusive).
+	*     -   a zero-dimensional ndarray containing the ending index (exclusive).
 	*
 	* -   When comparing elements, the function checks for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct (i.e., as `NaN !== NaN` always evaluates to `true`, `NaN` elements are always replaced), and `-0` and `+0` are considered the same.
 	*
@@ -1411,8 +1443,16 @@ interface Namespace {
 	*     'dtype': 'float64'
 	* });
 	*
-	* var out = ns.dfillNotEqual( [ x, searchElement, alpha ] );
-	* // returns <ndarray>[ 0.0, 5.0, 5.0, 0.0, 5.0, 5.0 ]
+	* var start = scalar2ndarray( 0, {
+	*     'dtype': 'generic'
+	* });
+	*
+	* var end = scalar2ndarray( 3, {
+	*     'dtype': 'generic'
+	* });
+	*
+	* var out = ns.dfillNotEqual( [ x, searchElement, alpha, start, end ] );
+	* // returns <ndarray>[ 0.0, 5.0, 5.0, 0.0, 4.0, -6.0 ]
 	*/
 	dfillNotEqual: typeof dfillNotEqual;
 
@@ -3008,6 +3048,8 @@ interface Namespace {
 	*     -   a one-dimensional input ndarray.
 	*     -   a zero-dimensional ndarray containing the search element.
 	*     -   a zero-dimensional ndarray containing the scalar constant.
+	*     -   a zero-dimensional ndarray containing the starting index (inclusive).
+	*     -   a zero-dimensional ndarray containing the ending index (exclusive).
 	*
 	* -   When comparing elements, the function checks for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct (i.e., as `NaN === NaN` always evaluates to `false`, `NaN` elements are never replaced), and `-0` and `+0` are considered the same.
 	*
@@ -3028,8 +3070,16 @@ interface Namespace {
 	*     'dtype': 'generic'
 	* });
 	*
-	* var out = ns.gfillEqual( [ x, searchElement, alpha ] );
-	* // returns <ndarray>[ 5.0, -2.0, 3.0, 5.0, 4.0, -6.0 ]
+	* var start = scalar2ndarray( 0, {
+	*     'dtype': 'generic'
+	* });
+	*
+	* var end = scalar2ndarray( 2, {
+	*     'dtype': 'generic'
+	* });
+	*
+	* var out = ns.gfillEqual( [ x, searchElement, alpha, start, end ] );
+	* // returns <ndarray>[ 5.0, -2.0, 3.0, 0.0, 4.0, -6.0 ]
 	*/
 	gfillEqual: typeof gfillEqual;
 
@@ -3042,6 +3092,8 @@ interface Namespace {
 	*
 	*     -   a one-dimensional input ndarray.
 	*     -   a zero-dimensional ndarray containing the scalar constant.
+	*     -   a zero-dimensional ndarray containing the starting index (inclusive).
+	*     -   a zero-dimensional ndarray containing the ending index (exclusive).
 	*
 	* @param arrays - array-like object containing ndarrays
 	* @returns input ndarray
@@ -3056,8 +3108,16 @@ interface Namespace {
 	*     'dtype': 'generic'
 	* });
 	*
-	* var out = ns.gfillNaN( [ x, alpha ] );
-	* // returns <ndarray>[ 0.0, -2.0, 3.0, 0.0, 4.0, -6.0 ]
+	* var start = scalar2ndarray( 0, {
+	*     'dtype': 'generic'
+	* });
+	*
+	* var end = scalar2ndarray( 2, {
+	*     'dtype': 'generic'
+	* });
+	*
+	* var out = ns.gfillNaN( [ x, alpha, start, end ] );
+	* // returns <ndarray>[ 0.0, -2.0, 3.0, NaN, 4.0, -6.0 ]
 	*/
 	gfillNaN: typeof gfillNaN;
 
@@ -4777,6 +4837,8 @@ interface Namespace {
 	*     -   a one-dimensional input ndarray.
 	*     -   a zero-dimensional ndarray containing the search element.
 	*     -   a zero-dimensional ndarray containing the scalar constant.
+	*     -   a zero-dimensional ndarray containing the starting index (inclusive).
+	*     -   a zero-dimensional ndarray containing the ending index (exclusive).
 	*
 	* -   When comparing elements, the function checks for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct and `-0` and `+0` are considered the same.
 	*
@@ -4797,8 +4859,16 @@ interface Namespace {
 	*     'dtype': 'float32'
 	* });
 	*
-	* var out = ns.sfillEqual( [ x, searchElement, alpha ] );
-	* // returns <ndarray>[ 5.0, -2.0, 3.0, 5.0, 4.0, -6.0 ]
+	* var start = scalar2ndarray( 0, {
+	*     'dtype': 'generic'
+	* });
+	*
+	* var end = scalar2ndarray( 2, {
+	*     'dtype': 'generic'
+	* });
+	*
+	* var out = ns.sfillEqual( [ x, searchElement, alpha, start, end ] );
+	* // returns <ndarray>[ 5.0, -2.0, 3.0, 0.0, 4.0, -6.0 ]
 	*/
 	sfillEqual: typeof sfillEqual;
 
@@ -4811,6 +4881,8 @@ interface Namespace {
 	*
 	*     -   a one-dimensional input ndarray.
 	*     -   a zero-dimensional ndarray containing the scalar constant.
+	*     -   a zero-dimensional ndarray containing the starting index (inclusive).
+	*     -   a zero-dimensional ndarray containing the ending index (exclusive).
 	*
 	* @param arrays - array-like object containing ndarrays
 	* @returns input ndarray
@@ -4825,8 +4897,16 @@ interface Namespace {
 	*     'dtype': 'float32'
 	* });
 	*
-	* var out = ns.sfillNaN( [ x, alpha ] );
-	* // returns <ndarray>[ 0.0, -2.0, 3.0, 0.0, 4.0, -6.0 ]
+	* var start = scalar2ndarray( 0, {
+	*     'dtype': 'float32'
+	* });
+	*
+	* var end = scalar2ndarray( 3, {
+	*     'dtype': 'float32'
+	* });
+	*
+	* var out = ns.sfillNaN( [ x, alpha, start, end ] );
+	* // returns <ndarray>[ 0.0, -2.0, 3.0, NaN, 4.0, -6.0 ]
 	*/
 	sfillNaN: typeof sfillNaN;
 
@@ -4840,6 +4920,8 @@ interface Namespace {
 	*     -   a one-dimensional input ndarray.
 	*     -   a zero-dimensional ndarray containing the search element.
 	*     -   a zero-dimensional ndarray containing the scalar constant.
+	*     -   a zero-dimensional ndarray containing the starting index (inclusive).
+	*     -   a zero-dimensional ndarray containing the ending index (exclusive).
 	*
 	* -   When comparing elements, the function checks for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct (i.e., as `NaN !== NaN` always evaluates to `true`, `NaN` elements are always replaced), and `-0` and `+0` are considered the same.
 	*
@@ -4860,8 +4942,16 @@ interface Namespace {
 	*     'dtype': 'float32'
 	* });
 	*
-	* var out = ns.sfillNotEqual( [ x, searchElement, alpha ] );
-	* // returns <ndarray>[ 0.0, 5.0, 5.0, 0.0, 5.0, 5.0 ]
+	* var start = scalar2ndarray( 0, {
+	*     'dtype': 'generic'
+	* });
+	*
+	* var end = scalar2ndarray( 3, {
+	*     'dtype': 'generic'
+	* });
+	*
+	* var out = ns.sfillNotEqual( [ x, searchElement, alpha, start, end ] );
+	* // returns <ndarray>[ 0.0, 5.0, 5.0, 0.0, 4.0, -6.0 ]
 	*/
 	sfillNotEqual: typeof sfillNotEqual;
 
