@@ -33,7 +33,7 @@ y = \arccos(x), \quad y \in [0, \pi], \; x \in [-1, 1]
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="y = \arccos(x), \quad y \in [0, \pi], \; x \in [-1, 1]" data-equation="eq:arccosine_function">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/acos/docs/img/equation_arccosine_function.svg" alt="Arccosine function definition with range and domain">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@85f48534ef6908bbcd982d48f1c5fbea3fb7aafd/lib/node_modules/@stdlib/math/base/special/acos/docs/img/equation_arccosine_function.svg" alt="Arccosine function definition with range and domain">
     <br>
 </div> -->
 

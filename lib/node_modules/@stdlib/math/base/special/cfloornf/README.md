@@ -31,7 +31,7 @@ limitations under the License.
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{cfloorn}(a + bi, n) = \operatorname{floorn}(a, n) + \operatorname{floorn}(b, n)\,i" data-equation="eq:cfloorn_function">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/cfloornf/docs/img/equation_cfloorn_function.svg" alt="Complex floor to n decimal places">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@85f48534ef6908bbcd982d48f1c5fbea3fb7aafd/lib/node_modules/@stdlib/math/base/special/cfloornf/docs/img/equation_cfloorn_function.svg" alt="Complex floor to n decimal places">
     <br>
 </div> -->
 
