@@ -154,7 +154,11 @@ Each provided ndarray should be an object with the following properties:
 
 ## Notes
 
--   The output ndarray and any additional ndarray arguments are expected to have the same dimensions as the non-reduced dimensions of the input ndarray. When calling the reduction function, any additional ndarray arguments are provided as zero-dimensional ndarray-like objects.
+-   The output ndarray is expected to have the same dimensions as the non-reduced dimensions of the input ndarray.
+
+-   Any additional ndarray arguments are expected to have the same leading dimensions as the non-reduced dimensions of the input ndarray.
+
+-   When calling the reduction function, any additional ndarray arguments are provided as k-dimensional subarrays, where `k = M - N` with `M` being the number of dimensions in an ndarray argument and `N` being the number of non-reduced dimensions in the input ndarray. For example, if an input ndarray has three dimensions, the number of reduced dimensions is two, and an additional ndarray argument has one dimension, thus matching the number of non-reduced dimensions in the input ndarray, the reduction function is provided a zero-dimensional subarray as an additional ndarray argument. In the same scenario but where an additional ndarray argument has two dimensions, thus exceeding the number of non-reduced dimensions in the input ndarray, the reduction function is provided a one-dimensional subarray as an additional ndarray argument.
 
 -   The reduction function is expected to have the following signature:
 
@@ -164,7 +168,7 @@ Each provided ndarray should be an object with the following properties:
 
     where
 
-    -   **arrays**: array containing a one-dimensional subarray of the input ndarray, a zero-dimensional subarray of the output ndarray containing the output [`struct`][@stdlib/dstructs/struct] object, and any additional ndarray arguments as zero-dimensional ndarrays.
+    -   **arrays**: array containing a one-dimensional subarray of the input ndarray, a zero-dimensional subarray of the output ndarray containing the output [`struct`][@stdlib/dstructs/struct] object, and any additional ndarray arguments as subarrays.
     -   **options**: function options (_optional_).
 
 -   For very high-dimensional ndarrays which are non-contiguous, one should consider copying the underlying data to contiguous memory before performing a reduction in order to achieve better performance.

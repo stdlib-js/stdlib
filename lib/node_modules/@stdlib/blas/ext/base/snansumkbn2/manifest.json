@@ -1,6 +1,7 @@
 {
   "options": {
-    "task": "build"
+    "task": "build",
+    "wasm": false
   },
   "fields": [
     {
@@ -27,6 +28,7 @@
   "confs": [
     {
       "task": "build",
+      "wasm": false,
       "src": [
         "./src/main.c"
       ],
@@ -37,18 +39,19 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/math/base/special/absf",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-float32array",
-        "@stdlib/napi/create-double",
-        "@stdlib/math/base/special/absf",
-        "@stdlib/strided/base/stride2offset",
-        "@stdlib/blas/base/shared"
+        "@stdlib/napi/create-double"
       ]
     },
     {
       "task": "benchmark",
+      "wasm": false,
       "src": [
         "./src/main.c"
       ],
@@ -66,6 +69,25 @@
     },
     {
       "task": "examples",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/math/base/special/absf",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
+      ]
+    },
+    {
+      "task": "build",
+      "wasm": true,
       "src": [
         "./src/main.c"
       ],

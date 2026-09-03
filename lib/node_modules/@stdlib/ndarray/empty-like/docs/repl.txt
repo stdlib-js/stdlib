@@ -28,7 +28,7 @@
     options.shape: ArrayLikeObject<integer>|integer (optional)
         Array shape. Overrides the input array's inferred shape.
 
-    options.dtype: string (optional)
+    options.dtype: string|DataType (optional)
         Array data type. Overrides the input array's inferred data type.
 
     options.order: string (optional)
@@ -65,18 +65,10 @@
 
     Examples
     --------
-    > var x = {{alias:@stdlib/ndarray/base/zeros}}( 'float64', [ 2, 2 ], 'row-major' )
-    <ndarray>
-    > var sh = {{alias:@stdlib/ndarray/shape}}( x )
-    [ 2, 2 ]
-    > var dt = {{alias:@stdlib/ndarray/dtype}}( x ).toString()
-    'float64'
+    > var x = {{alias:@stdlib/ndarray/zeros}}( [ 2, 2 ] )
+    <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
     > var y = {{alias}}( x )
     <ndarray>
-    > sh = {{alias:@stdlib/ndarray/shape}}( y )
-    [ 2, 2 ]
-    > dt = {{alias:@stdlib/ndarray/dtype}}( y ).toString()
-    'float64'
 
     See Also
     --------

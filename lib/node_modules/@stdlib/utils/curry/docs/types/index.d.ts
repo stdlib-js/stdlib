@@ -48,7 +48,7 @@ type Closure<
 * -   Until return value resolution, each invocation returns a new partially applied curry function.
 *
 * @param fcn - function to curry
-* @param arity - number of parameters (default: fcn.length)
+* @param arity - number of parameters
 * @param thisArg - evaluation context
 * @throws `arity` must be a positive integer
 * @returns curry function

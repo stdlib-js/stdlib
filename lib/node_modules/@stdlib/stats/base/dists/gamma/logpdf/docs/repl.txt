@@ -1,8 +1,8 @@
 
 {{alias}}( x, α, β )
-    Evaluates the logarithm of the probability density function (PDF) for a
-    gamma distribution with shape parameter `α` and rate parameter `β` at a
-    value `x`.
+    Evaluates the natural logarithm of the probability density function (PDF)
+    for a gamma distribution with shape parameter `α` and rate parameter `β` at
+    a value `x`.
 
     If `α < 0` or `β <= 0`, the function returns `NaN`.
 

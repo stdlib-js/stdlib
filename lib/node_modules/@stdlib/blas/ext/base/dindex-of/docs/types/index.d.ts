@@ -19,8 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Interface describing `dindexOf`
-*
+* Interface describing `dindexOf`.
 */
 interface Routine {
 	/**

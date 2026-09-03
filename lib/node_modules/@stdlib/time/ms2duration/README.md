@@ -176,6 +176,8 @@ $ echo -n '1350,2000' | ms2duration --split ','
 
 <section class="related">
 
+</section>
+
 <!-- /.related -->
 
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->

@@ -20,7 +20,7 @@ limitations under the License.
 
 # Logarithm of Cumulative Distribution Function
 
-> [Weibull][weibull-distribution] distribution logarithm of [cumulative distribution function][cdf].
+> [Weibull][weibull-distribution] distribution natural logarithm of [cumulative distribution function][cdf].
 
 <section class="intro">
 
