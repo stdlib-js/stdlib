@@ -295,6 +295,21 @@ run_lint() {
 	else
 		task_status 'skipped'
 	fi
+	# Lint package.json metadata...
+	add_task 'lint_pkgs_metadata'
+	if [[ -z "${skip_package_json}" ]]; then
+		files=$(echo "${changed_files}" | tr '\n' ' ')
+		make FILES="${files}" lint-pkgs-metadata-files > /dev/null >&2
+		if [[ "$?" -ne 0 ]]; then
+			task_status 'failed'
+			echo '' >&2
+			echo 'package.json metadata out of date.' >&2
+			return 1
+		fi
+		task_status 'passed'
+	else
+		task_status 'skipped'
+	fi
 	# Lint REPL help files...
 	add_task 'lint_repl_help'
 	if [[ -z "${skip_repl_help}" ]]; then
