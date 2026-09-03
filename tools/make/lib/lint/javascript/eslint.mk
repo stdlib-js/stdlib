@@ -44,6 +44,9 @@ ESLINT_CONF_BENCHMARKS ?= $(CONFIG_DIR)/eslint/.eslintrc.benchmarks.js
 # Define the path to the ESLint ignore file:
 ESLINT_IGNORE ?= $(ROOT_DIR)/.eslintignore
 
+# Use legacy config until build tooling switches to flat config:
+export ESLINT_USE_FLAT_CONFIG := false
+
 # Define the command-line options to use when invoking the ESLint executable:
 eslint_flags := \
 	--ignore-path $(ESLINT_IGNORE) \
