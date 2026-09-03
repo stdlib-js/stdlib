@@ -30,7 +30,7 @@ import { Int64Array } from '@stdlib/types/array';
 * @returns `Uint32Array` view
 *
 * @example
-* var Int64Array = require( '@stdlib/array/complex128' );
+* var Int64Array = require( '@stdlib/array/int64' );
 *
 * var x = new Int64Array( 10 );
 *

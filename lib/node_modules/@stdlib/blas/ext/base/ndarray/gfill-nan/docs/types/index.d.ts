@@ -31,6 +31,8 @@ import { typedndarray } from '@stdlib/types/ndarray';
 *
 *     -   a one-dimensional input ndarray.
 *     -   a zero-dimensional ndarray containing the scalar constant.
+*     -   a zero-dimensional ndarray containing the starting index (inclusive).
+*     -   a zero-dimensional ndarray containing the ending index (exclusive).
 *
 * @param arrays - array-like object containing ndarrays
 * @returns input ndarray
@@ -45,10 +47,18 @@ import { typedndarray } from '@stdlib/types/ndarray';
 *     'dtype': 'generic'
 * });
 *
-* var out = gfillNaN( [ x, alpha ] );
-* // returns <ndarray>[ 0.0, -2.0, 3.0, 0.0, 4.0, -6.0 ]
+* var start = scalar2ndarray( 0, {
+*     'dtype': 'generic'
+* });
+*
+* var end = scalar2ndarray( 2, {
+*     'dtype': 'generic'
+* });
+*
+* var out = gfillNaN( [ x, alpha, start, end ] );
+* // returns <ndarray>[ 0.0, -2.0, 3.0, NaN, 4.0, -6.0 ]
 */
-declare function gfillNaN<T = unknown, U = unknown, V extends typedndarray<T | U> = typedndarray<T | U>>( arrays: [ V, typedndarray<U> ] ): V;
+declare function gfillNaN<T = unknown, U = unknown, V extends typedndarray<T | U> = typedndarray<T | U>>( arrays: [ V, typedndarray<U>, typedndarray<number>, typedndarray<number> ] ): V;
 
 
 // EXPORTS //
