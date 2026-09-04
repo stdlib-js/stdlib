@@ -309,7 +309,7 @@ float y[] = { 1.0f, 1.0f, 2.0f, 2.0f, 3.0f, 3.0f, 4.0f, 4.0f };
 const stdlib_complex64_t alpha = stdlib_complex64( 0.5f, 0.5f );
 const stdlib_complex64_t beta = stdlib_complex64( 0.5f, -0.5f );
 
-c_cgemv( CblasNoTrans, 4, 2, alpha, (void *)A, 1, 4, (void *)x, 1, 0, beta, (void *)y, 1, 0 );
+c_cgemv_ndarray( CblasNoTrans, 4, 2, alpha, (void *)A, 1, 4, 0, (void *)x, 1, 0, beta, (void *)y, 1, 0 );
 ```
 
 The function accepts the following arguments:

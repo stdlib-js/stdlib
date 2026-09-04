@@ -50,7 +50,7 @@ interface Routine {
 	* gaxpby( x.length, 5.0, x, 1, 2.0, y, 1 );
 	* // y => [ 9.0, 16.0, 23.0, 30.0, 37.0 ]
 	*/
-	<T extends InputArray, U extends InputArray>( N: number, alpha: number, x: T, strideX: number, beta: number, y: U, strideY: number ): U;
+	<T extends InputArray = InputArray>( N: number, alpha: number, x: InputArray, strideX: number, beta: number, y: T, strideY: number ): T;
 
 	/**
 	* Multiplies a strided array `x` by a constant and adds the result to a strided array `y` multiplied by a constant using alternative indexing semantics.
@@ -73,7 +73,7 @@ interface Routine {
 	* gaxpby.ndarray( x.length, 5.0, x, 1, 0, 2.0, y, 1, 0 );
 	* // y => [ 9.0, 16.0, 23.0, 30.0, 37.0 ]
 	*/
-	ndarray<T extends InputArray, U extends InputArray>( N: number, alpha: number, x: T, strideX: number, offsetX: number, beta: number, y: U, strideY: number, offsetY: number ): U;
+	ndarray<T extends InputArray = InputArray>( N: number, alpha: number, x: InputArray, strideX: number, offsetX: number, beta: number, y: T, strideY: number, offsetY: number ): T;
 }
 
 /**

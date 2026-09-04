@@ -136,7 +136,7 @@ interface OptionsWithDType extends Options {
 }
 
 /**
-* Creates a NaN-filled array having a specified shape and data type.
+* Creates a NaN-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -145,7 +145,7 @@ interface OptionsWithDType extends Options {
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns NaN-filled array
+* @returns NaN-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -165,7 +165,7 @@ interface OptionsWithDType extends Options {
 declare function nans( shape: Shape | number, options: Float64Options ): float64ndarray;
 
 /**
-* Creates a NaN-filled array having a specified shape and data type.
+* Creates a NaN-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -174,7 +174,7 @@ declare function nans( shape: Shape | number, options: Float64Options ): float64
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns NaN-filled array
+* @returns NaN-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -194,7 +194,7 @@ declare function nans( shape: Shape | number, options: Float64Options ): float64
 declare function nans( shape: Shape | number, options: Float32Options ): float32ndarray;
 
 /**
-* Creates a NaN-filled array having a specified shape and data type.
+* Creates a NaN-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -203,7 +203,7 @@ declare function nans( shape: Shape | number, options: Float32Options ): float32
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns NaN-filled array
+* @returns NaN-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -223,7 +223,7 @@ declare function nans( shape: Shape | number, options: Float32Options ): float32
 declare function nans( shape: Shape | number, options: Complex128Options ): complex128ndarray;
 
 /**
-* Creates a NaN-filled array having a specified shape and data type.
+* Creates a NaN-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -232,7 +232,7 @@ declare function nans( shape: Shape | number, options: Complex128Options ): comp
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns NaN-filled array
+* @returns NaN-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -252,7 +252,7 @@ declare function nans( shape: Shape | number, options: Complex128Options ): comp
 declare function nans( shape: Shape | number, options: Complex64Options ): complex64ndarray;
 
 /**
-* Creates a NaN-filled array having a specified shape and data type.
+* Creates a NaN-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -261,7 +261,7 @@ declare function nans( shape: Shape | number, options: Complex64Options ): compl
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns NaN-filled array
+* @returns NaN-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -281,7 +281,7 @@ declare function nans( shape: Shape | number, options: Complex64Options ): compl
 declare function nans( shape: Shape | number, options: GenericOptions ): genericndarray<number>;
 
 /**
-* Creates a NaN-filled array having a specified shape and data type.
+* Creates a NaN-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -290,7 +290,7 @@ declare function nans( shape: Shape | number, options: GenericOptions ): generic
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns NaN-filled array
+* @returns NaN-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -308,7 +308,7 @@ declare function nans( shape: Shape | number, options: GenericOptions ): generic
 declare function nans( shape: Shape | number, options?: Options ): float64ndarray;
 
 /**
-* Creates a NaN-filled array having a specified shape and data type.
+* Creates a NaN-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -317,7 +317,7 @@ declare function nans( shape: Shape | number, options?: Options ): float64ndarra
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns NaN-filled array
+* @returns NaN-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );

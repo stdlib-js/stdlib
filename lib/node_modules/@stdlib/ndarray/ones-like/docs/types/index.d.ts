@@ -246,7 +246,7 @@ interface OptionsWithDType extends Options {
 }
 
 /**
-* Creates a ones-filled array having the same shape and data type as a provided input ndarray.
+* Creates a ones-filled ndarray having the same shape and data type as a provided input ndarray.
 *
 * @param x - input array
 * @param options - options
@@ -255,7 +255,7 @@ interface OptionsWithDType extends Options {
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns ones-filled array
+* @returns ones-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -285,7 +285,7 @@ interface OptionsWithDType extends Options {
 declare function onesLike<T extends genericndarray<any> | typedndarray<number | ComplexLike>>( x: T, options?: Options ): T;
 
 /**
-* Creates a ones-filled array having the same shape and data type as a provided input ndarray.
+* Creates a ones-filled ndarray having the same shape and data type as a provided input ndarray.
 *
 * @param x - input array
 * @param options - options
@@ -294,7 +294,7 @@ declare function onesLike<T extends genericndarray<any> | typedndarray<number | 
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns ones-filled array
+* @returns ones-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -334,7 +334,7 @@ declare function onesLike( x: genericndarray<any>, options?: Options ): genericn
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns ones-filled array
+* @returns ones-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -376,7 +376,7 @@ declare function onesLike( x: ndarray, options: Float64Options ): float64ndarray
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns ones-filled array
+* @returns ones-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -418,7 +418,7 @@ declare function onesLike( x: ndarray, options: Float32Options ): float32ndarray
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns ones-filled array
+* @returns ones-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -460,7 +460,7 @@ declare function onesLike( x: ndarray, options: Complex128Options ): complex128n
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns ones-filled array
+* @returns ones-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -502,7 +502,7 @@ declare function onesLike( x: ndarray, options: Complex64Options ): complex64nda
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns ones-filled array
+* @returns ones-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -544,7 +544,7 @@ declare function onesLike( x: ndarray, options: Int32Options ): int32ndarray;
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns ones-filled array
+* @returns ones-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -586,7 +586,7 @@ declare function onesLike( x: ndarray, options: Int16Options ): int16ndarray;
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns ones-filled array
+* @returns ones-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -628,7 +628,7 @@ declare function onesLike( x: ndarray, options: Int8Options ): int8ndarray;
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns ones-filled array
+* @returns ones-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -670,7 +670,7 @@ declare function onesLike( x: ndarray, options: Uint32Options ): uint32ndarray;
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns ones-filled array
+* @returns ones-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -712,7 +712,7 @@ declare function onesLike( x: ndarray, options: Uint16Options ): uint16ndarray;
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns ones-filled array
+* @returns ones-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -754,7 +754,7 @@ declare function onesLike( x: ndarray, options: Uint8Options ): uint8ndarray;
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns ones-filled array
+* @returns ones-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -796,7 +796,7 @@ declare function onesLike( x: ndarray, options: Uint8COptions ): uint8cndarray;
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns ones-filled array
+* @returns ones-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -828,7 +828,7 @@ declare function onesLike( x: ndarray, options: Uint8COptions ): uint8cndarray;
 declare function onesLike( x: ndarray, options: GenericOptions ): genericndarray<number>;
 
 /**
-* Creates a ones-filled array having the same shape and data type as a provided input ndarray.
+* Creates a ones-filled ndarray having the same shape and data type as a provided input ndarray.
 *
 * @param x - input array
 * @param options - options
@@ -838,7 +838,7 @@ declare function onesLike( x: ndarray, options: GenericOptions ): genericndarray
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns ones-filled array
+* @returns ones-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );

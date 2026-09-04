@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/blas/ext/base/ndarray/daxpby",
   "version": "0.0.0",
-  "description": "Multiply a double-precision floating-point ndarray by a scalar constant and add the result to a second double-precision floating-point ndarray multiplied by a scalar constant.",
+  "description": "Multiply a one-dimensional double-precision floating-point ndarray by a scalar constant and add the result to a second one-dimensional double-precision floating-point ndarray multiplied by a scalar constant.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

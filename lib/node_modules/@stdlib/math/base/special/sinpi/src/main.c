@@ -25,6 +25,7 @@
 #include "stdlib/math/base/special/copysign.h"
 #include "stdlib/math/base/special/fmod.h"
 #include "stdlib/constants/float64/pi.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Computes the value of `sin(πx)`.
@@ -47,7 +48,7 @@ double stdlib_base_sinpi( const double x ) {
 	double ar;
 	double r;
 	if ( stdlib_base_is_nan( x ) || stdlib_base_is_infinite( x ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 
 	// Argument reduction (reduce to [0,2))...

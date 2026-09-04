@@ -46,7 +46,7 @@ double stdlib_base_dists_logistic_logpdf( const double x, const double mu, const
 		stdlib_base_is_nan( s ) ||
 		s < 0.0
 	) {
-		return 0.0 / 0.0; //NaN
+		return 0.0 / 0.0; // NaN
 	}
 	if ( x == STDLIB_CONSTANT_FLOAT64_NINF ) {
 		return STDLIB_CONSTANT_FLOAT64_NINF;
