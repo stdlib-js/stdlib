@@ -86,7 +86,7 @@ type Predicate<T, U, ThisArg> = Nullary<ThisArg> | Unary<T, ThisArg> | Binary<T,
 * var x = new Float64Array( [ 1.0, -2.0, -3.0, 4.0 ] );
 *
 * var out = reject( x, isPositiveNumber );
-* // returns <Float64Array>[ -2.0, -3.0 ]
+* // returns [ -2.0, -3.0 ]
 */
 declare function reject<T = unknown, U extends InputArray<T> = InputArray<T>, ThisArg = unknown>( x: U, predicate: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): Array<T>;
 
