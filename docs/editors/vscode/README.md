@@ -18,6 +18,8 @@ limitations under the License.
 
 -->
 
+<!-- lint disable first-heading-level expected-html-sections -->
+
 # Visual Studio Code
 
 > A guide for using [Visual Studio Code][vscode] for project development.
@@ -28,7 +30,7 @@ limitations under the License.
 
 Pre-built binaries are available for download on the Visual Studio Code [homepage][vscode].
 
-To use [Visual Studio Code][vscode] as a command-line utility, users on MacOS have to run a command to add the [Visual Studio Code][vscode] executable to the `PATH` environment variable (see the official [documentation][vscode-macos-setup]). 
+To use [Visual Studio Code][vscode] as a command-line utility, users on MacOS have to run a command to add the [Visual Studio Code][vscode] executable to the `PATH` environment variable (see the official [documentation][vscode-macos-setup]).
 
 To test the command-line utility,
 
@@ -69,15 +71,7 @@ $ code .
 
 -   [**Code Spell Checker**][vscode-spell-checker]: A simple source code spell checker. See the [official documentation][vscode-spell-checker-readme] for configuration options.
 
--   [**ESLint**][vscode-eslint]: extension to integrate [eslint][eslint] into [Visual Studio Code][vscode]. Once installed, you need to configure the extension to use the project [ESLint][eslint] configuration files in your workspace settings.
-
-    ```text
-            ...
-            "eslint.options": {
-                "configFile": "etc/eslint/.eslintrc.js"
-            }
-            ...
-    ```
+-   [**ESLint**][vscode-eslint]: extension to integrate [eslint][eslint] into [Visual Studio Code][vscode].
 
 -   [**Path Intellisense**][vscode-path-intellisense]: extension that autocompletes filenames.
 
@@ -113,7 +107,7 @@ $ code .
                 {
                     "text": "TODO:",
                     "color": "darkred",
-                    "backgroundColor": "rgba(0,0,0,.2)", 
+                    "backgroundColor": "rgba(0,0,0,.2)",
                     "isWholeLine": true
                 },
                 {
