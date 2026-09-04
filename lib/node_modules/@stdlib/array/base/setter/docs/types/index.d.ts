@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/array';
+import { Collection, Float16Array } from '@stdlib/types/array';
 
 /**
 * Sets an element in a `Float64Array`.
@@ -39,6 +39,15 @@ type SetFloat64 = ( arr: Float64Array, idx: number, value: number ) => void;
 * @param value - value to set
 */
 type SetFloat32 = ( arr: Float32Array, idx: number, value: number ) => void;
+
+/**
+* Sets an element in a `Float16Array`.
+*
+* @param arr - input array
+* @param idx - element index
+* @param value - value to set
+*/
+type SetFloat16 = ( arr: Float16Array, idx: number, value: number ) => void;
 
 /**
 * Sets an element in an `Int32Array`.
@@ -132,7 +141,7 @@ type SetArrayLike<T> = ( arr: Collection<T>, idx: number, value: T ) => void;
 *
 * var arr = new Float64Array( 4 );
 *
-* var get = setter( 'float64' );
+* var set = setter( 'float64' );
 * set( arr, 2, 3 );
 *
 * var v = arr[ 2 ];
@@ -158,6 +167,25 @@ declare function setter( dtype: 'float64' ): SetFloat64;
 * // returns 3.0
 */
 declare function setter( dtype: 'float32' ): SetFloat32;
+
+/**
+* Returns an accessor function for setting an element in a `Float16Array`.
+*
+* @param dtype - data type
+* @returns accessor function
+*
+* @example
+* var Float16Array = require( '@stdlib/array/float16' );
+*
+* var arr = new Float16Array( 4 );
+*
+* var set = setter( 'float16' );
+* set( arr, 2, 3 );
+*
+* var v = arr[ 2 ];
+* // returns 3.0
+*/
+declare function setter( dtype: 'float16' ): SetFloat16;
 
 /**
 * Returns an accessor function for setting an element in an `Int32Array`.
