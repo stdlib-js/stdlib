@@ -21,7 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 import { ComplexLike } from '@stdlib/types/complex';
-import { Collection, Complex64Array, Complex128Array, AccessorArrayLike } from '@stdlib/types/array';
+import { Collection, Complex64Array, Complex128Array, AccessorArrayLike, Float16Array } from '@stdlib/types/array';
 
 /**
 * Sets an element in a `Float64Array`.
@@ -40,6 +40,15 @@ type SetFloat64 = ( arr: Float64Array, idx: number, value: number ) => void;
 * @param value - value to set
 */
 type SetFloat32 = ( arr: Float32Array, idx: number, value: number ) => void;
+
+/**
+* Sets an element in a `Float16Array`.
+*
+* @param arr - input array
+* @param idx - element index
+* @param value - value to set
+*/
+type SetFloat16 = ( arr: Float16Array, idx: number, value: number ) => void;
 
 /**
 * Sets an element in a `Complex128Array`.
@@ -190,6 +199,27 @@ declare function resolveSetter( x: Float64Array ): SetFloat64;
 * // returns 10.0
 */
 declare function resolveSetter( x: Float32Array ): SetFloat32;
+
+/**
+* Returns an accessor function for setting an element in a `Float16Array`.
+*
+* @param x - input array
+* @returns accessor function
+*
+* @example
+* var resolveGetter = require( '@stdlib/array/base/resolve-getter' );
+* var Float16Array = require( '@stdlib/array/float16' );
+*
+* var arr = new Float16Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+*
+* var set = resolveSetter( arr );
+* set( arr, 2, 10.0 );
+*
+* var get = resolveGetter( arr );
+* var v = get( arr, 2 );
+* // returns 10.0
+*/
+declare function resolveSetter( x: Float16Array ): SetFloat16;
 
 /**
 * Returns an accessor function for setting an element in a `Complex128Array`.
