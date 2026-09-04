@@ -3,6 +3,10 @@
     Returns the index of the last element in a one-dimensional ndarray which
     passes a test implemented by a predicate function.
 
+    If a specified starting search index is negative, the function resolves the
+    starting search index by counting backward from the last element (where `-1`
+    refers to the last element).
+
     If provided an empty ndarray or no element passes a test implemented by a
     predicate function, the function returns `-1`.
 
@@ -15,7 +19,11 @@
     Parameters
     ----------
     arrays: ArrayLikeObject<ndarray>
-        Array-like object containing a one-dimensional input ndarray.
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a zero-dimensional ndarray containing the index from which to begin
+        searching.
 
     clbk: Function
         Callback function.
@@ -31,8 +39,9 @@
     Examples
     --------
     > var x = {{alias:@stdlib/ndarray/vector/ctor}}( [ 1.0, -2.0, 2.0 ], 'generic' );
+    > var i = {{alias:@stdlib/ndarray/from-scalar}}( 2, { 'dtype': 'generic' } );
     > function f ( v ) { return v % 2.0 === 0.0; };
-    > {{alias}}( [ x ], f )
+    > {{alias}}( [ x, i ], f )
     2
 
     See Also
