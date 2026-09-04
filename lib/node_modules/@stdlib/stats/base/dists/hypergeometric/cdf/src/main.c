@@ -26,7 +26,7 @@
 #include <stdint.h>
 
 /**
-* Evaluates the cumulative distribution function (CDF) for a hypergeometric distribution.
+* Evaluates the cumulative distribution function (CDF) for a hypergeometric distribution with population size `N`, subpopulation size `K`, and number of draws `n` at a value `x`.
 *
 * @param x    input value
 * @param N    population size
@@ -38,20 +38,18 @@
 * double y = stdlib_base_dists_hypergeometric_cdf( 1.0, 8, 4, 2 );
 * // returns ~0.786
 */
-double stdlib_base_dists_hypergeometric_cdf(
-	const double x,
-	const int32_t N,
-	const int32_t K,
-	const int32_t n
-) {
+double stdlib_base_dists_hypergeometric_cdf( const double x, const int32_t N, const int32_t K, const int32_t n ) {
+	double upper;
+	double lower;
 	double denom;
 	double num;
 	double ret;
+	double dx;
+	double dn;
+	double dK;
+	double dN;
 	double p;
-	int32_t upper;
-	int32_t lower;
-	int32_t xi;
-	int32_t i;
+	double i;
 
 	if (
 		stdlib_base_is_nan( x ) ||
@@ -61,30 +59,28 @@ double stdlib_base_dists_hypergeometric_cdf(
 		K > N ||
 		n > N
 	) {
-		return 0.0 / 0.0;
+		return 0.0 / 0.0; // NaN
 	}
 	if ( stdlib_base_is_infinite( x ) ) {
 		return ( x > 0.0 ) ? 1.0 : 0.0;
 	}
-
-	xi = (int32_t)stdlib_base_trunc( x );
-
-	lower = stdlib_base_max( 0, n + K - N );
-	upper = stdlib_base_min( n, K );
-
-	if ( xi < lower ) {
+	dn = (double)n;
+	dN = (double)N;
+	dK = (double)K;
+	dx = stdlib_base_trunc( x );
+	lower = stdlib_base_max( 0.0, dn+dK-dN );
+	upper = stdlib_base_min( dn, dK );
+	if ( dx < lower ) {
 		return 0.0;
 	}
-	if ( xi >= upper ) {
+	if ( dx >= upper ) {
 		return 1.0;
 	}
-
-	p = stdlib_base_dists_hypergeometric_pmf( (double)xi, N, K, n );
+	p = stdlib_base_dists_hypergeometric_pmf( dx, N, K, n );
 	ret = p;
-
-	for ( i = xi - 1; i >= lower; i-- ) {
-		num = (double)( i + 1 ) * (double)( N - K - ( n - i - 1 ) );
-		denom = (double)( K - i ) * (double)( n - i );
+	for ( i = dx-1.0; i >= lower; i -= 1.0 ) {
+		num = ( i + 1.0 ) * ( dN - dK - dn + i + 1.0 );
+		denom = ( dK - i ) * ( dn - i );
 		p = ( num / denom ) * p;
 		ret += p;
 	}
