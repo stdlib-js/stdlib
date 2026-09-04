@@ -25,6 +25,7 @@ import setter = require( './index' );
 {
 	setter( 'float64' ); // $ExpectType SetFloat64
 	setter( 'float32' ); // $ExpectType SetFloat32
+	setter( 'float16' ); // $ExpectType SetFloat16
 	setter( 'int32' ); // $ExpectType SetInt32
 	setter( 'int16' ); // $ExpectType SetInt16
 	setter( 'int8' ); // $ExpectType SetInt8
@@ -67,37 +68,41 @@ import setter = require( './index' );
 	const x3 = new Float32Array( [ 1, 2, 3, 4 ] );
 	set3( x3, 2, 3 ); // $ExpectType void
 
-	const set4 = setter( 'int32' );
-	const x4 = new Int32Array( [ 1, 2, 3, 4 ] );
+	const set4 = setter( 'float16' );
+	const x4 = new Float16Array( [ 1, 2, 3, 4 ] );
 	set4( x4, 2, 3 ); // $ExpectType void
 
-	const set5 = setter( 'int16' );
-	const x5 = new Int16Array( [ 1, 2, 3, 4 ] );
+	const set5 = setter( 'int32' );
+	const x5 = new Int32Array( [ 1, 2, 3, 4 ] );
 	set5( x5, 2, 3 ); // $ExpectType void
 
-	const set6 = setter( 'int8' );
-	const x6 = new Int8Array( [ 1, 2, 3, 4 ] );
+	const set6 = setter( 'int16' );
+	const x6 = new Int16Array( [ 1, 2, 3, 4 ] );
 	set6( x6, 2, 3 ); // $ExpectType void
 
-	const set7 = setter( 'uint32' );
-	const x7 = new Uint32Array( [ 1, 2, 3, 4 ] );
+	const set7 = setter( 'int8' );
+	const x7 = new Int8Array( [ 1, 2, 3, 4 ] );
 	set7( x7, 2, 3 ); // $ExpectType void
 
-	const set8 = setter( 'uint16' );
-	const x8 = new Uint16Array( [ 1, 2, 3, 4 ] );
+	const set8 = setter( 'uint32' );
+	const x8 = new Uint32Array( [ 1, 2, 3, 4 ] );
 	set8( x8, 2, 3 ); // $ExpectType void
 
-	const set9 = setter( 'uint8' );
-	const x9 = new Uint8Array( [ 1, 2, 3, 4 ] );
+	const set9 = setter( 'uint16' );
+	const x9 = new Uint16Array( [ 1, 2, 3, 4 ] );
 	set9( x9, 2, 3 ); // $ExpectType void
 
-	const set10 = setter( 'uint8c' );
-	const x10 = new Uint8ClampedArray( [ 1, 2, 3, 4 ] );
+	const set10 = setter( 'uint8' );
+	const x10 = new Uint8Array( [ 1, 2, 3, 4 ] );
 	set10( x10, 2, 3 ); // $ExpectType void
 
-	const set11 = setter<number>( 'foo' );
-	const x11 = [ 1, 2, 3, 4 ];
+	const set11 = setter( 'uint8c' );
+	const x11 = new Uint8ClampedArray( [ 1, 2, 3, 4 ] );
 	set11( x11, 2, 3 ); // $ExpectType void
+
+	const set12 = setter<number>( 'foo' );
+	const x12 = [ 1, 2, 3, 4 ];
+	set12( x12, 2, 3 ); // $ExpectType void
 }
 
 // The compiler throws an error if the returned function is provided a first argument which is not a collection...
@@ -123,61 +128,68 @@ import setter = require( './index' );
 	set3( null, 2, 3 ); // $ExpectError
 	set3( {}, 2, 3 ); // $ExpectError
 
-	const set4 = setter( 'int32' );
+	const set4 = setter( 'float16' );
 	set4( 5, 2, 3 ); // $ExpectError
 	set4( true, 2, 3 ); // $ExpectError
 	set4( false, 2, 3 ); // $ExpectError
 	set4( null, 2, 3 ); // $ExpectError
 	set4( {}, 2, 3 ); // $ExpectError
 
-	const set5 = setter( 'int16' );
+	const set5 = setter( 'int32' );
 	set5( 5, 2, 3 ); // $ExpectError
 	set5( true, 2, 3 ); // $ExpectError
 	set5( false, 2, 3 ); // $ExpectError
 	set5( null, 2, 3 ); // $ExpectError
 	set5( {}, 2, 3 ); // $ExpectError
 
-	const set6 = setter( 'int8' );
+	const set6 = setter( 'int16' );
 	set6( 5, 2, 3 ); // $ExpectError
 	set6( true, 2, 3 ); // $ExpectError
 	set6( false, 2, 3 ); // $ExpectError
 	set6( null, 2, 3 ); // $ExpectError
 	set6( {}, 2, 3 ); // $ExpectError
 
-	const set7 = setter( 'uint32' );
+	const set7 = setter( 'int8' );
 	set7( 5, 2, 3 ); // $ExpectError
 	set7( true, 2, 3 ); // $ExpectError
 	set7( false, 2, 3 ); // $ExpectError
 	set7( null, 2, 3 ); // $ExpectError
 	set7( {}, 2, 3 ); // $ExpectError
 
-	const set8 = setter( 'uint16' );
+	const set8 = setter( 'uint32' );
 	set8( 5, 2, 3 ); // $ExpectError
 	set8( true, 2, 3 ); // $ExpectError
 	set8( false, 2, 3 ); // $ExpectError
 	set8( null, 2, 3 ); // $ExpectError
 	set8( {}, 2, 3 ); // $ExpectError
 
-	const set9 = setter( 'uint8' );
+	const set9 = setter( 'uint16' );
 	set9( 5, 2, 3 ); // $ExpectError
 	set9( true, 2, 3 ); // $ExpectError
 	set9( false, 2, 3 ); // $ExpectError
 	set9( null, 2, 3 ); // $ExpectError
 	set9( {}, 2, 3 ); // $ExpectError
 
-	const set10 = setter( 'uint8c' );
+	const set10 = setter( 'uint8' );
 	set10( 5, 2, 3 ); // $ExpectError
 	set10( true, 2, 3 ); // $ExpectError
 	set10( false, 2, 3 ); // $ExpectError
 	set10( null, 2, 3 ); // $ExpectError
 	set10( {}, 2, 3 ); // $ExpectError
 
-	const set11 = setter( 'foo' );
+	const set11 = setter( 'uint8c' );
 	set11( 5, 2, 3 ); // $ExpectError
 	set11( true, 2, 3 ); // $ExpectError
 	set11( false, 2, 3 ); // $ExpectError
 	set11( null, 2, 3 ); // $ExpectError
 	set11( {}, 2, 3 ); // $ExpectError
+
+	const set12 = setter( 'foo' );
+	set12( 5, 2, 3 ); // $ExpectError
+	set12( true, 2, 3 ); // $ExpectError
+	set12( false, 2, 3 ); // $ExpectError
+	set12( null, 2, 3 ); // $ExpectError
+	set12( {}, 2, 3 ); // $ExpectError
 }
 
 // The compiler throws an error if the returned function is provided a second argument which is not a number...
@@ -203,61 +215,68 @@ import setter = require( './index' );
 	set3( new Float32Array( [ 1, 2, 3, 4 ] ), null, 3 ); // $ExpectError
 	set3( new Float32Array( [ 1, 2, 3, 4 ] ), {}, 3 ); // $ExpectError
 
-	const set4 = setter( 'int32' );
-	set4( new Int32Array( [ 1, 2, 3, 4 ] ), '5', 3 ); // $ExpectError
-	set4( new Int32Array( [ 1, 2, 3, 4 ] ), true, 3 ); // $ExpectError
-	set4( new Int32Array( [ 1, 2, 3, 4 ] ), false, 3 ); // $ExpectError
-	set4( new Int32Array( [ 1, 2, 3, 4 ] ), null, 3 ); // $ExpectError
-	set4( new Int32Array( [ 1, 2, 3, 4 ] ), {}, 3 ); // $ExpectError
+	const set4 = setter( 'float16' );
+	set4( new Float16Array( [ 1, 2, 3, 4 ] ), '5', 3 ); // $ExpectError
+	set4( new Float16Array( [ 1, 2, 3, 4 ] ), true, 3 ); // $ExpectError
+	set4( new Float16Array( [ 1, 2, 3, 4 ] ), false, 3 ); // $ExpectError
+	set4( new Float16Array( [ 1, 2, 3, 4 ] ), null, 3 ); // $ExpectError
+	set4( new Float16Array( [ 1, 2, 3, 4 ] ), {}, 3 ); // $ExpectError
 
-	const set5 = setter( 'int16' );
-	set5( new Int16Array( [ 1, 2, 3, 4 ] ), '5', 3 ); // $ExpectError
-	set5( new Int16Array( [ 1, 2, 3, 4 ] ), true, 3 ); // $ExpectError
-	set5( new Int16Array( [ 1, 2, 3, 4 ] ), false, 3 ); // $ExpectError
-	set5( new Int16Array( [ 1, 2, 3, 4 ] ), null, 3 ); // $ExpectError
-	set5( new Int16Array( [ 1, 2, 3, 4 ] ), {}, 3 ); // $ExpectError
+	const set5 = setter( 'int32' );
+	set5( new Int32Array( [ 1, 2, 3, 4 ] ), '5', 3 ); // $ExpectError
+	set5( new Int32Array( [ 1, 2, 3, 4 ] ), true, 3 ); // $ExpectError
+	set5( new Int32Array( [ 1, 2, 3, 4 ] ), false, 3 ); // $ExpectError
+	set5( new Int32Array( [ 1, 2, 3, 4 ] ), null, 3 ); // $ExpectError
+	set5( new Int32Array( [ 1, 2, 3, 4 ] ), {}, 3 ); // $ExpectError
 
-	const set6 = setter( 'int8' );
-	set6( new Int8Array( [ 1, 2, 3, 4 ] ), '5', 3 ); // $ExpectError
-	set6( new Int8Array( [ 1, 2, 3, 4 ] ), true, 3 ); // $ExpectError
-	set6( new Int8Array( [ 1, 2, 3, 4 ] ), false, 3 ); // $ExpectError
-	set6( new Int8Array( [ 1, 2, 3, 4 ] ), null, 3 ); // $ExpectError
-	set6( new Int8Array( [ 1, 2, 3, 4 ] ), {}, 3 ); // $ExpectError
+	const set6 = setter( 'int16' );
+	set6( new Int16Array( [ 1, 2, 3, 4 ] ), '5', 3 ); // $ExpectError
+	set6( new Int16Array( [ 1, 2, 3, 4 ] ), true, 3 ); // $ExpectError
+	set6( new Int16Array( [ 1, 2, 3, 4 ] ), false, 3 ); // $ExpectError
+	set6( new Int16Array( [ 1, 2, 3, 4 ] ), null, 3 ); // $ExpectError
+	set6( new Int16Array( [ 1, 2, 3, 4 ] ), {}, 3 ); // $ExpectError
 
-	const set7 = setter( 'uint32' );
-	set7( new Uint32Array( [ 1, 2, 3, 4 ] ), '5', 3 ); // $ExpectError
-	set7( new Uint32Array( [ 1, 2, 3, 4 ] ), true, 3 ); // $ExpectError
-	set7( new Uint32Array( [ 1, 2, 3, 4 ] ), false, 3 ); // $ExpectError
-	set7( new Uint32Array( [ 1, 2, 3, 4 ] ), null, 3 ); // $ExpectError
-	set7( new Uint32Array( [ 1, 2, 3, 4 ] ), {}, 3 ); // $ExpectError
+	const set7 = setter( 'int8' );
+	set7( new Int8Array( [ 1, 2, 3, 4 ] ), '5', 3 ); // $ExpectError
+	set7( new Int8Array( [ 1, 2, 3, 4 ] ), true, 3 ); // $ExpectError
+	set7( new Int8Array( [ 1, 2, 3, 4 ] ), false, 3 ); // $ExpectError
+	set7( new Int8Array( [ 1, 2, 3, 4 ] ), null, 3 ); // $ExpectError
+	set7( new Int8Array( [ 1, 2, 3, 4 ] ), {}, 3 ); // $ExpectError
 
-	const set8 = setter( 'uint16' );
-	set8( new Uint16Array( [ 1, 2, 3, 4 ] ), '5', 3 ); // $ExpectError
-	set8( new Uint16Array( [ 1, 2, 3, 4 ] ), true, 3 ); // $ExpectError
-	set8( new Uint16Array( [ 1, 2, 3, 4 ] ), false, 3 ); // $ExpectError
-	set8( new Uint16Array( [ 1, 2, 3, 4 ] ), null, 3 ); // $ExpectError
-	set8( new Uint16Array( [ 1, 2, 3, 4 ] ), {}, 3 ); // $ExpectError
+	const set8 = setter( 'uint32' );
+	set8( new Uint32Array( [ 1, 2, 3, 4 ] ), '5', 3 ); // $ExpectError
+	set8( new Uint32Array( [ 1, 2, 3, 4 ] ), true, 3 ); // $ExpectError
+	set8( new Uint32Array( [ 1, 2, 3, 4 ] ), false, 3 ); // $ExpectError
+	set8( new Uint32Array( [ 1, 2, 3, 4 ] ), null, 3 ); // $ExpectError
+	set8( new Uint32Array( [ 1, 2, 3, 4 ] ), {}, 3 ); // $ExpectError
 
-	const set9 = setter( 'uint8' );
-	set9( new Uint8Array( [ 1, 2, 3, 4 ] ), '5', 3 ); // $ExpectError
-	set9( new Uint8Array( [ 1, 2, 3, 4 ] ), true, 3 ); // $ExpectError
-	set9( new Uint8Array( [ 1, 2, 3, 4 ] ), false, 3 ); // $ExpectError
-	set9( new Uint8Array( [ 1, 2, 3, 4 ] ), null, 3 ); // $ExpectError
-	set9( new Uint8Array( [ 1, 2, 3, 4 ] ), {}, 3 ); // $ExpectError
+	const set9 = setter( 'uint16' );
+	set9( new Uint16Array( [ 1, 2, 3, 4 ] ), '5', 3 ); // $ExpectError
+	set9( new Uint16Array( [ 1, 2, 3, 4 ] ), true, 3 ); // $ExpectError
+	set9( new Uint16Array( [ 1, 2, 3, 4 ] ), false, 3 ); // $ExpectError
+	set9( new Uint16Array( [ 1, 2, 3, 4 ] ), null, 3 ); // $ExpectError
+	set9( new Uint16Array( [ 1, 2, 3, 4 ] ), {}, 3 ); // $ExpectError
 
-	const set10 = setter( 'uint8c' );
-	set10( new Uint8ClampedArray( [ 1, 2, 3, 4 ] ), '5', 3 ); // $ExpectError
-	set10( new Uint8ClampedArray( [ 1, 2, 3, 4 ] ), true, 3 ); // $ExpectError
-	set10( new Uint8ClampedArray( [ 1, 2, 3, 4 ] ), false, 3 ); // $ExpectError
-	set10( new Uint8ClampedArray( [ 1, 2, 3, 4 ] ), null, 3 ); // $ExpectError
-	set10( new Uint8ClampedArray( [ 1, 2, 3, 4 ] ), {}, 3 ); // $ExpectError
+	const set10 = setter( 'uint8' );
+	set10( new Uint8Array( [ 1, 2, 3, 4 ] ), '5', 3 ); // $ExpectError
+	set10( new Uint8Array( [ 1, 2, 3, 4 ] ), true, 3 ); // $ExpectError
+	set10( new Uint8Array( [ 1, 2, 3, 4 ] ), false, 3 ); // $ExpectError
+	set10( new Uint8Array( [ 1, 2, 3, 4 ] ), null, 3 ); // $ExpectError
+	set10( new Uint8Array( [ 1, 2, 3, 4 ] ), {}, 3 ); // $ExpectError
 
-	const set11 = setter( 'foo' );
-	set11( [ 1, 2, 3, 4 ], '5', 3 ); // $ExpectError
-	set11( [ 1, 2, 3, 4 ], true, 3 ); // $ExpectError
-	set11( [ 1, 2, 3, 4 ], false, 3 ); // $ExpectError
-	set11( [ 1, 2, 3, 4 ], null, 3 ); // $ExpectError
-	set11( [ 1, 2, 3, 4 ], {}, 3 ); // $ExpectError
+	const set11 = setter( 'uint8c' );
+	set11( new Uint8ClampedArray( [ 1, 2, 3, 4 ] ), '5', 3 ); // $ExpectError
+	set11( new Uint8ClampedArray( [ 1, 2, 3, 4 ] ), true, 3 ); // $ExpectError
+	set11( new Uint8ClampedArray( [ 1, 2, 3, 4 ] ), false, 3 ); // $ExpectError
+	set11( new Uint8ClampedArray( [ 1, 2, 3, 4 ] ), null, 3 ); // $ExpectError
+	set11( new Uint8ClampedArray( [ 1, 2, 3, 4 ] ), {}, 3 ); // $ExpectError
+
+	const set12 = setter( 'foo' );
+	set12( [ 1, 2, 3, 4 ], '5', 3 ); // $ExpectError
+	set12( [ 1, 2, 3, 4 ], true, 3 ); // $ExpectError
+	set12( [ 1, 2, 3, 4 ], false, 3 ); // $ExpectError
+	set12( [ 1, 2, 3, 4 ], null, 3 ); // $ExpectError
+	set12( [ 1, 2, 3, 4 ], {}, 3 ); // $ExpectError
 }
 
 // The compiler throws an error if the returned function is provided a third argument which is not a valid value...
@@ -276,54 +295,61 @@ import setter = require( './index' );
 	set3( new Float32Array( [ 1, 2, 3, 4 ] ), 2, null ); // $ExpectError
 	set3( new Float32Array( [ 1, 2, 3, 4 ] ), 2, {} ); // $ExpectError
 
-	const set4 = setter( 'int32' );
-	set4( new Int32Array( [ 1, 2, 3, 4 ] ), 2, '5' ); // $ExpectError
-	set4( new Int32Array( [ 1, 2, 3, 4 ] ), 2, true ); // $ExpectError
-	set4( new Int32Array( [ 1, 2, 3, 4 ] ), 2, false ); // $ExpectError
-	set4( new Int32Array( [ 1, 2, 3, 4 ] ), 2, null ); // $ExpectError
-	set4( new Int32Array( [ 1, 2, 3, 4 ] ), 2, {} ); // $ExpectError
+	const set4 = setter( 'float16' );
+	set4( new Float16Array( [ 1, 2, 3, 4 ] ), 2, '5' ); // $ExpectError
+	set4( new Float16Array( [ 1, 2, 3, 4 ] ), 2, true ); // $ExpectError
+	set4( new Float16Array( [ 1, 2, 3, 4 ] ), 2, false ); // $ExpectError
+	set4( new Float16Array( [ 1, 2, 3, 4 ] ), 2, null ); // $ExpectError
+	set4( new Float16Array( [ 1, 2, 3, 4 ] ), 2, {} ); // $ExpectError
 
-	const set5 = setter( 'int16' );
-	set5( new Int16Array( [ 1, 2, 3, 4 ] ), 2, '5' ); // $ExpectError
-	set5( new Int16Array( [ 1, 2, 3, 4 ] ), 2, true ); // $ExpectError
-	set5( new Int16Array( [ 1, 2, 3, 4 ] ), 2, false ); // $ExpectError
-	set5( new Int16Array( [ 1, 2, 3, 4 ] ), 2, null ); // $ExpectError
-	set5( new Int16Array( [ 1, 2, 3, 4 ] ), 2, {} ); // $ExpectError
+	const set5 = setter( 'int32' );
+	set5( new Int32Array( [ 1, 2, 3, 4 ] ), 2, '5' ); // $ExpectError
+	set5( new Int32Array( [ 1, 2, 3, 4 ] ), 2, true ); // $ExpectError
+	set5( new Int32Array( [ 1, 2, 3, 4 ] ), 2, false ); // $ExpectError
+	set5( new Int32Array( [ 1, 2, 3, 4 ] ), 2, null ); // $ExpectError
+	set5( new Int32Array( [ 1, 2, 3, 4 ] ), 2, {} ); // $ExpectError
 
-	const set6 = setter( 'int8' );
-	set6( new Int8Array( [ 1, 2, 3, 4 ] ), 2, '5' ); // $ExpectError
-	set6( new Int8Array( [ 1, 2, 3, 4 ] ), 2, true ); // $ExpectError
-	set6( new Int8Array( [ 1, 2, 3, 4 ] ), 2, false ); // $ExpectError
-	set6( new Int8Array( [ 1, 2, 3, 4 ] ), 2, null ); // $ExpectError
-	set6( new Int8Array( [ 1, 2, 3, 4 ] ), 2, {} ); // $ExpectError
+	const set6 = setter( 'int16' );
+	set6( new Int16Array( [ 1, 2, 3, 4 ] ), 2, '5' ); // $ExpectError
+	set6( new Int16Array( [ 1, 2, 3, 4 ] ), 2, true ); // $ExpectError
+	set6( new Int16Array( [ 1, 2, 3, 4 ] ), 2, false ); // $ExpectError
+	set6( new Int16Array( [ 1, 2, 3, 4 ] ), 2, null ); // $ExpectError
+	set6( new Int16Array( [ 1, 2, 3, 4 ] ), 2, {} ); // $ExpectError
 
-	const set7 = setter( 'uint32' );
-	set7( new Uint32Array( [ 1, 2, 3, 4 ] ), 2, '5' ); // $ExpectError
-	set7( new Uint32Array( [ 1, 2, 3, 4 ] ), 2, true ); // $ExpectError
-	set7( new Uint32Array( [ 1, 2, 3, 4 ] ), 2, false ); // $ExpectError
-	set7( new Uint32Array( [ 1, 2, 3, 4 ] ), 2, null ); // $ExpectError
-	set7( new Uint32Array( [ 1, 2, 3, 4 ] ), 2, {} ); // $ExpectError
+	const set7 = setter( 'int8' );
+	set7( new Int8Array( [ 1, 2, 3, 4 ] ), 2, '5' ); // $ExpectError
+	set7( new Int8Array( [ 1, 2, 3, 4 ] ), 2, true ); // $ExpectError
+	set7( new Int8Array( [ 1, 2, 3, 4 ] ), 2, false ); // $ExpectError
+	set7( new Int8Array( [ 1, 2, 3, 4 ] ), 2, null ); // $ExpectError
+	set7( new Int8Array( [ 1, 2, 3, 4 ] ), 2, {} ); // $ExpectError
 
-	const set8 = setter( 'uint16' );
-	set8( new Uint16Array( [ 1, 2, 3, 4 ] ), 2, '5' ); // $ExpectError
-	set8( new Uint16Array( [ 1, 2, 3, 4 ] ), 2, true ); // $ExpectError
-	set8( new Uint16Array( [ 1, 2, 3, 4 ] ), 2, false ); // $ExpectError
-	set8( new Uint16Array( [ 1, 2, 3, 4 ] ), 2, null ); // $ExpectError
-	set8( new Uint16Array( [ 1, 2, 3, 4 ] ), 2, {} ); // $ExpectError
+	const set8 = setter( 'uint32' );
+	set8( new Uint32Array( [ 1, 2, 3, 4 ] ), 2, '5' ); // $ExpectError
+	set8( new Uint32Array( [ 1, 2, 3, 4 ] ), 2, true ); // $ExpectError
+	set8( new Uint32Array( [ 1, 2, 3, 4 ] ), 2, false ); // $ExpectError
+	set8( new Uint32Array( [ 1, 2, 3, 4 ] ), 2, null ); // $ExpectError
+	set8( new Uint32Array( [ 1, 2, 3, 4 ] ), 2, {} ); // $ExpectError
 
-	const set9 = setter( 'uint8' );
-	set9( new Uint8Array( [ 1, 2, 3, 4 ] ), 2, '5' ); // $ExpectError
-	set9( new Uint8Array( [ 1, 2, 3, 4 ] ), 2, true ); // $ExpectError
-	set9( new Uint8Array( [ 1, 2, 3, 4 ] ), 2, false ); // $ExpectError
-	set9( new Uint8Array( [ 1, 2, 3, 4 ] ), 2, null ); // $ExpectError
-	set9( new Uint8Array( [ 1, 2, 3, 4 ] ), 2, {} ); // $ExpectError
+	const set9 = setter( 'uint16' );
+	set9( new Uint16Array( [ 1, 2, 3, 4 ] ), 2, '5' ); // $ExpectError
+	set9( new Uint16Array( [ 1, 2, 3, 4 ] ), 2, true ); // $ExpectError
+	set9( new Uint16Array( [ 1, 2, 3, 4 ] ), 2, false ); // $ExpectError
+	set9( new Uint16Array( [ 1, 2, 3, 4 ] ), 2, null ); // $ExpectError
+	set9( new Uint16Array( [ 1, 2, 3, 4 ] ), 2, {} ); // $ExpectError
 
-	const set10 = setter( 'uint8c' );
-	set10( new Uint8ClampedArray( [ 1, 2, 3, 4 ] ), 2, '5' ); // $ExpectError
-	set10( new Uint8ClampedArray( [ 1, 2, 3, 4 ] ), 2, true ); // $ExpectError
-	set10( new Uint8ClampedArray( [ 1, 2, 3, 4 ] ), 2, false ); // $ExpectError
-	set10( new Uint8ClampedArray( [ 1, 2, 3, 4 ] ), 2, null ); // $ExpectError
-	set10( new Uint8ClampedArray( [ 1, 2, 3, 4 ] ), 2, {} ); // $ExpectError
+	const set10 = setter( 'uint8' );
+	set10( new Uint8Array( [ 1, 2, 3, 4 ] ), 2, '5' ); // $ExpectError
+	set10( new Uint8Array( [ 1, 2, 3, 4 ] ), 2, true ); // $ExpectError
+	set10( new Uint8Array( [ 1, 2, 3, 4 ] ), 2, false ); // $ExpectError
+	set10( new Uint8Array( [ 1, 2, 3, 4 ] ), 2, null ); // $ExpectError
+	set10( new Uint8Array( [ 1, 2, 3, 4 ] ), 2, {} ); // $ExpectError
+
+	const set11 = setter( 'uint8c' );
+	set11( new Uint8ClampedArray( [ 1, 2, 3, 4 ] ), 2, '5' ); // $ExpectError
+	set11( new Uint8ClampedArray( [ 1, 2, 3, 4 ] ), 2, true ); // $ExpectError
+	set11( new Uint8ClampedArray( [ 1, 2, 3, 4 ] ), 2, false ); // $ExpectError
+	set11( new Uint8ClampedArray( [ 1, 2, 3, 4 ] ), 2, null ); // $ExpectError
+	set11( new Uint8ClampedArray( [ 1, 2, 3, 4 ] ), 2, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the returned function is provided an unsupported number of arguments...
@@ -346,51 +372,57 @@ import setter = require( './index' );
 	set3( new Float32Array( [] ), 1 ); // $ExpectError
 	set3( new Float32Array( [] ), 1, 2, 2 ); // $ExpectError
 
-	const set4 = setter( 'int32' );
+	const set4 = setter( 'float16' );
 	set4(); // $ExpectError
-	set4( new Int32Array( [] ) ); // $ExpectError
-	set4( new Int32Array( [] ), 1 ); // $ExpectError
-	set4( new Int32Array( [] ), 1, 2, 2 ); // $ExpectError
+	set4( new Float16Array( [] ) ); // $ExpectError
+	set4( new Float16Array( [] ), 1 ); // $ExpectError
+	set4( new Float16Array( [] ), 1, 2, 2 ); // $ExpectError
 
-	const set5 = setter( 'int16' );
+	const set5 = setter( 'int32' );
 	set5(); // $ExpectError
-	set5( new Int16Array( [] ) ); // $ExpectError
-	set5( new Int16Array( [] ), 1 ); // $ExpectError
-	set5( new Int16Array( [] ), 1, 2, 2 ); // $ExpectError
+	set5( new Int32Array( [] ) ); // $ExpectError
+	set5( new Int32Array( [] ), 1 ); // $ExpectError
+	set5( new Int32Array( [] ), 1, 2, 2 ); // $ExpectError
 
-	const set6 = setter( 'int8' );
+	const set6 = setter( 'int16' );
 	set6(); // $ExpectError
-	set6( new Int8Array( [] ) ); // $ExpectError
-	set6( new Int8Array( [] ), 1 ); // $ExpectError
-	set6( new Int8Array( [] ), 1, 2, 2 ); // $ExpectError
+	set6( new Int16Array( [] ) ); // $ExpectError
+	set6( new Int16Array( [] ), 1 ); // $ExpectError
+	set6( new Int16Array( [] ), 1, 2, 2 ); // $ExpectError
 
-	const set7 = setter( 'uint32' );
+	const set7 = setter( 'int8' );
 	set7(); // $ExpectError
-	set7( new Uint32Array( [] ) ); // $ExpectError
-	set7( new Uint32Array( [] ), 1 ); // $ExpectError
-	set7( new Uint32Array( [] ), 1, 2, 2 ); // $ExpectError
+	set7( new Int8Array( [] ) ); // $ExpectError
+	set7( new Int8Array( [] ), 1 ); // $ExpectError
+	set7( new Int8Array( [] ), 1, 2, 2 ); // $ExpectError
 
-	const set8 = setter( 'uint16' );
+	const set8 = setter( 'uint32' );
 	set8(); // $ExpectError
-	set8( new Uint16Array( [] ) ); // $ExpectError
-	set8( new Uint16Array( [] ), 1 ); // $ExpectError
-	set8( new Uint16Array( [] ), 1, 2, 2 ); // $ExpectError
+	set8( new Uint32Array( [] ) ); // $ExpectError
+	set8( new Uint32Array( [] ), 1 ); // $ExpectError
+	set8( new Uint32Array( [] ), 1, 2, 2 ); // $ExpectError
 
-	const set9 = setter( 'uint8' );
+	const set9 = setter( 'uint16' );
 	set9(); // $ExpectError
-	set9( new Uint8Array( [] ) ); // $ExpectError
-	set9( new Uint8Array( [] ), 1 ); // $ExpectError
-	set9( new Uint8Array( [] ), 1, 2, 2 ); // $ExpectError
+	set9( new Uint16Array( [] ) ); // $ExpectError
+	set9( new Uint16Array( [] ), 1 ); // $ExpectError
+	set9( new Uint16Array( [] ), 1, 2, 2 ); // $ExpectError
 
-	const set10 = setter( 'uint8c' );
+	const set10 = setter( 'uint8' );
 	set10(); // $ExpectError
-	set10( new Uint8ClampedArray( [] ) ); // $ExpectError
-	set10( new Uint8ClampedArray( [] ), 1 ); // $ExpectError
-	set10( new Uint8ClampedArray( [] ), 1, 2, 2 ); // $ExpectError
+	set10( new Uint8Array( [] ) ); // $ExpectError
+	set10( new Uint8Array( [] ), 1 ); // $ExpectError
+	set10( new Uint8Array( [] ), 1, 2, 2 ); // $ExpectError
 
-	const set11 = setter( 'foo' );
+	const set11 = setter( 'uint8c' );
 	set11(); // $ExpectError
-	set11( [] ); // $ExpectError
-	set11( [], 1 ); // $ExpectError
-	set11( [], 1, 2, 2 ); // $ExpectError
+	set11( new Uint8ClampedArray( [] ) ); // $ExpectError
+	set11( new Uint8ClampedArray( [] ), 1 ); // $ExpectError
+	set11( new Uint8ClampedArray( [] ), 1, 2, 2 ); // $ExpectError
+
+	const set12 = setter( 'foo' );
+	set12(); // $ExpectError
+	set12( [] ); // $ExpectError
+	set12( [], 1 ); // $ExpectError
+	set12( [], 1, 2, 2 ); // $ExpectError
 }
