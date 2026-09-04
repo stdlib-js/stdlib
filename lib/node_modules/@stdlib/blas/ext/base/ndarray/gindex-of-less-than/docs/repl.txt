@@ -1,0 +1,41 @@
+
+{{alias}}( arrays )
+    Returns the first index of an element in a one-dimensional ndarray which is
+    less than a specified search element.
+
+    If a specified starting search index is negative, the function resolves the
+    starting search index by counting backward from the last element (where `-1`
+    refers to the last element).
+
+    When comparing elements, the function uses the less-than operator `<`. As a
+    consequence, comparisons involving `NaN` always evaluate to `false`, and
+    `-0` and `+0` are considered the same.
+
+    If unable to find an element which is less than a specified search element,
+    the function returns `-1`.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a zero-dimensional ndarray containing the search element.
+        - a zero-dimensional ndarray containing the index from which to begin
+        searching.
+
+    Returns
+    -------
+    out: integer
+        Index.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/vector/ctor}}( [ 1.0, 1.0, 0.0 ], 'generic' );
+    > var v = {{alias:@stdlib/ndarray/from-scalar}}( 1.0, { 'dtype': 'generic' } );
+    > var i = {{alias:@stdlib/ndarray/from-scalar}}( 0, { 'dtype': 'generic' } );
+    > {{alias}}( [ x, v, i ] )
+    2
+
+    See Also
+    --------
