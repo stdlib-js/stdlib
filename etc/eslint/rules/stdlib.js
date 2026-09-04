@@ -890,6 +890,38 @@ rules[ 'stdlib/jsdoc-emphasis-marker' ] = [ 'error', '_' ];
 rules[ 'stdlib/jsdoc-empty-line-before-example' ] = 'error';
 
 /**
+* Lint JavaScript code in JSDoc example blocks using ESLint.
+*
+* @name jsdoc-example-eslint
+* @memberof rules
+* @type {string}
+* @default 'warn'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* * @example
+* * var y = square( 3.0 )
+* *\/
+* function square( x ) {}
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * @example
+* * var y = square( 3.0 );
+* *\/
+* function square( x ) {}
+*/
+rules[ 'stdlib/jsdoc-example-eslint' ] = 'off';
+
+/**
 * Enforce empty lines between requires and code in JSDoc examples.
 *
 * @name jsdoc-example-require-spacing
