@@ -40,6 +40,7 @@ include $(TOOLS_MAKE_LIB_DIR)/install/cppcheck.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/electron.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/emsdk.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/fftpack.mk
+include $(TOOLS_MAKE_LIB_DIR)/install/highway.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/llvm.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/node.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/openblas.mk
@@ -158,7 +159,7 @@ clean-deps-tests: clean-deps-openblas-tests
 # @example
 # make install-deps-dev
 #/
-install-deps-dev: install-deps-boost install-deps-cephes install-deps-cppcheck install-deps-fftpack install-deps-python install-deps-r install-deps-shellcheck
+install-deps-dev: install-deps-boost install-deps-cephes install-deps-cppcheck install-deps-fftpack install-deps-highway install-deps-python install-deps-r install-deps-shellcheck
 
 .PHONY: install-deps-dev
 
@@ -168,7 +169,7 @@ install-deps-dev: install-deps-boost install-deps-cephes install-deps-cppcheck i
 # @example
 # make clean-deps-dev
 #/
-clean-deps-dev: clean-deps-boost clean-deps-cephes clean-deps-cppcheck clean-deps-fftpack clean-deps-python clean-deps-r clean-deps-shellcheck
+clean-deps-dev: clean-deps-boost clean-deps-cephes clean-deps-cppcheck clean-deps-fftpack clean-deps-highway clean-deps-python clean-deps-r clean-deps-shellcheck
 
 .PHONY: clean-deps-dev
 
@@ -178,7 +179,7 @@ clean-deps-dev: clean-deps-boost clean-deps-cephes clean-deps-cppcheck clean-dep
 # @example
 # make clean-deps-dev-tests
 #/
-clean-deps-dev-tests: clean-deps-boost-tests clean-deps-cephes-tests clean-deps-cppcheck-tests clean-deps-fftpack-tests clean-deps-shellcheck-tests
+clean-deps-dev-tests: clean-deps-boost-tests clean-deps-cephes-tests clean-deps-cppcheck-tests clean-deps-fftpack-tests clean-deps-highway-tests clean-deps-shellcheck-tests
 
 .PHONY: clean-deps-dev-tests
 
