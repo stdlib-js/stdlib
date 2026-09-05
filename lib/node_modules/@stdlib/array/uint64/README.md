@@ -258,11 +258,11 @@ arr.set( 2, 1 );
 arr.set( 9, 9 );
 
 // Get the first element:
-var z = arr.at( 0 );
+var u = arr.at( 0 );
 // returns <Uint64>[ 1n ]
 
 // Get the last element:
-z = arr.at( -1 );
+u = arr.at( -1 );
 // returns <Uint64>[ 9n ]
 ```
 
@@ -271,10 +271,10 @@ If provided an out-of-bounds index, the method returns `undefined`.
 ```javascript
 var arr = new Uint64Array( 10 );
 
-var z = arr.at( 100 );
+var u = arr.at( 100 );
 // returns undefined
 
-z = arr.at( -100 );
+u = arr.at( -100 );
 // returns undefined
 ```
 
@@ -287,12 +287,7 @@ Returns an iterator for iterating over array key-value pairs.
 ```javascript
 var Uint64 = require( '@stdlib/number/uint64/ctor' );
 
-var arr = [
-    new Uint64( 1 ),
-    new Uint64( 2 ),
-    new Uint64( 3 )
-];
-arr = new Uint64Array( arr );
+var arr = new Uint64Array( [ 1, 2, 3 ] );
 
 // Create an iterator:
 var it = arr.entries();
@@ -329,7 +324,7 @@ var arr = new Uint64Array( 10 );
 arr.set( 1, 0 );
 
 // Get the first element:
-var z = arr.get( 0 );
+var u = arr.get( 0 );
 // returns <Uint64>[ 1n ]
 ```
 
@@ -338,7 +333,7 @@ If provided an out-of-bounds index, the method returns `undefined`.
 ```javascript
 var arr = new Uint64Array( 10 );
 
-var z = arr.get( 100 );
+var u = arr.get( 100 );
 // returns undefined
 ```
 
@@ -355,14 +350,14 @@ var arr = new Uint64Array( [ 1, 2, 3 ] );
 // returns <Uint64Array>[ 1n, 2n, 3n ]
 
 // Get the first element:
-var z = arr.get( 0 );
+var u = arr.get( 0 );
 // returns <Uint64>[ 1n ]
 
 // Set the first element:
 arr.set( new Uint64( 5 ) );
 
 // Get the first element:
-z = arr.get( 0 );
+u = arr.get( 0 );
 // returns <Uint64>[ 5n ]
 ```
 
@@ -375,14 +370,14 @@ var arr = new Uint64Array( [ 1, 2, 3 ] );
 // returns <Uint64Array>[ 1n, 2n, 3n ]
 
 // Get the third element:
-var z = arr.get( 2 );
+var u = arr.get( 2 );
 // returns <Uint64>[ 3n ]
 
 // Set the third element:
 arr.set( new Uint64( 5 ), 2 );
 
 // Get the third element:
-z = arr.get( 2 );
+u = arr.get( 2 );
 // returns <Uint64>[ 5n ]
 ```
 
@@ -397,10 +392,10 @@ var arr = new Uint64Array( [ 1, 2, 3 ] );
 // Set the first two array elements:
 arr.set( [ 4, 5 ] );
 
-var z = arr.get( 0 );
+var u = arr.get( 0 );
 // returns <Uint64>[ 4n ]
 
-z = arr.get( 1 );
+u = arr.get( 1 );
 // returns <Uint64>[ 5n ]
 ```
 
