@@ -45,3 +45,15 @@
 *
 * @type {Int32Array} PRNGStateMINSTD
 */
+
+/**
+* A pseudorandom number generator (PRNG) seed for the 32-bit PCG PRNG.
+*
+* @type {(uinteger32|Collection<uinteger32>)} PRNGSeedPCG32
+*/
+
+/**
+* A pseudorandom number generator (PRNG) state for the 32-bit PCG PRNG.
+*
+* @type {Uint32Array} PRNGStatePCG32
+*/
