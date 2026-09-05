@@ -151,14 +151,14 @@ import logistic = require( './index' );
 	logistic.factory( -2, 2, { 'prng': null } ); // $ExpectError
 	logistic.factory( -2, 2, { 'prng': [] } ); // $ExpectError
 	logistic.factory( -2, 2, { 'prng': {} } ); // $ExpectError
-	logistic.factory( -2, 2, { 'prng': true ); // $ExpectError
+	logistic.factory( -2, 2, { 'prng': true } ); // $ExpectError
 
 	logistic.factory( { 'prng': 123 } ); // $ExpectError
 	logistic.factory( { 'prng': 'abc' } ); // $ExpectError
 	logistic.factory( { 'prng': null } ); // $ExpectError
 	logistic.factory( { 'prng': [] } ); // $ExpectError
 	logistic.factory( { 'prng': {} } ); // $ExpectError
-	logistic.factory( { 'prng': true ); // $ExpectError
+	logistic.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -185,7 +185,7 @@ import logistic = require( './index' );
 	logistic.factory( -2, 2, { 'state': null } ); // $ExpectError
 	logistic.factory( -2, 2, { 'state': [] } ); // $ExpectError
 	logistic.factory( -2, 2, { 'state': {} } ); // $ExpectError
-	logistic.factory( -2, 2, { 'state': true ); // $ExpectError
+	logistic.factory( -2, 2, { 'state': true } ); // $ExpectError
 	logistic.factory( -2, 2, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	logistic.factory( { 'state': 123 } ); // $ExpectError
@@ -193,7 +193,7 @@ import logistic = require( './index' );
 	logistic.factory( { 'state': null } ); // $ExpectError
 	logistic.factory( { 'state': [] } ); // $ExpectError
 	logistic.factory( { 'state': {} } ); // $ExpectError
-	logistic.factory( { 'state': true ); // $ExpectError
+	logistic.factory( { 'state': true } ); // $ExpectError
 	logistic.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

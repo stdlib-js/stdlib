@@ -399,7 +399,7 @@ declare function flattenFromBy<T = unknown, U extends genericndarray<T> = generi
 * var y = flattenFromBy( x, 1, opts, scale );
 * // returns <ndarray>[ [ 2.0, 4.0 ], [ 6.0, 8.0 ], [ 10.0, 12.0 ] ]
 */
-declare function flattenFromBy<T = unknown, U extends typedndarray<T> | genericndarray<T> = typedndarray<T>, V = unknown, W extends keyof DataTypeMap<T> = 'generic', ThisArg = unknown>( x: U, dim: number, options: Options<W>, fcn: Callback<T, U, V, ThisArg>, thisArg?: ThisParameterType<Callback<T, U, V, ThisArg>> ): DataTypeMap<V>[W];
+declare function flattenFromBy<T = unknown, U extends typedndarray<T> = typedndarray<T>, V = unknown, W extends keyof DataTypeMap<T> = 'generic', ThisArg = unknown>( x: U, dim: number, options: Options<W>, fcn: Callback<T, U, V, ThisArg>, thisArg?: ThisParameterType<Callback<T, U, V, ThisArg>> ): DataTypeMap<V>[W];
 
 
 // EXPORTS //

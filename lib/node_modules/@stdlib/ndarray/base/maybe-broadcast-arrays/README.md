@@ -91,13 +91,12 @@ var out = maybeBroadcastArrays( [ x, y ] );
 ```javascript
 var array = require( '@stdlib/ndarray/array' );
 var zeros = require( '@stdlib/ndarray/zeros' );
-var numel = require( '@stdlib/ndarray/base/numel' );
-var ind2sub = require( '@stdlib/ndarray/ind2sub' );
+var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var maybeBroadcastArrays = require( '@stdlib/ndarray/base/maybe-broadcast-arrays' );
 
 // Create a 2x2 array:
 var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
-// returns <ndarray>
+// returns <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
 
 // Create a 3x2x2 array:
 var y = zeros( [ 3, 2, 2 ] );
@@ -105,20 +104,10 @@ var y = zeros( [ 3, 2, 2 ] );
 
 // Broadcast arrays to a common shape:
 var out = maybeBroadcastArrays( [ x, y ] );
-// returns <ndarray>
+// returns [ <ndarray>, <ndarray> ]
 
-// Retrieve the common shape:
-var sh = out[ 0 ].shape;
-// returns [ 3, 2, 2 ]
-
-// Retrieve the number of elements:
-var N = numel( sh );
-
-// Loop through the array elements...
-var i;
-for ( i = 0; i < N; i++ ) {
-    console.log( 'X[%s] = %d', ind2sub( sh, i ).join( ', ' ), out[ 0 ].iget( i ) );
-}
+console.log( ndarray2array( out[ 0 ] ) );
+// => [ [ [ 1, 2 ], [ 3, 4 ] ], [ [ 1, 2 ], [ 3, 4 ] ], [ [ 1, 2 ], [ 3, 4 ] ] ]
 ```
 
 </section>

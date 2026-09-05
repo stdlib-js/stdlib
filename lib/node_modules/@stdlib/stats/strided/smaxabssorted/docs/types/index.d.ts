@@ -65,7 +65,7 @@ interface Routine {
 *
 * @param N - number of indexed elements
 * @param x - sorted input array
-* @param stride - stride length
+* @param strideX - stride length
 * @returns maximum absolute value
 *
 * @example

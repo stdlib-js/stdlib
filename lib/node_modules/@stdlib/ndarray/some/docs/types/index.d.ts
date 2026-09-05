@@ -123,7 +123,7 @@ interface Some {
 	* var out = some.assign( x, 3, y );
 	* // returns <ndarray>[ true ]
 	*/
-	assign<T extends ndarray>( x: InputArray<unknown>, n: integerndarray | number, y: T, options?: BaseOptions ): T;
+	assign<T extends ndarray = ndarray>( x: InputArray<unknown>, n: integerndarray | number, y: T, options?: BaseOptions ): T;
 }
 
 /**
