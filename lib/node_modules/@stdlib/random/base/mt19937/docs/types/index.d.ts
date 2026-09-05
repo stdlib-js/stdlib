@@ -128,6 +128,17 @@ interface Random extends PRNG {
 	(): number;
 
 	/**
+	* Returns a pseudorandom number on the interval `[0,1)`.
+	*
+	* @returns pseudorandom number
+	*
+	* @example
+	* var r = mt19937.normalized();
+	* // returns <number>
+	*/
+	normalized(): number;
+
+	/**
 	* Returns a 32-bit Mersenne Twister pseudorandom number generator.
 	*
 	* @param options - function options
@@ -165,6 +176,10 @@ interface Random extends PRNG {
 *
 * @example
 * var v = mt19937();
+* // returns <number>
+*
+* @example
+* var v = mt19937.normalized();
 * // returns <number>
 *
 * @example
