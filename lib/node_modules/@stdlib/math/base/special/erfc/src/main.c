@@ -36,6 +36,7 @@
 #include "stdlib/number/float64/base/set_low_word.h"
 #include "stdlib/constants/float64/pinf.h"
 #include "stdlib/constants/float64/ninf.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdint.h>
 
 static const double TINY = 1.0e-300;
@@ -454,7 +455,7 @@ double stdlib_base_erfc( const double x ) {
 
 	// Special case: NaN
 	if ( stdlib_base_is_nan( x ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	// Special case: +infinity
 	if ( x == STDLIB_CONSTANT_FLOAT64_PINF ) {

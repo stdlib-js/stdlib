@@ -66,7 +66,7 @@ interface Routine {
 }
 
 /**
-* Computes the sum of strided array elements using ordinary recursion summation.
+* Computes the sum of strided array elements using ordinary recursive summation.
 *
 * @param N - number of indexed elements
 * @param x - input array

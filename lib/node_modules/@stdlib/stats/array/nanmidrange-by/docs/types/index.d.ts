@@ -72,12 +72,12 @@ type Ternary<T, U, ThisArg> = ( this: ThisArg, value: T, index: number, array: U
 type Callback<T, U, ThisArg> = Nullary<ThisArg> | Unary<T, ThisArg> | Binary<T, ThisArg> | Ternary<T, U, ThisArg>;
 
 /**
-* Computes the midrange of an array via a callback function, ignoring `NaN` values.
+* Computes the mid-range of an array via a callback function, ignoring `NaN` values.
 *
 * @param x - input array
 * @param clbk - callback
 * @param thisArg - execution context
-* @returns midrange
+* @returns mid-range
 *
 * @example
 * var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, NaN, 0.0, -1.0, -3.0 ];

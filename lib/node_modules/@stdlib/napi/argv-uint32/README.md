@@ -137,7 +137,7 @@ The function accepts the following arguments:
 -   **value**: `[in] napi_value` Node-API value.
 -   **out**: `[out] uint32_t*` destination for storing output value.
 -   **message**: `[in] char*` error message.
--   **err**: `[out] napi_value*` pointer for storing a JavaScript error. If not provided a number, the function sets `err` with a JavaScript error; otherwise, `err` is set to `NULL`.
+-   **err**: `[out] napi_value*` pointer for storing a JavaScript error. If not provided a number or `BigInt`, the function sets `err` with a JavaScript error; otherwise, `err` is set to `NULL`.
 
 ```c
 napi_status stdlib_napi_argv_uint32( const napi_env env, const napi_value value, uint32_t *out, const char *message, napi_value *err );
@@ -188,6 +188,10 @@ The macro expects the following arguments:
 <!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
+
+## Notes
+
+-   The function supports the conversion of both `number` and `BigInt` add-on callback arguments.
 
 </section>
 

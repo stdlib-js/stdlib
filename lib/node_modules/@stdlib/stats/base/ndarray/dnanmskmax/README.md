@@ -41,15 +41,11 @@ var dnanmskmax = require( '@stdlib/stats/base/ndarray/dnanmskmax' );
 Computes the maximum value of a double-precision floating-point ndarray according to a mask, ignoring `NaN` values.
 
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
-var Uint8Array = require( '@stdlib/array/uint8' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
+var Uint8Vector = require( '@stdlib/ndarray/vector/uint8' );
 
-var xbuf = new Float64Array( [ 1.0, -2.0, NaN, 2.0 ] );
-var x = new ndarray( 'float64', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
-
-var maskbuf = new Uint8Array( [ 0, 0, 0, 0 ] );
-var mask = new ndarray( 'uint8', maskbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = new Float64Vector( [ 1.0, -2.0, NaN, 2.0 ] );
+var mask = new Uint8Vector( [ 0, 0, 0, 0 ] );
 
 var v = dnanmskmax( [ x, mask ] );
 // returns 2.0
@@ -57,7 +53,10 @@ var v = dnanmskmax( [ x, mask ] );
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing a one-dimensional input ndarray and a one-dimensional mask ndarray.
+-   **arrays**: array-like object containing the following ndarrays:
+
+    -   a one-dimensional input ndarray.
+    -   a one-dimensional mask ndarray.
 
 </section>
 
@@ -81,22 +80,34 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var uniform = require( '@stdlib/random/array/uniform' );
-var bernoulli = require( '@stdlib/random/array/bernoulli' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var uniform = require( '@stdlib/random/base/uniform' );
+var bernoulli = require( '@stdlib/random/base/bernoulli' );
+var fillBy = require( '@stdlib/ndarray/fill-by' );
+var zeros = require( '@stdlib/ndarray/zeros' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var dnanmskmax = require( '@stdlib/stats/base/ndarray/dnanmskmax' );
 
-var xbuf = uniform( 10, -50.0, 50.0, {
+function rand() {
+    if ( bernoulli( 0.8 ) < 1 ) {
+        return NaN;
+    }
+    return uniform( -50.0, 50.0 );
+}
+
+function mrand() {
+    return bernoulli( 0.2 );
+}
+
+var opts = {
     'dtype': 'float64'
-});
-var x = new ndarray( 'float64', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+};
+var mopts = {
+    'dtype': 'uint8'
+};
+var x = fillBy( zeros( [ 10 ], opts ), rand );
 console.log( ndarray2array( x ) );
 
-var maskbuf = bernoulli( xbuf.length, 0.2, {
-    'dtype': 'uint8'
-});
-var mask = new ndarray( 'uint8', maskbuf, [ maskbuf.length ], [ 1 ], 0, 'row-major' );
+var mask = fillBy( zeros( [ 10 ], mopts ), mrand );
 console.log( ndarray2array( mask ) );
 
 var v = dnanmskmax( [ x, mask ] );

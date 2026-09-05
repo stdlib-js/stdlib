@@ -1,6 +1,6 @@
 
 {{alias}}( x )
-    Computes the midrange of an array.
+    Computes the mid-range of an array.
 
     If provided an empty array, the function returns `NaN`.
 
@@ -12,7 +12,7 @@
     Returns
     -------
     out: number
-        Midrange.
+        Mid-range.
 
     Examples
     --------

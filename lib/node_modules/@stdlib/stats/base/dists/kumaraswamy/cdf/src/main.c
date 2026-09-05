@@ -29,7 +29,7 @@
 * @return     evaluated CDF
 *
 * @example
-* double y = stdlib_base_kumaraswamy_cdf( 0.5, 1.0, 1.0 );
+* double y = stdlib_base_dists_kumaraswamy_cdf( 0.5, 1.0, 1.0 );
 * // returns ~0.5
 */
 double stdlib_base_dists_kumaraswamy_cdf( const double x, const double a, const double b ) {

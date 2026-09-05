@@ -79,7 +79,6 @@ interface Routine {
 *
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
-* var drssbl = require( '@stdlib/blas/ext/base/drssbl' );
 *
 * var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
 * var y = new Float64Array( [ 1.0, 1.0, -4.0 ] );
@@ -89,7 +88,6 @@ interface Routine {
 *
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
-* var drssbl = require( '@stdlib/blas/ext/base/drssbl' );
 *
 * var x = new Float64Array( [ 1.0, 2.0, 2.0, -7.0, -2.0, 3.0, 4.0, 2.0 ] );
 * var y = new Float64Array( [ 2.0, 1.0, 2.0, 1.0, -2.0, 2.0, 3.0, 4.0 ] );

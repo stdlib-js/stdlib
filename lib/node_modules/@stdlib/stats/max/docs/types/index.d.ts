@@ -122,7 +122,7 @@ interface Unary {
 * var array = require( '@stdlib/ndarray/array' );
 * var zeros = require( '@stdlib/ndarray/zeros' );
 *
-* var x = array( [ -1.0, 2.0, -3.0 ] )
+* var x = array( [ -1.0, 2.0, -3.0 ] );
 * var y = zeros( [] );
 *
 * var out = max.assign( x, y );

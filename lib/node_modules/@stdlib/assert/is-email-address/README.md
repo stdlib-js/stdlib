@@ -56,7 +56,9 @@ var bool = isEmail( 'beep@boop.com' );
 -   Validation is **not** rigorous, nor [should it be][validate-email-address]. **9** RFCs relate to email addresses, and accounting for all of them is a fool's errand. This module performs the simplest validation; i.e., requiring **at least** one `@` symbol.
 -   For rigorous validation, send a confirmation email. If the email bounces, consider the email invalid.
 
-<!-- </notes -->
+</section>
+
+<!-- /.notes -->
 
 <section class="examples">
 
