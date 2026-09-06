@@ -223,7 +223,7 @@ declare function broadcastScalarLike( x: float64ndarray, value: number, options?
 * // returns <ndarray>
 *
 * var out = broadcastScalarLike( x, 1.0, {
-*    'dtype': 'float64'
+*     'dtype': 'float64'
 * });
 * // returns <ndarray>
 */
@@ -241,7 +241,7 @@ declare function broadcastScalarLike( x: ndarray, value: number, options: Float6
 * var empty = require( '@stdlib/ndarray/empty' );
 *
 * var x = empty( [ 2, 2 ], {
-*    'dtype': 'float32'
+*     'dtype': 'float32'
 * });
 * // returns <ndarray>
 *
@@ -265,7 +265,7 @@ declare function broadcastScalarLike( x: float32ndarray, value: number, options?
 * // returns <ndarray>
 *
 * var out = broadcastScalarLike( x, 1.0, {
-*    'dtype': 'float32'
+*     'dtype': 'float32'
 * });
 * // returns <ndarray>
 */
@@ -283,7 +283,7 @@ declare function broadcastScalarLike( x: ndarray, value: number, options: Float3
 * var empty = require( '@stdlib/ndarray/empty' );
 *
 * var x = empty( [ 2, 2 ], {
-*    'dtype': 'complex128'
+*     'dtype': 'complex128'
 * });
 * // returns <ndarray>
 *
@@ -307,7 +307,7 @@ declare function broadcastScalarLike( x: complex128ndarray, value: number | Comp
 * // returns <ndarray>
 *
 * var out = broadcastScalarLike( x, 1.0, {
-*    'dtype': 'complex128'
+*     'dtype': 'complex128'
 * });
 * // returns <ndarray>
 */
@@ -325,7 +325,7 @@ declare function broadcastScalarLike( x: ndarray, value: number | ComplexLike, o
 * var empty = require( '@stdlib/ndarray/empty' );
 *
 * var x = empty( [ 2, 2 ], {
-*    'dtype': 'complex64'
+*     'dtype': 'complex64'
 * });
 * // returns <ndarray>
 *
@@ -349,7 +349,7 @@ declare function broadcastScalarLike( x: complex64ndarray, value: number | Compl
 * // returns <ndarray>
 *
 * var out = broadcastScalarLike( x, 1.0, {
-*    'dtype': 'complex64'
+*     'dtype': 'complex64'
 * });
 * // returns <ndarray>
 */
@@ -367,7 +367,7 @@ declare function broadcastScalarLike( x: ndarray, value: number | ComplexLike, o
 * var empty = require( '@stdlib/ndarray/empty' );
 *
 * var x = empty( [ 2, 2 ], {
-*    'dtype': 'bool'
+*     'dtype': 'bool'
 * });
 * // returns <ndarray>
 *
@@ -391,7 +391,7 @@ declare function broadcastScalarLike( x: boolndarray, value: boolean, options?: 
 * // returns <ndarray>
 *
 * var out = broadcastScalarLike( x, true, {
-*    'dtype': 'bool'
+*     'dtype': 'bool'
 * });
 * // returns <ndarray>
 */
@@ -409,7 +409,7 @@ declare function broadcastScalarLike( x: ndarray, value: boolean, options: BoolO
 * var empty = require( '@stdlib/ndarray/empty' );
 *
 * var x = empty( [ 2, 2 ], {
-*    'dtype': 'int32'
+*     'dtype': 'int32'
 * });
 * // returns <ndarray>
 *
@@ -433,7 +433,7 @@ declare function broadcastScalarLike( x: int32ndarray, value: number, options?: 
 * // returns <ndarray>
 *
 * var out = broadcastScalarLike( x, 1.0, {
-*    'dtype': 'int32'
+*     'dtype': 'int32'
 * });
 * // returns <ndarray>
 */
@@ -451,7 +451,7 @@ declare function broadcastScalarLike( x: ndarray, value: number, options: Int32O
 * var empty = require( '@stdlib/ndarray/empty' );
 *
 * var x = empty( [ 2, 2 ], {
-*    'dtype': 'int16'
+*     'dtype': 'int16'
 * });
 * // returns <ndarray>
 *
@@ -475,7 +475,7 @@ declare function broadcastScalarLike( x: int16ndarray, value: number, options?: 
 * // returns <ndarray>
 *
 * var out = broadcastScalarLike( x, 1.0, {
-*    'dtype': 'int16'
+*     'dtype': 'int16'
 * });
 * // returns <ndarray>
 */
@@ -493,7 +493,7 @@ declare function broadcastScalarLike( x: ndarray, value: number, options: Int16O
 * var empty = require( '@stdlib/ndarray/empty' );
 *
 * var x = empty( [ 2, 2 ], {
-*    'dtype': 'int8'
+*     'dtype': 'int8'
 * });
 * // returns <ndarray>
 *
@@ -517,7 +517,7 @@ declare function broadcastScalarLike( x: int8ndarray, value: number, options?: B
 * // returns <ndarray>
 *
 * var out = broadcastScalarLike( x, 1.0, {
-*    'dtype': 'int8'
+*     'dtype': 'int8'
 * });
 * // returns <ndarray>
 */
@@ -535,7 +535,7 @@ declare function broadcastScalarLike( x: ndarray, value: number, options: Int8Op
 * var empty = require( '@stdlib/ndarray/empty' );
 *
 * var x = empty( [ 2, 2 ], {
-*    'dtype': 'uint32'
+*     'dtype': 'uint32'
 * });
 * // returns <ndarray>
 *
@@ -559,7 +559,7 @@ declare function broadcastScalarLike( x: uint32ndarray, value: number, options?:
 * // returns <ndarray>
 *
 * var out = broadcastScalarLike( x, 1.0, {
-*    'dtype': 'uint32'
+*     'dtype': 'uint32'
 * });
 * // returns <ndarray>
 */
@@ -577,7 +577,7 @@ declare function broadcastScalarLike( x: ndarray, value: number, options: Uint32
 * var empty = require( '@stdlib/ndarray/empty' );
 *
 * var x = empty( [ 2, 2 ], {
-*    'dtype': 'uint16'
+*     'dtype': 'uint16'
 * });
 * // returns <ndarray>
 *
@@ -601,7 +601,7 @@ declare function broadcastScalarLike( x: uint16ndarray, value: number, options?:
 * // returns <ndarray>
 *
 * var out = broadcastScalarLike( x, 1.0, {
-*    'dtype': 'uint16'
+*     'dtype': 'uint16'
 * });
 * // returns <ndarray>
 */
@@ -619,7 +619,7 @@ declare function broadcastScalarLike( x: ndarray, value: number, options: Uint16
 * var empty = require( '@stdlib/ndarray/empty' );
 *
 * var x = empty( [ 2, 2 ], {
-*    'dtype': 'uint8'
+*     'dtype': 'uint8'
 * });
 * // returns <ndarray>
 *
@@ -643,7 +643,7 @@ declare function broadcastScalarLike( x: uint8ndarray, value: number, options?: 
 * // returns <ndarray>
 *
 * var out = broadcastScalarLike( x, 1.0, {
-*    'dtype': 'uint8'
+*     'dtype': 'uint8'
 * });
 * // returns <ndarray>
 */
@@ -661,7 +661,7 @@ declare function broadcastScalarLike( x: ndarray, value: number, options: Uint8O
 * var empty = require( '@stdlib/ndarray/empty' );
 *
 * var x = empty( [ 2, 2 ], {
-*    'dtype': 'uint8c'
+*     'dtype': 'uint8c'
 * });
 * // returns <ndarray>
 *
@@ -685,7 +685,7 @@ declare function broadcastScalarLike( x: uint8cndarray, value: number, options?:
 * // returns <ndarray>
 *
 * var out = broadcastScalarLike( x, 1.0, {
-*    'dtype': 'uint8c'
+*     'dtype': 'uint8c'
 * });
 * // returns <ndarray>
 */
@@ -703,7 +703,7 @@ declare function broadcastScalarLike( x: ndarray, value: number, options: Uint8c
 * var empty = require( '@stdlib/ndarray/empty' );
 *
 * var x = empty( [ 2, 2 ], {
-*    'dtype': 'generic'
+*     'dtype': 'generic'
 * });
 * // returns <ndarray>
 *
@@ -727,7 +727,7 @@ declare function broadcastScalarLike<T = unknown>( x: genericndarray<any>, value
 * // returns <ndarray>
 *
 * var out = broadcastScalarLike( x, 1.0, {
-*    'dtype': 'generic'
+*     'dtype': 'generic'
 * });
 * // returns <ndarray>
 */
@@ -745,7 +745,7 @@ declare function broadcastScalarLike<T = unknown>( x: ndarray, value: T, options
 * var empty = require( '@stdlib/ndarray/empty' );
 *
 * var x = empty( [ 2, 2 ], {
-*    'dtype': 'generic'
+*     'dtype': 'generic'
 * });
 * // returns <ndarray>
 *

@@ -1998,6 +1998,7 @@ Int32Array
 Int32Matrix
 Int32Vector
 Int64
+Int64Array
 IS_BIG_ENDIAN
 IS_BROWSER
 IS_DARWIN
@@ -3164,6 +3165,7 @@ UINT32_NUM_BYTES
 Uint32Array
 Uint32Vector
 Uint64
+Uint64Array
 umask
 uncapitalize
 uncapitalizeKeys

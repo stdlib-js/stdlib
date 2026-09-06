@@ -1998,6 +1998,7 @@
 "@stdlib/ndarray/matrix/int32",Int32Matrix
 "@stdlib/ndarray/vector/int32",Int32Vector
 "@stdlib/number/int64/ctor",Int64
+"@stdlib/array/int64",Int64Array
 "@stdlib/assert/is-big-endian",IS_BIG_ENDIAN
 "@stdlib/assert/is-browser",IS_BROWSER
 "@stdlib/assert/is-darwin",IS_DARWIN
@@ -3164,6 +3165,7 @@
 "@stdlib/array/uint32",Uint32Array
 "@stdlib/ndarray/vector/uint32",Uint32Vector
 "@stdlib/number/uint64/ctor",Uint64
+"@stdlib/array/uint64",Uint64Array
 "@stdlib/process/umask",umask
 "@stdlib/string/uncapitalize",uncapitalize
 "@stdlib/object/uncapitalize-keys",uncapitalizeKeys

@@ -6,9 +6,13 @@
     A complex number is truthy when at least one of its real or imaginary
     components is truthy.
 
-    If unable to find a truthy element, the function returns `-1`.
-
     The function explicitly treats `NaN` values as falsy.
+
+    If a specified starting search index is negative, the function resolves the
+    starting search index by counting backward from the last element (where `-1`
+    refers to the last element).
+
+    If unable to find a truthy element, the function returns `-1`.
 
     Parameters
     ----------
@@ -16,6 +20,8 @@
         Array-like object containing the following ndarrays:
 
         - a one-dimensional input ndarray.
+        - a zero-dimensional ndarray containing the index from which to begin
+        searching.
 
     Returns
     -------
@@ -25,7 +31,8 @@
     Examples
     --------
     > var x = new {{alias:@stdlib/ndarray/vector/complex64}}( [ 0.0, 0.0, 3.0, 0.0, 2.0, 0.0 ] );
-    > {{alias}}( [ x ] )
+    > var i = {{alias:@stdlib/ndarray/from-scalar}}( 0, { 'dtype': 'generic' } );
+    > {{alias}}( [ x, i ] )
     1
 
     See Also

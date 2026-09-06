@@ -150,7 +150,7 @@ import scopyWithin = require( './index' );
 	scopyWithin( x.length, 3, 1, 2, x, 1, w, ( x: number ): number => x ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided insufficient arguments...
+// The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	const x = new Float32Array( 10 );
 	const w = new Float32Array( 10 );
@@ -325,7 +325,7 @@ import scopyWithin = require( './index' );
 	scopyWithin.ndarray( x.length, 3, 1, 2, x, 1, 0, w, 1, ( x: number ): number => x ); // $ExpectError
 }
 
-// The compiler throws an error if the `ndarray` method is provided insufficient arguments...
+// The compiler throws an error if the `ndarray` method is provided an unsupported number of arguments...
 {
 	const x = new Float32Array( 10 );
 	const w = new Float32Array( 10 );

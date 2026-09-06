@@ -1,4 +1,4 @@
-/* eslint-disable stdlib/jsdoc-doctest-marker, stdlib/jsdoc-doctest, stdlib/jsdoc-example-require-spacing, stdlib/jsdoc-no-tabs */
+/* eslint-disable stdlib/jsdoc-doctest-marker, stdlib/jsdoc-example-require-spacing, stdlib/jsdoc-no-tabs */
 
 /**
 * @license Apache-2.0
@@ -274,6 +274,28 @@ rules[ 'stdlib/empty-line-before-comment' ] = 'error';
 * }]);
 */
 rules[ 'stdlib/eol-open-bracket-spacing' ] = 'error';
+
+/**
+* Require that format calls are provided an expected number of arguments.
+*
+* @name format-args
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var format = require( '@stdlib/string/format' );
+*
+* var str = format( '%s %s', 'foo' );
+*
+* @example
+* // Good...
+* var format = require( '@stdlib/string/format' );
+*
+* var str = format( '%s %s', 'foo', 'bar' );
+*/
+rules[ 'stdlib/format-args' ] = 'error';
 
 /**
 * Require blockquotes to have `2` character indentation.
@@ -1720,7 +1742,7 @@ rules[ 'stdlib/jsdoc-list-item-spacing' ] = 'error';
 */
 rules[ 'stdlib/jsdoc-markdown-remark' ] = [ 'error',
 	{
-		'config': require( './../../remark/.remarkrc.jsdoc.js' )
+		'configPath': require.resolve( './../../remark/.remarkrc.jsdoc.js' )
 	}
 ];
 
@@ -4443,6 +4465,26 @@ rules[ 'stdlib/no-nested-require' ] = 'error';
 rules[ 'stdlib/no-unnecessary-nested-functions' ] = 'error';
 
 /**
+* Disallow format calls that do not perform string interpolation.
+*
+* @name no-unnecessary-format
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var format = require( '@stdlib/string/format' );
+*
+* throw new Error( format( 'invalid argument.' ) );
+*
+* @example
+* // Good...
+* throw new Error( 'invalid argument.' );
+*/
+rules[ 'stdlib/no-unnecessary-format' ] = 'error';
+
+/**
 * Disallow the use of the `new Array()` constructor.
 *
 * @name no-new-array
@@ -4588,6 +4630,34 @@ rules[ 'stdlib/no-require-index' ] = 'error';
 * var other = require( './other.js' );
 */
 rules[ 'stdlib/no-self-require' ] = 'error';
+
+/**
+* Enforce that a property is required directly when only a single property of a required module is used.
+*
+* ## Notes
+*
+* -   Requiring a property directly reduces bundle sizes during ESM tree-shaking via named imports.
+*
+* @name no-single-property-require
+* @memberof rules
+* @type {string}
+* @default 'warn'
+*
+* @example
+* // Bad...
+* var dcopy = require( '@stdlib/blas/base/dcopy' );
+*
+* dcopy.ndarray( x.length, x, 1, 0, y, 1, 0 );
+* dcopy.ndarray( y.length, y, 1, 0, z, 1, 0 );
+*
+* @example
+* // Good...
+* var dcopy = require( '@stdlib/blas/base/dcopy' ).ndarray;
+*
+* dcopy( x.length, x, 1, 0, y, 1, 0 );
+* dcopy( y.length, y, 1, 0, z, 1, 0 );
+*/
+rules[ 'stdlib/no-single-property-require' ] = 'warn';
 
 /**
 * Never allow unassigned `require()` calls.

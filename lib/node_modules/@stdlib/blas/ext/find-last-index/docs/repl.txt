@@ -1,5 +1,5 @@
 
-{{alias}}( x[, options], clbk[, thisArg] )
+{{alias}}( x[, fromIndex][, options], clbk[, thisArg] )
     Returns the index of the last element along an ndarray dimension which
     passes a test implemented by a predicate function.
 
@@ -19,6 +19,17 @@
     ----------
     x: ndarray
         Input array. Must at least have one dimension.
+
+    fromIndex: ndarray|integer (optional)
+        Index from which to begin searching. May be either a scalar value or an
+        ndarray having an integer or "generic" data type. If provided an
+        ndarray, the value must have a shape which is broadcast compatible with
+        the non-reduced dimensions of the input ndarray. For example, given the
+        input shape `[2, 3, 4]` and `options.dim=0`, a provided ndarray must
+        have a shape which is broadcast-compatible with the shape `[3, 4]`. If
+        provided a negative integer, the index at which to begin searching along
+        a dimension is determined by counting backward from the last element
+        (where -1 refers to the last element). Default: -1.
 
     options: Object (optional)
         Function options.
@@ -56,7 +67,7 @@
     3
 
 
-{{alias}}.assign( x, out[, options], clbk[, thisArg] )
+{{alias}}.assign( x[, fromIndex], out[, options], clbk[, thisArg] )
     Returns the index of the last element along an ndarray dimension which
     passes a test implemented by a predicate function and assigns results to a
     provided output ndarray.
@@ -77,6 +88,17 @@
     ----------
     x: ndarray
         Input array. Must at least have one dimension.
+
+    fromIndex: ndarray|integer (optional)
+        Index from which to begin searching. May be either a scalar value or an
+        ndarray having an integer or "generic" data type. If provided an
+        ndarray, the value must have a shape which is broadcast compatible with
+        the non-reduced dimensions of the input ndarray. For example, given the
+        input shape `[2, 3, 4]` and `options.dim=0`, a provided ndarray must
+        have a shape which is broadcast-compatible with the shape `[3, 4]`. If
+        provided a negative integer, the index at which to begin searching along
+        a dimension is determined by counting backward from the last element
+        (where -1 refers to the last element). Default: -1.
 
     out: ndarray
         Output array.

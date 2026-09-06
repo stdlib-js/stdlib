@@ -95,13 +95,15 @@ static double rand_double( void ) {
 * @return             elapsed time in seconds
 */
 static double benchmark1( int iterations, int len ) {
-	unsigned char mask[ len ];
+	unsigned char *mask;
 	double elapsed;
-	double x[ len ];
+	double *x;
 	double v;
 	double t;
 	int i;
 
+	x = (double *)malloc( len * sizeof( double ) );
+	mask = (unsigned char *)malloc( len * sizeof( unsigned char ) );
 	for ( i = 0; i < len; i++ ) {
 		if ( rand_double() < 0.2 ) {
 			mask[ i ] = 1; // missing
@@ -124,6 +126,8 @@ static double benchmark1( int iterations, int len ) {
 	if ( v != v ) {
 		printf( "should not return NaN\n" );
 	}
+	free( x );
+	free( mask );
 	return elapsed;
 }
 
@@ -135,13 +139,15 @@ static double benchmark1( int iterations, int len ) {
 * @return             elapsed time in seconds
 */
 static double benchmark2( int iterations, int len ) {
-	unsigned char mask[ len ];
+	unsigned char *mask;
 	double elapsed;
-	double x[ len ];
+	double *x;
 	double v;
 	double t;
 	int i;
 
+	x = (double *)malloc( len * sizeof( double ) );
+	mask = (unsigned char *)malloc( len * sizeof( unsigned char ) );
 	for ( i = 0; i < len; i++ ) {
 		if ( rand_double() < 0.2 ) {
 			mask[ i ] = 1; // missing
@@ -164,6 +170,8 @@ static double benchmark2( int iterations, int len ) {
 	if ( v != v ) {
 		printf( "should not return NaN\n" );
 	}
+	free( x );
+	free( mask );
 	return elapsed;
 }
 

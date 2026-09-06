@@ -20,7 +20,7 @@ limitations under the License.
 
 # sswap
 
-> Interchange two single-precision floating point vectors.
+> Interchange two single-precision floating-point vectors.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var sswap = require( '@stdlib/blas/base/wasm/sswap' );
 
 #### sswap.main( N, x, strideX, y, strideY )
 
-Interchanges two single-precision floating point vectors.
+Interchanges two single-precision floating-point vectors.
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -86,7 +86,7 @@ sswap.main( 3, x1, -2, y1, 1 );
 
 #### sswap.ndarray( N, x, strideX, offsetX, y, strideY, offsetY )
 
-Interchanges two single-precision floating point vectors using alternative indexing semantics.
+Interchanges two single-precision floating-point vectors using alternative indexing semantics.
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -146,7 +146,7 @@ mod.initializeSync();
 
 #### sswap.Module.prototype.main( N, xp, sx, yp, sy )
 
-Interchanges two single-precision floating point vectors.
+Interchanges two single-precision floating-point vectors.
 
 <!-- eslint-disable n/no-sync -->
 
@@ -210,7 +210,7 @@ The function has the following parameters:
 
 #### sswap.Module.prototype.ndarray( N, xp, sx, ox, yp, sy, oy )
 
-Interchanges two single-precision floating point vectors using alternative indexing semantics.
+Interchanges two single-precision floating-point vectors using alternative indexing semantics.
 
 <!-- eslint-disable n/no-sync -->
 

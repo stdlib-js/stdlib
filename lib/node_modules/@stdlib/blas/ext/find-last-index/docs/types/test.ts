@@ -45,8 +45,14 @@ function clbk( value: any ): boolean {
 	findLastIndex( x, clbk ); // $ExpectType OutputArray
 	findLastIndex( x, clbk, {} ); // $ExpectType OutputArray
 
+	findLastIndex( x, 1, clbk ); // $ExpectType OutputArray
+	findLastIndex( x, 1, clbk, {} ); // $ExpectType OutputArray
+
 	findLastIndex( x, {}, clbk ); // $ExpectType OutputArray
 	findLastIndex( x, {}, clbk, {} ); // $ExpectType OutputArray
+
+	findLastIndex( x, 1, {}, clbk ); // $ExpectType OutputArray
+	findLastIndex( x, 1, {}, clbk, {} ); // $ExpectType OutputArray
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an ndarray...
@@ -86,6 +92,73 @@ function clbk( value: any ): boolean {
 	findLastIndex( void 0, {}, clbk, {} ); // $ExpectError
 	findLastIndex( {}, {}, clbk, {} ); // $ExpectError
 	findLastIndex( ( x: number ): number => x, {}, clbk, {} ); // $ExpectError
+
+	findLastIndex( '5', 1, clbk ); // $ExpectError
+	findLastIndex( 5, 1, clbk ); // $ExpectError
+	findLastIndex( true, 1, clbk ); // $ExpectError
+	findLastIndex( false, 1, clbk ); // $ExpectError
+	findLastIndex( null, 1, clbk ); // $ExpectError
+	findLastIndex( void 0, 1, clbk ); // $ExpectError
+	findLastIndex( {}, 1, clbk ); // $ExpectError
+	findLastIndex( ( x: number ): number => x, 1, clbk ); // $ExpectError
+
+	findLastIndex( '5', 1, clbk, {} ); // $ExpectError
+	findLastIndex( 5, 1, clbk, {} ); // $ExpectError
+	findLastIndex( true, 1, clbk, {} ); // $ExpectError
+	findLastIndex( false, 1, clbk, {} ); // $ExpectError
+	findLastIndex( null, 1, clbk, {} ); // $ExpectError
+	findLastIndex( void 0, 1, clbk, {} ); // $ExpectError
+	findLastIndex( {}, 1, clbk, {} ); // $ExpectError
+	findLastIndex( ( x: number ): number => x, 1, clbk, {} ); // $ExpectError
+
+	findLastIndex( '5', 1, {}, clbk ); // $ExpectError
+	findLastIndex( 5, 1, {}, clbk ); // $ExpectError
+	findLastIndex( true, 1, {}, clbk ); // $ExpectError
+	findLastIndex( false, 1, {}, clbk ); // $ExpectError
+	findLastIndex( null, 1, {}, clbk ); // $ExpectError
+	findLastIndex( void 0, 1, {}, clbk ); // $ExpectError
+	findLastIndex( {}, 1, {}, clbk ); // $ExpectError
+	findLastIndex( ( x: number ): number => x, 1, {}, clbk ); // $ExpectError
+
+	findLastIndex( '5', 1, {}, clbk, {} ); // $ExpectError
+	findLastIndex( 5, 1, {}, clbk, {} ); // $ExpectError
+	findLastIndex( true, 1, {}, clbk, {} ); // $ExpectError
+	findLastIndex( false, 1, {}, clbk, {} ); // $ExpectError
+	findLastIndex( null, 1, {}, clbk, {} ); // $ExpectError
+	findLastIndex( void 0, 1, {}, clbk, {} ); // $ExpectError
+	findLastIndex( {}, 1, {}, clbk, {} ); // $ExpectError
+	findLastIndex( ( x: number ): number => x, 1, {}, clbk, {} ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a `fromIndex` argument which is not an ndarray or an integer value...
+{
+	const x = zeros( [ 2, 2 ], {
+		'dtype': 'generic'
+	});
+
+	findLastIndex( x, '5', clbk ); // $ExpectError
+	findLastIndex( x, true, clbk ); // $ExpectError
+	findLastIndex( x, false, clbk ); // $ExpectError
+	findLastIndex( x, null, clbk ); // $ExpectError
+	findLastIndex( x, [], clbk ); // $ExpectError
+
+	findLastIndex( x, '5', clbk, {} ); // $ExpectError
+	findLastIndex( x, true, clbk, {} ); // $ExpectError
+	findLastIndex( x, false, clbk, {} ); // $ExpectError
+	findLastIndex( x, null, clbk, {} ); // $ExpectError
+	findLastIndex( x, [], clbk, {} ); // $ExpectError
+
+	findLastIndex( x, '5', {}, clbk ); // $ExpectError
+	findLastIndex( x, true, {}, clbk ); // $ExpectError
+	findLastIndex( x, false, {}, clbk ); // $ExpectError
+	findLastIndex( x, null, {}, clbk ); // $ExpectError
+	findLastIndex( x, [], {}, clbk ); // $ExpectError
+
+	findLastIndex( x, '5', {}, clbk, {} ); // $ExpectError
+	findLastIndex( x, true, {}, clbk, {} ); // $ExpectError
+	findLastIndex( x, false, {}, clbk, {} ); // $ExpectError
+	findLastIndex( x, null, {}, clbk, {} ); // $ExpectError
+	findLastIndex( x, [], {}, clbk, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an options argument which is not an object...
@@ -105,6 +178,18 @@ function clbk( value: any ): boolean {
 	findLastIndex( x, false, clbk, {} ); // $ExpectError
 	findLastIndex( x, null, clbk, {} ); // $ExpectError
 	findLastIndex( x, [], clbk, {} ); // $ExpectError
+
+	findLastIndex( x, 1, '5', clbk ); // $ExpectError
+	findLastIndex( x, 1, true, clbk ); // $ExpectError
+	findLastIndex( x, 1, false, clbk ); // $ExpectError
+	findLastIndex( x, 1, null, clbk ); // $ExpectError
+	findLastIndex( x, 1, [], clbk ); // $ExpectError
+
+	findLastIndex( x, 1, '5', clbk, {} ); // $ExpectError
+	findLastIndex( x, 1, true, clbk, {} ); // $ExpectError
+	findLastIndex( x, 1, false, clbk, {} ); // $ExpectError
+	findLastIndex( x, 1, null, clbk, {} ); // $ExpectError
+	findLastIndex( x, 1, [], clbk, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a callback argument which is not a function...
@@ -130,6 +215,24 @@ function clbk( value: any ): boolean {
 	findLastIndex( x, {}, false, {} ); // $ExpectError
 	findLastIndex( x, {}, null, {} ); // $ExpectError
 	findLastIndex( x, {}, [], {} ); // $ExpectError
+
+	findLastIndex( x, 1, '5' ); // $ExpectError
+	findLastIndex( x, 1, true ); // $ExpectError
+	findLastIndex( x, 1, false ); // $ExpectError
+	findLastIndex( x, 1, null ); // $ExpectError
+	findLastIndex( x, 1, [] ); // $ExpectError
+
+	findLastIndex( x, 1, '5', {} ); // $ExpectError
+	findLastIndex( x, 1, true, {} ); // $ExpectError
+	findLastIndex( x, 1, false, {} ); // $ExpectError
+	findLastIndex( x, 1, null, {} ); // $ExpectError
+	findLastIndex( x, 1, [], {} ); // $ExpectError
+
+	findLastIndex( x, 1, {}, '5', {} ); // $ExpectError
+	findLastIndex( x, 1, {}, true, {} ); // $ExpectError
+	findLastIndex( x, 1, {}, false, {} ); // $ExpectError
+	findLastIndex( x, 1, {}, null, {} ); // $ExpectError
+	findLastIndex( x, 1, {}, [], {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an invalid `dtype` option...
@@ -155,6 +258,24 @@ function clbk( value: any ): boolean {
 	findLastIndex( x, { 'dtype': [] }, clbk, {} ); // $ExpectError
 	findLastIndex( x, { 'dtype': {} }, clbk, {} ); // $ExpectError
 	findLastIndex( x, { 'dtype': ( x: number ): number => x }, clbk, {} ); // $ExpectError
+
+	findLastIndex( x, 1, { 'dtype': '5' }, clbk ); // $ExpectError
+	findLastIndex( x, 1, { 'dtype': 5 }, clbk ); // $ExpectError
+	findLastIndex( x, 1, { 'dtype': true }, clbk ); // $ExpectError
+	findLastIndex( x, 1, { 'dtype': false }, clbk ); // $ExpectError
+	findLastIndex( x, 1, { 'dtype': null }, clbk ); // $ExpectError
+	findLastIndex( x, 1, { 'dtype': [] }, clbk ); // $ExpectError
+	findLastIndex( x, 1, { 'dtype': {} }, clbk ); // $ExpectError
+	findLastIndex( x, 1, { 'dtype': ( x: number ): number => x }, clbk ); // $ExpectError
+
+	findLastIndex( x, 1, { 'dtype': '5' }, clbk, {} ); // $ExpectError
+	findLastIndex( x, 1, { 'dtype': 5 }, clbk, {} ); // $ExpectError
+	findLastIndex( x, 1, { 'dtype': true }, clbk, {} ); // $ExpectError
+	findLastIndex( x, 1, { 'dtype': false }, clbk, {} ); // $ExpectError
+	findLastIndex( x, 1, { 'dtype': null }, clbk, {} ); // $ExpectError
+	findLastIndex( x, 1, { 'dtype': [] }, clbk, {} ); // $ExpectError
+	findLastIndex( x, 1, { 'dtype': {} }, clbk, {} ); // $ExpectError
+	findLastIndex( x, 1, { 'dtype': ( x: number ): number => x }, clbk, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an invalid `keepdims` option...
@@ -176,6 +297,20 @@ function clbk( value: any ): boolean {
 	findLastIndex( x, { 'keepdims': [] }, clbk, {} ); // $ExpectError
 	findLastIndex( x, { 'keepdims': {} }, clbk, {} ); // $ExpectError
 	findLastIndex( x, { 'keepdims': ( x: number ): number => x }, clbk, {} ); // $ExpectError
+
+	findLastIndex( x, 1, { 'keepdims': '5' }, clbk ); // $ExpectError
+	findLastIndex( x, 1, { 'keepdims': 5 }, clbk ); // $ExpectError
+	findLastIndex( x, 1, { 'keepdims': null }, clbk ); // $ExpectError
+	findLastIndex( x, 1, { 'keepdims': [] }, clbk ); // $ExpectError
+	findLastIndex( x, 1, { 'keepdims': {} }, clbk ); // $ExpectError
+	findLastIndex( x, 1, { 'keepdims': ( x: number ): number => x }, clbk ); // $ExpectError
+
+	findLastIndex( x, 1, { 'keepdims': '5' }, clbk, {} ); // $ExpectError
+	findLastIndex( x, 1, { 'keepdims': 5 }, clbk, {} ); // $ExpectError
+	findLastIndex( x, 1, { 'keepdims': null }, clbk, {} ); // $ExpectError
+	findLastIndex( x, 1, { 'keepdims': [] }, clbk, {} ); // $ExpectError
+	findLastIndex( x, 1, { 'keepdims': {} }, clbk, {} ); // $ExpectError
+	findLastIndex( x, 1, { 'keepdims': ( x: number ): number => x }, clbk, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an invalid `dim` option...
@@ -197,6 +332,20 @@ function clbk( value: any ): boolean {
 	findLastIndex( x, { 'dim': null }, clbk, {} ); // $ExpectError
 	findLastIndex( x, { 'dim': {} }, clbk, {} ); // $ExpectError
 	findLastIndex( x, { 'dim': ( x: number ): number => x }, clbk, {} ); // $ExpectError
+
+	findLastIndex( x, 1, { 'dim': '5' }, clbk ); // $ExpectError
+	findLastIndex( x, 1, { 'dim': true }, clbk ); // $ExpectError
+	findLastIndex( x, 1, { 'dim': false }, clbk ); // $ExpectError
+	findLastIndex( x, 1, { 'dim': null }, clbk ); // $ExpectError
+	findLastIndex( x, 1, { 'dim': {} }, clbk ); // $ExpectError
+	findLastIndex( x, 1, { 'dim': ( x: number ): number => x }, clbk ); // $ExpectError
+
+	findLastIndex( x, 1, { 'dim': '5' }, clbk, {} ); // $ExpectError
+	findLastIndex( x, 1, { 'dim': true }, clbk, {} ); // $ExpectError
+	findLastIndex( x, 1, { 'dim': false }, clbk, {} ); // $ExpectError
+	findLastIndex( x, 1, { 'dim': null }, clbk, {} ); // $ExpectError
+	findLastIndex( x, 1, { 'dim': {} }, clbk, {} ); // $ExpectError
+	findLastIndex( x, 1, { 'dim': ( x: number ): number => x }, clbk, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -207,7 +356,7 @@ function clbk( value: any ): boolean {
 
 	findLastIndex(); // $ExpectError
 	findLastIndex( x );
-	findLastIndex( x, {}, clbk, {}, {} ); // $ExpectError
+	findLastIndex( x, 1, {}, clbk, {}, {} ); // $ExpectError
 }
 
 // Attached to the function is an `assign` method which returns an ndarray...
@@ -224,6 +373,11 @@ function clbk( value: any ): boolean {
 
 	findLastIndex.assign( x, y, clbk, {} ); // $ExpectType int32ndarray
 	findLastIndex.assign( x, y, {}, clbk, {} ); // $ExpectType int32ndarray
+
+	findLastIndex.assign( x, 1, y, clbk ); // $ExpectType int32ndarray
+	findLastIndex.assign( x, 1, y, clbk, {} ); // $ExpectType int32ndarray
+	findLastIndex.assign( x, 1, y, {}, clbk ); // $ExpectType int32ndarray
+	findLastIndex.assign( x, 1, y, {}, clbk, {} ); // $ExpectType int32ndarray
 }
 
 // The compiler throws an error if the `assign` method is provided a first argument which is not an ndarray...
@@ -267,6 +421,42 @@ function clbk( value: any ): boolean {
 	findLastIndex.assign( void 0, y, {}, clbk, {} ); // $ExpectError
 	findLastIndex.assign( {}, y, {}, clbk, {} ); // $ExpectError
 	findLastIndex.assign( ( x: number ): number => x, y, {}, clbk, {} ); // $ExpectError
+
+	findLastIndex.assign( '5', 1, y, clbk ); // $ExpectError
+	findLastIndex.assign( 5, 1, y, clbk ); // $ExpectError
+	findLastIndex.assign( true, 1, y, clbk ); // $ExpectError
+	findLastIndex.assign( false, 1, y, clbk ); // $ExpectError
+	findLastIndex.assign( null, 1, y, clbk ); // $ExpectError
+	findLastIndex.assign( void 0, 1, y, clbk ); // $ExpectError
+	findLastIndex.assign( {}, 1, y, clbk ); // $ExpectError
+	findLastIndex.assign( ( x: number ): number => x, 1, y, clbk ); // $ExpectError
+
+	findLastIndex.assign( '5', 1, y, {}, clbk ); // $ExpectError
+	findLastIndex.assign( 5, 1, y, {}, clbk ); // $ExpectError
+	findLastIndex.assign( true, 1, y, {}, clbk ); // $ExpectError
+	findLastIndex.assign( false, 1, y, {}, clbk ); // $ExpectError
+	findLastIndex.assign( null, 1, y, {}, clbk ); // $ExpectError
+	findLastIndex.assign( void 0, 1, y, {}, clbk ); // $ExpectError
+	findLastIndex.assign( {}, 1, y, {}, clbk ); // $ExpectError
+	findLastIndex.assign( ( x: number ): number => x, 1, y, {}, clbk ); // $ExpectError
+
+	findLastIndex.assign( '5', 1, y, clbk, {} ); // $ExpectError
+	findLastIndex.assign( 5, 1, y, clbk, {} ); // $ExpectError
+	findLastIndex.assign( true, 1, y, clbk, {} ); // $ExpectError
+	findLastIndex.assign( false, 1, y, clbk, {} ); // $ExpectError
+	findLastIndex.assign( null, 1, y, clbk, {} ); // $ExpectError
+	findLastIndex.assign( void 0, 1, y, clbk, {} ); // $ExpectError
+	findLastIndex.assign( {}, 1, y, clbk, {} ); // $ExpectError
+	findLastIndex.assign( ( x: number ): number => x, 1, y, clbk, {} ); // $ExpectError
+
+	findLastIndex.assign( '5', 1, y, {}, clbk, {} ); // $ExpectError
+	findLastIndex.assign( 5, 1, y, {}, clbk, {} ); // $ExpectError
+	findLastIndex.assign( true, 1, y, {}, clbk, {} ); // $ExpectError
+	findLastIndex.assign( false, 1, y, {}, clbk, {} ); // $ExpectError
+	findLastIndex.assign( null, 1, y, {}, clbk, {} ); // $ExpectError
+	findLastIndex.assign( void 0, 1, y, {}, clbk, {} ); // $ExpectError
+	findLastIndex.assign( {}, 1, y, {}, clbk, {} ); // $ExpectError
+	findLastIndex.assign( ( x: number ): number => x, 1, y, {}, clbk, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the `assign` method is provided a second argument which is not an ndarray...
@@ -328,6 +518,18 @@ function clbk( value: any ): boolean {
 	findLastIndex.assign( x, y, false, clbk, {} ); // $ExpectError
 	findLastIndex.assign( x, y, null, clbk, {} ); // $ExpectError
 	findLastIndex.assign( x, y, [], clbk, {} ); // $ExpectError
+
+	findLastIndex.assign( x, 1, y, '5', clbk ); // $ExpectError
+	findLastIndex.assign( x, 1, y, true, clbk ); // $ExpectError
+	findLastIndex.assign( x, 1, y, false, clbk ); // $ExpectError
+	findLastIndex.assign( x, 1, y, null, clbk ); // $ExpectError
+	findLastIndex.assign( x, 1, y, [], clbk ); // $ExpectError
+
+	findLastIndex.assign( x, 1, y, '5', clbk, {} ); // $ExpectError
+	findLastIndex.assign( x, 1, y, true, clbk, {} ); // $ExpectError
+	findLastIndex.assign( x, 1, y, false, clbk, {} ); // $ExpectError
+	findLastIndex.assign( x, 1, y, null, clbk, {} ); // $ExpectError
+	findLastIndex.assign( x, 1, y, [], clbk, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the `assign` method is provided a callback argument which is not a function...
@@ -362,6 +564,30 @@ function clbk( value: any ): boolean {
 	findLastIndex.assign( x, y, {}, false, {} ); // $ExpectError
 	findLastIndex.assign( x, y, {}, null, {} ); // $ExpectError
 	findLastIndex.assign( x, y, {}, [], {} ); // $ExpectError
+
+	findLastIndex.assign( x, 1, y, '5' ); // $ExpectError
+	findLastIndex.assign( x, 1, y, true ); // $ExpectError
+	findLastIndex.assign( x, 1, y, false ); // $ExpectError
+	findLastIndex.assign( x, 1, y, null ); // $ExpectError
+	findLastIndex.assign( x, 1, y, [] ); // $ExpectError
+
+	findLastIndex.assign( x, 1, y, '5', {} ); // $ExpectError
+	findLastIndex.assign( x, 1, y, true, {} ); // $ExpectError
+	findLastIndex.assign( x, 1, y, false, {} ); // $ExpectError
+	findLastIndex.assign( x, 1, y, null, {} ); // $ExpectError
+	findLastIndex.assign( x, 1, y, [], {} ); // $ExpectError
+
+	findLastIndex.assign( x, 1, y, {}, '5' ); // $ExpectError
+	findLastIndex.assign( x, 1, y, {}, true ); // $ExpectError
+	findLastIndex.assign( x, 1, y, {}, false ); // $ExpectError
+	findLastIndex.assign( x, 1, y, {}, null ); // $ExpectError
+	findLastIndex.assign( x, 1, y, {}, [] ); // $ExpectError
+
+	findLastIndex.assign( x, 1, y, {}, '5', {} ); // $ExpectError
+	findLastIndex.assign( x, 1, y, {}, true, {} ); // $ExpectError
+	findLastIndex.assign( x, 1, y, {}, false, {} ); // $ExpectError
+	findLastIndex.assign( x, 1, y, {}, null, {} ); // $ExpectError
+	findLastIndex.assign( x, 1, y, {}, [], {} ); // $ExpectError
 }
 
 // The compiler throws an error if the `assign` method is provided an invalid `dim` option...
@@ -386,6 +612,20 @@ function clbk( value: any ): boolean {
 	findLastIndex.assign( x, y, { 'dim': null }, clbk, {} ); // $ExpectError
 	findLastIndex.assign( x, y, { 'dim': {} }, clbk, {} ); // $ExpectError
 	findLastIndex.assign( x, y, { 'dim': ( x: number ): number => x }, clbk, {} ); // $ExpectError
+
+	findLastIndex.assign( x, 1, y, { 'dim': '5' }, clbk ); // $ExpectError
+	findLastIndex.assign( x, 1, y, { 'dim': true }, clbk ); // $ExpectError
+	findLastIndex.assign( x, 1, y, { 'dim': false }, clbk ); // $ExpectError
+	findLastIndex.assign( x, 1, y, { 'dim': null }, clbk ); // $ExpectError
+	findLastIndex.assign( x, 1, y, { 'dim': {} }, clbk ); // $ExpectError
+	findLastIndex.assign( x, 1, y, { 'dim': ( x: number ): number => x }, clbk ); // $ExpectError
+
+	findLastIndex.assign( x, 1, y, { 'dim': '5' }, clbk, {} ); // $ExpectError
+	findLastIndex.assign( x, 1, y, { 'dim': true }, clbk, {} ); // $ExpectError
+	findLastIndex.assign( x, 1, y, { 'dim': false }, clbk, {} ); // $ExpectError
+	findLastIndex.assign( x, 1, y, { 'dim': null }, clbk, {} ); // $ExpectError
+	findLastIndex.assign( x, 1, y, { 'dim': {} }, clbk, {} ); // $ExpectError
+	findLastIndex.assign( x, 1, y, { 'dim': ( x: number ): number => x }, clbk, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the `assign` method is provided an unsupported number of arguments...
@@ -400,5 +640,5 @@ function clbk( value: any ): boolean {
 	findLastIndex.assign(); // $ExpectError
 	findLastIndex.assign( x ); // $ExpectError
 	findLastIndex.assign( x, y ); // $ExpectError
-	findLastIndex.assign( x, y, {}, clbk, {}, {} ); // $ExpectError
+	findLastIndex.assign( x, 1, y, {}, clbk, {}, {} ); // $ExpectError
 }
