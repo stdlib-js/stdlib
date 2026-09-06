@@ -1,0 +1,121 @@
+
+{{alias}}( N, k, x, strideX, y, strideY )
+    Prepends elements to a strided array by repeating the leading edge element.
+
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use a typed
+    array view.
+
+    If `N <= 0`, the function returns `y` unchanged.
+
+    If `k < 0`, the function clamps `k` to `0`, such that indexed elements in
+    `x` are copied to `y` without padding.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements in `x`.
+
+    k: integer
+        Number of elements to pad.
+
+    x: ArrayLikeObject
+        Input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    y: ArrayLikeObject
+        Output array. Must contain `N + max(0,k)` indexed elements.
+
+    strideY: integer
+        Stride length for `y`.
+
+    Returns
+    -------
+    y: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = [ 1.0, 2.0, 3.0, 4.0 ];
+    > var y = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+    > {{alias}}( x.length, 6, x, 1, y, 1 )
+    [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 3.0, 4.0 ]
+
+    // Using `N` and stride parameters:
+    > x = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
+    > y = [ 0.0, 0.0, 0.0, 0.0, 0.0 ];
+    > {{alias}}( 3, 2, x, 2, y, 1 )
+    [ 1.0, 1.0, 1.0, 3.0, 5.0 ]
+
+    // Using view offsets:
+    > var x0 = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > var y0 = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+    > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > var y1 = new {{alias:@stdlib/array/float64}}( y0.buffer, y0.BYTES_PER_ELEMENT*2 );
+    > {{alias}}( 3, 2, x1, 2, y1, 1 )
+    <Float64Array>[ 2.0, 2.0, 2.0, 4.0, 6.0 ]
+    > y0
+    <Float64Array>[ 0.0, 0.0, 2.0, 2.0, 2.0, 4.0, 6.0 ]
+
+
+{{alias}}.ndarray( N, k, x, strideX, offsetX, y, strideY, offsetY )
+    Prepends elements to a strided array by repeating the leading edge element
+    using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements in `x`.
+
+    k: integer
+        Number of elements to pad.
+
+    x: ArrayLikeObject
+        Input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    offsetX: integer
+        Starting index for `x`.
+
+    y: ArrayLikeObject
+        Output array. Must contain `N + max(0,k)` indexed elements.
+
+    strideY: integer
+        Stride length for `y`.
+
+    offsetY: integer
+        Starting index for `y`.
+
+    Returns
+    -------
+    y: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = [ 1.0, 2.0, 3.0, 4.0 ];
+    > var y = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+    > {{alias}}.ndarray( x.length, 6, x, 1, 0, y, 1, 0 )
+    [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 3.0, 4.0 ]
+
+    // Advanced indexing:
+    > x = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
+    > y = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+    > {{alias}}.ndarray( 3, 2, x, 2, 1, y, -1, y.length-1 )
+    [ 0.0, 0.0, 6.0, 4.0, 2.0, 2.0, 2.0 ]
+
+    See Also
+    --------
+
