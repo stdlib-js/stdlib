@@ -45,9 +45,7 @@
     > var ybuf = new {{alias:@stdlib/array/float64}}( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] );
     > var y = {{alias:@stdlib/ndarray/array}}( ybuf );
     > var z = {{alias}}( x, y )
-    <ndarray>
-    > z.get()
-    -5.0
+    <ndarray>[ -5.0 ]
 
     See Also
     --------

@@ -40,7 +40,7 @@ var mul = require( '@stdlib/math/strided/ops/mul' );
 
 #### mul( N, dtypeX, x, strideX, dtypeY, y, strideY, dtypeZ, z, strideZ )
 
-Multiplies each element in a strided array `x` to a corresponding element in a strided array `y` and assigns the results to elements in a strided array `z`.
+Multiplies each element in a strided array `x` by a corresponding element in a strided array `y` and assigns the results to elements in a strided array `z`.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -100,7 +100,7 @@ mul( 3, 'float64', x1, -2, 'float64', y1, 1, 'float64', z1, 1 );
 
 #### mul.ndarray( N, dtypeX, x, strideX, offsetX, dtypeY, y, strideY, offsetY, dtypeZ, z, strideZ, offsetZ )
 
-Multiplies each element in a strided array `x` to a corresponding element in a strided array `y` and assigns the results to elements in a strided array `z` using alternative indexing semantics.
+Multiplies each element in a strided array `x` by a corresponding element in a strided array `y` and assigns the results to elements in a strided array `z` using alternative indexing semantics.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );

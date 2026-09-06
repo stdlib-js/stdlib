@@ -229,7 +229,7 @@ Computes the aithmetic mean of a double-precision floating-point strided array, 
 ```c
 const double x[] = { 1.0, 2.0, 0.0/0.0, 3.0, 0.0/0.0, 4.0, 5.0, 6.0, 0.0/0.0, 7.0, 8.0, 0.0/0.0 };
 
-double v = stdlib_strided_dnanmeanpn( 6, x, 2, 0 );
+double v = stdlib_strided_dnanmeanpn_ndarray( 6, x, 2, 0 );
 // returns ~4.6667
 ```
 

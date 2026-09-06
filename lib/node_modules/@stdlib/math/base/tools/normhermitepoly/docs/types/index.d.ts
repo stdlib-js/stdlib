@@ -60,7 +60,7 @@ interface NormHermitePoly {
 	/**
 	* Returns a function for evaluating a normalized Hermite polynomial using double-precision floating-point arithmetic.
 	*
-	* @param n - polynomial degree
+	* @param n - nonnegative polynomial degree
 	* @returns function for evaluating a normalized Hermite polynomial
 	*
 	* @example

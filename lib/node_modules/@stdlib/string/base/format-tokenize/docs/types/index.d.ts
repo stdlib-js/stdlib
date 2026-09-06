@@ -30,22 +30,22 @@ interface FormatIdentifier {
 	/**
 	* Flags.
 	*/
-	flags: string;
+	flags?: string;
 
 	/**
 	* Minimum field width (integer or `'*'`).
 	*/
-	width: string;
+	width?: string;
 
 	/**
 	* Precision (integer or `'*'`).
 	*/
-	precision: string;
+	precision?: string;
 
 	/**
 	* Positional mapping from format specifier to argument index.
 	*/
-	mapping: number;
+	mapping?: number;
 }
 
 type StringOrToken = string | FormatIdentifier;

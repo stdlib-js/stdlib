@@ -29,6 +29,7 @@ import full = require( './index' );
 	full( 10, 1 ); // $ExpectType Float64Array
 	full( 10, 1, 'float64' ); // $ExpectType Float64Array
 	full( 10, 1, 'float32' ); // $ExpectType Float32Array
+	full( 10, 1, 'float16' ); // $ExpectType Float16ArrayFallback
 	full( 10, z, 'complex128' ); // $ExpectType Complex128Array
 	full( 10, z, 'complex64' ); // $ExpectType Complex64Array
 	full( 10, true, 'bool' ); // $ExpectType BooleanArray

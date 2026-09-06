@@ -1,11 +1,12 @@
 
-{{alias}}( x )
+{{alias}}( x, writable )
     Transposes a matrix (or a stack of matrices).
 
     The returned ndarray is a *view* of the input ndarray. Accordingly, writing
     to the original ndarray will mutate the returned ndarray and vice versa.
-    While powerful, this can lead to subtle bugs. In general, one should handle
-    the returned ndarray as read-only.
+
+    The `writable` parameter only applies to ndarray constructors supporting
+    read-only instances.
 
     If provided an ndarray with fewer than two dimensions, the function raises
     an exception.
@@ -15,6 +16,9 @@
     x: ndarray
         Input array.
 
+    writable: boolean
+        Boolean indicating whether the returned ndarray should be writable.
+
     Returns
     -------
     out: ndarray
@@ -23,17 +27,9 @@
     Examples
     --------
     > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ] )
-    <ndarray>
-    > var sh = x.shape
-    [ 2, 3 ]
-    > var y = {{alias}}( x )
-    <ndarray>
-    > sh = y.shape
-    [ 3, 2 ]
-    > var bool = ( x.data === y.data )
-    true
-    > bool = ( x.get( 0, 1 ) === y.get( 1, 0 ) )
-    true
+    <ndarray>[ [ 1, 2, 3 ], [ 4, 5, 6 ] ]
+    > var y = {{alias}}( x, false )
+    <ndarray>[ [ 1, 4 ], [ 2, 5 ], [ 3, 6 ] ]
 
     See Also
     --------

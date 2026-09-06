@@ -30,17 +30,9 @@ import { Complex64 } from '@stdlib/types/complex';
 *
 * @example
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
-* var real = require( '@stdlib/complex/float32/real' );
-* var imag = require( '@stdlib/complex/float32/imag' );
 *
 * var v = croundf( new Complex64( -4.2, 5.5 ) );
-* // returns <Complex64>
-*
-* var re = real( v );
-* // returns -4.0
-*
-* var im = imag( v );
-* // returns 6.0
+* // returns <Complex64>[ -4.0, 6.0 ]
 */
 declare function croundf( z: Complex64 ): Complex64;
 

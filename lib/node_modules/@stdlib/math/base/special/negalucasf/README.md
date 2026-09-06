@@ -192,7 +192,7 @@ Computes the nth [negaLucas number][lucas-number] in single-precision floating-p
 
 ```c
 float out = stdlib_base_negalucasf( 0.0f );
-// returns 0.0f
+// returns 2.0f
 
 out = stdlib_base_negalucasf( -1.0f );
 // returns -1.0f

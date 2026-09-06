@@ -49,7 +49,7 @@ function gen( sigma, name )
 	]);
 
 	# Based on the script directory, create an output filepath:
-	filepath = joinpath( dir, name )
+	filepath = joinpath( dir, name );
 
 	# Write the data to the output filepath as JSON:
 	outfile = open( filepath, "w" );

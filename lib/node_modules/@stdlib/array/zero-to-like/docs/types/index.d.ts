@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Complex128Array, Complex64Array, AnyArray, NumericDataType } from '@stdlib/types/array';
+import { Complex128Array, Complex64Array, Float16Array, AnyArray, NumericDataType } from '@stdlib/types/array';
 
 /**
 * Generates a linearly spaced numeric array whose elements increment by 1 starting from zero and having the same length as a provided input array.
@@ -57,6 +57,24 @@ declare function zeroToLike( x: AnyArray, dtype: 'float64' ): Float64Array;
 * // returns <Float32Array>[ 0.0, 1.0 ]
 */
 declare function zeroToLike( x: AnyArray, dtype: 'float32' ): Float32Array;
+
+/**
+* Generates a linearly spaced numeric array whose elements increment by 1 starting from zero and having the same length as a provided input array.
+*
+* @param x - input array from which to derive the output array length
+* @param dtype - data type
+* @returns linearly spaced numeric array
+*
+* @example
+* var zeros = require( '@stdlib/array/zeros' );
+*
+* var x = zeros( 2, 'float64' );
+* // returns <Float64Array>[ 0.0, 0.0 ]
+*
+* var y = zeroToLike( x, 'float16' );
+* // returns <Float16Array>[ 0.0, 1.0 ]
+*/
+declare function zeroToLike( x: AnyArray, dtype: 'float16' ): Float16Array;
 
 /**
 * Generates a linearly spaced numeric array whose elements increment by 1 starting from zero and having the same length as a provided input array.
@@ -281,6 +299,24 @@ declare function zeroToLike( x: Float64Array, dtype?: NumericDataType ): Float64
 * // returns <Float32Array>[ 0.0, 1.0 ]
 */
 declare function zeroToLike( x: Float32Array, dtype?: NumericDataType ): Float32Array;
+
+/**
+* Generates a linearly spaced numeric array whose elements increment by 1 starting from zero and having the same length and data type as a provided input array.
+*
+* @param x - input array from which to derive the output array length
+* @param dtype - data type
+* @returns linearly spaced numeric array
+*
+* @example
+* var zeros = require( '@stdlib/array/zeros' );
+*
+* var x = zeros( 2, 'float16' );
+* // returns <Float16Array>[ 0.0, 0.0 ]
+*
+* var y = zeroToLike( x );
+* // returns <Float16Array>[ 0.0, 1.0 ]
+*/
+declare function zeroToLike( x: Float16Array, dtype?: NumericDataType ): Float16Array;
 
 /**
 * Generates a linearly spaced numeric array whose elements increment by 1 starting from zero and having the same length and data type as a provided input array.

@@ -1,0 +1,29 @@
+
+{{alias}}( value )
+    Returns the enumeration constant associated with a supported k-means
+    clustering algorithm value.
+
+    Downstream consumers of this function should *not* rely on specific integer
+    values (e.g., `LLOYD == 0`). Instead, the function should be used in an
+    opaque manner.
+
+    Parameters
+    ----------
+    value: any
+        Clustering algorithm value.
+
+    Returns
+    -------
+    out: integer|null
+        Enumeration constant.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'lloyd' )
+    <number>
+    > out = {{alias}}( {{alias:@stdlib/ml/base/kmeans/algorithm-str2enum}}( 'lloyd' ) )
+    <number>
+
+    See Also
+    --------
+

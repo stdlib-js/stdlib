@@ -18,11 +18,11 @@
 
 # Script to create sub-issues for broken Markdown links.
 #
-# Usage: create_broken_link_issues <failures-json> <parent-issue-number>
+# Usage: create_broken_link_issues <failures-json-file> <parent-issue-number>
 #
 # Arguments:
 #
-#   failures-json        JSON array of broken link failures.
+#   failures-json-file   Path to a file containing a JSON array of broken link failures.
 #   parent-issue-number  Number of the parent tracking issue.
 #
 # Environment variables:
@@ -43,7 +43,7 @@ set -e
 # VARIABLES #
 
 # Assign command line arguments to variables:
-failures_json="$1"
+failures_file="$1"
 parent_issue_number="$2"
 
 # Repository information:
@@ -252,14 +252,29 @@ create_sub_issue_relationship() {
 # Main execution sequence.
 main() {
 	# Validate inputs:
-	if [ -z "$failures_json" ]; then
-		echo "ERROR: No failures JSON provided." >&2
+	if [ -z "$failures_file" ]; then
+		echo "ERROR: No failures JSON file provided." >&2
+		exit 1
+	fi
+
+	if [ ! -f "$failures_file" ]; then
+		echo "ERROR: Failures JSON file not found: ${failures_file}" >&2
 		exit 1
 	fi
 
 	if [ -z "$parent_issue_number" ]; then
 		echo "ERROR: No parent issue number provided." >&2
 		exit 1
+	fi
+
+	# Read the failures JSON from the file:
+	local failures_json
+	failures_json=$(cat "$failures_file")
+
+	if [ -z "$failures_json" ]; then
+		echo "No broken links found." >&2
+		print_success
+		exit 0
 	fi
 
 	# Parse the failures JSON:

@@ -1,0 +1,118 @@
+
+{{alias}}( N, k, x, strideX, out, strideOut )
+    Replicates each element in a double-precision complex floating-point strided
+    array a specified number of times.
+
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use a typed
+    array view.
+
+    If `N <= 0` or `k <= 0`, the function returns `out` unchanged.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    k: integer
+        Number of times to replicate each element.
+
+    x: Complex128Array
+        Input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    out: Complex128Array
+        Output array.
+
+    strideOut: integer
+        Stride length for `out`.
+
+    Returns
+    -------
+    out: Complex128Array
+        Output array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var out = new {{alias:@stdlib/array/complex128}}( 4 );
+    > {{alias}}( x.length, 2, x, 1, out, 1 )
+    <Complex128Array>[ 1.0, 2.0, 1.0, 2.0, 3.0, 4.0, 3.0, 4.0 ]
+
+    // Using `N` and stride parameters:
+    > x = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > out = new {{alias:@stdlib/array/complex128}}( 4 );
+    > {{alias}}( 2, 2, x, 2, out, 1 )
+    <Complex128Array>[ 1.0, 2.0, 1.0, 2.0, 5.0, 6.0, 5.0, 6.0 ]
+
+    // Using view offsets:
+    > var x0 = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > var out0 = new {{alias:@stdlib/array/complex128}}( 3 );
+    > var x1 = new {{alias:@stdlib/array/complex128}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > var out1 = new {{alias:@stdlib/array/complex128}}( out0.buffer, out0.BYTES_PER_ELEMENT*1 );
+    > {{alias}}( 1, 2, x1, 2, out1, 1 )
+    <Complex128Array>[ 3.0, 4.0, 3.0, 4.0 ]
+    > out0
+    <Complex128Array>[ 0.0, 0.0, 3.0, 4.0, 3.0, 4.0 ]
+
+
+{{alias}}.ndarray( N, k, x, strideX, offsetX, out, strideOut, offsetOut )
+    Replicates each element in a double-precision complex floating-point strided
+    array a specified number of times using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    k: integer
+        Number of times to replicate each element.
+
+    x: Complex128Array
+        Input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    offsetX: integer
+        Starting index for `x`.
+
+    out: Complex128Array
+        Output array.
+
+    strideOut: integer
+        Stride length for `out`.
+
+    offsetOut: integer
+        Starting index for `out`.
+
+    Returns
+    -------
+    out: Complex128Array
+        Output array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var out = new {{alias:@stdlib/array/complex128}}( 4 );
+    > {{alias}}.ndarray( x.length, 2, x, 1, 0, out, 1, 0 )
+    <Complex128Array>[ 1.0, 2.0, 1.0, 2.0, 3.0, 4.0, 3.0, 4.0 ]
+
+    // Advanced indexing:
+    > x = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > out = new {{alias:@stdlib/array/complex128}}( 2 );
+    > {{alias}}.ndarray( 1, 2, x, 1, 1, out, 1, 0 )
+    <Complex128Array>[ 3.0, 4.0, 3.0, 4.0 ]
+
+    See Also
+    --------

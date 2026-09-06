@@ -27,16 +27,16 @@
   "default_dtype": "float64",
   "default_dtype_kind": "real_floating_point",
 
-  "from_desc": "a betaprime distribution",
-  "readme_from_desc": "a [betaprime][@stdlib/random/base/betaprime] distribution",
+  "from_desc": "a beta prime distribution",
+  "readme_from_desc": "a [beta prime][@stdlib/random/base/betaprime] distribution",
 
   "readme_heading": "Beta Prime Random Numbers",
   "readme_dtype_kind_desc": "a real-valued floating-point",
   "readme_dtype_kind_pkg": "stdlib/ndarray/dtypes",
 
-  "repl_text_main_desc": "Returns an ndarray containing pseudorandom numbers drawn from a betaprime distribution.",
-  "repl_text_assign_desc": "Fills an ndarray with pseudorandom numbers drawn from a betaprime distribution.",
-  "repl_text_factory_desc": "Returns a function for generating pseudorandom numbers drawn from a betaprime distribution.",
+  "repl_text_main_desc": "Returns an ndarray containing pseudorandom numbers drawn from a beta prime distribution.",
+  "repl_text_assign_desc": "Fills an ndarray with pseudorandom numbers drawn from a beta prime distribution.",
+  "repl_text_factory_desc": "Returns a function for generating pseudorandom numbers drawn from a beta prime distribution.",
 
   "repl_text_param_1_desc": "First shape parameter. If an ndarray, must be broadcast compatible with the specified array shape.",
   "repl_text_param_2_desc": "Second shape parameter. If an ndarray, must be broadcast compatible with the specified array shape.",

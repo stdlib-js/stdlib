@@ -169,6 +169,7 @@ function main()
 	dtypes = [
 		Float64,
 		Float32,
+		Float16,
 		Int32,
 		Int16,
 		Int8,

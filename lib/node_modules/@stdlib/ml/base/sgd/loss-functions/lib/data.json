@@ -1,0 +1,11 @@
+[
+  "epsilon-insensitive",
+  "hinge",
+  "huber",
+  "log",
+  "modified-huber",
+  "perceptron",
+  "squared-epsilon-insensitive",
+  "squared-error",
+  "squared-hinge"
+]

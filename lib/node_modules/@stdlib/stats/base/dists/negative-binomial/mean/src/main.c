@@ -33,11 +33,7 @@
 double stdlib_base_dists_negative_binomial_mean( const double r, const double p ) {
 	if (
 		stdlib_base_is_nan( r ) ||
-		stdlib_base_is_nan( p )
-	) {
-		return 0.0 / 0.0; // NaN
-	}
-	if (
+		stdlib_base_is_nan( p ) ||
 		r <= 0.0 ||
 		p < 0.0 ||
 		p > 1.0

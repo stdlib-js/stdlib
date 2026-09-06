@@ -1,0 +1,34 @@
+
+{{alias}}( arrays )
+    Interchanges two one-dimensional ndarrays.
+
+    If provided an empty input ndarray, the function returns the output ndarray
+    unchanged.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - first one-dimensional input ndarray.
+        - second one-dimensional input ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        The second input ndarray.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/vector/ctor}}( [ 4.0, 2.0, -3.0 ], 'generic' );
+    > var y = {{alias:@stdlib/ndarray/vector/ctor}}( [ 0.0, 0.0, 0.0 ], 'generic' );
+
+    > {{alias}}( [ x, y ] );
+    > x
+    <ndarray>[ 0.0, 0.0, 0.0 ]
+    > y
+    <ndarray>[ 4.0, 2.0, -3.0 ]
+
+    See Also
+    --------
+

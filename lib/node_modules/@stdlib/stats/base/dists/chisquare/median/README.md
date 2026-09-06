@@ -55,7 +55,7 @@ v = median( 2.0 );
 If provided `k < 0`, the function returns `NaN`.
 
 ```javascript
-var y = median( -1.0 );
+var v = median( -1.0 );
 // returns NaN
 ```
 

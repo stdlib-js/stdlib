@@ -38,6 +38,6 @@ int main( void ) {
 		mu = random_uniform( -5.0, 5.0 );
 		s = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 20.0 );
 		y = stdlib_base_dists_cosine_quantile( p, mu, s );
-		printf( "p:%.4f, µ: %.4f, s: %.4f, Q(p;µ,s): %.4f\n", p, mu, s, y );
+		printf( "p:%.4f, μ: %.4f, s: %.4f, Q(p;μ,s): %.4f\n", p, mu, s, y );
 	}
 }

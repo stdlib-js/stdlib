@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the natural logarithm of the probability distribution function (CDF) for a Kumaraswamy's double bounded distribution with parameters `a` (first shape parameter) and `b` (second shape parameter).
+* Evaluates the natural logarithm of the probability density function (PDF) for a Kumaraswamy's double bounded distribution with parameters `a` (first shape parameter) and `b` (second shape parameter).
 */
 double stdlib_base_dists_kumaraswamy_logpdf( const double x, const double a, const double b );
 

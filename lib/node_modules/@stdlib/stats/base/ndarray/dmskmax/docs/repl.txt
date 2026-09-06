@@ -9,7 +9,10 @@
     Parameters
     ----------
     arrays: ArrayLikeObject<ndarray>
-        Array-like object containing an input ndarray and a mask ndarray.
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a one-dimensional mask ndarray.
 
     Returns
     -------
@@ -18,15 +21,8 @@
 
     Examples
     --------
-    > var xbuf = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 4.0, 2.0 ] );
-    > var dt = 'float64';
-    > var sh = [ xbuf.length ];
-    > var sx = [ 1 ];
-    > var ox = 0;
-    > var ord = 'row-major';
-    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
-    > var mbuf = new {{alias:@stdlib/array/uint8}}( [ 0, 0, 1, 0 ] );
-    > var mask = new {{alias:@stdlib/ndarray/ctor}}( 'uint8', mbuf, sh, sx, ox, ord );
+    > var x = new {{alias:@stdlib/ndarray/vector/float64}}( [ 1.0, -2.0, 4.0, 2.0 ] );
+    > var mask = new {{alias:@stdlib/ndarray/vector/uint8}}( [ 0, 0, 1, 0 ] );
     > {{alias}}( [ x, mask ] )
     2.0
 

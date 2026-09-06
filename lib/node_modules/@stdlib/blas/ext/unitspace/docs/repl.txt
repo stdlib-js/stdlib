@@ -1,0 +1,136 @@
+
+{{alias}}( shape, start[, options] )
+    Returns a new ndarray filled with linearly spaced numeric elements which
+    increment by 1 starting from a specified value along one or more ndarray
+    dimensions.
+
+    When writing to a complex floating-point output array, a real-valued `start`
+    value is treated as a complex number having a real component equaling the
+    provided value and having an imaginary component equaling zero.
+
+    The `start` argument is cast to the data type of the output array.
+
+    Parameters
+    ----------
+    shape: Array<integer>|integer
+        Array shape.
+
+    start: ndarray|number|Complex
+        Starting value. May be either a number, a complex number, or an ndarray
+        having a numeric or "generic" data type. If provided an ndarray, the
+        value must have a shape which is broadcast compatible with the
+        complement of the shape defined by `options.dims`. For example, given
+        the input shape `[2, 3, 4]` and `options.dims=[0]`, a start ndarray must
+        have a shape which is broadcast compatible with the shape `[3, 4]`.
+        Similarly, when performing the operation over all elements in a provided
+        input shape, a start ndarray must be a zero-dimensional ndarray.
+
+    options: Object (optional)
+        Function options.
+
+    options.dims: Array<integer> (optional)
+        List of dimensions over which to perform operation. If not provided,
+        the function generates linearly spaced values along the last dimension.
+        Default: [-1].
+
+    options.dtype: string|DataType (optional)
+        Output ndarray data type. Must be a numeric or "generic" data type. If
+        provided, `start` is cast to the specified data type. If not provided,
+        the default output array data type is the same as the data type of
+        `start`.
+
+    options.order: string (optional)
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style). If `start` is a scalar value, the default order is
+        'row-major'. If `start` is an ndarray, the default order is the same as
+        the memory layout of `start`.
+
+    options.mode: string (optional)
+        Specifies how to handle indices which exceed array dimensions. If equal
+        to 'throw', an ndarray instance throws an error when an index exceeds
+        array dimensions. If equal to 'normalize', an ndarray instance
+        normalizes negative indices and throws an error when an index exceeds
+        array dimensions. If equal to 'wrap', an ndarray instance wraps around
+        indices exceeding array dimensions using modulo arithmetic. If equal to
+        'clamp', an ndarray instance sets an index exceeding array dimensions
+        to either `0` (minimum index) or the maximum index. Default: 'throw'.
+
+    options.submode: Array<string> (optional)
+        Specifies how to handle subscripts which exceed array dimensions. If a
+        mode for a corresponding dimension is equal to 'throw', an ndarray
+        instance throws an error when a subscript exceeds array dimensions. If
+        equal to 'normalize', an ndarray instance normalizes negative
+        subscripts and throws an error when a subscript exceeds array
+        dimensions. If equal to 'wrap', an ndarray instance wraps around
+        subscripts exceeding array dimensions using modulo arithmetic. If equal
+        to 'clamp', an ndarray instance sets a subscript exceeding array
+        dimensions to either `0` (minimum index) or the maximum index. If the
+        number of modes is fewer than the number of dimensions, the function
+        recycles modes using modulo arithmetic. Default: [ options.mode ].
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var out = {{alias}}( [ 4 ], 1.0 )
+    <ndarray>[ 1.0, 2.0, 3.0, 4.0 ]
+
+
+{{alias}}.assign( x, start[, options] )
+    Fills an ndarray with linearly spaced numeric elements which increment by
+    1 starting from a specified value along one or more ndarray dimensions.
+
+    The function fills an ndarray in-place and thus mutates the input ndarray.
+
+    When writing to a complex floating-point output array, a real-valued `start`
+    value is treated as a complex number having a real component equaling the
+    provided value and having an imaginary component equaling zero.
+
+    The `start` argument is cast to the data type of the output array.
+
+    The function iterates over ndarray elements according to the memory layout
+    of an output ndarray. Accordingly, performance degradation is possible when
+    operating over multiple dimensions of a large non-contiguous multi-
+    dimensional output ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array. Must have a numeric or "generic" data type.
+
+    start: ndarray|number|Complex
+        Starting value. May be either a number, a complex number, or an ndarray
+        having a numeric or "generic" data type. If provided an ndarray, the
+        value must have a shape which is broadcast compatible with the
+        complement of the shape defined by `options.dims`. For example, given
+        the input shape `[2, 3, 4]` and `options.dims=[0]`, a start ndarray must
+        have a shape which is broadcast compatible with the shape `[3, 4]`.
+        Similarly, when performing the operation over all elements in a provided
+        input array, a start ndarray must be a zero-dimensional ndarray.
+
+    options: Object (optional)
+        Function options.
+
+    options.dims: Array<integer> (optional)
+        List of dimensions over which to perform operation. If not provided,
+        the function generates linearly spaced values along the last dimension.
+        Default: [-1].
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/zeros}}( [ 4 ] );
+    > var out = {{alias}}.assign( x, 1.0 )
+    <ndarray>[ 1.0, 2.0, 3.0, 4.0 ]
+    > var bool = ( out === x )
+    true
+
+    See Also
+    --------

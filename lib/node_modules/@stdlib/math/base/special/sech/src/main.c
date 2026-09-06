@@ -26,7 +26,7 @@
 * @return     hyperbolic secant
 *
 * @example
-* var v = stdlib_base_sech( 2.0 );
+* double v = stdlib_base_sech( 2.0 );
 * // returns ~0.2658
 */
 double stdlib_base_sech( const double x ) {

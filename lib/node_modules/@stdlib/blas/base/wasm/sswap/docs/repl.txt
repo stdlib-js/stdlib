@@ -440,7 +440,7 @@
 
 
 {{alias}}.Module.prototype.main( N, xp, sx, yp, sy )
-    Interchanges two single-precision floating point vectors.
+    Interchanges two single-precision floating-point vectors.
 
     Parameters
     ----------
@@ -489,7 +489,7 @@
 
 
 {{alias}}.Module.prototype.ndarray( N, xp, sx, ox, yp, sy, oy )
-    Interchanges two single-precision floating point vectors using alternative
+    Interchanges two single-precision floating-point vectors using alternative
     indexing semantics.
 
     Parameters

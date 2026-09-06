@@ -12,7 +12,7 @@
         Shape parameter.
 
     β: number
-        Rate parameter.
+        Scale parameter.
 
     Returns
     -------

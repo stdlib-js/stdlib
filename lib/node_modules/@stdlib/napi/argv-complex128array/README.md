@@ -139,7 +139,7 @@ The function accepts the following arguments:
 -   **data**: `[out] double**` pointer for returning a reference to the output array.
 -   **length**: `[out] int64_t*` pointer for returning the number of array elements.
 -   **message**: `[in] char*` error message.
--   **err**: `[out] napi_value*` pointer for storing a JavaScript error. If not provided a number, the function sets `err` with a JavaScript error; otherwise, `err` is set to `NULL`.
+-   **err**: `[out] napi_value*` pointer for storing a JavaScript error. If not provided a `Float64Array`, the function sets `err` with a JavaScript error; otherwise, `err` is set to `NULL`.
 
 ```c
 napi_status stdlib_napi_argv_complex128array( const napi_env env, const napi_value value, double **data, int64_t *length, const char *message, napi_value *err );

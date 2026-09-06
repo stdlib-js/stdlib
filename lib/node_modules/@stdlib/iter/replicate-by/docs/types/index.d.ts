@@ -70,7 +70,7 @@ type Ternary = ( value: any, index: number, n: number ) => number;
 type Callback = Nullary | Unary | Binary | Ternary;
 
 /**
-* Returns an iterator which invokes a function for each iterated value.
+* Returns an iterator which replicates each iterated value according to a provided function.
 *
 * ## Notes
 *

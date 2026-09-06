@@ -43,7 +43,8 @@
         "@stdlib/math/base/special/rempio2",
         "@stdlib/number/float64/base/get-high-word",
         "@stdlib/constants/float64/high-word-exponent-mask",
-        "@stdlib/constants/float64/high-word-abs-mask"
+        "@stdlib/constants/float64/high-word-abs-mask",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -60,7 +61,8 @@
         "@stdlib/math/base/special/rempio2",
         "@stdlib/number/float64/base/get-high-word",
         "@stdlib/constants/float64/high-word-exponent-mask",
-        "@stdlib/constants/float64/high-word-abs-mask"
+        "@stdlib/constants/float64/high-word-abs-mask",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -77,7 +79,8 @@
         "@stdlib/math/base/special/rempio2",
         "@stdlib/number/float64/base/get-high-word",
         "@stdlib/constants/float64/high-word-exponent-mask",
-        "@stdlib/constants/float64/high-word-abs-mask"
+        "@stdlib/constants/float64/high-word-abs-mask",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

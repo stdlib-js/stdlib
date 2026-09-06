@@ -38,10 +38,10 @@
     Examples
     --------
     // Create a new instance...
-    > var b = [ 1, 2, 3, 4 ]; // underlying data buffer
-    > var d = [ 2, 2 ]; // shape
-    > var s = [ 2, 1 ]; // strides
-    > var o = 0; // index offset
+    > var b = [ 1, 2, 3, 4 ];
+    > var d = [ 2, 2 ];
+    > var s = [ 2, 1 ];
+    > var o = 0;
     > var arr = {{alias}}( 'generic', b, d, s, o, 'row-major' )
     <ndarray>
 
@@ -395,6 +395,36 @@
     > arr.iset( 3, -4.0 );
     > arr.iget( 3 )
     -4.0
+
+
+{{alias}}.prototype.toLocaleString( [locales[, options]] )
+    Serializes an ndarray as a locale-aware string.
+
+    This method does **not** serialize data outside of the buffer region defined
+    by the array configuration.
+
+    Parameters
+    ----------
+    locales: string|Array<string> (optional)
+        Locale identifier(s).
+
+    options: Object (optional)
+        Configuration options.
+
+    Returns
+    -------
+    str: string
+        Serialized ndarray string.
+
+    Examples
+    --------
+    > var b = [ 1, 2, 3, 4 ];
+    > var d = [ 2, 2 ];
+    > var s = [ 2, 1 ];
+    > var o = 0;
+    > var arr = {{alias}}( 'generic', b, d, s, o, 'row-major' );
+    > arr.toLocaleString()
+    '...'
 
 
 {{alias}}.prototype.toString()

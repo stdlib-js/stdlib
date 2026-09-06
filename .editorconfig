@@ -165,6 +165,15 @@ indent_style = tab
 indent_style = space
 indent_size = 2
 
+# Ignore generated lock files for GitHub Agentic Workflows:
+[*.lock.yml]
+charset = unset
+end_of_line = unset
+indent_style = unset
+indent_size = unset
+trim_trailing_whitespace = unset
+insert_final_newline = unset
+
 # Set properties for GYP files:
 [binding.gyp]
 indent_style = space

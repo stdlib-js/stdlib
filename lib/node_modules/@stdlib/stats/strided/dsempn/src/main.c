@@ -47,5 +47,5 @@ double API_SUFFIX(stdlib_strided_dsempn)( const CBLAS_INT N, const double correc
 * @return             output value
 */
 double API_SUFFIX(stdlib_strided_dsempn_ndarray)( const CBLAS_INT N, const double correction, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
-	return stdlib_base_sqrt( stdlib_strided_dvariancepn_ndarray( N, correction, X, strideX, offsetX ) / (double)N );
+	return stdlib_base_sqrt( API_SUFFIX(stdlib_strided_dvariancepn_ndarray)( N, correction, X, strideX, offsetX ) / (double)N );
 }

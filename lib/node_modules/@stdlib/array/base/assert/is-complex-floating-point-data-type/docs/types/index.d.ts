@@ -31,6 +31,9 @@
 * bool = isComplexFloatingPointDataType( 'complex128' );
 * // returns true
 *
+* bool = isComplexFloatingPointDataType( 'float16' );
+* // returns false
+*
 * bool = isComplexFloatingPointDataType( 'float32' );
 * // returns false
 *

@@ -173,7 +173,7 @@ Returns the [variance][variance] of a [triangular][triangular-distribution] dist
 
 ```c
 double out = stdlib_base_dists_triangular_variance( 0.0, 1.0, 0.5 );
-// returns ~0.056
+// returns ~0.042
 ```
 
 The function accepts the following arguments:

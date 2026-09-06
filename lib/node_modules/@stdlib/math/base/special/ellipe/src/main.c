@@ -53,6 +53,7 @@
 #include "stdlib/math/base/special/ln.h"
 #include "stdlib/constants/float64/pinf.h"
 #include "stdlib/constants/float64/half_pi.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdint.h>
 
 /* Begin auto-generated functions. The following functions are auto-generated. Do not edit directly. */
@@ -331,7 +332,7 @@ double stdlib_base_ellipe( const double m ) {
 		return 1.0;
 	}
 	if ( x > 1.0 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( x < 0.1 ) {
 		t = poly_p1( x - 0.05 );

@@ -44,7 +44,7 @@
 * int8_t b = stdlib_ndarray_is_buffer_length_compatible_shape( 10, ndims, shape );
 * // returns 0
 */
-int8_t stdlib_ndarray_is_buffer_length_compatible_shape( int64_t len, int64_t ndims, int64_t *shape ) {
+int8_t stdlib_ndarray_is_buffer_length_compatible_shape( const int64_t len, const int64_t ndims, const int64_t *shape ) {
 	if ( len > stdlib_ndarray_numel( ndims, shape ) ) {
 		return 1;
 	}

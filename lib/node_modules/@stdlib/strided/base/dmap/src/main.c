@@ -38,10 +38,10 @@
 *     return x * 10.0;
 * }
 *
-* double X[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 };
+* const double X[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 };
 * double Y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 *
-* int64_t N = 6;
+* const int64_t N = 6;
 *
 * stdlib_strided_dmap( N, X, 1, Y, 1, scale );
 */

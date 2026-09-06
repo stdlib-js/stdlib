@@ -1,0 +1,36 @@
+
+{{alias}}( [out] )
+    Returns an accumulator function which incrementally computes an arithmetic
+    mean and corrected sample standard deviation, ignoring `NaN` values.
+
+    If provided a value, the accumulator function returns updated accumulated
+    values. If not provided a value, the accumulator function returns the
+    current accumulated values.
+
+    If provided `NaN`, the update is skipped and the accumulator continues to
+    return the previous accumulated values.
+
+    Parameters
+    ----------
+    out: Array|TypedArray (optional)
+        Output array.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}();
+    > var ms = accumulator()
+    null
+    > accumulator( 2.0 );
+    > accumulator( NaN );
+    > accumulator( -5.0 );
+    > ms = accumulator()
+    [ -1.5, ~4.95 ]
+
+    See Also
+    --------
+

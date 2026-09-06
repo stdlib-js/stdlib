@@ -22,6 +22,20 @@ limitations under the License.
 
 > Return a [double-precision floating-point number][ieee754] with the magnitude of `x` and the sign of `x*y`.
 
+<section class="intro">
+
+<!-- <equation class="equation" label="eq:flipsign_function" align="center" raw="z = x \cdot \operatorname{sign}(y)" alt="Flip sign function"> -->
+
+```math
+z = x \cdot \mathop{\mathrm{sign}}(y)
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

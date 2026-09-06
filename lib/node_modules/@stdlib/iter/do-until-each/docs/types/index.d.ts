@@ -132,7 +132,7 @@ type Predicate = nullaryPredicate | unaryPredicate | binaryPredicate;
 * // returns 2
 *
 * r = it.next().value;
-* // undefined
+* // returns undefined
 *
 * // ...
 */

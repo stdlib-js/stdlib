@@ -51,7 +51,7 @@ var data = dataset();
 
 </section>
 
-<!-- /.examples -->
+<!-- /.notes -->
 
 <section class="examples">
 
@@ -125,6 +125,10 @@ Options:
 ### Notes
 
 -   Data is written to `stdout` as comma-separated values ([CSV][csv]), where the first line is a header line.
+
+</section>
+
+<!-- /.notes -->
 
 <section class="examples">
 
