@@ -30,6 +30,11 @@ limitations under the License.
 y = \mathop{\mathrm{sgn}}(x) \cdot 2^{\lfloor \log_2 |x| \rfloor}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = \operatorname{sgn}(x) \cdot 2^{\lfloor \log_2 |x| \rfloor}" data-equation="eq:trunc2_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@4f3fcade8523fa15f54b51db087c6dae7b9f5c91/lib/node_modules/@stdlib/math/base/special/trunc2f/docs/img/equation_trunc2_function.svg" alt="Truncate to nearest power of two">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>
