@@ -61,6 +61,7 @@
     "logarithm",
     "log",
     "ieee754",
+    "float",
     "single",
     "sgl",
     "precision",
