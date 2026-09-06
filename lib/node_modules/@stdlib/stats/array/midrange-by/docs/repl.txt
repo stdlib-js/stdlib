@@ -1,6 +1,6 @@
 
 {{alias}}( x, clbk[, thisArg] )
-    Computes the midrange of an array via a callback function.
+    Computes the mid-range of an array via a callback function.
 
     If provided an empty array, the function returns `NaN`.
 
@@ -29,7 +29,7 @@
     Returns
     -------
     out: number
-        Midrange.
+        Mid-range.
 
     Examples
     --------

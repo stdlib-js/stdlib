@@ -104,32 +104,14 @@ interface IsBigInt {
 * @example
 * var BigInt = require( '@stdlib/bigint/ctor' );
 *
-* var bool = isBigInt.isPrimitive( BigInt( '1' ) );
+* var bool = isBigInt( BigInt( '1' ) );
 * // returns true
-*
-* @example
-* var BigInt = require( '@stdlib/bigint/ctor' );
-*
-* var bool = isBigInt.isPrimitive( Object( BigInt( '1' ) ) );
-* // returns false
 *
 * @example
 * var BigInt = require( '@stdlib/bigint/ctor' );
 *
 * var bool = isBigInt.isPrimitive( BigInt( '1' ) );
 * // returns true
-*
-* @example
-* var BigInt = require( '@stdlib/bigint/ctor' );
-*
-* var bool = isBigInt.isPrimitive( Object( BigInt( '1' ) ) );
-* // returns false
-*
-* @example
-* var BigInt = require( '@stdlib/bigint/ctor' );
-*
-* var bool = isBigInt.isObject( BigInt( '1' ) );
-* // returns false
 *
 * @example
 * var BigInt = require( '@stdlib/bigint/ctor' );

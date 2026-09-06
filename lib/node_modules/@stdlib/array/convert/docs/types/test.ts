@@ -25,6 +25,7 @@ import convert = require( './index' );
 {
 	convert( [ 1.0, 2.0, 3.0, 4.0 ], 'float64' ); // $ExpectType Float64Array
 	convert( [ 1.0, 2.0, 3.0, 4.0 ], 'float32' ); // $ExpectType Float32Array
+	convert( [ 1.0, 2.0, 3.0, 4.0 ], 'float16' ); // $ExpectType Float16ArrayFallback
 	convert( [ 1.0, 2.0, 3.0, 4.0 ], 'int32' ); // $ExpectType Int32Array
 	convert( [ 1.0, 2.0, 3.0, 4.0 ], 'int16' ); // $ExpectType Int16Array
 	convert( [ 1.0, 2.0, 3.0, 4.0 ], 'int8' ); // $ExpectType Int8Array

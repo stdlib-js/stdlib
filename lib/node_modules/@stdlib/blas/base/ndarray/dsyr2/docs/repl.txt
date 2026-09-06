@@ -1,0 +1,47 @@
+
+{{alias}}( arrays )
+    Performs the symmetric rank 2 operation `A = alpha*x*y^T + alpha*y*x^T + A`,
+    where `alpha` is a scalar, `x` and `y` are one-dimensional ndarrays, and
+    `A` is an `N` by `N` symmetric matrix.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray corresponding to `x`.
+        - a one-dimensional input ndarray corresponding to `y`.
+        - a two-dimensional input/output ndarray corresponding to `A`.
+        - a zero-dimensional ndarray specifying whether the upper or lower
+        triangular part of the symmetric matrix `A` should be referenced.
+        - a zero-dimensional ndarray containing a scalar constant corresponding
+        to `alpha`.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var xbuf = [ 1.0, 2.0, 3.0 ];
+    > var x = new {{alias:@stdlib/ndarray/vector/float64}}( xbuf );
+
+    > var ybuf = [ 2.0, 1.0, 3.0 ];
+    > var y = new {{alias:@stdlib/ndarray/vector/float64}}( ybuf );
+
+    > var abuf = [ [ 1.0, 2.0, 3.0 ], [ 2.0, 1.0, 2.0 ], [ 3.0, 2.0, 1.0 ] ];
+    > var A = new {{alias:@stdlib/ndarray/matrix/float64}}( abuf );
+
+    > var uplo = {{alias:@stdlib/ndarray/from-scalar}}( 'upper' );
+
+    > var opts = { 'dtype': 'float64' };
+    > var alpha = {{alias:@stdlib/ndarray/from-scalar}}( 2.0, opts );
+
+    > {{alias}}( [ x, y, A, uplo, alpha ] );
+    > A
+    <ndarray>[ [ 9.0, 12.0, 21.0 ], [ 2.0, 9.0, 20.0 ], [ 3.0, 2.0, 37.0 ] ]
+
+    See Also
+    --------
+

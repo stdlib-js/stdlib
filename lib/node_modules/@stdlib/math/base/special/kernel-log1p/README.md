@@ -22,6 +22,14 @@ limitations under the License.
 
 > Evaluate a correction term for double-precision base-2 and base-10 logarithms when `1+f` is in `[√2/2, √2]`.
 
+<section class="intro">
+
+The function evaluates a polynomial correction term for double-precision base-2 and base-10 logarithms when `1+f` is in `[√2/2, √2]`. This is a kernel function used internally by logarithm implementations.
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

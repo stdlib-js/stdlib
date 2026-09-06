@@ -137,7 +137,7 @@ The function accepts the following arguments:
 -   **value**: `[in] napi_value` Node-API value.
 -   **out**: `[out] bool*` destination for storing output value.
 -   **message**: `[in] char*` error message.
--   **err**: `[out] napi_value*` pointer for storing a JavaScript error. If not provided a number, the function sets `err` with a JavaScript error; otherwise, `err` is set to `NULL`.
+-   **err**: `[out] napi_value*` pointer for storing a JavaScript error. If not provided a boolean, the function sets `err` with a JavaScript error; otherwise, `err` is set to `NULL`.
 
 ```c
 napi_status stdlib_napi_argv_bool( const napi_env env, const napi_value value, bool *out, const char *message, napi_value *err );

@@ -1,0 +1,8 @@
+---
+type: amend-message
+---
+test: use `powf` in `absgammalnf`
+
+PR-URL: #10437
+
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>

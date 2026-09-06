@@ -1,6 +1,6 @@
 
 {{alias}}( x, mask )
-    Computes the midrange of an array according to a mask.
+    Computes the mid-range of an array according to a mask.
 
     If a `mask` array element is `0`, the corresponding element in `x` is
     considered valid and included in computation.
@@ -21,7 +21,7 @@
     Returns
     -------
     out: number
-        Midrange.
+        Mid-range.
 
     Examples
     --------

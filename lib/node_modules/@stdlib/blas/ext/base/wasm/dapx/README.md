@@ -105,12 +105,6 @@ dapx.ndarray( 3, 5.0, x, 1, x.length-3 );
 // x => <Float64Array>[ 1.0, -2.0, 3.0, 1.0, 10.0, -1.0 ]
 ```
 
-</section>
-
-<!-- /.usage -->
-
-<section class="notes">
-
 * * *
 
 ### Module
@@ -119,7 +113,7 @@ dapx.ndarray( 3, 5.0, x, 1, x.length-3 );
 
 Returns a new WebAssembly [module wrapper][@stdlib/wasm/module-wrapper] instance which uses the provided WebAssembly [memory][@stdlib/wasm/memory] instance as its underlying memory.
 
-<!-- eslint-disable node/no-sync -->
+<!-- eslint-disable n/no-sync -->
 
 ```javascript
 var Memory = require( '@stdlib/wasm/memory' );
@@ -142,7 +136,7 @@ mod.initializeSync();
 
 Adds a scalar constant to each element in a double-precision floating-point strided array.
 
-<!-- eslint-disable node/no-sync -->
+<!-- eslint-disable n/no-sync -->
 
 ```javascript
 var Memory = require( '@stdlib/wasm/memory' );
@@ -195,7 +189,7 @@ The function has the following parameters:
 
 Adds a scalar constant to each element in a double-precision floating-point strided array using alternative indexing semantics.
 
-<!-- eslint-disable node/no-sync -->
+<!-- eslint-disable n/no-sync -->
 
 ```javascript
 var Memory = require( '@stdlib/wasm/memory' );
@@ -251,7 +245,7 @@ The function has the following additional parameters:
 ## Notes
 
 -   If `N <= 0`, both functions return the strided array unchanged.
--   This package implements routines using WebAssembly. When provided arrays which are not allocated on a `dapx` module memory instance, data must be explicitly copied to module memory prior to computation. Data movement may entail a performance cost, and, thus, if you are using arrays external to module memory, you should prefer using [`@stdlib/blas/ext/base/dapx`][@stdlib/blas/ext/base/dapx]. However, if working with arrays which are allocated and explicitly managed on module memory, you can achieve better performance when compared to the pure JavaScript implementations found in [`@stdlib/blas/ext/base/dapx`][@stdlib/blas/ext/base/dapx]. Beware that such performance gains may come at the cost of additional complexity when having to perform manual memory management. Choosing between implementations depends heavily on the particular needs and constraints of your application, with no one choice universally better than the other..
+-   This package implements routines using WebAssembly. When provided arrays which are not allocated on a `dapx` module memory instance, data must be explicitly copied to module memory prior to computation. Data movement may entail a performance cost, and, thus, if you are using arrays external to module memory, you should prefer using [`@stdlib/blas/ext/base/dapx`][@stdlib/blas/ext/base/dapx]. However, if working with arrays which are allocated and explicitly managed on module memory, you can achieve better performance when compared to the pure JavaScript implementations found in [`@stdlib/blas/ext/base/dapx`][@stdlib/blas/ext/base/dapx]. Beware that such performance gains may come at the cost of additional complexity when having to perform manual memory management. Choosing between implementations depends heavily on the particular needs and constraints of your application, with no one choice universally better than the other.
 
 </section>
 

@@ -37,6 +37,6 @@ int main( void ) {
 		p = random_uniform( 0.0, 1.0 );
 		s = random_uniform( 0.0, 20.0 );
 		y = stdlib_base_dists_logistic_quantile( p, mu, s );
-		printf( "p:: %lf, µ:: %lf, s: %lf, Q(p;µ,s): %lf\n", p, mu, s, y );
+		printf( "p:: %lf, μ:: %lf, s: %lf, Q(p;μ,s): %lf\n", p, mu, s, y );
 	}
 }

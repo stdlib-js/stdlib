@@ -28,7 +28,7 @@
 * @return        expected value
 *
 * @example
-* double y = stdlib_base_gumbel_mean( 0.0, 1.0 );
+* double y = stdlib_base_dists_gumbel_mean( 0.0, 1.0 );
 * // returns ~0.577
 */
 double stdlib_base_dists_gumbel_mean( const double mu, const double beta ) {

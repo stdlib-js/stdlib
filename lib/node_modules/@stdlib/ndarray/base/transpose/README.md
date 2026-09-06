@@ -40,31 +40,28 @@ limitations under the License.
 var transpose = require( '@stdlib/ndarray/base/transpose' );
 ```
 
-#### transpose( x )
+#### transpose( x, writable )
 
 Transposes a matrix (or a stack of matrices) `x`.
 
 ```javascript
+var getData = require( '@stdlib/ndarray/data-buffer' );
 var array = require( '@stdlib/ndarray/array' );
 
 var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ] );
-// returns <ndarray>
+// returns <ndarray>[ [ 1, 2, 3 ], [ 4, 5, 6 ] ]
 
-var sh = x.shape;
-// returns [ 2, 3 ]
+var y = transpose( x, false );
+// returns <ndarray>[ [ 1, 4 ], [ 2, 5 ], [ 3, 6 ] ]
 
-var y = transpose( x );
-// returns <ndarray>
-
-sh = y.shape;
-// returns [ 3, 2 ]
-
-var bool = ( x.data === y.data );
-// returns true
-
-bool = ( x.get( 0, 1 ) === y.get( 1, 0 ) );
+var bool = ( getData( x ) === getData( y ) );
 // returns true
 ```
+
+The function accepts the following arguments:
+
+-   **x**: input ndarray.
+-   **writable**: boolean indicating whether a returned ndarray should be writable.
 
 </section>
 
@@ -76,8 +73,9 @@ bool = ( x.get( 0, 1 ) === y.get( 1, 0 ) );
 
 ## Notes
 
--   The returned ndarray is a **view** of the input ndarray. Accordingly, writing to the original ndarray will **mutate** the returned ndarray and vice versa. While powerful, this can lead to subtle bugs. In general, one should handle the returned ndarray as **read-only**.
+-   The returned ndarray is a **view** of the input ndarray. Accordingly, writing to the original ndarray will **mutate** the returned ndarray and vice versa.
 -   If provided an ndarray with fewer than two dimensions, the function raises an exception.
+-   The `writable` parameter **only** applies to ndarray constructors supporting **read-only** instances.
 
 </section>
 
@@ -133,7 +131,7 @@ var buf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var x = new ndarray( 'float64', buf, [ 2, 2, 3 ], [ 0, 3, 1 ], 0, 'row-major' );
 
 // Transpose the stack of matrices:
-var y = transpose( x );
+var y = transpose( x, false );
 
 // Print the stacks:
 console.log( '' );

@@ -24,7 +24,7 @@
 * ## Notes
 *
 * -   If `a` or `b` is not an integer value, the function returns `NaN`.
-* -   If provided `a >= b`, the function returns `NaN`.
+* -   If provided `a > b`, the function returns `NaN`.
 *
 * @param a - minimum support
 * @param b - maximum support

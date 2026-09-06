@@ -60,6 +60,7 @@ bool = isBoxedPrimitive( true );
     -   `new Number()`
     -   `new String()`
     -   `Object( Symbol() )` (ES6/ES2015)
+    -   `Object( BigInt() )` (ES11/ES2020)
 
 </section>
 

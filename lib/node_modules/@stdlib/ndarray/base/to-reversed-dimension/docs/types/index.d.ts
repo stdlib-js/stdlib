@@ -57,7 +57,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * arr = ndarray2array( y );
 * // returns [ [ 5.0, 6.0 ], [ 3.0, 4.0 ], [ 1.0, 2.0 ] ]
 */
-declare function toReversedDimension<T extends ndarray>( x: T, dim: number ): T;
+declare function toReversedDimension<T extends ndarray = ndarray>( x: T, dim: number ): T;
 
 
 // EXPORTS //

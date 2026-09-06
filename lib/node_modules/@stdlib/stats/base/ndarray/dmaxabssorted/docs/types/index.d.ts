@@ -25,15 +25,19 @@ import { float64ndarray } from '@stdlib/types/ndarray';
 /**
 * Computes the maximum absolute value of a sorted one-dimensional double-precision floating-point ndarray.
 *
-* @param arrays - array-like object containing an input ndarray
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns maximum absolute value
 *
 * @example
-* var Float64Array = require( '@stdlib/array/float64' );
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
 *
-* var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
-* var x = new ndarray( 'float64', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+* var x = new Float64Vector( [ 1.0, 2.0, 3.0, 4.0 ] );
 *
 * var v = dmaxabssorted( [ x ] );
 * // returns 4.0

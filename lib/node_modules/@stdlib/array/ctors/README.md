@@ -51,6 +51,7 @@ var ctor = ctors( 'float64' );
 
 The function returns constructors for the following data types:
 
+-   `float16`: half-precision floating-point numbers.
 -   `float32`: single-precision floating-point numbers.
 -   `float64`: double-precision floating-point numbers.
 -   `complex64`: single-precision complex floating-point numbers.

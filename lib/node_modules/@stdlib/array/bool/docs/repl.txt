@@ -321,10 +321,10 @@
     ----------
     target: integer
         Target start index position.
-    
+
     start: integer
         Source start index position.
-    
+
     end: integer (optional)
         Source end index position. Default: out.length.
 
@@ -332,7 +332,7 @@
     -------
     out: BooleanArray
         Modified array.
-    
+
     Examples
     --------
     > var arr = new {{alias}}( [ true, false, false, true ] )
@@ -421,7 +421,7 @@
     -------
     out: BooleanArray
         Modified array.
-    
+
     Examples
     --------
     > var arr = new {{alias}}( 3 )
@@ -461,7 +461,7 @@
     -------
     out: BooleanArray
         A new typed array.
-    
+
     Examples
     --------
     > function predicate( v ) { return ( v === true ); };
@@ -633,7 +633,7 @@
 
     thisArg: Any (optional)
         Execution context.
-    
+
     Examples
     --------
     > var str = '%';
@@ -759,7 +759,7 @@
     -------
     iterator: Iterator
         Iterator for iterating over array index keys.
-    
+
     Examples
     --------
     > var arr = new {{alias}}( [ true, false ] )
@@ -912,12 +912,12 @@
 
     initialValue: any (optional)
         Initial accumulation value.
-    
+
     Returns
     -------
     out: any
         Accumulated result.
-    
+
     Examples
     --------
     > function reducer( acc, v ) { return ( acc && v ); };
@@ -1122,10 +1122,10 @@
     ----------
     locales: string|Array (optional)
         Locale identifier(s).
-    
+
     options: Object (optional)
         An object containing serialization options.
-    
+
     Returns
     -------
     str: string
@@ -1221,7 +1221,7 @@
     -------
     iterator: Iterator
         Iterator for iterating over array values.
-    
+
     Examples
     --------
     > var arr = new {{alias}}( [ true, false ] )
@@ -1236,22 +1236,22 @@
 
 
 {{alias}}.prototype.with( index, value )
-    Returns a new typed array with the element at a provided index replaced
-    with a provided value.
+    Returns a new typed array with the element at a provided index replaced with
+    a provided value.
 
     Parameters
     ----------
     index: integer
         Element index.
-    
+
     value: boolean
-        Element value.  
+        Element value.
 
     Returns
     -------
     out: BooleanArray
         New typed array.
-    
+
     Examples
     --------
     > var arr = new {{alias}}( [ true, false, true ] )

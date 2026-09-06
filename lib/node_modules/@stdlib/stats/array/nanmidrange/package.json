@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/stats/array/nanmidrange",
   "version": "0.0.0",
-  "description": "Calculate the midrange of an array, ignoring NaN values.",
+  "description": "Calculate the mid-range of an array, ignoring NaN values.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -61,6 +61,7 @@
     "min",
     "range",
     "midrange",
+    "mid-range",
     "extremes",
     "dispersion",
     "domain",

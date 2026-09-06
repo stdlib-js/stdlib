@@ -21,8 +21,8 @@
 
 #include "stdlib/ndarray/ctor.h"
 #include "stdlib/ndarray/orders.h"
-#include <stdint.h>
 #include <stdbool.h>
+#include <stdint.h>
 
 /**
 * Macro containing the preamble for nested loops which operate on elements of an eight-dimensional ndarray.
@@ -35,7 +35,7 @@
 *     -   `S@`, `i@`, and `d@x#` where `@` corresponds to the loop number, with `0` being the innermost loop.
 *
 * @example
-* STDLIB_NDARRAY_EVERY_8D_LOOP_PREMABLE {
+* STDLIB_NDARRAY_EVERY_8D_LOOP_PREAMBLE {
 *     // Innermost loop body...
 * }
 * STDLIB_NDARRAY_EVERY_8D_LOOP_EPILOGUE
@@ -126,7 +126,7 @@
 * Macro containing the epilogue for nested loops which operate on elements of an eight-dimensional ndarray.
 *
 * @example
-* STDLIB_NDARRAY_EVERY_8D_LOOP_PREMABLE {
+* STDLIB_NDARRAY_EVERY_8D_LOOP_PREAMBLE {
 *     // Innermost loop body...
 * }
 * STDLIB_NDARRAY_EVERY_8D_LOOP_EPILOGUE

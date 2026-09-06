@@ -1,0 +1,10 @@
+---
+type: amend-message
+---
+chore: fix JavaScript lint errors
+
+PR-URL: #10804
+Closes: #10801
+
+Reviewed-by: Geo Daoyu <geodaoyu@foxmail.com>
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>

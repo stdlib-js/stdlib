@@ -1,0 +1,24 @@
+
+{{alias}}( x )
+    Tests whether a double-precision floating-point number is NaN.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether an input value is NaN.
+
+    Examples
+    --------
+    > var bool = {{alias}}( NaN )
+    true
+    > bool = {{alias}}( 5.0 )
+    false
+
+    See Also
+    --------
+

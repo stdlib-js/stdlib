@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the moment-generating function (MGF) for a logistic distribution with mean `mu` and scale parameter `s` at a value `t`.
+* Evaluates the moment-generating function (MGF) for a logistic distribution with location parameter `mu` and scale parameter `s` at a value `t`.
 */
 double stdlib_base_dists_logistic_mgf( const double t, const double mu, const double s );
 

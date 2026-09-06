@@ -59,6 +59,7 @@
     "floating-point",
     "float",
     "float16",
+    "ieee754",
     "exponent",
     "min",
     "minimum",

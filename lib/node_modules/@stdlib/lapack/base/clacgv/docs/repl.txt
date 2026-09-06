@@ -30,22 +30,19 @@
     --------
     // Standard usage:
     > var cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
-    > {{alias}}( 2, cx, 1 );
-    > var z = cx.get( 0 )
-    <Complex64>[ 1.0, -2.0 ]
+    > {{alias}}( 2, cx, 1 )
+    <Complex64Array>[ 1.0, -2.0, 3.0, -4.0 ]
 
     // Advanced indexing:
     > cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-    > {{alias}}( 2, cx, 2 );
-    > z = cx.get( 0 )
-    <Complex64>[ 1.0, -2.0 ]
+    > {{alias}}( 2, cx, 2 )
+    <Complex64Array>[ 1.0, -2.0, 3.0, 4.0, 5.0, -6.0 ]
 
     // Using typed array views:
     > var cx0 = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
     > var cx1 = new {{alias:@stdlib/array/complex64}}( cx0.buffer, cx0.BYTES_PER_ELEMENT*1 );
-    > {{alias}}( 2, cx1, 1 );
-    > z = cx0.get( 1 )
-    <Complex64>[ 3.0, -4.0 ]
+    > {{alias}}( 2, cx1, 1 )
+    <Complex64Array>[ 3.0, -4.0, 5.0, -6.0 ]
 
 
 {{alias}}.ndarray( N, cx, strideCX, offsetCX )
@@ -79,15 +76,13 @@
     --------
     // Standard usage:
     > var cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
-    > {{alias}}.ndarray( 2, cx, 1, 0 );
-    > var z = cx.get( 0 )
-    <Complex64>[ 1.0, -2.0 ]
+    > {{alias}}.ndarray( 2, cx, 1, 0 )
+    <Complex64Array>[ 1.0, -2.0, 3.0, -4.0 ]
 
     // Advanced indexing:
     > cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
-    > {{alias}}.ndarray( 2, cx, 1, 2 );
-    > z = cx.get( 2 )
-    <Complex64>[ 5.0, -6.0 ]
+    > {{alias}}.ndarray( 2, cx, 1, 2 )
+    <Complex64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, -6.0, 7.0, -8.0 ]
 
     See Also
     --------

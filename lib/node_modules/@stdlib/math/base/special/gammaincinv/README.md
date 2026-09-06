@@ -70,7 +70,7 @@ Again, for given `p` and `a` the function returns the `x` which satisfies `p = Q
 var gammaincinv = require( '@stdlib/math/base/special/gammaincinv' );
 ```
 
-#### gammaincinv( p, s\[, upper ] )
+#### gammaincinv( p, a\[, upper ] )
 
 Inverts the regularized incomplete gamma function. Contrary to the more commonly used definition, in this implementation the first argument is the probability `p` and the second argument is the scale factor `a`. By default, the function inverts the _lower_ regularized incomplete gamma function, `P(x,a)`. To invert the _upper_ function instead, i.e. `Q(x,a)`, set the `upper` argument to `true`.
 
@@ -135,6 +135,109 @@ logEachMap( 'p: %0.4f, \t a: %0.4f, \t P^(-1)(p, a): %0.4f', p, a, gammaincinv )
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/gammaincinv.h"
+```
+
+#### stdlib_base_gammaincinv( p, a, upper )
+
+Inverts the regularized incomplete gamma function.
+
+```c
+double y = stdlib_base_gammaincinv( 0.5, 2.0, false );
+// returns ~1.678
+
+y = stdlib_base_gammaincinv( 0.1, 10.0, false );
+// returns ~6.221
+
+y = stdlib_base_gammaincinv( 0.75, 3.0, true );
+// returns ~1.727
+```
+
+The function accepts the following arguments:
+
+-   **p**: `[in] double` input probability.
+-   **a**: `[in] double` scale parameter.
+-   **upper**: `[in] bool` boolean indicating if the function should invert the upper tail of the incomplete gamma function.
+
+```c
+double stdlib_base_gammaincinv( const double p, const double a, const bool upper );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/gammaincinv.h"
+#include "stdlib/constants/float64/eps.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double p;
+    double a;
+    double y;
+    int i;
+
+    for ( i = 0; i < 100; i++ ) {
+        p = random_uniform( 0.0, 1.0 );
+        a = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 20.0 );
+        y = stdlib_base_gammaincinv( p, a, false );
+        printf( "p: %lf, a: %lf, y: %lf\n", p, a, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

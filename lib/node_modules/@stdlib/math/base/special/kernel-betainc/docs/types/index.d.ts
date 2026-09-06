@@ -20,10 +20,10 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/array';
+import { NumericArray } from '@stdlib/types/array';
 
 /**
-* Interface describing `kernalBetaInc`.
+* Interface describing `kernelBetainc`.
 */
 interface Routine {
 	/**
@@ -38,8 +38,8 @@ interface Routine {
 	* @param x - function input
 	* @param a - function parameter
 	* @param b - function parameter
-	* @param invert - boolean indicating if the function should return the upper tail of the incomplete beta function instead
-	* @param normalized - boolean indicating if the function should evaluate the regularized boolean beta function
+	* @param regularized - boolean indicating if the function should evaluate the regularized incomplete beta function
+	* @param upper - boolean indicating if the function should return the upper tail of the incomplete beta function instead
 	* @returns function value and first derivative
 	*
 	* @example
@@ -50,7 +50,7 @@ interface Routine {
 	* var out = kernelBetainc( 0.2, 1.0, 2.0, true, false );
 	* // returns [ 0.36, 1.6 ]
 	*/
-	( x: number, a: number, b: number, invert: boolean, normalized: boolean ): Array<number>;
+	( x: number, a: number, b: number, regularized: boolean, upper: boolean ): Array<number>;
 
 	/**
 	* Evaluates the incomplete beta function and its first derivative and assigns results to a provided output array.
@@ -64,8 +64,8 @@ interface Routine {
 	* @param x - function input
 	* @param a - function parameter
 	* @param b - function parameter
-	* @param invert - boolean indicating if the function should return the upper tail of the incomplete beta function instead
-	* @param normalized - boolean indicating if the function should evaluate the regularized boolean beta function
+	* @param regularized - boolean indicating if the function should evaluate the regularized incomplete beta function
+	* @param upper - boolean indicating if the function should return the upper tail of the incomplete beta function instead
 	* @param out - output array
 	* @param stride - output array stride
 	* @param offset - output array index offset
@@ -79,7 +79,7 @@ interface Routine {
 	* var bool = ( arr === out );
 	* // returns true
 	*/
-	assign<T = unknown>( x: number, a: number, b: number, invert: boolean, normalized: boolean, out: Collection<T>, stride: number, offset: number ): Collection<T | number>;
+	assign<T extends NumericArray>( x: number, a: number, b: number, regularized: boolean, upper: boolean, out: T, stride: number, offset: number ): T;
 }
 
 /**
@@ -94,8 +94,8 @@ interface Routine {
 * @param x - function input
 * @param a - function parameter
 * @param b - function parameter
-* @param invert - boolean indicating if the function should return the upper tail of the incomplete beta function instead
-* @param normalized - boolean indicating if the function should evaluate the regularized boolean beta function
+* @param regularized - boolean indicating if the function should evaluate the regularized incomplete beta function
+* @param upper - boolean indicating if the function should return the upper tail of the incomplete beta function instead
 * @returns function value and first derivative
 *
 * @example

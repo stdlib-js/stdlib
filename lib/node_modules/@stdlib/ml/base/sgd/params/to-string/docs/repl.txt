@@ -1,0 +1,40 @@
+
+{{alias}}( params[, options] )
+    Serializes an SGD trainer parameters object as a formatted string.
+
+    Parameters
+    ----------
+    params: Object
+        SGD trainer parameters object.
+
+    options: Object (optional)
+        Function options.
+
+    options.digits: number (optional)
+        Number of digits to display after decimal points. Default: 4.
+
+    Returns
+    -------
+    out: string
+        Serialized parameters.
+
+    Examples
+    --------
+    > var params = {
+    ...    'penaltyParams': new {{alias:@stdlib/array/float64}}( [ 2.5, 0.0 ] ),
+    ...    'learningRateParams': new {{alias:@stdlib/array/float64}}( [ 0.01, 0.0 ] ),
+    ...    'lossFunctionParams': new {{alias:@stdlib/array/float64}}( [ 0.0 ] ),
+    ...    'intercept': 0.0,
+    ...    'maxIter': 1000,
+    ...    'penalty': 'l2',
+    ...    'learningRate': 'constant',
+    ...    'lossFunction': 'hinge',
+    ...    'fitIntercept': true,
+    ...    'method': 'Stochastic Gradient Descent'
+    ... };
+    > var s = {{alias}}( params )
+    <string>
+
+    See Also
+    --------
+

@@ -55,7 +55,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-       "@stdlib/math/base/special/sqrt",
+        "@stdlib/math/base/special/sqrt",
         "@stdlib/math/base/special/abs",
         "@stdlib/math/base/special/sincos",
         "@stdlib/constants/float64/pinf",
@@ -73,7 +73,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-       "@stdlib/math/base/special/sqrt",
+        "@stdlib/math/base/special/sqrt",
         "@stdlib/math/base/special/abs",
         "@stdlib/math/base/special/sincos",
         "@stdlib/constants/float64/pinf",

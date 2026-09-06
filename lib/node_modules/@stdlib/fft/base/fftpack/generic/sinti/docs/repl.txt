@@ -1,0 +1,64 @@
+
+{{alias}}( N, workspace, strideW, offsetW )
+    Initializes a workspace array for performing a sine transform.
+
+    The workspace array is divided into four sections:
+
+    1. sine table: the section ranges from indices 0 to N/2 and is used to
+    store a table of precomputed sine coefficients used by sine transforms.
+
+    2. scratch/workspace: the section ranges from indices N/2 to 3N/2 and is
+    used while performing transforms. This section is not updated during
+    initialization.
+
+    3. twiddle factors: the section ranges from indices (3N/2)+1 to (5N/2)+1
+    and stores a table of reusable complex exponential constants as cosine/sine
+    pairs.
+
+    4. radix factor table: the section starts at index (5N/2)+2 and stores the
+    sequence length N+1, the number of factors into which N+1 was decomposed,
+    and the individual integer radix factors.
+
+    Any remaining array space remains as unused storage.
+
+    Parameters
+    ----------
+    N: integer
+        Length of the sequence.
+
+    workspace: ArrayLikeObject<number>
+        Workspace array.
+
+    strideW: integer
+        Stride length for `workspace`.
+
+    offsetW: integer
+        Starting index for `workspace`.
+
+    Returns
+    -------
+    out: ArrayLikeObject<number>
+        Workspace array.
+
+    Examples
+    --------
+    > var N = 7;
+    > var len = {{alias:@stdlib/math/base/special/floor}}( 2.5*N ) + 34;
+    > var workspace = new {{alias:@stdlib/array/float64}}( len );
+    > var out = {{alias}}( N, workspace, 1, 0 )
+    <Float64Array>
+    > var bool = ( out === workspace )
+    true
+    > var ns2 = {{alias:@stdlib/math/base/special/floor}}( N/2 );
+    > var sineTable = workspace.slice( 0, ns2 )
+    <Float64Array>[ ~0.765, ~1.414, ~1.848 ]
+    > var iw = ns2 + N + 1;
+    > var twiddleFactors = workspace.slice( iw, iw + (N+1) )
+    <Float64Array>[ ~0.707, ~0.707, 0, 0, 0, 0, 0, 0 ]
+    > var fw = ns2 + 2*(N+1);
+    > var factors = workspace.slice( fw, fw + 4 )
+    <Float64Array>[ 8, 2, 2, 4 ]
+
+    See Also
+    --------
+

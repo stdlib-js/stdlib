@@ -1,0 +1,35 @@
+
+{{alias}}( arrays )
+    Subtracts the elements of an output one-dimensional double-precision
+    floating-point ndarray from the corresponding elements in an input one-
+    dimensional double-precision floating-point ndarray and assigns the results
+    to the output ndarray.
+
+    The output ndarray is modified *in-place* (i.e., the output ndarray is
+    *mutated*).
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a one-dimensional output ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var xbuf = [ 1.0, 2.0, 3.0, 4.0 ];
+    > var x = new {{alias:@stdlib/ndarray/vector/float64}}( xbuf );
+    > var ybuf = [ 2.0, 4.0, 6.0, 8.0 ];
+    > var y = new {{alias:@stdlib/ndarray/vector/float64}}( ybuf );
+    > {{alias}}( [ x, y ] )
+    <ndarray>[ -1.0, -2.0, -3.0, -4.0 ]
+
+    See Also
+    --------
+

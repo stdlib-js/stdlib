@@ -97,10 +97,11 @@ static double rand_double( void ) {
 */
 static double benchmark1( int iterations, int len ) {
 	double elapsed;
-	double x[ len ];
+	double *x;
 	double t;
 	int i;
 
+	x = (double *) malloc( len * sizeof( double ) );
 	for ( i = 0; i < len; i++ ) {
 		x[ i ] = ( rand_double()*200.0 ) - 100.0;
 	}
@@ -116,6 +117,7 @@ static double benchmark1( int iterations, int len ) {
 	if ( x[ 0 ] != x[ 0 ] ) {
 		printf( "should not return NaN\n" );
 	}
+	free( x );
 	return elapsed;
 }
 
@@ -128,10 +130,11 @@ static double benchmark1( int iterations, int len ) {
 */
 static double benchmark2( int iterations, int len ) {
 	double elapsed;
-	double x[ len ];
+	double *x;
 	double t;
 	int i;
 
+	x = (double *) malloc( len * sizeof( double ) );
 	for ( i = 0; i < len; i++ ) {
 		x[ i ] = ( rand_double()*200.0 ) - 100.0;
 	}
@@ -147,6 +150,7 @@ static double benchmark2( int iterations, int len ) {
 	if ( x[ 0 ] != x[ 0 ] ) {
 		printf( "should not return NaN\n" );
 	}
+	free( x );
 	return elapsed;
 }
 

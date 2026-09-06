@@ -20,7 +20,7 @@ limitations under the License.
 
 # scnrm2
 
-> Compute the L2-norm of a complex single-precision floating-point vector.
+> Compute the L2-norm of a single-precision complex floating-point vector.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var scnrm2 = require( '@stdlib/blas/base/scnrm2' );
 
 #### scnrm2( N, x, strideX )
 
-Computes the L2-norm of a complex single-precision floating-point vector.
+Computes the L2-norm of a single-precision complex floating-point vector.
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
@@ -78,7 +78,7 @@ var norm = scnrm2( 2, x1, 1 );
 
 #### scnrm2.ndarray( N, x, strideX, offset )
 
-Computes the L2-norm of a complex single-precision floating-point vector using alternative indexing semantics.
+Computes the L2-norm of a single-precision complex floating-point vector using alternative indexing semantics.
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
@@ -175,7 +175,7 @@ console.log( norm );
 
 #### c_scnrm2( N, \*X, strideX )
 
-Computes the L2-norm of a complex single-precision floating-point vector.
+Computes the L2-norm of a single-precision complex floating-point vector.
 
 ```c
 const float X[] = { 0.3f, 0.1f, 0.5f, 0.0f, 0.0f, 0.5f, 0.0f, 0.2f };
@@ -196,7 +196,7 @@ float c_scnrm2( const CBLAS_INT N, const void *X, const CBLAS_INT strideX );
 
 #### c_scnrm2_ndarray( N, \*X, strideX, offsetX )
 
-Computes the L2-norm of a complex single-precision floating-point vector using alternative indexing semantics.
+Computes the L2-norm of a single-precision complex floating-point vector using alternative indexing semantics.
 
 ```c
 const float X[] = { 0.3f, 0.1f, 0.5f, 0.0f, 0.0f, 0.5f, 0.0f, 0.2f };

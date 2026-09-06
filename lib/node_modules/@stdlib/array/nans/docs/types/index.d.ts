@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Complex128Array, Complex64Array, FloatingPointDataType } from '@stdlib/types/array';
+import { Complex128Array, Complex64Array, Float16Array, FloatingPointDataType } from '@stdlib/types/array';
 
 /**
 * Data type.
@@ -52,6 +52,19 @@ declare function nans( length: number, dtype: 'float64' ): Float64Array;
 * // returns <Float32Array>[ NaN, NaN ]
 */
 declare function nans( length: number, dtype: 'float32' ): Float32Array;
+
+/**
+* Creates an array filled with NaNs and having a specified length.
+*
+* @param length - array length
+* @param dtype - data type
+* @returns filled array
+*
+* @example
+* var arr = nans( 2, 'float16' );
+* // returns <Float16Array>[ NaN, NaN ]
+*/
+declare function nans( length: number, dtype: 'float16' ): Float16Array;
 
 /**
 * Creates an array filled with NaNs and having a specified length.
@@ -107,6 +120,7 @@ declare function nans( length: number, dtype: 'generic' ): Array<number>;
 *
 * -   `float64`: double-precision floating-point numbers (IEEE 754)
 * -   `float32`: single-precision floating-point numbers (IEEE 754)
+* -   `float16`: half-precision floating-point numbers (IEEE 754)
 * -   `complex128`: double-precision complex floating-point numbers
 * -   `complex64`: single-precision complex floating-point numbers
 * -   `generic`: generic JavaScript values

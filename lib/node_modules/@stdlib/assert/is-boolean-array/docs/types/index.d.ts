@@ -26,7 +26,7 @@ interface IsBooleanArray {
 	* Tests if a value is an array-like object of booleans.
 	*
 	* @param value - value to test
-	* @returns  boolean indicating whether value is an array-like object of booleans
+	* @returns boolean indicating whether value is an array-like object of booleans
 	*
 	* @example
 	* var bool = isBooleanArray( [ true, false, true ] );

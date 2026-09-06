@@ -33,6 +33,6 @@ int main( void ) {
 	for ( i = 0; i < 10; i++ ) {
 		mu = random_uniform( -20.0, 20.0 );
 		result = stdlib_base_dists_degenerate_stdev( mu );
-		printf( "µ: %lf, SD(X;µ): %lf\n", mu, result );
+		printf( "μ: %lf, SD(X;μ): %lf\n", mu, result );
 	}
 }

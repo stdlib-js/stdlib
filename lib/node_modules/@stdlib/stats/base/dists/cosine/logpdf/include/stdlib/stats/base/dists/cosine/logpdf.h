@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the logarithm of the probability density function (PDF) for a raised cosine distribution with parameters `mu` (location parameter) and `s` (scale parameter).
+* Evaluates the natural logarithm of the probability density function (PDF) for a raised cosine distribution with parameters `mu` (location parameter) and `s` (scale parameter).
 */
 double stdlib_base_dists_cosine_logpdf( const double x, const double mu, const double s );
 

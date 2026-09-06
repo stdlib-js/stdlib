@@ -127,15 +127,13 @@ The returned frequency table is an `array` of `arrays`. Each sub-array correspon
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var floor = require( '@stdlib/math/base/special/floor' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var take = require( '@stdlib/array/take' );
 var tabulateBy = require( '@stdlib/utils/tabulate-by' );
 
 var vals;
 var arr;
 var out;
-var i;
-var j;
 
 function indicator( value ) {
     return value[ 0 ];
@@ -144,11 +142,7 @@ function indicator( value ) {
 vals = [ 'beep', 'boop', 'foo', 'bar', 'woot', 'woot' ];
 
 // Generate a random collection...
-arr = [];
-for ( i = 0; i < 100; i++ ) {
-    j = floor( randu()*vals.length );
-    arr.push( vals[ j ] );
-}
+arr = take( vals, discreteUniform( 100, 0, vals.length - 1 ) );
 
 // Generate a frequency table:
 out = tabulateBy( arr, indicator );

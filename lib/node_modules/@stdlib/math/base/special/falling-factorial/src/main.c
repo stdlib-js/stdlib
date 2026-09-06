@@ -39,6 +39,7 @@
 #include "stdlib/constants/float64/max.h"
 #include "stdlib/constants/float64/pinf.h"
 #include "stdlib/constants/float64/max_nth_factorial.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdint.h>
 #include <stdbool.h>
 
@@ -78,7 +79,7 @@ static double risingFactorial( const double x, const int32_t n ) {
 	bool inv;
 
 	if ( stdlib_base_is_nan( x ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	nc = n;
 	xc = x;
@@ -146,7 +147,7 @@ double stdlib_base_falling_factorial( const double x, const int32_t n ) {
 	double xc;
 
 	if ( stdlib_base_is_nan( x ) || !stdlib_base_is_nonnegative_integer( n ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( x == 0.0 ) {
 		return 0.0;

@@ -96,7 +96,7 @@ The function accepts the same `options` and has the same defaults as [`fs.append
 
 -   The difference between this `appendFile.sync` and [`fs.appendFileSync()`][node-fs] is that [`fs.appendFileSync()`][node-fs] will throw if an `error` is encountered (e.g., if given a non-existent directory path) and this API will return an `error`. Hence, the following anti-pattern
 
-    <!-- eslint-disable node/no-sync -->
+    <!-- eslint-disable n/no-sync, no-restricted-syntax -->
 
     ```javascript
     var fs = require( 'fs' );
@@ -109,7 +109,7 @@ The function accepts the same `options` and has the same defaults as [`fs.append
 
     can be replaced by an approach which addresses existence via `error` handling.
 
-    <!-- eslint-disable node/no-sync -->
+    <!-- eslint-disable n/no-sync -->
 
     ```javascript
     var appendFile = require( '@stdlib/fs/append-file' );
