@@ -22,7 +22,7 @@
 #
 # -   `$1` - status flag specifying whether or not the merge being done is a squash merge
 #
-# This hook cannot does __not__ affect the outcome of `git merge` and is not executed if merge fails due to conflicts.
+# This hook does __not__ affect the outcome of `git merge` and is not executed if merge fails due to conflicts.
 
 # shellcheck disable=SC2181
 

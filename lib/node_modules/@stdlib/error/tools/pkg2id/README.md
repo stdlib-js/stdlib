@@ -70,7 +70,7 @@ var v = pkg2id( 'unrecognized_pkg_beep_boop_bop_bip' );
 
     ```javascript
     var v = pkg2id( '@stdlib/math-base-special-sin' );
-    // returns '0YK'
+    // returns '0YL'
     ```
 
 </section>
@@ -177,6 +177,8 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
+
+</section>
 
 <!-- /.related -->
 

@@ -20,7 +20,9 @@
 
 // ESLint plugins:
 var plugins = [
-	'node',
+	'@stylistic/ts',
+	'jsdoc',
+	'n',
 	'stdlib',
 	'@cspell'
 ];

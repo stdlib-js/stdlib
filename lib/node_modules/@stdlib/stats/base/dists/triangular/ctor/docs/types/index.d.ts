@@ -29,7 +29,7 @@ declare class Triangular {
 	* @param b - maximum support (default: 1.0)
 	* @param c - mode (default: 0.5)
 	* @throws `a` must be smaller than or equal to `b` and `c`
-	* @throws `b` must be greater than or equal to `a` and `b`
+	* @throws `b` must be greater than or equal to `a` and `c`
 	* @throws `c` must be greater than or equal to `a` and smaller than or equal to `b`
 	* @returns distribution instance
 	*
@@ -66,12 +66,12 @@ declare class Triangular {
 	a: number;
 
 	/**
-	* Maximum support. If set, the value must be greater than or equal to `a` and `b`.
+	* Maximum support. If set, the value must be greater than or equal to `a` and `c`.
 	*/
 	b: number;
 
 	/**
-	* Maximum support. If set, the value must be greater than or equal to `a` and smaller than or equal to `b`.
+	* Mode. If set, the value must be greater than or equal to `a` and smaller than or equal to `b`.
 	*/
 	c: number;
 

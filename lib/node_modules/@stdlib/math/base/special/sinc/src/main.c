@@ -21,6 +21,7 @@
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/assert/is_infinite.h"
 #include "stdlib/constants/float64/pi.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Computes the normalized cardinal sine of a number.
@@ -53,7 +54,7 @@
 */
 double stdlib_base_sinc( const double x ) {
 	if ( stdlib_base_is_nan( x ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( stdlib_base_is_infinite( x ) ) {
 		return 0.0;

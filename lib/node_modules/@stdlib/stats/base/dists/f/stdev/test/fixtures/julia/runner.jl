@@ -26,7 +26,6 @@ Generate fixture data and write to file.
 
 # Arguments
 
-* `x`: input value
 * `d1`: numerator degrees of freedom
 * `d2`: denominator degrees of freedom
 * `name::AbstractString`: output filename

@@ -26,7 +26,7 @@
 * -   If `alpha <= 0` or `beta <= 0`, the function returns `NaN`.
 *
 * @param alpha - shape parameter
-* @param beta - rate parameter
+* @param beta - scale parameter
 * @returns mode
 *
 * @example

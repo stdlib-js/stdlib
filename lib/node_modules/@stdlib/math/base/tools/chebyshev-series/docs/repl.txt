@@ -1,0 +1,55 @@
+
+{{alias}}( x, c )
+    Evaluates a Chebyshev series using double-precision floating-point
+    arithmetic.
+    The implementation uses Clenshaw's recurrence algorithm and follows the
+    convention where the constant term is halved and polynomials are evaluated
+    at x/2.
+
+    Parameters
+    ----------
+    x: number
+        Value at which to evaluate the Chebyshev series (expected to be in
+        [-2, 2]).
+
+    c: Array<number>
+        Chebyshev series coefficients ordered in descending degree.
+
+    Returns
+    -------
+    out: number
+        Evaluated Chebyshev series.
+
+    Examples
+    --------
+    > var c = [ 1.0, 0.5 ];
+    > var v = {{alias}}( 1.0, c )
+    0.75
+
+
+{{alias}}.factory( c )
+    Returns a function for evaluating a Chebyshev series using double-precision
+    floating-point arithmetic.
+    The returned function uses Clenshaw's recurrence algorithm and follows the
+    convention where the constant term is halved and polynomials are evaluated
+    at x/2.
+
+    Parameters
+    ----------
+    c: Array<number>
+        Chebyshev series coefficients ordered in descending degree.
+
+    Returns
+    -------
+    fcn: Function
+        Function for evaluating a Chebyshev series.
+
+    Examples
+    --------
+    > var f = {{alias}}.factory( [ 1.0, 0.5 ] );
+    > var v = f( 1.0 )
+    0.75
+
+    See Also
+    --------
+

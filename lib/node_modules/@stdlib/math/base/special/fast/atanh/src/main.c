@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/math/base/special/fast/atanh.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/assert/is_infinite.h"
 #include "stdlib/math/base/special/ln.h"
@@ -37,7 +38,7 @@ double stdlib_base_fast_atanh( const double x ) {
 		return x;
 	}
 	if ( stdlib_base_is_nan( x ) || stdlib_base_is_infinite( x ) ) {
-		return 0.0 / 0.0 ; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	return 0.5 * stdlib_base_ln( ( 1.0 + x ) / ( 1.0 - x ) );
 }

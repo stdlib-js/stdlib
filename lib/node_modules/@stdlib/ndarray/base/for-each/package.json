@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/ndarray/base/for-each",
   "version": "0.0.0",
-  "description": "Invoke a callback function once for each ndarray element.",
+  "description": "Invoke a callback function once for each element in an ndarray.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

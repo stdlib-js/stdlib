@@ -24,6 +24,7 @@ var resolve = require( 'path' ).resolve;
 var bench = require( '@stdlib/bench' );
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
+var format = require( '@stdlib/string/format' );
 var real = require( '@stdlib/complex/float64/real' );
 var imag = require( '@stdlib/complex/float64/imag' );
 var base = require( '@stdlib/complex/float64/base/add' );
@@ -41,7 +42,7 @@ var opts = {
 
 // MAIN //
 
-bench( pkg+'::stdlib:math/base/special/cadd:value=complex_number', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:math/base/special/cadd:value=complex_number', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var i;
@@ -73,7 +74,7 @@ bench( pkg+'::stdlib:math/base/special/cadd:value=complex_number', opts, functio
 
 // TODO: add math/special/add benchmarks
 
-bench( pkg+'::mathjs:add:value=complex_number', opts, function benchmark( b ) {
+bench( format( '%s::mathjs:add:value=complex_number', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var i;

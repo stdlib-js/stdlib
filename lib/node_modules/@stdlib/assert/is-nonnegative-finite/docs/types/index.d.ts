@@ -25,8 +25,8 @@ interface IsNonNegativeFinite {
 	/**
 	* Tests if a value is a nonnegative finite number.
 	*
-	* @param {*} value - value to test
-	* @returns {boolean} boolean indicating whether value is a nonnegative finite number
+	* @param value - value to test
+	* @returns boolean indicating whether value is a nonnegative finite number
 	*
 	* @example
 	* var bool = isNonNegativeFinite( 5.0 );
@@ -57,8 +57,8 @@ interface IsNonNegativeFinite {
 	/**
 	* Tests if a value is a number primitive having a nonnegative finite value.
 	*
-	* @param {*} value - value to test
-	* @returns {boolean} boolean indicating if a value is a number primitive having a nonnegative finite value
+	* @param value - value to test
+	* @returns boolean indicating if a value is a number primitive having a nonnegative finite value
 	*
 	* @example
 	* var bool = isNonNegativeFinite.isPrimitive( 3.0 );
@@ -79,10 +79,10 @@ interface IsNonNegativeFinite {
 	isPrimitive( value: any ): boolean;
 
 	/**
-	* Tests if a value is a finite number object having a nonnegative value.
+	* Tests if a value is a number object having a nonnegative finite value.
 	*
-	* @param {*} value - value to test
-	* @returns {boolean} boolean indicating if a value is a number object having a nonnegative finite number value
+	* @param value - value to test
+	* @returns boolean indicating if a value is a number object having a nonnegative finite number value
 	*
 	* @example
 	* var bool = isNonNegativeFinite.isObject( 3.0 );
@@ -106,8 +106,8 @@ interface IsNonNegativeFinite {
 /**
 * Tests if a value is a nonnegative finite number.
 *
-* @param {*} value - value to test
-* @returns {boolean} boolean indicating whether value is a nonnegative finite number
+* @param value - value to test
+* @returns boolean indicating whether value is a nonnegative finite number
 *
 * @example
 * var bool = isNonNegativeFinite( 5.0 );
@@ -133,7 +133,6 @@ interface IsNonNegativeFinite {
 * var bool = isNonNegativeFinite( null );
 * // returns false
 */
-
 declare var isNonNegativeFinite: IsNonNegativeFinite;
 
 

@@ -46,6 +46,8 @@ Resolves the output ndarray [data type][@stdlib/ndarray/dtypes] for a binary fun
 
 ```javascript
 var dt = binaryOutputDataType( 'int32', 'float32', 'floating_point' );
+
+var s = String( dt );
 // returns 'float64'
 ```
 
@@ -59,9 +61,13 @@ If `policy` is a [data type][@stdlib/ndarray/dtypes], the function always return
 
 ```javascript
 var dt = binaryOutputDataType( 'float32', 'float32', 'float64' );
+
+var s = String( dt );
 // returns 'float64'
 
 dt = binaryOutputDataType( 'int32', 'int8', 'float64' );
+
+s = String( dt );
 // returns 'float64'
 
 // ...

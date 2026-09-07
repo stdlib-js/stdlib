@@ -16,7 +16,8 @@
   ],
   "main": "./package.json",
   "directories": {
-    "benchmark": "./benchmark"
+    "benchmark": "./benchmark",
+    "data": "./data"
   },
   "scripts": {},
   "homepage": "https://github.com/stdlib-js/stdlib",

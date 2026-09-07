@@ -45,7 +45,7 @@ interface Routine {
 	* var v = meanpn( x.length, x, 1 );
 	* // returns ~0.3333
 	*/
-	( N: number, x: InputArray, stride: number ): number;
+	( N: number, x: InputArray, strideX: number ): number;
 
 	/**
 	* Computes the arithmetic mean of a strided array using a two-pass error correction algorithm and alternative indexing semantics.
@@ -62,7 +62,7 @@ interface Routine {
 	* var v = meanpn.ndarray( x.length, x, 1, 0 );
 	* // returns ~0.3333
 	*/
-	ndarray( N: number, x: InputArray, stride: number, offsetX: number ): number;
+	ndarray( N: number, x: InputArray, strideX: number, offsetX: number ): number;
 }
 
 /**

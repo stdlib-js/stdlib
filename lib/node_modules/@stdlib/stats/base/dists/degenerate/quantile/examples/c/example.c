@@ -35,6 +35,6 @@ int main( void ) {
 		p = random_uniform( 0.0, 1.0 );
 		mu = random_uniform( -20.0, 20.0 );
 		result = stdlib_base_dists_degenerate_quantile( p, mu );
-		printf( "p: %lf, µ: %lf, Q(p;µ): %lf \n", p, mu, result );
+		printf( "p: %lf, μ: %lf, Q(p;μ): %lf \n", p, mu, result );
 	}
 }

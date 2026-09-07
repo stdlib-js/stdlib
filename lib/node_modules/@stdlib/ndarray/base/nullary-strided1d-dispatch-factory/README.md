@@ -81,7 +81,6 @@ Applies a strided function and assigns results to a provided output ndarray.
 var base = require( '@stdlib/blas/ext/base/ndarray/gsorthp' );
 var dtypes = require( '@stdlib/ndarray/dtypes' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var ndarray = require( '@stdlib/ndarray/base/ctor' );
 
 var idt = dtypes( 'real_and_generic' );
@@ -100,10 +99,7 @@ var order = scalar2ndarray( 1.0, {
 });
 
 var out = nullary( x, order );
-// returns <ndarray>
-
-var arr = ndarray2array( out );
-// returns [ -3.0, -1.0, 2.0 ]
+// returns <ndarray>[ -3.0, -1.0, 2.0 ]
 
 var bool = ( out === x );
 // returns true

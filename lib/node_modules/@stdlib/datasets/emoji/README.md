@@ -123,6 +123,10 @@ Options:
 
 -   Data is written to `stdout` as newline-delimited JSON ([NDJSON][ndjson]).
 
+</section>
+
+<!-- /.notes -->
+
 <section class="examples">
 
 ### Examples

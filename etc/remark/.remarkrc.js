@@ -21,7 +21,7 @@
 // MAIN //
 
 var config = {
-	'plugins': require( './plugins' )
+	'plugins': require( './plugins/base.js' )
 };
 
 

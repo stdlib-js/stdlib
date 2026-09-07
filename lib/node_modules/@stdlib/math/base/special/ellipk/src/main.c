@@ -52,6 +52,7 @@
 #include "stdlib/math/base/special/ln.h"
 #include "stdlib/constants/float64/pinf.h"
 #include "stdlib/constants/float64/half_pi.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdint.h>
 
 static const double ONE_DIV_PI = 0.3183098861837907;
@@ -358,7 +359,7 @@ double stdlib_base_ellipk( const double m ) {
 		return STDLIB_CONSTANT_FLOAT64_PINF;
 	}
 	if ( x > 1.0 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( x < 0.1 ) {
 		t = poly_p1( x - 0.05 );

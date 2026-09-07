@@ -21,7 +21,7 @@
 #include "stdlib/strided/base/stride2offset.h"
 
 /**
-* Copies values from one complex double-precision floating-point vector to another complex double-precision floating-point vector.
+* Copies values from one double-precision complex floating-point vector to another double-precision complex floating-point vector.
 *
 * @param N        number of indexed elements
 * @param X        input array

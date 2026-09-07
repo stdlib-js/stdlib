@@ -46,13 +46,13 @@ function fcn2(): ComplexLike {
 
 // The function returns `undefined`...
 {
-	fillBy( zeros( 'float64', [ 2, 2 ], 'row-major' ), fcn1 ); // $ExpectType void
-	fillBy( zeros( 'complex128', [ 2, 2 ], 'row-major' ), fcn2 ); // $ExpectType void
-	fillBy( zeros( 'generic', [ 2, 2 ], 'row-major' ), fcn1 ); // $ExpectType void
+	fillBy( zeros( 'float64', [ 2, 2 ], 'row-major' ), fcn1 ); // $ExpectType float64ndarray
+	fillBy( zeros( 'complex128', [ 2, 2 ], 'row-major' ), fcn2 ); // $ExpectType complex128ndarray
+	fillBy( zeros( 'generic', [ 2, 2 ], 'row-major' ), fcn1 ); // $ExpectType genericndarray<number>
 
-	fillBy( zeros( 'float64', [ 2, 2 ], 'row-major' ), fcn1, {} ); // $ExpectType void
-	fillBy( zeros( 'complex128', [ 2, 2 ], 'row-major' ), fcn2, {} ); // $ExpectType void
-	fillBy( zeros( 'generic', [ 2, 2 ], 'row-major' ), fcn1, {} ); // $ExpectType void
+	fillBy( zeros( 'float64', [ 2, 2 ], 'row-major' ), fcn1, {} ); // $ExpectType float64ndarray
+	fillBy( zeros( 'complex128', [ 2, 2 ], 'row-major' ), fcn2, {} ); // $ExpectType complex128ndarray
+	fillBy( zeros( 'generic', [ 2, 2 ], 'row-major' ), fcn1, {} ); // $ExpectType genericndarray<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an ndarray-like object...

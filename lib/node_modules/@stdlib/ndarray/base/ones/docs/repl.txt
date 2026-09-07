@@ -1,0 +1,29 @@
+
+{{alias}}( dtype, shape, order )
+    Returns a ones-filled ndarray having a specified shape and data type.
+
+    Parameters
+    ----------
+    dtype: string|DataType
+        Underlying data type. Must be a numeric or "generic" data type.
+
+    shape: ArrayLikeObject<integer>
+        Array shape.
+
+    order: string
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style).
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var arr = {{alias}}( 'float64', [ 2, 2 ], 'row-major' )
+    <ndarray>[ [ 1.0, 1.0 ], [ 1.0, 1.0 ] ]
+
+    See Also
+    --------
+

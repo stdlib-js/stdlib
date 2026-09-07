@@ -1,0 +1,77 @@
+
+{{alias}}( dtype, buffer, shape, strides, offset, order )
+    Returns a plain object describing how to interpret a data buffer as an
+    n-dimensional array.
+
+    Parameters
+    ----------
+    dtype: string|DataType
+        Data type.
+
+    buffer: ArrayLikeObject|TypedArray|Buffer
+        Data buffer. A data buffer must be an array-like object (i.e., have a
+        `length` property). For data buffers which are not indexed collections
+        (i.e., collections which cannot support direct index access, such as
+        `buffer[ index ]`; e.g., Complex64Array, Complex128Array, etc), a data
+        buffer should provide `#.get( idx )` and `#.set( v[, idx] )` methods.
+        Note that, for `set` methods, the value to set should be the first
+        argument, followed by the linear index, similar to the native typed
+        array `set` method.
+
+    shape: ArrayLikeObject<integer>
+        Array shape.
+
+    strides: ArrayLikeObject<integer>
+        Array strides.
+
+    offset: integer
+        Index offset.
+
+    order: string
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style).
+
+    Returns
+    -------
+    out: object
+        ndarray descriptor.
+
+    out.dtype: string|DataType
+        Data type.
+
+    out.data: ArrayLikeObject|TypedArray|Buffer
+        Data buffer.
+
+    out.shape: ArrayLikeObject<integer>
+        Array shape.
+
+    out.strides: ArrayLikeObject<integer>
+        Array strides.
+
+    out.offset: integer
+        Index offset.
+
+    out.order: string
+        Array order.
+
+    Examples
+    --------
+    // Create an ndarray:
+    > var x = {{alias:@stdlib/random/discrete-uniform}}( [ 2, 2 ], 0, 10 )
+    <ndarray>
+
+    // Resolve ndarray properties:
+    > var dt = {{alias:@stdlib/ndarray/dtype}}( x );
+    > var buf = {{alias:@stdlib/ndarray/data-buffer}}( x );
+    > var sh = {{alias:@stdlib/ndarray/shape}}( x );
+    > var st = {{alias:@stdlib/ndarray/strides}}( x );
+    > var o = {{alias:@stdlib/ndarray/offset}}( x );
+    > var ord = {{alias:@stdlib/ndarray/order}}( x );
+
+    // Create a descriptor object:
+    > var obj = {{alias}}( dt, buf, sh, st, o, ord )
+    {...}
+
+    See Also
+    --------
+

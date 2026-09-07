@@ -22,7 +22,7 @@
 * Evaluates the natural logarithm of the probability mass function (PMF) for a degenerate distribution.
 *
 * @param x - input value
-* @returns evaluated PMF
+* @returns evaluated logPMF
 */
 type Unary = ( x: number ) => number;
 
@@ -86,7 +86,7 @@ interface LogPMF {
 *
 * var mylogpmf = logpmf.factory( 10.0 );
 *
-* var y = mylogpmf( 10.0 );
+* y = mylogpmf( 10.0 );
 * // returns 0.0
 */
 declare var logpmf: LogPMF;

@@ -1,0 +1,11 @@
+
+{{alias}}
+    Number of exponent bits for a single-precision floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    8
+
+    See Also
+    --------

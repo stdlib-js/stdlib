@@ -31,13 +31,7 @@
     > var x = {{alias:@stdlib/ndarray/base/zeros}}( 'float64', [ 2, 2 ], 'row-major' )
     <ndarray>
     > var y = {{alias}}( x, 1.0 )
-    <ndarray>
-    > var sh = y.shape
-    []
-    > var dt = y.dtype
-    'float64'
-    > var v = y.get()
-    1.0
+    <ndarray>[ 1.0 ]
 
     See Also
     --------

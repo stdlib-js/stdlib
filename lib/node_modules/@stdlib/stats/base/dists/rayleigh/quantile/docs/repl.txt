@@ -7,7 +7,7 @@
 
     If provided `NaN` as any argument, the function returns `NaN`.
 
-    If provided a negative probability for `sigma`, the function returns `NaN`.
+    If provided a negative value for `sigma`, the function returns `NaN`.
 
     Parameters
     ----------

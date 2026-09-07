@@ -30,7 +30,7 @@
 * @return          evaluated PDF
 *
 * @example
-* double y = stdlib_base_weibull_pdf( 2.0, 1.0, 1.0 );
+* double y = stdlib_base_dists_cauchy_pdf( 2.0, 1.0, 1.0 );
 * // returns ~0.159
 */
 double stdlib_base_dists_cauchy_pdf( const double x, const double x0, const double gamma ) {

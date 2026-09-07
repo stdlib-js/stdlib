@@ -28,7 +28,7 @@
 * Macro containing the preamble for a loop which operates on strided array elements.
 *
 * @example
-* STDLIB_STRIDED_BINARY_LOOP_PREMABLE {
+* STDLIB_STRIDED_BINARY_LOOP_PREAMBLE {
 *     // Loop body...
 * }
 */
@@ -59,7 +59,7 @@
 * Macro containing the preamble for a loop which operates on strided array elements and updates two strided output arrays.
 *
 * @example
-* STDLIB_STRIDED_BINARY_LOOP_TWO_OUT_PREMABLE {
+* STDLIB_STRIDED_BINARY_LOOP_TWO_OUT_PREAMBLE {
 *     // Loop body...
 * }
 */

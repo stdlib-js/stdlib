@@ -22,9 +22,8 @@
     Examples
     --------
     > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] );
-    > var out = {{alias}}( x, [ 0, 0 ], 5 );
-    > var v = out.get( 0, 0 )
-    5
+    > var out = {{alias}}( x, [ 0, 0 ], 5 )
+    <ndarray>[ [ 5, 2 ], [ 3, 4 ] ]
 
     See Also
     --------

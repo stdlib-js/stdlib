@@ -32,7 +32,7 @@
 *
 * @example
 * double y = stdlib_base_dists_t_logpdf( 0.5, 1.0 );
-* // returns ~-1.1447
+* // returns ~-1.368
 */
 double stdlib_base_dists_t_logpdf( const double x, const double v ) {
 	double betaTerm;

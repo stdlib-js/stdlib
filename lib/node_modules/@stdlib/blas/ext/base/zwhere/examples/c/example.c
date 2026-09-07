@@ -1,0 +1,47 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2026 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+#include "stdlib/blas/ext/base/zwhere.h"
+#include "stdlib/complex/float64/ctor.h"
+#include <stdio.h>
+#include <stdbool.h>
+
+int main( void ) {
+	// Create strided arrays:
+	const bool condition[] = { true, false, true, false, true };
+	const double x[] = { 1.0, -1.0, 2.0, -2.0, 3.0, -3.0, 4.0, -4.0, 5.0, -5.0 };
+	const double y[] = { 6.0, -6.0, 7.0, -7.0, 8.0, -8.0, 9.0, -9.0, 10.0, -10.0 };
+	double out[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
+
+	// Specify the number of indexed elements:
+	const int N = 5;
+
+	// Specify stride lengths:
+	const int strideC = 1;
+	const int strideX = 1;
+	const int strideY = 1;
+	const int strideOut = 1;
+
+	// Select from `x` or `y` based on the condition array:
+	stdlib_strided_zwhere( N, condition, strideC, (const stdlib_complex128_t *)x, strideX, (const stdlib_complex128_t *)y, strideY, (stdlib_complex128_t *)out, strideOut );
+
+	// Print the result:
+	for ( int i = 0; i < N; i++ ) {
+		printf( "out[ %i ] = %lf + %lfj\n", i, out[ i*2 ], out[ (i*2)+1 ] );
+	}
+}

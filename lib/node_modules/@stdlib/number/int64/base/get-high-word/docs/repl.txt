@@ -1,0 +1,29 @@
+
+{{alias}}( x )
+    Returns a 32-bit unsigned integer corresponding to the high 32-bit word of a
+    64-bit signed integer.
+
+    Parameters
+    ----------
+    x: Int64
+        Input value.
+
+    Returns
+    -------
+    out: integer
+        Higher order word (32-bit unsigned integer).
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/number/int64/ctor}}( 4294967296 )
+    <Int64>[ 4294967296n ]
+    > var w = {{alias}}( x )
+    1
+    > x = new {{alias:@stdlib/number/int64/ctor}}( -1 )
+    <Int64>[ -1n ]
+    > w = {{alias}}( x )
+    4294967295
+
+    See Also
+    --------
+

@@ -27,8 +27,8 @@
 *
 * -   If provided `NaN` or a value which, when used in computations, results in `NaN`, the accumulated value is `NaN` for all future invocations.
 *
-* @param f - input value
-* @param a - input value
+* @param f - forecast value
+* @param a - actual value
 * @returns mean absolute percentage error or null
 */
 type accumulator = ( f?: number, a?: number ) => number | null;

@@ -60,7 +60,7 @@ void API_SUFFIX(c_ssyr_ndarray)( const CBLAS_UPLO uplo, const CBLAS_INT N, const
 		return;
 	}
 	if ( strideX == 0 ) {
-		c_xerbla( 5, "c_ssyr_ndarray", "Error: invalid argument. Fifth argument must be a nonzero. Value: `%d`.", strideX );
+		c_xerbla( 5, "c_ssyr_ndarray", "Error: invalid argument. Fifth argument must be nonzero. Value: `%d`.", strideX );
 		return;
 	}
 	// Check whether we can avoid computation altogether...

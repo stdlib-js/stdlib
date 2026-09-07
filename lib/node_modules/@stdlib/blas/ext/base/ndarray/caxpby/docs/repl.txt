@@ -1,0 +1,42 @@
+
+{{alias}}( arrays )
+    Multiplies a one-dimensional single-precision complex floating-point ndarray
+    by a scalar constant and adds the result to a second one-dimensional single-
+    precision complex floating-point ndarray multiplied by a scalar constant.
+
+    The output ndarray is modified *in-place* (i.e., the output ndarray is
+    *mutated*).
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a one-dimensional output ndarray.
+        - a zero-dimensional ndarray containing the constant by which to
+        multiply the input ndarray.
+        - a zero-dimensional ndarray containing the constant by which to
+        multiply the output ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var bufX = [ 1.0, 2.0, 3.0, -1.0, 0.0, 1.0 ];
+    > var bufY = [ 2.0, 1.0, -1.0, 3.0, 4.0, 0.0 ];
+    > var x = new {{alias:@stdlib/ndarray/vector/complex64}}( bufX );
+    > var y = new {{alias:@stdlib/ndarray/vector/complex64}}( bufY );
+    > var opts = { 'dtype': 'complex64' };
+    > var a = new {{alias:@stdlib/complex/float32/ctor}}( 2.0, 1.0 );
+    > var alpha = {{alias:@stdlib/ndarray/from-scalar}}( a, opts );
+    > var b = new {{alias:@stdlib/complex/float32/ctor}}( 1.0, -1.0 );
+    > var beta = {{alias:@stdlib/ndarray/from-scalar}}( b, opts );
+    > {{alias}}( [ x, y, alpha, beta ] )
+    <ndarray>[ <Complex64>[ 3, 4 ], <Complex64>[ 9, 5 ], <Complex64>[ 3, -2 ] ]
+
+    See Also
+    --------

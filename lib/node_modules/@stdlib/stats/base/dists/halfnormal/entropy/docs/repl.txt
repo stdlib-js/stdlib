@@ -1,0 +1,27 @@
+
+{{alias}}( σ )
+    Returns the differential entropy of a half-normal distribution.
+
+    If provided `NaN`, the function returns `NaN`.
+
+    If provided `σ ≤ 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    σ: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Entropy.
+
+    Examples
+    --------
+    > var v = {{alias}}( 1.0 )
+    ~0.7258
+    > v = {{alias}}( 5.0 )
+    ~2.3352
+
+    See Also
+    --------

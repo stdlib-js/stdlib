@@ -38,6 +38,7 @@ import flipud = require( './index' );
 	flipud( empty( 'uint16', sh, order ), false ); // $ExpectType uint16ndarray
 	flipud( empty( 'uint8', sh, order ), false ); // $ExpectType uint8ndarray
 	flipud( empty( 'uint8c', sh, order ), false ); // $ExpectType uint8cndarray
+	flipud( empty( 'generic', sh, order ), false ); // $ExpectType genericndarray<number>
 
 	flipud( empty( 'float64', sh, order ), true ); // $ExpectType float64ndarray
 	flipud( empty( 'float32', sh, order ), true ); // $ExpectType float32ndarray
@@ -50,6 +51,7 @@ import flipud = require( './index' );
 	flipud( empty( 'uint16', sh, order ), true ); // $ExpectType uint16ndarray
 	flipud( empty( 'uint8', sh, order ), true ); // $ExpectType uint8ndarray
 	flipud( empty( 'uint8c', sh, order ), true ); // $ExpectType uint8cndarray
+	flipud( empty( 'generic', sh, order ), true ); // $ExpectType genericndarray<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an ndarray...

@@ -18,6 +18,7 @@
 
 #include "stdlib/math/base/special/tribonacci.h"
 #include "stdlib/constants/float64/max_safe_nth_tribonacci.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/math/base/assert/is_nonnegative_integer.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include <stdlib.h>
@@ -102,7 +103,7 @@ static const int64_t tribonacci_value[ 64 ] = {
 */
 double stdlib_base_tribonacci( const double n ) {
 	if ( stdlib_base_is_nan( n ) || !stdlib_base_is_nonnegative_integer( n ) || n > STDLIB_CONSTANT_FLOAT64_MAX_SAFE_NTH_TRIBONACCI ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	return tribonacci_value[ (size_t)n ];
 }

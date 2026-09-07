@@ -1,0 +1,33 @@
+
+{{alias}}( μ, σ )
+    Returns the differential entropy of an anglit distribution (in nats).
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `σ <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    μ: number
+        Location parameter.
+
+    σ: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Entropy.
+
+    Examples
+    --------
+    > var v = {{alias}}( 0.0, 1.0 )
+    ~0.307
+    > v = {{alias}}( 0.0, 2.0 )
+    ~1.000
+    > v = {{alias}}( 1.0, 0.5 )
+    ~-0.386
+
+    See Also
+    --------
+

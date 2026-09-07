@@ -35,6 +35,7 @@
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/constants/float64/ninf.h"
 #include "stdlib/constants/float64/exponent_bias.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdint.h>
 
 static const double LN2_HI = 6.93147180369123816490e-01; // 3FE62E42 FEE00000
@@ -127,7 +128,7 @@ double stdlib_base_ln( const double x ) {
 		return STDLIB_CONSTANT_FLOAT64_NINF;
 	}
 	if ( stdlib_base_is_nan( x ) || x < 0.0 ) {
-		return 0.0/0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	stdlib_base_float64_get_high_word( x, &hx );
 	xc = x;

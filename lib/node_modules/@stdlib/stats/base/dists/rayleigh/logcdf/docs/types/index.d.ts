@@ -31,7 +31,7 @@ type Unary = ( x: number ) => number;
 */
 interface LogCDF {
 	/**
-	* Evaluates the logarithm of the cumulative distribution function (CDF) for a Rayleigh distribution with scale parameter `sigma` at a value `x`.
+	* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a Rayleigh distribution with scale parameter `sigma` at a value `x`.
 	*
 	* ## Notes
 	*
