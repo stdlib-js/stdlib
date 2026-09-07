@@ -121,7 +121,7 @@ out = format( str, 3.14159 );
 
 str = '%g (shortest representation)';
 out = format( str, 3.14159 );
-// returns '3.14159'
+// returns '3.14159 (shortest representation)'
 ```
 
 A conversion specification may contain zero or more flags, which modify the behavior of the conversion. The following flags are supported:
@@ -174,7 +174,7 @@ out = format( str, 2 );
 
 str = '%*i';
 out = format( str, 5, 2 );
-// returns '   2'
+// returns '    2'
 ```
 
 The `precision` may be specified as a decimal integer or as an asterisk character (`*`), in which case the argument preceding the conversion specification is used as the precision value. The behavior of the `precision` differs depending on the conversion type:
@@ -220,10 +220,10 @@ out = format( 'Pi: ~%.2f', 3.141592653589793 );
 // returns 'Pi: ~3.14'
 
 out = format( '%-10s %-10s', 'a', 'b' );
-// returns 'a       b       '
+// returns 'a          b         '
 
 out = format( '%10s %10s', 'a', 'b' );
-// returns '       a       b'
+// returns '         a          b'
 
 out = format( '%2$s %1$s %3$s', 'b', 'a', 'c' );
 // returns 'a b c'
