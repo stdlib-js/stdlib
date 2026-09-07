@@ -1,0 +1,16 @@
+{
+  "uplo": "upper",
+  "order": "column-major",
+  "N": 3,
+  "alpha": 1.0,
+  "beta": 1.0,
+  "strideX": -1,
+  "offsetX": 2,
+  "strideY": -1,
+  "offsetY": 2,
+  "offsetAP": 2,
+  "AP": [ 0.0, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ],
+  "x": [ 1.0, 1.0, 1.0 ],
+  "y": [ 1.0, 1.0, 1.0 ],
+  "y_out": [ 16.0, 11.0, 8.0 ]
+}
