@@ -16,6 +16,12 @@
 # limitations under the License.
 #/
 
+# VARIABLES #
+
+# Define the path for script validating `package.json` metadata:
+VALIDATE_PKG_JSON ?= $(TOOLS_PKGS_DIR)/package-json/scripts/validate_package_json_files
+
+
 # RULES #
 
 # TODO: support linting filenames, package.json, REPL help, JavaScript CLI files (see pre-commit hook), license headers
@@ -44,3 +50,17 @@ lint-pkgs: lint-editorconfig
 	$(QUIET) $(MAKE) -f $(this_file) lint-typescript TYPESCRIPT_DECLARATIONS_FILTER=$(PACKAGES_FILTER) TYPESCRIPT_DECLARATIONS_TESTS_FILTER=$(PACKAGES_FILTER)
 
 .PHONY: lint-pkgs
+
+#/
+# Lints `package.json` metadata associated with a list of files.
+#
+# @param {string} FILES - list of file paths
+#
+# @example
+# make lint-pkgs-metadata-files FILES='/foo/lib/index.js /bar/package.json'
+#/
+lint-pkgs-metadata-files: $(NODE_MODULES)
+	$(QUIET) echo 'Linting package.json metadata...'
+	$(QUIET) $(VALIDATE_PKG_JSON) $(FILES)
+
+.PHONY: lint-pkgs-metadata-files
