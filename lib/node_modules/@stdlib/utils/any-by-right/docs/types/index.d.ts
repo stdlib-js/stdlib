@@ -67,7 +67,7 @@ type Ternary<T, U> = ( this: U, value: T, index: number, collection: Collection<
 type Predicate<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary<T, U>;
 
 /**
-* Tests whether at least one element in a collection passes a test implemented by a predicate function.
+* Tests whether at least one element in a collection passes a test implemented by a predicate function, iterating from right to left.
 *
 * ## Notes
 *

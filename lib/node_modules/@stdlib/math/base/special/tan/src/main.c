@@ -34,6 +34,7 @@
 #include "stdlib/number/float64/base/get_high_word.h"
 #include "stdlib/constants/float64/high_word_abs_mask.h"
 #include "stdlib/constants/float64/high_word_exponent_mask.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/math/base/special/kernel_tan.h"
 #include "stdlib/math/base/special/rempio2.h"
 #include <stdint.h>
@@ -89,7 +90,7 @@ double stdlib_base_tan( const double x ) {
 	}
 	// Case: tan(Inf or NaN) is NaN
 	if ( ix >= STDLIB_CONSTANT_FLOAT64_HIGH_WORD_EXPONENT_MASK ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	// Argument reduction...
 	n = stdlib_base_rempio2( x, &Y[ 0 ], &Y[ 1 ] );

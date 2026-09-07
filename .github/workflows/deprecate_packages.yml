@@ -62,8 +62,11 @@ jobs:
       - name: 'Deprecate packages'
         env:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          PKGS: ${{ github.event.inputs.packages }}
+          MSG: ${{ github.event.inputs.message || 'Package no longer supported.' }}
         run: |
-          pkgs='${{ github.event.inputs.packages }}'
+          pkgs="$PKGS"
           npm_names=""
           github_repos=""
           for pkg in $pkgs; do
@@ -78,10 +81,10 @@ jobs:
           done
 
           # Setup configuration for authenticating with npm:
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
 
           # Define a deprecation message:
-          msg='${{ github.event.inputs.message || 'Package no longer supported.' }}'
+          msg="$MSG"
 
           # Deprecate the packages on npm:
           for pkg in $npm_names; do

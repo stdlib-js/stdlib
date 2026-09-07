@@ -47,7 +47,8 @@
         "@stdlib/constants/float64/min-base10-exponent",
         "@stdlib/constants/float64/min-base10-exponent-subnormal",
         "@stdlib/math/base/assert/is-infinite",
-        "@stdlib/math/base/assert/is-nan"
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -71,7 +72,8 @@
         "@stdlib/constants/float64/min-base10-exponent",
         "@stdlib/constants/float64/min-base10-exponent-subnormal",
         "@stdlib/math/base/assert/is-infinite",
-        "@stdlib/math/base/assert/is-nan"
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -95,7 +97,8 @@
         "@stdlib/constants/float64/min-base10-exponent",
         "@stdlib/constants/float64/min-base10-exponent-subnormal",
         "@stdlib/math/base/assert/is-infinite",
-        "@stdlib/math/base/assert/is-nan"
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

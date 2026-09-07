@@ -70,6 +70,10 @@ var bool = iterNone( array2iterator( [] ) );
 
 <section class="notes">
 
+## Notes
+
+-   The function immediately returns upon encountering a truthy value.
+
 </section>
 
 <!-- /.notes -->

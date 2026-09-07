@@ -97,13 +97,15 @@ static double rand_double( void ) {
 */
 static double benchmark1( int iterations, int N ) {
 	stdlib_complex128_t alpha;
-	double x[ N*2 ];
-	double y[ N*2 ];
 	double elapsed;
+	double *x;
+	double *y;
 	double t;
 	int i;
 
 	alpha = stdlib_complex128( 1.0, 0.0 );
+	x = (double *) malloc( N * 2 * sizeof( double ) );
+	y = (double *) malloc( N * 2 * sizeof( double ) );
 	for ( i = 0; i < N*2; i+=2 ) {
 		x[ i ] = ( rand_double()*20.0 ) - 10.0;
 		x[ i+1 ] = ( rand_double()*20.0 ) - 10.0;
@@ -122,6 +124,8 @@ static double benchmark1( int iterations, int N ) {
 	if ( y[ i%(N*2) ] != y[ i%(N*2) ] ) {
 		printf( "should not return NaN\n" );
 	}
+	free( x );
+	free( y );
 	return elapsed;
 }
 
@@ -134,13 +138,15 @@ static double benchmark1( int iterations, int N ) {
 */
 static double benchmark2( int iterations, int N ) {
 	stdlib_complex128_t alpha;
-	double x[ N*2 ];
-	double y[ N*2 ];
 	double elapsed;
+	double *x;
+	double *y;
 	double t;
 	int i;
 
 	alpha = stdlib_complex128( 1.0, 0.0 );
+	x = (double *) malloc( N * 2 * sizeof( double ) );
+	y = (double *) malloc( N * 2 * sizeof( double ) );
 	for ( i = 0; i < N*2; i+=2 ) {
 		x[ i ] = ( rand_double()*20.0 ) - 10.0;
 		x[ i+1 ] = ( rand_double()*20.0 ) - 10.0;
@@ -159,6 +165,8 @@ static double benchmark2( int iterations, int N ) {
 	if ( y[ i%(N*2) ] != y[ i%(N*2) ] ) {
 		printf( "should not return NaN\n" );
 	}
+	free( x );
+	free( y );
 	return elapsed;
 }
 

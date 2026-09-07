@@ -31,12 +31,12 @@ extern "C" {
 /**
 * Computes the cosine similarity of two double-precision floating-point strided arrays.
 */
-double API_SUFFIX( stdlib_strided_dcosine_similarity )( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const double *Y, const CBLAS_INT strideY );
+double API_SUFFIX(stdlib_strided_dcosine_similarity)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const double *Y, const CBLAS_INT strideY );
 
 /**
 * Computes the cosine similarity of two double-precision floating-point strided arrays using alternative indexing semantics.
 */
-double API_SUFFIX( stdlib_strided_dcosine_similarity_ndarray )( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY );
+double API_SUFFIX(stdlib_strided_dcosine_similarity_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY );
 
 #ifdef __cplusplus
 }

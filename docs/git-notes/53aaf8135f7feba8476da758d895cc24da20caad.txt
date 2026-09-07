@@ -1,0 +1,9 @@
+---
+type: amend-message
+---
+feat: add C implementation for `math/base/special/heaviside`
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/10196
+Closes: https://github.com/stdlib-js/stdlib/issues/1891
+
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>

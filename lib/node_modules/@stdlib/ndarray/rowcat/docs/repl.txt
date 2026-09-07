@@ -1,0 +1,76 @@
+
+{{alias}}( arrays )
+    Concatenates a list of one-dimensional or two-dimensional ndarrays as rows.
+
+    One-dimensional input ndarrays having length `N` are promoted to two-
+    dimensional ndarrays having shape `[1, N]`.
+
+    Each input ndarray must have the same number of columns.
+
+    The data type of the output ndarray is determined by applying type
+    promotion rules to the list of input ndarrays.
+
+    If provided ndarrays having different memory layouts, the output ndarray
+    has the default order.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        List of input ndarrays. Each input ndarray must be either one-
+        dimensional or two-dimensional and must have the same number of
+        columns.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ 1.0, 2.0, 3.0 ] );
+    > var y = {{alias:@stdlib/ndarray/array}}( [ [ 4.0, 5.0, 6.0 ], [ 7.0, 8.0, 9.0 ] ] );
+    > var out = {{alias}}( [ x, y ] )
+    <ndarray>[ [ 1.0, 2.0, 3.0 ], [ 4.0, 5.0, 6.0 ], [ 7.0, 8.0, 9.0 ] ]
+
+
+{{alias}}.assign( arrays, out )
+    Concatenates a list of one-dimensional or two-dimensional ndarrays as rows
+    and assigns results to a provided output ndarray.
+
+    One-dimensional input ndarrays having length `N` are promoted to two-
+    dimensional ndarrays having shape `[1, N]`.
+
+    Each input ndarray must have the same number of columns.
+
+    Input ndarrays must promote to a data type which can be (mostly) safely
+    cast to the data type of the output ndarray.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        List of input ndarrays. Each input ndarray must be either one-
+        dimensional or two-dimensional and must have the same number of
+        columns.
+
+    out: ndarray
+        Output ndarray. Must be a two-dimensional ndarray and must have a data
+        type to which the input ndarrays can be (mostly) safely cast.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ 1.0, 2.0, 3.0 ] );
+    > var y = {{alias:@stdlib/ndarray/array}}( [ [ 4.0, 5.0, 6.0 ], [ 7.0, 8.0, 9.0 ] ] );
+    > var z = {{alias:@stdlib/ndarray/zeros}}( [ 3, 3 ] );
+    > var out = {{alias}}.assign( [ x, y ], z )
+    <ndarray>[ [ 1.0, 2.0, 3.0 ], [ 4.0, 5.0, 6.0 ], [ 7.0, 8.0, 9.0 ] ]
+    > var bool = ( out === z )
+    true
+
+    See Also
+    --------
+

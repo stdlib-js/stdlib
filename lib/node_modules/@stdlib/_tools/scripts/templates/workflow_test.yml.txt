@@ -76,13 +76,6 @@ jobs:
           npm install || npm install || npm install
         timeout-minutes: 15
 
-      # Build native add-on if present:
-      - name: 'Build native add-on (if present)'
-        run: |
-          if [ -f "binding.gyp" ]; then
-            npm install node-gyp --no-save && ./node_modules/.bin/node-gyp rebuild
-          fi
-
       # Run tests:
       - name: 'Run tests'
         id: tests

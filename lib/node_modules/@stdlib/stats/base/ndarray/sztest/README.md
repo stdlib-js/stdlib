@@ -50,15 +50,15 @@ Computes a one-sample Z-test for a one-dimensional single-precision floating-poi
 var Float32Results = require( '@stdlib/stats/base/ztest/one-sample/results/float32' );
 var resolveEnum = require( '@stdlib/stats/base/ztest/alternative-resolve-enum' );
 var structFactory = require( '@stdlib/array/struct-factory' );
-var Float32Array = require( '@stdlib/array/float32' );
+var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 var ndarray = require( '@stdlib/ndarray/ctor' );
 
 var opts = {
     'dtype': 'float32'
 };
-var xbuf = new Float32Array( [ 1.0, 3.0, 4.0, 2.0 ] );
-var x = new ndarray( opts.dtype, xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+
+var x = new Float32Vector( [ 1.0, 3.0, 4.0, 2.0 ] );
 
 var alt = scalar2ndarray( resolveEnum( 'two-sided' ), {
     'dtype': 'int8'
@@ -78,14 +78,14 @@ var bool = ( v === out );
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing the following ndarrays in order:
+-   **arrays**: array-like object containing the following ndarrays:
 
-    1.  a one-dimensional input ndarray.
-    2.  a zero-dimensional output ndarray containing a [results object][@stdlib/stats/base/ztest/one-sample/results/float32].
-    3.  a zero-dimensional ndarray specifying the alternative hypothesis.
-    4.  a zero-dimensional ndarray specifying the significance level.
-    5.  a zero-dimensional ndarray specifying the mean under the null hypothesis.
-    6.  a zero-dimensional ndarray specifying the known standard deviation.
+    -   a one-dimensional input ndarray.
+    -   a zero-dimensional output ndarray containing a [results object][@stdlib/stats/base/ztest/one-sample/results/float32].
+    -   a zero-dimensional ndarray specifying the alternative hypothesis.
+    -   a zero-dimensional ndarray specifying the significance level.
+    -   a zero-dimensional ndarray specifying the mean under the null hypothesis.
+    -   a zero-dimensional ndarray specifying the known standard deviation.
 
 </section>
 
@@ -111,7 +111,7 @@ The function has the following parameters:
 var Float32Results = require( '@stdlib/stats/base/ztest/one-sample/results/float32' );
 var resolveEnum = require( '@stdlib/stats/base/ztest/alternative-resolve-enum' );
 var structFactory = require( '@stdlib/array/struct-factory' );
-var normal = require( '@stdlib/random/array/normal' );
+var normal = require( '@stdlib/random/normal' );
 var ndarray = require( '@stdlib/ndarray/ctor' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
@@ -122,8 +122,7 @@ var opts = {
 };
 
 // Create a one-dimensional ndarray containing pseudorandom numbers drawn from a normal distribution:
-var xbuf = normal( 100, 0.0, 1.0, opts );
-var x = new ndarray( opts.dtype, xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+var x = normal( [ 100 ], 0.0, 1.0, opts );
 console.log( ndarray2array( x ) );
 
 // Specify the alternative hypothesis:

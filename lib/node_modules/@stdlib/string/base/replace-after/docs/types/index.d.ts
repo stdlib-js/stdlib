@@ -49,11 +49,11 @@
 * // returns 'Hello World!'
 *
 * @example
-* var out = replaceAfter( 'beep boop', ' ', 'foo' , 5 );
+* var out = replaceAfter( 'beep boop', ' ', 'foo', 5 );
 * // returns 'beep boop'
 *
 * @example
-* var out = replaceAfter( 'beep boop beep baz', 'beep', 'foo' , 5 );
+* var out = replaceAfter( 'beep boop beep baz', 'beep', 'foo', 5 );
 * // returns 'beep boop beepfoo'
 */
 declare function replaceAfter( str: string,  search: string, replacement: string, fromIndex: number ): string;

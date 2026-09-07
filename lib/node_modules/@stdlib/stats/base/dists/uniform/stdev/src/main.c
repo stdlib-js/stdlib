@@ -29,7 +29,7 @@ static const double SQRT_ONE_TWELFTH = 0.28867513459481287; // stdlib_base_sqrt(
 * @return    standard deviation
 *
 * @example
-* double v = stdev( 4.0, 12.0 );
+* double v = stdlib_base_dists_uniform_stdev( 4.0, 12.0 );
 * // returns ~2.309
 */
 double stdlib_base_dists_uniform_stdev( const double a, const double b ) {

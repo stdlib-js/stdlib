@@ -25,7 +25,7 @@ import { RealDataType as DataType } from '@stdlib/types/array';
 /**
 * Returns a list of typed array real-valued data types.
 *
-* @returns list of typed array data types
+* @returns list of typed array real-valued data types
 *
 * @example
 * var list = dtypes();

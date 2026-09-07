@@ -26,6 +26,7 @@ import oneTo = require( './index' );
 	oneTo( 10 ); // $ExpectType Float64Array
 	oneTo( 10, 'float64' ); // $ExpectType Float64Array
 	oneTo( 10, 'float32' ); // $ExpectType Float32Array
+	oneTo( 10, 'float16' ); // $ExpectType Float16ArrayFallback
 	oneTo( 10, 'complex128' ); // $ExpectType Complex128Array
 	oneTo( 10, 'complex64' ); // $ExpectType Complex64Array
 	oneTo( 10, 'int32' ); // $ExpectType Int32Array

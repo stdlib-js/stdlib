@@ -26,14 +26,14 @@ limitations under the License.
 
 The [quantile function][quantile-function] for a [chi-squared][chisquare-distribution] random variable is
 
-<!-- <equation class="equation" label="eq:chisquared_quantile_function" align="center" raw="Q(p; k) = 2 \cdot P^{-1}( p, k/2 )" alt="Quantile function for a chi-squared distribution."> -->
+<!-- <equation class="equation" label="eq:chisquare_quantile_function" align="center" raw="Q(p; k) = 2 \cdot P^{-1}( p, k/2 )" alt="Quantile function for a chi-squared distribution."> -->
 
 ```math
 Q(p; k) = 2 \cdot P^{-1}( p, k/2 )
 ```
 
-<!-- <div class="equation" align="center" data-raw-text="Q(p; k) = 2 \cdot P^{-1}( p, k/2 )" data-equation="eq:chisquared_quantile_function">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/chisquare/quantile/docs/img/equation_chisquared_quantile_function.svg" alt="Quantile function for a chi-squared distribution.">
+<!-- <div class="equation" align="center" data-raw-text="Q(p; k) = 2 \cdot P^{-1}( p, k/2 )" data-equation="eq:chisquare_quantile_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/chisquare/quantile/docs/img/equation_chisquare_quantile_function.svg" alt="Quantile function for a chi-squared distribution.">
     <br>
 </div> -->
 

@@ -31,8 +31,8 @@ static const double DENOM = 0.4549364231195728; // 2.0 * stdlib_base_pow( stdlib
 * @return      median
 *
 * @example
-* double y = stdlib_base_dists_levy_median( 9.0, 0.0, 10.0 );
-* // returns ~0.795
+* double y = stdlib_base_dists_levy_median( 0.0, 1.0 );
+* // returns ~2.198
 */
 double stdlib_base_dists_levy_median( const double mu, const double c ) {
 	if (

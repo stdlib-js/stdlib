@@ -1,0 +1,127 @@
+{
+  "options": {
+    "task": "build",
+    "wasm": false
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/caxpy",
+        "@stdlib/blas/base/cscal",
+        "@stdlib/blas/base/shared",
+        "@stdlib/complex/float32/base/mul-add",
+        "@stdlib/complex/float32/base/mul",
+        "@stdlib/complex/float32/real",
+        "@stdlib/complex/float32/imag",
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-complex64",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-complex64array"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/caxpy",
+        "@stdlib/blas/base/cscal",
+        "@stdlib/blas/base/shared",
+        "@stdlib/complex/float32/base/mul-add",
+        "@stdlib/complex/float32/base/mul",
+        "@stdlib/complex/float32/real",
+        "@stdlib/complex/float32/imag",
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/strided/base/stride2offset"
+      ]
+    },
+    {
+      "task": "examples",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/caxpy",
+        "@stdlib/blas/base/cscal",
+        "@stdlib/blas/base/shared",
+        "@stdlib/complex/float32/base/mul-add",
+        "@stdlib/complex/float32/base/mul",
+        "@stdlib/complex/float32/real",
+        "@stdlib/complex/float32/imag",
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/strided/base/stride2offset"
+      ]
+    },
+    {
+      "task": "build",
+      "wasm": true,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/caxpy",
+        "@stdlib/blas/base/cscal",
+        "@stdlib/blas/base/shared",
+        "@stdlib/complex/float32/base/mul-add",
+        "@stdlib/complex/float32/base/mul",
+        "@stdlib/complex/float32/real",
+        "@stdlib/complex/float32/imag",
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/strided/base/stride2offset"
+      ]
+    }
+  ]
+}

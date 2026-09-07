@@ -37,6 +37,6 @@ int main( void ) {
 		x = random_uniform( -5.0, 5.0 );
 		b = random_uniform( 0.0, 20.0 );
 		y = stdlib_base_dists_laplace_logpdf( x, mu, b );
-		printf( "x: %lf, µ: %lf, b: %lf, ln(f(x;µ,b)): %lf\n", x, mu, b, y );
+		printf( "x: %lf, μ: %lf, b: %lf, ln(f(x;μ,b)): %lf\n", x, mu, b, y );
 	}
 }

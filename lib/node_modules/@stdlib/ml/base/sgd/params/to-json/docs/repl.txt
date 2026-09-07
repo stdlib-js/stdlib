@@ -1,0 +1,34 @@
+
+{{alias}}( params )
+    Serializes an SGD trainer parameters object as a JSON object.
+
+    Parameters
+    ----------
+    params: Object
+        SGD trainer parameters object.
+
+    Returns
+    -------
+    out: Object
+        Serialized object.
+
+    Examples
+    --------
+    > var params = {
+    ...    'penaltyParams': new {{alias:@stdlib/array/float64}}( [ 2.5, 0.0 ] ),
+    ...    'learningRateParams': new {{alias:@stdlib/array/float64}}( [ 0.01, 0.0 ] ),
+    ...    'lossFunctionParams': new {{alias:@stdlib/array/float64}}( [ 0.0 ] ),
+    ...    'intercept': 0.0,
+    ...    'maxIter': 1000,
+    ...    'penalty': 'l2',
+    ...    'learningRate': 'constant',
+    ...    'lossFunction': 'hinge',
+    ...    'fitIntercept': true,
+    ...    'method': 'Stochastic Gradient Descent'
+    ... };
+    > var o = {{alias}}( params )
+    {...}
+
+    See Also
+    --------
+

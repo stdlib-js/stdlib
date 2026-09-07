@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-<!-- lint disable first-heading-level -->
+<!-- lint disable first-heading-level expected-html-sections -->
 
 <!-- Section to include announcements. If section is included, add a horizontal rule *after* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
@@ -31,17 +31,19 @@ limitations under the License.
 <!-- Section to include assets such as the project logo, etc. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="banner">
-    <div class="image" align="center">
-        <br>
-        <br>
-        <a href="https://stdlib.io/" />
-            <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@9f7d30f089ecc458a8b836a75afab75caf5c0b36/docs/assets/logo_banner.svg" alt="stdlib logo">
-        </a>
-        <br>
-        <br>
-        <br>
-        <br>
-    </div>
+
+<div class="image" align="center">
+    <br>
+    <br>
+    <a href="https://stdlib.io/" />
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@9f7d30f089ecc458a8b836a75afab75caf5c0b36/docs/assets/logo_banner.svg" alt="stdlib logo">
+    </a>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+
 </section>
 
 <!-- /.banner -->
@@ -669,7 +671,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright © 2016-2025. The Stdlib [Authors][stdlib-authors].
+Copyright © 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -722,26 +724,13 @@ You can also subscribe to our [project calendar][stdlib-public-calendar] to stay
 
 </section>
 
-<!-- /.badges> -->
+<!-- /.badges -->
 
 <!-- Project acknowledgments. If section is included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
-<!-- * * *
-
 <section class="acknowledgments">
 
-## Acknowledgments
-
-### Build Infrastructure
-
-Test and build infrastructure is generously provided by the following services:
-
-<div class="image" align="center">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@3de52540666d1635df046d7e5dd07a1fc5b87d85/docs/assets/misc/ci_logo_banner.svg" alt="Continuous Integration Service Logos">
-    <br>
-</div>
-
-</section> -->
+</section>
 
 <!-- /.acknowledgments -->
 

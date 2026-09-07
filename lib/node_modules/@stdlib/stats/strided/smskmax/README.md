@@ -232,7 +232,7 @@ Computes the maximum value of a single-precision floating-point strided array ac
 const float x[] = { 1.0f, -2.0f, 2.0f };
 const uint8_t mask[] = { 0, 1, 0 };
 
-float v = stdlib_strided_smskmax( 3, x, 1, 0, mask, 1, 0 );
+float v = stdlib_strided_smskmax_ndarray( 3, x, 1, 0, mask, 1, 0 );
 // returns 2.0f
 ```
 

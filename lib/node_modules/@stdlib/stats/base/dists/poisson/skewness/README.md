@@ -144,7 +144,7 @@ logEachMap( 'λ: %0.4f, skew(X;λ): %0.4f', lambda, skewness );
 Returns the skewness of a Poisson distribution.
 
 ```c
-double out = sstdlib_base_dists_poisson_skewness( 9.0 );
+double out = stdlib_base_dists_poisson_skewness( 9.0 );
 // returns ~0.33
 ```
 

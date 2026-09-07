@@ -38,6 +38,6 @@ int main( void ) {
 		mu = random_uniform( -5.0, 5.0 );
 		sigma = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 20.0 );
 		y = stdlib_base_dists_normal_quantile( p, mu, sigma );
-		printf( "p:%.4f, µ: %.4f, σ: %.4f, Q(p;µ,σ): %.4f\n", p, mu, sigma, y );
+		printf( "p:%.4f, μ: %.4f, σ: %.4f, Q(p;μ,σ): %.4f\n", p, mu, sigma, y );
 	}
 }

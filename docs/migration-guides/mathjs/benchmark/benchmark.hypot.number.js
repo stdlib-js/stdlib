@@ -24,6 +24,7 @@ var resolve = require( 'path' ).resolve;
 var bench = require( '@stdlib/bench' );
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var filledBy = require( '@stdlib/array/filled-by' );
+var format = require( '@stdlib/string/format' );
 var uniform = require( '@stdlib/random/base/uniform' ).factory;
 var base = require( '@stdlib/math/base/special/hypot' );
 var tryRequire = require( '@stdlib/utils/try-require' );
@@ -40,7 +41,7 @@ var opts = {
 
 // MAIN //
 
-bench( pkg+'::stdlib:math/base/special/hypot:value=number', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:math/base/special/hypot:value=number', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var z;
@@ -68,7 +69,7 @@ bench( pkg+'::stdlib:math/base/special/hypot:value=number', opts, function bench
 
 // TODO: add math/special/hypot benchmarks
 
-bench( pkg+'::mathjs:hypot:value=number', opts, function benchmark( b ) {
+bench( format( '%s::mathjs:hypot:value=number', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var z;

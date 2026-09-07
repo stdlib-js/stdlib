@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the probability density function (PDF) for an inverse gamma distribution.
+* Evaluates the probability density function (PDF) for an inverse gamma distribution with shape parameter `alpha` and scale parameter `beta` at a value `x`.
 */
 double stdlib_base_dists_invgamma_pdf( const double x, const double alpha, const double beta );
 

@@ -49,7 +49,7 @@ class Foo {
 	bifurcateIn( obj, predicate ); // $ExpectType any[][]
 	bifurcateIn( {}, predicate ); // $ExpectType any[][]
 	const opts = {
-		'returns': 'indices' as 'indices'
+		'returns': 'keys' as 'keys'
 	};
 	bifurcateIn( obj, opts, predicate ); // $ExpectType any[][]
 }
@@ -78,7 +78,7 @@ class Foo {
 	bifurcateIn( obj, null, predicate ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a `returns` option which is not one of 'indices', 'values', or '*'...
+// The compiler throws an error if the function is provided a `returns` option which is not one of 'keys', 'values', or '*'...
 {
 	const obj = new Foo();
 	bifurcateIn( obj, { 'returns': '5' }, predicate ); // $ExpectError

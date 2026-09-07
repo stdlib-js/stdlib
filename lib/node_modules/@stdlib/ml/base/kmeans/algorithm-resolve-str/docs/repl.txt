@@ -1,0 +1,25 @@
+
+{{alias}}( value )
+    Returns the clustering algorithm string associated with a supported k-means
+    clustering algorithm value.
+
+    Parameters
+    ----------
+    value: any
+        Clustering algorithm value.
+
+    Returns
+    -------
+    out: string|null
+        Clustering algorithm string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'elkan' )
+    'elkan'
+    > out = {{alias}}( {{alias:@stdlib/ml/base/kmeans/algorithm-str2enum}}( 'elkan' ) )
+    'elkan'
+
+    See Also
+    --------
+

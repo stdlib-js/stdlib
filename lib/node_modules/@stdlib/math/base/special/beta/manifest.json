@@ -44,7 +44,8 @@
         "@stdlib/math/base/special/exp",
         "@stdlib/math/base/special/pow",
         "@stdlib/constants/float64/e",
-        "@stdlib/constants/float64/eps"
+        "@stdlib/constants/float64/eps",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -65,7 +66,8 @@
         "@stdlib/math/base/special/exp",
         "@stdlib/math/base/special/pow",
         "@stdlib/constants/float64/e",
-        "@stdlib/constants/float64/eps"
+        "@stdlib/constants/float64/eps",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -86,7 +88,8 @@
         "@stdlib/math/base/special/exp",
         "@stdlib/math/base/special/pow",
         "@stdlib/constants/float64/e",
-        "@stdlib/constants/float64/eps"
+        "@stdlib/constants/float64/eps",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

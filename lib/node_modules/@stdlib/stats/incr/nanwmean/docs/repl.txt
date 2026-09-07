@@ -1,0 +1,41 @@
+
+{{alias}}()
+    Returns an accumulator function which incrementally computes a weighted
+    arithmetic mean, ignoring `NaN` values.
+
+    If provided arguments, the accumulator function returns an updated weighted
+    mean. If not provided arguments, the accumulator function returns the
+    current weighted mean.
+
+    If either a value or a weight is `NaN`, the value is ignored and the
+    accumulated value remains unchanged.
+
+    The accumulator function accepts two arguments:
+
+    - x: value.
+    - w: weight.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}();
+    > var mu = accumulator()
+    null
+    > mu = accumulator( 2.0, 1.0 )
+    2.0
+    > mu = accumulator( NaN, 1.0 )
+    2.0
+    > mu = accumulator( 2.0, 0.5 )
+    2.0
+    > mu = accumulator( 3.0, 1.5 )
+    2.5
+    > mu = accumulator()
+    2.5
+
+    See Also
+    --------
+

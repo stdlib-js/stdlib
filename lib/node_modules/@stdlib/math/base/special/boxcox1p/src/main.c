@@ -22,6 +22,7 @@
 #include "stdlib/math/base/special/log1p.h"
 #include "stdlib/math/base/special/expm1.h"
 #include "stdlib/constants/float64/ninf.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Computes a one-parameter Box-Cox transformation of `1+x`.
@@ -38,7 +39,7 @@ double stdlib_base_boxcox1p( const double x, const double lambda ) {
 	double lgx;
 
 	if ( stdlib_base_is_nan( x ) || stdlib_base_is_nan( lambda ) || x < -1.0 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( x == -1.0 && lambda < 0.0 ) {
 		return STDLIB_CONSTANT_FLOAT64_NINF;

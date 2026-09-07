@@ -37,6 +37,6 @@ int main( void ) {
 		mu = random_uniform( -5.0, 5.0 );
 		b = random_uniform( 0.0, 20.0 );
 		y = stdlib_base_dists_laplace_quantile( p, mu, b );
-		printf( "p: %lf, µ: %lf, b: %lf, Q(p;µ,b): %lf\n", p, mu, b, y );
+		printf( "p: %lf, μ: %lf, b: %lf, Q(p;μ,b): %lf\n", p, mu, b, y );
 	}
 }

@@ -37,6 +37,7 @@
 #include "stdlib/constants/float64/ninf.h"
 #include "stdlib/constants/float64/pinf.h"
 #include "stdlib/constants/float64/exponent_bias.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdint.h>
 
 // High and low words of ln(2):
@@ -246,7 +247,7 @@ double stdlib_base_log1p( const double x ) {
 	double u;
 
 	if ( x < -1.0 || stdlib_base_is_nan( x ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( x == -1.0 ) {
 		return STDLIB_CONSTANT_FLOAT64_NINF;

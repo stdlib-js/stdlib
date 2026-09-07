@@ -40,9 +40,7 @@ var Complex128Array = require( '@stdlib/array/complex128' );
 var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 
 zlacgv( 2, zx, 1 );
-
-var z = zx.get( 0 );
-// returns <Complex128>[ 1.0, -2.0 ]
+// zx => <Complex128Array>[ 1.0, -2.0, 3.0, -4.0 ]
 ```
 
 The function has the following parameters:
@@ -59,9 +57,7 @@ var Complex128Array = require( '@stdlib/array/complex128' );
 var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 
 zlacgv( 2, zx, 2 );
-
-var z = zx.get( 0 );
-// returns <Complex128>[ 1.0, -2.0 ]
+// zx => <Complex128Array>[ 1.0, -2.0, 3.0, 4.0, 5.0, -6.0, 7.0, 8.0 ]
 ```
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
@@ -70,7 +66,6 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
-var Complex128 = require( '@stdlib/complex/float64/ctor' );
 
 // Initial array:
 var zx0 = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
@@ -80,9 +75,7 @@ var zx1 = new Complex128Array( zx0.buffer, zx0.BYTES_PER_ELEMENT*1 ); // start a
 
 // Conjugate every element in `zx1`:
 zlacgv( 3, zx1, 1 );
-
-var z = zx0.get( 1 );
-// returns <Complex128>[ 3.0, -4.0 ]
+// zx0 => <Complex128Array>[ 1.0, 2.0, 3.0, -4.0, 5.0, -6.0, 7.0, -8.0 ]
 ```
 
 #### zlacgv.ndarray( N, zx, strideZX, offsetZX )
@@ -95,9 +88,7 @@ var Complex128Array = require( '@stdlib/array/complex128' );
 var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 
 zlacgv.ndarray( 3, zx, 1, 0 );
-
-var z = zx.get( 0 );
-// returns <Complex128>[ 1.0, -2.0 ]
+// zx => <Complex128Array>[ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ]
 ```
 
 The function has the following additional parameters:
@@ -112,9 +103,7 @@ var Complex128Array = require( '@stdlib/array/complex128' );
 var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 
 zlacgv.ndarray( 2, zx, 2, 1 );
-
-var z = zx.get( 3 );
-// returns <Complex128>[ 7.0, -8.0 ]
+// zx => <Complex128Array>[ 1.0, 2.0, 3.0, -4.0, 5.0, 6.0, 7.0, -8.0 ]
 ```
 
 </section>

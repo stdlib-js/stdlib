@@ -31,7 +31,7 @@ import { DataType, OutputPolicy } from '@stdlib/types/ndarray';
 *
 * @example
 * var dt = outputDataType( 'float64', 'complex_floating_point' );
-* // returns <string>
+* // returns <DataType>
 */
 declare function outputDataType( dtype: DataType, policy: OutputPolicy | DataType ): DataType;
 

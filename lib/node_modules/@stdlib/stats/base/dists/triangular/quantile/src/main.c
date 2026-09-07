@@ -30,7 +30,7 @@
 * @return     evaluated quantile function
 *
 * @example
-* double y = stdlib_base_triangular_quantile( 0.9, -1.0, 1.0, 0.0 );
+* double y = stdlib_base_dists_triangular_quantile( 0.9, -1.0, 1.0, 0.0 );
 * // returns ~0.553
 */
 double stdlib_base_dists_triangular_quantile( const double p, const double a, const double b, const double c ) {

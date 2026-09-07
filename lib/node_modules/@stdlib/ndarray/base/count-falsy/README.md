@@ -2198,7 +2198,7 @@ int main( void ) {
     struct ndarray *arrays[] = { x, y };
 
     // Perform operation:
-    int8_t status = stdlib_ndarray_count_falsy_b_i( arrays );
+    int8_t status = stdlib_ndarray_count_falsy_b_i( arrays, NULL );
     if ( status != 0 ) {
         fprintf( stderr, "Error during computation.\n" );
         exit( EXIT_FAILURE );

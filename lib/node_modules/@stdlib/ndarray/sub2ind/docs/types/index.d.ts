@@ -19,10 +19,9 @@
 // TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
-/// <reference types="node"/>
 
 import { ArrayLike } from '@stdlib/types/array';
-import { Order } from '@stdlib/types/ndarray';
+import { Mode, Order } from '@stdlib/types/ndarray';
 
 /**
 * Interface defining function options.
@@ -31,10 +30,10 @@ interface Options {
 	/**
 	* Specifies how to handle subscripts which exceed array dimensions (default: ['throw']).
 	*/
-	mode?: Array<string>;
+	mode?: Mode | Array<Mode>;
 
 	/**
-	* specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major').
+	* Specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major').
 	*/
 	order?: Order;
 }
@@ -57,9 +56,10 @@ interface Options {
 * @param args - subscripts followed by an optional options object
 * @throws first argument must be an array-like object containing nonnegative integers
 * @throws subscripts must be integer valued
+* @throws options argument must be an object
 * @throws must provide valid options
 * @throws must provide subscripts which do not exceed array dimensions
-* @throws number of subscripts much match the number of dimensions
+* @throws number of subscripts must match the number of dimensions
 * @returns linear index
 *
 * @example

@@ -28,7 +28,7 @@ Generate fixture data and write to file.
 
 * `p`: input value
 * `alpha`: shape parameter
-* `beta`: rate parameter
+* `beta`: scale parameter
 * `name::AbstractString`: output filename
 
 # Examples
@@ -70,7 +70,7 @@ file = @__FILE__;
 # Extract the directory in which this file resides:
 dir = dirname( file );
 
-# Large rate parameter:
+# Large scale parameter:
 p = rand( 1000 );
 alpha = rand( 1000 ) .* 10.0;
 beta = ( rand( 1000 ) .* 10.0 ) .+ 10.0;

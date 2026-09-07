@@ -35,6 +35,7 @@
 #include "stdlib/math/base/special/ln.h"
 #include "stdlib/constants/float64/pinf.h"
 #include "stdlib/constants/float64/ninf.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdint.h>
 
 static const double Y1 = 8.91314744949340820313e-2;
@@ -340,7 +341,7 @@ double stdlib_base_erfcinv( const double x ) {
 
 	// Special case: NaN
 	if ( stdlib_base_is_nan( x ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	// Special case: 0
 	if ( x == 0.0 ) {
@@ -355,7 +356,7 @@ double stdlib_base_erfcinv( const double x ) {
 		return 0.0;
 	}
 	if ( x > 2.0 || x < 0.0 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	// Argument reduction (reduce to interval [0,1]). If `x` is outside [0,1], we can take advantage of the complementary error function reflection formula: `erfc(-z) = 2 - erfc(z)`, by negating the result once finished.
 	if ( x > 1.0 ) {

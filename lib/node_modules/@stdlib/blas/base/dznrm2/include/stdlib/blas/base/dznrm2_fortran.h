@@ -30,7 +30,7 @@ extern "C" {
 #endif
 
 /**
-* Computes the L2-norm of a complex double-precision floating-point vector.
+* Computes the L2-norm of a double-precision complex floating-point vector.
 */
 void dznrm2sub( const int *, const void *, const int *, double * );
 

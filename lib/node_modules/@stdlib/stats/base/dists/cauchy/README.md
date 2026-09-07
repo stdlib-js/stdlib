@@ -47,7 +47,7 @@ The namespace contains the following distribution functions:
 
 -   <span class="signature">[`cdf( x, x0, gamma )`][@stdlib/stats/base/dists/cauchy/cdf]</span><span class="delimiter">: </span><span class="description">Cauchy distribution cumulative distribution function.</span>
 -   <span class="signature">[`logcdf( x, x0, gamma )`][@stdlib/stats/base/dists/cauchy/logcdf]</span><span class="delimiter">: </span><span class="description">Cauchy distribution logarithm of cumulative distribution function.</span>
--   <span class="signature">[`logpdf( x, x0, gamma )`][@stdlib/stats/base/dists/cauchy/logpdf]</span><span class="delimiter">: </span><span class="description">Cauchy distribution logarithm of probability density function (logPDF).</span>
+-   <span class="signature">[`logpdf( x, x0, gamma )`][@stdlib/stats/base/dists/cauchy/logpdf]</span><span class="delimiter">: </span><span class="description">Cauchy distribution natural logarithm of probability density function (logPDF).</span>
 -   <span class="signature">[`pdf( x, x0, gamma )`][@stdlib/stats/base/dists/cauchy/pdf]</span><span class="delimiter">: </span><span class="description">Cauchy distribution probability density function (PDF).</span>
 -   <span class="signature">[`quantile( p, x0, gamma )`][@stdlib/stats/base/dists/cauchy/quantile]</span><span class="delimiter">: </span><span class="description">Cauchy distribution quantile function.</span>
 

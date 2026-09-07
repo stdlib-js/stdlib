@@ -17,7 +17,7 @@
 # limitations under the License.
 
 # Set the precision to 22 digits:
-options( digits = 22 );
+options( digits = 22L );
 
 #' Generate test fixtures.
 #'
@@ -32,19 +32,19 @@ main <- function() {
 	#' filepath <- get_script_path();
 	get_script_path <- function() {
 		args <- commandArgs( trailingOnly = FALSE );
-		needle <- "--file=";
+		needle <- '--file=';
 		match <- grep( needle, args );
-		if ( length( match ) > 0 ) {
+		if ( length( match ) > 0L ) {
 			# Rscript:
-			filepath <- sub( needle, "", args[match] );
+			filepath <- sub( needle, '', args[match] );
 		} else {
-			ls_vars <- ls( sys.frames()[[1]] )
-			if ( "fileName" %in% ls_vars ) {
+			ls_vars <- ls( sys.frames()[[1L]] )
+			if ( 'fileName' %in% ls_vars ) {
 				# Source'd via RStudio:
-				filepath <- sys.frames()[[1]]$fileName; # nolint
+				filepath <- sys.frames()[[1L]]$fileName; # nolint
 			} else {
 				# Source'd via R console:
-				filepath <- sys.frames()[[1]]$ofile;
+				filepath <- sys.frames()[[1L]]$ofile;
 			}
 		}
 		return( normalizePath( filepath ) );
@@ -56,10 +56,10 @@ main <- function() {
 	#' @return JSON blob
 	#'
 	#' @examples
-	#' x <- seq( -6.5, 25, 0.5 );
+	#' x <- seq( -6.5, 25.0, 0.5 );
 	#' json <- to_json( x );
 	to_json <- function( x ) {
-		return( jsonlite::toJSON( x, digits = 17, auto_unbox = TRUE ) );
+		return( jsonlite::toJSON( x, digits = 17L, auto_unbox = TRUE ) );
 	}
 
 	#' Generate an output absolute filepath based on the script directory.
@@ -68,21 +68,22 @@ main <- function() {
 	#' @return An absolute filepath
 	#'
 	#' @examples
-	#' filepath <- get_filepath( "data.json" );
+	#' filepath <- get_filepath( 'data.json' );
 	get_filepath <- function( name ) {
-		return( paste( source_dir, "/", name, sep = "" ) );
+		return( paste( source_dir, '/', name, sep = '' ) );
 	}
 
 	# Get the directory of this script:
 	source_dir <- dirname( get_script_path() );
 
 	# Generate test fixture data (x small, lambda small):
-	x <- sample( seq( 0.5, 20, by = 0.25 ), 1000, replace = TRUE );
-	lambda <- sample( seq( 0.5, 20, by = 0.25 ), 1000, replace = TRUE );
+	set.seed( 888L );
+	x <- sample( seq( 0.5, 20.0, by = 0.25 ), 1000L, replace = TRUE );
+	lambda <- sample( seq( 0.5, 20.0, by = 0.25 ), 1000L, replace = TRUE );
 	y <- dexp( x, lambda );
 
 	# Deal with NaNs:
-	cat( y, sep = ",\n" );
+	cat( y, sep = ',\n' );
 
 	data <- list( x = x, lambda = lambda, expected = y );
 
@@ -90,16 +91,16 @@ main <- function() {
 	data <- to_json( data );
 
 	# Write the data to file...
-	filepath <- get_filepath( "small_small.json" );
+	filepath <- get_filepath( 'small_small.json' );
 	write( data, filepath );
 
 	# Generate test fixture data (x small, lambda large):
-	x <- sample( seq( 0.5, 20, by = 0.25 ), 1000, replace = TRUE );
-	lambda <- sample( seq( 21, 100, by = 0.25 ), 1000, replace = TRUE );
+	x <- sample( seq( 0.5, 20.0, by = 0.25 ), 1000L, replace = TRUE );
+	lambda <- sample( seq( 21.0, 100.0, by = 0.25 ), 1000L, replace = TRUE );
 	y <- dexp( x, lambda );
 
 	# Deal with NaNs:
-	cat( y, sep = ",\n" );
+	cat( y, sep = ',\n' );
 
 	data <- list( x = x, lambda = lambda, expected = y );
 
@@ -107,16 +108,16 @@ main <- function() {
 	data <- to_json( data );
 
 	# Write the data to file...
-	filepath <- get_filepath( "small_large.json" );
+	filepath <- get_filepath( 'small_large.json' );
 	write( data, filepath );
 
 	# Generate test fixture data (x large, lambda small):
-	x <- sample( seq( 21, 100, by = 0.25 ), 1000, replace = TRUE );
-	lambda <- sample( seq( 0.5, 20, by = 0.25 ), 1000, replace = TRUE );
+	x <- sample( seq( 21.0, 100.0, by = 0.25 ), 1000L, replace = TRUE );
+	lambda <- sample( seq( 0.5, 20.0, by = 0.25 ), 1000L, replace = TRUE );
 	y <- dexp( x, lambda );
 
 	# Deal with NaNs:
-	cat( y, sep = ",\n" );
+	cat( y, sep = ',\n' );
 
 	data <- list( x = x, lambda = lambda, expected = y );
 
@@ -124,16 +125,16 @@ main <- function() {
 	data <- to_json( data );
 
 	# Write the data to file...
-	filepath <- get_filepath( "large_small.json" );
+	filepath <- get_filepath( 'large_small.json' );
 	write( data, filepath );
 
 	# Generate test fixture data (x large, lambda large):
-	x <- sample( seq( 21, 100, by = 0.25 ), 1000, replace = TRUE );
-	lambda <- sample( seq( 21, 100, by = 0.25 ), 1000, replace = TRUE );
+	x <- sample( seq( 21.0, 100.0, by = 0.25 ), 1000L, replace = TRUE );
+	lambda <- sample( seq( 21.0, 100.0, by = 0.25 ), 1000L, replace = TRUE );
 	y <- dexp( x, lambda );
 
 	# Deal with NaNs:
-	cat( y, sep = ",\n" );
+	cat( y, sep = ',\n' );
 
 	data <- list( x = x, lambda = lambda, expected = y );
 
@@ -141,7 +142,7 @@ main <- function() {
 	data <- to_json( data );
 
 	# Write the data to file...
-	filepath <- get_filepath( "large_large.json" );
+	filepath <- get_filepath( 'large_large.json' );
 	write( data, filepath );
 }
 

@@ -141,7 +141,7 @@ int main( void ) {
 
 	print_version();
 	for ( i = 0; i < REPEATS; i++ ) {
-		printf( "# c::native::%s\n", NAME );
+		printf( "# c::%s\n", NAME );
 		elapsed = benchmark();
 		printf( "ok %d benchmark finished\n", i+1 );
 		print_results( elapsed );
