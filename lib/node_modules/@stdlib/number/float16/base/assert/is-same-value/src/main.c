@@ -34,7 +34,7 @@
 * #include <stdbool.h>
 *
 * stdlib_float16_t x = stdlib_base_float32_to_float16( 5.0f );
-* stdlib_float16_t y = stdlib_base_float32_to_float16( 5.0f );
+* stdlib_float16_t y = stdlib_base_float32_to_float16( -5.0f );
 *
 * bool v = stdlib_base_float16_is_same_value( x, x );
 * // returns true
