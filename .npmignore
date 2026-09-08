@@ -57,10 +57,14 @@ workshops/
 !/deps/test/openblas*
 
 # Only top-level directories:
-/etc/
+/etc/*
+!/etc/patches/
 /docs/*
 !/docs/types/*
-/tools/
+/tools/*
+!/tools/scripts/
+/tools/scripts/*
+!/tools/scripts/apply_patches
 
 # Compiled source #
 ###################
