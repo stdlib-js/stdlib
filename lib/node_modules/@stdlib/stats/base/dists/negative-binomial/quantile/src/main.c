@@ -1,0 +1,140 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2026 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+#include "stdlib/stats/base/dists/negative-binomial/quantile.h"
+#include "stdlib/stats/base/dists/negative-binomial/cdf.h"
+#include "stdlib/math/base/special/erfcinv.h"
+#include "stdlib/math/base/special/round.h"
+#include "stdlib/math/base/special/sqrt.h"
+#include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/constants/float64/sqrt_two.h"
+#include "stdlib/constants/float64/pinf.h"
+
+/**
+* Performs a search to the left.
+*
+* @param x    starting guess
+* @param k    probability
+* @param r    number of successes until experiment is stopped
+* @param p    success probability
+* @return     `k` quantile of the specified distribution
+*/
+static double search_left( double x, const double k, const double r, const double p ) {
+	double xp;
+	while ( x > 0.0 && stdlib_base_dists_negative_binomial_cdf( x - 1.0, r, p ) >= k ) {
+		xp = x - 1.0;
+
+		// Guard against non-advancing updates (e.g., when `x` is `NaN` or is so large that decrementing does not change its value) in order to avoid an infinite loop:
+		if ( !( xp < x ) ) {
+			return x;
+		}
+		x = xp;
+	}
+	return x;
+}
+
+/**
+* Performs a search to the right.
+*
+* @param x    starting guess
+* @param k    probability
+* @param r    number of successes until experiment is stopped
+* @param p    success probability
+* @return     `k` quantile of the specified distribution
+*/
+static double search_right( double x, const double k, const double r, const double p ) {
+	double xn;
+
+	// Guard against non-advancing updates (e.g., when `x` is `NaN` or is so large that incrementing does not change its value) in order to avoid an infinite loop:
+	xn = x + 1.0;
+	while ( xn > x ) {
+		x = xn;
+		if ( stdlib_base_dists_negative_binomial_cdf( x, r, p ) >= k ) {
+			return x;
+		}
+		xn = x + 1.0;
+	}
+	return x;
+}
+
+/**
+* Evaluates the quantile function for a negative binomial distribution with number of successes until experiment is stopped `r` and success probability `p` at a probability `k`.
+*
+* @param k    input probability
+* @param r    number of successes until experiment is stopped
+* @param p    success probability
+* @return     evaluated quantile
+*
+* @example
+* double y = stdlib_base_dists_negative_binomial_quantile( 0.9, 20.0, 0.2 );
+* // returns 106.0
+*/
+double stdlib_base_dists_negative_binomial_quantile( const double k, const double r, const double p ) {
+	double sigmaInv;
+	double guess;
+	double sigma;
+	double corr;
+	double mu;
+	double x2;
+	double x;
+	double q;
+
+	if (
+		stdlib_base_is_nan( r ) ||
+		stdlib_base_is_nan( p ) ||
+		stdlib_base_is_nan( k ) ||
+		r <= 0.0 ||
+		p <= 0.0 ||
+		p > 1.0 ||
+		k < 0.0 ||
+		k > 1.0
+	) {
+		return 0.0 / 0.0; // NaN
+	}
+	if ( k == 0.0 ) {
+		return 0.0;
+	}
+	if ( k == 1.0 ) {
+		return STDLIB_CONSTANT_FLOAT64_PINF;
+	}
+	q = 1.0 - p;
+	mu = ( r * q ) / p;
+
+	// If the mean overflows double-precision floating-point format, the sought quantile saturates at positive infinity:
+	if ( mu == STDLIB_CONSTANT_FLOAT64_PINF ) {
+		return STDLIB_CONSTANT_FLOAT64_PINF;
+	}
+	sigma = stdlib_base_sqrt( r * q ) / p;
+	sigmaInv = 1.0 / sigma;
+
+	// Cornish-Fisher expansion:
+	if ( k < 0.5 ) {
+		x = -stdlib_base_erfcinv( 2.0 * k ) * STDLIB_CONSTANT_FLOAT64_SQRT2;
+	} else {
+		x = stdlib_base_erfcinv( 2.0 * ( 1.0 - k ) ) * STDLIB_CONSTANT_FLOAT64_SQRT2;
+	}
+	x2 = x * x;
+
+	// Skewness correction:
+	corr = x + ( sigmaInv * ( x2 - 1.0 ) / 6.0 );
+	guess = stdlib_base_round( mu + ( sigma * corr ) );
+	if ( stdlib_base_dists_negative_binomial_cdf( guess, r, p ) >= k ) {
+		return search_left( guess, k, r, p );
+	}
+	return search_right( guess, k, r, p );
+}
