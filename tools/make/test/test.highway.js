@@ -23,6 +23,7 @@
 // MODULES //
 
 var resolve = require( 'path' ).resolve;
+var execFile = require( 'child_process' ).execFile;
 var env = require( 'process' ).env;
 var tape = require( 'tape' );
 var IS_BROWSER = require( '@stdlib/assert/is-browser' );
@@ -47,6 +48,9 @@ var opts = {
 };
 var runtimeOpts = {
 	'skip': IS_BROWSER || !env.STDLIB_TEST_HIGHWAY_RUNTIME
+};
+var cliOpts = {
+	'skip': IS_BROWSER || IS_WINDOWS
 };
 
 
@@ -76,6 +80,75 @@ tape( 'the Highway native manifest selects the SIMD implementation', opts, funct
 	t.strictEqual( contains( conf.src, 'src/simd/dsumpw_highway.cpp' ), true, 'includes the Highway source' );
 	t.deepEqual( conf.defines, [ 'STDLIB_BLAS_EXT_BASE_DSUMPW_SIMD_HIGHWAY' ], 'enables the Highway implementation' );
 	t.end();
+});
+
+tape( 'Wasm consumers inherit the selected DSUMPW implementation', opts, function test( t ) {
+	var consumers;
+	var backends;
+	var expected;
+	var source;
+	var file;
+	var conf;
+	var src;
+	var i;
+	var j;
+	var k;
+
+	consumers = [
+		'@stdlib/stats/strided/wasm/dmeanpw'
+	];
+	backends = [ '', 'highway' ];
+	source = resolve( dir, 'src/simd/dsumpw_highway_wasm.cpp' );
+	for ( i = 0; i < consumers.length; i++ ) {
+		file = resolve( root, consumers[ i ], 'manifest.json' );
+		for ( j = 0; j < backends.length; j++ ) {
+			conf = manifest( file, {
+				'wasm': true,
+				'simd': backends[ j ]
+			}, mopts );
+			src = [];
+			for ( k = 0; k < conf.src.length; k++ ) {
+				if ( /dsumpw_highway[^/]*\.cpp$/.test( conf.src[ k ] ) ) {
+					src.push( resolve( file, '..', conf.src[ k ] ) );
+				}
+			}
+			expected = ( backends[ j ] ) ? [ 'STDLIB_BLAS_EXT_BASE_DSUMPW_SIMD_HIGHWAY' ] : [];
+			t.deepEqual( conf.defines, expected, consumers[ i ]+': inherits the backend definition' );
+			expected = ( backends[ j ] ) ? [ source ] : [];
+			t.deepEqual( src, expected, consumers[ i ]+': selects the expected Highway sources without duplicates' );
+			if ( !backends[ j ] ) {
+				t.deepEqual( conf, manifest( file, {
+					'wasm': true
+				}, mopts ), consumers[ i ]+': an empty backend preserves the default configuration' );
+			}
+		}
+	}
+	t.end();
+});
+
+tape( 'the Wasm build stops when resolving preprocessor definitions fails', cliOpts, function test( t ) {
+	var options;
+	var script;
+
+	script = resolve( __dirname, '..', '..', 'scripts', 'compile_wasm' );
+	options = {
+		'env': {
+			'PATH': env.PATH,
+			'NODE': 'false',
+			'INCLUDE': 'unused',
+			'SOURCE_FILES': 'unused',
+			'LIBRARIES': 'unused',
+			'LIBPATH': 'unused'
+		}
+	};
+	execFile( 'bash', [ script, __dirname ], options, done );
+
+	function done( error, stdout, stderr ) {
+		t.ok( error, 'returns an error' );
+		t.strictEqual( contains( stderr, 'Resolving preprocessor definitions...' ), true, 'attempts to resolve definitions' );
+		t.strictEqual( contains( stderr, 'Compiling WebAssembly...' ), false, 'does not attempt compilation' );
+		t.end();
+	}
 });
 
 tape( 'the native runtime exports its include directory and static library', runtimeOpts, function test( t ) {

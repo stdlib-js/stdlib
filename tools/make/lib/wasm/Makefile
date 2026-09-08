@@ -31,7 +31,6 @@ pkgs_wasm_list_wasm_flags := "--pattern $(pkgs_wasm_pattern)"
 # Define the path to a script for compiling WebAssembly for a provided package path:
 compile_wasm_bin := $(TOOLS_DIR)/scripts/compile_wasm
 
-
 # RULES #
 
 #/
@@ -49,7 +48,7 @@ compile_wasm_bin := $(TOOLS_DIR)/scripts/compile_wasm
 # @example
 # make wasm PKGS_WASM_PATTERN="blas/base/daxpy-wasm"
 #/
-wasm: $(NODE_MODULES)
+wasm: validate-wasm-simd-backend $(NODE_MODULES)
 	$(QUIET) $(MAKE) LIST_PKGS_WASM_FLAGS=$(pkgs_wasm_list_wasm_flags) -f $(this_file) list-pkgs-wasm | while read -r pkg; do \
 		if echo "$$pkg" | grep -v '^\/.*\|^[a-zA-Z]:.*' >/dev/null; then \
 			continue; \
@@ -62,13 +61,31 @@ wasm: $(NODE_MODULES)
 		CLANG_COMPILER="$(DEPS_LLVM_CLANG)" \
 		CLANG_SYSROOT="$(DEPS_WASI_LIBC_SYSROOT)" \
 		EMCC_COMPILER="$(DEPS_EMSDK_EMSCRIPTEN_EMCC)" \
+		EMXX_COMPILER="$(DEPS_EMSDK_EMSCRIPTEN_EMXX)" \
 		WASM2WAT="$(DEPS_WABT_WASM2WAT)" \
 		WASM2JS="$(DEPS_EMSDK_EMSCRIPTEN_WASM2JS)" \
+		SIMD_BACKEND="$(SIMD_BACKEND)" \
+		DEPS_HIGHWAY_INCLUDE="$(DEPS_HIGHWAY_INCLUDE)" \
 		"${compile_wasm_bin}" $$pkg \
 		|| { echo "Error: failed to compile WebAssembly: $$pkg"; exit 0; } \
 	done
 
 .PHONY: wasm
+
+#/
+# Validates the SIMD backend used to build WebAssembly artifacts.
+#
+# @private
+#/
+validate-wasm-simd-backend:
+ifneq ($(strip $(SIMD_BACKEND)),)
+ifneq ($(strip $(SIMD_BACKEND)),highway)
+	$(QUIET) echo 'Error: unsupported SIMD backend.' >&2
+	$(QUIET) exit 1
+endif
+endif
+
+.PHONY: validate-wasm-simd-backend
 
 #/
 # Removes all compiled and generated WebAssembly files.

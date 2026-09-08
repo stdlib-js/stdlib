@@ -32,13 +32,17 @@
 #   CLANG_COMPILER  LLVM Clang compiler. Default: `clang`.
 #   CLANG_SYSROOT   Path to a C standard library.
 #   EMCC_COMPILER   Emscripten C compiler. Default: `emcc`.
+#   EMXX_COMPILER   Emscripten C++ compiler. Default: `em++`.
 #   WASM2WAT        Command for converting WebAssembly binary format to text format. Default. `wasm2wat`.
 #   WASM2JS         Command for converting WebAssembly binary format to JavaScript. Default. `wasm2js`.
 #   SRC_FOLDER      Folder containing source files. Default: `src`.
 #   INCLUDE         Includes (e.g., `-I /foo/bar -I /a/b`).
 #   SOURCE_FILES    Source file list.
+#   DEFINES         Preprocessor definitions (e.g., `-D NAME=value`).
 #   LIBRARIES       Linked libraries (e.g., `-lopenblas -lpthreads`).
 #   LIBPATH         Library paths (e.g., `-L /foo/bar -L /a/b`).
+#   SIMD_BACKEND    SIMD backend. Default: empty.
+#   DEPS_HIGHWAY_INCLUDE  Path to a Highway installation include directory. Default: empty.
 #
 
 # shellcheck disable=SC2181,SC2153
@@ -70,6 +74,12 @@ if [[ -z "${emcc_compiler}" ]]; then
 	emcc_compiler='emcc'
 fi
 
+# Define the path to the Emscripten `em++` compiler:
+emxx_compiler="${EMXX_COMPILER}"
+if [[ -z "${emxx_compiler}" ]]; then
+	emxx_compiler='em++'
+fi
+
 # Define the path to an executable for converting a WebAssembly binary to the WebAssembly text format:
 wasm_to_wat="${WASM2WAT}"
 if [[ -z "${wasm_to_wat}" ]]; then
@@ -97,11 +107,20 @@ include="${INCLUDE}"
 # Define a list of external source files:
 source_files="${SOURCE_FILES}"
 
+# Define a list of preprocessor definitions:
+defines="${DEFINES}"
+
 # Define a list of libraries (e.g., `-lopenblas -lpthreads`):
 libraries="${LIBRARIES}"
 
 # Define a list of library paths (e.g., `-L /foo/bar -L /beep/boop`):
 libpath="${LIBPATH}"
+
+# Define the SIMD backend:
+simd_backend="${SIMD_BACKEND}"
+
+# Define a path to a Highway installation include directory:
+deps_highway_include="${DEPS_HIGHWAY_INCLUDE}"
 
 
 # FUNCTIONS #
@@ -118,6 +137,19 @@ on_error() {
 # Runs clean-up tasks.
 cleanup() {
 	echo '' >&2
+}
+
+# Validates the SIMD backend.
+validate_simd_backend() {
+	case "${simd_backend}" in
+		''|'highway')
+			return 0
+			;;
+		*)
+			echo "ERROR: unsupported SIMD backend: ${simd_backend}." >&2
+			return 1
+			;;
+	esac
 }
 
 # Prints a success message.
@@ -140,7 +172,7 @@ resolve_includes() {
 	local script
 	local opts
 
-	opts="{'wasm':true,'os':''}"
+	opts="{'wasm':true,'os':'','simd':'${simd_backend}'}"
 
 	# Generate the script for resolving external include directories:
 	script='"'"var path = require('path'); var arr = require('@stdlib/utils/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).include; var str = ''; for (var i = 0; i < arr.length; i++){var p = path.resolve('$1', arr[i]); if (p.indexOf('$1') === 0) {continue;}; str += '-I '+p+' ';}; console.log(str.substring(0, str.length-1));"'"'
@@ -159,7 +191,7 @@ resolve_source_files() {
 	local script
 	local opts
 
-	opts="{'wasm':true,'os':''}"
+	opts="{'wasm':true,'os':'','simd':'${simd_backend}'}"
 
 	# Generate the script for resolving external source files:
 	script='"'"var path = require('path'); var arr = require('@stdlib/utils/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).src; var str = ''; for (var i = 0; i < arr.length; i++){var p = path.resolve('$1', arr[i]); if (p.indexOf('$1') === 0) {continue;}; str += p+' ';}; console.log(str.substring(0, str.length-1));"'"'
@@ -170,6 +202,28 @@ resolve_source_files() {
 	echo "${source_files}"
 }
 
+# Resolves preprocessor definitions.
+#
+# $1 - package directory
+resolve_defines() {
+	local defines
+	local script
+	local opts
+
+	opts="{'wasm':true,'os':'','simd':'${simd_backend}'}"
+
+	# Generate the script for resolving preprocessor definitions:
+	script='"'"var path = require('path'); var arr = require('@stdlib/utils/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).defines || []; var str = ''; for (var i = 0; i < arr.length; i++){str += '-D '+arr[i]+' ';}; console.log(str.substring(0, str.length-1));"'"'
+
+	# Resolve preprocessor definitions:
+	defines=$(eval NODE_PATH="${node_path}" "${node_cmd}" -e "${script}")
+	if [[ "$?" -ne 0 ]]; then
+		return 1
+	fi
+
+	echo "${defines}"
+}
+
 # Resolves libraries.
 #
 # $1 - package directory
@@ -178,7 +232,7 @@ resolve_libraries() {
 	local script
 	local opts
 
-	opts="{'wasm':true,'os':''}"
+	opts="{'wasm':true,'os':'','simd':'${simd_backend}'}"
 
 	# Generate the script for resolving libraries:
 	script='"'"var path = require('path'); var arr = require('@stdlib/utils/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).libraries; var str = ''; for (var i = 0; i < arr.length; i++){str += arr[i]+' ';}; console.log(str.substring(0, str.length-1));"'"'
@@ -197,7 +251,7 @@ resolve_libpaths() {
 	local script
 	local opts
 
-	opts="{'wasm':true,'os':''}"
+	opts="{'wasm':true,'os':'','simd':'${simd_backend}'}"
 
 	# Generate the script for resolving library paths:
 	script='"'"var path = require('path'); var arr = require('@stdlib/utils/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).libpath; var str = ''; for (var i = 0; i < arr.length; i++){var p = path.resolve('$1', arr[i]); str += '-L '+p+' ';}; console.log(str.substring(0, str.length-1));"'"'
@@ -212,7 +266,7 @@ resolve_libpaths() {
 #
 # $1 - source directory
 compile() {
-	cd "$1" && CLANG_COMPILER="${clang_compiler}" CLANG_SYSROOT="${clang_sysroot}" EMCC_COMPILER="${emcc_compiler}" WASM2WAT="${wasm_to_wat}" WASM2JS="${wasm_to_js}" INCLUDE="${include}" SOURCE_FILES="${source_files}" LIBRARIES="${libraries}" LIBPATH="${libpath}" make wasm 2>&1
+	cd "$1" && CLANG_COMPILER="${clang_compiler}" CLANG_SYSROOT="${clang_sysroot}" EMCC_COMPILER="${emcc_compiler}" EMXX_COMPILER="${emxx_compiler}" WASM2WAT="${wasm_to_wat}" WASM2JS="${wasm_to_js}" INCLUDE="${include}" SOURCE_FILES="${source_files}" DEFINES="${defines}" LIBRARIES="${libraries}" LIBPATH="${libpath}" SIMD_BACKEND="${simd_backend}" DEPS_HIGHWAY_INCLUDE="${deps_highway_include}" make wasm 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Error when attempting to compile WebAssembly.' >&2
 		return 1
@@ -228,6 +282,10 @@ compile() {
 main() {
 	local src_dir="${pkg_path}/${src_folder}"
 
+	validate_simd_backend
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
 	if [[ -z "${include}" ]]; then
 		echo 'Resolving external include directories...' >&2
 		include=$(resolve_includes "${pkg_path}")
@@ -238,6 +296,13 @@ main() {
 	if [[ -z "${source_files}" ]]; then
 		echo 'Resolving external source files...' >&2
 		source_files=$(resolve_source_files "${pkg_path}")
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
+	fi
+	if [[ -z "${defines}" ]]; then
+		echo 'Resolving preprocessor definitions...' >&2
+		defines=$(resolve_defines "${pkg_path}")
 		if [[ "$?" -ne 0 ]]; then
 			on_error 1
 		fi
