@@ -31,7 +31,7 @@ y = \mathop{\mathrm{sgn}}(x) \cdot 10^{\lfloor \log_{10} |x| \rfloor}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="y = \operatorname{sgn}(x) \cdot 10^{\lfloor \log_{10} |x| \rfloor}" data-equation="eq:trunc10_function">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@0ff18750bd4e99e3b1f42e8c367a18e16bfc05d1/lib/node_modules/@stdlib/math/base/special/trunc10f/docs/img/equation_trunc10_function.svg" alt="Truncate to nearest power of ten">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@9b745fa94f0ba5de62821dc0b94118cb5b73228d/lib/node_modules/@stdlib/math/base/special/trunc10f/docs/img/equation_trunc10_function.svg" alt="Truncate to nearest power of ten">
     <br>
 </div> -->
 
