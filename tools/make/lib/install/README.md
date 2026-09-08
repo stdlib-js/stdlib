@@ -430,10 +430,38 @@ $ make clean-deps-emscripten-tests
 
 Installs [Highway][highway].
 
-This optional installation downloads the source distribution and runs installation tests. It requires a C++17-capable compiler; `install-deps-dev` does not install Highway.
+This optional installation downloads the source distribution, builds the native runtime, and runs installation tests. It requires CMake 3.10 or newer and a C++17-capable compiler; `install-deps-dev` does not install Highway.
 
 ```bash
 $ make install-deps-highway
+```
+
+#### deps-build-highway
+
+Builds Highway's `hwy` target as a static library and tests runtime linkage. Highway's test suite, examples, and contrib libraries are not built.
+
+```bash
+$ make deps-build-highway
+```
+
+The build directory defaults to `DEPS_HIGHWAY_BUILD_OUT/build` and can be overridden with `DEPS_HIGHWAY_RUNTIME_OUT`. CMake maintains the incremental build there and writes `highway.json`, which records the headers, public compile definitions, static library, and additional link dependencies needed by add-ons.
+
+Use `DEPS_HIGHWAY_BUILD_TYPE=Debug` for a debug build; `Release` is the default. Use a fresh build directory when changing compilers or toolchain flags, and separate directories when keeping multiple configurations. CMake caches toolchain checks; do not configure the same directory concurrently.
+
+Compiled tests default to `deps/test/highway/build`. When keeping multiple runtime builds, set `DEPS_HIGHWAY_TEST_OUT` to a separate absolute directory for each build to avoid overwriting test executables. Reuse the same runtime and test output directory pair on subsequent builds.
+
+```bash
+$ make deps-build-highway DEPS_HIGHWAY_BUILD_TYPE=Debug DEPS_HIGHWAY_RUNTIME_OUT=/path/to/highway-debug DEPS_HIGHWAY_TEST_OUT=/path/to/stdlib/deps/test/highway/build/debug
+```
+
+For an alternate toolchain, pass `C_COMPILER` and `CXX_COMPILER` to the build command.
+
+#### deps-test-highway-build
+
+Builds and tests the runtime, then runs JS/Tape checks for generated link metadata through the project's JavaScript test runner.
+
+```bash
+$ make deps-test-highway-build
 ```
 
 #### clean-deps-highway

@@ -42,6 +42,12 @@ DEPS_HIGHWAY_TEST_INSTALL ?= $(DEPS_HIGHWAY_TEST_DIR)/test_install.cpp
 # Define the output path for a test file:
 DEPS_HIGHWAY_TEST_INSTALL_OUT ?= $(DEPS_HIGHWAY_TEST_OUT)/test_install
 
+# Define the command for running CMake tests:
+CTEST ?= ctest
+
+# Define the native runtime build configuration:
+DEPS_HIGHWAY_BUILD_TYPE ?= Release
+
 
 # RULES #
 
@@ -139,9 +145,36 @@ deps-test-highway: $(DEPS_HIGHWAY_TEST_INSTALL_OUT)
 # @example
 # make install-deps-highway
 #/
-install-deps-highway: deps-download-highway deps-verify-highway deps-extract-highway deps-test-highway
+install-deps-highway: deps-download-highway deps-verify-highway deps-extract-highway deps-test-highway deps-build-highway
 
 .PHONY: install-deps-highway
+
+#/
+# Builds and tests the native Highway runtime.
+#
+# @example
+# make deps-build-highway
+#/
+deps-build-highway: CFLAGS ?=
+deps-build-highway: CXXFLAGS ?=
+deps-build-highway: LDFLAGS ?=
+deps-build-highway: $(DEPS_HIGHWAY_BUILD_OUT) | $(DEPS_HIGHWAY_TEST_OUT)
+	$(QUIET) $(MKDIR_RECURSIVE) $(DEPS_HIGHWAY_RUNTIME_OUT)
+	$(QUIET) cd $(DEPS_HIGHWAY_RUNTIME_OUT) && $(CMAKE) \
+		-DHIGHWAY_SOURCE="$(DEPS_HIGHWAY_INCLUDE)" \
+		-DHIGHWAY_TEST_SOURCE="$(DEPS_HIGHWAY_TEST_DIR)/test_runtime.cpp" \
+		-DHIGHWAY_TEST_OUT="$(DEPS_HIGHWAY_TEST_OUT)" \
+		-DCMAKE_BUILD_TYPE="$(DEPS_HIGHWAY_BUILD_TYPE)" \
+		-DCMAKE_C_COMPILER="$(CC)" \
+		-DCMAKE_CXX_COMPILER="$(CXX)" \
+		-DCMAKE_C_FLAGS="$(CFLAGS)" \
+		-DCMAKE_CXX_FLAGS="$(CXXFLAGS)" \
+		-DCMAKE_EXE_LINKER_FLAGS="$(LDFLAGS)" \
+		$(TOOLS_DIR)/make/lib/install/highway
+	$(QUIET) MAKEFLAGS= MFLAGS= $(CMAKE) --build $(DEPS_HIGHWAY_RUNTIME_OUT) --config $(DEPS_HIGHWAY_BUILD_TYPE) --target stdlib_highway_test
+	$(QUIET) cd $(DEPS_HIGHWAY_RUNTIME_OUT) && $(CTEST) -C $(DEPS_HIGHWAY_BUILD_TYPE) --output-on-failure
+
+.PHONY: deps-build-highway
 
 #/
 # Removes an installed Highway distribution.
@@ -168,3 +201,17 @@ clean-deps-highway-tests:
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(DEPS_HIGHWAY_TEST_OUT)
 
 .PHONY: clean-deps-highway-tests
+
+#/
+# Tests the native Highway build metadata.
+#
+# @example
+# make deps-test-highway-build
+#/
+deps-test-highway-build: deps-build-highway
+	$(QUIET) STDLIB_TEST_HIGHWAY_RUNTIME="$(DEPS_HIGHWAY_RUNTIME_OUT)" \
+		STDLIB_TEST_HIGHWAY_SOURCE="$(DEPS_HIGHWAY_INCLUDE)" \
+		FILES="$(TOOLS_DIR)/make/test/test.highway.js" \
+		$(MAKE) -f $(this_file) test-javascript-files
+
+.PHONY: deps-test-highway-build
