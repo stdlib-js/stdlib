@@ -30,10 +30,21 @@ var IS_WINDOWS = require( '@stdlib/assert/is-windows' );
 var contains = require( '@stdlib/assert/contains' );
 var existsSync = require( '@stdlib/fs/exists' ).sync;
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
+var manifest = require( '@stdlib/utils/library-manifest' );
 
 
 // VARIABLES //
 
+var root = resolve( __dirname, '..', '..', '..', 'lib', 'node_modules' );
+var dir = resolve( root, '@stdlib', 'blas', 'ext', 'base', 'dsumpw' );
+var fpath = resolve( dir, 'manifest.json' );
+var mopts = {
+	'basedir': dir,
+	'paths': 'posix'
+};
+var opts = {
+	'skip': IS_BROWSER
+};
 var runtimeOpts = {
 	'skip': IS_BROWSER || !env.STDLIB_TEST_HIGHWAY_RUNTIME
 };
@@ -43,6 +54,27 @@ var runtimeOpts = {
 
 tape( 'Highway build integration', function test( t ) {
 	t.ok( true, __filename );
+	t.end();
+});
+
+tape( 'the default native manifest selects the C implementation', opts, function test( t ) {
+	var conf = manifest( fpath, {}, mopts );
+	t.strictEqual( contains( conf.src, 'src/main.c' ), true, 'includes the C source' );
+	t.strictEqual( contains( conf.src, 'src/simd/dsumpw_highway.cpp' ), false, 'does not include the Highway source' );
+	t.deepEqual( conf.defines, [], 'does not enable a SIMD backend' );
+	t.deepEqual( conf, manifest( fpath, {
+		'simd': ''
+	}, mopts ), 'an empty backend preserves the default configuration' );
+	t.end();
+});
+
+tape( 'the Highway native manifest selects the SIMD implementation', opts, function test( t ) {
+	var conf = manifest( fpath, {
+		'simd': 'highway'
+	}, mopts );
+	t.strictEqual( contains( conf.src, 'src/main.c' ), true, 'includes the C source' );
+	t.strictEqual( contains( conf.src, 'src/simd/dsumpw_highway.cpp' ), true, 'includes the Highway source' );
+	t.deepEqual( conf.defines, [ 'STDLIB_BLAS_EXT_BASE_DSUMPW_SIMD_HIGHWAY' ], 'enables the Highway implementation' );
 	t.end();
 });
 
