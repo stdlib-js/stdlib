@@ -699,3 +699,14 @@ deps_fftpack_version_slug := $(subst .,_,$(DEPS_FFTPACK_VERSION))
 
 # Define the output path when building FFTPACK:
 DEPS_FFTPACK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/pffft-$(DEPS_FFTPACK_VERSION)
+
+# Highway...
+
+# Define the Highway version:
+DEPS_HIGHWAY_VERSION ?= 1.4.0
+
+# Define the output path when building Highway:
+DEPS_HIGHWAY_BUILD_OUT ?= $(DEPS_BUILD_DIR)/highway-$(DEPS_HIGHWAY_VERSION)
+
+# Define the path to the Highway include directory:
+DEPS_HIGHWAY_INCLUDE ?= $(DEPS_HIGHWAY_BUILD_OUT)
