@@ -1,0 +1,44 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2026 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+#include "stdlib/stats/base/dists/pareto-type1/median.h"
+#include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/math/base/special/pow.h"
+
+/**
+* Evaluates the median for a Pareto (Type I) distribution with shape parameter `alpha` and scale parameter `beta`.
+*
+* @param alpha    shape parameter
+* @param beta     scale parameter
+* @return         median
+*
+* @example
+* double y = stdlib_base_dists_pareto_type1_median( 4.0, 12.0 );
+* // returns ~14.27
+*/
+double stdlib_base_dists_pareto_type1_median( const double alpha, const double beta ) {
+	if (
+		stdlib_base_is_nan( alpha ) ||
+		alpha <= 0.0 ||
+		stdlib_base_is_nan( beta ) ||
+		beta <= 0.0
+	) {
+		return 0.0 / 0.0; // NaN
+	}
+	return beta * stdlib_base_pow( 2.0, 1.0 / alpha );
+}

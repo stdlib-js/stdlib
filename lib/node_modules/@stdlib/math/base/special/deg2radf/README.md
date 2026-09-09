@@ -22,6 +22,20 @@ limitations under the License.
 
 > Convert an angle from degrees to radians (single-precision).
 
+<section class="intro">
+
+<!-- <equation class="equation" label="eq:deg2rad" align="center" raw="r = x \cdot \frac{\pi}{180}" alt="Degrees to radians conversion"> -->
+
+```math
+r = x \cdot \frac{\pi}{180}
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
