@@ -25,9 +25,7 @@
 #include "stdlib/constants/float64/pi.h"
 
 /**
-* Evaluates the probability density function (PDF) for a truncated normal distribution
-* with endpoints `a` and `b`, location parameter `mu`, and scale parameter `sigma`
-* at a value `x`.
+* Evaluates the probability density function (PDF) for a truncated normal distribution with endpoints `a` and `b`, location parameter `mu`, and scale parameter `sigma` at a value `x`.
 *
 * @param x       input value
 * @param a       minimum support

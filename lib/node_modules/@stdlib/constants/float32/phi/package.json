@@ -69,6 +69,7 @@
     "number",
     "divine",
     "ieee754",
+    "float",
     "single",
     "floating-point",
     "float32"

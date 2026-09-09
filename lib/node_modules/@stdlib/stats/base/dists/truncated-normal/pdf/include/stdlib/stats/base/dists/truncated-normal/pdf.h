@@ -27,9 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the probability density function (PDF) for a truncated normal
-* distribution with lower limit `a`, upper limit `b`, location parameter `mu`,
-* and scale parameter `sigma`.
+* Evaluates the probability density function (PDF) for a truncated normal distribution with lower limit `a`, upper limit `b`, location parameter `mu`, and scale parameter `sigma`.
 */
 double stdlib_base_dists_truncated_normal_pdf( const double x, const double a, const double b, const double mu, const double sigma );
 
