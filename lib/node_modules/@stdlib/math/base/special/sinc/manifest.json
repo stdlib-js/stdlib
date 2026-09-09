@@ -42,7 +42,8 @@
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/assert/is-infinite",
         "@stdlib/constants/float64/pi",
-        "@stdlib/math/base/special/sinpi"
+        "@stdlib/math/base/special/sinpi",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -61,7 +62,8 @@
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/assert/is-infinite",
         "@stdlib/constants/float64/pi",
-        "@stdlib/math/base/special/sinpi"
+        "@stdlib/math/base/special/sinpi",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -80,7 +82,8 @@
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/assert/is-infinite",
         "@stdlib/constants/float64/pi",
-        "@stdlib/math/base/special/sinpi"
+        "@stdlib/math/base/special/sinpi",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

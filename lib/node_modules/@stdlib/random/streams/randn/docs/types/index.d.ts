@@ -59,6 +59,11 @@ interface Options {
 	name?: 'improved-ziggurat' | 'box-muller';
 
 	/**
+	* Pseudorandom number generator which generates uniformly distributed pseudorandom numbers.
+	*/
+	prng?: random.PRNG;
+
+	/**
 	* Pseudorandom number generator seed.
 	*/
 	seed?: random.PRNGSeedMT19937;

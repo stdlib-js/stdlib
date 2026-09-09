@@ -215,7 +215,7 @@ interface Unary {
 * @param x - input ndarray
 * @param options - function options
 * @param clbk - callback function
-* @param thisArg - callback execution context
+* @param thisArg - callback function execution context
 * @returns output ndarray
 *
 * @example

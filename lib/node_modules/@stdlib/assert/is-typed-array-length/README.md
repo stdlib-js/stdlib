@@ -115,7 +115,7 @@ bool = isTypedArrayLength( null );
 ## See Also
 
 -   <span class="package-name">[`@stdlib/assert/is-array-length`][@stdlib/assert/is-array-length]</span><span class="delimiter">: </span><span class="description">test if a value is a valid array length.</span>
--   <span class="package-name">[`@stdlib/assert/is-typed-array`][@stdlib/assert/is-typed-array]</span><span class="delimiter">: </span><span class="description">test if a value is a typed array.</span>
+-   <span class="package-name">[`@stdlib/assert/is-typed-array`][@stdlib/assert/is-typed-array]</span><span class="delimiter">: </span><span class="description">test if a value is a built-in typed array.</span>
 
 </section>
 

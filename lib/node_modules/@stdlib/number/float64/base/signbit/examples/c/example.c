@@ -22,7 +22,7 @@
 #include <inttypes.h>
 
 int main( void ) {
-	double x[] = { 3.14, -3.14, 0.0, -0.0, 4.0, 1.0, -1.0, 1.0e308, -1.0e308 };
+	const double x[] = { 3.14, -3.14, 0.0, -0.0, 4.0, 1.0, -1.0, 1.0e308, -1.0e308 };
 
 	int8_t out;
 	int i;

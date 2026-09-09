@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Evaluates the logarithm of the cumulative distribution function (CDF) for a gamma distribution.
+* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a gamma distribution.
 *
 * @param x - input value
 * @returns evaluated logCDF
@@ -31,7 +31,7 @@ type Unary = ( x: number ) => number;
 */
 interface LogCDF {
 	/**
-	* Evaluates the logarithm of the cumulative distribution function (CDF) for a gamma distribution with shape parameter `alpha` and rate parameter `beta` at a value `x`.
+	* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a gamma distribution with shape parameter `alpha` and rate parameter `beta` at a value `x`.
 	*
 	* ## Notes
 	*

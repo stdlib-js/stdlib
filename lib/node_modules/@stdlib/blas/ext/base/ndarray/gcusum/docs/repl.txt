@@ -8,9 +8,11 @@
     Parameters
     ----------
     arrays: ArrayLikeObject<ndarray>
-        Array-like object containing a one-dimensional input ndarray, a one-
-        dimensional output ndarray, and a zero-dimensional ndarray containing
-        the initial sum.
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a one-dimensional output ndarray.
+        - a zero-dimensional ndarray containing the initial sum.
 
     Returns
     -------
@@ -19,16 +21,9 @@
 
     Examples
     --------
-    > var xbuf = [ 1.0, -2.0, 2.0 ];
-    > var ybuf = [ 0.0, 0.0, 0.0 ];
-    > var dt = 'generic';
-    > var sh = [ xbuf.length ];
-    > var st = [ 1 ];
-    > var oo = 0;
-    > var ord = 'row-major';
-    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, st, oo, ord );
-    > var y = new {{alias:@stdlib/ndarray/ctor}}( dt, ybuf, sh, st, oo, ord );
-    > var s = {{alias:@stdlib/ndarray/from-scalar}}( 0.0, { 'dtype': dt } );
+    > var x = {{alias:@stdlib/ndarray/vector/ctor}}( [ 1.0, -2.0, 2.0 ], 'generic' );
+    > var y = {{alias:@stdlib/ndarray/vector/ctor}}( [ 0.0, 0.0, 0.0 ], 'generic' );
+    > var s = {{alias:@stdlib/ndarray/from-scalar}}( 0.0, { 'dtype': 'generic' } );
     > {{alias}}( [ x, y, s ] )
     <ndarray>[ 1.0, -1.0, 1.0 ]
 

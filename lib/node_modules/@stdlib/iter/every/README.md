@@ -70,6 +70,10 @@ var bool = iterEvery( array2iterator( [] ) );
 
 <section class="notes">
 
+## Notes
+
+-   The function immediately returns upon encountering a falsy value.
+
 </section>
 
 <!-- /.notes -->

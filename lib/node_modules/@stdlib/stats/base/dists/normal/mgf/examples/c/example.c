@@ -38,6 +38,6 @@ int main( void ) {
 		mu = random_uniform( -50.0, 50.0 );
 		sigma = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 20.0 );
 		y = stdlib_base_dists_normal_mgf( t, mu, sigma );
-		printf( "t: %lf, µ: %lf, σ: %lf, M_X(t;µ,σ): %lf\n", t, mu, sigma, y );
+		printf( "t: %lf, μ: %lf, σ: %lf, M_X(t;μ,σ): %lf\n", t, mu, sigma, y );
 	}
 }

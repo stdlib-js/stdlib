@@ -47,6 +47,7 @@
 #include "stdlib/constants/float64/sqrt_eps.h"
 #include "stdlib/constants/float64/ln_sqrt_two_pi.h"
 #include "stdlib/constants/float64/max_nth_factorial.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdint.h>
 
 static const int32_t MAX_BERNOULLI_2N = 129;
@@ -708,12 +709,12 @@ double stdlib_base_zeta( const double s ) {
 
 	// Check for `NaN`:
 	if ( stdlib_base_is_nan( s ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 
 	// Check for a pole:
 	if ( s == 1.0 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 
 	// Check for large value:

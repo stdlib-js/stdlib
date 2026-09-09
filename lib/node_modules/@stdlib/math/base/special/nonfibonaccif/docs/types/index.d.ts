@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Computes the nth non-Fibonacci single-precision floating-point number.
+* Computes the nth non-Fibonacci number as a single-precision floating-point number.
 *
 * ## Notes
 *

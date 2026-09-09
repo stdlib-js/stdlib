@@ -1,0 +1,67 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2026 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+// TypeScript Version: 4.1
+
+/// <reference types="@stdlib/types"/>
+
+/**
+* If provided a value, returns an updated moving maximum absolute value; otherwise, returns the current maximum absolute value.
+*
+*
+* @param x - value
+* @returns moving maximum absolute value
+*/
+type accumulator = ( x?: number ) => number | null;
+
+/**
+* Returns an accumulator function which incrementally computes a moving maximum absolute value while ignoring `NaN` values.
+*
+* ## Notes
+*
+* -   The `W` parameter defines the number of values over which to compute the moving maximum absolute value.
+* -   Until the window is full, each returned value is calculated from all non-NaN values received so far. `NaN` values are skipped and do not enter the moving window.
+*
+* @param W - window size
+* @throws must provide a positive integer
+* @returns accumulator function
+*
+* @example
+* var accumulator = incrnanmmaxabs( 3 );
+*
+* var m = accumulator();
+* // returns null
+*
+* m = accumulator( 2.0 );
+* // returns 2.0
+*
+* m = accumulator( NaN );
+* // returns 2.0
+*
+* m = accumulator( -5.0 );
+* // returns 5.0
+*
+* m = accumulator( NaN );
+* // returns 5.0
+*/
+declare function incrnanmmaxabs( W: number ): accumulator;
+
+
+// EXPORTS //
+
+export = incrnanmmaxabs;

@@ -28,7 +28,7 @@
 * -   If provided `NaN` or a value which, when used in computations, results in `NaN`, the accumulated value is `NaN` for all future invocations.
 *
 * @param x - value
-* @returns mean value
+* @returns mean value or null
 */
 type accumulator = ( x?: number ) => number | null;
 
@@ -36,7 +36,8 @@ type accumulator = ( x?: number ) => number | null;
 * Returns an accumulator function which incrementally computes an exponentially weighted mean.
 *
 * @param alpha - smoothing factor
-* @throws alpha must be on the interval `[0,1]`
+* @throws must provide a nonnegative number
+* @throws must be on the interval `[0,1]`
 * @returns accumulator function
 *
 * @example

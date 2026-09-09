@@ -1,0 +1,139 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2026 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# sdsdot
+
+> Calculate the dot product of two one-dimensional single-precision floating-point ndarrays with extended accumulation.
+
+<section class="intro">
+
+The [dot product][dot-product] (or scalar product) is defined as
+
+<!-- <equation class="equation" label="eq:dot_product" align="center" raw="\mathbf{x}\cdot\mathbf{y} = \sum_{i=0}^{N-1} x_i y_i = x_0 y_0 + x_1 y_1 + \ldots + x_{N-1} y_{N-1}" alt="Dot product definition."> -->
+
+```math
+\mathbf{x}\cdot\mathbf{y} = \sum_{i=0}^{N-1} x_i y_i = x_0 y_0 + x_1 y_1 + \ldots + x_{N-1} y_{N-1}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\mathbf{x}\cdot\mathbf{y} = \sum_{i=0}^{N-1} x_i y_i = x_0 y_0 + x_1 y_1 + \ldots + x_{N-1} y_{N-1}" data-equation="eq:dot_product">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@6cf4829ce9c06ba9fa207a2ea3b395266f86a259/lib/node_modules/@stdlib/blas/base/ndarray/sdsdot/docs/img/equation_dot_product.svg" alt="Dot product definition.">
+    <br>
+</div> -->
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var sdsdot = require( '@stdlib/blas/base/ndarray/sdsdot' );
+```
+
+#### sdsdot( arrays )
+
+Computes the dot product of two one-dimensional single-precision floating-point ndarrays with extended accumulation.
+
+```javascript
+var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
+var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+
+var x = new Float32Vector( [ 4.0, 2.0, -3.0, 5.0, -1.0 ] );
+var y = new Float32Vector( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] );
+
+var scalar = scalar2ndarray( 10.0, {
+    'dtype': 'float32'
+});
+
+var z = sdsdot( [ x, y, scalar ] );
+// returns 5.0
+```
+
+The function has the following parameters:
+
+-   **arrays**: array-like object containing the following ndarrays:
+
+    -   first one-dimensional input ndarray.
+    -   second one-dimensional input ndarray.
+    -   a zero-dimensional ndarray containing a scalar constant which is added to the dot product.
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var discreteUniform = require( '@stdlib/random/discrete-uniform' );
+var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var ndarray2array = require( '@stdlib/ndarray/to-array' );
+var sdsdot = require( '@stdlib/blas/base/ndarray/sdsdot' );
+
+var opts = {
+    'dtype': 'float32'
+};
+
+var x = discreteUniform( [ 10 ], 0, 500, opts );
+console.log( ndarray2array( x ) );
+
+var y = discreteUniform( [ 10 ], 0, 255, opts );
+console.log( ndarray2array( y ) );
+
+var scalar = scalar2ndarray( 10.0, opts );
+
+var out = sdsdot( [ x, y, scalar ] );
+console.log( out );
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+[dot-product]: https://en.wikipedia.org/wiki/Dot_product
+
+</section>
+
+<!-- /.links -->

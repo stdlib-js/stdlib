@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Complex128Array, Complex64Array, AnyArray, FloatingPointDataType } from '@stdlib/types/array';
+import { Complex128Array, Complex64Array, Float16Array, AnyArray, FloatingPointDataType } from '@stdlib/types/array';
 
 /**
 * Data type.
@@ -62,6 +62,24 @@ declare function nansLike( x: AnyArray, dtype: 'float64' ): Float64Array;
 * // returns <Float32Array>[ NaN, NaN ]
 */
 declare function nansLike( x: AnyArray, dtype: 'float32' ): Float32Array;
+
+/**
+* Creates an array filled with NaNs and having the same length as a provided input array.
+*
+* @param x - input array from which to derive the output array length
+* @param dtype - data type
+* @returns filled array
+*
+* @example
+* var zeros = require( '@stdlib/array/zeros' );
+*
+* var x = zeros( 2, 'float64' );
+* // returns <Float64Array>[ 0.0, 0.0 ]
+*
+* var y = nansLike( x, 'float16' );
+* // returns <Float16Array>[ NaN, NaN ]
+*/
+declare function nansLike( x: AnyArray, dtype: 'float16' ): Float16Array;
 
 /**
 * Creates an array filled with NaNs and having the same length as a provided input array.
@@ -176,6 +194,33 @@ declare function nansLike( x: Float64Array, dtype?: DataType ): Float64Array;
 * // returns <Float32Array>[ NaN, NaN ]
 */
 declare function nansLike( x: Float32Array, dtype?: DataType ): Float32Array;
+
+/**
+* Creates an array filled with NaNs and having the same length and data type as a provided input array.
+*
+* The function supports the following data types:
+*
+* -   `float64`: double-precision floating-point numbers (IEEE 754)
+* -   `float32`: single-precision floating-point numbers (IEEE 754)
+* -   `float16`: half-precision floating-point numbers (IEEE 754)
+* -   `complex128`: double-precision complex floating-point numbers
+* -   `complex64`: single-precision complex floating-point numbers
+* -   `generic`: generic JavaScript values
+*
+* @param x - input array from which to derive the output array length
+* @param dtype - data type
+* @returns filled array
+*
+* @example
+* var zeros = require( '@stdlib/array/zeros' );
+*
+* var x = zeros( 2, 'float16' );
+* // returns <Float16Array>[ 0.0, 0.0 ]
+*
+* var y = nansLike( x );
+* // returns <Float16Array>[ NaN, NaN ]
+*/
+declare function nansLike( x: Float16Array, dtype?: DataType ): Float16Array;
 
 /**
 * Creates an array filled with NaNs and having the same length and data type as a provided input array.

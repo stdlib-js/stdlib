@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/array';
+import { Collection, Float16Array } from '@stdlib/types/array';
 
 /**
 * Returns an element from a `Float64Array`.
@@ -39,6 +39,15 @@ type GetFloat64 = ( arr: Float64Array, idx: number ) => number | void;
 * @returns element value
 */
 type GetFloat32 = ( arr: Float32Array, idx: number ) => number | void;
+
+/**
+* Returns an element from a `Float16Array`.
+*
+* @param arr - input array
+* @param idx - element index
+* @returns element value
+*/
+type GetFloat16 = ( arr: Float16Array, idx: number ) => number | void;
 
 /**
 * Returns an element from an `Int32Array`.
@@ -154,6 +163,23 @@ declare function getter( dtype: 'float64' ): GetFloat64;
 * // returns 3.0
 */
 declare function getter( dtype: 'float32' ): GetFloat32;
+
+/**
+* Returns an accessor function for retrieving an element from a `Float16Array`.
+*
+* @param dtype - data type
+* @returns accessor function
+*
+* @example
+* var Float16Array = require( '@stdlib/array/float16' );
+*
+* var arr = new Float16Array( [ 1, 2, 3, 4 ] );
+*
+* var get = getter( 'float16' );
+* var v = get( arr, 2 );
+* // returns 3.0
+*/
+declare function getter( dtype: 'float16' ): GetFloat16;
 
 /**
 * Returns an accessor function for retrieving an element from an `Int32Array`.

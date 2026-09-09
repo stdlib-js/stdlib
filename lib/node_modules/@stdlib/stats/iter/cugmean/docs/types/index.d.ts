@@ -26,7 +26,7 @@ import { Iterator as Iter, IterableIterator } from '@stdlib/types/iter';
 type Iterator = Iter | IterableIterator;
 
 /**
-* Returns an iterator which iteratively computes a cumulative arithmetic geometric mean.
+* Returns an iterator which iteratively computes a cumulative geometric mean.
 *
 * ## Notes
 *

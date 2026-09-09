@@ -43,12 +43,8 @@ var cy = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 var s = new Complex64( 0.0, 0.75 );
 
 crot( cx.length, cx, 1, cy, 1, 1.25, s );
-
-var z = cy.get( 0 );
-// returns <Complex64>[ ~-1.5, ~0.75 ]
-
-z = cx.get( 0 );
-// returns <Complex64>[ ~1.25, ~2.5 ]
+// cy => <Complex64Array>[ ~-1.5, ~0.75, ~-3.0, ~2.25, ~-4.5, ~3.75, ~-6.0, ~5.25 ]
+// cx => <Complex64Array>[ ~1.25, ~2.5, ~3.75, ~5.0, ~6.25, ~7.5, ~8.75, ~10.0 ]
 ```
 
 The function has the following parameters:
@@ -70,12 +66,8 @@ var cy = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 var s = new Complex64( 0.0, 0.75 );
 
 crot( 2, cx, 2, cy, 2, 1.25, s );
-
-var z = cy.get( 0 );
-// returns <Complex64>[ ~-1.5, ~0.75 ]
-
-z = cx.get( 0 );
-// returns <Complex64>[ ~1.25, ~2.5 ]
+// cy => <Complex64Array>[ ~-1.5, ~0.75, 0.0, 0.0, ~-4.5, ~3.75, 0.0, 0.0 ]
+// cx => <Complex64Array>[ ~1.25, ~2.5, 3.0, 4.0, ~6.25, ~7.5, 7.0, 8.0 ]
 ```
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
@@ -97,12 +89,8 @@ var cy1 = new Complex64Array( cy0.buffer, cy0.BYTES_PER_ELEMENT*2 ); // start at
 var s = new Complex64( 0.0, 0.75 );
 
 crot( 2, cx1, -2, cy1, 1, 1.25, s );
-
-var z = cy0.get( 2 );
-// returns <Complex64>[ ~-6.0, ~5.25 ]
-
-z = cx0.get( 3 );
-// returns <Complex64>[ ~8.75, ~10.0 ]
+// cy0 => <Complex64Array>[ 0.0, 0.0, 0.0, 0.0, ~-6.0, ~5.25, ~-3.0, ~2.25 ]
+// cx0 => <Complex64Array>[ 1.0, 2.0, ~3.75, ~5.0, 5.0, 6.0, ~8.75, ~10.0 ]
 ```
 
 #### crot.ndarray( N, cx, strideCX, offsetCX, cy, strideCY, offsetCY, c, s )
@@ -118,12 +106,8 @@ var cy = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 var s = new Complex64( 0.0, 0.75 );
 
 crot.ndarray( cx.length, cx, 1, 0, cy, 1, 0, 1.25, s );
-
-var z = cy.get( 0 );
-// returns <Complex64>[ ~-1.5, ~0.75 ]
-
-z = cx.get( 0 );
-// returns <Complex64>[ ~1.25, ~2.5 ]
+// cy => <Complex64Array>[ ~-1.5, ~0.75, ~-3.0, ~2.25, ~-4.5, ~3.75 ]
+// cx => <Complex64Array>[ ~1.25, ~2.5, ~3.75, ~5.0, ~6.25, ~7.5 ]
 ```
 
 The function has the following additional parameters:
@@ -142,12 +126,8 @@ var cy = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 var s = new Complex64( 0.0, 0.75 );
 
 crot.ndarray( 2, cx, 2, 1, cy, 2, 1, 1.25, s );
-
-var z = cy.get( 3 );
-// returns <Complex64>[ ~-6.0, ~5.25 ]
-
-z = cx.get( 1 );
-// returns <Complex64>[ ~3.75, ~5.0 ]
+// cy => <Complex64Array>[ 0.0, 0.0, ~-3.0, ~2.25, 0.0, 0.0, ~-6.0, ~5.25 ]
+// cx => <Complex64Array>[ 1.0, 2.0, ~3.75, ~5.0, 5.0, 6.0, ~8.75, ~10.0 ]
 ```
 
 </section>

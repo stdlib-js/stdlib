@@ -52,7 +52,7 @@ var y = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var z = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 binary( [ x, y, z ], [ x.length ], [ 1, 1, 1 ], add );
-// z => <Float64Array>[ 2.0, 4.0, 6.0, 8.0, 10.0 ]
+// z => <Float64Array>[ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0 ]
 ```
 
 The function accepts the following arguments:
@@ -15002,7 +15002,7 @@ void stdlib_strided_zz_z( uint8_t *arrays[], const int64_t *shape, const int64_t
 Macro containing the preamble for a loop which operates on strided array elements.
 
 ```c
-STDLIB_STRIDED_BINARY_LOOP_PREMABLE {
+STDLIB_STRIDED_BINARY_LOOP_PREAMBLE {
     // Loop body...
 }
 ```

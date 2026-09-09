@@ -20,6 +20,7 @@
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/assert/is_negative_zero.h"
 #include "stdlib/constants/float64/ninf.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Return the minimum value.
@@ -38,7 +39,7 @@
 */
 double stdlib_base_min( const double x, const double y ) {
 	if ( stdlib_base_is_nan( x ) || stdlib_base_is_nan( y ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( x == STDLIB_CONSTANT_FLOAT64_NINF || y == STDLIB_CONSTANT_FLOAT64_NINF ) {
 		return STDLIB_CONSTANT_FLOAT64_NINF;

@@ -35,7 +35,7 @@ int main( void ) {
 		mu = random_uniform( 0.1, 10.0 );
 		lambda = random_uniform( 0.1, 20.0 );
 		y = stdlib_base_dists_wald_mean( mu, lambda );
-		printf( "µ: %.4f, λ: %.4f, Mean(X;µ,λ): %.4f\n", mu, lambda, y );
+		printf( "μ: %.4f, λ: %.4f, Mean(X;μ,λ): %.4f\n", mu, lambda, y );
 	}
 }
 

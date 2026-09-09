@@ -76,6 +76,8 @@ var bool = ( y === out );
 
 <section class="examples">
 
+## Examples
+
 ```javascript
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
 var srotg = require( '@stdlib/blas/base/srotg' );

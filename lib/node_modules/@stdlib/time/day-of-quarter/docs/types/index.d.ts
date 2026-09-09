@@ -39,10 +39,12 @@
 * var day = dayOfQuarter();
 * // returns <number>
 *
-* day = dayOfQuarter( new Date() );
+* @example
+* var day = dayOfQuarter( new Date() );
 * // returns <number>
 *
-* day = dayOfQuarter( 12, 31, 2017 );
+* @example
+* var day = dayOfQuarter( 12, 31, 2017 );
 * // returns 92
 */
 declare function dayOfQuarter( month?: string | number | Date, day?: number, year?: number ): number;

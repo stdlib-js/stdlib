@@ -44,5 +44,5 @@ double API_SUFFIX(stdlib_strided_dsmean)( const CBLAS_INT N, const float *X, con
 * @return         output value
 */
 double API_SUFFIX(stdlib_strided_dsmean_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
-	return stdlib_strided_dsmeanpn_ndarray( N, X, strideX, offsetX );
+	return API_SUFFIX(stdlib_strided_dsmeanpn_ndarray)( N, X, strideX, offsetX );
 }

@@ -53,7 +53,7 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param x - input array
 	* @param strideX - stride length
-	* @param offset - starting index
+	* @param offsetX - starting index
 	* @returns range of absolute values
 	*
 	* @example
@@ -62,7 +62,7 @@ interface Routine {
 	* var v = nanrangeabs.ndarray( x.length, x, 1, 0 );
 	* // returns 1.0
 	*/
-	ndarray( N: number, x: InputArray, strideX: number, offset: number ): number;
+	ndarray( N: number, x: InputArray, strideX: number, offsetX: number ): number;
 }
 
 /**

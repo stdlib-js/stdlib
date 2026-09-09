@@ -43,7 +43,7 @@ type Unary<T = unknown> = ( key: T ) => boolean;
 type Binary<T = unknown, U = unknown> = ( key: T, value: U ) => boolean;
 
 /**
-* Checks whether an iterated value passes a test.
+* Checks whether an iterated property passes a test.
 *
 * @param key - iteration key
 * @param value - property value

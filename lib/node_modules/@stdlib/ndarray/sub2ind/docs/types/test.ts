@@ -24,6 +24,7 @@ import subd2ind = require( './index' );
 // The function returns a number...
 {
 	const shape = [ 3, 3, 3 ];
+	subd2ind( shape, 1, 2, 2, { 'mode': 'throw' } ); // $ExpectType number
 	subd2ind( shape, 1, 2, 2, { 'mode': [ 'throw' ] } ); // $ExpectType number
 	subd2ind( shape, 1, 2, 2, { 'order': 'row-major' } ); // $ExpectType number
 }
@@ -65,7 +66,7 @@ import subd2ind = require( './index' );
 	subd2ind( shape, 1, 2, 2, { 'order': ( x: number ): number => x } ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a `mode` option which is not an array of strings...
+// The compiler throws an error if the function is provided a `mode` option which is not a recognized mode or array of recognized modes...
 {
 	const shape = [ 3, 3, 3 ];
 	subd2ind( shape, 1, 2, 2, { 'mode': 'abc' } ); // $ExpectError

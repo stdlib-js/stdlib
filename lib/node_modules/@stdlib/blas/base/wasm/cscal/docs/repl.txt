@@ -462,10 +462,10 @@
 
     // Define "pointers" (i.e., byte offsets) into module memory:
     > var xptr = 0;
-    > var zptr = 80;
+    > var zptr = 32;
 
     // Write data to module memory:
-    > var xbuf = {{alias:@stdlib/array/one-to}}( 10, 'float32' );
+    > var xbuf = {{alias:@stdlib/array/one-to}}( 8, 'float32' );
     > var x = new {{alias:@stdlib/array/complex64}}( xbuf.buffer );
     > mod.write( xptr, x );
 
@@ -473,17 +473,14 @@
     > mod.write( zptr, new {{alias:@stdlib/array/float32}}( [ 2.0, 2.0 ] ) );
 
     // Perform computation:
-    > mod.main( 5, zptr, xptr, 1 );
+    > mod.main( 4, zptr, xptr, 1 );
 
     // Extract results from module memory:
-    > var view = {{alias:@stdlib/array/zeros}}( 5, 'complex64' );
+    > var view = {{alias:@stdlib/array/zeros}}( 4, 'complex64' );
     > mod.read( xptr, view );
 
-    > var v = view.get( 0 );
-    > var re = {{alias:@stdlib/complex/float32/real}}( v )
-    -2.0
-    > var im = {{alias:@stdlib/complex/float32/imag}}( v )
-    6.0
+    > view
+    <Complex64Array>[ -2.0, 6.0, -2.0, 14.0, -2.0, 22.0, -2.0, 30.0 ]
 
 
 {{alias}}.Module.prototype.ndarray( N, cap, cxp, sx, ox )
@@ -521,10 +518,10 @@
 
     // Define "pointers" (i.e., byte offsets) into module memory:
     > var xptr = 0;
-    > var zptr = 80;
+    > var zptr = 32;
 
     // Write data to module memory:
-    > var xbuf = {{alias:@stdlib/array/one-to}}( 10, 'float32' );
+    > var xbuf = {{alias:@stdlib/array/one-to}}( 8, 'float32' );
     > var x = new {{alias:@stdlib/array/complex64}}( xbuf.buffer );
     > mod.write( xptr, x );
 
@@ -532,17 +529,14 @@
     > mod.write( zptr, new {{alias:@stdlib/array/float32}}( [ 2.0, 2.0 ] ) );
 
     // Perform computation:
-    > mod.ndarray( 5, zptr, xptr, 1, 0 );
+    > mod.ndarray( 4, zptr, xptr, 1, 0 );
 
     // Extract results from module memory:
-    > var view = {{alias:@stdlib/array/zeros}}( 5, 'complex64' );
+    > var view = {{alias:@stdlib/array/zeros}}( 4, 'complex64' );
     > mod.read( xptr, view );
 
-    > var v = view.get( 0 );
-    > var re = {{alias:@stdlib/complex/float32/real}}( v )
-    -2.0
-    > var im = {{alias:@stdlib/complex/float32/imag}}( v )
-    6.0
+    > view
+    <Complex64Array>[ -2.0, 6.0, -2.0, 14.0, -2.0, 22.0, -2.0, 30.0 ]
 
     See Also
     --------

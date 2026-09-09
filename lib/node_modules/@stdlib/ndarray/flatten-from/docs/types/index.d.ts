@@ -84,7 +84,7 @@ type Options<U> = BaseOptions & {
 * var shy = shape( y );
 * // returns [ 3, 2 ]
 */
-declare function flattenFrom<T extends ndarray>( x: T, dim: number, options?: BaseOptions ): T;
+declare function flattenFrom<T extends ndarray = ndarray>( x: T, dim: number, options?: BaseOptions ): T;
 
 /**
 * Returns a copy of an input ndarray where all dimensions of the input ndarray are flattened starting from a specified dimension.

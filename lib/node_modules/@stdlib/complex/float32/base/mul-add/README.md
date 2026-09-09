@@ -183,9 +183,9 @@ Performs a multiply-add operation involving three single-precision complex float
 #include "stdlib/complex/float32/real.h"
 #include "stdlib/complex/float32/imag.h"
 
-stdlib_complex64_t z1 = sstdlib_complex64( 5.0f, 3.0f );
-stdlib_complex64_t z2 = sstdlib_complex64( -2.0f, 1.0f );
-stdlib_complex64_t z3 = sstdlib_complex64( 7.0f, -8.0f );
+stdlib_complex64_t z1 = stdlib_complex64( 5.0f, 3.0f );
+stdlib_complex64_t z2 = stdlib_complex64( -2.0f, 1.0f );
+stdlib_complex64_t z3 = stdlib_complex64( 7.0f, -8.0f );
 
 stdlib_complex64_t out = stdlib_base_complex64_muladd( z1, z2, z3 );
 

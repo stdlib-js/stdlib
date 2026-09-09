@@ -59,6 +59,7 @@
     "single-precision",
     "floating-point",
     "float",
+    "float32",
     "ieee754",
     "size",
     "sizeof",

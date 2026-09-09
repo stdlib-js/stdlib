@@ -584,7 +584,7 @@ interface Namespace {
 	*
 	* @param options - function options
 	* @param options.iter - number of iterations (default: 4503599627370497)
-	* @throws `iter` option must be a nonpositive integer
+	* @throws `iter` option must be a nonnegative integer
 	* @returns iterator
 	*
 	* @example

@@ -1,0 +1,45 @@
+
+{{alias}}( arrays )
+    Calculates the k-th discrete forward difference of a one-dimensional double-
+    precision floating-point ndarray.
+
+    The output ndarray must have `N + N1 + N2 - k` elements, where `N` is the
+    number of elements in the input ndarray, `N1` is the number of elements to
+    prepend, `N2` is the number of elements to append, and `k` is the number
+    of times to recursively compute differences.
+
+    The workspace ndarray must have `N + N1 + N2 - 1` elements.
+
+    When `k <= 1`, the workspace ndarray is unused.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a one-dimensional ndarray containing values to prepend.
+        - a one-dimensional ndarray containing values to append.
+        - a one-dimensional output ndarray.
+        - a one-dimensional workspace ndarray.
+        - a zero-dimensional ndarray specifying the number of times to
+        recursively compute differences.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/ndarray/vector/float64}}( [ 2.0, 4.0, 6.0, 8.0, 10.0 ] );
+    > var p = new {{alias:@stdlib/ndarray/vector/float64}}( [ 1.0 ] );
+    > var a = new {{alias:@stdlib/ndarray/vector/float64}}( [ 11.0 ] );
+    > var out = new {{alias:@stdlib/ndarray/vector/float64}}( 6 );
+    > var w = new {{alias:@stdlib/ndarray/vector/float64}}( 6 );
+    > var k = {{alias:@stdlib/ndarray/from-scalar}}( 1, { 'dtype': 'generic' } );
+    > {{alias}}( [ x, p, a, out, w, k ] )
+    <ndarray>[ 1.0, 2.0, 2.0, 2.0, 2.0, 1.0 ]
+
+    See Also
+    --------

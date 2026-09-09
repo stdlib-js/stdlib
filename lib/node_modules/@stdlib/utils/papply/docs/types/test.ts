@@ -24,7 +24,7 @@ import papply = require( './index' );
 // The function returns a partially applied function...
 {
 	papply( ( x: number, y: number ): number => x + y, 3 ); // $ExpectType Closure
-	papply( ( x: number, y: number, z: number ): number => x + y + z , 3, 4 ); // $ExpectType Closure
+	papply( ( x: number, y: number, z: number ): number => x + y + z, 3, 4 ); // $ExpectType Closure
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a function...

@@ -38,7 +38,7 @@ interface Options {
 * @param x - input array
 * @param options - function options
 * @param options.dim - index of dimension to reverse
-* @returns output array
+* @returns output ndarray
 *
 * @example
 * var array = require( '@stdlib/ndarray/array' );
@@ -49,7 +49,7 @@ interface Options {
 * var y = toReversedDimension( x );
 * // returns <ndarray>[ [ 2.0, 1.0 ], [ 4.0, 3.0 ] ]
 */
-declare function toReversedDimension<T extends ndarray>( x: T, options?: Options ): T;
+declare function toReversedDimension<T extends ndarray = ndarray>( x: T, options?: Options ): T;
 
 
 // EXPORTS //

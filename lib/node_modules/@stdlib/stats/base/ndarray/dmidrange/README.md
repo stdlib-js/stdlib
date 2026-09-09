@@ -43,11 +43,9 @@ var dmidrange = require( '@stdlib/stats/base/ndarray/dmidrange' );
 Computes the [mid-range][mid-range] of a one-dimensional double-precision floating-point ndarray.
 
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
 
-var xbuf = new Float64Array( [ 1.0, 2.0, 5.0, 10.0 ] );
-var x = new ndarray( 'float64', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = new Float64Vector( [ 1.0, 2.0, 5.0, 10.0 ] );
 
 var v = dmidrange( [ x ] );
 // returns 5.5
@@ -78,15 +76,15 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var uniform = require( '@stdlib/random/array/uniform' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var uniform = require( '@stdlib/random/uniform' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var dmidrange = require( '@stdlib/stats/base/ndarray/dmidrange' );
 
-var xbuf = uniform( 10, -50.0, 50.0, {
+var opts = {
     'dtype': 'float64'
-});
-var x = new ndarray( 'float64', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+};
+
+var x = uniform( [ 10 ], -50.0, 50.0, opts );
 console.log( ndarray2array( x ) );
 
 var v = dmidrange( [ x ] );

@@ -24,7 +24,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the cumulative distribution function (CDF) for an inverse gamma distribution.
+* Evaluates the cumulative distribution function (CDF) for an inverse gamma distribution with shape parameter `alpha` and scale parameter `beta` at a value `x`.
 */
 double stdlib_base_dists_invgamma_cdf( const double x, const double alpha, const double beta );
 

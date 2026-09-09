@@ -32,19 +32,19 @@ main <- function() {
 	#' filepath <- get_script_path();
 	get_script_path <- function() {
 		args <- commandArgs( trailingOnly = FALSE );
-		needle <- "--file=";
+		needle <- '--file=';
 		match <- grep( needle, args );
-		if ( length( match ) > 0 ) {
+		if ( length( match ) > 0L ) {
 			# Rscript:
-			filepath <- sub( needle, "", args[match] );
+			filepath <- sub( needle, '', args[match] );
 		} else {
-			ls_vars <- ls( sys.frames()[[1]] )
-			if ( "fileName" %in% ls_vars ) {
+			ls_vars <- ls( sys.frames()[[1L]] )
+			if ( 'fileName' %in% ls_vars ) {
 				# Source'd via RStudio:
-				filepath <- sys.frames()[[1]]$fileName; # nolint
+				filepath <- sys.frames()[[1L]]$fileName; # nolint
 			} else {
 				# Source'd via R console:
-				filepath <- sys.frames()[[1]]$ofile;
+				filepath <- sys.frames()[[1L]]$ofile;
 			}
 		}
 		return( normalizePath( filepath ) );
@@ -56,10 +56,10 @@ main <- function() {
 	#' @return JSON blob
 	#'
 	#' @examples
-	#' x <- seq( -6.5, 25, 0.5 );
+	#' x <- seq( -6.5, 25.0, 0.5 );
 	#' json <- to_json( x );
 	to_json <- function( x ) {
-		return( jsonlite::toJSON( x, digits = 16, auto_unbox = TRUE ) );
+		return( jsonlite::toJSON( x, digits = 16L, auto_unbox = TRUE ) );
 	}
 
 	#' Generate an output absolute filepath based on the script directory.
@@ -68,17 +68,17 @@ main <- function() {
 	#' @return An absolute filepath
 	#'
 	#' @examples
-	#' filepath <- get_filepath( "data.json" );
+	#' filepath <- get_filepath( 'data.json' );
 	get_filepath <- function( name ) {
-		return( paste( source_dir, "/", name, sep = "" ) );
+		return( paste( source_dir, '/', name, sep = '' ) );
 	}
 
 	# Get the directory of this script:
 	source_dir <- dirname( get_script_path() );
 
-	# TODO: generate test fixture data (`x` and `y`), making sure to handle NaNs
-  x <- rnorm(n = 150, 6, 2.5)
-	y <- rnorm(n = 150, 11, 3)
+	# TODO: generate test fixture data (`x` and `y`), making sure to handle NaNs # nolint: todo_comment_linter.
+	x <- rnorm(n = 150L, 6L, 2.5)
+	y <- rnorm(n = 150L, 11L, 3L)
 	ans <- MASS::kde2d(x, y)
 
 	# Convert fixture data to JSON:
@@ -87,50 +87,50 @@ main <- function() {
 	ans <- to_json(ans);
 
 	# Write the data to file...
-	filepath <- get_filepath( "datax.json" );
+	filepath <- get_filepath( 'datax.json' );
 	write( x, filepath );
 
-	filepath <- get_filepath( "datay.json" );
+	filepath <- get_filepath( 'datay.json' );
 	write( y, filepath );
 
-	filepath <- get_filepath( "expected.json" );
+	filepath <- get_filepath( 'expected.json' );
 	write(ans, filepath);
 
 	## now make the second example
-	x2 <- rt(df = 37, n = 300);
-	y2 <- runif(n = 300, min = min(x2), max = max(x2));
+	x2 <- rt(df = 37L, n = 300L);
+	y2 <- runif(n = 300L, min = min(x2), max = max(x2));
 	ans2 <- MASS::kde2d(x2, y2);
 
 	x2 <- to_json( x2 );
 	y2 <- to_json( y2 );
 	ans2 <- to_json( ans2 );
 
-	filepath <- get_filepath( "datax2.json" );
+	filepath <- get_filepath( 'datax2.json' );
 	write(x2, filepath);
 
-	filepath <- get_filepath( "datay2.json" );
+	filepath <- get_filepath( 'datay2.json' );
 	write(y2, filepath);
 
-	filepath <- get_filepath( "expected2.json" );
+	filepath <- get_filepath( 'expected2.json' );
 	write(ans2, filepath);
-	
+
 	## now we will test the smaller example
-	xSmall <- c(1, 2, 3, 4, 5);
-	ySmall <- c(6, 7, 8, 9, 10);
-	ansSmall <- MASS::kde2d(xSmall, ySmall);
-	
-	xSmall <- to_json(xSmall);
-	ySmall <- to_json(ySmall);
-	ansSmall <- to_json(ansSmall);
-	
-	filepath <- get_filepath( "dataxsmall.json" );
-	write( xSmall, filepath );
-	
-	filepath <- get_filepath( "dataysmall.json" );
-	write( ySmall, filepath );
-	
-	filepath <- get_filepath( "expectedsmall.json" );
-	write(ansSmall, filepath);
+	x_small <- c(1L, 2L, 3L, 4L, 5L);
+	y_small <- c(6L, 7L, 8L, 9L, 10L);
+	ans_small <- MASS::kde2d(x_small, y_small);
+
+	x_small <- to_json(x_small);
+	y_small <- to_json(y_small);
+	ans_small <- to_json(ans_small);
+
+	filepath <- get_filepath( 'dataxsmall.json' );
+	write( x_small, filepath );
+
+	filepath <- get_filepath( 'dataysmall.json' );
+	write( y_small, filepath );
+
+	filepath <- get_filepath( 'expectedsmall.json' );
+	write(ans_small, filepath);
 
 }
 

@@ -255,14 +255,12 @@ main() {
 	echo "Processing PRs for issue references..."
 	debug_log "Starting to process $total_prs PRs for issue references"
 
-	# Process PRs one by one...
+	# Process PRs one by one, streaming the list through a single `jq` invocation in order to avoid re-parsing the entire list once per PR...
 	processed_count=0
 
-	for ((i=0; i<total_prs; i++)); do
-		pr=$(echo "$open_prs" | jq -c ".[$i]")
-
+	while IFS= read -r pr; do
 		if [ -z "$pr" ] || [ "$pr" = "null" ]; then
-			debug_log "Warning: Empty PR data at index $i"
+			debug_log "Warning: Empty PR data"
 			continue
 		fi
 
@@ -300,7 +298,7 @@ main() {
 				issue_prs_values[index]="${issue_prs_values[index]} $pr_number"
 			fi
 		done
-	done
+	done < <(echo "$open_prs" | jq -c '.[]')
 
 	debug_log "Finished processing all PRs for issue references"
 	debug_log "Found ${#issue_prs_keys[@]} unique issues referenced in PRs"
