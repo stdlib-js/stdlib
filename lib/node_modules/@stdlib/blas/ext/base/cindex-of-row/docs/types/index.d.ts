@@ -39,7 +39,7 @@ interface Routine {
 	* @param M - number of rows in `A`
 	* @param N - number of columns in `A`
 	* @param A - input matrix
-	* @param LDA - stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`)
+	* @param LDA - stride length for the first dimension of `A` (a.k.a., leading dimension of the matrix `A`)
 	* @param x - search vector
 	* @param strideX - stride length for `x`
 	* @param workspace - workspace array for tracking row match candidates
@@ -70,8 +70,8 @@ interface Routine {
 	* @param M - number of rows in `A`
 	* @param N - number of columns in `A`
 	* @param A - input matrix
-	* @param strideA1 - stride of the first dimension of `A`
-	* @param strideA2 - stride of the second dimension of `A`
+	* @param strideA1 - stride length for the first dimension of `A`
+	* @param strideA2 - stride length for the second dimension of `A`
 	* @param offsetA - starting index for `A`
 	* @param x - search vector
 	* @param strideX - stride length for `x`
@@ -107,7 +107,7 @@ interface Routine {
 * @param M - number of rows in `A`
 * @param N - number of columns in `A`
 * @param A - input matrix
-* @param LDA - stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`)
+* @param LDA - stride length for the first dimension of `A` (a.k.a., leading dimension of the matrix `A`)
 * @param x - search vector
 * @param strideX - stride length for `x`
 * @param workspace - workspace array for tracking row match candidates
