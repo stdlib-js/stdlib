@@ -3,6 +3,10 @@
     Returns the first index of an element in a one-dimensional double-precision
     floating-point ndarray which is not equal to a specified search element.
 
+    If a specified starting search index is negative, the function resolves the
+    starting search index by counting backward from the last element (where `-1`
+    refers to the last element).
+
     When searching for a search element, the function checks for inequality
     using the strict inequality operator `!==`. As a consequence, `NaN` values
     are considered distinct from all values (including other `NaN` values), and
@@ -18,6 +22,8 @@
 
         - a one-dimensional input ndarray.
         - a zero-dimensional ndarray containing the search element.
+        - a zero-dimensional ndarray containing the index from which to begin
+        searching.
 
     Returns
     -------
@@ -28,7 +34,8 @@
     --------
     > var x = new {{alias:@stdlib/ndarray/vector/float64}}( [ 1.0, 1.0, 3.0 ] );
     > var v = {{alias:@stdlib/ndarray/from-scalar}}( 1.0, { 'dtype': 'float64' } );
-    > {{alias}}( [ x, v ] )
+    > var i = {{alias:@stdlib/ndarray/from-scalar}}( 0, { 'dtype': 'generic' } );
+    > {{alias}}( [ x, v, i ] )
     2
 
     See Also

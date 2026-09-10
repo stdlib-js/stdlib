@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection, Complex128Array, Complex64Array, AccessorArrayLike } from '@stdlib/types/array';
+import { Collection, Complex128Array, Complex64Array, AccessorArrayLike, Float16Array } from '@stdlib/types/array';
 
 /**
 * Reverses an array in-place.
@@ -53,6 +53,22 @@ declare function reverse( x: Float64Array ): Float64Array;
 * // returns <Float32Array>[ 3.0, 2.0, 1.0 ]
 */
 declare function reverse( x: Float32Array ): Float32Array;
+
+/**
+* Reverses an array in-place.
+*
+* @param x - input array
+* @returns input array
+*
+* @example
+* var Float16Array = require( '@stdlib/array/float16' );
+*
+* var x = new Float16Array( [ 1.0, 2.0, 3.0 ] );
+*
+* var out = reverse( x );
+* // returns <Float16Array>[ 3.0, 2.0, 1.0 ]
+*/
+declare function reverse( x: Float16Array ): Float16Array;
 
 /**
 * Reverses an array in-place.

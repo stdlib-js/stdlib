@@ -31,6 +31,7 @@ import { float64ndarray, typedndarray } from '@stdlib/types/ndarray';
 *
 *     -   a one-dimensional input ndarray.
 *     -   a zero-dimensional ndarray containing the search element.
+*     -   a zero-dimensional ndarray containing the index from which to begin searching.
 *
 * @param arrays - array-like object containing ndarrays
 * @returns index
@@ -45,10 +46,14 @@ import { float64ndarray, typedndarray } from '@stdlib/types/ndarray';
 *     'dtype': 'float64'
 * });
 *
-* var v = dindexOfNotEqual( [ x, searchElement ] );
+* var fromIndex = scalar2ndarray( 0, {
+*     'dtype': 'generic'
+* });
+*
+* var v = dindexOfNotEqual( [ x, searchElement, fromIndex ] );
 * // returns 2
 */
-declare function dindexOfNotEqual( arrays: [ float64ndarray, typedndarray<number> ] ): number;
+declare function dindexOfNotEqual( arrays: [ float64ndarray, typedndarray<number>, typedndarray<number> ] ): number;
 
 
 // EXPORTS //

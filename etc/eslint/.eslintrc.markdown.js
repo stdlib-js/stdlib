@@ -107,7 +107,7 @@ eslint.rules[ 'no-tabs' ] = 'error';
 *
 * @private
 */
-eslint.rules[ 'require-jsdoc' ] = 'off';
+eslint.rules[ 'jsdoc/require-jsdoc' ] = 'off';
 
 /**
 * Do not require `@private` annotations.

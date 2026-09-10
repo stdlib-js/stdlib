@@ -10,6 +10,10 @@
     `>`. As a consequence, comparisons involving `NaN` always evaluate to
     `false`.
 
+    If a specified starting search index is negative, the function resolves the
+    starting search index by counting backward from the last element (where `-1`
+    refers to the last element).
+
     Parameters
     ----------
     arrays: ArrayLikeObject<ndarray>
@@ -17,6 +21,8 @@
 
         - first one-dimensional input ndarray.
         - second one-dimensional input ndarray.
+        - a zero-dimensional ndarray containing the index from which to begin
+        searching.
 
     Returns
     -------
@@ -27,7 +33,8 @@
     --------
     > var x = new {{alias:@stdlib/ndarray/vector/float64}}( [ 0.0, 0.0, 1.0, 0.0 ] );
     > var y = new {{alias:@stdlib/ndarray/vector/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
-    > {{alias}}( [ x, y ] )
+    > var i = {{alias:@stdlib/ndarray/from-scalar}}( 0, { 'dtype': 'generic' } );
+    > {{alias}}( [ x, y, i ] )
     2
 
     See Also

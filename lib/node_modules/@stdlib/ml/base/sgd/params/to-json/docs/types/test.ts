@@ -1,0 +1,51 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2026 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+import params2json = require( './index' );
+
+
+// TESTS //
+
+// The function returns an object...
+{
+	const params = {
+		'penaltyParams': new Float64Array( [ 2.5, 0.0 ] ),
+		'learningRateParams': new Float64Array( [ 0.01, 0.0 ] ),
+		'lossFunctionParams': new Float64Array( [ 0.0 ] ),
+		'intercept': 0.0,
+		'maxIter': 1000,
+		'penalty': 'l2',
+		'learningRate': 'constant',
+		'lossFunction': 'hinge',
+		'fitIntercept': true,
+		'method': 'Stochastic Gradient Descent'
+	};
+	params2json( params ); // $ExpectType Params
+}
+
+// The compiler throws an error if not provided a parameters object...
+{
+	params2json( 10 ); // $ExpectError
+	params2json( true ); // $ExpectError
+	params2json( false ); // $ExpectError
+	params2json( null ); // $ExpectError
+	params2json( undefined ); // $ExpectError
+	params2json( [] ); // $ExpectError
+	params2json( {} ); // $ExpectError
+	params2json( ( x: number ): number => x ); // $ExpectError
+}
