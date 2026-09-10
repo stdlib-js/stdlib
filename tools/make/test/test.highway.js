@@ -65,7 +65,6 @@ tape( 'the default native manifest selects the C implementation', opts, function
 	var conf = manifest( fpath, {}, mopts );
 	t.strictEqual( contains( conf.src, 'src/main.c' ), true, 'includes the C source' );
 	t.strictEqual( contains( conf.src, 'src/simd/dsumpw_highway.cpp' ), false, 'does not include the Highway source' );
-	t.deepEqual( conf.defines, [], 'does not enable a SIMD backend' );
 	t.deepEqual( conf, manifest( fpath, {
 		'simd': ''
 	}, mopts ), 'an empty backend preserves the default configuration' );
@@ -78,7 +77,6 @@ tape( 'the Highway native manifest selects the SIMD implementation', opts, funct
 	}, mopts );
 	t.strictEqual( contains( conf.src, 'src/main.c' ), false, 'does not include the default C implementation' );
 	t.strictEqual( contains( conf.src, 'src/simd/dsumpw_highway.cpp' ), true, 'includes the Highway source' );
-	t.deepEqual( conf.defines, [], 'does not require a backend definition' );
 	t.end();
 });
 
@@ -120,7 +118,6 @@ tape( 'Wasm consumers inherit the selected DSUMPW implementation', opts, functio
 				}
 			}
 			t.strictEqual( hasScalar, !backends[ j ], consumers[ i ]+': selects the C implementation only for the default backend' );
-			t.deepEqual( conf.defines, [], consumers[ i ]+': does not require a backend definition' );
 			expected = ( backends[ j ] ) ? [ source ] : [];
 			t.deepEqual( src, expected, consumers[ i ]+': selects the expected Highway sources without duplicates' );
 			if ( !backends[ j ] ) {
@@ -133,7 +130,7 @@ tape( 'Wasm consumers inherit the selected DSUMPW implementation', opts, functio
 	t.end();
 });
 
-tape( 'the Wasm build stops when resolving preprocessor definitions fails', cliOpts, function test( t ) {
+tape( 'the Wasm build rejects an unsupported SIMD backend', cliOpts, function test( t ) {
 	var options;
 	var script;
 
@@ -141,19 +138,45 @@ tape( 'the Wasm build stops when resolving preprocessor definitions fails', cliO
 	options = {
 		'env': {
 			'PATH': env.PATH,
-			'NODE': 'false',
-			'INCLUDE': 'unused',
-			'SOURCE_FILES': 'unused',
-			'LIBRARIES': 'unused',
-			'LIBPATH': 'unused'
+			'SIMD_BACKEND': 'highways'
 		}
 	};
 	execFile( 'bash', [ script, __dirname ], options, done );
 
 	function done( error, stdout, stderr ) {
 		t.ok( error, 'returns an error' );
-		t.strictEqual( contains( stderr, 'Resolving preprocessor definitions...' ), true, 'attempts to resolve definitions' );
+		t.strictEqual( contains( stderr, 'unsupported SIMD backend: highways' ), true, 'reports the unsupported backend' );
 		t.strictEqual( contains( stderr, 'Compiling WebAssembly...' ), false, 'does not attempt compilation' );
+		t.end();
+	}
+});
+
+tape( 'the Wasm build preserves static Highway dispatch when overriding C++ flags', cliOpts, function test( t ) {
+	var options;
+	var args;
+
+	options = {
+		'cwd': resolve( root, '@stdlib/stats/strided/wasm/dmeanpw/src' ),
+		'env': {
+			'PATH': env.PATH
+		}
+	};
+	args = [
+		'--no-print-directory',
+		'-B',
+		'-n',
+		'wasm',
+		'SIMD_BACKEND=highway',
+		'DEPS_HIGHWAY_INCLUDE=/highway',
+		'SOURCE_FILES='+resolve( dir, 'src/simd/dsumpw_highway.cpp' ),
+		'CXXFLAGS=-std=c++17 -O1'
+	];
+	execFile( 'make', args, options, done );
+
+	function done( error, stdout ) {
+		t.error( error, 'success' );
+		t.strictEqual( contains( stdout, '-std=c++17 -O1 -DHWY_COMPILE_ONLY_STATIC' ), true, 'preserves static dispatch with custom flags' );
+		t.strictEqual( contains( stdout, '-msimd128' ), true, 'enables Wasm SIMD' );
 		t.end();
 	}
 });
