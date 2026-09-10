@@ -76,17 +76,19 @@ tape( 'the Highway native manifest selects the SIMD implementation', opts, funct
 	var conf = manifest( fpath, {
 		'simd': 'highway'
 	}, mopts );
-	t.strictEqual( contains( conf.src, 'src/main.c' ), true, 'includes the C source' );
+	t.strictEqual( contains( conf.src, 'src/main.c' ), false, 'does not include the default C implementation' );
 	t.strictEqual( contains( conf.src, 'src/simd/dsumpw_highway.cpp' ), true, 'includes the Highway source' );
-	t.deepEqual( conf.defines, [ 'STDLIB_BLAS_EXT_BASE_DSUMPW_SIMD_HIGHWAY' ], 'enables the Highway implementation' );
+	t.deepEqual( conf.defines, [], 'does not require a backend definition' );
 	t.end();
 });
 
 tape( 'Wasm consumers inherit the selected DSUMPW implementation', opts, function test( t ) {
 	var consumers;
+	var hasScalar;
 	var backends;
 	var expected;
 	var source;
+	var scalar;
 	var file;
 	var conf;
 	var src;
@@ -98,7 +100,8 @@ tape( 'Wasm consumers inherit the selected DSUMPW implementation', opts, functio
 		'@stdlib/stats/strided/wasm/dmeanpw'
 	];
 	backends = [ '', 'highway' ];
-	source = resolve( dir, 'src/simd/dsumpw_highway_wasm.cpp' );
+	source = resolve( dir, 'src/simd/dsumpw_highway.cpp' );
+	scalar = resolve( dir, 'src/main.c' );
 	for ( i = 0; i < consumers.length; i++ ) {
 		file = resolve( root, consumers[ i ], 'manifest.json' );
 		for ( j = 0; j < backends.length; j++ ) {
@@ -107,13 +110,17 @@ tape( 'Wasm consumers inherit the selected DSUMPW implementation', opts, functio
 				'simd': backends[ j ]
 			}, mopts );
 			src = [];
+			hasScalar = false;
 			for ( k = 0; k < conf.src.length; k++ ) {
+				if ( resolve( file, '..', conf.src[ k ] ) === scalar ) {
+					hasScalar = true;
+				}
 				if ( /dsumpw_highway[^/]*\.cpp$/.test( conf.src[ k ] ) ) {
 					src.push( resolve( file, '..', conf.src[ k ] ) );
 				}
 			}
-			expected = ( backends[ j ] ) ? [ 'STDLIB_BLAS_EXT_BASE_DSUMPW_SIMD_HIGHWAY' ] : [];
-			t.deepEqual( conf.defines, expected, consumers[ i ]+': inherits the backend definition' );
+			t.strictEqual( hasScalar, !backends[ j ], consumers[ i ]+': selects the C implementation only for the default backend' );
+			t.deepEqual( conf.defines, [], consumers[ i ]+': does not require a backend definition' );
 			expected = ( backends[ j ] ) ? [ source ] : [];
 			t.deepEqual( src, expected, consumers[ i ]+': selects the expected Highway sources without duplicates' );
 			if ( !backends[ j ] ) {
