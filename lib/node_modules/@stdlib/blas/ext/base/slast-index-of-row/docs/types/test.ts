@@ -183,7 +183,7 @@ import slastIndexOfRow = require( './index' );
 	slastIndexOfRow( 'row-major', 2, 2, A, 2, x ); // $ExpectError
 	slastIndexOfRow( 'row-major', 2, 2, A, 2, x, 1 ); // $ExpectError
 	slastIndexOfRow( 'row-major', 2, 2, A, 2, x, 1, w ); // $ExpectError
-	slastIndexOfRow( 'row-major', 2, 2, A, 2, x, 1, w, 1, 0 ); // $ExpectError
+	slastIndexOfRow( 'row-major', 2, 2, A, 2, x, 1, w, 1, {} ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a number...
@@ -399,5 +399,5 @@ import slastIndexOfRow = require( './index' );
 	slastIndexOfRow.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0 ); // $ExpectError
 	slastIndexOfRow.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0, w ); // $ExpectError
 	slastIndexOfRow.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0, w, 1 ); // $ExpectError
-	slastIndexOfRow.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0, w, 1, 0, 0 ); // $ExpectError
+	slastIndexOfRow.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0, w, 1, 0, {} ); // $ExpectError
 }
