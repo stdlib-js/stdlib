@@ -24,12 +24,12 @@
 /**
 * Returns the index of the last element in a double-precision floating-point strided array equal to a corresponding element in another double-precision floating-point strided array.
 *
-* @param N             number of indexed elements
-* @param X             first input array
-* @param strideX       stride length for X
-* @param Y             second input array
-* @param strideY       stride length for Y
-* @return              index
+* @param N       number of indexed elements
+* @param X       first input array
+* @param strideX stride length for X
+* @param Y       second input array
+* @param strideY stride length for Y
+* @return        index
 */
 CBLAS_INT API_SUFFIX(stdlib_strided_dlast_index_equal)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const double *Y, const CBLAS_INT strideY ) {
 	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
@@ -40,14 +40,14 @@ CBLAS_INT API_SUFFIX(stdlib_strided_dlast_index_equal)( const CBLAS_INT N, const
 /**
 * Returns the index of the last element in a double-precision floating-point strided array equal to a corresponding element in another double-precision floating-point strided array using alternative indexing semantics.
 *
-* @param N             number of indexed elements
-* @param X             first input array
-* @param strideX       stride length for X
-* @param offsetX       starting index for X
-* @param Y             second input array
-* @param strideY       stride length for Y
-* @param offsetY       starting index for Y
-* @return              index
+* @param N       number of indexed elements
+* @param X       first input array
+* @param strideX stride length for X
+* @param offsetX starting index for X
+* @param Y       second input array
+* @param strideY stride length for Y
+* @param offsetY starting index for Y
+* @return        index
 */
 CBLAS_INT API_SUFFIX(stdlib_strided_dlast_index_equal_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
 	CBLAS_INT idx;
