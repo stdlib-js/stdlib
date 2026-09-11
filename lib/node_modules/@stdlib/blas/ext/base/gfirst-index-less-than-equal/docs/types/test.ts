@@ -110,7 +110,7 @@ import gfirstIndexLessThanEqual = require( './index' );
 	gfirstIndexLessThanEqual( x.length, x ); // $ExpectError
 	gfirstIndexLessThanEqual( x.length, x, 1 ); // $ExpectError
 	gfirstIndexLessThanEqual( x.length, x, 1, y ); // $ExpectError
-	gfirstIndexLessThanEqual( x.length, x, 1, y, 1, 0 ); // $ExpectError
+	gfirstIndexLessThanEqual( x.length, x, 1, y, 1, {} ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a number...
@@ -233,5 +233,5 @@ import gfirstIndexLessThanEqual = require( './index' );
 	gfirstIndexLessThanEqual.ndarray( x.length, x, 1, 0 ); // $ExpectError
 	gfirstIndexLessThanEqual.ndarray( x.length, x, 1, 0, y ); // $ExpectError
 	gfirstIndexLessThanEqual.ndarray( x.length, x, 1, 0, y, 1 ); // $ExpectError
-	gfirstIndexLessThanEqual.ndarray( x.length, x, 1, 0, y, 1, 0, 0 ); // $ExpectError
+	gfirstIndexLessThanEqual.ndarray( x.length, x, 1, 0, y, 1, 0, {} ); // $ExpectError
 }
