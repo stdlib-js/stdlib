@@ -38,7 +38,7 @@ interface Routine {
 	* @param M - number of rows in `A`
 	* @param N - number of columns in `A`
 	* @param A - input matrix
-	* @param LDA - stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`)
+	* @param LDA - stride length for the first dimension of `A` (a.k.a., leading dimension of the matrix `A`)
 	* @param x - search vector
 	* @param strideX - stride length for `x`
 	* @param workspace - workspace array for tracking row match candidates
@@ -49,7 +49,7 @@ interface Routine {
 	* var Float64Array = require( '@stdlib/array/float64' );
 	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
-	* var A = new Float64Array( [ 1.0, 2.0, 0.0, 3.0, 4.0, 0.0 ] );
+	* var A = new Float64Array( [ 1.0, 2.0, 0.0, 3.0, 4.0, 0.0 ] ); // => [ [ 1.0, 3.0 ], [ 2.0, 4.0 ], [ 0.0, 0.0 ] ]
 	* var x = new Float64Array( [ 2.0, 4.0 ] );
 	* var workspace = new Uint8Array( 3 );
 	*
@@ -69,8 +69,8 @@ interface Routine {
 	* @param M - number of rows in `A`
 	* @param N - number of columns in `A`
 	* @param A - input matrix
-	* @param strideA1 - stride of the first dimension of `A`
-	* @param strideA2 - stride of the second dimension of `A`
+	* @param strideA1 - stride length for the first dimension of `A`
+	* @param strideA2 - stride length for the second dimension of `A`
 	* @param offsetA - starting index for `A`
 	* @param x - search vector
 	* @param strideX - stride length for `x`
@@ -84,7 +84,7 @@ interface Routine {
 	* var Float64Array = require( '@stdlib/array/float64' );
 	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
-	* var A = new Float64Array( [ 1.0, 2.0, 0.0, 3.0, 4.0, 0.0 ] );
+	* var A = new Float64Array( [ 1.0, 2.0, 0.0, 3.0, 4.0, 0.0 ] ); // => [ [ 1.0, 3.0 ], [ 2.0, 4.0 ], [ 0.0, 0.0 ] ]
 	* var x = new Float64Array( [ 2.0, 4.0 ] );
 	* var workspace = new Uint8Array( 3 );
 	*
@@ -106,7 +106,7 @@ interface Routine {
 * @param M - number of rows in `A`
 * @param N - number of columns in `A`
 * @param A - input matrix
-* @param LDA - stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`)
+* @param LDA - stride length for the first dimension of `A` (a.k.a., leading dimension of the matrix `A`)
 * @param x - search vector
 * @param strideX - stride length for `x`
 * @param workspace - workspace array for tracking row match candidates
@@ -117,7 +117,7 @@ interface Routine {
 * var Float64Array = require( '@stdlib/array/float64' );
 * var Uint8Array = require( '@stdlib/array/uint8' );
 *
-* var A = new Float64Array( [ 1.0, 2.0, 0.0, 3.0, 4.0, 0.0 ] );
+* var A = new Float64Array( [ 1.0, 2.0, 0.0, 3.0, 4.0, 0.0 ] ); // => [ [ 1.0, 3.0 ], [ 2.0, 4.0 ], [ 0.0, 0.0 ] ]
 * var x = new Float64Array( [ 2.0, 4.0 ] );
 * var workspace = new Uint8Array( 3 );
 *
@@ -128,7 +128,7 @@ interface Routine {
 * var Float64Array = require( '@stdlib/array/float64' );
 * var Uint8Array = require( '@stdlib/array/uint8' );
 *
-* var A = new Float64Array( [ 1.0, 2.0, 0.0, 3.0, 4.0, 0.0 ] );
+* var A = new Float64Array( [ 1.0, 2.0, 0.0, 3.0, 4.0, 0.0 ] ); // => [ [ 1.0, 3.0 ], [ 2.0, 4.0 ], [ 0.0, 0.0 ] ]
 * var x = new Float64Array( [ 2.0, 4.0 ] );
 * var workspace = new Uint8Array( 3 );
 *

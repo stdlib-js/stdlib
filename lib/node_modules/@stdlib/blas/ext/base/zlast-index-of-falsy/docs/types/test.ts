@@ -40,6 +40,7 @@ import zlastIndexOfFalsy = require( './index' );
 	zlastIndexOfFalsy( false, x, 1 ); // $ExpectError
 	zlastIndexOfFalsy( null, x, 1 ); // $ExpectError
 	zlastIndexOfFalsy( {}, x, 1 ); // $ExpectError
+	zlastIndexOfFalsy( ( x: number ): number => x, x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a Complex128Array...
@@ -49,6 +50,7 @@ import zlastIndexOfFalsy = require( './index' );
 	zlastIndexOfFalsy( 3, false, 1 ); // $ExpectError
 	zlastIndexOfFalsy( 3, null, 1 ); // $ExpectError
 	zlastIndexOfFalsy( 3, {}, 1 ); // $ExpectError
+	zlastIndexOfFalsy( 3, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not a number...
@@ -60,6 +62,7 @@ import zlastIndexOfFalsy = require( './index' );
 	zlastIndexOfFalsy( x.length, x, false ); // $ExpectError
 	zlastIndexOfFalsy( x.length, x, null ); // $ExpectError
 	zlastIndexOfFalsy( x.length, x, {} ); // $ExpectError
+	zlastIndexOfFalsy( x.length, x, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -86,6 +89,7 @@ import zlastIndexOfFalsy = require( './index' );
 	zlastIndexOfFalsy.ndarray( false, x, 1, 1 ); // $ExpectError
 	zlastIndexOfFalsy.ndarray( null, x, 1, 1 ); // $ExpectError
 	zlastIndexOfFalsy.ndarray( {}, x, 1, 1 ); // $ExpectError
+	zlastIndexOfFalsy.ndarray( ( x: number ): number => x, x, 1, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a second argument which is not a Complex128Array...
@@ -95,6 +99,7 @@ import zlastIndexOfFalsy = require( './index' );
 	zlastIndexOfFalsy.ndarray( 3, false, 1, 1 ); // $ExpectError
 	zlastIndexOfFalsy.ndarray( 3, null, 1, 1 ); // $ExpectError
 	zlastIndexOfFalsy.ndarray( 3, {}, 1, 1 ); // $ExpectError
+	zlastIndexOfFalsy.ndarray( 3, ( x: number ): number => x, 1, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a third argument which is not a number...
@@ -106,6 +111,7 @@ import zlastIndexOfFalsy = require( './index' );
 	zlastIndexOfFalsy.ndarray( x.length, x, false, 1 ); // $ExpectError
 	zlastIndexOfFalsy.ndarray( x.length, x, null, 1 ); // $ExpectError
 	zlastIndexOfFalsy.ndarray( x.length, x, {}, 1 ); // $ExpectError
+	zlastIndexOfFalsy.ndarray( x.length, x, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fourth argument which is not a number...
@@ -117,6 +123,7 @@ import zlastIndexOfFalsy = require( './index' );
 	zlastIndexOfFalsy.ndarray( x.length, x, 1, false ); // $ExpectError
 	zlastIndexOfFalsy.ndarray( x.length, x, 1, null ); // $ExpectError
 	zlastIndexOfFalsy.ndarray( x.length, x, 1, {} ); // $ExpectError
+	zlastIndexOfFalsy.ndarray( x.length, x, 1, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided an unsupported number of arguments...

@@ -27,7 +27,7 @@ interface Routine {
 	*
 	* ## Notes
 	*
-	* -   If the function is unable to find a match, the function returns `-1`.
+	* -   If the function is unable to find an element in `x` which is equal to a corresponding element in `y`, the function returns `-1`.
 	*
 	* @param N - number of indexed elements
 	* @param x - first input array
@@ -52,7 +52,7 @@ interface Routine {
 	*
 	* ## Notes
 	*
-	* -   If the function is unable to find a match, the function returns `-1`.
+	* -   If the function is unable to find an element in `x` which is equal to a corresponding element in `y`, the function returns `-1`.
 	*
 	* @param N - number of indexed elements
 	* @param x - first input array
@@ -80,7 +80,7 @@ interface Routine {
 *
 * ## Notes
 *
-* -   If the function is unable to find matching elements, the function returns `-1`.
+* -   If the function is unable to find an element in `x` which is equal to a corresponding element in `y`, the function returns `-1`.
 *
 * @param N - number of indexed elements
 * @param x - first input array
@@ -95,7 +95,7 @@ interface Routine {
 * var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 * var y = new Float64Array( [ 0.0, 0.0, 3.0, 0.0 ] );
 *
-* var idx = dlastIndexEqual( 4, x, 1, y, 1 );
+* var idx = dlastIndexEqual( x.length, x, 1, y, 1 );
 * // returns 2
 *
 * @example
@@ -104,7 +104,7 @@ interface Routine {
 * var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 * var y = new Float64Array( [ 0.0, 0.0, 3.0, 0.0 ] );
 *
-* var idx = dlastIndexEqual.ndarray( 4, x, 1, 0, y, 1, 0 );
+* var idx = dlastIndexEqual.ndarray( x.length, x, 1, 0, y, 1, 0 );
 * // returns 2
 */
 declare var dlastIndexEqual: Routine;

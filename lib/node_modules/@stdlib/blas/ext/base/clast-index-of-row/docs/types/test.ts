@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+import Complex64Array = require( '@stdlib/array/complex64' );
 import clastIndexOfRow = require( './index' );
 
 
@@ -183,7 +184,7 @@ import clastIndexOfRow = require( './index' );
 	clastIndexOfRow( 'row-major', 2, 2, A, 2, x ); // $ExpectError
 	clastIndexOfRow( 'row-major', 2, 2, A, 2, x, 1 ); // $ExpectError
 	clastIndexOfRow( 'row-major', 2, 2, A, 2, x, 1, w ); // $ExpectError
-	clastIndexOfRow( 'row-major', 2, 2, A, 2, x, 1, w, 1, 0 ); // $ExpectError
+	clastIndexOfRow( 'row-major', 2, 2, A, 2, x, 1, w, 1, {} ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a number...
@@ -399,5 +400,5 @@ import clastIndexOfRow = require( './index' );
 	clastIndexOfRow.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0 ); // $ExpectError
 	clastIndexOfRow.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0, w ); // $ExpectError
 	clastIndexOfRow.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0, w, 1 ); // $ExpectError
-	clastIndexOfRow.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0, w, 1, 0, 0 ); // $ExpectError
+	clastIndexOfRow.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0, w, 1, 0, {} ); // $ExpectError
 }

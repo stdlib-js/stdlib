@@ -121,12 +121,12 @@ import glastIndexAlmostSameValue = require( './index' );
 	const y = [ 1.0, 2.0, 3.0 ];
 
 	glastIndexAlmostSameValue(); // $ExpectError
-	glastIndexAlmostSameValue( 3 ); // $ExpectError
-	glastIndexAlmostSameValue( 3, 1 ); // $ExpectError
-	glastIndexAlmostSameValue( 3, 1, x ); // $ExpectError
-	glastIndexAlmostSameValue( 3, 1, x, 1 ); // $ExpectError
-	glastIndexAlmostSameValue( 3, 1, x, 1, y ); // $ExpectError
-	glastIndexAlmostSameValue( 3, 1, x, 1, y, 1, {} ); // $ExpectError
+	glastIndexAlmostSameValue( x.length ); // $ExpectError
+	glastIndexAlmostSameValue( x.length, 1 ); // $ExpectError
+	glastIndexAlmostSameValue( x.length, 1, x ); // $ExpectError
+	glastIndexAlmostSameValue( x.length, 1, x, 1 ); // $ExpectError
+	glastIndexAlmostSameValue( x.length, 1, x, 1, y ); // $ExpectError
+	glastIndexAlmostSameValue( x.length, 1, x, 1, y, 1, {} ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a number...
@@ -258,12 +258,12 @@ import glastIndexAlmostSameValue = require( './index' );
 	const y = [ 1.0, 2.0, 3.0 ];
 
 	glastIndexAlmostSameValue.ndarray(); // $ExpectError
-	glastIndexAlmostSameValue.ndarray( 3 ); // $ExpectError
-	glastIndexAlmostSameValue.ndarray( 3, 1 ); // $ExpectError
-	glastIndexAlmostSameValue.ndarray( 3, 1, x ); // $ExpectError
-	glastIndexAlmostSameValue.ndarray( 3, 1, x, 1 ); // $ExpectError
-	glastIndexAlmostSameValue.ndarray( 3, 1, x, 1, 0 ); // $ExpectError
-	glastIndexAlmostSameValue.ndarray( 3, 1, x, 1, 0, y ); // $ExpectError
-	glastIndexAlmostSameValue.ndarray( 3, 1, x, 1, 0, y, 1 ); // $ExpectError
-	glastIndexAlmostSameValue.ndarray( 3, 1, x, 1, 0, y, 1, 0, {} ); // $ExpectError
+	glastIndexAlmostSameValue.ndarray( x.length ); // $ExpectError
+	glastIndexAlmostSameValue.ndarray( x.length, 1 ); // $ExpectError
+	glastIndexAlmostSameValue.ndarray( x.length, 1, x ); // $ExpectError
+	glastIndexAlmostSameValue.ndarray( x.length, 1, x, 1 ); // $ExpectError
+	glastIndexAlmostSameValue.ndarray( x.length, 1, x, 1, 0 ); // $ExpectError
+	glastIndexAlmostSameValue.ndarray( x.length, 1, x, 1, 0, y ); // $ExpectError
+	glastIndexAlmostSameValue.ndarray( x.length, 1, x, 1, 0, y, 1 ); // $ExpectError
+	glastIndexAlmostSameValue.ndarray( x.length, 1, x, 1, 0, y, 1, 0, {} ); // $ExpectError
 }

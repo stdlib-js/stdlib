@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+import Complex128Array = require( '@stdlib/array/complex128' );
 import zlastIndexOfRow = require( './index' );
 
 
@@ -183,7 +184,7 @@ import zlastIndexOfRow = require( './index' );
 	zlastIndexOfRow( 'row-major', 2, 2, A, 2, x ); // $ExpectError
 	zlastIndexOfRow( 'row-major', 2, 2, A, 2, x, 1 ); // $ExpectError
 	zlastIndexOfRow( 'row-major', 2, 2, A, 2, x, 1, w ); // $ExpectError
-	zlastIndexOfRow( 'row-major', 2, 2, A, 2, x, 1, w, 1, 0 ); // $ExpectError
+	zlastIndexOfRow( 'row-major', 2, 2, A, 2, x, 1, w, 1, {} ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a number...
@@ -399,5 +400,5 @@ import zlastIndexOfRow = require( './index' );
 	zlastIndexOfRow.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0 ); // $ExpectError
 	zlastIndexOfRow.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0, w ); // $ExpectError
 	zlastIndexOfRow.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0, w, 1 ); // $ExpectError
-	zlastIndexOfRow.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0, w, 1, 0, 0 ); // $ExpectError
+	zlastIndexOfRow.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0, w, 1, 0, {} ); // $ExpectError
 }

@@ -59,10 +59,11 @@
     "index",
     "search",
     "element",
+    "less",
+    "compare",
     "array",
     "ndarray",
     "strided",
-    "single",
     "float",
     "float32",
     "float32array"

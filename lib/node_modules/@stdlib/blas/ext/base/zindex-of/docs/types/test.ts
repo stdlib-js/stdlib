@@ -99,7 +99,7 @@ import zindexOf = require( './index' );
 	zindexOf( x.length ); // $ExpectError
 	zindexOf( x.length, s ); // $ExpectError
 	zindexOf( x.length, s, x ); // $ExpectError
-	zindexOf( x.length, s, x, 1, 0 ); // $ExpectError
+	zindexOf( x.length, s, x, 1, {} ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a number...
@@ -192,5 +192,5 @@ import zindexOf = require( './index' );
 	zindexOf.ndarray( x.length, s ); // $ExpectError
 	zindexOf.ndarray( x.length, s, x ); // $ExpectError
 	zindexOf.ndarray( x.length, s, x, 1 ); // $ExpectError
-	zindexOf.ndarray( x.length, s, x, 1, 0, 0 ); // $ExpectError
+	zindexOf.ndarray( x.length, s, x, 1, 0, {} ); // $ExpectError
 }

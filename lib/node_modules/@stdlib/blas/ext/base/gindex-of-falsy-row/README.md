@@ -22,6 +22,16 @@ limitations under the License.
 
 > Return the index of the first row in an input matrix in which all elements are falsy.
 
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- Package usage documentation. -->
+
 <section class="usage">
 
 ## Usage
@@ -57,7 +67,7 @@ The function has the following parameters:
 -   **M**: number of rows in `A`.
 -   **N**: number of columns in `A`.
 -   **A**: input matrix as a linear array.
--   **LDA**: stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`).
+-   **LDA**: stride length for the first dimension of `A` (a.k.a., leading dimension of the matrix `A`).
 
 If the function is unable to find a row in which all elements are falsy, the function returns `-1`.
 
@@ -138,16 +148,21 @@ var out = gindexOfFalsyRow.ndarray( 4, 4, A, 4, 1, 1 );
 
 <!-- /.usage -->
 
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 <section class="notes">
 
 ## Notes
 
+-   If `M <= 0` or `N <= 0`, both functions return `-1`.
 -   A row is considered to have all falsy elements when every element in the row is equal to `0.0` or is `NaN`.
 -   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array/base/accessor`][@stdlib/array/base/accessor]).
 
 </section>
 
 <!-- /.notes -->
+
+<!-- Package usage examples. -->
 
 <section class="examples">
 
@@ -176,6 +191,14 @@ console.log( out );
 </section>
 
 <!-- /.examples -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

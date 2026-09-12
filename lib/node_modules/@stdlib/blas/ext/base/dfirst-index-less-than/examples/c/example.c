@@ -27,7 +27,7 @@ int main( void ) {
 	// Specify the number of indexed elements:
 	const int N = 8;
 
-	// Specify stride lengths:
+	// Specify strides:
 	const int strideX = 1;
 	const int strideY = 1;
 

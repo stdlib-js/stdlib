@@ -59,6 +59,8 @@
     "index",
     "search",
     "element",
+    "equal",
+    "compare",
     "array",
     "ndarray",
     "strided",

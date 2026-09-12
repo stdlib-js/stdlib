@@ -40,6 +40,7 @@ import cindexOfFalsy = require( './index' );
 	cindexOfFalsy( false, x, 1 ); // $ExpectError
 	cindexOfFalsy( null, x, 1 ); // $ExpectError
 	cindexOfFalsy( {}, x, 1 ); // $ExpectError
+	cindexOfFalsy( ( x: number ): number => x, x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a Complex64Array...
@@ -51,6 +52,7 @@ import cindexOfFalsy = require( './index' );
 	cindexOfFalsy( x.length, false, 1 ); // $ExpectError
 	cindexOfFalsy( x.length, null, 1 ); // $ExpectError
 	cindexOfFalsy( x.length, {}, 1 ); // $ExpectError
+	cindexOfFalsy( x.length, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not a number...
@@ -62,6 +64,7 @@ import cindexOfFalsy = require( './index' );
 	cindexOfFalsy( x.length, x, false ); // $ExpectError
 	cindexOfFalsy( x.length, x, null ); // $ExpectError
 	cindexOfFalsy( x.length, x, {} ); // $ExpectError
+	cindexOfFalsy( x.length, x, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -88,6 +91,7 @@ import cindexOfFalsy = require( './index' );
 	cindexOfFalsy.ndarray( false, x, 1, 1 ); // $ExpectError
 	cindexOfFalsy.ndarray( null, x, 1, 1 ); // $ExpectError
 	cindexOfFalsy.ndarray( {}, x, 1, 1 ); // $ExpectError
+	cindexOfFalsy.ndarray( ( x: number ): number => x, x, 1, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a second argument which is not a Complex64Array...
@@ -99,6 +103,7 @@ import cindexOfFalsy = require( './index' );
 	cindexOfFalsy.ndarray( x.length, false, 1, 1 ); // $ExpectError
 	cindexOfFalsy.ndarray( x.length, null, 1, 1 ); // $ExpectError
 	cindexOfFalsy.ndarray( x.length, {}, 1, 1 ); // $ExpectError
+	cindexOfFalsy.ndarray( x.length, ( x: number ): number => x, 1, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a third argument which is not a number...
@@ -110,6 +115,7 @@ import cindexOfFalsy = require( './index' );
 	cindexOfFalsy.ndarray( x.length, x, false, 1 ); // $ExpectError
 	cindexOfFalsy.ndarray( x.length, x, null, 1 ); // $ExpectError
 	cindexOfFalsy.ndarray( x.length, x, {}, 1 ); // $ExpectError
+	cindexOfFalsy.ndarray( x.length, x, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fourth argument which is not a number...
@@ -121,6 +127,7 @@ import cindexOfFalsy = require( './index' );
 	cindexOfFalsy.ndarray( x.length, x, 1, false ); // $ExpectError
 	cindexOfFalsy.ndarray( x.length, x, 1, null ); // $ExpectError
 	cindexOfFalsy.ndarray( x.length, x, 1, {} ); // $ExpectError
+	cindexOfFalsy.ndarray( x.length, x, 1, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided an unsupported number of arguments...
