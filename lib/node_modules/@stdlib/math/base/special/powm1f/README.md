@@ -1,0 +1,215 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2026 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# powm1f
+
+> Evaluate `bˣ - 1` for single-precision floating-point numbers.
+
+<section class="intro">
+
+<!-- <equation class="equation" label="eq:exponential_function_minus_one" align="center" raw="y = b^x - 1" alt="Exponential function minus one"> -->
+
+```math
+y = b^x - 1
+```
+
+<!-- </equation> -->
+
+When `b` is close to `1` and/or `x` is small, this implementation is more accurate than naively computing `bˣ` minus `1`.
+
+</section>
+
+<!-- /.intro -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var powm1f = require( '@stdlib/math/base/special/powm1f' );
+```
+
+#### powm1f( b, x )
+
+Evaluates `bˣ - 1` for single-precision floating-point numbers.
+
+```javascript
+var y = powm1f( 2.0, 3.0 );
+// returns 7.0
+
+y = powm1f( 4.0, 0.5 );
+// returns 1.0
+
+y = powm1f( 0.0, 100.0 );
+// returns -1.0
+
+y = powm1f( 100.0, 0.0 );
+// returns 0.0
+
+y = powm1f( 0.0, 0.0 );
+// returns 0.0
+
+y = powm1f( 3.141592653589793, 5.0 );
+// returns ~305.0197
+
+y = powm1f( NaN, 3.0 );
+// returns NaN
+
+y = powm1f( 5.0, NaN );
+// returns NaN
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
+var powm1f = require( '@stdlib/math/base/special/powm1f' );
+
+var opts = {
+    'dtype': 'float32'
+};
+var b = discreteUniform( 100, 0, 10, opts );
+var x = discreteUniform( 100, -5, 5, opts );
+
+logEachMap( '%d^%d - 1 = %0.4f', b, x, powm1f );
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/powm1f.h"
+```
+
+#### stdlib_base_powm1f( b, x )
+
+Evaluates `bˣ - 1` for single-precision floating-point numbers.
+
+```c
+float out = stdlib_base_powm1f( 3.141592653589793f, 5.0f );
+// returns ~305.0197f
+
+out = stdlib_base_powm1f( 4.0f, 0.5f );
+// returns 1.0f
+```
+
+The function accepts the following arguments:
+
+-   **b**: `[in] float` base.
+-   **x**: `[in] float` exponent.
+
+```c
+float stdlib_base_powm1f( const float b, const float x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/powm1f.h"
+#include <stdio.h>
+
+int main( void ) {
+    const float b[] = { 2.0f, 4.0f, 0.0f, 100.0f, 3.14f };
+    const float x[] = { 3.0f, 0.5f, 100.0f, 0.0f, 5.0f };
+
+    float y;
+    int i;
+    for ( i = 0; i < 5; i++ ) {
+        y = stdlib_base_powm1f( b[ i ], x[ i ] );
+        printf( "powm1f(%f, %f) = %f\n", b[ i ], x[ i ], y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+<!-- <related-links> -->
+
+<!-- </related-links> -->
+
+</section>
+
+<!-- /.links -->
