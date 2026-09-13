@@ -81,7 +81,7 @@ interface Quantile {
 	* // returns NaN
 	*
 	* @example
-	* // Non-positive rate parameter:
+	* // Non-positive scale parameter:
 	* var y = quantile( 0.5, 1.0, -1.0 );
 	* // returns NaN
 	*/

@@ -41,7 +41,7 @@
         "@stdlib/napi/argv-float64array",
         "@stdlib/napi/create-double",
         "@stdlib/napi/export",
-        "@stdlib/math/base/special/roundf",
+        "@stdlib/math/base/special/round-nearest-even",
         "@stdlib/math/base/special/floor",
         "@stdlib/math/base/special/ldexp",
         "@stdlib/number/float32/base/from-word",
@@ -62,7 +62,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/special/roundf",
+        "@stdlib/math/base/special/round-nearest-even",
         "@stdlib/math/base/special/floor",
         "@stdlib/math/base/special/ldexp",
         "@stdlib/number/float32/base/from-word",
@@ -83,7 +83,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/special/roundf",
+        "@stdlib/math/base/special/round-nearest-even",
         "@stdlib/math/base/special/floor",
         "@stdlib/math/base/special/ldexp",
         "@stdlib/number/float32/base/from-word",

@@ -156,14 +156,13 @@ daxpby.ndarray( 3, 5.0, x, 1, x.length-3, 2.0, y, 1, y.length-3 );
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var daxpby = require( '@stdlib/blas/ext/base/daxpby' );
 
-var x = discreteUniform( 10, -100, 100, {
+var opts = {
     'dtype': 'float64'
-});
+};
+var x = discreteUniform( 10, -100, 100, opts );
 console.log( x );
 
-var y = discreteUniform( 10, -100, 100, {
-    'dtype': 'float64'
-});
+var y = discreteUniform( 10, -100, 100, opts );
 console.log( y );
 
 daxpby( x.length, 5.0, x, 1, 2.0, y, 1 );

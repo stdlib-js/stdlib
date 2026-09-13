@@ -1,0 +1,157 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2026 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# rffti
+
+> Initialize a workspace array for performing a real-valued Fourier transform on a one-dimensional double-precision floating-point ndarray.
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var rffti = require( '@stdlib/fft/base/fftpack/ndarray/float64/rffti' );
+```
+
+#### rffti( arrays )
+
+Initializes a workspace array for performing a real-valued Fourier transform on a one-dimensional double-precision floating-point ndarray.
+
+```javascript
+var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
+var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var Slice = require( '@stdlib/slice/ctor' );
+var slice = require( '@stdlib/ndarray/slice' );
+
+var N = 8;
+var len = scalar2ndarray( N, {
+    'dtype': 'int32'
+});
+
+var w = new Float64Vector( ( 2*N ) + 34 );
+
+var out = rffti( [ w, len ] );
+// returns <ndarray>
+
+var bool = ( out === w );
+// returns true
+
+var twiddleFactors = slice( w, new Slice( N, 2*N ) );
+// returns <ndarray>[ ~0.707, ~0.707, 0, 0, 0, 0, 0, 0 ]
+
+var factors = slice( w, new Slice( 2*N, ( 2*N ) + 4 ) );
+// returns <ndarray>[ 8, 2, 2, 4 ]
+```
+
+The function has the following parameters:
+
+-   **arrays**: array-like object containing the following ndarrays:
+
+    -   a one-dimensional input ndarray.
+    -   a zero-dimensional ndarray containing the length of the sequence to transform.
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+## Notes
+
+-   Let `N` equal the number of elements in the input ndarray. The input ndarray is divided into three sections:
+
+    ```text
+              size = N                 N            2+ceil(log2(N)/2)
+                   ↓                   ↓                  ↓
+        | scratch / workspace | twiddle factors | radix factor table |
+                   ↑                   ↑                  ↑
+    i = 0         ...         N       ...       2N       ...
+    ```
+
+    -   **scratch/workspace**: used as a scratch space when performing transforms. This section is not updated during initialization.
+    -   **twiddle factors**: a table of reusable complex-exponential constants stored as cosine/sine pairs.
+    -   **radix factor table**: a table containing the sequence length `N`, the number of factors into which `N` was decomposed, and the individual integer radix factors.
+
+-   In general, an input ndarray should have `2N + 34` indexed elements (as `log2(N)/2 ≤ 32` for all `2^64`). During initialization, only the sections for storing twiddle factors and the factorization of `N` are updated.
+
+-   The radix factor table is comprised as follows:
+
+    ```text
+    | sequence_length | number_of_factors | integer_factors |
+    ```
+
+-   If `N` equals `1`, the function returns early without modifying the input ndarray, as a single data point is its own Fourier transform.
+
+-   If provided an empty one-dimensional input ndarray, the function returns the input ndarray unchanged.
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
+var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var ndarray2array = require( '@stdlib/ndarray/to-array' );
+var rffti = require( '@stdlib/fft/base/fftpack/ndarray/float64/rffti' );
+
+var N = 8;
+
+var w = new Float64Vector( ( 2*N ) + 34 );
+console.log( ndarray2array( w ) );
+
+var len = scalar2ndarray( N, {
+    'dtype': 'int32'
+});
+
+var out = rffti( [ w, len ] );
+console.log( ndarray2array( out ) );
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+</section>
+
+<!-- /.links -->
