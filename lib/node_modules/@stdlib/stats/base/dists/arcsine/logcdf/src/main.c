@@ -53,5 +53,5 @@ double stdlib_base_dists_arcsine_logcdf( const double x, const double a, const d
 		return 0.0;
 	}
 
-	return STDLIB_CONSTANT_FLOAT64_LN2  - STDLIB_CONSTANT_FLOAT64_LN_PI + ( stdlib_base_ln( stdlib_base_asin ( stdlib_base_sqrt ( ( x-a ) / ( b-a ) ) ) ) ) ;
+	return STDLIB_CONSTANT_FLOAT64_LN2 - STDLIB_CONSTANT_FLOAT64_LN_PI + stdlib_base_ln( stdlib_base_asin( stdlib_base_sqrt( ( x-a ) / ( b-a ) ) ) );
 }

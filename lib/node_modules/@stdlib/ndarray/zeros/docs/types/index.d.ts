@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Shape, Order, Mode, typedndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, genericndarray, complex128ndarray, complex64ndarray, NumericAndGenericDataType, Float64DataType, Float32DataType, Complex128DataType, Complex64DataType, Int32DataType, Int16DataType, Int8DataType, Uint32DataType, Uint16DataType, Uint8DataType, Uint8cDataType, GenericDataType } from '@stdlib/types/ndarray';
+import { Shape, Order, Mode, typedndarray, float64ndarray, float32ndarray, float16ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, genericndarray, complex128ndarray, complex64ndarray, NumericAndGenericDataType, Float64DataType, Float32DataType, Float16DataType, Complex128DataType, Complex64DataType, Int32DataType, Int16DataType, Int8DataType, Uint32DataType, Uint16DataType, Uint8DataType, Uint8cDataType, GenericDataType } from '@stdlib/types/ndarray';
 
 /**
 * Interface describing function options.
@@ -77,6 +77,20 @@ interface Float32Options extends Options {
 	* -   This option overrides the input array's inferred data type.
 	*/
 	dtype: Float32DataType;
+}
+
+/**
+* Interface describing function options.
+*/
+interface Float16Options extends Options {
+	/**
+	* Underlying data type.
+	*
+	* ## Notes
+	*
+	* -   This option overrides the input array's inferred data type.
+	*/
+	dtype: Float16DataType;
 }
 
 /**
@@ -290,6 +304,35 @@ declare function zeros( shape: Shape | number, options: Float64Options ): float6
 * // returns 'float32'
 */
 declare function zeros( shape: Shape | number, options: Float32Options ): float32ndarray;
+
+/**
+* Creates a zero-filled ndarray having a specified shape and data type.
+*
+* @param shape - array shape
+* @param options - options
+* @param options.dtype - underlying data type
+* @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param options.readonly - boolean indicating whether an array should be read-only
+* @returns zero-filled ndarray
+*
+* @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
+* var arr = zeros( [ 2, 2 ], {
+*     'dtype': 'float16'
+* });
+* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
+*
+* var sh = getShape( arr );
+* // returns [ 2, 2 ]
+*
+* var dt = String( getDType( arr ) );
+* // returns 'float16'
+*/
+declare function zeros( shape: Shape | number, options: Float16Options ): float16ndarray;
 
 /**
 * Creates a zero-filled ndarray having a specified shape and data type.
