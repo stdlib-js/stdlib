@@ -42,7 +42,7 @@ interface Routine {
 	* var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 	* var y = new Float64Array( [ 2.0, 2.0, 2.0, 2.0 ] );
 	*
-	* var idx = dfirstIndexGreaterThan( 4, x, 1, y, 1 );
+	* var idx = dfirstIndexGreaterThan( x.length, x, 1, y, 1 );
 	* // returns 2
 	*/
 	( N: number, x: Float64Array, strideX: number, y: Float64Array, strideY: number ): number;
@@ -69,7 +69,7 @@ interface Routine {
 	* var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 	* var y = new Float64Array( [ 2.0, 2.0, 2.0, 2.0 ] );
 	*
-	* var idx = dfirstIndexGreaterThan.ndarray( 4, x, 1, 0, y, 1, 0 );
+	* var idx = dfirstIndexGreaterThan.ndarray( x.length, x, 1, 0, y, 1, 0 );
 	* // returns 2
 	*/
 	ndarray( N: number, x: Float64Array, strideX: number, offsetX: number, y: Float64Array, strideY: number, offsetY: number ): number;
@@ -95,7 +95,7 @@ interface Routine {
 * var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 * var y = new Float64Array( [ 2.0, 2.0, 2.0, 2.0 ] );
 *
-* var idx = dfirstIndexGreaterThan( 4, x, 1, y, 1 );
+* var idx = dfirstIndexGreaterThan( x.length, x, 1, y, 1 );
 * // returns 2
 *
 * @example
@@ -104,7 +104,7 @@ interface Routine {
 * var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 * var y = new Float64Array( [ 2.0, 2.0, 2.0, 2.0 ] );
 *
-* var idx = dfirstIndexGreaterThan.ndarray( 4, x, 1, 0, y, 1, 0 );
+* var idx = dfirstIndexGreaterThan.ndarray( x.length, x, 1, 0, y, 1, 0 );
 * // returns 2
 */
 declare const dfirstIndexGreaterThan: Routine;

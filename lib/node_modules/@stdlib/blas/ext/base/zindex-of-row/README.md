@@ -68,11 +68,11 @@ The function has the following parameters:
 -   **M**: number of rows in `A`.
 -   **N**: number of columns in `A`.
 -   **A**: input matrix stored as a [`Complex128Array`][@stdlib/array/complex128].
--   **LDA**: stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`).
+-   **LDA**: stride length for the first dimension of `A` (a.k.a., leading dimension of the matrix `A`).
 -   **x**: search vector stored as a [`Complex128Array`][@stdlib/array/complex128].
--   **strideX**: stride length of `x`.
+-   **strideX**: stride length for `x`.
 -   **workspace**: workspace array stored as a [`Uint8Array`][mdn-uint8array] for tracking row match candidates. This parameter is ignored if the function is provided an input matrix stored in row-major order.
--   **strideW**: stride length of `workspace`.
+-   **strideW**: stride length for `workspace`.
 
 When an input matrix is stored in row-major order, the workspace parameter is ignored, and, thus, one may provide an empty workspace array.
 
@@ -166,14 +166,14 @@ The function has the following parameters:
 -   **M**: number of rows in `A`.
 -   **N**: number of columns in `A`.
 -   **A**: input matrix stored as a [`Complex128Array`][@stdlib/array/complex128].
--   **strideA1**: stride of the first dimension of `A`.
--   **strideA2**: stride of the second dimension of `A`.
+-   **strideA1**: stride length for the first dimension of `A`.
+-   **strideA2**: stride length for the second dimension of `A`.
 -   **offsetA**: starting index for `A`.
 -   **x**: search vector stored as a [`Complex128Array`][@stdlib/array/complex128].
--   **strideX**: stride length of `x`.
+-   **strideX**: stride length for `x`.
 -   **offsetX**: starting index for `x`.
 -   **workspace**: workspace array stored as a [`Uint8Array`][mdn-uint8array] for tracking row match candidates. This parameter is ignored if the function is provided an input matrix stored in row-major order.
--   **strideW**: stride length of `workspace`.
+-   **strideW**: stride length for `workspace`.
 -   **offsetW**: starting index for `workspace`.
 
 When an input matrix is stored in row-major order, the workspace parameter is ignored, and, thus, one may provide an empty workspace array.
@@ -206,7 +206,8 @@ var out = zindexOfRow.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0, workspace, 1, 0 );
 
 ## Notes
 
--   When searching for a matching row, the function checks for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct, and `-0` and `+0` are considered the same.
+-   If `M <= 0` or `N <= 0`, both functions return `-1`.
+-   When searching for a matching row, the functions check for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct, and `-0` and `+0` are considered the same.
 
 </section>
 
@@ -227,6 +228,7 @@ var Complex128Array = require( '@stdlib/array/complex128' );
 var Uint8Array = require( '@stdlib/array/uint8' );
 var ndarray2array = require( '@stdlib/ndarray/base/to-array' );
 var shape2strides = require( '@stdlib/ndarray/base/shape2strides' );
+var logEach = require( '@stdlib/console/log-each' );
 var zindexOfRow = require( '@stdlib/blas/ext/base/zindex-of-row' );
 
 var shape = [ 2, 2 ];
@@ -237,7 +239,7 @@ var A = new Complex128Array( [ 1.0, 0.0, 2.0, 0.0, 3.0, 0.0, 4.0, 0.0 ] );
 console.log( ndarray2array( A, shape, strides, 0, order ) );
 
 var x = new Complex128Array( [ 3.0, 0.0, 4.0, 0.0 ] );
-console.log( x );
+logEach( '%s', x );
 
 var workspace = new Uint8Array( shape[ 0 ] );
 
@@ -302,7 +304,7 @@ The function accepts the following arguments:
 -   **M**: `[in] CBLAS_INT` number of rows in `A`.
 -   **N**: `[in] CBLAS_INT` number of columns in `A`.
 -   **A**: `[in] stdlib_complex128_t*` input matrix.
--   **LDA**: `[in] CBLAS_INT` stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`).
+-   **LDA**: `[in] CBLAS_INT` stride length for the first dimension of `A` (a.k.a., leading dimension of the matrix `A`).
 -   **X**: `[in] stdlib_complex128_t*` search vector.
 -   **strideX**: `[in] CBLAS_INT` stride length for `X`.
 -   **workspace**: `[inout] uint8_t*` workspace array for tracking row match candidates. This parameter is ignored if the function is provided an input matrix stored in row-major order.
@@ -350,9 +352,9 @@ The function accepts the following arguments:
 -   **M**: `[in] CBLAS_INT` number of rows in `A`.
 -   **N**: `[in] CBLAS_INT` number of columns in `A`.
 -   **A**: `[in] stdlib_complex128_t*` input matrix.
--   **strideA1**: `[in] CBLAS_INT` stride of the first dimension of `A`.
--   **strideA2**: `[in] CBLAS_INT` stride of the second dimension of `A`.
--   **offsetA**: `[in] CBLAS_INT` index offset for `A`.
+-   **strideA1**: `[in] CBLAS_INT` stride length for the first dimension of `A`.
+-   **strideA2**: `[in] CBLAS_INT` stride length for the second dimension of `A`.
+-   **offsetA**: `[in] CBLAS_INT` starting index for `A`.
 -   **X**: `[in] stdlib_complex128_t*` search vector.
 -   **strideX**: `[in] CBLAS_INT` stride length for `X`.
 -   **offsetX**: `[in] CBLAS_INT` starting index for `X`.

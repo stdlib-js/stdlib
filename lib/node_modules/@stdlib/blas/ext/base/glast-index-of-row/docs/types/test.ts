@@ -183,7 +183,7 @@ import glastIndexOfRow = require( './index' );
 	glastIndexOfRow( 'row-major', 2, 2, A, 2, x ); // $ExpectError
 	glastIndexOfRow( 'row-major', 2, 2, A, 2, x, 1 ); // $ExpectError
 	glastIndexOfRow( 'row-major', 2, 2, A, 2, x, 1, w ); // $ExpectError
-	glastIndexOfRow( 'row-major', 2, 2, A, 2, x, 1, w, 1, 0 ); // $ExpectError
+	glastIndexOfRow( 'row-major', 2, 2, A, 2, x, 1, w, 1, {} ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a number...
@@ -399,5 +399,5 @@ import glastIndexOfRow = require( './index' );
 	glastIndexOfRow.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0 ); // $ExpectError
 	glastIndexOfRow.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0, w ); // $ExpectError
 	glastIndexOfRow.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0, w, 1 ); // $ExpectError
-	glastIndexOfRow.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0, w, 1, 0, 0 ); // $ExpectError
+	glastIndexOfRow.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0, w, 1, 0, {} ); // $ExpectError
 }

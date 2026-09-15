@@ -37,6 +37,7 @@ import slastIndexOfTruthy = require( './index' );
 	slastIndexOfTruthy( false, x, 1 ); // $ExpectError
 	slastIndexOfTruthy( null, x, 1 ); // $ExpectError
 	slastIndexOfTruthy( {}, x, 1 ); // $ExpectError
+	slastIndexOfTruthy( ( x: number ): number => x, x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a Float32Array...
@@ -46,6 +47,7 @@ import slastIndexOfTruthy = require( './index' );
 	slastIndexOfTruthy( x.length, false, 1 ); // $ExpectError
 	slastIndexOfTruthy( x.length, null, 1 ); // $ExpectError
 	slastIndexOfTruthy( x.length, {}, 1 ); // $ExpectError
+	slastIndexOfTruthy( x.length, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not a number...
@@ -57,6 +59,7 @@ import slastIndexOfTruthy = require( './index' );
 	slastIndexOfTruthy( x.length, x, false ); // $ExpectError
 	slastIndexOfTruthy( x.length, x, null ); // $ExpectError
 	slastIndexOfTruthy( x.length, x, {} ); // $ExpectError
+	slastIndexOfTruthy( x.length, x, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -83,6 +86,7 @@ import slastIndexOfTruthy = require( './index' );
 	slastIndexOfTruthy.ndarray( false, x, 1, 1 ); // $ExpectError
 	slastIndexOfTruthy.ndarray( null, x, 1, 1 ); // $ExpectError
 	slastIndexOfTruthy.ndarray( {}, x, 1, 1 ); // $ExpectError
+	slastIndexOfTruthy.ndarray( ( x: number ): number => x, x, 1, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a second argument which is not a Float32Array...
@@ -92,6 +96,7 @@ import slastIndexOfTruthy = require( './index' );
 	slastIndexOfTruthy.ndarray( x.length, false, 1, 1 ); // $ExpectError
 	slastIndexOfTruthy.ndarray( x.length, null, 1, 1 ); // $ExpectError
 	slastIndexOfTruthy.ndarray( x.length, {}, 1, 1 ); // $ExpectError
+	slastIndexOfTruthy.ndarray( x.length, ( x: number ): number => x, 1, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a third argument which is not a number...
@@ -103,6 +108,7 @@ import slastIndexOfTruthy = require( './index' );
 	slastIndexOfTruthy.ndarray( x.length, x, false, 1 ); // $ExpectError
 	slastIndexOfTruthy.ndarray( x.length, x, null, 1 ); // $ExpectError
 	slastIndexOfTruthy.ndarray( x.length, x, {}, 1 ); // $ExpectError
+	slastIndexOfTruthy.ndarray( x.length, x, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fourth argument which is not a number...
@@ -114,6 +120,7 @@ import slastIndexOfTruthy = require( './index' );
 	slastIndexOfTruthy.ndarray( x.length, x, 1, false ); // $ExpectError
 	slastIndexOfTruthy.ndarray( x.length, x, 1, null ); // $ExpectError
 	slastIndexOfTruthy.ndarray( x.length, x, 1, {} ); // $ExpectError
+	slastIndexOfTruthy.ndarray( x.length, x, 1, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided an unsupported number of arguments...

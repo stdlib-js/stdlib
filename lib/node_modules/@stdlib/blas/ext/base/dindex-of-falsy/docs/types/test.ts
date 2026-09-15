@@ -16,8 +16,6 @@
 * limitations under the License.
 */
 
-/* eslint-disable space-in-parens */
-
 import dindexOfFalsy = require( './index' );
 
 
@@ -39,6 +37,7 @@ import dindexOfFalsy = require( './index' );
 	dindexOfFalsy( false, x, 1 ); // $ExpectError
 	dindexOfFalsy( null, x, 1 ); // $ExpectError
 	dindexOfFalsy( {}, x, 1 ); // $ExpectError
+	dindexOfFalsy( ( x: number ): number => x, x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a Float64Array...
@@ -48,6 +47,7 @@ import dindexOfFalsy = require( './index' );
 	dindexOfFalsy( x.length, false, 1 ); // $ExpectError
 	dindexOfFalsy( x.length, null, 1 ); // $ExpectError
 	dindexOfFalsy( x.length, {}, 1 ); // $ExpectError
+	dindexOfFalsy( x.length, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not a number...
@@ -59,6 +59,7 @@ import dindexOfFalsy = require( './index' );
 	dindexOfFalsy( x.length, x, false ); // $ExpectError
 	dindexOfFalsy( x.length, x, null ); // $ExpectError
 	dindexOfFalsy( x.length, x, {} ); // $ExpectError
+	dindexOfFalsy( x.length, x, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -66,7 +67,7 @@ import dindexOfFalsy = require( './index' );
 	dindexOfFalsy(); // $ExpectError
 	dindexOfFalsy( 3 ); // $ExpectError
 	dindexOfFalsy( 3, new Float64Array( [ 1.0, 2.0, 3.0 ] ) ); // $ExpectError
-	dindexOfFalsy( 3, new Float64Array( [ 1.0, 2.0, 3.0 ] ), 1, 0 ); // $ExpectError
+	dindexOfFalsy( 3, new Float64Array( [ 1.0, 2.0, 3.0 ] ), 1, {} ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a number...
@@ -85,6 +86,7 @@ import dindexOfFalsy = require( './index' );
 	dindexOfFalsy.ndarray( false, x, 1, 1 ); // $ExpectError
 	dindexOfFalsy.ndarray( null, x, 1, 1 ); // $ExpectError
 	dindexOfFalsy.ndarray( {}, x, 1, 1 ); // $ExpectError
+	dindexOfFalsy.ndarray( ( x: number ): number => x, x, 1, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a second argument which is not a Float64Array...
@@ -94,6 +96,7 @@ import dindexOfFalsy = require( './index' );
 	dindexOfFalsy.ndarray( x.length, false, 1, 1 ); // $ExpectError
 	dindexOfFalsy.ndarray( x.length, null, 1, 1 ); // $ExpectError
 	dindexOfFalsy.ndarray( x.length, {}, 1, 1 ); // $ExpectError
+	dindexOfFalsy.ndarray( x.length, ( x: number ): number => x, 1, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a third argument which is not a number...
@@ -105,6 +108,7 @@ import dindexOfFalsy = require( './index' );
 	dindexOfFalsy.ndarray( x.length, x, false, 1 ); // $ExpectError
 	dindexOfFalsy.ndarray( x.length, x, null, 1 ); // $ExpectError
 	dindexOfFalsy.ndarray( x.length, x, {}, 1 ); // $ExpectError
+	dindexOfFalsy.ndarray( x.length, x, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fourth argument which is not a number...
@@ -116,6 +120,7 @@ import dindexOfFalsy = require( './index' );
 	dindexOfFalsy.ndarray( x.length, x, 1, false ); // $ExpectError
 	dindexOfFalsy.ndarray( x.length, x, 1, null ); // $ExpectError
 	dindexOfFalsy.ndarray( x.length, x, 1, {} ); // $ExpectError
+	dindexOfFalsy.ndarray( x.length, x, 1, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided an unsupported number of arguments...
@@ -124,5 +129,5 @@ import dindexOfFalsy = require( './index' );
 	dindexOfFalsy.ndarray( 3 ); // $ExpectError
 	dindexOfFalsy.ndarray( 3, new Float64Array( [ 1.0, 2.0, 3.0 ] ) ); // $ExpectError
 	dindexOfFalsy.ndarray( 3, new Float64Array( [ 1.0, 2.0, 3.0 ] ), 1 ); // $ExpectError
-	dindexOfFalsy.ndarray( 3, new Float64Array( [ 1.0, 2.0, 3.0 ] ), 1, 0, 0 ); // $ExpectError
+	dindexOfFalsy.ndarray( 3, new Float64Array( [ 1.0, 2.0, 3.0 ] ), 1, 0, {} ); // $ExpectError
 }
