@@ -61,7 +61,7 @@ The command supports the following environment variables:
 
 Highway builds require WebAssembly SIMD support and do not automatically fall back to a scalar module. Clean the affected package before rebuilding with different compiler flags.
 
-Backend-specific source files and preprocessor definitions belong in the kernel's library manifest. Declare a `defines` field, with `resolve` and `relative` set to `false`, in each manifest along the dependency chain. The build script passes the resolved definitions to supporting package Makefiles through `DEFINES`; consumers do not need to name their dependencies' backend macros.
+The build script selects backend-specific source files from library manifests using the `simd` option. Supporting package Makefiles define the compiler flags required by the selected backend.
 
 If unable to compile WebAssemby artifacts, the command prints an error message and tries compiling WebAssembly artifacts for the next package.
 
