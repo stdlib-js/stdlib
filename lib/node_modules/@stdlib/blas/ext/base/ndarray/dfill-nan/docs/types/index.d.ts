@@ -31,6 +31,8 @@ import { float64ndarray, typedndarray } from '@stdlib/types/ndarray';
 *
 *     -   a one-dimensional input ndarray.
 *     -   a zero-dimensional ndarray containing the scalar constant.
+*     -   a zero-dimensional ndarray containing the starting index (inclusive).
+*     -   a zero-dimensional ndarray containing the ending index (exclusive).
 *
 * @param arrays - array-like object containing ndarrays
 * @returns input ndarray
@@ -45,10 +47,18 @@ import { float64ndarray, typedndarray } from '@stdlib/types/ndarray';
 *     'dtype': 'float64'
 * });
 *
-* var out = dfillNaN( [ x, alpha ] );
-* // returns <ndarray>[ 0.0, -2.0, 3.0, 0.0, 4.0, -6.0 ]
+* var start = scalar2ndarray( 0, {
+*     'dtype': 'generic'
+* });
+*
+* var end = scalar2ndarray( 2, {
+*     'dtype': 'generic'
+* });
+*
+* var out = dfillNaN( [ x, alpha, start, end ] );
+* // returns <ndarray>[ 0.0, -2.0, 3.0, NaN, 4.0, -6.0 ]
 */
-declare function dfillNaN( arrays: [ float64ndarray, typedndarray<number> ] ): float64ndarray;
+declare function dfillNaN( arrays: [ float64ndarray, typedndarray<number>, typedndarray<number>, typedndarray<number> ] ): float64ndarray;
 
 
 // EXPORTS //

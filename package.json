@@ -148,6 +148,7 @@
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-jsdoc": "^46.8.2",
     "eslint-plugin-stdlib": "file:./etc/eslint/plugin",
+    "globals": "^16.1.0",
     "exorcist": "^2.0.0",
     "factor-bundle": "^2.5.0",
     "gh-pages": "git+https://github.com/Planeshifter/gh-pages.git#main",
