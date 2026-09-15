@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2026 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,25 +16,7 @@
 * limitations under the License.
 */
 
-'use strict';
+#include "stdlib/math/base/special/tanhf.h"
+#include "stdlib/math/base/napi/unary.h"
 
-// MODULES //
-
-var tape = require( 'tape' );
-var objectKeys = require( '@stdlib/utils/keys' );
-var special = require( './../lib' );
-
-
-// TESTS //
-
-tape( 'main export is an object', function test( t ) {
-	t.ok( true, __filename );
-	t.strictEqual( typeof special, 'object', 'main export is an object' );
-	t.end();
-});
-
-tape( 'the exported object contains special functions', function test( t ) {
-	var keys = objectKeys( special );
-	t.strictEqual( keys.length > 0, true, 'has keys' );
-	t.end();
-});
+STDLIB_MATH_BASE_NAPI_MODULE_F_F( stdlib_base_tanhf )
