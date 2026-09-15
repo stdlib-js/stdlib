@@ -121,6 +121,107 @@ console.log( d );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/number/float32/base/ulp_difference.h"
+```
+
+#### stdlib_base_float32_ulp_difference( x, y )
+
+Computes the number of representable [single-precision][single-precision] floating-point values that separate two [single-precision][single-precision] floating-point numbers along the real number line.
+
+```c
+double d = stdlib_base_float32_ulp_difference( 1.0f, 1.0f + 1.1920929e-7f );
+// returns 1.0
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] float` first input value.
+-   **y**: `[in] float` second input value.
+
+```c
+double stdlib_base_float32_ulp_difference( const float x, const float y );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/number/float32/base/ulp_difference.h"
+#include "stdlib/constants/float32/eps.h"
+#include "stdlib/constants/float32/smallest_subnormal.h"
+#include <stdio.h>
+
+int main( void ) {
+    const float x[] = {
+        1.0f,
+        5.8364e-31f,
+        0.0f,
+        0.0f,
+        STDLIB_CONSTANT_FLOAT32_SMALLEST_SUBNORMAL
+    };
+    const float y[] = {
+        1.0f + STDLIB_CONSTANT_FLOAT32_EPS,
+        5.8367e-31f,
+        STDLIB_CONSTANT_FLOAT32_SMALLEST_SUBNORMAL,
+        -0.0f,
+        -STDLIB_CONSTANT_FLOAT32_SMALLEST_SUBNORMAL
+    };
+
+    double d;
+    int i;
+    for ( i = 0; i < 5; i++ ) {
+        d = stdlib_base_float32_ulp_difference( x[ i ], y[ i ] );
+        printf( "ulpdiff(%f, %f) = %lf\n", x[ i ], y[ i ], d );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
