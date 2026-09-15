@@ -36,16 +36,14 @@
 * double y = stdlib_base_dists_hypergeometric_quantile( 0.4, 40, 20, 10 );
 * // returns 5
 */
-double stdlib_base_dists_hypergeometric_quantile(
-	const double p,
-	const int32_t N,
-	const int32_t K,
-	const int32_t n
-) {
+double stdlib_base_dists_hypergeometric_quantile( const double p, const int32_t N, const int32_t K, const int32_t n ) {
+	double upper;
+	double lower;
 	double prob;
-	int32_t upper;
-	int32_t lower;
-	int32_t x;
+	double dn;
+	double dK;
+	double dN;
+	double x;
 
 	if (
 		stdlib_base_is_nan( p ) ||
@@ -60,23 +58,26 @@ double stdlib_base_dists_hypergeometric_quantile(
 		return 0.0 / 0.0;
 	}
 
-	lower = stdlib_base_max( 0, n + K - N );
-	upper = stdlib_base_min( n, K );
+	dn = (double)n;
+	dN = (double)N;
+	dK = (double)K;
+	lower = stdlib_base_max( 0.0, dn+dK-dN );
+	upper = stdlib_base_min( dn, dK );
 
 	if ( p == 0.0 ) {
-		return (double)lower;
+		return lower;
 	}
 	if ( p == 1.0 ) {
-		return (double)upper;
+		return upper;
 	}
 
 	x = lower;
 	while ( x <= upper ) {
-		prob = stdlib_base_dists_hypergeometric_cdf( (double)x, N, K, n );
+		prob = stdlib_base_dists_hypergeometric_cdf( x, N, K, n );
 		if ( prob > p ) {
 			break;
 		}
-		x += 1;
+		x += 1.0;
 	}
-	return (double)x;
+	return x;
 }
