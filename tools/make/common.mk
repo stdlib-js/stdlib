@@ -699,3 +699,20 @@ deps_fftpack_version_slug := $(subst .,_,$(DEPS_FFTPACK_VERSION))
 
 # Define the output path when building FFTPACK:
 DEPS_FFTPACK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/pffft-$(DEPS_FFTPACK_VERSION)
+
+# Highway (Google SIMD library)...
+
+# Define the Highway version:
+DEPS_HIGHWAY_VERSION ?= 1.2.0
+
+# Generate a version slug:
+deps_highway_version_slug := $(subst .,_,$(DEPS_HIGHWAY_VERSION))
+
+# Define the output path when building Highway:
+DEPS_HIGHWAY_BUILD_OUT ?= $(DEPS_BUILD_DIR)/highway_$(deps_highway_version_slug)
+
+# Define the include path for Highway:
+DEPS_HIGHWAY_INCLUDE ?= $(DEPS_HIGHWAY_BUILD_OUT)
+
+# Define the path to Highway header source directory:
+DEPS_HIGHWAY_SRC ?= $(DEPS_HIGHWAY_BUILD_OUT)/hwy
