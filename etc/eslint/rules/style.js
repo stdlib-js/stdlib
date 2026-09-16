@@ -1371,6 +1371,12 @@ rules[ 'no-restricted-syntax' ] = [ 'error',
 	{
 		'selector': 'CallExpression[callee.object.name="path"][callee.property.name="extname"]',
 		'message': 'Use `@stdlib/utils/extname` instead of path.extname.'
+	},
+
+	// format without interpolation
+	{
+		'selector': 'CallExpression[callee.name="format"][arguments.length=1][arguments.0.value=/^[^%]*$/]',
+		'message': 'Unnecessary `format` call. Remove `format` when a string does not contain interpolation placeholders.'
 	}
 ];
 
