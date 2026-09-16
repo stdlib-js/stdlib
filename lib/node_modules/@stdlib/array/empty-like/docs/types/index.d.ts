@@ -63,6 +63,15 @@ declare function emptyLike( x: Array<any> ): Array<number>;
 *
 * var arr = emptyLike( x );
 * // returns <Float64Array>
+*
+* @example
+* var zeros = require( '@stdlib/array/zeros' );
+*
+* var x = zeros( 2, 'float16' );
+* // returns <Float16Array>[ 0.0, 0.0 ]
+*
+* var arr = emptyLike( x );
+* // returns <Float16Array>
 */
 declare function emptyLike<T extends TypedArray | ComplexTypedArray | BooleanTypedArray>( x: T ): T;
 

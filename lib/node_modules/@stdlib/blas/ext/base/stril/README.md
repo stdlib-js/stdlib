@@ -242,8 +242,6 @@ void API_SUFFIX(stdlib_strided_stril)( const CBLAS_LAYOUT layout, const CBLAS_IN
 Copies the lower triangular part of a single-precision floating-point matrix `A` to another matrix `B` using alternative indexing semantics.
 
 ```c
-#include "stdlib/blas/base/shared.h"
-
 const float A[] = { 1.0f, 2.0f, 3.0f, 4.0f };
 float B[] = { 0.0f, 0.0f, 0.0f, 0.0f };
 
