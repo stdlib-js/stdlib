@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the angle in the plane (in radians) between the positive x-axis and the ray from `(0,0)` to the point `(x,y)`.
 
+<section class="intro">
+
+The two-argument [arctangent][arctangent] function is defined as
+
+<!-- <equation class="equation" label="eq:atan2_function" align="center" raw="\operatorname{atan2}(y, x) = \begin{cases} \arctan\!\left(\tfrac{y}{x}\right) & \textrm{if}\ x > 0 \\ \arctan\!\left(\tfrac{y}{x}\right) + \pi & \textrm{if}\ x < 0,\ y \geq 0 \\ \arctan\!\left(\tfrac{y}{x}\right) - \pi & \textrm{if}\ x < 0,\ y < 0 \\ +\tfrac{\pi}{2} & \textrm{if}\ x = 0,\ y > 0 \\ -\tfrac{\pi}{2} & \textrm{if}\ x = 0,\ y < 0 \end{cases}" alt="Two-argument arctangent function"> -->
+
+```math
+\mathop{\mathrm{atan2}}(y, x) = \begin{cases} \arctan\!\left(\tfrac{y}{x}\right) & \textrm{if}\ x > 0 \\ \arctan\!\left(\tfrac{y}{x}\right) + \pi & \textrm{if}\ x < 0,\ y \geq 0 \\ \arctan\!\left(\tfrac{y}{x}\right) - \pi & \textrm{if}\ x < 0,\ y < 0 \\ +\tfrac{\pi}{2} & \textrm{if}\ x = 0,\ y > 0 \\ -\tfrac{\pi}{2} & \textrm{if}\ x = 0,\ y < 0 \end{cases}
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
@@ -35,19 +51,19 @@ var atan2 = require( '@stdlib/math/base/special/atan2' );
 Computes the angle in the plane (in radians) between the positive x-axis and the ray from `(0,0)` to the point `(x,y)`.
 
 ```javascript
-var v = atan2( 2.0, 2.0 ); // => atan(1.0)
+var v = atan2( 2.0, 2.0 );
 // returns ~0.785
 
-v = atan2( 6.0, 2.0 ); // => atan(3.0)
+v = atan2( 6.0, 2.0 );
 // returns ~1.249
 
-v = atan2( -1.0, -1.0 ); // => atan(1.0) - π
+v = atan2( -1.0, -1.0 );
 // returns ~-2.356
 
-v = atan2( 3.0, 0.0 ); // => π/2
+v = atan2( 3.0, 0.0 );
 // returns ~1.571
 
-v = atan2( -2.0, 0.0 ); // => -π/2
+v = atan2( -2.0, 0.0 );
 // returns ~-1.571
 
 v = atan2( 0.0, 0.0 );
@@ -196,6 +212,8 @@ int main( void ) {
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[arctangent]: https://en.wikipedia.org/wiki/Inverse_trigonometric_functions
 
 <!-- <related-links> -->
 

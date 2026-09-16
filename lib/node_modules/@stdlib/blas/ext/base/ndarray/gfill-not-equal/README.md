@@ -54,8 +54,16 @@ var alpha = scalar2ndarray( 5.0, {
     'dtype': 'generic'
 });
 
-gfillNotEqual( [ x, searchElement, alpha ] );
-// x => <ndarray>[ 0.0, 5.0, 5.0, 0.0, 5.0, 5.0 ]
+var start = scalar2ndarray( 0, {
+    'dtype': 'generic'
+});
+
+var end = scalar2ndarray( 3, {
+    'dtype': 'generic'
+});
+
+gfillNotEqual( [ x, searchElement, alpha, start, end ] );
+// x => <ndarray>[ 0.0, 5.0, 5.0, 0.0, 4.0, -6.0 ]
 ```
 
 The function has the following parameters:
@@ -65,6 +73,8 @@ The function has the following parameters:
     -   a one-dimensional input ndarray.
     -   a zero-dimensional ndarray containing the search element.
     -   a zero-dimensional ndarray containing the scalar constant.
+    -   a zero-dimensional ndarray containing the starting index (inclusive).
+    -   a zero-dimensional ndarray containing the ending index (exclusive).
 
 </section>
 
@@ -75,6 +85,7 @@ The function has the following parameters:
 ## Notes
 
 -   The input ndarray is modified **in-place** (i.e., the input ndarray is **mutated**).
+-   If a specified `start` or `end` index is negative, the function resolves the respective index by counting backward from the last element (where `-1` refers to the last element).
 -   When comparing elements, the function checks for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct (i.e., as `NaN !== NaN` always evaluates to `true`, `NaN` elements are always replaced), and `-0` and `+0` are considered the same.
 
 </section>
@@ -98,7 +109,7 @@ var opts = {
     'dtype': 'generic'
 };
 
-var x = discreteUniform( [ 10 ], 0, 3, opts );
+var x = discreteUniform( [ 20 ], 0, 3, opts );
 console.log( ndarray2array( x ) );
 
 var searchElement = scalar2ndarray( 1, opts );
@@ -107,7 +118,13 @@ console.log( 'Search Element: %d', ndarraylike2scalar( searchElement ) );
 var alpha = scalar2ndarray( 5, opts );
 console.log( 'Alpha: %d', ndarraylike2scalar( alpha ) );
 
-gfillNotEqual( [ x, searchElement, alpha ] );
+var start = scalar2ndarray( 5, opts );
+console.log( 'Start Index: %d', ndarraylike2scalar( start ) );
+
+var end = scalar2ndarray( 15, opts );
+console.log( 'End Index: %d', ndarraylike2scalar( end ) );
+
+gfillNotEqual( [ x, searchElement, alpha, start, end ] );
 console.log( ndarray2array( x ) );
 ```
 

@@ -42,7 +42,7 @@ import { typedndarray, float64ndarray } from '@stdlib/types/ndarray';
 * var x = new Float64Vector( [ 1.0, -2.0, 3.0, -4.0 ] );
 *
 * var ord = scalar2ndarray( 1.0, {
-*    'dtype': 'generic'
+*     'dtype': 'generic'
 * });
 *
 * var out = dsortsh( [ x, ord ] );

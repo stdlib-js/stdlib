@@ -42,7 +42,7 @@ import { typedndarray, float64ndarray } from '@stdlib/types/ndarray';
 * var x = new Float64Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 *
 * var k = scalar2ndarray( 2, {
-*    'dtype': 'generic'
+*     'dtype': 'generic'
 * });
 *
 * var out = dcircshift( [ x, k ] );
