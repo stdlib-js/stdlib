@@ -34,6 +34,7 @@ import array2scalar = require( './index' );
 
 	array2scalar( 1.0, 'float64' ); // $ExpectType Float64Array
 	array2scalar( 1.0, 'float32' ); // $ExpectType Float32Array
+	array2scalar( 1.0, 'float16' ); // $ExpectType Float16ArrayFallback
 	array2scalar( 1.0, 'complex128' ); // $ExpectType Complex128Array
 	array2scalar( 1.0, 'complex64' ); // $ExpectType Complex64Array
 	array2scalar( true, 'bool' ); // $ExpectType BooleanArray
