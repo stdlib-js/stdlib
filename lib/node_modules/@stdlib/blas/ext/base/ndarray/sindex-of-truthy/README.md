@@ -42,25 +42,38 @@ Returns the index of the first truthy element in a one-dimensional single-precis
 
 ```javascript
 var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
+var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 
 var x = new Float32Vector( [ 0.0, 0.0, 3.0, 2.0 ] );
 
-var idx = sindexOfTruthy( [ x ] );
+var fromIndex = scalar2ndarray( 0, {
+    'dtype': 'generic'
+});
+
+var idx = sindexOfTruthy( [ x, fromIndex ] );
 // returns 2
 ```
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing a one-dimensional input ndarray.
+-   **arrays**: array-like object containing the following ndarrays:
+
+    -   a one-dimensional input ndarray.
+    -   a zero-dimensional ndarray containing the index from which to begin searching.
 
 If the function is unable to find a truthy element, the function returns `-1`.
 
 ```javascript
 var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
+var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 
 var x = new Float32Vector( [ 0.0, 0.0, 0.0, 0.0 ] );
 
-var idx = sindexOfTruthy( [ x ] );
+var fromIndex = scalar2ndarray( 0, {
+    'dtype': 'generic'
+});
+
+var idx = sindexOfTruthy( [ x, fromIndex ] );
 // returns -1
 ```
 
@@ -73,6 +86,7 @@ var idx = sindexOfTruthy( [ x ] );
 ## Notes
 
 -   The function explicitly treats `NaN` values as falsy.
+-   If a specified starting search index is negative, the function resolves the starting search index by counting backward from the last element (where `-1` refers to the last element).
 
 </section>
 
@@ -86,6 +100,7 @@ var idx = sindexOfTruthy( [ x ] );
 
 ```javascript
 var bernoulli = require( '@stdlib/random/bernoulli' );
+var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var sindexOfTruthy = require( '@stdlib/blas/ext/base/ndarray/sindex-of-truthy' );
 
@@ -96,7 +111,11 @@ var opts = {
 var x = bernoulli( [ 10 ], 0.7, opts );
 console.log( ndarray2array( x ) );
 
-var idx = sindexOfTruthy( [ x ] );
+var fromIndex = scalar2ndarray( 0, {
+    'dtype': 'generic'
+});
+
+var idx = sindexOfTruthy( [ x, fromIndex ] );
 console.log( idx );
 ```
 

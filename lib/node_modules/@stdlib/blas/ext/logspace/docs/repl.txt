@@ -1,0 +1,263 @@
+
+{{alias}}( shape, base, start, stop[, endpoint][, options] )
+    Returns a new ndarray filled with logarithmically spaced values over a
+    specified interval along one or more ndarray dimensions.
+
+    If a specified shape has a single element and the function is supposed to
+    include the `base^stop` value, the set of values written to an output
+    ndarray only includes the `base^stop` value, but not the `base^start`
+    value.
+
+    Otherwise, when a specified shape has a single element and the function is
+    not supposed to include the `base^stop` value, the set of values written to
+    an output ndarray only includes the `base^start` value, but not the
+    `base^stop` value.
+
+    For real-valued arrays, if `start` is less than `stop`, the exponents are
+    generated in ascending order, and, if `start` is greater than `stop`, the
+    exponents are generated in descending order.
+
+    When a specified shape contains at least two values and the function is
+    supposed to include the `base^stop` value, the set of values written to an
+    output ndarray is guaranteed to include the `base^start` and `base^stop`
+    values. Beware, however, that values between `base^start` and `base^stop`
+    are subject to floating-point rounding errors.
+
+    When writing to a complex floating-point output array, real-valued `start`
+    and `stop` values are treated as complex numbers having a real component
+    equaling the provided value and having an imaginary component equaling
+    zero.
+
+    When generating logarithmically spaced complex floating-point numbers,
+    generated values follow a logarithmic spiral in the complex plane, where
+    imaginary components of `start` and `stop` control phase rotation.
+
+    The base of the logarithmic scale must be real-valued, even when writing to
+    a complex floating-point output array.
+
+    Both `start` and `stop` are cast to the data type of the output array.
+
+    Parameters
+    ----------
+    shape: Array<integer>|integer
+        Array shape.
+
+    base: ndarray|number
+        Base of the logarithmic scale. May be either a number or an ndarray
+        having a real-valued or "generic" data type. If provided an ndarray,
+        the value must have a shape which is broadcast compatible with the
+        complement of the shape defined by `options.dims`. For example, given
+        the input shape `[2, 3, 4]` and `options.dims=[0]`, a base ndarray must
+        have a shape which is broadcast compatible with the shape `[3, 4]`.
+        Similarly, when performing the operation over all elements in a
+        provided input shape, a base ndarray must be a zero-dimensional
+        ndarray.
+
+    start: ndarray|number|Complex
+        Exponent of the starting value, where the starting value is given by
+        `base^start`. May be either a number, a complex number, or an ndarray
+        having a numeric or "generic" data type. If provided an ndarray, the
+        value must have a shape which is broadcast compatible with the
+        complement of the shape defined by `options.dims`. For example, given
+        the input shape `[2, 3, 4]` and `options.dims=[0]`, a start ndarray
+        must have a shape which is broadcast compatible with the shape
+        `[3, 4]`. Similarly, when performing the operation over all elements in
+        a provided input shape, a start ndarray must be a zero-dimensional
+        ndarray.
+
+    stop: ndarray|number|Complex
+        Exponent of the final value, where the final value is given by
+        `base^stop`. May be either a number, a complex number, or an ndarray
+        having a numeric or "generic" data type. If provided an ndarray, the
+        value must have a shape which is broadcast compatible with the
+        complement of the shape defined by `options.dims`. For example, given
+        the input shape `[2, 3, 4]` and `options.dims=[0]`, a stop ndarray must
+        have a shape which is broadcast compatible with the shape `[3, 4]`.
+        Similarly, when performing the operation over all elements in a
+        provided input shape, a stop ndarray must be a zero-dimensional
+        ndarray.
+
+    endpoint: ndarray|boolean (optional)
+        Boolean specifying whether to include the `base^stop` value when
+        writing values to the output ndarray. May be either a boolean or an
+        ndarray having a boolean or "generic" data type. If provided an
+        ndarray, the value must have a shape which is broadcast compatible with
+        the complement of the shape defined by `options.dims`. For example,
+        given the input shape `[2, 3, 4]` and `options.dims=[0]`, an endpoint
+        ndarray must have a shape which is broadcast compatible with the shape
+        `[3, 4]`. Similarly, when performing the operation over all elements in
+        a provided input shape, an endpoint ndarray must be a zero-dimensional
+        ndarray. Default: true.
+
+    options: Object (optional)
+        Function options.
+
+    options.dims: Array<integer> (optional)
+        List of dimensions over which to perform operation. If not provided,
+        the function generates logarithmically spaced values along the last
+        dimension. Default: [-1].
+
+    options.dtype: string|DataType (optional)
+        Output array data type. If both `start` and `stop` are real-valued, the
+        output array data type may be any floating-point data type or
+        'generic'. However, if either `start` or `stop` are complex-valued, the
+        output array type must be a complex floating-point data type or
+        'generic'. If provided, `start` and `stop` are cast to the specified
+        data type. If not provided, the default output array data type is
+        determined by applying type promotion rules to the `base`, `start`, and
+        `stop` data types.
+
+    options.order: string (optional)
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style). If `base`, `start`, `stop`, and `endpoint` are scalar
+        values, the default order is 'row-major'. If `base`, `start`, `stop`,
+        and/or `endpoint` arrays have the same memory layout, the default order
+        is the same layout. Otherwise, the default order is 'row-major'.
+
+    options.mode: string (optional)
+        Specifies how to handle indices which exceed array dimensions. If equal
+        to 'throw', an ndarray instance throws an error when an index exceeds
+        array dimensions. If equal to 'normalize', an ndarray instance
+        normalizes negative indices and throws an error when an index exceeds
+        array dimensions. If equal to 'wrap', an ndarray instance wraps around
+        indices exceeding array dimensions using modulo arithmetic. If equal to
+        'clamp', an ndarray instance sets an index exceeding array dimensions
+        to either `0` (minimum index) or the maximum index. Default: 'throw'.
+
+    options.submode: Array<string> (optional)
+        Specifies how to handle subscripts which exceed array dimensions. If a
+        mode for a corresponding dimension is equal to 'throw', an ndarray
+        instance throws an error when a subscript exceeds array dimensions. If
+        equal to 'normalize', an ndarray instance normalizes negative
+        subscripts and throws an error when a subscript exceeds array
+        dimensions. If equal to 'wrap', an ndarray instance wraps around
+        subscripts exceeding array dimensions using modulo arithmetic. If equal
+        to 'clamp', an ndarray instance sets a subscript exceeding array
+        dimensions to either `0` (minimum index) or the maximum index. If the
+        number of modes is fewer than the number of dimensions, the function
+        recycles modes using modulo arithmetic. Default: [ options.mode ].
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var out = {{alias}}( [ 4 ], 10.0, 0.0, 3.0 )
+    <ndarray>[ 1.0, 10.0, 100.0, 1000.0 ]
+
+
+{{alias}}.assign( out, base, start, stop[, endpoint][, options] )
+    Fills an ndarray with logarithmically spaced values over a specified
+    interval along one or more ndarray dimensions.
+
+    If a provided array has a single element and the function is supposed to
+    include the `base^stop` value, the set of values written to an output
+    ndarray only includes the `base^stop` value, but not the `base^start`
+    value.
+
+    Otherwise, when a provided array has a single element and the function is
+    not supposed to include the `base^stop` value, the set of values written to
+    an output ndarray only includes the `base^start` value, but not the
+    `base^stop` value.
+
+    For real-valued arrays, if `start` is less than `stop`, the exponents are
+    generated in ascending order, and, if `start` is greater than `stop`, the
+    exponents are generated in descending order.
+
+    When a provided array contains at least two values and the function is
+    supposed to include the `base^stop` value, the set of values written to an
+    output ndarray is guaranteed to include the `base^start` and `base^stop`
+    values. Beware, however, that values between `base^start` and `base^stop`
+    are subject to floating-point rounding errors.
+
+    When writing to a complex floating-point output array, real-valued `start`
+    and `stop` values are treated as complex numbers having a real component
+    equaling the provided value and having an imaginary component equaling
+    zero.
+
+    When generating logarithmically spaced complex floating-point numbers,
+    generated values follow a logarithmic spiral in the complex plane, where
+    imaginary components of `start` and `stop` control phase rotation.
+
+    The base of the logarithmic scale must be real-valued, even when writing to
+    a complex floating-point output array.
+
+    Both `start` and `stop` are cast to the data type of the output array.
+
+    Parameters
+    ----------
+    out: ndarray
+        Output array. Must have a floating-point or "generic" data type.
+
+    base: ndarray|number
+        Base of the logarithmic scale. May be either a number or an ndarray
+        having a real-valued or "generic" data type. If provided an ndarray,
+        the value must have a shape which is broadcast compatible with the
+        complement of the shape defined by `options.dims`. For example, given
+        the input shape `[2, 3, 4]` and `options.dims=[0]`, a base ndarray must
+        have a shape which is broadcast compatible with the shape `[3, 4]`.
+        Similarly, when performing the operation over all elements in a
+        provided input array, a base ndarray must be a zero-dimensional
+        ndarray.
+
+    start: ndarray|number|Complex
+        Exponent of the starting value, where the starting value is given by
+        `base^start`. May be either a number, a complex number, or an ndarray
+        having a numeric or "generic" data type. If provided an ndarray, the
+        value must have a shape which is broadcast compatible with the
+        complement of the shape defined by `options.dims`. For example, given
+        the input shape `[2, 3, 4]` and `options.dims=[0]`, a start ndarray
+        must have a shape which is broadcast compatible with the shape
+        `[3, 4]`. Similarly, when performing the operation over all elements in
+        a provided input array, a start ndarray must be a zero-dimensional
+        ndarray.
+
+    stop: ndarray|number|Complex
+        Exponent of the final value, where the final value is given by
+        `base^stop`. May be either a number, a complex number, or an ndarray
+        having a numeric or "generic" data type. If provided an ndarray, the
+        value must have a shape which is broadcast compatible with the
+        complement of the shape defined by `options.dims`. For example, given
+        the input shape `[2, 3, 4]` and `options.dims=[0]`, a stop ndarray must
+        have a shape which is broadcast compatible with the shape `[3, 4]`.
+        Similarly, when performing the operation over all elements in a
+        provided input array, a stop ndarray must be a zero-dimensional
+        ndarray.
+
+    endpoint: ndarray|boolean (optional)
+        Boolean specifying whether to include the `base^stop` value when
+        writing values to the output ndarray. May be either a boolean or an
+        ndarray having a boolean or "generic" data type. If provided an
+        ndarray, the value must have a shape which is broadcast compatible with
+        the complement of the shape defined by `options.dims`. For example,
+        given the input shape `[2, 3, 4]` and `options.dims=[0]`, an endpoint
+        ndarray must have a shape which is broadcast compatible with the shape
+        `[3, 4]`. Similarly, when performing the operation over all elements in
+        a provided input array, an endpoint ndarray must be a zero-dimensional
+        ndarray. Default: true.
+
+    options: Object (optional)
+        Function options.
+
+    options.dims: Array<integer> (optional)
+        List of dimensions over which to perform operation. If not provided,
+        the function generates logarithmically spaced values along the last
+        dimension. Default: [-1].
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/zeros}}( [ 4 ] );
+    > var out = {{alias}}.assign( x, 10.0, 0.0, 3.0 )
+    <ndarray>[ 1.0, 10.0, 100.0, 1000.0 ]
+    > var bool = ( out === x )
+    true
+
+    See Also
+    --------
