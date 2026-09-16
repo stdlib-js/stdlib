@@ -30,12 +30,14 @@ mode="${root}/tools/awk/mode.awk"
 #   - Extract the line which begins with `Date` from each log.
 # * `awk '{}'`
 #   - From each date line, extract the month (`$3`), day (`$4`), and year (`$6`).
+# * `sort`
+#   - Sort in lexicographic order.
 # * `uniq -c`
-#   - Given that same day commits are on consecutive lines, we can remove repeated lines and count the repeats to compute daily totals.
+#   - Remove repeated lines and count the repeats to compute daily totals.
 # * `awk '{}'`
 #   - Extract the total from each line.
 # * `awk '{}'`
 #   - Compute the most frequent number of commits per day.
-git log | grep Date | awk '{print $3 OFS $4 OFS $6}' | uniq -c | awk '{print $1}' | "${mode}"
+git log | grep Date | awk '{print $3 OFS $4 OFS $6}' | sort | uniq -c | awk '{print $1}' | "${mode}"
 
 # FIXME: does not include days in which no commits are made!

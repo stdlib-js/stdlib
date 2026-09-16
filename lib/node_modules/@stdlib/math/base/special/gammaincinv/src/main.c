@@ -51,6 +51,7 @@
 #include "stdlib/constants/float64/two_pi.h"
 #include "stdlib/constants/float64/pinf.h"
 #include "stdlib/constants/float32/max.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdbool.h>
 #include <stdint.h>
 
@@ -1046,7 +1047,7 @@ static double compute( const double a, const double p, const double q ) {
 			invfp = 1.0 / fp;
 		} else {
 			// Overflow problems in one or more steps of the computation...
-			return 0.0 / 0.0; // NaN
+			return STDLIB_CONSTANT_FLOAT64_NAN;
 		}
 	}
 	if ( k < 2 ) {
@@ -1082,13 +1083,13 @@ static double compute( const double a, const double p, const double q ) {
 */
 double stdlib_base_gammaincinv( const double p, const double a, const bool upper ) {
 	if ( stdlib_base_is_nan( p ) || stdlib_base_is_nan( a ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( a < SMALLEST_NORMAL_FLOAT32 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( p > 1.0 || p < 0.0 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	// Case: invert upper gamma function
 	if ( upper ) {

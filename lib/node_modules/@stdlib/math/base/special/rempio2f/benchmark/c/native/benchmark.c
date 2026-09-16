@@ -75,13 +75,15 @@ static double tic( void ) {
 }
 
 /**
-* Generates a random number on the interval [0,1).
+* Generates a random number on the interval [min,max).
 *
-* @return random number
+* @param min    minimum value (inclusive)
+* @param max    maximum value (exclusive)
+* @return       random number
 */
-static float rand_float( void ) {
-	int r = rand();
-	return (float)r / ( (float)RAND_MAX + 1.0f );
+static float random_uniform( const float min, const float max ) {
+	float v = (float)rand() / ( (float)RAND_MAX + 1.0f );
+	return min + ( v*(max-min) );
 }
 
 /**
@@ -98,7 +100,7 @@ static double benchmark( void ) {
 	int i;
 
 	for ( i = 0; i < 100; i++ ) {
-		x[ i ] = ( rand_float() * 200.0f ) - 100.0f;
+		x[ i ] = random_uniform( -100.0f, 100.0f );
 	}
 
 	t = tic();

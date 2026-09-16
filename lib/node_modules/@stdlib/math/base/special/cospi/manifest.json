@@ -47,7 +47,8 @@
         "@stdlib/math/base/special/floor",
         "@stdlib/math/base/special/fmod",
         "@stdlib/constants/float64/pi",
-        "@stdlib/constants/float64/max-safe-integer"
+        "@stdlib/constants/float64/max-safe-integer",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -71,7 +72,8 @@
         "@stdlib/math/base/special/floor",
         "@stdlib/math/base/special/fmod",
         "@stdlib/constants/float64/pi",
-        "@stdlib/constants/float64/max-safe-integer"
+        "@stdlib/constants/float64/max-safe-integer",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -95,7 +97,8 @@
         "@stdlib/math/base/special/floor",
         "@stdlib/math/base/special/fmod",
         "@stdlib/constants/float64/pi",
-        "@stdlib/constants/float64/max-safe-integer"
+        "@stdlib/constants/float64/max-safe-integer",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

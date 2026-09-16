@@ -37,6 +37,7 @@
 #include "stdlib/math/base/special/atan.h"
 #include "stdlib/constants/float64/pinf.h"
 #include "stdlib/constants/float64/pi.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdint.h>
 
 /**
@@ -81,7 +82,7 @@
 double stdlib_base_atan2( const double y, const double x ) {
 	double q;
 	if ( stdlib_base_is_nan( x ) ||	stdlib_base_is_nan( y ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( stdlib_base_is_infinite( x ) ) {
 		if ( x == STDLIB_CONSTANT_FLOAT64_PINF ) {

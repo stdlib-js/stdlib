@@ -38,6 +38,6 @@ int main( void ) {
 		mu = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 10.0 );
 		lambda = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 10.0 );
 		y = stdlib_base_dists_wald_pdf( x, mu, lambda );
-		printf( "x: %lf, µ: %lf, λ: %lf, f(x;µ,λ): %lf\n", x, mu, lambda, y );
+		printf( "x: %lf, μ: %lf, λ: %lf, f(x;μ,λ): %lf\n", x, mu, lambda, y );
 	}
 }

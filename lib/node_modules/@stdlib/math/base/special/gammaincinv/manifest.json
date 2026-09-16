@@ -57,7 +57,8 @@
         "@stdlib/constants/float64/sqrt-two-pi",
         "@stdlib/constants/float32/max",
         "@stdlib/constants/float64/two-pi",
-        "@stdlib/math/base/special/gammainc"
+        "@stdlib/math/base/special/gammainc",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -88,7 +89,8 @@
         "@stdlib/constants/float32/max",
         "@stdlib/constants/float64/two-pi",
         "@stdlib/constants/float64/eps",
-        "@stdlib/math/base/special/gammainc"
+        "@stdlib/math/base/special/gammainc",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -119,7 +121,8 @@
         "@stdlib/constants/float32/max",
         "@stdlib/constants/float64/two-pi",
         "@stdlib/constants/float64/eps",
-        "@stdlib/math/base/special/gammainc"
+        "@stdlib/math/base/special/gammainc",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

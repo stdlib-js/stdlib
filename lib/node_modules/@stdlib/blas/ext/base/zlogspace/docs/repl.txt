@@ -1,0 +1,148 @@
+
+{{alias}}( N, base, start, stop, endpoint, x, strideX )
+    Fills a double-precision complex floating-point strided array with
+    logarithmically spaced values over a specified interval.
+
+    If `N = 1` and `endpoint` is `true`, the set of values written to an input
+    array only includes `base^stop`, but not `base^start`; otherwise, when
+    `N = 1` and `endpoint` is `false`, the set of values written to an input
+    array only includes `base^start`, but not `base^stop`.
+
+    Generated values follow a logarithmic spiral in the complex plane, where
+    imaginary components of `start` and `stop` control phase rotation. If the
+    real part of `start` is less than that of `stop`, the magnitudes of the
+    generated values will be in ascending order; otherwise, the magnitudes will
+    be in descending order.
+
+    When `N >= 2` and `endpoint` is `true`, the set of values written to an
+    input array is guaranteed to include the `base^start` and `base^stop`
+    values. Beware, however, that values between `base^start` and `base^stop`
+    are subject to floating-point rounding errors.
+
+    The `N` and stride parameters determine which elements in the strided array
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N <= 0`, the function returns `x` unchanged.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    base: number
+        Base of the logarithmic scale.
+
+    start: Complex128
+        Exponent of the starting value.
+
+    stop: Complex128
+        Exponent of the final value.
+
+    endpoint: boolean
+        Boolean indicating whether to include the `base^stop` value when
+        writing values to the input array. If `false`, the function generates
+        `N+1` logarithmically spaced values over the interval `[base^start,
+        base^stop]` and only writes `N` values to the input array, thus
+        excluding `base^stop` from the input array. Accordingly, for a fixed
+        `N`, the spacing between adjacent values written to an input array
+        changes depending on the value of `endpoint`.
+
+    x: Complex128Array
+        Input array.
+
+    strideX: integer
+        Stride length.
+
+    Returns
+    -------
+    x: Complex128Array
+        Input array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/complex128}}( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+    > var strt = new {{alias:@stdlib/complex/float64/ctor}}( 0.0, 0.0 );
+    > var stp = new {{alias:@stdlib/complex/float64/ctor}}( 2.0, 0.0 );
+    > {{alias}}( x.length, 10.0, strt, stp, true, x, 1 )
+    <Complex128Array>[ 1.0, 0.0, 10.0, 0.0, 100.0, 0.0 ]
+
+    // Using `N` and stride parameters:
+    > x = new {{alias:@stdlib/array/complex128}}( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+    > {{alias}}( 2, 10.0, strt, stp, true, x, 2 )
+    <Complex128Array>[ 1.0, 0.0, 0.0, 0.0, 100.0, 0.0 ]
+
+    // Using view offsets:
+    > var x0 = new {{alias:@stdlib/array/complex128}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > var x1 = new {{alias:@stdlib/array/complex128}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > {{alias}}( 1, 10.0, strt, stp, true, x1, 1 )
+    <Complex128Array>[ 100.0, 0.0 ]
+    > x0
+    <Complex128Array>[ 0.0, 0.0, 100.0, 0.0 ]
+
+
+{{alias}}.ndarray( N, base, start, stop, endpoint, x, strideX, offsetX )
+    Fills a double-precision complex floating-point strided array with
+    logarithmically spaced values over a specified interval using alternative
+    indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameter supports indexing semantics based on a starting
+    index.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    base: number
+        Base of the logarithmic scale.
+
+    start: Complex128
+        Exponent of the starting value.
+
+    stop: Complex128
+        Exponent of the final value.
+
+    endpoint: boolean
+        Boolean indicating whether to include the `base^stop` value when
+        writing values to the input array. If `false`, the function generates
+        `N+1` logarithmically spaced values over the interval `[base^start,
+        base^stop]` and only writes `N` values to the input array, thus
+        excluding `base^stop` from the input array. Accordingly, for a fixed
+        `N`, the spacing between adjacent values written to an input array
+        changes depending on the value of `endpoint`.
+
+    x: Complex128Array
+        Input array.
+
+    strideX: integer
+        Stride length.
+
+    offsetX: integer
+        Starting index.
+
+    Returns
+    -------
+    x: Complex128Array
+        Input array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/complex128}}( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+    > var strt = new {{alias:@stdlib/complex/float64/ctor}}( 0.0, 0.0 );
+    > var stp = new {{alias:@stdlib/complex/float64/ctor}}( 2.0, 0.0 );
+    > {{alias}}.ndarray( x.length, 10.0, strt, stp, true, x, 1, 0 )
+    <Complex128Array>[ 1.0, 0.0, 10.0, 0.0, 100.0, 0.0 ]
+
+    // Using an index offset:
+    > x = new {{alias:@stdlib/array/complex128}}( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+    > {{alias}}.ndarray( 3, 10.0, strt, stp, true, x, 1, 1 )
+    <Complex128Array>[ 0.0, 0.0, 1.0, 0.0, 10.0, 0.0, 100.0, 0.0 ]
+
+    See Also
+    --------
