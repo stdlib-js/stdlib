@@ -120,7 +120,13 @@ jobs:
           FILES: ${{ steps.added-files.outputs.files }}
         run: |
           files="$FILES"
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/update_pr_copyright_years/run" "$files"
+
+          # Fetch the script from the base repository at the ref this workflow is running from, as the checked out PR branch (potentially an external fork) may not contain it:
+          script="$(mktemp)"
+          curl -sf "https://raw.githubusercontent.com/stdlib-js/stdlib/${{ github.sha }}/.github/workflows/scripts/update_pr_copyright_years/run" -o "$script"
+          chmod +x "$script"
+
+          "$script" "$files"
 
       # Disable Git hooks:
       - name: 'Disable Git hooks'
