@@ -43,7 +43,7 @@ var o = ns;
 
 <div class="namespace-toc">
 
--   <span class="signature">[`decompose( N, M, initial, si, oi, out, so, oo )`][@stdlib/fft/base/fftpack/float32/decompose]</span><span class="delimiter">: </span><span class="description">factorize a sequence length into a product of integers and store the results in a single-precision floating-point array.</span>
+-   <span class="signature">[`decompose( N, M, initial, si, oi, out, so, oo )`][@stdlib/fft/base/fftpack/float32/decompose]</span><span class="delimiter">: </span><span class="description">factorize a sequence length into a product of integers and store the results in a 32-bit unsigned integer array.</span>
 -   <span class="signature">[`rffti( N, workspace, strideW, offsetW )`][@stdlib/fft/base/fftpack/float32/rffti]</span><span class="delimiter">: </span><span class="description">initialize a single-precision floating-point workspace array for performing a real-valued Fourier transform.</span>
 
 </div>
