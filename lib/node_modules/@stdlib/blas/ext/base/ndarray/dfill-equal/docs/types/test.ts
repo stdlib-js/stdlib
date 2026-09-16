@@ -36,8 +36,14 @@ import dfillEqual = require( './index' );
 	const alpha = scalar2ndarray( 5.0, {
 		'dtype': 'float64'
 	});
+	const start = scalar2ndarray( 0, {
+		'dtype': 'generic'
+	});
+	const end = scalar2ndarray( 10, {
+		'dtype': 'generic'
+	});
 
-	dfillEqual( [ x, searchElement, alpha ] ); // $ExpectType float64ndarray
+	dfillEqual( [ x, searchElement, alpha, start, end ] ); // $ExpectType float64ndarray
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array of ndarrays...
@@ -64,7 +70,13 @@ import dfillEqual = require( './index' );
 	const alpha = scalar2ndarray( 5.0, {
 		'dtype': 'float64'
 	});
+	const start = scalar2ndarray( 0, {
+		'dtype': 'generic'
+	});
+	const end = scalar2ndarray( 10, {
+		'dtype': 'generic'
+	});
 
 	dfillEqual(); // $ExpectError
-	dfillEqual( [ x, searchElement, alpha ], {} ); // $ExpectError
+	dfillEqual( [ x, searchElement, alpha, start, end ], {} ); // $ExpectError
 }

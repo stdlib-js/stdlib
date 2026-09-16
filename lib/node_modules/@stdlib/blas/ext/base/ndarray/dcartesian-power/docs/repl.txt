@@ -1,0 +1,39 @@
+
+{{alias}}( arrays )
+    Computes the Cartesian power for a double-precision floating-point ndarray.
+
+    `k`-tuples are stored as rows in the output matrix, where the `j`-th column
+    contains the `j`-th element of each tuple.
+
+    For an input array of length `N`, the output array should have shape
+    [N^k, k], where `N^k` is the number of rows and `k` is the number of
+    columns.
+
+    If `N <= 0` or `k <= 0`, the function returns the output ndarray unchanged.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a two-dimensional output ndarray.
+        - a zero-dimensional ndarray specifying the power.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/ndarray/vector/float64}}( [ 1.0, 2.0 ] );
+    > var out = {{alias:@stdlib/ndarray/zeros}}( [ 4, 2 ], { 'dtype': 'float64' } );
+    > var k = {{alias:@stdlib/ndarray/from-scalar}}( 2, { 'dtype': 'generic' } );
+    > {{alias}}( [ x, out, k ] );
+    > out
+    <ndarray>[ [ 1.0, 1.0 ], [ 1.0, 2.0 ], [ 2.0, 1.0 ], [ 2.0, 2.0 ] ]
+
+    See Also
+    --------
+

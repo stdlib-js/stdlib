@@ -1,0 +1,291 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2026 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+// TypeScript Version: 4.1
+
+/**
+* Regularization Function.
+*/
+type Penalty = 'elasticnet' | 'l1' | 'l2' | 'none';
+
+/**
+* Learning Rate Scheduler.
+*/
+type LearningRate = 'basic' | 'constant' | 'invscaling' | 'pegasos';
+
+/**
+* Loss Function.
+*/
+type LossFunction = 'epsilon-insensitive' | 'hinge' | 'huber' | 'log' | 'modified-huber' | 'perceptron' | 'squared-epsilon-insensitive' | 'squared-error' | 'squared-hinge';
+
+/**
+* Interface describing SGD trainer parameters.
+*/
+interface Params {
+	/**
+	* Parameters specific to the regularization function being used.
+	*
+	* ## Notes
+	*
+	* -   Must be an array having length `2`, with any unused elements set to zero. The expected array contents depend on the penalty:
+	*
+	*     -   **l1**: `[ lambda, 0.0 ]`
+	*     -   **l2**: `[ lambda, 0.0 ]`
+	*     -   **elasticnet**: `[ lambda, l1Ratio ]`
+	*     -   **none**: `[ 0.0, 0.0 ]` (unused)
+	*
+	*     where:
+	*
+	*     -   **lambda**: regularization parameter which determines the amount of shrinkage inflicted on the model coefficients.
+	*     -   **l1Ratio**: mixing parameter on the interval `[0,1]` which determines the relative contribution of the L1 and L2 penalties.
+	*/
+	penaltyParams?: Float32Array;
+
+	/**
+	* Parameters specific to the learning rate scheduler being used.
+	*
+	* ## Notes
+	*
+	* -   Must be an array having length `2`, with any unused elements set to zero. The expected array contents depend on the learning rate scheduler:
+	*
+	*     -   **basic**: `[ 0.0, 0.0 ]` (unused)
+	*     -   **constant**: `[ eta0, 0.0 ]`
+	*     -   **invscaling**: `[ eta0, powerT ]`
+	*     -   **pegasos**: `[ lambda, 0.0 ]`
+	*
+	*     where:
+	*
+	*     -   **eta0**: initial learning rate.
+	*     -   **powerT**: exponent controlling how quickly the learning rate decreases.
+	*     -   **lambda**: regularization parameter.
+	*/
+	learningRateParams?: Float32Array;
+
+	/**
+	* Parameters specific to the loss function being used.
+	*
+	* ## Notes
+	*
+	* -   Must be an array having length `1`. The expected array contents depend on the loss function:
+	*
+	*     -   **epsilon-insensitive**: `[ epsilon ]`
+	*     -   **squared-epsilon-insensitive**: `[ epsilon ]`
+	*     -   **huber**: `[ threshold ]`
+	*     -   all other loss functions: `[ 0.0 ]` (unused)
+	*
+	*     where:
+	*
+	*     -   **epsilon**: insensitivity parameter (i.e., errors whose absolute value is less than `epsilon` incur no penalty).
+	*     -   **threshold**: error magnitude at which the loss transitions from squared-error loss to linear loss.
+	*/
+	lossFunctionParams?: Float32Array;
+
+	/**
+	* Initial intercept value.
+	*
+	* ## Notes
+	*
+	* -   Only applicable when `fitIntercept` is `true`.
+	*/
+	intercept?: number;
+
+	/**
+	* Maximum number of iterations to run.
+	*/
+	maxIter?: number;
+
+	/**
+	* Regularization function.
+	*/
+	penalty?: Penalty;
+
+	/**
+	* Learning rate scheduler.
+	*/
+	learningRate?: LearningRate;
+
+	/**
+	* Loss function.
+	*/
+	lossFunction?: LossFunction;
+
+	/**
+	* Boolean indicating whether to include intercept.
+	*
+	* ## Notes
+	*
+	* -   If `true`, an element equal to one is implicitly added to each provided feature vector. If `false`, the model assumes that feature vectors are already centered.
+	*/
+	fitIntercept?: boolean;
+}
+
+/**
+* Interface describing options when serializing an SGD trainer parameters object to a string.
+*/
+interface ToStringOptions {
+	/**
+	* Number of digits to display after decimal points. Default: `4`.
+	*/
+	digits?: number;
+}
+
+/**
+* Interface describing an SGD trainer parameters data structure.
+*/
+declare class ParamsStruct {
+	/**
+	* SGD trainer parameters constructor.
+	*
+	* @param arg - buffer or data object
+	* @param byteOffset - byte offset
+	* @param byteLength - maximum byte length
+	* @returns parameters object
+	*/
+	constructor( arg?: ArrayBuffer | Params, byteOffset?: number, byteLength?: number );
+
+	/**
+	* Parameters specific to the regularization function being used.
+	*/
+	penaltyParams: Float32Array;
+
+	/**
+	* Parameters specific to the learning rate scheduler being used.
+	*/
+	learningRateParams: Float32Array;
+
+	/**
+	* Parameters specific to the loss function being used.
+	*/
+	lossFunctionParams: Float32Array;
+
+	/**
+	* Initial intercept value.
+	*/
+	intercept: number;
+
+	/**
+	* Maximum number of iterations to run.
+	*/
+	maxIter: number;
+
+	/**
+	* Regularization function.
+	*/
+	penalty: Penalty;
+
+	/**
+	* Learning rate scheduler.
+	*/
+	learningRate: LearningRate;
+
+	/**
+	* Loss function.
+	*/
+	lossFunction: LossFunction;
+
+	/**
+	* Boolean indicating whether to include intercept.
+	*/
+	fitIntercept: boolean;
+
+	/**
+	* Algorithm name.
+	*/
+	method: string;
+
+	/**
+	* Serializes an SGD trainer parameters object as a formatted string.
+	*
+	* @param options - options object
+	* @returns serialized parameters
+	*/
+	toString( options?: ToStringOptions ): string;
+
+	/**
+	* Serializes an SGD trainer parameters object as a JSON object.
+	*
+	* @returns serialized object
+	*/
+	toJSON(): object;
+
+	/**
+	* Returns a DataView of an SGD trainer parameters object.
+	*
+	* @returns DataView
+	*/
+	toDataView(): DataView;
+}
+
+/**
+* Interface defining an SGD trainer parameters constructor which is both "newable" and "callable".
+*/
+interface ParamsConstructor {
+	/**
+	* SGD trainer parameters constructor.
+	*
+	* @param arg - buffer or data object
+	* @param byteOffset - byte offset
+	* @param byteLength - maximum byte length
+	* @returns parameters object
+	*/
+	new( arg?: ArrayBuffer | Params, byteOffset?: number, byteLength?: number ): ParamsStruct;
+
+	/**
+	* SGD trainer parameters constructor.
+	*
+	* @param arg - buffer or data object
+	* @param byteOffset - byte offset
+	* @param byteLength - maximum byte length
+	* @returns parameters object
+	*/
+	( arg?: ArrayBuffer | Params, byteOffset?: number, byteLength?: number ): ParamsStruct;
+}
+
+/**
+* Returns a single-precision floating-point SGD parameters object.
+*
+* @param arg - buffer or data object
+* @param byteOffset - byte offset
+* @param byteLength - maximum byte length
+* @returns parameters object
+*
+* @example
+* var Float32Array = require( '@stdlib/array/float32' );
+*
+* var params = new Params();
+* // returns <Params>
+*
+* params.penaltyParams = new Float32Array( [ 2.5, 0.0 ] );
+* params.learningRateParams = new Float32Array( [ 0.01, 0.0 ] );
+* params.lossFunctionParams = new Float32Array( [ 0.0 ] );
+* params.intercept = 0.0;
+* params.maxIter = 500;
+* params.penalty = 'l2';
+* params.learningRate = 'constant';
+* params.lossFunction = 'hinge';
+* params.fitIntercept = true;
+*
+* var str = params.toString();
+* // returns <string>
+*/
+declare var Params: ParamsConstructor;
+
+
+// EXPORTS //
+
+export = Params;
