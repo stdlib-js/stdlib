@@ -25,7 +25,7 @@
     Returns
     -------
     v: number
-        Squared Hinge loss gradient.
+        Squared hinge loss gradient.
 
     Examples
     --------
