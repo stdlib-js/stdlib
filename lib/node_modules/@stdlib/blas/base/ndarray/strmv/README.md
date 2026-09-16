@@ -1,0 +1,152 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2026 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# strmv
+
+> Perform one of the matrix-vector operations `x = A*x` or `x = A^T*x` for a triangular matrix `A`.
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var strmv = require( '@stdlib/blas/base/ndarray/strmv' );
+```
+
+#### strmv( arrays )
+
+Performs one of the matrix-vector operations `x = A*x` or `x = A^T*x`, where `x` is a one-dimensional ndarray and `A` is an `N` by `N` unit, or non-unit, upper or lower triangular matrix.
+
+<!-- eslint-disable max-len -->
+
+```javascript
+var Float32Matrix = require( '@stdlib/ndarray/matrix/float32' );
+var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
+var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var resolveTriangle = require( '@stdlib/blas/base/matrix-triangle-resolve-enum' );
+var resolveTranspose = require( '@stdlib/blas/base/transpose-operation-resolve-enum' );
+var resolveDiagonal = require( '@stdlib/blas/base/diagonal-type-resolve-enum' );
+
+var A = new Float32Matrix( [ [ 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0 ], [ 0.0, 0.0, 1.0 ] ] );
+var x = new Float32Vector( [ 1.0, 2.0, 3.0 ] );
+
+var uplo = scalar2ndarray( resolveTriangle( 'upper' ), {
+    'dtype': 'int32'
+});
+var trans = scalar2ndarray( resolveTranspose( 'no-transpose' ), {
+    'dtype': 'int32'
+});
+var diag = scalar2ndarray( resolveDiagonal( 'unit' ), {
+    'dtype': 'int32'
+});
+
+var out = strmv( [ A, x, uplo, trans, diag ] );
+// returns <ndarray>[ 14.0, 8.0, 3.0 ]
+
+var bool = ( out === x );
+// returns true
+```
+
+The function has the following parameters:
+
+-   **arrays**: array-like object containing the following ndarrays:
+
+    -   a two-dimensional input ndarray corresponding to `A`.
+    -   a one-dimensional input/output ndarray corresponding to `x`.
+    -   a zero-dimensional ndarray specifying whether `A` is an upper or lower triangular matrix.
+    -   a zero-dimensional ndarray specifying whether `A` should be transposed, conjugate-transposed, or not transposed.
+    -   a zero-dimensional ndarray specifying whether `A` has a unit or non-unit diagonal.
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var discreteUniform = require( '@stdlib/random/discrete-uniform' );
+var zeros = require( '@stdlib/ndarray/zeros' );
+var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var resolveTriangle = require( '@stdlib/blas/base/matrix-triangle-resolve-enum' );
+var resolveTranspose = require( '@stdlib/blas/base/transpose-operation-resolve-enum' );
+var resolveDiagonal = require( '@stdlib/blas/base/diagonal-type-resolve-enum' );
+var striu = require( '@stdlib/blas/ext/base/ndarray/striu' );
+var ndarray2array = require( '@stdlib/ndarray/to-array' );
+var strmv = require( '@stdlib/blas/base/ndarray/strmv' );
+
+var opts = {
+    'dtype': 'float32'
+};
+var eopts = {
+    'dtype': 'int32'
+};
+
+var M = discreteUniform( [ 3, 3 ], 0, 10, opts );
+var A = zeros( [ 3, 3 ], opts );
+var x = discreteUniform( [ 3 ], 0, 10, opts );
+
+var uplo = scalar2ndarray( resolveTriangle( 'upper' ), eopts );
+var trans = scalar2ndarray( resolveTranspose( 'no-transpose' ), eopts );
+var diag = scalar2ndarray( resolveDiagonal( 'non-unit' ), eopts );
+
+var k = scalar2ndarray( 0, {
+    'dtype': 'generic'
+});
+striu( [ M, A, k ] );
+
+var out = strmv( [ A, x, uplo, trans, diag ] );
+console.log( ndarray2array( out ) );
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+</section>
+
+<!-- /.links -->
