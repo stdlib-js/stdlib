@@ -259,7 +259,19 @@ jobs:
         timeout-minutes: 5
 
       # Configure npm:
+      #
+      # ## Notes
+      #
+      # -   `msvs_version` is a legacy `node-gyp` hint key. npm v10+ (used by
+      #     Node.js v18 and v20 per `NPM_VERSION: '>10.0.0'` above) validates
+      #     `npm config set` keys against a fixed schema and rejects
+      #     unrecognized keys, so this step is skipped for those versions.
+      #     Older npm releases accept the key without validation, and
+      #     `node-gyp` bundled with npm v10+ auto-detects the installed
+      #     Visual Studio toolset via `vswhere`, so the hint is unnecessary
+      #     there.
       - name: 'Configure npm'
+        if: matrix.NODE_VERSION != '20' && matrix.NODE_VERSION != '18'
         run: |
           . "${{ env.NVS_HOME }}/nvs.sh" && nvs use ${{ matrix.NODE_VERSION }}
           npm config set msvs_version 2019
