@@ -1,0 +1,39 @@
+
+{{alias}}( arrays )
+    Fills a one-dimensional double-precision complex floating-point ndarray with
+    a specified scalar constant.
+
+    The input ndarray is modified *in-place* (i.e., the input ndarray is
+    *mutated*).
+
+    If a specified `start` or `end` index is negative, the function resolves
+    the respective index by counting backward from the last element (where `-1`
+    refers to the last element).
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a zero-dimensional ndarray containing the scalar constant.
+        - a zero-dimensional ndarray containing the starting index (inclusive).
+        - a zero-dimensional ndarray containing the ending index (exclusive).
+
+    Returns
+    -------
+    out: ndarray
+        Input ndarray.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/ndarray/vector/complex128}}( [ 1.0, 2.0, -2.0, 3.0 ] );
+    > var a = new {{alias:@stdlib/complex/float64/ctor}}( 5.0, 5.0 );
+    > var alpha = {{alias:@stdlib/ndarray/from-scalar}}( a, { 'dtype': 'complex128' } );
+    > var st = {{alias:@stdlib/ndarray/from-scalar}}( 0, { 'dtype': 'generic' } );
+    > var en = {{alias:@stdlib/ndarray/from-scalar}}( 2, { 'dtype': 'generic' } );
+    > {{alias}}( [ x, alpha, st, en ] )
+    <ndarray>[ <Complex128>[ 5.0, 5.0 ], <Complex128>[ 5.0, 5.0 ] ]
+
+    See Also
+    --------
