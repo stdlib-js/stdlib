@@ -1,0 +1,39 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2026 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+#include "stdlib/blas/ext/base/ndarray/cone_to.h"
+#include "stdlib/blas/ext/base/cone_to.h"
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/ndarray/ctor.h"
+#include "stdlib/blas/base/shared.h"
+
+/**
+* Fills a one-dimensional single-precision complex floating-point ndarray with linearly spaced numeric elements which increment by `1` starting from one.
+*
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*
+* @param arrays    list containing an input ndarray
+*/
+void stdlib_blas_ext_cone_to( const struct ndarray *arrays[] ) {
+	const struct ndarray *x = arrays[ 0 ];
+	API_SUFFIX(stdlib_strided_cone_to_ndarray)( stdlib_ndarray_dimension( x, 0 ), (stdlib_complex64_t *)stdlib_ndarray_data( x ), stdlib_ndarray_stride_elements( x, 0 ), stdlib_ndarray_offset_elements( x ) );
+}
