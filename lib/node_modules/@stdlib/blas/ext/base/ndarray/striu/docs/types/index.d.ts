@@ -44,7 +44,7 @@ import { float32ndarray, typedndarray } from '@stdlib/types/ndarray';
 * var B = new Float32Matrix( [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ] );
 *
 * var k = scalar2ndarray( 0, {
-*    'dtype': 'generic'
+*     'dtype': 'generic'
 * });
 *
 * var out = striu( [ A, B, k ] );

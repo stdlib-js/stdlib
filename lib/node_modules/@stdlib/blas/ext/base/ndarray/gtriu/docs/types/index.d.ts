@@ -44,7 +44,7 @@ import { typedndarray } from '@stdlib/types/ndarray';
 * var B = matrix( [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ], 'generic' );
 *
 * var k = scalar2ndarray( 0, {
-*    'dtype': 'generic'
+*     'dtype': 'generic'
 * });
 *
 * var out = gtriu( [ A, B, k ] );
