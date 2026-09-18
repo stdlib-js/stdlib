@@ -699,3 +699,25 @@ deps_fftpack_version_slug := $(subst .,_,$(DEPS_FFTPACK_VERSION))
 
 # Define the output path when building FFTPACK:
 DEPS_FFTPACK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/pffft-$(DEPS_FFTPACK_VERSION)
+
+# SIMD...
+
+# Define the SIMD backend:
+SIMD_BACKEND ?=
+
+# Highway...
+
+# Define the Highway version:
+DEPS_HIGHWAY_VERSION ?= 1.4.0
+
+# Define the output path when building Highway:
+DEPS_HIGHWAY_BUILD_OUT ?= $(DEPS_BUILD_DIR)/highway-$(DEPS_HIGHWAY_VERSION)
+
+# Define the path to the Highway include directory:
+DEPS_HIGHWAY_INCLUDE ?= $(DEPS_HIGHWAY_BUILD_OUT)
+
+# Define the native Highway build directory:
+DEPS_HIGHWAY_RUNTIME_OUT ?= $(DEPS_HIGHWAY_BUILD_OUT)/build
+
+# Define the path to a configured native Highway build:
+HIGHWAY_DIR ?= $(DEPS_HIGHWAY_RUNTIME_OUT)
