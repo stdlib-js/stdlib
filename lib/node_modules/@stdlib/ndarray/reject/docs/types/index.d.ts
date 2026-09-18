@@ -22,7 +22,7 @@
 
 /* eslint-disable max-lines */
 
-import { typedndarray, DataType, Order, float64ndarray, float32ndarray, complex128ndarray, complex64ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, boolndarray, genericndarray } from '@stdlib/types/ndarray';
+import { typedndarray, DataType, Order, float64ndarray, float32ndarray, float16ndarray, complex128ndarray, complex64ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, boolndarray, genericndarray } from '@stdlib/types/ndarray';
 import { Complex64, Complex128 } from '@stdlib/types/complex';
 
 /**
@@ -137,6 +137,20 @@ interface Float32Options extends Options {
 	* -   This option overrides using the input ndarray's inferred data type.
 	*/
 	dtype?: 'float32';
+}
+
+/**
+* Interface describing function options.
+*/
+interface Float16Options extends Options {
+	/**
+	* Output ndarray data type.
+	*
+	* ## Notes
+	*
+	* -   This option overrides using the input ndarray's inferred data type.
+	*/
+	dtype?: 'float16';
 }
 
 /**
@@ -352,6 +366,36 @@ declare function reject<V = unknown>( x: float64ndarray, predicate: Predicate<nu
 * // returns [ 2.0, 4.0, 8.0, 10.0 ]
 */
 declare function reject<V = unknown>( x: float32ndarray, predicate: Predicate<number, V>, thisArg?: ThisParameterType<Predicate<number, V>> ): float32ndarray;
+
+/**
+* Returns a shallow copy of an ndarray containing only those elements which fail a test implemented by a predicate function.
+*
+* @param x - input ndarray
+* @param predicate - predicate function
+* @param thisArg - predicate function execution context
+* @returns output ndarray
+*
+* @example
+* var isOdd = require( '@stdlib/assert/is-odd' ).isPrimitive;
+* var Float16Array = require( '@stdlib/array/float16' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
+*
+* var buffer = new Float16Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+* var shape = [ 2, 3 ];
+* var strides = [ 6, 1 ];
+* var offset = 1;
+*
+* var x = ndarray( 'float16', buffer, shape, strides, offset, 'row-major' );
+* // returns <ndarray>
+*
+* var y = reject( x, isOdd );
+* // returns <ndarray>
+*
+* var arr = ndarray2array( y );
+* // returns [ 2.0, 4.0, 8.0, 10.0 ]
+*/
+declare function reject<V = unknown>( x: float16ndarray, predicate: Predicate<number, V>, thisArg?: ThisParameterType<Predicate<number, V>> ): float16ndarray;
 
 /**
 * Returns a shallow copy of an ndarray containing only those elements which fail a test implemented by a predicate function.
@@ -752,6 +796,41 @@ declare function reject<V = unknown>( x: float64ndarray, options: OrderOptions, 
 * // returns [ 2.0, 4.0, 8.0, 10.0 ]
 */
 declare function reject<V = unknown>( x: float32ndarray, options: OrderOptions, predicate: Predicate<number, V>, thisArg?: ThisParameterType<Predicate<number, V>> ): float32ndarray;
+
+/**
+* Returns a shallow copy of an ndarray containing only those elements which fail a test implemented by a predicate function.
+*
+* @param x - input ndarray
+* @param options - function options
+* @param options.order - iteration order
+* @param predicate - predicate function
+* @param thisArg - predicate function execution context
+* @returns output ndarray
+*
+* @example
+* var isOdd = require( '@stdlib/assert/is-odd' ).isPrimitive;
+* var Float16Array = require( '@stdlib/array/float16' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
+*
+* var buffer = new Float16Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+* var shape = [ 2, 3 ];
+* var strides = [ 6, 1 ];
+* var offset = 1;
+*
+* var x = ndarray( 'float16', buffer, shape, strides, offset, 'row-major' );
+* // returns <ndarray>
+*
+* var opts = {
+*     'order': 'row-major'
+* };
+* var y = reject( x, opts, isOdd );
+* // returns <ndarray>
+*
+* var arr = ndarray2array( y );
+* // returns [ 2.0, 4.0, 8.0, 10.0 ]
+*/
+declare function reject<V = unknown>( x: float16ndarray, options: OrderOptions, predicate: Predicate<number, V>, thisArg?: ThisParameterType<Predicate<number, V>> ): float16ndarray;
 
 /**
 * Returns a shallow copy of an ndarray containing only those elements which fail a test implemented by a predicate function.
@@ -1209,6 +1288,42 @@ declare function reject<T = unknown, V = unknown>( x: typedndarray<T>, options: 
 * // returns [ 2.0, 4.0, 8.0, 10.0 ]
 */
 declare function reject<T = unknown, V = unknown>( x: typedndarray<T>, options: Float32Options, predicate: Predicate<T, V>, thisArg?: ThisParameterType<Predicate<T, V>> ): float32ndarray;
+
+/**
+* Returns a shallow copy of an ndarray containing only those elements which fail a test implemented by a predicate function.
+*
+* @param x - input ndarray
+* @param options - options
+* @param options.dtype - output ndarray data type
+* @param options.order - iteration order
+* @param predicate - predicate function
+* @param thisArg - predicate function execution context
+* @returns output ndarray
+*
+* @example
+* var isOdd = require( '@stdlib/assert/is-odd' ).isPrimitive;
+* var Float64Array = require( '@stdlib/array/float64' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
+*
+* var buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+* var shape = [ 2, 3 ];
+* var strides = [ 6, 1 ];
+* var offset = 1;
+*
+* var x = ndarray( 'float64', buffer, shape, strides, offset, 'row-major' );
+* // returns <ndarray>
+*
+* var opts = {
+*     'dtype': 'float16'
+* };
+* var y = reject( x, opts, isOdd );
+* // returns <ndarray>
+*
+* var arr = ndarray2array( y );
+* // returns [ 2.0, 4.0, 8.0, 10.0 ]
+*/
+declare function reject<T = unknown, V = unknown>( x: typedndarray<T>, options: Float16Options, predicate: Predicate<T, V>, thisArg?: ThisParameterType<Predicate<T, V>> ): float16ndarray;
 
 /**
 * Returns a shallow copy of an ndarray containing only those elements which fail a test implemented by a predicate function.
