@@ -46,6 +46,7 @@ Initializes a single-precision floating-point workspace array for performing a q
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
+var Uint32Array = require( '@stdlib/array/uint32' );
 
 var N = 8;
 var workspace = new Float32Array( ( 3*N ) + 34 );
@@ -62,8 +63,9 @@ var cosineTable = workspace.slice( 0, N );
 var twiddleFactors = workspace.slice( 2*N, 3*N );
 // returns <Float32Array>[ ~0.707, ~0.707, 0, 0, 0, 0, 0, 0 ]
 
-var factors = workspace.slice( 3*N, ( 3*N ) + 4 );
-// returns <Float32Array>[ 8, 2, 2, 4 ]
+var fview = new Uint32Array( workspace.buffer, workspace.byteOffset, workspace.length ); // eslint-disable-line max-len
+var factors = fview.slice( 3*N, ( 3*N ) + 4 );
+// returns <Uint32Array>[ 8, 2, 2, 4 ]
 ```
 
 The function accepts the following arguments:
@@ -118,6 +120,7 @@ The function accepts the following arguments:
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
+var Uint32Array = require( '@stdlib/array/uint32' );
 var zeroTo = require( '@stdlib/array/zero-to' );
 var logEach = require( '@stdlib/console/log-each' );
 var cosqi = require( '@stdlib/fft/base/fftpack/float32/cosqi' );
@@ -136,12 +139,15 @@ console.log( 'Twiddle factors:' );
 idx = zeroTo( N, 'float32' );
 logEach( '  workspace[ %d ] = %0.4f', idx, workspace.slice( 2*N, 3*N ) );
 
+// Create an unsigned integer view over the workspace to read the factorization section:
+var fview = new Uint32Array( workspace.buffer, workspace.byteOffset, workspace.length ); // eslint-disable-line max-len
+
 console.log( 'Factorization:' );
-var nf = workspace[ (3*N)+1 ];
+var nf = fview[ (3*N)+1 ];
 
 console.log( '  number of factors: %d', nf );
 idx = zeroTo( nf, 'float32' );
-logEach( '  factor[ %d ]: %d', idx, workspace.slice( (3*N)+2, (3*N)+2+nf ) );
+logEach( '  factor[ %d ]: %d', idx, fview.slice( (3*N)+2, (3*N)+2+nf ) );
 ```
 
 </section>
