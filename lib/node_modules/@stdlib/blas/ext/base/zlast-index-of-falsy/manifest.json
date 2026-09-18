@@ -37,14 +37,14 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/blas/ext/base/zindex-of-falsy",
         "@stdlib/complex/float64/ctor",
         "@stdlib/strided/base/stride2offset",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-complex128array",
-        "@stdlib/napi/create-int32"
+        "@stdlib/napi/create-int32",
+        "@stdlib/blas/ext/base/zindex-of-falsy"
       ]
     },
     {
@@ -59,9 +59,9 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/blas/ext/base/zindex-of-falsy",
         "@stdlib/complex/float64/ctor",
-        "@stdlib/strided/base/stride2offset"
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/ext/base/zindex-of-falsy"
       ]
     },
     {
@@ -76,9 +76,9 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/blas/ext/base/zindex-of-falsy",
         "@stdlib/complex/float64/ctor",
-        "@stdlib/strided/base/stride2offset"
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/ext/base/zindex-of-falsy"
       ]
     }
   ]

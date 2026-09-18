@@ -39,6 +39,7 @@ import gindexOfTruthy = require( './index' );
 	gindexOfTruthy( false, x, 1 ); // $ExpectError
 	gindexOfTruthy( null, x, 1 ); // $ExpectError
 	gindexOfTruthy( {}, x, 1 ); // $ExpectError
+	gindexOfTruthy( ( x: number ): number => x, x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a collection...
@@ -48,6 +49,7 @@ import gindexOfTruthy = require( './index' );
 	gindexOfTruthy( x.length, false, 1 ); // $ExpectError
 	gindexOfTruthy( x.length, null, 1 ); // $ExpectError
 	gindexOfTruthy( x.length, {}, 1 ); // $ExpectError
+	gindexOfTruthy( x.length, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not a number...
@@ -59,6 +61,7 @@ import gindexOfTruthy = require( './index' );
 	gindexOfTruthy( x.length, x, false ); // $ExpectError
 	gindexOfTruthy( x.length, x, null ); // $ExpectError
 	gindexOfTruthy( x.length, x, {} ); // $ExpectError
+	gindexOfTruthy( x.length, x, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -86,6 +89,7 @@ import gindexOfTruthy = require( './index' );
 	gindexOfTruthy.ndarray( false, x, 1, 1 ); // $ExpectError
 	gindexOfTruthy.ndarray( null, x, 1, 1 ); // $ExpectError
 	gindexOfTruthy.ndarray( {}, x, 1, 1 ); // $ExpectError
+	gindexOfTruthy.ndarray( ( x: number ): number => x, x, 1, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a second argument which is not a collection...
@@ -95,6 +99,7 @@ import gindexOfTruthy = require( './index' );
 	gindexOfTruthy.ndarray( x.length, false, 1, 1 ); // $ExpectError
 	gindexOfTruthy.ndarray( x.length, null, 1, 1 ); // $ExpectError
 	gindexOfTruthy.ndarray( x.length, {}, 1, 1 ); // $ExpectError
+	gindexOfTruthy.ndarray( x.length, ( x: number ): number => x, 1, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a third argument which is not a number...
@@ -106,6 +111,7 @@ import gindexOfTruthy = require( './index' );
 	gindexOfTruthy.ndarray( x.length, x, false, 1 ); // $ExpectError
 	gindexOfTruthy.ndarray( x.length, x, null, 1 ); // $ExpectError
 	gindexOfTruthy.ndarray( x.length, x, {}, 1 ); // $ExpectError
+	gindexOfTruthy.ndarray( x.length, x, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fourth argument which is not a number...
@@ -117,6 +123,7 @@ import gindexOfTruthy = require( './index' );
 	gindexOfTruthy.ndarray( x.length, x, 1, false ); // $ExpectError
 	gindexOfTruthy.ndarray( x.length, x, 1, null ); // $ExpectError
 	gindexOfTruthy.ndarray( x.length, x, 1, {} ); // $ExpectError
+	gindexOfTruthy.ndarray( x.length, x, 1, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided an unsupported number of arguments...
