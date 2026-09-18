@@ -33,6 +33,7 @@
 *
 * @example
 * var Float32Array = require( '@stdlib/array/float32' );
+* var Uint32Array = require( '@stdlib/array/uint32' );
 *
 * var N = 8;
 * var workspace = new Float32Array( ( 3*N ) + 34 );
@@ -49,8 +50,9 @@
 * var twiddleFactors = workspace.slice( 2*N, 3*N );
 * // returns <Float32Array>[ ~0.707, ~0.707, 0, 0, 0, 0, 0, 0 ]
 *
-* var factors = workspace.slice( 3*N, ( 3*N ) + 4 );
-* // returns <Float32Array>[ 8, 2, 2, 4 ]
+* var fview = new Uint32Array( workspace.buffer, workspace.byteOffset, workspace.length );
+* var factors = fview.slice( 3*N, ( 3*N ) + 4 );
+* // returns <Uint32Array>[ 8, 2, 2, 4 ]
 */
 declare function cosqi( N: number, workspace: Float32Array, strideW: number, offsetW: number ): Float32Array;
 
