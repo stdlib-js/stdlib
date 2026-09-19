@@ -22,6 +22,24 @@ limitations under the License.
 
 > Decompose a [double-precision floating-point number][ieee754] into integral and fractional parts.
 
+<section class="intro">
+
+The function decomposes a floating-point number into integer and fractional parts
+
+<!-- <equation class="equation" label="eq:modf_function" align="center" raw="x = i + f" alt="Decomposition into integer and fractional parts"> -->
+
+```math
+x = i + f
+```
+
+<!-- </equation> -->
+
+where `i` is the integer part and `f` is the fractional part having the same sign as `x`.
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
