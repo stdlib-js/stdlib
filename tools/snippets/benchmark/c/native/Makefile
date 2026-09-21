@@ -81,16 +81,6 @@ LIBRARIES ?=
 # List of library paths (e.g., `-L /foo/bar -L /beep/boop`):
 LIBPATH ?=
 
-# Benchmark name (typically resolved by the build tooling and used to define `STDLIB_BENCH_NAME`):
-BENCHMARK_NAME ?=
-
-# Compiler definitions:
-ifdef BENCHMARK_NAME
-	DEFINES := -DSTDLIB_BENCH_NAME='"$(BENCHMARK_NAME)"'
-else
-	DEFINES :=
-endif
-
 # List of C targets:
 c_targets := TODO.out
 
@@ -106,7 +96,6 @@ c_targets := TODO.out
 # @param {string} [LIBPATH] - list of library paths (e.g., `-L /foo/bar -L /beep/boop`)
 # @param {string} [C_COMPILER] - C compiler
 # @param {string} [CFLAGS] - C compiler flags
-# @param {string} [BENCHMARK_NAME] - benchmark name (e.g., `@stdlib/math/base/special/abs`)
 # @param {(string|void)} [fPIC] - compiler flag indicating whether to generate position independent code
 #
 # @example
@@ -129,11 +118,10 @@ all: $(c_targets)
 # @param {(string|void)} LIBPATH - list of library paths (e.g., `-L /foo/bar -L /beep/boop`)
 # @param {string} CC - C compiler
 # @param {string} CFLAGS - C compiler flags
-# @param {(string|void)} DEFINES - compiler definitions (e.g., `-DSTDLIB_BENCH_NAME='"@stdlib/math/base/special/abs"'`)
 # @param {(string|void)} fPIC - compiler flag indicating whether to generate position independent code
 #/
 $(c_targets): %.out: %.c
-	$(QUIET) $(CC) $(CFLAGS) $(DEFINES) $(fPIC) $(INCLUDE) -o $@ $(SOURCE_FILES) $< $(LIBPATH) -lm $(LIBRARIES)
+	$(QUIET) $(CC) $(CFLAGS) $(fPIC) $(INCLUDE) -o $@ $(SOURCE_FILES) $< $(LIBPATH) -lm $(LIBRARIES)
 
 #/
 # Runs compiled benchmarks.
