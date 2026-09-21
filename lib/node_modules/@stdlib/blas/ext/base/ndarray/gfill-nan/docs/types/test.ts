@@ -33,8 +33,14 @@ import gfillNaN = require( './index' );
 	const alpha = scalar2ndarray( 0.0, {
 		'dtype': 'generic'
 	});
+	const start = scalar2ndarray( 0, {
+		'dtype': 'generic'
+	});
+	const end = scalar2ndarray( 10, {
+		'dtype': 'generic'
+	});
 
-	gfillNaN( [ x, alpha ] ); // $ExpectType genericndarray<number>
+	gfillNaN( [ x, alpha, start, end ] ); // $ExpectType genericndarray<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array of ndarrays...
@@ -58,7 +64,13 @@ import gfillNaN = require( './index' );
 	const alpha = scalar2ndarray( 0.0, {
 		'dtype': 'generic'
 	});
+	const start = scalar2ndarray( 0, {
+		'dtype': 'generic'
+	});
+	const end = scalar2ndarray( 10, {
+		'dtype': 'generic'
+	});
 
 	gfillNaN(); // $ExpectError
-	gfillNaN( [ x, alpha ], {} ); // $ExpectError
+	gfillNaN( [ x, alpha, start, end ], {} ); // $ExpectError
 }

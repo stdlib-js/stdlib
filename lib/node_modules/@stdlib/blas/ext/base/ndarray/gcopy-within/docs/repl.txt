@@ -5,6 +5,10 @@
     The input ndarray is copied *in-place* (i.e., the input ndarray is
     *mutated*).
 
+    If a `target`, `start`, and/or `end` index is negative, the respective
+    index is resolved by counting backward from the last element (where `-1`
+    refers to the last element).
+
     If the `start` and `target` index ranges do not overlap, the `workspace`
     ndarray is unused and thus ignored.
 

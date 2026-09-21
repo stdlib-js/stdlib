@@ -1,0 +1,41 @@
+
+{{alias}}( arrays )
+    Computes the Cartesian product for two double-precision floating-point
+    ndarrays.
+
+    Pairs are stored as rows in the output matrix, where the first column
+    contains the first element of each pair and the second column contains the
+    second element.
+
+    For input arrays `x` of length `M` and `y` of length `N`, the output array
+    should have shape [M*N, 2], where `M*N` is the number of rows and `2` is
+    the number of columns.
+
+    If `M <= 0` or `N <= 0`, the function returns the output ndarray unchanged.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a one-dimensional input ndarray.
+        - a two-dimensional output ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/ndarray/vector/float64}}( [ 1.0, 2.0 ] );
+    > var y = new {{alias:@stdlib/ndarray/vector/float64}}( [ 3.0, 4.0 ] );
+    > var out = {{alias:@stdlib/ndarray/zeros}}( [ 4, 2 ], { 'dtype': 'float64' } );
+    > {{alias}}( [ x, y, out ] );
+    > out
+    <ndarray>[ [ 1.0, 3.0 ], [ 1.0, 4.0 ], [ 2.0, 3.0 ], [ 2.0, 4.0 ] ]
+
+    See Also
+    --------
+
