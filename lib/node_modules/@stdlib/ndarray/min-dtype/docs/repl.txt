@@ -21,7 +21,7 @@
     Examples
     --------
     > var dt = {{alias}}( 3.141592653589793 )
-    'float32'
+    'float16'
     > dt = {{alias}}( 3 )
     'uint8'
     > dt = {{alias}}( -3 )
