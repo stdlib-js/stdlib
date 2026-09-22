@@ -241,7 +241,7 @@ The function accepts the following arguments:
 -   **LDB**: `[in] CBLAS_INT` stride of the first dimension of `B` (a.k.a., leading dimension of the matrix `B`).
 
 ```c
-void API_SUFFIX(stdlib_strided_ztril2triu)( const CBLAS_LAYOUT layout, const CBLAS_INT M, const CBLAS_INT N, const CBLAS_INT k, const stdlib_complex128_t *A, const CBLAS_INT LDA, stdlib_complex128_t *B, const CBLAS_INT LDB );
+void stdlib_strided_ztril2triu( const CBLAS_LAYOUT layout, const CBLAS_INT M, const CBLAS_INT N, const CBLAS_INT k, const stdlib_complex128_t *A, const CBLAS_INT LDA, stdlib_complex128_t *B, const CBLAS_INT LDB );
 ```
 
 #### stdlib_strided_ztril2triu_ndarray( M, N, k, \*A, sa1, sa2, oa, \*B, sb1, sb2, ob )
@@ -272,7 +272,7 @@ The function accepts the following arguments:
 -   **ob**: `[in] CBLAS_INT` starting index for `B`.
 
 ```c
-void API_SUFFIX(stdlib_strided_ztril2triu_ndarray)( const CBLAS_INT M, const CBLAS_INT N, const CBLAS_INT k, const stdlib_complex128_t *A, const CBLAS_INT strideA1, const CBLAS_INT strideA2, const CBLAS_INT offsetA, stdlib_complex128_t *B, const CBLAS_INT strideB1, const CBLAS_INT strideB2, const CBLAS_INT offsetB );
+void stdlib_strided_ztril2triu_ndarray( const CBLAS_INT M, const CBLAS_INT N, const CBLAS_INT k, const stdlib_complex128_t *A, const CBLAS_INT strideA1, const CBLAS_INT strideA2, const CBLAS_INT offsetA, stdlib_complex128_t *B, const CBLAS_INT strideB1, const CBLAS_INT strideB2, const CBLAS_INT offsetB );
 ```
 
 </section>
