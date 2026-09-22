@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/blas/ext/base/gnancount",
   "version": "0.0.0",
-  "description": "Calculate the number of non-`NaN` elements in a strided array.",
+  "description": "Calculate the number of non-NaN elements in a strided array.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

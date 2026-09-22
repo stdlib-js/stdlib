@@ -35,6 +35,6 @@ int main( void ) {
 		mu = random_uniform( -5.0, 5.0 );
 		sigma = random_uniform( 0.1, 20.0 );
 		y = stdlib_base_dists_normal_stdev( mu, sigma );
-		printf( "µ: %.4f, σ: %.4f, SD(X;µ,σ): %.4f\n", mu, sigma, y );
+		printf( "μ: %.4f, σ: %.4f, SD(X;μ,σ): %.4f\n", mu, sigma, y );
 	}
 }

@@ -73,5 +73,7 @@
     "cmplx",
     "complex128array"
   ],
-  "__stdlib__": {}
+  "__stdlib__": {
+    "wasm": false
+  }
 }

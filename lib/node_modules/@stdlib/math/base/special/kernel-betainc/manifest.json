@@ -74,7 +74,8 @@
         "@stdlib/constants/float64/pi",
         "@stdlib/constants/float64/gamma-lanczos-g",
         "@stdlib/constants/float64/eps",
-        "@stdlib/constants/int32/max"
+        "@stdlib/constants/int32/max",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -121,7 +122,8 @@
         "@stdlib/constants/float64/pi",
         "@stdlib/constants/float64/gamma-lanczos-g",
         "@stdlib/constants/float64/eps",
-        "@stdlib/constants/int32/max"
+        "@stdlib/constants/int32/max",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -169,7 +171,8 @@
         "@stdlib/constants/float64/pi",
         "@stdlib/constants/float64/gamma-lanczos-g",
         "@stdlib/constants/float64/eps",
-        "@stdlib/constants/int32/max"
+        "@stdlib/constants/int32/max",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

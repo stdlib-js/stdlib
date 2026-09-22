@@ -30,6 +30,7 @@
 */
 
 #include "stdlib/math/base/special/powm1.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/math/base/special/abs.h"
 #include "stdlib/math/base/special/expm1.h"
 #include "stdlib/math/base/special/ln.h"
@@ -60,7 +61,7 @@ double stdlib_base_powm1( const double b, const double x ) {
 	double y;
 
 	if ( stdlib_base_is_nan( b ) || stdlib_base_is_nan( x ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( x == 0.0 ) {
 		// Any number raised to zero (including 0) is always 1 => b^0 - 1 = 0
@@ -85,11 +86,11 @@ double stdlib_base_powm1( const double b, const double x ) {
 		}
 	} else if ( stdlib_base_trunc( x ) != x ) {
 		// Exponentiation would yield a complex result...
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	result = stdlib_base_pow( bc, x ) - 1.0;
 	if ( stdlib_base_is_infinite( result ) || stdlib_base_is_nan( result ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	return result;
 }

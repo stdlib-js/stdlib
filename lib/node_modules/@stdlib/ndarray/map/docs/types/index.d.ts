@@ -22,7 +22,7 @@
 
 /* eslint-disable max-lines */
 
-import { typedndarray, DataType, float64ndarray, float32ndarray, complex128ndarray, complex64ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, boolndarray, genericndarray } from '@stdlib/types/ndarray';
+import { typedndarray, DataType, float64ndarray, float32ndarray, float16ndarray, complex128ndarray, complex64ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, boolndarray, genericndarray } from '@stdlib/types/ndarray';
 import { Complex64, Complex128, ComplexLike } from '@stdlib/types/complex';
 
 /**
@@ -109,6 +109,20 @@ interface Float32Options extends Options {
 	* -   This option overrides using the input ndarray's inferred data type.
 	*/
 	dtype?: 'float32';
+}
+
+/**
+* Interface describing function options.
+*/
+interface Float16Options extends Options {
+	/**
+	* Output ndarray data type.
+	*
+	* ## Notes
+	*
+	* -   This option overrides using the input ndarray's inferred data type.
+	*/
+	dtype?: 'float16';
 }
 
 /**
@@ -322,6 +336,35 @@ declare function map<W = unknown>( x: float64ndarray, fcn: Callback<number, floa
 * // returns <ndarray>[ [ 20.0, 30.0, 40.0 ], [ 80.0, 90.0, 100.0 ] ]
 */
 declare function map<W = unknown>( x: float32ndarray, fcn: Callback<number, float32ndarray, number, W>, thisArg?: ThisParameterType<Callback<number, float32ndarray, number, W>> ): float32ndarray;
+
+/**
+* Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
+*
+* @param x - input ndarray
+* @param fcn - callback function
+* @param thisArg - callback function execution context
+* @returns output ndarray
+*
+* @example
+* var Float16Array = require( '@stdlib/array/float16' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+*
+* function scale( z ) {
+*     return z * 10.0;
+* }
+*
+* var buffer = new Float16Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+* var shape = [ 2, 3 ];
+* var strides = [ 6, 1 ];
+* var offset = 1;
+*
+* var x = ndarray( 'float16', buffer, shape, strides, offset, 'row-major' );
+* // returns <ndarray>
+*
+* var y = map( x, scale );
+* // returns <ndarray>[ [ 20.0, 30.0, 40.0 ], [ 80.0, 90.0, 100.0 ] ]
+*/
+declare function map<W = unknown>( x: float16ndarray, fcn: Callback<number, float16ndarray, number, W>, thisArg?: ThisParameterType<Callback<number, float16ndarray, number, W>> ): float16ndarray;
 
 /**
 * Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
@@ -708,6 +751,40 @@ declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Flo
 * // returns <ndarray>[ [ 20.0, 30.0, 40.0 ], [ 80.0, 90.0, 100.0 ] ]
 */
 declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Float32Options, fcn: Callback<T, typedndarray<T>, number, W>, thisArg?: ThisParameterType<Callback<T, typedndarray<T>, number, W>> ): float32ndarray;
+
+/**
+* Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
+*
+* @param x - input ndarray
+* @param options - options
+* @param options.dtype - output ndarray data type
+* @param fcn - callback function
+* @param thisArg - callback function execution context
+* @returns output ndarray
+*
+* @example
+* var Float64Array = require( '@stdlib/array/float64' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+*
+* function scale( z ) {
+*     return z * 10.0;
+* }
+*
+* var buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+* var shape = [ 2, 3 ];
+* var strides = [ 6, 1 ];
+* var offset = 1;
+*
+* var x = ndarray( 'float64', buffer, shape, strides, offset, 'row-major' );
+* // returns <ndarray>
+*
+* var opts = {
+*     'dtype': 'float16'
+* };
+* var y = map( x, opts, scale );
+* // returns <ndarray>[ [ 20.0, 30.0, 40.0 ], [ 80.0, 90.0, 100.0 ] ]
+*/
+declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Float16Options, fcn: Callback<T, typedndarray<T>, number, W>, thisArg?: ThisParameterType<Callback<T, typedndarray<T>, number, W>> ): float16ndarray;
 
 /**
 * Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.

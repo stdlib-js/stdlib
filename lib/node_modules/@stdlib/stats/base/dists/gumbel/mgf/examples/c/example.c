@@ -37,6 +37,6 @@ int main( void ) {
 		mu = random_uniform( 0.0, 10.0 );
 		beta = random_uniform( 0.0, 10.0 );
 		y = stdlib_base_dists_gumbel_mgf( t, mu, beta );
-		printf( "t: %lf, µ: %lf, β: %lf, M_X(t;µ,β): %lf\n", t, mu, beta, y );
+		printf( "t: %lf, μ: %lf, β: %lf, M_X(t;μ,β): %lf\n", t, mu, beta, y );
 	}
 }

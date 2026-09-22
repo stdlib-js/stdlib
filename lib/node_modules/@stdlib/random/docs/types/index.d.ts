@@ -178,7 +178,7 @@ interface Namespace {
 	beta: typeof beta;
 
 	/**
-	* Generates pseudorandom numbers drawn from a betaprime distribution.
+	* Generates pseudorandom numbers drawn from a beta prime distribution.
 	*
 	* @param shape - output shape
 	* @param alpha - first shape parameter

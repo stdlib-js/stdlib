@@ -23,6 +23,7 @@
 #include "stdlib/math/base/special/round.h"
 #include "stdlib/constants/float64/phi.h"
 #include "stdlib/constants/float64/pinf.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdbool.h>
 
 static const double SQRT_5 = 2.23606797749979;
@@ -45,7 +46,7 @@ double stdlib_base_fibonacci_index( const double F ) {
 	double x;
 
 	if ( stdlib_base_is_nan( F ) || stdlib_base_is_integer( F ) == false || F <= 1 || F == STDLIB_CONSTANT_FLOAT64_PINF ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	x = ( F * SQRT_5 ) + 0.5;
 	return stdlib_base_round( stdlib_base_ln( x ) / stdlib_base_ln( STDLIB_CONSTANT_FLOAT64_PHI ) );

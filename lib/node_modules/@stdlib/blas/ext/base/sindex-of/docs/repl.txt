@@ -37,7 +37,7 @@
     1
 
 
-{{alias}}( N, searchElement, x, strideX, offsetX )
+{{alias}}.ndarray( N, searchElement, x, strideX, offsetX )
     Returns the first index of a specified search element in a single-precision
     floating-point strided array using alternative indexing semantics.
 

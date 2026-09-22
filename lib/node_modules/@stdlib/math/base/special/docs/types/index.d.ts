@@ -2602,37 +2602,21 @@ interface Namespace {
 	*
 	* @example
 	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var z = new Complex128( 0.0, 0.0 );
 	* // returns <Complex128>
 	*
 	* var out = ns.ccis( z );
-	* // returns <Complex128>
-	*
-	* var re = real( out );
-	* // returns 1.0
-	*
-	* var im = imag( out );
-	* // returns 0.0
+	* // returns <Complex128>[ 1.0, 0.0 ]
 	*
 	* @example
 	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var z = new Complex128( 1.0, 0.0 );
 	* // returns <Complex128>
 	*
 	* var out = ns.ccis( z );
-	* // returns <Complex128>
-	*
-	* var re = real( out );
-	* // returns ~0.540
-	*
-	* var im = imag( out );
-	* // returns ~0.841
+	* // returns <Complex128>[ ~0.540, ~0.841 ]
 	*/
 	ccis: typeof ccis;
 
