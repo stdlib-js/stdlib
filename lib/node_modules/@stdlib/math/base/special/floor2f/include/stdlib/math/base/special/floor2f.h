@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Rounds a single-precision floating point number to the nearest power of two toward negative infinity.
+* Rounds a single-precision floating-point number to the nearest power of two toward negative infinity.
 */
 float stdlib_base_floor2f( const float x );
 

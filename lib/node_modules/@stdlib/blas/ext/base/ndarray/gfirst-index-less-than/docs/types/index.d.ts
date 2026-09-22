@@ -31,6 +31,7 @@ import { typedndarray } from '@stdlib/types/ndarray';
 *
 *     -   first one-dimensional input ndarray.
 *     -   second one-dimensional input ndarray.
+*     -   a zero-dimensional ndarray containing the index from which to begin searching.
 *
 * -   When comparing elements, the function checks whether an element in the first one-dimensional input ndarray is less than a corresponding element in the second one-dimensional input ndarray using the less-than operator `<`. As a consequence, comparisons involving `NaN` always evaluate to `false`.
 *
@@ -39,14 +40,19 @@ import { typedndarray } from '@stdlib/types/ndarray';
 *
 * @example
 * var vector = require( '@stdlib/ndarray/vector/ctor' );
+* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 *
 * var x = vector( [ 0.0, 0.0, 0.0, 0.0 ], 'generic' );
 * var y = vector( [ 0.0, 0.0, 1.0, 0.0 ], 'generic' );
 *
-* var idx = gfirstIndexLessThan( [ x, y ] );
+* var fromIndex = scalar2ndarray( 0, {
+*     'dtype': 'generic'
+* });
+*
+* var idx = gfirstIndexLessThan( [ x, y, fromIndex ] );
 * // returns 2
 */
-declare function gfirstIndexLessThan<T = unknown>( arrays: [ typedndarray<T>, typedndarray<T> ] ): number;
+declare function gfirstIndexLessThan( arrays: [ typedndarray<unknown>, typedndarray<unknown>, typedndarray<number> ] ): number;
 
 
 // EXPORTS //
