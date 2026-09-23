@@ -1,0 +1,54 @@
+
+{{alias}}( arrays )
+    Generates a double-precision floating-point Vandermonde matrix.
+
+    Let the output ndarray have shape `[M, N]`. When the mode is positive,
+    the matrix is generated such that
+
+        [
+            1   x_0^1   x_0^2   ...   x_0^(N-1)
+            1   x_1^1   x_1^2   ...   x_1^(N-1)
+            ...
+        ]
+
+    with increasing powers along the rows.
+
+    When the mode is negative, the matrix is generated such that
+
+        [
+            x_0^(N-1)   ...   x_0^2   x_0^1   1
+            x_1^(N-1)   ...   x_1^2   x_1^1   1
+            ...
+        ]
+
+    with decreasing powers along the rows.
+
+    If `M <= 0` or `N <= 0`, the function returns the output ndarray
+    unchanged.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a two-dimensional output ndarray.
+        - a zero-dimensional ndarray specifying the mode.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/ndarray/vector/float64}}( [ 1.0, 2.0, 3.0 ] );
+    > var out = {{alias:@stdlib/ndarray/zeros}}( [ 3, 3 ], { 'dtype': 'float64' } );
+    > var mode = {{alias:@stdlib/ndarray/from-scalar}}( 1, { 'dtype': 'float64' } );
+    > {{alias}}( [ x, out, mode ] );
+    > out
+    <ndarray>[ [ 1.0, 1.0, 1.0 ], [ 1.0, 2.0, 4.0 ], [ 1.0, 3.0, 9.0 ] ]
+
+    See Also
+    --------
+
