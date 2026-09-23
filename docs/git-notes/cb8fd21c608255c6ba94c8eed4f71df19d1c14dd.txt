@@ -1,0 +1,8 @@
+---
+type: amend-message
+---
+test: migrate `stats/incr/meanabs2` to ULP-based assertions
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/15249
+Reviewed-by: Athan Reines <kgryte@gmail.com>
+Ref: https://github.com/stdlib-js/stdlib/issues/11352

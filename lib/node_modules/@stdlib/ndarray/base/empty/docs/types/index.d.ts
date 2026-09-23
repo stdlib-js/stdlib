@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Shape, Order, typedndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, boolndarray, complex128ndarray, complex64ndarray, genericndarray, DataType } from '@stdlib/types/ndarray';
+import { Shape, Order, typedndarray, float64ndarray, float32ndarray, float16ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, boolndarray, complex128ndarray, complex64ndarray, genericndarray, DataType } from '@stdlib/types/ndarray';
 
 /**
 * Creates an uninitialized array having a specified shape and data type.
@@ -61,6 +61,26 @@ declare function empty( dtype: 'float64', shape: Shape, order: Order ): float64n
 * // returns 'float32'
 */
 declare function empty( dtype: 'float32', shape: Shape, order: Order ): float32ndarray;
+
+/**
+* Creates an uninitialized array having a specified shape and data type.
+*
+* @param dtype - underlying data type
+* @param shape - array shape
+* @param order - specifies whether an array is row-major (C-style) or column-major (Fortran-style)
+* @returns output array
+*
+* @example
+* var arr = empty( 'float16', [ 2, 2 ], 'row-major' );
+* // returns <ndarray>
+*
+* var sh = arr.shape;
+* // returns [ 2, 2 ]
+*
+* var dt = arr.dtype;
+* // returns 'float16'
+*/
+declare function empty( dtype: 'float16', shape: Shape, order: Order ): float16ndarray;
 
 /**
 * Creates an uninitialized array having a specified shape and data type.
