@@ -39,8 +39,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/napi/unary",
-        "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/special/sqrt"
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/stats/base/dists/poisson/variance"
       ]
     },
     {
@@ -55,8 +55,8 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/special/sqrt"
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/stats/base/dists/poisson/variance"
       ]
     },
     {
@@ -71,8 +71,8 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/special/sqrt"
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/stats/base/dists/poisson/variance"
       ]
     }
   ]

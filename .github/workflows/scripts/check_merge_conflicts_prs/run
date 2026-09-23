@@ -1,0 +1,250 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2026 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Script to identify and label pull requests with merge conflicts.
+#
+# Environment variables:
+#
+#   GITHUB_TOKEN   GitHub token for authentication.
+
+# shellcheck disable=SC2153,SC2317
+
+# Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
+set -o pipefail
+
+
+# VARIABLES #
+
+# GitHub API base URL:
+github_api_url="https://api.github.com"
+
+# Repository owner and name:
+repo_owner="stdlib-js"
+repo_name="stdlib"
+
+# Label for PRs with merge conflicts:
+merge_conflicts_label="Merge Conflicts"
+
+# Debug mode controlled by environment variable (defaults to false if not set):
+debug="${DEBUG:-false}"
+
+# Get the GitHub authentication token:
+github_token="${GITHUB_TOKEN}"
+if [ -z "$github_token" ]; then
+	echo "Error: GITHUB_TOKEN environment variable not set." >&2
+	exit 1
+fi
+
+# Configure retries for API calls:
+max_retries=3
+retry_delay=2
+
+
+# FUNCTIONS #
+
+# Debug logging function.
+#
+# $1 - debug message
+debug_log() {
+	# Only print debug messages if DEBUG environment variable is set to "true":
+	if [ "$debug" = true ]; then
+		echo "[DEBUG] $1" >&2
+	fi
+}
+
+# Error handler.
+#
+# $1 - error status
+on_error() {
+	echo 'ERROR: An error was encountered during execution.' >&2
+	exit "$1"
+}
+
+# Prints a success message.
+print_success() {
+	echo 'Success!' >&2
+}
+
+# Fetches pull requests.
+fetch_pull_requests() {
+	local response
+	response=$(curl -s -X POST 'https://api.github.com/graphql' \
+		-H "Authorization: bearer ${github_token}" \
+		-H "Content-Type: application/json" \
+		--data @- << EOF
+{
+	"query": "query(\$owner: String!, \$repo: String!) { repository(owner: \$owner, name: \$repo) { pullRequests( states: OPEN, last: 100 ) { edges { node { number url mergeable } } } } }",
+	"variables": {
+		"owner": "${repo_owner}",
+		"repo": "${repo_name}"
+	}
+}
+EOF
+)
+	echo "$response"
+}
+
+
+# Performs a GitHub API request.
+#
+# $1 - HTTP method (GET, POST, PATCH, etc.)
+# $2 - API endpoint
+# $3 - data for POST/PATCH requests
+github_api() {
+	local method="$1"
+	local endpoint="$2"
+	local data="$3"
+	local retry_count=0
+	local response=""
+	local status_code
+	local success=false
+
+	# Initialize an array to hold curl headers:
+	local headers=()
+	headers+=("-H" "Authorization: token ${github_token}")
+
+	debug_log "Making API request: ${method} ${endpoint}"
+
+	# For POST/PATCH requests, always set the Content-Type header:
+	if [ "$method" != "GET" ]; then
+		headers+=("-H" "Content-Type: application/json")
+	fi
+
+	# Add retry logic...
+	while [ $retry_count -lt $max_retries ] && [ "$success" = false ]; do
+		if [ $retry_count -gt 0 ]; then
+			echo "Retrying request (attempt $((retry_count+1))/${max_retries})..."
+			sleep $retry_delay
+		fi
+
+		# Make the API request:
+		if [ -n "${data}" ]; then
+			response=$(curl -s -w "%{http_code}" -X "${method}" "${headers[@]}" -d "${data}" "${github_api_url}${endpoint}")
+		else
+			response=$(curl -s -w "%{http_code}" -X "${method}" "${headers[@]}" "${github_api_url}${endpoint}")
+		fi
+
+		# Extract status code (last 3 digits) and actual response (everything before):
+		status_code="${response: -3}"
+		response="${response:0:${#response}-3}"
+
+		debug_log "Status code: $status_code"
+
+		# Check if we got a successful response:
+		if [[ $status_code -ge 200 && $status_code -lt 300 ]]; then
+			success=true
+		else
+			echo "API request failed with status $status_code: $response" >&2
+			retry_count=$((retry_count+1))
+		fi
+	done
+
+	if [ "$success" = false ]; then
+		echo "Failed to complete API request after $max_retries attempts" >&2
+		return 1
+	fi
+
+	# Validate that response is valid JSON if expected:
+	if ! echo "$response" | jq -e '.' > /dev/null 2>&1; then
+		echo "Warning: Response is not valid JSON: ${response}" >&2
+		# Return empty JSON object as fallback:
+		echo "{}"
+		return 0
+	fi
+
+	# Return the actual response data (without status code):
+	echo "$response"
+	return 0
+}
+
+# Removes a label from a PR.
+#
+# $1 - PR number
+# $2 - label name
+remove_label() {
+	local pr_number="$1"
+	local label="$2"
+	local encoded_label
+	encoded_label=$(printf '%s' "$label" | jq -sRr @uri)
+
+	debug_log "Removing label '${label}' from PR #${pr_number} (idempotent)"
+
+	local headers=(-H "Accept: application/vnd.github+json")
+	headers+=(-H "Authorization: token ${github_token}")
+
+	local status
+	status=$(curl -s -o /dev/null -w "%{http_code}" -X DELETE \
+		"${headers[@]}" \
+		"${github_api_url}/repos/${repo_owner}/${repo_name}/issues/${pr_number}/labels/${encoded_label}")
+
+	case "$status" in
+		200|204)
+			debug_log "Label '${label}' removed from PR #${pr_number}"
+			return 0
+			;;
+		404)
+			debug_log "Label '${label}' not present on PR #${pr_number}; treating as success"
+			return 0
+			;;
+		*)
+			echo "Failed to remove label '${label}' from PR #${pr_number} (status ${status})" >&2
+			return 1
+			;;
+	esac
+}
+
+# Adds a label to a PR.
+#
+# $1 - PR number
+# $2 - label name
+add_label() {
+	local pr_number="$1"
+	local label="$2"
+
+	debug_log "Adding label '${label}' to PR #${pr_number}"
+	github_api "POST" "/repos/${repo_owner}/${repo_name}/issues/${pr_number}/labels" \
+		"{\"labels\":[\"${label}\"]}"
+}
+
+
+# Main execution sequence.
+main() {
+	echo "Fetching open pull requests..."
+
+	labeled_prs_data=$(fetch_pull_requests)
+	echo "$labeled_prs_data" \
+		| jq -r '.data.repository.pullRequests.edges[].node | select( .mergeable == "CONFLICTING" ) | .number' \
+		| while IFS= read -r pr_number; do
+			echo "Adding $merge_conflicts_label label to PR #${pr_number}..."
+			add_label "$pr_number" "$merge_conflicts_label"
+		done;
+
+	echo "$labeled_prs_data" \
+		| jq -r '.data.repository.pullRequests.edges[].node | select( .mergeable == "MERGEABLE" ) | .number' \
+		| while IFS= read -r pr_number; do
+			echo "Ensure $merge_conflicts_label label is removed from PR #${pr_number}..."
+			remove_label "$pr_number" "$merge_conflicts_label"
+		done;
+
+	debug_log "Script completed successfully"
+	print_success
+	exit 0
+}
+
+# Run main:
+main

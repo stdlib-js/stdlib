@@ -63,7 +63,7 @@ static const uint32_t S0 = 1u;
 uint32_t stdlib_base_fast_uint32_log2( const uint32_t x ) {
 	uint32_t out;
 	uint32_t xc;
-	
+
 	xc = x;
 	out = 0;
 	// `xc >= 65536`:

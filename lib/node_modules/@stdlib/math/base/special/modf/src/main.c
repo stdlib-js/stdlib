@@ -25,6 +25,7 @@
 #include "stdlib/constants/float64/high_word_exponent_mask.h"
 #include "stdlib/constants/float64/high_word_significand_mask.h"
 #include "stdlib/constants/float64/num_high_word_significand_bits.h"
+#include "stdlib/constants/float64/nan.h"
 
 // 4294967295 => 0xffffffff => 11111111111111111111111111111111
 static const uint32_t ALL_ONES = 4294967295;
@@ -68,8 +69,8 @@ void stdlib_base_modf( const double x, double* integral, double* frac ) {
 		return;
 	}
 	if ( stdlib_base_is_nan( x ) ) {
-		*integral = 0.0 / 0.0; // NaN
-		*frac = 0.0 / 0.0; // NaN
+		*integral = STDLIB_CONSTANT_FLOAT64_NAN;
+		*frac = STDLIB_CONSTANT_FLOAT64_NAN;
 		return;
 	}
 	if ( x == STDLIB_CONSTANT_FLOAT64_PINF ) {

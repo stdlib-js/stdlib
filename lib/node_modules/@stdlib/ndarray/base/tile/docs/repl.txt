@@ -1,0 +1,35 @@
+
+{{alias}}( x, reps )
+    Returns an ndarray created by repeating the elements of an input ndarray
+    a specified number of times along each dimension.
+
+    The number of repetitions must have at least as many elements as the number
+    of input dimensions. When the number of repetitions exceeds the number of
+    input dimensions, the input array is treated as if singleton dimensions
+    were prepended.
+
+    The function always copies data to a new ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    reps: ArrayLikeObject
+        Number of repetitions along each dimension.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
+    <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
+    > var o = {{alias}}( x, [ 2, 2 ] )
+    <ndarray>[ [ 1, 2, 1, 2 ], [ 3, 4, 3, 4 ], [ 1, 2, 1, 2 ], [ 3, 4, 3, 4 ] ]
+
+    See Also
+    --------
+

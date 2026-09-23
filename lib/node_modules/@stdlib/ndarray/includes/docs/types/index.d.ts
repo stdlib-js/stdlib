@@ -127,7 +127,7 @@ interface Includes {
 	* var v = out.get();
 	* // returns true
 	*/
-	assign<T extends ndarray>( x: ndarray, searchElement: ndarray | unknown, y: T, options?: BaseOptions ): T;
+	assign<T extends ndarray = ndarray>( x: ndarray, searchElement: ndarray | unknown, y: T, options?: BaseOptions ): T;
 }
 
 /**

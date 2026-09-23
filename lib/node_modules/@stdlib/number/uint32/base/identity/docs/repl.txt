@@ -4,12 +4,12 @@
 
     Parameters
     ----------
-    x: number
+    x: integer
         Input value.
 
     Returns
     -------
-    y: number
+    y: integer
         Input value.
 
     Examples

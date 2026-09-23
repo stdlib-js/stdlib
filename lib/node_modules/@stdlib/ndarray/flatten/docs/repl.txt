@@ -41,9 +41,8 @@
     Examples
     --------
     > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );
-    > var y = {{alias}}( x );
-    > var arr = {{alias:@stdlib/ndarray/to-array}}( y )
-    [ 1.0, 2.0, 3.0, 4.0 ]
+    > var y = {{alias}}( x )
+    <ndarray>[ 1.0, 2.0, 3.0, 4.0 ]
 
     See Also
     --------

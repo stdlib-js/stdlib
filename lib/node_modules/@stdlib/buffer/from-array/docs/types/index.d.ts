@@ -31,8 +31,6 @@ import { Collection } from '@stdlib/types/array';
 * @returns new `Buffer` instance
 *
 * @example
-* var fromArray = require( '@stdlib/buffer/from-array' );
-*
 * var buf = fromArray( [ 1, 2, 3, 4 ] );
 * // returns <Buffer>
 */

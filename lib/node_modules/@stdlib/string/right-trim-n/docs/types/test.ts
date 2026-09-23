@@ -24,7 +24,7 @@ import rtrimN = require( './index' );
 // The function returns a string...
 {
 	rtrimN( '   abc   ', 3 ); // $ExpectType string
-	rtrimN( '~~~abc~~~', 3, '~' ); // $ExpectType
+	rtrimN( '~~~abc~~~', 3, '~' ); // $ExpectType string
 }
 
 // The compiler throws an error if the function is provided arguments having invalid types...

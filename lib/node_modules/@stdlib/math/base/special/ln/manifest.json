@@ -43,7 +43,8 @@
         "@stdlib/number/float64/base/set-high-word",
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/constants/float64/ninf",
-        "@stdlib/constants/float64/exponent-bias"
+        "@stdlib/constants/float64/exponent-bias",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -62,7 +63,8 @@
         "@stdlib/number/float64/base/set-high-word",
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/constants/float64/ninf",
-        "@stdlib/constants/float64/exponent-bias"
+        "@stdlib/constants/float64/exponent-bias",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -81,7 +83,8 @@
         "@stdlib/number/float64/base/set-high-word",
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/constants/float64/ninf",
-        "@stdlib/constants/float64/exponent-bias"
+        "@stdlib/constants/float64/exponent-bias",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -100,7 +103,8 @@
         "@stdlib/number/float64/base/set-high-word",
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/constants/float64/ninf",
-        "@stdlib/constants/float64/exponent-bias"
+        "@stdlib/constants/float64/exponent-bias",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

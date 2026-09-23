@@ -57,8 +57,8 @@ import { ArrayLike } from '@stdlib/types/array';
 * var sy = [ 24, 8, 1 ]; // row-major
 * var sz = [ 1, -2, 6 ]; // column-major
 *
-* var o = loopOrder( shape, [ sx, sy, sz ] );
-* // returns {...}
+* var o = loopOrder( sh, [ sx, sy, sz ] );
+* // returns [...]
 *
 * var ssh = o[ 0 ];
 * // returns [ 4, 3, 2 ]
