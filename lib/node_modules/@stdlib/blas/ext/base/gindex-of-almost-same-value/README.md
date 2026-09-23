@@ -131,7 +131,7 @@ var idx = gindexOfAlmostSameValue.ndarray( 3, 3.0, 1, x, 1, x.length-3 );
 
 ## Notes
 
--   When searching for a search element, the function tests whether elements are approximately the same value within a specified number of ULPs (units in the last place). In contrast to the strict equality operator `===`, the function distinguishes between `+0` and `-0` and treats `NaNs` as the same value.
+-   When searching for a search element, the functions test whether elements are approximately the same value within a specified number of ULPs (units in the last place). In contrast to the strict equality operator `===`, the functions distinguish between `+0` and `-0` and treats `NaNs` as the same value.
 -   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array/base/accessor`][@stdlib/array/base/accessor]).
 
 </section>
