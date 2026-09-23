@@ -31,7 +31,7 @@
 */
 
 #include "stdlib/math/base/special/rempio2.h"
-#include "stdlib/math/base/special/round.h"
+#include "stdlib/math/base/special/round_nearest_even.h"
 #include "stdlib/math/base/special/floor.h"
 #include "stdlib/math/base/special/ldexp.h"
 #include "stdlib/number/float64/base/get_high_word.h"
@@ -559,7 +559,7 @@ int32_t stdlib_base_rempio2( const double x, double *rem1, double *rem2 ) {
 	// Case: |x| ~< 2^20*π/2 (medium size)
 	if ( ix < MEDIUM ) {
 medium:
-		n = stdlib_base_round( x * INVPIO2 );
+		n = stdlib_base_round_nearest_even( x * INVPIO2 );
 		r = x - ( n * PIO2_1 );
 		w = n * PIO2_1T;
 
