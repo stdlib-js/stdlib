@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Interface describing  snanmean`.
+* Interface describing `snanmean`.
 */
 interface Routine {
 	/**

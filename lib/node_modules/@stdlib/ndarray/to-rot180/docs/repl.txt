@@ -1,0 +1,35 @@
+
+{{alias}}( x[, options] )
+    Returns a new ndarray where an input ndarray is rotated 180 degrees in a
+    specified plane.
+
+    Each provided dimension index must reside on the interval [-ndims, ndims-1].
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    options: Object (optional)
+        Function options.
+
+    options.dims: ArrayLikeObject<integer> (optional)
+        Dimension indices defining the plane of rotation. Must contain exactly
+        two unique dimension indices. If less than zero, an index is resolved
+        relative to the last dimension, with the last dimension corresponding to
+        the value `-1`. Default: [ -2, -1 ].
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
+    <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
+    > var y = {{alias}}( x )
+    <ndarray>[ [ 4, 3 ], [ 2, 1 ] ]
+
+    See Also
+    --------

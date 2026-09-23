@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Test if a value is an array-like object containing only falsy values.
+* Tests if a value is an array-like object containing only falsy values.
 *
 * @param value - value to test
 * @returns boolean indicating whether a value is an array-like object containing only falsy values

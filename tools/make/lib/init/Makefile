@@ -19,14 +19,13 @@
 # DEPENDENCIES #
 
 # Note: keep in alphabetical order...
-include $(TOOLS_MAKE_LIB_DIR)/init/eslint.mk
 include $(TOOLS_MAKE_LIB_DIR)/init/git_hooks.mk
 
 
 # RULES #
 
 #/
-# Performs initialization tasks, such as installing Git hooks, installing custom lint plugins, etc.
+# Performs initialization tasks, such as installing Git hooks.
 #
 # ## Notes
 #
@@ -35,7 +34,7 @@ include $(TOOLS_MAKE_LIB_DIR)/init/git_hooks.mk
 # @example
 # make init
 #/
-init: init-git-hooks init-eslint-plugins
+init: init-git-hooks
 	$(QUIET) echo "Initialization successful."
 
 .PHONY: init

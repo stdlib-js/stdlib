@@ -31,6 +31,7 @@ import { float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray
 * @returns one-dimensional ndarray
 *
 * @example
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var Float64Array = require( '@stdlib/array/float64' );
 *
 * var arr = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
@@ -38,7 +39,7 @@ import { float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray
 * var x = array2ndarray( arr, 'row-major' );
 * // returns <ndarray>
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'float64'
 */
 declare function array2ndarray( buf: Float64Array, order: Order ): float64ndarray;
@@ -51,6 +52,7 @@ declare function array2ndarray( buf: Float64Array, order: Order ): float64ndarra
 * @returns one-dimensional ndarray
 *
 * @example
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var Float32Array = require( '@stdlib/array/float32' );
 *
 * var arr = new Float32Array( [ 1.0, 2.0, 3.0, 4.0 ] );
@@ -58,7 +60,7 @@ declare function array2ndarray( buf: Float64Array, order: Order ): float64ndarra
 * var x = array2ndarray( arr, 'row-major' );
 * // returns <ndarray>
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'float32'
 */
 declare function array2ndarray( buf: Float32Array, order: Order ): float32ndarray;
@@ -71,6 +73,7 @@ declare function array2ndarray( buf: Float32Array, order: Order ): float32ndarra
 * @returns one-dimensional ndarray
 *
 * @example
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var Complex128Array = require( '@stdlib/array/complex128' );
 *
 * var arr = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0 ] );
@@ -78,7 +81,7 @@ declare function array2ndarray( buf: Float32Array, order: Order ): float32ndarra
 * var x = array2ndarray( arr, 'row-major' );
 * // returns <ndarray>
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'complex128'
 */
 declare function array2ndarray( buf: Complex128Array, order: Order ): complex128ndarray;
@@ -91,6 +94,7 @@ declare function array2ndarray( buf: Complex128Array, order: Order ): complex128
 * @returns one-dimensional ndarray
 *
 * @example
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var Complex64Array = require( '@stdlib/array/complex64' );
 *
 * var arr = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
@@ -98,7 +102,7 @@ declare function array2ndarray( buf: Complex128Array, order: Order ): complex128
 * var x = array2ndarray( arr, 'row-major' );
 * // returns <ndarray>
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'complex64'
 */
 declare function array2ndarray( buf: Complex64Array, order: Order ): complex64ndarray;
@@ -111,6 +115,7 @@ declare function array2ndarray( buf: Complex64Array, order: Order ): complex64nd
 * @returns one-dimensional ndarray
 *
 * @example
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var Int32Array = require( '@stdlib/array/int32' );
 *
 * var arr = new Int32Array( [ 1, 2, 3, 4 ] );
@@ -118,7 +123,7 @@ declare function array2ndarray( buf: Complex64Array, order: Order ): complex64nd
 * var x = array2ndarray( arr, 'row-major' );
 * // returns <ndarray>
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'int32'
 */
 declare function array2ndarray( buf: Int32Array, order: Order ): int32ndarray;
@@ -131,6 +136,7 @@ declare function array2ndarray( buf: Int32Array, order: Order ): int32ndarray;
 * @returns one-dimensional ndarray
 *
 * @example
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var Int16Array = require( '@stdlib/array/int16' );
 *
 * var arr = new Int16Array( [ 1, 2, 3, 4 ] );
@@ -138,7 +144,7 @@ declare function array2ndarray( buf: Int32Array, order: Order ): int32ndarray;
 * var x = array2ndarray( arr, 'row-major' );
 * // returns <ndarray>
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'int16'
 */
 declare function array2ndarray( buf: Int16Array, order: Order ): int16ndarray;
@@ -151,6 +157,7 @@ declare function array2ndarray( buf: Int16Array, order: Order ): int16ndarray;
 * @returns one-dimensional ndarray
 *
 * @example
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var Int8Array = require( '@stdlib/array/int8' );
 *
 * var arr = new Int8Array( [ 1, 2, 3, 4 ] );
@@ -158,7 +165,7 @@ declare function array2ndarray( buf: Int16Array, order: Order ): int16ndarray;
 * var x = array2ndarray( arr, 'row-major' );
 * // returns <ndarray>
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'int8'
 */
 declare function array2ndarray( buf: Int8Array, order: Order ): int8ndarray;
@@ -171,6 +178,7 @@ declare function array2ndarray( buf: Int8Array, order: Order ): int8ndarray;
 * @returns one-dimensional ndarray
 *
 * @example
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var Uint32Array = require( '@stdlib/array/uint32' );
 *
 * var arr = new Uint32Array( [ 1, 2, 3, 4 ] );
@@ -178,7 +186,7 @@ declare function array2ndarray( buf: Int8Array, order: Order ): int8ndarray;
 * var x = array2ndarray( arr, 'row-major' );
 * // returns <ndarray>
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'uint32'
 */
 declare function array2ndarray( buf: Uint32Array, order: Order ): uint32ndarray;
@@ -191,6 +199,7 @@ declare function array2ndarray( buf: Uint32Array, order: Order ): uint32ndarray;
 * @returns one-dimensional ndarray
 *
 * @example
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var Uint16Array = require( '@stdlib/array/uint16' );
 *
 * var arr = new Uint16Array( [ 1, 2, 3, 4 ] );
@@ -198,7 +207,7 @@ declare function array2ndarray( buf: Uint32Array, order: Order ): uint32ndarray;
 * var x = array2ndarray( arr, 'row-major' );
 * // returns <ndarray>
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'uint16'
 */
 declare function array2ndarray( buf: Uint16Array, order: Order ): uint16ndarray;
@@ -211,6 +220,7 @@ declare function array2ndarray( buf: Uint16Array, order: Order ): uint16ndarray;
 * @returns one-dimensional ndarray
 *
 * @example
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var Uint8Array = require( '@stdlib/array/uint8' );
 *
 * var arr = new Uint8Array( [ 1, 2, 3, 4 ] );
@@ -218,7 +228,7 @@ declare function array2ndarray( buf: Uint16Array, order: Order ): uint16ndarray;
 * var x = array2ndarray( arr, 'row-major' );
 * // returns <ndarray>
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'uint8'
 */
 declare function array2ndarray( buf: Uint8Array, order: Order ): uint8ndarray;
@@ -231,6 +241,7 @@ declare function array2ndarray( buf: Uint8Array, order: Order ): uint8ndarray;
 * @returns one-dimensional ndarray
 *
 * @example
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var Uint8ClampedArray = require( '@stdlib/array/uint8c' );
 *
 * var arr = new Uint8ClampedArray( [ 1, 2, 3, 4 ] );
@@ -238,7 +249,7 @@ declare function array2ndarray( buf: Uint8Array, order: Order ): uint8ndarray;
 * var x = array2ndarray( arr, 'row-major' );
 * // returns <ndarray>
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'uint8c'
 */
 declare function array2ndarray( buf: Uint8ClampedArray, order: Order ): uint8cndarray;
@@ -251,6 +262,7 @@ declare function array2ndarray( buf: Uint8ClampedArray, order: Order ): uint8cnd
 * @returns one-dimensional ndarray
 *
 * @example
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var BooleanArray = require( '@stdlib/array/bool' );
 *
 * var arr = new BooleanArray( [ true, false, true, false ] );
@@ -258,7 +270,7 @@ declare function array2ndarray( buf: Uint8ClampedArray, order: Order ): uint8cnd
 * var x = array2ndarray( arr, 'row-major' );
 * // returns <ndarray>
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'bool'
 */
 declare function array2ndarray( buf: BooleanArray, order: Order ): boolndarray;
@@ -271,12 +283,14 @@ declare function array2ndarray( buf: BooleanArray, order: Order ): boolndarray;
 * @returns one-dimensional ndarray
 *
 * @example
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
 * var arr = [ 1, 2, 3, 4 ];
 *
 * var x = array2ndarray( arr, 'row-major' );
 * // returns <ndarray>
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'generic'
 */
 declare function array2ndarray<T = unknown>( buf: Array<T> | Collection<T> | AccessorArrayLike<T>, order: Order ): genericndarray<T>;

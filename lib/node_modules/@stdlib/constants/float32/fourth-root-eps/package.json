@@ -55,7 +55,7 @@
     "const",
     "mathematics",
     "math",
-    "dbl",
+    "flt",
     "floating-point",
     "float",
     "float32",

@@ -30,6 +30,7 @@
 #include "stdlib/math/base/napi/binary/fc_c.h"
 #include "stdlib/math/base/napi/binary/ff_f.h"
 #include "stdlib/math/base/napi/binary/fi_f.h"
+#include "stdlib/math/base/napi/binary/hh_h.h"
 #include "stdlib/math/base/napi/binary/id_d.h"
 #include "stdlib/math/base/napi/binary/ii_d.h"
 #include "stdlib/math/base/napi/binary/ii_f.h"

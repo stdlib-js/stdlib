@@ -99,7 +99,7 @@ bool = isDataView( new Uint32Array( 10 ) );
 bool = isDataView( new Float64Array( 10 ) );
 // returns false
 
-bool = isDataView( new Array( 10 ) );
+bool = isDataView( [ 0, 0, 0, 0 ] );
 // returns false
 
 bool = isDataView( new ArrayBuffer( 10 ) );
@@ -125,7 +125,7 @@ bool = isDataView( null );
 ## See Also
 
 -   <span class="package-name">[`@stdlib/assert/is-arraybuffer`][@stdlib/assert/is-arraybuffer]</span><span class="delimiter">: </span><span class="description">test if a value is an ArrayBuffer.</span>
--   <span class="package-name">[`@stdlib/assert/is-typed-array`][@stdlib/assert/is-typed-array]</span><span class="delimiter">: </span><span class="description">test if a value is a typed array.</span>
+-   <span class="package-name">[`@stdlib/assert/is-typed-array`][@stdlib/assert/is-typed-array]</span><span class="delimiter">: </span><span class="description">test if a value is a built-in typed array.</span>
 
 </section>
 

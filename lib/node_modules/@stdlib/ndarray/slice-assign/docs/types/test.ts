@@ -115,7 +115,7 @@ import sliceAssign = require( './index' );
 	sliceAssign( null, y, s ); // $ExpectError
 	sliceAssign( [], y, s ); // $ExpectError
 	sliceAssign( {}, y, s ); // $ExpectError
-	sliceAssign( ( x: number ): number => y, y, s ); // $ExpectError
+	sliceAssign( (): number => y, y, s ); // $ExpectError
 
 	sliceAssign( '10', y, s, {} ); // $ExpectError
 	sliceAssign( 10, y, s, {} ); // $ExpectError

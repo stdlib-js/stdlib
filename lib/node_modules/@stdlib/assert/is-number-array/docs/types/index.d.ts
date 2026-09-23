@@ -92,6 +92,7 @@ interface IsNumberArray {
 * @example
 * var bool = isNumberArray( [ -3.0, '3.0' ] );
 * // returns false
+*
 * @example
 * var bool = isNumberArray.primitives( [ -1.0, 0.0, 5.0 ] );
 * // returns true

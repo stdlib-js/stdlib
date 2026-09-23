@@ -86,7 +86,7 @@ import minstd = require( './index' );
 	minstd.factory( { 'state': null } ); // $ExpectError
 	minstd.factory( { 'state': [] } ); // $ExpectError
 	minstd.factory( { 'state': {} } ); // $ExpectError
-	minstd.factory( { 'state': true ); // $ExpectError
+	minstd.factory( { 'state': true } ); // $ExpectError
 	minstd.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

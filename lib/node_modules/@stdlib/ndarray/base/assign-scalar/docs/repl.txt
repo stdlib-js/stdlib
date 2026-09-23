@@ -1,0 +1,63 @@
+
+{{alias}}( arrays )
+    Assigns a scalar value to every element of an output ndarray.
+
+    Each provided "ndarray" should be an object with the following properties:
+
+    - dtype: data type.
+    - data: data buffer.
+    - shape: dimensions.
+    - strides: stride lengths.
+    - offset: index offset.
+    - order: specifies whether an ndarray is row-major (C-style) or
+    column-major (Fortran-style).
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing a zero-dimensional input ndarray containing
+        the scalar value and one output ndarray.
+
+    Examples
+    --------
+    // Define ndarray data and meta data...
+    > var xbuf = new {{alias:@stdlib/array/float64}}( [ 5.0 ] );
+    > var ybuf = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > var dtype = 'float64';
+    > var shape = [ 2, 2 ];
+    > var sy = [ 2, 1 ];
+    > var oy = 0;
+    > var order = 'row-major';
+
+    // Using ndarrays...
+    > var x = {{alias:@stdlib/ndarray/from-scalar}}( 5.0, { 'dtype': dtype } );
+    > var y = {{alias:@stdlib/ndarray/ctor}}( dtype, ybuf, shape, sy, oy, order );
+    > {{alias}}( [ x, y ] );
+    > y
+    <ndarray>[ [ 5.0, 5.0 ], [ 5.0, 5.0 ] ]
+
+    // Using minimal ndarray-like objects...
+    > x = {
+    ...     'dtype': dtype,
+    ...     'data': xbuf,
+    ...     'shape': [],
+    ...     'strides': [ 0 ],
+    ...     'offset': 0,
+    ...     'order': order
+    ... };
+    > ybuf = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > y = {
+    ...     'dtype': dtype,
+    ...     'data': ybuf,
+    ...     'shape': shape,
+    ...     'strides': sy,
+    ...     'offset': oy,
+    ...     'order': order
+    ... };
+    > {{alias}}( [ x, y ] );
+    > y.data
+    <Float64Array>[ 5.0, 5.0, 5.0, 5.0 ]
+
+    See Also
+    --------
+

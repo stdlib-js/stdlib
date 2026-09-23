@@ -21,17 +21,9 @@
     Examples
     --------
     > var x = {{alias:@stdlib/ndarray/base/zeros}}( 'float64', [ 2, 2 ], 'row-major' )
-    <ndarray>
-    > var sh = x.shape
-    [ 2, 2 ]
-    > var dt = x.dtype
-    'float64'
+    <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
     > var y = {{alias}}( x )
-    <ndarray>
-    > sh = y.shape
-    [ 2, 2 ]
-    > dt = y.dtype
-    'float64'
+    <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 
     See Also
     --------

@@ -14,7 +14,9 @@
 
     Examples
     --------
-    > var bool = {{alias}}( 'float32' )
+    > var bool = {{alias}}( 'float16' )
+    true
+    > bool = {{alias}}( 'float32' )
     true
     > bool = {{alias}}( 'float64' )
     true

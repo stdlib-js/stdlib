@@ -24,6 +24,7 @@ var resolve = require( 'path' ).resolve;
 var bench = require( '@stdlib/bench' );
 var ndarray = require( '@stdlib/ndarray/ctor' );
 var array = require( '@stdlib/ndarray/array' );
+var format = require( '@stdlib/string/format' );
 var uniform = require( '@stdlib/random/array/uniform' );
 var tryRequire = require( '@stdlib/utils/try-require' );
 var pkg = require( './../package.json' ).name;
@@ -39,7 +40,7 @@ var opts = {
 
 // MAIN //
 
-bench( pkg+'::stdlib:ndarray/ctor:dtype=generic,size=10000,shape=(100,100)', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:ndarray/ctor:dtype=generic,size=10000,shape=(100,100)', pkg ), opts, function benchmark( b ) {
 	var buf;
 	var x;
 	var i;
@@ -63,7 +64,7 @@ bench( pkg+'::stdlib:ndarray/ctor:dtype=generic,size=10000,shape=(100,100)', opt
 	b.end();
 });
 
-bench( pkg+'::stdlib:ndarray/array:dtype=generic,size=10000,shape=(100,100)', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:ndarray/array:dtype=generic,size=10000,shape=(100,100)', pkg ), opts, function benchmark( b ) {
 	var buf;
 	var x;
 	var i;
@@ -91,7 +92,7 @@ bench( pkg+'::stdlib:ndarray/array:dtype=generic,size=10000,shape=(100,100)', op
 	b.end();
 });
 
-bench( pkg+'::mathjs:matrix:dtype=generic,size=10000,shape=(100,100)', opts, function benchmark( b ) {
+bench( format( '%s::mathjs:matrix:dtype=generic,size=10000,shape=(100,100)', pkg ), opts, function benchmark( b ) {
 	var buf;
 	var x;
 	var i;

@@ -49,7 +49,7 @@ type Unary<T, U, V> = ( this: V, value: T ) => U;
 * @param indices - current array element indices
 * @returns result
 */
-type Binary<T, U, V> = ( this: V, value: T, index: number ) => U;
+type Binary<T, U, V> = ( this: V, value: T, indices: Array<number> ) => U;
 
 /**
 * Callback invoked for each array element.
@@ -59,7 +59,7 @@ type Binary<T, U, V> = ( this: V, value: T, index: number ) => U;
 * @param arr - array
 * @returns result
 */
-type Ternary<T, U, V> = ( this: V, value: T, index: number, arr: Array3D<T> ) => U;
+type Ternary<T, U, V> = ( this: V, value: T, indices: Array<number>, arr: Array3D<T> ) => U;
 
 /**
 * Callback invoked for each array element.

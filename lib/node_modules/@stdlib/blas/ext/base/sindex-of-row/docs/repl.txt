@@ -1,0 +1,123 @@
+
+{{alias}}( order, M, N, A, LDA, x, strideX, workspace, strideW )
+    Returns the index of the first row in a single-precision floating-point
+    input matrix which has the same elements as a provided search vector.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If the function is provided an empty matrix or if the function is unable to
+    find a matching row, the function returns `-1` (i.e., an invalid index).
+
+    Parameters
+    ----------
+    order: string
+        Row-major (C-style) or column-major (Fortran-style) order. Must be
+        either 'row-major' or 'column-major'.
+
+    M: integer
+        Number of rows in `A`.
+
+    N: integer
+        Number of columns in `A`.
+
+    A: Float32Array
+        Input matrix `A`.
+
+    LDA: integer
+        Stride of the first dimension of `A` (a.k.a., leading dimension of the
+        matrix `A`).
+
+    x: Float32Array
+        Search vector.
+
+    strideX: integer
+        Stride length for `x`.
+
+    workspace: Uint8Array
+        Workspace array for tracking row match candidates. This parameter
+        is ignored if the input matrix is stored in row-major order.
+
+    strideW: integer
+        Stride length for `workspace`.
+
+    Returns
+    -------
+    out: integer
+        Row index.
+
+    Examples
+    --------
+    > var A = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var x = new {{alias:@stdlib/array/float32}}( [ 2.0, 4.0 ] );
+    > var w = new {{alias:@stdlib/array/uint8}}( 2 );
+    > {{alias}}( 'column-major', 2, 2, A, 2, x, 1, w, 1 )
+    1
+
+
+{{alias}}.ndarray( M, N, A, sa1, sa2, oa, x, sx, ox, w, sw, ow )
+    Returns the index of the first row in a single-precision floating-point
+    input matrix which has the same elements as a provided search vector using
+    alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, offset parameters support indexing semantics based on starting
+    indices.
+
+    If the method is provided an empty matrix or if the method is unable to find
+    a matching row, the method returns `-1` (i.e., an invalid index).
+
+    Parameters
+    ----------
+    M: integer
+        Number of rows in `A`.
+
+    N: integer
+        Number of columns in `A`.
+
+    A: Float32Array
+        Input matrix `A`.
+
+    sa1: integer
+        Stride of the first dimension of `A`.
+
+    sa2: integer
+        Stride of the second dimension of `A`.
+
+    oa: integer
+        Starting index for `A`.
+
+    x: Float32Array
+        Search vector.
+
+    sx: integer
+        Stride length for `x`.
+
+    ox: integer
+        Starting index for `x`.
+
+    w: Uint8Array
+        Workspace array for tracking row match candidates. This parameter
+        is ignored if the input matrix is stored in row-major order.
+
+    sw: integer
+        Stride length for `w`.
+
+    ow: integer
+        Starting index for `w`.
+
+    Returns
+    -------
+    out: integer
+        Row index.
+
+    Examples
+    --------
+    > var A = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var x = new {{alias:@stdlib/array/float32}}( [ 2.0, 4.0 ] );
+    > var w = new {{alias:@stdlib/array/uint8}}( 2 );
+    > {{alias}}.ndarray( 2, 2, A, 1, 2, 0, x, 1, 0, w, 1, 0 )
+    1
+
+    See Also
+    --------
