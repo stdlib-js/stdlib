@@ -69,7 +69,8 @@
         "@stdlib/constants/float64/e",
         "@stdlib/constants/float64/gamma-lanczos-g",
         "@stdlib/constants/float32/smallest-normal",
-        "@stdlib/constants/float64/max-nth-factorial"
+        "@stdlib/constants/float64/max-nth-factorial",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -111,7 +112,8 @@
         "@stdlib/constants/float64/e",
         "@stdlib/constants/float64/gamma-lanczos-g",
         "@stdlib/constants/float32/smallest-normal",
-        "@stdlib/constants/float64/max-nth-factorial"
+        "@stdlib/constants/float64/max-nth-factorial",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -153,7 +155,8 @@
         "@stdlib/constants/float64/e",
         "@stdlib/constants/float64/gamma-lanczos-g",
         "@stdlib/constants/float32/smallest-normal",
-        "@stdlib/constants/float64/max-nth-factorial"
+        "@stdlib/constants/float64/max-nth-factorial",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

@@ -21,6 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 import { NumericArray, Collection, AccessorArrayLike } from '@stdlib/types/array';
+
 /**
 * Input array.
 */

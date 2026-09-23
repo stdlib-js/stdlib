@@ -1,0 +1,27 @@
+
+{{alias}}( dtypes )
+    Resolves a list of data type strings.
+
+    If the function is unable to resolve a data type string for a provided data
+    type, the corresponding element in the returned array will be `null`.
+
+    Parameters
+    ----------
+    dtypes: Array<string|DataType>
+        List of data types.
+
+    Returns
+    -------
+    out: Array<string|null>
+        Results.
+
+    Examples
+    --------
+    > var out = {{alias}}( [ 'float32', 'float64' ] )
+    [...]
+    > out = {{alias}}( [ 'foo', 'bar' ] )
+    [ null, null ]
+
+    See Also
+    --------
+

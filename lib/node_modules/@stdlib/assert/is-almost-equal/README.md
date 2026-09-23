@@ -92,8 +92,6 @@ bool = isAlmostEqual( z1, z2, 0 );
 
 <section class="notes">
 
-## Notes
-
 </section>
 
 <!-- /.notes -->

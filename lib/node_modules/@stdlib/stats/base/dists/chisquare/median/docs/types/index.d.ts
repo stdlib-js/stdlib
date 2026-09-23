@@ -37,11 +37,11 @@
 * // returns ~1.386
 *
 * @example
-* var k = median( -0.2 );
+* var v = median( -0.2 );
 * // returns NaN
 *
 * @example
-* var k = median( NaN );
+* var v = median( NaN );
 * // returns NaN
 */
 declare function median( k: number ): number;

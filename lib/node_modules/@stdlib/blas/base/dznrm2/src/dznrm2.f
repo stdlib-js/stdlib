@@ -16,7 +16,7 @@
 ! limitations under the License.
 !<
 
-!> Computes the L2-norm of a complex double-precision floating-point vector.
+!> Computes the L2-norm of a double-precision complex floating-point vector.
 !
 ! ## Notes
 !

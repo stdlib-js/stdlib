@@ -24,6 +24,7 @@ var resolve = require( 'path' ).resolve;
 var bench = require( '@stdlib/bench' );
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
+var format = require( '@stdlib/string/format' );
 var base = require( '@stdlib/math/base/special/cabs2' );
 var tryRequire = require( '@stdlib/utils/try-require' );
 var pkg = require( './../package.json' ).name;
@@ -39,7 +40,7 @@ var opts = {
 
 // MAIN //
 
-bench( pkg+'::stdlib:math/base/special/cabs2:value=complex_number', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:math/base/special/cabs2:value=complex_number', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var i;
@@ -69,7 +70,7 @@ bench( pkg+'::stdlib:math/base/special/cabs2:value=complex_number', opts, functi
 
 // TODO: add math/special/abs2 benchmarks
 
-bench( pkg+'::mathjs:square:value=complex_number', opts, function benchmark( b ) {
+bench( format( '%s::mathjs:square:value=complex_number', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var i;

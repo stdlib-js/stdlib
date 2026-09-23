@@ -1,0 +1,12 @@
+
+{{alias}}
+    One fourth times the mathematical constant `π`.
+
+    Examples
+    --------
+    > {{alias}}
+    0.78515625
+
+    See Also
+    --------
+

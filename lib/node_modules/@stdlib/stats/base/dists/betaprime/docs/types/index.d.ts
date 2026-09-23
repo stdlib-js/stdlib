@@ -130,10 +130,10 @@ interface Namespace {
 	* var mylogcdf = ns.logcdf.factory( 0.5, 0.5 );
 	*
 	* var y = mylogcdf( 0.8 );
-	* // returns ~-0.766
+	* // returns ~-0.767
 	*
 	* y = mylogcdf( 0.3 );
-	* // returns ~-1.142
+	* // returns ~-1.143
 	*/
 	logcdf: typeof logcdf;
 
@@ -155,10 +155,10 @@ interface Namespace {
 	* var mylogpdf = ns.logpdf.factory( 0.5, 0.5 );
 	*
 	* var y = mylogpdf( 0.8 );
-	* // returns ~-0.228
+	* // returns ~-1.62
 	*
 	* y = mylogpdf( 0.3 );
-	* // returns ~-0.364
+	* // returns ~-0.805
 	*/
 	logpdf: typeof logpdf;
 
@@ -295,7 +295,7 @@ interface Namespace {
 	* var myQuantile = ns.quantile.factory( 2.0, 2.0 );
 	*
 	* var y = myQuantile( 0.8 );
-	* // returns ~2.482
+	* // returns ~2.483
 	*
 	* y = myQuantile( 0.4 );
 	* // returns ~0.763

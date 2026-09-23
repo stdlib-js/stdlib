@@ -126,7 +126,7 @@ interface Namespace {
 	* Revives a JSON-serialized 64-bit complex number.
 	*
 	* @param key - key
-	* @param  value - value
+	* @param value - value
 	* @returns value or 64-bit complex number
 	*
 	* @example

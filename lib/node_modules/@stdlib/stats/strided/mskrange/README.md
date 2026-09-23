@@ -40,7 +40,7 @@ var mskrange = require( '@stdlib/stats/strided/mskrange' );
 
 #### mskrange( N, x, strideX, mask, strideMask )
 
-Computes the [range][range] of a strided array `x` according to a `mask`.
+Computes the [range][range] of a strided array according to a mask.
 
 ```javascript
 var x = [ 1.0, -2.0, 4.0, 2.0 ];
@@ -88,7 +88,7 @@ var v = mskrange( 4, x1, 2, mask1, 2 );
 
 #### mskrange.ndarray( N, x, strideX, offsetX, mask, strideMask, offsetMask )
 
-Computes the [range][range] of a strided array according to a `mask` and using alternative indexing semantics.
+Computes the [range][range] of a strided array according to a mask and using alternative indexing semantics.
 
 ```javascript
 var x = [ 1.0, -2.0, 4.0, 2.0 ];

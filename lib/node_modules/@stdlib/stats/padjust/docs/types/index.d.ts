@@ -33,7 +33,7 @@ type Method = 'bh' | 'bonferroni' | 'by' | 'holm' | 'hommel';
 *     -   **bh**: Benjamini-Hochberg procedure controlling the False Discovery Rate (FDR).
 *     -   **bonferroni**: Bonferroni correction fixing the family-wise error rate by multiplying the p-values with the number of comparisons. The Bonferroni correction is usually a too conservative adjustment compared to the others.
 *     -   **by**: Procedure by Benjamini & Yekutieli for controlling the False Discovery Rate (FDR) under dependence.
-*     -   **holm**: Hommel's method controlling family-wise error rate. It is uniformly more powerful than the Bonferroni correction.
+*     -   **holm**: Holm's method (Holm-Bonferroni) controlling the family-wise error rate. It is uniformly more powerful than the Bonferroni correction.
 *     -   **hommel**: Hommel's method, which is valid when hypothesis tests are independent. It is more expensive to compute than the other methods.
 *
 * -   By default, the number of comparisons for which the p-values should be corrected is equal to the number of provided p-values. Alternatively, it is possible to set `comparisons` to a number greater than the length of `pvals`. In that case, the methods assume `comparisons - pvals.length` unobserved p-values that are greater than all observed p-values (for Holm's method and the Bonferroni correction) or equal to `1` for the remaining methods.

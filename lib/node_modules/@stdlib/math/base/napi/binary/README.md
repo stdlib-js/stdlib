@@ -848,6 +848,73 @@ The function accepts the following arguments:
 void stdlib_math_base_napi_fi_f( napi_env env, napi_callback_info info, float (*fcn)( float, int32_t ) );
 ```
 
+#### STDLIB_MATH_BASE_NAPI_MODULE_HH_H( fcn )
+
+Macro for registering a Node-API module exporting an interface for invoking a binary function accepting and returning half-precision floating-point numbers.
+
+```c
+#include "stdlib/number/float64/base/to_float16.h"
+#include "stdlib/number/float16/base/to_float64.h"
+#include "stdlib/number/float16/ctor.h"
+
+static stdlib_float16_t add( const stdlib_float16_t x, const stdlib_float16_t y ) {
+    double z = stdlib_base_float16_to_float64( x ) + stdlib_base_float16_to_float64( y );
+    return stdlib_base_float64_to_float16( z );
+}
+
+// ...
+
+// Register a Node-API module:
+STDLIB_MATH_BASE_NAPI_MODULE_HH_H( add );
+```
+
+The macro expects the following arguments:
+
+-   **fcn**: `stdlib_float16_t (*fcn)( stdlib_float16_t, stdlib_float16_t )` binary function.
+
+When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
+
+#### stdlib_math_base_napi_hh_h( env, info, fcn )
+
+Invokes a binary function accepting and returning half-precision floating-point numbers.
+
+```c
+#include "stdlib/number/float16/ctor.h"
+#include "stdlib/number/float64/base/to_float16.h"
+#include "stdlib/number/float16/base/to_float64.h"
+#include <node_api.h>
+
+static stdlib_float16_t add( const stdlib_float16_t x, const stdlib_float16_t y ) {
+    double z = stdlib_base_float16_to_float64( x ) + stdlib_base_float16_to_float64( y );
+    return stdlib_base_float64_to_float16( z );
+}
+
+// ...
+
+/**
+* Receives JavaScript callback invocation data.
+*
+* @param env    environment under which the function is invoked
+* @param info   callback data
+* @return       Node-API value
+*/
+napi_value addon( napi_env env, napi_callback_info info ) {
+    return stdlib_math_base_napi_hh_h( env, info, add );
+}
+
+// ...
+```
+
+The function accepts the following arguments:
+
+-   **env**: `[in] napi_env` environment under which the function is invoked.
+-   **info**: `[in] napi_callback_info` callback data.
+-   **fcn**: `[in] stdlib_float16_t (*fcn)( stdlib_float16_t, stdlib_float16_t )` binary function.
+
+```c
+void stdlib_math_base_napi_hh_h( napi_env env, napi_callback_info info, stdlib_float16_t (*fcn)( stdlib_float16_t, stdlib_float16_t ) );
+```
+
 #### STDLIB_MATH_BASE_NAPI_MODULE_ID_D( fcn )
 
 Macro for registering a Node-API module exporting an interface invoking a binary function accepting a signed 32-bit integer and a double-precision floating-point number and returning a double-precision floating-point number.

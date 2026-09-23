@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Computes the cosecant of a degree.
+* Computes the cosecant of an angle measured in degrees.
 */
 double stdlib_base_cscd( const double x );
 

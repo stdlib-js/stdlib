@@ -20,24 +20,29 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ndarray } from '@stdlib/types/ndarray';
+import { typedndarray } from '@stdlib/types/ndarray';
 
 /**
 * Computes the median value of a sorted one-dimensional ndarray.
 *
-* @param arrays - array-like object containing a sorted input ndarray
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a sorted one-dimensional input ndarray.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns median value
 *
 * @example
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var vector = require( '@stdlib/ndarray/vector/ctor' );
 *
-* var xbuf = [ 1.0, 2.0, 3.0 ];
-* var x = new ndarray( 'generic', xbuf, [ 3 ], [ 1 ], 0, 'row-major' );
+* var x = vector( [ 1.0, 2.0, 3.0 ], 'generic' );
 *
 * var v = mediansorted( [ x ] );
 * // returns 2.0
 */
-declare function mediansorted<T extends ndarray = ndarray>( arrays: [ T ] ): number;
+declare function mediansorted( arrays: [ typedndarray<number> ] ): number;
 
 
 // EXPORTS //

@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute `sqrt( 1 + x ) - 1`.
 
+<section class="intro">
+
+The function computes `sqrt(1+x) - 1` accurately for small `x`
+
+<!-- <equation class="equation" label="eq:sqrt1pm1_function" align="center" raw="y = \sqrt{1 + x} - 1" alt="Square root of one plus x minus one"> -->
+
+```math
+y = \sqrt{1 + x} - 1
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
