@@ -161,15 +161,15 @@ interface Namespace {
 	* @returns evaluated logCDF
 	*
 	* @example
-	* var y = ns.logcdf( 5.0, 0.0, 4.0 );
+	* var y = ns.logcdf( 5.0, 2.0, 4.0 );
 	* // returns 0.0
 	*
-	* var mylogcdf = ns.logcdf.factory( 0.0, 10.0 );
+	* var mylogcdf = ns.logcdf.factory( 5.0, 10.0 );
 	* y = mylogcdf( 0.5 );
-	* // returns ~-1.938
+	* // returns ~-0.094
 	*
-	* y = mylogcdf( 8.0 );
-	* // returns ~-0.35
+	* y = mylogcdf( 5.0 );
+	* // returns 0.0
 	*/
 	logcdf: typeof logcdf;
 
@@ -304,7 +304,7 @@ interface Namespace {
 	* var myMGF = ns.mgf.factory( 0.5, 0.5 );
 	*
 	* y = myMGF( 0.8 );
-	* // returns ~1.522
+	* // returns ~1.552
 	*
 	* y = myMGF( 0.3 );
 	* // returns ~1.168
@@ -398,7 +398,7 @@ interface Namespace {
 	* // returns ~0.713
 	*
 	* y = myQuantile( 0.4 );
-	* // returns ~0.5
+	* // returns ~0.433
 	*/
 	quantile: typeof quantile;
 

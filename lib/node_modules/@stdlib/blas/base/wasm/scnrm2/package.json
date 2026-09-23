@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/blas/base/wasm/scnrm2",
   "version": "0.0.0",
-  "description": "Multiply a vector `x` by a scalar `alpha`.",
+  "description": "Calculate the L2-norm of a single-precision complex floating-point vector.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

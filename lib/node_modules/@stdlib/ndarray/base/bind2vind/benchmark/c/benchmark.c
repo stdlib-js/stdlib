@@ -647,112 +647,112 @@ int main( void ) {
 	print_version();
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s:mode=error,order=row-major\n", NAME );
+		printf( "# c::%s:mode=error,order=row-major\n", NAME );
 		elapsed = benchmark1();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s:mode=error,order=column-major\n", NAME );
+		printf( "# c::%s:mode=error,order=column-major\n", NAME );
 		elapsed = benchmark2();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s:mode=error,order=row-major,offset=0\n", NAME );
+		printf( "# c::%s:mode=error,order=row-major,offset=0\n", NAME );
 		elapsed = benchmark3();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s:mode=error,order=column-major,offset=0\n", NAME );
+		printf( "# c::%s:mode=error,order=column-major,offset=0\n", NAME );
 		elapsed = benchmark4();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s:mode=wrap,order=row-major\n", NAME );
+		printf( "# c::%s:mode=wrap,order=row-major\n", NAME );
 		elapsed = benchmark5();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s:mode=wrap,order=column-major\n", NAME );
+		printf( "# c::%s:mode=wrap,order=column-major\n", NAME );
 		elapsed = benchmark6();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s:mode=wrap,order=row-major,offset=0\n", NAME );
+		printf( "# c::%s:mode=wrap,order=row-major,offset=0\n", NAME );
 		elapsed = benchmark7();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s:mode=wrap,order=column-major,offset=0\n", NAME );
+		printf( "# c::%s:mode=wrap,order=column-major,offset=0\n", NAME );
 		elapsed = benchmark8();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s:mode=clamp,order=row-major\n", NAME );
+		printf( "# c::%s:mode=clamp,order=row-major\n", NAME );
 		elapsed = benchmark9();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s:mode=clamp,order=column-major\n", NAME );
+		printf( "# c::%s:mode=clamp,order=column-major\n", NAME );
 		elapsed = benchmark10();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s:mode=clamp,order=row-major,offset=0\n", NAME );
+		printf( "# c::%s:mode=clamp,order=row-major,offset=0\n", NAME );
 		elapsed = benchmark11();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s:mode=clamp,order=column-major,offset=0\n", NAME );
+		printf( "# c::%s:mode=clamp,order=column-major,offset=0\n", NAME );
 		elapsed = benchmark12();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s:mode=normalize,order=row-major\n", NAME );
+		printf( "# c::%s:mode=normalize,order=row-major\n", NAME );
 		elapsed = benchmark13();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s:mode=normalize,order=column-major\n", NAME );
+		printf( "# c::%s:mode=normalize,order=column-major\n", NAME );
 		elapsed = benchmark14();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s:mode=normalize,order=row-major,offset=0\n", NAME );
+		printf( "# c::%s:mode=normalize,order=row-major,offset=0\n", NAME );
 		elapsed = benchmark15();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s:mode=normalize,order=column-major,offset=0\n", NAME );
+		printf( "# c::%s:mode=normalize,order=column-major,offset=0\n", NAME );
 		elapsed = benchmark16();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );

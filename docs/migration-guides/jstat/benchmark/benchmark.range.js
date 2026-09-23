@@ -24,6 +24,7 @@ var resolve = require( 'path' ).resolve;
 var bench = require( '@stdlib/bench' );
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var randu = require( '@stdlib/random/base/randu' );
+var format = require( '@stdlib/string/format' );
 var pow = require( '@stdlib/math/base/special/pow' );
 var Float64Array = require( '@stdlib/array/float64' );
 var tryRequire = require( '@stdlib/utils/try-require' );
@@ -57,6 +58,12 @@ function createBenchmark( len ) {
 	}
 	return benchmark;
 
+	/**
+	* Benchmark function.
+	*
+	* @private
+	* @param {Benchmark} b - benchmark instance
+	*/
 	function benchmark( b ) {
 		var v;
 		var i;
@@ -98,7 +105,7 @@ function main() {
 	for ( i = min; i <= max; i++ ) {
 		len = pow( 10, i );
 		f = createBenchmark( len );
-		bench( pkg+'::jstat:range:len='+len, opts, f );
+		bench( format( '%s::jstat:range:len=%d', pkg, len ), opts, f );
 	}
 }
 

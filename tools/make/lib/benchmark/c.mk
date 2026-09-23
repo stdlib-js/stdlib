@@ -114,11 +114,13 @@ benchmark-c-files:
 #/
 benchmark-random-c: $(NODE_MODULES)
 	$(QUIET) $(MAKE) -f $(this_file) -s list-random-lib-pkgs PACKAGES_PATTERN='manifest.json' | while read -r pkg; do \
-		echo ""; \
-		echo "Running benchmark: $$pkg"; \
-		NODE_ENV="$(NODE_ENV_BENCHMARK)" \
-		NODE_PATH="$(NODE_PATH_BENCHMARK)" \
-		$(MAKE) -f $(this_file) benchmark-c BENCHMARKS_FILTER="$$pkg/.*" || exit 1; \
+		if find "$$pkg/benchmark" -name "*.c" 2>/dev/null | grep -q .; then \
+			echo ""; \
+			echo "Running benchmark: $$pkg"; \
+			NODE_ENV="$(NODE_ENV_BENCHMARK)" \
+			NODE_PATH="$(NODE_PATH_BENCHMARK)" \
+			$(MAKE) -f $(this_file) benchmark-c BENCHMARKS_FILTER="$$pkg/.*" || exit 1; \
+		fi; \
 	done
 
 .PHONY: benchmark-random-c

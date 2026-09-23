@@ -88,11 +88,13 @@ static double tic( void ) {
 */
 static double benchmark1( int iterations, int N ) {
 	double elapsed;
-	double A[ N*N ];
-	double x[ N ];
+	double *A;
+	double *x;
 	double t;
 	int i;
 
+	x = (double *)malloc( N * sizeof( double ) );
+	A = (double *)malloc( N * N * sizeof( double ) );
 	stdlib_strided_dfill( N, 1.0, x, 1 );
 	stdlib_strided_dfill( N*N, 1.0, A, 1 );
 	t = tic();
@@ -107,6 +109,8 @@ static double benchmark1( int iterations, int N ) {
 	if ( A[ i%(N*2) ] != A[ i%(N*2) ] ) {
 		printf( "should not return NaN\n" );
 	}
+	free( x );
+	free( A );
 	return elapsed;
 }
 
@@ -119,11 +123,13 @@ static double benchmark1( int iterations, int N ) {
 */
 static double benchmark2( int iterations, int N ) {
 	double elapsed;
-	double A[ N*N ];
-	double x[ N ];
+	double *A;
+	double *x;
 	double t;
 	int i;
 
+	x = (double *)malloc( N * sizeof( double ) );
+	A = (double *)malloc( N * N * sizeof( double ) );
 	stdlib_strided_dfill( N, 1.0, x, 1 );
 	stdlib_strided_dfill( N*N, 1.0, A, 1 );
 	t = tic();
@@ -138,6 +144,8 @@ static double benchmark2( int iterations, int N ) {
 	if ( A[ i%(N*2) ] != A[ i%(N*2) ] ) {
 		printf( "should not return NaN\n" );
 	}
+	free( x );
+	free( A );
 	return elapsed;
 }
 

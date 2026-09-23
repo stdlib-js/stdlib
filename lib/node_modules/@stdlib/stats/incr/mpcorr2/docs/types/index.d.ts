@@ -21,7 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 /**
-* If provided arguments, returns an updated moving squared sample correlation coefficient.
+* If provided input values, the accumulator function returns an updated moving squared sample correlation coefficient. If not provided input values, the accumulator function returns the current moving squared sample correlation coefficient.
 *
 * ## Notes
 *
@@ -29,7 +29,7 @@
 *
 * @param x - value
 * @param y - value
-* @returns updated moving squared sample correlation coefficient
+* @returns updated moving squared sample correlation coefficient or null
 */
 type accumulator = ( x?: number, y?: number ) => number | null;
 

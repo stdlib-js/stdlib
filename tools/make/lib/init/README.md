@@ -26,7 +26,7 @@ limitations under the License.
 
 <section class="intro">
 
-This directory contains [`make`][make] rules for initializing the project development environment (e.g., adding [Git][git] hooks, installing custom ESLint plugins, etc).
+This directory contains [`make`][make] rules for initializing the project development environment (e.g., adding [Git][git] hooks).
 
 </section>
 
@@ -58,50 +58,6 @@ $ make init
 
 * * *
 
-### ESLint
-
-#### init-eslint-rules-plugin
-
-Initializes custom [ESLint][eslint] rules.
-
-<!-- run-disable -->
-
-```bash
-$ make init-eslint-rules-plugin
-```
-
-#### init-eslint-plugins
-
-Initializes custom [ESLint][eslint] plugins.
-
-<!-- run-disable -->
-
-```bash
-$ make init-eslint-plugins
-```
-
-#### clean-eslint-rules-plugin
-
-Removes custom [ESLint][eslint] rules.
-
-<!-- run-disable -->
-
-```bash
-$ make clean-eslint-rules-plugin
-```
-
-#### clean-eslint-plugins
-
-Removes custom [ESLint][eslint] plugins.
-
-<!-- run-disable -->
-
-```bash
-$ make clean-eslint-plugins
-```
-
-* * *
-
 ### Git
 
 #### init-git-hooks
@@ -128,6 +84,22 @@ $ make init-git-hooks
 
 <!-- /.notes -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for examples. -->
+
+<section class="examples">
+
+</section>
+
+<!-- /.examples -->
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
@@ -137,8 +109,6 @@ $ make init-git-hooks
 [git]: https://git-scm.com/
 
 [git-hooks]: https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks
-
-[eslint]: https://eslint.org/
 
 </section>
 

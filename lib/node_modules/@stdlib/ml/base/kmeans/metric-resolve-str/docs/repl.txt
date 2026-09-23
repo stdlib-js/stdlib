@@ -1,0 +1,25 @@
+
+{{alias}}( value )
+    Returns the distance metric string associated with a supported k-means
+    distance metric value.
+
+    Parameters
+    ----------
+    value: any
+        Distance metric value.
+
+    Returns
+    -------
+    out: string|null
+        Distance metric string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'cosine' )
+    'cosine'
+    > out = {{alias}}( {{alias:@stdlib/ml/base/kmeans/metric-str2enum}}( 'cosine' ) )
+    'cosine'
+
+    See Also
+    --------
+

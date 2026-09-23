@@ -1,0 +1,31 @@
+
+{{alias}}( arrays )
+    Circularly shifts the elements of a one-dimensional double-precision
+    floating-point ndarray by a specified number of positions.
+
+    The input ndarray is shifted *in-place* (i.e., the input ndarray is
+    *mutated*).
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a zero-dimensional ndarray specifying the number of positions to
+        shift.
+
+    Returns
+    -------
+    out: ndarray
+        Input ndarray.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/ndarray/vector/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var k = {{alias:@stdlib/ndarray/from-scalar}}( 2, { 'dtype': 'generic' } );
+    > {{alias}}( [ x, k ] )
+    <ndarray>[ 3.0, 4.0, 1.0, 2.0 ]
+
+    See Also
+    --------

@@ -1,0 +1,84 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/unary",
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/math/base/special/log1pf",
+        "@stdlib/math/base/special/sqrtf",
+        "@stdlib/math/base/special/lnf",
+        "@stdlib/constants/float32/ln-two"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/math/base/special/log1pf",
+        "@stdlib/math/base/special/sqrtf",
+        "@stdlib/math/base/special/lnf",
+        "@stdlib/constants/float32/ln-two"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/math/base/special/log1pf",
+        "@stdlib/math/base/special/sqrtf",
+        "@stdlib/math/base/special/lnf",
+        "@stdlib/constants/float32/ln-two"
+      ]
+    }
+  ]
+}
