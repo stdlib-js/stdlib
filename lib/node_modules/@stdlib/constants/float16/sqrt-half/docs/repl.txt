@@ -1,0 +1,12 @@
+
+{{alias}}
+    Square root of `1/2` as a half-precision floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    0.70703125
+
+    See Also
+    --------
+

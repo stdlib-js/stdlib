@@ -38,7 +38,7 @@ var mskmin = require( '@stdlib/stats/strided/mskmin' );
 
 #### mskmin( N, x, strideX, mask, strideMask )
 
-Computes the minimum value of a strided array `x` according to a `mask`.
+Computes the minimum value of a strided array according to a mask.
 
 ```javascript
 var x = [ 1.0, -2.0, -4.0, 2.0 ];
@@ -86,7 +86,7 @@ var v = mskmin( 4, x1, 2, mask1, 2 );
 
 #### mskmin.ndarray( N, x, strideX, offsetX, mask, strideMask, offsetMask )
 
-Computes the minimum value of a strided array according to a `mask` and using alternative indexing semantics.
+Computes the minimum value of a strided array according to a mask and using alternative indexing semantics.
 
 ```javascript
 var x = [ 1.0, -2.0, -4.0, 2.0 ];

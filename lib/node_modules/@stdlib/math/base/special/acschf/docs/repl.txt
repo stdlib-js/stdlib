@@ -1,0 +1,32 @@
+
+{{alias}}( x )
+    Computes the hyperbolic arccosecant of a single-precision floating-point
+    number.
+
+    If `x` is zero, the function returns positive or negative infinity,
+    depending on the sign of `x`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Hyperbolic arccosecant.
+
+    Examples
+    --------
+    > var y = {{alias}}( 1.0 )
+    ~0.881
+    > y = {{alias}}( -1.0 )
+    ~-0.881
+    > y = {{alias}}( 0.0 )
+    Infinity
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

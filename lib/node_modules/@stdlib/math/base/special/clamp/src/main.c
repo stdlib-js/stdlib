@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/math/base/special/clamp.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/assert/is_negative_zero.h"
 
@@ -42,7 +43,7 @@ double stdlib_base_clamp( const double v, const double min, const double max ) {
 		stdlib_base_is_nan( min ) ||
 		stdlib_base_is_nan( max )
 	) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	// Simple cases...
 	if ( v < min ) {

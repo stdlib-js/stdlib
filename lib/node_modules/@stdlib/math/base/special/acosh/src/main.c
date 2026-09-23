@@ -36,6 +36,7 @@
 #include "stdlib/math/base/special/sqrt.h"
 #include "stdlib/math/base/special/ln.h"
 #include "stdlib/constants/float64/ln_two.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdint.h>
 
 static const double HUGE = 1 << 28; // 2**28
@@ -79,7 +80,7 @@ static const double HUGE = 1 << 28; // 2**28
 double stdlib_base_acosh( const double x ) {
 	double t;
 	if ( stdlib_base_is_nan( x ) || x < 1.0 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( x == 1.0 ) {
 		return 0.0;

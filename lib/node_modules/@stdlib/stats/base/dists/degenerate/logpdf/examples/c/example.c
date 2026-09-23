@@ -35,6 +35,6 @@ int main( void ) {
 		x = random_uniform( 0.0, 5.0 );
 		mu = random_uniform( 0.0, 5.0 );
 		y = stdlib_base_dists_degenerate_logpdf( x, mu );
-		printf( "x: %lf, µ: %lf, ln(f(x;µ)): %lf\n", x, mu, y );
+		printf( "x: %lf, μ: %lf, ln(f(x;μ)): %lf\n", x, mu, y );
 	}
 }

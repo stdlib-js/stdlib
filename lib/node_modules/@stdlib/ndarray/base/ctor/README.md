@@ -510,11 +510,44 @@ var d = arr.data;
 
 For zero-dimensional arrays, the first, and **only**, argument should be the value `v` to set. The method returns the `ndarray` instance.
 
+<a name="method-to-locale-string"></a>
+
+#### ndarray.prototype.toLocaleString( \[locales\[, options]] )
+
+Serializes an `ndarray` as a locale-specific string.
+
+```javascript
+// Specify the array configuration:
+var buffer = [ 1234.567, 9876.543, 1111.222, 3333.444 ];
+var shape = [ 2, 2 ];
+var order = 'row-major';
+var strides = [ 2, 1 ];
+var offset = 0;
+
+// Create a new ndarray:
+var arr = ndarray( 'generic', buffer, shape, strides, offset, order );
+
+// Serialize to a locale-specific string:
+var str = arr.toLocaleString( 'en-US' );
+// returns "ndarray( 'generic', [ 1,234.567, 9,876.543, 1,111.222, 3,333.444 ], [ 2, 2 ], [ 2, 1 ], 0, 'row-major' )"
+
+// Use German locale:
+str = arr.toLocaleString( 'de-DE' );
+// returns "ndarray( 'generic', [ 1.234,567, 9.876,543, 1.111,222, 3.333,444 ], [ 2, 2 ], [ 2, 1 ], 0, 'row-major' )"
+```
+
+The method accepts the following arguments:
+
+-   **locales**: a string with a BCP 47 language tag or an array of such strings.
+-   **options**: configuration properties.
+
+The method does **not** serialize data outside of the buffer region defined by the array configuration.
+
 <a name="method-to-string"></a>
 
 #### ndarray.prototype.toString()
 
-Serializes an `ndarray` as a `string`.
+Serializes an `ndarray` as a string.
 
 ```javascript
 // Specify the array configuration:

@@ -1,0 +1,31 @@
+
+{{alias}}( x )
+    Reinterprets a boolean ndarray as an unsigned 8-bit integer ndarray.
+
+    The returned ndarray is a view on the input ndarray data buffer.
+
+    The returned ndarray is a "base" ndarray, and, thus, the returned ndarray
+    does not perform bounds checking or afford any of the guarantees of the
+    non-base ndarray constructor. The primary intent of this function is to
+    reinterpret an ndarray-like object within internal implementations and to
+    do so with minimal overhead.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Unsigned 8-bit integer ndarray view.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/base/zeros}}( 'bool', [ 2, 2 ], 'row-major' );
+    > var out = {{alias}}( x )
+    <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
+
+    See Also
+    --------
+

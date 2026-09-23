@@ -16,41 +16,41 @@
 * limitations under the License.
 */
 
-import stdev = require( './index' );
+import variance = require( './index' );
 
 
 // TESTS //
 
 // The function returns a number...
 {
-	stdev( 8, 5 ); // $ExpectType number
+	variance( 8, 5 ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided values other than two numbers...
 {
-	stdev( true, 3 ); // $ExpectError
-	stdev( false, 2 ); // $ExpectError
-	stdev( '5', 1 ); // $ExpectError
-	stdev( [], 1 ); // $ExpectError
-	stdev( {}, 2 ); // $ExpectError
-	stdev( ( x: number ): number => x, 2 ); // $ExpectError
+	variance( true, 3 ); // $ExpectError
+	variance( false, 2 ); // $ExpectError
+	variance( '5', 1 ); // $ExpectError
+	variance( [], 1 ); // $ExpectError
+	variance( {}, 2 ); // $ExpectError
+	variance( ( x: number ): number => x, 2 ); // $ExpectError
 
-	stdev( 9, true ); // $ExpectError
-	stdev( 9, false ); // $ExpectError
-	stdev( 5, '5' ); // $ExpectError
-	stdev( 8, [] ); // $ExpectError
-	stdev( 9, {} ); // $ExpectError
-	stdev( 8, ( x: number ): number => x ); // $ExpectError
+	variance( 9, true ); // $ExpectError
+	variance( 9, false ); // $ExpectError
+	variance( 5, '5' ); // $ExpectError
+	variance( 8, [] ); // $ExpectError
+	variance( 9, {} ); // $ExpectError
+	variance( 8, ( x: number ): number => x ); // $ExpectError
 
-	stdev( [], true ); // $ExpectError
-	stdev( {}, false ); // $ExpectError
-	stdev( false, '5' ); // $ExpectError
-	stdev( {}, [] ); // $ExpectError
-	stdev( '5', ( x: number ): number => x ); // $ExpectError
+	variance( [], true ); // $ExpectError
+	variance( {}, false ); // $ExpectError
+	variance( false, '5' ); // $ExpectError
+	variance( {}, [] ); // $ExpectError
+	variance( '5', ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided insufficient arguments...
 {
-	stdev(); // $ExpectError
-	stdev( 3 ); // $ExpectError
+	variance(); // $ExpectError
+	variance( 3 ); // $ExpectError
 }
