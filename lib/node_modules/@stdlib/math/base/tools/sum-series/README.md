@@ -22,6 +22,12 @@ limitations under the License.
 
 > Compute the sum of an [infinite series][infinite-series].
 
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
@@ -145,6 +151,12 @@ function geometricSeriesClosure( x ) {
 </section>
 
 <!-- /.usage -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
 
 <section class="examples">
 
