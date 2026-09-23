@@ -31,7 +31,7 @@ Generate fixture data and write to file.
 # Examples
 
 ``` julia
-julia> x = linspace( -1000, 1000, 2001 );
+julia> x = range( -1000, stop = 1000, length = 2001 );
 julia> gen( x, \"data.json\" );
 ```
 """

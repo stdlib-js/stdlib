@@ -23,15 +23,9 @@
 
     Examples
     --------
-    > var xbuf = [ 1.0, 2.0, 2.0 ];
-    > var dt = 'generic';
-    > var sh = [ xbuf.length ];
-    > var sx = [ 1 ];
-    > var ox = 0;
-    > var ord = 'row-major';
-    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
-    > var v = {{alias:@stdlib/ndarray/from-scalar}}( 2.0, { 'dtype': dt } );
-    > var i = {{alias:@stdlib/ndarray/from-scalar}}( 0, { 'dtype': 'generic' } );
+    > var x = {{alias:@stdlib/ndarray/vector/ctor}}( [ 1.0, 2.0, 2.0 ], 'generic' );
+    > var v = {{alias:@stdlib/ndarray/from-scalar}}( 2.0, { 'dtype': 'generic' } );
+    > var i = {{alias:@stdlib/ndarray/from-scalar}}( 2, { 'dtype': 'generic' } );
     > {{alias}}( [ x, v, i ] )
     2
 

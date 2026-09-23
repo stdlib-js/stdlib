@@ -16,6 +16,8 @@
 * limitations under the License.
 */
 
+/* eslint-disable jsdoc/require-jsdoc */
+
 import mapArguments = require( './index' );
 
 // FUNCTIONS //

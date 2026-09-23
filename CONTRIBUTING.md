@@ -34,7 +34,7 @@ Woot woot! If you are new to stdlib, welcome! And thanks for your interest! Whil
 
 ### Issues
 
-When filing new [issues][stdlib-issues] and commenting on existing [issues][stdlib-issues] on this repository, please ensure that discussions are related to concrete technical issues. For general questions and help, consult the [FAQ][stdlib-faq] and visit the [Gitter][stdlib-gitter] channel.
+When filing new [issues][stdlib-issues] and commenting on existing [issues][stdlib-issues] on this repository, please ensure that discussions are related to concrete technical issues. For general questions and help, consult the [FAQ][stdlib-faq] and visit the [Zulip][stdlib-zulip] chat.
 
 **Before** filing a potential bug report,
 
@@ -87,7 +87,7 @@ If you have found a bug that you would like to fix,
 
 If you want to contribute a new feature or a breaking change to stdlib, be sure to
 
--   consult the [Gitter][stdlib-gitter] channel to discuss ideas and to gather feedback as to whether a feature would be better developed as an external package. Discussing the design upfront helps ensure that we're ready to accept your work.
+-   consult the [Zulip][stdlib-zulip] chat to discuss ideas and to gather feedback as to whether a feature would be better developed as an external package. Discussing the design upfront helps ensure that we're ready to accept your work.
 -   write an RFC (request for comments) detailing the proposed change and submit as an issue on the project GitHub issue tracker.
 -   wait for RFC approval.
 -   submit a [pull request][stdlib-pull-requests], making sure to adhere to the guidance set forth in the RFC.
@@ -449,7 +449,7 @@ Phew. While the above may be a lot to remember, even for what seem like minor ch
 
 [stdlib-code-coverage]: https://codecov.io/github/stdlib-js/stdlib/branch/develop
 
-[stdlib-gitter]: https://gitter.im/stdlib-js/stdlib
+[stdlib-zulip]: https://stdlib.zulipchat.com
 
 [stdlib-issues]: https://github.com/stdlib-js/stdlib/issues
 

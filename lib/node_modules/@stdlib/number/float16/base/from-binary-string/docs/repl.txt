@@ -1,0 +1,55 @@
+
+{{alias}}( bstr )
+    Creates a half-precision floating-point number from an IEEE 754 literal
+    bit representation.
+
+    Parameters
+    ----------
+    bstr: string
+        Literal bit representation.
+
+    Returns
+    -------
+    out: float
+        Half-precision floating-point number.
+
+    Examples
+    --------
+    > var bstr = '0100010000000000';
+    > var val = {{alias}}( bstr )
+    4.0
+    > bstr = '0100001001001000';
+    > val = {{alias}}( bstr )
+    ~3.140625
+    > bstr = '1110001111010000';
+    > val = {{alias}}( bstr )
+    -1000.0
+
+    // The function handles subnormals:
+    > bstr = '0000000000000001';
+    > val = {{alias}}( bstr )
+    ~5.96e-8
+    > bstr = '1000000000000001';
+    > val = {{alias}}( bstr )
+    ~-5.96e-8
+
+    // The function handles special values:
+    > bstr = '0000000000000000';
+    > val = {{alias}}( bstr )
+    0.0
+    > bstr = '1000000000000000';
+    > val = {{alias}}( bstr )
+    -0.0
+    > bstr = '0111110000000001';
+    > val = {{alias}}( bstr )
+    NaN
+    > bstr = '0111110000000000';
+    > val = {{alias}}( bstr )
+    Infinity
+    > bstr = '1111110000000000';
+    > val = {{alias}}( bstr )
+    -Infinity
+
+    See Also
+    --------
+

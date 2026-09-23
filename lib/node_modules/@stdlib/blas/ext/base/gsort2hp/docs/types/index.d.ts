@@ -39,7 +39,7 @@ interface Routine {
 	* @param x - first input array
 	* @param strideX - stride length for `x`
 	* @param y - second input array
-	* @param strideY - stride length for `x`
+	* @param strideY - stride length for `y`
 	* @returns `x`
 	*
 	* @example
@@ -65,7 +65,7 @@ interface Routine {
 	* @param strideX - stride length for `x`
 	* @param offsetX - starting index for `x`
 	* @param y - second input array
-	* @param strideY - stride length for `x`
+	* @param strideY - stride length for `y`
 	* @param offsetY - starting index for `y`
 	* @returns `x`
 	*
@@ -92,7 +92,7 @@ interface Routine {
 * @param x - first input array
 * @param strideX - stride length for `x`
 * @param y - second input array
-* @param strideY - stride length for `x`
+* @param strideY - stride length for `y`
 * @returns `x`
 *
 * @example

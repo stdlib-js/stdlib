@@ -5,7 +5,7 @@
     Parameters
     ----------
     arrays: ArrayLikeObject<ndarray>
-        Array-like object containing the following ndarrays in order:
+        Array-like object containing the following ndarrays:
 
         - a one-dimensional input ndarray.
         - a zero-dimensional output ndarray containing a results object.
@@ -23,25 +23,19 @@
     Examples
     --------
     // Create the input ndarray:
-    > var xbuf = [ 1.0, -2.0, 2.0 ];
-    > var dt = 'generic';
-    > var sh = [ xbuf.length ];
-    > var sx = [ 1 ];
-    > var ox = 0;
-    > var ord = 'row-major';
-    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
+    > var x = {{alias:@stdlib/ndarray/vector/ctor}}( [ 1.0, -2.0, 2.0 ], 'generic' );
 
     // Create the output ndarray:
     > var S = {{alias:@stdlib/stats/base/ztest/one-sample/results/float64}};
     > var Results = {{alias:@stdlib/array/struct-factory}}( S );
     > var obuf = new Results( 1 );
-    > var out = new {{alias:@stdlib/ndarray/ctor}}( S, obuf, [], [ 0 ], 0, ord );
+    > var out = new {{alias:@stdlib/ndarray/ctor}}( S, obuf, [], [ 0 ], 0, 'row-major' );
 
     // Specify the alternative hypothesis:
     > var alt = {{alias:@stdlib/ndarray/from-scalar}}( 'two-sided' );
 
     // Specify the significance level:
-    > var opts = { 'dtype': dt };
+    > var opts = { 'dtype': 'generic' };
     > var alpha = {{alias:@stdlib/ndarray/from-scalar}}( 0.05, opts );
 
     // Specify the mean under the null hypothesis:

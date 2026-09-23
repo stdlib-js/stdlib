@@ -164,6 +164,104 @@ logEachMap( 'H(%0.4f) = %0.4f', x, heaviside );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/heaviside.h"
+```
+
+#### stdlib_base_heaviside( x, continuity )
+
+Evaluates the [Heaviside function][heaviside-function] for a double-precision floating-point number.
+
+```c
+double y = stdlib_base_heaviside( 0.0, STDLIB_BASE_HEAVISIDE_CONTINUITY_HALF_MAXIMUM );
+// returns 0.5
+
+y = stdlib_base_heaviside( 0.0, STDLIB_BASE_HEAVISIDE_CONTINUITY_LEFT_CONTINUOUS );
+// returns 0.0
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **continuity**: `[in] enum STDLIB_BASE_HEAVISIDE_CONTINUITY` continuity option.
+
+The `continuity` parameter may be one of the following values:
+
+-   `STDLIB_BASE_HEAVISIDE_CONTINUITY_HALF_MAXIMUM`: if `x == 0`, the function returns `0.5`.
+-   `STDLIB_BASE_HEAVISIDE_CONTINUITY_LEFT_CONTINUOUS`: if `x == 0`, the function returns `0.0`.
+-   `STDLIB_BASE_HEAVISIDE_CONTINUITY_RIGHT_CONTINUOUS`: if `x == 0`, the function returns `1.0`.
+-   `STDLIB_BASE_HEAVISIDE_CONTINUITY_DISCONTINUOUS`: if `x == 0`, the function returns `NaN`.
+
+If provided a `continuity` argument which is not one of the enumeration constants listed above, the function returns `NaN` for `x == 0`, behaving like the discontinuous case.
+
+```c
+double stdlib_base_heaviside( const double x, const enum STDLIB_BASE_HEAVISIDE_CONTINUITY continuity );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/heaviside.h"
+#include <stdio.h>
+
+int main( void ) {
+    const double x[] = { -4.0, -3.0, -2.0, -1.0, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0 };
+
+    double y;
+    int i;
+    for ( i = 0; i < 10; i++ ) {
+        y = stdlib_base_heaviside( x[ i ], STDLIB_BASE_HEAVISIDE_CONTINUITY_HALF_MAXIMUM );
+        printf( "H(%lf) = %lf\n", x[ i ], y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

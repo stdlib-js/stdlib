@@ -118,7 +118,7 @@ declare function iterator2array<T = unknown, U = unknown, W = unknown>( iterator
 *
 * var out = new Float64Array( 10 );
 * var arr = iterator2array( iter, out );
-* // returns <Array>
+* // returns <Float64Array>
 */
 declare function iterator2array<T = unknown, U = unknown>( iterator: Iterator<T>, out: Collection<U> ): Collection<T | U>;
 
@@ -145,7 +145,7 @@ declare function iterator2array<T = unknown, U = unknown>( iterator: Iterator<T>
 *
 * var out = new Float64Array( 10 );
 * var arr = iterator2array( iter, out, scale );
-* // returns <Array>
+* // returns <Float64Array>
 */
 declare function iterator2array<T = unknown, U = unknown, V = unknown, W = unknown>( iterator: Iterator<T>, out: Collection<V>, mapFcn: MapFunction<T, U, W>, thisArg?: ThisParameterType<MapFunction<T, U, W>> ): Collection<U | V>;
 

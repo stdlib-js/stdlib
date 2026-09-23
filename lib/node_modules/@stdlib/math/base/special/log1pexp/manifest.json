@@ -39,7 +39,8 @@
         "@stdlib/math/base/napi/unary",
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/exp",
-        "@stdlib/math/base/special/log1p"
+        "@stdlib/math/base/special/log1p",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -55,7 +56,8 @@
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/exp",
-        "@stdlib/math/base/special/log1p"
+        "@stdlib/math/base/special/log1p",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -71,7 +73,8 @@
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/exp",
-        "@stdlib/math/base/special/log1p"
+        "@stdlib/math/base/special/log1p",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

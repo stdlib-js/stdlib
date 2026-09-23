@@ -21,6 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 import { NumericArray, Collection, AccessorArrayLike } from '@stdlib/types/array';
+
 /**
 * Input array.
 */
@@ -51,7 +52,7 @@ interface Routine {
 	* Adds a scalar constant to each strided array element and computes the sum using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
 	* @param strideX - stride length
 	* @param offsetX - starting index
@@ -70,7 +71,7 @@ interface Routine {
 * Adds a scalar constant to each strided array element and computes the sum.
 *
 * @param N - number of indexed elements
-* @param alpha - constant
+* @param alpha - scalar constant
 * @param x - input array
 * @param strideX - stride length
 * @returns sum

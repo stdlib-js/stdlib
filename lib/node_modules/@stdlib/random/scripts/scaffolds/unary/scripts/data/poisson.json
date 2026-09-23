@@ -1,0 +1,37 @@
+{
+  "alias": "poisson",
+  "pkg": "stdlib/random/poisson",
+  "base_pkg": "stdlib/random/base/poisson",
+
+  "param_1": "lambda",
+  "param_1_value": "2.0",
+  "param_1_value_aux": "10.0",
+  "param_1_desc": "mean parameter",
+  "param_1_dtype": "number",
+  "param_1_jsdoc_dtype": "PositiveNumber",
+  "param_1_dtype_kind": "real_and_generic",
+
+  "output_ts_dtype": "RealAndGenericDataType",
+  "output_ts_typed_ndarray": "realndarray",
+  "output_dtype_kind": "real_and_generic",
+  "output_dtype_policy": "real_and_generic",
+
+  "default_dtype": "float64",
+  "default_dtype_kind": "real",
+
+  "from_desc": "a Poisson distribution",
+  "readme_from_desc": "a [Poisson][@stdlib/random/base/poisson] distribution",
+
+  "readme_heading": "Poisson Random Numbers",
+  "readme_dtype_kind_desc": "a real",
+  "readme_dtype_kind_pkg": "stdlib/ndarray/dtypes",
+
+  "repl_text_main_desc": "Returns an ndarray containing pseudorandom numbers drawn from a Poisson distribution.",
+  "repl_text_assign_desc": "Fills an ndarray with pseudorandom numbers drawn from a Poisson distribution.",
+  "repl_text_factory_desc": "Returns a function for generating pseudorandom numbers drawn from a Poisson distribution.",
+
+  "repl_text_param_1_desc": "Mean parameter. If an ndarray, must be broadcast compatible with the specified array shape.",
+  "repl_text_assign_param_1_desc": "Mean parameter. If an ndarray, must be broadcast compatible with the provided output array.",
+
+  "keywords": "poisson,poiss,discrete"
+}

@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/math/base/special/wrap.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/trunc.h"
 #include "stdlib/math/base/special/fmod.h"
@@ -41,7 +42,7 @@ double stdlib_base_wrap( const double v, const double min, const double max ) {
 	double vc;
 
 	if ( stdlib_base_is_nan( v ) || stdlib_base_is_nan( min ) || stdlib_base_is_nan( max ) || max <= min ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	maxc = max;
 	minc = min;

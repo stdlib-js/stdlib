@@ -307,7 +307,7 @@ int main( void ) {
 
     // Print the result:
     for ( int i = 0; i < N*N; i++ ) {
-        printf( "A2[ %i ] = %lf\n", i, A[ i ] );
+        printf( "A2[ %i ] = %lf\n", i, A2[ i ] );
     }
 }
 ```
