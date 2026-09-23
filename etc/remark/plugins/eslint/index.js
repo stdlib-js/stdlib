@@ -27,15 +27,13 @@ var join = require( 'path' ).join;
 // VARIABLES //
 
 var etc = resolve( __dirname, '..', '..', '..' );
-var config = join( etc, 'eslint', '.eslintrc.markdown.js' );
+var config = join( etc, 'eslint', 'eslint.flat.config.markdown.js' );
 var eslint = resolve( etc, '..', 'lib', 'node_modules', '@stdlib', '_tools', 'remark', 'plugins', 'remark-lint-eslint' );
 var opts = {
 	'config': config,
 	'rules': {
 		'stdlib/doctest': 'error' // enable otherwise disabled lint rule
-	},
-	'ignore': false,
-	'useEslintrc': false
+	}
 };
 
 
