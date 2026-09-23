@@ -32,6 +32,8 @@ import { typedndarray } from '@stdlib/types/ndarray';
 *     -   a one-dimensional input ndarray.
 *     -   a zero-dimensional ndarray containing the search element.
 *     -   a zero-dimensional ndarray containing the scalar constant.
+*     -   a zero-dimensional ndarray containing the starting index (inclusive).
+*     -   a zero-dimensional ndarray containing the ending index (exclusive).
 *
 * -   When comparing elements, the function checks for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct (i.e., as `NaN !== NaN` always evaluates to `true`, `NaN` elements are always replaced), and `-0` and `+0` are considered the same.
 *
@@ -52,10 +54,18 @@ import { typedndarray } from '@stdlib/types/ndarray';
 *     'dtype': 'generic'
 * });
 *
-* var out = gfillNotEqual( [ x, searchElement, alpha ] );
-* // returns <ndarray>[ 0.0, 5.0, 5.0, 0.0, 5.0, 5.0 ]
+* var start = scalar2ndarray( 0, {
+*     'dtype': 'generic'
+* });
+*
+* var end = scalar2ndarray( 3, {
+*     'dtype': 'generic'
+* });
+*
+* var out = gfillNotEqual( [ x, searchElement, alpha, start, end ] );
+* // returns <ndarray>[ 0.0, 5.0, 5.0, 0.0, 4.0, -6.0 ]
 */
-declare function gfillNotEqual<T extends typedndarray<number> = typedndarray<number>>( arrays: [ T, typedndarray<number>, typedndarray<number> ] ): T;
+declare function gfillNotEqual<T extends typedndarray<number> = typedndarray<number>>( arrays: [ T, typedndarray<number>, typedndarray<number>, typedndarray<number>, typedndarray<number> ] ): T;
 
 
 // EXPORTS //
