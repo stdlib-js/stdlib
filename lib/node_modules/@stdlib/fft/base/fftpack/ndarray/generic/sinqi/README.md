@@ -84,7 +84,7 @@ The function has the following parameters:
 
 ## Notes
 
--   Let `N` equal the number of elements in the input ndarray. The input ndarray is divided into four sections:
+-   Let `N` equal the length of the sequence to transform. The input ndarray is divided into four sections:
 
     ```text
             size = N              N                   N          2+ceil(log2(N)/2)
