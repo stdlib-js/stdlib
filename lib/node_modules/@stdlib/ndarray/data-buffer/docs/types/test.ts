@@ -26,6 +26,7 @@ import data = require( './index' );
 {
 	data( zeros( [ 3, 2, 1 ], { 'dtype': 'float64' } ) ); // $ExpectType Float64Array
 	data( zeros( [ 3, 2, 1 ], { 'dtype': 'float32' } ) ); // $ExpectType Float32Array
+	data( zeros( [ 3, 2, 1 ], { 'dtype': 'float16' } ) ); // $ExpectType Float16ArrayFallback
 	data( zeros( [ 3, 2, 1 ], { 'dtype': 'int32' } ) ); // $ExpectType Int32Array
 	data( zeros( [ 3, 2, 1 ], { 'dtype': 'int16' } ) ); // $ExpectType Int16Array
 	data( zeros( [ 3, 2, 1 ], { 'dtype': 'int8' } ) ); // $ExpectType Int8Array
