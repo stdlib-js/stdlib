@@ -3,7 +3,7 @@
     Counts the number of elements in an ndarray which pass a test implemented by
     a predicate function.
 
-    A provided "ndarray" should be an `object` with the following properties:
+    A provided "ndarray" should be an object with the following properties:
 
     - dtype: data type.
     - data: data buffer.

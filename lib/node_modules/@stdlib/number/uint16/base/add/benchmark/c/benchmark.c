@@ -101,7 +101,7 @@ static uint16_t add( const uint16_t x, const uint16_t y ) {
 static double benchmark( void ) {
 	uint16_t x[ 100 ];
 	double elapsed;
-	double y;
+	uint16_t y;
 	double t;
 	int i;
 

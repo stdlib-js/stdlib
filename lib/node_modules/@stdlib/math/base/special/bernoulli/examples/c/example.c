@@ -18,14 +18,13 @@
 
 #include "stdlib/math/base/special/bernoulli.h"
 #include <stdio.h>
-#include <stdint.h>
 
 int main( void ) {
-	int32_t i;
+	double i;
 	double v;
 
-	for ( i = 0; i < 130; i++ ) {
+	for ( i = 0.0; i < 130.0; i++ ) {
 		v = stdlib_base_bernoulli( i );
-		printf( "bernoulli(%d) = %lf\n", i, v );
+		printf( "bernoulli(%lf) = %lf\n", i, v );
 	}
 }

@@ -44,7 +44,7 @@ var isRealFloatingPointDataType = require( '@stdlib/ndarray/base/assert/is-real-
 
 #### isRealFloatingPointDataType( value )
 
-Tests if an input `value` is a supported ndarray real-valued floating-point data type.
+Tests if an input value is a supported ndarray real-valued floating-point data type.
 
 <!-- eslint-disable id-length -->
 

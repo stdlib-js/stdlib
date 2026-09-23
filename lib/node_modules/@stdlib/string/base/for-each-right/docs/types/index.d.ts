@@ -83,7 +83,7 @@ type Callback<T> = Nullary<T> | Unary<T> | Binary<T> | Ternary<T>;
 *     console.log( '%d: %s', index, value );
 * }
 *
-* forEach( 'Hello, World!', log );
+* forEachRight( 'Hello, World!', log );
 */
 declare function forEachRight<T = unknown>( str: string, clbk: Callback<T>, thisArg?: ThisParameterType<Callback<T>> ): string;
 

@@ -42,7 +42,7 @@ var isFloatingPointDataType = require( '@stdlib/ndarray/base/assert/is-floating-
 
 #### isFloatingPointDataType( value )
 
-Tests if an input `value` is a supported ndarray floating-point data type.
+Tests if an input value is a supported ndarray floating-point data type.
 
 ```javascript
 var bool = isFloatingPointDataType( 'float32' );

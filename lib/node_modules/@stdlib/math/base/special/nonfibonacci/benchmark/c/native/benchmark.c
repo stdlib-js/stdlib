@@ -90,13 +90,13 @@ static double rand_double( void ) {
 */
 static double benchmark( void ) {
 	double elapsed;
+	double x[ 100 ];
 	double t;
 	double y;
-	int x[ 100 ];
 	int i;
 
 	for ( i = 0; i < 100; i++ ) {
-		x[ i ] = (int)floor( (100.0*rand_double()) + 1.0 );
+		x[ i ] = floor( (100.0*rand_double()) + 1.0 );
 	}
 
 	t = tic();

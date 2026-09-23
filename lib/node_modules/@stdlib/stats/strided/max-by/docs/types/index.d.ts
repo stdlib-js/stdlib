@@ -156,7 +156,7 @@ interface Routine {
 }
 
 /**
-* Computes the maximum value of a strided array via a callback function
+* Computes the maximum value of a strided array via a callback function.
 *
 * ## Notes
 *

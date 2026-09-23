@@ -41,7 +41,7 @@
 * // returns false
 *
 * bool = isConstantcase( '' );
-* // returns false
+* // returns true
 *
 * bool = isConstantcase( null );
 * // returns false

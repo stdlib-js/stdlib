@@ -16,6 +16,8 @@
 * limitations under the License.
 */
 
+/* eslint-disable stdlib/tsdoc-declarations-doctest */
+
 // TypeScript Version: 4.1
 
 /**

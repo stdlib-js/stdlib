@@ -87,7 +87,7 @@ interface Results {
 	alternative: string;
 
 	/**
-	* Name of test (`One-Sample z-test`).
+	* Name of test.
 	*/
 	method: string;
 
@@ -116,12 +116,14 @@ interface Results {
 * var out = ztest( arr, 1.0, {
 *     'mu': 5
 * });
+* // returns {...}
 *
 * @example
 * var arr = [ 4, 4, 6, 6, 5 ];
 * var out = ztest( arr, 1.0, {
 *     'alternative': 'greater'
 * });
+* // returns {...}
 */
 declare function ztest( x: NumericArray, sigma: number, options?: Options ): Results;
 

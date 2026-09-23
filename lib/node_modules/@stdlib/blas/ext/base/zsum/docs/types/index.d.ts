@@ -36,7 +36,7 @@ interface Routine {
 	* @returns sum
 	*
 	* @example
-	* var Complex128Array = require( '@stdlib/array/float64' );
+	* var Complex128Array = require( '@stdlib/array/complex128' );
 	*
 	* var x = new Complex128Array( [ 1.0, -2.0, 2.0, 3.0 ] );
 	*
@@ -55,7 +55,7 @@ interface Routine {
 	* @returns sum
 	*
 	* @example
-	* var Complex128Array = require( '@stdlib/array/float64' );
+	* var Complex128Array = require( '@stdlib/array/complex128' );
 	*
 	* var x = new Complex128Array( [ 1.0, -2.0, 2.0, 3.0 ] );
 	*
@@ -74,7 +74,7 @@ interface Routine {
 * @returns sum
 *
 * @example
-* var Complex128Array = require( '@stdlib/array/float64' );
+* var Complex128Array = require( '@stdlib/array/complex128' );
 *
 * var x = new Complex128Array( [ 1.0, -2.0, 2.0, 3.0 ] );
 *
@@ -82,7 +82,7 @@ interface Routine {
 * // returns <Complex128>[ 3.0, 1.0 ]
 *
 * @example
-* var Complex128Array = require( '@stdlib/array/float64' );
+* var Complex128Array = require( '@stdlib/array/complex128' );
 *
 * var x = new Complex128Array( [ 1.0, -2.0, 2.0, 3.0 ] );
 *

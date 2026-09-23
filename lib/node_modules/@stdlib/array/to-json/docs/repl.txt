@@ -6,6 +6,7 @@
 
     - Float64Array
     - Float32Array
+    - Float16Array
     - Int32Array
     - Uint32Array
     - Int16Array

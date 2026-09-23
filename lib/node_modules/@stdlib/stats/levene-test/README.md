@@ -40,7 +40,7 @@ var leveneTest = require( '@stdlib/stats/levene-test' );
 
 #### leveneTest( x\[, y, ..., z]\[, opts] )
 
-Calculates Levene's test for input arrays `x`, `y`, ..., `z` holding numeric observations. 
+Calculates Levene's test for input arrays `x`, `y`, ..., `z` holding numeric observations.
 
 ```javascript
 // Data from Hollander & Wolfe (1973), p. 116:

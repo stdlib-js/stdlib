@@ -164,19 +164,19 @@ logEachMap( 'tribonaccif(%d) = %0.4f', v, tribonaccif );
 Computes the nth [Tribonacci number][tribonacci-number] as a [single-precision floating-point number][ieee754].
 
 ```c
-float out = stdlib_base_tribonaccif( 0 );
+float out = stdlib_base_tribonaccif( 0.0f );
 // returns 0.0f
 
-out = stdlib_base_tribonaccif( 4 );
+out = stdlib_base_tribonaccif( 4.0f );
 // returns 2.0f
 ```
 
 The function accepts the following arguments:
 
--   **n**: `[in] int32_t` input value.
+-   **n**: `[in] float` input value.
 
 ```c
-float stdlib_base_tribonaccif( const int32_t n );
+float stdlib_base_tribonaccif( const float n );
 ```
 
 </section>
@@ -200,15 +200,14 @@ float stdlib_base_tribonaccif( const int32_t n );
 ```c
 #include "stdlib/math/base/special/tribonaccif.h"
 #include <stdio.h>
-#include <stdint.h>
 
 int main( void ) {
-    int32_t i;
+    float i;
     float v;
 
-    for ( i = 0; i < 31; i++ ) {
+    for ( i = 0.0f; i < 31.0f; i++ ) {
         v = stdlib_base_tribonaccif( i );
-        printf( "tribonaccif(%d) = %f\n", i, v );
+        printf( "tribonaccif(%f) = %f\n", i, v );
     }
 }
 ```

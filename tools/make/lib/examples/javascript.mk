@@ -85,12 +85,12 @@ examples-javascript-files: $(NODE_MODULES)
 # make examples-random-javascript RANDOM_SELECTION_SIZE=10
 #/
 examples-random-javascript: $(NODE_MODULES)
-	$(QUIET) make -s list-random-lib-pkgs | while read -r pkg; do \
+	$(QUIET) $(MAKE) -f $(this_file) -s list-random-lib-pkgs | while read -r pkg; do \
 		echo ""; \
 		echo "Running example: $$pkg"; \
 		NODE_ENV="$(NODE_ENV_EXAMPLES)" \
 		NODE_PATH="$(NODE_PATH_EXAMPLES)" \
-		make examples-javascript EXAMPLES_FILTER="$$pkg/.*" || exit 1; \
+		$(MAKE) -f $(this_file) examples-javascript EXAMPLES_FILTER="$$pkg/.*" || exit 1; \
 	done
 
 .PHONY: examples-random-javascript

@@ -18,6 +18,10 @@
 
 // TypeScript Version: 4.1
 
+/// <reference types="@stdlib/types"/>
+
+import { DataType } from '@stdlib/types/ndarray';
+
 /**
 * Returns a boolean indicating if a provided ndarray data type can be safely cast or, for floating-point data types, downcast to another ndarray data type.
 *
@@ -32,7 +36,7 @@
 * bool = isMostlySafeCast( 'float64', 'int32' );
 * // returns false
 */
-declare function isMostlySafeCast( from: string, to: string ): boolean;
+declare function isMostlySafeCast( from: DataType, to: DataType ): boolean;
 
 
 // EXPORTS //

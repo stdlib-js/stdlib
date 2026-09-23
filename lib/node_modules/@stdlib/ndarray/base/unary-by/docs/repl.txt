@@ -4,7 +4,7 @@
     according to a callback function and assigns results to elements in an
     output ndarray.
 
-    Each provided "ndarray" should be an `object` with the following properties:
+    Each provided "ndarray" should be an object with the following properties:
 
     - dtype: data type.
     - data: data buffer.

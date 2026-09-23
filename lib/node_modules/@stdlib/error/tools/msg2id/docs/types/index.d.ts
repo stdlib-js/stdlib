@@ -26,7 +26,7 @@
 *
 * @example
 * var v = msg2id( 'invalid option. `%s` option must be an array. Option: `%s`.' );
-* // returns '8t'
+* // returns '8Z'
 */
 declare function msg2id( msg: string ): string | null;
 

@@ -28,7 +28,7 @@
         Scalar constant.
 
     A: Float32Array
-        Matrix.
+        Input matrix.
 
     lda: integer
         Stride of the first dimension of `A` (a.k.a., leading dimension of the
@@ -63,7 +63,7 @@
     <Float32Array>[ 4.0, 4.0 ]
 
 
-{{alias}}.ndarray( order, uplo, N, α, A, lda, x, sx, ox, β, y, sy, oy )
+{{alias}}.ndarray( uplo, N, α, A, sa1, sa2, oa, x, sx, ox, β, y, sy, oy )
     Performs the matrix-vector operation `y = α*A*x + β*y` using alternative
     indexing semantics and where `α` and `β` are scalars, `x` and `y` are `N`
     element vectors, and `A` is an `N` by `N` symmetric matrix.
@@ -74,10 +74,6 @@
 
     Parameters
     ----------
-    order: string
-        Row-major (C-style) or column-major (Fortran-style) order. Must be
-        either 'row-major' or 'column-major'.
-
     uplo: string
         Specifies whether to reference the upper or lower triangular part of
         `A`. Must be either 'upper' or 'lower'.
@@ -89,11 +85,16 @@
         Scalar constant.
 
     A: Float32Array
-        Matrix.
+        Input matrix.
 
-    lda: integer
-        Stride of the first dimension of `A` (a.k.a., leading dimension of the
-        matrix `A`).
+    sa1: integer
+        Stride for the first dimension of `A`.
+
+    sa2: integer
+        Stride for the second dimension of `A`.
+
+    oa: integer
+        Starting index for `A`.
 
     x: Float32Array
         Input vector.
@@ -126,8 +127,7 @@
     > var x = new {{alias:@stdlib/array/float32}}( [ 1.0, 1.0 ] );
     > var y = new {{alias:@stdlib/array/float32}}( [ 1.0, 1.0 ] );
     > var A = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 2.0, 1.0 ] );
-    > var ord = 'row-major';
-    > {{alias}}.ndarray( ord, 'upper', 2, 1.0, A, 2, x, 1, 0, 1.0, y, 1, 0 )
+    > {{alias}}.ndarray( 'upper', 2, 1.0, A, 2, 1, 0, x, 1, 0, 1.0, y, 1, 0 )
     <Float32Array>[ 4.0, 4.0 ]
 
     See Also

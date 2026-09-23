@@ -54,7 +54,7 @@ interface CDF {
 	( q: number, r: number, v: number, nranges?: number ): number;
 
 	/**
-	* Returns a function for evaluating the cumulative distribution function (CDF) for a beta prime distribution with first shape parameter `alpha` and second shape parameter `beta`.
+	* Returns a function for evaluating the cumulative distribution function (CDF) for a studentized range distribution with sample size `r`, degrees of freedom `v`, and number of groups `nranges`.
 	*
 	* @param r - sample size for range (same for each group)
 	* @param v - degrees of freedom
@@ -82,14 +82,14 @@ interface CDF {
 * @returns evaluated CDF
 *
 * @example
-* var y = cdf( 2.0, 0.1 );
-* // returns ~0.611
+* var y = cdf( 0.5, 3.0, 2.0 );
+* // returns ~0.0644
 *
-* y = cdf( 1.0, 2.0 );
-* // returns ~0.789
+* y = cdf( 12.1, 17.0, 2.0 );
+* // returns ~0.913
 *
-* y = cdf( -1.0, 4.0 );
-* // returns ~0.187
+* y = cdf( 0.5, 3.0, 2.0, 2 );
+* // returns ~0.01
 *
 * var mycdf = cdf.factory( 3.0, 2.0 );
 * y = mycdf( 3.0 );

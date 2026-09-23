@@ -17,8 +17,11 @@
 */
 
 #include "stdlib/math/base/special/negalucasf.h"
-#include "stdlib/math/base/special/labs.h"
+#include "stdlib/math/base/assert/is_integerf.h"
+#include "stdlib/math/base/special/absf.h"
 #include "stdlib/constants/float32/max_safe_nth_lucas.h"
+#include <stdint.h>
+#include <stdlib.h>
 
 static const int32_t negalucasf_value[ 35 ] = {
 	2,
@@ -65,17 +68,17 @@ static const int32_t negalucasf_value[ 35 ] = {
 * @return      output value
 *
 * @example
-* float out = stdlib_base_negalucasf( -1 );
-* // returns -1
+* float out = stdlib_base_negalucasf( -1.0f );
+* // returns -1.0f
 *
 * @example
-* float out = stdlib_base_negalucasf( 1 );
+* float out = stdlib_base_negalucasf( 1.0f );
 * // returns NaN
 */
-float stdlib_base_negalucasf( const int32_t n ) {
-	int32_t an = stdlib_base_labs( n );
-	if ( n > 0 || an > STDLIB_CONSTANT_FLOAT32_MAX_SAFE_NTH_LUCAS ) {
+float stdlib_base_negalucasf( const float n ) {
+	float an = stdlib_base_absf( n );
+	if ( !stdlib_base_is_integerf( n ) || n > 0.0f || an > STDLIB_CONSTANT_FLOAT32_MAX_SAFE_NTH_LUCAS ) {
 		return 0.0f / 0.0f; // NaN
 	}
-	return negalucasf_value[ an ];
+	return negalucasf_value[ (size_t)an ];
 }

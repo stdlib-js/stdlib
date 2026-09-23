@@ -126,21 +126,18 @@ v = kurtosis( 3.0, -1.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var EPS = require( '@stdlib/constants/float64/eps' );
 var kurtosis = require( '@stdlib/stats/base/dists/f/kurtosis' );
 
-var d1;
-var d2;
-var v;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var d1 = uniform( 10, EPS, 10.0, opts );
+var d2 = uniform( 10, EPS, 20.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    d1 = ( randu()*10.0 ) + EPS;
-    d2 = ( randu()*20.0 ) + EPS;
-    v = kurtosis( d1, d2 );
-    console.log( 'd1: %d, d2: %d, Kurt(X;d1,d2): %d', d1.toFixed( 4 ), d2.toFixed( 4 ), v.toFixed( 4 ) );
-}
+logEachMap( 'd1: %0.4f, d2: %0.4f, Kurt(X;d1,d2): %0.4f', d1, d2, kurtosis );
 ```
 
 </section>

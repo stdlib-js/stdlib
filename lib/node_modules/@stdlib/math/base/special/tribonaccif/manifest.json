@@ -37,7 +37,9 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/napi/unary",
-        "@stdlib/constants/float32/max-safe-nth-tribonacci"
+        "@stdlib/constants/float32/max-safe-nth-tribonacci",
+        "@stdlib/math/base/assert/is-nonnegative-integerf",
+        "@stdlib/math/base/assert/is-nanf"
       ]
     },
     {
@@ -51,7 +53,9 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/constants/float32/max-safe-nth-tribonacci"
+        "@stdlib/constants/float32/max-safe-nth-tribonacci",
+        "@stdlib/math/base/assert/is-nonnegative-integerf",
+        "@stdlib/math/base/assert/is-nanf"
       ]
     },
     {
@@ -65,7 +69,9 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/constants/float32/max-safe-nth-tribonacci"
+        "@stdlib/constants/float32/max-safe-nth-tribonacci",
+        "@stdlib/math/base/assert/is-nonnegative-integerf",
+        "@stdlib/math/base/assert/is-nanf"
       ]
     }
   ]

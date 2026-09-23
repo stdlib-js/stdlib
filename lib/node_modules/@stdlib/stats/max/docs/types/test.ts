@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-/* eslint-disable @typescript-eslint/no-unused-expressions, space-in-parens */
+/* eslint-disable space-in-parens */
 
 /// <reference types="@stdlib/types"/>
 

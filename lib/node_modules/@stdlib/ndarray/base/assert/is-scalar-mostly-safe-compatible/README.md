@@ -79,7 +79,7 @@ bool = isScalarMostlySafeCompatible( 3.14, 'int32' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var dtypes = require( '@stdlib/ndarray/dtypes' );
+var dtypes = require( '@stdlib/ndarray/base/dtype-strings' );
 var logEachMap = require( '@stdlib/console/log-each-map' );
 var isScalarMostlySafeCompatible = require( '@stdlib/ndarray/base/assert/is-scalar-mostly-safe-compatible' );
 

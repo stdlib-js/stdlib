@@ -122,7 +122,7 @@ To use as a [standard stream][standard-streams],
 
 ```bash
 $ echo -n 'beep boop foo bar' | startcase
-Beep Boop Foo Bar 
+Beep Boop Foo Bar
 ```
 
 </section>

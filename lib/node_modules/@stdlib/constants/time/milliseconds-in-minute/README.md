@@ -47,7 +47,7 @@ var bool = ( MILLISECONDS_IN_MINUTE === 60000 );
 
 ## Notes
 
--   The value is a generalization and does **not** take into account inaccuracies arising due to complications with time and dates. 
+-   The value is a generalization and does **not** take into account inaccuracies arising due to complications with time and dates.
 
 </section>
 

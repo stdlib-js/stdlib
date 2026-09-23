@@ -30,7 +30,10 @@ var plugins = [
 	'eslint-plugin-jsdoc',
 
 	// Required for TypeScript support:
-	'@typescript-eslint'
+	'@typescript-eslint',
+
+	// Custom stdlib rules:
+	'stdlib'
 ];
 
 

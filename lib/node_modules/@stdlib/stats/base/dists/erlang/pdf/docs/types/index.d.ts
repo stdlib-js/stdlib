@@ -122,7 +122,7 @@ interface PDF {
 *
 * var myPDF = pdf.factory( 6, 7.0 );
 * y = myPDF( 7.0 );
-* // returns ~0.155
+* // returns ~8.639e-15
 */
 declare var pdf: PDF;
 

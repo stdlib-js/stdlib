@@ -35,18 +35,23 @@
 * @example
 * var y = gammaincinv( 0.5, 2.0 );
 * // returns ~1.678
+*
 * @example
 * var y = gammaincinv( 0.1, 10.0 );
 * // returns ~6.221
+*
 * @example
 * var y = gammaincinv( 0.75, 3.0 );
 * // returns ~3.92
+*
 * @example
 * var y = gammaincinv( 0.75, 3.0, true );
 * // returns ~1.727
+*
 * @example
 * var y = gammaincinv( 0.75, NaN );
 * // returns NaN
+*
 * @example
 * var y = gammaincinv( NaN, 3.0 );
 * // returns NaN

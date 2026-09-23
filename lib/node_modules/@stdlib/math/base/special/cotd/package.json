@@ -68,5 +68,90 @@
     "cosine",
     "trig",
     "trigonometry"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "cotd",
+      "alias": "cotd",
+      "pkg_desc": "evaluate the cotangent of a double-precision floating-point number (in degrees)",
+      "desc": "evaluates the cotangent of a double-precision floating-point number (in degrees)",
+      "short_desc": "cotangent",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value (in degrees)",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": -5e-324
+            },
+            {
+              "min": 5e-324,
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              0.5,
+              180
+            ]
+          },
+          "example_values": [
+            34.7,
+            -112.7,
+            146.2,
+            -22.8,
+            73.8,
+            -176.4,
+            0.3,
+            -101.5,
+            59.4,
+            -171.8,
+            16.9,
+            -44.1,
+            -139.9,
+            -7.5,
+            -67.3,
+            112.6,
+            -150.6,
+            -81.2,
+            -163.3,
+            -126.4
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "cotangent",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "cot",
+        "cotd",
+        "cotangent",
+        "tan",
+        "tangent",
+        "sin",
+        "sine",
+        "cos",
+        "cosine"
+      ],
+      "extra_keywords": [
+        "math.tan"
+      ]
+    }
+  }
 }

@@ -1,6 +1,6 @@
 {
-	"objectMode": false,
-	"encoding": null,
-	"allowHalfOpen": false,
-	"decodeStrings": true
+  "objectMode": false,
+  "encoding": null,
+  "allowHalfOpen": false,
+  "decodeStrings": true
 }

@@ -296,7 +296,7 @@ interface TabulateByAsync {
 	* };
 	*
 	* // Create a `tabulateByAsync` function which invokes the indicator function for each collection element sequentially:
-	* var tabulateByAsync = factory( opts, indicator );
+	* var tabulateBy = tabulateByAsync.factory( opts, indicator );
 	*
 	* // Create a collection over which to iterate:
 	* var files = [
@@ -313,7 +313,7 @@ interface TabulateByAsync {
 	* }
 	*
 	* // Try to read each element in `files`:
-	* tabulateByAsync( files, done );
+	* tabulateBy( files, done );
 	*/
 	factory<T = unknown, V = unknown>( options: Options<T, V>, indicator: Indicator<T, V> ): FactoryFunction<T>;
 
@@ -360,7 +360,7 @@ interface TabulateByAsync {
 	* };
 	*
 	* // Create a `tabulateByAsync` function which invokes the indicator function for each collection element sequentially:
-	* var tabulateByAsync = factory( opts, indicator );
+	* var tabulateBy = tabulateByAsync.factory( opts, indicator );
 	*
 	* // Create a collection over which to iterate:
 	* var files = [
@@ -377,7 +377,7 @@ interface TabulateByAsync {
 	* }
 	*
 	* // Try to read each element in `files`:
-	* tabulateByAsync( files, done );
+	* tabulateBy( files, done );
 	*/
 	factory<T = unknown, V = unknown>( indicator: Indicator<T, V> ): FactoryFunction<T>;
 }

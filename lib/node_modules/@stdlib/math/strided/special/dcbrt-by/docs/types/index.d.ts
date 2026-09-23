@@ -128,8 +128,8 @@ interface Routine {
 	*     return v;
 	* }
 	*
-	* var x = Float64Array( [ 1.0, 9.0, -27.0, 81.0, -125.0 ] );
-	* var out = Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+	* var x = new Float64Array( [ 1.0, 9.0, -27.0, 81.0, -125.0 ] );
+	* var out = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 	*
 	* dcbrtBy.ndarray( x.length, x, 1, 0, out, 1, 0, accessor );
 	* // out => <Float64Array>[ 1.0, ~2.08, -3.0, ~4.327, -5.0 ]
@@ -156,8 +156,8 @@ interface Routine {
 *     return v;
 * }
 *
-* var x = Float64Array( [ 1.0, 9.0, -27.0, 81.0, -125.0 ] );
-* var out = Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+* var x = new Float64Array( [ 1.0, 9.0, -27.0, 81.0, -125.0 ] );
+* var out = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 *
 * dcbrtBy( x.length, x, 1, out, 1, accessor );
 * // out => <Float64Array>[ 1.0, ~2.08, -3.0, ~4.327, -5.0 ]
@@ -169,8 +169,8 @@ interface Routine {
 *     return v;
 * }
 *
-* var x = Float64Array( [ 1.0, 9.0, -27.0, 81.0, -125.0 ] );
-* var out = Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+* var x = new Float64Array( [ 1.0, 9.0, -27.0, 81.0, -125.0 ] );
+* var out = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 *
 * dcbrtBy.ndarray( x.length, x, 1, 0, out, 1, 0, accessor );
 * // out => <Float64Array>[ 1.0, ~2.08, -3.0, ~4.327, -5.0 ]

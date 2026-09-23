@@ -1,0 +1,38 @@
+
+{{alias}}( x[, options] )
+    Returns an array containing a read-only truncated view of an input ndarray
+    and a read-only view of the first element(s) along a specified dimension.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array. Must have one or more dimensions.
+
+    options: object (optional)
+        Options.
+
+    options.dim: integer (optional)
+        Dimension along which to perform the operation. If provided an integer
+        less than zero, the dimension index is resolved relative to the last
+        dimension, with the last dimension corresponding to the value `-1`.
+        Default: -1.
+
+    Returns
+    -------
+    out: Array<ndarray>
+        An array containing a read-only truncated view of an input ndarray and a
+        read-only view of the first element(s) along a specified dimension.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
+    <ndarray>
+    > var y = {{alias}}( x )
+    [ <ndarray>, <ndarray> ]
+    > {{alias:@stdlib/ndarray/to-array}}( y[0] )
+    [ [ 2 ], [ 4 ] ]
+    > {{alias:@stdlib/ndarray/to-array}}( y[1] )
+    [ [ 1 ], [ 3 ] ]
+
+    See Also
+    --------

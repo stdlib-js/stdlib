@@ -68,5 +68,81 @@
     "combinatorics",
     "gamma",
     "number"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "factorialln",
+      "alias": "factorialln",
+      "pkg_desc": "compute the natural logarithm of the factorial function",
+      "desc": "computes the natural logarithm of the factorial function",
+      "short_desc": "natural logarithm of the factorial function",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": 0,
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/discrete-uniform",
+            "parameters": [
+              0,
+              100
+            ]
+          },
+          "example_values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            93,
+            95,
+            96,
+            97,
+            98,
+            99
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "result",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "factorialln",
+        "lfact",
+        "fact",
+        "factorial",
+        "gamma",
+        "combinatorics"
+      ],
+      "extra_keywords": []
+    }
+  }
 }

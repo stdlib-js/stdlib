@@ -18,6 +18,7 @@
 
 #include "stdlib/math/base/assert/is_negative_integer.h"
 #include "stdlib/math/base/special/floor.h"
+#include <stdbool.h>
 
 /**
 * Tests if a finite double-precision floating-point number is a negative integer.

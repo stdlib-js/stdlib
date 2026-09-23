@@ -19,41 +19,14 @@
 #include "stdlib/math/base/special/abs.h"
 #include "stdlib/math/base/special/absf.h"
 #include "stdlib/math/base/special/labs.h"
+#include "stdlib/number/uint32/base/identity.h"
+#include "stdlib/number/uint16/base/identity.h"
+#include "stdlib/number/uint8/base/identity.h"
 #include "stdlib/ndarray/base/function_object.h"
 #include "stdlib/ndarray/base/napi/unary.h"
 #include "stdlib/ndarray/base/unary.h"
 #include "stdlib/ndarray/dtypes.h"
 #include <stdint.h>
-
-/**
-* Evaluates the identity function for an unsigned 32-bit integer.
-*
-* @param x   input value
-* @return    input value
-*/
-static uint32_t identity_u( const uint32_t x ) {
-	return x;
-}
-
-/**
-* Evaluates the identity function for an unsigned 16-bit integer.
-*
-* @param x   input value
-* @return    input value
-*/
-static uint16_t identity_t( const uint16_t x ) {
-	return x;
-}
-
-/**
-* Evaluates the identity function for an unsigned 8-bit integer.
-*
-* @param x   input value
-* @return    input value
-*/
-static uint8_t identity_b( const uint8_t x ) {
-	return x;
-}
 
 /**
 * Computes the absolute value of a signed 16-bit integer.
@@ -250,35 +223,35 @@ static void *data[] = {
 	(void *)abs_s,
 
 	// uint32 (2)
-	(void *)identity_u,
-	(void *)identity_u,
+	(void *)stdlib_base_uint32_identity,
+	(void *)stdlib_base_uint32_identity,
 
 	// uint16 (5)
-	(void *)identity_t,
-	(void *)identity_t,
-	(void *)identity_t,
-	(void *)identity_t,
-	(void *)identity_t,
+	(void *)stdlib_base_uint16_identity,
+	(void *)stdlib_base_uint16_identity,
+	(void *)stdlib_base_uint16_identity,
+	(void *)stdlib_base_uint16_identity,
+	(void *)stdlib_base_uint16_identity,
 
 	// uint8 (8)
-	(void *)identity_b,
-	(void *)identity_b,
-	(void *)identity_b,
-	(void *)identity_b,
-	(void *)identity_b,
-	(void *)identity_b,
-	(void *)identity_b,
-	(void *)identity_b,
+	(void *)stdlib_base_uint8_identity,
+	(void *)stdlib_base_uint8_identity,
+	(void *)stdlib_base_uint8_identity,
+	(void *)stdlib_base_uint8_identity,
+	(void *)stdlib_base_uint8_identity,
+	(void *)stdlib_base_uint8_identity,
+	(void *)stdlib_base_uint8_identity,
+	(void *)stdlib_base_uint8_identity,
 
 	// uint8c (8)
-	(void *)identity_b,
-	(void *)identity_b,
-	(void *)identity_b,
-	(void *)identity_b,
-	(void *)identity_b,
-	(void *)identity_b,
-	(void *)identity_b,
-	(void *)identity_b
+	(void *)stdlib_base_uint8_identity,
+	(void *)stdlib_base_uint8_identity,
+	(void *)stdlib_base_uint8_identity,
+	(void *)stdlib_base_uint8_identity,
+	(void *)stdlib_base_uint8_identity,
+	(void *)stdlib_base_uint8_identity,
+	(void *)stdlib_base_uint8_identity,
+	(void *)stdlib_base_uint8_identity
 };
 
 // Create an ndarray function object:

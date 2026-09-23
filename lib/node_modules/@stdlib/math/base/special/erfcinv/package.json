@@ -67,5 +67,83 @@
     "function",
     "special",
     "number"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "erfcinv",
+      "alias": "erfcinv",
+      "pkg_desc": "evaluate the inverse complementary error function for a double-precision floating-point number",
+      "desc": "evaluates the inverse complementary error function for a double-precision floating-point number",
+      "short_desc": "inverse complementary error function",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": 0,
+              "max": 2
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              0.1,
+              1.8
+            ]
+          },
+          "example_values": [
+            0.041,
+            1.372,
+            0.885,
+            1.743,
+            0.219,
+            1.948,
+            0.637,
+            1.156,
+            0.302,
+            1.821,
+            0.517,
+            1.064,
+            0.771,
+            0.126,
+            1.593,
+            0.948,
+            1.287,
+            0.359,
+            1.912,
+            0.684
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "function value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "erf",
+        "erfc",
+        "erfinv",
+        "erfcinv",
+        "inverse",
+        "complementary",
+        "error",
+        "function"
+      ],
+      "extra_keywords": []
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/ndarray/base/unary",
   "version": "0.0.0",
-  "description": "Apply a unary callback to elements in a input ndarray and assign results to elements in an output ndarray.",
+  "description": "Apply a unary callback to elements in an input ndarray and assign results to elements in an output ndarray.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

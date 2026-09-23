@@ -1,0 +1,134 @@
+
+{{alias}}( N, start, stop, endpoint, x, strideX )
+    Fills a double-precision floating-point strided array with linearly spaced
+    values over a specified interval.
+
+    If `N = 1` and `endpoint` is `true`, the set of values written to an input
+    array only includes `stop`, but not `start`; otherwise, when `N = 1` and
+    `endpoint` is `false`, the set of values written to an input array only
+    includes `start`, but not `stop`.
+
+    If `start` is less than `stop`, the set of values written to an input array
+    will be written in ascending order, and, if `start` is greater than
+    `stop`, the set of written values will be in descending order.
+
+    When `N >= 2` and `endpoint` is `true`, the set of values written to an
+    input array is guaranteed to include the `start` and `stop` values. Beware,
+    however, that values between `start` and `stop` are subject to floating-
+    point rounding errors.
+
+    The `N` and stride parameters determine which elements in the strided array
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N <= 0`, the function returns `x` unchanged.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    start: number
+        Start of interval.
+
+    stop: number
+        End of interval.
+
+    endpoint: boolean
+        Boolean indicating whether to include the `stop` value when writing
+        values to the input array. If `false`, the function generates `N+1`
+        linearly spaced values over the interval `[start, stop]` and only writes
+        `N` values to the input array, thus excluding `stop` from the input
+        array. Accordingly, for a fixed `N`, the spacing between adjacent values
+        written to an input array changes depending on the value of `endpoint`.
+
+    x: Float64Array
+        Input array.
+
+    strideX: integer
+        Stride length.
+
+    Returns
+    -------
+    x: Float64Array
+        Input array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+    > {{alias}}( x.length, 0.0, 6.0, true, x, 1 )
+    <Float64Array>[ 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
+
+    // Using `N` and stride parameters:
+    > x = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+    > {{alias}}( 3, 1.0, 4.0, false, x, 2 )
+    <Float64Array>[ 1.0, 0.0, 2.0, 0.0, 3.0, 0.0, 0.0 ]
+
+    // Using view offsets:
+    > var x0 = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+    > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > {{alias}}( 3, 1.0, 3.0, true, x1, 2 )
+    <Float64Array>[ 1.0, 0.0, 2.0, 0.0, 3.0 ]
+    > x0
+    <Float64Array>[ 0.0, 1.0, 0.0, 2.0, 0.0, 3.0 ]
+
+
+{{alias}}.ndarray( N, start, stop, endpoint, x, strideX, offsetX )
+    Fills a double-precision floating-point strided array with linearly spaced
+    values over a specified interval using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameter supports indexing semantics based on a starting
+    index.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    start: number
+        Start of interval.
+
+    stop: number
+        End of interval.
+
+    endpoint: boolean
+        Boolean indicating whether to include the `stop` value when writing
+        values to the input array. If `false`, the function generates `N+1`
+        linearly spaced values over the interval `[start, stop]` and only writes
+        `N` values to the input array, thus excluding `stop` from the input
+        array. Accordingly, for a fixed `N`, the spacing between adjacent values
+        written to an input array changes depending on the value of `endpoint`.
+
+    x: Float64Array
+        Input array.
+
+    strideX: integer
+        Stride length.
+
+    offsetX: integer
+        Starting index.
+
+    Returns
+    -------
+    x: Float64Array
+        Input array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+    > {{alias}}.ndarray( x.length, 0.0, 7.0, false, x, 1, 0 )
+    <Float64Array>[ 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
+
+    // Using an index offset:
+    > x = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+    > {{alias}}.ndarray( 3, 1.0, 3.0, true, x, 2, 1 )
+    <Float64Array>[ 0.0, 1.0, 0.0, 2.0, 0.0, 3.0 ]
+
+    See Also
+    --------
+

@@ -25,8 +25,8 @@ import InverseGamma = require( './index' );
 
 // The function returns a distribution instance...
 {
-	new InverseGamma(); // $ExpectType InverseGamma
-	new InverseGamma( 1.0, 2.0 ); // $ExpectType InverseGamma
+	new InverseGamma(); // $ExpectType InvGamma
+	new InverseGamma( 1.0, 2.0 ); // $ExpectType InvGamma
 }
 
 // The compiler throws an error if the function is provided values other than two numbers...

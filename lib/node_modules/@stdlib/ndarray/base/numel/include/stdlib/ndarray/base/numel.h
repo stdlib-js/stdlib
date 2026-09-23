@@ -31,7 +31,7 @@ extern "C" {
 /**
 * Returns the number of elements in an array.
 */
-int64_t stdlib_ndarray_numel( int64_t ndims, int64_t *shape );
+int64_t stdlib_ndarray_numel( const int64_t ndims, const int64_t *shape );
 
 #ifdef __cplusplus
 }

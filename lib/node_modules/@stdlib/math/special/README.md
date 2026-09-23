@@ -63,7 +63,7 @@ var o = ns;
 
 <div class="namespace-toc">
 
--   <span class="signature">[`abs( x[, options] )`][@stdlib/math/special/abs]</span><span class="delimiter">: </span><span class="description">compute the absolute value.</span>
+-   <span class="signature">[`abs( x[, options] )`][@stdlib/math/special/abs]</span><span class="delimiter">: </span><span class="description">compute the absolute value for each element in an ndarray.</span>
 
 </div>
 

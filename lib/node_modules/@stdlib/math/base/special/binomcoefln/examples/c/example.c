@@ -18,17 +18,15 @@
 
 #include "stdlib/math/base/special/binomcoefln.h"
 #include <stdio.h>
-#include <stdint.h>
-#include <inttypes.h>
 
 int main( void ) {
-	const int64_t a[] = { 24, 32, 48, 116, 33 };
-	const int64_t b[] = { 12, 6, 15, 52, 22 };
+	const double a[] = { 24.0, 32.0, 48.0, 116.0, 33.0 };
+	const double b[] = { 12.0, 6.0, 15.0, 52.0, 22.0 };
 
 	double out;
 	int i;
 	for ( i = 0; i < 5; i++ ) {
 		out = stdlib_base_binomcoefln( a[ i ], b[ i ] );
-		printf( "binomcoefln(%" PRId64 ", %" PRId64 ") = %lf\n", a[ i ], b[ i ], out );
+		printf( "binomcoefln(%lf, %lf) = %lf\n", a[ i ], b[ i ], out );
 	}
 }

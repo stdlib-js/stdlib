@@ -29,7 +29,7 @@ interface IsNonNegativeIntegerArray {
 	* @returns boolean indicating whether value is an array-like object containing only nonnegative integers
 	*
 	* @example
-	* var bool = isNonNegativeIntegerArray( [ 3.0, new (3.0) ] );
+	* var bool = isNonNegativeIntegerArray( [ 3.0, new Number(3.0) ] );
 	* // returns true
 	*
 	* @example

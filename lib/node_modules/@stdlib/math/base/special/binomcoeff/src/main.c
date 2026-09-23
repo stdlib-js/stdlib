@@ -17,11 +17,12 @@
 */
 
 #include "stdlib/math/base/special/binomcoeff.h"
+#include "stdlib/math/base/assert/is_integerf.h"
+#include "stdlib/math/base/assert/is_oddf.h"
 #include "stdlib/math/base/special/floorf.h"
 #include "stdlib/math/base/special/gcdf.h"
 #include "stdlib/constants/float32/pinf.h"
 #include "stdlib/constants/float32/max_safe_integer.h"
-#include <stdint.h>
 
 /**
 * Computes the binomial coefficient of two integers as a single-precision floating-point number.
@@ -31,20 +32,23 @@
 * @return     function value
 *
 * @example
-* float out = stdlib_base_binomcoeff( 8, 2 );
+* float out = stdlib_base_binomcoeff( 8.0f, 2.0f );
 * // returns 28.0f
 */
-float stdlib_base_binomcoeff( const int32_t n, const int32_t k ) {
-	int32_t nc;
-	int32_t kc;
-	int32_t d;
+float stdlib_base_binomcoeff( const float n, const float k ) {
 	float res;
 	float sgn;
+	float nc;
+	float kc;
+	float d;
 	float b;
 	float c;
 	float g;
 	float s;
 
+	if ( !stdlib_base_is_integerf( n ) || !stdlib_base_is_integerf( k ) ) {
+		return 0.0f / 0.0f; // NaN
+	}
 	if ( k < 0 ) {
 		return 0.0f;
 	}
@@ -52,7 +56,7 @@ float stdlib_base_binomcoeff( const int32_t n, const int32_t k ) {
 	nc = n;
 	if ( nc < 0 ) {
 		nc = -nc + k - 1;
-		if ( k & 1 ) {
+		if ( stdlib_base_is_oddf( k ) ) {
 			sgn *= -1.0f;
 		}
 	}
@@ -63,7 +67,7 @@ float stdlib_base_binomcoeff( const int32_t n, const int32_t k ) {
 		return sgn;
 	}
 	if ( k == 1 || k == nc - 1 ) {
-		return sgn * (float)nc;
+		return sgn * nc;
 	}
 
 	// Minimize the number of computed terms by leveraging symmetry:
@@ -71,17 +75,17 @@ float stdlib_base_binomcoeff( const int32_t n, const int32_t k ) {
 	if ( nc - kc < kc ) {
 		kc = nc - kc;
 	}
-	s = stdlib_base_floorf( (float)STDLIB_CONSTANT_FLOAT32_MAX_SAFE_INTEGER / (float)nc );
+	s = stdlib_base_floorf( (float)STDLIB_CONSTANT_FLOAT32_MAX_SAFE_INTEGER / nc );
 
 	// Use a standard algorithm for computing the binomial coefficient
 	res = 1.0f;
-	for ( d = 1; d <= kc; d++ ) {
+	for ( d = 1.0f; d <= kc; d++ ) {
 		// Check for potential overflow...
 		if ( res > s ) {
 			break;
 		}
-		res *= (float)nc;
-		res /= (float)d;
+		res *= nc;
+		res /= d;
 		nc -= 1;
 	}
 
@@ -110,7 +114,7 @@ float stdlib_base_binomcoeff( const int32_t n, const int32_t k ) {
 	if ( b == STDLIB_CONSTANT_FLOAT32_PINF ) {
 		return sgn * b;
 	}
-	c = stdlib_base_binomcoeff( kc, kc-d+1 ) ;
+	c = stdlib_base_binomcoeff( kc, kc-d+1 );
 
 	/*
 	* At this point, the result should be `res*b/c`.

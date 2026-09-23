@@ -48,7 +48,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 *         <order>[int8],
 *         <mode>[int8],
 *         <nsubmodes>[int64],
-*         <submodes>[nsubmodes*int8]
+*         <submodes>[nsubmodes*int8],
 *         <flags>[int32]
 *     ]
 *     ```

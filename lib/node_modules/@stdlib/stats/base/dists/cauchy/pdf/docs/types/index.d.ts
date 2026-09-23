@@ -102,9 +102,9 @@ interface PDF {
 *
 * @example
 * var y = pdf( 2.0, 0.0, 1.0 );
-* // returns ~0.063
+* // returns ~0.064
 *
-* var mypdf = factory( 10.0, 2.0 );
+* var mypdf = pdf.factory( 10.0, 2.0 );
 *
 * y = mypdf( 10.0 );
 * // returns ~0.159

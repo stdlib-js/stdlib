@@ -63,5 +63,80 @@
     "nonnegative",
     "digital signal processing",
     "dsp"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "ramp",
+      "alias": "rampf",
+      "pkg_desc": "evaluate the ramp function for a single-precision floating-point number",
+      "desc": "evaluates the ramp function for a single-precision floating-point number",
+      "short_desc": "ramp function",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "float",
+            "dtype": "float32"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -10,
+              10
+            ]
+          },
+          "example_values": [
+            64,
+            27,
+            0,
+            0.1,
+            -9,
+            8,
+            -1,
+            125,
+            -10.2,
+            11.3,
+            -12.4,
+            3.5,
+            -1.6,
+            15.7,
+            -16,
+            17.9,
+            -188,
+            19.11,
+            -200,
+            21.15
+          ]
+        }
+      ],
+      "output_policy": "same",
+      "returns": {
+        "desc": "function value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        }
+      },
+      "keywords": [
+        "ramp",
+        "heaviside",
+        "max",
+        "maximum",
+        "dsp"
+      ],
+      "extra_keywords": []
+    }
+  }
 }

@@ -1,6 +1,7 @@
 
 {{alias}}( n )
-    Computes the nth non-Fibonacci single-precision floating-point number.
+    Computes the nth non-Fibonacci number as a single-precision floating-point
+    number.
 
     If provided either a non-integer or `n < 1`, the function returns `NaN`.
 

@@ -295,7 +295,7 @@ interface MapKeysAsync {
 	* };
 	*
 	* // Create a reusable function:
-	* var mapKeysAsync = factory( opts, read );
+	* var mapKeys = mapKeysAsync.factory( opts, read );
 	*
 	* // Create a dictionary of file names:
 	* var files = {
@@ -312,7 +312,7 @@ interface MapKeysAsync {
 	* }
 	*
 	* // Process each file in `files`:
-	* mapKeysAsync( files, done );
+	* mapKeys( files, done );
 	*/
 	factory( options: Options, transform: Transform ): FactoryFunction;
 
@@ -348,7 +348,7 @@ interface MapKeysAsync {
 	* }
 	*
 	* // Create a reusable function:
-	* var mapKeysAsync = factory( read );
+	* var mapKeys = mapKeysAsync.factory( read );
 	*
 	* // Create a dictionary of file names:
 	* var files = {
@@ -365,7 +365,7 @@ interface MapKeysAsync {
 	* }
 	*
 	* // Process each file in `files`:
-	* mapKeysAsync( files, done );
+	* mapKeys( files, done );
 	*/
 	factory( transform: Transform ): FactoryFunction;
 }

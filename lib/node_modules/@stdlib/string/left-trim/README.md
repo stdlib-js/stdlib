@@ -158,9 +158,9 @@ By default, when used as a [standard stream][standard-streams], the implementati
 
 ```bash
 $ echo -n '   foo   \t   bar   \t   baz   ' | ltrim --split '\t'
-foo   
-bar   
-baz   
+foo
+bar
+baz
 ```
 
 </section>

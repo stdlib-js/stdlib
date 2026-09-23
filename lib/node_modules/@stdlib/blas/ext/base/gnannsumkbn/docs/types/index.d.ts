@@ -71,7 +71,7 @@ interface Routine {
 	* var x = [ 1.0, -2.0, NaN, 2.0 ];
 	* var out = [ 0.0, 0 ];
 	*
-	* var v = gnannsumkbn( x.length, x, 1, 0, out, 1, 0 );
+	* var v = gnannsumkbn.ndarray( x.length, x, 1, 0, out, 1, 0 );
 	* // returns [ 1.0, 3 ]
 	*/
 	ndarray<T extends OutputArray>( N: number, x: InputArray, strideX: number, offsetX: number, out: T, strideOut: number, offsetOut: number ): T;
@@ -98,7 +98,7 @@ interface Routine {
 * var x = [ 1.0, -2.0, NaN, 2.0 ];
 * var out = [ 0.0, 0 ];
 *
-* var v = gnannsumkbn( x.length, x, 1, 0, out, 1, 0 );
+* var v = gnannsumkbn.ndarray( x.length, x, 1, 0, out, 1, 0 );
 * // returns [ 1.0, 3 ]
 */
 declare var gnannsumkbn: Routine;

@@ -79,7 +79,7 @@ interface Options {
 *
 * @example
 * var out = ordinalize( '7', { 'lang': 'es' } );
-* // returns '7ª'
+* // returns '7º'
 */
 declare function ordinalize( value: string | number, options?: Options ): string;
 

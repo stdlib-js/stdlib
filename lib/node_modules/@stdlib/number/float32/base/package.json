@@ -62,5 +62,10 @@
     "number",
     "32-bit",
     "ieee754"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "alias_prefix": "stdlib_base_float32_"
+    }
+  }
 }

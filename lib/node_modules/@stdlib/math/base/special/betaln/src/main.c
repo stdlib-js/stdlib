@@ -34,6 +34,7 @@
 #include "stdlib/constants/float64/ln_sqrt_two_pi.h"
 #include "stdlib/constants/float64/pinf.h"
 #include "stdlib/constants/float64/ninf.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdint.h>
 
 static const double ALGMCS[ 15 ] = {
@@ -76,7 +77,7 @@ static double dceval( const double x ) {
 	int32_t i;
 
 	if ( x < -1.1 || x > 1.1 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	b1 = 0.0;
 	b0 = 0.0;
@@ -101,7 +102,7 @@ static double dceval( const double x ) {
 */
 static double gammaCorrection( const double x ) {
 	if ( x < 10.0 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 
 	// Check for underflow...
@@ -134,7 +135,7 @@ double stdlib_base_betaln( const double a, const double b ) {
 	q = stdlib_base_max( a, b );
 
 	if ( p < 0.0 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( p == 0.0 ) {
 		return STDLIB_CONSTANT_FLOAT64_PINF;

@@ -63,5 +63,81 @@
     "trig",
     "trigonometry",
     "radians"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "atand",
+      "alias": "atandf",
+      "pkg_desc": "compute the arctangent (in degrees) of a single-precision floating-point number",
+      "desc": "computes the arctangent (in degrees) of a single-precision floating-point number",
+      "short_desc": "arctangent",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "float",
+            "dtype": "float32"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -50,
+              50
+            ]
+          },
+          "example_values": [
+            0.21,
+            -77.3,
+            6.4,
+            -0.18,
+            19.7,
+            -41.2,
+            2.05,
+            -9.9,
+            73.3,
+            -25.6,
+            0,
+            38.9,
+            -4.7,
+            101.5,
+            -12.1,
+            5.8,
+            -33.4,
+            1.03,
+            250.2,
+            -150.7
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "arctangent (in degrees)",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        }
+      },
+      "keywords": [
+        "degree",
+        "arctangent",
+        "tangent",
+        "inverse"
+      ],
+      "extra_keywords": [
+        "math.atan"
+      ]
+    }
+  }
 }

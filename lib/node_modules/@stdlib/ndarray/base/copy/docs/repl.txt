@@ -1,0 +1,36 @@
+
+{{alias}}( x )
+    Copies an input ndarray to a new ndarray having the same shape and data
+    type.
+
+    The function performs a full copy in which an ndarray's underlying data is
+    copied to a new underlying data buffer.
+
+    Along with data type, shape, and order, the function infers the "class" of
+    the returned ndarray from the provided ndarray. For example, if provided a
+    "base" ndarray, the function returns a base ndarray. If provided a non-base
+    ndarray, the function returns a non-base ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/base/zeros}}( 'float64', [ 2, 2 ], 'row-major' )
+    <ndarray>
+    > var sh = {{alias:@stdlib/ndarray/shape}}( x )
+    [ 2, 2 ]
+    > var y = {{alias}}( x )
+    <ndarray>
+    > sh = {{alias:@stdlib/ndarray/shape}}( y )
+    [ 2, 2 ]
+
+    See Also
+    --------

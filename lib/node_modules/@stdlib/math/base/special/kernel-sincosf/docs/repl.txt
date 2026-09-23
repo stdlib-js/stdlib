@@ -1,0 +1,61 @@
+
+{{alias}}( x )
+    Simultaneously computes the sine and cosine of an angle measured in radians
+    on [-π/4, π/4] in single-precision floating-point format.
+
+    Parameters
+    ----------
+    x: number
+        Input value (in radians).
+
+    Returns
+    -------
+    out: Array<number>
+        Sine and cosine.
+
+    Examples
+    --------
+    > var parts = {{alias}}( 0.0 )
+    [ ~0.0, ~1.0 ]
+    > parts = {{alias}}( 3.141592653589793/2.0 )
+    [ ~1.0, ~0.0 ]
+    > parts = {{alias}}( -3.141592653589793/6.0 )
+    [ ~-0.5, ~0.866 ]
+    > parts = {{alias}}( NaN )
+    [ NaN, NaN ]
+
+
+{{alias}}.assign( x, out, stride, offset )
+    Simultaneously computes the sine and cosine of an angle measured in radians
+    on [-π/4, π/4] in single-precision floating-point format, and stores the
+    results in a provided output array.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    out: Array|TypedArray|Object
+        Output array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array index offset.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Sine and cosine.
+
+    Examples
+    --------
+    > var out = new {{alias:@stdlib/array/float32}}( 2 );
+    > var sc = {{alias}}.assign( 0.0, out, 1, 0 )
+    <Float32Array>[ ~0.0, ~1.0 ]
+    > var bool = ( sc === out )
+    true
+
+    See Also
+    --------

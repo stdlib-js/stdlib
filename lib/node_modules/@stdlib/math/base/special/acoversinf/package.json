@@ -77,5 +77,94 @@
     "trigonometry",
     "radians",
     "angle"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "acoversin",
+      "alias": "acoversinf",
+      "pkg_desc": "compute the inverse coversed sine of a single-precision floating-point number (in radians)",
+      "desc": "computes the inverse coversed sine of a single-precision floating-point number (in radians)",
+      "short_desc": "inverse coversed sine",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value (in radians)",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "float",
+            "dtype": "float32"
+          },
+          "domain": [
+            {
+              "min": 0,
+              "max": 2
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              0,
+              2
+            ]
+          },
+          "example_values": [
+            0,
+            0.05,
+            0.12,
+            0.27,
+            0.33,
+            0.48,
+            0.58,
+            0.65,
+            0.71,
+            0.84,
+            0.9,
+            1.11,
+            1.18,
+            1.25,
+            1.37,
+            1.52,
+            1.66,
+            1.74,
+            1.79,
+            1.93
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "inverse coversed sine",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        }
+      },
+      "keywords": [
+        "acoversin",
+        "acoversine",
+        "arccoversin",
+        "arccoversine",
+        "coversed sine",
+        "versed sine",
+        "acoversinus",
+        "arcvers",
+        "covers",
+        "cover",
+        "acvs",
+        "arc",
+        "versed",
+        "coversed",
+        "sine",
+        "sin",
+        "asin"
+      ],
+      "extra_keywords": [
+        "math.asin"
+      ]
+    }
+  }
 }

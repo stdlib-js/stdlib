@@ -40,7 +40,7 @@ interface Namespace {
 	* Size (in bytes) of a 16-bit unsigned integer.
 	*
 	* @example
-	* var bytes = ns.NUM_BYTES
+	* var bytes = ns.NUM_BYTES;
 	* // returns 2
 	*/
 	NUM_BYTES: typeof NUM_BYTES;

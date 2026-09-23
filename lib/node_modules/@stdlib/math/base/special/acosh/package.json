@@ -76,8 +76,8 @@
       "$schema": "math/base@v1.0",
       "base_alias": "acosh",
       "alias": "acosh",
-      "pkg_desc": "compute the hyperbolic arccosine of double-precision floating-point number",
-      "desc": "computes the hyperbolic arccosine of double-precision floating-point number",
+      "pkg_desc": "compute the hyperbolic arccosine of a double-precision floating-point number",
+      "desc": "computes the hyperbolic arccosine of a double-precision floating-point number",
       "short_desc": "hyperbolic arccosine",
       "parameters": [
         {

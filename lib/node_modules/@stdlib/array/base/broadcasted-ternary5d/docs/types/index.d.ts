@@ -88,7 +88,6 @@ type InOutShapes = [
 * var ones5d = require( '@stdlib/array/base/ones5d' );
 * var zeros5d = require( '@stdlib/array/base/zeros5d' );
 * var add = require( '@stdlib/number/float64/base/add3' );
-* var bternary5d = require( '@stdlib/array/base/broadcasted-ternary5d' );
 * var shapes = [
 *     [ 1, 2, 1, 1, 1 ],
 *     [ 2, 1, 1, 1, 1 ],

@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Async Iterator Symbol Support
+# hasAsyncIteratorSymbolSupport
 
 > Detect native [`Symbol.asyncIterator`][mdn-symbol] support.
 

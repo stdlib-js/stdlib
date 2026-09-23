@@ -25,7 +25,7 @@
 * @param indices - argument indices
 * @param thisArg - function context
 * @throws second argument must be an array of nonnegative integers
-* @returns function with reordered arguments
+* @returns function wrapper
 *
 * @example
 * function foo( a, b, c ) {

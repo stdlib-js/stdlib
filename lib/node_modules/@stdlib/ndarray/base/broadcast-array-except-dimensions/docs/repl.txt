@@ -1,0 +1,59 @@
+
+{{alias}}( arr, shape, dims )
+    Broadcasts an input ndarray to a target shape while keeping a list of
+    specified dimensions unchanged.
+
+    The returned array is a "base" ndarray, and, thus, the returned array does
+    not perform bounds checking or afford any of the guarantees of the non-base
+    ndarray constructor. The primary intent of this function is to broadcast an
+    ndarray-like object within internal implementations and to do so with
+    minimal overhead.
+
+    The function always returns a new ndarray instance even if the input ndarray
+    shape and the desired shape are the same.
+
+    The function throws an error if a provided ndarray is incompatible with a
+    provided shape.
+
+    Parameters
+    ----------
+    arr: ndarray
+        Input array.
+
+    shape: ArrayLikeObject
+        Desired shape.
+
+    dims: Array<integer>
+        List of dimensions to exclude from broadcasting. Should be a list of
+        negative integers.
+
+    Returns
+    -------
+    out: ndarray
+        Broadcasted array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2, 3 ] ] )
+    <ndarray>
+    > {{alias:@stdlib/ndarray/shape}}( x )
+    [ 1, 3 ]
+    > var y = {{alias}}( x, [ 2, 2, 3 ], [ -2 ] )
+    <ndarray>
+    > {{alias:@stdlib/ndarray/shape}}( y )
+    [ 2, 1, 3 ]
+    > var v = y.get( 0, 0, 0 )
+    1
+    > v = y.get( 0, 0, 1 )
+    2
+    > v = y.get( 0, 0, 2 )
+    3
+    > v = y.get( 1, 0, 0 )
+    1
+    > v = y.get( 1, 0, 1 )
+    2
+    > v = y.get( 1, 0, 2 )
+    3
+
+    See Also
+    --------

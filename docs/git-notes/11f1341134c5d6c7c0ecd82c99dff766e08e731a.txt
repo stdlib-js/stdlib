@@ -1,0 +1,11 @@
+---
+type: amend-message
+---
+feat: add support for accessor arrays and refactor `stats/base/cumax`
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/5225
+
+Co-authored-by: Athan Reines <kgryte@gmail.com>
+Co-authored-by: stdlib-bot <noreply@stdlib.io>
+Reviewed-by: Athan Reines <kgryte@gmail.com>
+Signed-off-by: Athan <kgryte@gmail.com>

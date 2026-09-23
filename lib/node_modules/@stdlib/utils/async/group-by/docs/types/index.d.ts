@@ -128,7 +128,7 @@ type ValuesBinary<T> = ( error: Error | null, result: ValuesResults<T> ) => void
 * @param error - encountered error or null
 * @param result - group results
 */
-type IndicesBinary<T> = ( error: Error | null, result: IndicesResults ) => void;
+type IndicesBinary = ( error: Error | null, result: IndicesResults ) => void;
 
 /**
 * Callback invoked either upon processing all collection elements or upon encountering an error.
@@ -152,7 +152,7 @@ type ValuesCallback<T> = Nullary | Unary | ValuesBinary<T>;
 * @param error - encountered error or null
 * @param result - group results
 */
-type IndicesCallback<T> = Nullary | Unary | IndicesBinary<T>;
+type IndicesCallback = Nullary | Unary | IndicesBinary;
 
 /**
 * Callback invoked either upon processing all collection elements or upon encountering an error.
@@ -241,7 +241,7 @@ type ValuesFactoryFunction<T> = ( collection: Collection<T>, done: ValuesCallbac
 * @param collection - input collection
 * @param done - function to invoke upon completion
 */
-type IndicesFactoryFunction<T> = ( collection: Collection<T>, done: IndicesCallback<T> ) => void;
+type IndicesFactoryFunction<T> = ( collection: Collection<T>, done: IndicesCallback ) => void;
 
 /**
 * Invokes an indicator function for each element in a collection.
@@ -303,7 +303,7 @@ interface GroupByAsync {
 	*
 	* groupByAsync( files, {}, indicator, done );
 	*/
-	<T = unknown, V = unknown>( collection: Collection<T>, options: IndicesOptions<T, V>, indicator: Indicator<T, V>, done: IndicesCallback<T> ): void;
+	<T = unknown, V = unknown>( collection: Collection<T>, options: IndicesOptions<T, V>, indicator: Indicator<T, V>, done: IndicesCallback ): void;
 
 	/**
 	* Groups values according to an indicator function.
@@ -487,7 +487,7 @@ interface GroupByAsync {
 	* };
 	*
 	* // Create a `groupByAsync` function which invokes the indicator function for each collection element sequentially:
-	* var groupByAsync = factory( opts, indicator );
+	* var groupBy = groupByAsync.factory( opts, indicator );
 	*
 	* // Create a collection over which to iterate:
 	* var files = [
@@ -504,7 +504,7 @@ interface GroupByAsync {
 	* }
 	*
 	* // Try to read each element in `files`:
-	* groupByAsync( files, done );
+	* groupBy( files, done );
 	*/
 	factory<T = unknown, V = unknown>( options: IndicesOptions<T, V>, indicator: Indicator<T, V> ): IndicesFactoryFunction<T>;
 
@@ -546,7 +546,7 @@ interface GroupByAsync {
 	* };
 	*
 	* // Create a `groupByAsync` function which invokes the indicator function for each collection element sequentially:
-	* var groupByAsync = factory( opts, indicator );
+	* var groupBy = groupByAsync.factory( opts, indicator );
 	*
 	* // Create a collection over which to iterate:
 	* var files = [
@@ -563,7 +563,7 @@ interface GroupByAsync {
 	* }
 	*
 	* // Try to read each element in `files`:
-	* groupByAsync( files, done );
+	* groupBy( files, done );
 	*/
 	factory<T = unknown, V = unknown>( options: IndicesAndValuesOptions<T, V>, indicator: Indicator<T, V> ): IndicesAndValuesFactoryFunction<T>;
 
@@ -605,7 +605,7 @@ interface GroupByAsync {
 	* };
 	*
 	* // Create a `groupByAsync` function which invokes the indicator function for each collection element sequentially:
-	* var groupByAsync = factory( opts, indicator );
+	* var groupBy = groupByAsync.factory( opts, indicator );
 	*
 	* // Create a collection over which to iterate:
 	* var files = [
@@ -622,7 +622,7 @@ interface GroupByAsync {
 	* }
 	*
 	* // Try to read each element in `files`:
-	* groupByAsync( files, done );
+	* groupBy( files, done );
 	*/
 	factory<T = unknown, V = unknown>( options: ValuesOptions<T, V> | BaseOptions<T, V>, indicator: Indicator<T, V> ): ValuesFactoryFunction<T>;
 
@@ -654,7 +654,7 @@ interface GroupByAsync {
 	* }
 	*
 	* // Create a `groupByAsync` function which invokes the indicator function for each collection element sequentially:
-	* var groupByAsync = factory( indicator );
+	* var groupBy = groupByAsync.factory( indicator );
 	*
 	* // Create a collection over which to iterate:
 	* var files = [
@@ -671,7 +671,7 @@ interface GroupByAsync {
 	* }
 	*
 	* // Try to read each element in `files`:
-	* groupByAsync( files, done );
+	* groupBy( files, done );
 	*/
 	factory<T = unknown, V = unknown>( indicator: Indicator<T, V> ): ValuesFactoryFunction<T>;
 }

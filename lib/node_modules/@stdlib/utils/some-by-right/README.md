@@ -159,23 +159,16 @@ var mean = context.sum / context.count;
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var randu = require( '@stdlib/random/array/randu' );
 var someByRight = require( '@stdlib/utils/some-by-right' );
 
 function threshold( value ) {
     return ( value > 0.95 );
 }
 
-var bool;
-var arr;
-var i;
+var arr = randu( 100 );
 
-arr = new Array( 100 );
-for ( i = 0; i < arr.length; i++ ) {
-    arr[ i ] = randu();
-}
-
-bool = someByRight( arr, 5, threshold );
+var bool = someByRight( arr, 5, threshold );
 // returns <boolean>
 ```
 

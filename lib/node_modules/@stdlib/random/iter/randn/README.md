@@ -55,7 +55,7 @@ The function accepts the following `options`:
 -   **name**: name of a supported pseudorandom number generator (PRNG), which will serve as the underlying source of pseudorandom numbers. The following PRNGs are supported:
 
     -   [`improved-ziggurat`][@stdlib/random/base/improved-ziggurat]: improved ziggurat method.
-    -   [`box-muller`][@stdlib/random/base/box-muller]: Box-Muller transform.  
+    -   [`box-muller`][@stdlib/random/base/box-muller]: Box-Muller transform.
 
     Default: [`'improved-ziggurat'`][@stdlib/random/base/improved-ziggurat].
 

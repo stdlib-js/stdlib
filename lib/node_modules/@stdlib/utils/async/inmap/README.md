@@ -367,6 +367,7 @@ The function accepts the same `options` as `inmapAsync()`.
 ```javascript
 var resolve = require( 'path' ).resolve;
 var readFile = require( '@stdlib/fs/read-file' );
+var format = require( '@stdlib/string/format' );
 var inmapAsync = require( '@stdlib/utils/async/inmap' );
 
 var files = [
@@ -389,7 +390,7 @@ function read( file, next ) {
 
     function onFile( error, data ) {
         if ( error ) {
-            error = new Error( 'unable to read file: '+file );
+            error = new Error( format( 'unable to read file: %s', file ) );
             return next( error );
         }
         next( null, data );

@@ -1,0 +1,90 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-float",
+        "@stdlib/napi/argv-float32array",
+        "@stdlib/napi/export",
+        "@stdlib/math/base/special/kernel-sincosf",
+        "@stdlib/math/base/special/rempio2f",
+        "@stdlib/number/float32/base/to-word",
+        "@stdlib/constants/float64/half-pi",
+        "@stdlib/constants/float32/exponent-mask",
+        "@stdlib/constants/float32/abs-mask"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/kernel-sincosf",
+        "@stdlib/math/base/special/rempio2f",
+        "@stdlib/number/float32/base/to-word",
+        "@stdlib/constants/float64/half-pi",
+        "@stdlib/constants/float32/exponent-mask",
+        "@stdlib/constants/float32/abs-mask"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/kernel-sincosf",
+        "@stdlib/math/base/special/rempio2f",
+        "@stdlib/number/float32/base/to-word",
+        "@stdlib/constants/float64/half-pi",
+        "@stdlib/constants/float32/exponent-mask",
+        "@stdlib/constants/float32/abs-mask"
+      ]
+    }
+  ]
+}

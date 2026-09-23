@@ -27,19 +27,8 @@ import ctors = require( './index' );
 	ctors( 'float' ); // $ExpectType Function | null
 }
 
-// The compiler throws an error if the function is provided a value other than a string...
-{
-	ctors( true ); // $ExpectError
-	ctors( false ); // $ExpectError
-	ctors( null ); // $ExpectError
-	ctors( undefined ); // $ExpectError
-	ctors( 5 ); // $ExpectError
-	ctors( [] ); // $ExpectError
-	ctors( {} ); // $ExpectError
-	ctors( ( x: number ): number => x ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided insufficient arguments...
+// The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	ctors(); // $ExpectError
+	ctors( 'float64', {} ); // $ExpectError
 }

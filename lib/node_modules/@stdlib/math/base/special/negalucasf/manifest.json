@@ -37,8 +37,9 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/napi/unary",
-        "@stdlib/math/base/special/labs",
-        "@stdlib/constants/float32/max-safe-nth-lucas"
+        "@stdlib/math/base/special/absf",
+        "@stdlib/constants/float32/max-safe-nth-lucas",
+        "@stdlib/math/base/assert/is-integerf"
       ]
     },
     {
@@ -52,8 +53,9 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/special/labs",
-        "@stdlib/constants/float32/max-safe-nth-lucas"
+        "@stdlib/math/base/special/absf",
+        "@stdlib/constants/float32/max-safe-nth-lucas",
+        "@stdlib/math/base/assert/is-integerf"
       ]
     },
     {
@@ -67,8 +69,9 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/special/labs",
-        "@stdlib/constants/float32/max-safe-nth-lucas"
+        "@stdlib/math/base/special/absf",
+        "@stdlib/constants/float32/max-safe-nth-lucas",
+        "@stdlib/math/base/assert/is-integerf"
       ]
     }
   ]

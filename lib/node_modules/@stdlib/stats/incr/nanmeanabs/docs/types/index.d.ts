@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* If provided a value, returns an updated arithmetic mean; otherwise, returns the current arithmetic mean.
+* If provided a value, returns an updated arithmetic mean of absolute values; otherwise, returns the current arithmetic mean of absolute values.
 *
 * @param x - value
 * @returns arithmetic mean of absolute values

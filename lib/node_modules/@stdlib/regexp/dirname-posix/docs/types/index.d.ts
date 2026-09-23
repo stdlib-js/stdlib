@@ -38,7 +38,7 @@ interface ReDirnamePosix {
 	* Regular expression to capture a POSIX path dirname.
 	*
 	* @example
-	* var ext = reExtnamePosix.REGEXP.exec( 'index.js' )[ 1 ];
+	* var ext = reDirnamePosix.REGEXP.exec( 'index.js' )[ 1 ];
 	* // returns '.js'
 	*/
 	REGEXP: RegExp;

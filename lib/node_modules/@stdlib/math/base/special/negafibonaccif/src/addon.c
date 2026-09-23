@@ -19,4 +19,4 @@
 #include "stdlib/math/base/special/negafibonaccif.h"
 #include "stdlib/math/base/napi/unary.h"
 
-STDLIB_MATH_BASE_NAPI_MODULE_I_F( stdlib_base_negafibonaccif )
+STDLIB_MATH_BASE_NAPI_MODULE_F_F( stdlib_base_negafibonaccif )

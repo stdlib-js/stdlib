@@ -1,0 +1,141 @@
+
+{{alias}}( order, side, M, N, V, strideV, tau, C, LDC, work )
+    Applies a real elementary reflector `H = I - tau * v * v^T` to a real M by N
+    matrix `C`.
+
+    If `side = 'left'`,
+
+    - `work` should have `N` indexed elements.
+    - `V` should have `1 + (M-1) * abs(strideV)` indexed elements.
+    - `C` is overwritten by `H * C`.
+
+    If `side = 'right'`,
+
+    - `work` should have `M` indexed elements.
+    - `V` should have `1 + (N-1) * abs(strideV)` indexed elements.
+    - `C` is overwritten by `C * H`.
+
+    Parameters
+    ----------
+    order: string
+        Storage layout. Must be either 'row-major' or 'column-major'.
+
+    side: string
+        Specifies the side of multiplication with `C`. Use `'left'` to form
+        `H * C` and `'right'` to form `C * H`.
+
+    M: integer
+        Number of rows in `C`.
+
+    N: integer
+        Number of columns in `C`.
+
+    V: Float64Array
+        The vector `v`.
+
+    strideV: integer
+        Stride length for `V`.
+
+    tau: number
+        Scalar constant.
+
+    C: Float64Array
+        Input matrix.
+
+    LDC: integer
+        Stride of the first dimension of `C` (a.k.a., leading dimension
+        of the matrix `C`).
+
+    work: Float64Array
+        Workspace array.
+
+    Returns
+    -------
+    C: Float64Array
+        Output matrix.
+
+    Examples
+    --------
+    > var C = new {{alias:@stdlib/array/float64}}( [ 1.0, 3.0, 2.0, 4.0 ] );
+    > var V = new {{alias:@stdlib/array/float64}}( [ 0.5, 0.5 ] );
+    > var work = new {{alias:@stdlib/array/float64}}( 2 );
+    > {{alias}}( 'row-major', 'left', 2, 2, V, 1, 1.0, C, 2, work )
+    <Float64Array>[ -1.0, -2.0, 1.0, 1.5 ]
+
+
+{{alias}}.ndarray( side, M, N, V, sv, ov, tau, C, sc1, sc2, oc, work, sw, ow )
+    Applies a real elementary reflector `H = I - tau * v * v^T` to a real M by N
+    matrix `C` using alternative indexing semantics.
+
+    If `side = 'left'`,
+
+    - `work` should have `N` indexed elements.
+    - `V` should have `1 + (M-1) * abs(sv)` indexed elements.
+    - `C` is overwritten by `H * C`.
+
+    If `side = 'right'`,
+
+    - `work` should have `M` indexed elements.
+    - `V` should have `1 + (N-1) * abs(sv)` indexed elements.
+    - `C` is overwritten by `C * H`.
+
+    Parameters
+    ----------
+    side: string
+        Specifies the side of multiplication with `C`. Use `'left'` to form
+        `H * C` and `'right'` to form `C * H`.
+
+    M: integer
+        Number of rows in `C`.
+
+    N: integer
+        Number of columns in `C`.
+
+    V: Float64Array
+        The vector `v`.
+
+    sv: integer
+        Stride length for `V`.
+
+    ov: integer
+        Starting index for `V`.
+
+    tau: number
+        Scalar constant.
+
+    C: Float64Array
+        Input matrix.
+
+    sc1: integer
+        Stride of the first dimension of `C`.
+
+    sc2: integer
+        Stride of the second dimension of `C`.
+
+    oc: integer
+        Starting index for `C`.
+
+    work: Float64Array
+        Workspace array.
+
+    sw: integer
+        Stride length for `work`.
+
+    ow: integer
+        Starting index for `work`.
+
+    Returns
+    -------
+    C: Float64Array
+        Output matrix.
+
+    Examples
+    --------
+    > var C = new {{alias:@stdlib/array/float64}}( [ 1.0, 3.0, 2.0, 4.0 ] );
+    > var V = new {{alias:@stdlib/array/float64}}( [ 0.5, 0.5 ] );
+    > var work = new {{alias:@stdlib/array/float64}}( 2 );
+    > {{alias}}.ndarray( 'left', 2, 2, V, 1, 0, 1.0, C, 2, 1, 0, work, 1, 0 )
+    <Float64Array>[ -1.0, -2.0, 1.0, 1.5 ]
+
+    See Also
+    --------

@@ -2,7 +2,7 @@
 {{alias}}( arrays )
     Tests whether an ndarray contains a specified value.
 
-    A provided "ndarray" should be an `object` with the following properties:
+    A provided "ndarray" should be an object with the following properties:
 
     - dtype: data type.
     - data: data buffer.

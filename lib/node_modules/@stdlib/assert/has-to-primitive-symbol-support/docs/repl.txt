@@ -1,0 +1,18 @@
+
+{{alias}}()
+    Tests for native `Symbol.toPrimitive` support.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an environment has native `Symbol.toPrimitive`
+        support.
+
+    Examples
+    --------
+    > var bool = {{alias}}()
+    <boolean>
+
+    See Also
+    --------
+

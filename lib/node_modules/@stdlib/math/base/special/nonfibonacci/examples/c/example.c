@@ -20,9 +20,11 @@
 #include <stdio.h>
 
 int main( void ) {
-	int i;
-	for ( i = 1; i < 12; i++ ) {
-		double result = stdlib_base_nonfibonacci( i );
-		printf( "x: %i => result: %lf\n", i, result );
+	double i;
+	double v;
+
+	for ( i = 1.0; i < 12.0; i++ ) {
+		v = stdlib_base_nonfibonacci( i );
+		printf( "nonfibonacci(%lf) = %lf\n", i, v );
 	}
 }

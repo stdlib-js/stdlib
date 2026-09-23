@@ -63,5 +63,82 @@
     "base 10",
     "logarithm",
     "log"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "log10",
+      "alias": "log10",
+      "pkg_desc": "evaluate the common logarithm (base 10)",
+      "desc": "evaluates the common logarithm (base 10)",
+      "short_desc": "common logarithm",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": 0,
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              0,
+              100
+            ]
+          },
+          "example_values": [
+            10,
+            0.01,
+            0.25,
+            0.5,
+            1,
+            2,
+            3,
+            4,
+            9,
+            16,
+            25,
+            36,
+            49,
+            64,
+            81,
+            100,
+            0.1,
+            10,
+            50,
+            99.99
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "common logarithm",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "log10",
+        "common",
+        "base 10",
+        "logarithm",
+        "log"
+      ],
+      "extra_keywords": [
+        "math.log10"
+      ]
+    }
+  }
 }

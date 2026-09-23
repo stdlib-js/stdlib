@@ -42,7 +42,7 @@ var isUnsignedIntegerDataType = require( '@stdlib/ndarray/base/assert/is-unsigne
 
 #### isUnsignedIntegerDataType( value )
 
-Tests if an input `value` is a supported ndarray unsigned integer data type.
+Tests if an input value is a supported ndarray unsigned integer data type.
 
 ```javascript
 var bool = isUnsignedIntegerDataType( 'float32' );

@@ -1,0 +1,51 @@
+
+{{alias}}( [kind] )
+    Returns a list of ndarray data type single letter character abbreviations.
+
+    When not provided a data type "kind", the function returns a list of single
+    letter character abbreviations for all supported ndarray data types.
+
+    The function supports the following data type "kinds":
+
+    - floating_point: floating-point data types.
+    - real_floating_point: real-valued floating-point data types.
+    - complex_floating_point: complex-valued floating-point data types.
+    - boolean: boolean data types.
+    - integer: integer data types.
+    - signed_integer: signed integer data types.
+    - unsigned_integer: unsigned integer data types.
+    - real: real-valued data types.
+    - numeric: numeric data types.
+    - typed: typed data types.
+    - integer_index: integer index data types.
+    - boolean_index: boolean index data types.
+    - mask_index: mask index data types.
+    - typed_index: typed index data types.
+    - index: index data types.
+    - all: all data types.
+
+    Additionally, the function supports extending the "kinds" listed above by
+    appending a '_and_generic' suffix to the kind name (e.g., real_and_generic).
+
+    Parameters
+    ----------
+    kind: string (optional)
+        Data type kind.
+
+    Returns
+    -------
+    out: Array<string>
+        List of ndarray data type single letter character abbreviations.
+
+    Examples
+    --------
+    > var out = {{alias}}()
+    [...]
+    > out = {{alias}}( 'floating_point' )
+    [...]
+    > out = {{alias}}( 'floating_point_and_generic' )
+    [...]
+
+    See Also
+    --------
+

@@ -1,0 +1,17 @@
+
+{{alias}}()
+    Returns an object mapping supported data type strings to data type objects.
+
+    Returns
+    -------
+    out: Object
+        Object mapping supported data type strings to data type objects.
+
+    Examples
+    --------
+    > var out = {{alias}}()
+    {...}
+
+    See Also
+    --------
+

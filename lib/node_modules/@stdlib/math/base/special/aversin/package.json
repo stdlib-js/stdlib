@@ -74,5 +74,91 @@
     "trigonometry",
     "radians",
     "angle"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "aversin",
+      "alias": "aversin",
+      "pkg_desc": "compute the inverse versed sine (in radians) of a double-precision floating-point number",
+      "desc": "computes the inverse versed sine (in radians) of a double-precision floating-point number",
+      "short_desc": "inverse versed sine",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": 0,
+              "max": 2
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              0,
+              2
+            ]
+          },
+          "example_values": [
+            0.06,
+            1.72,
+            0.94,
+            0.18,
+            1.07,
+            0.6,
+            1.92,
+            0.29,
+            1.37,
+            0.81,
+            0.14,
+            1.21,
+            0.55,
+            1.02,
+            0.76,
+            1.68,
+            0.23,
+            1.31,
+            0.47,
+            1.84
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "inverse versed sine (in radians)",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "aversin",
+        "aversine",
+        "arcversin",
+        "arcversine",
+        "versed sine",
+        "aversinus",
+        "arcvers",
+        "avers",
+        "aver",
+        "arc",
+        "versed",
+        "sine",
+        "sin",
+        "acos"
+      ],
+      "extra_keywords": [
+        "math.acos"
+      ]
+    }
+  }
 }

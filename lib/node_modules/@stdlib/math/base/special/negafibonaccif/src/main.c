@@ -17,9 +17,10 @@
 */
 
 #include "stdlib/math/base/special/negafibonaccif.h"
+#include "stdlib/math/base/assert/is_integerf.h"
 #include "stdlib/math/base/special/absf.h"
 #include "stdlib/constants/float32/max_safe_nth_fibonacci.h"
-#include <stdint.h>
+#include <stdlib.h>
 
 static const float negafibonaccif_value[ 37 ] = {
 	0.0f,
@@ -68,17 +69,17 @@ static const float negafibonaccif_value[ 37 ] = {
 * @return     output value
 *
 * @example
-* float out = stdlib_base_negafibonaccif( -1 );
+* float out = stdlib_base_negafibonaccif( -1.0f );
 * // returns 1.0f
 */
-float stdlib_base_negafibonaccif( const int32_t n ) {
-	int32_t an;
-	if ( n > 0 ) {
+float stdlib_base_negafibonaccif( const float n ) {
+	float an;
+	if ( !stdlib_base_is_integerf( n ) || n > 0.0f ) {
 		return 0.0f / 0.0f; // NaN
 	}
 	an = stdlib_base_absf( n );
 	if ( an > STDLIB_CONSTANT_FLOAT32_MAX_SAFE_NTH_FIBONACCI ) {
 		return 0.0f / 0.0f; // NaN
 	}
-	return negafibonaccif_value[ an ];
+	return negafibonaccif_value[ (size_t)an ];
 }

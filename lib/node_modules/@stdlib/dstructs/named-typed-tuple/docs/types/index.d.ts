@@ -1244,7 +1244,7 @@ interface Tuple {
 	* var tuple = factory( [ 1.0, 0.0, -1.0 ], 'int32' );
 	*
 	* var str = tuple.toLocaleString();
-	* // returns '1,0,-1'
+	* // returns 'tuple(x=1, y=0, z=-1)'
 	*/
 	toLocaleString( locales: string | Array<string>, options?: any ): string;
 

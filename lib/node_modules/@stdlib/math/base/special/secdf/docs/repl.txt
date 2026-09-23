@@ -1,0 +1,29 @@
+
+{{alias}}( x )
+    Computes the secant of a single-precision floating-point number (in
+    degrees).
+
+    Parameters
+    ----------
+    x: number
+        Input value (in degrees).
+
+    Returns
+    -------
+    y: number
+        Secant.
+
+    Examples
+    --------
+    > var y = {{alias}}( 1.0 )
+    ~1.0
+    > y = {{alias}}( {{alias:@stdlib/constants/float32/pi}} )
+    ~1.0
+    > y = {{alias}}( -{{alias:@stdlib/constants/float32/pi}} )
+    ~1.0
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+
