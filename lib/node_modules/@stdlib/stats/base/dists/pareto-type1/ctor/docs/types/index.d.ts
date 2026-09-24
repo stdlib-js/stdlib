@@ -21,7 +21,7 @@
 /**
 * Pareto (Type I) distribution.
 */
-declare class Pareto {
+declare class Pareto1 {
 	/**
 	* Pareto (Type I) distribution constructor.
 	*
@@ -152,4 +152,4 @@ declare class Pareto {
 
 // EXPORTS //
 
-export = Pareto;
+export = Pareto1;

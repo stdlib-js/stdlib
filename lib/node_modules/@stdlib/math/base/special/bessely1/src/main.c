@@ -40,6 +40,7 @@
 #include "stdlib/constants/float64/ninf.h"
 #include "stdlib/constants/float64/pi.h"
 #include "stdlib/constants/float64/sqrt_pi.h"
+#include "stdlib/constants/float64/nan.h"
 
 static const double ONE_DIV_SQRT_PI = 1.0 / STDLIB_CONSTANT_FLOAT64_SQRT_PI;
 static const double TWO_DIV_PI = 2.0 / STDLIB_CONSTANT_FLOAT64_PI;
@@ -244,7 +245,7 @@ double stdlib_base_bessely1( double x ) {
 	double f;
 
 	if ( x < 0.0 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( x == 0.0 ) {
 		return STDLIB_CONSTANT_FLOAT64_NINF;

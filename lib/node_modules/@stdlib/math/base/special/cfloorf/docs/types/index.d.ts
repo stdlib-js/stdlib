@@ -30,17 +30,9 @@ import { Complex64 } from '@stdlib/types/complex';
 *
 * @example
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
-* var real = require( '@stdlib/complex/float32/real' );
-* var imag = require( '@stdlib/complex/float32/imag' );
 *
 * var v = cfloorf( new Complex64( 5.5, 3.3 ) );
-* // returns <Complex64>
-*
-* var re = real( v );
-* // returns 5.0
-*
-* var im = imag( v );
-* // returns 3.0
+* // returns <Complex64>[ 5.0, 3.0 ]
 */
 declare function cfloorf( z: Complex64 ): Complex64;
 

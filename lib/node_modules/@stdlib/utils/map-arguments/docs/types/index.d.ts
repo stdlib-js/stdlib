@@ -70,23 +70,30 @@ declare function mapArguments<
 * @returns function wrapper
 *
 * @example
-* function foo( a, b, c ) {
-*     return [ a, b, c ];
-* }
-*
 * function clbk( v ) {
-*     this.count += 1;
 *     return v * 2;
 * }
 *
-* var thisArg = { 'count': 0 };
-* var bar = mapArguments( foo, clbk, thisArg );
+* function Foo() {
+*     this.x = 1;
+*     this.y = 2;
+* }
 *
-* var out = bar( 1, 2, 3 );
-* // returns [ 2, 4, 6 ]
+* Foo.prototype.scale = function scale( a, b ) {
+*     return [ this.x*a, this.y*b ];
+* };
 *
-* var count = thisArg.count;
-* // returns 3
+* var ctx = {
+*     'x': 10,
+*     'y': 20
+* };
+*
+* var foo = new Foo();
+*
+* var bar = mapArguments( foo.scale, clbk, ctx );
+*
+* var out = bar( 1, 2 );
+* // returns [ 20, 80 ]
 */
 declare function mapArguments<
 	T extends ( ...args: Array<any> ) => any,

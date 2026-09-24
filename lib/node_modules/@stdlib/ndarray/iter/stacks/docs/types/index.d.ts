@@ -52,7 +52,6 @@ interface Options {
 *
 * @example
 * var array = require( '@stdlib/ndarray/array' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var x = array( [ [ [ 1, 2 ], [ 3, 4 ] ], [ [ 5, 6 ], [ 7, 8 ] ] ] );
 * // returns <ndarray>
@@ -60,16 +59,10 @@ interface Options {
 * var iter = nditerStacks( x, [ 1, 2 ] );
 *
 * var v = iter.next().value;
-* // returns <ndarray>
-*
-* var arr = ndarray2array( v );
-* // returns [ [ 1, 2 ], [ 3, 4 ] ]
+* // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
 *
 * v = iter.next().value;
-* // returns <ndarray>
-*
-* arr = ndarray2array( v );
-* // returns [ [ 5, 6 ], [ 7, 8 ] ]
+* // returns <ndarray>[ [ 5, 6 ], [ 7, 8 ] ]
 *
 * // ...
 */

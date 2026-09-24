@@ -15,7 +15,7 @@
     Examples
     --------
     > var str = {{alias}}( '[A-Z]*' )
-    '\\[A\\-Z\\]\\*'
+    '\[A\-Z\]\*'
 
     See Also
     --------

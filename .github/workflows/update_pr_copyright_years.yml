@@ -81,7 +81,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           # Refers to the branch name of the branch being pushed:
           ref: ${{ steps.pr-details.outputs.branch }}
@@ -116,9 +116,11 @@ jobs:
       # Update the copyright years:
       - name: 'Update copyright years'
         id: update-years
+        env:
+          FILES: ${{ steps.added-files.outputs.files }}
         run: |
-          files="${{ steps.added-files.outputs.files }}"
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/update_copyright_years" "$files"
+          files="$FILES"
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/update_pr_copyright_years/run" "$files"
 
       # Disable Git hooks:
       - name: 'Disable Git hooks'
@@ -128,7 +130,7 @@ jobs:
       # Import GPG key to sign commits:
       - name: 'Import GPG key to sign commits'
         # Pin action to full length commit SHA
-        uses: crazy-max/ghaction-import-gpg@e89d40939c28e39f97cf32126055eeae86ba74ec # v6.3.0
+        uses: crazy-max/ghaction-import-gpg@2dc316deee8e90f13e1a351ab510b4d5bc0c82cd # v7.0.0
         with:
           gpg_private_key: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}

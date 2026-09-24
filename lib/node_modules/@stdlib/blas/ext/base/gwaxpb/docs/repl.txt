@@ -1,0 +1,129 @@
+
+{{alias}}( N, alpha, beta, x, strideX, w, strideW )
+    Multiplies each element in a strided array `x` by a scalar constant and adds
+    a scalar constant before assigning the results to a strided array `w`.
+
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N <= 0`, the function returns `w` unchanged.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    alpha: number
+        First scalar constant.
+
+    beta: number
+        Second scalar constant.
+
+    x: Array<number>|TypedArray
+        Input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    w: Array<number>|TypedArray
+        Output array.
+
+    strideW: integer
+        Stride length for `w`.
+
+    Returns
+    -------
+    w: Array<number>|TypedArray
+        Output array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
+    > var w = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+    > {{alias}}( x.length, 5.0, 3.0, x, 1, w, 1 )
+    [ -7.0, 8.0, 18.0, -22.0, 23.0, 3.0, -2.0, -12.0 ]
+
+    // Using `N` and stride parameters:
+    > x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
+    > w = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+    > {{alias}}( 4, 5.0, 3.0, x, 2, w, 2 )
+    [ -7.0, 0.0, 18.0, 0.0, 23.0, 0.0, -2.0, 0.0 ]
+
+    // Using view offsets:
+    > var bufX = [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ];
+    > var bufW = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+    > var x0 = new {{alias:@stdlib/array/float64}}( bufX );
+    > var w0 = new {{alias:@stdlib/array/float64}}( bufW );
+    > var offsetX = x0.BYTES_PER_ELEMENT * 1;
+    > var offsetW = w0.BYTES_PER_ELEMENT * 1;
+    > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, offsetX );
+    > var w1 = new {{alias:@stdlib/array/float64}}( w0.buffer, offsetW );
+    > {{alias}}( 3, 5.0, 3.0, x1, 2, w1, 2 )
+    <Float64Array>[ -7.0, 0.0, -17.0, 0.0, -27.0 ]
+    > w0
+    <Float64Array>[ 0.0, -7.0, 0.0, -17.0, 0.0, -27.0 ]
+
+
+{{alias}}.ndarray( N, alpha, beta, x, strideX, offsetX, w, strideW, offsetW )
+    Multiplies each element in a strided array `x` by a scalar constant and adds
+    a scalar constant before assigning the results to a strided array `w` using
+    alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    alpha: number
+        First scalar constant.
+
+    beta: number
+        Second scalar constant.
+
+    x: Array<number>|TypedArray
+        Input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    offsetX: integer
+        Starting index for `x`.
+
+    w: Array<number>|TypedArray
+        Output array.
+
+    strideW: integer
+        Stride length for `w`.
+
+    offsetW: integer
+        Starting index for `w`.
+
+    Returns
+    -------
+    w: Array<number>|TypedArray
+        Output array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
+    > var w = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+    > {{alias}}.ndarray( x.length, 5.0, 3.0, x, 1, 0, w, 1, 0 )
+    [ -7.0, 8.0, 18.0, -22.0, 23.0, 3.0, -2.0, -12.0 ]
+
+    // Using index offsets:
+    > x = [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ];
+    > w = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+    > {{alias}}.ndarray( 3, 5.0, 3.0, x, 1, x.length-3, w, 1, w.length-3 )
+    [ 0.0, 0.0, 0.0, -17.0, 28.0, -27.0 ]
+
+    See Also
+    --------

@@ -157,7 +157,7 @@ The function supports the following parameters:
 
 ## Examples
 
-<!-- eslint-disable node/no-process-exit, node/no-unsupported-features/node-builtins -->
+<!-- eslint-disable n/no-process-exit, n/no-unsupported-features/node-builtins -->
 
 <!-- eslint no-undef: "error" -->
 

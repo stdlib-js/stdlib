@@ -1,0 +1,9 @@
+---
+type: amend-message
+---
+docs: improve doctests for complex number instances in `math/base/special/csignum`
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/9012
+Ref: https://github.com/stdlib-js/stdlib/issues/8641
+
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>

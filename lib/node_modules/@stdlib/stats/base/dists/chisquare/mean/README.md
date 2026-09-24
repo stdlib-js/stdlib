@@ -41,7 +41,7 @@ The [expected value][expected-value] for a [chi-squared][chisquare-distribution]
 
 <!-- </equation> -->
 
-where `k` is the degrees of freedom.
+where `k >= 0` is the degrees of freedom.
 
 </section>
 
