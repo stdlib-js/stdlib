@@ -78,8 +78,8 @@ var bool = ( w === out );
 
 ## Notes
 
--   A 64-bit unsigned integer has a range of \[`0`, `2^64-1`].
--   Passing a number argument is safe and exact for integers within \[`0`, `2^53`]. For values exceeding `2^53`, JavaScript numbers incur precision loss.
+-   A 64-bit unsigned integer has a range of `[0, 2^64-1]`.
+-   Passing a number argument is safe and exact for integers within `[0, 2^53]`. For values exceeding `2^53`, JavaScript numbers incur precision loss.
 
 </section>
 
