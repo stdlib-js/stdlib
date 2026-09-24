@@ -21,9 +21,9 @@ import dtypes2enums = require( './index' );
 
 // TESTS //
 
-// The function returns an array of numbers...
+// The function returns an array...
 {
-	dtypes2enums( [ 'float64', 'float64' ] ); // $ExpectType number[]
+	dtypes2enums( [ 'float64', 'float64' ] ); // $ExpectType (number | null)[]
 }
 
 // The compiler throws an error if the function is not provided an array-like object containing data types...

@@ -23,7 +23,7 @@
 */
 interface IsProbabilityArray {
 	/**
-	* Test if a value is an array-like object containing only probabilities.
+	* Tests if a value is an array-like object containing only probabilities.
 	*
 	* @param value - value to test
 	* @returns boolean indicating whether value is an array-like object containing only probabilities
@@ -72,10 +72,10 @@ interface IsProbabilityArray {
 }
 
 /**
-* Test if a value is an array-like object containing only probabilities.
+* Tests if a value is an array-like object containing only probabilities.
 *
 * @param value - value to test
-* @returns boolean indicating whether value is a positive integer
+* @returns boolean indicating whether value is an array-like object containing only probabilities
 *
 * @example
 * var bool = isProbabilityArray( [ 0.3, new Number(0.3) ] );

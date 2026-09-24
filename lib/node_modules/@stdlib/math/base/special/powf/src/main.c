@@ -200,7 +200,7 @@ static float polyval_p( const float x ) {
 *
 * @example
 * float out = y_is_infinitef( -1.0f, 1.0f/0.0f );
-* // returns NaN
+* // returns 1.0f
 */
 static float y_is_infinitef( const float x, const float y ) {
 	if ( x == -1.0f ) {
@@ -328,9 +328,11 @@ static float pow2f( uint32_t j, const float hp, const float lp ) {
 * @param o2    destination for output2
 *
 * @example
+* float o1;
+* float o2;
 * logxf( 9.0f, &o1, &o2 );
 */
-void logxf( const float ax, float *o1, float *o2 ) {
+static void logxf( const float ax, float *o1, float *o2 ) {
 	uint32_t tmp;
 	float t2;
 	float t1;
@@ -361,9 +363,11 @@ void logxf( const float ax, float *o1, float *o2 ) {
 * @param o2     destination for output2
 *
 * @example
+* float o1;
+* float o2;
 * log2axf( 9.0f, 1075970048, &o1, &o2 );
 */
-void log2axf( const float ax, const int32_t ahx, float *o1, float *o2 ) {
+static void log2axf( const float ax, const int32_t ahx, float *o1, float *o2 ) {
 	uint32_t ahxcc;
 	uint32_t tmp;
 	int32_t ahxc;

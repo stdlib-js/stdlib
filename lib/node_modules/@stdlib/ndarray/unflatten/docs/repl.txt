@@ -1,0 +1,33 @@
+
+{{alias}}( x, dim, sizes )
+    Returns a read-only view of an input ndarray in which a specified dimension
+    is expanded over multiple dimensions.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    dim: integer
+        Dimension to be unflattened. If provided an integer less than zero,
+        the dimension index is resolved relative to the last dimension, with
+        the last dimension corresponding to the value `-1`.
+
+    sizes: ArrayLikeObject<integer>
+        New shape of the unflattened dimension.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ 1, 2, 3, 4, 5, 6 ] )
+    <ndarray>[ 1, 2, 3, 4, 5, 6 ]
+    > var y = {{alias}}( x, 0, [ 2, 3 ] )
+    <ndarray>[ [ 1, 2, 3 ], [ 4, 5, 6 ] ]
+
+    See Also
+    --------
+

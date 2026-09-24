@@ -45,7 +45,7 @@ import reorderArguments = require( './index' );
 	reorderArguments( ( x: any, y: any, z: any ): Array<any> => [ x, y, z ], 'abc' ); // $ExpectError
 	reorderArguments( ( x: any, y: any, z: any ): Array<any> => [ x, y, z ], 123 ); // $ExpectError
 	reorderArguments( ( x: any, y: any, z: any ): Array<any> => [ x, y, z ], {} ); // $ExpectError
-	reorderArguments( ( x: any, y: any, z: any ): Array<any> => [ x, y, z ], (): number => 6; // $ExpectError
+	reorderArguments( ( x: any, y: any, z: any ): Array<any> => [ x, y, z ], (): number => 6 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided more than three arguments...

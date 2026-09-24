@@ -36,7 +36,7 @@
 * @example
 * #include <stdint.h>
 *
-* STDLIB_NDARRAY_COUNT_FALSY_2D_LOOP_PREMABLE {
+* STDLIB_NDARRAY_COUNT_FALSY_2D_LOOP_PREAMBLE {
 *     // Innermost loop body...
 * }
 * STDLIB_NDARRAY_COUNT_FALSY_2D_LOOP_EPILOGUE( int32_t )
@@ -86,7 +86,7 @@
 * @example
 * #include <stdint.h>
 *
-* STDLIB_NDARRAY_COUNT_FALSY_2D_LOOP_PREMABLE {
+* STDLIB_NDARRAY_COUNT_FALSY_2D_LOOP_PREAMBLE {
 *     // Innermost loop body...
 * }
 * STDLIB_NDARRAY_COUNT_FALSY_2D_LOOP_EPILOGUE( int32_t )

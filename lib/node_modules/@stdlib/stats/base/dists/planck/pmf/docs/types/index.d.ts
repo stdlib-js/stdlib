@@ -80,7 +80,7 @@ interface PMF {
 	* // returns ~0.0878
 	*
 	* y = mypmf( 1.0 );
-	* // returns ~0.239
+	* // returns ~0.2387
 	*/
 	factory( lambda: number ): Unary;
 }

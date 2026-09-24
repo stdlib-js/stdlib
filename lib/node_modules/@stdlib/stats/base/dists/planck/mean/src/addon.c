@@ -19,4 +19,4 @@
 #include "stdlib/stats/base/dists/planck/mean.h"
 #include "stdlib/math/base/napi/unary.h"
 
-STDLIB_MATH_BASE_NAPI_MODULE_D_D( stdlib_base_dists_planck_mean );
+STDLIB_MATH_BASE_NAPI_MODULE_D_D( stdlib_base_dists_planck_mean )

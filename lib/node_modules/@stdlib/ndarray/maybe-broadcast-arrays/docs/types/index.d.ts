@@ -28,7 +28,7 @@ import { typedndarray } from '@stdlib/types/ndarray';
 *
 * ## Notes
 *
-* -   The function throws an error if a provided broadcast-incompatible ndarrays.
+* -   The function throws an error if provided broadcast-incompatible ndarrays.
 * -   If a provided ndarray has a shape matching the common shape, the function returns the provided ndarray.
 * -   If a provided ndarray has a different (broadcast compatible) shape than the common shape, the function returns a new **read-only** ndarray view of the provided ndarray's data. The view is typically **not** contiguous. As more than one element of a returned view may refer to the same memory location, writing to a view may affect multiple elements. If you need to write to an input array, copy the array before broadcasting.
 *
@@ -92,7 +92,7 @@ declare function maybeBroadcastArrays<T = unknown>( arrays: ArrayLike<typedndarr
 *
 * ## Notes
 *
-* -   The function throws an error if a provided broadcast-incompatible ndarrays.
+* -   The function throws an error if provided broadcast-incompatible ndarrays.
 * -   If a provided ndarray has a shape matching the common shape, the function returns the provided ndarray.
 * -   If a provided ndarray has a different (broadcast compatible) shape than the common shape, the function returns a new **read-only** ndarray view of the provided ndarray's data. The view is typically **not** contiguous. As more than one element of a returned view may refer to the same memory location, writing to a view may affect multiple elements. If you need to write to an input array, copy the array before broadcasting.
 *

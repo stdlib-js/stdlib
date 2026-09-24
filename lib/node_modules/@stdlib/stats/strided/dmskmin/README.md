@@ -232,7 +232,7 @@ Computes the minimum value of a double-precision floating-point strided array ac
 const double x[] = { 1.0, -2.0, 2.0 };
 const uint8_t mask[] = { 0, 1, 0 };
 
-double v = stdlib_strided_dmskmin( 3, x, 1, 0, mask, 1, 0 );
+double v = stdlib_strided_dmskmin_ndarray( 3, x, 1, 0, mask, 1, 0 );
 // returns 1.0
 ```
 

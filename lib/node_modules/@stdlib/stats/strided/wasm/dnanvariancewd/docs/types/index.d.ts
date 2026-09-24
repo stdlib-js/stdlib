@@ -224,7 +224,7 @@ interface Routine extends ModuleWrapper {
 	* var y = dnanvariancewd.main( 4, 1, x, 1 );
 	* // returns ~4.3333
 	*/
-	main( N: number, x: Float64Array, strideX: number ): number;
+	main( N: number, correction: number, x: Float64Array, strideX: number ): number;
 
 	/**
 	* Computes the variance of a double-precision floating-point strided array ignoring `NaN` values and using Welford's algorithm and alternative indexing semantics.

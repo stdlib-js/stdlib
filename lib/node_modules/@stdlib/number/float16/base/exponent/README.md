@@ -91,6 +91,100 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/number/float16/base/exponent.h"
+```
+
+#### stdlib_base_float16_exponent( x )
+
+Returns an integer corresponding to the unbiased exponent of a [half-precision floating-point number][ieee754].
+
+```c
+#include "stdlib/number/float16/ctor.h"
+#include <stdint.h>
+
+stdlib_float16_t x = stdlib_float16_from_bits( 51648 ); // => -11.5
+int16_t out = stdlib_base_float16_exponent( x );
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] stdlib_float16_t` input value.
+
+```c
+int16_t stdlib_base_float16_exponent( const stdlib_float16_t x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/number/float16/base/exponent.h"
+#include "stdlib/number/float16/ctor.h"
+#include "stdlib/number/float32/base/to_float16.h"
+#include <stdint.h>
+#include <stdio.h>
+#include <inttypes.h>
+
+int main( void ) {
+    const float x[] = { 4.0f, 0.0f, -0.0f, 1.0f, -1.0f, 3.14f, -3.14f, 1.0e38f, -1.0e38f, 1.0f/0.0f, -1.0f/0.0f, 0.0f/0.0f };
+
+    stdlib_float16_t v;
+    int16_t out;
+    int i;
+    for ( i = 0; i < 12; i++ ) {
+        v = stdlib_base_float32_to_float16( x[ i ] );
+        out = stdlib_base_float16_exponent( v );
+        printf( "%f => out: %" PRId16 "\n", x[ i ], out );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

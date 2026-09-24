@@ -53,10 +53,7 @@ var x = zeros( [ 2, 2 ], {
 // returns <ndarray>
 
 var out = ndarrayWith( x, [ 0, 0 ], 1.0 );
-// returns <ndarray>
-
-var v = out.get( 0, 0 );
-// returns 1.0
+// returns <ndarray>[ [ 1, 0 ], [ 0, 0 ] ]
 ```
 
 The function accepts the following arguments:

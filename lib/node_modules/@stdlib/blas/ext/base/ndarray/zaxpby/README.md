@@ -1,0 +1,153 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2026 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# zaxpby
+
+> Multiply a one-dimensional double-precision complex floating-point ndarray by a scalar constant and add the result to a second one-dimensional double-precision complex floating-point ndarray multiplied by a scalar constant.
+
+<section class="intro">
+
+This BLAS extension implements the operation
+
+<!-- <equation class="equation" label="eq:axpby" align="center" raw="\mathbf{y} = \alpha \mathbf{x} + \beta \mathbf{y}" alt="Equation for axpby operation."> -->
+
+```math
+\mathbf{y} = \alpha \mathbf{x} + \beta \mathbf{y}
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var zaxpby = require( '@stdlib/blas/ext/base/ndarray/zaxpby' );
+```
+
+#### zaxpby( arrays )
+
+Multiplies a one-dimensional double-precision complex floating-point ndarray by a scalar constant and adds the result to a second one-dimensional double-precision complex floating-point ndarray multiplied by a scalar constant.
+
+```javascript
+var Complex128Vector = require( '@stdlib/ndarray/vector/complex128' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
+var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+
+var x = new Complex128Vector( [ 1.0, 2.0, 3.0, -1.0, 0.0, 1.0 ] );
+var y = new Complex128Vector( [ 2.0, 1.0, -1.0, 3.0, 4.0, 0.0 ] );
+
+var alpha = scalar2ndarray( new Complex128( 2.0, 1.0 ), {
+    'dtype': 'complex128'
+});
+
+var beta = scalar2ndarray( new Complex128( 1.0, -1.0 ), {
+    'dtype': 'complex128'
+});
+
+var out = zaxpby( [ x, y, alpha, beta ] );
+// returns <ndarray>[ <Complex128>[ 3.0, 4.0 ], <Complex128>[ 9.0, 5.0 ], <Complex128>[ 3.0, -2.0 ] ]
+```
+
+The function has the following parameters:
+
+-   **arrays**: array-like object containing the following ndarrays:
+
+    -   a one-dimensional input ndarray.
+    -   a one-dimensional output ndarray.
+    -   a zero-dimensional ndarray containing the constant by which to multiply the input ndarray.
+    -   a zero-dimensional ndarray containing the constant by which to multiply the output ndarray.
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+## Notes
+
+-   The output ndarray is modified **in-place** (i.e., the output ndarray is **mutated**).
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var Complex128Vector = require( '@stdlib/ndarray/vector/complex128' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
+var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var ndarraylike2scalar = require( '@stdlib/ndarray/ndarraylike2scalar' );
+var ndarray2array = require( '@stdlib/ndarray/to-array' );
+var zaxpby = require( '@stdlib/blas/ext/base/ndarray/zaxpby' );
+
+var opts = {
+    'dtype': 'float64'
+};
+
+var x = new Complex128Vector( discreteUniform( 20, -100, 100, opts ) );
+console.log( ndarray2array( x ) );
+
+var y = new Complex128Vector( discreteUniform( 20, -100, 100, opts ) );
+console.log( ndarray2array( y ) );
+
+var alpha = scalar2ndarray( new Complex128( 2.0, 1.0 ), {
+    'dtype': 'complex128'
+});
+console.log( 'Alpha:', ndarraylike2scalar( alpha ) );
+
+var beta = scalar2ndarray( new Complex128( 1.0, -1.0 ), {
+    'dtype': 'complex128'
+});
+console.log( 'Beta:', ndarraylike2scalar( beta ) );
+
+zaxpby( [ x, y, alpha, beta ] );
+console.log( ndarray2array( y ) );
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+</section>
+
+<!-- /.links -->

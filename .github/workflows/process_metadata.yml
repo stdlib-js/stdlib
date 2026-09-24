@@ -41,6 +41,9 @@ jobs:
     # Define a display name:
     name: 'Process Metadata'
 
+    # Only run this job if the repository is not a fork:
+    if: github.repository == 'stdlib-js/stdlib'
+
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
@@ -67,7 +70,7 @@ jobs:
         if: steps.assert-write-access.outcome == 'success'
 
         # Pin action to full length commit SHA
-        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
@@ -111,8 +114,10 @@ jobs:
         # Only run this step if a user has write access:
         if: steps.assert-write-access.outcome == 'success'
 
+        env:
+          METADATA: ${{ steps.extract-metadata.outputs.metadata }}
         run: |
-          inputs=$(echo '${{ steps.extract-metadata.outputs.metadata }}' | jq -c '.[] | select(.type | contains("workflow_dispatch"))')
+          inputs=$(echo "$METADATA" | jq -c '.[] | select(.type | contains("workflow_dispatch"))')
           if [ -n "$inputs" ]; then
             name=$(echo $inputs | jq -r '.name')
             inputs=$(echo $inputs | jq -c 'del(.type, .name, .author, .id, .url) | map_values(tostring)')
@@ -127,7 +132,7 @@ jobs:
       - name: 'Dispatch workflow with inputs'
 
         # Pin action to full length commit SHA
-        uses: benc-uk/workflow-dispatch@e2e5e9a103e331dad343f381a29e654aea3cf8fc # v1.2.4
+        uses: benc-uk/workflow-dispatch@31e2b3319479a63f0ab15bf800eff9e913504e26 # v1.3.2
         if: ${{ steps.assert-write-access.outcome == 'success' && steps.check-workflow-dispatch.outputs.dispatch == 'true' }}
         with:
           workflow: ${{ steps.check-workflow-dispatch.outputs.workflow }}

@@ -75,10 +75,7 @@ interface Unary {
 	* var x = array( [ -1.0, 2.0, NaN ] );
 	*
 	* var y = nanmaxabs( x );
-	* // returns <ndarray>
-	*
-	* var v = y.get();
-	* // returns 2.0
+	* // returns <ndarray>[ 2.0 ]
 	*/
 	<T = unknown, U = unknown>( x: InputArray<T>, options?: Options ): OutputArray<U>; // NOTE: we lose type specificity here, but retaining specificity would likely be difficult and/or tedious to completely enumerate, as the output ndarray data type is dependent on how `x` interacts with output data type policy and whether that policy has been overridden by `options.dtype`.
 
@@ -98,10 +95,7 @@ interface Unary {
 	* var y = zeros( [] );
 	*
 	* var out = nanmaxabs.assign( x, y );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns 2.0
+	* // returns <ndarray>[ 2.0 ]
 	*
 	* var bool = ( out === y );
 	* // returns true
@@ -122,10 +116,7 @@ interface Unary {
 * var x = array( [ -1.0, 2.0, NaN ] );
 *
 * var y = nanmaxabs( x );
-* // returns <ndarray>
-*
-* var v = y.get();
-* // returns 2.0
+* // returns <ndarray>[ 2.0 ]
 *
 * @example
 * var array = require( '@stdlib/ndarray/array' );
@@ -135,10 +126,7 @@ interface Unary {
 * var y = zeros( [] );
 *
 * var out = nanmaxabs.assign( x, y );
-* // returns <ndarray>
-*
-* var v = out.get();
-* // returns 2.0
+* // returns <ndarray>[ 2.0 ]
 *
 * var bool = ( out === y );
 * // returns true
