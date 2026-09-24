@@ -33,7 +33,7 @@ y = \left\lfloor x \cdot b^{n - \lfloor \log_b |x| \rfloor - 1} + 0.5 \right\rfl
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="y = \left\lfloor x \cdot b^{n - \lfloor \log_b |x| \rfloor - 1} + 0.5 \right\rfloor \cdot b^{\lfloor \log_b |x| \rfloor - n + 1}" data-equation="eq:roundsd_function">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@0ff18750bd4e99e3b1f42e8c367a18e16bfc05d1/lib/node_modules/@stdlib/math/base/special/roundsdf/docs/img/equation_roundsd_function.svg" alt="Round to n significant figures">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@9b745fa94f0ba5de62821dc0b94118cb5b73228d/lib/node_modules/@stdlib/math/base/special/roundsdf/docs/img/equation_roundsd_function.svg" alt="Round to n significant figures">
     <br>
 </div> -->
 
