@@ -1,0 +1,105 @@
+
+{{alias}}( seed, N, x )
+    Returns a vector of `N` random real numbers drawn from a uniform (0,1)
+    distribution.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    The function mutates the input seed array `seed`.
+
+    At most `128` random numbers are generated per invocation. If `N` is greater
+    than `128`, only the first `128` elements of `x` are updated.
+
+    If `N` is less than or equal to `0`, the function returns `x` unchanged and
+    does not update `seed`.
+
+    Parameters
+    ----------
+    seed: Int32Array
+        Seed array of four integers. Each element must be between `0` and
+        `4095`, and `seed[3]` must be odd.
+
+    N: integer
+        Number of random numbers to generate (N <= 128).
+
+    x: Float64Array
+        Output array.
+
+    Returns
+    -------
+    x: Float64Array
+        Output array.
+
+    Examples
+    --------
+    > var seed = new {{alias:@stdlib/array/int32}}( [ 0, 1, 2, 3 ] );
+    > var x = new {{alias:@stdlib/array/float64}}( 3 );
+    > {{alias}}( seed, 3, x )
+    <Float64Array>[ ~0.1319, ~0.2338, ~0.3216 ]
+    > seed
+    <Int32Array>[ 1317, 1915, 1613, 2663 ]
+
+    // Using typed array views:
+    > var seed0 = new {{alias:@stdlib/array/int32}}( [ 0, 0, 1, 2, 3 ] );
+    > var x0 = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > var seed1 = new {{alias:@stdlib/array/int32}}( seed0.buffer, seed0.BYTES_PER_ELEMENT*1 );
+    > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > {{alias}}( seed1, 3, x1 )
+    <Float64Array>[ ~0.1319, ~0.2338, ~0.3216 ]
+
+
+{{alias}}.ndarray( N, seed, strideS, offsetS, x, strideX, offsetX )
+    Returns a vector of `N` random real numbers drawn from a uniform (0,1)
+    distribution using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    The function mutates the input seed array `seed`.
+
+    At most `128` random numbers are generated per invocation. If `N` is greater
+    than `128`, only the first `128` indexed elements of `x` are updated.
+
+    If `N` is less than or equal to `0`, the function returns `x` unchanged and
+    does not update `seed`.
+
+    Parameters
+    ----------
+    N: integer
+        Number of random numbers to generate (N <= 128).
+
+    seed: Int32Array
+        Seed array of four integers. Each element must be between `0` and
+        `4095`, and `seed[3]` must be odd.
+
+    strideS: integer
+        Stride length for `seed`.
+
+    offsetS: integer
+        Starting index for `seed`.
+
+    x: Float64Array
+        Output array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    offsetX: integer
+        Starting index for `x`.
+
+    Returns
+    -------
+    x: Float64Array
+        Output array.
+
+    Examples
+    --------
+    > var seed = new {{alias:@stdlib/array/int32}}( [ 0, 1, 2, 3 ] );
+    > var x = new {{alias:@stdlib/array/float64}}( 3 );
+    > {{alias}}.ndarray( 3, seed, 1, 0, x, 1, 0 )
+    <Float64Array>[ ~0.1319, ~0.2338, ~0.3216 ]
+
+    See Also
+    --------

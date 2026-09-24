@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection, AccessorArrayLike, Complex128Array, Complex64Array } from '@stdlib/types/array';
+import { Collection, AccessorArrayLike, Complex128Array, Complex64Array, Float16Array } from '@stdlib/types/array';
 
 /**
 * Returns a boolean indicating whether an element passes a test.
@@ -103,6 +103,25 @@ declare function filter<T = unknown, U = unknown>( x: Float64Array, predicate: P
 * // returns <Float32Array>[ 1.0, 4.0 ]
 */
 declare function filter<T = unknown, U = unknown>( x: Float32Array, predicate: Predicate<T, U, Float32Array>, thisArg?: ThisParameterType<Predicate<T, U, Float32Array>> ): Float32Array;
+
+/**
+* Returns a shallow copy of an array containing only those elements which pass a test implemented by a predicate function.
+*
+* @param x - input array
+* @param predicate - predicate function
+* @param thisArg - predicate function execution context
+* @returns output array
+*
+* @example
+* var isPositiveNumber = require( '@stdlib/assert/is-positive-number' ).isPrimitive;
+* var Float16Array = require( '@stdlib/array/float16' );
+*
+* var x = new Float16Array( [ 1.0, -2.0, -3.0, 4.0 ] );
+*
+* var out = filter( x, isPositiveNumber );
+* // returns <Float16Array>[ 1.0, 4.0 ]
+*/
+declare function filter<T = unknown, U = unknown>( x: Float16Array, predicate: Predicate<T, U, Float16Array>, thisArg?: ThisParameterType<Predicate<T, U, Float16Array>> ): Float16Array;
 
 /**
 * Returns a shallow copy of an array containing only those elements which pass a test implemented by a predicate function.

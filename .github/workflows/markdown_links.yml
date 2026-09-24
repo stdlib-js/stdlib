@@ -119,8 +119,6 @@ jobs:
 
       # Check whether links are included in `docs/links/database.json` and use the correct identifier:
       - name: 'Check links against database'
-        env:
-          ALL_LINKS: ${{ steps.results.outputs.all_links }}
         run: |
           # Determine root directory:
           root=$(git rev-parse --show-toplevel)
@@ -128,9 +126,15 @@ jobs:
           # Define the path to a utility for validating links:
           validate="${root}/lib/node_modules/@stdlib/_tools/links/validate/bin/cli"
 
+          # Write the discovered links to a file, as the list may be too large to pass via an environment variable:
+          all_links_file="${RUNNER_TEMP}/all_links.json"
+          cat > "${all_links_file}" <<'STDLIB_ALL_LINKS_EOF'
+          ${{ steps.results.outputs.all_links }}
+          STDLIB_ALL_LINKS_EOF
+
           echo "## Link Validation" >> $GITHUB_STEP_SUMMARY
 
-          output=$(echo "$ALL_LINKS" | ${validate})
+          output=$(${validate} < "${all_links_file}")
           if [[ "${output}" != "All links are valid." ]]; then
             echo "| URL | ID | Error |" >> $GITHUB_STEP_SUMMARY
             echo "| --- | -- | ----- |" >> $GITHUB_STEP_SUMMARY
@@ -144,12 +148,13 @@ jobs:
 
       # Log the results:
       - name: 'Log results'
-        env:
-          FAILURES: ${{ steps.results.outputs.failures }}
-          WARNINGS: ${{ steps.results.outputs.warnings }}
         run: |
-          echo "$FAILURES" >> "${{ env.LOG_FILE_FAILURES }}"
-          echo "$WARNINGS" >> "${{ env.LOG_FILE_WARNINGS }}"
+          cat >> "${{ env.LOG_FILE_FAILURES }}" <<'STDLIB_FAILURES_EOF'
+          ${{ steps.results.outputs.failures }}
+          STDLIB_FAILURES_EOF
+          cat >> "${{ env.LOG_FILE_WARNINGS }}" <<'STDLIB_WARNINGS_EOF'
+          ${{ steps.results.outputs.warnings }}
+          STDLIB_WARNINGS_EOF
         timeout-minutes: 2
 
       # Fail the workflow if the status is not "success":
@@ -172,10 +177,15 @@ jobs:
         if: failure() && contains(steps.check-status.outcome, 'failure')
         env:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
-          FAILURES: ${{ steps.results.outputs.failures }}
         run: |
+          # Write the failures list to a file, as it may be too large to pass via an environment variable or command-line argument:
+          failures_file="${RUNNER_TEMP}/failures.json"
+          cat > "${failures_file}" <<'STDLIB_FAILURES_EOF'
+          ${{ steps.results.outputs.failures }}
+          STDLIB_FAILURES_EOF
+
           "$GITHUB_WORKSPACE/.github/workflows/scripts/markdown_links/create_broken_link_issues" \
-            "$FAILURES" \
+            "${failures_file}" \
             "9112"
         timeout-minutes: 30
 

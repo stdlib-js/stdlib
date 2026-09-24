@@ -176,7 +176,7 @@ interface Find {
 	* var x = new ndarray( 'float64', xbuf, sh, sx, ox, 'row-major' );
 	*
 	* var opts = {
-	*    'dims': [ 0 ]
+	*     'dims': [ 0 ]
 	* };
 	*
 	* // Perform the operation:

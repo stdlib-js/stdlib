@@ -1,0 +1,33 @@
+
+{{alias}}( descriptors, offsets )
+    Sets ndarray descriptor index offsets.
+
+    The function mutates the provided descriptors.
+
+    Parameters
+    ----------
+    descriptors: ArrayLike<ndarrayLike>
+        List of ndarray descriptors.
+
+    offsets: ArrayLike<integer>
+        Index offsets.
+
+    Returns
+    -------
+    out: ArrayLike<ndarrayLike>
+        Input array.
+
+    Examples
+    --------
+    // Create an ndarray:
+    > var x = {{alias:@stdlib/ndarray/zeros}}( [ 3, 3, 3 ] );
+
+    // Convert to a descriptor object:
+    > var desc = {{alias:@stdlib/ndarray/base/ndarraylike2descriptor}}( x );
+
+    // Adjust the offset:
+    > var out = {{alias}}( [ desc ], [ 1 ] );
+
+    See Also
+    --------
+

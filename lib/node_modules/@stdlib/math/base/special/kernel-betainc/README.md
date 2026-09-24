@@ -24,6 +24,8 @@ limitations under the License.
 
 <section class="intro">
 
+The function evaluates the regularized [incomplete beta function][incomplete-beta-function] and its first derivative. This is a kernel function used internally by higher-level beta function implementations.
+
 </section>
 
 <!-- /.intro -->

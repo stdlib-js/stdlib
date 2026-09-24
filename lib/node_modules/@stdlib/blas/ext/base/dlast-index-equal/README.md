@@ -106,7 +106,7 @@ var idx = dlastIndexEqual( 2, x1, 1, y1, 1 );
 
 #### dlastIndexEqual.ndarray( N, x, strideX, offsetX, y, strideY, offsetY )
 
-Returns the index of the last element in a double-precision floating-point strided array equal to a corresponding element in another strided array using alternative indexing semantics.
+Returns the index of the last element in a double-precision floating-point strided array equal to a corresponding element in another double-precision floating-point strided array using alternative indexing semantics.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -209,7 +209,7 @@ console.log( idx );
 
 #### stdlib_strided_dlast_index_equal( N, \*X, strideX, \*Y, strideY )
 
-Returns the index of the last element in a double-precision floating-point strided array equal to a corresponding element in another strided array.
+Returns the index of the last element in a double-precision floating-point strided array equal to a corresponding element in another double-precision floating-point strided array.
 
 ```c
 const double x[] = { 1.0, 2.0, 3.0, 4.0 };
@@ -237,7 +237,7 @@ CBLAS_INT stdlib_strided_dlast_index_equal( const CBLAS_INT N, const double *X, 
 
 <!-- lint enable maximum-heading-length -->
 
-Returns the index of the last element in a double-precision floating-point strided array equal to a corresponding element in another strided array using alternative indexing semantics.
+Returns the index of the last element in a double-precision floating-point strided array equal to a corresponding element in another double-precision floating-point strided array using alternative indexing semantics.
 
 ```c
 const double x[] = { 1.0, 2.0, 3.0, 4.0 };

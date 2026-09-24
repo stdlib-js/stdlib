@@ -1,0 +1,14 @@
+---
+type: amend-message
+---
+remove: remove `utils/any-own-by`
+
+This commit removes `@stdlib/utils/any-own-by` in favor of
+`@stdlib/object/any-own-by`.
+
+BREAKING CHANGE: remove `utils/any-own-by`
+
+To migrate, users should update their require/import paths to use
+`@stdlib/object/any-own-by` which provides the same API and implementation.
+
+Ref: https://github.com/stdlib-js/stdlib/issues/6756

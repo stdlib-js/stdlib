@@ -1,0 +1,67 @@
+
+{{alias}}( arrays )
+    Fills a one-dimensional double-precision complex floating-point ndarray
+    with logarithmically spaced values over a specified interval.
+
+    Let `N` be the number of elements in the input ndarray. If `N = 1` and
+    `endpoint` is `true`, the set of values written to an input ndarray only
+    includes `base^stop`, but not `base^start`; otherwise, when `N = 1` and
+    `endpoint` is `false`, the set of values written to an input ndarray only
+    includes `base^start`, but not `base^stop`.
+
+    Generated values follow a logarithmic spiral in the complex plane, where
+    imaginary components of `start` and `stop` control phase rotation. If the
+    real part of `start` is less than that of `stop`, the magnitudes of the
+    generated values will be in ascending order; otherwise, the magnitudes will
+    be in descending order.
+
+    When `N >= 2` and `endpoint` is `true`, the set of values written to an
+    input ndarray is guaranteed to include the `base^start` and `base^stop`
+    values. Beware, however, that values between `base^start` and `base^stop`
+    are subject to floating-point rounding errors.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a zero-dimensional ndarray specifying the base of the logarithmic
+        scale.
+        - a zero-dimensional ndarray specifying the exponent of the starting
+        value.
+        - a zero-dimensional ndarray specifying the exponent of the final
+        value.
+        - a zero-dimensional ndarray specifying whether to include the
+        `base^stop` value when writing values to the input ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Input ndarray.
+
+    Examples
+    --------
+    // Create the input ndarray:
+    > var x = new {{alias:@stdlib/ndarray/vector/complex128}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+
+    // Specify the base:
+    > var base = {{alias:@stdlib/ndarray/from-scalar}}( 10.0, { 'dtype': 'float64' } );
+
+    // Specify the exponent of the starting value:
+    > var s = new {{alias:@stdlib/complex/float64/ctor}}( 0.0, 0.0 );
+    > var strt = {{alias:@stdlib/ndarray/from-scalar}}( s, { 'dtype': 'complex128' } );
+
+    // Specify the exponent of the final value:
+    > s = new {{alias:@stdlib/complex/float64/ctor}}( 1.0, 0.0 );
+    > var stp = {{alias:@stdlib/ndarray/from-scalar}}( s, { 'dtype': 'complex128' } );
+
+    // Specify whether to include the endpoint:
+    > var endpoint = {{alias:@stdlib/ndarray/from-scalar}}( true, { 'dtype': 'bool' } );
+
+    // Fill the input ndarray:
+    > {{alias}}( [ x, base, strt, stp, endpoint ] )
+    <ndarray>[ <Complex128>[ 1.0, 0.0 ], <Complex128>[ 10.0, 0.0 ] ]
+
+    See Also
+    --------

@@ -20,7 +20,7 @@ limitations under the License.
 
 # cmap
 
-> Apply a unary function to a single-precision floating-point strided input array and assign results to a single-precision floating-point strided output array.
+> Apply a unary function to a single-precision complex floating-point strided input array and assign results to a single-precision complex floating-point strided output array.
 
 <section class="intro">
 

@@ -22,7 +22,7 @@
 * Evaluates the natural logarithm of the cumulative distribution function (CDF) for a logistic distribution.
 *
 * @param x - input value
-* @returns evaluated logarithm of CDF
+* @returns evaluated logCDF
 */
 type Unary = ( x: number ) => number;
 

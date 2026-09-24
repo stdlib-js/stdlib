@@ -1,0 +1,83 @@
+{
+  "name": "@stdlib/blas/ext/base/dtriu2tril",
+  "version": "0.0.0",
+  "description": "Reflect the upper triangular part of a double-precision floating-point matrix A into the lower triangular part of another matrix B.",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "main": "./lib",
+  "browser": "./lib/main.js",
+  "gypfile": true,
+  "directories": {
+    "benchmark": "./benchmark",
+    "doc": "./docs",
+    "example": "./examples",
+    "include": "./include",
+    "lib": "./lib",
+    "src": "./src",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {},
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "blas",
+    "extended",
+    "ext",
+    "linear",
+    "algebra",
+    "matrix",
+    "triangular",
+    "triangle",
+    "upper",
+    "lower",
+    "triu",
+    "tril",
+    "triu2tril",
+    "dtriu2tril",
+    "reflect",
+    "transpose",
+    "copy",
+    "array",
+    "ndarray",
+    "float64",
+    "double",
+    "float64array"
+  ],
+  "__stdlib__": {
+    "wasm": false
+  }
+}

@@ -29,6 +29,7 @@ import zerosLike = require( './index' );
 
 	zerosLike( zeros( 'float64', sh, ord ) ); // $ExpectType float64ndarray
 	zerosLike( zeros( 'float32', sh, ord ) ); // $ExpectType float32ndarray
+	zerosLike( zeros( 'float16', sh, ord ) ); // $ExpectType float16ndarray
 	zerosLike( zeros( 'complex128', sh, ord ) ); // $ExpectType complex128ndarray
 	zerosLike( zeros( 'complex64', sh, ord ) ); // $ExpectType complex64ndarray
 	zerosLike( zeros( 'int32', sh, ord ) ); // $ExpectType int32ndarray
@@ -43,6 +44,7 @@ import zerosLike = require( './index' );
 
 	zerosLike( zeros( 'float64', sh, ord ), {} ); // $ExpectType float64ndarray
 	zerosLike( zeros( 'float32', sh, ord ), {} ); // $ExpectType float32ndarray
+	zerosLike( zeros( 'float16', sh, ord ), {} ); // $ExpectType float16ndarray
 	zerosLike( zeros( 'complex128', sh, ord ), {} ); // $ExpectType complex128ndarray
 	zerosLike( zeros( 'complex64', sh, ord ), {} ); // $ExpectType complex64ndarray
 	zerosLike( zeros( 'int32', sh, ord ), {} ); // $ExpectType int32ndarray
@@ -57,6 +59,7 @@ import zerosLike = require( './index' );
 
 	zerosLike( zeros( 'float64', sh, ord ), { 'shape': [ 2, 2, 2 ] } ); // $ExpectType float64ndarray
 	zerosLike( zeros( 'float32', sh, ord ), { 'shape': [ 2, 2, 2 ] } ); // $ExpectType float32ndarray
+	zerosLike( zeros( 'float16', sh, ord ), { 'shape': [ 2, 2, 2 ] } ); // $ExpectType float16ndarray
 	zerosLike( zeros( 'complex128', sh, ord ), { 'shape': [ 2, 2, 2 ] } ); // $ExpectType complex128ndarray
 	zerosLike( zeros( 'complex64', sh, ord ), { 'shape': [ 2, 2, 2 ] } ); // $ExpectType complex64ndarray
 	zerosLike( zeros( 'int32', sh, ord ), { 'shape': [ 2, 2, 2 ] } ); // $ExpectType int32ndarray
@@ -71,6 +74,7 @@ import zerosLike = require( './index' );
 
 	zerosLike( zeros( 'float64', sh, ord ), { 'order': 'column-major' } ); // $ExpectType float64ndarray
 	zerosLike( zeros( 'float32', sh, ord ), { 'order': 'column-major' } ); // $ExpectType float32ndarray
+	zerosLike( zeros( 'float16', sh, ord ), { 'order': 'column-major' } ); // $ExpectType float16ndarray
 	zerosLike( zeros( 'complex128', sh, ord ), { 'order': 'column-major' } ); // $ExpectType complex128ndarray
 	zerosLike( zeros( 'complex64', sh, ord ), { 'order': 'column-major' } ); // $ExpectType complex64ndarray
 	zerosLike( zeros( 'int32', sh, ord ), { 'order': 'column-major' } ); // $ExpectType int32ndarray
@@ -85,6 +89,7 @@ import zerosLike = require( './index' );
 
 	zerosLike( zeros( 'generic', sh, ord ), { 'dtype': 'float64' } ); // $ExpectType float64ndarray
 	zerosLike( zeros( 'generic', sh, ord ), { 'dtype': 'float32' } ); // $ExpectType float32ndarray
+	zerosLike( zeros( 'generic', sh, ord ), { 'dtype': 'float16' } ); // $ExpectType float16ndarray
 	zerosLike( zeros( 'generic', sh, ord ), { 'dtype': 'complex128' } ); // $ExpectType complex128ndarray
 	zerosLike( zeros( 'generic', sh, ord ), { 'dtype': 'complex64' } ); // $ExpectType complex64ndarray
 	zerosLike( zeros( 'generic', sh, ord ), { 'dtype': 'int32' } ); // $ExpectType int32ndarray

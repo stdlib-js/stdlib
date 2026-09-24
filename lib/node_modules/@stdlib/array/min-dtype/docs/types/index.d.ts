@@ -35,7 +35,7 @@ import { ComplexLike } from '@stdlib/types/complex';
 *
 * @example
 * var dt = minDataType( 3.141592653589793 );
-* // returns 'float32'
+* // returns 'float16'
 *
 * @example
 * var dt = minDataType( 3 );

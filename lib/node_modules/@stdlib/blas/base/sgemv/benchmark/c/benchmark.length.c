@@ -96,13 +96,16 @@ static float rand_float( void ) {
 */
 static double benchmark1( int iterations, int N ) {
 	double elapsed;
-	float A[ N*N ];
-	float x[ N ];
-	float y[ N ];
+	float *A;
+	float *x;
+	float *y;
 	double t;
 	int i;
 	int j;
 
+	A = (float *) malloc( N * N * sizeof( float ) );
+	x = (float *) malloc( N * sizeof( float ) );
+	y = (float *) malloc( N * sizeof( float ) );
 	for ( i = 0; i < N; i++ ) {
 		x[ i ] = ( rand_float()*20.0f ) - 10.0f;
 		y[ i ] = ( rand_float()*20.0f ) - 10.0f;
@@ -123,6 +126,9 @@ static double benchmark1( int iterations, int N ) {
 	if ( y[ i%N ] != y[ i%N ] ) {
 		printf( "should not return NaN\n" );
 	}
+	free( A );
+	free( x );
+	free( y );
 	return elapsed;
 }
 
@@ -135,13 +141,16 @@ static double benchmark1( int iterations, int N ) {
 */
 static double benchmark2( int iterations, int N ) {
 	double elapsed;
-	float A[ N*N ];
-	float x[ N ];
-	float y[ N ];
+	float *A;
+	float *x;
+	float *y;
 	double t;
 	int i;
 	int j;
 
+	A = (float *) malloc( N * N * sizeof( float ) );
+	x = (float *) malloc( N * sizeof( float ) );
+	y = (float *) malloc( N * sizeof( float ) );
 	for ( i = 0; i < N; i++ ) {
 		x[ i ] = ( rand_float()*20.0f ) - 10.0f;
 		y[ i ] = ( rand_float()*20.0f ) - 10.0f;
@@ -162,6 +171,9 @@ static double benchmark2( int iterations, int N ) {
 	if ( y[ i%N ] != y[ i%N ] ){
 		printf( "should not return NaN\n" );
 	}
+	free( A );
+	free( x );
+	free( y );
 	return elapsed;
 }
 

@@ -25,7 +25,7 @@
 * Computes the arithmetic mean of a one-dimensional double-precision floating-point ndarray using a second-order iterative Kahan–Babuška algorithm.
 *
 * @param arrays    list containing an input ndarray
-* @return          arithmetic mean value
+* @return          arithmetic mean
 */
 double stdlib_stats_dmeankbn2( const struct ndarray *arrays[] ) {
 	const struct ndarray *x = arrays[ 0 ];

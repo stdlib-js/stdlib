@@ -26,6 +26,16 @@ limitations under the License.
 
 <section class="intro">
 
+The clamp function restricts a value to a specified range `[min, max]`
+
+<!-- <equation class="equation" label="eq:clamp_function" align="center" raw="y = \operatorname{clamp}(x, a, b) = \begin{cases} a & \textrm{if}\ x < a \\ x & \textrm{if}\ a \leq x \leq b \\ b & \textrm{if}\ x > b \end{cases}" alt="Clamp function"> -->
+
+```math
+y = \mathop{\mathrm{clamp}}(x, a, b) = \begin{cases} a & \textrm{if}\ x < a \\ x & \textrm{if}\ a \leq x \leq b \\ b & \textrm{if}\ x > b \end{cases}
+```
+
+<!-- </equation> -->
+
 </section>
 
 <!-- /.intro -->

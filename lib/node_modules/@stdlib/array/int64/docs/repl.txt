@@ -1,0 +1,332 @@
+
+{{alias}}()
+    A typed array constructor which returns a typed array representing an array
+    of 64-bit signed integers in the platform byte order.
+
+    Returns
+    -------
+    out: Int64Array
+        A typed array.
+
+    Examples
+    --------
+    > var arr = new {{alias}}()
+    <Int64Array>
+
+
+{{alias}}( length )
+    Returns a typed array having a specified length.
+
+    Parameters
+    ----------
+    length: integer
+        Typed array length.
+
+    Returns
+    -------
+    out: Int64Array
+        A typed array.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( 5 )
+    <Int64Array>[ 0n, 0n, 0n, 0n, 0n ]
+
+
+{{alias}}( typedarray )
+    Creates a typed array from another typed array.
+
+    Parameters
+    ----------
+    typedarray: TypedArray
+        Typed array from which to generate another typed array.
+
+    Returns
+    -------
+    out: Int64Array
+        A typed array.
+
+    Examples
+    --------
+    > var arr1 = new {{alias:@stdlib/array/int32}}( [ 5, 5, 5 ] );
+    > var arr2 = new {{alias}}( arr1 )
+    <Int64Array>[ 5n, 5n, 5n ]
+
+
+{{alias}}( obj )
+    Creates a typed array from an array-like object or iterable.
+
+    Parameters
+    ----------
+    obj: Object
+        Array-like object or iterable from which to generate a typed array.
+
+    Returns
+    -------
+    out: Int64Array
+        A typed array.
+
+    Examples
+    --------
+    > var arr1 = [ 5, 5, 5 ];
+    > var arr2 = new {{alias}}( arr1 )
+    <Int64Array>[ 5n, 5n, 5n ]
+
+
+{{alias}}( buffer[, byteOffset[, length]] )
+    Returns a typed array view of an ArrayBuffer.
+
+    Parameters
+    ----------
+    buffer: ArrayBuffer
+        Underlying ArrayBuffer.
+
+    byteOffset: integer (optional)
+        Integer byte offset specifying the location of the first typed array
+        element. Default: 0.
+
+    length: integer (optional)
+        View length. If not provided, the view spans from the byteOffset to
+        the end of the underlying ArrayBuffer.
+
+    Returns
+    -------
+    out: Int64Array
+        A typed array.
+
+    Examples
+    --------
+    > var buf = new {{alias:@stdlib/array/buffer}}( 32 );
+    > var arr = new {{alias}}( buf, 0, 4 )
+    <Int64Array>[ 0n, 0n, 0n, 0n ]
+
+
+{{alias}}.from( src[, map[, thisArg]] )
+    Creates a new typed array from an array-like object or an iterable.
+
+    A callback is provided the following arguments:
+
+    - value: source value.
+    - index: source index.
+
+    Parameters
+    ----------
+    src: ArrayLike|Iterable
+        Source of array elements.
+
+    map: Function (optional)
+        Callback to invoke for each source element.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    out: Int64Array
+        A typed array.
+
+    Examples
+    --------
+    > function mapFcn( v ) { return v; };
+    > var arr = {{alias}}.from( [ 1, 2 ], mapFcn )
+    <Int64Array>[ 1n, 2n ]
+
+
+{{alias}}.of( element0[, element1[, ...elementN]] )
+    Creates a new typed array from a variable number of arguments.
+
+    Parameters
+    ----------
+    element0: number
+        Array element.
+
+    element1: number (optional)
+        Array element.
+
+    elementN: ...number (optional)
+        Array elements.
+
+    Returns
+    -------
+    out: Int64Array
+        A typed array.
+
+    Examples
+    --------
+    > var arr = {{alias}}.of( 1, 2 )
+    <Int64Array>[ 1n, 2n ]
+
+
+{{alias}}.BYTES_PER_ELEMENT
+    Number of bytes per view element.
+
+    Examples
+    --------
+    > {{alias}}.BYTES_PER_ELEMENT
+    8
+
+
+{{alias}}.name
+    Typed array constructor name.
+
+    Examples
+    --------
+    > {{alias}}.name
+    'Int64Array'
+
+
+{{alias}}.prototype.buffer
+    Read-only property which returns the ArrayBuffer referenced by the typed
+    array.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( 5 );
+    > arr.buffer
+    <ArrayBuffer>
+
+
+{{alias}}.prototype.byteLength
+    Read-only property which returns the length (in bytes) of the typed array.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( 5 );
+    > arr.byteLength
+    40
+
+
+{{alias}}.prototype.byteOffset
+    Read-only property which returns the offset (in bytes) of the typed array
+    from the start of its ArrayBuffer.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( 5 );
+    > arr.byteOffset
+    0
+
+
+{{alias}}.prototype.BYTES_PER_ELEMENT
+    Number of bytes per view element.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( 5 );
+    > arr.BYTES_PER_ELEMENT
+    8
+
+
+{{alias}}.prototype.length
+    Read-only property which returns the number of view elements.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( 5 );
+    > arr.length
+    5
+
+
+{{alias}}.prototype.at( i )
+    Returns an array element located at integer position (index) `i`, with
+    support for both nonnegative and negative integer positions.
+
+    If provided an index outside the array index range, the method returns
+    `undefined`.
+
+    Parameters
+    ----------
+    i: integer
+        Element index.
+
+    Returns
+    -------
+    out: Int64|void
+        Array element or `undefined`.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( [ 1, 2 ] )
+    <Int64Array>[ 1n, 2n ]
+    > var z = arr.at( 1 )
+    <Int64>[ 2n ]
+
+
+{{alias}}.prototype.entries()
+    Returns an iterator for iterating over array key-value pairs.
+
+    Returns
+    -------
+    iterator: Iterator
+        Iterator for iterating over array key-value pairs.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( [ 1, 2, 3 ] )
+    <Int64Array>[ 1n, 2n, 3n ]
+    > var it = arr.entries();
+    > var v = it.next().value
+    [ 0, <Int64>[ 1n ] ]
+    > v = it.next().value
+    [ 1, <Int64>[ 2n ] ]
+    > v = it.next().value
+    [ 2, <Int64>[ 3n ] ]
+    > var bool = it.next().done
+    true
+
+
+{{alias}}.prototype.get( i )
+    Returns an array element located at integer position (index) `i`.
+
+    If provided an index outside the array index range, the method returns
+    `undefined`.
+
+    Parameters
+    ----------
+    i: integer
+        Element index.
+
+    Returns
+    -------
+    out: Int64|void
+        Array element or `undefined`.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( [ 1, 2 ] )
+    <Int64Array>[ 1n, 2n ]
+    > var z = arr.get( 1 )
+    <Int64>[ 2n ]
+
+
+{{alias}}.prototype.set( v[, i] )
+    Sets one or more array elements.
+
+    If provided a single argument, the method sets array elements starting at
+    position (index) `i = 0`. To set elements starting elsewhere in the array,
+    provide an index argument `i`.
+
+    To set one or more array elements, provide an array-like object.
+
+    Parameters
+    ----------
+    v: Int64|number|bigint|ArrayLikeObject
+        Scalar or source array containing array values to set.
+
+    i: integer (optional)
+        Array index at which to start setting elements. Default: 0.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( [ 1, 2, 3 ] );
+    > arr.set( new {{alias:@stdlib/number/int64/ctor}}( 4 ), 1 );
+    > var z = arr.get( 1 )
+    <Int64>[ 4n ]
+    > arr.set( [ 5, 6 ], 1 );
+    > z = arr.get( 1 )
+    <Int64>[ 5n ]
+    > z = arr.get( 2 )
+    <Int64>[ 6n ]
+
+    See Also
+    --------

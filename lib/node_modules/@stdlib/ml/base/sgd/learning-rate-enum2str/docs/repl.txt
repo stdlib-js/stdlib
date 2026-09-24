@@ -1,0 +1,24 @@
+
+{{alias}}( value )
+    Returns the SGD learning rate scheduler string associated with an SGD
+    learning rate scheduler enumeration constant.
+
+    Parameters
+    ----------
+    value: integer
+        Learning rate scheduler enumeration constant.
+
+    Returns
+    -------
+    out: string|null
+        Learning rate scheduler string.
+
+    Examples
+    --------
+    > var v = {{alias:@stdlib/ml/base/sgd/learning-rate-str2enum}}( 'basic' );
+    > var out = {{alias}}( v )
+    'basic'
+
+    See Also
+    --------
+

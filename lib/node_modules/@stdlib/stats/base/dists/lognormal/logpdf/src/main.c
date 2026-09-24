@@ -18,10 +18,10 @@
 
 #include "stdlib/stats/base/dists/lognormal/logpdf.h"
 #include "stdlib/math/base/assert/is_nan.h"
-#include "stdlib/math/base/special/pow.h"
+#include "stdlib/math/base/special/abs2.h"
 #include "stdlib/math/base/special/ln.h"
 #include "stdlib/constants/float64/ninf.h"
-#include "stdlib/constants/float64/pi.h"
+#include "stdlib/constants/float64/ln_two_pi.h"
 
 /**
 * Evaluates the natural logarithm of the probability density function (PDF) for a lognormal distribution with location parameter `mu` and scale parameter `sigma` at a value `x`.
@@ -37,9 +37,7 @@
 */
 double stdlib_base_dists_lognormal_logpdf( const double x, const double mu, const double sigma ) {
 	double lnx;
-	double s2;
 	double A;
-	double B;
 
 	if (
 		stdlib_base_is_nan( x ) ||
@@ -52,9 +50,7 @@ double stdlib_base_dists_lognormal_logpdf( const double x, const double mu, cons
 	if ( x <= 0.0 ) {
 		return STDLIB_CONSTANT_FLOAT64_NINF;
 	}
-	s2 = stdlib_base_pow( sigma, 2.0 );
 	lnx = stdlib_base_ln( x );
-	A = -0.5 * stdlib_base_ln( 2.0 * s2 * STDLIB_CONSTANT_FLOAT64_PI );
-	B = -1.0 / ( 2.0 * s2 );
-	return A - lnx + ( B * stdlib_base_pow( lnx - mu, 2.0 ) );
+	A = ( -0.5 * STDLIB_CONSTANT_FLOAT64_LN_TWO_PI ) - stdlib_base_ln( sigma );
+	return A - lnx - ( 0.5 * stdlib_base_abs2( ( lnx - mu ) / sigma ) );
 }

@@ -1,0 +1,31 @@
+
+{{alias}}( value )
+    Returns the enumeration constant associated with a supported SGD penalty
+    value.
+
+    Downstream consumers of this function should *not* rely on specific integer
+    values (e.g., `ELASTICNET == 0`). Instead, the function should be used in an
+    opaque manner.
+
+    Parameters
+    ----------
+    value: any
+        Penalty value.
+
+    Returns
+    -------
+    out: integer|null
+        Enumeration constant.
+
+    Examples
+    --------
+    > var s = 'elasticnet';
+    > var v = {{alias}}( s )
+    <number>
+    > v = {{alias:@stdlib/ml/base/sgd/penalty-str2enum}}( s );
+    > {{alias}}( v )
+    <number>
+
+    See Also
+    --------
+
