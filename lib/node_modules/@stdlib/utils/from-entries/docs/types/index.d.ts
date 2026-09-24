@@ -21,7 +21,7 @@
 /**
 * Creates an object from an array of key-value pairs.
 *
-* @param entries - input object
+* @param entries - array of key-value pairs
 * @returns object created from `[key, value]` pairs
 *
 * @example

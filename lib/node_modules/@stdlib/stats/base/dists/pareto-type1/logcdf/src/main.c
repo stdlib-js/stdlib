@@ -23,7 +23,7 @@
 #include "stdlib/math/base/special/pow.h"
 
 /**
-* Evaluates the cumulative distribution function (CDF) for a Pareto (Type I) distribution with shape parameter `alpha` and scale parameter `beta` at a value `x`.
+* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a Pareto (Type I) distribution with shape parameter `alpha` and scale parameter `beta` at a value `x`.
 *
 * @param x     input value
 * @param alpha shape parameter

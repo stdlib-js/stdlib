@@ -1,0 +1,43 @@
+
+{{alias}}( z1, z2, maxULP )
+    Tests whether two single-precision complex floating-point numbers are
+    approximately the same value within a specified number of ULPs (units in the
+    last place).
+
+    The function differs from the `===` operator in that the function treats
+    `-0` and `+0` as distinct and `NaNs` as the same.
+
+    Parameters
+    ----------
+    z1: Complex64
+        First complex number.
+
+    z2: Complex64
+        Second complex number.
+
+    maxULP: number
+        Maximum allowed ULP difference.
+
+    Returns
+    -------
+    out: boolean
+        Boolean indicating whether two single-precision complex floating-point
+        numbers are approximately the same value within a specified number of
+        ULPs.
+
+    Examples
+    --------
+    > var re1 = 1.0;
+    > var im1 = 3.0;
+    > var re2 = 1.0 + {{alias:@stdlib/constants/float32/eps}};
+    > var im2 = 3.0;
+    > var z1 = new {{alias:@stdlib/complex/float32/ctor}}( re1, im1 );
+    > var z2 = new {{alias:@stdlib/complex/float32/ctor}}( re2, im2 );
+    > var v = {{alias}}( z1, z2, 0 )
+    false
+    > v = {{alias}}( z1, z2, 1 )
+    true
+
+    See Also
+    --------
+

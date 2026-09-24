@@ -130,7 +130,7 @@ declare function countBy<T = unknown, U = unknown>( collection: Collection<T>, i
 * }
 * var arr = [ 'beep', 'boop', 'foo', 'bar' ];
 *
-* var out = countBy( arr, indicator );
+* var out = countBy( arr, {}, indicator );
 * // returns { 'b': 3, 'f': 1 }
 */
 declare function countBy<T = unknown, U = unknown>( collection: Collection<T>, options: Options<T, U>, indicator: Indicator<T, U> ): Results<T>;

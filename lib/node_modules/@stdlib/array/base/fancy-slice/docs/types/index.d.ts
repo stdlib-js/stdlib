@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection, Complex128Array, Complex64Array, AccessorArrayLike } from '@stdlib/types/array';
+import { Collection, Complex128Array, Complex64Array, AccessorArrayLike, Float16Array } from '@stdlib/types/array';
 import { Slice } from '@stdlib/types/slice';
 
 /**
@@ -60,6 +60,25 @@ declare function slice( x: Float64Array, s: Slice, strict: boolean ): Float64Arr
 * // returns <Float32Array>[ 3.0, 2.0, 1.0 ]
 */
 declare function slice( x: Float32Array, s: Slice, strict: boolean ): Float32Array;
+
+/**
+* Returns a shallow copy of a portion of an array.
+*
+* @param x - input array
+* @param s - slice object
+* @param strict - boolean indicating whether to enforce strict bounds checking
+* @returns output array
+*
+* @example
+* var Slice = require( '@stdlib/slice/ctor' );
+* var Float16Array = require( '@stdlib/array/float16' );
+*
+* var x = new Float16Array( [ 1.0, 2.0, 3.0 ] );
+*
+* var out = slice( x, new Slice( null, null, -1 ), false );
+* // returns <Float16Array>[ 3.0, 2.0, 1.0 ]
+*/
+declare function slice( x: Float16Array, s: Slice, strict: boolean ): Float16Array;
 
 /**
 * Returns a shallow copy of a portion of an array.

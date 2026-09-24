@@ -38,7 +38,7 @@ interface MGF {
 	* -   If provided `b <= 0`, the function returns `NaN`.
 	*
 	* @param t - input value
-	* @param mu - mean
+	* @param mu - location parameter
 	* @param b - scale parameter
 	* @returns evaluated MGF
 	*
@@ -87,7 +87,7 @@ interface MGF {
 	/**
 	* Returns a function for evaluating the moment-generating function (MGF) of a Laplace (double exponential) distribution with location parameter `mu` and scale parameter `b`.
 	*
-	* @param mu - mean
+	* @param mu - location parameter
 	* @param b - scale parameter
 	* @returns MGF
 	*

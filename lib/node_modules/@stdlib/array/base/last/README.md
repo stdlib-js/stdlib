@@ -73,8 +73,6 @@ var out = last( x );
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 var last = require( '@stdlib/array/base/last' );
 
 // Create a complex number array:
@@ -82,15 +80,9 @@ var arr = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 
 // Return the last element:
 var out = last( arr );
-// returns <Complex64>
+// returns <Complex64>[ 5.0, 6.0 ]
 
-var re = realf( out );
-// returns 5.0
-
-var im = imagf( out );
-// returns 6.0
-
-console.log( '%d + %di', re, im );
+console.log( out.toString() );
 // => '5 + 6i'
 ```
 

@@ -35,7 +35,7 @@ type Iterator = Iter | IterableIterator;
 *
 * @param iterator - input iterator
 * @param value - static (fill) value
-* @param begin - start iteration index (inclusive)
+* @param begin - start iteration index (inclusive; default: 0)
 * @param end - end iteration index (non-inclusive)
 * @returns iterator
 *

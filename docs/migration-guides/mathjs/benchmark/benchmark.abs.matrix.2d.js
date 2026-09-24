@@ -23,6 +23,7 @@
 var resolve = require( 'path' ).resolve;
 var bench = require( '@stdlib/bench' );
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
+var format = require( '@stdlib/string/format' );
 var filled2dBy = require( '@stdlib/array/base/filled2d-by' );
 var filledndBy = require( '@stdlib/array/base/fillednd-by' );
 var unary2d = require( '@stdlib/array/base/unary2d' );
@@ -47,7 +48,7 @@ var opts = {
 
 // MAIN //
 
-bench( pkg+'::stdlib:math/special/abs:value=ndarray,dtype=generic,size=100,shape=(10,10)', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:math/special/abs:value=ndarray,dtype=generic,size=100,shape=(10,10)', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var i;
@@ -71,7 +72,7 @@ bench( pkg+'::stdlib:math/special/abs:value=ndarray,dtype=generic,size=100,shape
 	b.end();
 });
 
-bench( pkg+'::stdlib:array/base/unary2d:value=nested_array,dtype=generic,size=100,shape=(10,10)', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:array/base/unary2d:value=nested_array,dtype=generic,size=100,shape=(10,10)', pkg ), opts, function benchmark( b ) {
 	var sh;
 	var x;
 	var y;
@@ -96,7 +97,7 @@ bench( pkg+'::stdlib:array/base/unary2d:value=nested_array,dtype=generic,size=10
 	b.end();
 });
 
-bench( pkg+'::stdlib:array/base/unarynd:value=nested_array,dtype=generic,size=100,shape=(10,10)', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:array/base/unarynd:value=nested_array,dtype=generic,size=100,shape=(10,10)' ), pkg, opts, function benchmark( b ) {
 	var sh;
 	var x;
 	var y;
@@ -121,7 +122,7 @@ bench( pkg+'::stdlib:array/base/unarynd:value=nested_array,dtype=generic,size=10
 	b.end();
 });
 
-bench( pkg+'::mathjs:abs:value=matrix,dtype=generic,size=100,shape=(10,10)', opts, function benchmark( b ) {
+bench( format( '%s::mathjs:abs:value=matrix,dtype=generic,size=100,shape=(10,10)', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var i;

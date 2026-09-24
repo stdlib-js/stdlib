@@ -374,7 +374,7 @@ interface Namespace {
 	* Returns an iterator for generating pseudorandom numbers drawn from an Erlang distribution.
 	*
 	* @param k - shape parameter
-	* @param lambda  - rate parameter
+	* @param lambda - rate parameter
 	* @param options - function options
 	* @throws `k` must be a positive integer
 	* @throws `lambda` must be a positive number
@@ -630,7 +630,7 @@ interface Namespace {
 	* Returns an iterator for generating pseudorandom numbers drawn from an inverse gamma distribution.
 	*
 	* @param alpha - shape parameter
-	* @param beta  - scale parameter
+	* @param beta - scale parameter
 	* @param options - function options
 	* @throws `alpha` must be a positive number
 	* @throws `beta` must be a positive number
@@ -658,7 +658,7 @@ interface Namespace {
 	* Returns an iterator for generating pseudorandom numbers drawn from a Kumaraswamy's double bounded distribution.
 	*
 	* @param a - first shape parameter
-	* @param b  - second shape parameter
+	* @param b - second shape parameter
 	* @param options - function options
 	* @throws `a` must be a positive number
 	* @throws `b` must be a positive number
@@ -1183,7 +1183,7 @@ interface Namespace {
 	* Returns an iterator for generating pseudorandom numbers drawn from a Weibull distribution.
 	*
 	* @param k - scale parameter
-	* @param lambda  - shape parameter
+	* @param lambda - shape parameter
 	* @param options - function options
 	* @throws `k` must be a positive number
 	* @throws `lambda` must be a positive number

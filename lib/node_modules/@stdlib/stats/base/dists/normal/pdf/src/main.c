@@ -18,10 +18,9 @@
 
 #include "stdlib/stats/base/dists/normal/pdf.h"
 #include "stdlib/math/base/assert/is_nan.h"
-#include "stdlib/math/base/special/sqrt.h"
-#include "stdlib/math/base/special/pow.h"
+#include "stdlib/math/base/special/abs2.h"
 #include "stdlib/math/base/special/exp.h"
-#include "stdlib/constants/float64/two_pi.h"
+#include "stdlib/constants/float64/sqrt_two_pi.h"
 #include "stdlib/constants/float64/pinf.h"
 
 /**
@@ -37,9 +36,7 @@
 * // returns ~0.054
 */
 double stdlib_base_dists_normal_pdf( const double x, const double mu, const double sigma ) {
-	double s2;
 	double A;
-	double B;
 	if (
 		stdlib_base_is_nan( x ) ||
 		stdlib_base_is_nan( mu ) ||
@@ -51,8 +48,6 @@ double stdlib_base_dists_normal_pdf( const double x, const double mu, const doub
 	if ( sigma == 0.0 ) {
 		return ( x == mu ) ? STDLIB_CONSTANT_FLOAT64_PINF : 0.0;
 	}
-	s2 = stdlib_base_pow( sigma, 2.0 );
-	A = 1.0 / stdlib_base_sqrt( s2 * STDLIB_CONSTANT_FLOAT64_TWO_PI );
-	B = -1.0 / ( 2.0 * s2 );
-	return A * stdlib_base_exp( B * stdlib_base_pow( x - mu, 2.0 ) );
+	A = 1.0 / ( sigma * STDLIB_CONSTANT_FLOAT64_SQRT_TWO_PI );
+	return A * stdlib_base_exp( -0.5 * stdlib_base_abs2( ( x - mu ) / sigma ) );
 }

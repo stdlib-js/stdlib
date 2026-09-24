@@ -39,10 +39,10 @@ interface IsNonPositiveNumberArray {
 	( value: any ): value is ArrayLike<number | Number>;
 
 	/**
-	* Tests if a value is an array-like object containing only nonpositive primitive integer values.
+	* Tests if a value is an array-like object containing only nonpositive primitive number values.
 	*
 	* @param value - value to test
-	* @returns boolean indicating whether value is an array-like object containing only nonpositive primitive integer values
+	* @returns boolean indicating whether value is an array-like object containing only nonpositive primitive number values
 	*
 	* @example
 	* var bool = isNonPositiveNumberArray.primitives( [ -1.0, -10.0 ] );
@@ -59,10 +59,10 @@ interface IsNonPositiveNumberArray {
 	primitives( value: any ): value is ArrayLike<number>;
 
 	/**
-	* Tests if a value is an array-like object containing only number objects having nonpositive integer values.
+	* Tests if a value is an array-like object containing only number objects having nonpositive number values.
 	*
 	* @param value - value to test
-	* @returns boolean indicating whether value is an array-like object containing only number objects having nonpositive integer values
+	* @returns boolean indicating whether value is an array-like object containing only number objects having nonpositive number values
 	*
 	* @example
 	* var bool = isNonPositiveNumberArray.objects( [ new Number(-1.0), new Number(-10.0) ] );

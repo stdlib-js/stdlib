@@ -1,0 +1,12 @@
+
+{{alias}}
+    Natural logarithm of `2` as a half-precision floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    0.693359375
+
+    See Also
+    --------
+

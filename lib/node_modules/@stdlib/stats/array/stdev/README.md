@@ -132,7 +132,7 @@ var v = stdev( x, 0.0 );
 ## Notes
 
 -   If provided an empty array, the function returns `NaN`.
--   If `N - c` is less than or equal to `0` (where `c` corresponds to the provided degrees of freedom adjustment), both functions return `NaN`.
+-   If `N - c` is less than or equal to `0` (where `c` corresponds to the provided degrees of freedom adjustment), the function returns `NaN`.
 -   The function supports array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array/base/accessor`][@stdlib/array/base/accessor]).
 
 </section>

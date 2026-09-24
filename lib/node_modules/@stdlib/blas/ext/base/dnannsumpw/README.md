@@ -262,7 +262,7 @@ double stdlib_strided_dnannsumpw_ndarray( const CBLAS_INT N, const double *X, co
 
 ```c
 #include "stdlib/blas/ext/base/dnannsumpw.h"
-#include "stdlib/blase/base/shared.h"
+#include "stdlib/blas/base/shared.h"
 #include <stdio.h>
 
 int main( void ) {

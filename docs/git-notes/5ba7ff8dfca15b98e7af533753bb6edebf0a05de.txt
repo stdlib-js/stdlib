@@ -1,0 +1,8 @@
+---
+type: amend-message
+---
+bench: refactor to use string interpolation in `random/base/f`
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/10232
+
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>

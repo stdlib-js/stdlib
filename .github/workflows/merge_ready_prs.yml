@@ -1,0 +1,69 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2025 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: merge_ready_prs
+
+# Workflow triggers:
+on:
+  workflow_dispatch:
+    inputs:
+      dry-run:
+        description: 'Dry run (only print PRs to be merged)'
+        type: boolean
+        default: false
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for merging PRs with Ready to Merge label:
+  merge:
+
+    # Define a display name:
+    name: 'Merge Ready PRs'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the job's steps:
+    steps:
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      # Import GPG key to sign commits:
+      - name: 'Import GPG key to sign commits'
+        uses: crazy-max/ghaction-import-gpg@2dc316deee8e90f13e1a351ab510b4d5bc0c82cd # v7.0.0
+        with:
+          gpg_private_key: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
+          git_user_signingkey: true
+          git_commit_gpgsign: true
+
+      # Merge PRs with Ready to Merge label:
+      - name: 'Merge PRs'
+        env:
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+        run: |
+          if [ "${{ inputs.dry-run }}" == "true" ]; then
+            . "$GITHUB_WORKSPACE/.github/workflows/scripts/merge_ready_prs/merge_ready_prs" --dry-run
+          else
+            . "$GITHUB_WORKSPACE/.github/workflows/scripts/merge_ready_prs/merge_ready_prs"
+          fi

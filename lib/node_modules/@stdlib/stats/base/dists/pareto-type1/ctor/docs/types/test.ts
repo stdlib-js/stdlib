@@ -18,36 +18,36 @@
 
 /* eslint-disable @typescript-eslint/no-unused-expressions */
 
-import Pareto = require( './index' );
+import Pareto1 = require( './index' );
 
 
 // TESTS //
 
 // The function returns a distribution instance...
 {
-	new Pareto(); // $ExpectType Pareto
-	new Pareto( 1.0, 2.0 ); // $ExpectType Pareto
+	new Pareto1(); // $ExpectType Pareto1
+	new Pareto1( 1.0, 2.0 ); // $ExpectType Pareto1
 }
 
 // The compiler throws an error if the function is provided values other than two numbers...
 {
-	new Pareto( true, 2.0 ); // $ExpectError
-	new Pareto( false, 2.0 ); // $ExpectError
-	new Pareto( '5', 2.0 ); // $ExpectError
-	new Pareto( [], 2.0 ); // $ExpectError
-	new Pareto( {}, 2.0 ); // $ExpectError
-	new Pareto( ( x: number ): number => x, 2.0 ); // $ExpectError
+	new Pareto1( true, 2.0 ); // $ExpectError
+	new Pareto1( false, 2.0 ); // $ExpectError
+	new Pareto1( '5', 2.0 ); // $ExpectError
+	new Pareto1( [], 2.0 ); // $ExpectError
+	new Pareto1( {}, 2.0 ); // $ExpectError
+	new Pareto1( ( x: number ): number => x, 2.0 ); // $ExpectError
 
-	new Pareto( 1.0, true ); // $ExpectError
-	new Pareto( 1.0, false ); // $ExpectError
-	new Pareto( 1.0, '5' ); // $ExpectError
-	new Pareto( 1.0, [] ); // $ExpectError
-	new Pareto( 1.0, {} ); // $ExpectError
-	new Pareto( 1.0, ( x: number ): number => x ); // $ExpectError
+	new Pareto1( 1.0, true ); // $ExpectError
+	new Pareto1( 1.0, false ); // $ExpectError
+	new Pareto1( 1.0, '5' ); // $ExpectError
+	new Pareto1( 1.0, [] ); // $ExpectError
+	new Pareto1( 1.0, {} ); // $ExpectError
+	new Pareto1( 1.0, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
-	new Pareto( 1.0 ); // $ExpectError
-	new Pareto( 1.0, 1.0, 2.0 ); // $ExpectError
+	new Pareto1( 1.0 ); // $ExpectError
+	new Pareto1( 1.0, 1.0, 2.0 ); // $ExpectError
 }

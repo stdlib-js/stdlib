@@ -2,6 +2,7 @@
   "float64": {
     "float64": "float64",
     "float32": "float64",
+    "float16": "float64",
     "int32": "float64",
     "int16": "float64",
     "int8": "float64",
@@ -17,6 +18,7 @@
   "float32": {
     "float64": "float64",
     "float32": "float32",
+    "float16": "float32",
     "int32": "float64",
     "int16": "float32",
     "int8": "float32",
@@ -29,9 +31,26 @@
     "bool": -1,
     "generic": "generic"
   },
+  "float16": {
+    "float64": "float64",
+    "float32": "float32",
+    "float16": "float16",
+    "int32": "float64",
+    "int16": "float32",
+    "int8": "float16",
+    "uint32": "float64",
+    "uint16": "float32",
+    "uint8": "float16",
+    "uint8c": "float16",
+    "complex64": "complex64",
+    "complex128": "complex128",
+    "bool": -1,
+    "generic": "generic"
+  },
   "int32": {
     "float64": "float64",
     "float32": "float64",
+    "float16": "float64",
     "int32": "int32",
     "int16": "int32",
     "int8": "int32",
@@ -47,6 +66,7 @@
   "int16": {
     "float64": "float64",
     "float32": "float32",
+    "float16": "float32",
     "int32": "int32",
     "int16": "int16",
     "int8": "int16",
@@ -62,6 +82,7 @@
   "int8": {
     "float64": "float64",
     "float32": "float32",
+    "float16": "float16",
     "int32": "int32",
     "int16": "int16",
     "int8": "int8",
@@ -77,6 +98,7 @@
   "uint32": {
     "float64": "float64",
     "float32": "float64",
+    "float16": "float64",
     "int32": "float64",
     "int16": "float64",
     "int8": "float64",
@@ -92,6 +114,7 @@
   "uint16": {
     "float64": "float64",
     "float32": "float32",
+    "float16": "float32",
     "int32": "int32",
     "int16": "int32",
     "int8": "int32",
@@ -107,6 +130,7 @@
   "uint8": {
     "float64": "float64",
     "float32": "float32",
+    "float16": "float16",
     "int32": "int32",
     "int16": "int16",
     "int8": "int16",
@@ -122,6 +146,7 @@
   "uint8c": {
     "float64": "float64",
     "float32": "float32",
+    "float16": "float16",
     "int32": "int32",
     "int16": "int16",
     "int8": "int16",
@@ -137,6 +162,7 @@
   "complex128": {
     "float64": "complex128",
     "float32": "complex128",
+    "float16": "complex128",
     "int32": "complex128",
     "int16": "complex128",
     "int8": "complex128",
@@ -152,6 +178,7 @@
   "complex64": {
     "float64": "complex128",
     "float32": "complex64",
+    "float16": "complex64",
     "int32": "complex128",
     "int16": "complex64",
     "int8": "complex64",
@@ -167,6 +194,7 @@
     "bool": {
     "float64": -1,
     "float32": -1,
+    "float16": -1,
     "int32": -1,
     "int16": -1,
     "int8": -1,
@@ -182,6 +210,7 @@
   "generic": {
     "float64": "generic",
     "float32": "generic",
+    "float16": "generic",
     "int32": "generic",
     "int16": "generic",
     "int8": "generic",
