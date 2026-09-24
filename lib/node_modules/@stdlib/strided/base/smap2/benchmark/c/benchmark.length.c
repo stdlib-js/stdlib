@@ -107,12 +107,15 @@ static float addf( const float x, const float y ) {
 */
 static double benchmark( int iterations, int len ) {
 	double elapsed;
-	float x[ len ];
-	float y[ len ];
-	float z[ len ];
+	float *x;
+	float *y;
+	float *z;
 	double t;
 	int i;
 
+	x = (float *)malloc( len * sizeof( float ) );
+	y = (float *)malloc( len * sizeof( float ) );
+	z = (float *)malloc( len * sizeof( float ) );
 	for ( i = 0; i < len; i++ ) {
 		x[ i ] = ( rand_float()*200.0f ) - 100.0f;
 		y[ i ] = ( rand_float()*200.0f ) - 100.0f;
@@ -130,6 +133,9 @@ static double benchmark( int iterations, int len ) {
 	if ( z[ i%len ] != z[ i%len ] ) {
 		printf( "should not return NaN\n" );
 	}
+	free( x );
+	free( y );
+	free( z );
 	return elapsed;
 }
 

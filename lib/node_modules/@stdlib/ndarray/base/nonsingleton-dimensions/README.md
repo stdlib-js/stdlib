@@ -126,6 +126,8 @@ for ( i = 0; i < 100; i++ ) {
 Returns the number of non-singleton dimensions.
 
 ```c
+#include <stdint.h>
+
 int64_t ndims = 2;
 int64_t shape[] = { 10, 1 };
 

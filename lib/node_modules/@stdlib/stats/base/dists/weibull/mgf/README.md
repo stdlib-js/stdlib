@@ -137,23 +137,19 @@ y = myMGF( 0.08 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var EPS = require( '@stdlib/constants/float64/eps' );
 var mgf = require( '@stdlib/stats/base/dists/weibull/mgf' );
 
-var lambda;
-var k;
-var t;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var lambda = uniform( 10, EPS, 10.0, opts );
+var k = uniform( 10, EPS, 10.0, opts );
+var t = uniform( 10, 0.0, 5.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    t = randu() * 5.0;
-    lambda = ( randu() * 10.0 ) + EPS;
-    k = ( randu() * 10.0 ) + EPS;
-    y = mgf( t, lambda, k );
-    console.log( 'x: %d, k: %d, λ: %d, M_X(t;k,λ): %d', t.toFixed( 4 ), k.toFixed( 4 ), lambda.toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 'x: %0.4f, k: %0.4f, λ: %0.4f, M_X(t;k,λ): %0.4f', t, k, lambda, mgf );
 ```
 
 </section>
@@ -252,6 +248,12 @@ int main( void ) {
 ```
 
 </section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 

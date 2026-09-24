@@ -49,7 +49,7 @@ var array = require( '@stdlib/ndarray/array' );
 
 var arr = array( [ [ 1, 2 ], [ 3, 4 ] ] );
 var out = ndarraylike2ndarray( arr );
-// returns <ndarray>
+// returns <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
 ```
 
 </section>
@@ -73,7 +73,15 @@ var out = ndarraylike2ndarray( arr );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
+var getDType = require( '@stdlib/ndarray/dtype' );
+var getShape = require( '@stdlib/ndarray/shape' );
+var getStrides = require( '@stdlib/ndarray/strides' );
+var getOffset = require( '@stdlib/ndarray/offset' );
+var getOrder = require( '@stdlib/ndarray/order' );
 var array = require( '@stdlib/ndarray/array' );
+var numel = require( '@stdlib/ndarray/numel' );
+var ndims = require( '@stdlib/ndarray/ndims' );
+var join = require( '@stdlib/array/base/join' );
 var ndarraylike2ndarray = require( '@stdlib/ndarray/base/ndarraylike2ndarray' );
 
 // Create an ndarray:
@@ -81,16 +89,16 @@ var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
 
 // Convert to a "base" ndarray:
 var out = ndarraylike2ndarray( x );
-// returns <ndarray>
+// returns <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
 
 // Print various properties:
-console.log( 'dtype: %s', out.dtype );
-console.log( 'ndims: %d', out.shape.length );
-console.log( 'length: %d', out.length );
-console.log( 'shape: [ %s ]', out.shape.join( ', ' ) );
-console.log( 'strides: [ %s ]', out.strides.join( ', ' ) );
-console.log( 'offset: %d', out.offset );
-console.log( 'order: %s', out.order );
+console.log( 'dtype: %s', getDType( out ) );
+console.log( 'ndims: %d', ndims( out ) );
+console.log( 'length: %d', numel( out ) );
+console.log( 'shape: [ %s ]', join( getShape( out ), ', ' ) );
+console.log( 'strides: [ %s ]', join( getStrides( out ), ', ' ) );
+console.log( 'offset: %d', getOffset( out ) );
+console.log( 'order: %s', getOrder( out ) );
 ```
 
 </section>

@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Evaluates the logarithm of the probability density function (PDF) for an Erlang distribution.
+* Evaluates the natural logarithm of the probability density function (PDF) for an Erlang distribution.
 *
 * @param x - input value
 * @returns evaluated logPDF

@@ -1,0 +1,69 @@
+
+{{alias}}( str, radix )
+    Parses a string representation of a 64-bit unsigned integer into high and
+    low 32-bit words.
+
+    The function returns an array with two elements: a higher order word and a
+    lower order word, respectively. The lower order word contains the less
+    significant bits, while the higher order word contains the more significant
+    bits.
+
+    Parameters
+    ----------
+    str: string
+        String representation of a 64-bit unsigned integer.
+
+    radix: integer
+        Radix (base) to use for string conversion (2-36).
+
+    Returns
+    -------
+    out: Array<integer>
+        High and low words as 32-bit unsigned integers.
+
+    Examples
+    --------
+    > var w = {{alias}}( '1234', 10 )
+    [ 0, 1234 ]
+    > w = {{alias}}( 'abcd', 16 )
+    [ 0, 43981 ]
+    > w = {{alias}}( '3w5e11264sgsf', 36 )
+    [ 4294967295, 4294967295 ]
+
+
+{{alias}}.assign( str, radix, out, stride, offset )
+    Parses a string representation of a 64-bit unsigned integer into high and
+    low 32-bit words and assigns results to a provided output array.
+
+    Parameters
+    ----------
+    str: string
+        String representation of a 64-bit unsigned integer.
+
+    radix: integer
+        Radix (base) to use for string conversion (2-36).
+
+    out: Array|TypedArray|Object
+        Output array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array index offset.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Output array.
+
+    Examples
+    --------
+    > var out = new {{alias:@stdlib/array/uint32}}( 2 );
+    > var w = {{alias}}.assign( 'ffffffffffffffff', 16, out, 1, 0 )
+    <Uint32Array>[ 4294967295, 4294967295 ]
+    > var bool = ( w === out )
+    true
+
+    See Also
+    --------

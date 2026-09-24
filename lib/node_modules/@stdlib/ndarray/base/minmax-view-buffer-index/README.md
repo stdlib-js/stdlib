@@ -170,6 +170,8 @@ for ( i = 0; i < 100; i++ ) {
 Computes the minimum and maximum linear indices (in bytes) in an underlying data buffer accessible to an array view.
 
 ```c
+#include <stdint.h>
+
 int64_t ndims = 2;
 int64_t shape[] = { 10, 10 };
 int64_t strides[] = { 10, 1 };

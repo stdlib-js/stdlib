@@ -29,6 +29,7 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/julia/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/license-headers/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/markdown/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/package_json.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/pkgs/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/python/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/r/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/repl_help.mk

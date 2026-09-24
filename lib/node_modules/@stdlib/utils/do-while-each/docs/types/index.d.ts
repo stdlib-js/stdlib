@@ -119,7 +119,6 @@ type Callback<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary<T, U>;
 *
 * -   If provided an empty collection, the function invokes the provided function with the collection index set to `undefined`.
 *
-*
 * @param collection - input collection
 * @param fcn - function to invoke
 * @param predicate - function which indicates whether to continue iterating over a collection

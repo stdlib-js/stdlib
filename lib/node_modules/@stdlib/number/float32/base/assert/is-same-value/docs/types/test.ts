@@ -16,43 +16,43 @@
 * limitations under the License.
 */
 
-import isSameValuef = require( './index' );
+import isSameValue = require( './index' );
 
 
 // TESTS //
 
 // The function returns a boolean...
 {
-	isSameValuef( 3.14, 3.14 ); // $ExpectType boolean
+	isSameValue( 3.14, 3.14 ); // $ExpectType boolean
 }
 
 // The compiler throws an error if the function is not provided a first argument which is a number...
 {
-	isSameValuef( '5', 3.14 ); // $ExpectError
-	isSameValuef( true, 3.14 ); // $ExpectError
-	isSameValuef( false, 3.14 ); // $ExpectError
-	isSameValuef( null, 3.14 ); // $ExpectError
-	isSameValuef( void 0, 3.14 ); // $ExpectError
-	isSameValuef( [], 3.14 ); // $ExpectError
-	isSameValuef( {}, 3.14 ); // $ExpectError
-	isSameValuef( ( x: number ): number => x, 3.14 ); // $ExpectError
+	isSameValue( '5', 3.14 ); // $ExpectError
+	isSameValue( true, 3.14 ); // $ExpectError
+	isSameValue( false, 3.14 ); // $ExpectError
+	isSameValue( null, 3.14 ); // $ExpectError
+	isSameValue( void 0, 3.14 ); // $ExpectError
+	isSameValue( [], 3.14 ); // $ExpectError
+	isSameValue( {}, 3.14 ); // $ExpectError
+	isSameValue( ( x: number ): number => x, 3.14 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is not provided a second argument which is a number...
 {
-	isSameValuef( 3.14, '5' ); // $ExpectError
-	isSameValuef( 3.14, true ); // $ExpectError
-	isSameValuef( 3.14, false ); // $ExpectError
-	isSameValuef( 3.14, null ); // $ExpectError
-	isSameValuef( 3.14, void 0 ); // $ExpectError
-	isSameValuef( 3.14, [] ); // $ExpectError
-	isSameValuef( 3.14, {} ); // $ExpectError
-	isSameValuef( 3.14, ( x: number ): number => x ); // $ExpectError
+	isSameValue( 3.14, '5' ); // $ExpectError
+	isSameValue( 3.14, true ); // $ExpectError
+	isSameValue( 3.14, false ); // $ExpectError
+	isSameValue( 3.14, null ); // $ExpectError
+	isSameValue( 3.14, void 0 ); // $ExpectError
+	isSameValue( 3.14, [] ); // $ExpectError
+	isSameValue( 3.14, {} ); // $ExpectError
+	isSameValue( 3.14, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
-	isSameValuef(); // $ExpectError
-	isSameValuef( 3.14 ); // $ExpectError
-	isSameValuef( 3.14, 3.14, 3.14 ); // $ExpectError
+	isSameValue(); // $ExpectError
+	isSameValue( 3.14 ); // $ExpectError
+	isSameValue( 3.14, 3.14, 3.14 ); // $ExpectError
 }

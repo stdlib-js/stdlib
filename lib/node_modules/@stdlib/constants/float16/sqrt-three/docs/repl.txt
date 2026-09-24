@@ -1,0 +1,12 @@
+
+{{alias}}
+    Square root of `3` as a half-precision floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    1.732421875
+
+    See Also
+    --------
+

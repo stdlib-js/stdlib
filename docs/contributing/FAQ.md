@@ -64,7 +64,7 @@ There are primarily two options for setting up your development environment to c
 1. [Manually setting up the development environment][manual-setup]
 2. [Setting up the dev container][devcontainer-setup]
 
-Note: The dev container does not yet support ARM64 architectures. For more information, or if you're interested in adding ARM64 support, you can visit this [issue][devcontainer-issue].
+Note: The dev container supports both x86-64 and ARM64 architectures (including Apple Silicon).
 
 <a name="install-cppcheck"></a>
 
@@ -137,7 +137,7 @@ Consider whether the number of parameters can be reduced. If reduction is not po
 
 ## I have opened a pull request, where can I seek feedback?
 
-Consider joining our [Gitter channel][stdlib-gitter]! We are proud to have a very active community where members help each other by asking and answering questions. A maintainer will review your pull request soon and provide feedback. You can also discuss it during our [weekly office hours meeting][stdlib-office-hours]!
+Consider joining our [Zulip community][stdlib-zulip]! We are proud to have a very active community where members help each other by asking and answering questions. A maintainer will review your pull request soon and provide feedback. You can also discuss it during our [weekly office hours meeting][stdlib-office-hours]!
 
 <a name="generate-fixtures"></a>
 
@@ -403,8 +403,6 @@ For more `make` commands, refer to the [documentation][benchmark] on running ben
 
 [devcontainer-setup]: https://github.com/stdlib-js/stdlib/blob/87cbd67623892f90ddeea94e1d4e01eeada417b5/docs/devcontainer_setup.md
 
-[devcontainer-issue]: https://github.com/stdlib-js/stdlib/issues/4934
-
 [install-link]: https://github.com/stdlib-js/stdlib/tree/develop/tools/make/lib/install#install
 
 [ref-discussion]: https://github.com/stdlib-js/stdlib/pull/2298#discussion_r1624765205
@@ -425,7 +423,7 @@ For more `make` commands, refer to the [documentation][benchmark] on running ben
 
 [node-gyp]: https://github.com/nodejs/node-gyp
 
-[stdlib-gitter]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[stdlib-zulip]: https://stdlib.zulipchat.com
 
 [stdlib-office-hours]: https://github.com/stdlib-js/meetings/issues
 

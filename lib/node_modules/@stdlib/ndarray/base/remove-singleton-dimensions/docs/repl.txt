@@ -1,17 +1,17 @@
 
-{{alias}}( x )
-    Returns an array without singleton dimensions.
+{{alias}}( x, writable )
+    Returns an ndarray without singleton dimensions.
 
-    If a provided ndarray does not have any singleton dimensions, the function
-    returns the provided ndarray unchanged.
-
-    If a provided ndarray does have singleton dimensions, the function returns a
-    new ndarray view.
+    The function always returns a new ndarray instance even if the input ndarray
+    does not contain any singleton dimensions.
 
     Parameters
     ----------
     x: ndarray
         Input array.
+
+    writable: boolean
+        Boolean indicating whether a returned array should be writable.
 
     Returns
     -------
@@ -21,21 +21,9 @@
     Examples
     --------
     > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ], { 'ndmin': 5 } )
-    <ndarray>
-    > var sh = x.shape
-    [ 1, 1, 1, 2, 2 ]
-    > var y = {{alias}}( x )
-    <ndarray>
-    > sh = y.shape
-    [ 2, 2 ]
-    > var v = y.get( 0, 0 )
-    1
-    > v = y.get( 0, 1 )
-    2
-    > v = y.get( 1, 0 )
-    3
-    > v = y.get( 1, 1 )
-    4
+    <ndarray>[ [ [ [ [1, 2 ], [ 3, 4 ] ] ] ] ]
+    > var y = {{alias}}( x, false )
+    <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
 
     See Also
     --------
