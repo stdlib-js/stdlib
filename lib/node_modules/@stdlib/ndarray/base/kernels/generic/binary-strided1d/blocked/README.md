@@ -185,7 +185,7 @@ The returned function iterates over ndarray elements according to the memory lay
 
 <!-- lint disable maximum-heading-length -->
 
-#### kernel.kernel2d( fcn, arrays, views, shape, stridesX, strideY, strideZ, strategyX, strategyY, strategyZ, options )
+#### kernel.kernel2d( fcn, arrays, views, shape, stridesX, stridesY, stridesZ, strategyX, strategyY, strategyZ, options )
 
 <!-- lint enable maximum-heading-length -->
 
@@ -320,7 +320,7 @@ The function has the following parameters:
 
 <!-- lint disable maximum-heading-length -->
 
-#### kernel.kernel3d( fcn, arrays, views, shape, stridesX, strideY, strideZ, strategyX, strategyY, strategyZ, options )
+#### kernel.kernel3d( fcn, arrays, views, shape, stridesX, stridesY, stridesZ, strategyX, strategyY, strategyZ, options )
 
 <!-- lint enable maximum-heading-length -->
 
@@ -455,7 +455,7 @@ The function has the following parameters:
 
 <!-- lint disable maximum-heading-length -->
 
-#### kernel.kernel4d( fcn, arrays, views, shape, stridesX, strideY, strideZ, strategyX, strategyY, strategyZ, options )
+#### kernel.kernel4d( fcn, arrays, views, shape, stridesX, stridesY, stridesZ, strategyX, strategyY, strategyZ, options )
 
 <!-- lint enable maximum-heading-length -->
 
@@ -590,7 +590,7 @@ The function has the following parameters:
 
 <!-- lint disable maximum-heading-length -->
 
-#### kernel.kernel5d( fcn, arrays, views, shape, stridesX, strideY, strideZ, strategyX, strategyY, strategyZ, options )
+#### kernel.kernel5d( fcn, arrays, views, shape, stridesX, stridesY, stridesZ, strategyX, strategyY, strategyZ, options )
 
 <!-- lint enable maximum-heading-length -->
 
@@ -725,7 +725,7 @@ The function has the following parameters:
 
 <!-- lint disable maximum-heading-length -->
 
-#### kernel.kernel6d( fcn, arrays, views, shape, stridesX, strideY, strideZ, strategyX, strategyY, strategyZ, options )
+#### kernel.kernel6d( fcn, arrays, views, shape, stridesX, stridesY, stridesZ, strategyX, strategyY, strategyZ, options )
 
 <!-- lint enable maximum-heading-length -->
 
@@ -860,7 +860,7 @@ The function has the following parameters:
 
 <!-- lint disable maximum-heading-length -->
 
-#### kernel.kernel7d( fcn, arrays, views, shape, stridesX, strideY, strideZ, strategyX, strategyY, strategyZ, options )
+#### kernel.kernel7d( fcn, arrays, views, shape, stridesX, stridesY, stridesZ, strategyX, strategyY, strategyZ, options )
 
 <!-- lint enable maximum-heading-length -->
 
@@ -995,7 +995,7 @@ The function has the following parameters:
 
 <!-- lint disable maximum-heading-length -->
 
-#### kernel.kernel8d( fcn, arrays, views, shape, stridesX, strideY, strideZ, strategyX, strategyY, strategyZ, options )
+#### kernel.kernel8d( fcn, arrays, views, shape, stridesX, stridesY, stridesZ, strategyX, strategyY, strategyZ, options )
 
 <!-- lint enable maximum-heading-length -->
 
@@ -1130,7 +1130,7 @@ The function has the following parameters:
 
 <!-- lint disable maximum-heading-length -->
 
-#### kernel.kernel9d( fcn, arrays, views, shape, stridesX, strideY, strideZ, strategyX, strategyY, strategyZ, options )
+#### kernel.kernel9d( fcn, arrays, views, shape, stridesX, stridesY, stridesZ, strategyX, strategyY, strategyZ, options )
 
 <!-- lint enable maximum-heading-length -->
 
@@ -1265,7 +1265,7 @@ The function has the following parameters:
 
 <!-- lint disable maximum-heading-length -->
 
-#### kernel.kernel10d( fcn, arrays, views, shape, stridesX, strideY, strideZ, strategyX, strategyY, strategyZ, options )
+#### kernel.kernel10d( fcn, arrays, views, shape, stridesX, stridesY, stridesZ, strategyX, strategyY, strategyZ, options )
 
 <!-- lint enable maximum-heading-length -->
 
