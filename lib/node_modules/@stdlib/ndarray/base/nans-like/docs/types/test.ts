@@ -29,6 +29,7 @@ import nansLike = require( './index' );
 
 	nansLike( ones( 'float64', sh, ord ) ); // $ExpectType float64ndarray
 	nansLike( ones( 'float32', sh, ord ) ); // $ExpectType float32ndarray
+	nansLike( ones( 'float16', sh, ord ) ); // $ExpectType float16ndarray
 	nansLike( ones( 'complex128', sh, ord ) ); // $ExpectType complex128ndarray
 	nansLike( ones( 'complex64', sh, ord ) ); // $ExpectType complex64ndarray
 	nansLike( ones( 'generic', sh, ord ) ); // $ExpectType genericndarray<number>

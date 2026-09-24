@@ -2478,7 +2478,7 @@ interface Namespace {
 	*
 	* @example
 	* var dt = ns.minDataType( 3.141592653589793 );
-	* // returns 'float32'
+	* // returns 'float16'
 	*
 	* @example
 	* var dt = ns.minDataType( 3 );
