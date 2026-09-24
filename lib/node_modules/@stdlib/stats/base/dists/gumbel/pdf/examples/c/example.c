@@ -37,6 +37,6 @@ int main( void ) {
 		mu = random_uniform( 0.0, 10.0 );
 		beta = random_uniform( 0.0, 10.0 );
 		y = stdlib_base_dists_gumbel_pdf( x, mu, beta );
-		printf( "x: %lf, µ: %lf, β: %lf, f(x;µ,β): %lf\n", x, mu, beta, y );
+		printf( "x: %lf, μ: %lf, β: %lf, f(x;μ,β): %lf\n", x, mu, beta, y );
 	}
 }

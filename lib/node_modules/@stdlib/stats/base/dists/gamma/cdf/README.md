@@ -132,6 +132,31 @@ y = mycdf( 8.0 );
 
 <!-- /.usage -->
 
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
+var cdf = require( '@stdlib/stats/base/dists/gamma/cdf' );
+
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 10, 0.0, 3.0, opts );
+var alpha = uniform( 10, 0.0, 5.0, opts );
+var beta = uniform( 10, 0.0, 5.0, opts );
+
+logEachMap( 'x: %0.4f, α: %0.4f, β: %0.4f, F(x;α,β): %0.4f', x, alpha, beta, cdf );
+```
+
+</section>
+
+<!-- /.examples -->
+
 * * *
 
 <section class="c">
@@ -216,33 +241,6 @@ int main( void ) {
 </section>
 
 <!-- /.c -->
-
-* * *
-
-<section class="examples">
-
-## Examples
-
-<!-- eslint no-undef: "error" -->
-
-```javascript
-var uniform = require( '@stdlib/random/array/uniform' );
-var logEachMap = require( '@stdlib/console/log-each-map' );
-var cdf = require( '@stdlib/stats/base/dists/gamma/cdf' );
-
-var opts = {
-    'dtype': 'float64'
-};
-var x = uniform( 10, 0.0, 3.0, opts );
-var alpha = uniform( 10, 0.0, 5.0, opts );
-var beta = uniform( 10, 0.0, 5.0, opts );
-
-logEachMap( 'x: %0.4f, α: %0.4f, β: %0.4f, F(x;α,β): %0.4f', x, alpha, beta, cdf );
-```
-
-</section>
-
-<!-- /.examples -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

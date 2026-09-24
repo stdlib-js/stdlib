@@ -46,7 +46,12 @@ struct ndarray * stdlib_ndarray_allocate( int16_t dtype, uint8_t *data, int64_t 
 /**
 * Returns the size of an ndarray (in bytes).
 */
-int64_t stdlib_ndarray_bytelength( const struct ndarray *arr );
+int64_t stdlib_ndarray_byte_length( const struct ndarray *arr );
+
+/**
+* Returns the number of bytes per ndarray element.
+*/
+int64_t stdlib_ndarray_byte_length_per_element( const struct ndarray *arr );
 
 /**
 * Returns a pointer to an ndarray's underlying byte array.
@@ -109,6 +114,11 @@ int64_t stdlib_ndarray_ndims( const struct ndarray *arr );
 int64_t stdlib_ndarray_offset( const struct ndarray *arr );
 
 /**
+* Returns an ndarray index offset (in elements).
+*/
+int64_t stdlib_ndarray_offset_elements( const struct ndarray *arr );
+
+/**
 * Returns the order of an ndarray.
 */
 int8_t stdlib_ndarray_order( const struct ndarray *arr );
@@ -127,6 +137,11 @@ int64_t * stdlib_ndarray_shape( const struct ndarray *arr );
 * Returns an ndarray stride (in bytes).
 */
 int64_t stdlib_ndarray_stride( const struct ndarray *arr, const int64_t i );
+
+/**
+* Returns an ndarray stride (in elements).
+*/
+int64_t stdlib_ndarray_stride_elements( const struct ndarray *arr, const int64_t i );
 
 /**
 * Returns a pointer to an array containing ndarray strides (in bytes).

@@ -34,11 +34,7 @@
     > y.get()
     true
     > y = {{alias}}( x, { 'keepdims': true } )
-    <ndarray>
-    > {{alias:@stdlib/ndarray/to-array}}( y )
-    [ [ true ] ]
-    > y.get( 0, 0 )
-    true
+    <ndarray>[ [ true ] ]
 
 
 {{alias}}.assign( x, y[, options] )
@@ -72,10 +68,8 @@
     > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1.0, 0.0 ], [ 0.0, 1.0 ] ] );
     > var y = {{alias:@stdlib/ndarray/from-scalar}}( false );
     > var out = {{alias}}.assign( x, y )
-    <ndarray>
+    <ndarray>[ true ]
     > var bool = ( out === y )
-    true
-    > y.get()
     true
 
     See Also

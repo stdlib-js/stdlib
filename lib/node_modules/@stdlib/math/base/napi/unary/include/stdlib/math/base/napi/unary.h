@@ -27,6 +27,7 @@
 #include "stdlib/math/base/napi/unary/d_f.h"
 #include "stdlib/math/base/napi/unary/f_f.h"
 #include "stdlib/math/base/napi/unary/f_i.h"
+#include "stdlib/math/base/napi/unary/h_h.h"
 #include "stdlib/math/base/napi/unary/i_d.h"
 #include "stdlib/math/base/napi/unary/i_f.h"
 #include "stdlib/math/base/napi/unary/i_i.h"

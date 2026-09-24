@@ -1,0 +1,59 @@
+
+{{alias}}( value )
+    Splits a bigint into the high and low 32-bit words of a 64-bit unsigned
+    integer.
+
+    The function returns an array with two elements: a higher order word and a
+    lower order word, respectively. The lower order word contains the less
+    significant bits, while the higher order word contains the more significant
+    bits.
+
+    Parameters
+    ----------
+    value: bigint
+        Integer value in the range [0, 2^64-1].
+
+    Returns
+    -------
+    out: Array<integer>
+        High and low words as 32-bit unsigned integers.
+
+    Examples
+    --------
+    > var w = {{alias}}( {{alias:@stdlib/bigint/ctor}}( 1234 ) )
+    [ 0, 1234 ]
+
+
+{{alias}}.assign( value, out, stride, offset )
+    Splits a bigint into the high and low 32-bit words of a 64-bit unsigned
+    integer and assigns results to a provided output array.
+
+    Parameters
+    ----------
+    value: bigint
+        Integer value in the range [0, 2^64-1].
+
+    out: Array|TypedArray|Object
+        Output array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array index offset.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Output array.
+
+    Examples
+    --------
+    > var out = new {{alias:@stdlib/array/uint32}}( 2 );
+    > var w = {{alias}}.assign( {{alias:@stdlib/bigint/ctor}}( '18446744073709551615' ), out, 1, 0 )
+    <Uint32Array>[ 4294967295, 4294967295 ]
+    > var bool = ( w === out )
+    true
+
+    See Also
+    --------

@@ -30,7 +30,7 @@ import { DataType, DataTypeKind } from '@stdlib/types/array';
 *
 * @example
 * var list = dtypes();
-* // e.g., returns [ 'float32', 'float64', ... ]
+* // e.g., returns [ 'float16', 'float32', ... ]
 *
 * @example
 * var list = dtypes( 'floating_point' );

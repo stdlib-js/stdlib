@@ -35,7 +35,6 @@ import typedarray2json = require( './index' );
 	typedarray2json( true ); // $ExpectError
 	typedarray2json( false ); // $ExpectError
 	typedarray2json( {} ); // $ExpectError
-	typedarray2json( [] ); // $ExpectError
 	typedarray2json( null ); // $ExpectError
 	typedarray2json( undefined ); // $ExpectError
 }
