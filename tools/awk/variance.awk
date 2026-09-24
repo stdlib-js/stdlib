@@ -41,7 +41,7 @@ BEGIN {
 	N += 1
 	delta = $1 - mean
 	mean += delta / N
-	M2 += delta * ($1 - mu)
+	M2 += delta * ($1 - mean)
 }
 END {
 	if (N < 2) {

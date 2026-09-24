@@ -181,7 +181,7 @@ Computes the [mid-range][mid-range] of a single-precision floating-point strided
 const float x[] = { 1.0f, -2.0f, 3.0f, 4.0f };
 
 float v = stdlib_strided_smidrange( 4, x, 1 );
-// returns 2.5f
+// returns 1.0f
 ```
 
 The function accepts the following arguments:
@@ -202,7 +202,7 @@ Computes the [mid-range][mid-range] of a single-precision floating-point strided
 const float x[] = { 1.0f, -2.0f, 3.0f, 4.0f };
 
 float v = stdlib_strided_smidrange_ndarray( 4, x, 1, 0 );
-// returns 2.5f
+// returns 1.0f
 ```
 
 The function accepts the following arguments:

@@ -58,7 +58,7 @@ declare class Laplace {
 	constructor();
 
 	/**
-	*  Location parameter.
+	* Location parameter.
 	*/
 	mu: number;
 

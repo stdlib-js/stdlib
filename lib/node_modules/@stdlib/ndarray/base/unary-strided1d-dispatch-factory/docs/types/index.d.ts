@@ -148,7 +148,7 @@ interface UnaryFunction<T, U> {
 	* var table = {
 	*     'default': base
 	* };
-	* var cumax = factory( table, [ idt ], odt, policy );
+	* var cumax = factory( table, [ idt ], odt, policies );
 	*
 	* var xbuf = [ -1.0, 2.0, -3.0 ];
 	* var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
@@ -185,7 +185,7 @@ interface UnaryFunction<T, U> {
 	* var table = {
 	*     'default': base
 	* };
-	* var cumax = factory( table, [ idt ], odt, policy );
+	* var cumax = factory( table, [ idt ], odt, policies );
 	*
 	* var xbuf = [ -1.0, 2.0, -3.0 ];
 	* var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
@@ -228,7 +228,7 @@ interface UnaryFunction<T, U> {
 	* var table = {
 	*     'default': base
 	* };
-	* var cumax = factory( table, [ idt ], odt, policy );
+	* var cumax = factory( table, [ idt ], odt, policies );
 	*
 	* var xbuf = [ -1.0, 2.0, -3.0 ];
 	* var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
@@ -274,7 +274,7 @@ interface UnaryFunction<T, U> {
 * var table = {
 *     'default': base
 * };
-* var cumax = factory( table, [ idt ], odt, policy );
+* var cumax = factory( table, [ idt ], odt, policies );
 *
 * var xbuf = [ -1.0, 2.0, -3.0 ];
 * var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );

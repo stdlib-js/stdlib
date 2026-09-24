@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/math/base/special/boxcoxinv.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/math/base/special/exp.h"
 #include "stdlib/math/base/special/log1p.h"
 #include "stdlib/math/base/assert/is_nan.h"
@@ -34,7 +35,7 @@
 */
 double stdlib_base_boxcoxinv( const double y, const double lambda ) {
 	if ( stdlib_base_is_nan( y ) || stdlib_base_is_nan( lambda ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( lambda == 0.0 ) {
 		return stdlib_base_exp( y );

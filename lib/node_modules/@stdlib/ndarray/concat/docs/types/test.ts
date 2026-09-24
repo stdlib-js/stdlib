@@ -30,7 +30,7 @@ import concat = require( './index' );
 	const y = zeros( [ 2, 3 ] );
 
 	concat( [ x, y ] ); // $ExpectType typedndarray<number>
-	concat( [ x, y ], -1 ); // $ExpectType typedndarray<number>
+	concat( [ x, y ], {} ); // $ExpectType typedndarray<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array-like object containing ndarrays...
@@ -44,28 +44,41 @@ import concat = require( './index' );
 	concat( {} ); // $ExpectError
 	concat( ( x: number ): number => x ); // $ExpectError
 
-	concat( 5, -1 ); // $ExpectError
-	concat( true, -1 ); // $ExpectError
-	concat( false, -1 ); // $ExpectError
-	concat( null, -1 ); // $ExpectError
-	concat( undefined, -1 ); // $ExpectError
-	concat( [ 1 ], -1 ); // $ExpectError
-	concat( {}, -1 ); // $ExpectError
-	concat( ( x: number ): number => x, -1 ); // $ExpectError
+	concat( 5, {} ); // $ExpectError
+	concat( true, {} ); // $ExpectError
+	concat( false, {} ); // $ExpectError
+	concat( null, {} ); // $ExpectError
+	concat( undefined, {} ); // $ExpectError
+	concat( [ 1 ], {} ); // $ExpectError
+	concat( {}, {} ); // $ExpectError
+	concat( ( x: number ): number => x, {} ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument which is not a number...
+// The compiler throws an error if the function is provided an options argument which is not an object...
 {
 	const x = zeros( [ 2, 2 ] );
 	const y = zeros( [ 2, 3 ] );
 
 	concat( [ x, y ], '5' ); // $ExpectError
+	concat( [ x, y ], 5 ); // $ExpectError
 	concat( [ x, y ], true ); // $ExpectError
 	concat( [ x, y ], false ); // $ExpectError
 	concat( [ x, y ], null ); // $ExpectError
 	concat( [ x, y ], [ 1 ] ); // $ExpectError
-	concat( [ x, y ], {} ); // $ExpectError
 	concat( [ x, y ], ( x: number ): number => x ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided an invalid `dim` option...
+{
+	const x = zeros( [ 2, 2 ] );
+	const y = zeros( [ 2, 3 ] );
+
+	concat( [ x, y ], { 'dim': '5'} ); // $ExpectError
+	concat( [ x, y ], { 'dim': true} ); // $ExpectError
+	concat( [ x, y ], { 'dim': false } ); // $ExpectError
+	concat( [ x, y ], { 'dim': null } ); // $ExpectError
+	concat( [ x, y ], { 'dim': [ 1 ] } ); // $ExpectError
+	concat( [ x, y ], { 'dim': ( x: number ): number => x} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -75,7 +88,7 @@ import concat = require( './index' );
 
 	concat(); // $ExpectError
 	concat( x ); // $ExpectError
-	concat( [ x, y ], -1, {} ); // $ExpectError
+	concat( [ x, y ], {}, {} ); // $ExpectError
 }
 
 // Attached to the function is an `assign` method which returns an ndarray...
@@ -85,7 +98,7 @@ import concat = require( './index' );
 	const z = zeros( [ 2, 5 ] );
 
 	concat.assign( [ x, y ], z ); // $ExpectType float64ndarray
-	concat.assign( [ x, y ], z, -1 ); // $ExpectType float64ndarray
+	concat.assign( [ x, y ], z, {} ); // $ExpectType float64ndarray
 }
 
 // The compiler throws an error if the `assign` method is provided a first argument which is not an array-like object containing ndarrays......
@@ -101,14 +114,14 @@ import concat = require( './index' );
 	concat.assign( {}, z ); // $ExpectError
 	concat.assign( ( x: number ): number => x, z ); // $ExpectError
 
-	concat.assign( 5, z, -1 ); // $ExpectError
-	concat.assign( true, z, -1 ); // $ExpectError
-	concat.assign( false, z, -1 ); // $ExpectError
-	concat.assign( null, z, -1 ); // $ExpectError
-	concat.assign( undefined, z, -1 ); // $ExpectError
-	concat.assign( [ 1 ], z, -1 ); // $ExpectError
-	concat.assign( {}, z, -1 ); // $ExpectError
-	concat.assign( ( x: number ): number => x, z, -1 ); // $ExpectError
+	concat.assign( 5, z, {} ); // $ExpectError
+	concat.assign( true, z, {} ); // $ExpectError
+	concat.assign( false, z, {} ); // $ExpectError
+	concat.assign( null, z, {} ); // $ExpectError
+	concat.assign( undefined, z, {} ); // $ExpectError
+	concat.assign( [ 1 ], z, {} ); // $ExpectError
+	concat.assign( {}, z, {} ); // $ExpectError
+	concat.assign( ( x: number ): number => x, z, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the `assign` method is provided a second argument which is not an ndarray...
@@ -125,29 +138,43 @@ import concat = require( './index' );
 	concat.assign( [ x, y ], {} ); // $ExpectError
 	concat.assign( [ x, y ], ( x: number ): number => x ); // $ExpectError
 
-	concat.assign( [ x, y ], '5', -1 ); // $ExpectError
-	concat.assign( [ x, y ], 5, -1 ); // $ExpectError
-	concat.assign( [ x, y ], true, -1 ); // $ExpectError
-	concat.assign( [ x, y ], false, -1 ); // $ExpectError
-	concat.assign( [ x, y ], null, -1 ); // $ExpectError
-	concat.assign( [ x, y ], [ 1 ], -1 ); // $ExpectError
-	concat.assign( [ x, y ], {}, -1 ); // $ExpectError
-	concat.assign( [ x, y ], ( x: number ): number => x, -1 ); // $ExpectError
+	concat.assign( [ x, y ], '5', {} ); // $ExpectError
+	concat.assign( [ x, y ], 5, {} ); // $ExpectError
+	concat.assign( [ x, y ], true, {} ); // $ExpectError
+	concat.assign( [ x, y ], false, {} ); // $ExpectError
+	concat.assign( [ x, y ], null, {} ); // $ExpectError
+	concat.assign( [ x, y ], [ 1 ], {} ); // $ExpectError
+	concat.assign( [ x, y ], {}, {} ); // $ExpectError
+	concat.assign( [ x, y ], ( x: number ): number => x, {} ); // $ExpectError
 }
 
-// The compiler throws an error if the `assign` method is provided a third argument which is not a number...
+// The compiler throws an error if the `assign` method is provided an options argument which is not an object...
 {
 	const x = zeros( [ 2, 2 ] );
 	const y = zeros( [ 2, 3 ] );
 	const z = zeros( [ 2, 5 ] );
 
 	concat.assign( [ x, y ], z, '5' ); // $ExpectError
+	concat.assign( [ x, y ], z, 5 ); // $ExpectError
 	concat.assign( [ x, y ], z, true ); // $ExpectError
 	concat.assign( [ x, y ], z, false ); // $ExpectError
 	concat.assign( [ x, y ], z, null ); // $ExpectError
 	concat.assign( [ x, y ], z, [ 1 ] ); // $ExpectError
-	concat.assign( [ x, y ], z, {} ); // $ExpectError
 	concat.assign( [ x, y ], z, ( x: number ): number => x ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided an invalid `dim` option...
+{
+	const x = zeros( [ 2, 2 ] );
+	const y = zeros( [ 2, 3 ] );
+	const z = zeros( [ 2, 5 ] );
+
+	concat.assign( [ x, y ], z, { 'dim': '5'} ); // $ExpectError
+	concat.assign( [ x, y ], z, { 'dim': true} ); // $ExpectError
+	concat.assign( [ x, y ], z, { 'dim': false } ); // $ExpectError
+	concat.assign( [ x, y ], z, { 'dim': null } ); // $ExpectError
+	concat.assign( [ x, y ], z, { 'dim': [ 1 ] } ); // $ExpectError
+	concat.assign( [ x, y ], z, { 'dim': ( x: number ): number => x} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -158,5 +185,5 @@ import concat = require( './index' );
 
 	concat.assign(); // $ExpectError
 	concat.assign( [ x, y ] ); // $ExpectError
-	concat.assign( [ x, y ], z, -1, {} ); // $ExpectError
+	concat.assign( [ x, y ], z, {}, {} ); // $ExpectError
 }

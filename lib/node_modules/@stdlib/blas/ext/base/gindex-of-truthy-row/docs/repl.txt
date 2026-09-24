@@ -1,0 +1,87 @@
+
+{{alias}}( order, M, N, A, LDA )
+    Returns the index of the first row in an input matrix which contains at
+    least one truthy element.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If the function is provided an empty matrix or if the function is unable to
+    find a row with at least one truthy element, the function returns `-1`
+    (i.e., an invalid index).
+
+    Parameters
+    ----------
+    order: string
+        Storage layout.
+
+    M: integer
+        Number of rows in `A`.
+
+    N: integer
+        Number of columns in `A`.
+
+    A: Array|TypedArray
+        Input matrix.
+
+    LDA: integer
+        Stride of the first dimension of `A` (a.k.a., leading dimension of the
+        matrix `A`).
+
+    Returns
+    -------
+    out: integer
+        Row index.
+
+    Examples
+    --------
+    > var A = [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 0.0 ];
+    > {{alias}}( 'row-major', 4, 2, A, 2 )
+    1
+
+
+{{alias}}.ndarray( M, N, A, strideA1, strideA2, offsetA )
+    Returns the index of the first row in an input matrix which contains at
+    least one truthy element using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameter supports indexing semantics based on a starting
+    index.
+
+    If the method is provided an empty matrix or if the method is unable to find
+    a row with at least one truthy element, the method returns `-1` (i.e., an
+    invalid index).
+
+    Parameters
+    ----------
+    M: integer
+        Number of rows in `A`.
+
+    N: integer
+        Number of columns in `A`.
+
+    A: Array|TypedArray
+        Input matrix.
+
+    strideA1: integer
+        Stride length for the first dimension of `A`.
+
+    strideA2: integer
+        Stride length for the second dimension of `A`.
+
+    offsetA: integer
+        Starting index for `A`.
+
+    Returns
+    -------
+    out: integer
+        Row index.
+
+    Examples
+    --------
+    > var A = [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 0.0 ];
+    > {{alias}}.ndarray( 4, 2, A, 2, 1, 0 )
+    1
+
+    See Also
+    --------

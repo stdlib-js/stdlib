@@ -20,7 +20,7 @@ limitations under the License.
 
 # Constants
 
-> Half-precision floating-point mathematical constants.
+> 64-bit complex number mathematical constants.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var constants = require( '@stdlib/constants/complex64' );
 
 #### constants
 
-Half-precision floating-point mathematical constants.
+64-bit complex number mathematical constants.
 
 ```javascript
 var c = constants;

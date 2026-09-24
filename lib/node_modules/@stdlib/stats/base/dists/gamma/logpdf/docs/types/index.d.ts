@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Evaluates the logarithm of the probability density function (PDF) for a gamma distribution.
+* Evaluates the natural logarithm of the probability density function (PDF) for a gamma distribution.
 *
 * @param x - input value
 * @returns evaluated logPDF
@@ -31,7 +31,7 @@ type Unary = ( x: number ) => number;
 */
 interface LogPDF {
 	/**
-	* Evaluates the logarithm of the probability density function (PDF) for a gamma distribution with shape parameter `alpha` and rate parameter `beta` at a value `x`.
+	* Evaluates the natural logarithm of the probability density function (PDF) for a gamma distribution with shape parameter `alpha` and rate parameter `beta` at a value `x`.
 	*
 	* ## Notes
 	*

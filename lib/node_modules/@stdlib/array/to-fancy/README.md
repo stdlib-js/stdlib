@@ -428,33 +428,19 @@ When assigning a real-valued scalar to a complex number array (e.g., [`Complex12
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 var y = array2fancy( x );
 
 // Retrieve the first element:
 var v = y[ 0 ];
-// returns <Complex128>
-
-var re = real( v );
-// returns 1.0
-
-var im = imag( v );
-// returns 2.0
+// returns <Complex128>[ 1.0, 2.0 ]
 
 // Assign a real-valued scalar to the first element:
 y[ 0 ] = 9.0;
 
 v = y[ 0 ];
-// returns <Complex128>
-
-re = real( v );
-// returns 9.0
-
-im = imag( v );
-// returns 0.0
+// returns <Complex128>[ 9.0, 0.0 ]
 ```
 
 </section>

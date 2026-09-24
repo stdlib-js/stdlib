@@ -1,0 +1,4 @@
+---
+type: amend-message
+---
+docs: fix incorrect `name` tag in `stats/nanmeanors`

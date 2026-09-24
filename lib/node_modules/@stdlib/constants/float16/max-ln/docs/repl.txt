@@ -1,0 +1,11 @@
+
+{{alias}}
+    Natural logarithm of the maximum half-precision floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    11.09375
+
+    See Also
+    --------

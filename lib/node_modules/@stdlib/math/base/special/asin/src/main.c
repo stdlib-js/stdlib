@@ -34,6 +34,7 @@
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/sqrt.h"
 #include "stdlib/constants/float64/fourth_pi.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdint.h>
 
 static const double MOREBITS = 6.123233995736765886130e-17; // pi/2 = PIO2 + MOREBITS
@@ -165,7 +166,7 @@ double stdlib_base_asin( const double x ) {
 	double z;
 
 	if ( stdlib_base_is_nan( x ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( x > 0.0 ) {
 		sgn = 0;
@@ -175,7 +176,7 @@ double stdlib_base_asin( const double x ) {
 		a = -x;
 	}
 	if ( a > 1.0 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( a > 0.625 ) {
 		// arcsin(1-x) = pi/2 - sqrt(2x)(1+R(x))

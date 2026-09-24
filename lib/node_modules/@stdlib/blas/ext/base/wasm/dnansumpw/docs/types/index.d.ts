@@ -216,7 +216,7 @@ interface Routine extends ModuleWrapper {
 	* @example
 	* var Float64Array = require( '@stdlib/array/float64' );
 	*
-	* var x = new Float64Array( [ 1.0, -2.0, NaN 2.0 ] );
+	* var x = new Float64Array( [ 1.0, -2.0, NaN, 2.0 ] );
 	*
 	* var out = dnansumpw.main( 4, x, 1 );
 	* // returns 1.0

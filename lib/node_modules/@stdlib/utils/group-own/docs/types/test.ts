@@ -49,7 +49,7 @@ class Foo {
 	groupOwn( obj, indicator ); // $ExpectType { [x: string]: string[]; }
 	groupOwn( {}, indicator ); // $ExpectType { [x: string]: never[]; }
 	const opts = {
-		'returns': 'indices' as const
+		'returns': 'keys' as const
 	};
 	groupOwn( obj, opts, indicator ); // $ExpectType { [x: string]: (keyof Foo)[]; }
 
@@ -97,7 +97,7 @@ class Foo {
 	groupOwn( obj, null, indicator ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a `returns` option which is not one of 'indices', 'values', or '*'...
+// The compiler throws an error if the function is provided a `returns` option which is not one of 'keys', 'values', or '*'...
 {
 	const obj = new Foo();
 	groupOwn( obj, { 'returns': '5' }, indicator ); // $ExpectError

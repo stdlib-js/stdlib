@@ -189,7 +189,7 @@ Calculate the minimum value of a double-precision floating-point strided array, 
 const double x[] = { 1.0, -2.0, 0.0 / 0.0, -4.0 };
 
 double v = stdlib_strided_dnanmin( 4, x, 1 );
-// returns 1.0
+// returns -4.0
 ```
 
 The function accepts the following arguments:
@@ -210,7 +210,7 @@ Computes the minimum value of a double-precision floating-point strided array, i
 const double x[] = { 1.0, -2.0, 0.0 / 0.0, -4.0 };
 
 double v = stdlib_strided_dnanmin_ndarray( 4, x, 1, 0 );
-// returns 1.0
+// returns -4.0
 ```
 
 The function accepts the following arguments:

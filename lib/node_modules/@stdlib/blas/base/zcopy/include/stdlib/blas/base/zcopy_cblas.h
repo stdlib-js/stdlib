@@ -32,7 +32,7 @@ extern "C" {
 #endif
 
 /**
-* Copies values from one complex double-precision floating-point vector to another complex double-precision floating-point vector.
+* Copies values from one double-precision complex floating-point vector to another double-precision complex floating-point vector.
 */
 void API_SUFFIX(cblas_zcopy)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY );
 

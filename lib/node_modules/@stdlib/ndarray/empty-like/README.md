@@ -50,7 +50,7 @@ var getDType = require( '@stdlib/ndarray/dtype' );
 var zeros = require( '@stdlib/ndarray/zeros' );
 
 var x = zeros( [ 2, 2 ] );
-// returns <ndarray>
+// returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 
 var y = emptyLike( x );
 // returns <ndarray>
@@ -67,8 +67,8 @@ The function supports the following `options`:
 -   **dtype**: output [ndarray][@stdlib/ndarray/ctor] [data type][@stdlib/ndarray/dtypes]. Overrides the input ndarray's inferred [data type][@stdlib/ndarray/dtypes].
 -   **shape**: output [ndarray][@stdlib/ndarray/ctor] shape. Overrides the input ndarray's inferred shape.
 -   **order**: specifies whether the output [ndarray][@stdlib/ndarray/ctor] should be `'row-major'` (C-style) or `'column-major'` (Fortran-style). Overrides the input ndarray's inferred order.
--   **mode**: specifies how to handle indices which exceed array dimensions (see [`ndarray`][@stdlib/ndarray/ctor]). Default: `'throw'`.
--   **submode**: a mode array which specifies for each dimension how to handle subscripts which exceed array dimensions  (see [`ndarray`][@stdlib/ndarray/ctor]). If provided fewer modes than dimensions, the constructor recycles modes using modulo arithmetic. Default: `[ options.mode ]`.
+-   **mode**: specifies how to handle indices which exceed array dimensions (see [ndarray][@stdlib/ndarray/ctor]). Default: `'throw'`.
+-   **submode**: a mode array which specifies for each dimension how to handle subscripts which exceed array dimensions  (see [ndarray][@stdlib/ndarray/ctor]). If provided fewer modes than dimensions, the constructor recycles modes using modulo arithmetic. Default: `[ options.mode ]`.
 
 To override either the `dtype`, `shape`, or `order`, specify the corresponding option. For example, to override the inferred [data type][@stdlib/ndarray/dtypes],
 
@@ -78,7 +78,7 @@ var getDType = require( '@stdlib/ndarray/dtype' );
 var zeros = require( '@stdlib/ndarray/zeros' );
 
 var x = zeros( [ 2, 2 ] );
-// returns <ndarray>
+// returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 
 var dt = String( getDType( x ) );
 // returns 'float64'
@@ -121,9 +121,9 @@ dt = String( getDType( y ) );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var getData = require( '@stdlib/ndarray/data-buffer' );
 var dtypes = require( '@stdlib/ndarray/dtypes' );
 var empty = require( '@stdlib/ndarray/empty' );
+var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var emptyLike = require( '@stdlib/ndarray/empty-like' );
 
 // Get a list of data types:
@@ -138,7 +138,7 @@ for ( i = 0; i < dt.length; i++ ) {
         'dtype': dt[ i ]
     });
     y = emptyLike( x );
-    console.log( getData( y ) );
+    console.log( ndarray2array( y ) );
 }
 ```
 

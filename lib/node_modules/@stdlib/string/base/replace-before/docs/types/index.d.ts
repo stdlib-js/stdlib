@@ -42,7 +42,7 @@
 *
 * @example
 * var out = replaceBefore( 'Hello World!', '', 'foo', 0 );
-* // returns 'Hello world!'
+* // returns 'Hello World!'
 *
 * @example
 * var out = replaceBefore( 'Hello World!', 'xyz', 'foo', 0 );

@@ -218,7 +218,7 @@ interface Routine extends ModuleWrapper {
 	*
 	* var x = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 	*
-	* var out = sasum.main( x.length, 5.0, x, 1, y, 1 );
+	* var out = sasum.main( x.length, x, 1 );
 	* // returns 15.0
 	*/
 	main( N: number, x: Float32Array, strideX: number ): number;

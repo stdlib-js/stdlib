@@ -17,8 +17,8 @@
 */
 
 #include "stdlib/stats/base/dists/chisquare/stdev.h"
-#include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/sqrt.h"
+#include "stdlib/stats/base/dists/chisquare/variance.h"
 
 /**
 * Returns the standard deviation of a chi-squared distribution.
@@ -31,8 +31,5 @@
 * // returns ~4.243
 */
 double stdlib_base_dists_chisquare_stdev( const double k ) {
-	if ( stdlib_base_is_nan( k ) || k < 0.0 ) {
-		return 0.0/0.0; //NaN
-	}
-	return stdlib_base_sqrt( 2.0 * k );
+	return stdlib_base_sqrt( stdlib_base_dists_chisquare_variance( k ) );
 }

@@ -120,7 +120,7 @@ var dtypes = require( '@stdlib/ndarray/dtypes' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 
 // Get a list of data types:
-var dt = dtypes();
+var dt = dtypes( 'integer_and_generic' );
 
 // Generate zero-dimensional arrays...
 var x;

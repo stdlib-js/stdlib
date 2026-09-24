@@ -28,7 +28,7 @@ interface Options {
 	alpha?: number;
 
 	/**
-	*  Dirichlet hyper-parameter for word vector phi (default: `0.1`).
+	* Dirichlet hyper-parameter for word vector phi (default: `0.1`).
 	*/
 	beta?: number;
 }
@@ -76,8 +76,9 @@ interface Model {
 * @param documents - document corpus
 * @param K - number of topics
 * @param options - options object
-* @param options.alpha - Dirichlet hyper-parameter of topic vector theta
-* @param options.beta - Dirichlet hyper-parameter for word vector phi
+* @param options.alpha - Dirichlet hyper-parameter of topic vector theta (default: 50/K)
+* @param options.beta - Dirichlet hyper-parameter for word vector phi (default: 0.1)
+* @throws first argument must be an array of strings
 * @throws second argument must be a positive integer
 * @throws must provide valid options
 * @returns model object
