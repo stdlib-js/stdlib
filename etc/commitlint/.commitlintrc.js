@@ -20,12 +20,28 @@
 
 /* eslint-disable stdlib/jsdoc-leading-description-sentence */
 
+// MODULES //
+
+var stdlibPlugin = require( './plugins' );
+
+
+// MAIN //
+
 /**
 * commitlint configuration.
 *
 * @namespace config
 */
 var config = {};
+
+/**
+* Custom plugins.
+*
+* @name plugins
+* @memberof config
+* @type {Array}
+*/
+config[ 'plugins' ] = [ stdlibPlugin ];
 
 /**
 * Link to commit guidance.
