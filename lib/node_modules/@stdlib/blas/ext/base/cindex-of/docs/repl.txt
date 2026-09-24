@@ -1,0 +1,79 @@
+
+{{alias}}( N, searchElement, x, strideX )
+    Returns the first index of a specified search element in a single-precision
+    complex floating-point strided array.
+
+    The `N` and stride parameters determine which elements in the strided array
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use a typed
+    array view.
+
+    If `N <= 0`, the function returns `-1`.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    searchElement: Complex64
+        Search element.
+
+    x: Complex64Array
+        Input array.
+
+    strideX: integer
+        Stride length.
+
+    Returns
+    -------
+    idx: integer
+        Index.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > var s = new {{alias:@stdlib/complex/float32/ctor}}( 3.0, 4.0 );
+    > var idx = {{alias}}( x.length, s, x, 1 )
+    1
+
+
+{{alias}}.ndarray( N, searchElement, x, strideX, offsetX )
+    Returns the first index of a specified search element in a single-precision
+    complex floating-point strided array using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameter supports indexing semantics based on a
+    starting index.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    searchElement: Complex64
+        Search element.
+
+    x: Complex64Array
+        Input array.
+
+    strideX: integer
+        Stride length.
+
+    offsetX: integer
+        Starting index.
+
+    Returns
+    -------
+    idx: integer
+        Index.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > var s = new {{alias:@stdlib/complex/float32/ctor}}( 3.0, 4.0 );
+    > var idx = {{alias}}.ndarray( x.length, s, x, 1, 0 )
+    1
+
+    See Also
+    --------

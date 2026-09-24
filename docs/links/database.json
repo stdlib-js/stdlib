@@ -1266,15 +1266,16 @@
       "education"
     ]
   },
-  "http://www.modulecounts.com/": {
-    "id": "module-counts",
-    "description": "A website that tracks the number of modules in the npm registry and other package managers.",
+  "https://libraries.io/npm": {
+    "id": "libraries-io",
+    "description": "Libraries.io tracks open source packages across multiple package managers, including npm with over 5 million packages.",
     "short_url": "",
     "keywords": [
       "npm",
-      "modules",
-      "package",
-      "managers",
+      "packages",
+      "statistics",
+      "package managers",
+      "open source",
       "registry"
     ]
   },
@@ -2106,7 +2107,7 @@
       "link header"
     ]
   },
-  "https://developer.github.com/guides/traversing-with-pagination/": {
+  "https://docs.github.com/en/rest/using-the-rest-api/using-pagination-in-the-rest-api": {
     "id": "github-pagination",
     "description": "GitHub documentation for pagination.",
     "short_url": "",
@@ -8318,8 +8319,8 @@
       "lint"
     ]
   },
-  "https://github.com/kangax/compat-table/issues/392": {
-    "id": "@bug:kangax:compat-table:392",
+  "https://github.com/compat-table/compat-table/issues/392": {
+    "id": "@bug:compat-table:compat-table:392",
     "description": "GitHub issue thread on the accuracy of Math.cbrt, Math.expm1, Math.log1p.",
     "short_url": "",
     "keywords": [
@@ -9343,7 +9344,7 @@
       "gotoblas2"
     ]
   },
-  "https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im": {
+  "https://stdlib.zulipchat.com": {
     "id": "chat-url",
     "description": "stdlib chat room.",
     "short_url": "",
@@ -9522,13 +9523,13 @@
       "image"
     ]
   },
-  "https://img.shields.io/gitter/room/stdlib-js/stdlib.svg": {
+  "https://img.shields.io/badge/zulip-join_chat-brightgreen.svg": {
     "id": "chat-image",
-    "description": "Image for the Gitter chat room.",
+    "description": "Image for the Zulip chat.",
     "short_url": "",
     "keywords": [
       "chat",
-      "gitter",
+      "zulip",
       "image"
     ]
   },

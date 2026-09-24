@@ -1,0 +1,11 @@
+
+{{alias}}
+    Number of significand bits for a half-precision floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    10
+
+    See Also
+    --------

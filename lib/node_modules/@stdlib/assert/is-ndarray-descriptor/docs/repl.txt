@@ -1,0 +1,37 @@
+
+{{alias}}( value )
+    Tests if a value is an ndarray descriptor.
+
+    An ndarray descriptor is an object with the following properties:
+
+    - dtype: data type.
+    - data: underlying data buffer.
+    - shape: array shape.
+    - strides: array strides.
+    - offset: starting index of the first indexed element in the data buffer.
+    - order: storage layout.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is an ndarray descriptor.
+
+    Examples
+    --------
+    > var bool = {{alias}}( {{alias:@stdlib/ndarray/zeros}}( [ 2, 2 ] ) )
+    true
+    > bool = {{alias}}( [ 1, 2, 3, 4 ] )
+    false
+    > bool = {{alias}}( 3.14 )
+    false
+    > bool = {{alias}}( {} )
+    false
+
+    See Also
+    --------
+

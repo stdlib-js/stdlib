@@ -1887,6 +1887,7 @@
     ],
     "primary_dtype": "float64",
     "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/log1pf",
       "float64": "@stdlib/math/base/special/log1p",
       "generic": "@stdlib/math/base/special/log1p"
     },

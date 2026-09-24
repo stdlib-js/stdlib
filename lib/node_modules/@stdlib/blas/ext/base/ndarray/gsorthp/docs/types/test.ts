@@ -34,7 +34,7 @@ import gsorthp = require( './index' );
 		'dtype': 'generic'
 	});
 
-	gsorthp( [ x, order ] ); // $ExpectType typedndarray<number>
+	gsorthp( [ x, order ] ); // $ExpectType genericndarray<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array of ndarrays...

@@ -23,7 +23,7 @@
 *
 * ## Notes
 *
-* -   If not provided a nonnegative integer value, the function returns `NaN`.
+* -   If provided either a non-integer or `n < 1`, the function returns `NaN`.
 *
 * @param n - the non-Fibonacci number to compute
 * @returns non-Fibonacci number

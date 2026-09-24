@@ -24,7 +24,7 @@
 * Returns the part of a string after the last occurrence of a specified substring.
 *
 * @param str - input string
-* @param search - search value
+* @param search - search string
 * @param fromIndex - index of last character to be considered beginning of a match (default: `str.length`)
 * @returns substring
 *

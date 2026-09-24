@@ -106,7 +106,7 @@ interface MulAdd {
 	* var out = muladd.strided( alpha, 1, 0, x, 1, 0, y, 1, 0, new Float64Array( 2 ), 1, 0 );
 	* // returns <Float64Array>[ -6.0, -9.0 ]
 	*/
-	strided<T extends InputArray, U extends InputArray, V extends InputArray, W extends OutputArray>( alpha: T, strideA: number, offsetA: number, x: U, strideX: number, offsetX: number, y: V, strideY: number, offsetY: number, out: W, strideOut: number, offsetOut: number ): W;
+	strided<T extends OutputArray = OutputArray>( alpha: InputArray, strideA: number, offsetA: number, x: InputArray, strideX: number, offsetX: number, y: InputArray, strideY: number, offsetY: number, out: T, strideOut: number, offsetOut: number ): T;
 }
 
 /**

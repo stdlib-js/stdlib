@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Evaluates the logarithm of the cumulative distribution function (CDF) for a Gumbel distribution.
+* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a Gumbel distribution.
 *
 * @param x - input value
 * @returns evaluated logarithm of CDF
@@ -31,7 +31,7 @@ type Unary = ( x: number ) => number;
 */
 interface LogCDF {
 	/**
-	* Evaluates the logarithm of the cumulative distribution function (CDF) for a Gumbel distribution with location parameter `mu` and scale parameter `beta` at a value `x`.
+	* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a Gumbel distribution with location parameter `mu` and scale parameter `beta` at a value `x`.
 	*
 	* ## Notes
 	*

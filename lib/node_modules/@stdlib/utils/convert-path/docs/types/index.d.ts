@@ -29,7 +29,7 @@
 *
 * @example
 * var p = convertPath( '/c/foo/bar/beep.c', 'win32' );
-* // returns 'c:\\foo\\bar\\beep.c'
+* // returns 'c:\foo\bar\beep.c'
 *
 * @example
 * var p = convertPath( '/c/foo/bar/beep.c', 'mixed' );

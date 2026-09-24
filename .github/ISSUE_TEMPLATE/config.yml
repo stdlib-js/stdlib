@@ -21,8 +21,8 @@ contact_links:
     url: https://github.com/stdlib-js/stdlib/blob/develop/FAQ.md
     about: Consult the FAQ in case we have already answered your question there.
   - name: 💬 Question
-    url: https://gitter.im/stdlib-js/stdlib
-    about: Got a (non-bug related) question we haven't already answered? Ask us on Gitter! 🤗
+    url: https://stdlib.zulipchat.com
+    about: Got a (non-bug related) question we haven't already answered? Ask us on Zulip! 🤗
   - name: 👏 Support Us
     url: https://github.com/stdlib-js/stdlib/blob/develop/docs/support_the_project.md
     about: Want to help support the project? 😍
