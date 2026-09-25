@@ -24,6 +24,8 @@ limitations under the License.
 
 <section class="intro">
 
+The function computes the inverse of the lower regularized [incomplete beta function][incomplete-beta-function]. This is a kernel function used internally by higher-level inverse beta function implementations.
+
 </section>
 
 <!-- /.intro -->

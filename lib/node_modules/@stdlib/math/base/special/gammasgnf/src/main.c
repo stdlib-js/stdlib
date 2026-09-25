@@ -19,6 +19,7 @@
 #include "stdlib/math/base/special/gammasgnf.h"
 #include "stdlib/math/base/assert/is_nanf.h"
 #include "stdlib/math/base/special/floorf.h"
+#include "stdlib/constants/float32/nan.h"
 
 /**
 * Computes the sign of the gamma function for a single-precision floating-point number.
@@ -34,7 +35,7 @@ float stdlib_base_gammasgnf( const float x ) {
 	float fx;
 
 	if ( stdlib_base_is_nanf( x ) ) {
-		return 0.0f / 0.0f; // NaN
+		return STDLIB_CONSTANT_FLOAT32_NAN;
 	}
 	if ( x > 0.0f ) {
 		return 1.0f;

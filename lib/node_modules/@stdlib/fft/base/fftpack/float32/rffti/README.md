@@ -40,35 +40,37 @@ limitations under the License.
 var rffti = require( '@stdlib/fft/base/fftpack/float32/rffti' );
 ```
 
-#### rffti( N, workspace, strideW, offsetW )
+#### rffti( N, w, strideW, offsetW )
 
 Initializes a single-precision floating-point workspace array for performing a real-valued Fourier transform.
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
+var Uint32Array = require( '@stdlib/array/uint32' );
 
 var N = 8;
-var workspace = new Float32Array( ( 2*N ) + 34 );
+var w = new Float32Array( ( 2*N ) + 34 );
 
-var out = rffti( N, workspace, 1, 0 );
+var out = rffti( N, w, 1, 0 );
 // returns <Float32Array>
 
-var bool = ( out === workspace );
+var bool = ( out === w );
 // returns true
 
-var twiddleFactors = workspace.slice( N, 2*N );
+var twiddleFactors = w.slice( N, 2*N );
 // returns <Float32Array>[ ~0.707, ~0.707, 0, 0, 0, 0, 0, 0 ]
 
-var factors = workspace.slice( 2*N, ( 2*N ) + 4 );
-// returns <Float32Array>[ 8, 2, 2, 4 ]
+var fview = new Uint32Array( w.buffer, w.byteOffset, w.length );
+var factors = fview.slice( 2*N, ( 2*N ) + 4 );
+// returns <Uint32Array>[ 8, 2, 2, 4 ]
 ```
 
 The function accepts the following arguments:
 
 -   **N**: length of the sequence to transform.
--   **workspace**: workspace [`Float32Array`][@stdlib/array/float32].
--   **strideW**: stride length for `workspace`.
--   **offsetW**: starting index for `workspace`.
+-   **w**: workspace [`Float32Array`][@stdlib/array/float32].
+-   **strideW**: stride length for `w`.
+-   **offsetW**: starting index for `w`.
 
 </section>
 
@@ -116,26 +118,30 @@ The function accepts the following arguments:
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
+var Uint32Array = require( '@stdlib/array/uint32' );
 var zeroTo = require( '@stdlib/array/zero-to' );
 var logEach = require( '@stdlib/console/log-each' );
 var rffti = require( '@stdlib/fft/base/fftpack/float32/rffti' );
 
 var N = 8;
-var workspace = new Float32Array( ( 2*N ) + 34 );
+var w = new Float32Array( ( 2*N ) + 34 );
 
-rffti( N, workspace, 1, 0 );
+rffti( N, w, 1, 0 );
 console.log( 'Sequence length: %d', N );
 
 console.log( 'Twiddle factors:' );
 var idx = zeroTo( N, 'float32' );
-logEach( '  workspace[ %d ] = %0.4f', idx, workspace.slice( N, 2*N ) );
+logEach( '  w[ %d ] = %0.4f', idx, w.slice( N, 2*N ) );
+
+// Create an unsigned integer view over the workspace to read the factorization section:
+var fview = new Uint32Array( w.buffer, w.byteOffset, w.length );
 
 console.log( 'Factorization:' );
-var nf = workspace[ (2*N)+1 ];
+var nf = fview[ (2*N)+1 ];
 
 console.log( '  number of factors: %d', nf );
 idx = zeroTo( nf, 'float32' );
-logEach( '  factor[ %d ]: %d', idx, workspace.slice( (2*N)+2, (2*N)+2+nf ) );
+logEach( '  factor[ %d ]: %d', idx, fview.slice( (2*N)+2, (2*N)+2+nf ) );
 ```
 
 </section>

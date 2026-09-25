@@ -80,7 +80,7 @@ int main( void ) {
 	double v = stdlib_stats_dstdev( arrays );
 
 	// Print the result:
-	printf( "result: %f\n", v );
+	printf( "result: %lf\n", v );
 
 	// Free allocated memory:
 	stdlib_ndarray_free( x );
