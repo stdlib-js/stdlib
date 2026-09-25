@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { typedndarray, genericndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray } from '@stdlib/types/ndarray';
+import { typedndarray, genericndarray, float64ndarray, float32ndarray, float16ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray } from '@stdlib/types/ndarray';
 import { Slice } from '@stdlib/types/slice';
 
 /**
@@ -110,6 +110,50 @@ declare function sliceDimension( x: float64ndarray, dim: number, s: Slice | numb
 * // returns [ [ 5.0, 6.0 ], [ 3.0, 4.0 ], [ 1.0, 2.0 ] ]
 */
 declare function sliceDimension( x: float32ndarray, dim: number, s: Slice | number, strict: boolean, writable: boolean ): float32ndarray;
+
+/**
+* Returns a view of an input ndarray when sliced along a specified dimension.
+*
+* @param x - input array
+* @param dim - index of dimension to slice
+* @param s - slice object or an integer
+* @param strict - boolean indicating whether to enforce strict bounds checking
+* @param writable - boolean indicating whether a returned array should be writable
+* @returns output array
+*
+* @example
+* var Slice = require( '@stdlib/slice/ctor' );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
+*
+* var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ], 'float16' );
+* var shape = [ 3, 2 ];
+* var strides = [ 2, 1 ];
+* var offset = 0;
+*
+* var x = ndarray( 'float16', buffer, shape, strides, offset, 'row-major' );
+* // returns <ndarray>
+*
+* var sh = x.shape;
+* // returns [ 3, 2 ]
+*
+* var arr = ndarray2array( x );
+* // returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
+*
+* var s = new Slice( null, null, -1 );
+* // returns <Slice>
+*
+* var y = sliceDimension( x, 0, s, false, false );
+* // returns <ndarray>
+*
+* sh = y.shape;
+* // returns [ 3, 2 ]
+*
+* arr = ndarray2array( y );
+* // returns [ [ 5.0, 6.0 ], [ 3.0, 4.0 ], [ 1.0, 2.0 ] ]
+*/
+declare function sliceDimension( x: float16ndarray, dim: number, s: Slice | number, strict: boolean, writable: boolean ): float16ndarray;
 
 /**
 * Returns a view of an input ndarray when sliced along a specified dimension.
