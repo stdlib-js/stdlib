@@ -29,7 +29,7 @@ interface NumberToWords {
 	/**
 	* Splits a number into the high and low 32-bit words of a 64-bit unsigned integer.
 	*
-	* @param value - integer value in the range [0, 2^53-1]
+	* @param value - integer value
 	* @returns high and low words as 32-bit unsigned integers
 	*
 	* @example
@@ -47,7 +47,7 @@ interface NumberToWords {
 	/**
 	* Splits a number into the high and low 32-bit words of a 64-bit unsigned integer and assigns results to a provided output array.
 	*
-	* @param value - integer value in the range [0, 2^53-1]
+	* @param value - integer value
 	* @param out - output array
 	* @param stride - stride length
 	* @param offset - starting index
@@ -71,7 +71,7 @@ interface NumberToWords {
 /**
 * Splits a number into the high and low 32-bit words of a 64-bit unsigned integer.
 *
-* @param value - integer value in the range [0, 2^53-1]
+* @param value - integer value
 * @returns high and low words as 32-bit unsigned integers
 *
 * @example
