@@ -1,0 +1,34 @@
+
+{{alias}}( arrays )
+    Cumulatively tests whether at least `k` elements in a one-dimensional
+    single-precision floating-point ndarray are truthy.
+
+    If provided an empty input ndarray, the function returns the output ndarray
+    unchanged.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a one-dimensional output ndarray.
+        - a zero-dimensional ndarray specifying the minimum number of truthy
+        elements.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/ndarray/vector/float32}}( [ 0.0, 1.0, 1.0 ] );
+    > var out = new {{alias:@stdlib/ndarray/vector/bool}}( 3 );
+    > var k = {{alias:@stdlib/ndarray/from-scalar}}( 2, { 'dtype': 'generic' } );
+    > {{alias}}( [ x, out, k ] )
+    <ndarray>[ false, false, true ]
+
+    See Also
+    --------
+
