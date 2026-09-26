@@ -21,7 +21,7 @@
 
 int main( void ) {
 	// Create a strided array:
-	const double x[] = { 1.0, 3.0, 0.0, 2.0, 0.0, 4.0, 1.0, 3.0 };
+	const double x[] = { 1.0, 2.0, 3.0, 0.0, 4.0, 0.0, -1.0, 3.0 };
 
 	// Specify the number of indexed elements:
 	const int N = 8;
@@ -29,7 +29,7 @@ int main( void ) {
 	// Specify a stride:
 	const int strideX = 1;
 
-	// Find the index of the last falsy element:
+	// Perform a search:
 	int idx = stdlib_strided_dlast_index_of_falsy( N, x, strideX );
 
 	// Print the result:

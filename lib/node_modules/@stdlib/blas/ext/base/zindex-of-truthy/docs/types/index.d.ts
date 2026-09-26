@@ -18,6 +18,8 @@
 
 // TypeScript Version: 4.1
 
+/// <reference types="@stdlib/types"/>
+
 import { Complex128Array } from '@stdlib/types/array';
 
 /**
@@ -30,7 +32,7 @@ interface Routine {
 	* ## Notes
 	*
 	* -   A complex number is truthy when at least one of its real or imaginary components is truthy.
-	* -   If unable to find a truthy element, the function returns `-1`.
+	* -   If the function is unable to find a truthy element, the function returns `-1`.
 	* -   The function explicitly treats `NaN` values as falsy.
 	*
 	* @param N - number of indexed elements
@@ -41,7 +43,7 @@ interface Routine {
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
 	*
-	* var x = new Complex128Array( [ 0.0, 0.0, 1.0, 2.0 ] );
+	* var x = new Complex128Array( [ 0.0, 0.0, 1.0, 0.0, 2.0, 0.0 ] );
 	*
 	* var idx = zindexOfTruthy( x.length, x, 1 );
 	* // returns 1
@@ -54,7 +56,7 @@ interface Routine {
 	* ## Notes
 	*
 	* -   A complex number is truthy when at least one of its real or imaginary components is truthy.
-	* -   If unable to find a truthy element, the function returns `-1`.
+	* -   If the function is unable to find a truthy element, the function returns `-1`.
 	* -   The function explicitly treats `NaN` values as falsy.
 	*
 	* @param N - number of indexed elements
@@ -66,7 +68,7 @@ interface Routine {
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
 	*
-	* var x = new Complex128Array( [ 0.0, 0.0, 1.0, 2.0 ] );
+	* var x = new Complex128Array( [ 0.0, 0.0, 1.0, 0.0, 2.0, 0.0 ] );
 	*
 	* var idx = zindexOfTruthy.ndarray( x.length, x, 1, 0 );
 	* // returns 1
@@ -80,7 +82,7 @@ interface Routine {
 * ## Notes
 *
 * -   A complex number is truthy when at least one of its real or imaginary components is truthy.
-* -   If unable to find a truthy element, the function returns `-1`.
+* -   If the function is unable to find a truthy element, the function returns `-1`.
 * -   The function explicitly treats `NaN` values as falsy.
 *
 * @param N - number of indexed elements
@@ -91,7 +93,7 @@ interface Routine {
 * @example
 * var Complex128Array = require( '@stdlib/array/complex128' );
 *
-* var x = new Complex128Array( [ 0.0, 0.0, 1.0, 2.0 ] );
+* var x = new Complex128Array( [ 0.0, 0.0, 1.0, 0.0, 2.0, 0.0 ] );
 *
 * var idx = zindexOfTruthy( x.length, x, 1 );
 * // returns 1
@@ -99,7 +101,7 @@ interface Routine {
 * @example
 * var Complex128Array = require( '@stdlib/array/complex128' );
 *
-* var x = new Complex128Array( [ 0.0, 0.0, 1.0, 2.0 ] );
+* var x = new Complex128Array( [ 0.0, 0.0, 1.0, 0.0, 2.0, 0.0 ] );
 *
 * var idx = zindexOfTruthy.ndarray( x.length, x, 1, 0 );
 * // returns 1

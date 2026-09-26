@@ -27,7 +27,7 @@ interface Routine {
 	*
 	* ## Notes
 	*
-	* -   If unable to find a falsy element, the function returns `-1`.
+	* -   If the function is unable to find a falsy element, the function returns `-1`.
 	* -   The function explicitly treats `NaN` values as falsy.
 	*
 	* @param N - number of indexed elements
@@ -38,10 +38,10 @@ interface Routine {
 	* @example
 	* var Float64Array = require( '@stdlib/array/float64' );
 	*
-	* var x = new Float64Array( [ 1.0, 0.0, 2.0, 0.0 ] );
+	* var x = new Float64Array( [ 1.0, 2.0, 0.0, 3.0 ] );
 	*
 	* var idx = dlastIndexOfFalsy( x.length, x, 1 );
-	* // returns 3
+	* // returns 2
 	*/
 	( N: number, x: Float64Array, strideX: number ): number;
 
@@ -50,7 +50,7 @@ interface Routine {
 	*
 	* ## Notes
 	*
-	* -   If unable to find a falsy element, the function returns `-1`.
+	* -   If the function is unable to find a falsy element, the function returns `-1`.
 	* -   The function explicitly treats `NaN` values as falsy.
 	*
 	* @param N - number of indexed elements
@@ -62,10 +62,10 @@ interface Routine {
 	* @example
 	* var Float64Array = require( '@stdlib/array/float64' );
 	*
-	* var x = new Float64Array( [ 1.0, 0.0, 2.0, 0.0 ] );
+	* var x = new Float64Array( [ 1.0, 2.0, 0.0, 3.0 ] );
 	*
 	* var idx = dlastIndexOfFalsy.ndarray( x.length, x, 1, 0 );
-	* // returns 3
+	* // returns 2
 	*/
 	ndarray( N: number, x: Float64Array, strideX: number, offsetX: number ): number;
 }
@@ -75,7 +75,7 @@ interface Routine {
 *
 * ## Notes
 *
-* -   If unable to find a falsy element, the function returns `-1`.
+* -   If the function is unable to find a falsy element, the function returns `-1`.
 * -   The function explicitly treats `NaN` values as falsy.
 *
 * @param N - number of indexed elements
@@ -86,18 +86,18 @@ interface Routine {
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 *
-* var x = new Float64Array( [ 1.0, 0.0, 2.0, 0.0 ] );
+* var x = new Float64Array( [ 1.0, 2.0, 0.0, 3.0 ] );
 *
 * var idx = dlastIndexOfFalsy( x.length, x, 1 );
-* // returns 3
+* // returns 2
 *
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 *
-* var x = new Float64Array( [ 1.0, 0.0, 2.0, 0.0 ] );
+* var x = new Float64Array( [ 1.0, 2.0, 0.0, 3.0 ] );
 *
 * var idx = dlastIndexOfFalsy.ndarray( x.length, x, 1, 0 );
-* // returns 3
+* // returns 2
 */
 declare var dlastIndexOfFalsy: Routine;
 

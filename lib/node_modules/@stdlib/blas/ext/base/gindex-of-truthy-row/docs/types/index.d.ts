@@ -43,11 +43,11 @@ interface Routine {
 	* @param M - number of rows in `A`
 	* @param N - number of columns in `A`
 	* @param A - input matrix
-	* @param LDA - stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`)
+	* @param LDA - stride length for the first dimension of `A` (a.k.a., leading dimension of the matrix `A`)
 	* @returns row index
 	*
 	* @example
-	* var A = [ 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0 ];
+	* var A = [ 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0 ]; // => [ [ 0.0, 0.0, 0.0, 0.0 ], [ 1.0, 0.0, 1.0, 1.0 ], [ 1.0, 1.0, 1.0, 1.0 ], [ 0.0, 0.0, 0.0, 0.0 ] ]
 	*
 	* var out = gindexOfTruthyRow( 'row-major', 4, 4, A, 4 );
 	* // returns 1
@@ -70,7 +70,7 @@ interface Routine {
 	* @returns row index
 	*
 	* @example
-	* var A = [ 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0 ];
+	* var A = [ 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0 ]; // => [ [ 0.0, 0.0, 0.0, 0.0 ], [ 1.0, 0.0, 1.0, 1.0 ], [ 1.0, 1.0, 1.0, 1.0 ], [ 0.0, 0.0, 0.0, 0.0 ] ]
 	*
 	* var out = gindexOfTruthyRow.ndarray( 4, 4, A, 4, 1, 0 );
 	* // returns 1
@@ -89,17 +89,17 @@ interface Routine {
 * @param M - number of rows in `A`
 * @param N - number of columns in `A`
 * @param A - input matrix
-* @param LDA - stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`)
+* @param LDA - stride length for the first dimension of `A` (a.k.a., leading dimension of the matrix `A`)
 * @returns row index
 *
 * @example
-* var A = [ 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0 ];
+* var A = [ 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0 ]; // => [ [ 0.0, 0.0, 0.0, 0.0 ], [ 1.0, 0.0, 1.0, 1.0 ], [ 1.0, 1.0, 1.0, 1.0 ], [ 0.0, 0.0, 0.0, 0.0 ] ]
 *
 * var out = gindexOfTruthyRow( 'row-major', 4, 4, A, 4 );
 * // returns 1
 *
 * @example
-* var A = [ 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0 ];
+* var A = [ 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0 ]; // => [ [ 0.0, 0.0, 0.0, 0.0 ], [ 1.0, 0.0, 1.0, 1.0 ], [ 1.0, 1.0, 1.0, 1.0 ], [ 0.0, 0.0, 0.0, 0.0 ] ]
 *
 * var out = gindexOfTruthyRow.ndarray( 4, 4, A, 4, 1, 0 );
 * // returns 1

@@ -99,7 +99,7 @@ interface Routine {
 	*     -   `sidx`: strided index (offset + aidx*stride)
 	*     -   `array`: input array
 	*
-	* -   If no element passes a test implemented by a predicate function, the function returns `-1`.
+	* -   If the function is unable to find an element which passes a test implemented by a predicate function, the function returns `-1`.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
@@ -132,7 +132,7 @@ interface Routine {
 	*     -   `sidx`: strided index (offset + aidx*stride)
 	*     -   `array`: input array
 	*
-	* -   If no element passes a test implemented by a predicate function, the function returns `-1`.
+	* -   If the function is unable to find an element which passes a test implemented by a predicate function, the function returns `-1`.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
@@ -167,7 +167,7 @@ interface Routine {
 *     -   `sidx`: strided index (offset + aidx*stride)
 *     -   `array`: input array
 *
-* -   If no element passes a test implemented by a predicate function, the function returns `-1`.
+* -   If the function is unable to find an element which passes a test implemented by a predicate function, the function returns `-1`.
 *
 * @param N - number of indexed elements
 * @param x - input array

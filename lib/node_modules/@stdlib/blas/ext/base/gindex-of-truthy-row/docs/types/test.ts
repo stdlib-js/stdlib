@@ -106,7 +106,7 @@ import gindexOfTruthyRow = require( './index' );
 	gindexOfTruthyRow( 'row-major', 2 ); // $ExpectError
 	gindexOfTruthyRow( 'row-major', 2, 2 ); // $ExpectError
 	gindexOfTruthyRow( 'row-major', 2, 2, A ); // $ExpectError
-	gindexOfTruthyRow( 'row-major', 2, 2, A, 2, 0 ); // $ExpectError
+	gindexOfTruthyRow( 'row-major', 2, 2, A, 2, {} ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a number...
@@ -207,5 +207,5 @@ import gindexOfTruthyRow = require( './index' );
 	gindexOfTruthyRow.ndarray( 2, 2, A ); // $ExpectError
 	gindexOfTruthyRow.ndarray( 2, 2, A, 2 ); // $ExpectError
 	gindexOfTruthyRow.ndarray( 2, 2, A, 2, 1 ); // $ExpectError
-	gindexOfTruthyRow.ndarray( 2, 2, A, 2, 1, 0, 0 ); // $ExpectError
+	gindexOfTruthyRow.ndarray( 2, 2, A, 2, 1, 0, {} ); // $ExpectError
 }

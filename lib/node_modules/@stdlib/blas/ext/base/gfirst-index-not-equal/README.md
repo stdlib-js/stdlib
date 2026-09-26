@@ -20,13 +20,17 @@ limitations under the License.
 
 # gfirstIndexNotEqual
 
-> Return the index of the first element in a strided array which is not equal to the corresponding element in another strided array.
+> Return the index of the first element in a strided array which is not equal to a corresponding element in another strided array.
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
 
 </section>
 
 <!-- /.intro -->
+
+<!-- Package usage documentation. -->
 
 <section class="usage">
 
@@ -38,7 +42,7 @@ var gfirstIndexNotEqual = require( '@stdlib/blas/ext/base/gfirst-index-not-equal
 
 #### gfirstIndexNotEqual( N, x, strideX, y, strideY )
 
-Returns the index of the first element in a strided array which is not equal to the corresponding element in another strided array.
+Returns the index of the first element in a strided array which is not equal to a corresponding element in another strided array.
 
 ```javascript
 var x = [ 0, 0, 1, 0 ];
@@ -56,7 +60,7 @@ The function has the following parameters:
 -   **y**: second input [`Array`][mdn-array] or [`typed array`][mdn-typed-array].
 -   **strideY**: stride length for `y`.
 
-If unable to find an element in `x` which is not equal to the corresponding element in `y`, the function returns `-1`.
+If the function is unable to find an element in `x` which is not equal to a corresponding element in `y`, the function returns `-1`.
 
 ```javascript
 var x = [ 0, 0, 0, 0 ];
@@ -66,7 +70,7 @@ var idx = gfirstIndexNotEqual( x.length, x, 1, y, 1 );
 // returns -1
 ```
 
-The `N` and stride parameters determine which elements in the strided arrays are accessed at runtime. For example, to compare every other element in `x` to every other element in `y`:
+The `N` and stride parameters determine which elements in the strided arrays are accessed at runtime. For example, to compare every other element:
 
 ```javascript
 var x = [ 0, 0, 1, 0, 0, 0 ];
@@ -95,7 +99,7 @@ var idx = gfirstIndexNotEqual( x1.length, x1, 1, y1, 1 );
 
 #### gfirstIndexNotEqual.ndarray( N, x, strideX, offsetX, y, strideY, offsetY )
 
-Returns the index of the first element in a strided array which is not equal to the corresponding element in another strided array using alternative indexing semantics.
+Returns the index of the first element in a strided array which is not equal to a corresponding element in another strided array using alternative indexing semantics.
 
 ```javascript
 var x = [ 0, 0, 1, 0 ];
@@ -110,7 +114,7 @@ The function has the following additional parameters:
 -   **offsetX**: starting index for `x`.
 -   **offsetY**: starting index for `y`.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameters support indexing semantics based on starting indices. For example, to compare the last three elements of `x` to the last three elements of `y`:
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameters support indexing semantics based on starting indices. For example, to access only the last three elements of each strided array:
 
 ```javascript
 var x = [ 0, 0, 0, 1 ];
@@ -124,17 +128,21 @@ var idx = gfirstIndexNotEqual.ndarray( 3, x, 1, x.length-3, y, 1, y.length-3 );
 
 <!-- /.usage -->
 
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 <section class="notes">
 
 ## Notes
 
 -   If `N <= 0`, both functions return `-1`.
--   Both functions determine whether corresponding elements are equal using strict equality (i.e., the `===` operator). As a consequence, corresponding `NaN` elements are considered unequal (as `NaN !== NaN` always evaluates to `true`), while `-0` and `+0` are considered equal.
+-   When comparing elements, the functions check for inequality using the strict inequality operator `!==`. As a consequence, `NaN` values are considered distinct, and `-0` and `+0` are considered the same.
 -   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array/base/accessor`][@stdlib/array/base/accessor]).
 
 </section>
 
 <!-- /.notes -->
+
+<!-- Package usage examples. -->
 
 <section class="examples">
 
@@ -146,12 +154,12 @@ var idx = gfirstIndexNotEqual.ndarray( 3, x, 1, x.length-3, y, 1, y.length-3 );
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var gfirstIndexNotEqual = require( '@stdlib/blas/ext/base/gfirst-index-not-equal' );
 
-var x = discreteUniform( 10, -5, 5, {
+var x = discreteUniform( 10, 0, 10, {
     'dtype': 'generic'
 });
 console.log( x );
 
-var y = discreteUniform( 10, -5, 5, {
+var y = discreteUniform( 10, 0, 10, {
     'dtype': 'generic'
 });
 console.log( y );
@@ -163,6 +171,14 @@ console.log( idx );
 </section>
 
 <!-- /.examples -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

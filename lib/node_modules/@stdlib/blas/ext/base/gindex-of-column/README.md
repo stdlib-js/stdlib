@@ -22,6 +22,16 @@ limitations under the License.
 
 > Return the index of the first column in an input matrix which has the same elements as a provided search vector.
 
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- Package usage documentation. -->
+
 <section class="usage">
 
 ## Usage
@@ -55,9 +65,9 @@ The function has the following parameters:
 -   **M**: number of rows in `A`.
 -   **N**: number of columns in `A`.
 -   **A**: input matrix as a linear array.
--   **LDA**: stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`).
+-   **LDA**: stride length for the first dimension of `A` (a.k.a., leading dimension of the matrix `A`).
 -   **x**: search vector.
--   **strideX**: stride length of `x`.
+-   **strideX**: stride length for `x`.
 
 If the function is unable to find a matching column, the function returns `-1`.
 
@@ -116,11 +126,11 @@ The function has the following parameters:
 -   **M**: number of rows in `A`.
 -   **N**: number of columns in `A`.
 -   **A**: input matrix as a linear array.
--   **strideA1**: stride of the first dimension of `A`.
--   **strideA2**: stride of the second dimension of `A`.
+-   **strideA1**: stride length for the first dimension of `A`.
+-   **strideA2**: stride length for the second dimension of `A`.
 -   **offsetA**: starting index for `A`.
 -   **x**: search vector.
--   **strideX**: stride length of `x`.
+-   **strideX**: stride length for `x`.
 -   **offsetX**: starting index for `x`.
 
 While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, offset parameters support indexing semantics based on starting indices. For example,
@@ -144,16 +154,21 @@ var out = gindexOfColumn.ndarray( 3, 2, A, 2, 1, 1, x, 1, 1 );
 
 <!-- /.usage -->
 
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 <section class="notes">
 
 ## Notes
 
--   When searching for a matching column, the function checks for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct, and `-0` and `+0` are considered the same.
+-   If `M <= 0` or `N <= 0`, both functions return `-1`.
+-   When searching for a matching column, the functions check for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct, and `-0` and `+0` are considered the same.
 -   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array/base/accessor`][@stdlib/array/base/accessor]).
 
 </section>
 
 <!-- /.notes -->
+
+<!-- Package usage examples. -->
 
 <section class="examples">
 
@@ -185,6 +200,14 @@ console.log( out );
 </section>
 
 <!-- /.examples -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
