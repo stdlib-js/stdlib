@@ -32,6 +32,7 @@ import sliceAssign = require( './index' );
 
 	sliceAssign( zeros( sh ), empty( 'float64', sh, order ), s, false ); // $ExpectType float64ndarray
 	sliceAssign( zeros( sh ), empty( 'float32', sh, order ), s, false ); // $ExpectType float32ndarray
+	sliceAssign( zeros( sh ), empty( 'float16', sh, order ), s, false ); // $ExpectType float16ndarray
 	sliceAssign( zeros( sh ), empty( 'complex128', sh, order ), s, false ); // $ExpectType complex128ndarray
 	sliceAssign( zeros( sh ), empty( 'complex64', sh, order ), s, false ); // $ExpectType complex64ndarray
 	sliceAssign( zeros( sh ), empty( 'int32', sh, order ), s, false ); // $ExpectType int32ndarray
@@ -44,6 +45,7 @@ import sliceAssign = require( './index' );
 
 	sliceAssign( zeros( sh ), empty( 'float64', sh, order ), s, true ); // $ExpectType float64ndarray
 	sliceAssign( zeros( sh ), empty( 'float32', sh, order ), s, true ); // $ExpectType float32ndarray
+	sliceAssign( zeros( sh ), empty( 'float16', sh, order ), s, true ); // $ExpectType float16ndarray
 	sliceAssign( zeros( sh ), empty( 'complex128', sh, order ), s, true ); // $ExpectType complex128ndarray
 	sliceAssign( zeros( sh ), empty( 'complex64', sh, order ), s, true ); // $ExpectType complex64ndarray
 	sliceAssign( zeros( sh ), empty( 'int32', sh, order ), s, true ); // $ExpectType int32ndarray
@@ -67,7 +69,7 @@ import sliceAssign = require( './index' );
 	sliceAssign( null, y, s, false ); // $ExpectError
 	sliceAssign( [], y, s, false ); // $ExpectError
 	sliceAssign( {}, y, s, false ); // $ExpectError
-	sliceAssign( ( x: number ): number => y, y, s, false ); // $ExpectError
+	sliceAssign( ( x: number ): number => x, y, s, false ); // $ExpectError
 
 	sliceAssign( '10', y, s, true ); // $ExpectError
 	sliceAssign( 10, y, s, true ); // $ExpectError

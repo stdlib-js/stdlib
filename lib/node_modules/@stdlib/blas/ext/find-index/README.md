@@ -188,7 +188,7 @@ var opts = {
 var idx = findIndex( x, opts, isEven );
 // returns <ndarray>[ 1 ]
 
-var dt = dtype( idx );
+var dt = String( dtype( idx ) );
 // returns 'generic'
 ```
 
