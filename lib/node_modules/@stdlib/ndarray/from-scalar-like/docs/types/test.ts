@@ -34,6 +34,7 @@ import scalar2ndarrayLike = require( './index' );
 
 	scalar2ndarrayLike( x, 1.0, { 'dtype': 'float64' } ); // $ExpectType float64ndarray
 	scalar2ndarrayLike( x, 1.0, { 'dtype': 'float32' } ); // $ExpectType float32ndarray
+	scalar2ndarrayLike( x, 1.0, { 'dtype': 'float16' } ); // $ExpectType float16ndarray
 	scalar2ndarrayLike( x, 1.0, { 'dtype': 'complex128' } ); // $ExpectType complex128ndarray
 	scalar2ndarrayLike( x, 1.0, { 'dtype': 'complex64' } ); // $ExpectType complex64ndarray
 	scalar2ndarrayLike( x, true, { 'dtype': 'bool' } ); // $ExpectType boolndarray
