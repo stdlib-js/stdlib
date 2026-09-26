@@ -107,7 +107,7 @@ var y = cusum( x, {
 });
 // returns <ndarray>
 
-var dt = dtype( y );
+var dt = String( dtype( y ) );
 // returns 'float64'
 ```
 
