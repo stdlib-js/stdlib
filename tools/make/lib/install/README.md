@@ -37,6 +37,7 @@ This directory contains [`make`][make] rules for running the project's installat
     -   [Cppcheck](#cppcheck)
     -   [Electron](#electron)
     -   [Emscripten SDK](#emscripten-sdk)
+    -   [Highway](#highway)
     -   [LLVM](#llvm)
     -   [OpenBLAS](#openblas)
     -   [Python](#python)
@@ -259,6 +260,8 @@ Compiles Node.js native [add-ons][node-js-add-ons].
 $ make install-node-addons
 ```
 
+`SIMD_BACKEND=highway` enables Highway for supported add-ons and requires a Highway installation and a C++17-capable compiler. Highway handles CPU target selection; unsupported architectures or toolchains may fail to compile without falling back to the default native implementation. Leaving `SIMD_BACKEND` unset preserves the default build.
+
 #### clean-node-addons
 
 Removes Node.js native [add-ons][node-js-add-ons].
@@ -417,6 +420,76 @@ Removes [Emscripten SDK][emscripten-sdk] installation tests.
 
 ```bash
 $ make clean-deps-emscripten-tests
+```
+
+* * *
+
+<a name="highway"></a>
+
+### Highway
+
+#### install-deps-highway
+
+Installs [Highway][highway].
+
+This optional installation downloads the source distribution, builds the native runtime, and runs installation tests. It requires CMake 3.10 or newer and a C++17-capable compiler; `install-deps-dev` does not install Highway.
+
+```bash
+$ make install-deps-highway
+```
+
+#### deps-build-highway
+
+Builds Highway's `hwy` target as a static library and tests runtime linkage. Highway's test suite, examples, and contrib libraries are not built.
+
+```bash
+$ make deps-build-highway
+```
+
+The build directory defaults to `DEPS_HIGHWAY_BUILD_OUT/build` and can be overridden with `DEPS_HIGHWAY_RUNTIME_OUT`. CMake maintains the incremental build there and writes `highway.json`, which records the headers, public compile definitions, static library, and additional link dependencies needed by add-ons.
+
+Install the runtime before enabling the native backend:
+
+```bash
+$ make install-deps-highway
+$ make install-node-addons SIMD_BACKEND=highway
+```
+
+`install-node-addons` reads the runtime metadata from `HIGHWAY_DIR`, which defaults to `DEPS_HIGHWAY_RUNTIME_OUT`. It does not build the runtime automatically. A missing runtime is an error when Highway is requested; leaving the backend unset does not require Highway or CMake. Direct GYP builds use `-Dsimd=highway -Dhighway_dir=<absolute-build-directory>`.
+
+Use matching compilers and build configurations for the runtime and add-ons. `DEPS_HIGHWAY_BUILD_TYPE` accepts `Release` (the default) or `Debug` independently of `NODE_GYP_FLAGS`. Use a fresh build directory when changing compilers or toolchain flags, and separate directories when keeping multiple configurations. CMake caches toolchain checks; do not configure the same directory concurrently.
+
+Compiled tests default to `deps/test/highway/build`. When keeping multiple runtime builds, set `DEPS_HIGHWAY_TEST_OUT` to a separate absolute directory for each build to avoid overwriting test executables. Reuse the same runtime and test output directory pair on subsequent builds.
+
+```bash
+$ make deps-build-highway DEPS_HIGHWAY_BUILD_TYPE=Debug DEPS_HIGHWAY_RUNTIME_OUT=/path/to/highway-debug DEPS_HIGHWAY_TEST_OUT=/path/to/stdlib/deps/test/highway/build/debug
+$ make install-node-addons SIMD_BACKEND=highway HIGHWAY_DIR=/path/to/highway-debug NODE_GYP_FLAGS=--debug
+```
+
+For an alternate toolchain, pass the same `C_COMPILER` and `CXX_COMPILER` to both commands. This path does not configure standalone npm native builds or cross-compilation.
+
+#### deps-test-highway-build
+
+Builds and tests the runtime, then runs JS/Tape checks for the native manifest and generated link metadata through the project's JavaScript test runner.
+
+```bash
+$ make deps-test-highway-build
+```
+
+#### clean-deps-highway
+
+Removes an installed [Highway][highway] distribution.
+
+```bash
+$ make clean-deps-highway
+```
+
+#### clean-deps-highway-tests
+
+Removes compiled [Highway][highway] installation tests.
+
+```bash
+$ make clean-deps-highway-tests
 ```
 
 * * *
@@ -656,6 +729,8 @@ $ make clean-deps-wasi-libc-tests
 [electron]: https://www.electronjs.org/
 
 [emscripten-sdk]: https://github.com/emscripten-core/emsdk
+
+[highway]: https://github.com/google/highway
 
 [llvm]: https://llvm.org
 
