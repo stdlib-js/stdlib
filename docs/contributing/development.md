@@ -78,6 +78,7 @@ The following external libraries can be automatically downloaded and compiled fr
 
 -   [Boost][boost]: portable C++ libraries
 -   [Cephes][cephes]: C/C++ special functions math library
+-   [Highway][highway]: Google's portable SIMD library
 -   [OpenBLAS][openblas]: optimized BLAS library
 -   [Electron][electron]: framework for cross-platform desktop applications
 -   [Emscripten][emscripten]: LLVM to JavaScript compiler
@@ -405,6 +406,8 @@ For contribution guidelines, see the [contributing guide][stdlib-contributing].
 [boost]: http://www.boost.org/
 
 [cephes]: http://www.moshier.net/#Cephes
+
+[highway]: https://github.com/google/highway
 
 [openblas]: https://github.com/xianyi/OpenBLAS
 
