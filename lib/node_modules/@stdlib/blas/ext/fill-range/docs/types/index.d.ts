@@ -238,7 +238,7 @@ interface FillRange {
 	* });
 	*
 	* var y = fillRange( x, 10.0, 1, 3 );
-	* // returns <ndarray>[ <Complex128>[ 0.0, 0.0 ], <Complex128>[ 10.0, 0.0 ], <Complex128>[ 10.0, 0.0 ], <Complex128>[ 00.0, 0.0 ] ]
+	* // returns <ndarray>[ <Complex128>[ 0.0, 0.0 ], <Complex128>[ 10.0, 0.0 ], <Complex128>[ 10.0, 0.0 ], <Complex128>[ 0.0, 0.0 ] ]
 	*
 	* var bool = ( x === y );
 	* // returns true
