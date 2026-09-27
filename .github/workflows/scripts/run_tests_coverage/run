@@ -143,7 +143,7 @@ main() {
 		# For each package, extract coverage values from the respective coverage report:
 		pkg=$(echo "$package" | sed -E 's/^.*stdlib\///')
 
-		# Skip packages which do not have a test directory (e.g., presentation-only sub-packages), as `make test-javascript-cov` fails when a `TESTS_FILTER` matches zero files:
+		# Skip packages which do not have a test directory, as `make test-javascript-cov` fails when a `TESTS_FILTER` matches zero files:
 		if [ ! -d "lib/node_modules/@stdlib/${pkg}/test" ]; then
 			echo "::warning::No test directory found for package '${pkg}'. Skipping..."
 			continue
