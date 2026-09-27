@@ -117,7 +117,6 @@ jobs:
         env:
           METADATA: ${{ steps.extract-metadata.outputs.metadata }}
         run: |
-          # Note: a metadata entry may have no `type` field (e.g., when `stdlib-js/metadata-action` cannot extract a recognized metadata block from a comment), in which case `.type` is `null`; `// ""` substitutes an empty string so `contains` sees a non-matching value instead of raising a `null`-input error:
           inputs=$(echo "$METADATA" | jq -c '.[] | select((.type // "") | contains("workflow_dispatch"))')
           if [ -n "$inputs" ]; then
             name=$(echo $inputs | jq -r '.name')
