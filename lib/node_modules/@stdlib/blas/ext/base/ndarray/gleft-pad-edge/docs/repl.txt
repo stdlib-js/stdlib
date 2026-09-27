@@ -1,0 +1,39 @@
+
+{{alias}}( arrays )
+    Prepends elements to a one-dimensional input ndarray by repeating the
+    leading edge element and writes the results to a one-dimensional output
+    ndarray.
+
+    If the input ndarray is empty, the function returns the output ndarray
+    unchanged.
+
+    If the number of elements to pad is less than zero, the function copies
+    elements from the input ndarray to the output ndarray without padding.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a one-dimensional output ndarray. Must have `N + k` elements, where
+        `N` is the number of elements in the input ndarray, and `k` is the
+        number of elements to pad.
+        - a zero-dimensional ndarray specifying the number of elements to pad.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var opts = { 'dtype': 'generic' };
+    > var x = {{alias:@stdlib/ndarray/vector/ctor}}( [ 1.0, 2.0, 3.0, 4.0 ], opts.dtype );
+    > var y = {{alias:@stdlib/ndarray/zeros}}( [ 10 ], opts );
+    > var k = {{alias:@stdlib/ndarray/from-scalar}}( 6, opts );
+    > {{alias}}( [ x, y, k ] )
+    <ndarray>[ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 3.0, 4.0 ]
+
+    See Also
+    --------
