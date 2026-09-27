@@ -138,11 +138,16 @@ main() {
 		exit 0
 	fi
 
-	mkdir -p artifacts
 	coverage=''
 	for package in ${directories}; do
 		# For each package, extract coverage values from the respective coverage report:
 		pkg=$(echo "$package" | sed -E 's/^.*stdlib\///')
+
+		# Skip packages which do not have a test directory (e.g., presentation-only sub-packages), as `make test-javascript-cov` fails when a `TESTS_FILTER` matches zero files:
+		if [ ! -d "lib/node_modules/@stdlib/${pkg}/test" ]; then
+			echo "::warning::No test directory found for package '${pkg}'. Skipping..."
+			continue
+		fi
 
 		if [ -f "lib/node_modules/@stdlib/${pkg}/binding.gyp" ]; then
 			NODE_ADDONS_PATTERN="${pkg}" make install-node-addons
@@ -195,10 +200,14 @@ main() {
 		rm -rf reports/coverage/lcov-report/*
 	done
 
-	# Format coverage as Markdown table row:
-	table_body=$(echo "$coverage" | sed -e 's/,/|/g; s/"/ /g; s/\[/|/g; s/\]/|/g')
-	table_header="| Package | Statements | Branches | Functions | Lines |\n| --------- | ------------ | ---------- | ----------- | ----- |"
-	table="${table_header}${table_body}"
+	# Format coverage as a Markdown table row, unless every changed package was skipped (e.g., no package had a test directory):
+	if [ -z "$coverage" ]; then
+		table=''
+	else
+		table_body=$(echo "$coverage" | sed -e 's/,/|/g; s/"/ /g; s/\[/|/g; s/\]/|/g')
+		table_header="| Package | Statements | Branches | Functions | Lines |\n| --------- | ------------ | ---------- | ----------- | ----- |"
+		table="${table_header}${table_body}"
+	fi
 
 	echo "table=$table" >> "$GITHUB_OUTPUT"
 
