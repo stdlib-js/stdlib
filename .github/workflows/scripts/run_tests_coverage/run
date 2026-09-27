@@ -145,7 +145,7 @@ main() {
 
 		# Skip packages which do not have a test directory, as `make test-javascript-cov` fails when a `TESTS_FILTER` matches zero files:
 		if [ ! -d "lib/node_modules/@stdlib/${pkg}/test" ]; then
-			echo "::warning::No test directory found for package '${pkg}'. Skipping..."
+			echo "WARNING: No test directory found for package '${pkg}'. Skipping..." >&2
 			continue
 		fi
 
