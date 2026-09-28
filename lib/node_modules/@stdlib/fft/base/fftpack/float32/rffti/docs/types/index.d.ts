@@ -27,30 +27,32 @@
 * -   For single-point sequences (N=1), the function returns immediately as the FFT is the identity operation.
 *
 * @param N - length of the sequence
-* @param workspace - workspace array
-* @param strideW - stride length for `workspace`
-* @param offsetW - starting index for `workspace`
+* @param w - workspace array
+* @param strideW - stride length for `w`
+* @param offsetW - starting index for `w`
 * @returns workspace array
 *
 * @example
 * var Float32Array = require( '@stdlib/array/float32' );
+* var Uint32Array = require( '@stdlib/array/uint32' );
 *
 * var N = 8;
-* var workspace = new Float32Array( ( 2*N ) + 34 );
+* var w = new Float32Array( ( 2*N ) + 34 );
 *
-* var out = rffti( N, workspace, 1, 0 );
+* var out = rffti( N, w, 1, 0 );
 * // returns <Float32Array>
 *
-* var bool = ( out === workspace );
+* var bool = ( out === w );
 * // returns true
 *
-* var twiddleFactors = workspace.slice( N, 2*N );
+* var twiddleFactors = w.slice( N, 2*N );
 * // returns <Float32Array>[ ~0.707, ~0.707, 0, 0, 0, 0, 0, 0 ]
 *
-* var factors = workspace.slice( 2*N, ( 2*N ) + 4 );
-* // returns <Float32Array>[ 8, 2, 2, 4 ]
+* var fview = new Uint32Array( w.buffer, w.byteOffset, w.length );
+* var factors = fview.slice( 2*N, ( 2*N ) + 4 );
+* // returns <Uint32Array>[ 8, 2, 2, 4 ]
 */
-declare function rffti( N: number, workspace: Float32Array, strideW: number, offsetW: number ): Float32Array;
+declare function rffti( N: number, w: Float32Array, strideW: number, offsetW: number ): Float32Array;
 
 
 // EXPORTS //

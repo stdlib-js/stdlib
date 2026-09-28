@@ -1,0 +1,42 @@
+
+{{alias}}( arrays )
+    Computes the forward discrete Fourier transform (DFT) of a real-valued
+    one-dimensional single-precision floating-point ndarray.
+
+    Before calling this function, one must first initialize the workspace
+    ndarray using the corresponding initialization function with the same
+    sequence length and workspace layout.
+
+    This transform is unnormalized as a call to this function followed by a
+    call performing a backward transform will multiply the input ndarray by the
+    sequence length.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a one-dimensional workspace ndarray containing pre-computed values.
+
+    Returns
+    -------
+    out: ndarray
+        Input ndarray.
+
+    Examples
+    --------
+    > var N = 4;
+    > var opts = { 'dtype': 'int32' };
+    > var len = {{alias:@stdlib/ndarray/from-scalar}}( N, opts );
+    > var w = new {{alias:@stdlib/ndarray/vector/float32}}( ( 2*N ) + 34 );
+    > {{alias:@stdlib/fft/base/fftpack/ndarray/float32/rffti}}( [ w, len ] );
+    > var r = new {{alias:@stdlib/ndarray/vector/float32}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var out = {{alias}}( [ r, w ] )
+    <ndarray>[ 10.0, -2.0, 2.0, -2.0 ]
+    > var bool = ( out === r )
+    true
+
+    See Also
+    --------
+
