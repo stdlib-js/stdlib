@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Shape, Order, typedndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, boolndarray, complex128ndarray, complex64ndarray, genericndarray, DataType, Float64DataType, Float32DataType, Complex128DataType, Complex64DataType, Int32DataType, Int16DataType, Int8DataType, Uint32DataType, Uint16DataType, Uint8DataType, Uint8cDataType, BooleanDataType, GenericDataType } from '@stdlib/types/ndarray';
+import { Shape, Order, typedndarray, float64ndarray, float32ndarray, float16ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, boolndarray, complex128ndarray, complex64ndarray, genericndarray, DataType, Float64DataType, Float32DataType, Float16DataType, Complex128DataType, Complex64DataType, Int32DataType, Int16DataType, Int8DataType, Uint32DataType, Uint16DataType, Uint8DataType, Uint8cDataType, BooleanDataType, GenericDataType } from '@stdlib/types/ndarray';
 import { ComplexLike } from '@stdlib/types/complex';
 
 /**
@@ -95,6 +95,31 @@ declare function fullBy<ThisArg = unknown>( dtype: Float64DataType, shape: Shape
 * // returns 'float32'
 */
 declare function fullBy<ThisArg = unknown>( dtype: Float32DataType, shape: Shape, order: Order, clbk: Callback<number, ThisArg>, thisArg?: ThisArg ): float32ndarray;
+
+/**
+* Returns an ndarray filled according to a callback function and having a specified shape and data type.
+*
+* @param dtype - underlying data type
+* @param shape - array shape
+* @param order - specifies whether an array is row-major (C-style) or column-major (Fortran-style)
+* @param clbk - callback function
+* @param thisArg - callback function execution context
+* @returns output array
+*
+* @example
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
+* function clbk() {
+*     return 10.0;
+* }
+*
+* var arr = fullBy( 'float16', [ 2, 2 ], 'row-major', clbk );
+* // returns <ndarray>[ [ 10.0, 10.0 ], [ 10.0, 10.0 ] ]
+*
+* var dt = String( getDType( arr ) );
+* // returns 'float16'
+*/
+declare function fullBy<ThisArg = unknown>( dtype: Float16DataType, shape: Shape, order: Order, clbk: Callback<number, ThisArg>, thisArg?: ThisArg ): float16ndarray;
 
 /**
 * Returns an ndarray filled according to a callback function and having a specified shape and data type.
