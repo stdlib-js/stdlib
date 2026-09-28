@@ -193,9 +193,9 @@ var v = x.valueOf();
 
 ## Notes
 
--   A 64-bit unsigned integer has a range of \[`0`, `2^64-1`].
+-   A 64-bit unsigned integer has a range of `[0, 2^64-1]`.
 -   The constructor accepts either a `number` or a `bigint` on the interval `[0, 2^64-1]`.
--   Passing a number argument is safe and exact for integers within \[`0`, `2^53`]. For values exceeding `2^53`, JavaScript numbers incur precision loss; provide a `bigint` argument or construct from words using [`Uint64.of()`](#static-method-of) or [`Uint64.from()`](#static-method-from).
+-   Passing a number argument is safe and exact for integers within `[0, 2^53]`. For values exceeding `2^53`, JavaScript numbers incur precision loss; provide a `bigint` argument or construct from words using [`Uint64.of()`](#static-method-of) or [`Uint64.from()`](#static-method-from).
 
 </section>
 

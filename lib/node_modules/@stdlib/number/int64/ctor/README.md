@@ -132,9 +132,9 @@ var x = Int64.from( [ 1234, 5678 ] );
 // returns <Int64>
 ```
 
-#### Int64.of( high, low )
-
 <a name="static-method-of"></a>
+
+#### Int64.of( high, low )
 
 Creates a new 64-bit signed integer from a high and low word.
 
