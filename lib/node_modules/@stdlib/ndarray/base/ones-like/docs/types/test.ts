@@ -29,6 +29,7 @@ import onesLike = require( './index' );
 
 	onesLike( ones( 'float64', sh, ord ) ); // $ExpectType float64ndarray
 	onesLike( ones( 'float32', sh, ord ) ); // $ExpectType float32ndarray
+	onesLike( ones( 'float16', sh, ord ) ); // $ExpectType float16ndarray
 	onesLike( ones( 'complex128', sh, ord ) ); // $ExpectType complex128ndarray
 	onesLike( ones( 'complex64', sh, ord ) ); // $ExpectType complex64ndarray
 	onesLike( ones( 'int32', sh, ord ) ); // $ExpectType int32ndarray
