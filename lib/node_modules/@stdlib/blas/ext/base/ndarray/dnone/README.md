@@ -129,6 +129,7 @@ Tests whether every element in a one-dimensional double-precision floating-point
 #include "stdlib/ndarray/orders.h"
 #include "stdlib/ndarray/base/bytes_per_element.h"
 #include <stdint.h>
+#include <stdbool.h>
 
 // Create an ndarray:
 const double data[] = { 0.0, 0.0, 1.0, 1.0 };

@@ -122,6 +122,7 @@ static double benchmark( int iterations, int len ) {
 		data[ i ] = 0.0;
 	}
 	data[ len-1 ] = 1.0;
+
 	// cppcheck-suppress invalidPointerCast
 	x = stdlib_ndarray_allocate( STDLIB_NDARRAY_FLOAT64, (uint8_t *)data, ndims, shape, strides, offset, order, imode, nsubmodes, submodes );
 	arrays[ 0 ] = x;
