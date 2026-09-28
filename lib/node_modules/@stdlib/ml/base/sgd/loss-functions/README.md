@@ -83,9 +83,9 @@ The output array contains the following loss functions:
 
 ```javascript
 var contains = require( '@stdlib/array/base/assert/contains' ).factory;
-var lossFunction = require( '@stdlib/ml/base/sgd/loss-functions' );
+var lossFunctions = require( '@stdlib/ml/base/sgd/loss-functions' );
 
-var isLossFunction = contains( lossFunction() );
+var isLossFunction = contains( lossFunctions() );
 
 var bool = isLossFunction( 'hinge' );
 // returns true

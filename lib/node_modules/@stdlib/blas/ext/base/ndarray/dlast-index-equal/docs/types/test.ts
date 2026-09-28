@@ -19,6 +19,7 @@
 /* eslint-disable space-in-parens */
 
 import zeros = require( '@stdlib/ndarray/zeros' );
+import scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 import dlastIndexEqual = require( './index' );
 
 
@@ -32,8 +33,11 @@ import dlastIndexEqual = require( './index' );
 	const y = zeros( [ 10 ], {
 		'dtype': 'float64'
 	});
+	const fromIndex = scalar2ndarray( 0, {
+		'dtype': 'generic'
+	});
 
-	dlastIndexEqual( [ x, y ] ); // $ExpectType number
+	dlastIndexEqual( [ x, y, fromIndex ] ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array of ndarrays...
@@ -57,7 +61,10 @@ import dlastIndexEqual = require( './index' );
 	const y = zeros( [ 10 ], {
 		'dtype': 'float64'
 	});
+	const fromIndex = scalar2ndarray( 0, {
+		'dtype': 'generic'
+	});
 
 	dlastIndexEqual(); // $ExpectError
-	dlastIndexEqual( [ x, y ], {} ); // $ExpectError
+	dlastIndexEqual( [ x, y, fromIndex ], {} ); // $ExpectError
 }

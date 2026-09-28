@@ -44,7 +44,7 @@ import { typedndarray } from '@stdlib/types/ndarray';
 * var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var opts = {
-*    'dtype': 'generic'
+*     'dtype': 'generic'
 * };
 * var x = vector( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ], opts.dtype );
 * var target = scalar2ndarray( 3, opts );

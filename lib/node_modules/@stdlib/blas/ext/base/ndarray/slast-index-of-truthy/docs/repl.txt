@@ -1,0 +1,27 @@
+
+{{alias}}( arrays )
+    Returns the index of the last truthy element in a one-dimensional single-
+    precision floating-point ndarray.
+
+    If unable to find a truthy element, the function returns `-1`.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+
+    Returns
+    -------
+    out: integer
+        Index.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/ndarray/vector/float32}}( [ 0.0, 2.0, 0.0 ] );
+    > {{alias}}( [ x ] )
+    1
+
+    See Also
+    --------
