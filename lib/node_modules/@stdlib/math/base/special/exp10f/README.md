@@ -33,7 +33,7 @@ y = 10^x
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="y = 10^x" data-equation="eq:base10_exponential_function">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@0354ee249fe846bfb31889095c3a536bd3e9d7fc/lib/node_modules/@stdlib/math/base/special/exp10f/docs/img/equation_base10_exponential_function.svg" alt="Base-10 exponential function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@d175fd63bd070783ff6c4a2b2b9bf1922e1da687/lib/node_modules/@stdlib/math/base/special/exp10f/docs/img/equation_base10_exponential_function.svg" alt="Base-10 exponential function">
     <br>
 </div> -->
 
