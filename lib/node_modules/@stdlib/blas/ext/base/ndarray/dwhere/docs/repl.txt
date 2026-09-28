@@ -1,0 +1,32 @@
+
+{{alias}}( arrays )
+    Takes elements from one of two one-dimensional double-precision floating-
+    point ndarrays depending on a condition.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional condition ndarray.
+        - first one-dimensional input ndarray.
+        - second one-dimensional input ndarray.
+        - a one-dimensional output ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var c = new {{alias:@stdlib/ndarray/vector/bool}}( [ true, false, true, false ] );
+    > var x = new {{alias:@stdlib/ndarray/vector/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var y = new {{alias:@stdlib/ndarray/vector/float64}}( [ 5.0, 6.0, 7.0, 8.0 ] );
+    > var out = new {{alias:@stdlib/ndarray/vector/float64}}( 4 );
+    > {{alias}}( [ c, x, y, out ] )
+    <ndarray>[ 1.0, 6.0, 3.0, 8.0 ]
+
+    See Also
+    --------
+
