@@ -1,0 +1,26 @@
+
+{{alias}}( value )
+    Returns the learning rate scheduler string associated with a supported SGD
+    learning rate scheduler value.
+
+    Parameters
+    ----------
+    value: any
+        Learning rate scheduler value.
+
+    Returns
+    -------
+    out: string|null
+        Learning rate scheduler string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'constant' )
+    'constant'
+    > var v = {{alias:@stdlib/ml/base/sgd/learning-rate-str2enum}}( 'constant' );
+    > out = {{alias}}( v )
+    'constant'
+
+    See Also
+    --------
+

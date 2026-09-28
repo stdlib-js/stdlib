@@ -33,12 +33,23 @@
 #include "stdlib/math/base/special/atanh.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/log1p.h"
+#include "stdlib/number/float64/base/get_high_word.h"
+#include "stdlib/number/float64/base/set_high_word.h"
+#include "stdlib/constants/float64/high_word_abs_mask.h"
+#include "stdlib/constants/float64/high_word_sign_mask.h"
 #include "stdlib/constants/float64/pinf.h"
 #include "stdlib/constants/float64/ninf.h"
 #include "stdlib/constants/float64/nan.h"
 #include <stdint.h>
 
-static const double NEAR_ZERO = 1.0 / (1 << 28); // 2**-28
+// 2^0 = 1 => 0 01111111111 00000000000000000000 => 0x3ff00000 = 1072693248
+static const uint32_t HIGH_BIASED_EXP_0 = 0x3ff00000;
+
+// 2^-1 = 0.5 => 0 01111111110 00000000000000000000 => 0x3fe00000 = 1071644672
+static const uint32_t HIGH_BIASED_EXP_NEG_1 = 0x3fe00000;
+
+// 2^-28 = 3.725290298461914e-9 => 0 01111100011 00000000000000000000 => 0x3e300000 = 1043333120
+static const uint32_t HIGH_BIASED_EXP_NEG_28 = 0x3e300000;
 
 /**
 * Computes the hyperbolic arctangent of a double-precision floating-point number.
@@ -80,34 +91,42 @@ static const double NEAR_ZERO = 1.0 / (1 << 28); // 2**-28
 * // returns ~1.472
 */
 double stdlib_base_atanh( const double x ) {
-	int32_t sgn;
+	uint32_t sgn;
+	uint32_t hx;
+	uint32_t ix;
 	double ax;
 	double t;
+
 	if ( stdlib_base_is_nan( x ) || x < -1.0 || x > 1.0 ) {
 		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
-	if ( x == 1.0 ) {
-		return STDLIB_CONSTANT_FLOAT64_PINF;
-	}
-	if ( x == -1.0 ) {
-		return STDLIB_CONSTANT_FLOAT64_NINF;
-	}
-	if ( x < 0.0 ) {
-		sgn = 1;
-		ax = -x;
-	} else {
-		sgn = 0;
-		ax = x;
+	// Extract the higher order word from `x`:
+	stdlib_base_float64_get_high_word( x, &hx );
+
+	// Isolate the sign bit:
+	sgn = hx & STDLIB_CONSTANT_FLOAT64_HIGH_WORD_SIGN_MASK;
+
+	// Turn off the sign bit:
+	ix = hx & STDLIB_CONSTANT_FLOAT64_HIGH_WORD_ABS_MASK;
+
+	// Case: |x| == 1
+	if ( ix == HIGH_BIASED_EXP_0 ) {
+		return ( sgn == 0 ) ? STDLIB_CONSTANT_FLOAT64_PINF : STDLIB_CONSTANT_FLOAT64_NINF;
 	}
 	// Case: |x| < 2**-28
-	if ( ax < NEAR_ZERO ) {
-		return ( sgn == 1 ) ? -ax : ax;
+	if ( ix < HIGH_BIASED_EXP_NEG_28 ) {
+		return x;
 	}
-	if ( ax < 0.5 ) {
+	// Compute `|x|` by setting the high word of `x` to the high word with the sign bit turned off:
+	ax = x;
+	stdlib_base_float64_set_high_word( ix, &ax );
+
+	// Case: |x| < 0.5
+	if ( ix < HIGH_BIASED_EXP_NEG_1 ) {
 		t = ax + ax;
-		t = 0.5 * stdlib_base_log1p( t + ( t * ax / ( 1 - ax ) ) );
+		t = 0.5 * stdlib_base_log1p( t + ( t * ax / ( 1.0 - ax ) ) );
 	} else {
-		t = 0.5 * stdlib_base_log1p( ( ax + ax ) / ( 1 - ax ) );
+		t = 0.5 * stdlib_base_log1p( ( ax + ax ) / ( 1.0 - ax ) );
 	}
-	return ( sgn == 1 ) ? -t : t;
+	return ( sgn == 0 ) ? t : -t;
 }

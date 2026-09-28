@@ -190,7 +190,7 @@ var bool = everyOwnBy( obj, isPositive );
 
 -   <span class="package-name">[`@stdlib/object/any-own-by`][@stdlib/object/any-own-by]</span><span class="delimiter">: </span><span class="description">test whether whether any 'own' property of a provided object satisfies a predicate function.</span>
 -   <span class="package-name">[`@stdlib/object/every-in-by`][@stdlib/object/every-in-by]</span><span class="delimiter">: </span><span class="description">test whether all properties (own and inherited) of an object pass a test implemented by a predicate function.</span>
--   <span class="package-name">[`@stdlib/object/none-own-by`][@stdlib/object/none-own-by]</span><span class="delimiter">: </span><span class="description">tests whether every own property of an object fails a test implemented by a predicate function.</span>
+-   <span class="package-name">[`@stdlib/object/none-own-by`][@stdlib/object/none-own-by]</span><span class="delimiter">: </span><span class="description">test whether every own property of an object fails a test implemented by a predicate function.</span>
 -   <span class="package-name">[`@stdlib/object/some-own-by`][@stdlib/object/some-own-by]</span><span class="delimiter">: </span><span class="description">test whether some `own` properties of a provided object satisfy a predicate function for at least `n` properties.</span>
 -   <span class="package-name">[`@stdlib/utils/every-by`][@stdlib/utils/every-by]</span><span class="delimiter">: </span><span class="description">test whether all elements in a collection pass a test implemented by a predicate function.</span>
 

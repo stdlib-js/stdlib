@@ -156,14 +156,13 @@ saxpby.ndarray( 3, 5.0, x, 1, x.length-3, 2.0, y, 1, y.length-3 );
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var saxpby = require( '@stdlib/blas/ext/base/saxpby' );
 
-var x = discreteUniform( 10, -100, 100, {
+var opts = {
     'dtype': 'float32'
-});
+};
+var x = discreteUniform( 10, -100, 100, opts );
 console.log( x );
 
-var y = discreteUniform( 10, -100, 100, {
-    'dtype': 'float32'
-});
+var y = discreteUniform( 10, -100, 100, opts );
 console.log( y );
 
 saxpby( x.length, 5.0, x, 1, 2.0, y, 1 );

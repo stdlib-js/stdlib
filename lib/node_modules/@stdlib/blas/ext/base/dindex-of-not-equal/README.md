@@ -198,7 +198,7 @@ console.log( idx );
 Returns the first index of an element in a double-precision floating-point strided array which is not equal to a specified search element.
 
 ```c
-double x[] = { 1.0, 1.0, 0.0, 1.0 };
+const double x[] = { 1.0, 1.0, 0.0, 1.0 };
 
 int idx = stdlib_strided_dindex_of_not_equal( 4, 1.0, x, 1 );
 // returns 2
@@ -224,7 +224,7 @@ CBLAS_INT stdlib_strided_dindex_of_not_equal( const CBLAS_INT N, const double se
 Returns the first index of an element in a double-precision floating-point strided array which is not equal to a specified search element using alternative indexing semantics.
 
 ```c
-double x[] = { 1.0, 1.0, 0.0, 1.0 };
+const double x[] = { 1.0, 1.0, 0.0, 1.0 };
 
 int idx = stdlib_strided_dindex_of_not_equal_ndarray( 4, 1.0, x, 1, 0 );
 // returns 2
@@ -266,7 +266,7 @@ CBLAS_INT stdlib_strided_dindex_of_not_equal_ndarray( const CBLAS_INT N, const d
 
 int main( void ) {
     // Create a strided array:
-    double x[] = { 1.0, 1.0, 0.0, 1.0, 1.0, 1.0, 0.0, 1.0 };
+    const double x[] = { 1.0, 1.0, 0.0, 1.0, 1.0, 1.0, 0.0, 1.0 };
 
     // Specify the number of indexed elements:
     const int N = 8;

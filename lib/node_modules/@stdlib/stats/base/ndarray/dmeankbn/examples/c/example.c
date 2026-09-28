@@ -63,7 +63,7 @@ int main( void ) {
 	// Define a list of ndarrays:
 	const struct ndarray *arrays[] = { x };
 
-	// Compute the arithmetic mean value:
+	// Compute the arithmetic mean:
 	double v = stdlib_stats_dmeankbn( arrays );
 
 	// Print the result:

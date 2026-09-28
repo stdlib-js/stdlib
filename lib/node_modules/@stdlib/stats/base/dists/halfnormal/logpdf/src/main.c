@@ -38,6 +38,7 @@ static const double C = 0.5 * ( STDLIB_CONSTANT_FLOAT64_LN2 - STDLIB_CONSTANT_FL
 * // returns ~-0.546
 */
 double stdlib_base_dists_halfnormal_logpdf( const double x, const double sigma ) {
+	double v;
 	if (
 		stdlib_base_is_nan( x ) ||
 		stdlib_base_is_nan( sigma ) ||
@@ -48,5 +49,6 @@ double stdlib_base_dists_halfnormal_logpdf( const double x, const double sigma )
 	if ( x < 0.0 ) {
 		return STDLIB_CONSTANT_FLOAT64_NINF;
 	}
-	return C - stdlib_base_ln( sigma ) - ( (x*x) / ( 2.0 * (sigma*sigma) ) );
+	v = x / sigma;
+	return C - stdlib_base_ln( sigma ) - ( (v*v) / 2.0 );
 }

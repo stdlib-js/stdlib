@@ -26,6 +26,7 @@ import ones = require( './index' );
 	ones( 10 ); // $ExpectType Float64Array
 	ones( 10, 'float64' ); // $ExpectType Float64Array
 	ones( 10, 'float32' ); // $ExpectType Float32Array
+	ones( 10, 'float16' ); // $ExpectType Float16ArrayFallback
 	ones( 10, 'complex128' ); // $ExpectType Complex128Array
 	ones( 10, 'complex64' ); // $ExpectType Complex64Array
 	ones( 10, 'int32' ); // $ExpectType Int32Array

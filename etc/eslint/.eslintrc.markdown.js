@@ -107,7 +107,7 @@ eslint.rules[ 'no-tabs' ] = 'error';
 *
 * @private
 */
-eslint.rules[ 'require-jsdoc' ] = 'off';
+eslint.rules[ 'jsdoc/require-jsdoc' ] = 'off';
 
 /**
 * Do not require `@private` annotations.
@@ -129,6 +129,13 @@ eslint.rules[ 'stdlib/jsdoc-return-annotations-values' ] = 'off'; // FIXME: remo
 * @private
 */
 eslint.rules[ 'stdlib/no-empty-lines-between-requires' ] = 'off';
+
+/**
+* Allow requiring the package as a whole even though only a single property is used.
+*
+* @private
+*/
+eslint.rules[ 'stdlib/no-single-property-require' ] = 'off';
 
 /**
 * Allow use of undeclared variables, as variables may be defined in previous code blocks or be implied.

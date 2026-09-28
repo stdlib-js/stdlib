@@ -9,10 +9,10 @@
         Output array length.
 
     k: number
-        Scale parameter.
+        Shape parameter.
 
     lambda: number
-        Shape parameter.
+        Scale parameter.
 
     options: Object (optional)
         Options.
@@ -37,10 +37,10 @@
     Parameters
     ----------
     k: number
-        Scale parameter.
+        Shape parameter.
 
     lambda: number
-        Shape parameter.
+        Scale parameter.
 
     out: Array<number>|Float64Array|Float32Array
         Output array.
@@ -77,10 +77,10 @@
     Parameters
     ----------
     k: number (optional)
-        Scale parameter.
+        Shape parameter.
 
     lambda: number (optional)
-        Shape parameter.
+        Scale parameter.
 
     options: Object (optional)
         Options.

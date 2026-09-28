@@ -168,14 +168,13 @@ console.log( y );
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var ssort2ins = require( '@stdlib/blas/ext/base/ssort2ins' );
 
-var x = discreteUniform( 10, -100, 100, {
+var opts = {
     'dtype': 'float32'
-});
-var y = discreteUniform( 10, -100, 100, {
-    'dtype': 'float32'
-});
-
+};
+var x = discreteUniform( 10, -100, 100, opts );
 console.log( x );
+
+var y = discreteUniform( 10, -100, 100, opts );
 console.log( y );
 
 ssort2ins( x.length, -1.0, x, -1, y, -1 );

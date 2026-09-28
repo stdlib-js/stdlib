@@ -1,0 +1,240 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2026 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+// TypeScript Version: 4.1
+
+/**
+* Interface describing SGD trainer parameters.
+*/
+interface Params<T> {
+	/**
+	* Parameters specific to the regularization function being used.
+	*
+	* ## Notes
+	*
+	* -   Must be an array having length `2`, with any unused elements set to zero. The expected array contents depend on the penalty:
+	*
+	*     -   **l1**: `[ lambda, 0.0 ]`
+	*     -   **l2**: `[ lambda, 0.0 ]`
+	*     -   **elasticnet**: `[ lambda, l1Ratio ]`
+	*     -   **none**: `[ 0.0, 0.0 ]` (unused)
+	*
+	*     where:
+	*
+	*     -   **lambda**: regularization parameter which determines the amount of shrinkage inflicted on the model coefficients.
+	*     -   **l1Ratio**: mixing parameter on the interval `[0,1]` which determines the relative contribution of the L1 and L2 penalties.
+	*/
+	penaltyParams?: T;
+
+	/**
+	* Parameters specific to the learning rate scheduler being used.
+	*
+	* ## Notes
+	*
+	* -   Must be an array having length `2`, with any unused elements set to zero. The expected array contents depend on the learning rate scheduler:
+	*
+	*     -   **basic**: `[ 0.0, 0.0 ]` (unused)
+	*     -   **constant**: `[ eta0, 0.0 ]`
+	*     -   **invscaling**: `[ eta0, powerT ]`
+	*     -   **pegasos**: `[ lambda, 0.0 ]`
+	*
+	*     where:
+	*
+	*     -   **eta0**: initial learning rate.
+	*     -   **powerT**: exponent controlling how quickly the learning rate decreases.
+	*     -   **lambda**: regularization parameter.
+	*/
+	learningRateParams?: T;
+
+	/**
+	* Parameters specific to the loss function being used.
+	*
+	* ## Notes
+	*
+	* -   Must be an array having length `1`. The expected array contents depend on the loss function:
+	*
+	*     -   **epsilon-insensitive**: `[ epsilon ]`
+	*     -   **squared-epsilon-insensitive**: `[ epsilon ]`
+	*     -   **huber**: `[ threshold ]`
+	*     -   all other loss functions: `[ 0.0 ]` (unused)
+	*
+	*     where:
+	*
+	*     -   **epsilon**: insensitivity parameter (i.e., errors whose absolute value is less than `epsilon` incur no penalty).
+	*     -   **threshold**: error magnitude at which the loss transitions from squared-error loss to linear loss.
+	*/
+	lossFunctionParams?: T;
+
+	/**
+	* Initial intercept value.
+	*
+	* ## Notes
+	*
+	* -   Only applicable when `fitIntercept` is `true`.
+	*/
+	intercept?: number;
+
+	/**
+	* Maximum number of iterations to run.
+	*/
+	maxIter?: number;
+
+	/**
+	* Regularization function.
+	*/
+	penalty?: number;
+
+	/**
+	* Learning rate scheduler.
+	*/
+	learningRate?: number;
+
+	/**
+	* Loss function.
+	*/
+	lossFunction?: number;
+
+	/**
+	* Boolean indicating whether to include intercept.
+	*
+	* ## Notes
+	*
+	* -   If `true`, an element equal to one is implicitly added to each provided feature vector. If `false`, the model assumes that feature vectors are already centered.
+	*/
+	fitIntercept?: boolean;
+}
+
+/**
+* Interface describing a struct data structure.
+*/
+declare class Struct<T> {
+	/**
+	* Struct constructor.
+	*
+	* @param arg - buffer or data object
+	* @param byteOffset - byte offset
+	* @param byteLength - maximum byte length
+	* @returns struct
+	*/
+	constructor( arg?: ArrayBuffer | Params<T>, byteOffset?: number, byteLength?: number );
+
+	/**
+	* Parameters specific to the regularization function being used.
+	*/
+	penaltyParams: T;
+
+	/**
+	* Parameters specific to the learning rate scheduler being used.
+	*/
+	learningRateParams: T;
+
+	/**
+	* Parameters specific to the loss function being used.
+	*/
+	lossFunctionParams: T;
+
+	/**
+	* Initial intercept value.
+	*/
+	intercept: number;
+
+	/**
+	* Maximum number of iterations to run.
+	*/
+	maxIter: number;
+
+	/**
+	* Regularization function.
+	*/
+	penalty: number;
+
+	/**
+	* Learning rate scheduler.
+	*/
+	learningRate: number;
+
+	/**
+	* Loss function.
+	*/
+	lossFunction: number;
+
+	/**
+	* Boolean indicating whether to include intercept.
+	*/
+	fitIntercept: boolean;
+}
+
+/**
+* Interface defining a struct constructor which is both "newable" and "callable".
+*/
+interface StructConstructor<T> {
+	/**
+	* Struct constructor.
+	*
+	* @param arg - buffer or data object
+	* @param byteOffset - byte offset
+	* @param byteLength - maximum byte length
+	* @returns struct
+	*/
+	new( arg?: ArrayBuffer | Params<T>, byteOffset?: number, byteLength?: number ): Struct<T>;
+
+	/**
+	* Struct constructor.
+	*
+	* @param arg - buffer or data object
+	* @param byteOffset - byte offset
+	* @param byteLength - maximum byte length
+	* @returns struct
+	*/
+	( arg?: ArrayBuffer | Params<T>, byteOffset?: number, byteLength?: number ): Struct<T>;
+}
+
+/**
+* Returns a new struct constructor tailored to a specified floating-point data type.
+*
+* @param dtype - floating-point data type for storing floating-point params
+* @returns struct constructor
+*
+* @example
+* var Struct = structFactory( 'float64' );
+* // returns <Function>
+*
+* var s = new Struct();
+* // returns <Struct>
+*/
+declare function structFactory( dtype: 'float64' ): StructConstructor<Float64Array>;
+
+/**
+* Returns a new struct constructor tailored to a specified floating-point data type.
+*
+* @param dtype - floating-point data type for storing floating-point params
+* @returns struct constructor
+*
+* @example
+* var Struct = structFactory( 'float32' );
+* // returns <Function>
+*
+* var s = new Struct();
+* // returns <Struct>
+*/
+declare function structFactory( dtype: 'float32' ): StructConstructor<Float32Array>;
+
+
+// EXPORTS //
+
+export = structFactory;

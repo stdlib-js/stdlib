@@ -226,11 +226,11 @@ static double scale( const double x ) {
     return x * 10.0;
 }
 
-double X[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 };
-uint8_t M[] = { 0, 0, 1, 0, 0, 1 };
+const double X[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 };
+const uint8_t M[] = { 0, 0, 1, 0, 0, 1 };
 double Y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
-int64_t N = 6;
+const int64_t N = 6;
 
 stdlib_strided_dmskmap( N, X, 1, M, 1, Y, 1, scale );
 ```
@@ -281,21 +281,21 @@ static double scale( const double x ) {
 
 int main( void ) {
     // Create an input strided array:
-    double X[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 };
+    const double X[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 };
 
     // Create a mask strided array:
-    uint8_t M[] = { 0, 0, 1, 0, 0, 1 };
+    const uint8_t M[] = { 0, 0, 1, 0, 0, 1 };
 
     // Create an output strided array:
     double Y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
     // Specify the number of elements:
-    int64_t N = 6;
+    const int64_t N = 6;
 
     // Define the strides:
-    int64_t strideX = 1;
-    int64_t strideM = 1;
-    int64_t strideY = -1;
+    const int64_t strideX = 1;
+    const int64_t strideM = 1;
+    const int64_t strideY = -1;
 
     // Apply the callback:
     stdlib_strided_dmskmap( N, X, strideX, M, strideM, Y, strideY, scale );

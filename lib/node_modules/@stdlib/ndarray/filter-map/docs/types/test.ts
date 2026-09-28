@@ -72,6 +72,8 @@ function identity3( x: ComplexLike ): ComplexLike {
 	filterMap( zeros( 'float64', sh, ord ), identity1, {} ); // $ExpectType float64ndarray
 	filterMap( zeros( 'float32', sh, ord ), identity1 ); // $ExpectType float32ndarray
 	filterMap( zeros( 'float32', sh, ord ), identity1, {} ); // $ExpectType float32ndarray
+	filterMap( zeros( 'float16', sh, ord ), identity1 ); // $ExpectType float16ndarray
+	filterMap( zeros( 'float16', sh, ord ), identity1, {} ); // $ExpectType float16ndarray
 	filterMap( zeros( 'complex64', sh, ord ), identity3 ); // $ExpectType complex64ndarray
 	filterMap( zeros( 'complex64', sh, ord ), identity3, {} ); // $ExpectType complex64ndarray
 	filterMap( zeros( 'complex128', sh, ord ), identity3 ); // $ExpectType complex128ndarray
@@ -100,6 +102,8 @@ function identity3( x: ComplexLike ): ComplexLike {
 	filterMap( zeros( 'generic', sh, ord ), { 'dtype': 'float64' }, fcn, {} ); // $ExpectType float64ndarray
 	filterMap( zeros( 'generic', sh, ord ), { 'dtype': 'float32' }, fcn ); // $ExpectType float32ndarray
 	filterMap( zeros( 'generic', sh, ord ), { 'dtype': 'float32' }, fcn, {} ); // $ExpectType float32ndarray
+	filterMap( zeros( 'generic', sh, ord ), { 'dtype': 'float16' }, fcn ); // $ExpectType float16ndarray
+	filterMap( zeros( 'generic', sh, ord ), { 'dtype': 'float16' }, fcn, {} ); // $ExpectType float16ndarray
 	filterMap( zeros( 'generic', sh, ord ), { 'dtype': 'complex64' }, fcn ); // $ExpectType complex64ndarray
 	filterMap( zeros( 'generic', sh, ord ), { 'dtype': 'complex64' }, fcn, {} ); // $ExpectType complex64ndarray
 	filterMap( zeros( 'generic', sh, ord ), { 'dtype': 'complex128' }, fcn ); // $ExpectType complex128ndarray
@@ -128,6 +132,8 @@ function identity3( x: ComplexLike ): ComplexLike {
 	filterMap( zeros( 'float64', sh, ord ), { 'order': ord }, identity1, {} ); // $ExpectType float64ndarray
 	filterMap( zeros( 'float32', sh, ord ), { 'order': ord }, identity1 ); // $ExpectType float32ndarray
 	filterMap( zeros( 'float32', sh, ord ), { 'order': ord }, identity1, {} ); // $ExpectType float32ndarray
+	filterMap( zeros( 'float16', sh, ord ), { 'order': ord }, identity1 ); // $ExpectType float16ndarray
+	filterMap( zeros( 'float16', sh, ord ), { 'order': ord }, identity1, {} ); // $ExpectType float16ndarray
 	filterMap( zeros( 'complex64', sh, ord ), { 'order': ord }, identity3 ); // $ExpectType complex64ndarray
 	filterMap( zeros( 'complex64', sh, ord ), { 'order': ord }, identity3, {} ); // $ExpectType complex64ndarray
 	filterMap( zeros( 'complex128', sh, ord ), { 'order': ord }, identity3 ); // $ExpectType complex128ndarray
