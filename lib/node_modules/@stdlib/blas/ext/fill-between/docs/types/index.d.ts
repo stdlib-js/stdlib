@@ -70,7 +70,7 @@ interface FillRange {
 	*     'dtype': 'complex128'
 	* });
 	*
-	* var y = fillRange( x, 10.0 );
+	* var y = fillBetween( x, 10.0 );
 	* // returns <ndarray>[ [ <Complex128>[ 10.0, 0.0 ], <Complex128>[ 10.0, 0.0 ] ], [ <Complex128>[ 10.0, 0.0 ], <Complex128>[ 10.0, 0.0 ] ] ]
 	*
 	* var bool = ( x === y );
@@ -97,7 +97,7 @@ interface FillRange {
 	*     'dtype': 'generic'
 	* });
 	*
-	* var y = fillRange( x, 10.0 );
+	* var y = fillBetween( x, 10.0 );
 	* // returns <ndarray>[ [ 10.0, 10.0 ], [ 10.0, 10.0 ] ]
 	*
 	* var bool = ( x === y );
@@ -122,7 +122,7 @@ interface FillRange {
 	*
 	* var x = array( [ 1.0, 2.0, 3.0, 4.0 ] );
 	*
-	* var y = fillRange( x, 10.0 );
+	* var y = fillBetween( x, 10.0 );
 	* // returns <ndarray>[ 10.0, 10.0, 10.0, 10.0 ]
 	*
 	* var bool = ( x === y );
@@ -151,7 +151,7 @@ interface FillRange {
 	*     'dtype': 'complex128'
 	* });
 	*
-	* var y = fillRange( x, 10.0, 2 );
+	* var y = fillBetween( x, 10.0, 2 );
 	* // returns <ndarray>[ <Complex128>[ 0.0, 0.0 ], <Complex128>[ 0.0, 0.0 ], <Complex128>[ 10.0, 0.0 ], <Complex128>[ 10.0, 0.0 ] ]
 	*
 	* var bool = ( x === y );
@@ -180,7 +180,7 @@ interface FillRange {
 	*     'dtype': 'generic'
 	* });
 	*
-	* var y = fillRange( x, 10.0, 2 );
+	* var y = fillBetween( x, 10.0, 2 );
 	* // returns <ndarray>[ 0.0, 0.0, 10.0, 10.0 ]
 	*
 	* var bool = ( x === y );
@@ -207,7 +207,7 @@ interface FillRange {
 	*
 	* var x = array( [ 1.0, 2.0, 3.0, 4.0 ] );
 	*
-	* var y = fillRange( x, 10.0, 2 );
+	* var y = fillBetween( x, 10.0, 2 );
 	* // returns <ndarray>[ 1.0, 2.0, 10.0, 10.0 ]
 	*
 	* var bool = ( x === y );
@@ -237,7 +237,7 @@ interface FillRange {
 	*     'dtype': 'complex128'
 	* });
 	*
-	* var y = fillRange( x, 10.0, 1, 3 );
+	* var y = fillBetween( x, 10.0, 1, 3 );
 	* // returns <ndarray>[ <Complex128>[ 0.0, 0.0 ], <Complex128>[ 10.0, 0.0 ], <Complex128>[ 10.0, 0.0 ], <Complex128>[ 0.0, 0.0 ] ]
 	*
 	* var bool = ( x === y );
@@ -267,7 +267,7 @@ interface FillRange {
 	*     'dtype': 'generic'
 	* });
 	*
-	* var y = fillRange( x, 10.0, 1, 3 );
+	* var y = fillBetween( x, 10.0, 1, 3 );
 	* // returns <ndarray>[ 0.0, 10.0, 10.0, 0.0 ]
 	*
 	* var bool = ( x === y );
@@ -295,7 +295,7 @@ interface FillRange {
 	*
 	* var x = array( [ 1.0, 2.0, 3.0, 4.0 ] );
 	*
-	* var y = fillRange( x, 10.0, 1, 3 );
+	* var y = fillBetween( x, 10.0, 1, 3 );
 	* // returns <ndarray>[ 1.0, 10.0, 10.0, 4.0 ]
 	*
 	* var bool = ( x === y );
@@ -324,15 +324,15 @@ interface FillRange {
 *
 * var x = array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 *
-* var y = fillRange( x, 10.0, 1, 4 );
+* var y = fillBetween( x, 10.0, 1, 4 );
 * // returns <ndarray>[ 1.0, 10.0, 10.0, 10.0, 5.0, 6.0 ]
 *
 * var bool = ( x === y );
 * // returns true
 */
-declare const fillRange: FillRange;
+declare const fillBetween: FillRange;
 
 
 // EXPORTS //
 
-export = fillRange;
+export = fillBetween;
