@@ -121,12 +121,12 @@ import gfirstIndexAlmostEqual = require( './index' );
 	const y = [ 1.0, 2.0, 3.0 ];
 
 	gfirstIndexAlmostEqual(); // $ExpectError
-	gfirstIndexAlmostEqual( 3 ); // $ExpectError
-	gfirstIndexAlmostEqual( 3, 1 ); // $ExpectError
-	gfirstIndexAlmostEqual( 3, 1, x ); // $ExpectError
-	gfirstIndexAlmostEqual( 3, 1, x, 1 ); // $ExpectError
-	gfirstIndexAlmostEqual( 3, 1, x, 1, y ); // $ExpectError
-	gfirstIndexAlmostEqual( 3, 1, x, 1, y, 1, {} ); // $ExpectError
+	gfirstIndexAlmostEqual( x.length ); // $ExpectError
+	gfirstIndexAlmostEqual( x.length, 1 ); // $ExpectError
+	gfirstIndexAlmostEqual( x.length, 1, x ); // $ExpectError
+	gfirstIndexAlmostEqual( x.length, 1, x, 1 ); // $ExpectError
+	gfirstIndexAlmostEqual( x.length, 1, x, 1, y ); // $ExpectError
+	gfirstIndexAlmostEqual( x.length, 1, x, 1, y, 1, {} ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a number...
@@ -258,12 +258,12 @@ import gfirstIndexAlmostEqual = require( './index' );
 	const y = [ 1.0, 2.0, 3.0 ];
 
 	gfirstIndexAlmostEqual.ndarray(); // $ExpectError
-	gfirstIndexAlmostEqual.ndarray( 3 ); // $ExpectError
-	gfirstIndexAlmostEqual.ndarray( 3, 1 ); // $ExpectError
-	gfirstIndexAlmostEqual.ndarray( 3, 1, x ); // $ExpectError
-	gfirstIndexAlmostEqual.ndarray( 3, 1, x, 1 ); // $ExpectError
-	gfirstIndexAlmostEqual.ndarray( 3, 1, x, 1, 0 ); // $ExpectError
-	gfirstIndexAlmostEqual.ndarray( 3, 1, x, 1, 0, y ); // $ExpectError
-	gfirstIndexAlmostEqual.ndarray( 3, 1, x, 1, 0, y, 1 ); // $ExpectError
-	gfirstIndexAlmostEqual.ndarray( 3, 1, x, 1, 0, y, 1, 0, {} ); // $ExpectError
+	gfirstIndexAlmostEqual.ndarray( x.length ); // $ExpectError
+	gfirstIndexAlmostEqual.ndarray( x.length, 1 ); // $ExpectError
+	gfirstIndexAlmostEqual.ndarray( x.length, 1, x ); // $ExpectError
+	gfirstIndexAlmostEqual.ndarray( x.length, 1, x, 1 ); // $ExpectError
+	gfirstIndexAlmostEqual.ndarray( x.length, 1, x, 1, 0 ); // $ExpectError
+	gfirstIndexAlmostEqual.ndarray( x.length, 1, x, 1, 0, y ); // $ExpectError
+	gfirstIndexAlmostEqual.ndarray( x.length, 1, x, 1, 0, y, 1 ); // $ExpectError
+	gfirstIndexAlmostEqual.ndarray( x.length, 1, x, 1, 0, y, 1, 0, {} ); // $ExpectError
 }

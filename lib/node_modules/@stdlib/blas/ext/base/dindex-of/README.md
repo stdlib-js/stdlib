@@ -87,13 +87,13 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 
-// Initial array...
+// Initial array:
 var x0 = new Float64Array( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
 
-// Create an offset view...
+// Create an offset view:
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
-// Find index...
+// Find index:
 var idx = dindexOf( 3, -6.0, x1, 2 );
 // returns 2
 ```
@@ -136,7 +136,8 @@ var idx = dindexOf.ndarray( 3, 3.0, x, 1, x.length-3 );
 
 ## Notes
 
--   When searching for a search element, the function checks for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct, and `-0` and `+0` are considered the same.
+-   If `N <= 0`, both functions return `-1`.
+-   When searching for a search element, the functions check for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct, and `-0` and `+0` are considered the same.
 
 </section>
 
@@ -198,7 +199,7 @@ console.log( idx );
 Returns the first index of a specified search element in a double-precision floating-point strided array.
 
 ```c
-double x[] = { 1.0, 2.0, 3.0, 4.0 };
+const double x[] = { 1.0, 2.0, 3.0, 4.0 };
 
 int idx = stdlib_strided_dindex_of( 4, 3.0, x, 1 );
 // returns 2
@@ -220,7 +221,7 @@ CBLAS_INT N stdlib_strided_dindex_of( const CBLAS_INT N, const double searchElem
 Returns the first index of a specified search element in a double-precision floating-point strided array using alternative indexing semantics.
 
 ```c
-double x[] = { 1.0, 2.0, 3.0, 4.0 };
+const double x[] = { 1.0, 2.0, 3.0, 4.0 };
 
 int idx = stdlib_strided_dindex_of_ndarray( 4, 3.0, x, 1, 0 );
 // returns 2
@@ -262,7 +263,7 @@ CBLAS_INT stdlib_strided_dindex_of_ndarray( const CBLAS_INT N, const double sear
 
 int main( void ) {
     // Create a strided array:
-    double x[] = { 1.0, -2.0, 3.0, -4.0, 5.0, -6.0, 7.0, -8.0 };
+    const double x[] = { 1.0, -2.0, 3.0, -4.0, 5.0, -6.0, 7.0, -8.0 };
 
     // Specify the number of indexed elements:
     const int N = 8;
