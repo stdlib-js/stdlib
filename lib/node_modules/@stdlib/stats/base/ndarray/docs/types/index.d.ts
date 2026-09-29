@@ -4214,7 +4214,7 @@ interface Namespace {
 	snanmskrange: typeof snanmskrange;
 
 	/**
-	* Computes the range of a one-dimensional single-precision floating-point ndarray, ignoring NaN values.
+	* Computes the range of a one-dimensional single-precision floating-point ndarray, ignoring `NaN` values.
 	*
 	* ## Notes
 	*

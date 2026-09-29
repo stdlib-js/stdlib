@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ndarray, typedndarray, genericndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray } from '@stdlib/types/ndarray';
+import { ndarray, typedndarray, genericndarray, float64ndarray, float32ndarray, float16ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray } from '@stdlib/types/ndarray';
 import { MultiSlice } from '@stdlib/types/slice';
 
 /**
@@ -144,6 +144,67 @@ declare function sliceAssign( x: ndarray, y: float64ndarray, s: MultiSlice, stri
 * // returns [ [ [ 6.0, 5.0 ], [ 4.0, 3.0 ], [ 2.0, 1.0 ] ], [ [ 6.0, 5.0 ], [ 4.0, 3.0 ], [ 2.0, 1.0 ] ] ]
 */
 declare function sliceAssign( x: ndarray, y: float32ndarray, s: MultiSlice, strict: boolean ): float32ndarray;
+
+/**
+* Assigns element values from a broadcasted input ndarray to corresponding elements in an output ndarray view.
+*
+* ## Notes
+*
+* -   The input array must be broadcast compatible with the output array view to which elements will be assigned.
+* -   The input array must have a data type which can be safely cast to the output array data type. Floating-point data types (both real and complex) are allowed to downcast to a lower precision data type of the same kind (e.g., element values from a `'float64'` input array can be assigned to corresponding elements in a `'float32'` output array).
+*
+* @param x - input array
+* @param y - output array
+* @param s - multi-slice object for the output array
+* @param strict - boolean indicating whether to enforce strict bounds checking
+* @returns output array
+*
+* @example
+* var Slice = require( '@stdlib/slice/ctor' );
+* var MultiSlice = require( '@stdlib/slice/multi' );
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndzeros = require( '@stdlib/ndarray/zeros' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
+*
+* // Define an input array:
+* var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ], 'float16' );
+* var shape = [ 3, 2 ];
+* var strides = [ 2, 1 ];
+* var offset = 0;
+*
+* var x = ndarray( 'float16', buffer, shape, strides, offset, 'row-major' );
+* // returns <ndarray>
+*
+* var sh = x.shape;
+* // returns [ 3, 2 ]
+*
+* var arr = ndarray2array( x );
+* // returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
+*
+* // Define an output array:
+* var y = ndzeros( [ 2, 3, 2 ], {
+*     'dtype': x.dtype
+* });
+*
+* // Create a slice:
+* var s0 = null;
+* var s1 = new Slice( null, null, -1 );
+* var s2 = new Slice( null, null, -1 );
+* var s = new MultiSlice( s0, s1, s2 );
+* // returns <MultiSlice>
+*
+* // Perform assignment:
+* var out = sliceAssign( x, y, s, false );
+* // returns <ndarray>
+*
+* var bool = ( out === y );
+* // returns true
+*
+* arr = ndarray2array( y );
+* // returns [ [ [ 6.0, 5.0 ], [ 4.0, 3.0 ], [ 2.0, 1.0 ] ], [ [ 6.0, 5.0 ], [ 4.0, 3.0 ], [ 2.0, 1.0 ] ] ]
+*/
+declare function sliceAssign( x: ndarray, y: float16ndarray, s: MultiSlice, strict: boolean ): float16ndarray;
 
 /**
 * Assigns element values from a broadcasted input ndarray to corresponding elements in an output ndarray view.
