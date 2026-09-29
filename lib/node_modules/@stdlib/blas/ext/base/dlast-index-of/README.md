@@ -115,7 +115,7 @@ The function has the following additional parameters:
 
 -   **offsetX**: starting index.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to access only the last three elements of the strided array
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to access only the last three elements of the strided array:
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -136,7 +136,8 @@ var idx = dlastIndexOf.ndarray( 3, 3.0, x, 1, x.length-3 );
 
 ## Notes
 
--   When searching for a search element, the function checks for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct, and `-0` and `+0` are considered the same.
+-   If `N <= 0`, both functions return `-1`.
+-   When searching for a search element, the functions check for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct, and `-0` and `+0` are considered the same.
 
 </section>
 
@@ -198,7 +199,7 @@ console.log( idx );
 Returns the last index of a specified search element in a double-precision floating-point strided array.
 
 ```c
-double x[] = { 1.0, 2.0, 3.0, 2.0 };
+const double x[] = { 1.0, 2.0, 3.0, 2.0 };
 
 int idx = stdlib_strided_dlast_index_of( 4, 2.0, x, 1 );
 // returns 3
@@ -220,7 +221,7 @@ CBLAS_INT stdlib_strided_dlast_index_of( const CBLAS_INT N, const double searchE
 Returns the last index of a specified search element in a double-precision floating-point strided array using alternative indexing semantics.
 
 ```c
-double x[] = { 1.0, 2.0, 3.0, 2.0 };
+const double x[] = { 1.0, 2.0, 3.0, 2.0 };
 
 int idx = stdlib_strided_dlast_index_of_ndarray( 4, 2.0, x, 1, 0 );
 // returns 3
