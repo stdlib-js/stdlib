@@ -106,11 +106,11 @@ import gfirstIndexGreaterThan = require( './index' );
 	var y = [ 1.0, 2.0, 3.0 ];
 
 	gfirstIndexGreaterThan(); // $ExpectError
-	gfirstIndexGreaterThan( 3 ); // $ExpectError
-	gfirstIndexGreaterThan( 3, x ); // $ExpectError
-	gfirstIndexGreaterThan( 3, x, 1 ); // $ExpectError
-	gfirstIndexGreaterThan( 3, x, 1, y ); // $ExpectError
-	gfirstIndexGreaterThan( 3, x, 1, y, 1, {} ); // $ExpectError
+	gfirstIndexGreaterThan( x.length ); // $ExpectError
+	gfirstIndexGreaterThan( x.length, x ); // $ExpectError
+	gfirstIndexGreaterThan( x.length, x, 1 ); // $ExpectError
+	gfirstIndexGreaterThan( x.length, x, 1, y ); // $ExpectError
+	gfirstIndexGreaterThan( x.length, x, 1, y, 1, {} ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a number...
@@ -227,11 +227,11 @@ import gfirstIndexGreaterThan = require( './index' );
 	var y = [ 1.0, 2.0, 3.0 ];
 
 	gfirstIndexGreaterThan.ndarray(); // $ExpectError
-	gfirstIndexGreaterThan.ndarray( 3 ); // $ExpectError
-	gfirstIndexGreaterThan.ndarray( 3, x ); // $ExpectError
-	gfirstIndexGreaterThan.ndarray( 3, x, 1 ); // $ExpectError
-	gfirstIndexGreaterThan.ndarray( 3, x, 1, 0 ); // $ExpectError
-	gfirstIndexGreaterThan.ndarray( 3, x, 1, 0, y ); // $ExpectError
-	gfirstIndexGreaterThan.ndarray( 3, x, 1, 0, y, 1 ); // $ExpectError
-	gfirstIndexGreaterThan.ndarray( 3, x, 1, 0, y, 1, 0, {} ); // $ExpectError
+	gfirstIndexGreaterThan.ndarray( x.length ); // $ExpectError
+	gfirstIndexGreaterThan.ndarray( x.length, x ); // $ExpectError
+	gfirstIndexGreaterThan.ndarray( x.length, x, 1 ); // $ExpectError
+	gfirstIndexGreaterThan.ndarray( x.length, x, 1, 0 ); // $ExpectError
+	gfirstIndexGreaterThan.ndarray( x.length, x, 1, 0, y ); // $ExpectError
+	gfirstIndexGreaterThan.ndarray( x.length, x, 1, 0, y, 1 ); // $ExpectError
+	gfirstIndexGreaterThan.ndarray( x.length, x, 1, 0, y, 1, 0, {} ); // $ExpectError
 }
