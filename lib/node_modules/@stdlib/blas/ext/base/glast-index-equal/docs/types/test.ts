@@ -106,11 +106,11 @@ import glastIndexEqual = require( './index' );
 	var y = [ 1.0, 2.0, 3.0 ];
 
 	glastIndexEqual(); // $ExpectError
-	glastIndexEqual( 3 ); // $ExpectError
-	glastIndexEqual( 3, x ); // $ExpectError
-	glastIndexEqual( 3, x, 1 ); // $ExpectError
-	glastIndexEqual( 3, x, 1, y ); // $ExpectError
-	glastIndexEqual( 3, x, 1, y, 1, {} ); // $ExpectError
+	glastIndexEqual( x.length ); // $ExpectError
+	glastIndexEqual( x.length, x ); // $ExpectError
+	glastIndexEqual( x.length, x, 1 ); // $ExpectError
+	glastIndexEqual( x.length, x, 1, y ); // $ExpectError
+	glastIndexEqual( x.length, x, 1, y, 1, {} ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a number...
@@ -227,11 +227,11 @@ import glastIndexEqual = require( './index' );
 	var y = [ 1.0, 2.0, 3.0 ];
 
 	glastIndexEqual.ndarray(); // $ExpectError
-	glastIndexEqual.ndarray( 3 ); // $ExpectError
-	glastIndexEqual.ndarray( 3, x ); // $ExpectError
-	glastIndexEqual.ndarray( 3, x, 1 ); // $ExpectError
-	glastIndexEqual.ndarray( 3, x, 1, 0 ); // $ExpectError
-	glastIndexEqual.ndarray( 3, x, 1, 0, y ); // $ExpectError
-	glastIndexEqual.ndarray( 3, x, 1, 0, y, 1 ); // $ExpectError
-	glastIndexEqual.ndarray( 3, x, 1, 0, y, 1, 0, {} ); // $ExpectError
+	glastIndexEqual.ndarray( x.length ); // $ExpectError
+	glastIndexEqual.ndarray( x.length, x ); // $ExpectError
+	glastIndexEqual.ndarray( x.length, x, 1 ); // $ExpectError
+	glastIndexEqual.ndarray( x.length, x, 1, 0 ); // $ExpectError
+	glastIndexEqual.ndarray( x.length, x, 1, 0, y ); // $ExpectError
+	glastIndexEqual.ndarray( x.length, x, 1, 0, y, 1 ); // $ExpectError
+	glastIndexEqual.ndarray( x.length, x, 1, 0, y, 1, 0, {} ); // $ExpectError
 }
