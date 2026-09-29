@@ -33,7 +33,7 @@ y = \mathop{\mathrm{arccosh}}(x) = \ln\left(x + \sqrt{x^2 - 1}\right)
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="y = \operatorname{arccosh}(x) = \ln\left(x + \sqrt{x^2 - 1}\right)" data-equation="eq:hyperbolic_arccosine">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@0354ee249fe846bfb31889095c3a536bd3e9d7fc/lib/node_modules/@stdlib/math/base/special/fast/acoshf/docs/img/equation_hyperbolic_arccosine.svg" alt="Hyperbolic arccosine function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@d175fd63bd070783ff6c4a2b2b9bf1922e1da687/lib/node_modules/@stdlib/math/base/special/fast/acoshf/docs/img/equation_hyperbolic_arccosine.svg" alt="Hyperbolic arccosine function">
     <br>
 </div> -->
 
