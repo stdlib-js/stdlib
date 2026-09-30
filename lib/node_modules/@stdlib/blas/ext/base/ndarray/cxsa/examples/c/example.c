@@ -1,0 +1,92 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2026 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+#include "stdlib/blas/ext/base/ndarray/cxsa.h"
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/complex/float32/real.h"
+#include "stdlib/complex/float32/imag.h"
+#include "stdlib/ndarray/ctor.h"
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/base/bytes_per_element.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+int main( void ) {
+	// Create a data buffer:
+	float data[] = { -2.0f, 1.0f, 3.0f, -5.0f };
+
+	// Specify the number of array dimensions:
+	const int64_t ndims = 1;
+
+	// Specify the array shape:
+	int64_t shape[] = { 2 };
+
+	// Specify the array strides:
+	int64_t strides[] = { STDLIB_NDARRAY_COMPLEX64_BYTES_PER_ELEMENT };
+
+	// Specify the byte offset:
+	const int64_t offset = 0;
+
+	// Specify the array order:
+	const enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+	// Specify the index mode:
+	const enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+	// Specify the subscript index modes:
+	int8_t submodes[] = { STDLIB_NDARRAY_INDEX_ERROR };
+	const int64_t nsubmodes = 1;
+
+	// Create an ndarray:
+	// cppcheck-suppress invalidPointerCast
+	struct ndarray *x = stdlib_ndarray_allocate( STDLIB_NDARRAY_COMPLEX64, (uint8_t *)data, ndims, shape, strides, offset, order, imode, nsubmodes, submodes );
+
+	// Create a data buffer for an ndarray containing the scalar constant to subtract:
+	const float adata[] = { 5.0f, 0.0f };
+
+	// Specify the array strides for a zero-dimensional ndarray:
+	int64_t astrides[] = { 0 };
+
+	// Create an ndarray containing the scalar constant to subtract:
+	// cppcheck-suppress invalidPointerCast
+	struct ndarray *alpha = stdlib_ndarray_allocate( STDLIB_NDARRAY_COMPLEX64, (uint8_t *)adata, 0, NULL, astrides, 0, order, imode, nsubmodes, submodes );
+	if ( x == NULL || alpha == NULL ) {
+		fprintf( stderr, "Error allocating memory.\n" );
+		exit( 1 );
+	}
+
+	// Define a list of ndarrays:
+	const struct ndarray *arrays[] = { x, alpha };
+
+	// Perform computation:
+	stdlib_blas_ext_cxsa( arrays );
+
+	// Print the result:
+	// cppcheck-suppress invalidPointerCast
+	const stdlib_complex64_t *v = (const stdlib_complex64_t *)data;
+	for ( int i = 0; i < 2; i++ ) {
+		printf( "x[ %i ] = %f + %fi\n", i, stdlib_complex64_real( v[ i ] ), stdlib_complex64_imag( v[ i ] ) );
+	}
+
+	// Free allocated memory:
+	stdlib_ndarray_free( x );
+	stdlib_ndarray_free( alpha );
+}
