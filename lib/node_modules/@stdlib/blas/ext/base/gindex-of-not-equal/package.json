@@ -56,8 +56,10 @@
     "blas",
     "extended",
     "search",
+    "not",
+    "equal",
     "index",
-    "get",
+    "compare",
     "strided",
     "array",
     "ndarray"

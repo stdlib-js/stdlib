@@ -48,12 +48,12 @@
     1
 
     // Using view offsets:
-    > var x0 = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 0.0 ] );
-    > var y0 = new {{alias:@stdlib/array/float64}}( [ 9.0, 9.0, 9.0, 0.0, 9.0, 9.0, 9.0 ] );
+    > var x0 = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
     > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
-    > var y1 = new {{alias:@stdlib/array/float64}}( y0.buffer, y0.BYTES_PER_ELEMENT*2 );
-    > idx = {{alias}}( 3, x1, 2, y1, 2 )
-    -1
+    > var y0 = new {{alias:@stdlib/array/float64}}( [ 9.0, 9.0, 0.0, 9.0 ] );
+    > var y1 = new {{alias:@stdlib/array/float64}}( y0.buffer, y0.BYTES_PER_ELEMENT*1 );
+    > idx = {{alias}}( 2, x1, 1, y1, 1 )
+    1
 
 
 {{alias}}.ndarray( N, x, strideX, offsetX, y, strideY, offsetY )
@@ -62,8 +62,8 @@
     alternative indexing semantics.
 
     While typed array views mandate a view offset based on the underlying
-    buffer, the offset parameters support indexing semantics based on
-    starting indices.
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
 
     Parameters
     ----------
@@ -101,7 +101,7 @@
     > var idx = {{alias}}.ndarray( x.length, x, 1, 0, y, 1, 0 )
     1
 
-    // Using offsets:
+    // Using index offsets:
     > x = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 0.0 ];
     > y = [ 9.0, 9.0, 9.0, 0.0, 9.0, 9.0, 0.0 ];
     > idx = {{alias}}.ndarray( 3, x, 2, 1, y, 2, 2 )

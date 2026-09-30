@@ -39,18 +39,19 @@ import dfirstIndexLessThan = require( './index' );
 	dfirstIndexLessThan( false, x, 1, y, 1 ); // $ExpectError
 	dfirstIndexLessThan( null, x, 1, y, 1 ); // $ExpectError
 	dfirstIndexLessThan( {}, x, 1, y, 1 ); // $ExpectError
+	dfirstIndexLessThan( ( x: number ): number => x, x, 1, y, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a Float64Array...
 {
-	var x = new Float64Array( [ 1.0, 2.0, 3.0 ] );
 	var y = new Float64Array( [ 1.0, 2.0, 3.0 ] );
 
-	dfirstIndexLessThan( x.length, '1', 1, y, 1 ); // $ExpectError
-	dfirstIndexLessThan( x.length, true, 1, y, 1 ); // $ExpectError
-	dfirstIndexLessThan( x.length, false, 1, y, 1 ); // $ExpectError
-	dfirstIndexLessThan( x.length, null, 1, y, 1 ); // $ExpectError
-	dfirstIndexLessThan( x.length, {}, 1, y, 1 ); // $ExpectError
+	dfirstIndexLessThan( 3, '1', 1, y, 1 ); // $ExpectError
+	dfirstIndexLessThan( 3, true, 1, y, 1 ); // $ExpectError
+	dfirstIndexLessThan( 3, false, 1, y, 1 ); // $ExpectError
+	dfirstIndexLessThan( 3, null, 1, y, 1 ); // $ExpectError
+	dfirstIndexLessThan( 3, {}, 1, y, 1 ); // $ExpectError
+	dfirstIndexLessThan( 3, ( x: number ): number => x, 1, y, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not a number...
@@ -63,6 +64,7 @@ import dfirstIndexLessThan = require( './index' );
 	dfirstIndexLessThan( x.length, x, false, y, 1 ); // $ExpectError
 	dfirstIndexLessThan( x.length, x, null, y, 1 ); // $ExpectError
 	dfirstIndexLessThan( x.length, x, {}, y, 1 ); // $ExpectError
+	dfirstIndexLessThan( x.length, x, ( x: number ): number => x, y, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fourth argument which is not a Float64Array...
@@ -74,6 +76,7 @@ import dfirstIndexLessThan = require( './index' );
 	dfirstIndexLessThan( x.length, x, 1, false, 1 ); // $ExpectError
 	dfirstIndexLessThan( x.length, x, 1, null, 1 ); // $ExpectError
 	dfirstIndexLessThan( x.length, x, 1, {}, 1 ); // $ExpectError
+	dfirstIndexLessThan( x.length, x, 1, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fifth argument which is not a number...
@@ -86,6 +89,7 @@ import dfirstIndexLessThan = require( './index' );
 	dfirstIndexLessThan( x.length, x, 1, y, false ); // $ExpectError
 	dfirstIndexLessThan( x.length, x, 1, y, null ); // $ExpectError
 	dfirstIndexLessThan( x.length, x, 1, y, {} ); // $ExpectError
+	dfirstIndexLessThan( x.length, x, 1, y, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -94,10 +98,11 @@ import dfirstIndexLessThan = require( './index' );
 	var y = new Float64Array( [ 1.0, 2.0, 3.0 ] );
 
 	dfirstIndexLessThan(); // $ExpectError
-	dfirstIndexLessThan( 3, x ); // $ExpectError
-	dfirstIndexLessThan( 3, x, 1 ); // $ExpectError
-	dfirstIndexLessThan( 3, x, 1, y ); // $ExpectError
-	dfirstIndexLessThan( 3, x, 1, y, 1, {} ); // $ExpectError
+	dfirstIndexLessThan( x.length ); // $ExpectError
+	dfirstIndexLessThan( x.length, x ); // $ExpectError
+	dfirstIndexLessThan( x.length, x, 1 ); // $ExpectError
+	dfirstIndexLessThan( x.length, x, 1, y ); // $ExpectError
+	dfirstIndexLessThan( x.length, x, 1, y, 1, {} ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a number...
@@ -118,18 +123,19 @@ import dfirstIndexLessThan = require( './index' );
 	dfirstIndexLessThan.ndarray( false, x, 1, 0, y, 1, 0 ); // $ExpectError
 	dfirstIndexLessThan.ndarray( null, x, 1, 0, y, 1, 0 ); // $ExpectError
 	dfirstIndexLessThan.ndarray( {}, x, 1, 0, y, 1, 0 ); // $ExpectError
+	dfirstIndexLessThan.ndarray( ( x: number ): number => x, x, 1, 0, y, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a second argument which is not a Float64Array...
 {
-	var x = new Float64Array( [ 1.0, 2.0, 3.0 ] );
 	var y = new Float64Array( [ 1.0, 2.0, 3.0 ] );
 
-	dfirstIndexLessThan.ndarray( x.length, '1', 1, 0, y, 1, 0 ); // $ExpectError
-	dfirstIndexLessThan.ndarray( x.length, true, 1, 0, y, 1, 0 ); // $ExpectError
-	dfirstIndexLessThan.ndarray( x.length, false, 1, 0, y, 1, 0 ); // $ExpectError
-	dfirstIndexLessThan.ndarray( x.length, null, 1, 0, y, 1, 0 ); // $ExpectError
-	dfirstIndexLessThan.ndarray( x.length, {}, 1, 0, y, 1, 0 ); // $ExpectError
+	dfirstIndexLessThan.ndarray( 3, '1', 1, 0, y, 1, 0 ); // $ExpectError
+	dfirstIndexLessThan.ndarray( 3, true, 1, 0, y, 1, 0 ); // $ExpectError
+	dfirstIndexLessThan.ndarray( 3, false, 1, 0, y, 1, 0 ); // $ExpectError
+	dfirstIndexLessThan.ndarray( 3, null, 1, 0, y, 1, 0 ); // $ExpectError
+	dfirstIndexLessThan.ndarray( 3, {}, 1, 0, y, 1, 0 ); // $ExpectError
+	dfirstIndexLessThan.ndarray( 3, ( x: number ): number => x, 1, 0, y, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a third argument which is not a number...
@@ -142,6 +148,7 @@ import dfirstIndexLessThan = require( './index' );
 	dfirstIndexLessThan.ndarray( x.length, x, false, 0, y, 1, 0 ); // $ExpectError
 	dfirstIndexLessThan.ndarray( x.length, x, null, 0, y, 1, 0 ); // $ExpectError
 	dfirstIndexLessThan.ndarray( x.length, x, {}, 0, y, 1, 0 ); // $ExpectError
+	dfirstIndexLessThan.ndarray( x.length, x, ( x: number ): number => x, 0, y, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fourth argument which is not a number...
@@ -154,6 +161,7 @@ import dfirstIndexLessThan = require( './index' );
 	dfirstIndexLessThan.ndarray( x.length, x, 1, false, y, 1, 0 ); // $ExpectError
 	dfirstIndexLessThan.ndarray( x.length, x, 1, null, y, 1, 0 ); // $ExpectError
 	dfirstIndexLessThan.ndarray( x.length, x, 1, {}, y, 1, 0 ); // $ExpectError
+	dfirstIndexLessThan.ndarray( x.length, x, 1, ( x: number ): number => x, y, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fifth argument which is not a Float64Array...
@@ -165,6 +173,7 @@ import dfirstIndexLessThan = require( './index' );
 	dfirstIndexLessThan.ndarray( x.length, x, 1, 0, false, 1, 0 ); // $ExpectError
 	dfirstIndexLessThan.ndarray( x.length, x, 1, 0, null, 1, 0 ); // $ExpectError
 	dfirstIndexLessThan.ndarray( x.length, x, 1, 0, {}, 1, 0 ); // $ExpectError
+	dfirstIndexLessThan.ndarray( x.length, x, 1, 0, ( x: number ): number => x, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a sixth argument which is not a number...
@@ -177,6 +186,7 @@ import dfirstIndexLessThan = require( './index' );
 	dfirstIndexLessThan.ndarray( x.length, x, 1, 0, y, false, 0 ); // $ExpectError
 	dfirstIndexLessThan.ndarray( x.length, x, 1, 0, y, null, 0 ); // $ExpectError
 	dfirstIndexLessThan.ndarray( x.length, x, 1, 0, y, {}, 0 ); // $ExpectError
+	dfirstIndexLessThan.ndarray( x.length, x, 1, 0, y, ( x: number ): number => x, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a seventh argument which is not a number...
@@ -189,8 +199,8 @@ import dfirstIndexLessThan = require( './index' );
 	dfirstIndexLessThan.ndarray( x.length, x, 1, 0, y, 1, false ); // $ExpectError
 	dfirstIndexLessThan.ndarray( x.length, x, 1, 0, y, 1, null ); // $ExpectError
 	dfirstIndexLessThan.ndarray( x.length, x, 1, 0, y, 1, {} ); // $ExpectError
+	dfirstIndexLessThan.ndarray( x.length, x, 1, 0, y, 1, ( x: number ): number => x ); // $ExpectError
 }
-
 
 // The compiler throws an error if the `ndarray` method is provided an unsupported number of arguments...
 {
@@ -198,6 +208,7 @@ import dfirstIndexLessThan = require( './index' );
 	var y = new Float64Array( [ 1.0, 2.0, 3.0 ] );
 
 	dfirstIndexLessThan.ndarray(); // $ExpectError
+	dfirstIndexLessThan.ndarray( x.length ); // $ExpectError
 	dfirstIndexLessThan.ndarray( x.length, x ); // $ExpectError
 	dfirstIndexLessThan.ndarray( x.length, x, 1 ); // $ExpectError
 	dfirstIndexLessThan.ndarray( x.length, x, 1, 0 ); // $ExpectError
