@@ -1,0 +1,11 @@
+---
+type: amend-message
+---
+feat: add `stats/incr/nanmae`
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/6065
+Closes: https://github.com/stdlib-js/stdlib/issues/5563
+
+Co-authored-by: Philipp Burckhardt <pburckhardt@outlook.com>
+Co-authored-by: stdlib-bot <noreply@stdlib.io>
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>

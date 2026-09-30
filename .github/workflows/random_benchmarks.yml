@@ -86,7 +86,7 @@ jobs:
       - name: 'Run JavaScript and native add-on benchmarks'
         run: |
           make benchmark-random-javascript RANDOM_SELECTION_SIZE=50 BUILD_ADDONS=1
-        timeout-minutes: 60
+        timeout-minutes: 90
 
       # Install Cephes dependencies (required by C benchmarks which compare against the Cephes math library; accounting for possible network failures when downloading):
       - name: 'Install Cephes dependencies'

@@ -1,0 +1,171 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2026 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# dvander
+
+> Generate a double-precision floating-point Vandermonde matrix.
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var dvander = require( '@stdlib/blas/ext/base/ndarray/dvander' );
+```
+
+#### dvander( arrays )
+
+Generates a double-precision floating-point Vandermonde matrix.
+
+```javascript
+var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
+var zeros = require( '@stdlib/ndarray/zeros' );
+var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+
+var x = new Float64Vector( [ 1.0, 2.0, 3.0 ] );
+var out = zeros( [ 3, 3 ], {
+    'dtype': 'float64'
+});
+
+var mode = scalar2ndarray( 1, {
+    'dtype': 'float64'
+});
+
+var v = dvander( [ x, out, mode ] );
+// returns <ndarray>[ [ 1.0, 1.0, 1.0 ], [ 1.0, 2.0, 4.0 ], [ 1.0, 3.0, 9.0 ] ]
+
+var bool = ( v === out );
+// returns true
+```
+
+The function has the following parameters:
+
+-   **arrays**: array-like object containing the following ndarrays:
+
+    -   a one-dimensional input ndarray.
+    -   a two-dimensional output ndarray.
+    -   a zero-dimensional ndarray specifying the mode.
+
+Let the output ndarray have shape `[M, N]`. When the mode is positive, the matrix is generated such that
+
+```text
+[
+    1   x_0^1   x_0^2   ...   x_0^(N-1)
+    1   x_1^1   x_1^2   ...   x_1^(N-1)
+    ...
+]
+```
+
+with increasing powers along the rows.
+
+When the mode is negative, the matrix is generated such that
+
+```text
+[
+    x_0^(N-1)   ...   x_0^2   x_0^1   1
+    x_1^(N-1)   ...   x_1^2   x_1^1   1
+    ...
+]
+```
+
+with decreasing powers along the rows.
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+## Notes
+
+-   Let the output ndarray have shape `[M, N]`. If `M <= 0` or `N <= 0`, the function returns the output ndarray unchanged.
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var discreteUniform = require( '@stdlib/random/discrete-uniform' );
+var zeros = require( '@stdlib/ndarray/zeros' );
+var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var ndarray2array = require( '@stdlib/ndarray/to-array' );
+var dvander = require( '@stdlib/blas/ext/base/ndarray/dvander' );
+
+var M = 3;
+var N = 4;
+
+var opts = {
+    'dtype': 'float64'
+};
+
+var x = discreteUniform( [ M ], 0, 10, opts );
+console.log( ndarray2array( x ) );
+
+var out = zeros( [ M, N ], opts );
+
+var mode = scalar2ndarray( -1, {
+    'dtype': 'float64'
+});
+
+var v = dvander( [ x, out, mode ] );
+console.log( ndarray2array( v ) );
+```
+
+</section>
+
+<!-- /.examples -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+<!-- <related-links> -->
+
+<!-- </related-links> -->
+
+</section>
+
+<!-- /.links -->

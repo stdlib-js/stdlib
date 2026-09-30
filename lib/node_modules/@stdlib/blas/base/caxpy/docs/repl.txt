@@ -1,7 +1,7 @@
 
 {{alias}}( N, alpha, x, strideX, y, strideY )
     Scales a single-precision complex floating-point vector by a single-
-    precision complex floating point constant and adds the result to a single-
+    precision complex floating-point constant and adds the result to a single-
     precision complex floating-point vector.
 
     The `N` and stride parameters determine how values from `x` are scaled by
