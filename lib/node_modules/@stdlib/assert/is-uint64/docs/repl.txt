@@ -1,0 +1,28 @@
+
+{{alias}}( value )
+    Tests if a value is an unsigned 64-bit integer.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is an unsigned 64-bit integer.
+
+    Examples
+    --------
+    > var bool = {{alias}}( new {{alias:@stdlib/number/uint64/ctor}}( 1234 ) )
+    true
+    > bool = {{alias}}( new {{alias:@stdlib/complex/float64/ctor}}( 3.0, 1.0 ) )
+    false
+    > bool = {{alias}}( 3.14 )
+    false
+    > bool = {{alias}}( {} )
+    false
+
+    See Also
+    --------
+

@@ -23,6 +23,7 @@ import * as blas from '@stdlib/types/blas';
 import * as complex from '@stdlib/types/complex';
 import * as iter from '@stdlib/types/iter';
 import * as ndarray from '@stdlib/types/ndarray';
+import * as number from '@stdlib/types/number';
 import * as obj from '@stdlib/types/object';
 import * as random from '@stdlib/types/random';
 import * as slice from '@stdlib/types/slice';
@@ -485,6 +486,29 @@ function cmplx128Array(): array.Complex128Array {
 		}
 	};
 	if ( arr.length !== 3 ) {
+		throw new Error( 'something went wrong' );
+	}
+}
+
+// The compiler should not throw an error when using number types...
+{
+	const v1: number.Int64 = {
+		'hi': 1234,
+		'lo': 5678,
+		'byteLength': 8,
+		'BYTES_PER_ELEMENT': 8
+	};
+	if ( v1.hi !== 1234 ) {
+		throw new Error( 'something went wrong' );
+	}
+
+	const v2: number.Uint64 = {
+		'hi': 1234,
+		'lo': 5678,
+		'byteLength': 8,
+		'BYTES_PER_ELEMENT': 8
+	};
+	if ( v2.hi !== 1234 ) {
 		throw new Error( 'something went wrong' );
 	}
 }

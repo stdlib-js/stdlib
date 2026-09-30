@@ -1,0 +1,50 @@
+
+{{alias}}( x[, options] )
+    Returns a read-only view of the diagonal of a matrix (or stack of
+    matrices).
+
+    The order of the dimension indices contained in `options.dims` matters.
+    The first element specifies the row-like dimension. The second element
+    specifies the column-like dimension.
+
+    Each provided dimension index must reside on the interval [-ndims, ndims-1].
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    options: Object (optional)
+        Function options.
+
+    options.k: integer (optional)
+        Diagonal offset. The diagonal offset is interpreted as `column - row`.
+        Accordingly, when equal to zero, the function returns the main diagonal.
+        When greater than zero, the function returns the diagonal above the main
+        diagonal. When less than zero, the function returns the diagonal below
+        the main diagonal. Default: 0.
+
+    options.dims: ArrayLikeObject<integer> (optional)
+        Dimension indices defining the plane from which to extract the
+        diagonal. The first element specifies the row-like dimension. The
+        second element specifies the column-like dimension. Must contain
+        exactly two unique dimension indices. If less than zero, an index is
+        resolved relative to the last dimension, with the last dimension
+        corresponding to the value `-1`. Default: [ -2, -1 ].
+
+    Returns
+    -------
+    out: ndarray
+        Output array view.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
+    <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
+    > var y = {{alias}}( x )
+    <ndarray>[ 1, 4 ]
+    > y = {{alias}}( x, { 'k': 1 } )
+    <ndarray>[ 2 ]
+
+    See Also
+    --------

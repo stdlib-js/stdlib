@@ -43,10 +43,9 @@ var midrange = require( '@stdlib/stats/base/ndarray/midrange' );
 Computes the [mid-range][mid-range] of a one-dimensional ndarray.
 
 ```javascript
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var vector = require( '@stdlib/ndarray/vector/ctor' );
 
-var xbuf = [ 1.0, 2.0, 5.0, 10.0 ];
-var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = vector( [ 1.0, 2.0, 5.0, 10.0 ], 'generic' );
 
 var v = midrange( [ x ] );
 // returns 5.5
@@ -77,15 +76,15 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var uniform = require( '@stdlib/random/array/uniform' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var uniform = require( '@stdlib/random/uniform' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var midrange = require( '@stdlib/stats/base/ndarray/midrange' );
 
-var xbuf = uniform( 10, -50.0, 50.0, {
+var opts = {
     'dtype': 'generic'
-});
-var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+};
+
+var x = uniform( [ 10 ], -50.0, 50.0, opts );
 console.log( ndarray2array( x ) );
 
 var v = midrange( [ x ] );

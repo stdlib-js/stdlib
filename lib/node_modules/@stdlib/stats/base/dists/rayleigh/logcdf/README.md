@@ -20,7 +20,7 @@ limitations under the License.
 
 # Logarithm of Cumulative Distribution Function
 
-> [Rayleigh][rayleigh-distribution] distribution logarithm of [cumulative distribution function][cdf].
+> [Rayleigh][rayleigh-distribution] distribution natural logarithm of [cumulative distribution function][cdf].
 
 <section class="intro">
 
@@ -55,7 +55,7 @@ var logcdf = require( '@stdlib/stats/base/dists/rayleigh/logcdf' );
 
 #### logcdf( x, sigma )
 
-Evaluates the logarithm of the [cumulative distribution function][cdf] for a [Rayleigh][rayleigh-distribution] distribution with scale parameter `sigma`.
+Evaluates the natural logarithm of the [cumulative distribution function][cdf] for a [Rayleigh][rayleigh-distribution] distribution with scale parameter `sigma`.
 
 ```javascript
 var y = logcdf( 2.0, 3.0 );
@@ -177,7 +177,7 @@ logEachMap( 'x: %0.4f, σ: %0.4f, ln(F(x;σ)): %0.4f', x, sigma, logcdf );
 
 #### stdlib_base_dists_rayleigh_logcdf( x, sigma )
 
-Evaluates the logarithm of the cumulative distribution function (CDF) for a Rayleigh distribution.
+Evaluates the natural logarithm of the cumulative distribution function (CDF) for a Rayleigh distribution.
 
 ```c
 double out = stdlib_base_dists_rayleigh_logcdf( 2.0, 3.0 );

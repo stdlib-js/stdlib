@@ -36,6 +36,6 @@ int main( void ) {
 		x = stdlib_base_round( random_uniform( 0.0, 10.0 ) );
 		mu = stdlib_base_round( random_uniform( 0.0, 10.0 ) );
 		y = stdlib_base_dists_degenerate_cdf( x, mu );
-		printf( "x: %lf, µ: %lf, F(x;µ): %lf\n", x, mu, y );
+		printf( "x: %lf, μ: %lf, F(x;μ): %lf\n", x, mu, y );
 	}
 }

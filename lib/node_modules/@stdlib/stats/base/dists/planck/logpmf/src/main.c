@@ -24,7 +24,7 @@
 #include "stdlib/constants/float64/ninf.h"
 
 /**
-* Evaluates the logarithm of the probability mass function (PMF) for a Planck distribution with shape parameter `lambda`.
+* Evaluates the natural logarithm of the probability mass function (PMF) for a Planck distribution with shape parameter `lambda`.
 *
 * @param x      input value
 * @param lambda shape parameter

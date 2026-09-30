@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Trims whitespace from the end of a string.
+* Trims whitespace characters from the end of a string.
 *
 * @param str - input string
 * @returns trimmed string

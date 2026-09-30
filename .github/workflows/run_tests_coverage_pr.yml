@@ -85,7 +85,7 @@ jobs:
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
-        uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238 # v6.2.0
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
         with:
           node-version: '20' # 'lts/*'
         timeout-minutes: 5
@@ -93,7 +93,7 @@ jobs:
       # Cache dependencies:
       - name: 'Cache dependencies'
         # Pin action to full length commit SHA
-        uses: actions/cache@668228422ae6a00e4ad889ee87cd7109ec5666a7 # v5.0.4
+        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
         id: cache
         with:
           path: |
@@ -123,14 +123,16 @@ jobs:
           # Get changed files using git diff against base branch:
           git fetch origin ${{ github.base_ref }} --depth=1
           files=$(git diff --diff-filter=AM --name-only origin/${{ github.base_ref }}...HEAD)
-          directories=$(for file in $files; do dirname $file; done | uniq | tr '\n' ' ' | sed 's/ $//')
+          directories=$(for file in $files; do dirname $file; done | sort -u | tr '\n' ' ' | sed 's/ $//')
           echo "directories=${directories}" >> $GITHUB_OUTPUT
 
       # Exit early if non-package directories are changed:
       - name: 'Exit early if non-package directories are changed'
         id: check-changed
+        env:
+          DIRECTORIES: ${{ steps.changed-directories.outputs.directories }}
         run: |
-          directories="${{ steps.changed-directories.outputs.directories }}"
+          directories="$DIRECTORIES"
           skip="false"
           for directory in $directories; do
             if [[ "$directory" != "lib/node_modules/@stdlib"* ]]; then
@@ -149,8 +151,9 @@ jobs:
           GITHUB_REPO: ${{ github.repository }}
           GITHUB_REF: ${{ github.ref }}
           COVERAGE_BASE_URL: 'https://coverage.stdlib.io/pr-${{ github.event.pull_request.number }}'
+          DIRECTORIES: ${{ steps.changed-directories.outputs.directories }}
         run: |
-          directories="${{ steps.changed-directories.outputs.directories }}"
+          directories="$DIRECTORIES"
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/run_tests_coverage/run" "$directories"
         timeout-minutes: 30
 
@@ -158,8 +161,10 @@ jobs:
       - name: 'Create final coverage report'
         id: create-report
         if: steps.check-changed.outputs.skip == 'false'
+        env:
+          TABLE: ${{ steps.extract-coverage.outputs.table }}
         run: |
-          table="${{ steps.extract-coverage.outputs.table }}"
+          table="$TABLE"
           if [ -z "$table" ]; then
             report="## Coverage Report\n\nNo coverage information available."
           else
@@ -172,18 +177,19 @@ jobs:
       # Save PR metadata for the publish workflow:
       - name: 'Save PR metadata'
         if: steps.check-changed.outputs.skip == 'false'
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REPORT: ${{ steps.create-report.outputs.report }}
         run: |
           mkdir -p pr-metadata
-          echo "${{ github.event.pull_request.number }}" > pr-metadata/pr_number
-          cat > pr-metadata/report <<'EOF'
-          ${{ steps.create-report.outputs.report }}
-          EOF
+          printf '%s\n' "$PR_NUMBER" > pr-metadata/pr_number
+          printf '%s\n' "$REPORT" > pr-metadata/report
 
       # Upload PR metadata as artifact:
       - name: 'Upload PR metadata'
         if: steps.check-changed.outputs.skip == 'false'
         # Pin action to full length commit SHA
-        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: pr-metadata
           path: pr-metadata/
@@ -193,7 +199,7 @@ jobs:
       - name: 'Upload coverage artifacts'
         if: steps.check-changed.outputs.skip == 'false'
         # Pin action to full length commit SHA
-        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: coverage-artifacts
           path: artifacts/

@@ -24,10 +24,10 @@ import { ComplexLike } from '@stdlib/types/complex';
 import { typedndarray } from '@stdlib/types/ndarray';
 
 /**
-* Creates a zero-filled array having the same shape and data type as a provided input ndarray.
+* Creates a zero-filled ndarray having the same shape and data type as a provided input ndarray.
 *
 * @param x - input array
-* @returns zero-filled array
+* @returns zero-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );

@@ -23,12 +23,12 @@
 import { Shape, Order, genericndarray, GenericDataType } from '@stdlib/types/ndarray';
 
 /**
-* Creates a null-filled array having a specified shape and data type.
+* Creates a null-filled ndarray having a specified shape and data type.
 *
 * @param dtype - underlying data type
 * @param shape - array shape
 * @param order - specifies whether an array is row-major (C-style) or column-major (Fortran-style)
-* @returns null-filled array
+* @returns null-filled ndarray
 *
 * @example
 * var getDType = require( '@stdlib/ndarray/dtype' );

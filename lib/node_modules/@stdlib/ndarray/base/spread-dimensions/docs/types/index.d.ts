@@ -65,7 +65,7 @@ import { Collection } from '@stdlib/types/array';
 * v = y.get( 0, 1, 0, 1, 0 );
 * // returns 4
 */
-declare function spreadDimensions<T extends ndarray>( ndims: number, x: T, dims: Collection<number>, writable: boolean ): T;
+declare function spreadDimensions<T extends ndarray = ndarray>( ndims: number, x: T, dims: Collection<number>, writable: boolean ): T;
 
 
 // EXPORTS //

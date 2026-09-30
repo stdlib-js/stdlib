@@ -93,6 +93,7 @@ declare function broadcastScalar( value: number, dtype: 'float32', shape: Shape,
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
 * var getDType = require( '@stdlib/ndarray/dtype' );
+* var getData = require( '@stdlib/ndarray/data-buffer' );
 * var Complex128 = require( '@stdlib/complex/float64/ctor' );
 *
 * var v = new Complex128( 1.0, 2.0 );
@@ -106,8 +107,8 @@ declare function broadcastScalar( value: number, dtype: 'float32', shape: Shape,
 * var dt = String( getDType( x ) );
 * // returns 'complex128'
 *
-* var v = x.get( 0, 1 );
-* // returns <Complex128>[ 1.0, 2.0 ]
+* var buf = getData( x );
+* // returns <Complex128Array>[ 1.0, 2.0 ]
 */
 declare function broadcastScalar( value: number | ComplexLike, dtype: 'complex128', shape: Shape, order: Order ): complex128ndarray;
 
@@ -127,9 +128,8 @@ declare function broadcastScalar( value: number | ComplexLike, dtype: 'complex12
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
 * var getDType = require( '@stdlib/ndarray/dtype' );
+* var getData = require( '@stdlib/ndarray/data-buffer' );
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
-* var realf = require( '@stdlib/complex/float32/real' );
-* var imagf = require( '@stdlib/complex/float32/imag' );
 *
 * var v = new Complex64( 1.0, 2.0 );
 *
@@ -142,14 +142,8 @@ declare function broadcastScalar( value: number | ComplexLike, dtype: 'complex12
 * var dt = String( getDType( x ) );
 * // returns 'complex64'
 *
-* var v = x.get( 0, 1 );
-* // returns <Complex64>
-*
-* var re = realf( v );
-* // returns 1.0
-*
-* var im = imagf( v );
-* // returns 2.0
+* var buf = getData( x );
+* // returns <Complex64Array>[ 1.0, 2.0 ]
 */
 declare function broadcastScalar( value: number | ComplexLike, dtype: 'complex64', shape: Shape, order: Order ): complex64ndarray;
 

@@ -20,7 +20,7 @@ limitations under the License.
 
 # Logarithm of Probability Density Function
 
-> [Fréchet][frechet-distribution] distribution logarithm of [probability density function][pdf].
+> [Fréchet][frechet-distribution] distribution natural logarithm of [probability density function][pdf].
 
 <section class="intro">
 
@@ -55,7 +55,7 @@ var logpdf = require( '@stdlib/stats/base/dists/frechet/logpdf' );
 
 #### logpdf( x, alpha, s, m )
 
-Evaluates the logarithm of the [probability density function][pdf] (PDF) for a [Fréchet][frechet-distribution] distribution with shape `alpha`, scale `s`, and location `m` at a value `x`.
+Evaluates the natural logarithm of the [probability density function][pdf] (PDF) for a [Fréchet][frechet-distribution] distribution with shape `alpha`, scale `s`, and location `m` at a value `x`.
 
 ```javascript
 var y = logpdf( 10.0, 2.0, 3.0, 5.0 );
@@ -193,7 +193,7 @@ logEachMap( 'x: %0.4f, α: %0.4f, s: %0.4f, m: %0.4f, ln(f(x;α,s,m)): %0.4f', x
 
 #### stdlib_base_dists_frechet_logpdf( x, alpha, s, m )
 
-Evaluates the logarithm of the [probability density function][pdf] (PDF) for a [Fréchet][frechet-distribution] distribution with shape `alpha`, scale `s`, and location `m` at a value `x`.
+Evaluates the natural logarithm of the [probability density function][pdf] (PDF) for a [Fréchet][frechet-distribution] distribution with shape `alpha`, scale `s`, and location `m` at a value `x`.
 
 ```c
 double y = stdlib_base_dists_frechet_logpdf( 10.0, 2.0, 3.0, 2.0 );

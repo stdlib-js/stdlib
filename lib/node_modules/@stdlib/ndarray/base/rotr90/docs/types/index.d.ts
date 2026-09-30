@@ -28,7 +28,7 @@ import { typedndarray } from '@stdlib/types/ndarray';
 * @param x - input array
 * @param k - number of times to rotate by 90 degrees
 * @param writable - boolean indicating whether the returned ndarray should be writable
-* @returns output array
+* @returns ndarray view
 *
 * @example
 * var array = require( '@stdlib/ndarray/array' );

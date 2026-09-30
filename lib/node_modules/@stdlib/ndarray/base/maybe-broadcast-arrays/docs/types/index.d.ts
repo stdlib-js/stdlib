@@ -28,7 +28,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 *
 * ## Notes
 *
-* -   The function throws an error if a provided broadcast-incompatible ndarrays.
+* -   The function throws an error if provided broadcast-incompatible ndarrays.
 * -   If a provided ndarray has a shape matching the common shape, the function returns the provided ndarray.
 * -   If a provided ndarray has a different (broadcast compatible) shape than the common shape, the function returns a new (base) ndarray view of the provided ndarray's data. The view is typically **not** contiguous. As more than one element of a returned view may refer to the same memory location, writing to a view may affect multiple elements. If you need to write to a returned array, copy the array before performing operations which may mutate elements.
 * -   A returned array view is a "base" ndarray, and, thus, a returned array view does not perform bounds checking or afford any of the guarantees of the non-base ndarray constructor. The primary intent of this function is to broadcast ndarray-like objects within internal implementations and to do so with minimal overhead.

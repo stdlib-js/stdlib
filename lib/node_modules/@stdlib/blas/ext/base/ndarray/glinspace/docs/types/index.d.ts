@@ -44,11 +44,11 @@ import { typedndarray } from '@stdlib/types/ndarray';
 * var x = vector( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ], 'generic' );
 *
 * var start = scalar2ndarray( 0.0, {
-*    'dtype': 'generic'
+*     'dtype': 'generic'
 * });
 *
 * var stop = scalar2ndarray( 100.0, {
-*    'dtype': 'generic'
+*     'dtype': 'generic'
 * });
 *
 * var endpoint = scalar2ndarray( true, {

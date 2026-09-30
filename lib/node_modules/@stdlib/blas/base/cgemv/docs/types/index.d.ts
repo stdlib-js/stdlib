@@ -37,7 +37,7 @@ interface Routine {
 	* @param N - number of columns in the matrix `A`
 	* @param alpha - scalar constant
 	* @param A - input matrix
-	* @param LDA - stride of the first dimension of `A`
+	* @param LDA - stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`)
 	* @param x - first input vector
 	* @param strideX - `x` stride length
 	* @param beta - scalar constant

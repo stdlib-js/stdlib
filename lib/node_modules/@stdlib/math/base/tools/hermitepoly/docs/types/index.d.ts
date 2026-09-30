@@ -64,7 +64,7 @@ interface Hermitepoly {
 	/**
 	* Returns a function for evaluating a physicist's Hermite polynomial.
 	*
-	* @param n - polynomial degree
+	* @param n - nonnegative polynomial degree
 	* @returns function for evaluating a physicist's Hermite polynomial
 	*
 	* @example

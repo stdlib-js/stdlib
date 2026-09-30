@@ -30,11 +30,11 @@
 * // returns 4.2
 *
 * @example
-* double v = stdlib_base_fast_max( 3.14, NaN );
+* double v = stdlib_base_fast_max( 3.14, 0.0/0.0 );
 * // returns NaN
 *
 * @example
-* double v = stdlib_base_fast_max( NaN, 3.14 );
+* double v = stdlib_base_fast_max( 0.0/0.0, 3.14 );
 * // returns 3.14
 *
 * @example

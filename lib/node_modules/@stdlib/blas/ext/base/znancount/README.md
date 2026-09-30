@@ -190,9 +190,9 @@ Computes the number of non-`NaN` elements in a double-precision complex floating
 
 const stdlib_complex128_t x[] = {
     stdlib_complex128( 2.0, 1.0 ),
-    stdlib_complex128( NaN, -2.0 ),
+    stdlib_complex128( 0.0/0.0, -2.0 ),
     stdlib_complex128( 3.0, 4.0 ),
-    stdlib_complex128( NaN, NaN )
+    stdlib_complex128( 0.0/0.0, 0.0/0.0 )
 };
 
 int v = stdlib_strided_znancount( 4, x, 1 );
@@ -218,9 +218,9 @@ Computes the number of non-`NaN` elements in a double-precision complex floating
 
 const stdlib_complex128_t x[] = {
     stdlib_complex128( 2.0, 1.0 ),
-    stdlib_complex128( NaN, -2.0 ),
+    stdlib_complex128( 0.0/0.0, -2.0 ),
     stdlib_complex128( 3.0, 4.0 ),
-    stdlib_complex128( NaN, NaN )
+    stdlib_complex128( 0.0/0.0, 0.0/0.0 )
 };
 
 int v = stdlib_strided_znancount_ndarray( 4, x, 1, 0 );

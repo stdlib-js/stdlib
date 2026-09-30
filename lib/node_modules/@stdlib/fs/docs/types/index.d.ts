@@ -100,7 +100,7 @@ interface Namespace {
 	close: typeof close;
 
 	/**
-	* Tests whether a path exists on the filesystem.
+	* Asynchronously tests whether a path exists on the filesystem.
 	*
 	* @param path - path to test
 	* @param clbk - callback to invoke after testing path existence
@@ -308,7 +308,7 @@ interface Namespace {
 	readNDJSON: typeof readNDJSON;
 
 	/**
-	* Reads the entire contents of a WebAssembly file.
+	* Asynchronously reads the entire contents of a WebAssembly file.
 	*
 	* @param file - file path or file descriptor
 	* @param options - options

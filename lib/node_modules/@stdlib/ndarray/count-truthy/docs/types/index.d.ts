@@ -119,7 +119,7 @@ interface CountTruthy {
 	* var out = countTruthy.assign( x, y );
 	* // returns <ndarray>[ 5 ]
 	*/
-	assign<T extends ndarray>( x: ndarray, y: T, options?: BaseOptions ): T;
+	assign<T extends ndarray = ndarray>( x: ndarray, y: T, options?: BaseOptions ): T;
 }
 
 /**

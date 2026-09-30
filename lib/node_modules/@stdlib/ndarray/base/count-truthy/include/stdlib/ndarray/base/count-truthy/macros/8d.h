@@ -36,7 +36,7 @@
 * @example
 * #include <stdint.h>
 *
-* STDLIB_NDARRAY_COUNT_TRUTHY_8D_LOOP_PREMABLE {
+* STDLIB_NDARRAY_COUNT_TRUTHY_8D_LOOP_PREAMBLE {
 *     // Innermost loop body...
 * }
 * STDLIB_NDARRAY_COUNT_TRUTHY_8D_LOOP_EPILOGUE( int32_t )
@@ -134,7 +134,7 @@
 * @example
 * #include <stdint.h>
 *
-* STDLIB_NDARRAY_COUNT_TRUTHY_8D_LOOP_PREMABLE {
+* STDLIB_NDARRAY_COUNT_TRUTHY_8D_LOOP_PREAMBLE {
 *     // Innermost loop body...
 * }
 * STDLIB_NDARRAY_COUNT_TRUTHY_8D_LOOP_EPILOGUE( int32_t )

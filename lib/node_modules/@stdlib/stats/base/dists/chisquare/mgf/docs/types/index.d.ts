@@ -92,7 +92,7 @@ interface MGF {
 *
 * var mymgf = mgf.factory( 1.0 );
 *
-* var y = mymgf( 0.2 );
+* y = mymgf( 0.2 );
 * // returns ~1.291
 *
 * y = mymgf( 0.4 );

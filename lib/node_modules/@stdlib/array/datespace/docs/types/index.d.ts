@@ -64,7 +64,7 @@ declare function datespace( start: Date | number | string, stop: Date | number |
 * @param length - output array length (default: 100)
 * @param options - function options
 * @param options.round - specifies how sub-millisecond times should be rounded: [ 'floor', 'ceil', 'round' ] (default: 'floor' )
-* @throws length argument must a positive integer
+* @throws length argument must be a positive integer
 * @throws must provide valid options
 * @returns array of dates
 *

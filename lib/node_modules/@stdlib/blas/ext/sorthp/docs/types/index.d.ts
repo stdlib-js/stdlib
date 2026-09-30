@@ -132,8 +132,8 @@ interface Sorthp {
 *
 * var x = array( [ -1.0, 2.0, -3.0 ] );
 *
-* var y = sorthp( x, 1.0 );
-* // returns <ndarray>[ -3.0, -1.0, 2.0 ]
+* var y = sorthp( x, -1.0 );
+* // returns <ndarray>[ 2.0, -1.0, -3.0 ]
 */
 declare const sorthp: Sorthp;
 

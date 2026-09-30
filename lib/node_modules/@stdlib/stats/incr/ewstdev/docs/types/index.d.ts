@@ -36,6 +36,7 @@ type accumulator = ( x?: number ) => number | null;
 * Returns an accumulator function which incrementally computes an exponentially weighted standard deviation.
 *
 * @param alpha - smoothing factor
+* @throws must provide a nonnegative number
 * @throws must be on the interval `[0,1]`
 * @returns accumulator function
 *

@@ -22,6 +22,7 @@
 #include "stdlib/math/base/assert/is_nonnegative_integer.h"
 #include "stdlib/constants/float64/pinf.h"
 #include "stdlib/constants/float64/max_nth_double_factorial.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Evaluates the double factorial of `n`.
@@ -40,7 +41,7 @@ double stdlib_base_factorial2( const double n ) {
 	double i;
 
 	if ( stdlib_base_is_nan( n ) || !stdlib_base_is_nonnegative_integer( n ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( n > STDLIB_CONSTANT_FLOAT64_MAX_NTH_DOUBLE_FACTORIAL ) {
 		return STDLIB_CONSTANT_FLOAT64_PINF;

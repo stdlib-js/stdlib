@@ -44,7 +44,7 @@
 *
 * @example
 * var out = slice( 'foo bar', 2, 7 );
-* // returns 'ar'
+* // returns 'o bar'
 *
 * @example
 * var out = slice( 'foo bar', -1, 7 );

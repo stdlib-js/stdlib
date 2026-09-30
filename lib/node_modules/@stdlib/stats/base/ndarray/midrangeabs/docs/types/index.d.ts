@@ -25,19 +25,24 @@ import { typedndarray } from '@stdlib/types/ndarray';
 /**
 * Computes the mid-range of absolute values of a one-dimensional ndarray.
 *
-* @param arrays - array-like object containing an input ndarray
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns mid-range
 *
 * @example
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var vector = require( '@stdlib/ndarray/vector/ctor' );
 *
-* var xbuf = [ 1.0, -2.0, 2.0, 4.0 ];
-* var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+* var x = vector( [ 1.0, -2.0, 2.0, 4.0 ], 'generic' );
 *
 * var v = midrangeabs( [ x ] );
 * // returns 2.5
 */
-declare function midrangeabs<T extends typedndarray<number> = typedndarray<number>>( arrays: [ T ] ): number;
+declare function midrangeabs( arrays: [ typedndarray<number> ] ): number;
 
 
 // EXPORTS //

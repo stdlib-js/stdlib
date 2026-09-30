@@ -19,6 +19,7 @@
 #include "stdlib/math/base/special/sincos.h"
 #include "stdlib/constants/float64/high_word_abs_mask.h"
 #include "stdlib/constants/float64/high_word_exponent_mask.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/number/float64/base/get_high_word.h"
 #include "stdlib/math/base/special/rempio2.h"
 #include <stdint.h>
@@ -131,8 +132,8 @@ void stdlib_base_sincos( const double x, double* sine, double* cosine ) {
 
 	// Case: x is NaN or infinity
 	if ( ix >= STDLIB_CONSTANT_FLOAT64_HIGH_WORD_EXPONENT_MASK ) {
-		*sine = 0.0 / 0.0; // NaN
-		*cosine = 0.0 / 0.0; // NaN
+		*sine = STDLIB_CONSTANT_FLOAT64_NAN;
+		*cosine = STDLIB_CONSTANT_FLOAT64_NAN;
 		return;
 	}
 

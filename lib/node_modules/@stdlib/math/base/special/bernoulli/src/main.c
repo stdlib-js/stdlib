@@ -20,6 +20,7 @@
 #include "stdlib/math/base/assert/is_odd.h"
 #include "stdlib/constants/float64/ninf.h"
 #include "stdlib/constants/float64/pinf.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/math/base/special/bernoulli.h"
 #include <stdint.h>
 #include <stdlib.h>
@@ -172,7 +173,7 @@ int32_t MAX_BERNOULLI = 258;
 */
 double stdlib_base_bernoulli( const double n ) {
 	if ( !stdlib_base_is_nonnegative_integer( n ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( n == 1.0 ) {
 		return 0.5;

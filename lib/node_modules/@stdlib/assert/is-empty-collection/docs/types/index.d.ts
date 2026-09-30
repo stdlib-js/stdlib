@@ -18,8 +18,6 @@
 
 // TypeScript Version: 4.1
 
-/// <reference types="@stdlib/types"/>
-
 /**
 * Tests if a value is an empty collection.
 *

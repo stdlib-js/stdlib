@@ -1,0 +1,137 @@
+
+{{alias}}( N, alpha, x, strideX, beta, y, strideY )
+    Multiplies a double-precision floating-point strided array `x` by a constant
+    and adds the result to a double-precision floating-point strided array `y`
+    multiplied by a constant.
+
+    The `N` and stride parameters determine which elements in the strided
+    arrays are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N <= 0`, the function returns `y` unchanged.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    alpha: number
+        Scalar constant for `x`.
+
+    x: Float64Array
+        Input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    beta: number
+        Scalar constant for `y`.
+
+    y: Float64Array
+        Output array.
+
+    strideY: integer
+        Stride length for `y`.
+
+    Returns
+    -------
+    y: Float64Array
+        Output array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var buf = [ 1.0, 2.0, 3.0, 4.0, 5.0 ];
+    > var x = new {{alias:@stdlib/array/float64}}( buf );
+    > buf = [ 2.0, 3.0, 4.0, 5.0, 6.0 ];
+    > var y = new {{alias:@stdlib/array/float64}}( buf );
+    > {{alias}}( x.length, 5.0, x, 1, 2.0, y, 1 )
+    <Float64Array>[ 9.0, 16.0, 23.0, 30.0, 37.0 ]
+
+    // Using `N` and stride parameters:
+    > buf = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
+    > x = new {{alias:@stdlib/array/float64}}( buf );
+    > buf = [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ];
+    > y = new {{alias:@stdlib/array/float64}}( buf );
+    > {{alias}}( 3, 5.0, x, 2, 2.0, y, 2 )
+    <Float64Array>[ 19.0, 8.0, 33.0, 10.0, 47.0, 12.0 ]
+
+    // Using view offsets:
+    > var bufX = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
+    > var bufY = [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ];
+    > var x0 = new {{alias:@stdlib/array/float64}}( bufX );
+    > var y0 = new {{alias:@stdlib/array/float64}}( bufY );
+    > var offsetX = x0.BYTES_PER_ELEMENT * 1;
+    > var offsetY = y0.BYTES_PER_ELEMENT * 2;
+    > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, offsetX );
+    > var y1 = new {{alias:@stdlib/array/float64}}( y0.buffer, offsetY );
+    > {{alias}}( 3, 5.0, x1, 1, 2.0, y1, 1 )
+    <Float64Array>[ 28.0, 35.0, 42.0, 12.0 ]
+    > y0
+    <Float64Array>[ 7.0, 8.0, 28.0, 35.0, 42.0, 12.0 ]
+
+
+{{alias}}.ndarray( N, alpha, x, strideX, offsetX, beta, y, strideY, offsetY )
+    Multiplies a double-precision floating-point strided array `x` by a constant
+    and adds the result to a double-precision floating-point strided array `y`
+    multiplied by a constant using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    alpha: number
+        Scalar constant for `x`.
+
+    x: Float64Array
+        Input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    offsetX: integer
+        Starting index for `x`.
+
+    beta: number
+        Scalar constant for `y`.
+
+    y: Float64Array
+        Output array.
+
+    strideY: integer
+        Stride length for `y`.
+
+    offsetY: integer
+        Starting index for `y`.
+
+    Returns
+    -------
+    y: Float64Array
+        Output array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var buf = [ 1.0, 2.0, 3.0, 4.0, 5.0 ];
+    > var x = new {{alias:@stdlib/array/float64}}( buf );
+    > buf = [ 2.0, 3.0, 4.0, 5.0, 6.0 ];
+    > var y = new {{alias:@stdlib/array/float64}}( buf );
+    > {{alias}}.ndarray( x.length, 5.0, x, 1, 0, 2.0, y, 1, 0 )
+    <Float64Array>[ 9.0, 16.0, 23.0, 30.0, 37.0 ]
+
+    // Using index offsets:
+    > x = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
+    > y = new {{alias:@stdlib/array/float64}}( [ 6.0, 7.0, 8.0, 9.0, 10.0 ] );
+    > {{alias}}.ndarray( 3, 5.0, x, 1, x.length-3, 2.0, y, 1, y.length-3 )
+    <Float64Array>[ 6.0, 7.0, 31.0, 38.0, 45.0 ]
+
+    See Also
+    --------
+

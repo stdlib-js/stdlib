@@ -28,6 +28,11 @@ import { IntegerIndexAndGenericDataType as DataType, typedndarray } from '@stdli
 type InputArray<T> = typedndarray<T>;
 
 /**
+* From index.
+*/
+type FromIndex = typedndarray<number> | number;
+
+/**
 * Output array.
 */
 type OutputArray = typedndarray<number>;
@@ -143,6 +148,33 @@ interface FindIndex {
 	* -   If no element along an ndarray dimension passes a test implemented by the predicate function, the corresponding element in the returned ndarray is `-1`.
 	*
 	* @param x - input ndarray
+	* @param fromIndex - index from which to begin searching
+	* @param clbk - predicate function
+	* @param thisArg - predicate function execution context
+	* @returns output ndarray
+	*
+	* @example
+	* var array = require( '@stdlib/ndarray/array' );
+	*
+	* function clbk( value ) {
+	*     return value % 2.0 === 0.0;
+	* }
+	*
+	* var x = array( [ 2.0, 1.0, -3.0, 4.0 ] );
+	*
+	* var y = findIndex( x, 2, clbk );
+	* // returns <ndarray>[ 3 ]
+	*/
+	<T = unknown, U extends InputArray<T> = InputArray<T>, ThisArg = unknown>( x: U, fromIndex: FromIndex, clbk: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): OutputArray;
+
+	/**
+	* Returns the index of the first element along an ndarray dimension which passes a test implemented by a predicate function.
+	*
+	* ## Notes
+	*
+	* -   If no element along an ndarray dimension passes a test implemented by the predicate function, the corresponding element in the returned ndarray is `-1`.
+	*
+	* @param x - input ndarray
 	* @param options - function options
 	* @param clbk - predicate function
 	* @param thisArg - predicate function execution context
@@ -160,7 +192,35 @@ interface FindIndex {
 	* var y = findIndex( x, {}, clbk );
 	* // returns <ndarray>[ 1 ]
 	*/
-	<T = unknown, U extends InputArray<T> = InputArray<T>, ThisArg = unknown>( x: U, options: Options, clbk: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): OutputArray;
+	<T = unknown, U extends InputArray<T> = InputArray<T>, ThisArg = unknown>( x: U, options: Options, clbk: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): OutputArray; // eslint-disable-line @typescript-eslint/unified-signatures
+
+	/**
+	* Returns the index of the first element along an ndarray dimension which passes a test implemented by a predicate function.
+	*
+	* ## Notes
+	*
+	* -   If no element along an ndarray dimension passes a test implemented by the predicate function, the corresponding element in the returned ndarray is `-1`.
+	*
+	* @param x - input ndarray
+	* @param fromIndex - index from which to begin searching
+	* @param options - function options
+	* @param clbk - predicate function
+	* @param thisArg - predicate function execution context
+	* @returns output ndarray
+	*
+	* @example
+	* var array = require( '@stdlib/ndarray/array' );
+	*
+	* function clbk( value ) {
+	*     return value % 2.0 === 0.0;
+	* }
+	*
+	* var x = array( [ 2.0, 1.0, -3.0, 4.0 ] );
+	*
+	* var y = findIndex( x, 2, {}, clbk );
+	* // returns <ndarray>[ 3 ]
+	*/
+	<T = unknown, U extends InputArray<T> = InputArray<T>, ThisArg = unknown>( x: U, fromIndex: FromIndex, options: Options, clbk: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): OutputArray;
 
 	/**
 	* Returns the index of the first element along an ndarray dimension which passes a test implemented by a predicate function and assigns results to a provided output ndarray.
@@ -202,6 +262,39 @@ interface FindIndex {
 	* -   If no element along an ndarray dimension passes a test implemented by the predicate function, the corresponding element in the returned ndarray is `-1`.
 	*
 	* @param x - input ndarray
+	* @param fromIndex - index from which to begin searching
+	* @param out - output ndarray
+	* @param clbk - predicate function
+	* @param thisArg - predicate function execution context
+	* @returns output ndarray
+	*
+	* @example
+	* var array = require( '@stdlib/ndarray/array' );
+	* var zeros = require( '@stdlib/ndarray/zeros' );
+	*
+	* function clbk( value ) {
+	*     return value % 2.0 === 0.0;
+	* }
+	*
+	* var x = array( [ 2.0, 1.0, -3.0, 4.0 ] );
+	* var y = zeros( [] );
+	*
+	* var out = findIndex.assign( x, 2, y, clbk );
+	* // returns <ndarray>[ 3 ]
+	*
+	* var bool = ( out === y );
+	* // returns true
+	*/
+	assign<T = unknown, U extends InputArray<T> = InputArray<T>, V extends OutputArray = OutputArray, ThisArg = unknown>( x: U, fromIndex: FromIndex, out: V, clbk: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): V;
+
+	/**
+	* Returns the index of the first element along an ndarray dimension which passes a test implemented by a predicate function and assigns results to a provided output ndarray.
+	*
+	* ## Notes
+	*
+	* -   If no element along an ndarray dimension passes a test implemented by the predicate function, the corresponding element in the returned ndarray is `-1`.
+	*
+	* @param x - input ndarray
 	* @param out - output ndarray
 	* @param options - function options
 	* @param clbk - predicate function
@@ -226,6 +319,40 @@ interface FindIndex {
 	* // returns true
 	*/
 	assign<T = unknown, U extends InputArray<T> = InputArray<T>, V extends OutputArray = OutputArray, ThisArg = unknown>( x: U, out: V, options: BaseOptions, clbk: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): V;
+
+	/**
+	* Returns the index of the first element along an ndarray dimension which passes a test implemented by a predicate function and assigns results to a provided output ndarray.
+	*
+	* ## Notes
+	*
+	* -   If no element along an ndarray dimension passes a test implemented by the predicate function, the corresponding element in the returned ndarray is `-1`.
+	*
+	* @param x - input ndarray
+	* @param fromIndex - index from which to begin searching
+	* @param out - output ndarray
+	* @param options - function options
+	* @param clbk - predicate function
+	* @param thisArg - predicate function execution context
+	* @returns output ndarray
+	*
+	* @example
+	* var array = require( '@stdlib/ndarray/array' );
+	* var zeros = require( '@stdlib/ndarray/zeros' );
+	*
+	* function clbk( value ) {
+	*     return value % 2.0 === 0.0;
+	* }
+	*
+	* var x = array( [ 2.0, 1.0, -3.0, 4.0 ] );
+	* var y = zeros( [] );
+	*
+	* var out = findIndex.assign( x, 2, y, {}, clbk );
+	* // returns <ndarray>[ 3 ]
+	*
+	* var bool = ( out === y );
+	* // returns true
+	*/
+	assign<T = unknown, U extends InputArray<T> = InputArray<T>, V extends OutputArray = OutputArray, ThisArg = unknown>( x: U, fromIndex: FromIndex, out: V, options: BaseOptions, clbk: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): V;
 }
 
 /**
@@ -236,6 +363,7 @@ interface FindIndex {
 * -   If no element along an ndarray dimension passes a test implemented by the predicate function, the corresponding element in the returned ndarray is `-1`.
 *
 * @param x - input ndarray
+* @param fromIndex - index from which to begin searching
 * @param options - function options
 * @param clbk - predicate function
 * @param thisArg - predicate function execution context

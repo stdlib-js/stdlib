@@ -56,7 +56,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * var shy = getShape( y );
 * // returns [ 3, 2, 2 ]
 */
-declare function maybeBroadcastArray<T extends ndarray>( arr: T, shape: ArrayLike<number> ): T;
+declare function maybeBroadcastArray<T extends ndarray = ndarray>( arr: T, shape: ArrayLike<number> ): T;
 
 
 // EXPORTS //

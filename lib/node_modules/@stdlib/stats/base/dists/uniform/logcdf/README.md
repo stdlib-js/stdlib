@@ -20,7 +20,7 @@ limitations under the License.
 
 # Logarithm of Cumulative Distribution Function
 
-> [Uniform][uniform-distribution] distribution logarithm of [cumulative distribution function][cdf].
+> [Uniform][uniform-distribution] distribution natural logarithm of [cumulative distribution function][cdf].
 
 <section class="intro">
 
@@ -55,7 +55,7 @@ var logcdf = require( '@stdlib/stats/base/dists/uniform/logcdf' );
 
 #### logcdf( x, a, b )
 
-Evaluates the logarithm of the [cumulative distribution function][cdf] (CDF) for a [uniform][uniform-distribution] distribution with parameters `a` (minimum support) and `b` (maximum support).
+Evaluates the natural logarithm of the [cumulative distribution function][cdf] (CDF) for a [uniform][uniform-distribution] distribution with parameters `a` (minimum support) and `b` (maximum support).
 
 ```javascript
 var y = logcdf( 9.0, 0.0, 10.0 );
@@ -175,7 +175,7 @@ for ( i = 0; i < 25; i++ ) {
 
 #### stdlib_base_dists_uniform_logcdf( x, a, b )
 
-Evaluates the logarithm of the [cumulative distribution function][cdf] of a [uniform][uniform-distribution] distribution with parameters `a` (minimum support) and `b` (maximum support).
+Evaluates the natural logarithm of the [cumulative distribution function][cdf] of a [uniform][uniform-distribution] distribution with parameters `a` (minimum support) and `b` (maximum support).
 
 ```c
 double out = stdlib_base_dists_uniform_logcdf( 9.0, 0.0, 10.0 );

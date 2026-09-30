@@ -55,6 +55,7 @@
     "utility",
     "utils",
     "util",
+    "base",
     "string",
     "str",
     "check",

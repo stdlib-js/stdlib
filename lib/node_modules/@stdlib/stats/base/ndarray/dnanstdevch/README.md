@@ -103,16 +103,14 @@ var dnanstdevch = require( '@stdlib/stats/base/ndarray/dnanstdevch' );
 Computes the [standard deviation][standard-deviation] of a one-dimensional double-precision floating-point ndarray, ignoring `NaN` values and using a one-pass trial mean algorithm.
 
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 
 var opts = {
     'dtype': 'float64'
 };
 
-var xbuf = new Float64Array( [ 1.0, -2.0, NaN, 2.0 ] );
-var x = new ndarray( opts.dtype, xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = new Float64Vector( [ 1.0, -2.0, NaN, 2.0 ] );
 var correction = scalar2ndarray( 1.0, opts );
 
 var v = dnanstdevch( [ x, correction ] );
@@ -121,7 +119,10 @@ var v = dnanstdevch( [ x, correction ] );
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing two elements: a one-dimensional input ndarray and a zero-dimensional ndarray specifying the degrees of freedom adjustment. Providing a non-zero degrees of freedom adjustment has the effect of adjusting the divisor during the calculation of the [standard deviation][standard-deviation] according to `N-c` where `N` is the number of non-NaN elements in the input ndarray and `c` corresponds to the provided degrees of freedom adjustment. When computing the [standard deviation][standard-deviation] of a population, setting this parameter to `0` is the standard choice (i.e., the provided array contains data constituting an entire population). When computing the corrected sample [standard deviation][standard-deviation], setting this parameter to `1` is the standard choice (i.e., the provided array contains data sampled from a larger population; this is commonly referred to as Bessel's correction).
+-   **arrays**: array-like object containing the following ndarrays:
+
+    -   a one-dimensional input ndarray.
+    -   a zero-dimensional ndarray specifying the degrees of freedom adjustment. Providing a non-zero degrees of freedom adjustment has the effect of adjusting the divisor during the calculation of the [standard deviation][standard-deviation] according to `N-c` where `N` is the number of non-NaN elements in the input ndarray and `c` corresponds to the provided degrees of freedom adjustment. When computing the [standard deviation][standard-deviation] of a population, setting this parameter to `0` is the standard choice (i.e., the provided array contains data constituting an entire population). When computing the corrected sample [standard deviation][standard-deviation], setting this parameter to `1` is the standard choice (i.e., the provided array contains data sampled from a larger population; this is commonly referred to as Bessel's correction).
 
 </section>
 
@@ -146,9 +147,9 @@ The function has the following parameters:
 
 ```javascript
 var uniform = require( '@stdlib/random/base/uniform' );
-var filledarrayBy = require( '@stdlib/array/filled-by' );
 var bernoulli = require( '@stdlib/random/base/bernoulli' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var fillBy = require( '@stdlib/ndarray/fill-by' );
+var zeros = require( '@stdlib/ndarray/zeros' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var dnanstdevch = require( '@stdlib/stats/base/ndarray/dnanstdevch' );
@@ -164,8 +165,7 @@ var opts = {
     'dtype': 'float64'
 };
 
-var xbuf = filledarrayBy( 10, 'float64', rand );
-var x = new ndarray( opts.dtype, xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+var x = fillBy( zeros( [ 10 ], opts ), rand );
 console.log( ndarray2array( x ) );
 
 var correction = scalar2ndarray( 1.0, opts );

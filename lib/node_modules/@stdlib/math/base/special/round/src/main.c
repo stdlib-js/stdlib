@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/math/base/special/round.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/math/base/special/floor.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/assert/is_negative_zero.h"
@@ -33,7 +34,7 @@
 */
 double stdlib_base_round( const double x ) {
 	if ( stdlib_base_is_nan( x ) ) {
-		return 0.0/0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( stdlib_base_is_negative_zero( x ) || ( x >= -0.5 && x < 0.0 ) ) {
 		return -0.0; // -0

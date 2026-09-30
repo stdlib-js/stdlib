@@ -1,0 +1,128 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2026 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+// TypeScript Version: 4.1
+
+/**
+* Evaluates the moment-generating function (MGF) of a Wald distribution.
+*
+* @param t - input value
+* @returns evaluated MGF
+*/
+type Unary = ( t: number ) => number;
+
+/**
+* Interface for the moment-generating function (MGF) of a Wald distribution.
+*/
+interface MGF {
+	/**
+	* Evaluates the moment-generating function (MGF) for a Wald distribution with mean `mu` and shape parameter `lambda` at a value `t`.
+	*
+	* ## Notes
+	*
+	* -   If provided `mu <= 0` or `lambda <= 0`, the function returns `NaN`.
+	*
+	* -   If provided `t > lambda / ( 2 * mu^2 )`, the function returns `NaN`.
+	*
+	* @param t - input value
+	* @param mu - mean
+	* @param lambda - shape parameter
+	* @returns evaluated MGF
+	*
+	* @example
+	* var y = mgf( 0.1, 2.0, 3.0 );
+	* // returns ~1.2405
+	*
+	* @example
+	* var y = mgf( -1.0, 0.5, 2.0 );
+	* // returns ~0.6237
+	*
+	* @example
+	* var y = mgf( NaN, 0.5, 2.0 );
+	* // returns NaN
+	*
+	* @example
+	* var y = mgf( 0.1, NaN, 2.0 );
+	* // returns NaN
+	*
+	* @example
+	* var y = mgf( 0.1, 0.5, NaN );
+	* // returns NaN
+	*
+	* @example
+	* var y = mgf( 0.1, -1.0, 2.0 );
+	* // returns NaN
+	*
+	* @example
+	* var y = mgf( 0.1, 0.5, -2.0 );
+	* // returns NaN
+	*
+	* @example
+	* var y = mgf( 1.0, 2.0, 3.0 );
+	* // returns NaN
+	*/
+	( t: number, mu: number, lambda: number ): number;
+
+	/**
+	* Returns a function for evaluating the moment-generating function (MGF) of a Wald distribution with mean `mu` and shape parameter `lambda`.
+	*
+	* @param mu - mean
+	* @param lambda - shape parameter
+	* @returns MGF
+	*
+	* @example
+	* var mymgf = mgf.factory( 2.0, 3.0 );
+	*
+	* var y = mymgf( 0.1 );
+	* // returns ~1.2405
+	*
+	* y = mymgf( 0.2 );
+	* // returns ~1.6085
+	*/
+	factory( mu: number, lambda: number ): Unary;
+}
+
+/**
+* Wald distribution moment-generating function (MGF).
+*
+* @param t - input value
+* @param mu - mean
+* @param lambda - shape parameter
+* @returns evaluated MGF
+*
+* @example
+* var y = mgf( 0.1, 2.0, 3.0 );
+* // returns ~1.2405
+*
+* y = mgf( -1.0, 0.5, 2.0 );
+* // returns ~0.6237
+*
+* var mymgf = mgf.factory( 2.0, 3.0 );
+*
+* y = mymgf( 0.1 );
+* // returns ~1.2405
+*
+* y = mymgf( 0.2 );
+* // returns ~1.6085
+*/
+declare var mgf: MGF;
+
+
+// EXPORTS //
+
+export = mgf;

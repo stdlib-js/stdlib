@@ -251,7 +251,7 @@ interface Namespace {
 	*
 	* @param str - input string
 	* @param n - number of characters to return (default: 1)
-	* @returns updated string
+	* @returns output string
 	*
 	* @example
 	* var out = ns.first( 'last man standing' );
@@ -390,7 +390,7 @@ interface Namespace {
 	*
 	* @param str - input string
 	* @param n - number of characters to return (default: 1)
-	* @returns updated string
+	* @returns output string
 	*
 	* @example
 	* var out = ns.last( 'ns.last man standing' );
@@ -979,7 +979,7 @@ interface Namespace {
 	rpad: typeof rpad;
 
 	/**
-	* Trims whitespace from the end of a string.
+	* Trims whitespace characters from the end of a string.
 	*
 	* @param str - input string
 	* @returns trimmed string
@@ -1152,7 +1152,7 @@ interface Namespace {
 	* Returns the part of a string after the last occurrence of a specified substring.
 	*
 	* @param str - input string
-	* @param search - search value
+	* @param search - search string
 	* @param fromIndex - index of last character to be considered beginning of a match (default: `str.length`)
 	* @returns substring
 	*
@@ -1211,7 +1211,7 @@ interface Namespace {
 	* Returns the part of a string before the last occurrence of a specified substring.
 	*
 	* @param str - input string
-	* @param search - search value
+	* @param search - search string
 	* @returns substring
 	*
 	* @example

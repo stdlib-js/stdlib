@@ -39,7 +39,8 @@
         "@stdlib/math/base/napi/binary",
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/gamma-delta-ratio",
-        "@stdlib/math/base/special/falling-factorial"
+        "@stdlib/math/base/special/falling-factorial",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -55,7 +56,8 @@
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/gamma-delta-ratio",
-        "@stdlib/math/base/special/falling-factorial"
+        "@stdlib/math/base/special/falling-factorial",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -71,7 +73,8 @@
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/gamma-delta-ratio",
-        "@stdlib/math/base/special/falling-factorial"
+        "@stdlib/math/base/special/falling-factorial",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

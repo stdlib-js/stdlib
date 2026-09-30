@@ -62,8 +62,8 @@ import frechet = require( './index' );
 // Attached to main export is a `factory` method which returns a function...
 {
 	frechet.factory( 2, 2, 0.7 ); // $ExpectType NullaryFunction
-	frechet.factory(); // $ExpectType BinaryFunction
-	frechet.factory( { 'copy': false } ); // $ExpectType BinaryFunction
+	frechet.factory(); // $ExpectType TernaryFunction
+	frechet.factory( { 'copy': false } ); // $ExpectType TernaryFunction
 }
 
 // The `factory` method returns a function which returns a number...
@@ -180,14 +180,14 @@ import frechet = require( './index' );
 	frechet.factory( 2, 2, 0.5, { 'prng': null } ); // $ExpectError
 	frechet.factory( 2, 2, 0.5, { 'prng': [] } ); // $ExpectError
 	frechet.factory( 2, 2, 0.5, { 'prng': {} } ); // $ExpectError
-	frechet.factory( 2, 2, 0.5, { 'prng': true ); // $ExpectError
+	frechet.factory( 2, 2, 0.5, { 'prng': true } ); // $ExpectError
 
 	frechet.factory( { 'prng': 123 } ); // $ExpectError
 	frechet.factory( { 'prng': 'abc' } ); // $ExpectError
 	frechet.factory( { 'prng': null } ); // $ExpectError
 	frechet.factory( { 'prng': [] } ); // $ExpectError
 	frechet.factory( { 'prng': {} } ); // $ExpectError
-	frechet.factory( { 'prng': true ); // $ExpectError
+	frechet.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -214,7 +214,7 @@ import frechet = require( './index' );
 	frechet.factory( 2, 2, 0.5, { 'state': null } ); // $ExpectError
 	frechet.factory( 2, 2, 0.5, { 'state': [] } ); // $ExpectError
 	frechet.factory( 2, 2, 0.5, { 'state': {} } ); // $ExpectError
-	frechet.factory( 2, 2, 0.5, { 'state': true ); // $ExpectError
+	frechet.factory( 2, 2, 0.5, { 'state': true } ); // $ExpectError
 	frechet.factory( 2, 2, 0.5, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	frechet.factory( { 'state': 123 } ); // $ExpectError
@@ -222,7 +222,7 @@ import frechet = require( './index' );
 	frechet.factory( { 'state': null } ); // $ExpectError
 	frechet.factory( { 'state': [] } ); // $ExpectError
 	frechet.factory( { 'state': {} } ); // $ExpectError
-	frechet.factory( { 'state': true ); // $ExpectError
+	frechet.factory( { 'state': true } ); // $ExpectError
 	frechet.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

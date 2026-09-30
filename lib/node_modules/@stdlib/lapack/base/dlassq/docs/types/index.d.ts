@@ -85,7 +85,7 @@ interface Routine {
 *
 * var X = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 *
-* var out = dlassq( 4, X, 1, 1.0, 0.0, out );
+* var out = dlassq( 4, X, 1, 1.0, 0.0 );
 * // returns <Float64Array>[ 1.0, 30.0 ]
 *
 * @example

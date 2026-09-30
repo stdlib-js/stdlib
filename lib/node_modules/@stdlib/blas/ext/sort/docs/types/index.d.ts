@@ -118,7 +118,7 @@ interface Sort {
 *
 * var x = array( [ -1.0, 2.0, -3.0 ] );
 *
-* var y = sort( x, 1.0 );
+* var y = sort( x );
 * // returns <ndarray>[ -3.0, -1.0, 2.0 ]
 *
 * @example
@@ -126,8 +126,8 @@ interface Sort {
 *
 * var x = array( [ -1.0, 2.0, -3.0 ] );
 *
-* var y = sort( x, 1.0 );
-* // returns <ndarray>[ -3.0, -1.0, 2.0 ]
+* var y = sort( x, -1.0 );
+* // returns <ndarray>[ 2.0, -1.0, -3.0 ]
 */
 declare const sort: Sort;
 

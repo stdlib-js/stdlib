@@ -108,7 +108,7 @@ type QuaternaryPredicate<T, V> = ( this: V, value: T, index: number, collection:
 type Predicate<T, V> = BinaryPredicate<T, V> | TernaryPredicate<T, V> | QuaternaryPredicate<T, V>;
 
 /**
-* Tests whether all elements in a collection passes a test implemented by a predicate function.
+* Tests whether all elements in a collection pass a test implemented by a predicate function.
 *
 * @param collection - input collection
 * @param done - function to invoke upon completion
@@ -287,7 +287,7 @@ interface EveryByRightAsync {
 	factory<T = unknown, V = unknown>( options: Options<T, V>, predicate: Predicate<T, V> ): FactoryFunction<T>;
 
 	/**
-	* Returns a function for testing whether all elements in a collection pass a test implemented by a predicate function,  iterating from right to left.
+	* Returns a function for testing whether all elements in a collection pass a test implemented by a predicate function, iterating from right to left.
 	*
 	* ## Notes
 	*

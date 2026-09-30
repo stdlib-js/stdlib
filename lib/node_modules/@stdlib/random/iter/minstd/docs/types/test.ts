@@ -66,7 +66,7 @@ import iterator = require( './index' );
 	iterator( { 'state': null } ); // $ExpectError
 	iterator( { 'state': [] } ); // $ExpectError
 	iterator( { 'state': {} } ); // $ExpectError
-	iterator( { 'state': true ); // $ExpectError
+	iterator( { 'state': true } ); // $ExpectError
 	iterator( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Returns the differential entropy of a half-normal distribution.
+* Returns the differential entropy for a half-normal distribution with scale parameter `sigma`.
 *
 * ## Notes
 *

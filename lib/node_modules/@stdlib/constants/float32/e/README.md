@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# E
+# FLOAT32_E
 
 > The mathematical constant [_e_][e].
 
@@ -27,15 +27,15 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var E = require( '@stdlib/constants/float32/e' );
+var FLOAT32_E = require( '@stdlib/constants/float32/e' );
 ```
 
-#### E
+#### FLOAT32_E
 
 The mathematical constant [_e_][e], also known as Euler's number or Napier's constant. [_e_][e] is the base of the natural logarithm.
 
 ```javascript
-var bool = ( E === 2.7182817459106445 );
+var bool = ( FLOAT32_E === 2.7182817459106445 );
 // returns true
 ```
 
@@ -52,9 +52,9 @@ var bool = ( E === 2.7182817459106445 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var E = require( '@stdlib/constants/float32/e' );
+var FLOAT32_E = require( '@stdlib/constants/float32/e' );
 
-console.log( E );
+console.log( FLOAT32_E );
 // => 2.7182817459106445
 ```
 

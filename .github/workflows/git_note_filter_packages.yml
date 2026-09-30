@@ -89,37 +89,42 @@ jobs:
 
       # Verify commit exists:
       - name: 'Verify commit exists'
+        env:
+          COMMIT_HASH: ${{ inputs.commit_hash }}
         run: |
-          if ! git rev-parse --quiet --verify ${{ inputs.commit_hash }}^{commit}; then
-            echo "Error: Commit ${{ inputs.commit_hash }} not found"
+          if ! git rev-parse --quiet --verify "${COMMIT_HASH}^{commit}"; then
+            echo "Error: Commit ${COMMIT_HASH} not found"
             exit 1
           fi
 
       # Create Git note:
       - name: 'Create Git note'
+        env:
+          COMMIT_HASH: ${{ inputs.commit_hash }}
+          EXCLUDES: ${{ inputs.excludes }}
         run: |
           # Start creating the note file:
-          cat > "docs/git-notes/${{ inputs.commit_hash }}.txt" << 'EOF'
+          cat > "docs/git-notes/${COMMIT_HASH}.txt" << 'EOF'
           ---
           type: filter-packages
           exclude:
           EOF
 
           # Process the comma-separated input and add each package as a YAML list item:
-          echo "${{ inputs.excludes }}" | tr ',' '\n' | while IFS= read -r package; do
+          echo "$EXCLUDES" | tr ',' '\n' | while IFS= read -r package; do
             # Trim whitespace and skip empty entries...
             package=$(echo "$package" | xargs)
             if [ -n "$package" ]; then
-              echo "  - $package" >> "docs/git-notes/${{ inputs.commit_hash }}.txt"
+              echo "  - $package" >> "docs/git-notes/${COMMIT_HASH}.txt"
             fi
           done
 
           # Add final YAML delimiter:
-          echo "---" >> "docs/git-notes/${{ inputs.commit_hash }}.txt"
+          echo "---" >> "docs/git-notes/${COMMIT_HASH}.txt"
 
           # Create step summary:
-          echo "## Note for commit ${{ inputs.commit_hash }}:" >> $GITHUB_STEP_SUMMARY
-          cat "docs/git-notes/${{ inputs.commit_hash }}.txt" >> $GITHUB_STEP_SUMMARY
+          echo "## Note for commit ${COMMIT_HASH}:" >> $GITHUB_STEP_SUMMARY
+          cat "docs/git-notes/${COMMIT_HASH}.txt" >> $GITHUB_STEP_SUMMARY
 
       # Disable Git hooks:
       - name: 'Disable Git hooks'
@@ -141,10 +146,11 @@ jobs:
         env:
             REPO_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
             USER_NAME: stdlib-bot
+            COMMIT_HASH: ${{ inputs.commit_hash }}
         run: |
           git config --local user.email "82920195+stdlib-bot@users.noreply.github.com"
           git config --local user.name "${USER_NAME}"
 
-          git add "docs/git-notes/${{ inputs.commit_hash }}.txt"
-          git commit -m "docs: add Git note for commit ${{ inputs.commit_hash }}"
+          git add "docs/git-notes/${COMMIT_HASH}.txt"
+          git commit -m "docs: add Git note for commit ${COMMIT_HASH}"
           git push

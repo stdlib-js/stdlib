@@ -55,7 +55,8 @@
         "@stdlib/math/base/special/abs",
         "@stdlib/constants/float64/sqrt-eps",
         "@stdlib/constants/float64/eps",
-        "@stdlib/constants/float64/pi"
+        "@stdlib/constants/float64/pi",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -84,7 +85,8 @@
         "@stdlib/math/base/special/abs",
         "@stdlib/constants/float64/sqrt-eps",
         "@stdlib/constants/float64/eps",
-        "@stdlib/constants/float64/pi"
+        "@stdlib/constants/float64/pi",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -113,7 +115,8 @@
         "@stdlib/math/base/special/abs",
         "@stdlib/constants/float64/sqrt-eps",
         "@stdlib/constants/float64/eps",
-        "@stdlib/constants/float64/pi"
+        "@stdlib/constants/float64/pi",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

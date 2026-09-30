@@ -40,7 +40,8 @@
         "@stdlib/math/base/special/abs",
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/log1p",
-        "@stdlib/math/base/special/expm1"
+        "@stdlib/math/base/special/expm1",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -57,7 +58,8 @@
         "@stdlib/math/base/special/abs",
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/log1p",
-        "@stdlib/math/base/special/expm1"
+        "@stdlib/math/base/special/expm1",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -74,7 +76,8 @@
         "@stdlib/math/base/special/abs",
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/log1p",
-        "@stdlib/math/base/special/expm1"
+        "@stdlib/math/base/special/expm1",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

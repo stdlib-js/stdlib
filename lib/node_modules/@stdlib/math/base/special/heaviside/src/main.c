@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/math/base/special/heaviside.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/math/base/assert/is_nan.h"
 
 /**
@@ -32,7 +33,7 @@
 */
 double stdlib_base_heaviside( const double x, const enum STDLIB_BASE_HEAVISIDE_CONTINUITY continuity ) {
 	if ( stdlib_base_is_nan( x ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( x > 0.0 ) {
 		return 1.0;
@@ -47,9 +48,9 @@ double stdlib_base_heaviside( const double x, const enum STDLIB_BASE_HEAVISIDE_C
 			case STDLIB_BASE_HEAVISIDE_CONTINUITY_RIGHT_CONTINUOUS:
 				return 1.0;
 			case STDLIB_BASE_HEAVISIDE_CONTINUITY_DISCONTINUOUS:
-				return 0.0 / 0.0; // NaN
+				return STDLIB_CONSTANT_FLOAT64_NAN;
 			default:
-				return 0.0 / 0.0; // NaN
+				return STDLIB_CONSTANT_FLOAT64_NAN;
 		}
 	}
 	return 0.0;

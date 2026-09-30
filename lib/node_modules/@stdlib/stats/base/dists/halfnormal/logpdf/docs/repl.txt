@@ -1,7 +1,7 @@
 
 {{alias}}( x, σ )
-    Evaluates the logarithm of the probability density function (PDF) for a
-    half-normal distribution with scale parameter `σ` at a value `x`.
+    Evaluates the natural logarithm of the probability density function (PDF)
+    for a half-normal distribution with scale parameter `σ` at a value `x`.
 
     If provided `NaN` as any argument, the function returns `NaN`.
 

@@ -1,0 +1,29 @@
+
+{{alias}}( [arg[, byteOffset[, byteLength]]] )
+    Returns a single-precision floating-point SGD parameters object.
+
+    Parameters
+    ----------
+    arg: Object|ArrayBuffer (optional)
+        ArrayBuffer or data object.
+
+    byteOffset: integer (optional)
+        Byte offset.
+
+    byteLength: integer (optional)
+        Maximum byte length.
+
+    Returns
+    -------
+    out: Object
+        Parameters object.
+
+    Examples
+    --------
+    > var p = new {{alias}}();
+    > p.toString()
+    <string>
+
+    See Also
+    --------
+
