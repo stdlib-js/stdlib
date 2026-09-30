@@ -25,12 +25,14 @@ import nans = require( './index' );
 {
 	nans( 'float64', [ 2, 2 ], 'row-major' ); // $ExpectType float64ndarray
 	nans( 'float32', [ 2, 2 ], 'row-major' ); // $ExpectType float32ndarray
+	nans( 'float16', [ 2, 2 ], 'row-major' ); // $ExpectType float16ndarray
 	nans( 'complex128', [ 2, 2 ], 'row-major' ); // $ExpectType complex128ndarray
 	nans( 'complex64', [ 2, 2 ], 'row-major' ); // $ExpectType complex64ndarray
 	nans( 'generic', [ 2, 2 ], 'row-major' ); // $ExpectType genericndarray<number>
 
 	nans( 'float64', [ 2, 2 ], 'column-major' ); // $ExpectType float64ndarray
 	nans( 'float32', [ 2, 2 ], 'column-major' ); // $ExpectType float32ndarray
+	nans( 'float16', [ 2, 2 ], 'column-major' ); // $ExpectType float16ndarray
 	nans( 'complex128', [ 2, 2 ], 'column-major' ); // $ExpectType complex128ndarray
 	nans( 'complex64', [ 2, 2 ], 'column-major' ); // $ExpectType complex64ndarray
 	nans( 'generic', [ 2, 2 ], 'column-major' ); // $ExpectType genericndarray<number>
