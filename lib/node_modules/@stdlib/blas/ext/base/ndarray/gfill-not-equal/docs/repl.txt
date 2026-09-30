@@ -6,6 +6,10 @@
     The input ndarray is modified *in-place* (i.e., the input ndarray is
     *mutated*).
 
+    If a specified `start` or `end` index is negative, the function resolves
+    the respective index by counting backward from the last element (where `-1`
+    refers to the last element).
+
     When comparing elements, the function checks for equality using the strict
     equality operator `===`. As a consequence, `NaN` values are considered
     distinct (i.e., as `NaN !== NaN` always evaluates to `true`, `NaN` elements
@@ -19,6 +23,8 @@
         - a one-dimensional input ndarray.
         - a zero-dimensional ndarray containing the search element.
         - a zero-dimensional ndarray containing the scalar constant.
+        - a zero-dimensional ndarray containing the starting index (inclusive).
+        - a zero-dimensional ndarray containing the ending index (exclusive).
 
     Returns
     -------
@@ -32,8 +38,10 @@
     > var opts = { 'dtype': 'generic' };
     > var v = {{alias:@stdlib/ndarray/from-scalar}}( 0.0, opts );
     > var alpha = {{alias:@stdlib/ndarray/from-scalar}}( 5.0, opts );
-    > {{alias}}( [ x, v, alpha ] )
-    <ndarray>[ 0.0, 5.0, 5.0, 0.0, 5.0, 5.0 ]
+    > var st = {{alias:@stdlib/ndarray/from-scalar}}( 0, opts );
+    > var en = {{alias:@stdlib/ndarray/from-scalar}}( 3, opts );
+    > {{alias}}( [ x, v, alpha, st, en ] )
+    <ndarray>[ 0.0, 5.0, 5.0, 0.0, 4.0, -6.0 ]
 
     See Also
     --------

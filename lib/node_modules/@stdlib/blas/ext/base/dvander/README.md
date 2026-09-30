@@ -233,7 +233,7 @@ The function accepts the following arguments:
 -   **LDO**: `[in] CBLAS_INT` stride between successive contiguous vectors of the matrix `Out` (a.k.a., leading dimension of the matrix `Out`).
 
 ```c
-void API_SUFFIX(stdlib_strided_dvander)( const CBLAS_LAYOUT order, const double mode, const CBLAS_INT M, const CBLAS_INT N, const double *X, const CBLAS_INT strideX, double *Out, const CBLAS_INT LDO );
+void stdlib_strided_dvander( const CBLAS_LAYOUT order, const double mode, const CBLAS_INT M, const CBLAS_INT N, const double *X, const CBLAS_INT strideX, double *Out, const CBLAS_INT LDO );
 ```
 
 <!-- lint disable maximum-heading-length -->
@@ -265,7 +265,7 @@ The function accepts the following arguments:
 -   **offsetOut**: `[in] CBLAS_INT` starting index for `Out`.
 
 ```c
-void API_SUFFIX(stdlib_strided_dvander_ndarray)( const double mode, const CBLAS_INT M, const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, double *Out, const CBLAS_INT strideOut1, const CBLAS_INT strideOut2, const CBLAS_INT offsetOut );
+void stdlib_strided_dvander_ndarray( const double mode, const CBLAS_INT M, const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, double *Out, const CBLAS_INT strideOut1, const CBLAS_INT strideOut2, const CBLAS_INT offsetOut );
 ```
 
 </section>

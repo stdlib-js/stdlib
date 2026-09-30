@@ -26,6 +26,18 @@ limitations under the License.
 
 <section class="intro">
 
+The function wraps a value to the half-open interval `[min, max)`
+
+<!-- <equation class="equation" label="eq:wrap_function" align="center" raw="y = x - \lfloor \frac{x - a}{b - a} \rfloor \cdot (b - a)" alt="Wrap value to interval"> -->
+
+```math
+y = x - \lfloor \frac{x - a}{b - a} \rfloor \cdot (b - a)
+```
+
+<!-- </equation> -->
+
+where `a` is the minimum value and `b` is the maximum value.
+
 </section>
 
 <!-- /.intro -->
