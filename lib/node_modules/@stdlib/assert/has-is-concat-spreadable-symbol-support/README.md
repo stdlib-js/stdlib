@@ -122,7 +122,7 @@ $ has-is-concat-spreadable-symbol-support
 
 <section class="links">
 
-[mdn-is-concat-spreadable-symbol]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol.isConcatSpreadable
+[mdn-is-concat-spreadable-symbol]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/isConcatSpreadable
 
 </section>
 

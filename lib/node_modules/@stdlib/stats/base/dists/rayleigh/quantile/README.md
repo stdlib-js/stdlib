@@ -109,7 +109,7 @@ Returns a function for evaluating the [quantile function][quantile-function] of 
 ```javascript
 var myQuantile = quantile.factory( 0.4 );
 
-y = myQuantile( 0.4 );
+var y = myQuantile( 0.4 );
 // returns ~0.404
 
 y = myQuantile( 1.0 );
@@ -127,20 +127,17 @@ y = myQuantile( 1.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var quantile = require( '@stdlib/stats/base/dists/rayleigh/quantile' );
 
-var sigma;
-var p;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var p = uniform( 10, 0.0, 1.0, opts );
+var sigma = uniform( 10, 0.0, 10.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    p = randu();
-    sigma = randu() * 10.0;
-    y = quantile( p, sigma );
-    console.log( 'p: %d, σ: %d, Q(p;σ): %d', p.toFixed( 4 ), sigma.toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 'p: %0.4f, σ: %0.4f, Q(p;σ): %0.4f', p, sigma, quantile );
 ```
 
 </section>

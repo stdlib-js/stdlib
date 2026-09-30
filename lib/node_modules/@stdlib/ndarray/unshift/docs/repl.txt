@@ -1,0 +1,56 @@
+
+{{alias}}( x, ...values )
+    Returns a one-dimensional ndarray formed by prepending provided scalar
+    values to a one-dimensional input ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    values: ...any
+        Scalar values to prepend.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var out = {{alias}}( x, -1.0, 0.0 )
+    <ndarray>[ -1.0, 0.0, 1.0, 2.0, 3.0, 4.0 ]
+
+
+{{alias}}.assign( x, ...values, out )
+    Prepends provided scalar values to a one-dimensional input ndarray and
+    assigns results to a provided one-dimensional output ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    values: ...any
+        Scalar values to prepend.
+
+    out: ndarray
+        Output ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ 1.0, 2.0 ] );
+    > var y = {{alias:@stdlib/ndarray/array}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > var out = {{alias}}.assign( x, -1.0, 0.0, y )
+    <ndarray>[ -1.0, 0.0, 1.0, 2.0 ]
+    > var bool = ( out === y )
+    true
+
+    See Also
+    --------

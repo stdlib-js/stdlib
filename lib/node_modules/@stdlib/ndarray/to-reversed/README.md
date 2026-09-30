@@ -46,21 +46,14 @@ Returns a new [`ndarray`][@stdlib/ndarray/ctor] where the order of elements of a
 
 ```javascript
 var array = require( '@stdlib/ndarray/array' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 
 var x = array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ], {
     'shape': [ 3, 2 ]
 });
-// returns <ndarray>
-
-var arr = ndarray2array( x );
-// returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
+// returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 
 var y = toReversed( x );
-// returns <ndarray>
-
-arr = ndarray2array( y );
-// returns [ [ 6.0, 5.0 ], [ 4.0, 3.0 ], [ 2.0, 1.0 ] ]
+// returns <ndarray>[ [ 6.0, 5.0 ], [ 4.0, 3.0 ], [ 2.0, 1.0 ] ]
 ```
 
 </section>

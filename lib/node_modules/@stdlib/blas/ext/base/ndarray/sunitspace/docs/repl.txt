@@ -1,0 +1,31 @@
+
+{{alias}}( arrays )
+    Fills a one-dimensional single-precision floating-point ndarray with
+    linearly spaced numeric elements which increment by `1` starting from a
+    specified value.
+
+    The input ndarray is modified *in-place* (i.e., the input ndarray is
+    *mutated*).
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a zero-dimensional ndarray containing a starting value.
+
+    Returns
+    -------
+    out: ndarray
+        Input ndarray.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/ndarray/vector/float32}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > var start = {{alias:@stdlib/ndarray/from-scalar}}( 3.0, { 'dtype': 'float32' } );
+    > {{alias}}( [ x, start ] )
+    <ndarray>[ 3.0, 4.0, 5.0, 6.0 ]
+
+    See Also
+    --------

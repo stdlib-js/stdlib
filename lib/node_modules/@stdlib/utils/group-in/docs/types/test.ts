@@ -49,7 +49,7 @@ class Foo {
 	groupIn( obj, indicator ); // $ExpectType any
 	groupIn( {}, indicator ); // $ExpectType any
 	const opts = {
-		'returns': 'indices' as 'indices'
+		'returns': 'keys' as 'keys'
 	};
 	groupIn( obj, opts, indicator ); // $ExpectType any
 }
@@ -78,7 +78,7 @@ class Foo {
 	groupIn( obj, null, indicator ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a `returns` option which is not one of 'indices', 'values', or '*'...
+// The compiler throws an error if the function is provided a `returns` option which is not one of 'keys', 'values', or '*'...
 {
 	const obj = new Foo();
 	groupIn( obj, { 'returns': '5' }, indicator ); // $ExpectError

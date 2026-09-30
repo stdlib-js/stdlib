@@ -27,7 +27,7 @@ import binaryBlockSize = require( './index' );
 	binaryBlockSize( 'generic', 'generic', 'generic' ); // $ExpectType number
 }
 
-// The compiler throws an error if the function is provided a first argument which is not a string...
+// The compiler throws an error if the function is provided a first argument which is not a valid data type...
 {
 	binaryBlockSize( 123, 'float64', 'float64' ); // $ExpectError
 	binaryBlockSize( true, 'float64', 'float64' ); // $ExpectError
@@ -38,7 +38,7 @@ import binaryBlockSize = require( './index' );
 	binaryBlockSize( ( x: number ): number => x, 'float64', 'float64' ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument which is not a string...
+// The compiler throws an error if the function is provided a second argument which is not a valid data type...
 {
 	binaryBlockSize( 'int32', 123, 'int32' ); // $ExpectError
 	binaryBlockSize( 'int32', true, 'int32' ); // $ExpectError
@@ -49,7 +49,7 @@ import binaryBlockSize = require( './index' );
 	binaryBlockSize( 'int32', ( x: number ): number => x, 'int32' ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a third argument which is not a string...
+// The compiler throws an error if the function is provided a third argument which is not a valid data type...
 {
 	binaryBlockSize( 'int32', 'int32', 123 ); // $ExpectError
 	binaryBlockSize( 'int32', 'int32', true ); // $ExpectError

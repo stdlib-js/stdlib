@@ -77,7 +77,7 @@ type DoneCallback = DoneNullary | DoneUnary | DoneBinary;
 /**
 * Checks whether an element in a collection passes a test.
 *
-* @param i - iteration number (starting from one)
+* @param i - iteration number (starting from zero)
 * @param clbk - a callback indicating whether to invoke `fcn`
 */
 type Predicate = ( i: number, clbk: Callback ) => void;

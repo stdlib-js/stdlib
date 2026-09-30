@@ -52,7 +52,7 @@ interface Routine {
 	( N: number, alpha: Complex64, x: Complex64Array, strideX: number, y: Complex64Array, strideY: number ): Complex64Array;
 
 	/**
-	* Scales a single-precision complex floating-point vector by a single-precision complex floating-point constant and adds the result to a single-precision complex floating-point vector.
+	* Scales a single-precision complex floating-point vector by a single-precision complex floating-point constant and adds the result to a single-precision complex floating-point vector using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
 	* @param alpha - scalar constant

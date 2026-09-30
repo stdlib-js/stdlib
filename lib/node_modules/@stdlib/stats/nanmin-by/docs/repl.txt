@@ -24,7 +24,7 @@
     options: Object (optional)
         Function options.
 
-    options.dtype: string (optional)
+    options.dtype: string|DataType (optional)
         Output array data type. Must be a real-valued or "generic" data type.
 
     options.dims: Array<integer> (optional)

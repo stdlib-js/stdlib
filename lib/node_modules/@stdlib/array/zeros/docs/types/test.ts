@@ -26,6 +26,7 @@ import zeros = require( './index' );
 	zeros( 10 ); // $ExpectType Float64Array
 	zeros( 10, 'float64' ); // $ExpectType Float64Array
 	zeros( 10, 'float32' ); // $ExpectType Float32Array
+	zeros( 10, 'float16' ); // $ExpectType Float16ArrayFallback
 	zeros( 10, 'complex128' ); // $ExpectType Complex128Array
 	zeros( 10, 'complex64' ); // $ExpectType Complex64Array
 	zeros( 10, 'int32' ); // $ExpectType Int32Array

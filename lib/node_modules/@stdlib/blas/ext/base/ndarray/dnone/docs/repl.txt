@@ -1,0 +1,28 @@
+
+{{alias}}( arrays )
+    Tests whether every element in a one-dimensional double-precision floating-
+    point ndarray is falsy.
+
+    If provided an empty ndarray, the function returns `true`.
+
+    The function explicitly treats `NaN` values as falsy.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing a one-dimensional input ndarray.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether all elements are falsy.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/ndarray/vector/float64}}( [ 0.0, 0.0, 1.0 ] );
+    > {{alias}}( [ x ] )
+    false
+
+    See Also
+    --------
+

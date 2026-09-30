@@ -122,20 +122,17 @@ y = myCDF( 0.5 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var cdf = require( '@stdlib/stats/base/dists/rayleigh/cdf' );
 
-var sigma;
-var x;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 10, 0.0, 10.0, opts );
+var sigma = uniform( 10, 0.0, 10.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    x = randu() * 10.0;
-    sigma = randu() * 10.0;
-    y = cdf( x, sigma );
-    console.log( 'x: %d, σ: %d, F(x;σ): %d', x.toFixed( 4 ), sigma.toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 'x: %0.4f, σ: %0.4f, F(x;σ): %0.4f', x, sigma, cdf );
 ```
 
 </section>

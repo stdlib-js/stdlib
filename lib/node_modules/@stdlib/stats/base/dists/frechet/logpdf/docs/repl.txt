@@ -1,8 +1,8 @@
 
 {{alias}}( x, α, s, m )
-    Evaluates the logarithm of the probability density function (PDF) for a
-    Fréchet distribution with shape parameter `α`, scale parameter `s`, and
-    location `m`.
+    Evaluates the natural logarithm of the probability density function (PDF)
+    for a Fréchet distribution with shape parameter `α`, scale parameter `s`,
+    and location `m`.
 
     If provided `NaN` as any argument, the function returns `NaN`.
 

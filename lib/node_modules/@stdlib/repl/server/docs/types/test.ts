@@ -21,7 +21,7 @@
 import repl = require( './index' );
 
 /**
-* Callback invoked after creating a REPL environment..
+* Callback invoked after creating a REPL environment.
 *
 * @param error - error object or null
 * @param server - server object

@@ -87,7 +87,7 @@ y = cdf( 0.9, 1.5 );
 
 #### cdf.factory( p )
 
-Returns a function for evaluating the [cumulative distribution function][cdf] of a [Bernoulli][bernoulli-distribution] distribution with success probability `p`
+Returns a function for evaluating the [cumulative distribution function][cdf] of a [Bernoulli][bernoulli-distribution] distribution with success probability `p`.
 
 ```javascript
 var mycdf = cdf.factory( 0.5 );

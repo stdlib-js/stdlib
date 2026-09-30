@@ -49,8 +49,8 @@ function clbk( v: number ): boolean {
 	find( x, { 'keepdims': true }, clbk, {} ); // $ExpectType float64ndarray
 	find( x, { 'dims': [ 0 ] }, clbk ); // $ExpectType float64ndarray
 	find( x, { 'dims': [ 0 ] }, clbk, {} ); // $ExpectType float64ndarray
-	find( x, { 'sentinelValue': 0 }, clbk ); // $ExpectType float64ndarray
-	find( x, { 'sentinelValue': 0 }, clbk, {} ); // $ExpectType float64ndarray
+	find( x, { 'sentinel': 0 }, clbk ); // $ExpectType float64ndarray
+	find( x, { 'sentinel': 0 }, clbk, {} ); // $ExpectType float64ndarray
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an ndarray...
@@ -212,8 +212,8 @@ function clbk( v: number ): boolean {
 	find.assign( x, y, { 'dims': [ 0 ] }, clbk ); // $ExpectType float64ndarray
 	find.assign( x, y, {}, clbk, {} ); // $ExpectType float64ndarray
 	find.assign( x, y, { 'dims': [ 0 ] }, clbk, {} ); // $ExpectType float64ndarray
-	find.assign( x, y, { 'sentinelValue': 0 }, clbk ); // $ExpectType float64ndarray
-	find.assign( x, y, { 'sentinelValue': 0 }, clbk, {} ); // $ExpectType float64ndarray
+	find.assign( x, y, { 'sentinel': 0 }, clbk ); // $ExpectType float64ndarray
+	find.assign( x, y, { 'sentinel': 0 }, clbk, {} ); // $ExpectType float64ndarray
 }
 
 // The compiler throws an error if the `assign` method is provided a first argument which is not an ndarray...

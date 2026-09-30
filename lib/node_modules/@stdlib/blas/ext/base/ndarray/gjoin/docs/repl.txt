@@ -9,7 +9,7 @@
         Array-like object containing the following ndarrays:
 
         - a one-dimensional input ndarray.
-        - a zero-dimensional ndarray containing the separator.
+        - a zero-dimensional ndarray containing a separator.
 
     Returns
     -------
@@ -18,14 +18,8 @@
 
     Examples
     --------
-    > var xbuf = [ 1.0, 2.0, 3.0 ];
-    > var dt = 'generic';
-    > var sh = [ xbuf.length ];
-    > var sx = [ 1 ];
-    > var ox = 0;
-    > var ord = 'row-major';
-    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
-    > var v = {{alias:@stdlib/ndarray/from-scalar}}( ',', { 'dtype': dt } );
+    > var x = {{alias:@stdlib/ndarray/vector/ctor}}( [ 1.0, 2.0, 3.0 ], 'generic' );
+    > var v = {{alias:@stdlib/ndarray/from-scalar}}( ',', { 'dtype': 'generic' } );
     > {{alias}}( [ x, v ] )
     '1,2,3'
 

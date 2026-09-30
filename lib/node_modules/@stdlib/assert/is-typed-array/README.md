@@ -20,7 +20,7 @@ limitations under the License.
 
 # isTypedArray
 
-> Test if a value is a [typed array][mdn-typed-array].
+> Test if a value is a built-in [typed array][mdn-typed-array].
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var isTypedArray = require( '@stdlib/assert/is-typed-array' );
 
 #### isTypedArray( value )
 
-Tests if a value is a [typed array][mdn-typed-array].
+Tests if a value is a built-in [typed array][mdn-typed-array].
 
 ```javascript
 var Int8Array = require( '@stdlib/array/int8' );
@@ -62,6 +62,7 @@ var Int16Array = require( '@stdlib/array/int16' );
 var Uint16Array = require( '@stdlib/array/uint16' );
 var Int32Array = require( '@stdlib/array/int32' );
 var Uint32Array = require( '@stdlib/array/uint32' );
+var Float16Array = require( '@stdlib/array/float16' );
 var Float32Array = require( '@stdlib/array/float32' );
 var Float64Array = require( '@stdlib/array/float64' );
 var isTypedArray = require( '@stdlib/assert/is-typed-array' );
@@ -91,6 +92,10 @@ bool = isTypedArray( arr );
 // returns true
 
 arr = new Uint32Array( 10 );
+bool = isTypedArray( arr );
+// returns true
+
+arr = new Float16Array( 10 );
 bool = isTypedArray( arr );
 // returns true
 

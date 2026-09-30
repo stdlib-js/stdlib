@@ -26,7 +26,6 @@ Generate fixture data and write to file.
 
 # Arguments
 
-* `x`: input value
 * `n`: number of trials
 * `p`: success probability
 * `name::AbstractString`: output filename

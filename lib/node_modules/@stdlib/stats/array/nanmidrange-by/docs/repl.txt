@@ -1,0 +1,46 @@
+
+{{alias}}( x, clbk[, thisArg] )
+    Computes the mid-range of an array via a callback function, ignoring `NaN`
+    values.
+
+    If provided an empty array, the function returns `NaN`.
+
+    The callback function is provided three arguments:
+
+    - value: current array element.
+    - index: current array index.
+    - array: the input array.
+
+    The callback function should return a numeric value.
+
+    If the callback function returns `NaN`, the value is ignored.
+
+    If the callback function does not return any value (or equivalently,
+    explicitly returns `undefined`), the value is ignored.
+
+    Parameters
+    ----------
+    x: Array|TypedArray
+        Input array.
+
+    clbk: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: number
+        Mid-range.
+
+    Examples
+    --------
+    > function accessor( v ) { return v * 2.0; };
+    > var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, NaN, -1.0, -3.0 ];
+    > {{alias}}( x, accessor )
+    -1.0
+
+    See Also
+    --------
+

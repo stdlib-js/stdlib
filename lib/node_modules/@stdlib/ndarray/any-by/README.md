@@ -52,10 +52,7 @@ var x = array( [ [ 1.0, -2.0 ], [ 3.0, -4.0 ] ] );
 
 // Test whether at least one element is positive:
 var out = anyBy( x, isPositive );
-// returns <ndarray>
-
-var v = out.get();
-// returns true
+// returns <ndarray>[ true ]
 ```
 
 The function accepts the following arguments:
@@ -73,7 +70,6 @@ The function accepts the following options:
 By default, the function performs a reduction over all elements in a provided [`ndarray`][@stdlib/ndarray/ctor]. To reduce specific dimensions, set the `dims` option.
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var array = require( '@stdlib/ndarray/array' );
 
 function isPositive( value ) {
@@ -82,6 +78,7 @@ function isPositive( value ) {
 
 // Create an input ndarray:
 var x = array( [ [ 1.0, 2.0 ], [ -3.0, -4.0 ] ] );
+// returns <ndarray>
 
 var opts = {
     'dims': [ 1 ]
@@ -89,16 +86,12 @@ var opts = {
 
 // Perform reduction:
 var out = anyBy( x, opts, isPositive );
-// returns <ndarray>
-
-var v = ndarray2array( out );
-// returns [ true, false ]
+// returns <ndarray>[ true, false ]
 ```
 
 By default, the function returns an [`ndarray`][@stdlib/ndarray/ctor] having a shape matching only the non-reduced dimensions of the input [`ndarray`][@stdlib/ndarray/ctor] (i.e., the reduced dimensions are dropped). To include the reduced dimensions as singleton dimensions in the output [`ndarray`][@stdlib/ndarray/ctor], set the `keepdims` option to `true`.
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var array = require( '@stdlib/ndarray/array' );
 
 function isPositive( value ) {
@@ -114,10 +107,7 @@ var opts = {
 
 // Perform reduction:
 var out = anyBy( x, opts, isPositive );
-// returns <ndarray>
-
-var v = ndarray2array( out );
-// returns [ [ [ true ] ] ]
+// returns <ndarray>[ [ true ] ]
 ```
 
 To set the function execution context, provide a `thisArg`.
@@ -141,10 +131,7 @@ var ctx = {
 
 // Perform reduction:
 var out = anyBy( x, isPositive, ctx );
-// returns <ndarray>
-
-var v = out.get();
-// returns true
+// returns <ndarray>[ true ]
 
 var count = ctx.count;
 // returns 4
@@ -172,10 +159,7 @@ var y = empty( [], {
 
 // Perform reduction:
 var out = anyBy.assign( x, y, isPositive );
-// returns <ndarray>
-
-var v = out.get();
-// returns true
+// returns <ndarray>[ true ]
 
 var bool = ( out === y );
 // returns true
@@ -198,7 +182,6 @@ By default, the function performs a reduction over all elements in a provided [`
 ```javascript
 var array = require( '@stdlib/ndarray/array' );
 var empty = require( '@stdlib/ndarray/empty' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 
 function predicate( value ) {
     return value > 0.0;
@@ -219,12 +202,10 @@ var opts = {
 
 // Perform reduction:
 var out = anyBy.assign( x, y, opts, predicate );
+// returns <ndarray>[ true, false ]
 
 var bool = ( out === y );
 // returns true
-
-var v = ndarray2array( y );
-// returns [ true, false ]
 ```
 
 </section>

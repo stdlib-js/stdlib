@@ -35,7 +35,7 @@ import array2ndarray = require( './index' );
 	array2ndarray( zeros( 1, 'uint16' ), 'row-major' ); // $ExpectType uint16ndarray
 	array2ndarray( zeros( 1, 'uint8' ), 'row-major' ); // $ExpectType uint8ndarray
 	array2ndarray( zeros( 1, 'uint8c' ), 'row-major' ); // $ExpectType uint8cndarray
-	array2ndarray( zeros( 1, 'generic' ), 'row-major' ); // $ExpectType genericndarray<number>
+	array2ndarray<number>( zeros( 1, 'generic' ), 'row-major' ); // $ExpectType genericndarray<number>
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a recognized/supported order...

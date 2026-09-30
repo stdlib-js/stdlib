@@ -39,7 +39,7 @@
 */
 double API_SUFFIX(stdlib_strided_dsumkbn2)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX ) {
 	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
-	return API_SUFFIX( stdlib_strided_dsumkbn2_ndarray )( N, X, strideX, ox );
+	return API_SUFFIX(stdlib_strided_dsumkbn2_ndarray)( N, X, strideX, ox );
 }
 
 /**

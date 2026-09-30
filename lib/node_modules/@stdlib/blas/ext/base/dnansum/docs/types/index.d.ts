@@ -38,7 +38,7 @@ interface Routine {
 	* var v = dnansum( x.length, x, 1 );
 	* // returns 1.0
 	*/
-	( N: number, x: Float64Array, stride: number ): number;
+	( N: number, x: Float64Array, strideX: number ): number;
 
 	/**
 	* Computes the sum of double-precision floating-point strided array elements, ignoring `NaN` values and using alternative indexing semantics.

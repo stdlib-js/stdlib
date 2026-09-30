@@ -25,6 +25,11 @@ import { Collection } from '@stdlib/types/array';
 /**
 * Adds elements from one collection to the end of another collection.
 *
+* ## Notes
+*
+* -   If the input collection is a typed array, the output value does not equal the input reference and the underlying `ArrayBuffer` may *not* be the same as the `ArrayBuffer` belonging to the input view.
+* -   For purposes of generality, always treat the output collection as distinct from the input collection.
+*
 * @param collection1 - collection
 * @param collection2 - collection containing elements to add
 * @returns updated collection

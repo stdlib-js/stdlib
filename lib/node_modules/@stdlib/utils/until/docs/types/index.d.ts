@@ -31,7 +31,6 @@ type Predicate = ( i: number ) => boolean;
 *
 * ## Notes
 *
-* -   The condition is evaluated *after* executing the provided function; thus, `fcn` *always* executes at least once.
 * -   When invoked, both the predicate function and the function to invoke are provided a single argument:
 *
 *        - `i`: iteration number (starting from zero)

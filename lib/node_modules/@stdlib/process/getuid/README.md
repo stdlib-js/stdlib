@@ -51,6 +51,8 @@ var id = getuid();
 
 </section>
 
+<!-- /.notes -->
+
 <section class="examples">
 
 ## Examples

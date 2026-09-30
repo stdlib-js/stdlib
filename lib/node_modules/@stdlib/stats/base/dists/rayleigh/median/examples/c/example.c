@@ -31,7 +31,7 @@ int main( void ) {
 	int i;
 
 	for ( i = 0; i < 25; i++ ) {
-		sigma = random_uniform( 0.0, 20.0 );
+		sigma = random_uniform( 0.1, 20.0 );
 		y = stdlib_base_dists_rayleigh_median( sigma );
 		printf( "σ: %lf, Median(X;σ): %lf\n", sigma, y );
 	}

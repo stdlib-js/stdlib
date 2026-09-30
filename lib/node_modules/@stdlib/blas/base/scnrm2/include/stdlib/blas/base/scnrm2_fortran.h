@@ -30,7 +30,7 @@ extern "C" {
 #endif
 
 /**
-* Computes the L2-norm of a complex single-precision floating-point vector.
+* Computes the L2-norm of a single-precision complex floating-point vector.
 */
 void scnrm2sub( const int *, const void *, const int *, float * );
 

@@ -48,9 +48,8 @@
     --------
     > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );
     > function f( v ) { if ( v > 2.0 ) { return v * 10.0; } };
-    > var y = {{alias}}( x, f );
-    > {{alias:@stdlib/ndarray/to-array}}( y )
-    [ 30.0, 40.0 ]
+    > var y = {{alias}}( x, f )
+    <ndarray>[ 30.0, 40.0 ]
 
     See Also
     --------

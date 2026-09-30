@@ -100,7 +100,7 @@ static double random_uniform( const double min, const double max ) {
 */
 static double benchmark1( int iterations, int len ) {
 	double elapsed;
-	double x[ len ];
+	double *x;
 	double t;
 	int i;
 
@@ -115,6 +115,7 @@ static double benchmark1( int iterations, int len ) {
 		.sd = 0.0
 	};
 
+	x = (double *) malloc( len * sizeof( double ) );
 	for ( i = 0; i < len; i++ ) {
 		x[ i ] = random_uniform( -5.0, 5.0 );
 	}
@@ -131,6 +132,7 @@ static double benchmark1( int iterations, int len ) {
 	if ( results.statistic != results.statistic ) {
 		printf( "should not return NaN\n" );
 	}
+	free( x );
 	return elapsed;
 }
 
@@ -143,7 +145,7 @@ static double benchmark1( int iterations, int len ) {
 */
 static double benchmark2( int iterations, int len ) {
 	double elapsed;
-	double x[ len ];
+	double *x;
 	double t;
 	int i;
 
@@ -158,6 +160,7 @@ static double benchmark2( int iterations, int len ) {
 		.sd = 0.0
 	};
 
+	x = (double *) malloc( len * sizeof( double ) );
 	for ( i = 0; i < len; i++ ) {
 		x[ i ] = random_uniform( -5.0, 5.0 );
 	}
@@ -174,6 +177,7 @@ static double benchmark2( int iterations, int len ) {
 	if ( results.statistic != results.statistic ) {
 		printf( "should not return NaN\n" );
 	}
+	free( x );
 	return elapsed;
 }
 

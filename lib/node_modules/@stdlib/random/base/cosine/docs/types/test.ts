@@ -151,14 +151,14 @@ import cosine = require( './index' );
 	cosine.factory( -2, 2, { 'prng': null } ); // $ExpectError
 	cosine.factory( -2, 2, { 'prng': [] } ); // $ExpectError
 	cosine.factory( -2, 2, { 'prng': {} } ); // $ExpectError
-	cosine.factory( -2, 2, { 'prng': true ); // $ExpectError
+	cosine.factory( -2, 2, { 'prng': true } ); // $ExpectError
 
 	cosine.factory( { 'prng': 123 } ); // $ExpectError
 	cosine.factory( { 'prng': 'abc' } ); // $ExpectError
 	cosine.factory( { 'prng': null } ); // $ExpectError
 	cosine.factory( { 'prng': [] } ); // $ExpectError
 	cosine.factory( { 'prng': {} } ); // $ExpectError
-	cosine.factory( { 'prng': true ); // $ExpectError
+	cosine.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -185,7 +185,7 @@ import cosine = require( './index' );
 	cosine.factory( -2, 2, { 'state': null } ); // $ExpectError
 	cosine.factory( -2, 2, { 'state': [] } ); // $ExpectError
 	cosine.factory( -2, 2, { 'state': {} } ); // $ExpectError
-	cosine.factory( -2, 2, { 'state': true ); // $ExpectError
+	cosine.factory( -2, 2, { 'state': true } ); // $ExpectError
 	cosine.factory( -2, 2, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	cosine.factory( { 'state': 123 } ); // $ExpectError
@@ -193,7 +193,7 @@ import cosine = require( './index' );
 	cosine.factory( { 'state': null } ); // $ExpectError
 	cosine.factory( { 'state': [] } ); // $ExpectError
 	cosine.factory( { 'state': {} } ); // $ExpectError
-	cosine.factory( { 'state': true ); // $ExpectError
+	cosine.factory( { 'state': true } ); // $ExpectError
 	cosine.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

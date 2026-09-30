@@ -1,0 +1,9 @@
+---
+type: amend-message
+---
+feat: add `blas/ext/base/ndarray/sindex-of-not-equal`
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/13560
+Co-authored-by: Athan Reines <kgryte@gmail.com>
+Reviewed-by: Athan Reines <kgryte@gmail.com>
+Closes: https://github.com/stdlib-js/metr-issue-tracker/issues/1034

@@ -87,10 +87,12 @@ interface Namespace {
 	* var day = ns.dayOfQuarter();
 	* // returns <number>
 	*
-	* day = ns.dayOfQuarter( new Date() );
+	* @example
+	* var day = ns.dayOfQuarter( new Date() );
 	* // returns <number>
 	*
-	* day = ns.dayOfQuarter( 12, 31, 2017 );
+	* @example
+	* var day = ns.dayOfQuarter( 12, 31, 2017 );
 	* // returns 92
 	*/
 	dayOfQuarter: typeof dayOfQuarter;
@@ -282,6 +284,7 @@ interface Namespace {
 	* ## Notes
 	*
 	* -   By default, the function returns the number of ISO weeks in the current year (according to local time). To determine the number of ISO weeks for a particular year, provide either a year or a `Date` object.
+	* -   The function's return value is a generalization and does **not** take into account inaccuracies due to daylight savings conventions, crossing timezones, or other complications with time and dates.
 	*
 	* @param value - year or `Date` object
 	* @returns number of ISO weeks in a year

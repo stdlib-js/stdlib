@@ -151,14 +151,14 @@ import pareto1 = require( './index' );
 	pareto1.factory( 2, 2, { 'prng': null } ); // $ExpectError
 	pareto1.factory( 2, 2, { 'prng': [] } ); // $ExpectError
 	pareto1.factory( 2, 2, { 'prng': {} } ); // $ExpectError
-	pareto1.factory( 2, 2, { 'prng': true ); // $ExpectError
+	pareto1.factory( 2, 2, { 'prng': true } ); // $ExpectError
 
 	pareto1.factory( { 'prng': 123 } ); // $ExpectError
 	pareto1.factory( { 'prng': 'abc' } ); // $ExpectError
 	pareto1.factory( { 'prng': null } ); // $ExpectError
 	pareto1.factory( { 'prng': [] } ); // $ExpectError
 	pareto1.factory( { 'prng': {} } ); // $ExpectError
-	pareto1.factory( { 'prng': true ); // $ExpectError
+	pareto1.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -185,7 +185,7 @@ import pareto1 = require( './index' );
 	pareto1.factory( 2, 2, { 'state': null } ); // $ExpectError
 	pareto1.factory( 2, 2, { 'state': [] } ); // $ExpectError
 	pareto1.factory( 2, 2, { 'state': {} } ); // $ExpectError
-	pareto1.factory( 2, 2, { 'state': true ); // $ExpectError
+	pareto1.factory( 2, 2, { 'state': true } ); // $ExpectError
 	pareto1.factory( 2, 2, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	pareto1.factory( { 'state': 123 } ); // $ExpectError
@@ -193,7 +193,7 @@ import pareto1 = require( './index' );
 	pareto1.factory( { 'state': null } ); // $ExpectError
 	pareto1.factory( { 'state': [] } ); // $ExpectError
 	pareto1.factory( { 'state': {} } ); // $ExpectError
-	pareto1.factory( { 'state': true ); // $ExpectError
+	pareto1.factory( { 'state': true } ); // $ExpectError
 	pareto1.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

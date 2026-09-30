@@ -25,15 +25,21 @@ import { typedndarray } from '@stdlib/types/ndarray';
 /**
 * Returns a string created by joining one-dimensional ndarray elements using a specified separator.
 *
-* @param arrays - array-like object containing a one-dimensional input ndarray and a zero-dimensional ndarray containing a separator
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*     -   a zero-dimensional ndarray containing a separator.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns joined string
 *
 * @example
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var vector = require( '@stdlib/ndarray/vector/ctor' );
 * var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 *
-* var xbuf = [ 1.0, 3.0, 4.0, 2.0 ];
-* var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+* var x = vector( [ 1.0, 3.0, 4.0, 2.0 ], 'generic' );
 *
 * var separator = scalar2ndarray( ',', {
 *     'dtype': 'generic'

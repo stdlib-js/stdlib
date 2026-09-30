@@ -37,6 +37,7 @@
 #include "stdlib/constants/float64/max_base10_exponent.h"
 #include "stdlib/constants/float64/min_base10_exponent.h"
 #include "stdlib/constants/float64/pinf.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdint.h>
 
 static const double LOG210 = 3.32192809488736234787e0;
@@ -123,7 +124,7 @@ double stdlib_base_exp10( const double x ) {
 	int32_t n;
 
 	if ( stdlib_base_is_nan( x ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( x > STDLIB_CONSTANT_FLOAT64_MAX_BASE10_EXPONENT ) {
 		return STDLIB_CONSTANT_FLOAT64_PINF;

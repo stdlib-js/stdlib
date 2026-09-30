@@ -71,7 +71,7 @@ interface Routine {
 * Returns a string created by joining strided array elements using a specified separator.
 *
 * @param N - number of indexed elements
-* @param sep - separator
+* @param separator - separator
 * @param x - input array
 * @param strideX - stride length
 * @returns joined string

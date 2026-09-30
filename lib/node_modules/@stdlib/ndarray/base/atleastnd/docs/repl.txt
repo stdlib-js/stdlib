@@ -1,0 +1,29 @@
+
+{{alias}}( ndims, arrays )
+    Converts a list of values (scalars and/or ndarrays) to ndarrays having at
+    least a specified number of dimensions.
+
+    Parameters
+    ----------
+    ndims: integer
+        Minimum number of dimensions.
+
+    arrays: ArrayLikeObject
+        List of scalars and/or ndarrays.
+
+    Returns
+    -------
+    out: Array<ndarray>
+        List of ndarrays.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
+    <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
+    > var y = {{alias:@stdlib/ndarray/array}}( [ 5, 6, 7, 8 ] )
+    <ndarray>[ 5, 6, 7, 8 ]
+    > var out = {{alias}}( 3, [ x, y ] )
+    [ <ndarray>, <ndarray> ]
+
+    See Also
+    --------

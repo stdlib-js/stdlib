@@ -62,6 +62,7 @@
     "generating functions",
     "moments",
     "discrete",
+    "counts",
     "poisson",
     "univariate"
   ]

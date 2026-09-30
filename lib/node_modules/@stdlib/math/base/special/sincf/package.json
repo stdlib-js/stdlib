@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/math/base/special/sincf",
   "version": "0.0.0",
-  "description": "Compute the normalized cardinal sine of a single-precision floating-point number (in radians).",
+  "description": "Compute the normalized cardinal sine of a single-precision floating-point number.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -69,13 +69,13 @@
       "$schema": "math/base@v1.0",
       "base_alias": "sinc",
       "alias": "sincf",
-      "pkg_desc": "compute the normalized cardinal sine of a single-precision floating-point number (in radians)",
-      "desc": "computes the normalized cardinal sine of a single-precision floating-point number (in radians)",
+      "pkg_desc": "compute the normalized cardinal sine of a single-precision floating-point number",
+      "desc": "computes the normalized cardinal sine of a single-precision floating-point number",
       "short_desc": "normalized cardinal sine",
       "parameters": [
         {
           "name": "x",
-          "desc": "input value (in radians)",
+          "desc": "input value",
           "type": {
             "javascript": "number",
             "jsdoc": "number",

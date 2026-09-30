@@ -63,6 +63,7 @@
     "half",
     "half-precision",
     "floating-point",
+    "float",
     "float16",
     "16bit",
     "16-bit"

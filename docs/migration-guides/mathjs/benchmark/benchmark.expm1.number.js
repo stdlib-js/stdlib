@@ -25,6 +25,7 @@ var bench = require( '@stdlib/bench' );
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var filledBy = require( '@stdlib/array/filled-by' );
 var uniform = require( '@stdlib/random/base/uniform' ).factory;
+var format = require( '@stdlib/string/format' );
 var base = require( '@stdlib/math/base/special/expm1' );
 var tryRequire = require( '@stdlib/utils/try-require' );
 var pkg = require( './../package.json' ).name;
@@ -40,7 +41,7 @@ var opts = {
 
 // MAIN //
 
-bench( pkg+'::stdlib:math/base/special/expm1:value=number', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:math/base/special/expm1:value=number', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var i;
@@ -64,7 +65,7 @@ bench( pkg+'::stdlib:math/base/special/expm1:value=number', opts, function bench
 
 // TODO: add math/special/expm1 benchmarks
 
-bench( pkg+'::mathjs:expm1:value=number', opts, function benchmark( b ) {
+bench( format( '%s::mathjs:expm1:value=number', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var i;

@@ -23,10 +23,13 @@
 import { NumericArray, Collection, AccessorArrayLike } from '@stdlib/types/array';
 
 /**
-* Interface describing `range`.
+* Input array.
 */
 type InputArray = NumericArray | Collection<number> | AccessorArrayLike<number>;
 
+/**
+* Interface describing `range`.
+*/
 interface Routine {
 	/**
 	* Computes the range of a strided array.

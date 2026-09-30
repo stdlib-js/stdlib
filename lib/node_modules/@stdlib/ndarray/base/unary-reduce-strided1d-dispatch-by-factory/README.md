@@ -158,7 +158,7 @@ var opts = {
 var y = unary( x, opts, clbk );
 // returns <ndarray>
 
-var dt = getDType( y );
+var dt = String( getDType( y ) );
 // returns 'float64'
 ```
 

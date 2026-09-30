@@ -25,7 +25,7 @@
 # [1]: https://github.com/jimhester/lintr
 
 # Ensure that the `lintr` package is installed...
-if ( !require( 'lintr', quietly = TRUE, character.only = TRUE ) ) {
+if ( !requireNamespace( 'lintr', quietly = TRUE ) ) {
 	install.packages( 'lintr', repos = 'http://lib.stat.cmu.edu/R/CRAN/', quiet = TRUE );
 }
 
@@ -38,8 +38,11 @@ if ( n == 0L ) {
 	stop( 'Must provide at least one file to lint.', call. = FALSE );
 }
 
+# Warn on partial `$` matches as replacement for deprecated `extraction_operator_linter`:
+options(warnPartialMatchDollar = TRUE)
+
 # Specify which linters to use...
-linters <- lintr::linters_with_defaults( defaults = default_linters,
+linters <- lintr::linters_with_defaults(
 	# Check that no absolute paths are used:
 	absolute_path_linter = lintr::absolute_path_linter(),
 
@@ -51,9 +54,6 @@ linters <- lintr::linters_with_defaults( defaults = default_linters,
 
 	# Allow commented code outside roxygen blocks:
 	commented_code_linter = NULL, # lintr::commented_code_linter,
-
-	# Require the `[[` operator is used when extracting a single element from an object, not `[` (subsetting) or `$` (interactive use):
-	extraction_operator_linter = lintr::extraction_operator_linter(),
 
 	# Require that integers are explicitly typed using the form `1L` instead of `1`:
 	implicit_integer_linter = lintr::implicit_integer_linter(),
@@ -111,7 +111,7 @@ linters <- lintr::linters_with_defaults( defaults = default_linters,
 	T_and_F_symbol_linter = lintr::T_and_F_symbol_linter(),
 
 	# Report the use of undesirable functions (e.g., `attach` or `sapply`) and suggest an alternative:
-	undesirable_function_linter = lintr::undesirable_function_linter( fun = within( default_undesirable_functions, rm( options ) ) ),
+	undesirable_function_linter = lintr::undesirable_function_linter( fun = within( lintr::default_undesirable_functions, rm( options ) ) ),
 
 	# Report the use of undesirable operators (e.g., `:::` or `<<-`) and suggest an alternative:
 	undesirable_operator_linter = lintr::undesirable_operator_linter(),

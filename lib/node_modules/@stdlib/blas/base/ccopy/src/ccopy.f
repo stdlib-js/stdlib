@@ -16,7 +16,7 @@
 ! limitations under the License.
 !<
 
-!> Copies values from one complex single-precision floating-point vector to another complex single-precision floating-point vector.
+!> Copies values from one single-precision complex floating-point vector to another single-precision complex floating-point vector.
 !
 ! ## Notes
 !

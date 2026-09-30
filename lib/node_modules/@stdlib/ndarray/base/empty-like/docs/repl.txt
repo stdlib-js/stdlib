@@ -30,16 +30,12 @@
     --------
     > var x = {{alias:@stdlib/ndarray/base/zeros}}( 'float64', [ 2, 2 ], 'row-major' )
     <ndarray>
-    > var sh = x.shape
+    > var sh = {{alias:@stdlib/ndarray/shape}}( x )
     [ 2, 2 ]
-    > var dt = x.dtype
-    'float64'
     > var y = {{alias}}( x )
     <ndarray>
-    > sh = y.shape
+    > sh = {{alias:@stdlib/ndarray/shape}}( y )
     [ 2, 2 ]
-    > dt = y.dtype
-    'float64'
 
     See Also
     --------

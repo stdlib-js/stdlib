@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# PINF
+# FLOAT64_PINF
 
 > [Double-precision floating-point][ieee754] positive infinity.
 

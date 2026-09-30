@@ -1,0 +1,32 @@
+
+{{alias}}( x[, locales[, options]] )
+    Serializes an ndarray as a locale-aware string.
+
+    This function does *not* serialize data outside of the buffer region
+    defined by the ndarray view.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    locales: string|Array<string> (optional)
+        A BCP 47 language tag or an array of such strings.
+
+    options: Object (optional)
+        Configuration options.
+
+    Returns
+    -------
+    out: string
+        String representation.
+
+    Examples
+    --------
+    > var arr = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] );
+    > var out = {{alias}}( arr )
+    <string>
+
+    See Also
+    --------
+

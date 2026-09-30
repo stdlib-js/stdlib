@@ -25,6 +25,7 @@ import ctors = require( './index' );
 {
 	ctors( 'float64' ); // $ExpectType Float64ArrayConstructor
 	ctors( 'float32' ); // $ExpectType Float32ArrayConstructor
+	ctors( 'float16' ); // $ExpectType Float16ArrayConstructor
 	ctors( 'complex128' ); // $ExpectType Complex128ArrayConstructor
 	ctors( 'complex64' ); // $ExpectType Complex64ArrayConstructor
 	ctors( 'bool' ); // $ExpectType BooleanArrayConstructor

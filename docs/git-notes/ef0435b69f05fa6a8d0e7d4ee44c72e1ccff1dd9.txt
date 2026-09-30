@@ -1,0 +1,9 @@
+---
+type: amend-message
+---
+feat: add Wald distribution PDF
+
+PR-URL: #9324
+Ref: #209
+
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>

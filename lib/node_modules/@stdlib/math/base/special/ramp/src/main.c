@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/math/base/special/ramp.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/math/base/assert/is_nan.h"
 
 /**
@@ -35,7 +36,7 @@
 */
 double stdlib_base_ramp( const double x ) {
 	if ( stdlib_base_is_nan( x ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( x > 0.0 ) {
 		return x;

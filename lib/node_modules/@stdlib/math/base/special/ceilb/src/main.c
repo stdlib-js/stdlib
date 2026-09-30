@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/math/base/special/ceilb.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/assert/is_infinite.h"
 #include "stdlib/math/base/special/ceil.h"
@@ -41,7 +42,7 @@ double stdlib_base_ceilb( const double x, const int32_t n, const int32_t b ) {
 	double s;
 
 	if ( stdlib_base_is_nan( x ) || b <= 0 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( stdlib_base_is_infinite( x ) || x == 0.0 ) {
 		return x;

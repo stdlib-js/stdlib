@@ -1,0 +1,24 @@
+{{alias}}( σ )
+    Returns the standard deviation of a half-normal distribution.
+
+    If provided `σ <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    σ: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Standard deviation.
+
+    Examples
+    --------
+    > var v = {{alias}}( 9.0 )
+    ~5.425
+    > v = {{alias}}( 2.0 )
+    ~1.2056
+
+    See Also
+    --------

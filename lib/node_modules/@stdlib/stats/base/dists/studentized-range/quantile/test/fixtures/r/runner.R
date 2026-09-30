@@ -20,7 +20,7 @@
 options( digits = 16L );
 
 # Set the PRNG seed:
-set.seed( 200 );
+set.seed( 200L );
 
 #' Generate test fixtures.
 #'
@@ -35,19 +35,19 @@ main <- function() {
 	#' filepath <- get_script_path();
 	get_script_path <- function() {
 		args <- commandArgs( trailingOnly = FALSE );
-		needle <- "--file=";
+		needle <- '--file=';
 		match <- grep( needle, args );
-		if ( length( match ) > 0 ) {
+		if ( length( match ) > 0L ) {
 			# Rscript:
-			filepath <- sub( needle, "", args[match] );
+			filepath <- sub( needle, '', args[match] );
 		} else {
-			ls_vars <- ls( sys.frames()[[1]] )
-			if ( "fileName" %in% ls_vars ) {
+			ls_vars <- ls( sys.frames()[[1L]] )
+			if ( 'fileName' %in% ls_vars ) {
 				# Source'd via RStudio:
-				filepath <- sys.frames()[[1]]$fileName; # nolint
+				filepath <- sys.frames()[[1L]]$fileName; # nolint
 			} else {
 				# Source'd via R console:
-				filepath <- sys.frames()[[1]]$ofile;
+				filepath <- sys.frames()[[1L]]$ofile;
 			}
 		}
 		return( normalizePath( filepath ) );
@@ -59,10 +59,10 @@ main <- function() {
 	#' @return JSON blob
 	#'
 	#' @examples
-	#' x <- seq( -6.5, 25, 0.5 );
+	#' x <- seq( -6.5, 25.0, 0.5 );
 	#' json <- to_json( x );
 	to_json <- function( x ) {
-		return( jsonlite::toJSON( x, digits = 16, auto_unbox = TRUE ) );
+		return( jsonlite::toJSON( x, digits = 16L, auto_unbox = TRUE ) );
 	}
 
 	#' Generate an output absolute filepath based on the script directory.
@@ -71,18 +71,18 @@ main <- function() {
 	#' @return An absolute filepath
 	#'
 	#' @examples
-	#' filepath <- get_filepath( "data.json" );
+	#' filepath <- get_filepath( 'data.json' );
 	get_filepath <- function( name ) {
-		return( paste( source_dir, "/", name, sep = "" ) );
+		return( paste( source_dir, '/', name, sep = '' ) );
 	}
 
 	# Get the directory of this script:
 	source_dir <- dirname( get_script_path() );
 
 	# Generate test fixture data:
-	p <- sample( seq( 0.1, 0.9, length.out = 500 ) );
-	r <- sample( seq( 2.0, 10.0, length.out = 500 ) );
-	v <- sample( seq( 2.0, 10.0, length.out = 500 ) );
+	p <- sample( seq( 0.1, 0.9, length.out = 500L ) );
+	r <- sample( seq( 2.0, 10.0, length.out = 500L ) );
+	v <- sample( seq( 2.0, 10.0, length.out = 500L ) );
 	y <- qtukey( p, r, v );
 	print( which( is.nan( y )))
 
@@ -93,7 +93,7 @@ main <- function() {
 	y <- to_json( y );
 
 	# Write the data to file...
-	filepath <- get_filepath( "data.json" );
+	filepath <- get_filepath( 'data.json' );
 	write( data, filepath );
 }
 

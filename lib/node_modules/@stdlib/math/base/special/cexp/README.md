@@ -57,26 +57,12 @@ Evaluates the [exponential][exponential-function] function for a double-precisio
 
 ```javascript
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var v = cexp( new Complex128( 0.0, 0.0 ) );
-// returns <Complex128>
-
-var re = real( v );
-// returns 1.0
-
-var im = imag( v );
-// returns 0.0
+// returns <Complex128>[ 1.0, 0.0 ]
 
 v = cexp( new Complex128( 0.0, 1.0 ) );
-// returns <Complex128>
-
-re = real( v );
-// returns ~0.540
-
-im = imag( v );
-// returns ~0.841
+// returns <Complex128>[ ~0.540, ~0.841 ]
 ```
 
 </section>

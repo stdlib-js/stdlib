@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/math/base/special/truncsd.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/assert/is_infinite.h"
 #include "stdlib/math/base/special/pow.h"
@@ -46,7 +47,7 @@ double stdlib_base_truncsd( const double x, const int32_t n, const int32_t b ) {
 	double y;
 
 	if ( stdlib_base_is_nan( x ) || n < 1 || b <= 0 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( stdlib_base_is_infinite( x ) || x == 0.0 ) {
 		return x;

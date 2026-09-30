@@ -151,14 +151,14 @@ import betaprime = require( './index' );
 	betaprime.factory( 2, 2, { 'prng': null } ); // $ExpectError
 	betaprime.factory( 2, 2, { 'prng': [] } ); // $ExpectError
 	betaprime.factory( 2, 2, { 'prng': {} } ); // $ExpectError
-	betaprime.factory( 2, 2, { 'prng': true ); // $ExpectError
+	betaprime.factory( 2, 2, { 'prng': true } ); // $ExpectError
 
 	betaprime.factory( { 'prng': 123 } ); // $ExpectError
 	betaprime.factory( { 'prng': 'abc' } ); // $ExpectError
 	betaprime.factory( { 'prng': null } ); // $ExpectError
 	betaprime.factory( { 'prng': [] } ); // $ExpectError
 	betaprime.factory( { 'prng': {} } ); // $ExpectError
-	betaprime.factory( { 'prng': true ); // $ExpectError
+	betaprime.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -185,7 +185,7 @@ import betaprime = require( './index' );
 	betaprime.factory( 2, 2, { 'state': null } ); // $ExpectError
 	betaprime.factory( 2, 2, { 'state': [] } ); // $ExpectError
 	betaprime.factory( 2, 2, { 'state': {} } ); // $ExpectError
-	betaprime.factory( 2, 2, { 'state': true ); // $ExpectError
+	betaprime.factory( 2, 2, { 'state': true } ); // $ExpectError
 	betaprime.factory( 2, 2, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	betaprime.factory( { 'state': 123 } ); // $ExpectError
@@ -193,7 +193,7 @@ import betaprime = require( './index' );
 	betaprime.factory( { 'state': null } ); // $ExpectError
 	betaprime.factory( { 'state': [] } ); // $ExpectError
 	betaprime.factory( { 'state': {} } ); // $ExpectError
-	betaprime.factory( { 'state': true ); // $ExpectError
+	betaprime.factory( { 'state': true } ); // $ExpectError
 	betaprime.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

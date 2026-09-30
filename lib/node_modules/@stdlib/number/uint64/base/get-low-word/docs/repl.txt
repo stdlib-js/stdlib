@@ -1,0 +1,25 @@
+
+{{alias}}( a )
+    Returns a 32-bit unsigned integer corresponding to the low 32-bit word of a
+    64-bit unsigned integer.
+
+    Parameters
+    ----------
+    a: Uint64
+        Input value.
+
+    Returns
+    -------
+    out: integer
+        Lower order word (32-bit unsigned integer).
+
+    Examples
+    --------
+    > var a = new {{alias:@stdlib/number/uint64/ctor}}( 4294967296 )
+    <Uint64>[ 4294967296n ]
+    > var w = {{alias}}( a )
+    0
+
+    See Also
+    --------
+

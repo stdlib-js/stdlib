@@ -33,7 +33,7 @@
 * @param strideY     Y stride length
 *
 * @example
-* include <stdint.h>
+* #include <stdint.h>
 *
 * // Create an input strided array:
 * const float x[] = { 0.0, 4.0, 9.0, 12.0, 24.0, 64.0, 81.0, 101.0 };

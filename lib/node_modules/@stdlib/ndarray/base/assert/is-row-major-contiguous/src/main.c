@@ -49,7 +49,7 @@
 * int8_t b = stdlib_ndarray_is_row_major_contiguous( STDLIB_NDARRAY_UINT8, ndims, shape, strides, offset );
 * // returns 1
 */
-int8_t stdlib_ndarray_is_row_major_contiguous( enum STDLIB_NDARRAY_DTYPE dtype, int64_t ndims, int64_t *shape, int64_t *strides, int64_t offset ) {
+int8_t stdlib_ndarray_is_row_major_contiguous( const enum STDLIB_NDARRAY_DTYPE dtype, const int64_t ndims, const int64_t *shape, const int64_t *strides, const int64_t offset ) {
 	if (
 		stdlib_ndarray_iteration_order( ndims, strides ) != 0 &&
 		stdlib_ndarray_is_row_major( ndims, strides ) != 0 &&

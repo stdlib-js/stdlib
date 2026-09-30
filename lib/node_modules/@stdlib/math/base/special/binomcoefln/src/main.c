@@ -22,6 +22,7 @@
 #include "stdlib/math/base/special/abs.h"
 #include "stdlib/math/base/special/ln.h"
 #include "stdlib/constants/float64/ninf.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Computes the natural logarithm of the binomial coefficient of two integers.
@@ -36,7 +37,7 @@
 */
 double stdlib_base_binomcoefln( const double n, const double k ) {
 	if ( !stdlib_base_is_integer( n ) || !stdlib_base_is_integer( k ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( n < 0 ) {
 		return stdlib_base_binomcoefln( -n + k - 1, k );

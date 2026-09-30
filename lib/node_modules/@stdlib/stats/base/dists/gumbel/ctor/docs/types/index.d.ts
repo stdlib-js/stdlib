@@ -58,7 +58,7 @@ declare class Gumbel {
 	constructor();
 
 	/**
-	*  Location parameter.
+	* Location parameter.
 	*/
 	mu: number;
 
