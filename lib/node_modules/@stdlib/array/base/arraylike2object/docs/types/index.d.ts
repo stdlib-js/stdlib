@@ -22,7 +22,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection, Complex64Array, Complex128Array, AccessorArrayLike } from '@stdlib/types/array';
+import { Collection, Complex64Array, Complex128Array, AccessorArrayLike, Float16Array } from '@stdlib/types/array';
 import { Complex64, Complex128, ComplexLike } from '@stdlib/types/complex';
 
 /**
@@ -42,6 +42,15 @@ type GetFloat64 = ( arr: Float64Array, idx: number ) => number | void;
 * @returns element value
 */
 type GetFloat32 = ( arr: Float32Array, idx: number ) => number | void;
+
+/**
+* Returns an element from a `Float16Array`.
+*
+* @param arr - input array
+* @param idx - element index
+* @returns element value
+*/
+type GetFloat16 = ( arr: Float16Array, idx: number ) => number | void;
 
 /**
 * Returns an element from an `Int32Array`.
@@ -168,6 +177,15 @@ type SetFloat64 = ( arr: Float64Array, idx: number, value: number ) => void;
 * @param value - value to set
 */
 type SetFloat32 = ( arr: Float32Array, idx: number, value: number ) => void;
+
+/**
+* Sets an element in a `Float16Array`.
+*
+* @param arr - input array
+* @param idx - element index
+* @param value - value to set
+*/
+type SetFloat16 = ( arr: Float16Array, idx: number, value: number ) => void;
 
 /**
 * Sets an element in an `Int32Array`.
@@ -325,6 +343,31 @@ interface Float32AccessorObject {
 	* Two-element array whose first element is an accessor for retrieving an array element and whose second element is an accessor for setting an array element.
 	*/
 	accessors: [ GetFloat32, SetFloat32 ];
+}
+
+/**
+* Interface describing the output object for a `Float16Array`.
+*/
+interface Float16AccessorObject {
+	/**
+	* Reference to the original array-like object.
+	*/
+	data: Float16Array;
+
+	/**
+	* Data type.
+	*/
+	dtype: 'float16';
+
+	/**
+	* Boolean indicating whether the provided array-like object supports the get/set protocol (i.e., uses accessors for getting and setting elements).
+	*/
+	accessorProtocol: false;
+
+	/**
+	* Two-element array whose first element is an accessor for retrieving an array element and whose second element is an accessor for setting an array element.
+	*/
+	accessors: [ GetFloat16, SetFloat16 ];
 }
 
 /**
@@ -682,6 +725,34 @@ declare function arraylike2object( x: Float64Array ): Float64AccessorObject;
 * // returns 3
 */
 declare function arraylike2object( x: Float32Array ): Float32AccessorObject;
+
+/**
+* Converts a one-dimensional array-like object to an object likely to have the same "shape".
+*
+* ## Notes
+*
+* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding array data to ensure that internal functions operating on arrays are provided consistent argument "shapes".
+*
+* @param x - input array
+* @returns object containing array data
+*
+* @example
+* var Float16Array = require( '@stdlib/array/float16' );
+*
+* var x = new Float16Array( [ 1, 2, 3, 4 ] );
+* var obj = arraylike2object( x );
+* // returns {...}
+*
+* var bool = obj.accessorProtocol;
+* // returns false
+*
+* var fcns = obj.accessors;
+* // returns [ <Function>, <Function> ]
+*
+* var v = fcns[ 0 ]( x, 2 );
+* // returns 3
+*/
+declare function arraylike2object( x: Float16Array ): Float16AccessorObject;
 
 /**
 * Converts a one-dimensional array-like object to an object likely to have the same "shape".

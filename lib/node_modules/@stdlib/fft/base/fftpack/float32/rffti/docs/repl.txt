@@ -1,0 +1,56 @@
+
+{{alias}}( N, w, strideW, offsetW )
+    Initializes a single-precision floating-point workspace array for performing
+    a real-valued Fourier transform.
+
+    The workspace array is divided into three sections:
+
+    1. scratch/workspace: the section ranges from indices 0 to N-1 and is used
+    while performing transforms. This section is not updated during
+    initialization.
+
+    2. twiddle factors: the section ranges from indices N to 2N-1 and stores a
+    table of reusable complex exponential constants as cosine/sine pairs.
+
+    3. radix factor table: the section starts at index 2N and stores the
+    sequence length N, the number of factors into which N was decomposed, and
+    the individual integer radix factors.
+
+    Any remaining array space remains as unused storage.
+
+    Parameters
+    ----------
+    N: integer
+        Length of the sequence.
+
+    w: Float32Array
+        Workspace array.
+
+    strideW: integer
+        Stride length for `w`.
+
+    offsetW: integer
+        Starting index for `w`.
+
+    Returns
+    -------
+    out: Float32Array
+        Workspace array.
+
+    Examples
+    --------
+    > var N = 8;
+    > var w = new {{alias:@stdlib/array/float32}}( ( 2*N ) + 34 );
+    > var out = {{alias}}( N, w, 1, 0 )
+    <Float32Array>
+    > var bool = ( out === w )
+    true
+    > var twiddleFactors = w.slice( N, 2*N )
+    <Float32Array>[ ~0.707, ~0.707, 0, 0, 0, 0, 0, 0 ]
+    > var fview = new {{alias:@stdlib/array/uint32}}( w.buffer, w.byteOffset, w.length );
+    > var factors = fview.slice( 2*N, ( 2*N ) + 4 )
+    <Uint32Array>[ 8, 2, 2, 4 ]
+
+    See Also
+    --------
+
