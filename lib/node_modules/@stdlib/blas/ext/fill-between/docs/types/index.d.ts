@@ -50,7 +50,7 @@ interface Options {
 /**
 * Interface for filling an ndarray.
 */
-interface FillRange {
+interface FillBetween {
 	/**
 	* Fills an input ndarray with a specified value along an ndarray dimension.
 	*
@@ -330,7 +330,7 @@ interface FillRange {
 * var bool = ( x === y );
 * // returns true
 */
-declare const fillBetween: FillRange;
+declare const fillBetween: FillBetween;
 
 
 // EXPORTS //
