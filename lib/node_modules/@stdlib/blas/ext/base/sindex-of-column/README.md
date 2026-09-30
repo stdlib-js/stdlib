@@ -28,6 +28,8 @@ limitations under the License.
 
 <!-- /.intro -->
 
+<!-- Package usage documentation. -->
+
 <section class="usage">
 
 ## Usage
@@ -194,16 +196,20 @@ var out = sindexOfColumn.ndarray( 3, 2, A, 1, 3, 0, x, 1, 0, workspace, 1, 0 );
 
 <!-- /.usage -->
 
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 <section class="notes">
 
 ## Notes
 
 -   If `M <= 0` or `N <= 0`, both functions return `-1`.
--   When searching for a matching column, the function checks for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct, and `-0` and `+0` are considered the same.
+-   When searching for a matching column, the functions check for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct, and `-0` and `+0` are considered the same.
 
 </section>
 
 <!-- /.notes -->
+
+<!-- Package usage examples. -->
 
 <section class="examples">
 

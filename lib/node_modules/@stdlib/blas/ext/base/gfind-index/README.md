@@ -22,6 +22,16 @@ limitations under the License.
 
 > Return the index of the first element which passes a test implemented by a predicate function.
 
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- Package usage documentation. -->
+
 <section class="usage">
 
 ## Usage
@@ -45,7 +55,7 @@ var idx = gfindIndex( x.length, x, 1, isEven );
 // returns 3
 ```
 
-If no element passes a test implemented by a predicate function, the function returns `-1`.
+If the function is unable to find an element which passes a test implemented by a predicate function, the function returns `-1`.
 
 ```javascript
 function isEven( v ) {
@@ -61,7 +71,7 @@ var idx = gfindIndex( x.length, x, 1, isEven );
 The function has the following parameters:
 
 -   **N**: number of indexed elements.
--   **x**: input array.
+-   **x**: input [`Array`][mdn-array] or [`typed array`][mdn-typed-array].
 -   **strideX**: stride length.
 -   **clbk**: callback function.
 -   **thisArg**: execution context (_optional_).
@@ -145,7 +155,7 @@ The function has the following additional parameters:
 
 -   **offsetX**: starting index.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to access only the last three elements:
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to access only the last three elements of the strided array:
 
 ```javascript
 function isEven( v ) {
@@ -162,6 +172,8 @@ var idx = gfindIndex.ndarray( 3, x, 1, x.length-3, isEven );
 
 <!-- /.usage -->
 
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 <section class="notes">
 
 ## Notes
@@ -172,6 +184,8 @@ var idx = gfindIndex.ndarray( 3, x, 1, x.length-3, isEven );
 </section>
 
 <!-- /.notes -->
+
+<!-- Package usage examples. -->
 
 <section class="examples">
 
@@ -219,6 +233,8 @@ console.log( idx );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[mdn-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
