@@ -46,11 +46,98 @@ on:
 # Workflow jobs:
 jobs:
 
+  # Define a job for determining whether the pull request is eligible for automatic fixes...
+  check:
+
+    # Define a display name:
+    name: 'Check autofix eligibility'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the job outputs:
+    outputs:
+      # Boolean (serialized as a string) indicating whether it is safe to run autofix against the pull request:
+      safe: ${{ steps.guard.outputs.safe }}
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Checkout trusted workflow scripts from the base repository (this job never checks out the untrusted PR, so the guard below always runs trusted code):
+      - name: 'Checkout trusted workflow scripts'
+        # Pin action to full length commit SHA
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          # Always use the base repository, never the PR's (potentially forked) repository:
+          repository: 'stdlib-js/stdlib'
+
+          # Pin to the base repository's default branch:
+          ref: 'develop'
+
+          # Only fetch the workflow helper scripts:
+          sparse-checkout: |
+            .github/workflows/scripts
+          sparse-checkout-cone-mode: false
+
+          # Limit clone depth to the most recent commit:
+          fetch-depth: 1
+
+          # Avoid persisting any token in the local Git configuration:
+          persist-credentials: false
+        timeout-minutes: 10
+
+      # Get list of changed files:
+      - name: 'Get list of changed files'
+        id: changed-files
+        run: |
+          page=1
+          files=""
+          while true; do
+              changed_files=$(curl -s -H "Accept: application/vnd.github.v3+json" -H "Authorization: Bearer ${{ secrets.STDLIB_BOT_GITHUB_TOKEN
+                  }}" "https://api.github.com/repos/stdlib-js/stdlib/pulls/${{ inputs.pull_request_number }}/files?page=$page&per_page=100" | jq -r '.[] | .filename')
+              if [ -z "$changed_files" ]; then
+                  break
+              fi
+              files="$files $changed_files"
+              page=$((page+1))
+          done
+          files=$(echo "$files" | tr '\n' ' ' | sed 's/^ //;s/ $//')
+          echo "files=${files}" >> $GITHUB_OUTPUT
+
+      # Determine whether the changed files are safe to automatically fix:
+      - name: 'Check whether changed files are safe to autofix'
+        id: guard
+        env:
+          FILES: ${{ steps.changed-files.outputs.files }}
+        run: |
+          # The autofix job checks out the pull request's (potentially forked) code and runs the
+          # repository's build and lint tooling against it (`make install-node-modules`, `make init`,
+          # ESLint, node-gyp, etc.). If the pull request modifies any file that can influence how that
+          # tooling executes, an outside contributor could achieve arbitrary code execution in the
+          # privileged autofix job. As a defense-in-depth guard, refuse to autofix when the pull request
+          # touches build-, dependency-, or lint-configuration-sensitive paths; such pull requests
+          # require manual review.
+          if sensitive=$("$GITHUB_WORKSPACE/.github/workflows/scripts/common/contains_sensitive_paths" $FILES); then
+            echo "::warning::Skipping autofix: pull request modifies build-/config-sensitive file(s): $(echo "$sensitive" | tr '\n' ' ')"
+            echo "safe=false" >> "$GITHUB_OUTPUT"
+            {
+              echo "### Autofix skipped";
+              echo "";
+              echo "This pull request modifies build-, dependency-, or lint-configuration files, so automatic lint fixing was skipped to avoid executing untrusted tooling in a privileged context. Please apply any lint fixes manually.";
+            } >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "safe=true" >> "$GITHUB_OUTPUT"
+          fi
+
   # Define a job for automatically fixing lint errors:
   autofix:
 
     # Define a display name:
     name: 'Fix lint errors'
+
+    # Only run when the changed files have been determined to be safe to automatically fix:
+    needs: check
+    if: needs.check.outputs.safe == 'true'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -95,6 +182,9 @@ jobs:
           # File path to checkout to:
           path: './'
 
+          # Avoid persisting the access token in the local Git configuration, where build/lint tooling running against the untrusted PR checkout could read it (the final push below uses an explicit authenticated remote URL):
+          persist-credentials: false
+
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
@@ -133,14 +223,40 @@ jobs:
           files=$(echo "$files" | tr '\n' ' ' | sed 's/^ //;s/ $//')
           echo "files=${files}" >> $GITHUB_OUTPUT
 
+      # Checkout trusted workflow scripts from the base repository (so that we source helper script bodies from the base repository, never from the untrusted PR checkout). Performed after the build steps so that `make init`/`make install-node-modules` cannot remove the trusted checkout:
+      - name: 'Checkout trusted workflow scripts'
+        # Pin action to full length commit SHA
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          # Always use the base repository, never the PR's (potentially forked) repository:
+          repository: 'stdlib-js/stdlib'
+
+          # Pin to the base repository's default branch:
+          ref: 'develop'
+
+          # Checkout into a separate directory, outside the PR working tree:
+          path: './_trusted'
+
+          # Only fetch the workflow helper scripts:
+          sparse-checkout: |
+            .github/workflows/scripts
+          sparse-checkout-cone-mode: false
+
+          # Limit clone depth to the most recent commit:
+          fetch-depth: 1
+
+          # Avoid persisting any token in the local Git configuration:
+          persist-credentials: false
+        timeout-minutes: 10
+
       # Fix JavaScript lint errors:
       - name: 'Fix JavaScript lint errors'
         id: fix-lint-errors
         env:
           FILES: ${{ steps.changed-files.outputs.files }}
         run: |
-          files="$FILES"
-          FIX=1 . "$GITHUB_WORKSPACE/.github/workflows/scripts/common/lint_javascript_files" "$files" || true
+          # Source the trusted fixer script from the base repository (not the untrusted PR checkout):
+          FIX=1 . "$GITHUB_WORKSPACE/_trusted/.github/workflows/scripts/common/lint_javascript_files" "$FILES" || true
 
       # Add missing trailing newlines:
       - name: 'Add missing trailing newlines'
@@ -148,16 +264,19 @@ jobs:
         env:
           FILES: ${{ steps.changed-files.outputs.files }}
         run: |
-          files="$FILES"
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/lint_autofix/add_trailing_newlines" "$files"
+          # Source the trusted fixer script from the base repository (not the untrusted PR checkout):
+          . "$GITHUB_WORKSPACE/_trusted/.github/workflows/scripts/lint_autofix/add_trailing_newlines" "$FILES"
 
       # Remove related packages from README.md files:
       - name: 'Remove related packages from README.md files'
         env:
           FILES: ${{ steps.changed-files.outputs.files }}
         run: |
-          files="$FILES"
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/lint_autofix/remove_related_packages" "$files"
+          # Source the trusted fixer script from the base repository (not the untrusted PR checkout):
+          . "$GITHUB_WORKSPACE/_trusted/.github/workflows/scripts/lint_autofix/remove_related_packages" "$FILES"
+
+          # Remove the trusted checkout so that it is not included in the subsequent commit:
+          rm -rf "$GITHUB_WORKSPACE/_trusted"
 
       # Disable Git hooks:
       - name: 'Disable Git hooks'
