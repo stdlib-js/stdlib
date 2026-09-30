@@ -62,7 +62,7 @@ The function has the following parameters:
 -   **y**: second input [`Float32Array`][@stdlib/array/float32].
 -   **strideY**: stride length for `y`.
 
-If the function is unable to find a match, the function returns `-1`.
+If the function is unable to find an element in `x` which is equal to a corresponding element in `y`, the function returns `-1`.
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -99,7 +99,7 @@ var y0 = new Float32Array( [ 0.0, 0.0, 3.0, 0.0 ] );
 var x1 = new Float32Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 var y1 = new Float32Array( y0.buffer, y0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
-// Find index...
+// Find index:
 var idx = slastIndexEqual( 2, x1, 1, y1, 1 );
 // returns 1
 ```
@@ -145,7 +145,8 @@ var idx = slastIndexEqual.ndarray( 3, x, 1, x.length-3, y, 1, y.length-3 );
 
 ## Notes
 
--   When comparing elements, the function checks for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct, and `-0` and `+0` are considered the same.
+-   If `N <= 0`, both functions return `-1`.
+-   When comparing elements, the functions check for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct, and `-0` and `+0` are considered the same.
 
 </section>
 
@@ -295,7 +296,7 @@ int main( void ) {
     const int strideX = 1;
     const int strideY = 1;
 
-    // Perform the search:
+    // Perform a search:
     int idx = stdlib_strided_slast_index_equal( N, x, strideX, y, strideY );
 
     // Print the result:
