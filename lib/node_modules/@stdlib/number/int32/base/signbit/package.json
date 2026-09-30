@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/number/int32/base/signbit",
   "version": "0.0.0",
-  "description": "Return a boolean indicating if the sign bit for a double-precision floating-point number is on (true) or off (false).",
+  "description": "Return a boolean indicating if the sign bit for a signed 32-bit integer is on (true) or off (false).",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
