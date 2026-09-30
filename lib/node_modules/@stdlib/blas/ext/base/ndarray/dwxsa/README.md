@@ -176,7 +176,7 @@ The function accepts the following arguments:
 -   **arrays**: `[in] struct ndarray**` list containing the following ndarrays:
 
     -   `[in] struct ndarray*` a one-dimensional input ndarray.
-    -   `[inout] struct ndarray*` a one-dimensional output ndarray.
+    -   `[out] struct ndarray*` a one-dimensional output ndarray.
     -   `[in] struct ndarray*` a zero-dimensional ndarray containing the scalar constant to subtract.
 
 ```c
