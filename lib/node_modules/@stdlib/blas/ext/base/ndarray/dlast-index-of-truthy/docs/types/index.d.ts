@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { float64ndarray } from '@stdlib/types/ndarray';
+import { float64ndarray, typedndarray } from '@stdlib/types/ndarray';
 
 /**
 * Returns the index of the last truthy element in a one-dimensional double-precision floating-point ndarray.
@@ -30,19 +30,25 @@ import { float64ndarray } from '@stdlib/types/ndarray';
 * -   The function expects the following ndarrays:
 *
 *     -   a one-dimensional input ndarray.
+*     -   a zero-dimensional ndarray containing the index from which to begin searching.
 *
 * @param arrays - array-like object containing ndarrays
 * @returns index
 *
 * @example
 * var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
+* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 *
 * var x = new Float64Vector( [ 0.0, 1.0, 0.0, 2.0 ] );
 *
-* var v = dlastIndexOfTruthy( [ x ] );
+* var fromIndex = scalar2ndarray( 3, {
+*     'dtype': 'generic'
+* });
+*
+* var v = dlastIndexOfTruthy( [ x, fromIndex ] );
 * // returns 3
 */
-declare function dlastIndexOfTruthy( arrays: [ float64ndarray ] ): number;
+declare function dlastIndexOfTruthy( arrays: [ float64ndarray, typedndarray<number> ] ): number;
 
 
 // EXPORTS //

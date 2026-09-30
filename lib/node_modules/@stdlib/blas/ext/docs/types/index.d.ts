@@ -144,6 +144,7 @@ interface Namespace {
 	* -   If no element along an ndarray dimension passes a test implemented by the predicate function, the corresponding element in the returned ndarray is `-1`.
 	*
 	* @param x - input ndarray
+	* @param fromIndex - index from which to begin searching
 	* @param options - function options
 	* @param clbk - predicate function
 	* @param thisArg - predicate function execution context
