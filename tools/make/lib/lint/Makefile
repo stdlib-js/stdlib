@@ -27,6 +27,7 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/git/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/javascript/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/julia/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/license-headers/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/lint/manifest_json.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/markdown/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/package_json.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/pkgs/Makefile
@@ -51,7 +52,7 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/typescript/Makefile
 # @example
 # make lint
 #/
-lint: lint-filenames lint-javascript lint-markdown lint-c lint-python lint-julia lint-r lint-shell lint-typescript lint-conf lint-pkg-json lint-repl-help lint-license-headers lint-editorconfig
+lint: lint-filenames lint-javascript lint-markdown lint-c lint-python lint-julia lint-r lint-shell lint-typescript lint-conf lint-pkg-json lint-manifest-json lint-manifest-json-deps lint-repl-help lint-license-headers lint-editorconfig
 
 .PHONY: lint
 
