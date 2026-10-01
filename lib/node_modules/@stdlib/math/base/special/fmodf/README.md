@@ -26,10 +26,10 @@ limitations under the License.
 
 The [modulus function][modulus-function] is defined as
 
-<!-- <equation class="equation" label="eq:modulus_function" align="center" raw="z = x\%y" alt="Modulus function"> -->
+<!-- <equation class="equation" label="eq:modulus_function" align="center" raw="z = x \% y" alt="Modulus function"> -->
 
 ```math
-z = x\%y
+z = x \% y
 ```
 
 <!-- </equation> -->
