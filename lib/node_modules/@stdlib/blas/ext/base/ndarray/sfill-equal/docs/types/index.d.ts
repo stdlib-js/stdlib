@@ -32,6 +32,8 @@ import { float32ndarray, typedndarray } from '@stdlib/types/ndarray';
 *     -   a one-dimensional input ndarray.
 *     -   a zero-dimensional ndarray containing the search element.
 *     -   a zero-dimensional ndarray containing the scalar constant.
+*     -   a zero-dimensional ndarray containing the starting index (inclusive).
+*     -   a zero-dimensional ndarray containing the ending index (exclusive).
 *
 * -   When comparing elements, the function checks for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct and `-0` and `+0` are considered the same.
 *
@@ -52,10 +54,18 @@ import { float32ndarray, typedndarray } from '@stdlib/types/ndarray';
 *     'dtype': 'float32'
 * });
 *
-* var out = sfillEqual( [ x, searchElement, alpha ] );
-* // returns <ndarray>[ 5.0, -2.0, 3.0, 5.0, 4.0, -6.0 ]
+* var start = scalar2ndarray( 0, {
+*     'dtype': 'generic'
+* });
+*
+* var end = scalar2ndarray( 2, {
+*     'dtype': 'generic'
+* });
+*
+* var out = sfillEqual( [ x, searchElement, alpha, start, end ] );
+* // returns <ndarray>[ 5.0, -2.0, 3.0, 0.0, 4.0, -6.0 ]
 */
-declare function sfillEqual( arrays: [ float32ndarray, typedndarray<number>, typedndarray<number> ] ): float32ndarray;
+declare function sfillEqual( arrays: [ float32ndarray, typedndarray<number>, typedndarray<number>, typedndarray<number>, typedndarray<number> ] ): float32ndarray;
 
 
 // EXPORTS //

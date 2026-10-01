@@ -42,11 +42,16 @@ Returns the index of the first element in a one-dimensional single-precision flo
 
 ```javascript
 var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
+var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 
 var x = new Float32Vector( [ 1.0, 2.0, 3.0, 4.0 ] );
 var y = new Float32Vector( [ 0.0, 0.0, 3.0, 0.0 ] );
 
-var idx = sfirstIndexEqual( [ x, y ] );
+var fromIndex = scalar2ndarray( 0, {
+    'dtype': 'generic'
+});
+
+var idx = sfirstIndexEqual( [ x, y, fromIndex ] );
 // returns 2
 ```
 
@@ -56,16 +61,22 @@ The function has the following parameters:
 
     -   first one-dimensional input ndarray.
     -   second one-dimensional input ndarray.
+    -   a zero-dimensional ndarray containing the index from which to begin searching.
 
 If the function is unable to find an element in the first one-dimensional input ndarray equal to a corresponding element in the second one-dimensional input ndarray, the function returns `-1`.
 
 ```javascript
 var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
+var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 
 var x = new Float32Vector( [ 1.0, 2.0, 3.0, 4.0 ] );
 var y = new Float32Vector( [ 5.0, 6.0, 7.0, 8.0 ] );
 
-var idx = sfirstIndexEqual( [ x, y ] );
+var fromIndex = scalar2ndarray( 0, {
+    'dtype': 'generic'
+});
+
+var idx = sfirstIndexEqual( [ x, y, fromIndex ] );
 // returns -1
 ```
 
@@ -77,6 +88,7 @@ var idx = sfirstIndexEqual( [ x, y ] );
 
 ## Notes
 
+-   If a specified starting search index is negative, the function resolves the starting search index by counting backward from the last element (where `-1` refers to the last element).
 -   When comparing elements, the function checks for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct, and `-0` and `+0` are considered the same.
 
 </section>
@@ -91,7 +103,9 @@ var idx = sfirstIndexEqual( [ x, y ] );
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/discrete-uniform' );
+var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
+var ndarraylike2scalar = require( '@stdlib/ndarray/ndarraylike2scalar' );
 var sfirstIndexEqual = require( '@stdlib/blas/ext/base/ndarray/sfirst-index-equal' );
 
 var opts = {
@@ -103,7 +117,12 @@ console.log( ndarray2array( x ) );
 var y = discreteUniform( [ 10 ], 0, 10, opts );
 console.log( ndarray2array( y ) );
 
-var idx = sfirstIndexEqual( [ x, y ] );
+var fromIndex = scalar2ndarray( 0, {
+    'dtype': 'generic'
+});
+console.log( 'From Index:', ndarraylike2scalar( fromIndex ) );
+
+var idx = sfirstIndexEqual( [ x, y, fromIndex ] );
 console.log( idx );
 ```
 

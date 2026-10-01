@@ -55,10 +55,10 @@ The function has the following parameters:
 
 -   **N**: number of indexed elements.
 -   **searchElement**: search element.
--   **x**: input array.
+-   **x**: input [`Array`][mdn-array] or [`typed array`][mdn-typed-array].
 -   **strideX**: stride length.
 
-If all elements in the array are equal to the search element, the function returns `-1`.
+If the function is unable to find an element which is not equal to the search element, the function returns `-1`.
 
 ```javascript
 var x = [ 1.0, 1.0, 1.0, 1.0 ];
@@ -81,13 +81,13 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 
-// Initial array...
+// Initial array:
 var x0 = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 
-// Create an offset view...
+// Create an offset view:
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
-// Find index...
+// Find index:
 var idx = gindexOfNotEqual( 3, 2.0, x1, 2 );
 // returns 1
 ```
@@ -126,7 +126,8 @@ var idx = gindexOfNotEqual.ndarray( 3, 1.0, x, 1, 1 );
 
 ## Notes
 
--   When searching for a search element, the function checks for inequality using the strict inequality operator `!==`. As a consequence, `NaN` values are considered distinct from all values (including other `NaN` values), and `-0` and `+0` are considered the same.
+-   If `N <= 0`, both functions return `-1`.
+-   When searching for a search element, the functions check for inequality using the strict inequality operator `!==`. As a consequence, `NaN` values are considered distinct, and `-0` and `+0` are considered the same.
 -   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array/base/accessor`][@stdlib/array/base/accessor]).
 
 </section>
@@ -177,6 +178,8 @@ console.log( idx );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[mdn-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 

@@ -84,19 +84,14 @@ var bool = every( [] );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var bernoulli = require( '@stdlib/random/array/bernoulli' );
 var every = require( '@stdlib/utils/every' );
 
-var bool;
-var arr;
-var i;
+var arr = bernoulli( 100, 0.95, {
+    'dtype': 'generic'
+});
 
-arr = new Array( 100 );
-for ( i = 0; i < arr.length; i++ ) {
-    arr[ i ] = ( randu() < 0.95 );
-}
-
-bool = every( arr );
+var bool = every( arr );
 // returns <boolean>
 ```
 

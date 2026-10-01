@@ -1,0 +1,24 @@
+
+{{alias}}( dtype )
+    Returns a constructor for creating an SGD trainer parameters object.
+
+    Parameters
+    ----------
+    dtype: string
+        Floating-point data type for storing floating-point parameters.
+
+    Returns
+    -------
+    fcn: Function
+        Constructor.
+
+    Examples
+    --------
+    > var P = {{alias}}( 'float64' );
+    > var p = new P();
+    > p.toString()
+    <string>
+
+    See Also
+    --------
+

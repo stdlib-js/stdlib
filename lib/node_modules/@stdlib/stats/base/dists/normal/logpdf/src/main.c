@@ -19,7 +19,7 @@
 #include "stdlib/stats/base/dists/normal/logpdf.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/ln.h"
-#include "stdlib/math/base/special/pow.h"
+#include "stdlib/math/base/special/abs2.h"
 #include "stdlib/constants/float64/ln_two_pi.h"
 #include "stdlib/constants/float64/ninf.h"
 #include "stdlib/constants/float64/pinf.h"
@@ -37,9 +37,7 @@
 * // returns ~-2.919
 */
 double stdlib_base_dists_normal_logpdf( const double x, const double mu, const double sigma ) {
-	double s2;
 	double A;
-	double B;
 
 	if (
 		stdlib_base_is_nan( x ) ||
@@ -52,8 +50,6 @@ double stdlib_base_dists_normal_logpdf( const double x, const double mu, const d
 	if ( sigma == 0.0 ) {
 		return (x == mu) ? STDLIB_CONSTANT_FLOAT64_PINF : STDLIB_CONSTANT_FLOAT64_NINF;
 	}
-	s2 = stdlib_base_pow( sigma, 2.0 );
 	A = (-0.5) * ( ( 2.0 * stdlib_base_ln(sigma) ) + STDLIB_CONSTANT_FLOAT64_LN_TWO_PI );
-	B = -1.0 / ( 2.0 * s2 );
-	return A + ( B * stdlib_base_pow( x - mu, 2.0 ) );
+	return A - ( 0.5 * stdlib_base_abs2( ( x - mu ) / sigma ) );
 }

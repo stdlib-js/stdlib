@@ -37,8 +37,14 @@ import cfillEqual = require( './index' );
 	const alpha = scalar2ndarray( new Complex64( 5.0, 5.0 ), {
 		'dtype': 'complex64'
 	});
+	const start = scalar2ndarray( 0, {
+		'dtype': 'generic'
+	});
+	const end = scalar2ndarray( 10, {
+		'dtype': 'generic'
+	});
 
-	cfillEqual( [ x, searchElement, alpha ] ); // $ExpectType complex64ndarray
+	cfillEqual( [ x, searchElement, alpha, start, end ] ); // $ExpectType complex64ndarray
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array of ndarrays...
@@ -65,7 +71,13 @@ import cfillEqual = require( './index' );
 	const alpha = scalar2ndarray( new Complex64( 5.0, 5.0 ), {
 		'dtype': 'complex64'
 	});
+	const start = scalar2ndarray( 0, {
+		'dtype': 'generic'
+	});
+	const end = scalar2ndarray( 10, {
+		'dtype': 'generic'
+	});
 
 	cfillEqual(); // $ExpectError
-	cfillEqual( [ x, searchElement, alpha ], {} ); // $ExpectError
+	cfillEqual( [ x, searchElement, alpha, start, end ], {} ); // $ExpectError
 }
