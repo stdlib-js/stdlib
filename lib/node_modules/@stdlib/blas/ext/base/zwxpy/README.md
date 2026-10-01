@@ -32,6 +32,11 @@ This BLAS extension implements the operation
 \mathbf{w} = \mathbf{x} + \mathbf{y}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\mathbf{w} = \mathbf{x} + \mathbf{y}" data-equation="eq:wxpy">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@b22f042fcaf5fc4530c4f320b53b7383a2eaedb9/lib/node_modules/@stdlib/blas/ext/base/zwxpy/docs/img/equation_wxpy.svg" alt="Equation for wxpy operation.">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

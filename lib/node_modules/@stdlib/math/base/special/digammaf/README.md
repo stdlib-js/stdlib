@@ -32,6 +32,11 @@ The [digamma function][digamma-function] `ψ` is the logarithmic derivative of t
 \psi(x) = \frac{d}{dx} \ln{\Gamma(x)} = \frac{\Gamma'(x)}{\Gamma(x)}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\psi(x) = \frac{d}{dx} \ln{\Gamma(x)} = \frac{\Gamma&#39;(x)}{\Gamma(x)}" data-equation="eq:digamma_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@b22f042fcaf5fc4530c4f320b53b7383a2eaedb9/lib/node_modules/@stdlib/math/base/special/digammaf/docs/img/equation_digamma_function.svg" alt="Digamma function">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

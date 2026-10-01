@@ -32,6 +32,11 @@ This BLAS extension implements the operation
 \mathbf{y} = \mathbf{x} \oslash \mathbf{y}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\mathbf{y} = \mathbf{x} \oslash \mathbf{y}" data-equation="eq:xdy">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@b22f042fcaf5fc4530c4f320b53b7383a2eaedb9/lib/node_modules/@stdlib/blas/ext/base/cxdy/docs/img/equation_xdy.svg" alt="Equation for xdy operation.">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 where `⊘` denotes the [Hadamard division][hadamard-division].
