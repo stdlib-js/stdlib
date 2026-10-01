@@ -3,4 +3,4 @@ type: amend-message
 ---
 docs: update equation
 
-Signed-off-by: Athan <kgryte@gmail.com>
+Signed-off-by: Athan Reines <kgryte@gmail.com>
