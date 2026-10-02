@@ -33,7 +33,7 @@ y = \mathop{\mathrm{trunc}}\left(x \cdot b^{n - \lfloor \log_b |x| \rfloor - 1}\
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="y = \operatorname{trunc}\left(x \cdot b^{n - \lfloor \log_b |x| \rfloor - 1}\right) \cdot b^{\lfloor \log_b |x| \rfloor - n + 1}" data-equation="eq:truncsd_function">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@b22f042fcaf5fc4530c4f320b53b7383a2eaedb9/lib/node_modules/@stdlib/math/base/special/truncsdf/docs/img/equation_truncsd_function.svg" alt="Truncate to n significant figures">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@b41c953b185783768ac50677b4e07eeae0b84cdc/lib/node_modules/@stdlib/math/base/special/truncsdf/docs/img/equation_truncsd_function.svg" alt="Truncate to n significant figures">
     <br>
 </div> -->
 
