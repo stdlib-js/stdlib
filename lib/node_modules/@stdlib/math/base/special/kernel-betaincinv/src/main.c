@@ -92,6 +92,9 @@ static const int32_t DIGITS = 32;
 // Maximum number of iterations when performing Halley iteration (see `main.js`):
 static const int32_t MAX_ITERATIONS = 1000;
 
+// Forward declaration:
+static double bracketRootTowardsMax( const double a, const double b, const double target, const bool invert, const double x, const double fx, double *min, double *max, int32_t *count );
+
 /* Begin auto-generated functions. The following functions are auto-generated. Do not edit directly. */
 
 // BEGIN: polyval_co1
@@ -852,22 +855,6 @@ static double newtonRaphsonIterate( const double t, const double a, const double
 }
 
 /**
-* Moves the current best guess toward the upper bracket until the root is bracketed, updating the brackets along the way.
-*
-* @param a         function parameter of the incomplete beta function
-* @param b         function parameter of the incomplete beta function
-* @param target    probability value
-* @param invert    boolean indicating whether to find the roots of the upper or lower incomplete beta function
-* @param x         current best guess
-* @param fx        function value at the position from which bracketing begins
-* @param min       pointer to the lower bracket
-* @param max       pointer to the upper bracket
-* @param count     pointer to the remaining number of iterations
-* @return          step which should be subtracted from the current best guess
-*/
-static double bracketRootTowardsMax( const double a, const double b, const double target, const bool invert, const double x, const double fx, double *min, double *max, int32_t *count );
-
-/**
 * Moves the current best guess toward the lower bracket until the root is bracketed, updating the brackets along the way.
 *
 * @param a         function parameter of the incomplete beta function
@@ -943,6 +930,20 @@ static double bracketRootTowardsMin( const double a, const double b, const doubl
 	return guess0 - ( ( *max + *min ) / 2.0 );
 }
 
+/**
+* Moves the current best guess toward the upper bracket until the root is bracketed, updating the brackets along the way.
+*
+* @param a         function parameter of the incomplete beta function
+* @param b         function parameter of the incomplete beta function
+* @param target    probability value
+* @param invert    boolean indicating whether to find the roots of the upper or lower incomplete beta function
+* @param x         current best guess
+* @param fx        function value at the position from which bracketing begins
+* @param min       pointer to the lower bracket
+* @param max       pointer to the upper bracket
+* @param count     pointer to the remaining number of iterations
+* @return          step which should be subtracted from the current best guess
+*/
 static double bracketRootTowardsMax( const double a, const double b, const double target, const bool invert, const double x, const double fx, double *min, double *max, int32_t *count ) {
 	double multiplier;
 	double res[ 3 ];
@@ -2024,8 +2025,7 @@ void stdlib_base_kernel_betaincinv( const double a, const double b, const double
 		yp = 0.0;
 		x = findIBetaInvFromTDist( ac, pc, &yp );
 		y = yp;
-	}
-	else if ( bc == 1.0 ) {
+	} else if ( bc == 1.0 ) {
 		if ( pc < qc ) {
 			if ( ac > 1.0 ) {
 				x = stdlib_base_pow( pc, 1.0 / ac );
@@ -2046,8 +2046,7 @@ void stdlib_base_kernel_betaincinv( const double a, const double b, const double
 		*out1 = x;
 		*out2 = y;
 		return;
-	}
-	else if ( ac + bc > 5.0 ) {
+	} else if ( ac + bc > 5.0 ) {
 		// When a+b is large then we can use one of Prof Temme's asymptotic expansions, begin by swapping things around so that p < 0.5, we do this to avoid cancellations errors when p is large.
 		if ( pc > 0.5 ) {
 			tmp = bc;
@@ -2119,8 +2118,7 @@ void stdlib_base_kernel_betaincinv( const double a, const double b, const double
 				}
 			}
 		}
-	}
-	else if ( ac < 1.0 && bc < 1.0 ) {
+	} else if ( ac < 1.0 && bc < 1.0 ) {
 		// Both a and b less than 1, there is a point of inflection at xs:
 		xs = ( 1.0 - ac ) / ( 2.0 - ac - bc );
 
@@ -2179,8 +2177,7 @@ void stdlib_base_kernel_betaincinv( const double a, const double b, const double
 			x = xs;
 		}
 		upper = xs;
-	}
-	else if ( ac > 1.0 && bc > 1.0 ) {
+	} else if ( ac > 1.0 && bc > 1.0 ) {
 		// Small a and b, both greater than 1, there is a point of inflection at xs, and its complement is xs2, we must always start our iteration from the right side of the point of inflection.
 		xs = ( ac - 1.0 ) / ( ac + bc - 2.0 );
 		xs2 = ( bc - 1.0 ) / ( ac + bc - 2.0 );
