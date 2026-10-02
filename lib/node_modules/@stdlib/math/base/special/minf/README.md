@@ -33,7 +33,7 @@ z = \min(x, y)
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="z = \min(x, y)" data-equation="eq:min_function">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/minf/docs/img/equation_min_function.svg" alt="Minimum of two values">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@85f48534ef6908bbcd982d48f1c5fbea3fb7aafd/lib/node_modules/@stdlib/math/base/special/minf/docs/img/equation_min_function.svg" alt="Minimum of two values">
     <br>
 </div> -->
 

@@ -28,6 +28,7 @@ import typedarraypool = require( './index' );
 {
 	typedarraypool(); // $ExpectType TypedArrayOrNull
 	typedarraypool( 'float32' ); // $ExpectType TypedArrayOrNull
+	typedarraypool( 'float16' ); // $ExpectType TypedArrayOrNull
 	typedarraypool( 12 ); // $ExpectType TypedArrayOrNull
 	typedarraypool( 12, 'int32' ); // $ExpectType TypedArrayOrNull
 	typedarraypool( [ 1, 2, 3 ] ); // $ExpectType TypedArrayOrNull
@@ -64,6 +65,7 @@ import typedarraypool = require( './index' );
 {
 	typedarraypool.malloc(); // $ExpectType TypedArrayOrNull
 	typedarraypool.malloc( 'float32' ); // $ExpectType TypedArrayOrNull
+	typedarraypool.malloc( 'float16' ); // $ExpectType TypedArrayOrNull
 	typedarraypool.malloc( 12 ); // $ExpectType TypedArrayOrNull
 	typedarraypool.malloc( 12, 'int32' ); // $ExpectType TypedArrayOrNull
 	typedarraypool.malloc( [ 1, 2, 3 ] ); // $ExpectType TypedArrayOrNull
@@ -100,6 +102,7 @@ import typedarraypool = require( './index' );
 {
 	typedarraypool.calloc(); // $ExpectType TypedArrayOrNull
 	typedarraypool.calloc( 'float32' ); // $ExpectType TypedArrayOrNull
+	typedarraypool.calloc( 'float16' ); // $ExpectType TypedArrayOrNull
 	typedarraypool.calloc( 12 ); // $ExpectType TypedArrayOrNull
 	typedarraypool.calloc( 12, 'int32' ); // $ExpectType TypedArrayOrNull
 }

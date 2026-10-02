@@ -33,7 +33,7 @@ x^{(n)} = x(x+1)(x+2) \cdots (x+n-1) = \frac{(x+n-1)!}{(x-1)!}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="x^{(n)} = x(x+1)(x+2) \cdots (x+n-1) = \frac{(x+n-1)!}{(x-1)!}" data-equation="eq:rising_factorial">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/rising-factorial/docs/img/equation_rising_factorial.svg" alt="Rising factorial">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@85f48534ef6908bbcd982d48f1c5fbea3fb7aafd/lib/node_modules/@stdlib/math/base/special/rising-factorial/docs/img/equation_rising_factorial.svg" alt="Rising factorial">
     <br>
 </div> -->
 

@@ -33,7 +33,7 @@ y = \coth(x) = \frac{e^x + e^{-x}}{e^x - e^{-x}}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="y = \coth(x) = \frac{e^x + e^{-x}}{e^x - e^{-x}}" data-equation="eq:hyperbolic_cotangent">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/coth/docs/img/equation_hyperbolic_cotangent.svg" alt="Hyperbolic cotangent function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@85f48534ef6908bbcd982d48f1c5fbea3fb7aafd/lib/node_modules/@stdlib/math/base/special/coth/docs/img/equation_hyperbolic_cotangent.svg" alt="Hyperbolic cotangent function">
     <br>
 </div> -->
 

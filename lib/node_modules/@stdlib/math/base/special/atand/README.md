@@ -33,7 +33,7 @@ y = \frac{180}{\pi} \arctan(x)
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="y = \frac{180}{\pi} \arctan(x)" data-equation="eq:arctangent_degrees">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e35241e609f4ea7a5a1e367022755bde30d3119f/lib/node_modules/@stdlib/math/base/special/atand/docs/img/equation_arctangent_degrees.svg" alt="Arctangent in degrees">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@85f48534ef6908bbcd982d48f1c5fbea3fb7aafd/lib/node_modules/@stdlib/math/base/special/atand/docs/img/equation_arctangent_degrees.svg" alt="Arctangent in degrees">
     <br>
 </div> -->
 
