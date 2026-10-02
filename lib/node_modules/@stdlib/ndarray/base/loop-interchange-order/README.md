@@ -63,13 +63,14 @@ var o = loopOrder( shape, [ stridesX, stridesY, stridesZ ] );
 The function returns an array having the following elements:
 
 ```text
-[ <shape>, ...<strides> ]
+[ <shape>, ...<strides>, <idx> ]
 ```
 
 where
 
 -   **shape**: dimensions sorted in loop order.
 -   **...strides**: strides for each respective ndarray sorted in loop order.
+-   **idx**: dimension indices sorted in loop order.
 
 For all returned arrays, the first element corresponds to the innermost loop, and the last element corresponds to the outermost loop.
 
