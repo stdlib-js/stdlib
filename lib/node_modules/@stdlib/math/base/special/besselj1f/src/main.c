@@ -1,0 +1,277 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2026 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*
+*
+* ## Notice
+*
+* The original C++ code and copyright notice are from the [Boost library]{@link https://www.boost.org/doc/libs/1_92_0/boost/math/special_functions/detail/bessel_j1.hpp}. The implementation has been modified for use in stdlib.
+*
+* ```text
+* Copyright Xiaogang Zhang, 2006.
+*
+* Use, modification and distribution are subject to the
+* Boost Software License, Version 1.0. (See accompanying file
+* LICENSE or copy at http://www.boost.org/LICENSE_1_0.txt)
+* ```
+*/
+
+#include "stdlib/math/base/special/besselj1f.h"
+#include "stdlib/math/base/special/sqrtf.h"
+#include "stdlib/math/base/special/absf.h"
+#include "stdlib/math/base/special/sincosf.h"
+#include "stdlib/constants/float32/pinf.h"
+#include "stdlib/constants/float32/sqrt_pi.h"
+
+static const float x1 = 3.8317059702075123156e+00f;
+static const float x2 = 7.0155866698156187535e+00f;
+static const float x11 = 9.810e+02f;
+static const float x12 = -3.2527979248768438556e-04f;
+static const float x21 = 1.7960e+03f;
+static const float x22 = -3.8330184381246462950e-05f;
+
+/* Begin auto-generated functions. The following functions are auto-generated. Do not edit directly. */
+
+// BEGIN: rational_p1q1
+
+/**
+* Evaluates a rational function (i.e., the ratio of two polynomials described by the coefficients stored in \\(P\\) and \\(Q\\)).
+*
+* ## Notes
+*
+* -   Coefficients should be sorted in ascending degree.
+* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
+*
+* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
+*
+* @param x    value at which to evaluate the rational function
+* @return     evaluated rational function
+*/
+static float rational_p1q1( const float x ) {
+	float ax;
+	float ix;
+	float s1;
+	float s2;
+	if ( x == 0.0f ) {
+		return -0.03405537391318949f;
+	}
+	if ( x < 0.0f ) {
+		ax = -x;
+	} else {
+		ax = x;
+	}
+	if ( ax <= 1.0f ) {
+		s1 = -142585098013.66644f + (x * (6678104126.14924f + (x * (-115486967.64841276f + (x * (980629.0409895825f + (x * (-4461.579298277507f + (x * (10.650724020080236f + (x * -0.010767857011487301f)))))))))));
+		s2 = 4186860446082.0176f + (x * (42091902282.58013f + (x * (202283751.40097034f + (x * (591176.1449417479f + (x * (1074.227223951738f + (x * (1.0f + (x * 0.0f)))))))))));
+	} else {
+		ix = 1.0f / x;
+		s1 = -0.010767857011487301f + (ix * (10.650724020080236f + (ix * (-4461.579298277507f + (ix * (980629.0409895825f + (ix * (-115486967.64841276f + (ix * (6678104126.14924f + (ix * -142585098013.66644f)))))))))));
+		s2 = 0.0f + (ix * (1.0f + (ix * (1074.227223951738f + (ix * (591176.1449417479f + (ix * (202283751.40097034f + (ix * (42091902282.58013f + (ix * 4186860446082.0176f)))))))))));
+	}
+	return s1 / s2;
+}
+
+// END: rational_p1q1
+
+// BEGIN: rational_p2q2
+
+/**
+* Evaluates a rational function (i.e., the ratio of two polynomials described by the coefficients stored in \\(P\\) and \\(Q\\)).
+*
+* ## Notes
+*
+* -   Coefficients should be sorted in ascending degree.
+* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
+*
+* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
+*
+* @param x    value at which to evaluate the rational function
+* @return     evaluated rational function
+*/
+static float rational_p2q2( const float x ) {
+	float ax;
+	float ix;
+	float s1;
+	float s2;
+	if ( x == 0.0f ) {
+		return -0.010158790774176108f;
+	}
+	if ( x < 0.0f ) {
+		ax = -x;
+	} else {
+		ax = x;
+	}
+	if ( ax <= 1.0f ) {
+		s1 = -17527881995806512.0f + (x * (1660853173129901.8f + (x * (-36658018905416.664f + (x * (355806656709.1062f + (x * (-1811393126.9860668f + (x * (5079326.614801118f + (x * (-7502.334222078161f + (x * 4.6179191852758255f)))))))))))));
+		s2 = 1725390588844768000.0f + (x * (17128800897135812.0f + (x * (84899346165481.42f + (x * (276227772862.44086f + (x * (648725028.9959639f + (x * (1126712.5065029138f + (x * (1388.6978985861358f + (x * 1.0f)))))))))))));
+	} else {
+		ix = 1.0f / x;
+		s1 = 4.6179191852758255f + (ix * (-7502.334222078161f + (ix * (5079326.614801118f + (ix * (-1811393126.9860668f + (ix * (355806656709.1062f + (ix * (-36658018905416.664f + (ix * (1660853173129901.8f + (ix * -17527881995806512.0f)))))))))))));
+		s2 = 1.0f + (ix * (1388.6978985861358f + (ix * (1126712.5065029138f + (ix * (648725028.9959639f + (ix * (276227772862.44086f + (ix * (84899346165481.42f + (ix * (17128800897135812.0f + (ix * 1725390588844768000.0f)))))))))))));
+	}
+	return s1 / s2;
+}
+
+// END: rational_p2q2
+
+// BEGIN: rational_pcqc
+
+/**
+* Evaluates a rational function (i.e., the ratio of two polynomials described by the coefficients stored in \\(P\\) and \\(Q\\)).
+*
+* ## Notes
+*
+* -   Coefficients should be sorted in ascending degree.
+* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
+*
+* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
+*
+* @param x    value at which to evaluate the rational function
+* @return     evaluated rational function
+*/
+static float rational_pcqc( const float x ) {
+	float ax;
+	float ix;
+	float s1;
+	float s2;
+	if ( x == 0.0f ) {
+		return 1.0f;
+	}
+	if ( x < 0.0f ) {
+		ax = -x;
+	} else {
+		ax = x;
+	}
+	if ( ax <= 1.0f ) {
+		s1 = -4435757.816794128f + (x * (-9942246.505077641f + (x * (-6603373.248364939f + (x * (-1523529.3511811374f + (x * (-109824.05543459347f + (x * (-1611.6166443246102f + (x * 0.0f)))))))))));
+		s2 = -4435757.816794128f + (x * (-9934124.389934586f + (x * (-6585339.4797230875f + (x * (-1511809.5066341609f + (x * (-107263.8599110382f + (x * (-1455.0094401904962f + (x * 1.0f)))))))))));
+	} else {
+		ix = 1.0f / x;
+		s1 = 0.0f + (ix * (-1611.6166443246102f + (ix * (-109824.05543459347f + (ix * (-1523529.3511811374f + (ix * (-6603373.248364939f + (ix * (-9942246.505077641f + (ix * -4435757.816794128f)))))))))));
+		s2 = 1.0f + (ix * (-1455.0094401904962f + (ix * (-107263.8599110382f + (ix * (-1511809.5066341609f + (ix * (-6585339.4797230875f + (ix * (-9934124.389934586f + (ix * -4435757.816794128f)))))))))));
+	}
+	return s1 / s2;
+}
+
+// END: rational_pcqc
+
+// BEGIN: rational_psqs
+
+/**
+* Evaluates a rational function (i.e., the ratio of two polynomials described by the coefficients stored in \\(P\\) and \\(Q\\)).
+*
+* ## Notes
+*
+* -   Coefficients should be sorted in ascending degree.
+* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
+*
+* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
+*
+* @param x    value at which to evaluate the rational function
+* @return     evaluated rational function
+*/
+static float rational_psqs( const float x ) {
+	float ax;
+	float ix;
+	float s1;
+	float s2;
+	if ( x == 0.0f ) {
+		return 0.046875f;
+	}
+	if ( x < 0.0f ) {
+		ax = -x;
+	} else {
+		ax = x;
+	}
+	if ( ax <= 1.0f ) {
+		s1 = 33220.913409857225f + (x * (85145.1606753357f + (x * (66178.83658127084f + (x * (18494.262873223866f + (x * (1706.375429020768f + (x * (35.26513384663603f + (x * 0.0f)))))))))));
+		s2 = 708712.8194102874f + (x * (1819458.0422439973f + (x * (1419460.669603721f + (x * (400294.43582266977f + (x * (37890.2297457722f + (x * (863.8367769604992f + (x * 1.0f)))))))))));
+	} else {
+		ix = 1.0f / x;
+		s1 = 0.0f + (ix * (35.26513384663603f + (ix * (1706.375429020768f + (ix * (18494.262873223866f + (ix * (66178.83658127084f + (ix * (85145.1606753357f + (ix * 33220.913409857225f)))))))))));
+		s2 = 1.0f + (ix * (863.8367769604992f + (ix * (37890.2297457722f + (ix * (400294.43582266977f + (ix * (1419460.669603721f + (ix * (1819458.0422439973f + (ix * 708712.8194102874f)))))))))));
+	}
+	return s1 / s2;
+}
+
+// END: rational_psqs
+
+/* End auto-generated functions. */
+
+/**
+* Computes the Bessel function of the first kind of order one for a single-precision floating-point number.
+*
+* @param x    input value
+* @return     evaluated Bessel function
+*
+* @example
+* float out = stdlib_base_besselj1f( 1.0f );
+* // returns ~0.440f
+*/
+float stdlib_base_besselj1f( const float x ) {
+	float value;
+	float rc;
+	float rs;
+	float y2;
+	float r;
+	float y;
+	float f;
+	float w;
+	float s;
+	float c;
+
+	w = stdlib_base_absf( x );
+	if ( x == 0.0f ) {
+		return 0.0f;
+	}
+	if ( w == STDLIB_CONSTANT_FLOAT32_PINF ) {
+		return 0.0f;
+	}
+	if ( w <= 4.0f ) {
+		y = x * x;
+		r = rational_p1q1( y );
+		f = w * ( w + x1 ) * ( ( w - ( x11 / 256.0f ) ) - x12 );
+		value = f * r;
+	} else if ( w <= 8.0f ) {
+		y = x * x;
+		r = rational_p2q2( y );
+		f = w * ( w + x2 ) * ( ( w - ( x21 / 256.0f ) ) - x22 );
+		value = f * r;
+	} else {
+		y = 8.0f / w;
+		y2 = y * y;
+		rc = rational_pcqc( y2 );
+		rs = rational_psqs( y2 );
+		f = 1.0f / ( stdlib_base_sqrtf( w ) * STDLIB_CONSTANT_FLOAT32_SQRT_PI );
+
+		/*
+		* What follows is really just:
+		*
+		* ```
+		* z = w - 0.75 * pi;
+		* value = f * ( rc * cos( z ) - y * rs * sin( z ) );
+		* ```
+		*
+		* but using the sin/cos addition rules plus constants for the values of sin/cos of `3π/4` which then cancel out with corresponding terms in "f".
+		*/
+		stdlib_base_sincosf( w, &s, &c );
+		value = f * ( ( rc * ( s - c ) ) + ( ( y * rs ) * ( s + c ) ) );
+	}
+	if ( x < 0.0f ) {
+		value *= -1.0f;
+	}
+	return value;
+}
