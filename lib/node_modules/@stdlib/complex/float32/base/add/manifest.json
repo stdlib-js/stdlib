@@ -1,6 +1,7 @@
 {
   "options": {
-    "task": "build"
+    "task": "build",
+    "wasm": false
   },
   "fields": [
     {
@@ -27,6 +28,7 @@
   "confs": [
     {
       "task": "build",
+      "wasm": false,
       "src": [
         "./src/main.c"
       ],
@@ -43,6 +45,7 @@
     },
     {
       "task": "benchmark",
+      "wasm": false,
       "src": [
         "./src/main.c"
       ],
@@ -58,6 +61,23 @@
     },
     {
       "task": "examples",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/complex/float32/reim"
+      ]
+    },
+    {
+      "task": "build",
+      "wasm": true,
       "src": [
         "./src/main.c"
       ],
