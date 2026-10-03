@@ -40,6 +40,7 @@ import zindexOfFalsy = require( './index' );
 	zindexOfFalsy( false, x, 1 ); // $ExpectError
 	zindexOfFalsy( null, x, 1 ); // $ExpectError
 	zindexOfFalsy( {}, x, 1 ); // $ExpectError
+	zindexOfFalsy( ( x: number ): number => x, x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a Complex128Array...
@@ -51,6 +52,7 @@ import zindexOfFalsy = require( './index' );
 	zindexOfFalsy( x.length, false, 1 ); // $ExpectError
 	zindexOfFalsy( x.length, null, 1 ); // $ExpectError
 	zindexOfFalsy( x.length, {}, 1 ); // $ExpectError
+	zindexOfFalsy( x.length, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not a number...
@@ -62,6 +64,7 @@ import zindexOfFalsy = require( './index' );
 	zindexOfFalsy( x.length, x, false ); // $ExpectError
 	zindexOfFalsy( x.length, x, null ); // $ExpectError
 	zindexOfFalsy( x.length, x, {} ); // $ExpectError
+	zindexOfFalsy( x.length, x, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -88,6 +91,7 @@ import zindexOfFalsy = require( './index' );
 	zindexOfFalsy.ndarray( false, x, 1, 1 ); // $ExpectError
 	zindexOfFalsy.ndarray( null, x, 1, 1 ); // $ExpectError
 	zindexOfFalsy.ndarray( {}, x, 1, 1 ); // $ExpectError
+	zindexOfFalsy.ndarray( ( x: number ): number => x, x, 1, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a second argument which is not a Complex128Array...
@@ -99,6 +103,7 @@ import zindexOfFalsy = require( './index' );
 	zindexOfFalsy.ndarray( x.length, false, 1, 1 ); // $ExpectError
 	zindexOfFalsy.ndarray( x.length, null, 1, 1 ); // $ExpectError
 	zindexOfFalsy.ndarray( x.length, {}, 1, 1 ); // $ExpectError
+	zindexOfFalsy.ndarray( x.length, ( x: number ): number => x, 1, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a third argument which is not a number...
@@ -110,6 +115,7 @@ import zindexOfFalsy = require( './index' );
 	zindexOfFalsy.ndarray( x.length, x, false, 1 ); // $ExpectError
 	zindexOfFalsy.ndarray( x.length, x, null, 1 ); // $ExpectError
 	zindexOfFalsy.ndarray( x.length, x, {}, 1 ); // $ExpectError
+	zindexOfFalsy.ndarray( x.length, x, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fourth argument which is not a number...
@@ -121,6 +127,7 @@ import zindexOfFalsy = require( './index' );
 	zindexOfFalsy.ndarray( x.length, x, 1, false ); // $ExpectError
 	zindexOfFalsy.ndarray( x.length, x, 1, null ); // $ExpectError
 	zindexOfFalsy.ndarray( x.length, x, 1, {} ); // $ExpectError
+	zindexOfFalsy.ndarray( x.length, x, 1, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided an unsupported number of arguments...

@@ -1,0 +1,36 @@
+
+{{alias}}( arrays )
+    Takes elements from one of two one-dimensional ndarrays depending on a
+    condition.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional condition ndarray.
+        - first one-dimensional input ndarray.
+        - second one-dimensional input ndarray.
+        - a one-dimensional output ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var cbuf = [ 1, 0, 1, 0 ];
+    > var c = {{alias:@stdlib/ndarray/vector/ctor}}( cbuf, 'generic' );
+    > var xbuf = [ 1.0, 2.0, 3.0, 4.0 ];
+    > var x = {{alias:@stdlib/ndarray/vector/ctor}}( xbuf, 'generic' );
+    > var ybuf = [ 5.0, 6.0, 7.0, 8.0 ];
+    > var y = {{alias:@stdlib/ndarray/vector/ctor}}( ybuf, 'generic' );
+    > var obuf = [ 0.0, 0.0, 0.0, 0.0 ];
+    > var out = {{alias:@stdlib/ndarray/vector/ctor}}( obuf, 'generic' );
+    > {{alias}}( [ c, x, y, out ] )
+    <ndarray>[ 1.0, 6.0, 3.0, 8.0 ]
+
+    See Also
+    --------
+

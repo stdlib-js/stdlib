@@ -36,7 +36,7 @@ interface Routine {
 	*
 	* ## Notes
 	*
-	* -   If the function is unable to find matching elements, the function returns `-1`.
+	* -   If the function is unable to find an element in `x` which is almost equal to a corresponding element in `y`, the function returns `-1`.
 	*
 	* @param N - number of indexed elements
 	* @param maxULP - maximum allowed ULP difference
@@ -60,7 +60,7 @@ interface Routine {
 	*
 	* ## Notes
 	*
-	* -   If the function is unable to find matching elements, the function returns `-1`.
+	* -   If the function is unable to find an element in `x` which is almost equal to a corresponding element in `y`, the function returns `-1`.
 	*
 	* @param N - number of indexed elements
 	* @param maxULP - maximum allowed ULP difference
@@ -87,7 +87,7 @@ interface Routine {
 *
 * ## Notes
 *
-* -   If the function is unable to find matching elements, the function returns `-1`.
+* -   If the function is unable to find an element in `x` which is almost equal to a corresponding element in `y`, the function returns `-1`.
 *
 * @param N - number of indexed elements
 * @param maxULP - maximum allowed ULP difference
