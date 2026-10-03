@@ -35,6 +35,6 @@ int main( void ) {
 		mu = random_uniform( -5.0, 5.0 );
 		c = random_uniform( 0.0, 20.0 );
 		y = stdlib_base_dists_levy_variance( mu, c );
-		printf( "µ: %lf, c: %lf, Var(X;µ,c): %lf\n", mu, c, y );
+		printf( "μ: %lf, c: %lf, Var(X;μ,c): %lf\n", mu, c, y );
 	}
 }

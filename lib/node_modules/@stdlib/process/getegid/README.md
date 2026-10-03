@@ -51,6 +51,8 @@ var id = getegid();
 
 </section>
 
+<!-- /.notes -->
+
 <section class="examples">
 
 ## Examples

@@ -1,0 +1,12 @@
+
+{{alias}}
+    Natural logarithm of `2π`.
+
+    Examples
+    --------
+    > {{alias}}
+    1.837890625
+
+    See Also
+    --------
+

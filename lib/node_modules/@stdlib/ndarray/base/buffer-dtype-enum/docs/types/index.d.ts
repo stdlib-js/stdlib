@@ -25,7 +25,7 @@ import { Collection } from '@stdlib/types/array';
 /**
 * Returns the data type enumeration constant for a provided ndarray data buffer.
 *
-* @param arr - strided array
+* @param arr - ndarray data buffer
 * @returns data type enumeration constant or null
 *
 * @example

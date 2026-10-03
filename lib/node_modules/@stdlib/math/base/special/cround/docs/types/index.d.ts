@@ -34,13 +34,7 @@ import { Complex128 } from '@stdlib/types/complex';
 * var imag = require( '@stdlib/complex/float64/imag' );
 *
 * var v = cround( new Complex128( -4.2, 5.5 ) );
-* // returns <Complex128>
-*
-* var re = real( v );
-* // returns -4.0
-*
-* var im = imag( v );
-* // returns 6.0
+* // returns <Complex128>[ -4.0, 6.0 ]
 */
 declare function cround( z: Complex128 ): Complex128;
 

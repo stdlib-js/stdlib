@@ -45,7 +45,8 @@
         "@stdlib/math/base/assert/is-infinite",
         "@stdlib/math/base/special/copysign",
         "@stdlib/constants/float64/pinf",
-        "@stdlib/constants/float64/ninf"
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -67,7 +68,8 @@
         "@stdlib/math/base/assert/is-infinite",
         "@stdlib/math/base/special/copysign",
         "@stdlib/constants/float64/pinf",
-        "@stdlib/constants/float64/ninf"
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -89,7 +91,8 @@
         "@stdlib/math/base/assert/is-infinite",
         "@stdlib/math/base/special/copysign",
         "@stdlib/constants/float64/pinf",
-        "@stdlib/constants/float64/ninf"
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

@@ -68,7 +68,7 @@
       "alias": "csignumf",
       "pkg_desc": "evaluate the signum function of a single-precision complex floating-point number",
       "desc": "evaluates the signum function of a single-precision complex floating-point number",
-      "short_desc": "evaluate the signum function of a complex number",
+      "short_desc": "signum function",
       "parameters": [
         {
           "name": "z",

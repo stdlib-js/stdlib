@@ -68,8 +68,8 @@
     indexing semantics.
 
     While typed array views mandate a view offset based on the underlying
-    buffer, the `offset` parameter supports indexing semantics based on a
-    starting index.
+    buffer, offset parameters support indexing semantics based on starting
+    indices.
 
     Parameters
     ----------

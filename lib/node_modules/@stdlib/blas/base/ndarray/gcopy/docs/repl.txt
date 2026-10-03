@@ -1,0 +1,33 @@
+
+{{alias}}( arrays )
+    Copies values from a one-dimensional ndarray `x` into a one-dimensional
+    ndarray `y`.
+
+    If provided an empty input ndarray, the function returns the output ndarray
+    unchanged.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a one-dimensional output ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/vector/ctor}}( [ 4.0, 2.0, -3.0, 5.0, -1.0 ], 'generic' );
+    > var y = {{alias:@stdlib/ndarray/vector/ctor}}( [ 0.0, 0.0, 0.0, 0.0, 0.0 ], 'generic' );
+
+    > {{alias}}( [ x, y ] );
+    > y
+    <ndarray>[ 4.0, 2.0, -3.0, 5.0, -1.0 ]
+
+    See Also
+    --------
+

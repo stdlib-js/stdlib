@@ -46,21 +46,14 @@ Returns a read-only view of an input [`ndarray`][@stdlib/ndarray/ctor] in which 
 
 ```javascript
 var array = require( '@stdlib/ndarray/array' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 
 var x = array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ], {
     'shape': [ 3, 2 ]
 });
-// returns <ndarray>
-
-var arr = ndarray2array( x );
-// returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
+// returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 
 var y = flipud( x );
-// returns <ndarray>
-
-arr = ndarray2array( y );
-// returns [ [ 5.0, 6.0 ], [ 3.0, 4.0 ], [ 1.0, 2.0 ] ]
+// returns <ndarray>[ [ 5.0, 6.0 ], [ 3.0, 4.0 ], [ 1.0, 2.0 ] ]
 ```
 
 </section>

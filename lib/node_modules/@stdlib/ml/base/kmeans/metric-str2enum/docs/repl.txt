@@ -1,0 +1,27 @@
+
+{{alias}}( metric )
+    Returns the enumeration constant associated with a k-means distance metric
+    string.
+
+    Downstream consumers of this function should *not* rely on specific integer
+    values (e.g., `SQEUCLIDEAN == 0`). Instead, the function should be used in
+    an opaque manner.
+
+    Parameters
+    ----------
+    metric: string
+        Distance metric.
+
+    Returns
+    -------
+    out: integer|null
+        Enumeration constant.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'cosine' )
+    <number>
+
+    See Also
+    --------
+

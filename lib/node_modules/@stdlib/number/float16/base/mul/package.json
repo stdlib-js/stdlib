@@ -1,0 +1,183 @@
+{
+  "name": "@stdlib/number/float16/base/mul",
+  "version": "0.0.0",
+  "description": "Multiply two half-precision floating-point numbers.",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "main": "./lib",
+  "directories": {
+    "benchmark": "./benchmark",
+    "doc": "./docs",
+    "example": "./examples",
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {},
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "product",
+    "prod",
+    "multiply",
+    "multiplication",
+    "times",
+    "number",
+    "half",
+    "half-precision",
+    "float"
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "mul",
+      "alias": "mul",
+      "pkg_desc": "multiply two half-precision floating-point numbers",
+      "desc": "multiplies two half-precision floating-point numbers",
+      "short_desc": "",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "first input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "stdlib_float16_t",
+            "dtype": "float16"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -10,
+              10
+            ]
+          },
+          "example_values": [
+            -10,
+            -5,
+            -2,
+            -1,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "name": "y",
+          "desc": "second input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "stdlib_float16_t",
+            "dtype": "float16"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -10,
+              10
+            ]
+          },
+          "example_values": [
+            -5,
+            -4,
+            -3,
+            -2,
+            -1,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        }
+      ],
+      "returns": {
+        "desc": "result",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "stdlib_float16_t",
+          "dtype": "float16"
+        }
+      },
+      "keywords": [
+        "multiplication",
+        "multiply",
+        "product"
+      ],
+      "extra_keywords": []
+    }
+  }
+}

@@ -151,14 +151,14 @@ import normal = require( './index' );
 	normal.factory( -2, 2, { 'prng': null } ); // $ExpectError
 	normal.factory( -2, 2, { 'prng': [] } ); // $ExpectError
 	normal.factory( -2, 2, { 'prng': {} } ); // $ExpectError
-	normal.factory( -2, 2, { 'prng': true ); // $ExpectError
+	normal.factory( -2, 2, { 'prng': true } ); // $ExpectError
 
 	normal.factory( { 'prng': 123 } ); // $ExpectError
 	normal.factory( { 'prng': 'abc' } ); // $ExpectError
 	normal.factory( { 'prng': null } ); // $ExpectError
 	normal.factory( { 'prng': [] } ); // $ExpectError
 	normal.factory( { 'prng': {} } ); // $ExpectError
-	normal.factory( { 'prng': true ); // $ExpectError
+	normal.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -185,7 +185,7 @@ import normal = require( './index' );
 	normal.factory( -2, 2, { 'state': null } ); // $ExpectError
 	normal.factory( -2, 2, { 'state': [] } ); // $ExpectError
 	normal.factory( -2, 2, { 'state': {} } ); // $ExpectError
-	normal.factory( -2, 2, { 'state': true ); // $ExpectError
+	normal.factory( -2, 2, { 'state': true } ); // $ExpectError
 	normal.factory( -2, 2, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	normal.factory( { 'state': 123 } ); // $ExpectError
@@ -193,7 +193,7 @@ import normal = require( './index' );
 	normal.factory( { 'state': null } ); // $ExpectError
 	normal.factory( { 'state': [] } ); // $ExpectError
 	normal.factory( { 'state': {} } ); // $ExpectError
-	normal.factory( { 'state': true ); // $ExpectError
+	normal.factory( { 'state': true } ); // $ExpectError
 	normal.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

@@ -496,36 +496,30 @@
 
     // Define "pointers" (i.e., byte offsets) into module memory:
     > var xptr = 0;
-    > var yptr = 40;
+    > var yptr = 32;
 
     // Write data to module memory:
-    > var xbuf = {{alias:@stdlib/array/one-to}}( 10, 'float32' );
+    > var xbuf = {{alias:@stdlib/array/one-to}}( 8, 'float32' );
     > var x = new {{alias:@stdlib/array/complex64}}( xbuf.buffer );
     > mod.write( xptr, x );
 
-    > var ybuf = {{alias:@stdlib/array/ones}}( 10, 'float32' );
+    > var ybuf = {{alias:@stdlib/array/ones}}( 8, 'float32' );
     > var y = new {{alias:@stdlib/array/complex64}}( ybuf.buffer );
     > mod.write( yptr, y );
 
     // Perform computation:
-    > mod.main( 5, xptr, 1, yptr, 1, 0.8, 0.6 );
+    > mod.main( 4, xptr, 1, yptr, 1, 0.8, 0.6 );
 
     // Extract results from module memory:
-    > var viewX = {{alias:@stdlib/array/zeros}}( 5, 'complex64' );
-    > var viewY = {{alias:@stdlib/array/zeros}}( 5, 'complex64' );
+    > var viewX = {{alias:@stdlib/array/zeros}}( 4, 'complex64' );
+    > var viewY = {{alias:@stdlib/array/zeros}}( 4, 'complex64' );
     > mod.read( xptr, viewX );
     > mod.read( yptr, viewY );
 
-    > var v = viewX.get( 1 );
-    > var re = {{alias:@stdlib/complex/float32/real}}( v )
-    ~3.0
-    > var im = {{alias:@stdlib/complex/float32/imag}}( v )
-    ~3.8
-    > v = viewY.get( 1 );
-    > var re = {{alias:@stdlib/complex/float32/real}}( v )
-    ~-1.0
-    > var im = {{alias:@stdlib/complex/float32/imag}}( v )
-    ~-1.6
+    > viewX
+    <Complex64Array>[ ~1.4, ~2.2, 3.0, ~3.8, ~4.6, ~5.4, ~6.2, 7.0 ]
+    > viewY
+    <Complex64Array>[ ~0.2, ~-0.4, -1.0, ~-1.6, ~-2.2, ~-2.8, ~-3.4, -4.0 ]
 
 
 {{alias}}.Module.prototype.ndarray( N, cxp, sx, ox, cyp, sy, oy, c, s )
@@ -573,36 +567,30 @@
 
     // Define "pointers" (i.e., byte offsets) into module memory:
     > var xptr = 0;
-    > var yptr = 40;
+    > var yptr = 32;
 
     // Write data to module memory:
-    > var xbuf = {{alias:@stdlib/array/one-to}}( 10, 'float32' );
+    > var xbuf = {{alias:@stdlib/array/one-to}}( 8, 'float32' );
     > var x = new {{alias:@stdlib/array/complex64}}( xbuf.buffer );
     > mod.write( xptr, x );
 
-    > var ybuf = {{alias:@stdlib/array/ones}}( 10, 'float32' );
+    > var ybuf = {{alias:@stdlib/array/ones}}( 8, 'float32' );
     > var y = new {{alias:@stdlib/array/complex64}}( ybuf.buffer );
     > mod.write( yptr, y );
 
     // Perform computation:
-    > mod.ndarray( 5, xptr, 1, 0, yptr, 1, 0, 0.8, 0.6 );
+    > mod.ndarray( 4, xptr, 1, 0, yptr, 1, 0, 0.8, 0.6 );
 
     // Extract results from module memory:
-    > var viewX = {{alias:@stdlib/array/zeros}}( 5, 'complex64' );
-    > var viewY = {{alias:@stdlib/array/zeros}}( 5, 'complex64' );
+    > var viewX = {{alias:@stdlib/array/zeros}}( 4, 'complex64' );
+    > var viewY = {{alias:@stdlib/array/zeros}}( 4, 'complex64' );
     > mod.read( xptr, viewX );
     > mod.read( yptr, viewY );
 
-    > var v = viewX.get( 1 );
-    > var re = {{alias:@stdlib/complex/float32/real}}( v )
-    ~3.0
-    > var im = {{alias:@stdlib/complex/float32/imag}}( v )
-    ~3.8
-    > v = viewY.get( 1 );
-    > var re = {{alias:@stdlib/complex/float32/real}}( v )
-    ~-1.0
-    > var im = {{alias:@stdlib/complex/float32/imag}}( v )
-    ~-1.6
+    > viewX
+    <Complex64Array>[ ~1.4, ~2.2, 3.0, ~3.8, ~4.6, ~5.4, ~6.2, 7.0 ]
+    > viewY
+    <Complex64Array>[ ~0.2, ~-0.4, -1.0, ~-1.6, ~-2.2, ~-2.8, ~-3.4, -4.0 ]
 
     See Also
     --------

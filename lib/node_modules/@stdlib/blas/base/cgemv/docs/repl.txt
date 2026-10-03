@@ -1,0 +1,182 @@
+
+{{alias}}( order, trans, M, N, α, A, lda, x, sx, β, y, sy )
+    Performs one of the matrix-vector operations `y = α*A*x + β*y` or
+    `y = α*A**T*x + β*y` or `y = α*A^T*x + β*y`, where `α` and `β` are scalars,
+    `x` and `y` are vectors, and `A` is an `M` by `N` matrix.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `M` or `N` is equal to `0`, the function returns `y` unchanged.
+
+    If `α` equals `0 + 0i` and `β` equals `1 + 0i`, the function returns `y`
+    unchanged.
+
+    Parameters
+    ----------
+    order: string
+        Row-major (C-style) or column-major (Fortran-style) order.
+
+    trans: string
+        Specifies whether `A` should be transposed, conjugate-transposed, or not
+        transposed.
+
+    M: integer
+        Number of rows in `A`.
+
+    N: integer
+        Number of columns in `A`.
+
+    α: Complex64
+        Scalar constant.
+
+    A: Complex64Array
+        Input matrix.
+
+    lda: integer
+        Stride of the first dimension of `A` (a.k.a., leading dimension of the
+        matrix `A`).
+
+    x: Complex64Array
+        First input vector.
+
+    sx: integer
+        Index increment for `x`.
+
+    β: Complex64
+        Scalar constant.
+
+    y: Complex64Array
+        Second input vector.
+
+    sy: integer
+        Index increment for `y`.
+
+    Returns
+    -------
+    y: Complex64Array
+        Second input vector.
+
+    Examples
+    --------
+    // Standard usage:
+    > var x = new {{alias:@stdlib/array/complex64}}([ 1.0, 1.0, 2.0, 2.0 ]);
+    > var y = new {{alias:@stdlib/array/complex64}}([ 1.0, 1.0, 2.0, 2.0 ]);
+    > var buf = [ 1.0, 1.0, 2.0, 2.0, 3.0, 3.0, 4.0, 4.0 ];
+    > var A = new {{alias:@stdlib/array/complex64}}( buf );
+    > var alpha = new {{alias:@stdlib/complex/float32/ctor}}( 0.5, 0.5 );
+    > var beta = new {{alias:@stdlib/complex/float32/ctor}}( 0.5, -0.5 );
+    > var ord = 'column-major';
+    > var trans = 'no-transpose';
+    > {{alias}}( ord, trans, 2, 2, alpha, A, 2, x, 1, beta, y, 1 )
+    <Complex64Array>[ -6.0, 7.0, -8.0, 10.0 ]
+
+    // Advanced indexing:
+    > x = new {{alias:@stdlib/array/complex64}}([ 2.0, 2.0, 1.0, 1.0 ]);
+    > y = new {{alias:@stdlib/array/complex64}}([ 2.0, 2.0, 1.0, 1.0 ]);
+    > buf = [ 1.0, 1.0, 2.0, 2.0, 3.0, 3.0, 4.0, 4.0 ];
+    > A = new {{alias:@stdlib/array/complex64}}( buf );
+    > alpha = new {{alias:@stdlib/complex/float32/ctor}}( 0.5, 0.5 );
+    > beta = new {{alias:@stdlib/complex/float32/ctor}}( 0.5, -0.5 );
+    > ord = 'column-major';
+    > trans = 'no-transpose';
+    > {{alias}}( ord, trans, 2, 2, alpha, A, 2, x, -1, beta, y, -1 )
+    <Complex64Array>[ -8.0, 10.0, -6.0, 7.0 ]
+
+    // Using typed array views:
+    > var x0buf = [ 0.0, 0.0, 1.0, 1.0, 2.0, 2.0 ];
+    > var x0 = new {{alias:@stdlib/array/complex64}}( x0buf );
+    > var y0buf = [ 0.0, 0.0, 1.0, 1.0, 2.0, 2.0 ];
+    > var y0 = new {{alias:@stdlib/array/complex64}}( y0buf );
+    > var x0bytes = x0.BYTES_PER_ELEMENT*1;
+    > var x1 = new {{alias:@stdlib/array/complex64}}( x0.buffer, x0bytes );
+    > var y0bytes = y0.BYTES_PER_ELEMENT*1;
+    > var y1 = new {{alias:@stdlib/array/complex64}}( y0.buffer, y0bytes );
+    > buf = [ 1.0, 1.0, 2.0, 2.0, 3.0, 3.0, 4.0, 4.0 ];
+    > A = new {{alias:@stdlib/array/complex64}}( buf );
+    > alpha = new {{alias:@stdlib/complex/float32/ctor}}( 0.5, 0.5 );
+    > beta = new {{alias:@stdlib/complex/float32/ctor}}( 0.5, -0.5 );
+    > ord = 'column-major';
+    > trans = 'no-transpose';
+    > {{alias}}( ord, trans, 2, 2, alpha, A, 2, x1, 1, beta, y1, 1 )
+    <Complex64Array>[ -6.0, 7.0, -8.0, 10.0 ]
+
+
+{{alias}}.ndarray( trans, M, N, α, A, sa1, sa2, oa, x, sx, ox, β, y, sy, oy )
+    Performs one of the matrix-vector operations `y = α*A*x + β*y`,
+    `y = α*A^T*x + β*y`, or `y = α*A^H*x + β*y` using alternative indexing
+    semantics and where `α` and `β` are scalars, `x` and `y` are vectors, and
+    `A` is an `M` by `N` matrix.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    trans: string
+        Specifies whether `A` should be transposed, conjugate-transposed, or not
+        transposed.
+
+    M: integer
+        Number of rows in `A`.
+
+    N: integer
+        Number of columns in `A`.
+
+    α: Complex64
+        Scalar constant.
+
+    A: Complex64Array
+        Input matrix.
+
+    sa1: integer
+        Stride of the first dimension of `A`.
+
+    sa2: integer
+        Stride of the second dimension of `A`.
+
+    oa: integer
+        Starting index (offset) for `A`.
+
+    x: Complex64Array
+        First input vector.
+
+    sx: integer
+        Index increment for `x`.
+
+    ox: integer
+        Starting index (offset) for `x`.
+
+    β: Complex64
+        Scalar constant.
+
+    y: Complex64Array
+        Second input vector.
+
+    sy: integer
+        Index increment for `y`.
+
+    oy: integer
+        Starting index (offset) for `y`.
+
+    Returns
+    -------
+    y: Complex64Array
+        Second input vector.
+
+    Examples
+    --------
+    > x = new {{alias:@stdlib/array/complex64}}([ 1.0, 1.0, 2.0, 2.0 ]);
+    > y = new {{alias:@stdlib/array/complex64}}([ 1.0, 1.0, 2.0, 2.0 ]);
+    > buf = [ 1.0, 1.0, 2.0, 2.0, 3.0, 3.0, 4.0, 4.0 ];
+    > A = new {{alias:@stdlib/array/complex64}}( buf );
+    > alpha = new {{alias:@stdlib/complex/float32/ctor}}( 0.5, 0.5 );
+    > beta = new {{alias:@stdlib/complex/float32/ctor}}( 0.5, -0.5 );
+    > ord = 'column-major';
+    > trans = 'no-transpose';
+    > {{alias}}.ndarray(trans,2,2,alpha,A,1,2,0,x,1,0,beta,y,1,0)
+    <Complex64Array>[ -6.0, 7.0, -8.0, 10.0 ]
+
+    See Also
+    --------

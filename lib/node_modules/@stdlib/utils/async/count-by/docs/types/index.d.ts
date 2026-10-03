@@ -216,7 +216,6 @@ interface CountByAsync {
 	* @param collection - input collection
 	* @param indicator - indicator function specifying which group an element in the input collection belongs to
 	* @param done - function to invoke upon completion
-	* @throws must provide valid options
 	*
 	* @example
 	* var readFile = require( '@stdlib/fs/read-file' );

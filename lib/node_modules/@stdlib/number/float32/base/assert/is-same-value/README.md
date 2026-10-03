@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# isSameValuef
+# isSameValue
 
 > Test if two single-precision floating-point numbers are the same value.
 
@@ -27,41 +27,41 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var isSameValuef = require( '@stdlib/number/float32/base/assert/is-same-value' );
+var isSameValue = require( '@stdlib/number/float32/base/assert/is-same-value' );
 ```
 
-#### isSameValuef( a, b )
+#### isSameValue( a, b )
 
 Tests if two single-precision floating-point numbers `a` and `b` are the same value.
 
 ```javascript
 var toFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 
-var bool = isSameValuef( toFloat32( 3.14 ), toFloat32( 3.14 ) );
+var bool = isSameValue( toFloat32( 3.14 ), toFloat32( 3.14 ) );
 // returns true
 
-bool = isSameValuef( toFloat32( 5.0 ), toFloat32( 3.0 ) );
+bool = isSameValue( toFloat32( 5.0 ), toFloat32( 3.0 ) );
 // returns false
 ```
 
 In contrast to the strict equality operator `===`, the function distinguishes between `+0` and `-0` and treats `NaNs` as the same value.
 
-<!-- eslint-disable no-compare-neg-zero, use-isnan -->
+<!-- eslint-disable no-compare-neg-zero, use-isnan, @cspell/spellchecker -->
 
 ```javascript
 var bool = ( 0.0 === -0.0 );
 // returns true
 
-bool = isSameValuef( 0.0, -0.0 );
+bool = isSameValue( 0.0, -0.0 );
 // returns false
 
-bool = isSameValuef( -0.0, -0.0 );
+bool = isSameValue( -0.0, -0.0 );
 // returns true
 
 bool = ( NaN === NaN );
 // returns false
 
-bool = isSameValuef( NaN, NaN );
+bool = isSameValue( NaN, NaN );
 // returns true
 ```
 
@@ -87,18 +87,18 @@ bool = isSameValuef( NaN, NaN );
 
 ```javascript
 var toFloat32 = require( '@stdlib/number/float64/base/to-float32' );
-var isSameValuef = require( '@stdlib/number/float32/base/assert/is-same-value' );
+var isSameValue = require( '@stdlib/number/float32/base/assert/is-same-value' );
 
-var bool = isSameValuef( toFloat32( 3.14 ), toFloat32( 3.14 ) );
+var bool = isSameValue( toFloat32( 3.14 ), toFloat32( 3.14 ) );
 // returns true
 
-bool = isSameValuef( toFloat32( 0.0 ), toFloat32( 0.0 ) );
+bool = isSameValue( toFloat32( 0.0 ), toFloat32( 0.0 ) );
 // returns true
 
-bool = isSameValuef( toFloat32( -0.0 ), toFloat32( 0.0 ) );
+bool = isSameValue( toFloat32( -0.0 ), toFloat32( 0.0 ) );
 // returns false
 
-bool = isSameValuef( toFloat32( NaN ), toFloat32( NaN ) );
+bool = isSameValue( toFloat32( NaN ), toFloat32( NaN ) );
 // returns true
 ```
 

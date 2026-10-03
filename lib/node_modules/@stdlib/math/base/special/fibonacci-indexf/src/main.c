@@ -38,7 +38,7 @@ static const float SQRT_5 = 2.23606797749979f;
 * @return     Fibonacci number index
 *
 * @example
-* float out = stdlib_base_fibonacci_index( 2.0f );
+* float out = stdlib_base_fibonacci_indexf( 2.0f );
 * // returns 3.0f
 */
 float stdlib_base_fibonacci_indexf( const float F ) {

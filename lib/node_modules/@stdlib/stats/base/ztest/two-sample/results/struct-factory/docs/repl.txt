@@ -17,7 +17,7 @@
     --------
     > var S = {{alias}}( 'float64' );
     > var r = new S();
-    > r.toString( { 'format': 'linear' } )
+    > r.toString()
     <string>
 
     See Also

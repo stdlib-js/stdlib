@@ -88,11 +88,13 @@ static double tic( void ) {
 */
 static double benchmark1( int iterations, int len ) {
 	double elapsed;
-	float AP[ len*(len+1)/2 ];
-	float x[ len ];
+	float *AP;
+	float *x;
 	double t;
 	int i;
 
+	AP = (float *) malloc( ( len*(len+1)/2 ) * sizeof( float ) );
+	x = (float *) malloc( len * sizeof( float ) );
 	stdlib_strided_sfill( len, 0.5f, x, 1 );
 	stdlib_strided_sfill( len*(len+1)/2, 1.0f, AP, 1 );
 	t = tic();
@@ -107,6 +109,8 @@ static double benchmark1( int iterations, int len ) {
 	if ( AP[ 0 ] != AP[ 0 ] ) {
 		printf( "should not return NaN\n" );
 	}
+	free( AP );
+	free( x );
 	return elapsed;
 }
 
@@ -119,11 +123,13 @@ static double benchmark1( int iterations, int len ) {
 */
 static double benchmark2( int iterations, int len ) {
 	double elapsed;
-	float AP[ len*(len+1)/2 ];
-	float x[ len ];
+	float *AP;
+	float *x;
 	double t;
 	int i;
 
+	AP = (float *) malloc( ( len*(len+1)/2 ) * sizeof( float ) );
+	x = (float *) malloc( len * sizeof( float ) );
 	stdlib_strided_sfill( len, 0.5f, x, 1 );
 	stdlib_strided_sfill( len*(len+1)/2, 1.0f, AP, 1 );
 	t = tic();
@@ -138,6 +144,8 @@ static double benchmark2( int iterations, int len ) {
 	if ( AP[ 0 ] != AP[ 0 ] ) {
 		printf( "should not return NaN\n" );
 	}
+	free( AP );
+	free( x );
 	return elapsed;
 }
 

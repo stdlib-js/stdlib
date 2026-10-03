@@ -136,7 +136,7 @@ var mean = out / ctx.count;
     ```javascript
     var Complex64Array = require( '@stdlib/array/complex64' );
     var Complex64 = require( '@stdlib/complex/float32/ctor' );
-    var cceil = require( '@stdlib/math/base/special/cceil' );
+    var cceilf = require( '@stdlib/math/base/special/cceilf' );
     var realf = require( '@stdlib/complex/float32/real' );
     var imagf = require( '@stdlib/complex/float32/imag' );
 
@@ -150,14 +150,8 @@ var mean = out / ctx.count;
 
     var x = new Complex64Array( [ 1.5, 2.5, 3.5, 4.5, 5.5, 6.5, 7.5, 8.5 ] );
 
-    var v = mapReduceRight( x, new Complex64( 0.0, 0.0 ), cceil, sum );
-    // returns <Complex64>
-
-    var re = realf( v );
-    // returns 20.0
-
-    var im = imagf( v );
-    // returns 24.0
+    var v = mapReduceRight( x, new Complex64( 0.0, 0.0 ), cceilf, sum );
+    // returns <Complex64>[ 20.0, 24.0 ]
     ```
 
 -   For [`ndarray`][@stdlib/ndarray/ctor]-like objects, the function performs a single-pass map-reduce operation over the entire input [`ndarray`][@stdlib/ndarray/ctor] (i.e., higher-order [`ndarray`][@stdlib/ndarray/ctor] dimensions are flattened to a single-dimension).

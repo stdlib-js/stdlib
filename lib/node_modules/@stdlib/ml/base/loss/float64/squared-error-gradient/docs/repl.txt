@@ -1,0 +1,38 @@
+
+{{alias}}( x, y, p )
+    Computes the squared error loss gradient with respect to a model parameter.
+
+    If any argument is `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    y: number
+        True target value.
+
+    p: number
+        Predicted value.
+
+    Returns
+    -------
+    v: number
+        Squared error loss gradient.
+
+    Examples
+    --------
+    > var v = {{alias}}( 5.0, -2.0, -1.782 )
+    ~1.09
+    > v = {{alias}}( 1.0, 0.202, 0.202 )
+    0.0
+    > v = {{alias}}( -4.0,  1.0, -0.999 )
+    7.996
+    > v = {{alias}}( 4.723, 0.2, 0.532 )
+    ~1.568
+    > v = {{alias}}( 1.0, NaN, 0.987 )
+    NaN
+
+    See Also
+    --------
+

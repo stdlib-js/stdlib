@@ -18,13 +18,13 @@
         Number of indexed elements.
 
     k: ArrayLikeObject
-        Scale parameter.
+        Shape parameter.
 
     sk: integer
         Index increment for `k`.
 
     lambda: ArrayLikeObject
-        Shape parameter.
+        Scale parameter.
 
     sl: integer
         Index increment for `lambda`.
@@ -97,7 +97,7 @@
         Number of indexed elements.
 
     k: ArrayLikeObject
-        Scale parameter.
+        Shape parameter.
 
     sk: integer
         Index increment for `k`.
@@ -106,7 +106,7 @@
         Starting index for `k`.
 
     lambda: ArrayLikeObject
-        Shape parameter.
+        Scale parameter.
 
     sl: integer
         Index increment for `lambda`.

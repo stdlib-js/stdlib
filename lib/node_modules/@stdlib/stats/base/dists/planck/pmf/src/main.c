@@ -31,7 +31,7 @@
 *
 * @example
 * double y = stdlib_base_dists_planck_pmf( 2.0, 0.5 );
-* // returns ~0.1839
+* // returns ~0.1447
 */
 double stdlib_base_dists_planck_pmf( const double x, const double lambda ) {
 	if ( stdlib_base_is_nan( x ) || stdlib_base_is_nan( lambda ) || lambda <= 0.0 ) {

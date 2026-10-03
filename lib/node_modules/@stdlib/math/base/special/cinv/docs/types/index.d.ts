@@ -30,17 +30,9 @@ import { Complex128 } from '@stdlib/types/complex';
 *
 * @example
 * var Complex128 = require( '@stdlib/complex/float64/ctor' );
-* var real = require( '@stdlib/complex/float64/real' );
-* var imag = require( '@stdlib/complex/float64/imag' );
 *
 * var v = cinv( new Complex128( 2.0, 4.0 ) );
-* // returns <Complex128>
-*
-* var re = real( v );
-* // returns 0.1
-*
-* var im = imag( v );
-* // returns -0.2
+* // returns <Complex128>[ ~0.1, ~-0.2 ]
 */
 declare function cinv( z: Complex128 ): Complex128;
 

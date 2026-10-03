@@ -192,7 +192,7 @@ Computes the nth [negaLucas number][lucas-number].
 
 ```c
 double out = stdlib_base_negalucas( 0.0 );
-// returns 0.0
+// returns 2.0
 
 out = stdlib_base_negalucas( -1.0 );
 // returns -1.0

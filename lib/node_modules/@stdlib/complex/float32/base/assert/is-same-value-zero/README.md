@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# isSameValueZerof
+# isSameValueZero
 
 > Test whether two single-precision complex floating-point numbers are the same value.
 
@@ -37,10 +37,10 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var isSameValueZerof = require( '@stdlib/complex/float32/base/assert/is-same-value-zero' );
+var isSameValueZero = require( '@stdlib/complex/float32/base/assert/is-same-value-zero' );
 ```
 
-#### isSameValueZerof( z1, z2 )
+#### isSameValueZero( z1, z2 )
 
 Tests whether two single-precision complex floating-point numbers are the same value.
 
@@ -50,7 +50,7 @@ var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var z1 = new Complex64( 5.0, 3.0 );
 var z2 = new Complex64( 5.0, 3.0 );
 
-var out = isSameValueZerof( z1, z2 );
+var out = isSameValueZero( z1, z2 );
 // returns true
 ```
 
@@ -62,7 +62,7 @@ var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var z1 = new Complex64( NaN, NaN );
 var z2 = new Complex64( NaN, NaN );
 
-var out = isSameValueZerof( z1, z2 );
+var out = isSameValueZero( z1, z2 );
 // returns true
 ```
 
@@ -74,7 +74,7 @@ var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var z1 = new Complex64( -0.0, 0.0 );
 var z2 = new Complex64( 0.0, -0.0 );
 
-var out = isSameValueZerof( z1, z2 );
+var out = isSameValueZero( z1, z2 );
 // returns true
 ```
 
@@ -100,21 +100,21 @@ var out = isSameValueZerof( z1, z2 );
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var isSameValueZerof = require( '@stdlib/complex/float32/base/assert/is-same-value-zero' );
+var isSameValueZero = require( '@stdlib/complex/float32/base/assert/is-same-value-zero' );
 
 var z1 = new Complex64( 5.0, 3.0 );
 var z2 = new Complex64( 5.0, 3.0 );
-var out = isSameValueZerof( z1, z2 );
+var out = isSameValueZero( z1, z2 );
 // returns true
 
 z1 = new Complex64( -5.0, -3.0 );
 z2 = new Complex64( 5.0, 3.0 );
-out = isSameValueZerof( z1, z2 );
+out = isSameValueZero( z1, z2 );
 // returns false
 
 z1 = new Complex64( NaN, 3.0 );
 z2 = new Complex64( NaN, 3.0 );
-out = isSameValueZerof( z1, z2 );
+out = isSameValueZero( z1, z2 );
 // returns true
 ```
 

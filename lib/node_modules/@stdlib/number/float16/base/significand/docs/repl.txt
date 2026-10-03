@@ -1,0 +1,31 @@
+
+{{alias}}( x )
+    Returns an integer corresponding to the significand of a half-precision
+    floating-point number.
+
+    Parameters
+    ----------
+    x: float
+        Half-precision floating-point number.
+
+    Returns
+    -------
+    out: integer
+        Significand.
+
+    Examples
+    --------
+    > var s = {{alias}}( {{alias:@stdlib/number/float64/base/to-float16}}( 3.14 ) )
+    584
+    > s = {{alias}}( {{alias:@stdlib/number/float64/base/to-float16}}( 3.14e-6 ) )
+    53
+    > s = {{alias}}( {{alias:@stdlib/number/float64/base/to-float16}}( -3.14 ) )
+    584
+    > s = {{alias}}( 0.0 )
+    0
+    > s = {{alias}}( NaN )
+    512
+
+    See Also
+    --------
+

@@ -120,7 +120,7 @@ for ( i = 0; i < 100; i++ ) {
 ### Usage
 
 ```text
-Usage: stdlib-standalone2pkg [options] <alias>
+Usage: stdlib-standalone2pkg [options] <pkg>
 
 Options:
 

@@ -70,6 +70,7 @@ interface IsNaNArray {
 	*
 	* @example
 	* var bool = isNaNArray.objects( [ NaN, NaN, NaN ] );
+	* // returns false
 	*/
 	objects( value: any ): value is ArrayLike<Number>;
 }

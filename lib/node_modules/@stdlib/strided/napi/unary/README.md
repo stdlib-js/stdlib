@@ -183,7 +183,7 @@ When used, this macro should be used **instead of** `NAPI_MODULE`. The macro inc
     -   **dtypeX**: `X` [data type][@stdlib/strided/dtypes] (enumeration constant).
     -   **X**: input [typed array][mdn-typed-array].
     -   **strideX**: `X` stride length.
-    -   **dtypeY**: `Y`  [data type][@stdlib/strided/dtypes] (enumeration constant).
+    -   **dtypeY**: `Y` [data type][@stdlib/strided/dtypes] (enumeration constant).
     -   **Y**: destination [typed array][mdn-typed-array].
     -   **strideY**: `Y` stride length.
 

@@ -1,0 +1,25 @@
+
+{{alias}}( z )
+    Evaluates the exponential function for a single-precision complex floating-
+    point number.
+
+    Parameters
+    ----------
+    z: Complex64
+        Complex number.
+
+    Returns
+    -------
+    out: Complex64
+        Complex number.
+
+    Examples
+    --------
+    > var y = {{alias}}( new {{alias:@stdlib/complex/float32/ctor}}( 0.0, 0.0 ) )
+    <Complex64>[ 1.0, 0.0 ]
+    > y = {{alias}}( new {{alias:@stdlib/complex/float32/ctor}}( 0.0, 1.0 ) )
+    <Complex64>[ ~0.540, ~0.841 ]
+
+    See Also
+    --------
+

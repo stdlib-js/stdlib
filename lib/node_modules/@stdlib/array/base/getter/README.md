@@ -97,33 +97,37 @@ arr = filled( 2.0, 10, 'float32' );
 v = getter( dtype( arr ) )( arr, 2 );
 // returns 2.0
 
-arr = filled( 3, 10, 'int32' );
+arr = filled( 3.0, 10, 'float16' );
 v = getter( dtype( arr ) )( arr, 2 );
-// returns 3
+// returns 3.0
 
-arr = filled( 4, 10, 'int16' );
+arr = filled( 4, 10, 'int32' );
 v = getter( dtype( arr ) )( arr, 2 );
 // returns 4
 
-arr = filled( 5, 10, 'int8' );
+arr = filled( 5, 10, 'int16' );
 v = getter( dtype( arr ) )( arr, 2 );
 // returns 5
 
-arr = filled( 6, 10, 'uint32' );
+arr = filled( 6, 10, 'int8' );
 v = getter( dtype( arr ) )( arr, 2 );
 // returns 6
 
-arr = filled( 7, 10, 'uint16' );
+arr = filled( 7, 10, 'uint32' );
 v = getter( dtype( arr ) )( arr, 2 );
 // returns 7
 
-arr = filled( 8, 10, 'uint8' );
+arr = filled( 8, 10, 'uint16' );
 v = getter( dtype( arr ) )( arr, 2 );
 // returns 8
 
-arr = filled( 9, 10, 'uint8c' );
+arr = filled( 9, 10, 'uint8' );
 v = getter( dtype( arr ) )( arr, 2 );
 // returns 9
+
+arr = filled( 10, 10, 'uint8c' );
+v = getter( dtype( arr ) )( arr, 2 );
+// returns 10
 ```
 
 </section>

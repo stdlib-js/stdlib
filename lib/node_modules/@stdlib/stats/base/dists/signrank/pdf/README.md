@@ -235,7 +235,7 @@ int main( void ) {
 
 <section class="links">
 
-[pdf]: https://en.wikipedia.org/wiki/Cumulative_distribution_function
+[pdf]: https://en.wikipedia.org/wiki/Probability_density_function
 
 </section>
 

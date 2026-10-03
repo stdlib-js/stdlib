@@ -26,9 +26,9 @@ interface Routine {
 	* Multiplies a double-precision floating-point vector `x` by a constant `alpha`.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
-	* @param stride - index increment
+	* @param stride - stride length
 	* @returns input array
 	*
 	* @example
@@ -45,9 +45,9 @@ interface Routine {
 	* Multiplies a double-precision floating-point vector `x` by a constant `alpha` using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
-	* @param stride - index increment
+	* @param stride - stride length
 	* @param offset - starting index
 	* @returns input array
 	*
@@ -66,9 +66,9 @@ interface Routine {
 * Multiplies a double-precision floating-point vector `x` by a constant `alpha`.
 *
 * @param N - number of indexed elements
-* @param alpha - constant
+* @param alpha - scalar constant
 * @param x - input array
-* @param stride - index increment
+* @param stride - stride length
 * @returns input array
 *
 * @example

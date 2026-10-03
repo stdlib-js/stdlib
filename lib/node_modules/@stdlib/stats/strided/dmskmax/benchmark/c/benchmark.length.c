@@ -18,6 +18,7 @@
 
 #include "stdlib/stats/strided/dmskmax.h"
 #include <stdlib.h>
+#include <stdint.h>
 #include <stdio.h>
 #include <math.h>
 #include <time.h>
@@ -95,13 +96,15 @@ static double rand_double( void ) {
 * @return             elapsed time in seconds
 */
 static double benchmark1( int iterations, int len ) {
-	unsigned char mask[ len ];
 	double elapsed;
-	double x[ len ];
+	uint8_t *mask;
+	double *x;
 	double v;
 	double t;
 	int i;
 
+	x = (double *) malloc( len * sizeof( double ) );
+	mask = (uint8_t *) malloc( len * sizeof( uint8_t ) );
 	for ( i = 0; i < len; i++ ) {
 		if ( rand_double() < 0.2 ) {
 			mask[ i ] = 1; // missing
@@ -124,6 +127,8 @@ static double benchmark1( int iterations, int len ) {
 	if ( v != v ) {
 		printf( "should not return NaN\n" );
 	}
+	free( x );
+	free( mask );
 	return elapsed;
 }
 
@@ -135,13 +140,15 @@ static double benchmark1( int iterations, int len ) {
 * @return             elapsed time in seconds
 */
 static double benchmark2( int iterations, int len ) {
-	unsigned char mask[ len ];
 	double elapsed;
-	double x[ len ];
+	uint8_t *mask;
+	double *x;
 	double v;
 	double t;
 	int i;
 
+	x = (double *) malloc( len * sizeof( double ) );
+	mask = (uint8_t *) malloc( len * sizeof( uint8_t ) );
 	for ( i = 0; i < len; i++ ) {
 		if ( rand_double() < 0.2 ) {
 			mask[ i ] = 1; // missing
@@ -164,6 +171,8 @@ static double benchmark2( int iterations, int len ) {
 	if ( v != v ) {
 		printf( "should not return NaN\n" );
 	}
+	free( x );
+	free( mask );
 	return elapsed;
 }
 

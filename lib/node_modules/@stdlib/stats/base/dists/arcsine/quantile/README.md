@@ -166,7 +166,7 @@ logEachMap( 'p: %0.4f, a: %0.4f, b: %0.4f, Q(p;a,b): %0.4f', p, a, b, quantile )
 Evaluates the quantile function for an arcsine distribution.
 
 ```c
-double out = quantile( 0.8, 0.0, 1.0 );
+double out = stdlib_base_dists_arcsine_quantile( 0.8, 0.0, 1.0 );
 // returns ~0.905
 ```
 

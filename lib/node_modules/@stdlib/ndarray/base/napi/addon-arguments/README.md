@@ -160,7 +160,7 @@ The function accepts the following arguments:
 -   **argv**: `[in] napi_value*` ndarray function arguments.
 -   **nargs**: `[in] int64_t` total number of expected arguments.
 -   **nin**: `[in] int64_t` number of input ndarray arguments.
--   **arrays**: `[out] struct ndarrays**` destination array for storing pointers to both input and output ndarrays.
+-   **arrays**: `[out] struct ndarray**` destination array for storing pointers to both input and output ndarrays.
 -   **err**: `[out] napi_value*` pointer for storing a JavaScript error.
 
 ```c

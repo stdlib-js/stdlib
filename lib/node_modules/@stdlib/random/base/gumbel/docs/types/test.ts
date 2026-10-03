@@ -151,14 +151,14 @@ import gumbel = require( './index' );
 	gumbel.factory( -2, 2, { 'prng': null } ); // $ExpectError
 	gumbel.factory( -2, 2, { 'prng': [] } ); // $ExpectError
 	gumbel.factory( -2, 2, { 'prng': {} } ); // $ExpectError
-	gumbel.factory( -2, 2, { 'prng': true ); // $ExpectError
+	gumbel.factory( -2, 2, { 'prng': true } ); // $ExpectError
 
 	gumbel.factory( { 'prng': 123 } ); // $ExpectError
 	gumbel.factory( { 'prng': 'abc' } ); // $ExpectError
 	gumbel.factory( { 'prng': null } ); // $ExpectError
 	gumbel.factory( { 'prng': [] } ); // $ExpectError
 	gumbel.factory( { 'prng': {} } ); // $ExpectError
-	gumbel.factory( { 'prng': true ); // $ExpectError
+	gumbel.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -185,7 +185,7 @@ import gumbel = require( './index' );
 	gumbel.factory( -2, 2, { 'state': null } ); // $ExpectError
 	gumbel.factory( -2, 2, { 'state': [] } ); // $ExpectError
 	gumbel.factory( -2, 2, { 'state': {} } ); // $ExpectError
-	gumbel.factory( -2, 2, { 'state': true ); // $ExpectError
+	gumbel.factory( -2, 2, { 'state': true } ); // $ExpectError
 	gumbel.factory( -2, 2, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	gumbel.factory( { 'state': 123 } ); // $ExpectError
@@ -193,7 +193,7 @@ import gumbel = require( './index' );
 	gumbel.factory( { 'state': null } ); // $ExpectError
 	gumbel.factory( { 'state': [] } ); // $ExpectError
 	gumbel.factory( { 'state': {} } ); // $ExpectError
-	gumbel.factory( { 'state': true ); // $ExpectError
+	gumbel.factory( { 'state': true } ); // $ExpectError
 	gumbel.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

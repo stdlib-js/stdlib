@@ -20,7 +20,7 @@ limitations under the License.
 
 # forEach
 
-> Invoke a callback function once for each ndarray element.
+> Invoke a callback function once for each element in an ndarray.
 
 <section class="intro">
 
@@ -38,7 +38,7 @@ var forEach = require( '@stdlib/ndarray/base/for-each' );
 
 #### forEach( arrays, fcn\[, thisArg] )
 
-Invokes a callback function once for each ndarray element.
+Invokes a callback function once for each element in an ndarray.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -73,7 +73,7 @@ forEach( [ x ], naryFunction( log, 1 ) );
 
 The function accepts the following arguments:
 
--   **arrays**: array-like object containing an ndarray.
+-   **arrays**: array-like object containing an input ndarray.
 -   **fcn**: callback to apply.
 -   **thisArg**: callback execution context.
 

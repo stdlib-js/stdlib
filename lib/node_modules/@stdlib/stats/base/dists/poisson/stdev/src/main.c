@@ -17,8 +17,8 @@
 */
 
 #include "stdlib/stats/base/dists/poisson/stdev.h"
-#include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/sqrt.h"
+#include "stdlib/stats/base/dists/poisson/variance.h"
 
 /**
 * Returns the standard deviation of a Poisson distribution with parameter `lambda`.
@@ -31,11 +31,5 @@
 * // returns 3.0
 */
 double stdlib_base_dists_poisson_stdev( const double lambda ) {
-	if (
-		stdlib_base_is_nan( lambda ) ||
-		lambda < 0.0
-	) {
-		return 0.0/0.0; // NaN
-	}
-	return stdlib_base_sqrt( lambda );
+	return stdlib_base_sqrt( stdlib_base_dists_poisson_variance( lambda ) );
 }

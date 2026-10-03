@@ -26,7 +26,7 @@
 *
 * @example
 * var str = rescape( '[A-Z]*' );
-* // returns '\\[A\\-Z\\]\\*'
+* // returns '\[A\-Z\]\*'
 */
 declare function rescape( str: string ): string;
 

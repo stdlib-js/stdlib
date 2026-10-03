@@ -28,7 +28,7 @@ limitations under the License.
 -   [V8 not IEEE 754-2008 compliant][@bug:v8:3089]
 -   [Mozilla discussion on sine and cosine in V8][@bug:mozilla:967709]
 -   [V8 replaced a lookup table by computing `Math.tan` as `Math.sin/Math.cos`][@bug:chromium:78263005]
--   [Browser math accuracy issues][@bug:kangax:compat-table:392]
+-   [Browser math accuracy issues][@bug:compat-table:compat-table:392]
 -   [Mozilla attempt to address precision in new Math functions][@bug:mozilla:933257]
 -   [Mozilla's previous lack of tolerance tests for Math functions][@bug:mozilla:892671]
 -   [Mozilla `Math.expm1` accuracy][@bug:mozilla:897634]
@@ -89,7 +89,7 @@ limitations under the License.
 
 [@bug:chromium:78263005]: https://github.com/v8/v8/commit/33b5db090258c2a2dc825659c3ad109bd02110c1
 
-[@bug:kangax:compat-table:392]: https://github.com/kangax/compat-table/issues/392
+[@bug:compat-table:compat-table:392]: https://github.com/compat-table/compat-table/issues/392
 
 [@bug:mozilla:933257]: https://bugzilla.mozilla.org/show_bug.cgi?id=933257
 

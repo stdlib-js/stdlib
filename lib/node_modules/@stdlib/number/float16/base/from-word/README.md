@@ -75,6 +75,100 @@ logEachMap( 'word: %d => float16: %f', word, pickArguments( fromWord, [ 0 ] ) );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/number/float16/base/from_word.h"
+```
+
+#### stdlib_base_float16_from_word( word, \*x )
+
+Creates a [half-precision floating-point number][ieee754] from an unsigned 16-bit integer corresponding to an [IEEE 754][ieee754] binary representation.
+
+```c
+#include "stdlib/number/float16/ctor.h"
+#include <stdint.h>
+
+uint16_t word = 51648; // => -11.5
+
+stdlib_float16_t x;
+stdlib_base_float16_from_word( word, &x );
+```
+
+The function accepts the following arguments:
+
+-   **word**: `[in] uint16_t` input word.
+-   **x**: `[out] stdlib_float16_t*` destination for a half-precision floating-point number.
+
+```c
+void stdlib_base_float16_from_word( const uint16_t word, stdlib_float16_t *x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/number/float16/base/from_word.h"
+#include "stdlib/number/float16/ctor.h"
+#include "stdlib/number/float32/base/to_float16.h"
+#include <stdint.h>
+#include <stdio.h>
+
+int main( void ) {
+    uint16_t word = 51648;
+
+    stdlib_float16_t x;
+    int i;
+    for ( i = 0; i < 10; i++ ) {
+        stdlib_base_float16_from_word( word+(uint16_t)(i*10), &x );
+        printf( "word: %u => %f\n", word, stdlib_base_float32_to_float16( x ) );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

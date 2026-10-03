@@ -137,7 +137,7 @@ The function accepts the following arguments:
 -   **value**: `[in] napi_value` Node-API value.
 -   **out**: `[out] stdlib_complex64_t*` destination for storing output value.
 -   **message**: `[in] char*` error message.
--   **err**: `[out] napi_value*` pointer for storing a JavaScript error. If not provided a number, the function sets `err` with a JavaScript error; otherwise, `err` is set to `NULL`.
+-   **err**: `[out] napi_value*` pointer for storing a JavaScript error. If not provided an object, the function sets `err` with a JavaScript error; otherwise, `err` is set to `NULL`.
 
 ```c
 napi_status stdlib_napi_argv_complex64( const napi_env env, const napi_value value, stdlib_complex64_t *out, const char *message, napi_value *err );

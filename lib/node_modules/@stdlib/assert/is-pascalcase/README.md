@@ -107,6 +107,8 @@ Options:
 
 </section>
 
+<!-- /.usage -->
+
 <!-- CLI usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
@@ -128,8 +130,6 @@ Options:
 
 <!-- /.notes -->
 
-<!-- /.usage -->
-
 <section class="examples">
 
 ### Examples
@@ -138,8 +138,6 @@ Options:
 $ is-pascalcase Beep
 true
 ```
-
-</section>
 
 To use as a [standard stream][standard-streams],
 
@@ -155,6 +153,8 @@ $ echo -n 'beep\tFooBar' | is-pascalcase --split '\t'
 false
 true
 ```
+
+</section>
 
 <!-- /.examples -->
 

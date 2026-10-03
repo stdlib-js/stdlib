@@ -16,6 +16,8 @@
 * limitations under the License.
 */
 
+/* eslint-disable stdlib/no-empty-lines-between-requires */
+
 'use strict';
 
 // MODULES //
@@ -103,7 +105,7 @@ eslint.rules[ 'no-restricted-syntax' ] = [ 'error',
 *
 * @private
 */
-eslint.rules[ 'require-jsdoc' ] = 'off';
+eslint.rules[ 'jsdoc/require-jsdoc' ] = 'off';
 
 /**
 * Do not require `@private` annotations.
@@ -125,6 +127,13 @@ eslint.rules[ 'stdlib/jsdoc-doctest' ] = 'off';
 * @private
 */
 eslint.rules[ 'stdlib/no-unnecessary-nested-functions' ] = 'off';
+
+/**
+* Disallow using string concatenation in benchmark descriptions.
+*
+* @private
+*/
+eslint.rules[ 'stdlib/no-bench-string-concat' ] = 'error';
 
 
 // EXPORTS //

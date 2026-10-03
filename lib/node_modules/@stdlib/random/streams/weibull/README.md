@@ -34,7 +34,7 @@ var randomStream = require( '@stdlib/random/streams/weibull' );
 
 #### randomStream( k, lambda\[, options] )
 
-Returns a [readable stream][readable-stream] for generating pseudorandom numbers drawn from a [Weibull][weibull] distribution with parameters `k` (scale) and `lambda` (shape).
+Returns a [readable stream][readable-stream] for generating pseudorandom numbers drawn from a [Weibull][weibull] distribution with parameters `k` (shape) and `lambda` (scale).
 
 ```javascript
 var inspectStream = require( '@stdlib/streams/node/inspect-sink' );

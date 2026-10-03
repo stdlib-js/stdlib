@@ -189,11 +189,11 @@ interface Namespace {
 	* // returns ~1.386
 	*
 	* @example
-	* var k = ns.median( -0.2 );
+	* var v = ns.median( -0.2 );
 	* // returns NaN
 	*
 	* @example
-	* var k = ns.median( NaN );
+	* var v = ns.median( NaN );
 	* // returns NaN
 	*/
 	median: typeof median;
@@ -217,7 +217,7 @@ interface Namespace {
 	*
 	* var mymgf = ns.mgf.factory( 1.0 );
 	*
-	* var y = mymgf( 0.2 );
+	* y = mymgf( 0.2 );
 	* // returns ~1.291
 	*
 	* y = mymgf( 0.4 );

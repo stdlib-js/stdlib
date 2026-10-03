@@ -1,0 +1,104 @@
+
+{{alias}}( N, prefix, suffix, x, strideX, separators, strideS )
+    Returns a string by joining strided array elements using a specified
+    separator for each pair of consecutive elements.
+
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use a typed
+    array view.
+
+    If `N <= 0`, the function returns the prefix and suffix joined together.
+
+    If an array element is either `null` or `undefined`, the function serializes
+    the element as an empty string.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    prefix: string
+        String to prepend to the output string.
+
+    suffix: string
+        String to append to the output string.
+
+    x: Array|TypedArray
+        Input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    separators: Array
+        Separators array.
+
+    strideS: integer
+        Stride length for `separators`.
+
+    Returns
+    -------
+    str: string
+        Joined string.
+
+    Examples
+    --------
+    > var x = [ 1, 2, 3, 4 ];
+    > var sep = [ ' + ', ' - ', ' != ' ];
+    > var str = {{alias}}( x.length, 'op: ', '', x, 1, sep, 1 )
+    'op: 1 + 2 - 3 != 4'
+
+
+{{alias}}.ndarray( N, prefix, suffix, x, sx, ox, separators, ss, os )
+    Returns a string by joining strided array elements using a specified
+    separator for each pair of consecutive elements and alternative indexing
+    semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on
+    starting indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    prefix: string
+        String to prepend to the output string.
+
+    suffix: string
+        String to append to the output string.
+
+    x: Array|TypedArray
+        Input array.
+
+    sx: integer
+        Stride length for `x`.
+
+    ox: integer
+        Starting index for `x`.
+
+    separators: Array
+        Separators array.
+
+    ss: integer
+        Stride length for `separators`.
+
+    os: integer
+        Starting index for `separators`.
+
+    Returns
+    -------
+    str: string
+        Joined string.
+
+    Examples
+    --------
+    > var x = [ 1, 2, 3, 4 ];
+    > var sep = [ ' + ', ' - ', ' != ' ];
+    > var str = {{alias}}.ndarray( x.length, 'op: ', '', x, 1, 0, sep, 1, 0 )
+    'op: 1 + 2 - 3 != 4'
+
+    See Also
+    --------

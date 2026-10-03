@@ -1,0 +1,42 @@
+
+{{alias}}( x, e, y, p )
+    Computes the epsilon insensitive loss gradient with respect to a model
+    parameter.
+
+    If any argument is `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    e: number
+        Insensitivity parameter.
+
+    y: number
+        True target value.
+
+    p: number
+        Predicted value.
+
+    Returns
+    -------
+    v: number
+        Epsilon insensitive loss gradient.
+
+    Examples
+    --------
+    > var v = {{alias}}( 3.0, 5.0, 10.2, 0.782 )
+    -3.0
+    > v = {{alias}}( 2.5, 2.0, 8.0, 0.202 )
+    -2.5
+    > v = {{alias}}( -1.3, 1.0, 23.2, -0.999 )
+    1.3
+    > v = {{alias}}( -2.0, 2.0, -21.0, 0.2 )
+    -2.0
+    > v = {{alias}}( NaN, 1.0, 1.0, 0.987 )
+    NaN
+
+    See Also
+    --------
+

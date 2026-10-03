@@ -56,33 +56,14 @@ var im = imag( COMPLEX128_ZERO );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 var Complex128Array = require( '@stdlib/array/complex128' );
 var COMPLEX128_ZERO = require( '@stdlib/constants/complex128/zero' );
 
 var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0 ] );
-// returns <Complex128Array>
-
-var v = x.get( 0 );
-// returns <Complex128>
-
-var re = real( v );
-// returns 1.0
-
-var im = imag( v );
-// returns 2.0
+// returns <Complex128Array>[ 1.0, 2.0, 3.0, 4.0 ]
 
 x.fill( COMPLEX128_ZERO );
-
-v = x.get( 0 );
-// returns <Complex128>
-
-re = real( v );
-// returns 0.0
-
-im = imag( v );
-// returns 0.0
+// x => <Complex128Array>[ 0.0, 0.0, 0.0, 0.0 ]
 ```
 
 </section>

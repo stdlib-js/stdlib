@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Returns the differentaial entropy for a Lévy distribution with location `mu` and scale `c`.
+* Returns the differential entropy for a Lévy distribution with location `mu` and scale `c`.
 */
 double stdlib_base_dists_levy_entropy( const double mu, const double c );
 

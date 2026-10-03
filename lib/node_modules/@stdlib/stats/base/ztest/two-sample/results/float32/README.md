@@ -338,6 +338,8 @@ console.log( str );
 
 Structure for holding single-precision floating-point test results.
 
+<!-- run-disable -->
+
 ```c
 #include <stdbool.h>
 #include <stdint.h>

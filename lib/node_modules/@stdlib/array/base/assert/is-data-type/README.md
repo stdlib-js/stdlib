@@ -75,7 +75,10 @@ bool = isDataType( 'int32' );
 ```javascript
 var isDataType = require( '@stdlib/array/base/assert/is-data-type' );
 
-var bool = isDataType( 'float32' );
+var bool = isDataType( 'float16' );
+// returns true
+
+bool = isDataType( 'float32' );
 // returns true
 
 bool = isDataType( 'float64' );

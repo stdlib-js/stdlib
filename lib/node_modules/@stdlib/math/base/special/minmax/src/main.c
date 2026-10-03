@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/math/base/special/minmax.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/assert/is_negative_zero.h"
 
@@ -38,8 +39,8 @@
 */
 void stdlib_base_minmax( const double x, const double y, double* min, double* max ) {
 	if ( stdlib_base_is_nan( x ) || stdlib_base_is_nan( y ) ) {
-		*min = 0.0 / 0.0; // NaN
-		*max = 0.0 / 0.0; // NaN
+		*min = STDLIB_CONSTANT_FLOAT64_NAN;
+		*max = STDLIB_CONSTANT_FLOAT64_NAN;
 		return;
 	}
 	if ( x == y && x == 0.0 ) {

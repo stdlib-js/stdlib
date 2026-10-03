@@ -1,0 +1,92 @@
+
+{{alias}}( shape[, options] )
+    Returns a new ndarray filled with linearly spaced numeric elements which
+    increment by 1 starting from zero along one or more ndarray dimensions.
+
+    Parameters
+    ----------
+    shape: Array<integer>|integer
+        Array shape.
+
+    options: Object (optional)
+        Function options.
+
+    options.dims: Array<integer> (optional)
+        List of dimensions over which to perform operation. If not provided,
+        the function generates values along the last dimension. Default: [-1].
+
+    options.dtype: string (optional)
+        Output ndarray data type. Must be a numeric or "generic" data type.
+        Default: 'float64'.
+
+    options.order: string (optional)
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style). Default: 'row-major'.
+
+    options.mode: string (optional)
+        Specifies how to handle indices which exceed array dimensions. If equal
+        to 'throw', an ndarray instance throws an error when an index exceeds
+        array dimensions. If equal to 'normalize', an ndarray instance
+        normalizes negative indices and throws an error when an index exceeds
+        array dimensions. If equal to 'wrap', an ndarray instance wraps around
+        indices exceeding array dimensions using modulo arithmetic. If equal to
+        'clamp', an ndarray instance sets an index exceeding array dimensions
+        to either `0` (minimum index) or the maximum index. Default: 'throw'.
+
+    options.submode: Array<string> (optional)
+        Specifies how to handle subscripts which exceed array dimensions. If a
+        mode for a corresponding dimension is equal to 'throw', an ndarray
+        instance throws an error when a subscript exceeds array dimensions. If
+        equal to 'normalize', an ndarray instance normalizes negative
+        subscripts and throws an error when a subscript exceeds array
+        dimensions. If equal to 'wrap', an ndarray instance wraps around
+        subscripts exceeding array dimensions using modulo arithmetic. If equal
+        to 'clamp', an ndarray instance sets a subscript exceeding array
+        dimensions to either `0` (minimum index) or the maximum index. If the
+        number of modes is fewer than the number of dimensions, the function
+        recycles modes using modulo arithmetic. Default: [ options.mode ].
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var out = {{alias}}( [ 2, 3 ] )
+    <ndarray>[ [ 0.0, 1.0, 2.0 ], [ 0.0, 1.0, 2.0 ] ]
+
+
+{{alias}}.assign( x[, options] )
+    Fills an ndarray with linearly spaced numeric elements which increment by
+    1 starting from zero along one or more ndarray dimensions.
+
+    The function fills an ndarray in-place and thus mutates the input ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array. Must have a numeric or "generic" data type.
+
+    options: Object (optional)
+        Function options.
+
+    options.dims: Array<integer> (optional)
+        List of dimensions over which to perform operation. If not provided,
+        the function generates values along the last dimension. Default: [-1].
+
+    Returns
+    -------
+    out: ndarray
+        Input array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/zeros}}( [ 2, 3 ] );
+    > var out = {{alias}}.assign( x )
+    <ndarray>[ [ 0.0, 1.0, 2.0 ], [ 0.0, 1.0, 2.0 ] ]
+    > var bool = ( out === x )
+    true
+
+    See Also
+    --------

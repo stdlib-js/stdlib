@@ -30,7 +30,7 @@ extern "C" {
 #endif
 
 /**
-* Interchanges two complex double-precision floating-point vectors.
+* Interchanges two double-precision complex floating-point vectors.
 */
 void zswap( const int *, void *, const int *, void *, const int * );
 

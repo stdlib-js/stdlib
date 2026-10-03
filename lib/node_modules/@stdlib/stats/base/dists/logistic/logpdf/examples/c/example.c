@@ -37,6 +37,6 @@ int main( void ) {
 		s = random_uniform( -5.0, 5.0 );
 		x = random_uniform( 0.0, 10.0 );
 		y = stdlib_base_dists_logistic_logpdf( x, mu, s );
-		printf( "x: %lf, µ: %lf, s: %lf, ln(f(x;µ,s)): %lf\n", x, mu, s, y );
+		printf( "x: %lf, μ: %lf, s: %lf, ln(f(x;μ,s)): %lf\n", x, mu, s, y );
 	}
 }

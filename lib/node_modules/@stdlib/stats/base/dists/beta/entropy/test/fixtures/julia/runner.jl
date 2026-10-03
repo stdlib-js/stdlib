@@ -26,7 +26,6 @@ Generate fixture data and write to file.
 
 # Arguments
 
-* `x`: input value
 * `alpha`: first shape parameter
 * `beta`: second shape parameter
 * `name::AbstractString`: output filename

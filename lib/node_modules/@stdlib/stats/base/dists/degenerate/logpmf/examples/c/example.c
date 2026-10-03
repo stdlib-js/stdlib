@@ -36,6 +36,6 @@ int main( void ) {
 		x = stdlib_base_round( random_uniform( 0.0, 5.0 ) );
 		mu = stdlib_base_round( random_uniform( 0.0, 5.0 ) );
 		result = stdlib_base_dists_degenerate_logpmf( x, mu );
-		printf( "x: %lf, µ: %lf, ln(P(X=x;µ)): %lf \n", x, mu, result );
+		printf( "x: %lf, μ: %lf, ln(P(X=x;μ)): %lf \n", x, mu, result );
 	}
 }

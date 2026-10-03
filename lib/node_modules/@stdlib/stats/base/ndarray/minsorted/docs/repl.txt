@@ -14,8 +14,7 @@
 
     Examples
     --------
-    > var xbuf = [ 1.0, 2.0, 3.0, 4.0 ];
-    > var x = {{alias:@stdlib/ndarray/base/ctor}}( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+    > var x = {{alias:@stdlib/ndarray/vector/ctor}}( [ 1.0, 2.0, 3.0, 4.0 ], 'generic' );
     > {{alias}}( [ x ] )
     1.0
 

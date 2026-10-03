@@ -96,11 +96,13 @@ static float rand_float( void ) {
 */
 static double benchmark1( int iterations, int len ) {
 	double elapsed;
-	float x[ len*2 ];
-	float y[ len*2 ];
+	float *x;
+	float *y;
 	double t;
 	int i;
 
+	x = (float *) malloc( len * 2 * sizeof( float ) );
+	y = (float *) malloc( len * 2 * sizeof( float ) );
 	for ( i = 0; i < len; i++ ) {
 		x[ i ] = ( rand_float()*10000.0f ) - 5000.0f;
 		x[ i+1 ] = ( rand_float()*10000.0f ) - 5000.0f;
@@ -119,6 +121,8 @@ static double benchmark1( int iterations, int len ) {
 	if ( y[ 0 ] != y[ 0 ] ) {
 		printf( "should not return NaN\n" );
 	}
+	free( x );
+	free( y );
 	return elapsed;
 }
 
@@ -131,11 +135,13 @@ static double benchmark1( int iterations, int len ) {
 */
 static double benchmark2( int iterations, int len ) {
 	double elapsed;
-	float x[ len*2 ];
-	float y[ len*2 ];
+	float *x;
+	float *y;
 	double t;
 	int i;
 
+	x = (float *) malloc( len * 2 * sizeof( float ) );
+	y = (float *) malloc( len * 2 * sizeof( float ) );
 	for ( i = 0; i < len; i++ ) {
 		x[ i ] = ( rand_float()*10000.0f ) - 5000.0f;
 		x[ i+1 ] = ( rand_float()*10000.0f ) - 5000.0f;
@@ -154,6 +160,8 @@ static double benchmark2( int iterations, int len ) {
 	if ( y[ 0 ] != y[ 0 ] ) {
 		printf( "should not return NaN\n" );
 	}
+	free( x );
+	free( y );
 	return elapsed;
 }
 

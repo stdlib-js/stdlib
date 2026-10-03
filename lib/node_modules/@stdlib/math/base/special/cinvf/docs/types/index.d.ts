@@ -30,17 +30,9 @@ import { Complex64 } from '@stdlib/types/complex';
 *
 * @example
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
-* var realf = require( '@stdlib/complex/float32/real' );
-* var imagf = require( '@stdlib/complex/float32/imag' );
 *
 * var v = cinvf( new Complex64( 2.0, 4.0 ) );
-* // returns <Complex64>
-*
-* var re = realf( v );
-* // returns ~0.1
-*
-* var im = imagf( v );
-* // returns ~-0.2
+* // returns <Complex64>[ ~0.1, ~-0.2 ]
 */
 declare function cinvf( z: Complex64 ): Complex64;
 

@@ -1,0 +1,40 @@
+
+{{alias}}( μ, λ )
+    Returns the excess kurtosis of a Wald distribution with mean `μ` and
+    shape parameter `λ`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `μ <= 0` or `λ <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    μ: number
+        Mean parameter.
+
+    λ: number
+        Shape parameter.
+
+    Returns
+    -------
+    out: number
+        Excess kurtosis.
+
+    Examples
+    --------
+    > var y = {{alias}}( 4.0, 2.0 )
+    30.0
+    > y = {{alias}}( 0.0, 1.0 )
+    NaN
+    > y = {{alias}}( 1.0, 0.0 )
+    NaN
+    > y = {{alias}}( NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN )
+    NaN
+    > y = {{alias}}( 0.0, 0.0 )
+    NaN
+
+    See Also
+    --------
+

@@ -264,7 +264,7 @@ Computes the [variance][variance] of a single-precision floating-point strided a
 ```c
 const float x[] = { 1.0f, -2.0f, 2.0f };
 
-float v = stdlib_strided_svariance_ndarray( 4, 1.0f, x, 1, 0 );
+float v = stdlib_strided_svariance_ndarray( 3, 1.0f, x, 1, 0 );
 // returns ~4.3333f
 ```
 

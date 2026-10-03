@@ -62,6 +62,7 @@
 #include "stdlib/constants/float64/max.h"
 #include "stdlib/constants/float64/pi.h"
 #include "stdlib/constants/float64/e.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdbool.h>
 #include <stdint.h>
 
@@ -1017,7 +1018,7 @@ double stdlib_base_gammainc( const double x, const double a, const bool regulari
 	bool invert;
 
 	if ( x < 0.0 || a <= 0.0 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	invert = upper;
 	if ( a >= MAX_NTH_FACTORIAL && !regularized ) {

@@ -80,7 +80,7 @@ void stdlib_ndarray_napi_unary( napi_env env, napi_callback_info info, const str
 		return;
 	}
 	// Extract the ndarray data types:
-	int32_t types[] = {
+	const int32_t types[] = {
 		stdlib_ndarray_dtype( arrays[ 0 ] ),
 		stdlib_ndarray_dtype( arrays[ 1 ] )
 	};

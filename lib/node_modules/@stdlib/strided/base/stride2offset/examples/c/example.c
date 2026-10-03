@@ -23,10 +23,10 @@
 
 int main( void ) {
 	// Specify the number of indexed elements:
-	int64_t N = 6;
+	const int64_t N = 6;
 
 	// Define a stride:
-	int64_t stride = -2;
+	const int64_t stride = -2;
 
 	// Compute the offset:
 	int64_t offset = stdlib_strided_stride2offset( N, stride );

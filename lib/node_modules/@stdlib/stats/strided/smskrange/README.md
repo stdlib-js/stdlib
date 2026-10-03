@@ -234,7 +234,7 @@ Computes the [range][range] of a single-precision floating-point strided array a
 const float x[] = { 1.0f, -2.0f, 2.0f };
 const uint8_t mask[] = { 0, 1, 0 };
 
-float v = stdlib_strided_smskrange( 3, x, 1, 0, mask, 1, 0 );
+float v = stdlib_strided_smskrange_ndarray( 3, x, 1, 0, mask, 1, 0 );
 // returns 1.0f
 ```
 

@@ -32,19 +32,19 @@ main <- function() {
 	#' filepath <- get_script_path();
 	get_script_path <- function() {
 		args <- commandArgs( trailingOnly = FALSE );
-		needle <- "--file=";
+		needle <- '--file=';
 		match <- grep( needle, args );
-		if ( length( match ) > 0 ) {
+		if ( length( match ) > 0L ) {
 			# Rscript:
-			filepath <- sub( needle, "", args[match] );
+			filepath <- sub( needle, '', args[match] );
 		} else {
-			ls_vars <- ls( sys.frames()[[1]] )
-			if ( "fileName" %in% ls_vars ) {
+			ls_vars <- ls( sys.frames()[[1L]] )
+			if ( 'fileName' %in% ls_vars ) {
 				# Source'd via RStudio:
-				filepath <- sys.frames()[[1]]$fileName; # nolint
+				filepath <- sys.frames()[[1L]]$fileName; # nolint
 			} else {
 				# Source'd via R console:
-				filepath <- sys.frames()[[1]]$ofile;
+				filepath <- sys.frames()[[1L]]$ofile;
 			}
 		}
 		return( normalizePath( filepath ) );
@@ -56,10 +56,10 @@ main <- function() {
 	#' @return JSON blob
 	#'
 	#' @examples
-	#' x <- seq( -6.5, 25, 0.5 );
+	#' x <- seq( -6.5, 25.0, 0.5 );
 	#' json <- to_json( x );
 	to_json <- function( x ) {
-		return( jsonlite::toJSON( x, digits = 16, auto_unbox = TRUE ) );
+		return( jsonlite::toJSON( x, digits = 16L, auto_unbox = TRUE ) );
 	}
 
 	#' Generate an output absolute filepath based on the script directory.
@@ -68,17 +68,18 @@ main <- function() {
 	#' @return An absolute filepath
 	#'
 	#' @examples
-	#' filepath <- get_filepath( "data.json" );
+	#' filepath <- get_filepath( 'data.json' );
 	get_filepath <- function( name ) {
-		return( paste( source_dir, "/", name, sep = "" ) );
+		return( paste( source_dir, '/', name, sep = '' ) );
 	}
 
 	# Get the directory of this script:
 	source_dir <- dirname( get_script_path() );
 
 	# Generate test fixture data:
-	pvals <- runif( 5, 0, 0.5 );
-	out <- p.adjust( pvals, method = "bonferroni" );
+	set.seed( 300L );
+	pvals <- runif( 5L, 0L, 0.5 );
+	out <- p.adjust( pvals, method = 'bonferroni' );
 
 	# Convert fixture data to JSON:
 	bonferroni <- list(
@@ -88,12 +89,12 @@ main <- function() {
 	bonferroni <- to_json( bonferroni );
 
 	# Write the data to file...
-	filepath <- get_filepath( "bonferroni.json" );
+	filepath <- get_filepath( 'bonferroni.json' );
 	write( bonferroni, filepath );
 
 	# Generate test fixture data:
-	pvals <- runif( 5, 0, 0.5 );
-	out <- p.adjust( pvals, method = "BY" );
+	pvals <- runif( 5L, 0L, 0.5 );
+	out <- p.adjust( pvals, method = 'BY' );
 
 	# Convert fixture data to JSON:
 	by <- list(
@@ -103,12 +104,12 @@ main <- function() {
 	by <- to_json( by );
 
 	# Write the data to file...
-	filepath <- get_filepath( "by.json" );
+	filepath <- get_filepath( 'by.json' );
 	write( by, filepath );
 
 	# Generate test fixture data:
-	pvals <- runif( 5, 0, 0.5 );
-	out <- p.adjust( pvals, method = "holm" );
+	pvals <- runif( 5L, 0L, 0.5 );
+	out <- p.adjust( pvals, method = 'holm' );
 
 	# Convert fixture data to JSON:
 	holm <- list(
@@ -118,12 +119,12 @@ main <- function() {
 	holm <- to_json( holm );
 
 	# Write the data to file...
-	filepath <- get_filepath( "holm.json" );
+	filepath <- get_filepath( 'holm.json' );
 	write( holm, filepath );
 
 	# Generate test fixture data:
-	pvals <- runif( 5, 0, 0.5 );
-	out <- p.adjust( pvals, method = "hommel" );
+	pvals <- runif( 5L, 0L, 0.5 );
+	out <- p.adjust( pvals, method = 'hommel' );
 
 	# Convert fixture data to JSON:
 	hommel <- list(
@@ -133,12 +134,12 @@ main <- function() {
 	hommel <- to_json( hommel );
 
 	# Write the data to file...
-	filepath <- get_filepath( "hommel.json" );
+	filepath <- get_filepath( 'hommel.json' );
 	write( hommel, filepath );
 
 	# Generate test fixture data:
-	pvals <- runif( 5, 0, 0.5 );
-	out <- p.adjust( pvals, method = "BH" );
+	pvals <- runif( 5L, 0L, 0.5 );
+	out <- p.adjust( pvals, method = 'BH' );
 
 	# Convert fixture data to JSON:
 	bh <- list(
@@ -148,13 +149,13 @@ main <- function() {
 	bh <- to_json( bh );
 
 	# Write the data to file...
-	filepath <- get_filepath( "bh.json" );
+	filepath <- get_filepath( 'bh.json' );
 	write( bh, filepath );
 
 	# Generate test fixture data:
-	pvals <- runif( 5, 0, 0.5 );
+	pvals <- runif( 5L, 0L, 0.5 );
 	n <- 15L;
-	out <- p.adjust( pvals, method = "BH", n = n );
+	out <- p.adjust( pvals, method = 'BH', n = n );
 
 	# Convert fixture data to JSON:
 	custom <- list(
@@ -165,42 +166,42 @@ main <- function() {
 	custom <- to_json( custom );
 
 	# Write the data to file...
-	filepath <- get_filepath( "custom.json" );
+	filepath <- get_filepath( 'custom.json' );
 	write( custom, filepath );
 
 	# Generate test fixture data:
 	pvals <- c( 0.3, 0.1, 0.1, 0.2 );
 	n <- 10L;
-	out <- p.adjust( pvals, method = "hommel", n = n );
+	out <- p.adjust( pvals, method = 'hommel', n = n );
 
 	# Convert fixture data to JSON:
-	custom.hommel <- list(
+	custom_hommel <- list(
 		pvals = pvals,
 		expected = out,
 		n = n
 	);
-	custom.hommel <- to_json( custom.hommel );
+	custom_hommel <- to_json( custom_hommel );
 
 	# Write the data to file...
-	filepath <- get_filepath( "custom_hommel.json" );
-	write( custom.hommel, filepath );
+	filepath <- get_filepath( 'custom_hommel.json' );
+	write( custom_hommel, filepath );
 
 	# Generate test fixture data:
 	pvals <- c( 0.3, 0.1, 0.1, 0.2 );
 	n <- 10L;
-	out <- p.adjust( pvals, method = "BY", n = n );
+	out <- p.adjust( pvals, method = 'BY', n = n );
 
 	# Convert fixture data to JSON:
-	custom.by <- list(
+	custom_by <- list(
 		pvals = pvals,
 		expected = out,
 		n = n
 	);
-	custom.by <- to_json( custom.by );
+	custom_by <- to_json( custom_by );
 
 	# Write the data to file...
-	filepath <- get_filepath( "custom_by.json" );
-	write( custom.by, filepath );
+	filepath <- get_filepath( 'custom_by.json' );
+	write( custom_by, filepath );
 }
 
 main();
