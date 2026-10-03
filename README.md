@@ -543,7 +543,7 @@ Already an expert?
 -   Install dependencies
 
     ```bash
-    $ make install-node-modules
+    $ make install
     ```
 
 -   Initialize your stdlib development environment
