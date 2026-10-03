@@ -1,0 +1,34 @@
+
+{{alias}}( arrays )
+    Multiplies each element in an input one-dimensional double-precision
+    floating-point ndarray by a scalar constant and assigns the results to
+    elements in a one-dimensional double-precision floating-point output
+    ndarray.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a one-dimensional output ndarray.
+        - a zero-dimensional ndarray containing the scalar constant to multiply.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var xbuf = [ -2.0, 1.0, 3.0, -5.0 ];
+    > var x = new {{alias:@stdlib/ndarray/vector/float64}}( xbuf );
+    > var w = new {{alias:@stdlib/ndarray/vector/float64}}( 4 );
+    > var opts = { 'dtype': 'float64' };
+    > var alpha = {{alias:@stdlib/ndarray/from-scalar}}( 5.0, opts );
+    > {{alias}}( [ x, w, alpha ] )
+    <ndarray>[ -10.0, 5.0, 15.0, -25.0 ]
+
+    See Also
+    --------
+
