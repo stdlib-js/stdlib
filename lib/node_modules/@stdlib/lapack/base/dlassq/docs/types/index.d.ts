@@ -30,19 +30,22 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param X - input array
 	* @param strideX - stride length for `X`
-	* @param scale - scaling factor
-	* @param sumsq - basic sum of squares from which output is factored out
-	* @returns output array
+	* @param scale - array containing a single element which specifies the scaling factor and is overwritten by the updated scaling factor
+	* @param sumsq - array containing a single element which specifies the basic sum of squares from which output is factored out and is overwritten by the updated sum of squares
+	* @returns void
 	*
 	* @example
 	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var X = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+	* var scale = new Float64Array( [ 1.0 ] );
+	* var sumsq = new Float64Array( [ 0.0 ] );
 	*
-	* var out = dlassq( 4, X, 1, 1.0, 0.0 );
-	* // returns <Float64Array>[ 1.0, 30.0 ]
+	* dlassq( 4, X, 1, scale, sumsq );
+	* // scale => <Float64Array>[ 1.0 ]
+	* // sumsq => <Float64Array>[ 30.0 ]
 	*/
-	( N: number, X: Float64Array, strideX: number, scale: number, sumsq: number ): Float64Array;
+	( N: number, X: Float64Array, strideX: number, scale: Float64Array, sumsq: Float64Array ): void;
 
 	/**
 	* Returns an updated sum of squares represented in scaled form using alternative indexing semantics.
@@ -51,23 +54,24 @@ interface Routine {
 	* @param X - input array
 	* @param strideX - stride length for `X`
 	* @param offsetX - starting index for `X`
-	* @param scale - scaling factor
-	* @param sumsq - basic sum of squares from which output is factored out
-	* @param out - output array
-	* @param strideOut - stride length for `out`
-	* @param offsetOut - starting index for `out`
-	* @returns output array
+	* @param scale - array containing an element which specifies the scaling factor and is overwritten by the updated scaling factor
+	* @param offsetScale - index of the element in `scale`
+	* @param sumsq - array containing an element which specifies the basic sum of squares from which output is factored out and is overwritten by the updated sum of squares
+	* @param offsetSumsq - index of the element in `sumsq`
+	* @returns void
 	*
 	* @example
 	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var X = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
-	* var out = new Float64Array( [ 0.0, 0.0 ] );
+	* var scale = new Float64Array( [ 1.0 ] );
+	* var sumsq = new Float64Array( [ 0.0 ] );
 	*
-	* dlassq.ndarray( 4, X, 1, 0, 1.0, 0.0, out, 1, 0 );
-	* // out => <Float64Array>[ 1.0, 30.0 ]
+	* dlassq.ndarray( 4, X, 1, 0, scale, 0, sumsq, 0 );
+	* // scale => <Float64Array>[ 1.0 ]
+	* // sumsq => <Float64Array>[ 30.0 ]
 	*/
-	ndarray( N: number, X: Float64Array, strideX: number, offsetX: number, scale: number, sumsq: number, out: Float64Array, strideOut: number, offsetOut: number ): Float64Array;
+	ndarray( N: number, X: Float64Array, strideX: number, offsetX: number, scale: Float64Array, offsetScale: number, sumsq: Float64Array, offsetSumsq: number ): void;
 }
 
 /**
@@ -76,26 +80,31 @@ interface Routine {
 * @param N - number of indexed elements
 * @param X - input array
 * @param strideX - stride length for `X`
-* @param scale - scaling factor
-* @param sumsq - basic sum of squares from which output is factored out
-* @returns output array
+* @param scale - array containing a single element which specifies the scaling factor and is overwritten by the updated scaling factor
+* @param sumsq - array containing a single element which specifies the basic sum of squares from which output is factored out and is overwritten by the updated sum of squares
+* @returns void
 *
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 *
 * var X = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+* var scale = new Float64Array( [ 1.0 ] );
+* var sumsq = new Float64Array( [ 0.0 ] );
 *
-* var out = dlassq( 4, X, 1, 1.0, 0.0 );
-* // returns <Float64Array>[ 1.0, 30.0 ]
+* dlassq( 4, X, 1, scale, sumsq );
+* // scale => <Float64Array>[ 1.0 ]
+* // sumsq => <Float64Array>[ 30.0 ]
 *
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 *
 * var X = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
-* var out = new Float64Array( [ 0.0, 0.0 ] );
+* var scale = new Float64Array( [ 1.0 ] );
+* var sumsq = new Float64Array( [ 0.0 ] );
 *
-* dlassq.ndarray( 4, X, 1, 0, 1.0, 0.0, out, 1, 0 );
-* // out => <Float64Array>[ 1.0, 30.0 ]
+* dlassq.ndarray( 4, X, 1, 0, scale, 0, sumsq, 0 );
+* // scale => <Float64Array>[ 1.0 ]
+* // sumsq => <Float64Array>[ 30.0 ]
 */
 declare var dlassq: Routine;
 
