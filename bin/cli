@@ -180,6 +180,7 @@ function main() {
 	// Invoke the command in a sub-process:
 	proc = spawn( 'node', subargs, opts );
 	proc.on( 'error', onError );
+	proc.on( 'close', onClose );
 
 	/**
 	* Callback invoked upon encountering an error while running a command.
@@ -189,6 +190,21 @@ function main() {
 	*/
 	function onError( error ) {
 		cli.error( error );
+	}
+
+	/**
+	* Callback invoked upon command exit.
+	*
+	* @private
+	* @param {integer} code - exit code
+	* @param {(string|null)} signal - exit signal
+	*/
+	function onClose( code, signal ) {
+		if ( signal ) {
+			process.kill( process.pid, signal );
+			return;
+		}
+		process.exit( code || 0 );
 	}
 }
 
