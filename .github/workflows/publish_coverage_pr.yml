@@ -149,44 +149,6 @@ jobs:
           # Avoid storing GitHub token in local Git configuration:
           persist-credentials: false
 
-      # Checkout coverage repository branch for PR:
-      - name: 'Checkout coverage repository branch'
-        if: steps.download-coverage.outcome == 'success'
-        env:
-          PR_NUMBER: ${{ steps.pr-metadata.outputs.pr_number }}
-        run: |
-          cd ./www-test-code-coverage
-          BRANCH_NAME="pr-$PR_NUMBER"
-          if git fetch origin "$BRANCH_NAME"; then
-            git checkout -B "$BRANCH_NAME" FETCH_HEAD
-          else
-            git checkout -b "$BRANCH_NAME"
-          fi
-
-          # Remove all directories except .github and .git from branch:
-          find . -mindepth 1 -maxdepth 1 -type d -not -name '.github' -not -name '.git' -exec git rm -rf {} + || true
-
-      # Copy artifacts to the repository:
-      - name: 'Copy artifacts to the repository'
-        if: steps.download-coverage.outcome == 'success'
-        run: |
-          if [ -d "./artifacts" ]; then
-            cp -R ./artifacts/* ./www-test-code-coverage
-
-            # Get commit SHA and timestamp from the workflow run:
-            commit_sha="${{ github.event.workflow_run.head_sha }}"
-            commit_timestamp=$(date -u +"%Y-%m-%d %H:%M:%S")
-
-            # Append coverage to ndjson files:
-            while IFS= read -r -d '' file; do
-              file="${file//artifacts/www-test-code-coverage}"
-              coverage=$(echo -n '['; grep -oP "(?<=class='fraction'>)[0-9]+/[0-9]+" "$file" | awk -F/ '{ if ($2 != 0) print $1 "," $2 "," ($1/$2)*100; else print $1 "," $2 ",100" }' | tr '\n' ',' | sed 's/,$//'; echo -n ",\"$commit_sha\",\"$commit_timestamp\"]")
-              echo "$coverage" >> "$(dirname "$file")/coverage.ndjson"
-            done < <(find ./artifacts -name 'index.html' -print0)
-          else
-            echo "The artifacts directory does not exist."
-          fi
-
       # Import GPG key to sign commits:
       - name: 'Import GPG key to sign commits'
         if: steps.download-coverage.outcome == 'success'
@@ -199,8 +161,12 @@ jobs:
           git_commit_gpgsign: true
           workdir: ./www-test-code-coverage
 
-      # Commit and push changes:
-      - name: 'Commit and push changes'
+      # Checkout coverage repository branch, copy artifacts, and commit and push changes:
+      #
+      # ## Notes
+      #
+      # -   Multiple `publish_coverage_pr` runs for the same PR (e.g., triggered by successive pushes to the PR) can complete close together and race to push to the same `pr-<number>` branch. As only the last publisher can win a non-fast-forward push, we retry the full checkout-copy-commit cycle against a freshly fetched branch tip on rejection, rather than attempting to rebase or merge a stale commit onto it (which risks conflicts, as the copied coverage report files are wholesale replaced on each run).
+      - name: 'Checkout, copy artifacts, and push coverage report'
         if: steps.download-coverage.outcome == 'success'
         env:
           REPO_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
@@ -209,8 +175,53 @@ jobs:
         run: |
           cd ./www-test-code-coverage
           BRANCH_NAME="pr-$PR_NUMBER"
+          REMOTE_URL="https://$USER_NAME:$REPO_GITHUB_TOKEN@github.com/stdlib-js/www-test-code-coverage.git"
           git config --local user.email "82920195+stdlib-bot@users.noreply.github.com"
           git config --local user.name "stdlib-bot"
-          git add .
-          git commit -m "Update artifacts" || exit 0
-          git push "https://$USER_NAME:$REPO_GITHUB_TOKEN@github.com/stdlib-js/www-test-code-coverage.git" "$BRANCH_NAME"
+
+          # Get commit SHA from the workflow run:
+          commit_sha="${{ github.event.workflow_run.head_sha }}"
+
+          max_attempts=5
+          attempt=1
+          while true; do
+            if git fetch origin "$BRANCH_NAME"; then
+              git checkout -B "$BRANCH_NAME" FETCH_HEAD
+            else
+              git checkout -B "$BRANCH_NAME"
+            fi
+
+            # Remove all directories except .github and .git from branch:
+            find . -mindepth 1 -maxdepth 1 -type d -not -name '.github' -not -name '.git' -exec git rm -rf {} + || true
+
+            # Get timestamp for this attempt:
+            commit_timestamp=$(date -u +"%Y-%m-%d %H:%M:%S")
+
+            if [ -d "../artifacts" ]; then
+              cp -R ../artifacts/* .
+
+              # Append coverage to ndjson files:
+              while IFS= read -r -d '' file; do
+                file="${file//..\/artifacts/.}"
+                coverage=$(echo -n '['; grep -oP "(?<=class='fraction'>)[0-9]+/[0-9]+" "$file" | awk -F/ '{ if ($2 != 0) print $1 "," $2 "," ($1/$2)*100; else print $1 "," $2 ",100" }' | tr '\n' ',' | sed 's/,$//'; echo -n ",\"$commit_sha\",\"$commit_timestamp\"]")
+                echo "$coverage" >> "$(dirname "$file")/coverage.ndjson"
+              done < <(find ../artifacts -name 'index.html' -print0)
+            else
+              echo "The artifacts directory does not exist."
+            fi
+
+            git add .
+            if ! git commit -m "Update artifacts"; then
+              # Nothing to commit:
+              exit 0
+            fi
+            if git push "$REMOTE_URL" "$BRANCH_NAME"; then
+              exit 0
+            fi
+            if [ "$attempt" -ge "$max_attempts" ]; then
+              echo "::error::Failed to push to $BRANCH_NAME after $max_attempts attempts due to concurrent updates."
+              exit 1
+            fi
+            attempt=$((attempt + 1))
+            sleep $(( RANDOM % 5 + 1 ))
+          done
