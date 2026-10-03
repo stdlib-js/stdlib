@@ -196,6 +196,12 @@ jobs:
         run: |
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/common/lint_package_json_files" "$FILES"
 
+      # Lint package.json metadata:
+      - name: 'Lint package.json metadata'
+        if: success() || failure()
+        run: |
+          make lint-pkgs-metadata-files FILES="${{ steps.changed-files.outputs.files }}"
+
       # Lint REPL help files...
       - name: 'Lint REPL help files'
         if: success() || failure()
