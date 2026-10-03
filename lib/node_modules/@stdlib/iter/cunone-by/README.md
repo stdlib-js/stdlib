@@ -130,6 +130,7 @@ var count = ctx.count;
 ## Notes
 
 -   A `predicate` function is invoked for each iterated value until the first truthy `predicate` function return value. Upon encountering the first truthy return value, the returned iterator ceases to invoke the `predicate` function and returns `false` for each subsequent iterated value of the provided input `iterator`.
+-   If an environment supports `Symbol.iterator` **and** a provided [iterator][mdn-iterator-protocol] is iterable, the returned [iterator][mdn-iterator-protocol] is iterable.
 
 </section>
 
