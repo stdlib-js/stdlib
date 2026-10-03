@@ -50,6 +50,11 @@ interface LoopOrderObject {
 	* Output array strides sorted in loop order.
 	*/
 	sw: Array<number>;
+
+	/**
+	* Dimension indices sorted in loop order.
+	*/
+	idx: Array<number>;
 }
 
 /**
@@ -64,6 +69,7 @@ interface LoopOrderObject {
 *     -   **sy**: second input ndarray strides sorted in loop order.
 *     -   **sz**: third input ndarray strides sorted in loop order.
 *     -   **sw**: output ndarray strides sorted in loop order.
+*     -   **idx**: dimension indices sorted in loop order.
 *
 * -   When iterating over the elements of a multi-dimensional array, accessing elements which are closer in memory can improve performance. To this end, loop interchange is a technique used in loop nest optimization to improve locality of reference and take advantage of CPU cache.
 *
@@ -105,6 +111,9 @@ interface LoopOrderObject {
 *
 * var ssw = o.sw;
 * // returns [ 1, -2, 6 ]
+*
+* var idx = o.idx;
+* // returns [ 0, 1, 2 ]
 */
 declare function ternaryLoopOrder( shape: ArrayLike<number>, stridesX: ArrayLike<number>, stridesY: ArrayLike<number>, stridesZ: ArrayLike<number>, stridesW: ArrayLike<number> ): LoopOrderObject;
 

@@ -10,6 +10,7 @@
     - sz: third input array strides sorted in loop order.
     - sw: fourth input array strides sorted in loop order.
     - su: output array strides sorted in loop order.
+    - idx: dimension indices sorted in loop order.
 
     For all returned arrays, the first element corresponds to the innermost
     loop, and the last element corresponds to the outermost loop.
@@ -59,6 +60,9 @@
 
     out.su: Array<integer>
         Output array strides sorted in loop order.
+
+    out.idx: Array<integer>
+        Dimension indices sorted in loop order.
 
     Examples
     --------
