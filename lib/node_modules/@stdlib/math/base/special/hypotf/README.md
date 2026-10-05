@@ -26,6 +26,16 @@ limitations under the License.
 
 <section class="intro">
 
+The [hypotenuse][hypotenuse] function computes the length of the hypotenuse of a right triangle
+
+<!-- <equation class="equation" label="eq:hypotenuse" align="center" raw="h = \sqrt{x^2 + y^2}" alt="Hypotenuse function"> -->
+
+```math
+h = \sqrt{x^2 + y^2}
+```
+
+<!-- </equation> -->
+
 </section>
 
 <!-- /.intro -->

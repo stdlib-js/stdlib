@@ -1,0 +1,135 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2026 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+// TypeScript Version: 4.1
+
+/// <reference types="@stdlib/types"/>
+
+import { typedndarray } from '@stdlib/types/ndarray';
+
+/**
+* Index argument.
+*/
+type IndexArgument = typedndarray<number> | number;
+
+/**
+* Interface defining options.
+*/
+interface Options {
+	/**
+	* Dimension over which to perform operation. Default: `-1`.
+	*
+	* ## Notes
+	*
+	* -   If provided a negative integer, the dimension along which to perform the operation is determined by counting backward from the last dimension (where `-1` refers to the last dimension).
+	*/
+	dim?: number;
+}
+
+/**
+* Interface for performing an in-place copy of elements within an ndarray.
+*/
+interface CopyWithin {
+	/**
+	* Performs an in-place copy of elements within an ndarray along an ndarray dimension.
+	*
+	* ## Notes
+	*
+	* -   The input ndarray is copied **in-place** (i.e., the input ndarray is **mutated**).
+	* -   When a `target`, `start`, and/or `end` index is negative, the respective index is determined relative to the last indexed element, with out-of-bounds indices clamped to index bounds.
+	*
+	* @param x - input ndarray
+	* @param target - target index
+	* @param start - source start index (inclusive)
+	* @param options - function options
+	* @returns input ndarray
+	*
+	* @example
+	* var array = require( '@stdlib/ndarray/array' );
+	*
+	* var x = array( [ 1.0, 2.0, 3.0, 4.0 ] );
+	*
+	* var y = copyWithin( x, 2, 0 );
+	* // returns <ndarray>[ 1.0, 2.0, 1.0, 2.0 ]
+	*
+	* var bool = ( x === y );
+	* // returns true
+	*/
+	<T extends typedndarray<unknown>>( x: T, target: IndexArgument, start: IndexArgument, options?: Options ): T;
+
+	/**
+	* Performs an in-place copy of elements within an ndarray along an ndarray dimension.
+	*
+	* ## Notes
+	*
+	* -   The input ndarray is copied **in-place** (i.e., the input ndarray is **mutated**).
+	* -   When a `target`, `start`, and/or `end` index is negative, the respective index is determined relative to the last indexed element, with out-of-bounds indices clamped to index bounds.
+	*
+	* @param x - input ndarray
+	* @param target - target index
+	* @param start - source start index (inclusive)
+	* @param end - source end index (exclusive)
+	* @param options - function options
+	* @returns input ndarray
+	*
+	* @example
+	* var array = require( '@stdlib/ndarray/array' );
+	*
+	* var x = array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+	*
+	* var y = copyWithin( x, 3, 1, 4 );
+	* // returns <ndarray>[ 1.0, 2.0, 3.0, 2.0, 3.0, 4.0 ]
+	*
+	* var bool = ( x === y );
+	* // returns true
+	*/
+	<T extends typedndarray<unknown>>( x: T, target: IndexArgument, start: IndexArgument, end: IndexArgument, options?: Options ): T;
+}
+
+/**
+* Performs an in-place copy of elements within an ndarray along an ndarray dimension.
+*
+* ## Notes
+*
+* -   The input ndarray is copied **in-place** (i.e., the input ndarray is **mutated**).
+* -   When a `target`, `start`, and/or `end` index is negative, the respective index is determined relative to the last indexed element, with out-of-bounds indices clamped to index bounds.
+*
+* @param x - input ndarray
+* @param target - target index
+* @param start - source start index (inclusive)
+* @param end - source end index (exclusive)
+* @param options - function options
+* @returns input ndarray
+*
+* @example
+* var array = require( '@stdlib/ndarray/array' );
+*
+* var x = array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+*
+* var y = copyWithin( x, 3, 1, 4 );
+* // returns <ndarray>[ 1.0, 2.0, 3.0, 2.0, 3.0, 4.0 ]
+*
+* var bool = ( x === y );
+* // returns true
+*/
+declare const copyWithin: CopyWithin;
+
+
+// EXPORTS //
+
+export = copyWithin;

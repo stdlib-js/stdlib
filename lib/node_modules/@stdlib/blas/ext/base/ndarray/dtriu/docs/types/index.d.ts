@@ -44,7 +44,7 @@ import { float64ndarray, typedndarray } from '@stdlib/types/ndarray';
 * var B = new Float64Matrix( [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ] );
 *
 * var k = scalar2ndarray( 0, {
-*    'dtype': 'generic'
+*     'dtype': 'generic'
 * });
 *
 * var out = dtriu( [ A, B, k ] );

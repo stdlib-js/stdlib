@@ -1,0 +1,14 @@
+---
+type: amend-message
+---
+remove: remove `anyOwnBy` from namespace
+
+This commit removes the `anyOwnBy` symbol from the `@stdlib/utils`
+namespace due to a package migration.
+
+BREAKING CHANGE: remove `anyOwnBy`
+
+To migrate, users should access the same symbol via the
+`@stdlib/object` namespace.
+
+Ref: https://github.com/stdlib-js/stdlib/issues/6756

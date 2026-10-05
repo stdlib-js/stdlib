@@ -99,7 +99,7 @@ import cindexOf = require( './index' );
 	cindexOf( x.length ); // $ExpectError
 	cindexOf( x.length, s ); // $ExpectError
 	cindexOf( x.length, s, x ); // $ExpectError
-	cindexOf( x.length, s, x, 1, 0 ); // $ExpectError
+	cindexOf( x.length, s, x, 1, {} ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a number...
@@ -192,5 +192,5 @@ import cindexOf = require( './index' );
 	cindexOf.ndarray( x.length, s ); // $ExpectError
 	cindexOf.ndarray( x.length, s, x ); // $ExpectError
 	cindexOf.ndarray( x.length, s, x, 1 ); // $ExpectError
-	cindexOf.ndarray( x.length, s, x, 1, 0, 0 ); // $ExpectError
+	cindexOf.ndarray( x.length, s, x, 1, 0, {} ); // $ExpectError
 }

@@ -33,7 +33,7 @@ f(x) = x
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="f(x) = x" data-equation="eq:identity_function">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@ffd6ded5947d911657cac30a4548743bc210d2a5/lib/node_modules/@stdlib/number/int64/base/identity/docs/img/equation_identity_function.svg" alt="Identity function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7044cb6060ff971420a3ae07813849de316c96ae/lib/node_modules/@stdlib/number/int64/base/identity/docs/img/equation_identity_function.svg" alt="Identity function">
     <br>
 </div> -->
 

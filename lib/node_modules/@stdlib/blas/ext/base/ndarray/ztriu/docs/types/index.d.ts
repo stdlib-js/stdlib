@@ -44,7 +44,7 @@ import { complex128ndarray, typedndarray } from '@stdlib/types/ndarray';
 * var B = new Complex128Matrix( [ [ 0.0, 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0, 0.0 ] ] );
 *
 * var k = scalar2ndarray( 0, {
-*    'dtype': 'generic'
+*     'dtype': 'generic'
 * });
 *
 * var out = ztriu( [ A, B, k ] );
