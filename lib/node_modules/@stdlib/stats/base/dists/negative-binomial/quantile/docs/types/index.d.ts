@@ -42,6 +42,7 @@ interface Quantile {
 	* -   If provided a `k` outside of `[0,1]`, the function returns `NaN`.
 	* -   If provided a `r` which is not a positive number, the function returns `NaN`.
 	* -   If provided a success probability `p` outside of `[0,1]`, the function returns `NaN`.
+	* -   If provided a success probability `p` equal to `0`, the function returns `NaN`.
 	*
 	* @param k - input value
 	* @param r - number of successes until experiment is stopped
@@ -78,6 +79,10 @@ interface Quantile {
 	*
 	* @example
 	* var y = quantile( 0.5, -2.0, 0.5 );
+	* // returns NaN
+	*
+	* @example
+	* var y = quantile( 0.5, 20.0, 0.0 );
 	* // returns NaN
 	*
 	* @example
