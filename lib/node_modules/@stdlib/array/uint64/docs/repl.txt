@@ -248,7 +248,7 @@
     --------
     > var arr = new {{alias}}( [ 1, 2 ] )
     <Uint64Array>[ 1n, 2n ]
-    > var z = arr.at( 1 )
+    > var u = arr.at( 1 )
     <Uint64>[ 2n ]
 
 
@@ -295,7 +295,7 @@
     --------
     > var arr = new {{alias}}( [ 1, 2 ] )
     <Uint64Array>[ 1n, 2n ]
-    > var z = arr.get( 1 )
+    > var u = arr.get( 1 )
     <Uint64>[ 2n ]
 
 
@@ -320,12 +320,12 @@
     --------
     > var arr = new {{alias}}( [ 1, 2, 3 ] );
     > arr.set( new {{alias:@stdlib/number/uint64/ctor}}( 4 ), 1 );
-    > var z = arr.get( 1 )
+    > var u = arr.get( 1 )
     <Uint64>[ 4n ]
     > arr.set( [ 5, 6 ], 1 );
-    > z = arr.get( 1 )
+    > u = arr.get( 1 )
     <Uint64>[ 5n ]
-    > z = arr.get( 2 )
+    > u = arr.get( 2 )
     <Uint64>[ 6n ]
 
     See Also
