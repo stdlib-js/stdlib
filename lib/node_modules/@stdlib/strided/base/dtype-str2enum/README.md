@@ -89,6 +89,9 @@ var v = str2enum( 'float64' );
 v = str2enum( 'float32' );
 // returns <number>
 
+v = str2enum( 'float16' );
+// returns <number>
+
 v = str2enum( 'int32' );
 // returns <number>
 
