@@ -20,7 +20,7 @@
 
     Returns
     -------
-    out: Array
+    y: Array
         Two-element array holding function value `y` and `1-y`.
 
     Examples

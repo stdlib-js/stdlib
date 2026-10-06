@@ -30,19 +30,25 @@ import { typedndarray } from '@stdlib/types/ndarray';
 * -   The function expects the following ndarrays:
 *
 *     -   a one-dimensional input ndarray.
+*     -   a zero-dimensional ndarray containing the index from which to begin searching.
 *
 * @param arrays - array-like object containing ndarrays
 * @returns index
 *
 * @example
+* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 * var vector = require( '@stdlib/ndarray/vector/ctor' );
 *
 * var x = vector( [ 0.0, 3.0, 0.0, 2.0 ], 'generic' );
 *
-* var v = glastIndexOfFalsy( [ x ] );
+* var fromIndex = scalar2ndarray( 3, {
+*     'dtype': 'generic'
+* });
+*
+* var v = glastIndexOfFalsy( [ x, fromIndex ] );
 * // returns 2
 */
-declare function glastIndexOfFalsy( arrays: [ typedndarray<unknown> ] ): number;
+declare function glastIndexOfFalsy( arrays: [ typedndarray<unknown>, typedndarray<number> ] ): number;
 
 
 // EXPORTS //
