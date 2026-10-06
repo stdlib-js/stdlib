@@ -33,8 +33,14 @@ import dfillNaN = require( './index' );
 	const alpha = scalar2ndarray( 0.0, {
 		'dtype': 'float64'
 	});
+	const start = scalar2ndarray( 0, {
+		'dtype': 'generic'
+	});
+	const end = scalar2ndarray( 10, {
+		'dtype': 'generic'
+	});
 
-	dfillNaN( [ x, alpha ] ); // $ExpectType float64ndarray
+	dfillNaN( [ x, alpha, start, end ] ); // $ExpectType float64ndarray
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array of ndarrays...
@@ -58,7 +64,13 @@ import dfillNaN = require( './index' );
 	const alpha = scalar2ndarray( 0.0, {
 		'dtype': 'float64'
 	});
+	const start = scalar2ndarray( 0, {
+		'dtype': 'generic'
+	});
+	const end = scalar2ndarray( 10, {
+		'dtype': 'generic'
+	});
 
 	dfillNaN(); // $ExpectError
-	dfillNaN( [ x, alpha ], {} ); // $ExpectError
+	dfillNaN( [ x, alpha, start, end ], {} ); // $ExpectError
 }

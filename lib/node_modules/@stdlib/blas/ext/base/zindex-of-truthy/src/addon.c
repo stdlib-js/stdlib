@@ -18,6 +18,7 @@
 
 #include "stdlib/blas/ext/base/zindex_of_truthy.h"
 #include "stdlib/blas/base/shared.h"
+#include "stdlib/complex/float64/ctor.h"
 #include "stdlib/napi/export.h"
 #include "stdlib/napi/argv.h"
 #include "stdlib/napi/argv_int64.h"

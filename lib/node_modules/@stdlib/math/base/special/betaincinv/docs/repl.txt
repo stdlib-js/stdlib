@@ -1,6 +1,6 @@
 
 {{alias}}( p, a, b[, upper] )
-    Computes the inverse of the lower incomplete beta function.
+    Computes the inverse of the regularized incomplete beta function.
 
     In contrast to a more commonly used definition, the first argument is the
     probability `p` and the second and third arguments are `a` and `b`,

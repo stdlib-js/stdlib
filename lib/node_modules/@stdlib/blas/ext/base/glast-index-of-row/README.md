@@ -22,11 +22,15 @@ limitations under the License.
 
 > Return the index of the last row in an input matrix which has the same elements as a provided search vector.
 
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
 <section class="intro">
 
 </section>
 
 <!-- /.intro -->
+
+<!-- Package usage documentation. -->
 
 <section class="usage">
 
@@ -196,17 +200,21 @@ var out = glastIndexOfRow.ndarray( 3, 2, A, 2, 1, 1, x, 1, 1, workspace, 1, 0 );
 
 <!-- /.usage -->
 
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 <section class="notes">
 
 ## Notes
 
 -   If `M <= 0` or `N <= 0`, both functions return `-1`.
--   When searching for a matching row, the function checks for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct, and `-0` and `+0` are considered the same.
+-   When searching for a matching row, the functions check for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct, and `-0` and `+0` are considered the same.
 -   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array/base/accessor`][@stdlib/array/base/accessor]).
 
 </section>
 
 <!-- /.notes -->
+
+<!-- Package usage examples. -->
 
 <section class="examples">
 
@@ -240,6 +248,14 @@ console.log( out );
 </section>
 
 <!-- /.examples -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
