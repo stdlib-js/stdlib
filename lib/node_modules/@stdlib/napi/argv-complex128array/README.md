@@ -205,7 +205,7 @@ The macro expects the following arguments:
 
 <section class="notes">
 
-## Notes
+### Notes
 
 -   A double-precision complex floating-point array is a double-precision floating-point array having interleaved real and imaginary components, such that each element of the double-precision complex floating-point array consists of two adjacent (in memory) double-precision floating-point numbers.
 
