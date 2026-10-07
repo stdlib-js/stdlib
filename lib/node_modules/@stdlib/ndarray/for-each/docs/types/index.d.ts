@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { typedndarray, float64ndarray, float32ndarray, complex128ndarray, complex64ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, boolndarray, genericndarray } from '@stdlib/types/ndarray';
+import { typedndarray, float64ndarray, float32ndarray, float16ndarray, complex128ndarray, complex64ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, boolndarray, genericndarray } from '@stdlib/types/ndarray';
 import { Complex64, Complex128 } from '@stdlib/types/complex';
 
 /**
@@ -112,6 +112,32 @@ declare function forEach<V = unknown>( x: float64ndarray, fcn: Callback<number, 
 * forEach( x, naryFunction( log, 1 ) );
 */
 declare function forEach<V = unknown>( x: float32ndarray, fcn: Callback<number, float32ndarray, V>, thisArg?: ThisParameterType<Callback<number, float32ndarray, V>> ): void;
+
+/**
+* Invokes a callback function once for each ndarray element.
+*
+* @param x - input ndarray
+* @param fcn - callback function
+* @param thisArg - callback function execution context
+*
+* @example
+* var Float16Array = require( '@stdlib/array/float16' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var naryFunction = require( '@stdlib/utils/nary-function' );
+* var log = require( '@stdlib/console/log' );
+*
+* var buffer = new Float16Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+* var shape = [ 2, 3 ];
+* var strides = [ 3, 1 ];
+* var offset = 0;
+*
+* var x = ndarray( 'float16', buffer, shape, strides, offset, 'row-major' );
+* // returns <ndarray>
+*
+* // Apply the callback function:
+* forEach( x, naryFunction( log, 1 ) );
+*/
+declare function forEach<V = unknown>( x: float16ndarray, fcn: Callback<number, float16ndarray, V>, thisArg?: ThisParameterType<Callback<number, float16ndarray, V>> ): void;
 
 /**
 * Invokes a callback function once for each ndarray element.
