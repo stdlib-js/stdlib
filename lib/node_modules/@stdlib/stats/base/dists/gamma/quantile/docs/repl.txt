@@ -44,7 +44,7 @@
     > y = {{alias}}( 0.0, 1.0, NaN )
     NaN
 
-    // Non-positive shape parameter:
+    // Negative shape parameter:
     > y = {{alias}}( 0.5, -1.0, 1.0 )
     NaN
     // Non-positive rate parameter:

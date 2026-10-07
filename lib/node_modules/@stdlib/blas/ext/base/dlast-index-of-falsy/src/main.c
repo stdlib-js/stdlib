@@ -24,10 +24,10 @@
 /**
 * Returns the index of the last falsy element in a double-precision floating-point strided array.
 *
-* @param N        number of indexed elements
-* @param X        input array
-* @param strideX  stride length
-* @return         index
+* @param N       number of indexed elements
+* @param X       input array
+* @param strideX stride length
+* @return        index
 */
 CBLAS_INT API_SUFFIX(stdlib_strided_dlast_index_of_falsy)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX ) {
 	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
@@ -37,26 +37,26 @@ CBLAS_INT API_SUFFIX(stdlib_strided_dlast_index_of_falsy)( const CBLAS_INT N, co
 /**
 * Returns the index of the last falsy element in a double-precision floating-point strided array using alternative indexing semantics.
 *
-* @param N        number of indexed elements
-* @param X        input array
-* @param strideX  stride length
-* @param offsetX  starting index
-* @return         index
+* @param N       number of indexed elements
+* @param X       input array
+* @param strideX stride length
+* @param offsetX starting index
+* @return        index
 */
 CBLAS_INT API_SUFFIX(stdlib_strided_dlast_index_of_falsy_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
 	CBLAS_INT idx;
-	CBLAS_INT ox;
-	CBLAS_INT sx;
+	CBLAS_INT sv;
+	CBLAS_INT ov;
 
 	if ( N <= 0 ) {
 		return -1;
 	}
 	// Reverse the iteration order by flipping the stride and adjusting the offset:
-	ox = offsetX + ( ( N - 1 ) * strideX );
-	sx = -strideX;
+	ov = offsetX + ( ( N - 1 ) * strideX );
+	sv = -strideX;
 
 	// Find the index of the first falsy element in the reversed "view":
-	idx = API_SUFFIX(stdlib_strided_dindex_of_falsy_ndarray)( N, X, sx, ox );
+	idx = API_SUFFIX(stdlib_strided_dindex_of_falsy_ndarray)( N, X, sv, ov );
 	if ( idx < 0 ) {
 		return idx;
 	}

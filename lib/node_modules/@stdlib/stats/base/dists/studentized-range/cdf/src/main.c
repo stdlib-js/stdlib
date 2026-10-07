@@ -97,7 +97,6 @@ static const double PRECISION = 1e-10;
 /**
 * Evaluates the CDF of the standard normal distribution.
 *
-* @private
 * @param z    standard deviation from the mean
 * @return     evaluated CDF
 */
@@ -134,7 +133,6 @@ static double apnorm( const double z ) {
 /**
 * Evaluates a Gauss-Legendre quadrature integrand.
 *
-* @private
 * @param ww     quadrature point
 * @param yii    integral bound
 * @param aii    integral bound
@@ -148,15 +146,13 @@ static double fint( const double ww, const double yii, const double aii, const d
 
 	yyi = ( ( bii - aii ) * yii ) + bii + aii;
 	out = stdlib_base_exp( -yyi * yyi * 0.125 );
-	out *= stdlib_base_pow( apnorm( yyi * 0.5 ) -
-		apnorm( ( yyi - ( 2.0 * ww ) ) * 0.5 ), r - 1.0 );
+	out *= stdlib_base_pow( apnorm( yyi * 0.5 ) - apnorm( ( yyi - ( 2.0 * ww ) ) * 0.5 ), r - 1.0 );
 	return out;
 }
 
 /**
 * Evaluates the Gauss-Legendre quadrature rule.
 *
-* @private
 * @param ww     quadrature point
 * @param aii    integral bound
 * @param bii    integral bound
@@ -188,7 +184,6 @@ static double gaussLegreQuadrature( const double ww, const double aii, const dou
 /**
 * Evaluates `H(w)`.
 *
-* @private
 * @param w    quantile of the studentized range
 * @param r    sample size for range (same for each group)
 * @return     evaluated function
@@ -215,8 +210,7 @@ static double prangeVInf( const double w, const double r ) {
 	soma = 0.0;
 	for ( i = 1; i < stdlib_base_round( k ) + 1; i++ ) {
 		ii = i;
-		soma += ( (bi - ai) / 2.0 ) *
-			gaussLegreQuadrature( w, ai, bi, r, -1.0, +1.0, 20 );
+		soma += ( (bi - ai) / 2.0 ) * gaussLegreQuadrature( w, ai, bi, r, -1.0, +1.0, 20 );
 		ai = bi;
 		if ( i + 1 == (int32_t)stdlib_base_round( k ) ) {
 			bi = 8.0;
@@ -232,7 +226,6 @@ static double prangeVInf( const double w, const double r ) {
 /**
 * Evaluates a Gauss-Legendre quadrature integrand.
 *
-* @private
 * @param q      quadrature point
 * @param za     integral bound
 * @param aii    integral bound
@@ -264,7 +257,6 @@ static double f26( const double q, const double za, const double aii, const doub
 /**
 * Evaluates a Gauss-Legendre quadrature rule.
 *
-* @private
 * @param q      quadrature point
 * @param aii    integral bound
 * @param r      relative error tolerance
@@ -289,8 +281,7 @@ static double gausslegdquad( const double q, const double aii, const double r, c
 		if ( ROOT[ j ] == 0.0 ) {
 			wsum += WEIGHT[ j ] * f26( q, d, aii, ci, r, v, l );
 		} else {
-			wsum += WEIGHT[ j ] *
-				( f26( q, ( ROOT[ j ] * cmm ) + d, aii, ci, r, v, l ) );
+			wsum += WEIGHT[ j ] * ( f26( q, ( ROOT[ j ] * cmm ) + d, aii, ci, r, v, l ) );
 		}
 	}
 	return cmm * wsum;

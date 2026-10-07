@@ -31,7 +31,7 @@ int main( void ) {
 	const int strideX = 1;
 	const int strideY = 1;
 
-	// Perform the search:
+	// Perform a search:
 	int idx = stdlib_strided_slast_index_equal( N, x, strideX, y, strideY );
 
 	// Print the result:
