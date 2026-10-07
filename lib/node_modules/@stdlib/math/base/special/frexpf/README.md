@@ -22,6 +22,24 @@ limitations under the License.
 
 > Split a [single-precision floating-point number][ieee754] into a normalized fraction and an integer power of two.
 
+<section class="intro">
+
+The function splits a floating-point number into a normalized fraction and an integer power of two
+
+<!-- <equation class="equation" label="eq:frexp_function" align="center" raw="x = f \cdot 2^{\,e}" alt="Fraction and exponent decomposition"> -->
+
+```math
+x = f \cdot 2^{\,e}
+```
+
+<!-- </equation> -->
+
+where `f` is the normalized fraction (with `0.5 <= |f| < 1`) and `e` is an integer exponent.
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
