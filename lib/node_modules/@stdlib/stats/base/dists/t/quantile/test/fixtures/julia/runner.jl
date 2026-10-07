@@ -20,7 +20,7 @@ import Distributions: quantile, TDist
 import JSON
 
 """
-    gen( p, v, name )
+	gen( p, v, name )
 
 Generate fixture data and write to file.
 
