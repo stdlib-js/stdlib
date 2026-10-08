@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/stats/strided/snanmeanpn.h"
+#include "stdlib/constants/float32/nan.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -104,7 +105,7 @@ static double benchmark1( int iterations, int len ) {
 	x = (float *)malloc( len * sizeof( float ) );
 	for ( i = 0; i < len; i++ ) {
 		if ( rand_float() < 0.2f ) {
-			x[ i ] = 0.0f / 0.0f; // NaN
+			x[ i ] = STDLIB_CONSTANT_FLOAT32_NAN;
 		} else {
 			x[ i ] = ( rand_float() * 20000.0f ) - 10000.0f;
 		}
@@ -144,7 +145,7 @@ static double benchmark2( int iterations, int len ) {
 	x = (float *)malloc( len * sizeof( float ) );
 	for ( i = 0; i < len; i++ ) {
 		if ( rand_float() < 0.2 ) {
-			x[ i ] = 0.0 / 0.0; // NaN
+			x[ i ] = STDLIB_CONSTANT_FLOAT32_NAN;
 		} else {
 			x[ i ] = ( rand_float() * 20000.0 ) - 10000.0;
 		}
