@@ -34,6 +34,7 @@ Every package in stdlib has, at minimum, the following structure:
 
 ```text
 benchmark/         benchmarks
+include/            public C/C++ header files
 docs/              documentation (excluding README)
 examples/          examples
 lib/               package implementation
