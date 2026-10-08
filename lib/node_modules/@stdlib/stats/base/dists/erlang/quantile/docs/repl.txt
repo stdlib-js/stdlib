@@ -9,7 +9,7 @@
 
     If not provided a nonnegative integer for `k`, the function returns `NaN`.
 
-    If provided a non-positive number for `λ`, the function returns `NaN`.
+    If provided a non-positive value for `λ`, the function returns `NaN`.
 
     Parameters
     ----------
@@ -49,7 +49,7 @@
     // Non-integer shape parameter:
     > y = {{alias}}( 0.5, 0.5, 1.0 )
     NaN
-    // Non-positive shape parameter:
+    // Negative shape parameter:
     > y = {{alias}}( 0.5, -1, 1.0 )
     NaN
     // Non-positive rate parameter:
