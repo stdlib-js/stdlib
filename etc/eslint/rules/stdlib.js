@@ -3232,6 +3232,54 @@ rules[ 'stdlib/jsdoc-ordered-list-marker-style' ] = [ 'error', '.' ];
 */
 rules[ 'stdlib/jsdoc-ordered-list-marker-value' ] = [ 'off', 'ordered' ];
 
+/* eslint-disable stdlib/jsdoc-param-hyphen-spacing */
+
+/**
+* Enforce that the hyphen separating a parameter name from a parameter description in JSDoc `@param` tags is surrounded by exactly one space on either side.
+*
+* @name jsdoc-param-hyphen-spacing
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* * @param {number} x    -     input number
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * @param {number} x - input number
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-param-hyphen-spacing' ] = 'error';
+
+/* eslint-enable stdlib/jsdoc-param-hyphen-spacing */
+
 /**
 * Enforce that @private tags are not missing in unassigned function declarations.
 *
