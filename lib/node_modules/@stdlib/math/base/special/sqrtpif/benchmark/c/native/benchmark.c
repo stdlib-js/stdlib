@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2025 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,14 +16,14 @@
 * limitations under the License.
 */
 
-#include "stdlib/math/base/special/hyp2f1.h"
+#include "stdlib/math/base/special/sqrtpif.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
 #include <time.h>
 #include <sys/time.h>
 
-#define NAME "hyp2f1"
+#define NAME "sqrtpif"
 #define ITERATIONS 1000000
 #define REPEATS 3
 
@@ -71,7 +71,7 @@ static void print_results( double elapsed ) {
 static double tic( void ) {
 	struct timeval now;
 	gettimeofday( &now, NULL );
-	return (double)now.tv_sec + (double)now.tv_usec / 1.0e6;
+	return (double)now.tv_sec + (double)now.tv_usec/1.0e6;
 }
 
 /**
@@ -79,9 +79,9 @@ static double tic( void ) {
 *
 * @return random number
 */
-static double rand_double( void ) {
+static float rand_float( void ) {
 	int r = rand();
-	return (double)r / ( (double)RAND_MAX + 1.0 );
+	return (float)r / ( (float)RAND_MAX + 1.0f );
 }
 
 /**
@@ -90,25 +90,19 @@ static double rand_double( void ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
-	double a[ 100 ];
-	double b[ 100 ];
-	double c[ 100 ];
-	double x[ 100 ];
+	float x[ 100 ];
 	double elapsed;
-	double y;
 	double t;
+	float y;
 	int i;
 
-	for( i = 0; i < 100; i++ ) {
-		a[ i ] = ( 100.0*rand_double() ) - 50.0;
-		b[ i ] = ( 100.0*rand_double() ) - 50.0;
-		c[ i ] = ( 100.0*rand_double() ) - 50.0;
-		x[ i ] = ( 100.0*rand_double() ) - 50.0;
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = 100000.0f * rand_float();
 	}
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		y = stdlib_base_hyp2f1( a[ i%100 ], b[ i%100 ], c[ i%100 ], x[ i%100 ] );
+		y = stdlib_base_sqrtpif( x[ i%100 ] );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;
@@ -133,7 +127,7 @@ int main( void ) {
 
 	print_version();
 	for ( i = 0; i < REPEATS; i++ ) {
-		printf( "# c::%s\n", NAME );
+		printf( "# c::native::%s\n", NAME );
 		elapsed = benchmark();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", i+1 );
