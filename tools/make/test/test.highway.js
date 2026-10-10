@@ -1,0 +1,214 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2026 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+/* eslint-disable stdlib/first-unit-test */
+
+'use strict';
+
+// MODULES //
+
+var resolve = require( 'path' ).resolve;
+var execFile = require( 'child_process' ).execFile;
+var env = require( 'process' ).env;
+var tape = require( 'tape' );
+var IS_BROWSER = require( '@stdlib/assert/is-browser' );
+var IS_WINDOWS = require( '@stdlib/assert/is-windows' );
+var contains = require( '@stdlib/assert/contains' );
+var existsSync = require( '@stdlib/fs/exists' ).sync;
+var readFileSync = require( '@stdlib/fs/read-file' ).sync;
+var manifest = require( '@stdlib/utils/library-manifest' );
+
+
+// VARIABLES //
+
+var root = resolve( __dirname, '..', '..', '..', 'lib', 'node_modules' );
+var dir = resolve( root, '@stdlib', 'blas', 'ext', 'base', 'dsumpw' );
+var fpath = resolve( dir, 'manifest.json' );
+var mopts = {
+	'basedir': dir,
+	'paths': 'posix'
+};
+var opts = {
+	'skip': IS_BROWSER
+};
+var runtimeOpts = {
+	'skip': IS_BROWSER || !env.STDLIB_TEST_HIGHWAY_RUNTIME
+};
+var cliOpts = {
+	'skip': IS_BROWSER || IS_WINDOWS
+};
+
+
+// TESTS //
+
+tape( 'Highway build integration', function test( t ) {
+	t.ok( true, __filename );
+	t.end();
+});
+
+tape( 'the default native manifest selects the C implementation', opts, function test( t ) {
+	var conf = manifest( fpath, {}, mopts );
+	t.strictEqual( contains( conf.src, 'src/main.c' ), true, 'includes the C source' );
+	t.strictEqual( contains( conf.src, 'src/simd/dsumpw_highway.cpp' ), false, 'does not include the Highway source' );
+	t.deepEqual( conf, manifest( fpath, {
+		'simd': ''
+	}, mopts ), 'an empty backend preserves the default configuration' );
+	t.end();
+});
+
+tape( 'the Highway native manifest selects the SIMD implementation', opts, function test( t ) {
+	var conf = manifest( fpath, {
+		'simd': 'highway'
+	}, mopts );
+	t.strictEqual( contains( conf.src, 'src/main.c' ), false, 'does not include the default C implementation' );
+	t.strictEqual( contains( conf.src, 'src/simd/dsumpw_highway.cpp' ), true, 'includes the Highway source' );
+	t.end();
+});
+
+tape( 'Wasm consumers inherit the selected DSUMPW implementation', opts, function test( t ) {
+	var consumers;
+	var hasScalar;
+	var backends;
+	var expected;
+	var source;
+	var scalar;
+	var file;
+	var conf;
+	var src;
+	var i;
+	var j;
+	var k;
+
+	consumers = [
+		'@stdlib/stats/strided/wasm/dmeanpw'
+	];
+	backends = [ '', 'highway' ];
+	source = resolve( dir, 'src/simd/dsumpw_highway.cpp' );
+	scalar = resolve( dir, 'src/main.c' );
+	for ( i = 0; i < consumers.length; i++ ) {
+		file = resolve( root, consumers[ i ], 'manifest.json' );
+		for ( j = 0; j < backends.length; j++ ) {
+			conf = manifest( file, {
+				'wasm': true,
+				'simd': backends[ j ]
+			}, mopts );
+			src = [];
+			hasScalar = false;
+			for ( k = 0; k < conf.src.length; k++ ) {
+				if ( resolve( file, '..', conf.src[ k ] ) === scalar ) {
+					hasScalar = true;
+				}
+				if ( /dsumpw_highway[^/]*\.cpp$/.test( conf.src[ k ] ) ) {
+					src.push( resolve( file, '..', conf.src[ k ] ) );
+				}
+			}
+			t.strictEqual( hasScalar, !backends[ j ], consumers[ i ]+': selects the C implementation only for the default backend' );
+			expected = ( backends[ j ] ) ? [ source ] : [];
+			t.deepEqual( src, expected, consumers[ i ]+': selects the expected Highway sources without duplicates' );
+			if ( !backends[ j ] ) {
+				t.deepEqual( conf, manifest( file, {
+					'wasm': true
+				}, mopts ), consumers[ i ]+': an empty backend preserves the default configuration' );
+			}
+		}
+	}
+	t.end();
+});
+
+tape( 'the Wasm build rejects an unsupported SIMD backend', cliOpts, function test( t ) {
+	var options;
+	var script;
+
+	script = resolve( __dirname, '..', '..', 'scripts', 'compile_wasm' );
+	options = {
+		'env': {
+			'PATH': env.PATH,
+			'SIMD_BACKEND': 'highways'
+		}
+	};
+	execFile( 'bash', [ script, __dirname ], options, done );
+
+	function done( error, stdout, stderr ) {
+		t.ok( error, 'returns an error' );
+		t.strictEqual( contains( stderr, 'unsupported SIMD backend: highways' ), true, 'reports the unsupported backend' );
+		t.strictEqual( contains( stderr, 'Compiling WebAssembly...' ), false, 'does not attempt compilation' );
+		t.end();
+	}
+});
+
+tape( 'the Wasm build preserves static Highway dispatch when overriding C++ flags', cliOpts, function test( t ) {
+	var options;
+	var args;
+
+	options = {
+		'cwd': resolve( root, '@stdlib/stats/strided/wasm/dmeanpw/src' ),
+		'env': {
+			'PATH': env.PATH
+		}
+	};
+	args = [
+		'--no-print-directory',
+		'-B',
+		'-n',
+		'wasm',
+		'SIMD_BACKEND=highway',
+		'DEPS_HIGHWAY_INCLUDE=/highway',
+		'SOURCE_FILES='+resolve( dir, 'src/simd/dsumpw_highway.cpp' ),
+		'CXXFLAGS=-std=c++17 -O1'
+	];
+	execFile( 'make', args, options, done );
+
+	function done( error, stdout ) {
+		t.error( error, 'success' );
+		t.strictEqual( contains( stdout, '-std=c++17 -O1 -DHWY_COMPILE_ONLY_STATIC' ), true, 'preserves static dispatch with custom flags' );
+		t.strictEqual( contains( stdout, '-msimd128' ), true, 'enables Wasm SIMD' );
+		t.end();
+	}
+});
+
+tape( 'the native runtime exports its include directory and static library', runtimeOpts, function test( t ) {
+	var conf = JSON.parse( readFileSync( resolve( env.STDLIB_TEST_HIGHWAY_RUNTIME, 'highway.json' ), {
+		'encoding': 'utf8'
+	}));
+	t.deepEqual( conf.include, [ env.STDLIB_TEST_HIGHWAY_SOURCE ], 'exports the Highway include directory' );
+	t.strictEqual( contains( conf.defines, 'HWY_STATIC_DEFINE' ), true, 'exports the static library definition' );
+	t.strictEqual( existsSync( conf.libraries[ 0 ] ), true, 'exports an existing runtime library' );
+	t.end();
+});
+
+tape( 'the native runtime exports detected platform definitions and link dependencies', runtimeOpts, function test( t ) {
+	var cache;
+	var conf;
+	var lib;
+
+	conf = JSON.parse( readFileSync( resolve( env.STDLIB_TEST_HIGHWAY_RUNTIME, 'highway.json' ), {
+		'encoding': 'utf8'
+	}));
+	cache = readFileSync( resolve( env.STDLIB_TEST_HIGHWAY_RUNTIME, 'CMakeCache.txt' ), {
+		'encoding': 'utf8'
+	});
+	t.strictEqual( contains( conf.defines, 'TOOLCHAIN_MISS_SYS_AUXV_H' ), !/^HAVE_SYS_AUXV_H:INTERNAL=1$/m.test( cache ), 'preserves the sys/auxv.h detection result' );
+	t.strictEqual( contains( conf.defines, 'TOOLCHAIN_MISS_ASM_HWCAP_H' ), !/^HAVE_ASM_HWCAP_H:INTERNAL=1$/m.test( cache ), 'preserves the asm/hwcap.h detection result' );
+	if ( IS_WINDOWS ) {
+		lib = 'atomic.lib';
+	} else {
+		lib = '-latomic';
+	}
+	t.strictEqual( contains( conf.libraries, lib ), !/^ATOMICS_LOCK_FREE_INSTRUCTIONS:INTERNAL=1$/m.test( cache ), 'preserves the libatomic link dependency when needed' );
+	t.end();
+});
