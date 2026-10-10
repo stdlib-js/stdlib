@@ -69,6 +69,55 @@ v = cround( new Complex128( NaN, NaN ) );
 // returns <Complex128>[ NaN, NaN ]
 ```
 
+#### cround.assign( re, im, out, strideOut, offsetOut )
+
+Rounds each component of a double-precision complex floating-point number to the nearest integer and assigns results to a provided output array.
+
+```javascript
+var Float64Array = require( '@stdlib/array/float64' );
+
+var out = new Float64Array( 2 );
+var v = cround.assign( -1.5, 2.5, out, 1, 0 );
+// returns <Float64Array>[ -1.0, 3.0 ]
+
+var bool = ( out === v );
+// returns true
+```
+
+The function supports the following parameters:
+
+-   **re**: real component.
+-   **im**: imaginary component.
+-   **out**: output array.
+-   **strideOut**: stride length for `out`.
+-   **offsetOut**: starting index for `out`.
+
+#### cround.strided( z, sz, oz, out, so, oo )
+
+Rounds each component of a double-precision complex floating-point number stored in a real-valued strided array view to the nearest integer and assigns results to a provided strided output array.
+
+```javascript
+var Float64Array = require( '@stdlib/array/float64' );
+
+var z = new Float64Array( [ -1.5, 2.5 ] );
+var out = new Float64Array( 2 );
+
+var v = cround.strided( z, 1, 0, out, 1, 0 );
+// returns <Float64Array>[ -1.0, 3.0 ]
+
+var bool = ( out === v );
+// returns true
+```
+
+The function supports the following parameters:
+
+-   **z**: complex number strided array view.
+-   **sz**: stride length for `z`.
+-   **oz**: starting index for `z`.
+-   **out**: output array.
+-   **so**: stride length for `out`.
+-   **oo**: starting index for `out`.
+
 </section>
 
 <!-- /.usage -->
@@ -80,18 +129,16 @@ v = cround( new Complex128( NaN, NaN ) );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var uniform = require( '@stdlib/random/base/uniform' ).factory;
-var Complex128 = require( '@stdlib/complex/float64/ctor' );
+var Complex128Array = require( '@stdlib/array/complex128' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var cround = require( '@stdlib/math/base/special/cround' );
 
-var rand = uniform( -50.0, 50.0 );
+// Create an array of random numbers:
+var arr = new Complex128Array( uniform( 200, -50.0, 50.0 ) );
 
-var z;
-var i;
-for ( i = 0; i < 100; i++ ) {
-    z = new Complex128( rand(), rand() );
-    console.log( 'cround(%s) = %s', z, cround( z ) );
-}
+// Round each component of each complex number to the nearest integer:
+logEachMap( 'cround(%s) = %s', arr, cround );
 ```
 
 </section>
