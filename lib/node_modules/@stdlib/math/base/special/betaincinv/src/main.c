@@ -41,14 +41,12 @@ double stdlib_base_betaincinv( const double p, const double a, const double b, c
 	if (
 		stdlib_base_is_nan( p ) ||
 		stdlib_base_is_nan( a ) ||
-		stdlib_base_is_nan( b )
+		stdlib_base_is_nan( b )||
+		a <= 0.0 ||
+		b <= 0.0 ||
+		p < 0.0 ||
+		p > 1.0
 	) {
-		return 0.0 / 0.0; // NaN
-	}
-	if ( a <= 0.0 || b <= 0.0 ) {
-		return 0.0 / 0.0; // NaN
-	}
-	if ( p < 0.0 || p > 1.0 ) {
 		return 0.0 / 0.0; // NaN
 	}
 	if ( upper ) {
