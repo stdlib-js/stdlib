@@ -20,7 +20,7 @@ import BenchmarkTools
 using Printf
 
 # Benchmark variables:
-name = "signum";
+name = "csignum";
 repeats = 3;
 
 """
