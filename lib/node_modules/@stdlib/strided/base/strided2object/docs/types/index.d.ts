@@ -22,7 +22,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection, Complex64Array, Complex128Array, AccessorArrayLike } from '@stdlib/types/array';
+import { Collection, Complex64Array, Complex128Array, Float16Array, AccessorArrayLike } from '@stdlib/types/array';
 import { Complex64, Complex128, ComplexLike } from '@stdlib/types/complex';
 
 /**
@@ -42,6 +42,15 @@ type GetFloat64 = ( arr: Float64Array, idx: number ) => number | void;
 * @returns element value
 */
 type GetFloat32 = ( arr: Float32Array, idx: number ) => number | void;
+
+/**
+* Returns an element from a `Float16Array`.
+*
+* @param arr - input array
+* @param idx - element index
+* @returns element value
+*/
+type GetFloat16 = ( arr: Float16Array, idx: number ) => number | void;
 
 /**
 * Returns an element from an `Int32Array`.
@@ -168,6 +177,15 @@ type SetFloat64 = ( arr: Float64Array, idx: number, value: number ) => void;
 * @param value - value to set
 */
 type SetFloat32 = ( arr: Float32Array, idx: number, value: number ) => void;
+
+/**
+* Sets an element in a `Float16Array`.
+*
+* @param arr - input array
+* @param idx - element index
+* @param value - value to set
+*/
+type SetFloat16 = ( arr: Float16Array, idx: number, value: number ) => void;
 
 /**
 * Sets an element in an `Int32Array`.
@@ -345,6 +363,31 @@ interface Float32AccessorObject extends OutputObject {
 	* Two-element array whose first element is an accessor for retrieving an array element and whose second element is an accessor for setting an array element.
 	*/
 	accessors: [ GetFloat32, SetFloat32 ];
+}
+
+/**
+* Interface describing the output object for a `Float16Array`.
+*/
+interface Float16AccessorObject extends OutputObject {
+	/**
+	* Reference to the original array-like object.
+	*/
+	data: Float16Array;
+
+	/**
+	* Data type.
+	*/
+	dtype: 'float16';
+
+	/**
+	* Boolean indicating whether the provided array-like object supports the get/set protocol (i.e., uses accessors for getting and setting elements).
+	*/
+	accessorProtocol: false;
+
+	/**
+	* Two-element array whose first element is an accessor for retrieving an array element and whose second element is an accessor for setting an array element.
+	*/
+	accessors: [ GetFloat16, SetFloat16 ];
 }
 
 /**
@@ -683,7 +726,7 @@ interface GetSetAccessorObject<T> extends OutputObject {
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function strided2object( N: number, x: Float64Array, stride: number, offset: number ): Float64AccessorObject;
@@ -724,10 +767,51 @@ declare function strided2object( N: number, x: Float64Array, stride: number, off
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function strided2object( N: number, x: Float32Array, stride: number, offset: number ): Float32AccessorObject;
+
+/**
+* Converts a strided array and associated metadata to an object likely to have the same "shape".
+*
+* ## Notes
+*
+* -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding strided array metadata to ensure that internal functions operating on strided arrays are provided consistent argument "shapes".
+*
+* -   The returned object has the following properties:
+*
+*     -   **data**: reference to the input array.
+*     -   **dtype**: array data type.
+*     -   **length**: number of indexed elements.
+*     -   **stride**: index increment.
+*     -   **offset**: starting index.
+*     -   **accessorProtocol**: boolean indicating whether the input array uses accessors for getting and setting elements.
+*     -   **accessors**: a two-element array whose first element is an accessor for retrieving an array element and whose second element is an accessor for setting an array element.
+*
+* @param N - number of indexed elements
+* @param x - input array
+* @param stride - index increment
+* @param offset - index offset
+* @returns object containing strided array data
+*
+* @example
+* var Float16Array = require( '@stdlib/array/float16' );
+*
+* var x = new Float16Array( [ 1, 2, 3, 4 ] );
+* var obj = strided2object( 4, x, 1, 0 );
+* // returns {...}
+*
+* var bool = obj.accessorProtocol;
+* // returns false
+*
+* var fcns = obj.accessors;
+* // returns [ <Function>, <Function> ]
+*
+* var v = fcns[ 0 ]( x, 2 );
+* // returns 3
+*/
+declare function strided2object( N: number, x: Float16Array, stride: number, offset: number ): Float16AccessorObject;
 
 /**
 * Converts a strided array and associated metadata to an object likely to have the same "shape".
@@ -765,7 +849,7 @@ declare function strided2object( N: number, x: Float32Array, stride: number, off
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function strided2object( N: number, x: Int32Array, stride: number, offset: number ): Int32AccessorObject;
@@ -806,7 +890,7 @@ declare function strided2object( N: number, x: Int32Array, stride: number, offse
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function strided2object( N: number, x: Int16Array, stride: number, offset: number ): Int16AccessorObject;
@@ -847,7 +931,7 @@ declare function strided2object( N: number, x: Int16Array, stride: number, offse
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function strided2object( N: number, x: Int8Array, stride: number, offset: number ): Int8AccessorObject;
@@ -888,7 +972,7 @@ declare function strided2object( N: number, x: Int8Array, stride: number, offset
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function strided2object( N: number, x: Uint32Array, stride: number, offset: number ): Uint32AccessorObject;
@@ -929,7 +1013,7 @@ declare function strided2object( N: number, x: Uint32Array, stride: number, offs
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function strided2object( N: number, x: Uint16Array, stride: number, offset: number ): Uint16AccessorObject;
@@ -970,7 +1054,7 @@ declare function strided2object( N: number, x: Uint16Array, stride: number, offs
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function strided2object( N: number, x: Uint8Array, stride: number, offset: number ): Uint8AccessorObject;
@@ -1011,7 +1095,7 @@ declare function strided2object( N: number, x: Uint8Array, stride: number, offse
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function strided2object( N: number, x: Uint8ClampedArray, stride: number, offset: number ): Uint8cAccessorObject;
@@ -1144,7 +1228,7 @@ declare function strided2object( N: number, x: Complex64Array, stride: number, o
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function strided2object<T = unknown>( N: number, x: AccessorArrayLike<T>, stride: number, offset: number ): GetSetAccessorObject<T>;
@@ -1183,7 +1267,7 @@ declare function strided2object<T = unknown>( N: number, x: AccessorArrayLike<T>
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function strided2object<T = unknown>( N: number, x: Array<T>, stride: number, offset: number ): GenericAccessorObject<T>;
@@ -1228,7 +1312,7 @@ declare function strided2object<T = unknown>( N: number, x: Array<T>, stride: nu
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function strided2object<T = unknown>( N: number, x: Collection<T>, stride: number, offset: number ): IndexedAccessorObject<T>;
