@@ -33,7 +33,7 @@ y = \coth(x) = \frac{\cosh(x)}{\sinh(x)} = \frac{e^x + e^{-x}}{e^x - e^{-x}}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="y = \coth(x) = \frac{\cosh(x)}{\sinh(x)} = \frac{e^x + e^{-x}}{e^x - e^{-x}}" data-equation="eq:hyperbolic_cotangent">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7655041f8fdee5d5337d3c9af1bcbdd242ed295d/lib/node_modules/@stdlib/math/base/special/cothf/docs/img/equation_hyperbolic_cotangent.svg" alt="Hyperbolic cotangent function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@a692228605a448865adb4ef64e063f3bf4680a36/lib/node_modules/@stdlib/math/base/special/cothf/docs/img/equation_hyperbolic_cotangent.svg" alt="Hyperbolic cotangent function">
     <br>
 </div> -->
 
