@@ -7371,7 +7371,7 @@ interface Namespace {
 	* var v = ns.minmax( 3.14, 4.2 );
 	* // returns [ 3.14, 4.2 ]
 	*
-	* var v = ns.minmax( 3.14, NaN );
+	* v = ns.minmax( 3.14, NaN );
 	* // returns [ NaN, NaN ]
 	*
 	* @example
@@ -7455,7 +7455,7 @@ interface Namespace {
 	* var v = ns.minmaxf( 3.14, 4.2 );
 	* // returns [ 3.14, 4.2 ]
 	*
-	* var v = ns.minmaxf( 3.14, NaN );
+	* v = ns.minmaxf( 3.14, NaN );
 	* // returns [ NaN, NaN ]
 	*
 	* @example
@@ -7476,7 +7476,7 @@ interface Namespace {
 	* var v = ns.minmaxn( 3.14, 4.2 );
 	* // returns [ 3.14, 4.2 ]
 	*
-	* var v = ns.minmaxn( 3.14, NaN );
+	* v = ns.minmaxn( 3.14, NaN );
 	* // returns [ NaN, NaN ]
 	*
 	* @example

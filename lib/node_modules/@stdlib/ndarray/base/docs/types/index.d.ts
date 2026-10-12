@@ -1187,7 +1187,7 @@ interface Namespace {
 	* var dt = ns.bufferDataType( [ 1, 2, 3 ] );
 	* // returns 'generic'
 	*
-	* var dt = ns.bufferDataType( 'beep' );
+	* dt = ns.bufferDataType( 'beep' );
 	* // returns null
 	*/
 	bufferDataType: typeof bufferDataType;
