@@ -2804,10 +2804,22 @@ interface Namespace {
 	* // returns <Complex128>[ 1.0, 0.0 ]
 	*
 	* @example
-	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
-	* var v = ns.cexp( new Complex128( 1.0, 0.0 ) );
-	* // returns <Complex128>[ ~2.718, 0.0 ]
+	* var out = new Float64Array( 2 );
+	* var v = ns.cexp.assign( 0.0, 0.0, out, 1, 0 );
+	* // returns <Float64Array>[ 1.0, 0.0 ]
+	*
+	* var bool = ( out === v );
+	* // returns true
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	*
+	* var z = new Float64Array( [ 0.0, 0.0 ] );
+	*
+	* var out = ns.cexp.strided( z, 1, 0, new Float64Array( 2 ), 1, 0 );
+	* // returns <Float64Array>[ 1.0, 0.0 ]
 	*/
 	cexp: typeof cexp;
 
@@ -6050,7 +6062,7 @@ interface Namespace {
 	kernelBetainc: typeof kernelBetainc;
 
 	/**
-	* Calculates the inverse of the incomplete beta function.
+	* Computes the inverse of the lower incomplete beta function.
 	*
 	* ## Notes
 	*
@@ -6059,7 +6071,7 @@ interface Namespace {
 	* @param a - function parameter
 	* @param b - function parameter
 	* @param p - function parameter
-	* @param q - probability equal to `1 - p`
+	* @param q - probability equal to `1-p`
 	* @returns two-element array holding function value `y` and `1-y`
 	*
 	* @example
