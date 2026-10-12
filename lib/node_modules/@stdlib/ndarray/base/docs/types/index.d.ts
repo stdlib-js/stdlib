@@ -597,6 +597,7 @@ interface Namespace {
 	*     -   **sx**: first input ndarray strides sorted in loop order.
 	*     -   **sy**: second input ndarray strides sorted in loop order.
 	*     -   **sz**: output ndarray strides sorted in loop order.
+	*     -   **idx**: dimension indices sorted in loop order.
 	*
 	* -   When iterating over the elements of a multi-dimensional array, accessing elements which are closer in memory can improve performance. To this end, loop interchange is a technique used in loop nest optimization to improve locality of reference and take advantage of CPU cache.
 	*
@@ -633,6 +634,9 @@ interface Namespace {
 	*
 	* var ssz = o.sz;
 	* // returns [ 6, -2, 1 ]
+	*
+	* var idx = o.idx;
+	* // returns [ 2, 1, 0 ]
 	*/
 	binaryLoopOrder: typeof binaryLoopOrder;
 
@@ -2707,13 +2711,14 @@ interface Namespace {
 	* -   The returned array has the following elements:
 	*
 	*     ```text
-	*     [ <shape>, ...<strides> ]
+	*     [ <shape>, ...<strides>, <idx> ]
 	*     ```
 	*
 	*     where
 	*
 	*     -   **shape**: dimensions sorted in loop order.
 	*     -   **...strides**: strides for each respective ndarray sorted in loop order.
+	*     -   **idx**: dimension indices sorted in loop order.
 	*
 	* -   When iterating over the elements of a multi-dimensional array, accessing elements which are closer in memory can improve performance. To this end, loop interchange is a technique used in loop nest optimization to improve locality of reference and take advantage of CPU cache.
 	*
@@ -2748,6 +2753,9 @@ interface Namespace {
 	*
 	* var ssz = o[ 3 ];
 	* // returns [ 6, -2, 1 ]
+	*
+	* var idx = o[ 4 ];
+	* // returns [ 2, 1, 0 ]
 	*/
 	loopOrder: typeof loopOrder;
 
@@ -3895,6 +3903,7 @@ interface Namespace {
 	*     -   **sz**: third input ndarray strides sorted in loop order.
 	*     -   **sw**: fourth input ndarray strides sorted in loop order.
 	*     -   **su**: output ndarray strides sorted in loop order.
+	*     -   **idx**: dimension indices sorted in loop order.
 	*
 	* -   When iterating over the elements of a multi-dimensional array, accessing elements which are closer in memory can improve performance. To this end, loop interchange is a technique used in loop nest optimization to improve locality of reference and take advantage of CPU cache.
 	*
@@ -3941,6 +3950,9 @@ interface Namespace {
 	*
 	* var ssu = o.su;
 	* // returns [ 1, -2, 6 ]
+	*
+	* var idx = o.idx;
+	* // returns [ 0, 1, 2 ]
 	*/
 	quaternaryLoopOrder: typeof quaternaryLoopOrder;
 
@@ -3974,6 +3986,7 @@ interface Namespace {
 	*     -   **sw**: fourth input ndarray strides sorted in loop order.
 	*     -   **su**: fifth input ndarray strides sorted in loop order.
 	*     -   **sv**: output ndarray strides sorted in loop order.
+	*     -   **idx**: dimension indices sorted in loop order.
 	*
 	* -   When iterating over the elements of a multi-dimensional array, accessing elements which are closer in memory can improve performance. To this end, loop interchange is a technique used in loop nest optimization to improve locality of reference and take advantage of CPU cache.
 	*
@@ -4025,6 +4038,9 @@ interface Namespace {
 	*
 	* var ssv = o.sv;
 	* // returns [ 6, -2, 1 ]
+	*
+	* var idx = o.idx;
+	* // returns [ 2, 1, 0 ]
 	*/
 	quinaryLoopOrder: typeof quinaryLoopOrder;
 
@@ -5200,6 +5216,7 @@ interface Namespace {
 	*     -   **sy**: second input ndarray strides sorted in loop order.
 	*     -   **sz**: third input ndarray strides sorted in loop order.
 	*     -   **sw**: output ndarray strides sorted in loop order.
+	*     -   **idx**: dimension indices sorted in loop order.
 	*
 	* -   When iterating over the elements of a multi-dimensional array, accessing elements which are closer in memory can improve performance. To this end, loop interchange is a technique used in loop nest optimization to improve locality of reference and take advantage of CPU cache.
 	*
@@ -5241,6 +5258,9 @@ interface Namespace {
 	*
 	* var ssw = o.sw;
 	* // returns [ 1, -2, 6 ]
+	*
+	* var idx = o.idx;
+	* // returns [ 0, 1, 2 ]
 	*/
 	ternaryLoopOrder: typeof ternaryLoopOrder;
 
