@@ -132,7 +132,7 @@ import sleftPadEdge = require( './index' );
 	sleftPadEdge( x.length, 10 ); // $ExpectError
 	sleftPadEdge( x.length, 10, x ); // $ExpectError
 	sleftPadEdge( x.length, 10, x, 1 ); // $ExpectError
-	sleftPadEdge( x.length, 10, x, 1, out ); // $ExpectError
+	sleftPadEdge( x.length, 10, x, 1, y ); // $ExpectError
 	sleftPadEdge( x.length, 10, x, 1, y, 1, {} ); // $ExpectError
 }
 
@@ -276,7 +276,7 @@ import sleftPadEdge = require( './index' );
 	sleftPadEdge.ndarray( x.length, 10, x ); // $ExpectError
 	sleftPadEdge.ndarray( x.length, 10, x, 1 ); // $ExpectError
 	sleftPadEdge.ndarray( x.length, 10, x, 1, 0 ); // $ExpectError
-	sleftPadEdge.ndarray( x.length, 10, x, 1, 0, out ); // $ExpectError
+	sleftPadEdge.ndarray( x.length, 10, x, 1, 0, y ); // $ExpectError
 	sleftPadEdge.ndarray( x.length, 10, x, 1, 0, y, 1 ); // $ExpectError
 	sleftPadEdge.ndarray( x.length, 10, x, 1, 0, y, 1, 0, {} ); // $ExpectError
 }
