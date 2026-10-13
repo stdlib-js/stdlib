@@ -32,6 +32,11 @@ This BLAS extension implements the operation
 \mathbf{w} = \mathbf{x} \oslash \mathbf{y}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\mathbf{w} = \mathbf{x} \oslash \mathbf{y}" data-equation="eq:wxdy">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@cf75c3ea2f488f4ab2bd92f832c2e2da8542e6be/lib/node_modules/@stdlib/blas/ext/base/ndarray/swxdy/docs/img/equation_wxdy.svg" alt="Equation for wxdy operation.">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 where `⊘` denotes the [Hadamard division][hadamard-division].
