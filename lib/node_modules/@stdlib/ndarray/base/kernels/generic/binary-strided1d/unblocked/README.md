@@ -181,8 +181,6 @@ The returned function accepts the following arguments:
 -   **strategyZ**: strategy for marshaling data to and from an output ndarray view.
 -   **options**: function options which are passed through to `fcn`.
 
-The returned function iterates over ndarray elements according to the memory layout of the first input ndarray.
-
 <!-- lint disable maximum-heading-length -->
 
 #### kernel.kernel0d( fcn, arrays, views, shape, stridesX, stridesY, stridesZ, strategyX, strategyY, strategyZ, options )

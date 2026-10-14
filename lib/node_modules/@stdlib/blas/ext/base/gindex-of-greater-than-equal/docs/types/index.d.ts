@@ -32,11 +32,11 @@ type InputArray = Collection<unknown> | AccessorArrayLike<unknown>;
 */
 interface Routine {
 	/**
-	* Returns the index of the first element in a strided array which is greater than or equal to a specified search element.
+	* Returns the first index of an element in a strided array which is greater than or equal to a specified search element.
 	*
 	* ## Notes
 	*
-	* -   If the function is unable to find an element which is greater than or equal to a search element, the function returns `-1`.
+	* -   If the function is unable to find an element which is greater than or equal to the search element, the function returns `-1`.
 	*
 	* @param N - number of indexed elements
 	* @param searchElement - search element
@@ -53,11 +53,11 @@ interface Routine {
 	( N: number, searchElement: unknown, x: InputArray, strideX: number ): number;
 
 	/**
-	* Returns the index of the first element in a strided array which is greater than or equal to a specified search element using alternative indexing semantics.
+	* Returns the first index of an element in a strided array which is greater than or equal to a specified search element using alternative indexing semantics.
 	*
 	* ## Notes
 	*
-	* -   If the function is unable to find an element which is greater than or equal to a search element, the function returns `-1`.
+	* -   If the function is unable to find an element which is greater than or equal to the search element, the function returns `-1`.
 	*
 	* @param N - number of indexed elements
 	* @param searchElement - search element
@@ -76,11 +76,11 @@ interface Routine {
 }
 
 /**
-* Returns the index of the first element in a strided array which is greater than or equal to a specified search element.
+* Returns the first index of an element in a strided array which is greater than or equal to a specified search element.
 *
 * ## Notes
 *
-* -   If the function is unable to find an element which is greater than or equal to a search element, the function returns `-1`.
+* -   If the function is unable to find an element which is greater than or equal to the search element, the function returns `-1`.
 *
 * @param N - number of indexed elements
 * @param searchElement - search element

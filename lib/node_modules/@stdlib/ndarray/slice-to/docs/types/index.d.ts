@@ -22,7 +22,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { typedndarray, genericndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray } from '@stdlib/types/ndarray';
+import { typedndarray, genericndarray, float64ndarray, float32ndarray, float16ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray } from '@stdlib/types/ndarray';
 import { ArrayLike } from '@stdlib/types/array';
 
 /**
@@ -202,6 +202,85 @@ declare function sliceTo( x: float32ndarray, stop: ArrayLike<StopArgument>, opti
 * // returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
 */
 declare function sliceTo( x: float32ndarray, ...stop: Array<StopArgument | Options> ): float32ndarray;
+
+/**
+* Returns a read-only truncated view of an input ndarray.
+*
+* @param x - input array
+* @param stop - ending indices (exclusive)
+* @param options - function options
+* @param options.strict - boolean indicating whether to enforce strict bounds checking
+* @returns output array
+*
+* @example
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
+*
+* var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ], 'float16' );
+* var shape = [ 3, 2 ];
+* var strides = [ 2, 1 ];
+* var offset = 0;
+*
+* var x = ndarray( 'float16', buffer, shape, strides, offset, 'row-major' );
+* // returns <ndarray>
+*
+* var sh = x.shape;
+* // returns [ 3, 2 ]
+*
+* var arr = ndarray2array( x );
+* // returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
+*
+* var s = [ 2, null ];
+* var y = sliceTo( x, s );
+* // returns <ndarray>
+*
+* sh = y.shape;
+* // returns [ 2, 2 ]
+*
+* arr = ndarray2array( y );
+* // returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+*/
+declare function sliceTo( x: float16ndarray, stop: ArrayLike<StopArgument>, options?: Options ): float16ndarray;
+
+/**
+* Returns a read-only truncated view of an input ndarray.
+*
+* @param x - input array
+* @param stop - ending indices (exclusive)
+* @param options - function options
+* @param options.strict - boolean indicating whether to enforce strict bounds checking
+* @returns output array
+*
+* @example
+* var typedarray = require( '@stdlib/array/typed' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
+*
+* var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ], 'float16' );
+* var shape = [ 3, 2 ];
+* var strides = [ 2, 1 ];
+* var offset = 0;
+*
+* var x = ndarray( 'float16', buffer, shape, strides, offset, 'row-major' );
+* // returns <ndarray>
+*
+* var sh = x.shape;
+* // returns [ 3, 2 ]
+*
+* var arr = ndarray2array( x );
+* // returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
+*
+* var y = sliceTo( x, 2, null );
+* // returns <ndarray>
+*
+* sh = y.shape;
+* // returns [ 2, 2 ]
+*
+* arr = ndarray2array( y );
+* // returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+*/
+declare function sliceTo( x: float16ndarray, ...stop: Array<StopArgument | Options> ): float16ndarray;
 
 /**
 * Returns a read-only truncated view of an input ndarray.
