@@ -30,13 +30,14 @@ import { ArrayLike } from '@stdlib/types/array';
 * -   The returned array has the following elements:
 *
 *     ```text
-*     [ <shape>, ...<strides> ]
+*     [ <shape>, ...<strides>, <idx> ]
 *     ```
 *
 *     where
 *
 *     -   **shape**: dimensions sorted in loop order.
 *     -   **...strides**: strides for each respective ndarray sorted in loop order.
+*     -   **idx**: dimension indices sorted in loop order.
 *
 * -   When iterating over the elements of a multi-dimensional array, accessing elements which are closer in memory can improve performance. To this end, loop interchange is a technique used in loop nest optimization to improve locality of reference and take advantage of CPU cache.
 *
@@ -71,6 +72,9 @@ import { ArrayLike } from '@stdlib/types/array';
 *
 * var ssz = o[ 3 ];
 * // returns [ 6, -2, 1 ]
+*
+* var idx = o[ 4 ];
+* // returns [ 2, 1, 0 ]
 */
 declare function loopOrder( shape: ArrayLike<number>, strides: ArrayLike<ArrayLike<number>> ): Array<Array<number>>;
 

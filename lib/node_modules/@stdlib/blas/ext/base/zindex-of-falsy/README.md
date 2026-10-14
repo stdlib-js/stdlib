@@ -88,13 +88,13 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
 
-// Initial array...
+// Initial array:
 var x0 = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 0.0, 0.0 ] );
 
-// Create an offset view...
+// Create an offset view:
 var x1 = new Complex128Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
-// Find index...
+// Find index:
 var idx = zindexOfFalsy( 2, x1, 1 );
 // returns 1
 ```
@@ -137,8 +137,8 @@ var idx = zindexOfFalsy.ndarray( 3, x, 1, x.length-3 );
 
 ## Notes
 
+-   If `N <= 0`, both functions return `-1`.
 -   A complex number is falsy when both its real and imaginary components are falsy.
--   If unable to find a falsy element, both functions return `-1`.
 -   Both functions explicitly treat `NaN` values as falsy.
 
 </section>
@@ -257,7 +257,6 @@ CBLAS_INT stdlib_strided_zindex_of_falsy_ndarray( const CBLAS_INT N, const stdli
 ### Notes
 
 -   A complex number is falsy when both its real and imaginary components are falsy.
--   If unable to find a falsy element, both functions return `-1`.
 -   Both functions explicitly treat `NaN` values as falsy.
 
 </section>
@@ -285,7 +284,7 @@ int main( void ) {
     // Specify a stride:
     const int strideX = 1;
 
-    // Find the index of the first falsy element:
+    // Perform a search:
     int idx = stdlib_strided_zindex_of_falsy( N, (const stdlib_complex128_t *)x, strideX );
 
     // Print the result:

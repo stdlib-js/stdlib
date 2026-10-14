@@ -23,7 +23,7 @@
 import { float32ndarray } from '@stdlib/types/ndarray';
 
 /**
-* Computes the range of a one-dimensional single-precision floating-point ndarray, ignoring NaN values.
+* Computes the range of a one-dimensional single-precision floating-point ndarray, ignoring `NaN` values.
 *
 * ## Notes
 *

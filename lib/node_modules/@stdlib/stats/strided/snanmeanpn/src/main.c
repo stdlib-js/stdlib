@@ -19,6 +19,7 @@
 #include "stdlib/stats/strided/snanmeanpn.h"
 #include "stdlib/blas/base/shared.h"
 #include "stdlib/strided/base/stride2offset.h"
+#include "stdlib/constants/float32/nan.h"
 
 /**
 * Computes the arithmetic mean of a single-precision floating-point strided array, ignoring `NaN` values and using a two-pass error correction algorithm.
@@ -62,7 +63,7 @@ float API_SUFFIX(stdlib_strided_snanmeanpn_ndarray)( const CBLAS_INT N, const fl
 	float v;
 
 	if ( N <= 0 ) {
-		return 0.0f / 0.0f; // NaN
+		return STDLIB_CONSTANT_FLOAT32_NAN;
 	}
 	if ( N == 1 || strideX == 0 ) {
 		return X[ offsetX ];
@@ -82,7 +83,7 @@ float API_SUFFIX(stdlib_strided_snanmeanpn_ndarray)( const CBLAS_INT N, const fl
 		ix += strideX;
 	}
 	if ( n == 0 ) {
-		return 0.0f / 0.0f; // NaN
+		return STDLIB_CONSTANT_FLOAT32_NAN;
 	}
 	dn = (double)n;
 	s = (double)s / dn;
