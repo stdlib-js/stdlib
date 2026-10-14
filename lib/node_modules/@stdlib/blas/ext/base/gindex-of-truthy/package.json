@@ -58,7 +58,6 @@
     "search",
     "index",
     "truthy",
-    "get",
     "strided",
     "array",
     "ndarray"

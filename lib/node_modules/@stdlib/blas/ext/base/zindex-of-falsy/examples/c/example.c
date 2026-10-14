@@ -30,7 +30,7 @@ int main( void ) {
 	// Specify a stride:
 	const int strideX = 1;
 
-	// Find the index of the first falsy element:
+	// Perform a search:
 	int idx = stdlib_strided_zindex_of_falsy( N, (const stdlib_complex128_t *)x, strideX );
 
 	// Print the result:

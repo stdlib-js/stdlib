@@ -74,6 +74,7 @@ type Predicate<T, U, ThisArg> = Nullary<ThisArg> | Unary<T, ThisArg> | Binary<T,
 * -   The function expects the following ndarrays:
 *
 *     -   a one-dimensional input ndarray.
+*     -   a zero-dimensional ndarray containing the index from which to begin searching.
 *
 * -   If no element passes a test implemented by a predicate function, the function returns `-1`.
 *
@@ -83,6 +84,7 @@ type Predicate<T, U, ThisArg> = Nullary<ThisArg> | Unary<T, ThisArg> | Binary<T,
 * @returns index
 *
 * @example
+* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 * var vector = require( '@stdlib/ndarray/vector/ctor' );
 *
 * function clbk( v ) {
@@ -91,10 +93,14 @@ type Predicate<T, U, ThisArg> = Nullary<ThisArg> | Unary<T, ThisArg> | Binary<T,
 *
 * var x = vector( [ 1.0, 3.0, 4.0, 2.0 ], 'generic' );
 *
-* var v = gfindLastIndex( [ x ], clbk );
+* var fromIndex = scalar2ndarray( 3, {
+*     'dtype': 'generic'
+* });
+*
+* var v = gfindLastIndex( [ x, fromIndex ], clbk );
 * // returns 3
 */
-declare function gfindLastIndex<T = unknown, U extends typedndarray<T> = typedndarray<T>, ThisArg = unknown>( arrays: [ U ], clbk: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): number;
+declare function gfindLastIndex<T = unknown, U extends typedndarray<T> = typedndarray<T>, ThisArg = unknown>( arrays: [ U, typedndarray<number> ], clbk: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): number;
 
 
 // EXPORTS //

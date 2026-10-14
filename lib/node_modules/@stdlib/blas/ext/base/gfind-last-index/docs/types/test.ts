@@ -100,7 +100,7 @@ function isEven( v: any ): boolean {
 	gfindLastIndex( x.length ); // $ExpectError
 	gfindLastIndex( x.length, x ); // $ExpectError
 	gfindLastIndex( x.length, x, 1 ); // $ExpectError
-	gfindLastIndex( x.length, x, 1, isEven, {}, 10 ); // $ExpectError
+	gfindLastIndex( x.length, x, 1, isEven, {}, {} ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a number...
@@ -187,5 +187,5 @@ function isEven( v: any ): boolean {
 	gfindLastIndex.ndarray( x.length, x ); // $ExpectError
 	gfindLastIndex.ndarray( x.length, x, 1 ); // $ExpectError
 	gfindLastIndex.ndarray( x.length, x, 1, 0 ); // $ExpectError
-	gfindLastIndex.ndarray( x.length, x, 1, 0, isEven, {}, 10 ); // $ExpectError
+	gfindLastIndex.ndarray( x.length, x, 1, 0, isEven, {}, {} ); // $ExpectError
 }

@@ -31,9 +31,9 @@ int main( void ) {
 	const int strideX = 1;
 	const int strideY = 1;
 
-	// Find the first index of an element which is greater than a corresponding element:
+	// Perform a search:
 	int idx = stdlib_strided_dfirst_index_greater_than( N, x, strideX, y, strideY );
 
 	// Print the result:
-	printf( "first index: %d\n", idx );
+	printf( "index value: %d\n", idx );
 }
