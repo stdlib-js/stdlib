@@ -186,7 +186,7 @@ The function accepts the following arguments:
 -   **strideX**: `[in] CBLAS_INT` stride length.
 
 ```c
-void API_SUFFIX(stdlib_strided_dunitspace)( const CBLAS_INT N, const double start, double *X, const CBLAS_INT strideX );
+void stdlib_strided_dunitspace( const CBLAS_INT N, const double start, double *X, const CBLAS_INT strideX );
 ```
 
 #### stdlib_strided_dunitspace_ndarray( N, start, \*X, strideX, offsetX )
@@ -208,7 +208,7 @@ The function accepts the following arguments:
 -   **offsetX**: `[in] CBLAS_INT` starting index.
 
 ```c
-void API_SUFFIX(stdlib_strided_dunitspace_ndarray)( const CBLAS_INT N, const double start, double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+void stdlib_strided_dunitspace_ndarray( const CBLAS_INT N, const double start, double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 ```
 
 </section>

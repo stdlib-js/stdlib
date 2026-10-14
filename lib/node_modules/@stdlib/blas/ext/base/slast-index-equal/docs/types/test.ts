@@ -104,11 +104,11 @@ import slastIndexEqual = require( './index' );
 	var y = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 
 	slastIndexEqual(); // $ExpectError
-	slastIndexEqual( 3 ); // $ExpectError
-	slastIndexEqual( 3, x ); // $ExpectError
-	slastIndexEqual( 3, x, 1 ); // $ExpectError
-	slastIndexEqual( 3, x, 1, y ); // $ExpectError
-	slastIndexEqual( 3, x, 1, y, 1, {} ); // $ExpectError
+	slastIndexEqual( x.length ); // $ExpectError
+	slastIndexEqual( x.length, x ); // $ExpectError
+	slastIndexEqual( x.length, x, 1 ); // $ExpectError
+	slastIndexEqual( x.length, x, 1, y ); // $ExpectError
+	slastIndexEqual( x.length, x, 1, y, 1, {} ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a number...
@@ -224,11 +224,11 @@ import slastIndexEqual = require( './index' );
 	var y = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 
 	slastIndexEqual.ndarray(); // $ExpectError
-	slastIndexEqual.ndarray( 3 ); // $ExpectError
-	slastIndexEqual.ndarray( 3, x ); // $ExpectError
-	slastIndexEqual.ndarray( 3, x, 1 ); // $ExpectError
-	slastIndexEqual.ndarray( 3, x, 1, 0 ); // $ExpectError
-	slastIndexEqual.ndarray( 3, x, 1, 0, y ); // $ExpectError
-	slastIndexEqual.ndarray( 3, x, 1, 0, y, 1 ); // $ExpectError
-	slastIndexEqual.ndarray( 3, x, 1, 0, y, 1, 0, {} ); // $ExpectError
+	slastIndexEqual.ndarray( x.length ); // $ExpectError
+	slastIndexEqual.ndarray( x.length, x ); // $ExpectError
+	slastIndexEqual.ndarray( x.length, x, 1 ); // $ExpectError
+	slastIndexEqual.ndarray( x.length, x, 1, 0 ); // $ExpectError
+	slastIndexEqual.ndarray( x.length, x, 1, 0, y ); // $ExpectError
+	slastIndexEqual.ndarray( x.length, x, 1, 0, y, 1 ); // $ExpectError
+	slastIndexEqual.ndarray( x.length, x, 1, 0, y, 1, 0, {} ); // $ExpectError
 }
