@@ -25,6 +25,7 @@ import ones = require( './index' );
 {
 	ones( 'float64', [ 2, 2 ], 'row-major' ); // $ExpectType float64ndarray
 	ones( 'float32', [ 2, 2 ], 'row-major' ); // $ExpectType float32ndarray
+	ones( 'float16', [ 2, 2 ], 'row-major' ); // $ExpectType float16ndarray
 	ones( 'complex128', [ 2, 2 ], 'row-major' ); // $ExpectType complex128ndarray
 	ones( 'complex64', [ 2, 2 ], 'row-major' ); // $ExpectType complex64ndarray
 	ones( 'int32', [ 2, 2 ], 'row-major' ); // $ExpectType int32ndarray
@@ -38,6 +39,7 @@ import ones = require( './index' );
 
 	ones( 'float64', [ 2, 2 ], 'column-major' ); // $ExpectType float64ndarray
 	ones( 'float32', [ 2, 2 ], 'column-major' ); // $ExpectType float32ndarray
+	ones( 'float16', [ 2, 2 ], 'column-major' ); // $ExpectType float16ndarray
 	ones( 'complex128', [ 2, 2 ], 'column-major' ); // $ExpectType complex128ndarray
 	ones( 'complex64', [ 2, 2 ], 'column-major' ); // $ExpectType complex64ndarray
 	ones( 'int32', [ 2, 2 ], 'column-major' ); // $ExpectType int32ndarray

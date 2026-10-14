@@ -1,0 +1,56 @@
+
+{{alias}}( arrays, clbk[, thisArg] )
+    Returns the index of the first element in a one-dimensional ndarray which
+    passes a test implemented by a predicate function within a specified range.
+
+    If a specified starting search index is negative, the function resolves the
+    starting search index by counting backward from the last element (where `-1`
+    refers to the last element).
+
+    If a specified ending search index is negative, the function resolves the
+    ending search index by counting backward from the last element (where `-1`
+    refers to the last element).
+
+    If provided an empty ndarray or no element passes a test implemented by a
+    predicate function, the function returns `-1`.
+
+    The callback function is provided three arguments:
+
+    - value: current array element.
+    - index: current array index.
+    - array: the input ndarray.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a zero-dimensional ndarray containing the index from which to begin
+        searching.
+        - a zero-dimensional ndarray containing the index at which to stop
+        searching (exclusive).
+
+    clbk: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    out: integer
+        Index.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/vector/ctor}}( [ -2.0, 1.0, 3.0, 4.0 ], 'generic' );
+    > var i = {{alias:@stdlib/ndarray/from-scalar}}( 1, { 'dtype': 'generic' } );
+    > var j = {{alias:@stdlib/ndarray/from-scalar}}( 4, { 'dtype': 'generic' } );
+    > function f ( v ) { return v % 2.0 === 0.0; };
+    > {{alias}}( [ x, i, j ], f )
+    3
+
+    See Also
+    --------
+

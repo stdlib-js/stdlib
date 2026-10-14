@@ -31,7 +31,7 @@ import { ArrayLike } from '@stdlib/types/array';
 type accumulator = ( x?: number ) => ArrayLike<number> | null;
 
 /**
-* Returns an accumulator function which incrementally computes a moving arithmetic mean and corrected sample standard deviation, ignoring NaN values.
+* Returns an accumulator function which incrementally computes a moving arithmetic mean and corrected sample standard deviation, ignoring `NaN` values.
 *
 * ## Notes
 *
@@ -54,7 +54,7 @@ type accumulator = ( x?: number ) => ArrayLike<number> | null;
 declare function incrnanmmeanstdev( out: ArrayLike<number>, window: number ): accumulator;
 
 /**
-* Returns an accumulator function which incrementally computes a moving arithmetic mean and corrected sample standard deviation, ignoring NaN values.
+* Returns an accumulator function which incrementally computes a moving arithmetic mean and corrected sample standard deviation, ignoring `NaN` values.
 *
 * ## Notes
 *

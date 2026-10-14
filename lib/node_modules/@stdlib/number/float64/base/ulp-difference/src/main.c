@@ -51,7 +51,7 @@ static uint64_t monotone_key( const uint64_t word ) {
 *
 * @example
 * double d = stdlib_base_float64_ulp_difference( 0.0 / 0.0, 1.0 );
-* // returns 0.0/0.0
+* // returns NaN
 */
 double stdlib_base_float64_ulp_difference( const double x, const double y ) {
 	stdlib_base_float64_ulp_difference_word_t ux;
