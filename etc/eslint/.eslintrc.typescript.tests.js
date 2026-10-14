@@ -60,11 +60,18 @@ eslint.rules[ '@typescript-eslint/no-use-before-define' ] = 'off';
 eslint.rules[ 'brace-style' ] = 'off';
 
 /**
-* Disable the rule which requires that throws statements are documented in JSDoc.
+* Disable the rule which requires JSDoc comments for functions.
 *
 * @private
 */
-eslint.rules[ 'jsdoc/require-throws' ] = 'off';
+eslint.rules[ 'jsdoc/require-jsdoc' ] = 'off';
+
+/**
+* Disable the rule which requires that function parameters are documented in JSDoc.
+*
+* @private
+*/
+eslint.rules[ 'jsdoc/require-param' ] = 'off';
 
 /**
 * Disable the rule which requires that return statements are documented in JSDoc.
@@ -74,11 +81,11 @@ eslint.rules[ 'jsdoc/require-throws' ] = 'off';
 eslint.rules[ 'jsdoc/require-returns' ] = 'off';
 
 /**
-* Disable the rule which requires that function parameters are documented in JSDoc.
+* Disable the rule which requires that throws statements are documented in JSDoc.
 *
 * @private
 */
-eslint.rules[ 'jsdoc/require-param' ] = 'off';
+eslint.rules[ 'jsdoc/require-throws' ] = 'off';
 
 
 // EXPORTS //

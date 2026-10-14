@@ -42,25 +42,38 @@ Returns the index of the first truthy element in a one-dimensional ndarray.
 
 ```javascript
 var vector = require( '@stdlib/ndarray/vector/ctor' );
+var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 
 var x = vector( [ 0.0, 0.0, 3.0, 0.0, 4.0 ], 'generic' );
 
-var idx = gindexOfTruthy( [ x ] );
+var fromIndex = scalar2ndarray( 0, {
+    'dtype': 'generic'
+});
+
+var idx = gindexOfTruthy( [ x, fromIndex ] );
 // returns 2
 ```
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing a one-dimensional input ndarray.
+-   **arrays**: array-like object containing the following ndarrays:
+
+    -   a one-dimensional input ndarray.
+    -   a zero-dimensional ndarray containing the index from which to begin searching.
 
 If the function is unable to find a truthy element, the function returns `-1`.
 
 ```javascript
 var vector = require( '@stdlib/ndarray/vector/ctor' );
+var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 
 var x = vector( [ 0.0, 0.0, 0.0, 0.0 ], 'generic' );
 
-var idx = gindexOfTruthy( [ x ] );
+var fromIndex = scalar2ndarray( 0, {
+    'dtype': 'generic'
+});
+
+var idx = gindexOfTruthy( [ x, fromIndex ] );
 // returns -1
 ```
 
@@ -73,6 +86,7 @@ var idx = gindexOfTruthy( [ x ] );
 ## Notes
 
 -   The function treats `NaN` values as falsy.
+-   If a specified starting search index is negative, the function resolves the starting search index by counting backward from the last element (where `-1` refers to the last element).
 
 </section>
 
@@ -86,6 +100,7 @@ var idx = gindexOfTruthy( [ x ] );
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/discrete-uniform' );
+var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var gindexOfTruthy = require( '@stdlib/blas/ext/base/ndarray/gindex-of-truthy' );
 
@@ -96,7 +111,11 @@ var opts = {
 var x = discreteUniform( [ 10 ], 0, 5, opts );
 console.log( ndarray2array( x ) );
 
-var idx = gindexOfTruthy( [ x ] );
+var fromIndex = scalar2ndarray( 0, {
+    'dtype': 'generic'
+});
+
+var idx = gindexOfTruthy( [ x, fromIndex ] );
 console.log( idx );
 ```
 

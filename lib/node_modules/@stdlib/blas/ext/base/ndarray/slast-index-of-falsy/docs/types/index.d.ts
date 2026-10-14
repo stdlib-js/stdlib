@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { float32ndarray } from '@stdlib/types/ndarray';
+import { float32ndarray, typedndarray } from '@stdlib/types/ndarray';
 
 /**
 * Returns the index of the last falsy element in a one-dimensional single-precision floating-point ndarray.
@@ -30,19 +30,25 @@ import { float32ndarray } from '@stdlib/types/ndarray';
 * -   The function expects the following ndarrays:
 *
 *     -   a one-dimensional input ndarray.
+*     -   a zero-dimensional ndarray containing the index from which to begin searching.
 *
 * @param arrays - array-like object containing ndarrays
 * @returns index
 *
 * @example
 * var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
+* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 *
 * var x = new Float32Vector( [ 1.0, 0.0, 3.0, 0.0 ] );
 *
-* var v = slastIndexOfFalsy( [ x ] );
+* var fromIndex = scalar2ndarray( 3, {
+*     'dtype': 'generic'
+* });
+*
+* var v = slastIndexOfFalsy( [ x, fromIndex ] );
 * // returns 3
 */
-declare function slastIndexOfFalsy( arrays: [ float32ndarray ] ): number;
+declare function slastIndexOfFalsy( arrays: [ float32ndarray, typedndarray<number> ] ): number;
 
 
 // EXPORTS //

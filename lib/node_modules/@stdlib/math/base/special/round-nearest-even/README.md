@@ -22,6 +22,12 @@ limitations under the License.
 
 > Round a double-precision floating-point number to the nearest integer value with ties rounding to the nearest even integer.
 
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

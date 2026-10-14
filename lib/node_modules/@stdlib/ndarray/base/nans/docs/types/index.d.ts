@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Shape, Order, typedndarray, genericndarray, float64ndarray, float32ndarray, complex128ndarray, complex64ndarray, FloatingPointAndGenericDataType, GenericDataType, Float64DataType, Float32DataType, Complex128DataType, Complex64DataType } from '@stdlib/types/ndarray';
+import { Shape, Order, typedndarray, genericndarray, float64ndarray, float32ndarray, float16ndarray, complex128ndarray, complex64ndarray, FloatingPointAndGenericDataType, GenericDataType, Float64DataType, Float32DataType, Float16DataType, Complex128DataType, Complex64DataType } from '@stdlib/types/ndarray';
 
 /**
 * Creates a NaN-filled ndarray having a specified shape and data type.
@@ -59,6 +59,25 @@ declare function nans( dtype: Float64DataType, shape: Shape, order: Order ): flo
 * // returns 'float32'
 */
 declare function nans( dtype: Float32DataType, shape: Shape, order: Order ): float32ndarray;
+
+/**
+* Creates a NaN-filled ndarray having a specified shape and data type.
+*
+* @param dtype - underlying data type
+* @param shape - array shape
+* @param order - specifies whether an array is row-major (C-style) or column-major (Fortran-style)
+* @returns NaN-filled ndarray
+*
+* @example
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
+* var arr = nans( 'float16', [ 2, 2 ], 'row-major' );
+* // returns <ndarray>[ [ NaN, NaN ], [ NaN, NaN ] ]
+*
+* var dt = String( getDType( arr ) );
+* // returns 'float16'
+*/
+declare function nans( dtype: Float16DataType, shape: Shape, order: Order ): float16ndarray;
 
 /**
 * Creates a NaN-filled ndarray having a specified shape and data type.

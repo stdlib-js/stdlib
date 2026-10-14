@@ -184,7 +184,7 @@ The function accepts the following arguments:
 -   **strideX**: `[in] CBLAS_INT` stride length.
 
 ```c
-void API_SUFFIX(stdlib_strided_szero_to)( const CBLAS_INT N, float *X, const CBLAS_INT strideX );
+void stdlib_strided_szero_to( const CBLAS_INT N, float *X, const CBLAS_INT strideX );
 ```
 
 #### stdlib_strided_szero_to_ndarray( N, \*X, strideX, offsetX )
@@ -205,7 +205,7 @@ The function accepts the following arguments:
 -   **offsetX**: `[in] CBLAS_INT` starting index.
 
 ```c
-void API_SUFFIX(stdlib_strided_szero_to_ndarray)( const CBLAS_INT N, float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+void stdlib_strided_szero_to_ndarray( const CBLAS_INT N, float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 ```
 
 </section>

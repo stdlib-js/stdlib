@@ -31,6 +31,7 @@ import { typedndarray } from '@stdlib/types/ndarray';
 *
 *     -   first one-dimensional input ndarray.
 *     -   second one-dimensional input ndarray.
+*     -   a zero-dimensional ndarray containing the index from which to begin searching.
 *
 * -   When comparing elements, the function checks for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct, and `-0` and `+0` are considered the same.
 *
@@ -39,14 +40,19 @@ import { typedndarray } from '@stdlib/types/ndarray';
 *
 * @example
 * var vector = require( '@stdlib/ndarray/vector/ctor' );
+* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 *
 * var x = vector( [ 1.0, 2.0, 3.0, 4.0 ], 'generic' );
 * var y = vector( [ 0.0, 0.0, 3.0, 0.0 ], 'generic' );
 *
-* var idx = gfirstIndexEqual( [ x, y ] );
+* var fromIndex = scalar2ndarray( 0, {
+*     'dtype': 'generic'
+* });
+*
+* var idx = gfirstIndexEqual( [ x, y, fromIndex ] );
 * // returns 2
 */
-declare function gfirstIndexEqual( arrays: [ typedndarray<unknown>, typedndarray<unknown> ] ): number;
+declare function gfirstIndexEqual( arrays: [ typedndarray<unknown>, typedndarray<unknown>, typedndarray<number> ] ): number;
 
 
 // EXPORTS //

@@ -2,6 +2,10 @@
 {{alias}}( arrays )
     Returns the index of the first falsy element in a one-dimensional ndarray.
 
+    If a specified starting search index is negative, the function resolves the
+    starting search index by counting backward from the last element (where `-1`
+    refers to the last element).
+
     If unable to find a falsy element, the function returns `-1`.
 
     Parameters
@@ -10,6 +14,8 @@
         Array-like object containing the following ndarrays:
 
         - a one-dimensional input ndarray.
+        - a zero-dimensional ndarray containing the index from which to begin
+        searching.
 
     Returns
     -------
@@ -19,7 +25,8 @@
     Examples
     --------
     > var x = {{alias:@stdlib/ndarray/vector/ctor}}( [ 1.0, 0.0, 3.0 ], 'generic' );
-    > {{alias}}( [ x ] )
+    > var i = {{alias:@stdlib/ndarray/from-scalar}}( 0, { 'dtype': 'generic' } );
+    > {{alias}}( [ x, i ] )
     1
 
     See Also
