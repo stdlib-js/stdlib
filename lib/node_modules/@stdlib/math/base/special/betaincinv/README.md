@@ -53,7 +53,7 @@ var betaincinv = require( '@stdlib/math/base/special/betaincinv' );
 
 #### betaincinv( p, a, b\[, upper] )
 
-Inverts the regularized [incomplete beta function][incomplete-beta-function]. Contrary to the more commonly used definition, in this implementation the first parameter is the probability `p` and the second and third parameter are `a` and `b`. By default, the function inverts the _lower_ regularized [incomplete beta function][incomplete-beta-function]. To invert the _upper_ function instead, set the `upper` argument to `true`.
+Inverts the regularized [incomplete beta function][incomplete-beta-function].
 
 ```javascript
 var y = betaincinv( 0.2, 3.0, 3.0 );
@@ -71,6 +71,8 @@ y = betaincinv( 0.4, 1.0, 6.0 );
 y = betaincinv( 0.8, 1.0, 6.0 );
 // returns ~0.235
 ```
+
+Contrary to the more commonly used definition, in this implementation the first parameter is the probability `p` and the second and third parameter are `a` and `b`. By default, the function inverts the _lower_ regularized [incomplete beta function][incomplete-beta-function]. To invert the _upper_ function instead, set the `upper` argument to `true`.
 
 If provided `NaN` as any argument, the function returns `NaN`.
 
