@@ -32,6 +32,11 @@ This BLAS extension implements the operation
 \mathbf{w} = \mathbf{x} \odot \mathbf{y}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\mathbf{w} = \mathbf{x} \odot \mathbf{y}" data-equation="eq:wxmy">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@c7b6aaf35abd04da906352ee7c44271571f4c77c/lib/node_modules/@stdlib/blas/ext/base/ndarray/swxmy/docs/img/equation_wxmy.svg" alt="Equation for wxmy operation.">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 where `⊙` denotes the [Hadamard product][hadamard-product].
