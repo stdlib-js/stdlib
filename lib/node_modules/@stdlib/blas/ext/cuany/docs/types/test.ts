@@ -1,0 +1,223 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2026 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+/* eslint-disable space-in-parens */
+
+/// <reference types="@stdlib/types"/>
+
+import empty = require( '@stdlib/ndarray/empty' );
+import cuany = require( './index' );
+
+
+// TESTS //
+
+// The function returns an ndarray...
+{
+	const x = empty( [ 2, 2 ], {
+		'dtype': 'float64'
+	});
+
+	cuany( x ); // $ExpectType OutputArray<boolean>
+	cuany( x, {} ); // $ExpectType OutputArray<boolean>
+}
+
+// The compiler throws an error if the function is provided a first argument which is not an ndarray...
+{
+	cuany( '5' ); // $ExpectError
+	cuany( 5 ); // $ExpectError
+	cuany( true ); // $ExpectError
+	cuany( false ); // $ExpectError
+	cuany( null ); // $ExpectError
+	cuany( void 0 ); // $ExpectError
+	cuany( {} ); // $ExpectError
+	cuany( ( x: number ): number => x ); // $ExpectError
+
+	cuany( '5', {} ); // $ExpectError
+	cuany( 5, {} ); // $ExpectError
+	cuany( true, {} ); // $ExpectError
+	cuany( false, {} ); // $ExpectError
+	cuany( null, {} ); // $ExpectError
+	cuany( void 0, {} ); // $ExpectError
+	cuany( {}, {} ); // $ExpectError
+	cuany( ( x: number ): number => x, {} ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a second argument which is not an object...
+{
+	const x = empty( [ 2, 2 ], {
+		'dtype': 'float64'
+	});
+
+	cuany( x, '5' ); // $ExpectError
+	cuany( x, true ); // $ExpectError
+	cuany( x, false ); // $ExpectError
+	cuany( x, null ); // $ExpectError
+	cuany( x, [] ); // $ExpectError
+	cuany( x, ( x: number ): number => x ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided an invalid `dtype` option...
+{
+	const x = empty( [ 2, 2 ], {
+		'dtype': 'float64'
+	});
+
+	cuany( x, { 'dtype': '5' } ); // $ExpectError
+	cuany( x, { 'dtype': 5 } ); // $ExpectError
+	cuany( x, { 'dtype': true } ); // $ExpectError
+	cuany( x, { 'dtype': false } ); // $ExpectError
+	cuany( x, { 'dtype': null } ); // $ExpectError
+	cuany( x, { 'dtype': [] } ); // $ExpectError
+	cuany( x, { 'dtype': {} } ); // $ExpectError
+	cuany( x, { 'dtype': ( x: number ): number => x } ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided an invalid `dims` option...
+{
+	const x = empty( [ 2, 2 ], {
+		'dtype': 'float64'
+	});
+
+	cuany( x, { 'dims': '5' } ); // $ExpectError
+	cuany( x, { 'dims': 5 } ); // $ExpectError
+	cuany( x, { 'dims': true } ); // $ExpectError
+	cuany( x, { 'dims': false } ); // $ExpectError
+	cuany( x, { 'dims': null } ); // $ExpectError
+	cuany( x, { 'dims': {} } ); // $ExpectError
+	cuany( x, { 'dims': ( x: number ): number => x } ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided an unsupported number of arguments...
+{
+	const x = empty( [ 2, 2 ], {
+		'dtype': 'float64'
+	});
+
+	cuany(); // $ExpectError
+	cuany( x, {}, {} ); // $ExpectError
+}
+
+// Attached to the function is an `assign` method which returns an ndarray...
+{
+	const x = empty( [ 2, 2 ], {
+		'dtype': 'float64'
+	});
+	const out = empty( [ 2, 2 ], {
+		'dtype': 'bool'
+	});
+
+	cuany.assign( x, out ); // $ExpectType boolndarray
+	cuany.assign( x, out, {} ); // $ExpectType boolndarray
+}
+
+// The compiler throws an error if the `assign` method is provided a first argument which is not an ndarray...
+{
+	const out = empty( [ 2, 2 ], {
+		'dtype': 'bool'
+	});
+
+	cuany.assign( '5', out ); // $ExpectError
+	cuany.assign( 5, out ); // $ExpectError
+	cuany.assign( true, out ); // $ExpectError
+	cuany.assign( false, out ); // $ExpectError
+	cuany.assign( null, out ); // $ExpectError
+	cuany.assign( void 0, out ); // $ExpectError
+	cuany.assign( {}, out ); // $ExpectError
+	cuany.assign( ( x: number ): number => x, out ); // $ExpectError
+
+	cuany.assign( '5', out, {} ); // $ExpectError
+	cuany.assign( 5, out, {} ); // $ExpectError
+	cuany.assign( true, out, {} ); // $ExpectError
+	cuany.assign( false, out, {} ); // $ExpectError
+	cuany.assign( null, out, {} ); // $ExpectError
+	cuany.assign( void 0, out, {} ); // $ExpectError
+	cuany.assign( {}, out, {} ); // $ExpectError
+	cuany.assign( ( x: number ): number => x, out, {} ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided a second argument which is not an ndarray...
+{
+	const x = empty( [ 2, 2 ], {
+		'dtype': 'float64'
+	});
+
+	cuany.assign( x, '5' ); // $ExpectError
+	cuany.assign( x, 5 ); // $ExpectError
+	cuany.assign( x, true ); // $ExpectError
+	cuany.assign( x, false ); // $ExpectError
+	cuany.assign( x, null ); // $ExpectError
+	cuany.assign( x, void 0 ); // $ExpectError
+	cuany.assign( x, ( x: number ): number => x ); // $ExpectError
+
+	cuany.assign( x, '5', {} ); // $ExpectError
+	cuany.assign( x, 5, {} ); // $ExpectError
+	cuany.assign( x, true, {} ); // $ExpectError
+	cuany.assign( x, false, {} ); // $ExpectError
+	cuany.assign( x, null, {} ); // $ExpectError
+	cuany.assign( x, void 0, {} ); // $ExpectError
+	cuany.assign( x, ( x: number ): number => x, {} ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided a third argument which is not an object...
+{
+	const x = empty( [ 2, 2 ], {
+		'dtype': 'float64'
+	});
+	const out = empty( [ 2, 2 ], {
+		'dtype': 'bool'
+	});
+
+	cuany.assign( x, out, '5' ); // $ExpectError
+	cuany.assign( x, out, true ); // $ExpectError
+	cuany.assign( x, out, false ); // $ExpectError
+	cuany.assign( x, out, null ); // $ExpectError
+	cuany.assign( x, out, [] ); // $ExpectError
+	cuany.assign( x, out, ( x: number ): number => x ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided an invalid `dims` option...
+{
+	const x = empty( [ 2, 2 ], {
+		'dtype': 'float64'
+	});
+	const out = empty( [ 2, 2 ], {
+		'dtype': 'bool'
+	});
+
+	cuany.assign( x, out, { 'dims': '5' } ); // $ExpectError
+	cuany.assign( x, out, { 'dims': 5 } ); // $ExpectError
+	cuany.assign( x, out, { 'dims': true } ); // $ExpectError
+	cuany.assign( x, out, { 'dims': false } ); // $ExpectError
+	cuany.assign( x, out, { 'dims': null } ); // $ExpectError
+	cuany.assign( x, out, { 'dims': {} } ); // $ExpectError
+	cuany.assign( x, out, { 'dims': ( x: number ): number => x } ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided an unsupported number of arguments...
+{
+	const x = empty( [ 2, 2 ], {
+		'dtype': 'float64'
+	});
+	const out = empty( [ 2, 2 ], {
+		'dtype': 'bool'
+	});
+
+	cuany.assign(); // $ExpectError
+	cuany.assign( x ); // $ExpectError
+	cuany.assign( x, out, {}, {} ); // $ExpectError
+}

@@ -1,0 +1,33 @@
+
+{{alias}}( arrays )
+    Tests whether a one-dimensional ndarray contains at least `k` truthy
+    elements.
+
+    If provided an empty one-dimensional ndarray, the function returns `false`.
+
+    The function explicitly treats `NaN` values as falsy.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a zero-dimensional ndarray specifying the minimum number of truthy
+        elements.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether the input ndarray contains at least `k`
+        truthy elements.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/vector/ctor}}( [ 0.0, 0.0, 1.0, 2.0 ], 'generic' );
+    > var k = {{alias:@stdlib/ndarray/from-scalar}}( 2, { 'dtype': 'generic' } );
+    > {{alias}}( [ x, k ] )
+    true
+
+    See Also
+    --------

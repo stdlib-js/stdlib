@@ -107,6 +107,7 @@ def main():
     dtypes = [
         "float64",
         "float32",
+        "float16",
         "int32",
         "int16",
         "int8",
@@ -120,8 +121,7 @@ def main():
     n = 1
     while n < 1e7:
         n *= 10
-        for i in range(0, len(dtypes)):
-            dtype = dtypes[i]
+        for dtype in dtypes:
             name = ":len="+str(n)+",dtype="+dtype
             setup = "import numpy as np;"
             setup += "A = np.ones([1,"+str(n)+"], dtype='float64');"

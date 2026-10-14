@@ -71,7 +71,7 @@ declare function dtype( value: Complex64 ): 'complex64';
 * var dt = dtype( new Complex64( 1.0, 2.0 ) );
 * // returns 'complex64'
 *
-* var dt = dtype( 'beep' );
+* dt = dtype( 'beep' );
 * // returns null
 */
 declare function dtype( value: any ): DataType | null;

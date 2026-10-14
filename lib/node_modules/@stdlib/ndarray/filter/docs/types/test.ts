@@ -41,6 +41,8 @@ function predicate( x: any ): boolean {
 	filter( zeros( 'float64', sh, ord ), predicate, {} ); // $ExpectType float64ndarray
 	filter( zeros( 'float32', sh, ord ), predicate ); // $ExpectType float32ndarray
 	filter( zeros( 'float32', sh, ord ), predicate, {} ); // $ExpectType float32ndarray
+	filter( zeros( 'float16', sh, ord ), predicate ); // $ExpectType float16ndarray
+	filter( zeros( 'float16', sh, ord ), predicate, {} ); // $ExpectType float16ndarray
 	filter( zeros( 'complex64', sh, ord ), predicate ); // $ExpectType complex64ndarray
 	filter( zeros( 'complex64', sh, ord ), predicate, {} ); // $ExpectType complex64ndarray
 	filter( zeros( 'complex128', sh, ord ), predicate ); // $ExpectType complex128ndarray
@@ -69,6 +71,8 @@ function predicate( x: any ): boolean {
 	filter( zeros( 'generic', sh, ord ), { 'dtype': 'float64' }, predicate, {} ); // $ExpectType float64ndarray
 	filter( zeros( 'generic', sh, ord ), { 'dtype': 'float32' }, predicate ); // $ExpectType float32ndarray
 	filter( zeros( 'generic', sh, ord ), { 'dtype': 'float32' }, predicate, {} ); // $ExpectType float32ndarray
+	filter( zeros( 'generic', sh, ord ), { 'dtype': 'float16' }, predicate ); // $ExpectType float16ndarray
+	filter( zeros( 'generic', sh, ord ), { 'dtype': 'float16' }, predicate, {} ); // $ExpectType float16ndarray
 	filter( zeros( 'generic', sh, ord ), { 'dtype': 'complex64' }, predicate ); // $ExpectType complex64ndarray
 	filter( zeros( 'generic', sh, ord ), { 'dtype': 'complex64' }, predicate, {} ); // $ExpectType complex64ndarray
 	filter( zeros( 'generic', sh, ord ), { 'dtype': 'complex128' }, predicate ); // $ExpectType complex128ndarray
@@ -97,6 +101,8 @@ function predicate( x: any ): boolean {
 	filter( zeros( 'float64', sh, ord ), { 'order': ord }, predicate, {} ); // $ExpectType float64ndarray
 	filter( zeros( 'float32', sh, ord ), { 'order': ord }, predicate ); // $ExpectType float32ndarray
 	filter( zeros( 'float32', sh, ord ), { 'order': ord }, predicate, {} ); // $ExpectType float32ndarray
+	filter( zeros( 'float16', sh, ord ), { 'order': ord }, predicate ); // $ExpectType float16ndarray
+	filter( zeros( 'float16', sh, ord ), { 'order': ord }, predicate, {} ); // $ExpectType float16ndarray
 	filter( zeros( 'complex64', sh, ord ), { 'order': ord }, predicate ); // $ExpectType complex64ndarray
 	filter( zeros( 'complex64', sh, ord ), { 'order': ord }, predicate, {} ); // $ExpectType complex64ndarray
 	filter( zeros( 'complex128', sh, ord ), { 'order': ord }, predicate ); // $ExpectType complex128ndarray

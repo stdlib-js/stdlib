@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection, Complex64Array, Complex128Array, AccessorArrayLike } from '@stdlib/types/array';
+import { Collection, Complex64Array, Complex128Array, AccessorArrayLike, Float16Array } from '@stdlib/types/array';
 import { Complex64, Complex128, ComplexLike } from '@stdlib/types/complex';
 
 /**
@@ -40,6 +40,15 @@ type GetFloat64 = ( arr: Float64Array, idx: number ) => number | void;
 * @returns element value
 */
 type GetFloat32 = ( arr: Float32Array, idx: number ) => number | void;
+
+/**
+* Returns an element from a `Float16Array`.
+*
+* @param arr - input array
+* @param idx - element index
+* @returns element value
+*/
+type GetFloat16 = ( arr: Float16Array, idx: number ) => number | void;
 
 /**
 * Returns an element from an `Int32Array`.
@@ -166,6 +175,15 @@ type SetFloat64 = ( arr: Float64Array, idx: number, value: number ) => void;
 * @param value - value to set
 */
 type SetFloat32 = ( arr: Float32Array, idx: number, value: number ) => void;
+
+/**
+* Sets an element in a `Float16Array`.
+*
+* @param arr - input array
+* @param idx - element index
+* @param value - value to set
+*/
+type SetFloat16 = ( arr: Float16Array, idx: number, value: number ) => void;
 
 /**
 * Sets an element in an `Int32Array`.
@@ -303,6 +321,21 @@ interface Float32AccessorObject {
 	* Two-element array whose first element is an accessor for retrieving an array element and whose second element is an accessor for setting an array element.
 	*/
 	accessors: [ GetFloat32, SetFloat32 ];
+}
+
+/**
+* Interface describing the output object for a `Float16Array`.
+*/
+interface Float16AccessorObject {
+	/**
+	* Boolean indicating whether the provided array-like object supports the get/set protocol (i.e., uses accessors for getting and setting elements).
+	*/
+	accessorProtocol: false;
+
+	/**
+	* Two-element array whose first element is an accessor for retrieving an array element and whose second element is an accessor for setting an array element.
+	*/
+	accessors: [ GetFloat16, SetFloat16 ];
 }
 
 /**
@@ -540,6 +573,34 @@ declare function accessors( x: Float64Array ): Float64AccessorObject;
 * // returns 3
 */
 declare function accessors( x: Float32Array ): Float32AccessorObject;
+
+/**
+* Returns element accessors for a provided `Float16Array`.
+*
+* ## Notes
+*
+* -   The intent of this function is to provide a minimal abstraction over how elements are accessed when operating on indexed (i.e., array-like objects supporting element access via integer indices using bracket `[]` syntax) and accessor (i.e., array-like objects supporting the get/set protocol in which explicit `get` and `set` methods are used for element access) array-like objects.
+*
+* @param x - input array
+* @returns object containing accessor data
+*
+* @example
+* var Float16Array = require( '@stdlib/array/float16' );
+*
+* var x = new Float16Array( [ 1, 2, 3, 4 ] );
+* var obj = accessors( x );
+* // returns {...}
+*
+* var bool = obj.accessorProtocol;
+* // returns false
+*
+* var fcns = obj.accessors;
+* // returns [ <Function>, <Function> ]
+*
+* var v = fcns[ 0 ]( x, 2 );
+* // returns 3
+*/
+declare function accessors( x: Float16Array ): Float16AccessorObject;
 
 /**
 * Returns element accessors for a provided `Int32Array`.
