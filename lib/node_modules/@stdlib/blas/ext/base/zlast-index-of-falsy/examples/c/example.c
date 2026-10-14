@@ -30,7 +30,7 @@ int main( void ) {
 	// Specify a stride:
 	const int strideX = 1;
 
-	// Find the index of the last falsy element:
+	// Perform a search:
 	CBLAS_INT idx = stdlib_strided_zlast_index_of_falsy( N, (stdlib_complex128_t *)x, strideX );
 
 	// Print the result:

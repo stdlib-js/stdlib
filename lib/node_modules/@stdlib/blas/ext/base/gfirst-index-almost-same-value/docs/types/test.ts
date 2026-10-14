@@ -121,12 +121,12 @@ import gfirstIndexAlmostSameValue = require( './index' );
 	const y = [ 1.0, 2.0, 3.0 ];
 
 	gfirstIndexAlmostSameValue(); // $ExpectError
-	gfirstIndexAlmostSameValue( 3 ); // $ExpectError
-	gfirstIndexAlmostSameValue( 3, 1 ); // $ExpectError
-	gfirstIndexAlmostSameValue( 3, 1, x ); // $ExpectError
-	gfirstIndexAlmostSameValue( 3, 1, x, 1 ); // $ExpectError
-	gfirstIndexAlmostSameValue( 3, 1, x, 1, y ); // $ExpectError
-	gfirstIndexAlmostSameValue( 3, 1, x, 1, y, 1, {} ); // $ExpectError
+	gfirstIndexAlmostSameValue( x.length ); // $ExpectError
+	gfirstIndexAlmostSameValue( x.length, 1 ); // $ExpectError
+	gfirstIndexAlmostSameValue( x.length, 1, x ); // $ExpectError
+	gfirstIndexAlmostSameValue( x.length, 1, x, 1 ); // $ExpectError
+	gfirstIndexAlmostSameValue( x.length, 1, x, 1, y ); // $ExpectError
+	gfirstIndexAlmostSameValue( x.length, 1, x, 1, y, 1, {} ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a number...
@@ -258,12 +258,12 @@ import gfirstIndexAlmostSameValue = require( './index' );
 	const y = [ 1.0, 2.0, 3.0 ];
 
 	gfirstIndexAlmostSameValue.ndarray(); // $ExpectError
-	gfirstIndexAlmostSameValue.ndarray( 3 ); // $ExpectError
-	gfirstIndexAlmostSameValue.ndarray( 3, 1 ); // $ExpectError
-	gfirstIndexAlmostSameValue.ndarray( 3, 1, x ); // $ExpectError
-	gfirstIndexAlmostSameValue.ndarray( 3, 1, x, 1 ); // $ExpectError
-	gfirstIndexAlmostSameValue.ndarray( 3, 1, x, 1, 0 ); // $ExpectError
-	gfirstIndexAlmostSameValue.ndarray( 3, 1, x, 1, 0, y ); // $ExpectError
-	gfirstIndexAlmostSameValue.ndarray( 3, 1, x, 1, 0, y, 1 ); // $ExpectError
-	gfirstIndexAlmostSameValue.ndarray( 3, 1, x, 1, 0, y, 1, 0, {} ); // $ExpectError
+	gfirstIndexAlmostSameValue.ndarray( x.length ); // $ExpectError
+	gfirstIndexAlmostSameValue.ndarray( x.length, 1 ); // $ExpectError
+	gfirstIndexAlmostSameValue.ndarray( x.length, 1, x ); // $ExpectError
+	gfirstIndexAlmostSameValue.ndarray( x.length, 1, x, 1 ); // $ExpectError
+	gfirstIndexAlmostSameValue.ndarray( x.length, 1, x, 1, 0 ); // $ExpectError
+	gfirstIndexAlmostSameValue.ndarray( x.length, 1, x, 1, 0, y ); // $ExpectError
+	gfirstIndexAlmostSameValue.ndarray( x.length, 1, x, 1, 0, y, 1 ); // $ExpectError
+	gfirstIndexAlmostSameValue.ndarray( x.length, 1, x, 1, 0, y, 1, 0, {} ); // $ExpectError
 }

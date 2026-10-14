@@ -183,7 +183,7 @@ import dindexOfRow = require( './index' );
 	dindexOfRow( 'row-major', 2, 2, A, 2, x ); // $ExpectError
 	dindexOfRow( 'row-major', 2, 2, A, 2, x, 1 ); // $ExpectError
 	dindexOfRow( 'row-major', 2, 2, A, 2, x, 1, w ); // $ExpectError
-	dindexOfRow( 'row-major', 2, 2, A, 2, x, 1, w, 1, 0 ); // $ExpectError
+	dindexOfRow( 'row-major', 2, 2, A, 2, x, 1, w, 1, {} ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a number...
@@ -399,5 +399,5 @@ import dindexOfRow = require( './index' );
 	dindexOfRow.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0 ); // $ExpectError
 	dindexOfRow.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0, w ); // $ExpectError
 	dindexOfRow.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0, w, 1 ); // $ExpectError
-	dindexOfRow.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0, w, 1, 0, 0 ); // $ExpectError
+	dindexOfRow.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0, w, 1, 0, {} ); // $ExpectError
 }

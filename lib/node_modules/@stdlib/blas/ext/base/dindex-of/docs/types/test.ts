@@ -37,6 +37,7 @@ import dindexOf = require( './index' );
 	dindexOf( false, 2.0, x, 1 ); // $ExpectError
 	dindexOf( null, 2.0, x, 1 ); // $ExpectError
 	dindexOf( {}, 2.0, x, 1 ); // $ExpectError
+	dindexOf( ( x: number ): number => x, 2.0, x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a number...
@@ -48,6 +49,7 @@ import dindexOf = require( './index' );
 	dindexOf( x.length, false, x, 1 ); // $ExpectError
 	dindexOf( x.length, null, x, 1 ); // $ExpectError
 	dindexOf( x.length, {}, x, 1 ); // $ExpectError
+	dindexOf( x.length, ( x: number ): number => x, x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not a Float64Array...
@@ -57,6 +59,7 @@ import dindexOf = require( './index' );
 	dindexOf( x.length, 1.0, false, 1 ); // $ExpectError
 	dindexOf( x.length, 1.0, null, 1 ); // $ExpectError
 	dindexOf( x.length, 1.0, {}, 1 ); // $ExpectError
+	dindexOf( x.length, 1.0, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fourth argument which is not a number...
@@ -68,6 +71,7 @@ import dindexOf = require( './index' );
 	dindexOf( x.length, 2.0, x, false ); // $ExpectError
 	dindexOf( x.length, 2.0, x, null ); // $ExpectError
 	dindexOf( x.length, 2.0, x, {} ); // $ExpectError
+	dindexOf( x.length, 2.0, x, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -75,7 +79,7 @@ import dindexOf = require( './index' );
 	dindexOf(); // $ExpectError
 	dindexOf( 3, 2.0 ); // $ExpectError
 	dindexOf( 3, 2.0, new Float64Array( [ 1.0, 2.0, 3.0 ] ) ); // $ExpectError
-	dindexOf( 3, 2.0, new Float64Array( [ 1.0, 2.0, 3.0 ] ), 1, 0 ); // $ExpectError
+	dindexOf( 3, 2.0, new Float64Array( [ 1.0, 2.0, 3.0 ] ), 1, {} ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a number...
@@ -94,6 +98,7 @@ import dindexOf = require( './index' );
 	dindexOf.ndarray( false, 2.0, x, 1, 1 ); // $ExpectError
 	dindexOf.ndarray( null, 2.0, x, 1, 1 ); // $ExpectError
 	dindexOf.ndarray( {}, 2.0, x, 1, 1 ); // $ExpectError
+	dindexOf.ndarray( ( x: number ): number => x, 2.0, x, 1, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a second argument which is not a number...
@@ -105,6 +110,7 @@ import dindexOf = require( './index' );
 	dindexOf.ndarray( x.length, false, x, 1, 1 ); // $ExpectError
 	dindexOf.ndarray( x.length, null, x, 1, 1 ); // $ExpectError
 	dindexOf.ndarray( x.length, {}, x, 1, 1 ); // $ExpectError
+	dindexOf.ndarray( x.length, ( x: number ): number => x, x, 1, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a third argument which is not a Float64Array...
@@ -114,6 +120,7 @@ import dindexOf = require( './index' );
 	dindexOf.ndarray( x.length, 1.0, false, 1, 1 ); // $ExpectError
 	dindexOf.ndarray( x.length, 1.0, null, 1, 1 ); // $ExpectError
 	dindexOf.ndarray( x.length, 1.0, {}, 1, 1 ); // $ExpectError
+	dindexOf.ndarray( x.length, 1.0, ( x: number ): number => x, 1, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fourth argument which is not a number...
@@ -125,6 +132,7 @@ import dindexOf = require( './index' );
 	dindexOf.ndarray( x.length, 2.0, x, false, 1 ); // $ExpectError
 	dindexOf.ndarray( x.length, 2.0, x, null, 1 ); // $ExpectError
 	dindexOf.ndarray( x.length, 2.0, x, {}, 1 ); // $ExpectError
+	dindexOf.ndarray( x.length, 2.0, x, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fifth argument which is not a number...
@@ -136,6 +144,7 @@ import dindexOf = require( './index' );
 	dindexOf.ndarray( x.length, 2.0, x, 1, false ); // $ExpectError
 	dindexOf.ndarray( x.length, 2.0, x, 1, null ); // $ExpectError
 	dindexOf.ndarray( x.length, 2.0, x, 1, {} ); // $ExpectError
+	dindexOf.ndarray( x.length, 2.0, x, 1, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided an unsupported number of arguments...
@@ -144,5 +153,5 @@ import dindexOf = require( './index' );
 	dindexOf.ndarray( 3, 2.0 ); // $ExpectError
 	dindexOf.ndarray( 3, 2.0, new Float64Array( [ 1.0, 2.0, 3.0 ] ) ); // $ExpectError
 	dindexOf.ndarray( 3, 2.0, new Float64Array( [ 1.0, 2.0, 3.0 ] ), 1 ); // $ExpectError
-	dindexOf.ndarray( 3, 2.0, new Float64Array( [ 1.0, 2.0, 3.0 ] ), 1, 0, 0 ); // $ExpectError
+	dindexOf.ndarray( 3, 2.0, new Float64Array( [ 1.0, 2.0, 3.0 ] ), 1, 0, {} ); // $ExpectError
 }

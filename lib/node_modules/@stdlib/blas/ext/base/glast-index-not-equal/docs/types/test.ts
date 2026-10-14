@@ -106,11 +106,11 @@ import glastIndexNotEqual = require( './index' );
 	var y = [ 1.0, 2.0, 3.0 ];
 
 	glastIndexNotEqual(); // $ExpectError
-	glastIndexNotEqual( 3 ); // $ExpectError
-	glastIndexNotEqual( 3, x ); // $ExpectError
-	glastIndexNotEqual( 3, x, 1 ); // $ExpectError
-	glastIndexNotEqual( 3, x, 1, y ); // $ExpectError
-	glastIndexNotEqual( 3, x, 1, y, 1, {} ); // $ExpectError
+	glastIndexNotEqual( x.length ); // $ExpectError
+	glastIndexNotEqual( x.length, x ); // $ExpectError
+	glastIndexNotEqual( x.length, x, 1 ); // $ExpectError
+	glastIndexNotEqual( x.length, x, 1, y ); // $ExpectError
+	glastIndexNotEqual( x.length, x, 1, y, 1, {} ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a number...
@@ -227,11 +227,11 @@ import glastIndexNotEqual = require( './index' );
 	var y = [ 1.0, 2.0, 3.0 ];
 
 	glastIndexNotEqual.ndarray(); // $ExpectError
-	glastIndexNotEqual.ndarray( 3 ); // $ExpectError
-	glastIndexNotEqual.ndarray( 3, x ); // $ExpectError
-	glastIndexNotEqual.ndarray( 3, x, 1 ); // $ExpectError
-	glastIndexNotEqual.ndarray( 3, x, 1, 0 ); // $ExpectError
-	glastIndexNotEqual.ndarray( 3, x, 1, 0, y ); // $ExpectError
-	glastIndexNotEqual.ndarray( 3, x, 1, 0, y, 1 ); // $ExpectError
-	glastIndexNotEqual.ndarray( 3, x, 1, 0, y, 1, 0, {} ); // $ExpectError
+	glastIndexNotEqual.ndarray( x.length ); // $ExpectError
+	glastIndexNotEqual.ndarray( x.length, x ); // $ExpectError
+	glastIndexNotEqual.ndarray( x.length, x, 1 ); // $ExpectError
+	glastIndexNotEqual.ndarray( x.length, x, 1, 0 ); // $ExpectError
+	glastIndexNotEqual.ndarray( x.length, x, 1, 0, y ); // $ExpectError
+	glastIndexNotEqual.ndarray( x.length, x, 1, 0, y, 1 ); // $ExpectError
+	glastIndexNotEqual.ndarray( x.length, x, 1, 0, y, 1, 0, {} ); // $ExpectError
 }
