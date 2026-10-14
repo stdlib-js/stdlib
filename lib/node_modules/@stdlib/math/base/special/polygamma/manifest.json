@@ -1,0 +1,145 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/binary",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/bernoulli",
+        "@stdlib/math/base/special/cospi",
+        "@stdlib/math/base/special/digamma",
+        "@stdlib/math/base/special/exp",
+        "@stdlib/math/base/special/factorial",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/gammaln",
+        "@stdlib/math/base/special/ldexp",
+        "@stdlib/math/base/special/ln",
+        "@stdlib/math/base/special/min",
+        "@stdlib/math/base/special/pow",
+        "@stdlib/math/base/special/riemann-zeta",
+        "@stdlib/math/base/special/signum",
+        "@stdlib/math/base/special/sinpi",
+        "@stdlib/math/base/special/trigamma",
+        "@stdlib/math/base/special/trunc",
+        "@stdlib/constants/float64/eps",
+        "@stdlib/constants/float64/ln-pi",
+        "@stdlib/constants/float64/ln-two",
+        "@stdlib/constants/float64/max",
+        "@stdlib/constants/float64/max-ln",
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/constants/float64/pi",
+        "@stdlib/constants/float64/pinf"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/bernoulli",
+        "@stdlib/math/base/special/cospi",
+        "@stdlib/math/base/special/digamma",
+        "@stdlib/math/base/special/exp",
+        "@stdlib/math/base/special/factorial",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/gammaln",
+        "@stdlib/math/base/special/ldexp",
+        "@stdlib/math/base/special/ln",
+        "@stdlib/math/base/special/min",
+        "@stdlib/math/base/special/pow",
+        "@stdlib/math/base/special/riemann-zeta",
+        "@stdlib/math/base/special/round",
+        "@stdlib/math/base/special/signum",
+        "@stdlib/math/base/special/sinpi",
+        "@stdlib/math/base/special/trigamma",
+        "@stdlib/math/base/special/trunc",
+        "@stdlib/constants/float64/eps",
+        "@stdlib/constants/float64/ln-pi",
+        "@stdlib/constants/float64/ln-two",
+        "@stdlib/constants/float64/max",
+        "@stdlib/constants/float64/max-ln",
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/constants/float64/pi",
+        "@stdlib/constants/float64/pinf"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/bernoulli",
+        "@stdlib/math/base/special/cospi",
+        "@stdlib/math/base/special/digamma",
+        "@stdlib/math/base/special/exp",
+        "@stdlib/math/base/special/factorial",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/gammaln",
+        "@stdlib/math/base/special/ldexp",
+        "@stdlib/math/base/special/ln",
+        "@stdlib/math/base/special/min",
+        "@stdlib/math/base/special/pow",
+        "@stdlib/math/base/special/riemann-zeta",
+        "@stdlib/math/base/special/signum",
+        "@stdlib/math/base/special/sinpi",
+        "@stdlib/math/base/special/trigamma",
+        "@stdlib/math/base/special/trunc",
+        "@stdlib/constants/float64/eps",
+        "@stdlib/constants/float64/ln-pi",
+        "@stdlib/constants/float64/ln-two",
+        "@stdlib/constants/float64/max",
+        "@stdlib/constants/float64/max-ln",
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/constants/float64/pi",
+        "@stdlib/constants/float64/pinf"
+      ]
+    }
+  ]
+}

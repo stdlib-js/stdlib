@@ -35,6 +35,8 @@ import { typedndarray } from '@stdlib/types/ndarray';
 *     -   a zero-dimensional ndarray specifying a source end index (exclusive).
 *     -   a one-dimensional workspace ndarray.
 *
+* -   If the `start` and `target` index ranges do not overlap, the `workspace` ndarray is unused and thus ignored.
+*
 * @param arrays - array-like object containing ndarrays
 * @returns input ndarray
 *
