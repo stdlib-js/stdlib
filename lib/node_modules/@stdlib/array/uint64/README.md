@@ -285,8 +285,6 @@ u = arr.at( -100 );
 Returns an iterator for iterating over array key-value pairs.
 
 ```javascript
-var Uint64 = require( '@stdlib/number/uint64/ctor' );
-
 var arr = new Uint64Array( [ 1, 2, 3 ] );
 
 // Create an iterator:
