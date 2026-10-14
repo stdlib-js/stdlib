@@ -77,7 +77,7 @@ The function has the following parameters:
 
 ## Notes
 
--   `k`-tuples are stored as rows in the output matrix, where the `j`-th column contains the `j`-th element of each tuple.
+-   Tuples are stored as rows in the output matrix, where the `j`-th column contains the `j`-th element of each tuple.
 -   For an input array of length `N`, the output array should have shape `[N^k, k]`, where `N^k` is the number of rows and `k` is the number of columns.
 -   If `N <= 0` or `k <= 0`, the function returns the output ndarray unchanged.
 
