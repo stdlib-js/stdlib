@@ -30,6 +30,7 @@ import sliceDimensionTo = require( './index' );
 
 	sliceDimensionTo( empty( 'float64', sh, order ), 1, s ); // $ExpectType float64ndarray
 	sliceDimensionTo( empty( 'float32', sh, order ), 1, s ); // $ExpectType float32ndarray
+	sliceDimensionTo( empty( 'float16', sh, order ), 1, s ); // $ExpectType float16ndarray
 	sliceDimensionTo( empty( 'complex128', sh, order ), 1, s ); // $ExpectType complex128ndarray
 	sliceDimensionTo( empty( 'complex64', sh, order ), 1, s ); // $ExpectType complex64ndarray
 	sliceDimensionTo( empty( 'int32', sh, order ), 1, s ); // $ExpectType int32ndarray
@@ -42,6 +43,7 @@ import sliceDimensionTo = require( './index' );
 
 	sliceDimensionTo( empty( 'float64', sh, order ), 1, s, { 'strict': false } ); // $ExpectType float64ndarray
 	sliceDimensionTo( empty( 'float32', sh, order ), 1, s, { 'strict': false } ); // $ExpectType float32ndarray
+	sliceDimensionTo( empty( 'float16', sh, order ), 1, s, { 'strict': false } ); // $ExpectType float16ndarray
 	sliceDimensionTo( empty( 'complex128', sh, order ), 1, s, { 'strict': false } ); // $ExpectType complex128ndarray
 	sliceDimensionTo( empty( 'complex64', sh, order ), 1, s, { 'strict': false } ); // $ExpectType complex64ndarray
 	sliceDimensionTo( empty( 'int32', sh, order ), 1, s, { 'strict': false } ); // $ExpectType int32ndarray
@@ -54,6 +56,7 @@ import sliceDimensionTo = require( './index' );
 
 	sliceDimensionTo( empty( 'float64', sh, order ), 1, s, { 'strict': true } ); // $ExpectType float64ndarray
 	sliceDimensionTo( empty( 'float32', sh, order ), 1, s, { 'strict': true } ); // $ExpectType float32ndarray
+	sliceDimensionTo( empty( 'float16', sh, order ), 1, s, { 'strict': true } ); // $ExpectType float16ndarray
 	sliceDimensionTo( empty( 'complex128', sh, order ), 1, s, { 'strict': true } ); // $ExpectType complex128ndarray
 	sliceDimensionTo( empty( 'complex64', sh, order ), 1, s, { 'strict': true } ); // $ExpectType complex64ndarray
 	sliceDimensionTo( empty( 'int32', sh, order ), 1, s, { 'strict': true } ); // $ExpectType int32ndarray

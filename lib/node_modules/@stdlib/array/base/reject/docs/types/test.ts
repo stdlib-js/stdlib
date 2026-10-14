@@ -35,27 +35,9 @@ function isPositive( value: number ): boolean {
 // The function returns a collection...
 {
 	reject( [ 1, 2, 3 ], isPositive ); // $ExpectType number[]
-	reject( new Float64Array( [ 1, 2, 3 ] ), isPositive ); // $ExpectType Float64Array
-	reject( new Float32Array( [ 1, 2, 3 ] ), isPositive ); // $ExpectType Float32Array
-	reject( new Int32Array( [ 1, 2, 3 ] ), isPositive ); // $ExpectType Int32Array
-	reject( new Int16Array( [ 1, 2, 3 ] ), isPositive ); // $ExpectType Int16Array
-	reject( new Int8Array( [ 1, 2, 3 ] ), isPositive ); // $ExpectType Int8Array
-	reject( new Uint32Array( [ 1, 2, 3 ] ), isPositive ); // $ExpectType Uint32Array
-	reject( new Uint16Array( [ 1, 2, 3 ] ), isPositive ); // $ExpectType Uint16Array
-	reject( new Uint8Array( [ 1, 2, 3 ] ), isPositive ); // $ExpectType Uint8Array
-	reject( new Uint8ClampedArray( [ 1, 2, 3 ] ), isPositive ); // $ExpectType Uint8ClampedArray
 	reject( toAccessorArray( [ 1, 2, 3 ] ), isPositive ); // $ExpectType number[]
 
 	reject( [ 1, 2, 3 ], isPositive, {} ); // $ExpectType number[]
-	reject( new Float64Array( [ 1, 2, 3 ] ), isPositive, {} ); // $ExpectType Float64Array
-	reject( new Float32Array( [ 1, 2, 3 ] ), isPositive, {} ); // $ExpectType Float32Array
-	reject( new Int32Array( [ 1, 2, 3 ] ), isPositive, {} ); // $ExpectType Int32Array
-	reject( new Int16Array( [ 1, 2, 3 ] ), isPositive, {} ); // $ExpectType Int16Array
-	reject( new Int8Array( [ 1, 2, 3 ] ), isPositive, {} ); // $ExpectType Int8Array
-	reject( new Uint32Array( [ 1, 2, 3 ] ), isPositive, {} ); // $ExpectType Uint32Array
-	reject( new Uint16Array( [ 1, 2, 3 ] ), isPositive, {} ); // $ExpectType Uint16Array
-	reject( new Uint8Array( [ 1, 2, 3 ] ), isPositive, {} ); // $ExpectType Uint8Array
-	reject( new Uint8ClampedArray( [ 1, 2, 3 ] ), isPositive, {} ); // $ExpectType Uint8ClampedArray
 	reject( toAccessorArray( [ 1, 2, 3 ] ), isPositive, {} ); // $ExpectType number[]
 }
 

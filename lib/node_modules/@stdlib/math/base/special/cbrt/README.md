@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute the [cube root][cube-root] of a double-precision floating-point number.
 
+<section class="intro">
+
+The [cube root][cube-root] function is defined as
+
+<!-- <equation class="equation" label="eq:cube_root" align="center" raw="y = \sqrt[3]{x}" alt="Cube root function"> -->
+
+```math
+y = \sqrt[3]{x}
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

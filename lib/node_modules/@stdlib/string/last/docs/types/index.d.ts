@@ -52,7 +52,7 @@ interface Options {
 *
 * @example
 * var out = last( '🐶🐮🐷🐰🐸', 2, {
-*    'mode': 'grapheme'
+*     'mode': 'grapheme'
 * });
 * // returns '🐰🐸'
 */
@@ -73,7 +73,7 @@ declare function last( str: string, n: number, options?: Options ): string;
 *
 * @example
 * var out = last( '🐶🐮🐷🐰🐸', {
-*    'mode': 'grapheme'
+*     'mode': 'grapheme'
 * });
 * // returns '🐸'
 */
