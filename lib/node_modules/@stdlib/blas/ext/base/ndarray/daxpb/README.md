@@ -114,6 +114,193 @@ console.log( ndarray2array( x ) );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/blas/ext/base/ndarray/daxpb.h"
+```
+
+#### stdlib_blas_ext_daxpb( arrays )
+
+Multiplies each element in a one-dimensional double-precision floating-point ndarray by a scalar constant and adds a scalar constant to each result.
+
+```c
+#include "stdlib/ndarray/ctor.h"
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/base/bytes_per_element.h"
+#include <stdint.h>
+
+// Create an ndarray:
+double dataX[] = { -2.0, 1.0, 3.0, -5.0 };
+int64_t shape[] = { 4 };
+int64_t strides[] = { STDLIB_NDARRAY_FLOAT64_BYTES_PER_ELEMENT };
+int8_t submodes[] = { STDLIB_NDARRAY_INDEX_ERROR };
+
+struct ndarray *x = stdlib_ndarray_allocate( STDLIB_NDARRAY_FLOAT64, (uint8_t *)dataX, 1, shape, strides, 0, STDLIB_NDARRAY_ROW_MAJOR, STDLIB_NDARRAY_INDEX_ERROR, 1, submodes );
+
+// Create an ndarray containing the scalar constant to multiply:
+const double adata[] = { 5.0 };
+int64_t astrides[] = { 0 };
+
+struct ndarray *alpha = stdlib_ndarray_allocate( STDLIB_NDARRAY_FLOAT64, (uint8_t *)adata, 0, NULL, astrides, 0, STDLIB_NDARRAY_ROW_MAJOR, STDLIB_NDARRAY_INDEX_ERROR, 1, submodes );
+
+// Create an ndarray containing the scalar constant to add:
+const double bdata[] = { 3.0 };
+int64_t bstrides[] = { 0 };
+
+struct ndarray *beta = stdlib_ndarray_allocate( STDLIB_NDARRAY_FLOAT64, (uint8_t *)bdata, 0, NULL, bstrides, 0, STDLIB_NDARRAY_ROW_MAJOR, STDLIB_NDARRAY_INDEX_ERROR, 1, submodes );
+
+// Perform computation:
+const struct ndarray *arrays[] = { x, alpha, beta };
+stdlib_blas_ext_daxpb( arrays );
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( alpha );
+stdlib_ndarray_free( beta );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[in] struct ndarray**` list containing the following ndarrays:
+
+    -   `[inout] struct ndarray*` a one-dimensional input ndarray.
+    -   `[in] struct ndarray*` a zero-dimensional ndarray containing the scalar constant to multiply.
+    -   `[in] struct ndarray*` a zero-dimensional ndarray containing the scalar constant to add.
+
+```c
+void stdlib_blas_ext_daxpb( const struct ndarray *arrays[] );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/blas/ext/base/ndarray/daxpb.h"
+#include "stdlib/ndarray/ctor.h"
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/base/bytes_per_element.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+int main( void ) {
+    // Create a data buffer:
+    double dataX[] = { -2.0, 1.0, 3.0, -5.0 };
+
+    // Specify the number of array dimensions:
+    const int64_t ndims = 1;
+
+    // Specify the array shape:
+    int64_t shape[] = { 4 };
+
+    // Specify the array strides:
+    int64_t strides[] = { STDLIB_NDARRAY_FLOAT64_BYTES_PER_ELEMENT };
+
+    // Specify the byte offset:
+    const int64_t offset = 0;
+
+    // Specify the array order:
+    const enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+    // Specify the index mode:
+    const enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+    // Specify the subscript index modes:
+    int8_t submodes[] = { STDLIB_NDARRAY_INDEX_ERROR };
+    const int64_t nsubmodes = 1;
+
+    // Create an ndarray:
+    struct ndarray *x = stdlib_ndarray_allocate( STDLIB_NDARRAY_FLOAT64, (uint8_t *)dataX, ndims, shape, strides, offset, order, imode, nsubmodes, submodes );
+
+    // Create a data buffer for an ndarray containing the scalar constant to multiply:
+    const double adata[] = { 5.0 };
+
+    // Specify the array strides for a zero-dimensional ndarray:
+    int64_t astrides[] = { 0 };
+
+    // Create an ndarray containing the scalar constant to multiply:
+    struct ndarray *alpha = stdlib_ndarray_allocate( STDLIB_NDARRAY_FLOAT64, (uint8_t *)adata, 0, NULL, astrides, 0, order, imode, nsubmodes, submodes );
+
+    // Create a data buffer for an ndarray containing the scalar constant to add:
+    const double bdata[] = { 3.0 };
+
+    // Specify the array strides for a zero-dimensional ndarray:
+    int64_t bstrides[] = { 0 };
+
+    // Create an ndarray containing the scalar constant to add:
+    struct ndarray *beta = stdlib_ndarray_allocate( STDLIB_NDARRAY_FLOAT64, (uint8_t *)bdata, 0, NULL, bstrides, 0, order, imode, nsubmodes, submodes );
+    if ( x == NULL || alpha == NULL || beta == NULL ) {
+        fprintf( stderr, "Error allocating memory.\n" );
+        exit( 1 );
+    }
+
+    // Define a list of ndarrays:
+    const struct ndarray *arrays[] = { x, alpha, beta };
+
+    // Perform computation:
+    stdlib_blas_ext_daxpb( arrays );
+
+    // Print the result:
+    for ( int i = 0; i < 4; i++ ) {
+        printf( "x[ %i ] = %lf\n", i, dataX[ i ] );
+    }
+
+    // Free allocated memory:
+    stdlib_ndarray_free( x );
+    stdlib_ndarray_free( alpha );
+    stdlib_ndarray_free( beta );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

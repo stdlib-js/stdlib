@@ -18,9 +18,9 @@
 
     Examples
     --------
-    > var k = {{alias}}( 9.0 )
+    > var v = {{alias}}( 9.0 )
     ~8.343
-    > k = {{alias}}( 2.0 )
+    > v = {{alias}}( 2.0 )
     ~1.386
 
     See Also

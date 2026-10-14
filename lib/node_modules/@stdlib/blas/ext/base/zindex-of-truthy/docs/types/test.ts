@@ -26,108 +26,115 @@ import zindexOfTruthy = require( './index' );
 
 // The function returns a number...
 {
-	var x = new Complex128Array( [ 1.0, 2.0, 3.0 ] );
+	var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 
 	zindexOfTruthy( x.length, x, 1 ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
 {
-	var x = new Complex128Array( [ 1.0, 2.0, 3.0 ] );
+	var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 
 	zindexOfTruthy( '1', x, 1 ); // $ExpectError
 	zindexOfTruthy( true, x, 1 ); // $ExpectError
 	zindexOfTruthy( false, x, 1 ); // $ExpectError
 	zindexOfTruthy( null, x, 1 ); // $ExpectError
 	zindexOfTruthy( {}, x, 1 ); // $ExpectError
+	zindexOfTruthy( ( x: number ): number => x, x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a Complex128Array...
 {
-	var x = new Complex128Array( [ 1.0, 2.0, 3.0 ] );
+	var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 
 	zindexOfTruthy( x.length, '1', 1 ); // $ExpectError
 	zindexOfTruthy( x.length, true, 1 ); // $ExpectError
 	zindexOfTruthy( x.length, false, 1 ); // $ExpectError
 	zindexOfTruthy( x.length, null, 1 ); // $ExpectError
 	zindexOfTruthy( x.length, {}, 1 ); // $ExpectError
+	zindexOfTruthy( x.length, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not a number...
 {
-	var x = new Complex128Array( [ 1.0, 2.0, 3.0 ] );
+	var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 
 	zindexOfTruthy( x.length, x, '1' ); // $ExpectError
 	zindexOfTruthy( x.length, x, true ); // $ExpectError
 	zindexOfTruthy( x.length, x, false ); // $ExpectError
 	zindexOfTruthy( x.length, x, null ); // $ExpectError
 	zindexOfTruthy( x.length, x, {} ); // $ExpectError
+	zindexOfTruthy( x.length, x, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	zindexOfTruthy(); // $ExpectError
 	zindexOfTruthy( 3 ); // $ExpectError
-	zindexOfTruthy( 3, new Complex128Array( [ 1.0, 2.0, 3.0 ] ) ); // $ExpectError
-	zindexOfTruthy( 3, new Complex128Array( [ 1.0, 2.0, 3.0 ] ), 1, {} ); // $ExpectError
+	zindexOfTruthy( 3, new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] ) ); // $ExpectError
+	zindexOfTruthy( 3, new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] ), 1, {} ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a number...
 {
-	var x = new Complex128Array( [ 1.0, 2.0, 3.0 ] );
+	var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 
 	zindexOfTruthy.ndarray( x.length, x, 1, 0 ); // $ExpectType number
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...
 {
-	var x = new Complex128Array( [ 1.0, 2.0, 3.0 ] );
+	var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 
 	zindexOfTruthy.ndarray( '1', x, 1, 1 ); // $ExpectError
 	zindexOfTruthy.ndarray( true, x, 1, 1 ); // $ExpectError
 	zindexOfTruthy.ndarray( false, x, 1, 1 ); // $ExpectError
 	zindexOfTruthy.ndarray( null, x, 1, 1 ); // $ExpectError
 	zindexOfTruthy.ndarray( {}, x, 1, 1 ); // $ExpectError
+	zindexOfTruthy.ndarray( ( x: number ): number => x, x, 1, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a second argument which is not a Complex128Array...
 {
-	var x = new Complex128Array( [ 1.0, 2.0, 3.0 ] );
+	var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 
 	zindexOfTruthy.ndarray( x.length, '1', 1, 1 ); // $ExpectError
 	zindexOfTruthy.ndarray( x.length, true, 1, 1 ); // $ExpectError
 	zindexOfTruthy.ndarray( x.length, false, 1, 1 ); // $ExpectError
 	zindexOfTruthy.ndarray( x.length, null, 1, 1 ); // $ExpectError
 	zindexOfTruthy.ndarray( x.length, {}, 1, 1 ); // $ExpectError
+	zindexOfTruthy.ndarray( x.length, ( x: number ): number => x, 1, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a third argument which is not a number...
 {
-	var x = new Complex128Array( [ 1.0, 2.0, 3.0 ] );
+	var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 
 	zindexOfTruthy.ndarray( x.length, x, '1', 1 ); // $ExpectError
 	zindexOfTruthy.ndarray( x.length, x, true, 1 ); // $ExpectError
 	zindexOfTruthy.ndarray( x.length, x, false, 1 ); // $ExpectError
 	zindexOfTruthy.ndarray( x.length, x, null, 1 ); // $ExpectError
 	zindexOfTruthy.ndarray( x.length, x, {}, 1 ); // $ExpectError
+	zindexOfTruthy.ndarray( x.length, x, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fourth argument which is not a number...
 {
-	var x = new Complex128Array( [ 1.0, 2.0, 3.0 ] );
+	var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 
 	zindexOfTruthy.ndarray( x.length, x, 1, '1' ); // $ExpectError
 	zindexOfTruthy.ndarray( x.length, x, 1, true ); // $ExpectError
 	zindexOfTruthy.ndarray( x.length, x, 1, false ); // $ExpectError
 	zindexOfTruthy.ndarray( x.length, x, 1, null ); // $ExpectError
 	zindexOfTruthy.ndarray( x.length, x, 1, {} ); // $ExpectError
+	zindexOfTruthy.ndarray( x.length, x, 1, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided an unsupported number of arguments...
 {
 	zindexOfTruthy.ndarray(); // $ExpectError
 	zindexOfTruthy.ndarray( 3 ); // $ExpectError
-	zindexOfTruthy.ndarray( 3, new Complex128Array( [ 1.0, 2.0, 3.0 ] ) ); // $ExpectError
-	zindexOfTruthy.ndarray( 3, new Complex128Array( [ 1.0, 2.0, 3.0 ] ), 1 ); // $ExpectError
-	zindexOfTruthy.ndarray( 3, new Complex128Array( [ 1.0, 2.0, 3.0 ] ), 1, 0, {} ); // $ExpectError
+	zindexOfTruthy.ndarray( 3, new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] ) ); // $ExpectError
+	zindexOfTruthy.ndarray( 3, new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] ), 1 ); // $ExpectError
+	zindexOfTruthy.ndarray( 3, new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] ), 1, 0, {} ); // $ExpectError
 }

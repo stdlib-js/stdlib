@@ -167,6 +167,7 @@ bool stdlib_base_is_negative_integerf( const float x );
 ```c
 #include "stdlib/math/base/assert/is_negative_integerf.h"
 #include <stdio.h>
+#include <stdbool.h>
 
 int main( void ) {
     const float x[] = { 5.0f, -5.0f, 3.14f, -3.14f, 0.0f, 0.0f/0.0f };

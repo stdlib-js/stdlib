@@ -110,7 +110,7 @@ import glastIndexGreaterThan = require( './index' );
 	glastIndexGreaterThan( x.length, x ); // $ExpectError
 	glastIndexGreaterThan( x.length, x, 1 ); // $ExpectError
 	glastIndexGreaterThan( x.length, x, 1, y ); // $ExpectError
-	glastIndexGreaterThan( x.length, x, 1, y, 1, 0 ); // $ExpectError
+	glastIndexGreaterThan( x.length, x, 1, y, 1, {} ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a number...
@@ -233,5 +233,5 @@ import glastIndexGreaterThan = require( './index' );
 	glastIndexGreaterThan.ndarray( x.length, x, 1, 0 ); // $ExpectError
 	glastIndexGreaterThan.ndarray( x.length, x, 1, 0, y ); // $ExpectError
 	glastIndexGreaterThan.ndarray( x.length, x, 1, 0, y, 1 ); // $ExpectError
-	glastIndexGreaterThan.ndarray( x.length, x, 1, 0, y, 1, 0, 0 ); // $ExpectError
+	glastIndexGreaterThan.ndarray( x.length, x, 1, 0, y, 1, 0, {} ); // $ExpectError
 }
