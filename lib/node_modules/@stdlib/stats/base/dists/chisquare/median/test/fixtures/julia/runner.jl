@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import Distributions: quantile, Chisq
+import Distributions: median, Chisq
 import JSON
 
 """
@@ -37,9 +37,9 @@ julia> gen( k, \"data.json\" );
 ```
 """
 function gen( k, name )
-	z = zeros( length( k ) );
+	z = Array{Float64}( undef, length(k) );
 	for i in eachindex(k)
-		z[ i ] = quantile( Chisq( k[ i ] ), 0.5 );
+		z[ i ] = median( Chisq( k[ i ] ) );
 	end
 
 	# Store data to be written to file as a collection:
