@@ -418,7 +418,7 @@ static double sumSeries1( const double a, const double z, const double initialVa
 *
 * @param a                 function parameter
 * @param z                 function parameter
-* @param initialValue      initial value of the resulting sum
+* @param initValue         initial value of the resulting sum
 * @returns                 sum of terms of lower gamma series
 */
 static double lowerGammaSeries( const double a, const double z, const double initValue ) {

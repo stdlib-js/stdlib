@@ -24,10 +24,10 @@
 /**
 * Returns the index of the last truthy element in a double-precision floating-point strided array.
 *
-* @param N        number of indexed elements
-* @param X        input array
-* @param strideX  stride length
-* @return         index
+* @param N       number of indexed elements
+* @param X       input array
+* @param strideX stride length
+* @return        index
 */
 CBLAS_INT API_SUFFIX(stdlib_strided_dlast_index_of_truthy)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX ) {
 	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
@@ -37,11 +37,11 @@ CBLAS_INT API_SUFFIX(stdlib_strided_dlast_index_of_truthy)( const CBLAS_INT N, c
 /**
 * Returns the index of the last truthy element in a double-precision floating-point strided array using alternative indexing semantics.
 *
-* @param N        number of indexed elements
-* @param X        input array
-* @param strideX  stride length
-* @param offsetX  starting index
-* @return         index
+* @param N       number of indexed elements
+* @param X       input array
+* @param strideX stride length
+* @param offsetX starting index
+* @return        index
 */
 CBLAS_INT API_SUFFIX(stdlib_strided_dlast_index_of_truthy_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
 	CBLAS_INT idx;

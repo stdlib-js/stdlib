@@ -48,6 +48,10 @@ static const int32_t HIGH_BIASED_EXP_0 = 0x3ff00000;
 *
 * @param x    input value
 * @return     output value
+*
+* @example
+* double out = stdlib_base_log2( 4.0 );
+* // returns 2.0
 */
 double stdlib_base_log2( const double x ) {
 	double valLo;

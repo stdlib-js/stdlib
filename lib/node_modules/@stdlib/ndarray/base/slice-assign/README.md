@@ -20,7 +20,7 @@ limitations under the License.
 
 # sliceAssign
 
-> Assign element values from a broadcasted input `ndarray` to corresponding elements in an output `ndarray` view.
+> Assign element values from a broadcasted input ndarray to corresponding elements in an output ndarray view.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -42,13 +42,15 @@ var sliceAssign = require( '@stdlib/ndarray/base/slice-assign' );
 
 #### sliceAssign( x, y, slice, strict )
 
-Assigns element values from a broadcasted input `ndarray` to corresponding elements in an output `ndarray` view.
+Assigns element values from a broadcasted input ndarray to corresponding elements in an output ndarray view.
 
 ```javascript
 var Slice = require( '@stdlib/slice/ctor' );
 var MultiSlice = require( '@stdlib/slice/multi' );
 var ndarray = require( '@stdlib/ndarray/ctor' );
 var ndzeros = require( '@stdlib/ndarray/zeros' );
+var getShape = require( '@stdlib/ndarray/shape' );
+var getDType = require( '@stdlib/ndarray/dtype' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 
 // Define an input array:
@@ -60,7 +62,7 @@ var offset = 0;
 var x = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
 // returns <ndarray>
 
-var sh = x.shape;
+var sh = getShape( x );
 // returns [ 3, 2 ]
 
 var arr = ndarray2array( x );
@@ -68,7 +70,7 @@ var arr = ndarray2array( x );
 
 // Define an output array:
 var y = ndzeros( [ 2, 3, 2 ], {
-    'dtype': x.dtype
+    'dtype': getDType( x )
 });
 
 // Create a slice:
