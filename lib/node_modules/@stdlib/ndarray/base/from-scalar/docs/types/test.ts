@@ -25,6 +25,7 @@ import scalar2ndarray = require( './index' );
 {
 	scalar2ndarray( 1.0, 'float64', 'row-major' ); // $ExpectType float64ndarray
 	scalar2ndarray( 1.0, 'float32', 'row-major' ); // $ExpectType float32ndarray
+	scalar2ndarray( 1.0, 'float16', 'row-major' ); // $ExpectType float16ndarray
 	scalar2ndarray( 1.0, 'complex128', 'row-major' ); // $ExpectType complex128ndarray
 	scalar2ndarray( 1.0, 'complex64', 'row-major' ); // $ExpectType complex64ndarray
 	scalar2ndarray( 1.0, 'int32', 'row-major' ); // $ExpectType int32ndarray

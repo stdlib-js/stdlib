@@ -1100,7 +1100,7 @@ declare module '@stdlib/types/array' {
 	};
 
 	/**
-	* Mapping of real floating point data types and the "generic" data type to array constructors.
+	* Mapping of real floating-point data types and the "generic" data type to array constructors.
 	*/
 	type RealFloatingPointAndGenericDataTypeMap<T> = Remap<RealFloatingPointDataTypeMap & { 'generic': Array<T> }>;
 
@@ -1114,7 +1114,7 @@ declare module '@stdlib/types/array' {
 	};
 
 	/**
-	* Mapping of complex floating point data types and the "generic" data type to array constructors.
+	* Mapping of complex floating-point data types and the "generic" data type to array constructors.
 	*/
 	type ComplexFloatingPointAndGenericDataTypeMap<T> = Remap<ComplexFloatingPointDataTypeMap & { 'generic': Array<T> }>;
 
@@ -1124,7 +1124,7 @@ declare module '@stdlib/types/array' {
 	type FloatingPointDataTypeMap = Remap<RealFloatingPointDataTypeMap & ComplexFloatingPointDataTypeMap>;
 
 	/**
-	* Mapping for floating point (real or complex) data types and the "generic" data type to array constructors.
+	* Mapping for floating-point (real or complex) data types and the "generic" data type to array constructors.
 	*/
 	type FloatingPointAndGenericDataTypeMap<T> = Remap<FloatingPointDataTypeMap & { 'generic': Array<T> }>;
 
@@ -5212,7 +5212,7 @@ declare module '@stdlib/types/ndarray' {
 	};
 
 	/**
-	* Mapping of real floating point data types and the "generic" data type to ndarray constructors.
+	* Mapping of real floating-point data types and the "generic" data type to ndarray constructors.
 	*/
 	type RealFloatingPointAndGenericDataTypeMap<T> = Remap<RealFloatingPointDataTypeMap & { 'generic': genericndarray<T> }>;
 
@@ -5226,7 +5226,7 @@ declare module '@stdlib/types/ndarray' {
 	};
 
 	/**
-	* Mapping of complex floating point data types and the "generic" data type to ndarray constructors.
+	* Mapping of complex floating-point data types and the "generic" data type to ndarray constructors.
 	*/
 	type ComplexFloatingPointAndGenericDataTypeMap<T> = Remap<ComplexFloatingPointDataTypeMap & { 'generic': genericndarray<T> }>;
 
@@ -5236,7 +5236,7 @@ declare module '@stdlib/types/ndarray' {
 	type FloatingPointDataTypeMap = Remap<RealFloatingPointDataTypeMap & ComplexFloatingPointDataTypeMap>;
 
 	/**
-	* Mapping for floating point (real or complex) data types and the "generic" data type to ndarray constructors.
+	* Mapping for floating-point (real or complex) data types and the "generic" data type to ndarray constructors.
 	*/
 	type FloatingPointAndGenericDataTypeMap<T> = Remap<FloatingPointDataTypeMap & { 'generic': genericndarray<T> }>;
 
