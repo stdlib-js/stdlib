@@ -53,6 +53,6 @@ double stdlib_base_dists_wald_logpdf( const double x, const double mu, const dou
 	if ( x <= 0.0 || x == STDLIB_CONSTANT_FLOAT64_PINF ) {
 		return STDLIB_CONSTANT_FLOAT64_NINF;
 	}
-	v = x - mu;
-	return 0.5 * ( stdlib_base_ln( lambda ) - ( STDLIB_CONSTANT_FLOAT64_LN_TWO_PI + ( 3.0 * stdlib_base_ln( x ) ) ) - ( ( lambda * v * v ) / ( mu * mu * x ) ) );
+	v = ( x - mu ) / mu;
+	return 0.5 * ( stdlib_base_ln( lambda ) - ( STDLIB_CONSTANT_FLOAT64_LN_TWO_PI + ( 3.0 * stdlib_base_ln( x ) ) ) - ( ( ( lambda / x ) * v ) * v ) );
 }

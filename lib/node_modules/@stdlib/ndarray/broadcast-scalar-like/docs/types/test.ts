@@ -34,6 +34,7 @@ import broadcastScalarLike = require( './index' );
 
 	broadcastScalarLike( x, 1.0, { 'dtype': 'float64' } ); // $ExpectType float64ndarray
 	broadcastScalarLike( x, 1.0, { 'dtype': 'float32' } ); // $ExpectType float32ndarray
+	broadcastScalarLike( x, 1.0, { 'dtype': 'float16' } ); // $ExpectType float16ndarray
 	broadcastScalarLike( x, 1.0, { 'dtype': 'complex128' } ); // $ExpectType complex128ndarray
 	broadcastScalarLike( x, 1.0, { 'dtype': 'complex64' } ); // $ExpectType complex64ndarray
 	broadcastScalarLike( x, true, { 'dtype': 'bool' } ); // $ExpectType boolndarray

@@ -19,8 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Interface describing `sindexOf`
-*
+* Interface describing `sindexOf`.
 */
 interface Routine {
 	/**

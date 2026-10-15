@@ -117,7 +117,7 @@ jobs:
         env:
           METADATA: ${{ steps.extract-metadata.outputs.metadata }}
         run: |
-          inputs=$(echo "$METADATA" | jq -c '.[] | select(.type | contains("workflow_dispatch"))')
+          inputs=$(echo "$METADATA" | jq -c '.[] | select((.type // "") | contains("workflow_dispatch"))')
           if [ -n "$inputs" ]; then
             name=$(echo $inputs | jq -r '.name')
             inputs=$(echo $inputs | jq -c 'del(.type, .name, .author, .id, .url) | map_values(tostring)')

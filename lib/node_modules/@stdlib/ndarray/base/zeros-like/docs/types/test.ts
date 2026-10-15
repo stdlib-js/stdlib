@@ -29,6 +29,7 @@ import zerosLike = require( './index' );
 
 	zerosLike( zeros( 'float64', sh, ord ) ); // $ExpectType float64ndarray
 	zerosLike( zeros( 'float32', sh, ord ) ); // $ExpectType float32ndarray
+	zerosLike( zeros( 'float16', sh, ord ) ); // $ExpectType float16ndarray
 	zerosLike( zeros( 'complex128', sh, ord ) ); // $ExpectType complex128ndarray
 	zerosLike( zeros( 'complex64', sh, ord ) ); // $ExpectType complex64ndarray
 	zerosLike( zeros( 'int32', sh, ord ) ); // $ExpectType int32ndarray
