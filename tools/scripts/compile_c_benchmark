@@ -35,11 +35,14 @@
 #   BLAS_DIR      BLAS library path (if custom).
 #   CEPHES        Cephes mathematical library path.
 #   CEPHES_SRC    List of Cephes source files.
+#   BENCHMARK_NAME  Benchmark name. Default: enclosing package name.
 #   INCLUDE       Includes (e.g., `-I /foo/bar -I /a/b`).
 #   SOURCE_FILES  Source file list.
 #   LIBRARIES     Linked libraries (e.g., `-lopenblas -lpthreads`).
 #   LIBPATH       Library paths (e.g., `-L /foo/bar -L /a/b`).
 #
+
+# shellcheck disable=SC2181,SC2153
 
 
 # VARIABLES #
@@ -83,6 +86,9 @@ cephes="${CEPHES}"
 
 # List of Cephes source files:
 cephes_src="${CEPHES_SRC}"
+
+# Define the benchmark name:
+benchmark_name="${BENCHMARK_NAME}"
 
 # Define a list of `include` directories (e.g., `-I /foo/bar -I /beep/boop/include`):
 include="${INCLUDE}"
@@ -139,6 +145,22 @@ resolve_pkg_path() {
 	pkg_path=$(eval NODE_PATH="${node_path}" "${node_cmd}" -e "${script}")
 
 	echo "${pkg_path}"
+}
+
+# Resolves a package name.
+#
+# $1 - package path
+resolve_pkg_name() {
+	local pkg_name
+	local script
+
+	# Generate the script for resolving a package name:
+	script='"'"var path = require('path'); console.log(require(path.join('$1','package.json')).name);"'"'
+
+	# Resolve package name:
+	pkg_name=$(eval NODE_PATH="${node_path}" "${node_cmd}" -e "${script}")
+
+	echo "${pkg_name}"
 }
 
 # Resolves a package `manifest.json`.
@@ -262,8 +284,9 @@ resolve_libpaths() {
 # Compiles benchmark.
 #
 # $1 - source directory
+# $2 - package name
 compile() {
-	cd "$1" && C_COMPILER="${c_compiler}" INCLUDE="${include}" SOURCE_FILES="${source_files}" LIBRARIES="${libraries}" LIBPATH="${libpath}" CEPHES="${cephes}" CEPHES_SRC="${cephes_src}" make 2>&1
+	cd "$1" && C_COMPILER="${c_compiler}" INCLUDE="${include}" SOURCE_FILES="${source_files}" LIBRARIES="${libraries}" LIBPATH="${libpath}" CEPHES="${cephes}" CEPHES_SRC="${cephes_src}" BENCHMARK_NAME="$2" make 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Error when attempting to compile benchmark.' >&2
 		return 1
@@ -278,7 +301,6 @@ compile() {
 # Main execution sequence.
 main() {
 	local pkg_path
-	local manifest
 	local src_dir
 
 	echo 'Resolving package path...' >&2
@@ -288,8 +310,17 @@ main() {
 	fi
 	echo "Package path: ${pkg_path}" >&2
 
+	if [[ -z "${benchmark_name}" ]]; then
+		echo 'Resolving benchmark name...' >&2
+		benchmark_name=$(resolve_pkg_name "${pkg_path}")
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
+		echo "Benchmark name: ${benchmark_name}" >&2
+	fi
+
 	echo 'Resolving package manifest...' >&2
-	manifest=$(resolve_pkg_manifest "${pkg_path}")
+	resolve_pkg_manifest "${pkg_path}"
 	if [[ "$?" -eq 0 ]]; then
 		echo 'Successfully resolved package manifest.' >&2
 		if [[ -z "${include}" ]]; then
@@ -325,7 +356,7 @@ main() {
 	fi
 	echo 'Compiling benchmark...' >&2
 	src_dir=$(dirname "${file_path}")
-	compile "${src_dir}"
+	compile "${src_dir}" "${benchmark_name}"
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
 	fi
