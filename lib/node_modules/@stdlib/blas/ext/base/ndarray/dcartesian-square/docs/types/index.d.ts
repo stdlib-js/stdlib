@@ -23,7 +23,7 @@
 import { float64ndarray } from '@stdlib/types/ndarray';
 
 /**
-* Computes the Cartesian square for a double-precision floating-point ndarray.
+* Computes the Cartesian square for a one-dimensional double-precision floating-point ndarray.
 *
 * ## Notes
 *

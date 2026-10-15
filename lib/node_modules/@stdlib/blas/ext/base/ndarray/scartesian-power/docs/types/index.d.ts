@@ -23,7 +23,7 @@
 import { float32ndarray, typedndarray } from '@stdlib/types/ndarray';
 
 /**
-* Computes the Cartesian power for a single-precision floating-point ndarray.
+* Computes the Cartesian power for a one-dimensional single-precision floating-point ndarray.
 *
 * ## Notes
 *

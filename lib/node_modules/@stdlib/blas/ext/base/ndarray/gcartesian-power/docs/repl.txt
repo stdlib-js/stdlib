@@ -1,6 +1,6 @@
 
 {{alias}}( arrays )
-    Computes the Cartesian power for an ndarray.
+    Computes the Cartesian power for a one-dimensional ndarray.
 
     Tuples are stored as rows in the output matrix, where the `j`-th column
     contains the `j`-th element of each tuple.

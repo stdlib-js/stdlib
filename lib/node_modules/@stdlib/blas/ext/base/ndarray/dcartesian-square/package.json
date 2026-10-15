@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/blas/ext/base/ndarray/dcartesian-square",
   "version": "0.0.0",
-  "description": "Compute the Cartesian square for a double-precision floating-point ndarray.",
+  "description": "Compute the Cartesian square for a one-dimensional double-precision floating-point ndarray.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

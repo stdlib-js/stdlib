@@ -23,7 +23,7 @@
 import { typedndarray } from '@stdlib/types/ndarray';
 
 /**
-* Computes the Cartesian power for an ndarray.
+* Computes the Cartesian power for a one-dimensional ndarray.
 *
 * ## Notes
 *

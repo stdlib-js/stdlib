@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/blas/ext/base/ndarray/gcartesian-power",
   "version": "0.0.0",
-  "description": "Compute the Cartesian power for an ndarray.",
+  "description": "Compute the Cartesian power for a one-dimensional ndarray.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

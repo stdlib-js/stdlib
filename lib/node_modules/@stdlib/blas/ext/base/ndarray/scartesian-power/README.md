@@ -20,7 +20,7 @@ limitations under the License.
 
 # scartesianPower
 
-> Compute the Cartesian power for a single-precision floating-point ndarray.
+> Compute the Cartesian power for a one-dimensional single-precision floating-point ndarray.
 
 <section class="intro">
 
@@ -38,7 +38,7 @@ var scartesianPower = require( '@stdlib/blas/ext/base/ndarray/scartesian-power' 
 
 #### scartesianPower( arrays )
 
-Computes the Cartesian power for a single-precision floating-point ndarray.
+Computes the Cartesian power for a one-dimensional single-precision floating-point ndarray.
 
 ```javascript
 var Float32Vector = require( '@stdlib/ndarray/vector/float32' );

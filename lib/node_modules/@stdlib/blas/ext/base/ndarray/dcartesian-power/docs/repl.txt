@@ -1,6 +1,7 @@
 
 {{alias}}( arrays )
-    Computes the Cartesian power for a double-precision floating-point ndarray.
+    Computes the Cartesian power for a one-dimensional double-precision
+    floating-point ndarray.
 
     Tuples are stored as rows in the output matrix, where the `j`-th column
     contains the `j`-th element of each tuple.

@@ -20,7 +20,7 @@ limitations under the License.
 
 # dcartesianSquare
 
-> Compute the Cartesian square for a double-precision floating-point ndarray.
+> Compute the Cartesian square for a one-dimensional double-precision floating-point ndarray.
 
 <section class="intro">
 
@@ -38,7 +38,7 @@ var dcartesianSquare = require( '@stdlib/blas/ext/base/ndarray/dcartesian-square
 
 #### dcartesianSquare( arrays )
 
-Computes the Cartesian square for a double-precision floating-point ndarray.
+Computes the Cartesian square for a one-dimensional double-precision floating-point ndarray.
 
 ```javascript
 var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
