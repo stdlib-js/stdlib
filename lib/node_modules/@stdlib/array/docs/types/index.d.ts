@@ -490,7 +490,7 @@ interface Namespace {
 	* // returns [...]
 	*
 	* // Equivalent of Math.round():
-	* var arr = ns.datespace( 1417503655000, 1417503655001, 3, { 'round': 'round' } );
+	* arr = ns.datespace( 1417503655000, 1417503655001, 3, { 'round': 'round' } );
 	* // returns [...]
 	*/
 	datespace: typeof datespace;
@@ -520,7 +520,7 @@ interface Namespace {
 	* var dt = ns.dtype( [ 1, 2, 3 ] );
 	* // returns 'generic'
 	*
-	* var dt = ns.dtype( 'beep' );
+	* dt = ns.dtype( 'beep' );
 	* // returns null
 	*/
 	dtype: typeof dtype;

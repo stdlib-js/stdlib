@@ -20,8 +20,8 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection, AccessorArrayLike, Complex128Array, Complex64Array, BooleanArray } from '@stdlib/types/array';
-import { float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray, boolndarray, genericndarray, Order } from '@stdlib/types/ndarray';
+import { Collection, AccessorArrayLike, Complex128Array, Complex64Array, BooleanArray, Float16Array } from '@stdlib/types/array';
+import { float64ndarray, float32ndarray, float16ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray, boolndarray, genericndarray, Order } from '@stdlib/types/ndarray';
 
 /**
 * Converts an array to a one-dimensional ndarray.
@@ -64,6 +64,27 @@ declare function array2ndarray( buf: Float64Array, order: Order ): float64ndarra
 * // returns 'float32'
 */
 declare function array2ndarray( buf: Float32Array, order: Order ): float32ndarray;
+
+/**
+* Converts an array to a one-dimensional ndarray.
+*
+* @param buf - input array
+* @param order - memory layout (row-major or column-major)
+* @returns one-dimensional ndarray
+*
+* @example
+* var getDType = require( '@stdlib/ndarray/dtype' );
+* var Float16Array = require( '@stdlib/array/float16' );
+*
+* var arr = new Float16Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+*
+* var x = array2ndarray( arr, 'row-major' );
+* // returns <ndarray>
+*
+* var dt = String( getDType( x ) );
+* // returns 'float16'
+*/
+declare function array2ndarray( buf: Float16Array, order: Order ): float16ndarray;
 
 /**
 * Converts an array to a one-dimensional ndarray.
