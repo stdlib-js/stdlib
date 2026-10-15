@@ -38,7 +38,7 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 3 );
 	STDLIB_NAPI_ARGV_INT64( env, strideY, argv, 5 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY( env, X, N, strideX, argv, 2 );
-	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY( env, Y, N+k, strideY, argv, 4 );
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY( env, Y, N+((k>0)?k:0), strideY, argv, 4 );
 	API_SUFFIX(stdlib_strided_sleft_pad_circular)( N, k, X, strideX, Y, strideY );
 	return NULL;
 }
@@ -59,7 +59,7 @@ static napi_value addon_method( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_INT64( env, strideY, argv, 6 );
 	STDLIB_NAPI_ARGV_INT64( env, offsetY, argv, 7 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY( env, X, N, strideX, argv, 2 );
-	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY( env, Y, N+k, strideY, argv, 5 );
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY( env, Y, N+((k>0)?k:0), strideY, argv, 5 );
 	API_SUFFIX(stdlib_strided_sleft_pad_circular_ndarray)( N, k, X, strideX, offsetX, Y, strideY, offsetY );
 	return NULL;
 }
