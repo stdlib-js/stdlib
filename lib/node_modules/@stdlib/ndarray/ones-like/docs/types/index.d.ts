@@ -422,7 +422,7 @@ declare function onesLike( x: ndarray, options: Float64Options ): float64ndarray
 declare function onesLike( x: ndarray, options: Float32Options ): float32ndarray;
 
 /**
-* Creates a ones-filled single-precision floating-point array having the same shape as a provided input ndarray.
+* Creates a ones-filled half-precision floating-point array having the same shape as a provided input ndarray.
 *
 * @param x - input array
 * @param options - options
