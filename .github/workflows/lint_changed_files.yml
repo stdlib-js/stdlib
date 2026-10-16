@@ -419,7 +419,7 @@ jobs:
             make lint-typescript-declarations-files FILES="${files}" ESLINT_TS_CONF="${eslint_typescript_tests_conf}"
           fi
 
-      # Type check `@stdlib/types` declarations (ESLint does not report TypeScript compiler errors such as unresolved type names):
+      # Type check `@stdlib/types` declarations:
       - name: 'Type check @stdlib/types declarations'
         if: success() || failure()
         env:
