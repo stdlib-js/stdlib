@@ -59,7 +59,10 @@
     "signumf",
     "complex",
     "cmplx",
-    "number"
+    "number",
+    "sign",
+    "sgn",
+    "csignumf"
   ],
   "__stdlib__": {
     "scaffold": {
@@ -188,7 +191,6 @@
       },
       "keywords": [
         "csignum",
-        "signum",
         "sign",
         "sgn",
         "complex",
