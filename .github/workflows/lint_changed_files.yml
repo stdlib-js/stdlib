@@ -419,6 +419,18 @@ jobs:
             make lint-typescript-declarations-files FILES="${files}" ESLINT_TS_CONF="${eslint_typescript_tests_conf}"
           fi
 
+      # Type check `@stdlib/types` declarations (ESLint does not report TypeScript compiler errors such as unresolved type names):
+      - name: 'Type check @stdlib/types declarations'
+        if: success() || failure()
+        env:
+          FILES: ${{ steps.changed-files.outputs.files }}
+        run: |
+          dir="lib/node_modules/@stdlib/types"
+          if echo "$FILES" | tr ' ' '\n' | grep -qE "^${dir}/(index\.d|test)\.ts$"; then
+            cp etc/typescript/tsconfig.json "${dir}/tsconfig.json"
+            ./node_modules/.bin/tsc -p "${dir}/tsconfig.json"
+          fi
+
       # Lint license headers:
       - name: 'Lint license headers'
         if: success() || failure()
