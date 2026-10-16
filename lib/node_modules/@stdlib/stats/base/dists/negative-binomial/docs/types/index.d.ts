@@ -86,7 +86,7 @@ interface Namespace {
 	* -   If provided a `r` which is not a positive number, the function returns `NaN`.
 	* -   If `p < 0` or `p > 1`, the function returns `NaN`.
 	*
-	* @param r - number of failures until experiment is stopped
+	* @param r - number of successes until experiment is stopped
 	* @param p - success probability
 	* @returns excess kurtosis
 	*
@@ -159,7 +159,7 @@ interface Namespace {
 	* -   If provided a `r` which is not a positive number, the function returns `NaN`.
 	* -   If `p < 0` or `p > 1`, the function returns `NaN`.
 	*
-	* @param r - number of failures until experiment is stopped
+	* @param r - number of successes until experiment is stopped
 	* @param p - success probability
 	* @returns expected value
 	*
@@ -228,7 +228,7 @@ interface Namespace {
 	* -   If provided a `r` which is not a positive number, the function returns `NaN`.
 	* -   If `p < 0` or `p > 1`, the function returns `NaN`.
 	*
-	* @param r - number of failures until experiment is stopped
+	* @param r - number of successes until experiment is stopped
 	* @param p - success probability
 	* @returns mode
 	*
@@ -330,7 +330,7 @@ interface Namespace {
 	* -   If provided a `r` which is not a positive number, the function returns `NaN`.
 	* -   If `p < 0` or `p > 1`, the function returns `NaN`.
 	*
-	* @param r - number of failures until experiment is stopped
+	* @param r - number of successes until experiment is stopped
 	* @param p - success probability
 	* @returns skewness
 	*
@@ -372,7 +372,7 @@ interface Namespace {
 	* -   If provided a `r` which is not a positive number, the function returns `NaN`.
 	* -   If `p < 0` or `p > 1`, the function returns `NaN`.
 	*
-	* @param r - number of failures until experiment is stopped
+	* @param r - number of successes until experiment is stopped
 	* @param p - success probability
 	* @returns standard deviation
 	*
@@ -414,7 +414,7 @@ interface Namespace {
 	* -   If provided a `r` which is not a positive number, the function returns `NaN`.
 	* -   If `p < 0` or `p > 1`, the function returns `NaN`.
 	*
-	* @param r - number of failures until experiment is stopped
+	* @param r - number of successes until experiment is stopped
 	* @param p - success probability
 	* @returns variance
 	*

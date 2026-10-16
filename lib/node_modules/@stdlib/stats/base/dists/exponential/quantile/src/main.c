@@ -28,7 +28,7 @@
 * @return          quantile
 *
 * @example
-* double y = stdlib_base_exponential_quantile( 0.8, 1.0 );
+* double y = stdlib_base_dists_exponential_quantile( 0.8, 1.0 );
 * // returns ~1.609
 */
 double stdlib_base_dists_exponential_quantile( const double p, const double lambda ) {

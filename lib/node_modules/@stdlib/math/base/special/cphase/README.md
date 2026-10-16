@@ -158,17 +158,14 @@ int main( void ) {
     };
 
     stdlib_complex128_t v;
-    stdlib_complex128_t y;
-    double re1;
-    double im1;
-    double re2;
-    double im2;
+    double re;
+    double im;
+    double y;
     int i;
     for ( i = 0; i < 4; i++ ) {
         v = x[ i ];
         y = stdlib_base_cphase( v );
-        stdlib_complex128_reim( v, &re1, &im1 );
-        stdlib_complex128_reim( y, &re2, &im2 );
+        stdlib_complex128_reim( v, &re, &im );
         printf( "cphase(%lf + %lfi) = %lf\n", re, im, y );
     }
 }

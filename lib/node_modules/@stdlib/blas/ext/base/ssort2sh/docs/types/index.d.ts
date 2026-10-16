@@ -85,9 +85,9 @@ interface Routine {
 * @param N - number of indexed elements
 * @param order - sort order
 * @param x - first input array
-* @param strideX - first stride length
+* @param strideX - `x` stride length
 * @param y - second input array
-* @param strideY - second stride length
+* @param strideY - `y` stride length
 * @returns `x`
 *
 * @example

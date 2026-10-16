@@ -149,6 +149,8 @@ logEachMap( 'shape: (%s). depth: %d. flattened: (%s).', shapes, depths, flattenS
 Flattens a shape to a specified depth.
 
 ```c
+#include <stdint.h>
+
 const int64_t ndims = 3;
 const int64_t shape[] = { 2, 3, 10 };
 int64_t out[ 1 ];

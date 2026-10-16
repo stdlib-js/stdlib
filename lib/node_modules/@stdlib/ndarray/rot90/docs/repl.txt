@@ -1,0 +1,50 @@
+
+{{alias}}( x[, options] )
+    Returns a read-only view of an input ndarray rotated 90 degrees in a
+    specified plane.
+
+    If `options.k > 0`, the function rotates the plane from the first specified
+    dimension toward the second specified dimension. This means that, for a
+    two-dimensional ndarray and `options.dims = [0, 1]`, the function rotates
+    the plane counterclockwise.
+
+    If `options.k < 0`, the function rotates the plane from the second specified
+    dimension toward the first specified dimension. This means that, for a
+    two-dimensional ndarray and `options.dims = [0, 1]`, the function rotates
+    the plane clockwise.
+
+    Each provided dimension index must reside on the interval [-ndims, ndims-1].
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    options: Object (optional)
+        Function options.
+
+    options.k: integer (optional)
+        Number of times to rotate by 90 degrees. Default: 1.
+
+    options.dims: ArrayLikeObject<integer> (optional)
+        Dimension indices defining the plane of rotation. Must contain exactly
+        two unique dimension indices. If less than zero, an index is resolved
+        relative to the last dimension, with the last dimension corresponding to
+        the value `-1`. Default: [ -2, -1 ].
+
+    Returns
+    -------
+    out: ndarray
+        Output array view.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
+    <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
+    > var y = {{alias}}( x )
+    <ndarray>[ [ 2, 4 ], [ 1, 3 ] ]
+    > y = {{alias}}( x, { 'k': 2 } )
+    <ndarray>[ [ 4, 3 ], [ 2, 1 ] ]
+
+    See Also
+    --------

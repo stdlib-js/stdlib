@@ -33,7 +33,7 @@ interface CuAny {
 	* @returns output array
 	*
 	* @example
-	* var x = [ false, false , true, false , false ];
+	* var x = [ false, false, true, false, false ];
 	*
 	* var y = cuany( x );
 	* // returns [ false, false, true, true, true ];

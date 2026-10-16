@@ -57,7 +57,7 @@
     "math",
     "float",
     "float32",
-    "64bit",
+    "32bit",
     "floating-point",
     "ieee754",
     "significand",

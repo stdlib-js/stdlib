@@ -39,6 +39,7 @@
 #include "stdlib/math/base/special/ln.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/constants/float64/eps.h"
+#include "stdlib/constants/float64/nan.h"
 
 static const double Y1 = 0.158963680267333984375;
 static const double Y2 = 0.52815341949462890625;
@@ -282,7 +283,7 @@ static double lgammaSmallImp( const double z, const double zm1, const double zm2
 */
 double stdlib_base_gamma1pm1( const double x ) {
 	if ( stdlib_base_is_nan( x ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( x < 0.0 ) {
 		if ( x < -0.5 ) {

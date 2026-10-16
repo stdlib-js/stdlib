@@ -24,7 +24,7 @@ limitations under the License.
 
 <section class="usage">
 
-### Usage
+## Usage
 
 ```javascript
 var isBoolean = require( '@stdlib/assert/is-boolean' );
@@ -93,7 +93,7 @@ bool = isBoolean.isObject( new Boolean( false ) );
 
 <section class="examples">
 
-### Examples
+## Examples
 
 <!-- eslint-disable no-new-wrappers -->
 

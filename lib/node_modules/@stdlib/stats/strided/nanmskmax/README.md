@@ -38,7 +38,7 @@ var nanmskmax = require( '@stdlib/stats/strided/nanmskmax' );
 
 #### nanmskmax( N, x, strideX, mask, strideMask )
 
-Computes the maximum value of a strided array according to a `mask`, ignoring `NaN` values.
+Computes the maximum value of a strided array according to a mask, ignoring `NaN` values.
 
 ```javascript
 var x = [ 1.0, -2.0, 4.0, 2.0, NaN ];
@@ -86,7 +86,7 @@ var v = nanmskmax( 5, x1, 2, mask1, 2 );
 
 #### nanmskmax.ndarray( N, x, strideX, offsetX, mask, strideMask, offsetMask )
 
-Computes the maximum value of a strided array according to a `mask`, ignoring `NaN` values and using alternative indexing semantics.
+Computes the maximum value of a strided array according to a mask, ignoring `NaN` values and using alternative indexing semantics.
 
 ```javascript
 var x = [ 1.0, -2.0, 4.0, 2.0, NaN ];

@@ -43,7 +43,7 @@
 * int8_t o = stdlib_ndarray_iteration_order( ndims, strides );
 * // returns 1
 */
-int8_t stdlib_ndarray_iteration_order( int64_t ndims, int64_t *strides ) {
+int8_t stdlib_ndarray_iteration_order( const int64_t ndims, const int64_t *strides ) {
 	int64_t cnt;
 	int64_t i;
 

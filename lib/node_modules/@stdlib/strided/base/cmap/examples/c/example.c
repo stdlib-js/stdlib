@@ -37,11 +37,11 @@ int main( void ) {
 	float complex Y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
 	// Specify the number of elements:
-	int64_t N = 6;
+	const int64_t N = 6;
 
 	// Define the strides:
-	int64_t strideX = 1;
-	int64_t strideY = -1;
+	const int64_t strideX = 1;
+	const int64_t strideY = -1;
 
 	// Apply the callback:
 	stdlib_strided_cmap( N, X, strideX, Y, strideY, scale );

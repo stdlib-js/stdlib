@@ -69,20 +69,25 @@ type Callback<T, U, ThisArg> = Nullary<ThisArg> | Unary<T, ThisArg> | Binary<T, 
 /**
 * Computes the mid-range of a one-dimensional ndarray via a callback function.
 *
-* @param arrays - array-like object containing an input ndarray
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*
+* @param arrays - array-like object containing ndarrays
 * @param clbk - callback function
 * @param thisArg - callback execution context
 * @returns mid-range
 *
 * @example
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var vector = require( '@stdlib/ndarray/vector/ctor' );
 *
 * function clbk( value ) {
 *     return value * 2.0;
 * }
 *
-* var xbuf = [ 1.0, 3.0, 4.0, 2.0 ];
-* var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+* var x = vector( [ 1.0, 3.0, 4.0, 2.0 ], 'generic' );
 *
 * var v = midrangeBy( [ x ], clbk );
 * // returns 5.0

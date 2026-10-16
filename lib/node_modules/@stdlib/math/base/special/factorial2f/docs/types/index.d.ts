@@ -23,7 +23,7 @@
 *
 * ## Notes
 *
-* -   If `n` is greater than `56`, the function returns `NaN`, as larger double factorial values cannot be accurately represented due to limitations of single-precision floating-point format.
+* -   If `n` is greater than `56`, the function returns `Infinity`, as larger double factorial values cannot be accurately represented due to limitations of single-precision floating-point format.
 * -   If not provided a nonnegative integer value, the function returns `NaN`.
 *
 * @param n - input value

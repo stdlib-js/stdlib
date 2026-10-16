@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the cumulative distribution function (CDF) for a Pareto (Type I) distribution with shape parameter `alpha` and scale parameter `beta` at a value `x`.
+* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a Pareto (Type I) distribution with shape parameter `alpha` and scale parameter `beta` at a value `x`.
 */
 double stdlib_base_dists_pareto_type1_logcdf( const double x, const double alpha, const double beta );
 

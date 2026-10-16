@@ -1,0 +1,40 @@
+
+{{alias}}( x, y, p )
+    Computes the modified Huber loss gradient with respect to a model parameter.
+
+    If any argument is `NaN`, the function returns `NaN`.
+
+    If `y` is not +1 or -1, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    y: number
+        True target value.
+
+    p: number
+        Predicted value.
+
+    Returns
+    -------
+    v: number
+        Modified Huber loss gradient.
+
+    Examples
+    --------
+    > var v = {{alias}}( 3.4, 1.0, 0.782 )
+    ~-1.482
+    > v = {{alias}}( -5.0, 1.0, 0.202 )
+    7.98
+    > v = {{alias}}( 2.3, 1.0, -0.999 )
+    ~-9.195
+    > v = {{alias}}( 1.0, -1.0, 0.2 )
+    2.4
+    > v = {{alias}}( NaN, 1.0, 0.987 )
+    NaN
+
+    See Also
+    --------
+

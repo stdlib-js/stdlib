@@ -64,3 +64,5 @@ Makefile linguist-vendored
 
 # Configure files which should be included in GitHub language statistics:
 docs/types/*.d.ts -linguist-documentation
+
+.github/workflows/*.lock.yml linguist-generated=true merge=ours

@@ -103,11 +103,11 @@ interface Options extends BaseOptions {
 }
 
 /**
-* Interface for performing a reduction on an ndarray according to a callback function, ignoring NaN values.
+* Interface for performing a reduction on an ndarray according to a callback function, ignoring `NaN` values.
 */
 interface Unary {
 	/**
-	* Computes the maximum value along one or more ndarray dimensions according to a callback function, ignoring NaN values.
+	* Computes the maximum value along one or more ndarray dimensions according to a callback function, ignoring `NaN` values.
 	*
 	* @param x - input ndarray
 	* @param clbk - callback function
@@ -129,7 +129,7 @@ interface Unary {
 	<T = unknown, U extends InputArray<T> = InputArray<T>, ThisArg = unknown>( x: U, clbk: Callback<T, U, ThisArg>, thisArg?: ThisParameterType<Callback<T, U, ThisArg>> ): OutputArray<number>; // NOTE: we lose type specificity here, but retaining specificity would likely be difficult and/or tedious to completely enumerate, as the output ndarray data type is dependent on how `x` interacts with output data type policy and whether that policy has been overridden by `options.dtype`.
 
 	/**
-	* Computes the maximum value along one or more ndarray dimensions according to a callback function, ignoring NaN values.
+	* Computes the maximum value along one or more ndarray dimensions according to a callback function, ignoring `NaN` values.
 	*
 	* @param x - input ndarray
 	* @param options - function options
@@ -152,7 +152,7 @@ interface Unary {
 	<T = unknown, U extends InputArray<T> = InputArray<T>, ThisArg = unknown>( x: U, options: Options, clbk: Callback<T, U, ThisArg>, thisArg?: ThisParameterType<Callback<T, U, ThisArg>> ): OutputArray<number>; // NOTE: we lose type specificity here, but retaining specificity would likely be difficult and/or tedious to completely enumerate, as the output ndarray data type is dependent on how `x` interacts with output data type policy and whether that policy has been overridden by `options.dtype`.
 
 	/**
-	* Computes the maximum value along one or more ndarray dimensions according to a callback function, ignoring NaN values, and assigns results to a provided output ndarray.
+	* Computes the maximum value along one or more ndarray dimensions according to a callback function, ignoring `NaN` values, and assigns results to a provided output ndarray.
 	*
 	* @param x - input ndarray
 	* @param out - output ndarray
@@ -180,7 +180,7 @@ interface Unary {
 	assign<T = unknown, U extends InputArray<T> = InputArray<T>, V extends OutputArray<unknown> = OutputArray<unknown>, ThisArg = unknown>( x: U, out: V, clbk: Callback<T, U, ThisArg>, thisArg?: ThisParameterType<Callback<T, U, ThisArg>> ): V;
 
 	/**
-	* Computes the maximum value along one or more ndarray dimensions according to a callback function, ignoring NaN values, and assigns results to a provided output ndarray.
+	* Computes the maximum value along one or more ndarray dimensions according to a callback function, ignoring `NaN` values, and assigns results to a provided output ndarray.
 	*
 	* @param x - input ndarray
 	* @param out - output ndarray
@@ -210,12 +210,12 @@ interface Unary {
 }
 
 /**
-* Computes the maximum value along one or more ndarray dimensions according to a callback function, ignoring NaN values.
+* Computes the maximum value along one or more ndarray dimensions according to a callback function, ignoring `NaN` values.
 *
 * @param x - input ndarray
 * @param options - function options
 * @param clbk - callback function
-* @param thisArg - callback execution context
+* @param thisArg - callback function execution context
 * @returns output ndarray
 *
 * @example

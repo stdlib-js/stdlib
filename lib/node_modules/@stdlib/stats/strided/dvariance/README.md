@@ -240,7 +240,7 @@ console.log( v );
 Computes the [variance][variance] of a double-precision floating-point strided array.
 
 ```c
-const double x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 }
+const double x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
 
 double v = stdlib_strided_dvariance( 8, 1.0, x, 1 );
 // returns 6.0
@@ -262,7 +262,7 @@ double stdlib_strided_dvariance( const CBLAS_INT N, const double correction, con
 Computes the [variance][variance] of a double-precision floating-point strided array using alternative indexing semantics.
 
 ```c
-const double x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 }
+const double x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
 
 double v = stdlib_strided_dvariance_ndarray( 4, 1.0, x, 2, 0 );
 // returns ~6.666667

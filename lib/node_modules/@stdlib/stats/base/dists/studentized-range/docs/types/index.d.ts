@@ -37,14 +37,14 @@ interface Namespace {
 	* @returns evaluated CDF
 	*
 	* @example
-	* var y = ns.cdf( 2.0, 0.1 );
-	* // returns ~0.611
+	* var y = ns.cdf( 0.5, 3.0, 2.0 );
+	* // returns ~0.0644
 	*
-	* y = ns.cdf( 1.0, 2.0 );
-	* // returns ~0.789
+	* y = ns.cdf( 12.1, 17.0, 2.0 );
+	* // returns ~0.913
 	*
-	* y = ns.cdf( -1.0, 4.0 );
-	* // returns ~0.187
+	* y = ns.cdf( 0.5, 3.0, 2.0, 2 );
+	* // returns ~0.01
 	*
 	* var mycdf = ns.cdf.factory( 3.0, 2.0 );
 	* y = mycdf( 3.0 );

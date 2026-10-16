@@ -84,7 +84,7 @@ The function supports the following arguments:
 ```javascript
 var dtypes = require( '@stdlib/ndarray/dtypes' );
 var cartesianPower = require( '@stdlib/array/base/cartesian-power' );
-var promotionRules = require( '@stdlib/ndarray/promotion-rules' );
+var promoteDataTypes = require( '@stdlib/ndarray/base/promote-dtypes' );
 var quaternaryBlockSize = require( '@stdlib/ndarray/base/quaternary-tiling-block-size' );
 
 // Generate a list of input ndarray dtype quadruplets:
@@ -96,8 +96,8 @@ var b;
 var i;
 console.log( 'block_size, xdtype, ydtype, zdtype, wdtype, udtype' );
 for ( i = 0; i < dt.length; i++ ) {
-    t = promotionRules.apply( null, dt[ i ] );
-    dt[ i ].push( ( t === -1 ) ? 'generic' : t );
+    t = promoteDataTypes( dt[ i ] );
+    dt[ i ].push( ( t === null ) ? 'generic' : t );
     b = quaternaryBlockSize.apply( null, dt[ i ] );
     console.log( '%d, %s, %s, %s, %s, %s', b, dt[i][0], dt[i][1], dt[i][2], dt[i][3], dt[i][4] );
 }

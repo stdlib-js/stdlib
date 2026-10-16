@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection, Complex128Array, Complex64Array, ComplexTypedArray, AccessorArrayLike } from '@stdlib/types/array';
+import { Collection, Complex128Array, Complex64Array, ComplexTypedArray, AccessorArrayLike, Float16Array } from '@stdlib/types/array';
 import { ComplexLike } from '@stdlib/types/complex';
 import { Slice } from '@stdlib/types/slice';
 
@@ -87,6 +87,38 @@ declare function sliceAssign( x: Collection<number> | AccessorArrayLike<number>,
 * // returns true
 */
 declare function sliceAssign( x: Collection<number> | AccessorArrayLike<number>, y: Float32Array, s: Slice, strict: boolean ): Float32Array;
+
+/**
+* Assigns element values from a broadcasted input array to corresponding elements in an output array.
+*
+* ## Notes
+*
+* -   The input array must be broadcast compatible with the output array slice to which elements will be assigned (i.e., contain only one element or the same number of elements as in the slice).
+* -   The input array must have a data type which can be safely cast to the output array data type. Floating-point data types (both real and complex) are allowed to downcast to a lower precision data type of the same kind (e.g., element values from a `'float64'` input array can be assigned to corresponding elements in a `'float32'` output array).
+*
+* @param x - input array
+* @param y - output array
+* @param s - slice object
+* @param strict - boolean indicating whether to enforce strict bounds checking
+* @returns output array
+*
+* @example
+* var Slice = require( '@stdlib/slice/ctor' );
+* var Float16Array = require( '@stdlib/array/float16' );
+*
+* var x = new Float16Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+* var y = new Float16Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+*
+* var s = new Slice( null, null, -2 );
+* // returns <Slice>
+*
+* var out = sliceAssign( x, y, s, false );
+* // returns <Float16Array>[ 0.0, 4.0, 0.0, 3.0, 0.0, 2.0, 0.0, 1.0 ]
+*
+* var bool = ( out === y );
+* // returns true
+*/
+declare function sliceAssign( x: Collection<number> | AccessorArrayLike<number>, y: Float16Array, s: Slice, strict: boolean ): Float16Array;
 
 /**
 * Assigns element values from a broadcasted input array to corresponding elements in an output array.

@@ -144,7 +144,7 @@ logEachMap( 'λ: %0.4f, mode(X;λ): %0.4f', lambda, mode );
 Returns the mode of a Poisson distribution.
 
 ```c
-double out = sstdlib_base_dists_poisson_mode( 9.0 );
+double out = stdlib_base_dists_poisson_mode( 9.0 );
 // returns 9
 ```
 

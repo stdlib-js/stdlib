@@ -70,6 +70,10 @@ var bool = iterSome( array2iterator( [] ), 1 );
 
 <section class="notes">
 
+## Notes
+
+-   The function immediately returns upon finding `n` truthy values.
+
 </section>
 
 <!-- /.notes -->

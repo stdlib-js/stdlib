@@ -46,12 +46,12 @@ var obj = {
 
 // The compiler throws an error if the function is provided a second argument which is not a function...
 {
-	everyOwnBy( obj , 2 ); // $ExpectError
-	everyOwnBy( obj , false ); // $ExpectError
-	everyOwnBy( obj , true ); // $ExpectError
-	everyOwnBy( obj , 'abc' ); // $ExpectError
-	everyOwnBy( obj , {} ); // $ExpectError
-	everyOwnBy( obj , [] ); // $ExpectError
+	everyOwnBy( obj, 2 ); // $ExpectError
+	everyOwnBy( obj, false ); // $ExpectError
+	everyOwnBy( obj, true ); // $ExpectError
+	everyOwnBy( obj, 'abc' ); // $ExpectError
+	everyOwnBy( obj, {} ); // $ExpectError
+	everyOwnBy( obj, [] ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an invalid number of arguments...

@@ -79,6 +79,8 @@ out = truncate( 'beep boop', 7, '!!!' );
 
 <!-- eslint no-undef: "error" -->
 
+<!-- eslint-disable @cspell/spellchecker -->
+
 ```javascript
 var truncate = require( '@stdlib/string/truncate' );
 
@@ -150,8 +152,6 @@ Options:
     ```
 
 -   The implementation ignores trailing delimiters.
-
-</section>
 
 </section>
 

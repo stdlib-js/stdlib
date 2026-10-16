@@ -185,7 +185,7 @@ import add3 = require( './index' );
 	add3.assign( 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, ( x: number ): number => x, 1, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the `assign` method is provided a sixth argument which is not a number...
+// The compiler throws an error if the `assign` method is provided an eighth argument which is not a number...
 {
 	const out = new Float64Array( 2 );
 
@@ -199,7 +199,7 @@ import add3 = require( './index' );
 	add3.assign( 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, out, ( x: number ): number => x, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the `assign` method is provided a seventh argument which is not a number...
+// The compiler throws an error if the `assign` method is provided a ninth argument which is not a number...
 {
 	const out = new Float64Array( 2 );
 

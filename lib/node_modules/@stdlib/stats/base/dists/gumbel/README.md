@@ -46,8 +46,8 @@ The namespace contains the following distribution functions:
 <div class="namespace-toc">
 
 -   <span class="signature">[`cdf( x, mu, beta )`][@stdlib/stats/base/dists/gumbel/cdf]</span><span class="delimiter">: </span><span class="description">Gumbel distribution cumulative distribution function.</span>
--   <span class="signature">[`logcdf( x, mu, beta )`][@stdlib/stats/base/dists/gumbel/logcdf]</span><span class="delimiter">: </span><span class="description">Gumbel distribution logarithm of cumulative distribution function.</span>
--   <span class="signature">[`logpdf( x, mu, beta )`][@stdlib/stats/base/dists/gumbel/logpdf]</span><span class="delimiter">: </span><span class="description">Gumbel distribution logarithm of probability density function (PDF).</span>
+-   <span class="signature">[`logcdf( x, mu, beta )`][@stdlib/stats/base/dists/gumbel/logcdf]</span><span class="delimiter">: </span><span class="description">Gumbel distribution natural logarithm of cumulative distribution function.</span>
+-   <span class="signature">[`logpdf( x, mu, beta )`][@stdlib/stats/base/dists/gumbel/logpdf]</span><span class="delimiter">: </span><span class="description">Gumbel distribution natural logarithm of probability density function (PDF).</span>
 -   <span class="signature">[`mgf( t, mu, beta )`][@stdlib/stats/base/dists/gumbel/mgf]</span><span class="delimiter">: </span><span class="description">Gumbel distribution moment-generating function (MGF).</span>
 -   <span class="signature">[`pdf( x, mu, beta )`][@stdlib/stats/base/dists/gumbel/pdf]</span><span class="delimiter">: </span><span class="description">Gumbel distribution probability density function (PDF).</span>
 -   <span class="signature">[`quantile( p, mu, beta )`][@stdlib/stats/base/dists/gumbel/quantile]</span><span class="delimiter">: </span><span class="description">Gumbel distribution quantile function.</span>

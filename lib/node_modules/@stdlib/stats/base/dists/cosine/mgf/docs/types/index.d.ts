@@ -35,7 +35,7 @@ interface MGF {
 	*
 	* ## Notes
 	*
-	* -   If provided `s < 0`, the function returns `NaN`.
+	* -   If provided `s <= 0`, the function returns `NaN`.
 	*
 	* @param t - input value
 	* @param mu - location parameter

@@ -122,12 +122,12 @@ type Callback<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary<T, U>;
 * @returns input collection
 *
 * @example
-* function predicate( v, key, collection ) {
+* function predicate( v, index, collection ) {
 *     return ( v !== v );
 * }
 *
-* function log( v, key, collection ) {
-*     console.log( '%s: %d', key, v );
+* function log( v, index, collection ) {
+*     console.log( '%s: %d', index, v );
 * }
 *
 * var arr = [ 1, 2, 3, 4, NaN, 5 ];

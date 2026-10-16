@@ -1,0 +1,31 @@
+
+{{alias}}( arrays )
+    Cumulatively tests whether every element in a one-dimensional single-
+    precision floating-point ndarray is falsy.
+
+    If provided an empty input ndarray, the function returns the output ndarray
+    unchanged.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a one-dimensional output ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/ndarray/vector/float32}}( [ 0.0, 0.0, 1.0 ] );
+    > var out = new {{alias:@stdlib/ndarray/vector/bool}}( 3 );
+    > {{alias}}( [ x, out ] )
+    <ndarray>[ true, true, false ]
+
+    See Also
+    --------
+

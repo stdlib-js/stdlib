@@ -225,7 +225,7 @@ int main( void ) {
         y = stdlib_base_dists_weibull_kurtosis( k, lambda );
         printf( "k: %lf, λ: %lf, Kurt(X;k,λ): %lf\n", k, lambda, y );
     }
-
+}
 ```
 
 </section>

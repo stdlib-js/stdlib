@@ -132,7 +132,7 @@ interface DefaultsFunction {
 }
 
 /**
-* Returns default ndarray settings.
+* Returns default array settings.
 *
 * @returns default settings
 *

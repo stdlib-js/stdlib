@@ -76,6 +76,8 @@ typedef struct {
 	uint16_t bits;
 } stdlib_float16_t;
 
+#endif
+
 /**
 * An opaque type definition for a union for accessing the underlying binary representation of a half-precision floating-point number.
 *
@@ -90,8 +92,6 @@ typedef union {
 	// Raw IEEE 754 binary representation.
 	uint16_t bits;
 } stdlib_float16_bits_t;
-
-#endif
 
 /**
 * Converts a half-precision floating-point number to its binary representation.

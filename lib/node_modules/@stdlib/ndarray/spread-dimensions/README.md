@@ -45,7 +45,6 @@ var spreadDimensions = require( '@stdlib/ndarray/spread-dimensions' );
 Returns a read-only view of an input [ndarray][@stdlib/ndarray/ctor] where the dimensions of the input [ndarray][@stdlib/ndarray/ctor] are expanded to a specified dimensionality by spreading dimensions to specified dimension indices and inserting dimensions of size one for the remaining dimensions.
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var array = require( '@stdlib/ndarray/array' );
 
 // Create a 2x2 ndarray:

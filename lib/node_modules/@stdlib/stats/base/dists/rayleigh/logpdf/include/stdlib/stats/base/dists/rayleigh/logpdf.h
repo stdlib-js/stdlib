@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the logarithm of the probability density function (PDF) for a Rayleigh distribution with scale parameter `sigma` at a value `x`.
+* Evaluates the natural logarithm of the probability density function (PDF) for a Rayleigh distribution with scale parameter `sigma` at a value `x`.
 */
 double stdlib_base_dists_rayleigh_logpdf( const double x, const double sigma );
 

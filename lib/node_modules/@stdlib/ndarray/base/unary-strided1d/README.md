@@ -138,7 +138,9 @@ Each provided ndarray should be an object with the following properties:
 
 ## Notes
 
--   Any additional ndarray arguments are expected to have the same dimensions as the loop dimensions of the input ndarray. When calling the strided array function, any additional ndarray arguments are provided as zero-dimensional ndarray-like objects.
+-   Any additional ndarray arguments are expected to have the same leading dimensions as the loop dimensions of the input ndarray.
+
+-   When calling the strided array function, any additional ndarray arguments are provided as k-dimensional subarrays, where `k = M - N` with `M` being the number of dimensions in an ndarray argument and `N` being the number of loop dimensions for the input ndarray. For example, if an input ndarray has three dimensions, the number of loop dimensions is one, and an additional ndarray argument has one dimension, thus matching the number of loop dimensions for the input ndarray, the strided array function is provided a zero-dimensional subarray as an additional ndarray argument. In the same scenario but where an additional ndarray argument has two dimensions, thus exceeding the number of loop dimensions, the strided array function is provided a one-dimensional subarray as an additional ndarray argument.
 
 -   The strided array function is expected to have the following signature:
 
@@ -148,7 +150,7 @@ Each provided ndarray should be an object with the following properties:
 
     where
 
-    -   **arrays**: array containing a one-dimensional subarray of the input ndarray, a one-dimensional subarray of the output ndarray, and any additional ndarray arguments as zero-dimensional ndarrays.
+    -   **arrays**: array containing a one-dimensional subarray of the input ndarray, a one-dimensional subarray of the output ndarray, and any additional ndarray arguments as subarrays.
     -   **options**: function options (_optional_).
 
 -   The function iterates over ndarray elements according to the memory layout of the input ndarray.

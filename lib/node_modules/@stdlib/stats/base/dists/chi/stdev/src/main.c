@@ -16,8 +16,8 @@
 * limitations under the License.
 */
 
-#include "stdlib/stats/base/dists/chi/mean.h"
-#include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/stats/base/dists/chi/stdev.h"
+#include "stdlib/stats/base/dists/chi/variance.h"
 #include "stdlib/math/base/special/sqrt.h"
 
 /**
@@ -31,10 +31,5 @@
 * // returns ~0.697
 */
 double stdlib_base_dists_chi_stdev( const double k ) {
-	double mu;
-	if ( stdlib_base_is_nan( k ) || k < 0.0 ) {
-		return 0.0/0.0; // NaN
-	}
-	mu = stdlib_base_dists_chi_mean( k );
-	return stdlib_base_sqrt( k - ( mu*mu ) );
+	return stdlib_base_sqrt( stdlib_base_dists_chi_variance( k ) );
 }

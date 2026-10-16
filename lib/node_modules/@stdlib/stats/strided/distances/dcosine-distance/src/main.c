@@ -18,6 +18,7 @@
 
 #include "stdlib/stats/strided/distances/dcosine_distance.h"
 #include "stdlib/stats/strided/distances/dcosine_similarity.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/blas/base/shared.h"
 #include "stdlib/strided/base/stride2offset.h"
 
@@ -51,7 +52,7 @@ double API_SUFFIX(stdlib_strided_dcosine_distance)( const CBLAS_INT N, const dou
 */
 double API_SUFFIX(stdlib_strided_dcosine_distance_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
 	if ( N <= 0 ) {
-		return 0.0/0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
-	return 1.0 - stdlib_strided_dcosine_similarity_ndarray( N, X, strideX, offsetX, Y, strideY, offsetY );
+	return 1.0 - API_SUFFIX(stdlib_strided_dcosine_similarity_ndarray)( N, X, strideX, offsetX, Y, strideY, offsetY );
 }

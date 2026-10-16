@@ -1,0 +1,28 @@
+
+{{alias}}( x, offset )
+    Returns a Uint16Array view of a Float16Array.
+
+    Parameters
+    ----------
+    x: Float16Array
+        Input array.
+
+    offset: integer
+        Starting index of the view relative to the Float16Array.
+
+    Returns
+    -------
+    out: Uint16Array
+        Uint16Array view.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/float16}}( 10 );
+    > var out = {{alias}}( x, 0 )
+    <Uint16Array>
+    > var bool = ( out.buffer === x.buffer )
+    true
+
+    See Also
+    --------
+

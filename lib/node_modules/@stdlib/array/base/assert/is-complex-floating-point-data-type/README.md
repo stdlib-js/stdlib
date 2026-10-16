@@ -87,6 +87,9 @@ var bool = isComplexFloatingPointDataType( 'complex128' );
 bool = isComplexFloatingPointDataType( 'complex64' );
 // returns true
 
+bool = isComplexFloatingPointDataType( 'float16' );
+// returns false
+
 bool = isComplexFloatingPointDataType( 'float32' );
 // returns false
 

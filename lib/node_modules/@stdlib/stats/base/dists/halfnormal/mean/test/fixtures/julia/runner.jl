@@ -50,11 +50,11 @@ function gen( sigma, name )
 	# Store data to be written to file as a collection:
 	data = Dict([
 		("sigma", sigma),
-		("expected", z)
+		("expected", expected)
 	]);
 
 	# Based on the script directory, create an output filepath:
-	filepath = joinpath( dir, name )
+	filepath = joinpath( dir, name );
 
 	# Write the data to the output filepath as JSON:
 	outfile = open( filepath, "w" );

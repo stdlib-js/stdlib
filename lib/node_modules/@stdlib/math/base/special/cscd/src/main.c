@@ -20,7 +20,7 @@
 #include "stdlib/math/base/special/sind.h"
 
 /**
-* Computes the cosecant of a degree.
+* Computes the cosecant of an angle measured in degrees.
 *
 * @param x    input value (in degrees)
 * @return     cosecant

@@ -23,14 +23,26 @@
 *
 * ## Notes
 *
+* -   Property order is not guaranteed, as object property enumeration is not specified according to the ECMAScript specification. In practice, however, most engines use insertion order to sort an object's properties, thus allowing for deterministic extraction.
 * -   If provided `null` or `undefined`, the function returns an empty array.
 *
 * @param value - input object
 * @returns a list of own and inherited non-enumerable property names and symbols
 *
 * @example
-* var props = nonEnumerablePropertiesIn( [] );
-* // returns [...]
+* var defineProperty = require( '@stdlib/utils/define-property' );
+*
+* var obj = {};
+*
+* defineProperty( obj, 'beep', {
+*     'configurable': false,
+*     'enumerable': false,
+*     'writable': false,
+*     'value': 'boop'
+* });
+*
+* var props = nonEnumerablePropertiesIn( obj );
+* // e.g., returns [ 'beep', ... ]
 */
 declare function nonEnumerablePropertiesIn( value: any ): Array<string|symbol>;
 

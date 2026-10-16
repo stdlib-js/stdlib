@@ -38,9 +38,8 @@
     Examples
     --------
     > var x = {{alias:@stdlib/ndarray/array}}( [ -1.0, 2.0, -3.0, -4.0 ] );
-    > var y = {{alias}}( x );
-    > {{alias:@stdlib/ndarray/to-array}}( y )
-    [ -1.0, 1.0, -2.0, -6.0 ]
+    > var y = {{alias}}( x )
+    <ndarray>[ -1.0, 1.0, -2.0, -6.0 ]
 
 
 {{alias}}.assign( x[, initial], out[, options] )
@@ -85,11 +84,9 @@
     > var x = {{alias:@stdlib/ndarray/array}}( [ -1.0, 2.0, -3.0, -4.0 ] );
     > var out = {{alias:@stdlib/ndarray/zeros-like}}( x );
     > var y = {{alias}}.assign( x, out )
-    <ndarray>
+    <ndarray>[ -1.0, 1.0, -2.0, -6.0 ]
     > var bool = ( out === y )
     true
-    > {{alias:@stdlib/ndarray/to-array}}( y )
-    [ -1.0, 1.0, -2.0, -6.0 ]
 
     See Also
     --------

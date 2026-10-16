@@ -52,6 +52,10 @@ ERROR=1
 # Identifier for PR commit message comments:
 COMMENT_IDENTIFIER="<!-- PR_COMMIT_MESSAGE -->"
 
+# Configure retries for API calls:
+max_retries=3
+retry_delay=2
+
 
 # FUNCTIONS #
 
@@ -63,7 +67,7 @@ on_error() {
 	exit ${ERROR}
 }
 
-# Makes GitHub API requests.
+# Performs a GitHub API request.
 #
 # $1 - HTTP method
 # $2 - API endpoint
@@ -72,6 +76,10 @@ github_api() {
 	local method="${1}"
 	local endpoint="${2}"
 	local data="${3}"
+	local retry_count=0
+	local response=""
+	local status_code
+	local success=false
 
 	# Initialize an array to hold curl headers:
 	local headers=()
@@ -81,28 +89,54 @@ github_api() {
 		headers+=("-H" "Authorization: token ${GITHUB_TOKEN}")
 	fi
 
-	# Determine the HTTP method and construct the curl command accordingly:
-	case "${method}" in
-		GET)
-			curl -s "${headers[@]}" "${GITHUB_API_URL}${endpoint}"
-			;;
-		POST)
-			# For POST requests, always set the Content-Type header:
-			headers+=("-H" "Content-Type: application/json")
+	# For POST requests, always set the Content-Type header:
+	if [ "${method}" != "GET" ]; then
+		headers+=("-H" "Content-Type: application/json")
+	fi
 
-			# If data is provided, include it in the request:
-			if [ -n "${data}" ]; then
-				curl -s -X POST "${headers[@]}" -d "${data}" "${GITHUB_API_URL}${endpoint}"
-			else
-				# Handle cases where POST data is required but not provided:
-				echo "POST request requires data."
-				on_error "POST request requires data"
-			fi
-			;;
-		*)
-			on_error "Invalid HTTP method: ${method}"
-			;;
-	esac
+	# Add retry logic...
+	while [ $retry_count -lt $max_retries ] && [ "$success" = false ]; do
+		if [ $retry_count -gt 0 ]; then
+			echo "Retrying request (attempt $((retry_count+1))/${max_retries})..." >&2
+			sleep $retry_delay
+		fi
+
+		# Make the API request:
+		if [ -n "${data}" ]; then
+			response=$(curl -s -w "%{http_code}" -X "${method}" "${headers[@]}" -d "${data}" "${GITHUB_API_URL}${endpoint}")
+		else
+			response=$(curl -s -w "%{http_code}" -X "${method}" "${headers[@]}" "${GITHUB_API_URL}${endpoint}")
+		fi
+
+		# Extract status code (last 3 digits) and actual response (everything before):
+		status_code="${response: -3}"
+		response="${response:0:${#response}-3}"
+
+		# Check if we got a successful response:
+		if [[ $status_code -ge 200 && $status_code -lt 300 ]]; then
+			success=true
+		else
+			echo "API request failed with status $status_code: $response" >&2
+			retry_count=$((retry_count+1))
+		fi
+	done
+
+	if [ "$success" = false ]; then
+		echo "Failed to complete API request after $max_retries attempts" >&2
+		return 1
+	fi
+
+	# Validate that response is valid JSON if expected:
+	if ! echo "$response" | jq -e '.' > /dev/null 2>&1; then
+		echo "Warning: Response is not valid JSON: ${response}" >&2
+		# Return empty JSON object as fallback:
+		echo "{}"
+		return 0
+	fi
+
+	# Return the actual response data (without status code):
+	echo "$response"
+	return 0
 }
 
 # Main execution sequence.
@@ -120,6 +154,9 @@ main() {
 
 	# Fetch PR comments to look for commit message comment:
 	comments=$(github_api "GET" "/repos/${REPO_OWNER}/${REPO_NAME}/issues/${pr_number}/comments")
+	if [ $? -ne 0 ]; then
+		on_error "Failed to fetch comments for PR #${pr_number}"
+	fi
 
 	# Look for the PR commit message comment with the identifier:
 	commit_message_comment=$(echo "${comments}" | jq -r --arg id "${COMMENT_IDENTIFIER}" '.[] | select(.body | contains($id)) | .body')
@@ -145,6 +182,15 @@ main() {
 	fi
 	if [ -z "${commit_body}" ]; then
 		on_error "Couldn't extract commit body from PR commit message"
+	fi
+
+	# Validate that the commit message does not contain placeholder values
+	# (e.g., from a failed API response during commit message generation):
+	if [ "${commit_subject}" = "null" ]; then
+		on_error "Commit subject is the literal string 'null', indicating a failed commit message generation"
+	fi
+	if echo "${commit_body}" | grep -q "^PR-URL: null$"; then
+		on_error "Commit body contains 'PR-URL: null', indicating a failed commit message generation"
 	fi
 
 	# Squash and merge the PR with the extracted subject and body:

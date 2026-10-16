@@ -35,6 +35,7 @@
         "./src/fc_c.c",
         "./src/ff_f.c",
         "./src/fi_f.c",
+        "./src/hh_h.c",
         "./src/id_d.c",
         "./src/ii_d.c",
         "./src/ii_f.c",
@@ -56,7 +57,10 @@
         "@stdlib/complex/float32/ctor",
         "@stdlib/complex/float64/ctor",
         "@stdlib/complex/float64/reim",
-        "@stdlib/complex/float32/reim"
+        "@stdlib/complex/float32/reim",
+        "@stdlib/number/float16/ctor",
+        "@stdlib/number/float64/base/to-float16",
+        "@stdlib/number/float16/base/to-float64"
       ]
     }
   ]

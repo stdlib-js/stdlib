@@ -29,7 +29,7 @@
 * @return          excess kurtosis
 *
 * @example
-* double y = stdlib_base_dists_beta_kurtosis( 1, 1.0 );
+* double y = stdlib_base_dists_erlang_kurtosis( 1, 1.0 );
 * // returns 6.0
 */
 double stdlib_base_dists_erlang_kurtosis( const int32_t k, const double lambda ) {

@@ -31,7 +31,7 @@ int main( void ) {
 	int i;
 
 	for ( i = 0; i < 25; i++ ) {
-		sigma = random_uniform( 0 , 10.0 );
+		sigma = random_uniform( 0.1, 10.0 );
 		y = stdlib_base_dists_rayleigh_stdev( sigma );
 		printf( "σ: %lf, SD(X;σ): %lf\n", sigma, y );
 	}

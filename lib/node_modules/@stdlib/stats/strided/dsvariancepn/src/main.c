@@ -73,7 +73,7 @@ double API_SUFFIX(stdlib_strided_dsvariancepn_ndarray)( const CBLAS_INT N, const
 		return 0.0;
 	}
 	// Compute an estimate for the mean:
-	mu = stdlib_strided_dssum_ndarray( N, X, strideX, offsetX ) / dN;
+	mu = API_SUFFIX(stdlib_strided_dssum_ndarray)( N, X, strideX, offsetX ) / dN;
 
 	// Compute the variance...
 	ix = offsetX;

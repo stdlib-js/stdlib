@@ -35,6 +35,11 @@ type accumulator = ( x?: number ) => number | null;
 /**
 * Returns an accumulator function which incrementally computes a moving maximum value.
 *
+* ## Notes
+*
+* -   The `W` parameter defines the number of values over which to compute the moving maximum.
+* -   As `W` values are needed to fill the window buffer, the first `W-1` returned values are calculated from smaller sample sizes. Until the window is full, each returned value is calculated from all provided values.
+*
 * @param W - window size
 * @throws must provide a positive integer
 * @returns accumulator function

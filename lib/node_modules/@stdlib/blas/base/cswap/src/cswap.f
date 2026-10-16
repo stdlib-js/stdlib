@@ -16,7 +16,7 @@
 ! limitations under the License.
 !<
 
-!> Interchanges two complex single-precision floating-point vectors.
+!> Interchanges two single-precision complex floating-point vectors.
 !
 ! ## Notes
 !

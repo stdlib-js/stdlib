@@ -48,12 +48,8 @@ interface Routine {
 	* var s = new Complex64( 0.3, 0.4 );
 	*
 	* crot( cx.length, cx, 1, cy, 1, 0.8, s );
-	*
-	* var z = cy.get( 0 );
-	* // returns <Complex64>[ ~-1.1, ~-0.2 ]
-	*
-	* z = cx.get( 0 );
-	* // returns <Complex64>[ ~0.8, ~1.6 ]
+	* // cy => <Complex64Array>[ ~-1.1, ~-0.2, ~-2.5, ~0.0, ~-3.9, ~0.2, ~-5.3, ~0.4 ]
+	* // cx => <Complex64Array>[ ~0.8, ~1.6, ~2.4, ~3.2, ~4.0, ~4.8, ~5.6, ~6.4 ]
 	*/
 	( N: number, cx: Complex64Array, strideCX: number, cy: Complex64Array, strideCY: number, c: number, s: Complex64 ): Complex64Array;
 
@@ -80,12 +76,8 @@ interface Routine {
 	* var s = new Complex64( 0.3, 0.4 );
 	*
 	* crot.ndarray( cx.length, cx, 1, 0, cy, 1, 0, 0.8, s );
-	*
-	* var z = cy.get( 0 );
-	* // returns <Complex64>[ ~-1.1, ~-0.2 ]
-	*
-	* z = cx.get( 0 );
-	* // returns <Complex64>[ ~0.8, ~1.6 ]
+	* // cy => <Complex64Array>[ ~-1.1, ~-0.2, ~-2.5, ~0.0, ~-3.9, ~0.2, ~-5.3, ~0.4 ]
+	* // cx => <Complex64Array>[ ~0.8, ~1.6, ~2.4, ~3.2, ~4.0, ~4.8, ~5.6, ~6.4 ]
 	*/
 	ndarray( N: number, cx: Complex64Array, strideCX: number, offsetCX: number, cy: Complex64Array, strideCY: number, offsetCY: number, c: number, s: Complex64 ): Complex64Array;
 }
@@ -111,12 +103,8 @@ interface Routine {
 * var s = new Complex64( 0.3, 0.4 );
 *
 * crot( 2, cx, 2, cy, 1, 0.8, s );
-*
-* var z = cy.get( 0 );
-* // returns <Complex64>[ ~-1.1, ~-0.2 ]
-*
-* z = cx.get( 0 );
-* // returns <Complex64>[ ~0.8, ~1.6 ]
+* // cy => <Complex64Array>[ ~-1.1, ~-0.2, ~-3.9, ~0.2, 0.0, 0.0, 0.0, 0.0 ]
+* // cx => <Complex64Array>[ ~0.8, ~1.6, 3.0, 4.0, 4.0, ~4.8, 7.0, 8.0 ]
 *
 * @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
@@ -127,12 +115,8 @@ interface Routine {
 * var s = new Complex64( 0.3, 0.4 );
 *
 * crot.ndarray( 2, cx, 2, 0, cy, 1, 0, 0.8, s );
-*
-* var z = cy.get( 0 );
-* // returns <Complex64>[ ~-1.1, ~-0.2 ]
-*
-* z = cx.get( 0 );
-* // returns <Complex64>[ ~0.8, ~1.6 ]
+* // cy => <Complex64Array>[ ~-1.1, ~-0.2, ~-3.9, ~0.2, 0.0, 0.0, 0.0, 0.0 ]
+* // cx => <Complex64Array>[ ~0.8, ~1.6, 3.0, 4.0, 4.0, ~4.8, 7.0, 8.0 ]
 */
 declare var crot: Routine;
 

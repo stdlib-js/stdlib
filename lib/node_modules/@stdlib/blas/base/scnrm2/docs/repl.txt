@@ -1,6 +1,6 @@
 
 {{alias}}( N, x, strideX )
-    Computes the L2-norm of a complex single-precision floating-point vector.
+    Computes the L2-norm of a single-precision complex floating-point vector.
 
     The `N` and stride parameters determine which elements in the strided array
     are accessed at runtime.
@@ -46,7 +46,7 @@
 
 
 {{alias}}.ndarray( N, x, strideX, offsetX )
-    Computes the L2-norm of a complex single-precision floating-point vector
+    Computes the L2-norm of a single-precision complex floating-point vector
     using alternative indexing semantics.
 
     While typed array views mandate a view offset based on the underlying

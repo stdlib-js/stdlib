@@ -52,12 +52,12 @@ type InOutShapes = [ Array<number>, Array<number>, Array<number>, Array<number>,
 	const shapes: InOutShapes = [ [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ] ];
 
 	bquinary4d( [ x, y, z, w, v, out ], shapes, fcn ); // $ExpectType void
-	bquinary4d( [ x[ 0 ], y, z, w, v, out ], [ [ shapes[ 0 ][ 1 ][ 2 ][ 3 ] ], shapes[ 1 ], shapes[ 2 ], shapes [ 3 ], shapes[ 4 ], shapes[ 5 ] ] , fcn ); // $ExpectType void
+	bquinary4d( [ x[ 0 ], y, z, w, v, out ], [ [ shapes[ 0 ][ 1 ][ 2 ][ 3 ] ], shapes[ 1 ], shapes[ 2 ], shapes [ 3 ], shapes[ 4 ], shapes[ 5 ] ], fcn ); // $ExpectType void
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array of nested arrays...
 {
-	const shapes: InOutShapes =  [ [ 2, 2, 2, 2 ] , [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ] ];
+	const shapes: InOutShapes =  [ [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ] ];
 
 	bquinary4d( 'abc', shapes, fcn ); // $ExpectError
 	bquinary4d( 3.14, shapes, fcn ); // $ExpectError
@@ -97,7 +97,7 @@ type InOutShapes = [ Array<number>, Array<number>, Array<number>, Array<number>,
 	const v = [ [ [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] ] ];
 	const out = [ [ [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ] ] ];
 
-	const shapes: InOutShapes = [ [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ], [ 2, 2, 2 ,2 ] ];
+	const shapes: InOutShapes = [ [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ] ];
 
 	bquinary4d( [ x, y, z, w, v, out ], shapes, 'abc' ); // $ExpectError
 	bquinary4d( [ x, y, z, w, v, out ], shapes, 3.14 ); // $ExpectError
@@ -117,7 +117,7 @@ type InOutShapes = [ Array<number>, Array<number>, Array<number>, Array<number>,
 	const v = [ [ [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] ] ];
 	const out = [ [ [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ] ] ];
 
-	const shapes: InOutShapes = [ [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ], [ 2, 2, 2 ,2 ], [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ] ];
+	const shapes: InOutShapes = [ [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ], [ 2, 2, 2, 2 ] ];
 
 	bquinary4d(); // $ExpectError
 	bquinary4d( [ x, y, z, w, v, out ] ); // $ExpectError

@@ -40,7 +40,8 @@
         "@stdlib/math/base/special/asin",
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/sqrt",
-        "@stdlib/constants/float64/fourth-pi"
+        "@stdlib/constants/float64/fourth-pi",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -57,7 +58,8 @@
         "@stdlib/math/base/special/asin",
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/sqrt",
-        "@stdlib/constants/float64/fourth-pi"
+        "@stdlib/constants/float64/fourth-pi",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -74,7 +76,8 @@
         "@stdlib/math/base/special/asin",
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/sqrt",
-        "@stdlib/constants/float64/fourth-pi"
+        "@stdlib/constants/float64/fourth-pi",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

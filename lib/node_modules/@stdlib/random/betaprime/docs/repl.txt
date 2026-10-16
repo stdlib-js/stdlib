@@ -1,6 +1,6 @@
 
 {{alias}}( shape, alpha, beta[, options] )
-    Returns an ndarray containing pseudorandom numbers drawn from a betaprime
+    Returns an ndarray containing pseudorandom numbers drawn from a beta prime
     distribution.
 
     Parameters
@@ -61,7 +61,7 @@
 
 
 {{alias}}.assign( alpha, beta, out )
-    Fills an ndarray with pseudorandom numbers drawn from a betaprime
+    Fills an ndarray with pseudorandom numbers drawn from a beta prime
     distribution.
 
     Parameters
@@ -93,7 +93,7 @@
 
 {{alias}}.factory( [options] )
     Returns a function for generating pseudorandom numbers drawn from a
-    betaprime distribution.
+    beta prime distribution.
 
     The returned function has the same signature and accepts the same options as
     `{{alias}}` above.

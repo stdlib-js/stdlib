@@ -1,0 +1,42 @@
+
+{{alias}}( x[, options] )
+    Returns a read-only view of the first element (or subarray) along one or
+    more ndarray dimensions.
+
+    If provided an empty `dims` array, the function returns a read-only view
+    of the input ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    options: Object (optional)
+        Function options.
+
+    options.dims: Array<integer> (optional)
+        List of dimensions over which to perform the operation. If a dimension
+        index is provided as an integer less than zero, the dimension index is
+        resolved relative to the last dimension, with the last dimension
+        corresponding to the value `-1`. By default, the function performs the
+        operation over all dimensions.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] )
+    <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+    > var v = {{alias}}( x )
+    <ndarray>[ 1.0 ]
+    > v = {{alias}}( x, { 'dims': [ -1 ] } )
+    <ndarray>[ 1.0, 3.0 ]
+    > v = {{alias}}( x, { 'dims': [ -2 ] } )
+    <ndarray>[ 1.0, 2.0 ]
+
+    See Also
+    --------
+

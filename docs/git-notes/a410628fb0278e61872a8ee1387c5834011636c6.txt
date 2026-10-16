@@ -1,0 +1,10 @@
+---
+type: amend-message
+---
+chore: fix JavaScript lint errors
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/10909
+Closes: https://github.com/stdlib-js/stdlib/issues/10906
+Ref: https://github.com/stdlib-js/stdlib/pull/10897
+
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>

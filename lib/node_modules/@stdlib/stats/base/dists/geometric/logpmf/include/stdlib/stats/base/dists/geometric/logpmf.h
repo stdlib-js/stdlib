@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the logarithm of the probability mass function (PMF) for the geometric distribution with success probability `p` at a value `x`.
+* Evaluates the natural logarithm of the probability mass function (PMF) for the geometric distribution with success probability `p` at a value `x`.
 */
 double stdlib_base_dists_geometric_logpmf( const double x, const double p );
 

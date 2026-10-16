@@ -119,11 +119,11 @@ interface PRNG {
 }
 
 /**
-* Interface for generating pseudorandom numbers drawn from a betaprime distribution.
+* Interface for generating pseudorandom numbers drawn from a beta prime distribution.
 */
 interface RandomFunction extends PRNG {
 	/**
-	* Returns an ndarray containing pseudorandom numbers drawn from a betaprime distribution.
+	* Returns an ndarray containing pseudorandom numbers drawn from a beta prime distribution.
 	*
 	* @param shape - output shape
 	* @param alpha - first shape parameter
@@ -135,7 +135,7 @@ interface RandomFunction extends PRNG {
 	<T extends typedndarray<number>, U extends typedndarray<number>>( shape: Shape, alpha: number | T, beta: number | U, options?: Options ): RandomArray;
 
 	/**
-	* Fills an ndarray with pseudorandom numbers drawn from a betaprime distribution.
+	* Fills an ndarray with pseudorandom numbers drawn from a beta prime distribution.
 	*
 	* @param alpha - first shape parameter
 	* @param beta - second shape parameter
@@ -147,11 +147,11 @@ interface RandomFunction extends PRNG {
 }
 
 /**
-* Interface for generating pseudorandom numbers drawn from a betaprime distribution.
+* Interface for generating pseudorandom numbers drawn from a beta prime distribution.
 */
 interface Random extends PRNG {
 	/**
-	* Returns an ndarray containing pseudorandom numbers drawn from a betaprime distribution.
+	* Returns an ndarray containing pseudorandom numbers drawn from a beta prime distribution.
 	*
 	* @param shape - output shape
 	* @param alpha - first shape parameter
@@ -167,7 +167,7 @@ interface Random extends PRNG {
 	<T extends typedndarray<number>, U extends typedndarray<number>>( shape: Shape, alpha: number | T, beta: number | U, options?: Options ): RandomArray;
 
 	/**
-	* Fills an ndarray with pseudorandom numbers drawn from a betaprime distribution.
+	* Fills an ndarray with pseudorandom numbers drawn from a beta prime distribution.
 	*
 	* @param alpha - first shape parameter
 	* @param beta - second shape parameter
@@ -190,7 +190,7 @@ interface Random extends PRNG {
 	assign<T extends typedndarray<number>, U extends typedndarray<number>, V extends typedndarray<number>>( alpha: number | T, beta: number | U, out: V ): V;
 
 	/**
-	* Returns a function for creating ndarrays containing pseudorandom numbers drawn from a betaprime distribution.
+	* Returns a function for creating ndarrays containing pseudorandom numbers drawn from a beta prime distribution.
 	*
 	* @param options - function options
 	* @throws must provide a valid state
@@ -213,7 +213,7 @@ interface Random extends PRNG {
 }
 
 /**
-* Generates pseudorandom numbers drawn from a betaprime distribution.
+* Generates pseudorandom numbers drawn from a beta prime distribution.
 *
 * @param shape - output shape
 * @param alpha - first shape parameter

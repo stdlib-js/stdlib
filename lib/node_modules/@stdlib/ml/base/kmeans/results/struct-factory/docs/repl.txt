@@ -1,0 +1,25 @@
+
+{{alias}}( dtype )
+    Returns a new struct constructor tailored to a specified floating-point data
+    type.
+
+    Parameters
+    ----------
+    dtype: string
+        Floating-point data type for storing floating-point results.
+
+    Returns
+    -------
+    fcn: Function
+        Struct constructor.
+
+    Examples
+    --------
+    > var S = {{alias}}( 'float64' );
+    > var r = new S();
+    > r.toString()
+    <string>
+
+    See Also
+    --------
+

@@ -437,6 +437,7 @@ interface Namespace {
 
 	/**
 	* Returns the variance for a Fréchet distribution with shape `alpha`, scale `s`, and location `m`.
+	*
 	* ## Notes
 	*
 	* -   If provided `0 < alpha <= 2` and `s > 0`, the function returns positive infinity.

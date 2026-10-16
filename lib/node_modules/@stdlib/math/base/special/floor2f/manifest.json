@@ -1,0 +1,99 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/unary",
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/math/base/assert/is-infinitef",
+        "@stdlib/math/base/special/powf",
+        "@stdlib/math/base/special/floorf",
+        "@stdlib/math/base/special/ceilf",
+        "@stdlib/constants/float32/max-base2-exponent",
+        "@stdlib/constants/float32/min-base2-exponent-subnormal",
+        "@stdlib/constants/float32/ninf"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/math/base/assert/is-infinitef",
+        "@stdlib/math/base/special/powf",
+        "@stdlib/math/base/special/floorf",
+        "@stdlib/math/base/special/ceilf",
+        "@stdlib/constants/float32/max-base2-exponent",
+        "@stdlib/constants/float32/min-base2-exponent-subnormal",
+        "@stdlib/constants/float32/ninf"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/math/base/assert/is-infinitef",
+        "@stdlib/math/base/special/powf",
+        "@stdlib/math/base/special/floorf",
+        "@stdlib/math/base/special/ceilf",
+        "@stdlib/constants/float32/max-base2-exponent",
+        "@stdlib/constants/float32/min-base2-exponent-subnormal",
+        "@stdlib/constants/float32/ninf"
+      ]
+    }
+  ]
+}

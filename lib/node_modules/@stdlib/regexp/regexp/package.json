@@ -57,6 +57,7 @@
     "expression",
     "string",
     "pattern",
-    "flags"
+    "flags",
+    "match"
   ]
 }

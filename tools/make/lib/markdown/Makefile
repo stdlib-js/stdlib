@@ -21,6 +21,7 @@
 # Note: keep in alphabetical order...
 include $(TOOLS_MAKE_LIB_DIR)/markdown/assets.mk
 include $(TOOLS_MAKE_LIB_DIR)/markdown/equations.mk
+include $(TOOLS_MAKE_LIB_DIR)/markdown/includes.mk
 include $(TOOLS_MAKE_LIB_DIR)/markdown/namespace_toc.mk
 include $(TOOLS_MAKE_LIB_DIR)/markdown/pkg_urls.mk
 include $(TOOLS_MAKE_LIB_DIR)/markdown/related.mk

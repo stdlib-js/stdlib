@@ -35,7 +35,12 @@
 * stdlib_complex128_t z = stdlib_complex128( -4.2, 5.5 );
 *
 * stdlib_complex128_t out = stdlib_base_cround( z );
-* // returns <Complex128>[ -5.0, 6.0 ]
+*
+* double re = stdlib_complex128_real( out );
+* // returns -4.0
+*
+* double im = stdlib_complex128_imag( out );
+* // returns 6.0
 */
 stdlib_complex128_t stdlib_base_cround( const stdlib_complex128_t z ) {
 	double re;

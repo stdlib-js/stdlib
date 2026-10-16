@@ -33,7 +33,7 @@
 *
 * @example
 * double y = stdlib_base_dists_chi_logpdf( 2.0, 2.0 );
-* // returns ~-1.309
+* // returns ~-1.307
 */
 double stdlib_base_dists_chi_logpdf( const double x, const double k ) {
 	double out;

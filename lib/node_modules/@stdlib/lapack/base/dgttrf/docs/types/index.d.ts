@@ -102,6 +102,9 @@ interface Routine {
 	* @returns status code
 	*
 	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var Int32Array = require( '@stdlib/array/int32' );
+	*
 	* var DL = new Float64Array( [ 1.0, 1.0 ] );
 	* var D = new Float64Array( [ 2.0, 3.0, 1.0 ] );
 	* var DU = new Float64Array( [ 1.0, 1.0 ] );

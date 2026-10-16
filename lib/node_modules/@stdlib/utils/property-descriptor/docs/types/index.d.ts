@@ -26,9 +26,8 @@
 * -   In contrast to the built-in `Object.getOwnPropertyDescriptor()`, this function returns `null` if provided `undefined` or `null`, rather than throwing an error.
 * -   In contrast to the built-in `Object.getOwnPropertyDescriptor()`, this function returns `null` if an object does not have a provided property, rather than `undefined`.
 *
-*
 * @param value - input object
-* @param  property - property
+* @param property - property
 * @returns property descriptor or null
 *
 * @example

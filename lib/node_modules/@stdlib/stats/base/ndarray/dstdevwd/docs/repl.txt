@@ -12,8 +12,10 @@
     Parameters
     ----------
     arrays: ArrayLikeObject<ndarray>
-        Array-like object containing two elements: a one-dimensional input
-        ndarray and a zero-dimensional ndarray specifying the degrees of freedom
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a zero-dimensional ndarray specifying the degrees of freedom
         adjustment. Providing a non-zero degrees of freedom adjustment has the
         effect of adjusting the divisor during the calculation of the standard
         deviation according to `N-c` where `N` is the number of elements in the
@@ -33,20 +35,9 @@
 
     Examples
     --------
-    // Create input ndarray:
-    > var xbuf = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 2.0 ] );
-    > var dt = 'float64';
-    > var sh = [ xbuf.length ];
-    > var st = [ 1 ];
-    > var oo = 0;
-    > var ord = 'row-major';
-    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, st, oo, ord );
-
-    // Create correction ndarray:
-    > var opts = { 'dtype': dt };
+    > var x = new {{alias:@stdlib/ndarray/vector/float64}}( [ 1.0, -2.0, 2.0 ] );
+    > var opts = { 'dtype': 'float64' };
     > var correction = {{alias:@stdlib/ndarray/from-scalar}}( 1.0, opts );
-
-    // Compute the standard deviation:
     > {{alias}}( [ x, correction ] )
     ~2.0817
 

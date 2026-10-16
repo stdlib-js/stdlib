@@ -209,7 +209,7 @@ interface SomeBy {
 	* var out = someBy.assign( x, 3, y, isEven );
 	* // returns <ndarray>[ true ]
 	*/
-	assign<T = unknown, U extends InputArray<T> = InputArray<T>, V extends ndarray = ndarray, ThisArg = unknown>( x: ndarray, n: integerndarray | number, y: V, predicate: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): V;
+	assign<T = unknown, U extends InputArray<T> = InputArray<T>, V extends ndarray = ndarray, ThisArg = unknown>( x: U, n: integerndarray | number, y: V, predicate: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): V;
 
 	/**
 	* Tests whether at least `n` elements along one or more ndarray dimensions pass a test implemented by a predicate function.
@@ -253,7 +253,7 @@ interface SomeBy {
 	* var out = someBy.assign( x, 3, y, {}, isEven );
 	* // returns <ndarray>[ true ]
 	*/
-	assign<T = unknown, U extends InputArray<T> = InputArray<T>, V extends ndarray = ndarray, ThisArg = unknown>( x: ndarray, n: integerndarray | number, y: V, options: BaseOptions, predicate: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): V;
+	assign<T = unknown, U extends InputArray<T> = InputArray<T>, V extends ndarray = ndarray, ThisArg = unknown>( x: U, n: integerndarray | number, y: V, options: BaseOptions, predicate: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): V;
 }
 
 /**

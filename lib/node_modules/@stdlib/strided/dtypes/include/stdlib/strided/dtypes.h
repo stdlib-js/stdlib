@@ -51,7 +51,7 @@ enum STDLIB_STRIDED_DTYPE {
 	// STDLIB_STRIDED_UINT256 = STDLIB_NDARRAY_UINT256,
 
 	// Floating-point data types:
-	// STDLIB_STRIDED_FLOAT16 = STDLIB_NDARRAY_FLOAT16, // TODO: uncomment once supported
+	STDLIB_STRIDED_FLOAT16 = STDLIB_NDARRAY_FLOAT16,
 	// STDLIB_STRIDED_BFLOAT16 = STDLIB_NDARRAY_BFLOAT16, // TODO: uncomment once supported
 	STDLIB_STRIDED_FLOAT32 = STDLIB_NDARRAY_FLOAT32,
 	STDLIB_STRIDED_FLOAT64 = STDLIB_NDARRAY_FLOAT64,
@@ -68,7 +68,7 @@ enum STDLIB_STRIDED_DTYPE {
 	STDLIB_STRIDED_GENERIC = STDLIB_NDARRAY_GENERIC,
 
 	// Number of data types:
-	STDLIB_STRIDED_NDTYPES = 16, // WARNING: this needs to be manually updated upon adding or removing data types above
+	STDLIB_STRIDED_NDTYPES = 17, // WARNING: this needs to be manually updated upon adding or removing data types above
 
 	// Reserve a signaling value which is guaranteed not to be a valid type enumeration number:
 	STDLIB_STRIDED_NOTYPE = STDLIB_NDARRAY_NOTYPE,

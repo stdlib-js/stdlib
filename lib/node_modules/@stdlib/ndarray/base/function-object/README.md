@@ -107,6 +107,8 @@ console.log( headerDir );
 
 Structure for grouping ndarray function information.
 
+<!-- run-disable -->
+
 ```c
 struct ndarrayFunctionObject {
     // ndarray function name:

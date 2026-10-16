@@ -46,7 +46,7 @@ type Callback = Unary | Binary;
 */
 interface Exists {
 	/**
-	* Tests whether a path exists on the filesystem.
+	* Asynchronously tests whether a path exists on the filesystem.
 	*
 	* @param path - path to test
 	* @param clbk - callback to invoke after testing path existence
@@ -81,7 +81,7 @@ interface Exists {
 }
 
 /**
-* Tests whether a path exists on the filesystem.
+* Asynchronously tests whether a path exists on the filesystem.
 *
 * @param path - path to test
 * @param clbk - callback to invoke after testing path existence

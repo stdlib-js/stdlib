@@ -82,18 +82,14 @@ v = subf( NaN, NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var rand = require( '@stdlib/random/base/discrete-uniform' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var subf = require( '@stdlib/number/float32/base/sub' );
 
-var x;
-var y;
-var i;
+var x = discreteUniform( 100, -50, 50 );
+var y = discreteUniform( 100, -50, 50 );
 
-for ( i = 0; i < 100; i++ ) {
-    x = rand( -50, 50 );
-    y = rand( -50, 50 );
-    console.log( '%d - %d = %d', x, y, subf( x, y ) );
-}
+logEachMap( '%d - %d = %d', x, y, subf );
 ```
 
 </section>

@@ -1,0 +1,67 @@
+
+{{alias}}( shape, dim, sizes )
+    Expands a dimension over multiple dimensions.
+
+    Parameters
+    ----------
+    shape: ArrayLike<number>
+        Array shape.
+
+    dim: integer
+        Dimension to be unflattened. If less than zero, the index is resolved
+        relative to the last dimension, with the last dimension corresponding to
+        the value `-1`.
+
+    sizes: ArrayLike<number>
+        New shape of the unflattened dimension.
+
+    Returns
+    -------
+    out: Array<number>
+        Unflattened shape.
+
+    Examples
+    --------
+    > var sh = [ 6, 2, 1 ];
+    > var sizes = [ 3, 2 ];
+    > var out = {{alias}}( sh, 0, sizes )
+    [ 3, 2, 2, 1 ]
+
+
+{{alias}}.assign( shape, dim, sizes, out )
+    Expands a dimension over multiple dimensions and assigns results to a
+    provided output array.
+
+    Parameters
+    ----------
+    shape: ArrayLike<number>
+        Array shape.
+
+    dim: integer
+        Dimension to be unflattened. If less than zero, the index is resolved
+        relative to the last dimension, with the last dimension corresponding to
+        the value `-1`.
+
+    sizes: ArrayLike<number>
+        New shape of the unflattened dimension.
+
+    out: Array|TypedArray|Object
+        Output array.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Output array.
+
+    Examples
+    --------
+    > var sh = [ 6, 2, 1 ];
+    > var sizes = [ 3, 2 ];
+    > var o = [ 0, 0, 0, 0 ];
+    > var out = {{alias}}.assign( sh, 0, sizes, o )
+    [ 3, 2, 2, 1 ]
+    > var bool = ( o === out )
+    true
+
+    See Also
+    --------

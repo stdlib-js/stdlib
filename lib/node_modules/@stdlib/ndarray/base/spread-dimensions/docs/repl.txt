@@ -36,11 +36,11 @@
     --------
     > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
     <ndarray>
-    > var sh = x.shape
+    > var sh = {{alias:@stdlib/ndarray/shape}}( x )
     [ 2, 2 ]
     > var y = {{alias}}( 5, x, [ 1, 3 ], false )
     <ndarray>
-    > sh = y.shape
+    > sh = {{alias:@stdlib/ndarray/shape}}( y )
     [ 1, 2, 1, 2, 1 ]
     > var v = y.get( 0, 0, 0, 0, 0 )
     1

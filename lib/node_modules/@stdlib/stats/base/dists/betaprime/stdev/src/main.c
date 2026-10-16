@@ -17,8 +17,8 @@
 */
 
 #include "stdlib/stats/base/dists/betaprime/stdev.h"
-#include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/sqrt.h"
+#include "stdlib/stats/base/dists/betaprime/variance.h"
 
 /**
 * Returns the standard deviation of a beta prime distribution.
@@ -32,15 +32,5 @@
 * // returns ~0.866
 */
 double stdlib_base_dists_betaprime_stdev( const double alpha, const double beta ) {
-	double bm1;
-	if (
-		stdlib_base_is_nan( alpha ) ||
-		stdlib_base_is_nan( beta ) ||
-		alpha <= 0.0 ||
-		beta <= 2.0
-	) {
-		return 0.0 / 0.0; // NaN
-	}
-	bm1 = beta - 1.0;
-	return stdlib_base_sqrt( ( alpha * ( alpha + bm1 ) ) / ( ( bm1 - 1.0 ) * bm1 * bm1 ) );
+	return stdlib_base_sqrt( stdlib_base_dists_betaprime_variance( alpha, beta ) );
 }

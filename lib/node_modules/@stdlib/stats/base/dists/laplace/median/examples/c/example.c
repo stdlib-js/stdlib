@@ -35,6 +35,6 @@ int main( void ) {
 		mu = random_uniform( -5.0, 5.0 );
 		scale = random_uniform( 0.0, 20.0 );
 		y = stdlib_base_dists_laplace_median( mu, scale );
-		printf( "µ: %lf, scale: %lf, Median(X;µ,scale): %lf\n", mu, scale, y );
+		printf( "μ: %lf, scale: %lf, Median(X;μ,scale): %lf\n", mu, scale, y );
 	}
 }

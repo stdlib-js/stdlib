@@ -87,7 +87,7 @@ y = cdf( 2.0, 1.5 );
 
 #### cdf.factory( p )
 
-Returns a function for evaluating the [cumulative distribution function][cdf] of a [geometric][geometric-distribution] distribution with success probability `p`
+Returns a function for evaluating the [cumulative distribution function][cdf] of a [geometric][geometric-distribution] distribution with success probability `p`.
 
 ```javascript
 var mycdf = cdf.factory( 0.5 );

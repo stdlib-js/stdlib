@@ -55,6 +55,7 @@ The output array contains the following data types:
 -   `bool`: boolean values.
 -   `complex64`: single-precision complex floating-point numbers.
 -   `complex128`: double-precision complex floating-point numbers.
+-   `float16`: half-precision floating-point numbers.
 -   `float32`: single-precision floating-point numbers.
 -   `float64`: double-precision floating-point numbers.
 -   `generic`: values of any type.

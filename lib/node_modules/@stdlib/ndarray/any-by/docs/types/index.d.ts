@@ -174,7 +174,7 @@ interface AnyBy {
 	<T = unknown, U extends InputArray<T> = InputArray<T>, ThisArg = unknown>( x: U, options: Options, predicate: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): boolndarray;
 
 	/**
-	* Tests whether at least one element along one or more ndarray dimensions passes a test implemented by a predicate function.
+	* Tests whether at least one element along one or more ndarray dimensions passes a test implemented by a predicate function and assigns the result to a provided output ndarray.
 	*
 	* @param x - input ndarray
 	* @param y - output ndarray
@@ -218,7 +218,7 @@ interface AnyBy {
 	assign<T = unknown, U extends InputArray<T> = InputArray<T>, V extends ndarray = ndarray, ThisArg = unknown>( x: U, y: V, predicate: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): V;
 
 	/**
-	* Tests whether at least one element along one or more ndarray dimensions passes a test implemented by a predicate function.
+	* Tests whether at least one element along one or more ndarray dimensions passes a test implemented by a predicate function and assigns the result to a provided output ndarray.
 	*
 	* @param x - input ndarray
 	* @param y - output ndarray

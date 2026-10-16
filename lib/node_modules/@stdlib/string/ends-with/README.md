@@ -170,8 +170,6 @@ Options:
 
 </section>
 
-</section>
-
 <!-- /.notes -->
 
 <section class="examples">

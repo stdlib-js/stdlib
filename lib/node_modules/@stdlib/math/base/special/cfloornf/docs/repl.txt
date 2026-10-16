@@ -1,0 +1,29 @@
+
+{{alias}}( z, n )
+    Rounds each component of a single-precision complex floating-point number
+    to the nearest multiple of `10^n` toward negative infinity.
+
+    When operating on floating-point numbers in bases other than `2`, rounding
+    to specified digits can be inexact.
+
+    Parameters
+    ----------
+    z: Complex64
+        Complex number.
+
+    n: integer
+        Integer power of 10.
+
+    Returns
+    -------
+    out: Complex64
+        Result.
+
+    Examples
+    --------
+    > var v = {{alias}}( new {{alias:@stdlib/complex/float32/ctor}}( 55.5, -33.3 ), 1 )
+    <Complex64>[ 50.0, -40.0 ]
+
+    See Also
+    --------
+

@@ -11,10 +11,10 @@
     Parameters
     ----------
     k: number
-        Scale parameter.
+        Shape parameter.
 
     λ: number
-        Shape parameter.
+        Scale parameter.
 
     options: Object (optional)
         Options.
@@ -110,10 +110,10 @@
     Parameters
     ----------
     k: number (optional)
-        Scale parameter.
+        Shape parameter.
 
     λ: number (optional)
-        Shape parameter.
+        Scale parameter.
 
     options: Object (optional)
         Options.
@@ -181,10 +181,10 @@
     Parameters
     ----------
     k: number
-        Scale parameter.
+        Shape parameter.
 
     λ: number
-        Shape parameter.
+        Scale parameter.
 
     options: Object (optional)
         Options.

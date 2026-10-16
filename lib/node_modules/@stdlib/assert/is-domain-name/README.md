@@ -58,7 +58,9 @@ bool = isDomainName( 'foo@bar.com' );
 
 -   Validation adheres to [RFC 2181][rfc-2181], which defines the syntax for domain names and stipulates that domain names must be 255 characters or less.
 
-<!-- </notes -->
+</section>
+
+<!-- /.notes -->
 
 <section class="examples">
 

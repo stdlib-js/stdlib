@@ -35,7 +35,7 @@ import res2json = require( './index' );
 		'alternative': 'two-sided',
 		'method': 'Two-sample Z-test'
 	};
-	res2json( res ); // $ExpectType Results
+	res2json( res ); // $ExpectType ResultsJSON
 }
 
 // The compiler throws an error if not provided a results object...

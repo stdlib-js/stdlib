@@ -55,7 +55,7 @@ v = factorial2f( 10 );
 // returns 3840
 ```
 
-If `n > 56`, the function returns `NaN`, as larger [double factorial][double-factorial] values cannot be safely represented in [single-precision floating-point format][ieee754].
+If `n > 56`, the function returns `Infinity`, as larger [double factorial][double-factorial] values cannot be safely represented in [single-precision floating-point format][ieee754].
 
 ```javascript
 var v = factorial2f( 57 );

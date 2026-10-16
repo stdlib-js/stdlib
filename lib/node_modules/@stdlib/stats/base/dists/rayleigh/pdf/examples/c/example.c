@@ -33,7 +33,7 @@ int main( void ) {
 
 	for ( i = 0; i < 25; i++ ) {
 		x = random_uniform( 0.0, 10.0 );
-		sigma = random_uniform( 0.0, 10.0 );
+		sigma = random_uniform( 0.1, 10.0 );
 		y = stdlib_base_dists_rayleigh_pdf( x, sigma );
 		printf( "x: %lf, σ: %lf, f(x;σ): %lf\n", x, sigma, y );
 	}

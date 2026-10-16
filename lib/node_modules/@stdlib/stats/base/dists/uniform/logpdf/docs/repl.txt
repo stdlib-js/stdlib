@@ -1,8 +1,8 @@
 
 {{alias}}( x, a, b )
-    Evaluates the logarithm of the probability density function (PDF) for a
-    uniform distribution with minimum support `a` and maximum support `b` at a
-    value `x`.
+    Evaluates the natural logarithm of the probability density function (PDF)
+    for a uniform distribution with minimum support `a` and maximum support `b`
+    at a value `x`.
 
     If provided `NaN` as any argument, the function returns `NaN`.
 
@@ -29,7 +29,7 @@
     > var y = {{alias}}( 2.0, 0.0, 4.0 )
     ~-1.386
     > y = {{alias}}( 5.0, 0.0, 4.0 )
-    -infinity
+    -Infinity
     > y = {{alias}}( 0.25, 0.0, 1.0 )
     0.0
     > y = {{alias}}( NaN, 0.0, 1.0 )
@@ -66,7 +66,7 @@
     > var y = mylogPDF( 7.0 )
     0.0
     > y = mylogPDF( 5.0 )
-    -infinity
+    -Infinity
 
     See Also
     --------
