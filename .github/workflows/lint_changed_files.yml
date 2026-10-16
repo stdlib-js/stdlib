@@ -428,7 +428,7 @@ jobs:
           dir="lib/node_modules/@stdlib/types"
           if echo "$FILES" | tr ' ' '\n' | grep -qE "^${dir}/(index\.d|test)\.ts$"; then
             cp etc/typescript/tsconfig.json "${dir}/tsconfig.json"
-            ./node_modules/.bin/tsc -p "${dir}/tsconfig.json"
+            ./node_modules/.bin/tsc -p "${dir}/tsconfig.json" --lib es6
           fi
 
       # Lint license headers:
