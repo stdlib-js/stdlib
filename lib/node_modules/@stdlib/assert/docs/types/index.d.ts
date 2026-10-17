@@ -4619,7 +4619,7 @@ interface Namespace {
 	* var bool = ns.isMethod( beep, 'boop' );
 	* // returns true
 	*
-	* var bool = ns.isMethod( beep, 'toString' );
+	* bool = ns.isMethod( beep, 'toString' );
 	* // returns false
 	*/
 	isMethod: typeof isMethod;

@@ -30,6 +30,7 @@ import sliceDimensionFrom = require( './index' );
 
 	sliceDimensionFrom( empty( 'float64', sh, order ), 1, s, false, false ); // $ExpectType float64ndarray
 	sliceDimensionFrom( empty( 'float32', sh, order ), 1, s, false, false ); // $ExpectType float32ndarray
+	sliceDimensionFrom( empty( 'float16', sh, order ), 1, s, false, false ); // $ExpectType float16ndarray
 	sliceDimensionFrom( empty( 'complex128', sh, order ), 1, s, false, false ); // $ExpectType complex128ndarray
 	sliceDimensionFrom( empty( 'complex64', sh, order ), 1, s, false, false ); // $ExpectType complex64ndarray
 	sliceDimensionFrom( empty( 'int32', sh, order ), 1, s, false, false ); // $ExpectType int32ndarray
@@ -42,6 +43,7 @@ import sliceDimensionFrom = require( './index' );
 
 	sliceDimensionFrom( empty( 'float64', sh, order ), 1, s, true, true ); // $ExpectType float64ndarray
 	sliceDimensionFrom( empty( 'float32', sh, order ), 1, s, true, true ); // $ExpectType float32ndarray
+	sliceDimensionFrom( empty( 'float16', sh, order ), 1, s, true, true ); // $ExpectType float16ndarray
 	sliceDimensionFrom( empty( 'complex128', sh, order ), 1, s, true, true ); // $ExpectType complex128ndarray
 	sliceDimensionFrom( empty( 'complex64', sh, order ), 1, s, true, true ); // $ExpectType complex64ndarray
 	sliceDimensionFrom( empty( 'int32', sh, order ), 1, s, true, true ); // $ExpectType int32ndarray

@@ -208,7 +208,7 @@ var opts = {
 var idx = findLastIndex( x, opts, isEven );
 // returns <ndarray>
 
-var dt = dtype( idx );
+var dt = String( dtype( idx ) );
 // returns 'generic'
 ```
 
