@@ -28,9 +28,7 @@ We appreciate your interest in contributing to stdlib! Below, we've provided a s
 
 Dev containers are Docker containers that are specifically configured to provide a fully featured development environment with the right tooling, extensions, linting and formatting. They allow you to open any folder inside (or mounted into) a container and take advantage of Visual Studio Code's full feature set.
 
-The stdlib repository includes a preconfigured dev container, making it the easiest way to set up your development environment. It ensures proper linting, EditorConfig, and tooling are configured right from the start.
-
-**Note:** The dev container does not yet support ARM64 architectures. For more information, or if you're interested in adding ARM64 support, you can visit this [issue][devcontainer-issue].
+The stdlib repository includes a preconfigured dev container, making it the easiest way to set up your development environment. It ensures proper linting, EditorConfig, and tooling are configured right from the start. The dev container supports both x86-64 and ARM64 architectures (including Apple Silicon).
 
 ### Prerequisites
 
@@ -120,8 +118,6 @@ If you see this when you open the terminal, then the dev container installation 
 [docker]: https://www.docker.com/
 
 [vscode]: https://code.visualstudio.com/
-
-[devcontainer-issue]: https://github.com/stdlib-js/stdlib/issues/4934
 
 [github-fork]: https://help.github.com/articles/fork-a-repo/
 

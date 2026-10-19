@@ -19,6 +19,7 @@
 /* eslint-disable space-in-parens */
 
 import zeros = require( '@stdlib/ndarray/zeros' );
+import scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 import gfindLastIndex = require( './index' );
 
 /**
@@ -39,9 +40,12 @@ function clbk( value: any ): boolean {
 	const x = zeros( [ 10 ], {
 		'dtype': 'generic'
 	});
+	const fromIndex = scalar2ndarray( 0, {
+		'dtype': 'generic'
+	});
 
-	gfindLastIndex( [ x ], clbk ); // $ExpectType number
-	gfindLastIndex( [ x ], clbk, {} ); // $ExpectType number
+	gfindLastIndex( [ x, fromIndex ], clbk ); // $ExpectType number
+	gfindLastIndex( [ x, fromIndex ], clbk, {} ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array of ndarrays...
@@ -72,24 +76,27 @@ function clbk( value: any ): boolean {
 	const x = zeros( [ 10 ], {
 		'dtype': 'generic'
 	});
+	const fromIndex = scalar2ndarray( 0, {
+		'dtype': 'generic'
+	});
 
-	gfindLastIndex( [ x ], '10' ); // $ExpectError
-	gfindLastIndex( [ x ], 10 ); // $ExpectError
-	gfindLastIndex( [ x ], true ); // $ExpectError
-	gfindLastIndex( [ x ], false ); // $ExpectError
-	gfindLastIndex( [ x ], null ); // $ExpectError
-	gfindLastIndex( [ x ], undefined ); // $ExpectError
-	gfindLastIndex( [ x ], [] ); // $ExpectError
-	gfindLastIndex( [ x ], {} ); // $ExpectError
+	gfindLastIndex( [ x, fromIndex ], '10' ); // $ExpectError
+	gfindLastIndex( [ x, fromIndex ], 10 ); // $ExpectError
+	gfindLastIndex( [ x, fromIndex ], true ); // $ExpectError
+	gfindLastIndex( [ x, fromIndex ], false ); // $ExpectError
+	gfindLastIndex( [ x, fromIndex ], null ); // $ExpectError
+	gfindLastIndex( [ x, fromIndex ], undefined ); // $ExpectError
+	gfindLastIndex( [ x, fromIndex ], [] ); // $ExpectError
+	gfindLastIndex( [ x, fromIndex ], {} ); // $ExpectError
 
-	gfindLastIndex( [ x ], '10', {} ); // $ExpectError
-	gfindLastIndex( [ x ], 10, {} ); // $ExpectError
-	gfindLastIndex( [ x ], true, {} ); // $ExpectError
-	gfindLastIndex( [ x ], false, {} ); // $ExpectError
-	gfindLastIndex( [ x ], null, {} ); // $ExpectError
-	gfindLastIndex( [ x ], undefined, {} ); // $ExpectError
-	gfindLastIndex( [ x ], [], {} ); // $ExpectError
-	gfindLastIndex( [ x ], {}, {} ); // $ExpectError
+	gfindLastIndex( [ x, fromIndex ], '10', {} ); // $ExpectError
+	gfindLastIndex( [ x, fromIndex ], 10, {} ); // $ExpectError
+	gfindLastIndex( [ x, fromIndex ], true, {} ); // $ExpectError
+	gfindLastIndex( [ x, fromIndex ], false, {} ); // $ExpectError
+	gfindLastIndex( [ x, fromIndex ], null, {} ); // $ExpectError
+	gfindLastIndex( [ x, fromIndex ], undefined, {} ); // $ExpectError
+	gfindLastIndex( [ x, fromIndex ], [], {} ); // $ExpectError
+	gfindLastIndex( [ x, fromIndex ], {}, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -97,7 +104,10 @@ function clbk( value: any ): boolean {
 	const x = zeros( [ 10 ], {
 		'dtype': 'generic'
 	});
+	const fromIndex = scalar2ndarray( 0, {
+		'dtype': 'generic'
+	});
 
 	gfindLastIndex(); // $ExpectError
-	gfindLastIndex( [ x ], clbk, {}, {} ); // $ExpectError
+	gfindLastIndex( [ x, fromIndex ], clbk, {}, {} ); // $ExpectError
 }

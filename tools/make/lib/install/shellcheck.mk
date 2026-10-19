@@ -23,10 +23,14 @@ ifeq ($(OS), WINNT)
 	DEPS_SHELLCHECK_URL ?= https://github.com/koalaman/shellcheck/releases/download/v$(DEPS_SHELLCHECK_VERSION)/shellcheck-v$(DEPS_SHELLCHECK_VERSION).zip
 else
 ifeq ($(DEPS_SHELLCHECK_PLATFORM), darwin)
-	# TODO: handle arm64; currently, binaries for M1/M2 are not provided. See https://github.com/koalaman/shellcheck/issues/2714
+	# TODO: handle arm64; currently, darwin.aarch64 binaries are not provided for v0.8.0. See https://github.com/koalaman/shellcheck/issues/2714
 	DEPS_SHELLCHECK_URL ?= https://github.com/koalaman/shellcheck/releases/download/v$(DEPS_SHELLCHECK_VERSION)/shellcheck-v$(DEPS_SHELLCHECK_VERSION).darwin.x86_64.tar.xz
 else
+ifeq ($(DEPS_SHELLCHECK_ARCH), arm64)
+	DEPS_SHELLCHECK_URL ?= https://github.com/koalaman/shellcheck/releases/download/v$(DEPS_SHELLCHECK_VERSION)/shellcheck-v$(DEPS_SHELLCHECK_VERSION).linux.aarch64.tar.xz
+else
 	DEPS_SHELLCHECK_URL ?= https://github.com/koalaman/shellcheck/releases/download/v$(DEPS_SHELLCHECK_VERSION)/shellcheck-v$(DEPS_SHELLCHECK_VERSION).linux.x86_64.tar.xz
+endif
 endif
 endif
 
@@ -48,7 +52,7 @@ ifeq ($(DEPS_SHELLCHECK_PLATFORM), win32)
 else
 ifeq ($(DEPS_SHELLCHECK_PLATFORM), darwin)
 ifeq ($(DEPS_SHELLCHECK_ARCH), arm64)
-	# FIXME: this is a temporary workaround until M1/M2 shellcheck binaries can be installed locally
+	# FIXME: darwin.aarch64 binaries are not available for v0.8.0; fall back to system shellcheck
 	SHELLCHECK ?= shellcheck
 else
 	SHELLCHECK ?= $(DEPS_SHELLCHECK_BUILD_OUT)/shellcheck

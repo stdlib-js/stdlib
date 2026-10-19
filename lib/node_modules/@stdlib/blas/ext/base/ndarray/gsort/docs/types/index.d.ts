@@ -44,7 +44,7 @@ import { typedndarray } from '@stdlib/types/ndarray';
 * var x = vector( [ 1.0, -2.0, 3.0, -4.0 ], 'generic' );
 *
 * var ord = scalar2ndarray( 1.0, {
-*    'dtype': 'generic'
+*     'dtype': 'generic'
 * });
 *
 * var out = gsort( [ x, ord ] );

@@ -16,8 +16,6 @@
 * limitations under the License.
 */
 
-/* eslint-disable space-in-parens */
-
 import dlastIndexOfFalsy = require( './index' );
 
 
@@ -39,6 +37,7 @@ import dlastIndexOfFalsy = require( './index' );
 	dlastIndexOfFalsy( false, x, 1 ); // $ExpectError
 	dlastIndexOfFalsy( null, x, 1 ); // $ExpectError
 	dlastIndexOfFalsy( {}, x, 1 ); // $ExpectError
+	dlastIndexOfFalsy( ( x: number ): number => x, x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a Float64Array...
@@ -48,6 +47,7 @@ import dlastIndexOfFalsy = require( './index' );
 	dlastIndexOfFalsy( x.length, false, 1 ); // $ExpectError
 	dlastIndexOfFalsy( x.length, null, 1 ); // $ExpectError
 	dlastIndexOfFalsy( x.length, {}, 1 ); // $ExpectError
+	dlastIndexOfFalsy( x.length, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not a number...
@@ -59,6 +59,7 @@ import dlastIndexOfFalsy = require( './index' );
 	dlastIndexOfFalsy( x.length, x, false ); // $ExpectError
 	dlastIndexOfFalsy( x.length, x, null ); // $ExpectError
 	dlastIndexOfFalsy( x.length, x, {} ); // $ExpectError
+	dlastIndexOfFalsy( x.length, x, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -85,6 +86,7 @@ import dlastIndexOfFalsy = require( './index' );
 	dlastIndexOfFalsy.ndarray( false, x, 1, 1 ); // $ExpectError
 	dlastIndexOfFalsy.ndarray( null, x, 1, 1 ); // $ExpectError
 	dlastIndexOfFalsy.ndarray( {}, x, 1, 1 ); // $ExpectError
+	dlastIndexOfFalsy.ndarray( ( x: number ): number => x, x, 1, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a second argument which is not a Float64Array...
@@ -94,6 +96,7 @@ import dlastIndexOfFalsy = require( './index' );
 	dlastIndexOfFalsy.ndarray( x.length, false, 1, 1 ); // $ExpectError
 	dlastIndexOfFalsy.ndarray( x.length, null, 1, 1 ); // $ExpectError
 	dlastIndexOfFalsy.ndarray( x.length, {}, 1, 1 ); // $ExpectError
+	dlastIndexOfFalsy.ndarray( x.length, ( x: number ): number => x, 1, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a third argument which is not a number...
@@ -105,6 +108,7 @@ import dlastIndexOfFalsy = require( './index' );
 	dlastIndexOfFalsy.ndarray( x.length, x, false, 1 ); // $ExpectError
 	dlastIndexOfFalsy.ndarray( x.length, x, null, 1 ); // $ExpectError
 	dlastIndexOfFalsy.ndarray( x.length, x, {}, 1 ); // $ExpectError
+	dlastIndexOfFalsy.ndarray( x.length, x, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fourth argument which is not a number...
@@ -116,6 +120,7 @@ import dlastIndexOfFalsy = require( './index' );
 	dlastIndexOfFalsy.ndarray( x.length, x, 1, false ); // $ExpectError
 	dlastIndexOfFalsy.ndarray( x.length, x, 1, null ); // $ExpectError
 	dlastIndexOfFalsy.ndarray( x.length, x, 1, {} ); // $ExpectError
+	dlastIndexOfFalsy.ndarray( x.length, x, 1, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided an unsupported number of arguments...

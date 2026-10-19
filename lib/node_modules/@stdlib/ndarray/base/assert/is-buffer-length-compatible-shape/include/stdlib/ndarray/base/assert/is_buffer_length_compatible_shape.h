@@ -31,7 +31,7 @@ extern "C" {
 /**
 * Determines if a buffer length is compatible with a provided shape array.
 */
-int8_t stdlib_ndarray_is_buffer_length_compatible_shape( int64_t len, int64_t ndims, int64_t *shape );
+int8_t stdlib_ndarray_is_buffer_length_compatible_shape( const int64_t len, const int64_t ndims, const int64_t *shape );
 
 #ifdef __cplusplus
 }

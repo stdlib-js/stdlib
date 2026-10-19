@@ -253,20 +253,6 @@ int main( void ) {
 
 <!-- /.c -->
 
-* * *
-
-<section class="references">
-
-## References
-
--   Smith, Robert L. 1962. "Algorithm 116: Complex Division." _Commun. ACM_ 5 (8). New York, NY, USA: ACM: 435. doi:[10.1145/368637.368661][@smith:1962a].
--   Stewart, G. W. 1985. "A Note on Complex Division." _ACM Trans. Math. Softw._ 11 (3). New York, NY, USA: ACM: 238–41. doi:[10.1145/214408.214414][@stewart:1985a].
--   Priest, Douglas M. 2004. "Efficient Scaling for Complex Division." _ACM Trans. Math. Softw._ 30 (4). New York, NY, USA: ACM: 389–401. doi:[10.1145/1039813.1039814][@priest:2004a].
-
-</section>
-
-<!-- /.references -->
-
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
@@ -278,12 +264,6 @@ int main( void ) {
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
-
-[@smith:1962a]: https://doi.org/10.1145/368637.368661
-
-[@stewart:1985a]: https://doi.org/10.1145/214408.214414
-
-[@priest:2004a]: https://doi.org/10.1145/1039813.1039814
 
 </section>
 

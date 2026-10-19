@@ -121,7 +121,7 @@ import gconjoin = require( './index' );
 	gconjoin( x.length, '', '', 'and', true, x, ( x: number ): number => x ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided insufficient arguments...
+// The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	const x = [ 1, 2, 3, 4 ];
 
@@ -248,7 +248,7 @@ import gconjoin = require( './index' );
 	gconjoin.ndarray( x.length, '', '', 'and', true, x, 1, ( x: number ): number => x ); // $ExpectError
 }
 
-// The compiler throws an error if the `ndarray` method is provided insufficient arguments...
+// The compiler throws an error if the `ndarray` method is provided an unsupported number of arguments...
 {
 	const x = [ 1, 2, 3, 4 ];
 

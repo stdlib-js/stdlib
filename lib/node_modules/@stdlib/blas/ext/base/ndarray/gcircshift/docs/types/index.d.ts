@@ -42,7 +42,7 @@ import { typedndarray } from '@stdlib/types/ndarray';
 * var x = vector( [ 1.0, 2.0, 3.0, 4.0, 5.0 ], 'generic' );
 *
 * var k = scalar2ndarray( 2, {
-*    'dtype': 'generic'
+*     'dtype': 'generic'
 * });
 *
 * var out = gcircshift( [ x, k ] );
