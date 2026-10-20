@@ -24,8 +24,8 @@ static const double SQRT_ONE_TWELFTH = 0.28867513459481287; // stdlib_base_sqrt(
 /**
 * Returns the standard deviation of a uniform distribution.
 *
-* @param n   minimum support
-* @param p   maximum support
+* @param a   minimum support
+* @param b   maximum support
 * @return    standard deviation
 *
 * @example
