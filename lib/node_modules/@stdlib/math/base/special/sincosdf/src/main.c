@@ -26,6 +26,13 @@
 * @param x         input value (in degrees)
 * @param sine      destination to store the sine
 * @param cosine    destination to store the cosine
+*
+* @example
+* float x = 0.0f;
+*
+* float cosine;
+* float sine;
+* stdlib_base_sincosdf( x, &sine, &cosine );
 */
 void stdlib_base_sincosdf( const float x, float* sine, float* cosine ) {
 	*sine = stdlib_base_sindf( x );
