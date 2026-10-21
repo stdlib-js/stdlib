@@ -47,6 +47,7 @@ Returns a **read-only** view of an input [`ndarray`][@stdlib/ndarray/ctor].
 ```javascript
 var Slice = require( '@stdlib/slice/ctor' );
 var MultiSlice = require( '@stdlib/slice/multi' );
+var getShape = require( '@stdlib/ndarray/shape' );
 var ndarray = require( '@stdlib/ndarray/ctor' );
 
 var buffer = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
@@ -57,7 +58,7 @@ var offset = 0;
 var x = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
 // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 
-var sh = x.shape;
+var sh = getShape( x );
 // returns [ 3, 2 ]
 
 var s0 = new Slice( null, null, -2 );
@@ -68,7 +69,7 @@ var s = new MultiSlice( s0, s1 );
 var y = slice( x, s );
 // returns <ndarray>[ [ 6.0, 5.0 ], [ 2.0, 1.0 ] ]
 
-sh = y.shape;
+sh = getShape( y );
 // returns [ 2, 2 ]
 ```
 
@@ -89,6 +90,7 @@ The following example demonstrates each invocation style returning equivalent re
 ```javascript
 var Slice = require( '@stdlib/slice/ctor' );
 var MultiSlice = require( '@stdlib/slice/multi' );
+var getShape = require( '@stdlib/ndarray/shape' );
 var ndarray = require( '@stdlib/ndarray/ctor' );
 
 var buffer = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
@@ -99,7 +101,7 @@ var offset = 0;
 var x = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
 // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 
-var sh = x.shape;
+var sh = getShape( x );
 // returns [ 3, 2 ]
 
 // 1. Using a MultiSlice:
@@ -111,21 +113,21 @@ var s = new MultiSlice( s0, s1 );
 var y = slice( x, s );
 // returns <ndarray>[ [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 
-sh = y.shape;
+sh = getShape( y );
 // returns [ 2, 2 ]
 
 // 2. Using an array of slice arguments:
 y = slice( x, [ s0, s1 ] );
 // returns <ndarray>[ [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 
-sh = y.shape;
+sh = getShape( y );
 // returns [ 2, 2 ]
 
 // 3. Providing separate arguments:
 y = slice( x, s0, s1 );
 // returns <ndarray>[ [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 
-sh = y.shape;
+sh = getShape( y );
 // returns [ 2, 2 ]
 ```
 
@@ -138,6 +140,7 @@ By default, the function throws an error when provided a slice which exceeds arr
 ```javascript
 var Slice = require( '@stdlib/slice/ctor' );
 var MultiSlice = require( '@stdlib/slice/multi' );
+var getShape = require( '@stdlib/ndarray/shape' );
 var ndarray = require( '@stdlib/ndarray/ctor' );
 
 var buffer = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
@@ -148,7 +151,7 @@ var offset = 0;
 var x = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
 // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 
-var sh = x.shape;
+var sh = getShape( x );
 // returns [ 3, 2 ]
 
 var s0 = new Slice( 1, null, 1 );
@@ -161,7 +164,7 @@ var y = slice( x, s, {
 });
 // returns <ndarray>
 
-sh = y.shape;
+sh = getShape( y );
 // returns [ 2, 0 ]
 ```
 
