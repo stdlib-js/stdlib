@@ -37,6 +37,7 @@ import sindexOfNotEqual = require( './index' );
 	sindexOfNotEqual( false, 2.0, x, 1 ); // $ExpectError
 	sindexOfNotEqual( null, 2.0, x, 1 ); // $ExpectError
 	sindexOfNotEqual( {}, 2.0, x, 1 ); // $ExpectError
+	sindexOfNotEqual( ( x: number ): number => x, 2.0, x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a number...
@@ -48,6 +49,7 @@ import sindexOfNotEqual = require( './index' );
 	sindexOfNotEqual( x.length, false, x, 1 ); // $ExpectError
 	sindexOfNotEqual( x.length, null, x, 1 ); // $ExpectError
 	sindexOfNotEqual( x.length, {}, x, 1 ); // $ExpectError
+	sindexOfNotEqual( x.length, ( x: number ): number => x, x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not a Float32Array...
@@ -57,6 +59,7 @@ import sindexOfNotEqual = require( './index' );
 	sindexOfNotEqual( x.length, 1.0, false, 1 ); // $ExpectError
 	sindexOfNotEqual( x.length, 1.0, null, 1 ); // $ExpectError
 	sindexOfNotEqual( x.length, 1.0, {}, 1 ); // $ExpectError
+	sindexOfNotEqual( x.length, 1.0, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fourth argument which is not a number...
@@ -68,6 +71,7 @@ import sindexOfNotEqual = require( './index' );
 	sindexOfNotEqual( x.length, 2.0, x, false ); // $ExpectError
 	sindexOfNotEqual( x.length, 2.0, x, null ); // $ExpectError
 	sindexOfNotEqual( x.length, 2.0, x, {} ); // $ExpectError
+	sindexOfNotEqual( x.length, 2.0, x, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -94,6 +98,7 @@ import sindexOfNotEqual = require( './index' );
 	sindexOfNotEqual.ndarray( false, 2.0, x, 1, 1 ); // $ExpectError
 	sindexOfNotEqual.ndarray( null, 2.0, x, 1, 1 ); // $ExpectError
 	sindexOfNotEqual.ndarray( {}, 2.0, x, 1, 1 ); // $ExpectError
+	sindexOfNotEqual.ndarray( ( x: number ): number => x, 2.0, x, 1, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a second argument which is not a number...
@@ -105,6 +110,7 @@ import sindexOfNotEqual = require( './index' );
 	sindexOfNotEqual.ndarray( x.length, false, x, 1, 1 ); // $ExpectError
 	sindexOfNotEqual.ndarray( x.length, null, x, 1, 1 ); // $ExpectError
 	sindexOfNotEqual.ndarray( x.length, {}, x, 1, 1 ); // $ExpectError
+	sindexOfNotEqual.ndarray( x.length, ( x: number ): number => x, x, 1, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a third argument which is not a Float32Array...
@@ -114,6 +120,7 @@ import sindexOfNotEqual = require( './index' );
 	sindexOfNotEqual.ndarray( x.length, 1.0, false, 1, 1 ); // $ExpectError
 	sindexOfNotEqual.ndarray( x.length, 1.0, null, 1, 1 ); // $ExpectError
 	sindexOfNotEqual.ndarray( x.length, 1.0, {}, 1, 1 ); // $ExpectError
+	sindexOfNotEqual.ndarray( x.length, 1.0, ( x: number ): number => x, 1, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fourth argument which is not a number...
@@ -125,6 +132,7 @@ import sindexOfNotEqual = require( './index' );
 	sindexOfNotEqual.ndarray( x.length, 2.0, x, false, 1 ); // $ExpectError
 	sindexOfNotEqual.ndarray( x.length, 2.0, x, null, 1 ); // $ExpectError
 	sindexOfNotEqual.ndarray( x.length, 2.0, x, {}, 1 ); // $ExpectError
+	sindexOfNotEqual.ndarray( x.length, 2.0, x, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fifth argument which is not a number...
@@ -136,6 +144,7 @@ import sindexOfNotEqual = require( './index' );
 	sindexOfNotEqual.ndarray( x.length, 2.0, x, 1, false ); // $ExpectError
 	sindexOfNotEqual.ndarray( x.length, 2.0, x, 1, null ); // $ExpectError
 	sindexOfNotEqual.ndarray( x.length, 2.0, x, 1, {} ); // $ExpectError
+	sindexOfNotEqual.ndarray( x.length, 2.0, x, 1, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided an unsupported number of arguments...

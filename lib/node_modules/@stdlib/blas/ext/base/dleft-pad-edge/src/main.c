@@ -17,6 +17,8 @@
 */
 
 #include "stdlib/blas/ext/base/dleft_pad_edge.h"
+#include "stdlib/blas/ext/base/dfill.h"
+#include "stdlib/blas/base/dcopy.h"
 #include "stdlib/strided/base/stride2offset.h"
 #include "stdlib/blas/base/shared.h"
 
@@ -55,27 +57,12 @@ void API_SUFFIX(stdlib_strided_dleft_pad_edge)( const CBLAS_INT N, CBLAS_INT k, 
 * @param offsetY starting index for `Y`
 */
 void API_SUFFIX(stdlib_strided_dleft_pad_edge_ndarray)( const CBLAS_INT N, CBLAS_INT k, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
-	CBLAS_INT ix;
-	CBLAS_INT iy;
-	double v;
-	CBLAS_INT i;
-
 	if ( N <= 0 ) {
 		return;
 	}
 	if ( k < 0 ) {
 		k = 0;
 	}
-	v = X[ offsetX ];
-	iy = offsetY;
-	for ( i = 0; i < k; i++ ) {
-		Y[ iy ] = v;
-		iy += strideY;
-	}
-	ix = offsetX;
-	for ( i = 0; i < N; i++ ) {
-		Y[ iy ] = X[ ix ];
-		iy += strideY;
-		ix += strideX;
-	}
+	API_SUFFIX(stdlib_strided_dfill_ndarray)( k, X[ offsetX ], Y, strideY, offsetY );
+	API_SUFFIX(c_dcopy_ndarray)( N, X, strideX, offsetX, Y, strideY, offsetY + ( strideY * k ) );
 }
