@@ -1,0 +1,186 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2026 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: check_workflow_action_pins
+
+# Workflow triggers:
+on:
+  # Runs from the base branch so the check cannot be disabled or weakened by edits to this workflow file in the PR itself. No PR code is checked out; only the GitHub API is queried.
+  pull_request_target:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - labeled
+      - unlabeled
+
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
+  # Allow writing pull request comments so that the workflow can explain failures to contributors:
+  pull-requests: write
+
+# Workflow jobs:
+jobs:
+
+  # Define a job which prevents non-maintainers from modifying pinned GitHub Action SHAs in workflow files...
+  check_action_pins:
+
+    # Define a display name:
+    name: 'Check Workflow Action Pins'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Determine whether the pull request author is trusted to modify action pins:
+      - name: 'Determine trust'
+        id: trust
+        env:
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+          AUTHOR_ASSOC: ${{ github.event.pull_request.author_association }}
+        run: |
+          if [ "$PR_AUTHOR" = "dependabot[bot]" ] || [ "$PR_AUTHOR" = "stdlib-bot" ]; then
+              echo "trusted=true" >> "$GITHUB_OUTPUT"
+              exit 0
+          fi
+          case "$AUTHOR_ASSOC" in
+              OWNER|MEMBER|COLLABORATOR)
+                  echo "trusted=true" >> "$GITHUB_OUTPUT"
+                  ;;
+              *)
+                  echo "trusted=false" >> "$GITHUB_OUTPUT"
+                  ;;
+          esac
+        timeout-minutes: 1
+
+      # Scan the pull request diff for added or removed pinned action SHAs in workflow files:
+      - name: 'Check for modified action pins'
+        id: scan
+        # Skip when the PR author is trusted or when a maintainer has applied the bypass label:
+        if: |
+          steps.trust.outputs.trusted != 'true' &&
+          !contains(github.event.pull_request.labels.*.name, 'Allow Action Pin Changes')
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+        run: |
+          set -euo pipefail
+          page=1
+          violations=""
+          while :; do
+              body=$(mktemp)
+              code=$(curl -s -o "$body" -w '%{http_code}' \
+                  -H "Accept: application/vnd.github+json" \
+                  -H "Authorization: Bearer $GITHUB_TOKEN" \
+                  "https://api.github.com/repos/$REPO/pulls/$PR_NUMBER/files?page=$page&per_page=100")
+              if [ "$code" != "200" ]; then
+                  echo "::error::GitHub API returned HTTP $code when fetching PR files."
+                  cat "$body"
+                  exit 1
+              fi
+              if [ "$(jq 'type' "$body")" != '"array"' ]; then
+                  echo "::error::Unexpected GitHub API response (not an array)."
+                  cat "$body"
+                  exit 1
+              fi
+              count=$(jq 'length' "$body")
+              if [ "$count" -eq 0 ]; then
+                  break
+              fi
+              while IFS= read -r entry; do
+                  filename=$(echo "$entry" | jq -r '.filename')
+                  previous=$(echo "$entry" | jq -r '.previous_filename // empty')
+                  patch=$(echo "$entry" | jq -r '.patch // ""')
+                  check=0
+                  case "$filename" in
+                      .github/workflows/*) check=1 ;;
+                  esac
+                  case "$previous" in
+                      .github/workflows/*) check=1 ;;
+                  esac
+                  if [ "$check" -ne 1 ]; then
+                      continue
+                  fi
+                  matches=$(echo "$patch" | grep -E '^[+-][[:space:]]*uses:[[:space:]]+[^@[:space:]]+@[0-9a-f]{7,40}' || true)
+                  if [ -n "$matches" ]; then
+                      violations+="$filename:"$'\n'"$matches"$'\n\n'
+                  fi
+              done < <(jq -c '.[]' "$body")
+              page=$((page+1))
+          done
+          if [ -z "$violations" ]; then
+              echo "has_violations=false" >> "$GITHUB_OUTPUT"
+              echo "No disallowed action pin changes detected."
+              exit 0
+          fi
+          echo "has_violations=true" >> "$GITHUB_OUTPUT"
+          {
+              echo "<!-- stdlib-bot:check_workflow_action_pins -->"
+              echo "Hi @${PR_AUTHOR}, this pull request modifies pinned GitHub Action SHAs in \`.github/workflows/**\`. For supply-chain security, only repository maintainers and Dependabot may change these pins."
+              echo ""
+              echo "**Disallowed changes detected:**"
+              echo ""
+              echo '```diff'
+              printf '%s' "$violations"
+              echo '```'
+              echo ""
+              echo "### How to unblock"
+              echo ""
+              echo "-   If the pin change is unintentional, please revert it."
+              echo "-   If it is intentional, ask a maintainer to review and apply the \`Allow Action Pin Changes\` label. The check will re-run and pass once the label is applied."
+              echo ""
+              echo "-- stdlib-bot"
+          } > ./comment-body.txt
+          echo "::error::Only repository maintainers and dependabot may modify pinned GitHub Action SHAs in .github/workflows/**. A maintainer may bypass this check by applying the 'Allow Action Pin Changes' label."
+          printf '%s\n' "$violations"
+        timeout-minutes: 10
+
+      # Check whether a prior comment from this workflow already exists on the pull request:
+      - name: 'Find existing comment'
+        id: fc
+        if: steps.scan.outputs.has_violations == 'true'
+        # Pin action to full length commit SHA
+        uses: peter-evans/find-comment@b30e6a3c0ed37e7c023ccd3f1db5c6c0b0c23aad # v4.0.0
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          body-includes: 'stdlib-bot:check_workflow_action_pins'
+
+      # Post a new comment or update the existing one to explain the failure:
+      - name: 'Post or update pull request comment'
+        if: steps.scan.outputs.has_violations == 'true'
+        # Pin action to full length commit SHA
+        uses: peter-evans/create-or-update-comment@e8674b075228eee787fea43ef493e45ece1004c9 # v5.0.0
+        with:
+          token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          comment-id: ${{ steps.fc.outputs.comment-id }}
+          issue-number: ${{ github.event.pull_request.number }}
+          edit-mode: replace
+          body-path: ./comment-body.txt
+
+      # Fail the job so that the pull request check reflects the violation:
+      - name: 'Fail if violations detected'
+        if: steps.scan.outputs.has_violations == 'true'
+        run: exit 1
