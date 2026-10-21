@@ -22,8 +22,8 @@
 /**
 * Returns the excess kurtosis of a uniform distribution.
 *
-* @param n   minimum support
-* @param p   maximum support
+* @param a   minimum support
+* @param b   maximum support
 * @return    excess kurtosis
 *
 * @example

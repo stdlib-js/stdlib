@@ -85,7 +85,7 @@ interface Namespace {
 	* var dt = ns.dtype( new Complex64( 1.0, 2.0 ) );
 	* // returns 'complex64'
 	*
-	* var dt = ns.dtype( 'beep' );
+	* dt = ns.dtype( 'beep' );
 	* // returns null
 	*/
 	dtype: typeof dtype;
