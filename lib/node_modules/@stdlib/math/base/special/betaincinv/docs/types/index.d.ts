@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Computes the inverse of the lower incomplete beta function.
+* Computes the inverse of the regularized incomplete beta function.
 *
 * ## Notes
 *
