@@ -16,12 +16,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Benchmark cis."""
+"""Benchmark ccis."""
 
 from __future__ import print_function
 import timeit
 
-NAME = "cis"
+NAME = "ccis"
 REPEATS = 3
 ITERATIONS = 1000000
 
@@ -73,7 +73,7 @@ def print_results(elapsed):
 def benchmark():
     """Run the benchmark and print benchmark results."""
     setup = "from random import random; from math import sin, cos, exp;"
-    stmt = "re = ( random() * 100.0 ) - 50.0; im = ( random() * 100.0 ) - 50.0; y = ( cos( re ) + 1.0j * sin( re ) ) / exp( im );"
+    stmt = "re = (random()*100.0) - 50.0; im = (random()*100.0) - 50.0; y = (cos(re) + 1.0j * sin(re)) / exp(im);"
 
     t = timeit.Timer(stmt, setup=setup)
 
