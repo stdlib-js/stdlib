@@ -65,6 +65,55 @@ v = cexpf( new Complex64( 0.0, 1.0 ) );
 // returns <Complex64>[ ~0.540, ~0.841 ]
 ```
 
+#### cexpf.assign( re, im, out, strideOut, offsetOut )
+
+Evaluates the [exponential][exponential-function] function for a single-precision complex floating-point number and assigns results to a provided output array.
+
+```javascript
+var Float32Array = require( '@stdlib/array/float32' );
+
+var out = new Float32Array( 2 );
+var v = cexpf.assign( 0.0, 0.0, out, 1, 0 );
+// returns <Float32Array>[ 1.0, 0.0 ]
+
+var bool = ( out === v );
+// returns true
+```
+
+The function supports the following parameters:
+
+-   **re**: real component.
+-   **im**: imaginary component.
+-   **out**: output array.
+-   **strideOut**: stride length for `out`.
+-   **offsetOut**: starting index for `out`.
+
+#### cexpf.strided( z, sz, oz, out, so, oo )
+
+Evaluates the [exponential][exponential-function] function for a single-precision complex floating-point number stored in a real-valued strided array view and assigns results to a provided strided output array.
+
+```javascript
+var Float32Array = require( '@stdlib/array/float32' );
+
+var z = new Float32Array( [ 0.0, 0.0 ] );
+var out = new Float32Array( 2 );
+
+var v = cexpf.strided( z, 1, 0, out, 1, 0 );
+// returns <Float32Array>[ 1.0, 0.0 ]
+
+var bool = ( out === v );
+// returns true
+```
+
+The function supports the following parameters:
+
+-   **z**: complex number strided array view.
+-   **sz**: stride length for `z`.
+-   **oz**: starting index for `z`.
+-   **out**: output array.
+-   **so**: stride length for `out`.
+-   **oo**: starting index for `out`.
+
 </section>
 
 <!-- /.usage -->
