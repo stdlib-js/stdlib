@@ -23,6 +23,7 @@
 #include "stdlib/constants/float64/phi.h"
 #include "stdlib/constants/float64/pinf.h"
 #include "stdlib/constants/float64/ninf.h"
+#include "stdlib/constants/float64/nan.h"
 
 static const double SQRT_5 = 2.23606797749979;
 
@@ -49,7 +50,7 @@ double stdlib_base_binet( const double x ) {
 	double b;
 
 	if ( stdlib_base_is_nan( x ) || x == STDLIB_CONSTANT_FLOAT64_PINF || x == STDLIB_CONSTANT_FLOAT64_NINF ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	a = stdlib_base_pow( STDLIB_CONSTANT_FLOAT64_PHI, x );
 	b = stdlib_base_cospi( x ) / a;

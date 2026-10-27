@@ -22,7 +22,7 @@ import cdiv = require( './index' );
 
 // TESTS //
 
-// The function returns an array of numbers...
+// The function returns a complex number...
 {
 	const z = new Complex128( 1.0, 1.0 );
 

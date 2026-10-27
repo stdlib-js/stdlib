@@ -118,17 +118,16 @@ y = myquantile( 1.0 );
 
 ```javascript
 var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var quantile = require( '@stdlib/stats/base/dists/planck/quantile' );
 
-var lambda = uniform( 10, 0.1, 10.0 );
-var p = uniform( 10, 0.0, 1.0 );
+var opts = {
+    'dtype': 'float64'
+};
+var lambda = uniform( 10, 0.1, 10.0, opts );
+var p = uniform( 10, 0.0, 1.0, opts );
 
-var y;
-var i;
-for ( i = 0; i < lambda.length; i++ ) {
-    y = quantile( p[ i ], lambda[ i ] );
-    console.log( 'p: %d, λ: %d, Q(p;λ): %d', p[ i ].toFixed( 4 ), lambda[ i ].toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 'p: %0.4f, λ: %0.4f, Q(p;λ): %0.4f', p, lambda, quantile );
 ```
 
 </section>

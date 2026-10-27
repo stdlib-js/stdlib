@@ -18,13 +18,13 @@
     Examples
     --------
     > var out = {{alias}}( '/c/foo/bar/beep.c', 'win32' )
-    'c:\\foo\\bar\\beep.c'
+    'c:\foo\bar\beep.c'
     > out = {{alias}}( '/c/foo/bar/beep.c', 'mixed' )
     'c:/foo/bar/beep.c'
     > out = {{alias}}( '/c/foo/bar/beep.c', 'posix' )
     '/c/foo/bar/beep.c'
     > out = {{alias}}( 'C:\\\\foo\\bar\\beep.c', 'win32' )
-    'C:\\\\foo\\bar\\beep.c'
+    'C:\\foo\bar\beep.c'
     > out = {{alias}}( 'C:\\\\foo\\bar\\beep.c', 'mixed' )
     'C:/foo/bar/beep.c'
     > out = {{alias}}( 'C:\\\\foo\\bar\\beep.c', 'posix' )

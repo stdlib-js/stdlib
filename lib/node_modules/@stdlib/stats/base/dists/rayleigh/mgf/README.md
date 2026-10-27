@@ -123,20 +123,17 @@ y = myMGF( 0.5 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var mgf = require( '@stdlib/stats/base/dists/rayleigh/mgf' );
 
-var sigma;
-var t;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var t = uniform( 10, 0.0, 1.0, opts );
+var sigma = uniform( 10, 0.0, 5.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    t = randu();
-    sigma = randu() * 5.0;
-    y = mgf( t, sigma );
-    console.log( 't: %d, σ: %d, M_X(t;σ): %d', t.toFixed( 4 ), sigma.toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 't: %0.4f, σ: %0.4f, M_X(t;σ): %0.4f', t, sigma, mgf );
 ```
 
 </section>

@@ -41,7 +41,7 @@ interface Routine {
 	( N: number, x: Float32Array, strideX: number ): Float32Array;
 
 	/**
-	* Reverses a single-precision floating-point strided array in-place. using alternative indexing semantics.
+	* Reverses a single-precision floating-point strided array in-place using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array

@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { RealFloatingPointAndGenericDataType as DataType, floatndarray, genericndarray, Order, Mode, Shape, typedndarray } from '@stdlib/types/ndarray';
+import { RealFloatingPointAndGenericDataType as DataType, floatndarray, typedndarray, genericndarray, Order, Mode, Shape } from '@stdlib/types/ndarray';
 import * as random from '@stdlib/types/random';
 
 /**

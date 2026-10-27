@@ -221,7 +221,7 @@ Fills a single-precision complex floating-point strided array `X` with a specifi
 float x[] = { 1.0f, 2.0f, 3.0f, 4.0f };
 const stdlib_complex64_t alpha = stdlib_complex64( 2.0f, 2.0f );
 
-stdlib_strided_cfill_ndarray( 4, alpha, (stdlib_complex64_t *x), 1, 0 );
+stdlib_strided_cfill_ndarray( 4, alpha, (stdlib_complex64_t *)x, 1, 0 );
 ```
 
 The function accepts the following arguments:

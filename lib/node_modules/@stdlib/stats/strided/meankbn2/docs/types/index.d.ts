@@ -45,7 +45,7 @@ interface Routine {
 	* var v = meankbn2( x.length, x, 1 );
 	* // returns ~0.3333
 	*/
-	( N: number, x: NumericArray, strideX: number ): number;
+	( N: number, x: InputArray, strideX: number ): number;
 
 	/**
 	* Computes the arithmetic mean of a strided array using a second-order iterative Kahan–Babuška algorithm and alternative indexing semantics.

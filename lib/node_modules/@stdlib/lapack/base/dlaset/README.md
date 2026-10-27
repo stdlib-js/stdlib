@@ -237,7 +237,7 @@ TODO
 
 [lapack]: https://www.netlib.org/lapack/explore-html/
 
-[lapack-dlaset]: https://www.netlib.org/lapack/explore-html-3.6.1/d7/d43/group__aux_o_t_h_e_rauxiliary_ga89e332374c7cd87e5db54bfe21550bc3.html
+[lapack-dlaset]: https://netlib.org/lapack/explore-html/d0/de5/group__laset_gad8051330f20413bd2a4ee0bccaf54ec8.html
 
 [mdn-float64array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array
 

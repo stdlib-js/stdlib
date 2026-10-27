@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/math/base/special/expit.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/math/base/special/exp.h"
 #include "stdlib/math/base/assert/is_nan.h"
 
@@ -32,7 +33,7 @@
 */
 double stdlib_base_expit( const double x ) {
 	if ( stdlib_base_is_nan( x ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	return 1.0 / ( 1.0 + stdlib_base_exp( -x ) );
 }

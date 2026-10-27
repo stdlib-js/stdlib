@@ -31,18 +31,18 @@ import replaceBefore = require( './index' );
 // The compiler throws an error if the function is provided arguments having invalid types...
 {
 	replaceBefore( true, 'd', 'foo', 0 ); // $ExpectError
-	replaceBefore( false, 'd' , 'foo', 0 ); // $ExpectError
-	replaceBefore( 3, 'd' , 'foo', 0 ); // $ExpectError
-	replaceBefore( [], 'd' , 'foo', 0 ); // $ExpectError
-	replaceBefore( {}, 'd' , 'foo', 0 ); // $ExpectError
+	replaceBefore( false, 'd', 'foo', 0 ); // $ExpectError
+	replaceBefore( 3, 'd', 'foo', 0 ); // $ExpectError
+	replaceBefore( [], 'd', 'foo', 0 ); // $ExpectError
+	replaceBefore( {}, 'd', 'foo', 0 ); // $ExpectError
 	replaceBefore( ( x: number ): number => x, 'd', 'foo', 0 ); // $ExpectError
 
 	replaceBefore( 'abc', true, 'foo', 0 ); // $ExpectError
 	replaceBefore( 'abc', false, 'foo', 0 ); // $ExpectError
-	replaceBefore( 'abc', 5 , 'foo', 0 ); // $ExpectError
+	replaceBefore( 'abc', 5, 'foo', 0 ); // $ExpectError
 	replaceBefore( 'abc', [], 'foo', 0 ); // $ExpectError
-	replaceBefore( 'abc', {} , 'foo', 0 ); // $ExpectError
-	replaceBefore( 'abc', ( x: number ): number => x , 'foo', 0 ); // $ExpectError
+	replaceBefore( 'abc', {}, 'foo', 0 ); // $ExpectError
+	replaceBefore( 'abc', ( x: number ): number => x, 'foo', 0 ); // $ExpectError
 
 	replaceBefore( 'abc', 'd', true, 0 ); // $ExpectError
 	replaceBefore( 'abc', 'd', false, 0 ); // $ExpectError

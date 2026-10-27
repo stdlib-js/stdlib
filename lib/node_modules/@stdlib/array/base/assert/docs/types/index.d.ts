@@ -297,6 +297,9 @@ interface Namespace {
 	* bool = ns.isComplexFloatingPointDataType( 'complex128' );
 	* // returns true
 	*
+	* bool = ns.isComplexFloatingPointDataType( 'float16' );
+	* // returns false
+	*
 	* bool = ns.isComplexFloatingPointDataType( 'float32' );
 	* // returns false
 	*
@@ -396,7 +399,10 @@ interface Namespace {
 	* @returns boolean indicating whether an input value is a supported array data type
 	*
 	* @example
-	* var bool = ns.isDataType( 'float32' );
+	* var bool = ns.isDataType( 'float16' );
+	* // returns true
+	*
+	* bool = ns.isDataType( 'float32' );
 	* // returns true
 	*
 	* bool = ns.isDataType( 'float64' );
@@ -438,7 +444,10 @@ interface Namespace {
 	* @returns boolean indicating whether an input value is a supported array floating-point data type
 	*
 	* @example
-	* var bool = ns.isFloatingPointDataType( 'float32' );
+	* var bool = ns.isFloatingPointDataType( 'float16' );
+	* // returns true
+	*
+	* bool = ns.isFloatingPointDataType( 'float32' );
 	* // returns true
 	*
 	* bool = ns.isFloatingPointDataType( 'float64' );

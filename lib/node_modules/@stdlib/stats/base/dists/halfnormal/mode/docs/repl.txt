@@ -1,0 +1,32 @@
+
+{{alias}}( σ )
+    Returns the mode of a half-normal distribution with scale parameter `σ`.
+
+    If provided `NaN`, the function returns `NaN`.
+
+    If provided `σ <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    σ: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Mode.
+
+    Examples
+    --------
+    > var y = {{alias}}( 1.0 )
+    0.0
+    > y = {{alias}}( 2.0 )
+    0.0
+    > y = {{alias}}( NaN )
+    NaN
+    > y = {{alias}}( 0.0 )
+    NaN
+
+    See Also
+    --------
+

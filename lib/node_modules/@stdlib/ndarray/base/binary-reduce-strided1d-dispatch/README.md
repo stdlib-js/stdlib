@@ -99,10 +99,7 @@ var ybuf = [ 2.0, 6.0, -1.0, -4.0, 8.0 ];
 var y = new ndarray( 'generic', ybuf, [ ybuf.length ], [ 1 ], 0, 'row-major' );
 
 var z = binary.apply( x, y );
-// returns <ndarray>
-
-var v = z.get();
-// returns -5.0
+// returns <ndarray>[ -5.0 ]
 ```
 
 The method has the following parameters:
@@ -148,7 +145,7 @@ var z = binary.apply( x, y, {
 });
 // returns <ndarray>
 
-var dt = getDType( z );
+var dt = String( getDType( z ) );
 // returns 'float64'
 ```
 
@@ -183,10 +180,7 @@ var zbuf = [ 0.0 ];
 var z = new ndarray( 'generic', zbuf, [], [ 0 ], 0, 'row-major' );
 
 var out = binary.assign( x, y, z );
-// returns <ndarray>
-
-var v = out.get();
-// returns -5.0
+// returns <ndarray>[ -5.0 ]
 
 var bool = ( out === z );
 // returns true
@@ -290,7 +284,7 @@ var z = dot.apply( x, y, {
 
 // Resolve the output array data type:
 var dt = dtype( z );
-console.log( dt );
+console.log( String( dt ) );
 
 // Print the results:
 console.log( ndarray2array( z ) );

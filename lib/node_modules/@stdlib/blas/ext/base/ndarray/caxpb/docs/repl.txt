@@ -1,0 +1,38 @@
+
+{{alias}}( arrays )
+    Multiplies each element in a one-dimensional single-precision complex
+    floating-point ndarray by a scalar constant and adds a scalar constant to
+    each result.
+
+    The input ndarray is modified *in-place* (i.e., the input ndarray is
+    *mutated*).
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a zero-dimensional ndarray containing the scalar constant to multiply.
+        - a zero-dimensional ndarray containing the scalar constant to add.
+
+    Returns
+    -------
+    out: ndarray
+        Input ndarray.
+
+    Examples
+    --------
+    > var buf = [ -2.0, 1.0, 3.0, -5.0 ];
+    > var x = new {{alias:@stdlib/ndarray/vector/complex64}}( buf );
+    > var opts = { 'dtype': 'complex64' };
+    > var a = new {{alias:@stdlib/complex/float32/ctor}}( 2.0, 0.0 );
+    > var alpha = {{alias:@stdlib/ndarray/from-scalar}}( a, opts );
+    > var b = new {{alias:@stdlib/complex/float32/ctor}}( 1.0, 0.0 );
+    > var beta = {{alias:@stdlib/ndarray/from-scalar}}( b, opts );
+    > {{alias}}( [ x, alpha, beta ] )
+    <ndarray>[ <Complex64>[ -3.0, 2.0 ], <Complex64>[ 7.0, -10.0 ] ]
+
+    See Also
+    --------
+

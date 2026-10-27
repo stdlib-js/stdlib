@@ -1,0 +1,59 @@
+
+{{alias}}( value )
+    Splits a number into the high and low 32-bit words of a 64-bit unsigned
+    integer.
+
+    The function returns an array with two elements: a higher order word and a
+    lower order word, respectively. The lower order word contains the less
+    significant bits, while the higher order word contains the more significant
+    bits.
+
+    Parameters
+    ----------
+    value: integer
+        Integer value in the range [0, 2^53-1].
+
+    Returns
+    -------
+    out: Array<integer>
+        High and low words as 32-bit unsigned integers.
+
+    Examples
+    --------
+    > var w = {{alias}}( 1234 )
+    [ 0, 1234 ]
+
+
+{{alias}}.assign( value, out, stride, offset )
+    Splits a number into the high and low 32-bit words of a 64-bit unsigned
+    integer and assigns results to a provided output array.
+
+    Parameters
+    ----------
+    value: integer
+        Integer value in the range [0, 2^53-1].
+
+    out: Array|TypedArray|Object
+        Output array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array index offset.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Output array.
+
+    Examples
+    --------
+    > var out = new {{alias:@stdlib/array/uint32}}( 2 );
+    > var w = {{alias}}.assign( 9007199254740991, out, 1, 0 )
+    <Uint32Array>[ 2097151, 4294967295 ]
+    > var bool = ( w === out )
+    true
+
+    See Also
+    --------

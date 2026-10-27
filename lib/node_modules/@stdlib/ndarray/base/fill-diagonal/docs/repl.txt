@@ -1,0 +1,53 @@
+
+{{alias}}( x, value, dims, k )
+    Fills a specified diagonal of a matrix (or stack of matrices) with a
+    scalar value.
+
+    The order of the dimension indices contained in `dims` matters. The first
+    element specifies the row-like dimension. The second element specifies the
+    column-like dimension.
+
+    Each provided dimension index must reside on the interval [-ndims, ndims-1].
+
+    The diagonal offset `k` is interpreted as `column - row`. Accordingly, when
+    `k = 0`, the function fills the main diagonal; when `k > 0`, the function
+    fills a diagonal above the main diagonal; and when `k < 0`, the function
+    fills a diagonal below the main diagonal.
+
+    The function mutates the input ndarray in-place.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    value: any
+        Scalar value. Must be able to safely cast to the input ndarray data
+        type. Scalar values having floating-point data types (both real and
+        complex) are allowed to downcast to a lower precision data type of the
+        same kind (e.g., a scalar double-precision floating-point number can be
+        used to fill a 'float32' input ndarray).
+
+    dims: ArrayLikeObject<integer>
+        Dimension indices defining the plane in which to fill the diagonal.
+
+    k: integer
+        Diagonal offset.
+
+    Returns
+    -------
+    out: ndarray
+        Input array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/zeros}}( [ 3, 3 ] )
+    <ndarray>
+    > var out = {{alias}}( x, 1.0, [ 0, 1 ], 0 )
+    <ndarray>[ [ 1.0, 0.0, 0.0 ], [ 0.0, 1.0, 0.0 ], [ 0.0, 0.0, 1.0 ] ]
+    > var bool = ( out === x )
+    true
+
+    See Also
+    --------
+

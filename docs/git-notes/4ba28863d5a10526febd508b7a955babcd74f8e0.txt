@@ -1,0 +1,7 @@
+---
+type: amend-message
+---
+Merge pull request #5116 from gururaj1512/migrate-math-base-ops-add3
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/5116
+Reviewed-by: Athan Reines <kgryte@gmail.com>

@@ -183,7 +183,8 @@ interface Random<T, U, V> extends PRNG {
 	*     'order': 'row-major'
 	* };
 	*
-	* var rand = new Random( uniform, [ idt, idt ], odt, policies, options );
+	* var factory = createFactory( uniform, [ idt, idt ], odt, policies, options );
+	* var rand = factory();
 	*
 	* var v = rand( [ 2, 2 ], 0.0, 1.0 );
 	* // returns <ndarray>
@@ -213,7 +214,8 @@ interface Random<T, U, V> extends PRNG {
 	*     'order': 'row-major'
 	* };
 	*
-	* var rand = new Random( uniform, [ idt, idt ], odt, policies, options );
+	* var factory = createFactory( uniform, [ idt, idt ], odt, policies, options );
+	* var rand = factory();
 	*
 	* var out = ndzeros( [ 2, 2 ] );
 	* var v = rand.assign( 0.0, 1.0, out );

@@ -1,0 +1,37 @@
+{
+  "alias": "bernoulli",
+  "pkg": "stdlib/random/bernoulli",
+  "base_pkg": "stdlib/random/base/bernoulli",
+
+  "param_1": "p",
+  "param_1_value": "0.5",
+  "param_1_value_aux": "0.7",
+  "param_1_desc": "success probability",
+  "param_1_dtype": "number",
+  "param_1_jsdoc_dtype": "Probability",
+  "param_1_dtype_kind": "real_and_generic",
+
+  "output_ts_dtype": "RealAndGenericDataType",
+  "output_ts_typed_ndarray": "realndarray",
+  "output_dtype_kind": "real_and_generic",
+  "output_dtype_policy": "real_and_generic",
+
+  "default_dtype": "float64",
+  "default_dtype_kind": "real",
+
+  "from_desc": "a Bernoulli distribution",
+  "readme_from_desc": "a [Bernoulli][@stdlib/random/base/bernoulli] distribution",
+
+  "readme_heading": "Bernoulli Random Numbers",
+  "readme_dtype_kind_desc": "a real",
+  "readme_dtype_kind_pkg": "stdlib/ndarray/dtypes",
+
+  "repl_text_main_desc": "Returns an ndarray containing pseudorandom numbers drawn from a Bernoulli distribution.",
+  "repl_text_assign_desc": "Fills an ndarray with pseudorandom numbers drawn from a Bernoulli distribution.",
+  "repl_text_factory_desc": "Returns a function for generating pseudorandom numbers drawn from a Bernoulli distribution.",
+
+  "repl_text_param_1_desc": "Success probability. If an ndarray, must be broadcast compatible with the specified array shape.",
+  "repl_text_assign_param_1_desc": "Success probability. If an ndarray, must be broadcast compatible with the provided output array.",
+
+  "keywords": "bernoulli,discrete"
+}

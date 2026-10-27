@@ -46,7 +46,7 @@ Returns the minimum array [data type][@stdlib/array/dtypes] of the closest "kind
 
 ```javascript
 var dt = minDataType( 3.141592653589793 );
-// returns 'float32'
+// returns 'float16'
 
 dt = minDataType( -3 );
 // returns 'int8'

@@ -60,8 +60,8 @@ While not required to run stdlib, the following dependencies **may** be required
 -   [gcc & g++][gcc] or [Clang][clang]: C/C++ compilation and linking (g++ version `>= 4.8`; clang version `>= 3.5`, Xcode version `>=8.3.1` on OS X)
 -   [gfortran][gfortran]: Fortran compilation and linking (version `>= 4.8`)
 -   [CMake][cmake]: cross-platform build environment (version `>= 3.4.3`)
--   [pandoc][pandoc]: universal document converter (version `>= 1.18`)
--   [Homebrew][homebrew]: macOS package manager (only **required** on OS X in order to install [shellcheck][shellcheck])
+-   [pandoc][pandoc]: universal document converter (version `>= 3.8`)
+-   [Homebrew][homebrew]: macOS package manager
 
 Assuming the requisite language is present on the host machine, the following language libraries can be automatically downloaded and installed using `make` (see [installation](#installation)):
 

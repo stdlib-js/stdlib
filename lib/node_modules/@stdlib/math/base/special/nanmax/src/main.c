@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/math/base/special/nanmax.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/max.h"
 
@@ -37,7 +38,7 @@
 */
 double stdlib_base_nanmax( const double x, const double y ) {
 	if ( stdlib_base_is_nan( x ) ) {
-		return stdlib_base_is_nan( y ) ? 0.0 / 0.0 : y;
+		return stdlib_base_is_nan( y ) ? STDLIB_CONSTANT_FLOAT64_NAN : y;
 	}
 	return stdlib_base_is_nan( y ) ? x : stdlib_base_max( x, y );
 }

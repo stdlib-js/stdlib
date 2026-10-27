@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# GAMMA_LANCZOS_G
+# FLOAT64_GAMMA_LANCZOS_G
 
 > Arbitrary constant `g` to be used in Lanczos approximation functions.
 
@@ -33,15 +33,15 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var GAMMA_LANCZOS_G = require( '@stdlib/constants/float64/gamma-lanczos-g' );
+var FLOAT64_GAMMA_LANCZOS_G = require( '@stdlib/constants/float64/gamma-lanczos-g' );
 ```
 
-#### GAMMA_LANCZOS_G
+#### FLOAT64_GAMMA_LANCZOS_G
 
 Arbitrary constant `g` to be used in [Lanczos approximation][lanczos-approximation] functions.
 
 ```javascript
-var bool = ( GAMMA_LANCZOS_G === 10.900511 );
+var bool = ( FLOAT64_GAMMA_LANCZOS_G === 10.900511 );
 // returns true
 ```
 
@@ -56,9 +56,9 @@ var bool = ( GAMMA_LANCZOS_G === 10.900511 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var GAMMA_LANCZOS_G = require( '@stdlib/constants/float64/gamma-lanczos-g' );
+var FLOAT64_GAMMA_LANCZOS_G = require( '@stdlib/constants/float64/gamma-lanczos-g' );
 
-console.log( GAMMA_LANCZOS_G );
+console.log( FLOAT64_GAMMA_LANCZOS_G );
 // => 10.900511
 ```
 

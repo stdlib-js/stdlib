@@ -2107,7 +2107,7 @@
       "link header"
     ]
   },
-  "https://developer.github.com/guides/traversing-with-pagination/": {
+  "https://docs.github.com/en/rest/using-the-rest-api/using-pagination-in-the-rest-api": {
     "id": "github-pagination",
     "description": "GitHub documentation for pagination.",
     "short_url": "",

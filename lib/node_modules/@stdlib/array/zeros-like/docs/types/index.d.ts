@@ -31,13 +31,13 @@ import { NumericAndGenericDataTypeMap, AnyArray, TypedArray, ComplexTypedArray }
 * @example
 * var zeros = require( '@stdlib/array/zeros' );
 *
-* var x = zeros( 2, 'generic' );
-* // returns [ 0, 0 ]
+* var x = zeros( 2, 'float64' );
+* // returns <Float64Array>[ 0.0, 0.0 ]
 *
 * var y = zerosLike( x );
-* // returns [ 0, 0 ]
+* // returns <Float64Array>[ 0.0, 0.0 ]
 */
-declare function zerosLike( x: Array<any> ): Array<number>;
+declare function zerosLike<T extends TypedArray | ComplexTypedArray>( x: T ): T;
 
 /**
 * Creates a zero-filled array having the same length and data type as a provided input array.
@@ -48,13 +48,13 @@ declare function zerosLike( x: Array<any> ): Array<number>;
 * @example
 * var zeros = require( '@stdlib/array/zeros' );
 *
-* var x = zeros( 2, 'float64' );
-* // returns <Float64Array>[ 0.0, 0.0 ]
+* var x = zeros( 2, 'generic' );
+* // returns [ 0, 0 ]
 *
 * var y = zerosLike( x );
-* // returns <Float64Array>[ 0.0, 0.0 ]
+* // returns [ 0, 0 ]
 */
-declare function zerosLike<T extends TypedArray | ComplexTypedArray>( x: T ): T;
+declare function zerosLike( x: Array<unknown> ): Array<number>;
 
 /**
 * Creates a zero-filled array having the same length as a provided input array.
@@ -63,6 +63,7 @@ declare function zerosLike<T extends TypedArray | ComplexTypedArray>( x: T ): T;
 *
 * -   `float64`: double-precision floating-point numbers (IEEE 754)
 * -   `float32`: single-precision floating-point numbers (IEEE 754)
+* -   `float16`: half-precision floating-point numbers (IEEE 754)
 * -   `complex128`: double-precision complex floating-point numbers
 * -   `complex64`: single-precision complex floating-point numbers
 * -   `int32`: 32-bit two's complement signed integers

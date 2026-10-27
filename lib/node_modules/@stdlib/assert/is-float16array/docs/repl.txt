@@ -14,9 +14,8 @@
 
     Examples
     --------
-    // TODO: update to use `array/float16` once added
-    > var bool = {{alias}}( new {{alias:@stdlib/array/float32}}( 10 ) )
-    false
+    > var bool = {{alias}}( new {{alias:@stdlib/array/float16}}( 10 ) )
+    true
     > bool = {{alias}}( [] )
     false
 

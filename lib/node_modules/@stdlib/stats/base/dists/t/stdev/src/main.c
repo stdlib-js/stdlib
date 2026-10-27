@@ -17,9 +17,8 @@
 */
 
 #include "stdlib/stats/base/dists/t/stdev.h"
-#include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/sqrt.h"
-#include "stdlib/constants/float64/pinf.h"
+#include "stdlib/stats/base/dists/t/variance.h"
 
 /**
 * Returns the standard deviation of a Student's t distribution.
@@ -32,11 +31,5 @@
 * // returns ~1.134
 */
 double stdlib_base_dists_t_stdev( const double v ) {
-	if ( stdlib_base_is_nan( v ) || v <= 1.0 ) {
-		return 0.0 / 0.0; // NaN
-	}
-	if ( v <= 2.0 ) {
-		return STDLIB_CONSTANT_FLOAT64_PINF;
-	}
-	return stdlib_base_sqrt( v / ( v - 2.0 ) );
+	return stdlib_base_sqrt( stdlib_base_dists_t_variance( v ) );
 }

@@ -28,9 +28,9 @@ interface Options {
 	thisArg?: any;
 
 	/**
-	* If `'values'`, values are returned; if `'indices'`, indices are returned; if `'*'`, both indices and values are returned.
+	* If `'values'`, values are returned; if `'keys'`, keys are returned; if `'*'`, both keys and values are returned.
 	*/
-	returns?: 'values' | 'indices' | '*';
+	returns?: 'values' | 'keys' | '*';
 }
 
 /**

@@ -64,7 +64,7 @@ import randi = require( './index' );
 	randi.factory( { 'name': null } ); // $ExpectError
 	randi.factory( { 'name': [] } ); // $ExpectError
 	randi.factory( { 'name': {} } ); // $ExpectError
-	randi.factory( { 'name': true ); // $ExpectError
+	randi.factory( { 'name': true } ); // $ExpectError
 	randi.factory( { 'name': ( x: number ): number => x } ); // $ExpectError
 }
 
@@ -85,7 +85,7 @@ import randi = require( './index' );
 	randi.factory( { 'state': null } ); // $ExpectError
 	randi.factory( { 'state': [] } ); // $ExpectError
 	randi.factory( { 'state': {} } ); // $ExpectError
-	randi.factory( { 'state': true ); // $ExpectError
+	randi.factory( { 'state': true } ); // $ExpectError
 	randi.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

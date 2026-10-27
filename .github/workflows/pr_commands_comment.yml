@@ -79,7 +79,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           # Ensure we have access to the scripts directory:
           sparse-checkout: |
@@ -94,5 +94,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN || secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           DEBUG: ${{ inputs.debug || 'false' }}
         run: |
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/package_commands_comment" "$PR_NUMBER"
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/pr_commands_comment/package_commands_comment" "$PR_NUMBER"
         timeout-minutes: 30

@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/math/base/special/cosd.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/math/base/special/kernel_sin.h"
 #include "stdlib/math/base/special/kernel_cos.h"
 #include "stdlib/math/base/special/deg2rad.h"
@@ -39,7 +40,7 @@ double stdlib_base_cosd( const double x ) {
 	double rx;
 
 	if ( stdlib_base_is_infinite( x ) || stdlib_base_is_nan( x ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 
 	rx = stdlib_base_abs( stdlib_base_fmod( x, 360.0 ) );

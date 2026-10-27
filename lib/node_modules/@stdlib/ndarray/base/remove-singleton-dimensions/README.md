@@ -40,7 +40,7 @@ limitations under the License.
 var removeSingletonDimensions = require( '@stdlib/ndarray/base/remove-singleton-dimensions' );
 ```
 
-#### removeSingletonDimensions( x )
+#### removeSingletonDimensions( x, writable )
 
 Returns an ndarray without singleton dimensions (i.e., dimensions whose size is equal to `1`).
 
@@ -49,15 +49,17 @@ var array = require( '@stdlib/ndarray/array' );
 
 // Create a 1x2x2 ndarray:
 var x = array( [ [ [ 1, 2 ], [ 3, 4 ] ] ] );
-// returns <ndarray>
+// returns <ndarray>[ [ [ 1, 2 ], [ 3, 4 ] ] ]
 
 // Remove singleton dimensions:
-var y = removeSingletonDimensions( x );
-// returns <ndarray>
-
-var sh = y.shape;
-// returns [ 2, 2 ]
+var y = removeSingletonDimensions( x, false );
+// returns <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
 ```
+
+The function accepts the following arguments:
+
+-   **x**: input ndarray.
+-   **writable**: boolean indicating whether a returned ndarray should be writable.
 
 </section>
 
@@ -69,8 +71,8 @@ var sh = y.shape;
 
 ## Notes
 
--   If a provided ndarray does not have any singleton dimensions, the function returns the provided ndarray unchanged.
--   If a provided ndarray does have singleton dimensions, the function returns a new ndarray view.
+-   The `writable` parameter **only** applies to ndarray constructors supporting **read-only** instances.
+-   The function **always** returns a new ndarray instance even if the input ndarray does not contain any singleton dimensions.
 
 </section>
 
@@ -85,33 +87,15 @@ var sh = y.shape;
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var array = require( '@stdlib/ndarray/array' );
-var numel = require( '@stdlib/ndarray/base/numel' );
-var ind2sub = require( '@stdlib/ndarray/ind2sub' );
+var uniform = require( '@stdlib/random/uniform' );
+var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var removeSingletonDimensions = require( '@stdlib/ndarray/base/remove-singleton-dimensions' );
 
-// Create a 5-dimensional array:
-var x = array( [ [ 1, 2 ], [ 3, 4 ] ], {
-    'ndmin': 5
-});
-// returns <ndarray>
+var x = uniform( [ 1, 1, 3, 3, 3 ], -10.0, 10.0 );
+console.log( ndarray2array( x ) );
 
-// Remove singleton dimensions:
-var y = removeSingletonDimensions( x );
-// returns <ndarray>
-
-// Retrieve the shape:
-var sh = y.shape;
-// returns [ 2, 2 ]
-
-// Retrieve the number of elements:
-var N = numel( sh );
-
-// Loop through the array elements...
-var i;
-for ( i = 0; i < N; i++ ) {
-    console.log( 'Y[%s] = %d', ind2sub( sh, i ).join( ', ' ), y.iget( i ) );
-}
+var y = removeSingletonDimensions( x, false );
+console.log( ndarray2array( y ) );
 ```
 
 </section>

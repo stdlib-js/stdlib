@@ -20,7 +20,7 @@ limitations under the License.
 
 # Logarithm of Probability Density Function
 
-> [Triangular][triangular-distribution] distribution logarithm of [probability density function][pdf] (PDF).
+> [Triangular][triangular-distribution] distribution natural logarithm of [probability density function][pdf] (PDF).
 
 <section class="intro">
 

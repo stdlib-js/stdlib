@@ -18,6 +18,10 @@
 
 // TypeScript Version: 4.1
 
+/// <reference types="@stdlib/types"/>
+
+import { Float16Array } from '@stdlib/types/array';
+
 /**
 * Tests if a value is a Float16Array.
 *
@@ -34,7 +38,7 @@
 * var bool = isFloat16Array( [] );
 * // returns false
 */
-declare function isFloat16Array( value: any ): boolean; // TODO: replace with `value is Float16Array` once `array/float16` added
+declare function isFloat16Array( value: any ): value is Float16Array;
 
 
 // EXPORTS //

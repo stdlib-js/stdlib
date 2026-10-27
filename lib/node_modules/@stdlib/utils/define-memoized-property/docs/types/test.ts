@@ -49,13 +49,13 @@ import defineMemoizedProperty = require( './index' );
 	defineMemoizedProperty( {}, 'foo', [] ); // $ExpectError
 	defineMemoizedProperty( {}, 'foo', {} ); // $ExpectError
 
-	defineMemoizedProperty( {}, 'foo', { 'configurable': true ); // $ExpectError
+	defineMemoizedProperty( {}, 'foo', { 'configurable': true } ); // $ExpectError
 	defineMemoizedProperty( {}, 'foo', { 'configurable': 'true', 'value': (): string => 'bar' } ); // $ExpectError
 
-	defineMemoizedProperty( {}, 'foo', { 'enumerable': true ); // $ExpectError
+	defineMemoizedProperty( {}, 'foo', { 'enumerable': true } ); // $ExpectError
 	defineMemoizedProperty( {}, 'foo', { 'enumerable': 'true', 'value': (): string => 'bar' } ); // $ExpectError
 
-	defineMemoizedProperty( {}, 'foo', { 'writable': true ); // $ExpectError
+	defineMemoizedProperty( {}, 'foo', { 'writable': true } ); // $ExpectError
 	defineMemoizedProperty( {}, 'foo', { 'writable': 'true', 'value': (): string => 'bar' } ); // $ExpectError
 }
 

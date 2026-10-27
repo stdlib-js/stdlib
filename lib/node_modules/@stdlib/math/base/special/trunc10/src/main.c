@@ -30,7 +30,7 @@
 * @return     rounded value
 *
 * @example
-* double y = stdlib_base_trunc2( 13.0 );
+* double y = stdlib_base_trunc10( 13.0 );
 * // returns 10.0
 */
 double stdlib_base_trunc10( const double x ) {

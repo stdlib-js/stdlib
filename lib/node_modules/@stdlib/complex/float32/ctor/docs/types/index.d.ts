@@ -36,6 +36,15 @@ declare class Complex64 {
 	constructor( real: number, imag: number );
 
 	/**
+	* Constructor name.
+	*
+	* @example
+	* var str = Complex64.name;
+	* // returns 'Complex64'
+	*/
+	static readonly name: 'Complex64';
+
+	/**
 	* Read-only property returning the real component.
 	*
 	* @returns real component

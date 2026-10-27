@@ -20,7 +20,7 @@ limitations under the License.
 
 # Constants
 
-> 128-bit complex number mathematical constants
+> 128-bit complex number mathematical constants.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var constants = require( '@stdlib/constants/complex128' );
 
 #### constants
 
-128-bit complex number mathematical constants
+128-bit complex number mathematical constants.
 
 ```javascript
 var c = constants;

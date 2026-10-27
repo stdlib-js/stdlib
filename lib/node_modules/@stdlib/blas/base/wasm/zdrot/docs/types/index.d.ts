@@ -416,7 +416,7 @@ interface Routine extends ModuleWrapper {
 	* var x = new Complex128Array( xbuf.buffer );
 	* mod.write( zxptr, x );
 	*
-	* var ybuf = zeros( N*2, 'float64' );
+	* var ybuf = ones( N*2, 'float64' );
 	* var y = new Complex128Array( ybuf.buffer );
 	* mod.write( zyptr, y );
 	*
@@ -434,9 +434,10 @@ interface Routine extends ModuleWrapper {
 	* mod.read( zyptr, viewY );
 	*
 	* console.log( reinterpretComplex128( viewY, 0 ) );
-	* // => <Float64Array>[ -0.6, -1.2, ~-1.8, -2.4, -3.0, ~-3.6, -4.2, -4.8, ~-5.4, -6.0 ]
+	* // => <Float64Array>[ ~0.2, ~-0.4, -1.0, ~-1.6, ~-2.2, ~-2.8, ~-3.4, -4.0, ~-4.6, ~-5.2 ]
+	*
 	* console.log( reinterpretComplex128( viewX, 0 ) );
-	* // => <Float64Array>[ 0.8, 1.6, ~2.4, 3.2, 4.0, ~4.8, ~5.6, 6.4, 7.2, 8.0 ]
+	* // => <Float64Array>[ ~1.4, ~2.2, 3.0, ~3.8, ~4.6, ~5.4, ~6.2, 7.0, ~7.8, ~8.6 ]
 	*/
 	Module: ModuleConstructor;
 }

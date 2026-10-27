@@ -65,7 +65,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-       "@stdlib/math/base/special/sinh"
+        "@stdlib/math/base/special/sinh"
       ]
     }
   ]

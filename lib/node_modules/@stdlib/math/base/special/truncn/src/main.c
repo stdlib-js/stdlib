@@ -26,6 +26,7 @@
 #include "stdlib/constants/float64/max_base10_exponent.h"
 #include "stdlib/constants/float64/min_base10_exponent.h"
 #include "stdlib/constants/float64/min_base10_exponent_subnormal.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdint.h>
 
 static const double MAX_INT = STDLIB_CONSTANT_FLOAT64_MAX_SAFE_INTEGER + 1.0;
@@ -96,7 +97,7 @@ double stdlib_base_truncn( const double x, const int32_t n ) {
 	double y;
 
 	if ( stdlib_base_is_nan( x ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 
 	if (

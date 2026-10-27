@@ -62,6 +62,7 @@
     "collection",
     "float64array",
     "float32array",
+    "float16array",
     "int32array",
     "uint32array",
     "int16array",

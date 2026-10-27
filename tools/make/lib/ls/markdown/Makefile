@@ -19,4 +19,6 @@
 # DEPENDENCIES #
 
 # Note: keep in alphabetical order
+include $(TOOLS_MAKE_LIB_DIR)/ls/markdown/docs.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/markdown/files.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/markdown/pkg_readmes.mk

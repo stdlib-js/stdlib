@@ -95,19 +95,16 @@ var y = mode( -1.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var mode = require( '@stdlib/stats/base/dists/t/mode' );
 
-var v;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var v = uniform( 10, 0.0, 20.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    v = randu() * 20.0;
-    y = mode( v );
-    console.log( 'v: %d, mode(X,v): %d', v.toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 'v: %0.4f, mode(X;v): %0.4f', v, mode );
 ```
 
 </section>

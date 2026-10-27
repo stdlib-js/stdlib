@@ -103,17 +103,16 @@ y = mycdf( 1.0 );
 ```javascript
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var cdf = require( '@stdlib/stats/base/dists/planck/cdf' );
 
-var x = discreteUniform( 10, 0, 5 );
-var lambda = uniform( 10, 0.1, 5.0 );
+var opts = {
+    'dtype': 'float64'
+};
+var x = discreteUniform( 10, 0, 5, opts );
+var lambda = uniform( 10, 0.1, 5.0, opts );
 
-var y;
-var i;
-for ( i = 0; i < lambda.length; i++ ) {
-    y = cdf( x[ i ], lambda[ i ] );
-    console.log( 'x: %d, λ: %d, F(x;λ): %d', x[ i ].toFixed( 4 ), lambda[ i ].toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 'x: %d, λ: %04f, F(x;λ): %04f', x, lambda, cdf );
 ```
 
 </section>

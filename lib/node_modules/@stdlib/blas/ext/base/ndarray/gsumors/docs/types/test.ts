@@ -24,7 +24,7 @@ import gsumors = require( './index' );
 
 // TESTS //
 
-// The function returns a sum...
+// The function returns a number...
 {
 	const x = zeros( [ 10 ], {
 		'dtype': 'float64'

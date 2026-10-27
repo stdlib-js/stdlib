@@ -166,7 +166,7 @@ Evaluates the natural logarithm of the [probability density function][pdf] (PDF)
 
 ```c
 double out = stdlib_base_dists_exponential_logpdf( 2.0, 0.7 );
-// returns ~0.173
+// returns ~-1.757
 ```
 
 The function accepts the following arguments:

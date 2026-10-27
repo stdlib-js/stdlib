@@ -64,7 +64,7 @@
     "random",
     "rand",
     "poisson",
-    "continuous",
+    "discrete",
     "readable",
     "stream",
     "seed",

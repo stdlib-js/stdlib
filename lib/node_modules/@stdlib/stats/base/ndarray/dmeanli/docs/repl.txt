@@ -17,13 +17,7 @@
 
     Examples
     --------
-    > var xbuf = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 2.0 ] );
-    > var dt = 'float64';
-    > var sh = [ xbuf.length ];
-    > var sx = [ 1 ];
-    > var ox = 0;
-    > var ord = 'row-major';
-    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
+    > var x = new {{alias:@stdlib/ndarray/vector/float64}}( [ 1.0, -2.0, 2.0 ] );
     > {{alias}}( [ x ] )
     ~0.3333
 

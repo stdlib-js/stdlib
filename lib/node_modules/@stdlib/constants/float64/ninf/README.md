@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# NINF
+# FLOAT64_NINF
 
 > [Double-precision floating-point][ieee754] negative infinity.
 

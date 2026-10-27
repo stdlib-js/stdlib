@@ -19,7 +19,6 @@
 #include "stdlib/stats/base/dists/planck/mgf.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <math.h>
 #include <time.h>
 #include <sys/time.h>
 
@@ -107,13 +106,13 @@ static double benchmark( void ) {
 	start = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
 		y = stdlib_base_dists_planck_mgf( t[ i%100 ], lambda[ i%100 ] );
-		if ( isnan( y ) ) {
+		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;
 		}
 	}
 	elapsed = tic() - start;
-	if ( isnan( y ) ) {
+	if ( y != y ) {
 		printf( "should not return NaN\n" );
 	}
 	return elapsed;

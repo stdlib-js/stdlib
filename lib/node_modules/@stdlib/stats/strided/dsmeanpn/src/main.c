@@ -67,11 +67,11 @@ double API_SUFFIX(stdlib_strided_dsmeanpn_ndarray)( const CBLAS_INT N, const flo
 	dN = (double)N;
 
 	// Compute an estimate for the mean:
-	mu = stdlib_strided_dssum_ndarray( N, X, strideX, offsetX );
+	mu = API_SUFFIX(stdlib_strided_dssum_ndarray)( N, X, strideX, offsetX );
 	mu /= dN;
 
 	// Compute an error term:
-	c = stdlib_strided_dsapxsum_ndarray( N, -mu, X, strideX, offsetX );
+	c = API_SUFFIX(stdlib_strided_dsapxsum_ndarray)( N, -mu, X, strideX, offsetX );
 	c /= dN;
 
 	return mu + c;

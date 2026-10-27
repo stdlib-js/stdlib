@@ -28,7 +28,7 @@
 * Macro containing the preamble for a loop which operates on strided array elements according to a strided mask array.
 *
 * @example
-* STDLIB_STRIDED_MSKUNARY_LOOP_PREMABLE {
+* STDLIB_STRIDED_MSKUNARY_LOOP_PREAMBLE {
 *     // Loop body...
 * }
 */
@@ -59,7 +59,7 @@
 * Macro containing the preamble for a loop which operates on strided array elements according to a strided mask array and updates two strided output arrays.
 *
 * @example
-* STDLIB_STRIDED_MSKUNARY_LOOP_TWO_OUT_PREMABLE {
+* STDLIB_STRIDED_MSKUNARY_LOOP_TWO_OUT_PREAMBLE {
 *     // Loop body...
 * }
 */

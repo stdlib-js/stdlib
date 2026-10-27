@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { typedndarray, genericndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray } from '@stdlib/types/ndarray';
+import { typedndarray, genericndarray, float64ndarray, float32ndarray, float16ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray } from '@stdlib/types/ndarray';
 
 /**
 * Returns the underlying data buffer of a provided ndarray.
@@ -57,6 +57,24 @@ declare function data( x: float64ndarray ): float64ndarray[ 'data' ];
 * // returns <Float32Array>
 */
 declare function data( x: float32ndarray ): float32ndarray[ 'data' ];
+
+/**
+* Returns the underlying data buffer of a provided ndarray.
+*
+* @param x - input ndarray
+* @returns underlying data buffer
+*
+* @example
+* var zeros = require( '@stdlib/ndarray/zeros' );
+*
+* var x = zeros( [ 3, 3, 3 ], {
+*     'dtype': 'float16'
+* });
+*
+* var out = data( x );
+* // returns <Float16Array>
+*/
+declare function data( x: float16ndarray ): float16ndarray[ 'data' ];
 
 /**
 * Returns the underlying data buffer of a provided ndarray.

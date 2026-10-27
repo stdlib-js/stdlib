@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/lapack/base/dgttrf",
   "version": "0.0.0",
-  "description": "Compute an `LU` factorization of a real tridiagonal matrix `A` using elimination with partial pivoting and row interchanges",
+  "description": "Compute an `LU` factorization of a real tridiagonal matrix `A` using elimination with partial pivoting and row interchanges.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

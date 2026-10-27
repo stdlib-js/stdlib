@@ -84,7 +84,7 @@ dspr( 'row-major', 'upper', 3, 1.0, x1, -1, AP );
 // AP => <Float64Array>[ 2.0, 4.0, 6.0, 5.0, 8.0, 10.0 ]
 ```
 
-#### dspr.ndarray( uplo, N, α, x, sx, ox, AP, sap, oap )
+#### dspr.ndarray( order, uplo, N, α, x, sx, ox, AP, sap, oap )
 
 Performs the symmetric rank 1 operation `A = α*x*x^T + A`, using alternative indexing semantics and where `α` is a scalar, `x` is an `N` element vector, and `A` is an `N` by `N` symmetric matrix supplied in packed form.
 

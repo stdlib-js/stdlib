@@ -49,7 +49,7 @@ import random = require( './index' );
 	random( ( x: number ): number => x, 2.0, {} ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument which is not a number or ndarray..
+// The compiler throws an error if the function is provided a second argument which is not a number or ndarray...
 {
 	random( [ 3, 3 ], '5' ); // $ExpectError
 	random( [ 3, 3 ], true ); // $ExpectError
@@ -144,7 +144,7 @@ import random = require( './index' );
 	random.assign( 2.0, arr ); // $ExpectType float64ndarray
 }
 
-// The compiler throws an error if the `assign` method is provided a first argument which is not a number or ndarray..
+// The compiler throws an error if the `assign` method is provided a first argument which is not a number or ndarray...
 {
 	const arr = zeros( [ 3, 3 ] );
 

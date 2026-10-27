@@ -42,15 +42,9 @@
     > function f ( v ) { return v > 0.0; };
     > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2], [ 3, 4 ] ] );
     > var y = {{alias}}( x, 3, f )
-    <ndarray>
-    > y.get()
-    true
+    <ndarray>[ true ]
     > y = {{alias}}( x, 3, { 'keepdims': true }, f )
-    <ndarray>
-    > {{alias:@stdlib/ndarray/to-array}}( y )
-    [ [ true ] ]
-    > y.get( 0, 0 )
-    true
+    <ndarray>[ [ true ] ]
 
 
 {{alias}}.assign( x, n, y[, options], predicate[, thisArg] )
@@ -97,10 +91,8 @@
     > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2], [ 3, 4 ] ] );
     > var y = {{alias:@stdlib/ndarray/from-scalar}}( false );
     > var out = {{alias}}.assign( x, 3, y, f )
-    <ndarray>
+    <ndarray>[ true ]
     > var bool = ( out === y )
-    true
-    > y.get()
     true
 
     See Also

@@ -1,0 +1,115 @@
+
+{{alias}}( N, index, value, x, strideX )
+    Sifts a value down from a specified index in a single-precision floating-
+    point strided min-heap until the heap property is restored.
+
+    The function sifts a value down from the logical index, restoring the
+    min-heap invariant by repeatedly swapping with the smaller child until the
+    value reaches its correct position.
+
+    The function assumes that the subtrees rooted at the children of an index
+    already satisfy the min-heap property.
+
+    The `N` and stride parameters determine which elements in the strided array
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N <= 0`, the function returns `x` unchanged.
+
+    The min-heap algorithm is sensitive to the presence of `NaN` values. Since
+    `NaN` comparisons always return `false`, if `NaN` values are present in the
+    input array, the results may be unpredictable.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    index: integer
+        Logical index at which to begin sifting.
+
+    value: number
+        Value to place into the heap.
+
+    x: Float32Array
+        Heap storage array.
+
+    strideX: integer
+        Stride length.
+
+    Returns
+    -------
+    x: Float32Array
+        Heap storage array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
+    > {{alias}}( 5, 0, 7.0, x, 1 )
+    <Float32Array>[ 2.0, 4.0, 3.0, 7.0, 5.0 ]
+
+    // Using `N` and stride parameters:
+    > x = new {{alias:@stdlib/array/float32}}( [ 1.0, 0.0, 2.0, 0.0, 3.0 ] );
+    > {{alias}}( 3, 0, 7.0, x, 2 )
+    <Float32Array>[ 2.0, 0.0, 7.0, 0.0, 3.0 ]
+
+    // Using view offsets:
+    > var x0 = new {{alias:@stdlib/array/float32}}( [ 0.0, 1.0, 2.0, 3.0, 4.0, 5.0 ] );
+    > var x1 = new {{alias:@stdlib/array/float32}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > {{alias}}( 5, 0, 7.0, x1, 1 )
+    <Float32Array>[ 2.0, 4.0, 3.0, 7.0, 5.0 ]
+    > x0
+    <Float32Array>[ 0.0, 2.0, 4.0, 3.0, 7.0, 5.0 ]
+
+
+{{alias}}.ndarray( N, index, value, x, strideX, offsetX )
+    Sifts a value down from a specified index in a single-precision floating-
+    point strided min-heap until the heap property is restored using alternative
+    indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameter supports indexing semantics based on a starting
+    index.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    index: integer
+        Logical index at which to begin sifting.
+
+    value: number
+        Value to place into the heap.
+
+    x: Float32Array
+        Heap storage array.
+
+    strideX: integer
+        Stride length.
+
+    offsetX: integer
+        Starting index.
+
+    Returns
+    -------
+    x: Float32Array
+        Heap storage array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
+    > {{alias}}.ndarray( 5, 0, 7.0, x, 1, 0 )
+    <Float32Array>[ 2.0, 4.0, 3.0, 7.0, 5.0 ]
+
+    // Using a starting index:
+    > x = new {{alias:@stdlib/array/float32}}( [ 0.0, 1.0, 2.0, 3.0, 4.0, 5.0 ] );
+    > {{alias}}.ndarray( 5, 0, 7.0, x, 1, 1 )
+    <Float32Array>[ 0.0, 2.0, 4.0, 3.0, 7.0, 5.0 ]
+
+    See Also
+    --------

@@ -1,0 +1,31 @@
+
+{{alias}}()
+    Returns an accumulator function which incrementally computes the mean
+    percentage error (MPE), ignoring `NaN` values.
+
+    If provided input values, the accumulator function returns an updated mean
+    percentage error. If not provided input values, the accumulator function
+    returns the current mean percentage error.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}();
+    > var m = accumulator()
+    null
+    > m = accumulator( 2.0, 3.0 )
+    ~33.33
+    > m = accumulator( 2.0, NaN )
+    ~33.33
+    > m = accumulator( 5.0, 2.0 )
+    ~-58.33
+    > m = accumulator()
+    ~-58.33
+
+    See Also
+    --------
+

@@ -77,6 +77,7 @@ type Callback<T, U, V, ThisArg> = Nullary<V, ThisArg> | Unary<T, V, ThisArg> | B
 *
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
+* var getData = require( '@stdlib/ndarray/data-buffer' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * function scale( x ) {
@@ -105,7 +106,7 @@ type Callback<T, U, V, ThisArg> = Nullary<V, ThisArg> | Unary<T, V, ThisArg> | B
 * // Apply function:
 * map( [ x, y ], scale );
 *
-* console.log( y.data );
+* console.log( getData( y ) );
 * // => <Float64Array>[ 20.0, 30.0, 60.0, 70.0, 100.0, 110.0 ]
 */
 declare function map<T = unknown, U extends typedndarray<T> = typedndarray<T>, V = unknown, ThisArg = unknown>( arrays: [ U, typedndarray<V> ], fcn: Callback<T, U, V, ThisArg>, thisArg?: ThisParameterType<Callback<T, U, V, ThisArg>> ): void;

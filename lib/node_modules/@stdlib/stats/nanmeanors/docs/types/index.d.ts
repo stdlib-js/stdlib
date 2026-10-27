@@ -104,7 +104,7 @@ interface Unary {
 }
 
 /**
-* Computes the arithmetic mean along one or more ndarray dimensions, ignoring `NaN` values using ordinary recursive summation.
+* Computes the arithmetic mean along one or more ndarray dimensions, ignoring `NaN` values and using ordinary recursive summation.
 *
 * @param x - input ndarray
 * @param options - function options

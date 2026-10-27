@@ -152,10 +152,7 @@ interface BinaryFunction<T, U> {
 	* var y = new ndarray( 'generic', ybuf, [ ybuf.length ], [ 1 ], 0, 'row-major' );
 	*
 	* var z = dot( x, y );
-	* // returns <ndarray>
-	*
-	* var v = z.get();
-	* // returns -5.0
+	* // returns <ndarray>[ -5.0 ]
 	*/
 	( x: InputArray<T>, y: InputArray<T>, ...args: Array<InputArray<T> | Options> ): OutputArray<U>; // NOTE: we lose type specificity here, but retaining specificity would likely be difficult and/or tedious to completely enumerate, as the output ndarray data type is dependent on how the input ndarrays interact with output data type policy and whether that policy has been overridden by `options.dtype`. In principle, as well, based on the policy, it is possible to know more exactly which `InputArray` types are actually allowed.
 
@@ -195,10 +192,7 @@ interface BinaryFunction<T, U> {
 	* var z = new ndarray( 'generic', zbuf, [], [ 0 ], 0, 'row-major' );
 	*
 	* var out = dot.assign( x, y, z );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns -5.0
+	* // returns <ndarray>[ -5.0 ]
 	*
 	* var bool = ( out === z );
 	* // returns true
@@ -241,10 +235,7 @@ interface BinaryFunction<T, U> {
 	* var z = new ndarray( 'generic', zbuf, [], [ 0 ], 0, 'row-major' );
 	*
 	* var out = dot.assign( x, y, z );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns -5.0
+	* // returns <ndarray>[ -5.0 ]
 	*
 	* var bool = ( out === z );
 	* // returns true
@@ -285,10 +276,7 @@ interface BinaryFunction<T, U> {
 * var y = new ndarray( 'generic', ybuf, [ ybuf.length ], [ 1 ], 0, 'row-major' );
 *
 * var z = dot( x, y );
-* // returns <ndarray>
-*
-* var v = z.get();
-* // returns -5.0
+* // returns <ndarray>[ -5.0 ]
 */
 declare function factory<T = unknown, U = unknown>( table: DispatchTable<T, U> | BaseDispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policies: Policies ): BinaryFunction<T, U>;
 

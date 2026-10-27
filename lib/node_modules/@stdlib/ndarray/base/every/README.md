@@ -204,6 +204,8 @@ void stdlib_ndarray_every_by_f_x_as_d_x(...) {...}
 
 is a function which accepts one single-precision floating-point input ndarray and one boolean output ndarray. However, the callback accepts double-precision floating-point numbers. Accordingly, the input values need to be cast using the following conversion sequence
 
+<!-- run-disable -->
+
 ```c
 #include <stdbool.h>
 

@@ -1,0 +1,92 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 202 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+#include "stdlib/number/float16/base/from_word.h"
+#include "stdlib/number/float16/ctor.h"
+#include "stdlib/number/float16/base/to_float64.h"
+#include <node_api.h>
+#include <stdint.h>
+#include <stdbool.h>
+#include <assert.h>
+
+/**
+* Receives JavaScript callback invocation data.
+*
+* @param env    environment under which the function is invoked
+* @param info   callback data
+* @return       Node-API value
+*/
+static napi_value addon( napi_env env, napi_callback_info info ) {
+	napi_status status;
+
+	// Get callback arguments:
+	size_t argc = 1;
+	napi_value argv[ 1 ];
+	status = napi_get_cb_info( env, info, &argc, argv, NULL, NULL );
+	assert( status == napi_ok );
+
+	// Check whether we were provided the correct number of arguments:
+	if ( argc < 1 ) {
+		status = napi_throw_error( env, NULL, "invalid invocation. Insufficient arguments." );
+		assert( status == napi_ok );
+		return NULL;
+	}
+	if ( argc > 1 ) {
+		status = napi_throw_error( env, NULL, "invalid invocation. Too many arguments." );
+		assert( status == napi_ok );
+		return NULL;
+	}
+
+	napi_valuetype vtype0;
+	status = napi_typeof( env, argv[ 0 ], &vtype0 );
+	assert( status == napi_ok );
+	if ( vtype0 != napi_number ) {
+		status = napi_throw_type_error( env, NULL, "invalid argument. First argument must be a number." );
+		assert( status == napi_ok );
+		return NULL;
+	}
+
+	uint32_t word;
+	status = napi_get_value_uint32( env, argv[ 0 ], &word );
+	assert( status == napi_ok );
+
+	stdlib_float16_t x;
+	stdlib_base_float16_from_word( (uint16_t)word, &x );
+
+	napi_value v;
+	status = napi_create_double( env, stdlib_base_float16_to_float64( x ), &v );
+	assert( status == napi_ok );
+
+	return v;
+}
+
+/**
+* Initializes a Node-API module.
+*
+* @param env      environment under which the function is invoked
+* @param exports  exports object
+* @return         main export
+*/
+static napi_value init( napi_env env, napi_value exports ) {
+	napi_value fcn;
+	napi_status status = napi_create_function( env, "exports", NAPI_AUTO_LENGTH, addon, NULL, &fcn );
+	assert( status == napi_ok );
+	return fcn;
+}
+
+NAPI_MODULE( NODE_GYP_MODULE_NAME, init )

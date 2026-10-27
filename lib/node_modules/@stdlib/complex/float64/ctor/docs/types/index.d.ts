@@ -36,6 +36,15 @@ declare class Complex128 {
 	constructor( real: number, imag: number );
 
 	/**
+	* Constructor name.
+	*
+	* @example
+	* var str = Complex128.name;
+	* // returns 'Complex128'
+	*/
+	static readonly name: 'Complex128';
+
+	/**
 	* Read-only property returning the real component.
 	*
 	* @returns real component

@@ -32,6 +32,7 @@ var zerosnd = require( '@stdlib/array/base/zerosnd' );
 var ndmap = require( '@stdlib/ndarray/map' );
 var ndzeros = require( '@stdlib/ndarray/zeros' );
 var ndunary = require( '@stdlib/ndarray/base/unary' );
+var format = require( '@stdlib/string/format' );
 var uniform = require( '@stdlib/random/base/uniform' ).factory;
 var randu = require( '@stdlib/random/uniform' );
 var base = require( '@stdlib/math/base/special/sqrt' );
@@ -49,7 +50,7 @@ var opts = {
 
 // MAIN //
 
-bench( pkg+'::stdlib:array/base/unary2d:value=nested_array,dtype=generic,size=10000,shape=(100,100)', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:array/base/unary2d:value=nested_array,dtype=generic,size=10000,shape=(100,100)', pkg ), opts, function benchmark( b ) {
 	var sh;
 	var x;
 	var y;
@@ -74,7 +75,7 @@ bench( pkg+'::stdlib:array/base/unary2d:value=nested_array,dtype=generic,size=10
 	b.end();
 });
 
-bench( pkg+'::stdlib:array/base/unarynd:value=nested_array,dtype=generic,size=10000,shape=(100,100)', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:array/base/unarynd:value=nested_array,dtype=generic,size=10000,shape=(100,100)', pkg ), opts, function benchmark( b ) {
 	var sh;
 	var x;
 	var y;
@@ -99,7 +100,7 @@ bench( pkg+'::stdlib:array/base/unarynd:value=nested_array,dtype=generic,size=10
 	b.end();
 });
 
-bench( pkg+'::stdlib:ndarray/base/unary:value=ndarray,dtype=generic,size=10000,shape=(100,100)', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:ndarray/base/unary:value=ndarray,dtype=generic,size=10000,shape=(100,100)', pkg ), opts, function benchmark( b ) {
 	var opts;
 	var sh;
 	var x;
@@ -128,7 +129,7 @@ bench( pkg+'::stdlib:ndarray/base/unary:value=ndarray,dtype=generic,size=10000,s
 	b.end();
 });
 
-bench( pkg+'::stdlib:ndarray/map:value=ndarray,dtype=generic,size=10000,shape=(100,100)', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:ndarray/map:value=ndarray,dtype=generic,size=10000,shape=(100,100)', pkg ), opts, function benchmark( b ) {
 	var sh;
 	var x;
 	var y;
@@ -154,7 +155,7 @@ bench( pkg+'::stdlib:ndarray/map:value=ndarray,dtype=generic,size=10000,shape=(1
 	b.end();
 });
 
-bench( pkg+'::mathjs:sqrt:value=matrix,dtype=generic,size=10000,shape=(100,100)', opts, function benchmark( b ) {
+bench( format( '%s::mathjs:sqrt:value=matrix,dtype=generic,size=10000,shape=(100,100)', pkg ), opts, function benchmark( b ) {
 	var buf;
 	var x;
 	var y;

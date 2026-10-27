@@ -10,10 +10,10 @@
 
         - factory: returns a new unary pseudorandom value generator.
 
-    idtypes: Array<string>
+    idtypes: Array<string|DataType>
         List of supported input data types.
 
-    odtypes: Array<string>
+    odtypes: Array<string|DataType>
         List of supported output data types.
 
     policies: Object

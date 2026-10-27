@@ -192,7 +192,7 @@ console.log( v );
 Computes the sum of absolute values ([_L1_ norm][l1norm]) of double-precision floating-point strided array elements using pairwise summation.
 
 ```c
-const double x[] = { 1.0, 2.0, 3.0, 4.0 }
+const double x[] = { 1.0, 2.0, 3.0, 4.0 };
 
 double v = stdlib_strided_dasumpw( 4, x, 1 );
 // returns 10.0
@@ -213,7 +213,7 @@ double stdlib_strided_dasumpw( const CBLAS_INT N, const double *X, const CBLAS_I
 Computes the sum of absolute values ([_L1_ norm][l1norm]) of double-precision floating-point strided array elements using pairwise summation and alternative indexing semantics.
 
 ```c
-const double x[] = { 1.0, 2.0, 3.0, 4.0 }
+const double x[] = { 1.0, 2.0, 3.0, 4.0 };
 
 double v = stdlib_strided_dasumpw_ndarray( 4, x, 1, 0 );
 // returns 10.0

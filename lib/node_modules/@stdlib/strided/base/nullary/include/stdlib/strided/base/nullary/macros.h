@@ -28,7 +28,7 @@
 * Macro containing the preamble for a loop which updates a strided output array.
 *
 * @example
-* STDLIB_STRIDED_NULLARY_LOOP_PREMABLE {
+* STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE {
 *     // Loop body...
 * }
 */
@@ -49,7 +49,7 @@
 * Macro containing the preamble for a loop which updates two strided output arrays.
 *
 * @example
-* STDLIB_STRIDED_NULLARY_LOOP_TWO_OUT_PREMABLE {
+* STDLIB_STRIDED_NULLARY_LOOP_TWO_OUT_PREAMBLE {
 *     // Loop body...
 * }
 */

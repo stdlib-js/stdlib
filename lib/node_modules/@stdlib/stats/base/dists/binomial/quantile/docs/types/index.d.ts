@@ -45,7 +45,7 @@ interface Quantile {
 	*
 	* @param r - input value
 	* @param n - number of trials
-	* @param p  - success probability
+	* @param p - success probability
 	* @returns evaluated quantile function
 	*
 	* @example
@@ -119,7 +119,7 @@ interface Quantile {
 /**
 * Binomial distribution quantile function.
 *
-* @param p - input value
+* @param r - input value
 * @param n - number of trials
 * @param p - success probability
 * @returns evaluated quantile function

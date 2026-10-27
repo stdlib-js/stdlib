@@ -26,11 +26,11 @@ import { Iterator as Iter, IterableIterator } from '@stdlib/types/iter';
 type Iterator = Iter | IterableIterator;
 
 /**
-* Returns an iterator which iteratively computes the inverse half-value versed sin.
+* Returns an iterator which iteratively computes the inverse half-value versed sine.
 *
 * ## Notes
 *
-* -   The domain of inverse half-value versed sin is restricted to `[0,1]`. If an iterated value is outside of the domain, the returned iterator returns `NaN`.
+* -   The domain of inverse half-value versed sine is restricted to `[0,1]`. If an iterated value is outside of the domain, the returned iterator returns `NaN`.
 * -   If an environment supports `Symbol.iterator` **and** a provided iterator is iterable, the returned iterator is iterable.
 *
 * @param iterator - input iterator

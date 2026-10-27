@@ -1,0 +1,91 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/complex/float32/real",
+        "@stdlib/complex/float32/imag",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int32",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-complex64array",
+        "@stdlib/napi/argv-strided-complex64array2d",
+        "@stdlib/napi/argv-strided-uint8array",
+        "@stdlib/napi/create-int32"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/complex/float32/real",
+        "@stdlib/complex/float32/imag",
+        "@stdlib/strided/base/stride2offset"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/complex/float32/real",
+        "@stdlib/complex/float32/imag",
+        "@stdlib/strided/base/stride2offset"
+      ]
+    }
+  ]
+}

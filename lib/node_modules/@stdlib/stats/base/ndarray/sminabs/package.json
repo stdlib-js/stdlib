@@ -14,11 +14,15 @@
     }
   ],
   "main": "./lib",
+  "browser": "./lib/main.js",
+  "gypfile": true,
   "directories": {
     "benchmark": "./benchmark",
     "doc": "./docs",
     "example": "./examples",
+    "include": "./include",
     "lib": "./lib",
+    "src": "./src",
     "test": "./test"
   },
   "types": "./docs/types",
@@ -57,9 +61,9 @@
     "math",
     "minimum",
     "min",
+    "range",
     "absolute",
     "abs",
-    "range",
     "extremes",
     "domain",
     "extent",

@@ -60,6 +60,7 @@ type ScaleNames = 'max-abs' | 'max' | 'min-abs' | 'min' | 'mean-abs' | 'mean' | 
 * @param x - first number
 * @param y - second number
 * @param scale - scale function (default: 'max-abs')
+* @throws must provide a recognized scale function name
 * @returns relative difference in units of double-precision floating-point epsilon
 *
 * @example

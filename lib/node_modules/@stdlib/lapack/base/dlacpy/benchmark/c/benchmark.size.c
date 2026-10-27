@@ -96,12 +96,14 @@ static double rand_double( void ) {
 */
 static double benchmark1( int iterations, int N ) {
 	double elapsed;
-	double A[ N*N ];
-	double B[ N*N ];
+	double *A;
+	double *B;
 	double t;
 	int i;
 	int j;
 
+	A = (double *) malloc( N * N * sizeof( double ) );
+	B = (double *) malloc( N * N * sizeof( double ) );
 	for ( i = 0, j = 0; i < N; i++, j += 2 ) {
 		A[ j ] = ( rand_double()*20.0 ) - 10.0;
 		A[ j+1 ] = ( rand_double()*20.0 ) - 10.0;
@@ -121,6 +123,8 @@ static double benchmark1( int iterations, int N ) {
 	if ( B[ i%(N*2) ] != B[ i%(N*2) ] ) {
 		printf( "should not return NaN\n" );
 	}
+	free( A );
+	free( B );
 	return elapsed;
 }
 
@@ -133,12 +137,14 @@ static double benchmark1( int iterations, int N ) {
 */
 static double benchmark2( int iterations, int N ) {
 	double elapsed;
-	double A[ N*N ];
-	double B[ N*N ];
+	double *A;
+	double *B;
 	double t;
 	int i;
 	int j;
 
+	A = (double *) malloc( N * N * sizeof( double ) );
+	B = (double *) malloc( N * N * sizeof( double ) );
 	for ( i = 0, j = 0; i < N; i++, j += 2 ) {
 		A[ j ] = ( rand_double()*20.0 ) - 10.0;
 		A[ j+1 ] = ( rand_double()*20.0 ) - 10.0;
@@ -158,6 +164,8 @@ static double benchmark2( int iterations, int N ) {
 	if ( B[ i%(N*2) ] != B[ i%(N*2) ] ) {
 		printf( "should not return NaN\n" );
 	}
+	free( A );
+	free( B );
 	return elapsed;
 }
 

@@ -182,7 +182,7 @@ console.log( A );
 
 [blas]: http://www.netlib.org/blas
 
-[dger]: https://www.netlib.org/lapack/explore-html-3.6.1/d7/d15/group__double__blas__level2_ga458222e01b4d348e9b52b9343d52f828.html
+[dger]: https://netlib.org/lapack/explore-html/d8/d75/group__ger_gaef5d248da0fdfb62bccb259725935cb8.html
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 

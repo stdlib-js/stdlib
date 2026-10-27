@@ -37,6 +37,6 @@ int main( void ) {
 		mu = random_uniform( 0.0, 10.0 );
 		s = random_uniform( 0.0, 10.0 );
 		y = stdlib_base_dists_logistic_mgf( t, mu, s );
-		printf( "t: %lf, µ: %lf, s: %lf, M_X(t;µ,s): %lf\n", t, mu, s, y );
+		printf( "t: %lf, μ: %lf, s: %lf, M_X(t;μ,s): %lf\n", t, mu, s, y );
 	}
 }

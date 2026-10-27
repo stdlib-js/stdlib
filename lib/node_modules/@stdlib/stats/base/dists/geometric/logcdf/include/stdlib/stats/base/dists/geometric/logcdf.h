@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the logarithm of the cumulative distribution function (LOGCDF) for the geometric distribution with probability `p` at a value `x`.
+* Evaluates the natural logarithm of the cumulative distribution function (LOGCDF) for the geometric distribution with probability `p` at a value `x`.
 */
 double stdlib_base_dists_geometric_logcdf( const double x, const double p );
 

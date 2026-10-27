@@ -28,7 +28,7 @@ extern "C"
 #endif
 
 /**
-* Computes the nth non-Fibonacci single-precision floating-point number.
+* Computes the nth non-Fibonacci number as a single-precision floating-point number.
 */
 float stdlib_base_nonfibonaccif( const float n );
 

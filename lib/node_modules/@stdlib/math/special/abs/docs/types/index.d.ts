@@ -63,17 +63,13 @@ interface UnaryFunction {
 	* @returns output ndarray
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var array = require( '@stdlib/ndarray/array' );
 	*
 	* var x = array( [ [ 1.0, -2.0 ], [ -3.0, 4.0 ] ] );
 	* // returns <ndarray>
 	*
 	* var y = abs( x );
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( y );
-	* // returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+	* // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
 	*/
 	( x: InputArray, options?: Options ): typedndarray<number>; // FIXME: we lose type specificity here, as the output ndarray data type is determined according to the output data type policy in conjunction with the `dtype` option
 
@@ -85,20 +81,16 @@ interface UnaryFunction {
 	* @returns output ndarray
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var array = require( '@stdlib/ndarray/array' );
 	*
 	* var x = array( [ [ -1.0, -2.0 ], [ -3.0, -4.0 ] ] );
 	* var y = array( [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ] );
 	*
 	* var z = abs.assign( x, y );
-	* // returns <ndarray>
+	* // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
 	*
 	* var bool = ( z === y );
 	* // returns true
-	*
-	* var arr = ndarray2array( y );
-	* // returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
 	*/
 	assign<T extends OutputArray = OutputArray>( x: InputArray, y: T ): T;
 }
@@ -111,16 +103,12 @@ interface UnaryFunction {
 * @returns output ndarray
 *
 * @example
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 * var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ -1.0, -2.0 ], [ -3.0, -4.0 ] ] );
 *
 * var y = abs( x );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+* // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
 *
 * @example
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
@@ -130,13 +118,10 @@ interface UnaryFunction {
 * var y = array( [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ] );
 *
 * var z = abs.assign( x, y );
-* // returns <ndarray>
+* // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
 *
 * var bool = ( z === y );
 * // returns true
-*
-* var arr = ndarray2array( y );
-* // returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
 */
 declare var abs: UnaryFunction;
 

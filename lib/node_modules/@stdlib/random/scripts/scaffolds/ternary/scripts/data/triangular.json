@@ -1,0 +1,57 @@
+{
+  "alias": "triangular",
+  "pkg": "stdlib/random/triangular",
+  "base_pkg": "stdlib/random/base/triangular",
+
+  "param_1": "a",
+  "param_1_value": "2.0",
+  "param_1_value_aux": "5.0",
+  "param_1_desc": "minimum support",
+  "param_1_dtype": "number",
+  "param_1_jsdoc_dtype": "number",
+  "param_1_dtype_kind": "real_and_generic",
+
+  "param_2": "b",
+  "param_2_value": "5.0",
+  "param_2_value_aux": "10.0",
+  "param_2_desc": "maximum support",
+  "param_2_dtype": "number",
+  "param_2_jsdoc_dtype": "number",
+  "param_2_dtype_kind": "real_and_generic",
+
+  "param_3": "c",
+  "param_3_value": "3.0",
+  "param_3_value_aux": "7.0",
+  "param_3_desc": "mode",
+  "param_3_dtype": "number",
+  "param_3_jsdoc_dtype": "number",
+  "param_3_dtype_kind": "real_and_generic",
+
+  "output_ts_dtype": "RealFloatingPointAndGenericDataType",
+  "output_ts_typed_ndarray": "floatndarray",
+  "output_dtype_kind": "real_floating_point_and_generic",
+  "output_dtype_policy": "real_floating_point_and_generic",
+
+  "default_dtype": "float64",
+  "default_dtype_kind": "real_floating_point",
+
+  "from_desc": "a triangular distribution",
+  "readme_from_desc": "a [triangular][@stdlib/random/base/triangular] distribution",
+
+  "readme_heading": "Triangular Random Numbers",
+  "readme_dtype_kind_desc": "a real-valued floating-point",
+  "readme_dtype_kind_pkg": "stdlib/ndarray/dtypes",
+
+  "repl_text_main_desc": "Returns an ndarray containing pseudorandom numbers drawn from a triangular distribution.",
+  "repl_text_assign_desc": "Fills an ndarray with pseudorandom numbers drawn from a triangular distribution.",
+  "repl_text_factory_desc": "Returns a function for generating pseudorandom numbers drawn from a triangular distribution.",
+
+  "repl_text_param_1_desc": "Minimum support. If an ndarray, must be broadcast compatible with the specified array shape.",
+  "repl_text_param_2_desc": "Maximum support. If an ndarray, must be broadcast compatible with the specified array shape.",
+  "repl_text_param_3_desc": "Mode. If an ndarray, must be broadcast compatible with the specified array shape.",
+  "repl_text_assign_param_1_desc": "Minimum support. If an ndarray, must be broadcast compatible with the provided output array.",
+  "repl_text_assign_param_2_desc": "Maximum support. If an ndarray, must be broadcast compatible with the provided output array.",
+  "repl_text_assign_param_3_desc": "Mode. If an ndarray, must be broadcast compatible with the provided output array.",
+
+  "keywords": "triangular,continuous"
+}

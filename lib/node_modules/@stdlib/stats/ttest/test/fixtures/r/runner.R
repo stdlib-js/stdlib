@@ -32,19 +32,19 @@ main <- function() {
 	#' filepath <- get_script_path();
 	get_script_path <- function() {
 		args <- commandArgs( trailingOnly = FALSE );
-		needle <- "--file=";
+		needle <- '--file=';
 		match <- grep( needle, args );
-		if ( length( match ) > 0 ) {
+		if ( length( match ) > 0L ) {
 			# Rscript:
-			filepath <- sub( needle, "", args[match] );
+			filepath <- sub( needle, '', args[match] );
 		} else {
-			ls_vars <- ls( sys.frames()[[1]] )
-			if ( "fileName" %in% ls_vars ) {
+			ls_vars <- ls( sys.frames()[[1L]] )
+			if ( 'fileName' %in% ls_vars ) {
 				# Source'd via RStudio:
-				filepath <- sys.frames()[[1]]$fileName; # nolint
+				filepath <- sys.frames()[[1L]]$fileName; # nolint
 			} else {
 				# Source'd via R console:
-				filepath <- sys.frames()[[1]]$ofile;
+				filepath <- sys.frames()[[1L]]$ofile;
 			}
 		}
 		return( normalizePath( filepath ) );
@@ -56,10 +56,10 @@ main <- function() {
 	#' @return JSON blob
 	#'
 	#' @examples
-	#' x <- seq( -6.5, 25, 0.5 );
+	#' x <- seq( -6.5, 25.0, 0.5 );
 	#' json <- to_json( x );
 	to_json <- function( x ) {
-		return( jsonlite::toJSON( x, digits = 16, auto_unbox = TRUE ) );
+		return( jsonlite::toJSON( x, digits = 16L, auto_unbox = TRUE ) );
 	}
 
 	#' Generate an output absolute filepath based on the script directory.
@@ -68,93 +68,94 @@ main <- function() {
 	#' @return An absolute filepath
 	#'
 	#' @examples
-	#' filepath <- get_filepath( "data.json" );
+	#' filepath <- get_filepath( 'data.json' );
 	get_filepath <- function( name ) {
-		return( paste( source_dir, "/", name, sep = "" ) );
+		return( paste( source_dir, '/', name, sep = '' ) );
 	}
 
 	# Get the directory of this script:
 	source_dir <- dirname( get_script_path() );
 
 	# Generate test fixture data:
-	x <- rnorm( 100 );
+	set.seed( 300L );
+	x <- rnorm( 100L );
 	twosided <- t.test( x );
-	twosided <- list( x = x, pValue = twosided$p.value, statistic = twosided$statistic, lower = twosided$conf.int[1], upper = twosided$conf.int[2] );
+	twosided <- list( x = x, pValue = twosided$p.value, statistic = twosided$statistic, lower = twosided$conf.int[1L], upper = twosided$conf.int[2L] );
 
-	x <- rnorm( 100, 2.0, 2.5 );
-	twosided.custom.alpha <- t.test( x, conf.level = 0.9 );
-	twosided.custom.alpha <- list(
-		x = x, pValue = twosided.custom.alpha$p.value,
-		statistic = twosided.custom.alpha$statistic,
-		lower = twosided.custom.alpha$conf.int[1],
-		upper = twosided.custom.alpha$conf.int[2]
+	x <- rnorm( 100L, 2.0, 2.5 );
+	twosided_custom_alpha <- t.test( x, conf.level = 0.9 );
+	twosided_custom_alpha <- list(
+		x = x, pValue = twosided_custom_alpha$p.value,
+		statistic = twosided_custom_alpha$statistic,
+		lower = twosided_custom_alpha$conf.int[1L],
+		upper = twosided_custom_alpha$conf.int[2L]
 	);
 
-	x <- rnorm( 100 );
-	less <- t.test( x, alternative = "less" );
-	less <- list( x = x, pValue = less$p.value, statistic = less$statistic, lower = less$conf.int[1], upper = less$conf.int[2] );
+	x <- rnorm( 100L );
+	less <- t.test( x, alternative = 'less' );
+	less <- list( x = x, pValue = less$p.value, statistic = less$statistic, lower = less$conf.int[1L], upper = less$conf.int[2L] );
 
-	x <- rnorm( 100 );
-	greater <- t.test( x, alternative = "greater" );
-	greater <- list( x = x, pValue = greater$p.value, statistic = greater$statistic, lower = greater$conf.int[1], upper = greater$conf.int[2] );
+	x <- rnorm( 100L );
+	greater <- t.test( x, alternative = 'greater' );
+	greater <- list( x = x, pValue = greater$p.value, statistic = greater$statistic, lower = greater$conf.int[1L], upper = greater$conf.int[2L] );
 
-	x <- rnorm( 100 );
-	less.custom.alpha <- t.test( x, alternative = "less", conf.level = 0.99 );
-	less.custom.alpha <- list( x = x, pValue = less.custom.alpha$p.value, statistic = less.custom.alpha$statistic, lower = less.custom.alpha$conf.int[1], upper = less.custom.alpha$conf.int[2] );
+	x <- rnorm( 100L );
+	less_custom_alpha <- t.test( x, alternative = 'less', conf.level = 0.99 );
+	less_custom_alpha <- list( x = x, pValue = less_custom_alpha$p.value, statistic = less_custom_alpha$statistic, lower = less_custom_alpha$conf.int[1L], upper = less_custom_alpha$conf.int[2L] );
 
-	x <- rnorm( 100 );
-	greater.custom.alpha <- t.test( x, alternative = "greater", conf.level = 0.9 );
-	greater.custom.alpha <- list(
+	x <- rnorm( 100L );
+	greater_custom_alpha <- t.test( x, alternative = 'greater', conf.level = 0.9 );
+	greater_custom_alpha <- list(
 		x = x,
-		pValue = greater.custom.alpha$p.value,
-		statistic = greater.custom.alpha$statistic,
-		lower = greater.custom.alpha$conf.int[1],
-		upper = greater.custom.alpha$conf.int[2]
+		pValue = greater_custom_alpha$p.value,
+		statistic = greater_custom_alpha$statistic,
+		lower = greater_custom_alpha$conf.int[1L],
+		upper = greater_custom_alpha$conf.int[2L]
 	);
-	x <- rnorm( 100, 1.0, 2.0 );
-	y <- rnorm( 100, 1.0, 2.0 );
+	x <- rnorm( 100L, 1.0, 2.0 );
+	y <- rnorm( 100L, 1.0, 2.0 );
 	paired <- t.test( x, y, paired = TRUE );
-	paired <- list( x = x, y = y, pValue = paired$p.value, statistic = paired$statistic, lower = paired$conf.int[1], upper = paired$conf.int[2] );
+	paired <- list( x = x, y = y, pValue = paired$p.value, statistic = paired$statistic, lower = paired$conf.int[1L], upper = paired$conf.int[2L] );
 
-	x <- rnorm( 100, 1.0, 2.0 );
-	y <- rnorm( 100, 2.0, 2.0 );
-	paired.less <- t.test( x, y, paired = TRUE, alternative = "less" );
-	paired.less <- list( x = x, y = y, pValue = paired.less$p.value, statistic = paired.less$statistic, lower = paired.less$conf.int[1], upper = paired.less$conf.int[2] );
+	x <- rnorm( 100L, 1.0, 2.0 );
+	y <- rnorm( 100L, 2.0, 2.0 );
+	paired_less <- t.test( x, y, paired = TRUE, alternative = 'less' );
+	paired_less <- list( x = x, y = y, pValue = paired_less$p.value, statistic = paired_less$statistic, lower = paired_less$conf.int[1L], upper = paired_less$conf.int[2L] );
 
 	# Convert fixture data to JSON:
 	twosided <- to_json( twosided );
-	twosided.custom.alpha <- to_json( twosided.custom.alpha );
+	twosided_custom_alpha <- to_json( twosided_custom_alpha );
 	greater <- to_json( greater );
 	less <- to_json( less );
 	paired <- to_json( paired );
-	paired.less <- to_json( paired.less );
-	less.custom.alpha <- to_json( less.custom.alpha );
-	greater.custom.alpha <- to_json( greater.custom.alpha );
+	paired_less <- to_json( paired_less );
+	less_custom_alpha <- to_json( less_custom_alpha );
+	greater_custom_alpha <- to_json( greater_custom_alpha );
 
 	# Write the data to file...
-	filepath <- get_filepath( "twosided.json" );
+	filepath <- get_filepath( 'twosided.json' );
 	write( twosided, filepath );
 
-	filepath <- get_filepath( "twosided_custom_alpha.json" );
-	write( twosided.custom.alpha, filepath );
+	filepath <- get_filepath( 'twosided_custom_alpha.json' );
+	write( twosided_custom_alpha, filepath );
 
-	filepath <- get_filepath( "greater.json" );
+	filepath <- get_filepath( 'greater.json' );
 	write( greater, filepath );
 
-	filepath <- get_filepath( "less.json" );
+	filepath <- get_filepath( 'less.json' );
 	write( less, filepath );
 
-	filepath <- get_filepath( "paired.json" );
+	filepath <- get_filepath( 'paired.json' );
 	write( paired, filepath );
 
-	filepath <- get_filepath( "paired_less.json" );
-	write( paired.less, filepath );
+	filepath <- get_filepath( 'paired_less.json' );
+	write( paired_less, filepath );
 
-	filepath <- get_filepath( "less_custom_alpha.json" );
-	write( less.custom.alpha, filepath );
+	filepath <- get_filepath( 'less_custom_alpha.json' );
+	write( less_custom_alpha, filepath );
 
-	filepath <- get_filepath( "greater_custom_alpha.json" );
-	write( greater.custom.alpha, filepath );
+	filepath <- get_filepath( 'greater_custom_alpha.json' );
+	write( greater_custom_alpha, filepath );
 }
 
 main();

@@ -22,12 +22,12 @@
 * Euler's number.
 *
 * @example
-* var e = E;
+* var e = FLOAT32_E;
 * // returns 2.7182817459106445
 */
-declare const E: number;
+declare const FLOAT32_E: number;
 
 
 // EXPORTS //
 
-export = E;
+export = FLOAT32_E;

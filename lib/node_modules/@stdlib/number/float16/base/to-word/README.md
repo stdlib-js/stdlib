@@ -83,6 +83,123 @@ logEachMap( 'float64: %f => float16: %f => word: %d', f64, f16, pickArguments( t
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/number/float16/base/to_word.h"
+```
+
+#### stdlib_base_float16_to_word( x, \*word )
+
+Converts a [half-precision floating-point number][ieee754] to an unsigned 16-bit integer corresponding to the number's [IEEE 754][ieee754] binary representation.
+
+```c
+#include "stdlib/number/float16/ctor.h"
+#include <stdint.h>
+
+uint16_t word;
+
+stdlib_float16_t x = stdlib_float16_from_bits( 51648 ); // => -11.5
+stdlib_base_float16_to_word( x, &word );
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] stdlib_float16_t` input value.
+-   **word**: `[out] uint16_t*` destination.
+
+```c
+void stdlib_base_float16_to_word( const stdlib_float16_t x, uint16_t *word );
+```
+
+#### stdlib_base_float16_word_t
+
+An opaque type definition for a union for converting between a [half-precision floating-point number][ieee754] and an unsigned 16-bit integer.
+
+```c
+#include "stdlib/number/float16/ctor.h"
+#include <stdint.h>
+
+stdlib_base_float16_word_t w;
+
+// Assign a half-precision floating-point number:
+w.value = stdlib_float16_from_bits( 51648 ); // => -11.5
+
+// Retrieve the word:
+uint16_t word = w.word;
+```
+
+The union has the following members:
+
+-   **value**: `stdlib_float16_t` [half-precision floating-point number][ieee754].
+-   **word**: `uint16_t` word.
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/number/float64/base/to_float16.h"
+#include "stdlib/number/float16/base/to_word.h"
+#include <stdint.h>
+#include <stdio.h>
+
+int main( void ) {
+    const double x[] = { 3.14, -3.14, 0.0, 0.0/0.0 };
+
+    stdlib_float16_t v;
+    uint16_t word;
+    int i;
+    for ( i = 0; i < 4; i++ ) {
+        v = stdlib_base_float64_to_float16( x[ i ] );
+        stdlib_base_float16_to_word( v, &word );
+        printf( "%lf => word: %u\n", x[ i ], word );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

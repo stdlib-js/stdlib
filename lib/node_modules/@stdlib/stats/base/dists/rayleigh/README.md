@@ -46,8 +46,8 @@ The namespace contains the following distribution functions:
 <div class="namespace-toc">
 
 -   <span class="signature">[`cdf( x, sigma )`][@stdlib/stats/base/dists/rayleigh/cdf]</span><span class="delimiter">: </span><span class="description">Rayleigh distribution cumulative distribution function.</span>
--   <span class="signature">[`logcdf( x, sigma )`][@stdlib/stats/base/dists/rayleigh/logcdf]</span><span class="delimiter">: </span><span class="description">Rayleigh distribution logarithm of cumulative distribution function.</span>
--   <span class="signature">[`logpdf( x, sigma )`][@stdlib/stats/base/dists/rayleigh/logpdf]</span><span class="delimiter">: </span><span class="description">Rayleigh distribution logarithm of probability density function (PDF).</span>
+-   <span class="signature">[`logcdf( x, sigma )`][@stdlib/stats/base/dists/rayleigh/logcdf]</span><span class="delimiter">: </span><span class="description">Rayleigh distribution natural logarithm of cumulative distribution function.</span>
+-   <span class="signature">[`logpdf( x, sigma )`][@stdlib/stats/base/dists/rayleigh/logpdf]</span><span class="delimiter">: </span><span class="description">Rayleigh distribution natural logarithm of probability density function (PDF).</span>
 -   <span class="signature">[`mgf( t, sigma )`][@stdlib/stats/base/dists/rayleigh/mgf]</span><span class="delimiter">: </span><span class="description">Rayleigh distribution moment-generating function (MGF).</span>
 -   <span class="signature">[`pdf( x, sigma )`][@stdlib/stats/base/dists/rayleigh/pdf]</span><span class="delimiter">: </span><span class="description">Rayleigh distribution probability density function (PDF).</span>
 -   <span class="signature">[`quantile( p, sigma )`][@stdlib/stats/base/dists/rayleigh/quantile]</span><span class="delimiter">: </span><span class="description">Rayleigh distribution quantile function.</span>

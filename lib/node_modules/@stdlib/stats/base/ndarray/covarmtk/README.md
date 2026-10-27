@@ -103,18 +103,15 @@ var covarmtk = require( '@stdlib/stats/base/ndarray/covarmtk' );
 Computes the covariance of two one-dimensional ndarrays provided known means and using a one-pass textbook algorithm.
 
 ```javascript
+var vector = require( '@stdlib/ndarray/vector/ctor' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
 
 var opts = {
     'dtype': 'generic'
 };
 
-var xbuf = [ 1.0, -2.0, 2.0 ];
-var x = new ndarray( opts.dtype, xbuf, [ 3 ], [ 1 ], 0, 'row-major' );
-
-var ybuf = [ 2.0, -2.0, 1.0 ];
-var y = new ndarray( opts.dtype, ybuf, [ 3 ], [ 1 ], 0, 'row-major' );
+var x = vector( [ 1.0, -2.0, 2.0 ], opts.dtype );
+var y = vector( [ 2.0, -2.0, 1.0 ], opts.dtype );
 
 var correction = scalar2ndarray( 1.0, opts );
 var meanx = scalar2ndarray( 1.0/3.0, opts );
@@ -126,13 +123,13 @@ var v = covarmtk( [ x, y, correction, meanx, meany ] );
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing the following ndarrays in order:
+-   **arrays**: array-like object containing the following ndarrays:
 
-    1.  first one-dimensional input ndarray.
-    2.  second one-dimensional input ndarray.
-    3.  a zero-dimensional ndarray specifying the degrees of freedom adjustment. Setting this parameter to a value other than `0` has the effect of adjusting the divisor during the calculation of the [covariance][covariance] according to `N-c` where `c` corresponds to the provided degrees of freedom adjustment and `N` corresponds to the number of elements in each input ndarray. When computing the population [covariance][covariance], setting this parameter to `0` is the standard choice (i.e., the provided arrays contain data constituting entire populations). When computing the unbiased sample [covariance][covariance], setting this parameter to `1` is the standard choice (i.e., the provided arrays contain data sampled from larger populations; this is commonly referred to as Bessel's correction).
-    4.  a zero-dimensional ndarray specifying the mean of the first one-dimensional ndarray.
-    5.  a zero-dimensional ndarray specifying the mean of the second one-dimensional ndarray.
+    -   first one-dimensional input ndarray.
+    -   second one-dimensional input ndarray.
+    -   a zero-dimensional ndarray specifying the degrees of freedom adjustment. Setting this parameter to a value other than `0` has the effect of adjusting the divisor during the calculation of the [covariance][covariance] according to `N-c` where `c` corresponds to the provided degrees of freedom adjustment and `N` corresponds to the number of elements in each input ndarray. When computing the population [covariance][covariance], setting this parameter to `0` is the standard choice (i.e., the provided arrays contain data constituting entire populations). When computing the unbiased sample [covariance][covariance], setting this parameter to `1` is the standard choice (i.e., the provided arrays contain data sampled from larger populations; this is commonly referred to as Bessel's correction).
+    -   a zero-dimensional ndarray specifying the mean of the first one-dimensional ndarray.
+    -   a zero-dimensional ndarray specifying the mean of the second one-dimensional ndarray.
 
 </section>
 
@@ -156,10 +153,9 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
+var discreteUniform = require( '@stdlib/random/discrete-uniform' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var covarmtk = require( '@stdlib/stats/base/ndarray/covarmtk' );
 
 // Define array options:
@@ -168,12 +164,10 @@ var opts = {
 };
 
 // Create one-dimensional ndarrays containing pseudorandom numbers:
-var xbuf = discreteUniform( 10, -50, 50, opts );
-var x = new ndarray( opts.dtype, xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+var x = discreteUniform( [ 10 ], -50, 50, opts );
 console.log( ndarray2array( x ) );
 
-var ybuf = discreteUniform( 10, -50, 50, opts );
-var y = new ndarray( opts.dtype, ybuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+var y = discreteUniform( [ 10 ], -50, 50, opts );
 console.log( ndarray2array( y ) );
 
 // Specify the degrees of freedom adjustment:

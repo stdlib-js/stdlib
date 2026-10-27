@@ -40,58 +40,62 @@ limitations under the License.
 var concat = require( '@stdlib/ndarray/concat' );
 ```
 
-#### concat( arrays\[, dim] )
+#### concat( arrays\[, options] )
 
 Concatenates a list of [ndarrays][@stdlib/ndarray/ctor] along a specified [ndarray][@stdlib/ndarray/ctor] dimension.
 
 ```javascript
 var array = require( '@stdlib/ndarray/array' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 
 var x = array( [ [ -1.0, 2.0 ], [ -3.0, 4.0 ] ] );
 var y = array( [ [ -5.0, 6.0, -7.0 ], [ 8.0, -9.0, 10.0 ] ] );
 
-var out = concat( [ x, y ], -1 );
-// returns <ndarray>
-
-var arr = ndarray2array( out );
-// returns [ [ -1.0, 2.0, -5.0, 6.0, -7.0 ], [ -3.0, 4.0, 8.0, -9.0, 10.0 ] ]
+var out = concat( [ x, y ], {
+    'dim': -1
+});
+// returns <ndarray>[ [ -1.0, 2.0, -5.0, 6.0, -7.0 ], [ -3.0, 4.0, 8.0, -9.0, 10.0 ] ]
 ```
 
 The function accepts the following arguments:
 
 -   **arrays**: a list of input [ndarrays][@stdlib/ndarray/ctor]. Must be [broadcast compatible][@stdlib/ndarray/base/broadcast-shapes] except for the dimension along which to concatenate. The data type of the output [ndarray][@stdlib/ndarray/ctor] is determined by applying [type promotion rules][@stdlib/ndarray/promotion-rules] to the list of input [ndarrays][@stdlib/ndarray/ctor]. If provided [ndarrays][@stdlib/ndarray/ctor] having different [memory layouts][@stdlib/ndarray/orders], the output [ndarray][@stdlib/ndarray/ctor] has the [default order][@stdlib/ndarray/defaults].
--   **dim**: dimension along which to concatenate input [ndarrays][@stdlib/ndarray/ctor] (_optional_). Must be a negative integer. The index of the dimension along which to concatenate is resolved relative to the last dimension, with the last dimension corresponding to the value `-1`. Default: `-1`.
+-   **options**: function options (_optional_).
 
-#### concat.assign( arrays, out\[, dim] )
+The function accepts the following `options`:
+
+-   **dim**: dimension along which to concatenate input [ndarrays][@stdlib/ndarray/ctor]. Must be a negative integer. The index of the dimension along which to concatenate is resolved relative to the last dimension, with the last dimension corresponding to the value `-1`. Default: `-1`.
+
+#### concat.assign( arrays, out\[, options] )
 
 Concatenates a list of ndarrays along a specified ndarray dimension and assigns results to an output ndarray.
 
 ```javascript
 var array = require( '@stdlib/ndarray/array' );
 var zeros = require( '@stdlib/ndarray/zeros' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 
 var x = array( [ [ -1.0, 2.0 ], [ -3.0, 4.0 ] ] );
 var y = array( [ [ -5.0, 6.0, -7.0 ], [ 8.0, -9.0, 10.0 ] ] );
 
 var z = zeros( [ 2, 5 ] );
 
-var out = concat.assign( [ x, y ], z, -1 );
-// returns <ndarray>
+var out = concat.assign( [ x, y ], z, {
+    'dim': -1
+});
+// returns <ndarray>[ [ -1.0, 2.0, -5.0, 6.0, -7.0 ], [ -3.0, 4.0, 8.0, -9.0, 10.0 ] ]
 
 var bool = ( out === z );
 // returns true
-
-var arr = ndarray2array( z );
-// returns [ [ -1.0, 2.0, -5.0, 6.0, -7.0 ], [ -3.0, 4.0, 8.0, -9.0, 10.0 ] ]
 ```
 
 The function accepts the following arguments:
 
 -   **arrays**: a list of input [ndarrays][@stdlib/ndarray/ctor]. Must be [broadcast compatible][@stdlib/ndarray/base/broadcast-shapes] except for the dimension along which to concatenate. Must [promote][@stdlib/ndarray/promotion-rules] to a [data type][@stdlib/ndarray/dtypes] which can be (mostly) [safely cast][@stdlib/ndarray/mostly-safe-casts] to the [data type][@stdlib/ndarray/dtypes] of the output [ndarray][@stdlib/ndarray/ctor].
 -   **out**: output [ndarray][@stdlib/ndarray/ctor].
--   **dim**: dimension along which to concatenate input [ndarrays][@stdlib/ndarray/ctor] (_optional_). Must be a negative integer. The index of the dimension along which to concatenate is resolved relative to the last dimension, with the last dimension corresponding to the value `-1`. Default: `-1`.
+-   **options**: function options (_optional_).
+
+The function accepts the following `options`:
+
+-   **dim**: dimension along which to concatenate input [ndarrays][@stdlib/ndarray/ctor]. Must be a negative integer. The index of the dimension along which to concatenate is resolved relative to the last dimension, with the last dimension corresponding to the value `-1`. Default: `-1`.
 
 </section>
 
@@ -129,7 +133,7 @@ var ybuf = discreteUniform( 8, 0, 10, {
 var y = new ndarray( 'generic', ybuf, [ 2, 4 ], [ 4, 1 ], 0, 'row-major' );
 console.log( ndarray2array( y ) );
 
-var out = concat( [ x, y ], -1 );
+var out = concat( [ x, y ] );
 console.log( ndarray2array( out ) );
 ```
 

@@ -126,7 +126,7 @@ interface Unary {
 * var y = zeros( [] );
 *
 * var out = minabs.assign( x, y );
-* // returns <ndarray>[ 1.0]
+* // returns <ndarray>[ 1.0 ]
 *
 * var bool = ( out === y );
 * // returns true

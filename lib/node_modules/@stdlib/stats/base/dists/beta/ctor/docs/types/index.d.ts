@@ -137,7 +137,7 @@ declare class Beta {
 	*
 	* @param t - input value
 	* @returns evaluated MGF
-	 */
+	*/
 	mgf( t: number ): number;
 
 	/**

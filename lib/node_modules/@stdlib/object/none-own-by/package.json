@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/object/none-own-by",
   "version": "0.0.0",
-  "description": "Tests whether every own property of an object fails a test implemented by a predicate function.",
+  "description": "Test whether every own property of an object fails a test implemented by a predicate function.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
