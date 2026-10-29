@@ -124,7 +124,7 @@
     "@commitlint/cli": "^17.4.4",
     "@commitlint/cz-commitlint": "^17.4.4",
     "@conventional-commits/parser": "^0.4.1",
-    "@kaciras/deasync": "^1.0.1",
+    "@kaciras/deasync": "1.1.0",
     "@types/node": "^13.9.0",
     "@typescript-eslint/parser": "^8.57.0",
     "@typescript-eslint/eslint-plugin": "^8.57.0",
