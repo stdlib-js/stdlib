@@ -2044,7 +2044,7 @@ interface Namespace {
 	betainc: typeof betainc;
 
 	/**
-	* Computes the inverse of the lower incomplete beta function.
+	* Computes the inverse of the regularized incomplete beta function.
 	*
 	* ## Notes
 	*
@@ -7371,7 +7371,7 @@ interface Namespace {
 	* var v = ns.minmax( 3.14, 4.2 );
 	* // returns [ 3.14, 4.2 ]
 	*
-	* v = ns.minmax( 3.14, NaN );
+	* var v = ns.minmax( 3.14, NaN );
 	* // returns [ NaN, NaN ]
 	*
 	* @example
@@ -7455,7 +7455,7 @@ interface Namespace {
 	* var v = ns.minmaxf( 3.14, 4.2 );
 	* // returns [ 3.14, 4.2 ]
 	*
-	* v = ns.minmaxf( 3.14, NaN );
+	* var v = ns.minmaxf( 3.14, NaN );
 	* // returns [ NaN, NaN ]
 	*
 	* @example
@@ -7476,7 +7476,7 @@ interface Namespace {
 	* var v = ns.minmaxn( 3.14, 4.2 );
 	* // returns [ 3.14, 4.2 ]
 	*
-	* v = ns.minmaxn( 3.14, NaN );
+	* var v = ns.minmaxn( 3.14, NaN );
 	* // returns [ NaN, NaN ]
 	*
 	* @example

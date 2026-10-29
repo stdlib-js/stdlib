@@ -57,8 +57,8 @@ The function has the following parameters:
 -   **arrays**: array-like object containing the following ndarrays:
 
     -   a one-dimensional input ndarray.
-    -   a one-dimensional ndarray containing values to prepend prior to computing differences.
-    -   a one-dimensional ndarray containing values to append prior to computing differences.
+    -   a one-dimensional ndarray containing values to prepend after computing differences.
+    -   a one-dimensional ndarray containing values to append after computing differences.
     -   a one-dimensional output ndarray. Must have `N + N1 + N2 - 1` elements, where `N` is the number of elements in the input ndarray, `N1` is the number of elements to prepend, and `N2` is the number of elements to append.
 
 </section>
