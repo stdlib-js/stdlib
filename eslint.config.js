@@ -77,8 +77,6 @@ var restrictedSyntaxConfig = [
 	'ImportDefaultSpecifier',
 	'ImportNamespaceSpecifier'
 ];
-var tsGlobalVars = assign( {}, globals.browser, globals.node );
-var globalVars = assign( {}, globals.browser, globals.node, globals.commonjs, globals.worker );
 
 
 // MAIN //
@@ -103,7 +101,7 @@ var config = [
 		'languageOptions': {
 			'ecmaVersion': 6,
 			'sourceType': 'script',
-			'globals': globalVars
+			'globals': assign( {}, globals.browser, globals.node, globals.commonjs, globals.worker )
 		},
 		'plugins': {
 			'n': pluginN,
@@ -176,7 +174,7 @@ var config = [
 			'parserOptions': {
 				'project': path.join( __dirname, 'tsconfig.json' )
 			},
-			'globals': tsGlobalVars
+			'globals': assign( {}, globals.browser, globals.node )
 		},
 		'plugins': {
 			'@typescript-eslint': tsPlugin,
