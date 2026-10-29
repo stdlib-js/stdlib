@@ -28,7 +28,6 @@ codecov:
   # Default branch to show (if not set, inherited from repository settings):
   branch: develop
 
-
 coverage:
   # Number of decimals to display in UI:
   precision: 4
@@ -92,7 +91,6 @@ coverage:
 
         # If CI fails, report an "error" commit status:
         if_ci_failed: error
-
 
 # Comment settings:
 comment:

@@ -51,6 +51,8 @@ eslint_json_flags += $(ESLINT_JSON_FLAGS)
 #
 # ## Notes
 #
+# -   Covers project JSON files, including CLI options and tool configuration.
+# -   Test fixtures and imported/generated data are excluded in `eslint.config.js`.
 # -   Uses `--cache` for performance with large numbers of JSON files.
 #
 # [1]: https://eslint.org/
@@ -59,6 +61,6 @@ eslint_json_flags += $(ESLINT_JSON_FLAGS)
 # make lint-json
 #/
 lint-json: $(NODE_MODULES)
-	$(QUIET) $(ESLINT) $(eslint_json_flags) "lib/node_modules/@stdlib/**/package.json" "./*.json"
+	$(QUIET) $(ESLINT) $(eslint_json_flags) "**/*.json"
 
 .PHONY: lint-json

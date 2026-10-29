@@ -84,6 +84,7 @@ var restrictedSyntaxConfig = [
 	'ImportNamespaceSpecifier'
 ];
 var yamlConfigRules;
+var config;
 
 
 // MAIN //
@@ -91,7 +92,7 @@ var yamlConfigRules;
 yamlConfigRules = assign( {}, yamlRules );
 yamlConfigRules[ 'stdlib/yaml-license-header' ] = 'error';
 
-var config = [
+config = [
 	// Global ignores:
 	{
 		'ignores': [
@@ -101,6 +102,12 @@ var config = [
 			'.git*',
 			'!.github/',
 			'!.codecov.yml',
+
+			// Test data can deliberately contain malformed JSON:
+			'**/test/**/fixtures/**/*.json',
+
+			// Imported and generated data use their source formats:
+			'**/data/**/*.json',
 
 			// Un-ignore stdlib source (nested `node_modules` directories remain ignored by ESLint's defaults):
 			'!lib/node_modules/'
@@ -211,7 +218,10 @@ var config = [
 	{
 		'files': [ '**/*.json' ],
 		'languageOptions': {
-			'parser': jsoncParser
+			'parser': jsoncParser,
+			'parserOptions': {
+				'jsonSyntax': 'JSON'
+			}
 		},
 		'plugins': {
 			'jsonc': pluginJsonc
@@ -286,6 +296,8 @@ var config = [
 	{
 		'files': [ '.github/workflows/*.yml' ],
 		'rules': {
+			// Empty mappings are valid event declarations (e.g., workflow_dispatch):
+			'yml/no-empty-mapping-value': 'off',
 			'yml/sort-keys': [ 'error', {
 				'pathPattern': '^$',
 				'order': [
