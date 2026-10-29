@@ -77,18 +77,13 @@ var restrictedSyntaxConfig = [
 	'ImportDefaultSpecifier',
 	'ImportNamespaceSpecifier'
 ];
-var tsGlobalVars;
-var globalVars;
-var config;
+var tsGlobalVars = assign( {}, globals.browser, globals.node );
+var globalVars = assign( {}, globals.browser, globals.node, globals.commonjs, globals.worker );
 
 
 // MAIN //
 
-globalVars = assign( {}, globals.browser, globals.node );
-globalVars = assign( globalVars, globals.commonjs, globals.worker );
-tsGlobalVars = assign( {}, globals.browser, globals.node );
-
-config = [
+var config = [
 	// Global ignores:
 	{
 		'ignores': [
