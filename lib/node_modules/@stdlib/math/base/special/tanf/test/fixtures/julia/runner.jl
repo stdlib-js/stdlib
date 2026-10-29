@@ -101,12 +101,20 @@ gen( x, "large_negative.json" );
 x = Float32.( range( 12.0*pi, stop = 256.0*pi, length = 1000 ) );
 gen( x, "large_positive.json" );
 
+# Positive medium-large values:
+x = Float32.( range( 2.0^23*(pi/2.0), stop = 2.0^28*(pi/2.0), length = 1000 ) );
+gen( x, "medium_large_positive.json" );
+
+# Negative medium-large values:
+x = Float32.( range( -2.0^28*(pi/2.0), stop = -2.0^23*(pi/2.0), length = 1000 ) );
+gen( x, "medium_large_negative.json" );
+
 # Very large negative values:
-x = Float32.( range( -2.0^20*(pi/2.0), stop = -2.0^60*(pi/2.0), length = 500 ) );
+x = Float32.( range( -2.0^28*(pi/2.0), stop = -2.0^60*(pi/2.0), length = 500 ) );
 gen( x, "very_large_negative.json" );
 
 # Very large positive values:
-x = Float32.( range( 2.0^20*(pi/2.0), stop = 2.0^60*(pi/2.0), length = 500 ) );
+x = Float32.( range( 2.0^28*(pi/2.0), stop = 2.0^60*(pi/2.0), length = 500 ) );
 gen( x, "very_large_positive.json" );
 
 # Huge negative values:
