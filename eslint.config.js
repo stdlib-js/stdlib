@@ -172,7 +172,7 @@ var config = [
 
 	// TypeScript declarations:
 	{
-		'files': [ '**/*.d.ts' ],
+		'files': [ '**/*.d.ts', '**/docs/types/test.ts' ],
 		'languageOptions': {
 			'parser': tsParser,
 			'sourceType': 'module',
@@ -194,9 +194,15 @@ var config = [
 
 	// TypeScript test files:
 	{
-		'files': [ '**/test/**/*.ts' ],
+		'files': [ '**/docs/types/test.ts' ],
 		'rules': {
-			'jsdoc/require-jsdoc': 'off'
+			'@typescript-eslint/explicit-function-return-type': 'off',
+			'@typescript-eslint/no-use-before-define': 'off',
+			'brace-style': 'off',
+			'jsdoc/require-jsdoc': 'off',
+			'jsdoc/require-param': 'off',
+			'jsdoc/require-returns': 'off',
+			'jsdoc/require-throws': 'off'
 		}
 	}
 ];
