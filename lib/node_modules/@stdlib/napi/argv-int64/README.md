@@ -189,7 +189,7 @@ The macro expects the following arguments:
 
 <section class="notes">
 
-## Notes
+### Notes
 
 -   The function supports the conversion of both `number` and `BigInt` add-on callback arguments.
 

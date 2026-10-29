@@ -65,7 +65,7 @@ double stdlib_base_round2( const double x ) {
 
 	// If provided the smallest subnormal, no rounding possible:
 	if ( p == STDLIB_CONSTANT_FLOAT64_MIN_BASE2_EXPONENT_SUBNORMAL ) {
-		return xc;
+		return x;
 	}
 
 	// Find the previous and next integer powers:

@@ -101,7 +101,7 @@ interface CDF {
 * // returns ~0.037
 *
 * var mycdf = cdf.factory( 8 );
-* var y = mycdf( 3.9 );
+* y = mycdf( 3.9 );
 * // returns ~0.027
 */
 declare var cdf: CDF;
