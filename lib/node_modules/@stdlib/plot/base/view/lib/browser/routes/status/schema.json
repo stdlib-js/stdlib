@@ -1,0 +1,12 @@
+{
+  "method": "GET",
+  "url": "/status",
+  "schema": {
+    "response": {
+      "200": {
+        "type": "string"
+      }
+    }
+  },
+  "handler": null
+}
