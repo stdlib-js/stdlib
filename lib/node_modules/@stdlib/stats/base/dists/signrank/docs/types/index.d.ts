@@ -85,7 +85,7 @@ interface Namespace {
 }
 
 /**
-* Distribution of Wilcoxon signed rank test statistic.
+* Distribution of the Wilcoxon signed rank test statistic.
 */
 declare var ns: Namespace;
 
