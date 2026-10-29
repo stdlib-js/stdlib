@@ -34,25 +34,54 @@ var pluginImport = require( 'eslint-plugin-import' );
 var pluginExpectType = require( 'eslint-plugin-expect-type' );
 var assign = require( './lib/node_modules/@stdlib/object/assign' );
 var stdlibPlugin = require( './lib/node_modules/@stdlib/_tools/eslint/rules/scripts/plugin.js' );
-var restrictedSyntaxConfig = require( './etc/eslint/overrides/restricted_syntax.js' );
 var rules = require( './etc/eslint/rules' );
 var tsRules = require( './etc/eslint/rules/typescript.js' );
 
 
 // VARIABLES //
 
-var tsGlobalVars;
-var globalVars;
-var config;
+var restrictedSyntaxConfig = [
+	'error',
+	'ArrowFunctionExpression',
+	'ClassBody',
+	'ClassDeclaration',
+	'ClassExpression',
+	'DebuggerStatement',
+	'ExperimentalRestProperty',
+	'ExperimentalSpreadProperty',
+	'LabeledStatement',
+	'RestElement',
+	'SpreadElement',
+	'TaggedTemplateExpression',
+	'TemplateElement',
+	'TemplateLiteral',
+	'WithStatement',
+	'YieldExpression',
+	'JSXIdentifier',
+	'JSXNamespacedName',
+	'JSXMemberExpression',
+	'JSXEmptyExpression',
+	'JSXExpressionContainer',
+	'JSXElement',
+	'JSXClosingElement',
+	'JSXOpeningElement',
+	'JSXAttribute',
+	'JSXSpreadAttribute',
+	'JSXText',
+	'ExportDefaultDeclaration',
+	'ExportNamedDeclaration',
+	'ExportAllDeclaration',
+	'ExportSpecifier',
+	'ImportDeclaration',
+	'ImportSpecifier',
+	'ImportDefaultSpecifier',
+	'ImportNamespaceSpecifier'
+];
 
 
 // MAIN //
 
-globalVars = assign( {}, globals.browser, globals.node );
-globalVars = assign( globalVars, globals.commonjs, globals.worker );
-tsGlobalVars = assign( {}, globals.browser, globals.node );
-
-config = [
+var config = [
 	// Global ignores:
 	{
 		'ignores': [
@@ -72,7 +101,7 @@ config = [
 		'languageOptions': {
 			'ecmaVersion': 6,
 			'sourceType': 'script',
-			'globals': globalVars
+			'globals': assign( {}, globals.browser, globals.node, globals.commonjs, globals.worker )
 		},
 		'plugins': {
 			'n': pluginN,
@@ -145,7 +174,7 @@ config = [
 			'parserOptions': {
 				'project': path.join( __dirname, 'tsconfig.json' )
 			},
-			'globals': tsGlobalVars
+			'globals': assign( {}, globals.browser, globals.node )
 		},
 		'plugins': {
 			'@typescript-eslint': tsPlugin,
