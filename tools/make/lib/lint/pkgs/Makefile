@@ -59,8 +59,11 @@ lint-pkgs: lint-editorconfig
 # @example
 # make lint-pkgs-metadata-files FILES='/foo/lib/index.js /bar/package.json'
 #/
+# Preserve literal filenames when exporting them to the recipe shell:
+export FILES
+lint-pkgs-metadata-files: override FILES := $(value FILES)
 lint-pkgs-metadata-files: $(NODE_MODULES)
 	$(QUIET) echo 'Linting package.json metadata...'
-	$(QUIET) $(VALIDATE_PKG_JSON) $(FILES)
+	$(QUIET) $(VALIDATE_PKG_JSON) "$${FILES}"
 
 .PHONY: lint-pkgs-metadata-files
