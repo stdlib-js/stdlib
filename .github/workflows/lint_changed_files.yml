@@ -209,9 +209,9 @@ jobs:
         if: >-
           (success() || failure()) &&
           (contains(steps.changed-files.outputs.files, 'lib/node_modules/@stdlib/_tools/package-json/scripts/') ||
-           contains(steps.changed-files.outputs.files, 'tools/make/lib/lint/pkgs/Makefile') ||
-           contains(steps.changed-files.outputs.files, '.github/workflows/lint_changed_files.yml') ||
-           contains(format(' {0} ', steps.changed-files.outputs.files), ' Makefile '))
+          contains(steps.changed-files.outputs.files, 'tools/make/lib/lint/pkgs/Makefile') ||
+          contains(steps.changed-files.outputs.files, '.github/workflows/lint_changed_files.yml') ||
+          contains(format(' {0} ', steps.changed-files.outputs.files), ' Makefile '))
         run: |
           bash lib/node_modules/@stdlib/_tools/package-json/scripts/test/test_validate_package_json_files.sh
 
