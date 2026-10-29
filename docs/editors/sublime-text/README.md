@@ -133,10 +133,11 @@ Copy the `completions/*.sublime-completions` and `snippets/*.sublime-snippet` fi
                     "eslint": {
                         "@disable": false,
                         "args": [
-                            "--ignore-path",
-                            "/absolute/file/path/to/stdlib/etc/eslint/.eslintignore",
                             "--config",
-                            "/absolute/file/path/to/stdlib/.eslintrc.js"
+                            "/absolute/file/path/to/stdlib/eslint.config.js",
+                            "--report-unused-disable-directives",
+                            "--resolve-plugins-relative-to",
+                            "/absolute/file/path/to/stdlib"
                         ],
                         "excludes": [],
                         "env": {
