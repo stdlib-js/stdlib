@@ -437,7 +437,7 @@ interface Namespace {
 }
 
 /**
-* Uniform distribution.
+* Continuous uniform distribution.
 */
 declare var ns: Namespace;
 
