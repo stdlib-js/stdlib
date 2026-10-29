@@ -40,7 +40,7 @@ This directory contains [ESLint][eslint] configuration files.
 -   JSON must use strict JSON syntax. The configuration enforces two-space indentation, except for tab-indented `cli_opts.json`, and the canonical root key order for `package.json`.
 -   JSON test fixtures and imported or generated files under `data/` are excluded. Test fixtures can intentionally contain invalid documents; data files retain their source formats. Build output and external dependencies use the shared ESLint ignores.
 -   YAML files require the stdlib Apache-2.0 header, including a four-digit copyright year and `The Stdlib Authors.`. Empty mapping values are allowed in GitHub Actions workflows to support event declarations such as `workflow_dispatch:`.
--   Run `node etc/eslint/test/test.js` for configuration regression tests and `node lib/node_modules/@stdlib/_tools/eslint/rules/yaml-license-header/test/test.js` for license-rule tests. CI runs both suites and the complete JSON/YAML lint targets.
+-   Run `NODE_PATH=./lib/node_modules node etc/eslint/test/test.js` for configuration regression tests and `node lib/node_modules/@stdlib/_tools/eslint/rules/yaml-license-header/test/test.js` for license-rule tests. CI runs both suites and the complete JSON/YAML lint targets.
 
 </section>
 
