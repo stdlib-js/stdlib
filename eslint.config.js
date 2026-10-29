@@ -56,8 +56,6 @@ var JSDOC_SNIPPET_EXCLUDE = [
 	'indent',
 	'no-restricted-syntax'
 ];
-
-
 var restrictedSyntaxConfig = [
 	'error',
 	'ArrowFunctionExpression',
@@ -95,8 +93,6 @@ var restrictedSyntaxConfig = [
 	'ImportDefaultSpecifier',
 	'ImportNamespaceSpecifier'
 ];
-
-
 var exampleRules = {
 	'no-console': 'off',
 	'vars-on-top': 'off',
@@ -116,18 +112,18 @@ var config;
 * Extracts built-in ESLint rules from a configuration object, filtering out plugin rules and rules listed in an exclusion list.
 *
 * @private
-* @param {Object} config - ESLint configuration object
+* @param {Object} conf - ESLint configuration object
 * @param {Array} exclude - rule names to exclude
 * @returns {Object} filtered rules object
 */
-function extractSnippetRules( config, exclude ) {
-	var rules;
+function extractSnippetRules( conf, exclude ) {
 	var keys;
+	var out;
 	var key;
 	var i;
 
-	rules = {};
-	keys = objectKeys( config.rules );
+	out = {};
+	keys = objectKeys( conf.rules );
 	for ( i = 0; i < keys.length; i++ ) {
 		key = keys[ i ];
 
@@ -139,11 +135,10 @@ function extractSnippetRules( config, exclude ) {
 		if ( exclude.indexOf( key ) !== -1 ) {
 			continue;
 		}
-		rules[ key ] = config.rules[ key ];
+		out[ key ] = conf.rules[ key ];
 	}
-	return rules;
+	return out;
 }
-
 
 
 // MAIN //
