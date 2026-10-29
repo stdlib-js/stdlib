@@ -21,9 +21,9 @@
 /**
 * Returns the mode of an F distribution.
 *
-* @param a    numerator degrees of freedom
-* @param b    denominator degrees of freedom
-* @return     mode
+* @param d1    numerator degrees of freedom
+* @param d2    denominator degrees of freedom
+* @return      mode
 *
 * @example
 * double y = stdlib_base_dists_f_mode( 3.0, 5.0 );
