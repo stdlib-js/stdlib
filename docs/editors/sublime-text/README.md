@@ -135,9 +135,7 @@ Copy the `completions/*.sublime-completions` and `snippets/*.sublime-snippet` fi
                         "args": [
                             "--config",
                             "/absolute/file/path/to/stdlib/eslint.config.js",
-                            "--report-unused-disable-directives",
-                            "--resolve-plugins-relative-to",
-                            "/absolute/file/path/to/stdlib"
+                            "--report-unused-disable-directives"
                         ],
                         "excludes": [],
                         "env": {
