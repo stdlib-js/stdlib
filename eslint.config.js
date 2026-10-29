@@ -154,7 +154,12 @@ var config = [
 		'files': [ '**/test/**/*.js' ],
 		'rules': {
 			'no-empty-function': 'off',
+			'no-new-wrappers': 'warn',
 			'jsdoc/require-jsdoc': 'off',
+			'stdlib/jsdoc-private-annotation': 'off',
+			'stdlib/jsdoc-doctest': 'off',
+			'stdlib/no-single-property-require': 'off',
+			'stdlib/no-unnecessary-nested-functions': 'off',
 			'no-undefined': 'off',
 			'max-lines': [ 'warn', {
 				'max': 1000,
