@@ -4325,7 +4325,7 @@ ndsliceAssign,"var y = ndzeros( [ 2, 2 ] )\nvar x = scalar2ndarray( 3.0 )\nvar s
 ndsliceDimension,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] )\nx.shape\nvar y = ndsliceDimension( x, 1, 1 )\ny.shape\nndarray2array( y )\n"
 ndsliceDimensionFrom,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] )\nx.shape\nvar y = ndsliceDimensionFrom( x, 1, 1 )\ny.shape\nndarray2array( y )\n"
 ndsliceDimensionTo,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] )\nx.shape\nvar y = ndsliceDimensionTo( x, 1, 1 )\ny.shape\nndarray2array( y )\n"
-ndsliceFrom,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] )\nx.shape\nvar y = ndsliceFrom( x, 0, 1 )\ny.shape\nndarray2array( y )\n"
+ndsliceFrom,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] )\nx.shape\nvar y = ndsliceFrom( x, 0, 1 )\ny.shape\n"
 ndsliceTo,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] )\nx.shape\nvar y = ndsliceTo( x, 1, 1 )\ny.shape\nndarray2array( y )\n"
 ndzeros,"var arr = ndzeros( [ 2, 2 ] )\n"
 ndzerosLike,"var x = ndzeros( [ 2, 2 ] )\nvar y = ndzerosLike( x )\n"
