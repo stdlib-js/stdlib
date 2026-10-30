@@ -109,6 +109,20 @@ var config = [
 			'@cspell': pluginCspell,
 			'stdlib': stdlibPlugin
 		},
+		'settings': {
+			'jsdoc': {
+				'contexts': [
+					'ArrowFunctionExpression',
+					'ClassDeclaration',
+					'ClassExpression',
+					'FunctionDeclaration',
+					'FunctionExpression'
+				],
+				'tagNamePreference': {
+					'class': 'constructor'
+				}
+			}
+		},
 		'rules': rules
 	},
 
