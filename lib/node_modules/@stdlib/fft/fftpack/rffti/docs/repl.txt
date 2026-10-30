@@ -1,0 +1,58 @@
+
+{{alias}}( n[, options] )
+    Returns an initialized one-dimensional workspace ndarray for computing a
+    real-valued discrete Fourier transform.
+
+    Parameters
+    ----------
+    n: integer
+        Sequence length.
+
+    options: Object (optional)
+        Function options.
+
+    options.dtype: string|DataType (optional)
+        Output workspace ndarray data type. Must be a real-valued floating-point
+        data type. Default: 'float64'.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var out = {{alias}}( 4 )
+    <ndarray>
+
+
+{{alias}}.assign( workspace, n )
+    Initializes a provided one-dimensional workspace ndarray for computing a
+    real-valued discrete Fourier transform.
+
+    The function modifies the workspace ndarray in-place and thus mutates the
+    input ndarray.
+
+    Parameters
+    ----------
+    workspace: ndarray
+        Workspace ndarray. Must have a real-valued floating-point data type.
+
+    n: integer
+        Sequence length.
+
+    Returns
+    -------
+    out: ndarray
+        Input ndarray.
+
+    Examples
+    --------
+    > var ws = {{alias:@stdlib/ndarray/zeros}}( [ 42 ], { 'dtype': 'float64' } );
+    > var out = {{alias}}.assign( ws, 4 )
+    <ndarray>
+    > var bool = ( out === ws )
+    true
+
+    See Also
+    --------
