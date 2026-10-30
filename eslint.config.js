@@ -33,6 +33,7 @@ var pluginJsdoc = require( 'eslint-plugin-jsdoc' );
 var pluginImport = require( 'eslint-plugin-import' );
 var pluginExpectType = require( 'eslint-plugin-expect-type' );
 var assign = require( './lib/node_modules/@stdlib/object/assign' );
+var objectKeys = require( './lib/node_modules/@stdlib/utils/keys' );
 var stdlibPlugin = require( './lib/node_modules/@stdlib/_tools/eslint/rules/scripts/plugin.js' );
 var rules = require( './etc/eslint/rules' );
 var tsRules = require( './etc/eslint/rules/typescript.js' );
@@ -40,6 +41,21 @@ var tsRules = require( './etc/eslint/rules/typescript.js' );
 
 // VARIABLES //
 
+/**
+* List of rules to exclude when linting JSDoc code snippets because they are incompatible with code fragments extracted from JSDoc comments.
+*
+* @private
+* @type {Array}
+*/
+var JSDOC_SNIPPET_EXCLUDE = [
+	'no-undef',
+	'no-unused-vars',
+	'strict',
+	'no-var',
+	'eol-last',
+	'indent',
+	'no-restricted-syntax'
+];
 var restrictedSyntaxConfig = [
 	'error',
 	'ArrowFunctionExpression',
@@ -77,11 +93,64 @@ var restrictedSyntaxConfig = [
 	'ImportDefaultSpecifier',
 	'ImportNamespaceSpecifier'
 ];
+var exampleRules = {
+	'no-console': 'off',
+	'vars-on-top': 'off',
+	'jsdoc/require-jsdoc': 'off',
+	'stdlib/jsdoc-private-annotation': 'off',
+	'stdlib/require-order': 'off',
+	'stdlib/require-file-extensions': 'off',
+	'no-restricted-syntax': restrictedSyntaxConfig
+};
+var jsRules;
+var config;
+
+
+// FUNCTIONS //
+
+/**
+* Extracts built-in ESLint rules from a configuration object, filtering out plugin rules and rules listed in an exclusion list.
+*
+* @private
+* @param {Object} conf - ESLint configuration object
+* @param {Array} exclude - rule names to exclude
+* @returns {Object} filtered rules object
+*/
+function extractSnippetRules( conf, exclude ) {
+	var keys;
+	var out;
+	var key;
+	var i;
+
+	out = {};
+	keys = objectKeys( conf.rules );
+	for ( i = 0; i < keys.length; i++ ) {
+		key = keys[ i ];
+
+		// Skip plugin rules (e.g., "stdlib/foo", "node/bar") since the Linter instance does not have them registered:
+		if ( key.indexOf( '/' ) !== -1 ) {
+			continue;
+		}
+		// Skip rules explicitly excluded as incompatible with code snippets:
+		if ( exclude.indexOf( key ) !== -1 ) {
+			continue;
+		}
+		out[ key ] = conf.rules[ key ];
+	}
+	return out;
+}
 
 
 // MAIN //
 
-var config = [
+jsRules = assign( {}, rules );
+jsRules[ 'stdlib/jsdoc-example-eslint' ] = [ 'warn', {
+	'rules': extractSnippetRules({
+		'rules': assign( {}, rules, exampleRules )
+	}, JSDOC_SNIPPET_EXCLUDE )
+}];
+
+config = [
 	// Global ignores:
 	{
 		'ignores': [
@@ -109,7 +178,7 @@ var config = [
 			'@cspell': pluginCspell,
 			'stdlib': stdlibPlugin
 		},
-		'rules': rules
+		'rules': jsRules
 	},
 
 	// REPL namespace files:
@@ -138,15 +207,7 @@ var config = [
 	// Examples:
 	{
 		'files': [ '**/examples/**/*.js' ],
-		'rules': {
-			'no-console': 'off',
-			'vars-on-top': 'off',
-			'jsdoc/require-jsdoc': 'off',
-			'stdlib/jsdoc-private-annotation': 'off',
-			'stdlib/require-order': 'off',
-			'stdlib/require-file-extensions': 'off',
-			'no-restricted-syntax': restrictedSyntaxConfig
-		}
+		'rules': exampleRules
 	},
 
 	// Tests:
