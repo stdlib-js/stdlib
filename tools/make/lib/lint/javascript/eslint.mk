@@ -36,6 +36,12 @@ eslint_flags := \
 # Define user-supplied command-line options:
 ESLINT_FLAGS ?=
 
+# Ensure the `ESLINT_FLAGS` variable is not exported to the environment of invoked commands:
+#
+# -   ESLint 9.39+ reads the `ESLINT_FLAGS` environment variable to enable feature flags (e.g., `unstable_native_nodejs_ts_config`) and throws `Unknown flag` for anything unrecognized.
+# -   GNU `make` exports command-line variables as environment variables to recipes, so `make ESLINT_FLAGS=--quiet` would otherwise cause `--quiet` to be interpreted as a feature flag instead of a command-line option.
+unexport ESLINT_FLAGS
+
 ifeq ($(AUTOFIX),true)
 	eslint_flags += --fix
 endif
