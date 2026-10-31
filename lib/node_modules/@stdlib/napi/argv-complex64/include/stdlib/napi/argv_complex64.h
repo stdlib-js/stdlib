@@ -28,7 +28,7 @@
 * Macro for converting an add-on callback argument to a single-precision complex floating-point number.
 *
 * @param env      environment under which the function is invoked
-* @param name     output variable name for the array
+* @param name     output variable name
 * @param argv     name of the variable containing add-on callback arguments
 * @param index    argument index
 *
