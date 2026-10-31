@@ -20,9 +20,10 @@
 #include <stdio.h>
 #include <math.h>
 #include <complex.h>
+#include <time.h>
 #include <sys/time.h>
 
-#define NAME "inv"
+#define NAME "cinv"
 #define ITERATIONS 1000000
 #define REPEATS 3
 
