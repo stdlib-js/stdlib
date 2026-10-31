@@ -57,6 +57,55 @@ var v = cinvf( new Complex64( 2.0, 4.0 ) );
 // returns <Complex64>[ ~0.1, ~-0.2 ]
 ```
 
+#### cinvf.assign( re, im, out, strideOut, offsetOut )
+
+Computes the inverse of a single-precision complex floating-point number and assigns results to a provided output array.
+
+```javascript
+var Float32Array = require( '@stdlib/array/float32' );
+
+var out = new Float32Array( 2 );
+var v = cinvf.assign( 2.0, 4.0, out, 1, 0 );
+// returns <Float32Array>[ ~0.1, ~-0.2 ]
+
+var bool = ( out === v );
+// returns true
+```
+
+The function supports the following parameters:
+
+-   **re**: real component.
+-   **im**: imaginary component.
+-   **out**: output array.
+-   **strideOut**: stride length for `out`.
+-   **offsetOut**: starting index for `out`.
+
+#### cinvf.strided( z, sz, oz, out, so, oo )
+
+Computes the inverse of a single-precision complex floating-point number stored in a real-valued strided array view and assigns results to a provided strided output array.
+
+```javascript
+var Float32Array = require( '@stdlib/array/float32' );
+
+var z = new Float32Array( [ 2.0, 4.0 ] );
+var out = new Float32Array( 2 );
+
+var v = cinvf.strided( z, 1, 0, out, 1, 0 );
+// returns <Float32Array>[ ~0.1, ~-0.2 ]
+
+var bool = ( out === v );
+// returns true
+```
+
+The function supports the following parameters:
+
+-   **z**: complex number strided array view.
+-   **sz**: stride length for `z`.
+-   **oz**: starting index for `z`.
+-   **out**: output array.
+-   **so**: stride length for `out`.
+-   **oo**: starting index for `out`.
+
 </section>
 
 <!-- /.usage -->

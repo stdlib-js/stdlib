@@ -21,11 +21,74 @@
 /// <reference types="@stdlib/types"/>
 
 import { Complex64 } from '@stdlib/types/complex';
+import { Collection, NumericArray } from '@stdlib/types/array';
+
+/**
+* Interface for computing the inverse of a single-precision complex floating-point number.
+*/
+interface Cinvf {
+	/**
+	* Computes the inverse of a single-precision complex floating-point number.
+	*
+	* @param z - complex number
+	* @returns result
+	*
+	* @example
+	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
+	*
+	* var v = cinvf( new Complex64( 2.0, 4.0 ) );
+	* // returns <Complex64>[ ~0.1, ~-0.2 ]
+	*/
+	( z: Complex64 ): Complex64;
+
+	/**
+	* Computes the inverse of a single-precision complex floating-point number and assigns results to a provided output array.
+	*
+	* @param re - real component
+	* @param im - imaginary component
+	* @param out - output array
+	* @param strideOut - stride length
+	* @param offsetOut - starting index
+	* @returns output array
+	*
+	* @example
+	* var Float32Array = require( '@stdlib/array/float32' );
+	*
+	* var out = new Float32Array( 2 );
+	* var v = cinvf.assign( 2.0, 4.0, out, 1, 0 );
+	* // returns <Float32Array>[ ~0.1, ~-0.2 ]
+	*
+	* var bool = ( out === v );
+	* // returns true
+	*/
+	assign<T extends NumericArray | Collection<number>>( re: number, im: number, out: T, strideOut: number, offsetOut: number ): T;
+
+	/**
+	* Computes the inverse of a single-precision complex floating-point number stored in a real-valued strided array view and assigns results to a provided strided output array.
+	*
+	* @param z - complex number view
+	* @param strideZ - stride length for `z`
+	* @param offsetZ - starting index for `z`
+	* @param out - output array
+	* @param strideOut - stride length for `out`
+	* @param offsetOut - starting index for `out`
+	* @returns output array
+	*
+	* @example
+	* var Float32Array = require( '@stdlib/array/float32' );
+	*
+	* var z = new Float32Array( [ 2.0, 4.0 ] );
+	*
+	* var out = cinvf.strided( z, 1, 0, new Float32Array( 2 ), 1, 0 );
+	* // returns <Float32Array>[ ~0.1, ~-0.2 ]
+	*/
+	strided<T extends NumericArray | Collection<number>, U extends NumericArray | Collection<number>>( z: T, strideZ: number, offsetZ: number, out: U, strideOut: number, offsetOut: number ): U;
+}
 
 /**
 * Computes the inverse of a single-precision complex floating-point number.
 *
-* @param z - input value
+* @param z - complex number
 * @returns result
 *
 * @example
@@ -33,8 +96,26 @@ import { Complex64 } from '@stdlib/types/complex';
 *
 * var v = cinvf( new Complex64( 2.0, 4.0 ) );
 * // returns <Complex64>[ ~0.1, ~-0.2 ]
+*
+* @example
+* var Float32Array = require( '@stdlib/array/float32' );
+*
+* var out = new Float32Array( 2 );
+* var v = cinvf.assign( 2.0, 4.0, out, 1, 0 );
+* // returns <Float32Array>[ ~0.1, ~-0.2 ]
+*
+* var bool = ( out === v );
+* // returns true
+*
+* @example
+* var Float32Array = require( '@stdlib/array/float32' );
+*
+* var z = new Float32Array( [ 2.0, 4.0 ] );
+*
+* var out = cinvf.strided( z, 1, 0, new Float32Array( 2 ), 1, 0 );
+* // returns <Float32Array>[ ~0.1, ~-0.2 ]
 */
-declare function cinvf( z: Complex64 ): Complex64;
+declare var cinvf: Cinvf;
 
 
 // EXPORTS //
