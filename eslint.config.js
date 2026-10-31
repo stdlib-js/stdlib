@@ -145,6 +145,10 @@ var config = [
 				'skipComments': true
 			}],
 			'jsdoc/require-jsdoc': 'off',
+			'stdlib/jsdoc-private-annotation': 'off',
+			'stdlib/jsdoc-doctest': 'off',
+			'stdlib/no-unnecessary-nested-functions': 'off',
+			'stdlib/no-bench-string-concat': 'error',
 			'no-restricted-syntax': restrictedSyntaxConfig
 		}
 	},
