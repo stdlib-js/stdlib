@@ -60,6 +60,55 @@ var v = cceilf( new Complex64( -1.5, 2.5 ) );
 // returns <Complex64>[ -1.0, 3.0 ]
 ```
 
+#### cceilf.assign( re, im, out, strideOut, offsetOut )
+
+Rounds each component of a single-precision complex floating-point number toward positive infinity and assigns results to a provided output array.
+
+```javascript
+var Float32Array = require( '@stdlib/array/float32' );
+
+var out = new Float32Array( 2 );
+var v = cceilf.assign( -1.5, 2.5, out, 1, 0 );
+// returns <Float32Array>[ -1.0, 3.0 ]
+
+var bool = ( out === v );
+// returns true
+```
+
+The function supports the following parameters:
+
+-   **re**: real component.
+-   **im**: imaginary component.
+-   **out**: output array.
+-   **strideOut**: stride length for `out`.
+-   **offsetOut**: starting index for `out`.
+
+#### cceilf.strided( z, sz, oz, out, so, oo )
+
+Rounds each component of a single-precision complex floating-point number stored in a real-valued strided array view toward positive infinity and assigns results to a provided strided output array.
+
+```javascript
+var Float32Array = require( '@stdlib/array/float32' );
+
+var z = new Float32Array( [ -1.5, 2.5 ] );
+var out = new Float32Array( 2 );
+
+var v = cceilf.strided( z, 1, 0, out, 1, 0 );
+// returns <Float32Array>[ -1.0, 3.0 ]
+
+var bool = ( out === v );
+// returns true
+```
+
+The function supports the following parameters:
+
+-   **z**: complex number strided array view.
+-   **sz**: stride length for `z`.
+-   **oz**: starting index for `z`.
+-   **out**: output array.
+-   **so**: stride length for `out`.
+-   **oo**: starting index for `out`.
+
 </section>
 
 <!-- /.usage -->
@@ -71,18 +120,16 @@ var v = cceilf( new Complex64( -1.5, 2.5 ) );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var uniform = require( '@stdlib/random/base/uniform' ).factory;
-var Complex64 = require( '@stdlib/complex/float32/ctor' );
+var Complex64Array = require( '@stdlib/array/complex64' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var cceilf = require( '@stdlib/math/base/special/cceilf' );
 
-var rand = uniform( -50.0, 50.0 );
+// Create an array of random numbers:
+var arr = new Complex64Array( uniform( 200, -50.0, 50.0 ) );
 
-var z;
-var i;
-for ( i = 0; i < 100; i++ ) {
-    z = new Complex64( rand(), rand() );
-    console.log( 'cceilf(%s) = %s', z, cceilf( z ) );
-}
+// Round each component of each complex number toward positive infinity:
+logEachMap( 'cceilf(%s) = %s', arr, cceilf );
 ```
 
 </section>
