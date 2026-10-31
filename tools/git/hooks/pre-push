@@ -456,10 +456,150 @@ main() {
 	# Run JavaScript test files...
 	add_task 'run_javascript_tests'
 	if [[ -z "${skip_javascript_tests}" ]]; then
-		files=$(echo "${changed_files}" | grep '/test/.*\.js$' | grep -v '/test/fixtures/.*\.js$' | grep -v '/test/.*/fixtures/.*\.js$' | tr '\n' ' ')
-		if [[ -n "${files}" ]]; then
+		# Find test files for a given package directory
+		find_test_files() {
+			local pkg_dir="$1"
+			local pattern="$2"
+			if [[ -d "$pkg_dir/test" ]]; then
+				find "$pkg_dir/test" -name "$pattern" 2>/dev/null | grep -v 'fixtures'
+			fi
+		}
+
+		# Extract package directory from a file path
+		get_pkg_dir() {
+			dirname "$(dirname "$1")"
+		}
+
+		# Extract package pattern for compilation
+		get_pkg_pattern() {
+			local pkg_dir="$1"
+			local pkg_name=$(basename "$pkg_dir")
+			local pkg_parent=$(dirname "$pkg_dir")
+			echo "$(echo "$pkg_parent" | sed 's|.*/node_modules/@stdlib/||')/$pkg_name"
+		}
+
+		# Get changed test files directly
+		test_files=$(echo "${changed_files}" | grep '/test/.*\.js$' | grep -v '/test/fixtures/.*\.js$' | grep -v '/test/.*/fixtures/.*\.js$')
+
+		# Get changed test fixture JSON files
+		fixture_json_files=$(echo "${changed_files}" | grep '/test/fixtures/.*\.json$')
+
+		# For each changed JSON fixture, find the corresponding test files
+		fixture_test_files=""
+		if [[ -n "${fixture_json_files}" ]]; then
+			echo 'Identifying tests for changed JSON fixtures...' >&2
+			while IFS= read -r file; do
+				# Get the package directory (two levels up from fixtures directory)
+				pkg_dir=$(dirname "$(dirname "$(dirname "$file")")")
+
+				# Find all JS test files in the package
+				potential_tests=$(find "$pkg_dir/test" -name "*.js" 2>/dev/null | grep -v 'fixtures')
+				if [[ -n "${potential_tests}" ]]; then
+					fixture_test_files="${fixture_test_files} ${potential_tests}"
+				fi
+			done <<< "${fixture_json_files}"
+		fi
+
+		# Get changed source files
+		js_source_files=$(echo "${changed_files}" | grep -E '/(lib)/.*\.js$')
+		c_source_files=$(echo "${changed_files}" | grep -E '/src/.*\.c$')
+		fortran_source_files=$(echo "${changed_files}" | grep -E '/src/.*\.(f|f90|for|f77)$')
+		manifest_files=$(echo "${changed_files}" | grep 'manifest.json$')
+
+		source_test_files=""
+		packages_to_compile=""
+
+		# Process JavaScript source files
+		if [[ -n "${js_source_files}" ]]; then
+			echo 'Identifying tests for changed JavaScript source files...' >&2
+			while IFS= read -r file; do
+				pkg_dir=$(get_pkg_dir "$file")
+				potential_tests=$(find_test_files "$pkg_dir" "*.js")
+				if [[ -n "${potential_tests}" ]]; then
+					source_test_files="${source_test_files} ${potential_tests}"
+				fi
+			done <<< "${js_source_files}"
+		fi
+
+		# Process C and Fortran source files and manifest files
+		if [[ -n "${c_source_files}" || -n "${fortran_source_files}" || -n "${manifest_files}" ]]; then
+			echo 'Identifying tests for changed native source files and manifests...' >&2
+
+			# Process C source files
+			if [[ -n "${c_source_files}" ]]; then
+				while IFS= read -r file; do
+					pkg_dir=$(get_pkg_dir "$file")
+					pkg_pattern=$(get_pkg_pattern "$pkg_dir")
+
+					# Add to packages to compile
+					if [[ -n "$pkg_pattern" && "$packages_to_compile" != *"$pkg_pattern"* ]]; then
+						packages_to_compile="${packages_to_compile} ${pkg_pattern}"
+					fi
+
+					potential_tests=$(find_test_files "$pkg_dir" "*.native.js")
+					if [[ -n "${potential_tests}" ]]; then
+						source_test_files="${source_test_files} ${potential_tests}"
+					fi
+				done <<< "${c_source_files}"
+			fi
+
+			# Process Fortran source files
+			if [[ -n "${fortran_source_files}" ]]; then
+				while IFS= read -r file; do
+					pkg_dir=$(get_pkg_dir "$file")
+					pkg_pattern=$(get_pkg_pattern "$pkg_dir")
+
+					# Add to packages to compile
+					if [[ -n "$pkg_pattern" && "$packages_to_compile" != *"$pkg_pattern"* ]]; then
+						packages_to_compile="${packages_to_compile} ${pkg_pattern}"
+					fi
+
+					potential_tests=$(find_test_files "$pkg_dir" "*.native.js")
+					if [[ -n "${potential_tests}" ]]; then
+						source_test_files="${source_test_files} ${potential_tests}"
+					fi
+				done <<< "${fortran_source_files}"
+			fi
+
+			# Process manifest files
+			if [[ -n "${manifest_files}" ]]; then
+				while IFS= read -r file; do
+					pkg_dir=$(dirname "$file")
+					pkg_pattern=$(get_pkg_pattern "$pkg_dir")
+
+					# Add to packages to compile if it has a src directory with C files
+					if [[ -d "$pkg_dir/src" ]] && ls "$pkg_dir/src"/*.c >/dev/null 2>&1; then
+						if [[ -n "$pkg_pattern" && "$packages_to_compile" != *"$pkg_pattern"* ]]; then
+							packages_to_compile="${packages_to_compile} ${pkg_pattern}"
+						fi
+
+						potential_tests=$(find_test_files "$pkg_dir" "*.native.js")
+						if [[ -n "${potential_tests}" ]]; then
+							source_test_files="${source_test_files} ${potential_tests}"
+						fi
+					fi
+				done <<< "${manifest_files}"
+			fi
+
+			# Compile native add-ons if needed
+			if [[ -n "${packages_to_compile}" ]]; then
+				echo "Compiling native add-ons for: ${packages_to_compile}" >&2
+				for pkg in ${packages_to_compile}; do
+					make install-node-addons NODE_ADDONS_PATTERN="${pkg}" > /dev/null >&2
+					if [[ "$?" -ne 0 ]]; then
+						echo "Failed to compile native add-on for ${pkg}" >&2
+						task_status 'failed'
+						on_error 1
+					fi
+				done
+			fi
+		fi
+
+		# Combine test files from all sources and remove duplicates
+		all_test_files=$(echo "${test_files} ${fixture_test_files} ${source_test_files}" | tr ' ' '\n' | sort | uniq | tr '\n' ' ')
+		if [[ -n "${all_test_files}" ]]; then
 			echo 'Running JavaScript test files...' >&2
-			make FILES="${files}" test-javascript-files > /dev/null >&2
+			make FILES="${all_test_files}" test-javascript-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
 				task_status 'failed'
 				echo '' >&2
