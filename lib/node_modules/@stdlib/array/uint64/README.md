@@ -278,6 +278,40 @@ u = arr.at( -100 );
 // returns undefined
 ```
 
+<a name="method-copy-within"></a>
+
+#### Uint64Array.prototype.copyWithin( target, start\[, end] )
+
+Copies a sequence of elements within the array starting at `start` and ending at `end` (non-inclusive) to the position starting at `target`.
+
+```javascript
+var arr = new Uint64Array( [ 1, 2, 3, 4 ] );
+
+// Copy the last two elements to the first two elements:
+arr.copyWithin( 0, 2 );
+// arr => <Uint64Array>[ 3n, 4n, 3n, 4n ]
+```
+
+By default, `end` equals the number of array elements (i.e., one more than the last array index). To limit the sequence length, provide an `end` argument.
+
+```javascript
+var arr = new Uint64Array( [ 1, 2, 3, 4 ] );
+
+// Copy the first two elements to the last two elements:
+arr.copyWithin( 2, 0, 2 );
+// arr => <Uint64Array>[ 1n, 2n, 1n, 2n ]
+```
+
+When a `target`, `start`, and/or `end` index is negative, the respective index is determined relative to the last array element. The following example achieves the same behavior as the previous example:
+
+```javascript
+var arr = new Uint64Array( [ 1, 2, 3, 4 ] );
+
+// Copy the first two elements to the last two elements using negative indices:
+arr.copyWithin( -2, -4, -2 );
+// arr => <Uint64Array>[ 1n, 2n, 1n, 2n ]
+```
+
 <a name="method-entries"></a>
 
 #### Uint64Array.prototype.entries()
