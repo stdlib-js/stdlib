@@ -29,11 +29,11 @@ on:
         description: 'Type of release to create'
         default: 'none'
         options:
-        - none
-        - patch
-        - minor
-        - major
-        - auto
+          - none
+          - patch
+          - minor
+          - major
+          - auto
       dry-run:
         type: boolean
         description: 'Skip uploading packages (dry run):'
