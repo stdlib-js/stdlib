@@ -72,6 +72,55 @@ v = csignum( new Complex128( NaN, NaN ) );
 // returns <Complex128>[ NaN, NaN ]
 ```
 
+#### csignum.assign( re, im, out, strideOut, offsetOut )
+
+Evaluates the [signum][signum] function of a double-precision complex floating-point number and assigns results to a provided output array.
+
+```javascript
+var Float64Array = require( '@stdlib/array/float64' );
+
+var out = new Float64Array( 2 );
+var v = csignum.assign( 3.0, -4.0, out, 1, 0 );
+// returns <Float64Array>[ 0.6, -0.8 ]
+
+var bool = ( out === v );
+// returns true
+```
+
+The function supports the following parameters:
+
+-   **re**: real component.
+-   **im**: imaginary component.
+-   **out**: output array.
+-   **strideOut**: stride length for `out`.
+-   **offsetOut**: starting index for `out`.
+
+#### csignum.strided( z, sz, oz, out, so, oo )
+
+Evaluates the [signum][signum] function of a double-precision complex floating-point number stored in a real-valued strided array view and assigns results to a provided strided output array.
+
+```javascript
+var Float64Array = require( '@stdlib/array/float64' );
+
+var z = new Float64Array( [ 3.0, -4.0 ] );
+var out = new Float64Array( 2 );
+
+var v = csignum.strided( z, 1, 0, out, 1, 0 );
+// returns <Float64Array>[ 0.6, -0.8 ]
+
+var bool = ( out === v );
+// returns true
+```
+
+The function supports the following parameters:
+
+-   **z**: complex number strided array view.
+-   **sz**: stride length for `z`.
+-   **oz**: starting index for `z`.
+-   **out**: output array.
+-   **so**: stride length for `out`.
+-   **oo**: starting index for `out`.
+
 </section>
 
 <!-- /.usage -->
@@ -93,18 +142,16 @@ v = csignum( new Complex128( NaN, NaN ) );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var uniform = require( '@stdlib/random/base/uniform' ).factory;
-var Complex128 = require( '@stdlib/complex/float64/ctor' );
+var Complex128Array = require( '@stdlib/array/complex128' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var csignum = require( '@stdlib/math/base/special/csignum' );
 
-var rand = uniform( -50.0, 50.0 );
+// Create an array of random numbers:
+var arr = new Complex128Array( uniform( 200, -50.0, 50.0 ) );
 
-var z;
-var i;
-for ( i = 0; i < 100; i++ ) {
-    z = new Complex128( rand(), rand() );
-    console.log( 'csignum(%s) = %s', z, csignum( z ) );
-}
+// Evaluate the sign of each number in the array:
+logEachMap( 'csignum(%s) = %s', arr, csignum );
 ```
 
 </section>
