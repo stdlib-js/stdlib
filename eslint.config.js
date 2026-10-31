@@ -153,10 +153,16 @@ var config = [
 	{
 		'files': [ '**/examples/**/*.js' ],
 		'rules': {
+			'no-new-wrappers': 'warn',
 			'no-console': 'off',
 			'vars-on-top': 'off',
 			'jsdoc/require-jsdoc': 'off',
 			'stdlib/jsdoc-private-annotation': 'off',
+			'stdlib/jsdoc-doctest': 'off',
+			'stdlib/doctest': 'error',
+			'stdlib/vars-order': 'off',
+			'stdlib/no-unnecessary-nested-functions': 'off',
+			'stdlib/require-last-path-relative': 'error',
 			'stdlib/require-order': 'off',
 			'stdlib/require-file-extensions': 'off',
 			'no-restricted-syntax': restrictedSyntaxConfig
