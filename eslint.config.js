@@ -126,6 +126,14 @@ var config = [
 		'rules': rules
 	},
 
+	// ESLint rule definitions:
+	{
+		'files': [ 'etc/eslint/rules/*.js' ],
+		'rules': {
+			'stdlib/jsdoc-doctest': 'off'
+		}
+	},
+
 	// REPL namespace files:
 	{
 		'files': [ '**/lib/node_modules/@stdlib/**/lib/[a-z].js' ],
