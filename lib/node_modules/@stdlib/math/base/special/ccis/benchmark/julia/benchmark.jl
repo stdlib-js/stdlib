@@ -20,7 +20,7 @@ import BenchmarkTools
 using Printf
 
 # Benchmark variables:
-name = "cis";
+name = "ccis";
 repeats = 3;
 
 """
@@ -136,7 +136,7 @@ function main()
 		@printf( "# julia::%s\n", name );
 		results = benchmark();
 		print_results( results[ 1 ], results[ 2 ] );
-        @printf( "ok %d benchmark finished\n", i );
+		@printf( "ok %d benchmark finished\n", i );
 	end
 	print_summary( repeats, repeats );
 end
