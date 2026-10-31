@@ -46,6 +46,7 @@
 "@stdlib/array/to-iterator-right","@stdlib/array-to-iterator-right"
 "@stdlib/array/buffer","@stdlib/array-buffer"
 "@stdlib/buffer/from-arraybuffer","@stdlib/buffer-from-arraybuffer"
+"@stdlib/ndarray/from-arraybuffer","@stdlib/ndarray-from-arraybuffer"
 "@stdlib/array/ctors","@stdlib/array-ctors"
 "@stdlib/array/dtype","@stdlib/array-dtype"
 "@stdlib/array/dtypes","@stdlib/array-dtypes"

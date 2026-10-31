@@ -46,6 +46,7 @@ array2iterator,"iterator2array,circarray2iterator,array2iteratorRight,stridedarr
 array2iteratorRight,"iterator2array,array2iterator"
 ArrayBuffer,"Buffer,Float32Array,Float64Array,Int16Array,Int32Array,Int8Array,SharedArrayBuffer,Uint16Array,Uint32Array,Uint8Array,Uint8ClampedArray"
 arraybuffer2buffer,"Buffer,array2buffer,copyBuffer,string2buffer"
+arraybuffer2ndarray,"array,ndarray,matrix,vector"
 arrayCtors,"typedarrayCtors"
 arrayDataType,"arrayDataTypes"
 arrayDataTypes,"typedarrayDataTypes,ndarrayDataTypes"

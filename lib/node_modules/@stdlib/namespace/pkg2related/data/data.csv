@@ -46,6 +46,7 @@
 "@stdlib/array/to-iterator-right","@stdlib/array/from-iterator,@stdlib/array/to-iterator"
 "@stdlib/array/buffer","@stdlib/buffer/ctor,@stdlib/array/float32,@stdlib/array/float64,@stdlib/array/int16,@stdlib/array/int32,@stdlib/array/int8,@stdlib/array/shared-buffer,@stdlib/array/uint16,@stdlib/array/uint32,@stdlib/array/uint8,@stdlib/array/uint8c"
 "@stdlib/buffer/from-arraybuffer","@stdlib/buffer/ctor,@stdlib/buffer/from-array,@stdlib/buffer/from-buffer,@stdlib/buffer/from-string"
+"@stdlib/ndarray/from-arraybuffer","@stdlib/ndarray/array,@stdlib/ndarray/ctor,@stdlib/ndarray/matrix/ctor,@stdlib/ndarray/vector/ctor"
 "@stdlib/array/ctors","@stdlib/array/typed-ctors"
 "@stdlib/array/dtype","@stdlib/array/dtypes"
 "@stdlib/array/dtypes","@stdlib/array/typed-dtypes,@stdlib/ndarray/dtypes"

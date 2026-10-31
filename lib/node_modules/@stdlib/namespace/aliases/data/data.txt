@@ -46,6 +46,7 @@ array2iterator
 array2iteratorRight
 ArrayBuffer
 arraybuffer2buffer
+arraybuffer2ndarray
 arrayCtors
 arrayDataType
 arrayDataTypes
