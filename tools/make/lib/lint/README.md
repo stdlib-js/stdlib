@@ -708,7 +708,7 @@ $ make lint-header-filenames
 
 [codecov-yaml]: https://docs.codecov.com/docs/codecovyml-reference
 
-[travis-ci-conf]: https://docs.travis-ci.com/user/customizing-the-build
+[travis-ci-conf]: https://web.archive.org/web/2021/https://docs.travis-ci.com/user/customizing-the-build
 
 </section>
 
