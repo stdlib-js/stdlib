@@ -363,6 +363,15 @@ rules[ 'signed-off-by' ] = [ 0, 'always' ];
 */
 rules[ 'trailer-exists' ] = [ 0, 'always', 'Signed-off-by:' ];
 
+/**
+* Require that stdlib package references use backticks and exclude `@stdlib/` prefix.
+*
+* @name package-reference-format
+* @memberof rules
+* @type {Array}
+*/
+rules[ 'package-reference-format' ] = [ 2, 'always' ];
+
 
 // EXPORTS //
 
