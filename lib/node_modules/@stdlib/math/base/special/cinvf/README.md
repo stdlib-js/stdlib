@@ -32,6 +32,11 @@ The inverse (or reciprocal) of a non-zero complex number `z = a + bi` is defined
 {\frac {1}{z}}=\frac{\bar{z}}{z{\bar{z}}} = \frac{a}{a^{2}+b^{2}} - \frac{b}{a^2+b^2}i.
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="{\frac {1}{z}}=\frac{\bar{z}}{z{\bar{z}}} = \frac{a}{a^{2}+b^{2}} - \frac{b}{a^2+b^2}i." data-equation="eq:complex_inverse">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e0a88c6588f2a0c1f36dbc514ab3cf59713de667/lib/node_modules/@stdlib/math/base/special/cinvf/docs/img/equation_complex_inverse.svg" alt="Complex Inverse">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>
