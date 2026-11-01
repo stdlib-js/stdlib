@@ -1,0 +1,32 @@
+
+{{alias}}( token )
+    Tests whether a JSON Pointer reference token is safe.
+
+    Parameters
+    ----------
+    token: string
+        JSON Pointer reference token.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a token is safe.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 'foo' )
+    true
+    > bool = {{alias}}( '0' )
+    true
+    > bool = {{alias}}( '-' )
+    true
+    > bool = {{alias}}( '__proto__' )
+    false
+    > bool = {{alias}}( 'constructor' )
+    false
+    > bool = {{alias}}( 'prototype' )
+    false
+
+    See Also
+    --------
+
