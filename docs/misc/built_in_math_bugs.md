@@ -97,7 +97,7 @@ limitations under the License.
 
 [@bug:mozilla:897634]: https://bugzilla.mozilla.org/show_bug.cgi?id=897634
 
-[@bug:mozilla:717379]: https://bugzilla.mozilla.org/show_bug.cgi?id=717379#c5
+[@bug:mozilla:717379]: https://web.archive.org/web/20230000000000*/https://bugzilla.mozilla.org/show_bug.cgi?id=717379#c5
 
 [@bug:v8:3511]: https://bugs.chromium.org/p/v8/issues/detail?id=3511
 
