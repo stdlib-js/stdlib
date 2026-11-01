@@ -2554,7 +2554,7 @@ interface Namespace {
 	/**
 	* Rounds each component of a double-precision complex floating-point number toward positive infinity.
 	*
-	* @param z - input value
+	* @param z - complex number
 	* @returns result
 	*
 	* @example
@@ -2562,13 +2562,31 @@ interface Namespace {
 	*
 	* var v = ns.cceil( new Complex128( -1.5, 2.5 ) );
 	* // returns <Complex128>[ -1.0, 3.0 ]
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	*
+	* var out = new Float64Array( 2 );
+	* var v = ns.cceil.assign( -1.5, 2.5, out, 1, 0 );
+	* // returns <Float64Array>[ -1.0, 3.0 ]
+	*
+	* var bool = ( out === v );
+	* // returns true
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	*
+	* var z = new Float64Array( [ -1.5, 2.5 ] );
+	*
+	* var out = ns.cceil.strided( z, 1, 0, new Float64Array( 2 ), 1, 0 );
+	* // returns <Float64Array>[ -1.0, 3.0 ]
 	*/
 	cceil: typeof cceil;
 
 	/**
 	* Rounds each component of a single-precision complex floating-point number toward positive infinity.
 	*
-	* @param z - input value
+	* @param z - complex number
 	* @returns result
 	*
 	* @example
@@ -2576,6 +2594,24 @@ interface Namespace {
 	*
 	* var v = ns.cceilf( new Complex64( -1.5, 2.5 ) );
 	* // returns <Complex64>[ -1.0, 3.0 ]
+	*
+	* @example
+	* var Float32Array = require( '@stdlib/array/float32' );
+	*
+	* var out = new Float32Array( 2 );
+	* var v = ns.cceilf.assign( -1.5, 2.5, out, 1, 0 );
+	* // returns <Float32Array>[ -1.0, 3.0 ]
+	*
+	* var bool = ( out === v );
+	* // returns true
+	*
+	* @example
+	* var Float32Array = require( '@stdlib/array/float32' );
+	*
+	* var z = new Float32Array( [ -1.5, 2.5 ] );
+	*
+	* var out = ns.cceilf.strided( z, 1, 0, new Float32Array( 2 ), 1, 0 );
+	* // returns <Float32Array>[ -1.0, 3.0 ]
 	*/
 	cceilf: typeof cceilf;
 
@@ -2610,13 +2646,22 @@ interface Namespace {
 	* // returns <Complex128>[ 1.0, 0.0 ]
 	*
 	* @example
-	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
-	* var z = new Complex128( 1.0, 0.0 );
-	* // returns <Complex128>
+	* var out = new Float64Array( 2 );
+	* var v = ns.ccis.assign( 0.0, 0.0, out, 1, 0 );
+	* // returns <Float64Array>[ 1.0, 0.0 ]
 	*
-	* var out = ns.ccis( z );
-	* // returns <Complex128>[ ~0.540, ~0.841 ]
+	* var bool = ( out === v );
+	* // returns true
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	*
+	* var z = new Float64Array( [ 0.0, 0.0 ] );
+	*
+	* var out = ns.ccis.strided( z, 1, 0, new Float64Array( 2 ), 1, 0 );
+	* // returns <Float64Array>[ 1.0, 0.0 ]
 	*/
 	ccis: typeof ccis;
 
@@ -2854,23 +2899,41 @@ interface Namespace {
 	cflipsignf: typeof cflipsignf;
 
 	/**
-	* Rounds a double-precision complex floating-point number toward negative infinity.
+	* Rounds each component of a double-precision complex floating-point number toward negative infinity.
 	*
-	* @param z - input value
+	* @param z - complex number
 	* @returns result
 	*
 	* @example
 	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 	*
-	* var v = ns.cfloor( new Complex128( 5.5, 3.3 ) );
-	* // returns <Complex128>[ 5.0, 3.0 ]
+	* var v = ns.cfloor( new Complex128( -1.5, 2.5 ) );
+	* // returns <Complex128>[ -2.0, 2.0 ]
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	*
+	* var out = new Float64Array( 2 );
+	* var v = ns.cfloor.assign( -1.5, 2.5, out, 1, 0 );
+	* // returns <Float64Array>[ -2.0, 2.0 ]
+	*
+	* var bool = ( out === v );
+	* // returns true
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	*
+	* var z = new Float64Array( [ -1.5, 2.5 ] );
+	*
+	* var out = ns.cfloor.strided( z, 1, 0, new Float64Array( 2 ), 1, 0 );
+	* // returns <Float64Array>[ -2.0, 2.0 ]
 	*/
 	cfloor: typeof cfloor;
 
 	/**
 	* Rounds each component of a single-precision complex floating-point number toward negative infinity.
 	*
-	* @param z - input value
+	* @param z - complex number
 	* @returns result
 	*
 	* @example
@@ -2878,6 +2941,24 @@ interface Namespace {
 	*
 	* var v = ns.cfloorf( new Complex64( 5.5, 3.3 ) );
 	* // returns <Complex64>[ 5.0, 3.0 ]
+	*
+	* @example
+	* var Float32Array = require( '@stdlib/array/float32' );
+	*
+	* var out = new Float32Array( 2 );
+	* var v = ns.cfloorf.assign( -1.5, 2.5, out, 1, 0 );
+	* // returns <Float32Array>[ -2.0, 2.0 ]
+	*
+	* var bool = ( out === v );
+	* // returns true
+	*
+	* @example
+	* var Float32Array = require( '@stdlib/array/float32' );
+	*
+	* var z = new Float32Array( [ -1.5, 2.5 ] );
+	*
+	* var out = ns.cfloorf.strided( z, 1, 0, new Float32Array( 2 ), 1, 0 );
+	* // returns <Float32Array>[ -2.0, 2.0 ]
 	*/
 	cfloorf: typeof cfloorf;
 
@@ -2899,21 +2980,39 @@ interface Namespace {
 	/**
 	* Computes the inverse of a double-precision complex floating-point number.
 	*
-	* @param z - input value
+	* @param z - complex number
 	* @returns result
 	*
 	* @example
 	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 	*
 	* var v = ns.cinv( new Complex128( 2.0, 4.0 ) );
-	* // returns <Complex128>[ ~0.1, ~-0.2 ]
+	* // returns <Complex128>[ 0.1, -0.2 ]
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	*
+	* var out = new Float64Array( 2 );
+	* var v = ns.cinv.assign( 2.0, 4.0, out, 1, 0 );
+	* // returns <Float64Array>[ 0.1, -0.2 ]
+	*
+	* var bool = ( out === v );
+	* // returns true
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	*
+	* var z = new Float64Array( [ 2.0, 4.0 ] );
+	*
+	* var out = ns.cinv.strided( z, 1, 0, new Float64Array( 2 ), 1, 0 );
+	* // returns <Float64Array>[ 0.1, -0.2 ]
 	*/
 	cinv: typeof cinv;
 
 	/**
 	* Computes the inverse of a single-precision complex floating-point number.
 	*
-	* @param z - input value
+	* @param z - complex number
 	* @returns result
 	*
 	* @example
@@ -2921,6 +3020,24 @@ interface Namespace {
 	*
 	* var v = ns.cinvf( new Complex64( 2.0, 4.0 ) );
 	* // returns <Complex64>[ ~0.1, ~-0.2 ]
+	*
+	* @example
+	* var Float32Array = require( '@stdlib/array/float32' );
+	*
+	* var out = new Float32Array( 2 );
+	* var v = ns.cinvf.assign( 2.0, 4.0, out, 1, 0 );
+	* // returns <Float32Array>[ ~0.1, ~-0.2 ]
+	*
+	* var bool = ( out === v );
+	* // returns true
+	*
+	* @example
+	* var Float32Array = require( '@stdlib/array/float32' );
+	*
+	* var z = new Float32Array( [ 2.0, 4.0 ] );
+	*
+	* var out = ns.cinvf.strided( z, 1, 0, new Float32Array( 2 ), 1, 0 );
+	* // returns <Float32Array>[ ~0.1, ~-0.2 ]
 	*/
 	cinvf: typeof cinvf;
 
@@ -3563,30 +3680,64 @@ interface Namespace {
 	/**
 	* Rounds each component of a double-precision complex floating-point number to the nearest integer.
 	*
-	* @param z - input value
+	* @param z - complex number
 	* @returns result
 	*
 	* @example
 	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
-	* var v = ns.cround( new Complex128( -4.2, 5.5 ) );
-	* // returns <Complex128>[ -4.0, 6.0 ]
+	* var v = ns.cround( new Complex128( -1.5, 2.5 ) );
+	* // returns <Complex128>[ -1.0, 3.0 ]
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	*
+	* var out = new Float64Array( 2 );
+	* var v = ns.cround.assign( -1.5, 2.5, out, 1, 0 );
+	* // returns <Float64Array>[ -1.0, 3.0 ]
+	*
+	* var bool = ( out === v );
+	* // returns true
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	*
+	* var z = new Float64Array( [ -1.5, 2.5 ] );
+	*
+	* var out = ns.cround.strided( z, 1, 0, new Float64Array( 2 ), 1, 0 );
+	* // returns <Float64Array>[ -1.0, 3.0 ]
 	*/
 	cround: typeof cround;
 
 	/**
 	* Rounds each component of a single-precision complex floating-point number to the nearest integer.
 	*
-	* @param z - input value
+	* @param z - complex number
 	* @returns result
 	*
 	* @example
 	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 	*
-	* var v = ns.croundf( new Complex64( -4.2, 5.5 ) );
-	* // returns <Complex64>[ -4.0, 6.0 ]
+	* var v = ns.croundf( new Complex64( -1.5, 2.5 ) );
+	* // returns <Complex64>[ -1.0, 3.0 ]
+	*
+	* @example
+	* var Float32Array = require( '@stdlib/array/float32' );
+	*
+	* var out = new Float32Array( 2 );
+	* var v = ns.croundf.assign( -1.5, 2.5, out, 1, 0 );
+	* // returns <Float32Array>[ -1.0, 3.0 ]
+	*
+	* var bool = ( out === v );
+	* // returns true
+	*
+	* @example
+	* var Float32Array = require( '@stdlib/array/float32' );
+	*
+	* var z = new Float32Array( [ -1.5, 2.5 ] );
+	*
+	* var out = ns.croundf.strided( z, 1, 0, new Float32Array( 2 ), 1, 0 );
+	* // returns <Float32Array>[ -1.0, 3.0 ]
 	*/
 	croundf: typeof croundf;
 
