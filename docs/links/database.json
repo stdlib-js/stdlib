@@ -8274,6 +8274,20 @@
       "linter"
     ]
   },
+  "https://github.com/google/highway": {
+    "id": "highway",
+    "description": "Highway is a C++ library for performance-portable SIMD with runtime dispatch.",
+    "short_url": "",
+    "keywords": [
+      "highway",
+      "simd",
+      "vectorization",
+      "intrinsics",
+      "c++",
+      "runtime",
+      "dispatch"
+    ]
+  },
   "https://github.com/gotwarlost/istanbul": {
     "id": "istanbul",
     "description": "Istanbul is a JavaScript code coverage tool.",
