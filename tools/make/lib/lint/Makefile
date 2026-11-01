@@ -25,6 +25,7 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/editorconfig.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/filenames.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/git/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/javascript/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/lint/json/eslint.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/julia/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/license-headers/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/markdown/Makefile
@@ -36,6 +37,7 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/repl_help.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/shell/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/toposort.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/typescript/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/lint/yaml/eslint.mk
 
 
 # RULES #
@@ -51,7 +53,7 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/typescript/Makefile
 # @example
 # make lint
 #/
-lint: lint-filenames lint-javascript lint-markdown lint-c lint-python lint-julia lint-r lint-shell lint-typescript lint-conf lint-pkg-json lint-repl-help lint-license-headers lint-editorconfig
+lint: lint-filenames lint-javascript lint-json lint-markdown lint-c lint-python lint-julia lint-r lint-shell lint-typescript lint-yaml lint-conf lint-pkg-json lint-repl-help lint-license-headers lint-editorconfig
 
 .PHONY: lint
 

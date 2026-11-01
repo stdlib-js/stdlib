@@ -188,6 +188,16 @@ jobs:
             make FILES="${files}" lint-shell-files
           fi
 
+      # Exercise JSON/YAML rules and lint the complete file sets:
+      - name: 'Lint JSON and YAML files'
+        if: success() || failure()
+        env:
+          NODE_PATH: ${{ github.workspace }}/lib/node_modules
+        run: |
+          node etc/eslint/test/test.js
+          node lib/node_modules/@stdlib/_tools/eslint/rules/yaml-license-header/test/test.js
+          make lint-json lint-yaml
+
       # Lint package.json files:
       - name: 'Lint package.json files'
         if: success() || failure()
