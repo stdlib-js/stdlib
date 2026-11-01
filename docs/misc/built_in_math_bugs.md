@@ -91,7 +91,7 @@ limitations under the License.
 
 [@bug:compat-table:compat-table:392]: https://github.com/compat-table/compat-table/issues/392
 
-[@bug:mozilla:933257]: https://bugzilla.mozilla.org/show_bug.cgi?id=933257
+[@bug:mozilla:933257]: https://web.archive.org/web/20230000000000*/https://bugzilla.mozilla.org/show_bug.cgi?id=933257
 
 [@bug:mozilla:892671]: https://bugzilla.mozilla.org/show_bug.cgi?id=892671
 
