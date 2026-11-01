@@ -128,7 +128,9 @@ var logEachMap = require( '@stdlib/console/log-each-map' );
 var cinvf = require( '@stdlib/math/base/special/cinvf' );
 
 // Create an array of random numbers:
-var arr = new Complex64Array( uniform( 200, -100.0, 100.0 ) );
+var arr = new Complex64Array( uniform( 200, -100.0, 100.0, {
+    'dtype': 'float32'
+}));
 
 // Compute the inverse of each number in the array:
 logEachMap( '1.0 / (%s) = %s', arr, cinvf );
