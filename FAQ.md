@@ -826,7 +826,7 @@ See the [contributing guide][contributing-guide].
 
 [wasm]: https://github.com/WebAssembly/spec/
 
-[asm]: http://asmjs.org/spec/latest/
+[asm]: https://web.archive.org/web/2020/http://asmjs.org/spec/latest/
 
 [gyp]: https://gyp.gsrc.io/
 
