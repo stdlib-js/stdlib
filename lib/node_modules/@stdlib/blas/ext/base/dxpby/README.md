@@ -32,6 +32,11 @@ This BLAS extension implements the operation
 \mathbf{y} = \mathbf{x} + \beta \mathbf{y}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\mathbf{y} = \mathbf{x} + \beta \mathbf{y}" data-equation="eq:xpby">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@c71f69085f5fd08152aea24581591d492aeba6ae/lib/node_modules/@stdlib/blas/ext/base/dxpby/docs/img/equation_xpby.svg" alt="Equation for xpby operation.">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 This API is complementary to the package [`@stdlib/blas/base/daxpy`][@stdlib/blas/base/daxpy] and [`@stdlib/blas/ext/base/daxpby`][@stdlib/blas/ext/base/daxpby].

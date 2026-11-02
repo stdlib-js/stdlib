@@ -32,6 +32,11 @@ This BLAS extension implements the operation
 \mathbf{w} = \alpha \mathbf{x} + \beta
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\mathbf{w} = \alpha \mathbf{x} + \beta" data-equation="eq:waxpb">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@c71f69085f5fd08152aea24581591d492aeba6ae/lib/node_modules/@stdlib/blas/ext/base/dwaxpb/docs/img/equation_waxpb.svg" alt="Equation for waxpb operation.">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 This API is complementary to the package [`@stdlib/blas/ext/base/daxpb`][@stdlib/blas/ext/base/daxpb], which performs an in-place update.
