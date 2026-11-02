@@ -175,6 +175,6 @@ limitations under the License.
 
 [webkit-issue-tracker]: https://bugs.webkit.org/buglist.cgi?quicksearch=math
 
-[mozilla-issue-tracker]: https://bugzilla.mozilla.org/buglist.cgi?quicksearch=math
+[mozilla-issue-tracker]: https://web.archive.org/web/20230000000000*/https://bugzilla.mozilla.org/buglist.cgi?quicksearch=math
 
 <!-- </links> -->
