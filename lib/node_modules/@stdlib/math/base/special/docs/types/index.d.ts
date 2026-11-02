@@ -3907,6 +3907,24 @@ interface Namespace {
 	*
 	* var v = ns.csignum( new Complex128( -4.2, 5.5 ) );
 	* // returns <Complex128>[ -0.6069136033622302, 0.79476781392673 ]
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	*
+	* var out = new Float64Array( 2 );
+	* var v = ns.csignum.assign( 3.0, -4.0, out, 1, 0 );
+	* // returns <Float64Array>[ 0.6, -0.8 ]
+	*
+	* var bool = ( out === v );
+	* // returns true
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	*
+	* var z = new Float64Array( [ 3.0, -4.0 ] );
+	*
+	* var out = ns.csignum.strided( z, 1, 0, new Float64Array( 2 ), 1, 0 );
+	* // returns <Float64Array>[ 0.6, -0.8 ]
 	*/
 	csignum: typeof csignum;
 
@@ -3921,6 +3939,24 @@ interface Namespace {
 	*
 	* var v = ns.csignumf( new Complex64( -4.2, 5.5 ) );
 	* // returns <Complex64>[ ~-0.607, ~0.795 ]
+	*
+	* @example
+	* var Float32Array = require( '@stdlib/array/float32' );
+	*
+	* var out = new Float32Array( 2 );
+	* var v = ns.csignumf.assign( 3.0, -4.0, out, 1, 0 );
+	* // returns <Float32Array>[ ~0.6, ~-0.8 ]
+	*
+	* var bool = ( out === v );
+	* // returns true
+	*
+	* @example
+	* var Float32Array = require( '@stdlib/array/float32' );
+	*
+	* var z = new Float32Array( [ 3.0, -4.0 ] );
+	*
+	* var out = ns.csignumf.strided( z, 1, 0, new Float32Array( 2 ), 1, 0 );
+	* // returns <Float32Array>[ ~0.6, ~-0.8 ]
 	*/
 	csignumf: typeof csignumf;
 
