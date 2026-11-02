@@ -163,7 +163,7 @@ limitations under the License.
 
 [@bug:webkit:40367]: https://bugs.webkit.org/show_bug.cgi?id=40367
 
-[@bug:mozilla:969203]: https://bugzilla.mozilla.org/show_bug.cgi?id=969203#c8
+[@bug:mozilla:969203]: https://web.archive.org/web/20230000000000*/https://bugzilla.mozilla.org/show_bug.cgi?id=969203#c8
 
 [@bug:mozilla:948321]: https://bugzilla.mozilla.org/show_bug.cgi?id=948321
 
