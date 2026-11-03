@@ -1,0 +1,50 @@
+
+{{alias}}( N, hc, strideHc, offsetHc, out, strideOut, offsetOut )
+    Converts a real-valued single-precision floating-point array in FFTPACK
+    half-complex format to a single-precision complex floating-point array.
+
+    The output complex array must have a length of at least `floor(N/2) + 1`.
+
+    Parameters
+    ----------
+    N: integer
+        Length of the original real sequence.
+
+    hc: Float32Array
+        Input array in FFTPACK half-complex format.
+
+    strideHc: integer
+        Stride length for `hc`.
+
+    offsetHc: integer
+        Starting index for `hc`.
+
+    out: Complex64Array
+        Output complex array.
+
+    strideOut: integer
+        Stride length for `out`.
+
+    offsetOut: integer
+        Starting index for `out`.
+
+    Returns
+    -------
+    out: Complex64Array
+        Output complex array.
+
+    Examples
+    --------
+    > var N = 4;
+    > var w = new {{alias:@stdlib/array/float32}}( ( 2*N ) + 34 );
+    > {{alias:@stdlib/fft/base/fftpack/float32/rffti}}( N, w, 1, 0 )
+    <Float32Array>
+    > var r = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > {{alias:@stdlib/fft/base/fftpack/float32/rfftf}}( N, r, 1, 0, w, 1, 0 )
+    <Float32Array>[ 10.0, -2.0, 2.0, -2.0 ]
+    > var out = new {{alias:@stdlib/array/complex64}}( ( N/2 ) + 1 );
+    > {{alias}}( N, r, 1, 0, out, 1, 0 )
+    <Complex64Array>[ 10.0, 0.0, -2.0, 2.0, -2.0, 0.0 ]
+
+    See Also
+    --------

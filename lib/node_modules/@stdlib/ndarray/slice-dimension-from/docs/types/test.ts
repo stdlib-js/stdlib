@@ -30,6 +30,7 @@ import sliceDimensionFrom = require( './index' );
 
 	sliceDimensionFrom( empty( 'float64', sh, order ), 1, s ); // $ExpectType float64ndarray
 	sliceDimensionFrom( empty( 'float32', sh, order ), 1, s ); // $ExpectType float32ndarray
+	sliceDimensionFrom( empty( 'float16', sh, order ), 1, s ); // $ExpectType float16ndarray
 	sliceDimensionFrom( empty( 'complex128', sh, order ), 1, s ); // $ExpectType complex128ndarray
 	sliceDimensionFrom( empty( 'complex64', sh, order ), 1, s ); // $ExpectType complex64ndarray
 	sliceDimensionFrom( empty( 'int32', sh, order ), 1, s ); // $ExpectType int32ndarray
@@ -42,6 +43,7 @@ import sliceDimensionFrom = require( './index' );
 
 	sliceDimensionFrom( empty( 'float64', sh, order ), 1, s, { 'strict': false } ); // $ExpectType float64ndarray
 	sliceDimensionFrom( empty( 'float32', sh, order ), 1, s, { 'strict': false } ); // $ExpectType float32ndarray
+	sliceDimensionFrom( empty( 'float16', sh, order ), 1, s, { 'strict': false } ); // $ExpectType float16ndarray
 	sliceDimensionFrom( empty( 'complex128', sh, order ), 1, s, { 'strict': false } ); // $ExpectType complex128ndarray
 	sliceDimensionFrom( empty( 'complex64', sh, order ), 1, s, { 'strict': false } ); // $ExpectType complex64ndarray
 	sliceDimensionFrom( empty( 'int32', sh, order ), 1, s, { 'strict': false } ); // $ExpectType int32ndarray
@@ -54,6 +56,7 @@ import sliceDimensionFrom = require( './index' );
 
 	sliceDimensionFrom( empty( 'float64', sh, order ), 1, s, { 'strict': true } ); // $ExpectType float64ndarray
 	sliceDimensionFrom( empty( 'float32', sh, order ), 1, s, { 'strict': true } ); // $ExpectType float32ndarray
+	sliceDimensionFrom( empty( 'float16', sh, order ), 1, s, { 'strict': true } ); // $ExpectType float16ndarray
 	sliceDimensionFrom( empty( 'complex128', sh, order ), 1, s, { 'strict': true } ); // $ExpectType complex128ndarray
 	sliceDimensionFrom( empty( 'complex64', sh, order ), 1, s, { 'strict': true } ); // $ExpectType complex64ndarray
 	sliceDimensionFrom( empty( 'int32', sh, order ), 1, s, { 'strict': true } ); // $ExpectType int32ndarray
@@ -126,13 +129,13 @@ import sliceDimensionFrom = require( './index' );
 	sliceDimensionFrom( x, 1, ( x: number ): number => x, 1 ); // $ExpectError
 
 	sliceDimensionFrom( x, 1, '5', {} ); // $ExpectError
-	sliceDimensionFrom( x, 1, false, {}; // $ExpectError
-	sliceDimensionFrom( x, 1, true, {}; // $ExpectError
-	sliceDimensionFrom( x, 1, null, {}; // $ExpectError
-	sliceDimensionFrom( x, 1, undefined, {}; // $ExpectError
-	sliceDimensionFrom( x, 1, [ '5' ], {}; // $ExpectError
-	sliceDimensionFrom( x, 1, {}, {}; // $ExpectError
-	sliceDimensionFrom( x, 1, ( x: number ): number => x, {}; // $ExpectError
+	sliceDimensionFrom( x, 1, false, {} ); // $ExpectError
+	sliceDimensionFrom( x, 1, true, {} ); // $ExpectError
+	sliceDimensionFrom( x, 1, null, {} ); // $ExpectError
+	sliceDimensionFrom( x, 1, undefined, {} ); // $ExpectError
+	sliceDimensionFrom( x, 1, [ '5' ], {} ); // $ExpectError
+	sliceDimensionFrom( x, 1, {}, {} ); // $ExpectError
+	sliceDimensionFrom( x, 1, ( x: number ): number => x, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fourth argument which is not an object...

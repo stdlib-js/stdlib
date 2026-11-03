@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection, AccessorArrayLike, Complex128Array, Complex64Array } from '@stdlib/types/array';
+import { Collection, AccessorArrayLike, Float16Array, Complex128Array, Complex64Array } from '@stdlib/types/array';
 import { Mode } from '@stdlib/types/ndarray';
 
 /**
@@ -71,6 +71,23 @@ declare function take( x: Float64Array, indices: IndexArray, options?: Options )
 * // returns <Float32Array>[ 1.0, 3.0 ]
 */
 declare function take( x: Float32Array, indices: IndexArray, options?: Options ): Float32Array;
+
+/**
+* Takes elements from an array.
+*
+* @param x - input array
+* @param indices - list of element indices
+* @param options - function options
+* @returns output array
+*
+* @example
+* var Float16Array = require( '@stdlib/array/float16' );
+*
+* var x = new Float16Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+* var y = take( x, [ 1, 3 ] );
+* // returns <Float16Array>[ 2.0, 4.0 ]
+*/
+declare function take( x: Float16Array, indices: IndexArray, options?: Options ): Float16Array;
 
 /**
 * Takes elements from an array.

@@ -7,6 +7,10 @@
     The input ndarray is modified *in-place* (i.e., the input ndarray is
     *mutated*).
 
+    If a specified `start` or `end` index is negative, the function resolves
+    the respective index by counting backward from the last element (where `-1`
+    refers to the last element).
+
     When comparing elements, the function checks for equality of real and
     imaginary components using the strict equality operator `===`. As a
     consequence, `NaN` components are considered distinct (i.e., as
@@ -22,6 +26,8 @@
         - a one-dimensional input ndarray.
         - a zero-dimensional ndarray containing the search element.
         - a zero-dimensional ndarray containing the scalar constant.
+        - a zero-dimensional ndarray containing the starting index (inclusive).
+        - a zero-dimensional ndarray containing the ending index (exclusive).
 
     Returns
     -------
@@ -35,7 +41,9 @@
     > var v = {{alias:@stdlib/ndarray/from-scalar}}( s, { 'dtype': 'complex64' } );
     > var a = new {{alias:@stdlib/complex/float32/ctor}}( 5.0, 5.0 );
     > var alpha = {{alias:@stdlib/ndarray/from-scalar}}( a, { 'dtype': 'complex64' } );
-    > {{alias}}( [ x, v, alpha ] )
+    > var st = {{alias:@stdlib/ndarray/from-scalar}}( 0, { 'dtype': 'generic' } );
+    > var en = {{alias:@stdlib/ndarray/from-scalar}}( 2, { 'dtype': 'generic' } );
+    > {{alias}}( [ x, v, alpha, st, en ] )
     <ndarray>[ <Complex64>[ 5.0, 5.0 ], <Complex64>[ -2.0, 3.0 ] ]
 
     See Also

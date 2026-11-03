@@ -22,16 +22,16 @@ import decompose = require( './index' );
 
 // The function returns a number...
 {
-	const initial = new Float32Array( [ 3.0, 4.0, 2.0, 5.0 ] );
-	const out = new Float32Array( 7 );
+	const initial = new Uint32Array( [ 3, 4, 2, 5 ] );
+	const out = new Uint32Array( 7 );
 
 	decompose( 12, 4, initial, 1, 0, out, 1, 0 ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
 {
-	const initial = new Float32Array( [ 3.0, 4.0, 2.0, 5.0 ] );
-	const out = new Float32Array( 7 );
+	const initial = new Uint32Array( [ 3, 4, 2, 5 ] );
+	const out = new Uint32Array( 7 );
 
 	decompose( '12', 4, initial, 1, 0, out, 1, 0 ); // $ExpectError
 	decompose( true, 4, initial, 1, 0, out, 1, 0 ); // $ExpectError
@@ -45,8 +45,8 @@ import decompose = require( './index' );
 
 // The compiler throws an error if the function is provided a second argument which is not a number...
 {
-	const initial = new Float32Array( [ 3.0, 4.0, 2.0, 5.0 ] );
-	const out = new Float32Array( 7 );
+	const initial = new Uint32Array( [ 3, 4, 2, 5 ] );
+	const out = new Uint32Array( 7 );
 
 	decompose( 12, '4', initial, 1, 0, out, 1, 0 ); // $ExpectError
 	decompose( 12, true, initial, 1, 0, out, 1, 0 ); // $ExpectError
@@ -58,9 +58,9 @@ import decompose = require( './index' );
 	decompose( 12, ( x: number ): number => x, initial, 1, 0, out, 1, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a third argument which is not a Float32Array...
+// The compiler throws an error if the function is provided a third argument which is not a Uint32Array...
 {
-	const out = new Float32Array( 7 );
+	const out = new Uint32Array( 7 );
 
 	decompose( 12, 4, '4,2,3,5', 1, 0, out, 1, 0 ); // $ExpectError
 	decompose( 12, 4, 5, 1, 0, out, 1, 0 ); // $ExpectError
@@ -75,8 +75,8 @@ import decompose = require( './index' );
 
 // The compiler throws an error if the function is provided a fourth argument which is not a number...
 {
-	const initial = new Float32Array( [ 3.0, 4.0, 2.0, 5.0 ] );
-	const out = new Float32Array( 7 );
+	const initial = new Uint32Array( [ 3, 4, 2, 5 ] );
+	const out = new Uint32Array( 7 );
 
 	decompose( 12, 4, initial, '1', 0, out, 1, 0 ); // $ExpectError
 	decompose( 12, 4, initial, true, 0, out, 1, 0 ); // $ExpectError
@@ -90,8 +90,8 @@ import decompose = require( './index' );
 
 // The compiler throws an error if the function is provided a fifth argument which is not a number...
 {
-	const initial = new Float32Array( [ 3.0, 4.0, 2.0, 5.0 ] );
-	const out = new Float32Array( 7 );
+	const initial = new Uint32Array( [ 3, 4, 2, 5 ] );
+	const out = new Uint32Array( 7 );
 
 	decompose( 12, 4, initial, 1, '0', out, 1, 0 ); // $ExpectError
 	decompose( 12, 4, initial, 1, true, out, 1, 0 ); // $ExpectError
@@ -103,9 +103,9 @@ import decompose = require( './index' );
 	decompose( 12, 4, initial, 1, ( x: number ): number => x, out, 1, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a sixth argument which is not a Float32Array...
+// The compiler throws an error if the function is provided a sixth argument which is not a Uint32Array...
 {
-	const initial = new Float32Array( [ 3.0, 4.0, 2.0, 5.0 ] );
+	const initial = new Uint32Array( [ 3, 4, 2, 5 ] );
 
 	decompose( 12, 4, initial, 1, 0, 123, 1, 0 ); // $ExpectError
 	decompose( 12, 4, initial, 1, 0, true, 1, 0 ); // $ExpectError
@@ -119,8 +119,8 @@ import decompose = require( './index' );
 
 // The compiler throws an error if the function is provided a seventh argument which is not a number...
 {
-	const initial = new Float32Array( [ 3.0, 4.0, 2.0, 5.0 ] );
-	const out = new Float32Array( 7 );
+	const initial = new Uint32Array( [ 3, 4, 2, 5 ] );
+	const out = new Uint32Array( 7 );
 
 	decompose( 12, 4, initial, 1, 0, out, '1', 0 ); // $ExpectError
 	decompose( 12, 4, initial, 1, 0, out, true, 0 ); // $ExpectError
@@ -134,8 +134,8 @@ import decompose = require( './index' );
 
 // The compiler throws an error if the function is provided an eighth argument which is not a number...
 {
-	const initial = new Float32Array( [ 3.0, 4.0, 2.0, 5.0 ] );
-	const out = new Float32Array( 7 );
+	const initial = new Uint32Array( [ 3, 4, 2, 5 ] );
+	const out = new Uint32Array( 7 );
 
 	decompose( 12, 4, initial, 1, 0, out, 1, '0' ); // $ExpectError
 	decompose( 12, 4, initial, 1, 0, out, 1, true ); // $ExpectError
@@ -149,8 +149,8 @@ import decompose = require( './index' );
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
-	const initial = new Float32Array( [ 3.0, 4.0, 2.0, 5.0 ] );
-	const out = new Float32Array( 7 );
+	const initial = new Uint32Array( [ 3, 4, 2, 5 ] );
+	const out = new Uint32Array( 7 );
 
 	decompose(); // $ExpectError
 	decompose( 12 ); // $ExpectError

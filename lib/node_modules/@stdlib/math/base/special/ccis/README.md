@@ -69,6 +69,55 @@ v = ccis( z );
 // returns <Complex128>[ ~0.540, ~0.841 ]
 ```
 
+#### ccis.assign( re, im, out, strideOut, offsetOut )
+
+Evaluates the [cis][cis] function for a double-precision complex floating-point number and assigns results to a provided output array.
+
+```javascript
+var Float64Array = require( '@stdlib/array/float64' );
+
+var out = new Float64Array( 2 );
+var v = ccis.assign( 0.0, 0.0, out, 1, 0 );
+// returns <Float64Array>[ 1.0, 0.0 ]
+
+var bool = ( out === v );
+// returns true
+```
+
+The function supports the following parameters:
+
+-   **re**: real component.
+-   **im**: imaginary component.
+-   **out**: output array.
+-   **strideOut**: stride length for `out`.
+-   **offsetOut**: starting index for `out`.
+
+#### ccis.strided( z, sz, oz, out, so, oo )
+
+Evaluates the [cis][cis] function for a double-precision complex floating-point number stored in a real-valued strided array view and assigns results to a provided strided output array.
+
+```javascript
+var Float64Array = require( '@stdlib/array/float64' );
+
+var z = new Float64Array( [ 0.0, 0.0 ] );
+var out = new Float64Array( 2 );
+
+var v = ccis.strided( z, 1, 0, out, 1, 0 );
+// returns <Float64Array>[ 1.0, 0.0 ]
+
+var bool = ( out === v );
+// returns true
+```
+
+The function supports the following parameters:
+
+-   **z**: complex number strided array view.
+-   **sz**: stride length for `z`.
+-   **oz**: starting index for `z`.
+-   **out**: output array.
+-   **so**: stride length for `out`.
+-   **oo**: starting index for `out`.
+
 </section>
 
 <!-- /.usage -->
@@ -80,19 +129,16 @@ v = ccis( z );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var uniform = require( '@stdlib/random/base/uniform' );
+var Complex128Array = require( '@stdlib/array/complex128' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var ccis = require( '@stdlib/math/base/special/ccis' );
 
-var z1;
-var z2;
-var i;
+// Create an array of random numbers:
+var arr = new Complex128Array( uniform( 200, -50.0, 50.0 ) );
 
-for ( i = 0; i < 100; i++ ) {
-    z1 = new Complex128( uniform( -50.0, 50.0 ), uniform( -50.0, 50.0 ) );
-    z2 = ccis( z1 );
-    console.log( 'ccis(%s) = %s', z1.toString(), z2.toString() );
-}
+// Compute the cis function of each number in the array:
+logEachMap( 'ccis(%s) = %s', arr, ccis );
 ```
 
 </section>
@@ -177,7 +223,7 @@ stdlib_complex128_t stdlib_base_ccis( const stdlib_complex128_t z );
 #include "stdlib/complex/float64/reim.h"
 #include <stdio.h>
 
-int main() {
+int main( void ) {
     const stdlib_complex128_t x[] = {
         stdlib_complex128( 3.14, 1.5 ),
         stdlib_complex128( -3.14, 1.5 ),
@@ -187,17 +233,17 @@ int main() {
 
     stdlib_complex128_t v;
     stdlib_complex128_t y;
-    double re;
-    double im;
+    double re1;
+    double im1;
+    double re2;
+    double im2;
     int i;
     for ( i = 0; i < 4; i++ ) {
         v = x[ i ];
-        stdlib_complex128_reim( v, &re, &im );
-        printf( "z = %lf + %lfi\n", re, im );
-
         y = stdlib_base_ccis( v );
-        stdlib_complex128_reim( y, &re, &im );
-        printf( "ccis(z) = %lf + %lfi\n", re, im );
+        stdlib_complex128_reim( v, &re1, &im1 );
+        stdlib_complex128_reim( y, &re2, &im2 );
+        printf( "ccis(%lf + %lfi) = %lf + %lfi\n", re1, im1, re2, im2 );
     }
 }
 ```

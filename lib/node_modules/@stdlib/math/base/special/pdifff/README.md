@@ -26,6 +26,16 @@ limitations under the License.
 
 <section class="intro">
 
+The [positive difference][fdim] function is defined as
+
+<!-- <equation class="equation" label="eq:positive_difference" align="center" raw="z = \max(x - y, 0)" alt="Positive difference function"> -->
+
+```math
+z = \max(x - y, 0)
+```
+
+<!-- </equation> -->
+
 </section>
 
 <!-- /.intro -->

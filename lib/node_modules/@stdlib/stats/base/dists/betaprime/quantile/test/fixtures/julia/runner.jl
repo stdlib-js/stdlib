@@ -26,7 +26,7 @@ Generate fixture data and write to file.
 
 # Arguments
 
-* `p`: input value
+* `p`: input probability
 * `alpha`: first shape parameter
 * `beta`: second shape parameter
 * `name::AbstractString`: output filename
@@ -72,18 +72,18 @@ dir = dirname( file );
 
 # Large alpha parameter:
 p = rand( 1000 );
-alpha = rand( 1000 ) .* 10.0 .+ 10.0;
-beta = rand( 1000 ) .* 10.0 .+ 2.0 ;
+alpha = ( rand( 1000 ) .* 10.0 ) .+ 10.0;
+beta = ( rand( 1000 ) .* 10.0 ) .+ 2.0;
 gen( p, alpha, beta, "large_alpha.json" );
 
 # Large beta parameter:
 p = rand( 1000 );
-alpha = rand( 1000 ) .* 10.0 .+ 2.0;
-beta = rand( 1000 ) .* 10.0 .+ 10.0;
+alpha = ( rand( 1000 ) .* 10.0 ) .+ 2.0;
+beta = ( rand( 1000 ) .* 10.0 ) .+ 10.0;
 gen( p, alpha, beta, "large_beta.json" );
 
 # Both large:
 p = rand( 1000 );
-alpha = rand( 1000 ) .* 20.0 .+ 10.0;
-beta = rand( 1000 ) .* 20.0 .+ 10.0;
+alpha = ( rand( 1000 ) .* 20.0 ) .+ 10.0;
+beta = ( rand( 1000 ) .* 20.0 ) .+ 10.0;
 gen( p, alpha, beta, "both_large.json" );

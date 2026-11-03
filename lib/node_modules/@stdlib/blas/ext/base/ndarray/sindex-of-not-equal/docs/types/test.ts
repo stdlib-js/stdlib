@@ -33,8 +33,11 @@ import sindexOfNotEqual = require( './index' );
 	const searchElement = scalar2ndarray( 0.0, {
 		'dtype': 'float32'
 	});
+	const fromIndex = scalar2ndarray( 0, {
+		'dtype': 'generic'
+	});
 
-	sindexOfNotEqual( [ x, searchElement ] ); // $ExpectType number
+	sindexOfNotEqual( [ x, searchElement, fromIndex ] ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array of ndarrays...
@@ -58,7 +61,10 @@ import sindexOfNotEqual = require( './index' );
 	const searchElement = scalar2ndarray( 0.0, {
 		'dtype': 'float32'
 	});
+	const fromIndex = scalar2ndarray( 0, {
+		'dtype': 'generic'
+	});
 
 	sindexOfNotEqual(); // $ExpectError
-	sindexOfNotEqual( [ x, searchElement ], {} ); // $ExpectError
+	sindexOfNotEqual( [ x, searchElement, fromIndex ], {} ); // $ExpectError
 }
