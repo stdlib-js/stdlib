@@ -33,7 +33,7 @@ This BLAS extension implements the operation
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\mathbf{y} = \mathbf{x} + \beta \mathbf{y}" data-equation="eq:xpby">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@c71f69085f5fd08152aea24581591d492aeba6ae/lib/node_modules/@stdlib/blas/ext/base/dxpby/docs/img/equation_xpby.svg" alt="Equation for xpby operation.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@93f2b9f113a51740358746005d19d235e2908d98/lib/node_modules/@stdlib/blas/ext/base/dxpby/docs/img/equation_xpby.svg" alt="Equation for xpby operation.">
     <br>
 </div> -->
 
