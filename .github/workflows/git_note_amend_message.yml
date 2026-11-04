@@ -135,9 +135,9 @@ jobs:
       # Commit and push changes:
       - name: 'Commit and push changes'
         env:
-            REPO_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
-            USER_NAME: stdlib-bot
-            COMMIT_HASH: ${{ inputs.commit_hash }}
+          REPO_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          USER_NAME: stdlib-bot
+          COMMIT_HASH: ${{ inputs.commit_hash }}
         run: |
           git config --local user.email "82920195+stdlib-bot@users.noreply.github.com"
           git config --local user.name "${USER_NAME}"
