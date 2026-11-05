@@ -1,0 +1,23 @@
+
+{{alias}}()
+    Returns a list of alternative hypotheses.
+
+    The output array contains the following alternatives:
+
+    - two-sided: mean is not equal to null value.
+    - less: mean is less than null value.
+    - greater: mean is larger than null value.
+
+    Returns
+    -------
+    out: Array<string>
+        List of alternatives.
+
+    Examples
+    --------
+    > var out = {{alias}}()
+    [ 'two-sided', 'less', 'greater' ]
+
+    See Also
+    --------
+
