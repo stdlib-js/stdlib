@@ -18,6 +18,13 @@
 
 # VARIABLES #
 
+# Preserve filenames before included Makefiles evaluate shell commands. GNU Make
+# may otherwise expand expressions in exported command-line variables:
+ifneq (,$(filter lint-pkgs-metadata-files,$(MAKECMDGOALS)))
+override FILES := $(value FILES)
+export FILES
+endif
+
 # Determine the filename:
 this_file := $(lastword $(MAKEFILE_LIST))
 
