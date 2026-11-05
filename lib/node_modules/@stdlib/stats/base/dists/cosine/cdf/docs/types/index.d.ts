@@ -51,7 +51,7 @@ interface CDF {
 	* // returns 1.0
 	*
 	* @example
-	* var y = cdf( -0.9, 0.0, 1.0);
+	* var y = cdf( -0.9, 0.0, 1.0 );
 	* // returns ~0.0
 	*
 	* @example
