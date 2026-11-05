@@ -58,7 +58,7 @@ jobs:
     #     -   https://gh.io/using-larger-runners
     #
     # -   For analysis time improvements, consider using larger runners.
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     # Limit how long the job can run:
     timeout-minutes: 360

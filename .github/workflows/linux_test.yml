@@ -90,11 +90,11 @@ jobs:
         NODE_VERSION: ['16', '14', '12']
 
         # Define the list of operating systems on which to run this job:
-        OS: ['ubuntu-latest']
+        OS: ['ubuntu-24.04']
 
         # Define configuration options for each Node.js version:
         include:
-          - OS: 'ubuntu-latest'
+          - OS: 'ubuntu-24.04'
             PLATFORM: 'linux'
 
           - NODE_VERSION: '16'
