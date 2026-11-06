@@ -164,7 +164,7 @@ var idx = firstIndexLessThan( x, y, {
 });
 // returns <ndarray>
 
-var dt = dtype( idx );
+var dt = String( dtype( idx ) );
 // returns 'generic'
 ```
 

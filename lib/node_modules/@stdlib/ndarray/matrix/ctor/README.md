@@ -294,7 +294,7 @@ var arr = new Float32Matrix( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );
 var dt = String( getDType( arr ) );
 // returns 'float32'
 
-var len = getShape( arr );
+var sh = getShape( arr );
 // returns [ 2, 2 ]
 ```
 

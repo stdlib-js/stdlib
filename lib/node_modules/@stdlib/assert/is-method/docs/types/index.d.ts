@@ -39,7 +39,7 @@
 * var bool = isMethod( beep, 'boop' );
 * // returns true
 *
-* var bool = isMethod( beep, 'toString' );
+* bool = isMethod( beep, 'toString' );
 * // returns false
 */
 declare function isMethod( value: any, property: any ): boolean;
