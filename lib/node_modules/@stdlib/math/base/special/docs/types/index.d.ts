@@ -3208,7 +3208,7 @@ interface Namespace {
 	* // returns ~0.5
 	*
 	* @example
-	* var v = ns.cosd( 90.0);
+	* var v = ns.cosd( 90.0 );
 	* // returns 0
 	*
 	* @example
@@ -9334,7 +9334,7 @@ interface Namespace {
 	* // returns ~0.5
 	*
 	* @example
-	* var v = ns.sind( 90.0);
+	* var v = ns.sind( 90.0 );
 	* // returns 1.0
 	*
 	* @example
