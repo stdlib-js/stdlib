@@ -1778,6 +1778,8 @@
 "@stdlib/utils/async/function-sequence",functionSequenceAsync
 "@stdlib/constants/float64/gamma-lanczos-g",GAMMA_LANCZOS_G
 "@stdlib/blas/gdot",gdot
+"@stdlib/ndarray/matrix/generic",GenericMatrix
+"@stdlib/ndarray/vector/generic",GenericVector
 "@stdlib/process/getegid",getegid
 "@stdlib/process/geteuid",geteuid
 "@stdlib/process/getgid",getgid

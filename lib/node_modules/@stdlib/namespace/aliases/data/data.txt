@@ -1778,6 +1778,8 @@ functionSequence
 functionSequenceAsync
 GAMMA_LANCZOS_G
 gdot
+GenericMatrix
+GenericVector
 getegid
 geteuid
 getgid

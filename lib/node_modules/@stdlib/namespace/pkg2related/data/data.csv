@@ -1778,6 +1778,8 @@
 "@stdlib/utils/async/function-sequence","@stdlib/utils/async/compose,@stdlib/utils/function-sequence"
 "@stdlib/constants/float64/gamma-lanczos-g",""
 "@stdlib/blas/gdot","@stdlib/blas/base/gdot,@stdlib/blas/ddot,@stdlib/blas/sdot"
+"@stdlib/ndarray/matrix/generic","@stdlib/ndarray/matrix/bool,@stdlib/ndarray/matrix/float64,@stdlib/ndarray/matrix/float32,@stdlib/ndarray/matrix/int16,@stdlib/ndarray/matrix/int32,@stdlib/ndarray/matrix/int8,@stdlib/ndarray/matrix/uint8,@stdlib/ndarray/matrix/uint16,@stdlib/ndarray/matrix/uint32,@stdlib/ndarray/matrix/uint8c,@stdlib/ndarray/matrix/complex128,@stdlib/ndarray/matrix/complex64,@stdlib/ndarray/matrix/ctor,@stdlib/ndarray/vector/generic,@stdlib/ndarray/ctor"
+"@stdlib/ndarray/vector/generic","@stdlib/ndarray/vector/bool,@stdlib/ndarray/vector/float64,@stdlib/ndarray/vector/float32,@stdlib/ndarray/vector/int16,@stdlib/ndarray/vector/int32,@stdlib/ndarray/vector/int8,@stdlib/ndarray/vector/uint8,@stdlib/ndarray/vector/uint16,@stdlib/ndarray/vector/uint32,@stdlib/ndarray/vector/uint8c,@stdlib/ndarray/vector/complex128,@stdlib/ndarray/vector/complex64,@stdlib/ndarray/vector/ctor,@stdlib/ndarray/ctor"
 "@stdlib/process/getegid","@stdlib/process/geteuid,@stdlib/process/getgid,@stdlib/process/getuid"
 "@stdlib/process/geteuid","@stdlib/process/getegid,@stdlib/process/getgid,@stdlib/process/getuid"
 "@stdlib/process/getgid","@stdlib/process/getegid,@stdlib/process/geteuid,@stdlib/process/getuid"
