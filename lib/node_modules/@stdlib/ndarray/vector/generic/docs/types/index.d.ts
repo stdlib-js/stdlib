@@ -175,9 +175,7 @@ interface GenericVector {
 /**
 * Creates a "generic" vector (i.e., a one-dimensional ndarray).
 *
-* @param arg - length, typed array, array-like object, buffer, or iterable
-* @param byteOffset - integer byte offset specifying the location of the first vector element (default: 0)
-* @param length - view length; if not provided, the view spans from the byteOffset to the end of the underlying ArrayBuffer
+* @param arg - length, typed array, array-like object, or iterable
 * @param options - function options
 * @param options.readonly - boolean indicating whether to return a read-only vector
 * @param options.mode - specifies how to handle indices which exceed vector dimensions
