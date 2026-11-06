@@ -3176,6 +3176,8 @@ functionSequence,"\nfunctionSequence( ...fcn:Function )\n    Returns a pipeline 
 functionSequenceAsync,"\nfunctionSequenceAsync( ...fcn:Function )\n    Returns a pipeline function.\n"
 GAMMA_LANCZOS_G,"\nGAMMA_LANCZOS_G\n    Arbitrary constant `g` to be used in Lanczos approximation functions.\n"
 gdot,"\ngdot( x:ndarray|ArrayLikeObject, y:ndarray|ArrayLikeObject )\n    Computes the dot product of two vectors.\n"
+GenericMatrix,"\nGenericMatrix( [options:Object] )\n    Returns a two-dimensional \"generic\" ndarray.\n\nGenericMatrix( shape:ArrayLikeObject<integer>[, options:Object] )\n    Returns a two-dimensional \"generic\" ndarray having a specified shape.\n\nGenericMatrix( M:integer, N:integer[, options:Object] )\n    Returns a two-dimensional \"generic\" ndarray having a specified shape.\n\nGenericMatrix( obj:Object[, options:Object] )\n    Creates a two-dimensional \"generic\" ndarray from an array-like object or\n    iterable.\n"
+GenericVector,"\nGenericVector( [options:Object] )\n    Returns a one-dimensional \"generic\" ndarray.\n\nGenericVector( length:integer[, options:Object] )\n    Returns a one-dimensional \"generic\" ndarray having a specified length.\n\nGenericVector( obj:Object[, options:Object] )\n    Creates a one-dimensional \"generic\" ndarray from an array-like object or\n    iterable.\n"
 getegid,"\ngetegid()\n    Returns the effective numeric group identity of the calling process.\n"
 geteuid,"\ngeteuid()\n    Returns the effective numeric user identity of the calling process.\n"
 getgid,"\ngetgid()\n    Returns the numeric group identity of the calling process.\n"
