@@ -32,6 +32,11 @@ This BLAS extension implements the linear transformation
 \mathbf{w} = \alpha \mathbf{x} + \beta
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\mathbf{w} = \alpha \mathbf{x} + \beta" data-equation="eq:waxpb">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@0f49e031e78d8e94d7e06de5c432aab1df17b7c9/lib/node_modules/@stdlib/blas/ext/base/ndarray/dwaxpb/docs/img/equation_waxpb.svg" alt="Equation for waxpb operation.">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>
