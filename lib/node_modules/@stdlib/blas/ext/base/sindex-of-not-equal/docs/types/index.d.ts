@@ -27,7 +27,7 @@ interface Routine {
 	*
 	* ## Notes
 	*
-	* -   If all elements are equal to the search element, the function returns `-1`.
+	* -   If the function is unable to find an element which is not equal to the search element, the function returns `-1`.
 	*
 	* @param N - number of indexed elements
 	* @param searchElement - search element
@@ -50,7 +50,7 @@ interface Routine {
 	*
 	* ## Notes
 	*
-	* -   If all elements are equal to the search element, the function returns `-1`.
+	* -   If the function is unable to find an element which is not equal to the search element, the function returns `-1`.
 	*
 	* @param N - number of indexed elements
 	* @param searchElement - search element
@@ -75,7 +75,7 @@ interface Routine {
 *
 * ## Notes
 *
-* -   If all elements are equal to the search element, the function returns `-1`.
+* -   If the function is unable to find an element which is not equal to the search element, the function returns `-1`.
 *
 * @param N - number of indexed elements
 * @param searchElement - search element

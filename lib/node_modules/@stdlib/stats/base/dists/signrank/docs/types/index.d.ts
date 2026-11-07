@@ -40,7 +40,7 @@ interface Namespace {
 	* // returns ~0.037
 	*
 	* var mycdf = ns.cdf.factory( 8 );
-	* var y = mycdf( 3.9 );
+	* y = mycdf( 3.9 );
 	* // returns ~0.027
 	*/
 	cdf: typeof cdf;
@@ -57,7 +57,7 @@ interface Namespace {
 	* // returns ~0.01
 	*
 	* var mypdf = ns.pdf.factory( 8 );
-	* var y = mypdf( 4.0 );
+	* y = mypdf( 4.0 );
 	* // returns ~0.008
 	*/
 	pdf: typeof pdf;

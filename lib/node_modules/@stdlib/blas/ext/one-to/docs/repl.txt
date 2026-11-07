@@ -15,7 +15,7 @@
         List of dimensions over which to perform operation. If not provided,
         the function generates values along the last dimension. Default: [-1].
 
-    options.dtype: string (optional)
+    options.dtype: string|DataType (optional)
         Output ndarray data type. Must be a numeric or "generic" data type.
         Default: 'float64'.
 

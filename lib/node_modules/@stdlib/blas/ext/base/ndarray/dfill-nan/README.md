@@ -50,8 +50,16 @@ var alpha = scalar2ndarray( 0.0, {
     'dtype': 'float64'
 });
 
-dfillNaN( [ x, alpha ] );
-// x => <ndarray>[ 0.0, -2.0, 3.0, 0.0, 4.0, -6.0 ]
+var start = scalar2ndarray( 0, {
+    'dtype': 'generic'
+});
+
+var end = scalar2ndarray( 2, {
+    'dtype': 'generic'
+});
+
+dfillNaN( [ x, alpha, start, end ] );
+// x => <ndarray>[ 0.0, -2.0, 3.0, NaN, 4.0, -6.0 ]
 ```
 
 The function has the following parameters:
@@ -60,6 +68,8 @@ The function has the following parameters:
 
     -   a one-dimensional input ndarray.
     -   a zero-dimensional ndarray containing the scalar constant.
+    -   a zero-dimensional ndarray containing the starting index (inclusive).
+    -   a zero-dimensional ndarray containing the ending index (exclusive).
 
 </section>
 
@@ -70,6 +80,7 @@ The function has the following parameters:
 ## Notes
 
 -   The input ndarray is modified **in-place** (i.e., the input ndarray is **mutated**).
+-   If a specified `start` or `end` index is negative, the function resolves the respective index by counting backward from the last element (where `-1` refers to the last element).
 
 </section>
 
@@ -92,13 +103,23 @@ var opts = {
     'dtype': 'float64'
 };
 
-var x = nans( [ 10 ], opts );
+var x = nans( [ 20 ], opts );
 console.log( ndarray2array( x ) );
 
 var alpha = scalar2ndarray( 5.0, opts );
 console.log( 'Alpha: %d', ndarraylike2scalar( alpha ) );
 
-dfillNaN( [ x, alpha ] );
+var start = scalar2ndarray( 5, {
+    'dtype': 'generic'
+});
+console.log( 'Start Index: %d', ndarraylike2scalar( start ) );
+
+var end = scalar2ndarray( 15, {
+    'dtype': 'generic'
+});
+console.log( 'End Index: %d', ndarraylike2scalar( end ) );
+
+dfillNaN( [ x, alpha, start, end ] );
 console.log( ndarray2array( x ) );
 ```
 
