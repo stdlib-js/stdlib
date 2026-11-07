@@ -30,7 +30,7 @@
 * @param name        output variable name
 *
 * @example
-# #include "stdlib/napi/create_int32.h"
+* #include "stdlib/napi/create_int32.h"
 * #include "stdlib/napi/argv_int32.h"
 * #include "stdlib/napi/argv.h"
 * #include <node_api.h>
