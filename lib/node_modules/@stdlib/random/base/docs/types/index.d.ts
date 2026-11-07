@@ -729,6 +729,10 @@ interface Namespace {
 	* // returns <number>
 	*
 	* @example
+	* var v = ns.mt19937.normalized();
+	* // returns <number>
+	*
+	* @example
 	* var rand = ns.mt19937.factory({
 	*     'seed': 12345
 	* });

@@ -1,0 +1,8 @@
+---
+type: amend-message
+---
+test: migrate `math/base/special/exp` to ULP-based testing
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/13687
+Reviewed-by: Athan Reines <kgryte@gmail.com>
+Ref: https://github.com/stdlib-js/stdlib/issues/11352

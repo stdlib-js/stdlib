@@ -1,0 +1,113 @@
+
+{{alias}}( order, M, N, k, A, LDA, B, LDB )
+    Copies the upper triangular part of a double-precision complex floating-
+    point matrix `A` to another matrix `B`.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    The diagonal parameter `k` specifies the diagonal below which to ignore. A
+    value of `k = 0` refers to the main diagonal, `k < 0` refers to a diagonal
+    below the main diagonal, and `k > 0` refers to a diagonal above the main
+    diagonal.
+
+    Parameters
+    ----------
+    order: string
+        Row-major (C-style) or column-major (Fortran-style) order. Must be
+        either 'row-major' or 'column-major'.
+
+    M: integer
+        Number of rows in `A`.
+
+    N: integer
+        Number of columns in `A`.
+
+    k: integer
+        Diagonal below which to ignore.
+
+    A: Complex128Array
+        Input matrix `A`.
+
+    LDA: integer
+        Stride of the first dimension of `A` (a.k.a., leading dimension of the
+        matrix `A`).
+
+    B: Complex128Array
+        Output matrix `B`.
+
+    LDB: integer
+        Stride of the first dimension of `B` (a.k.a., leading dimension of the
+        matrix `B`).
+
+    Returns
+    -------
+    B: Complex128Array
+        Output matrix.
+
+    Examples
+    --------
+    > var A = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+    > var B = new {{alias:@stdlib/array/complex128}}( 4 );
+    > {{alias}}( 'row-major', 2, 2, 0, A, 2, B, 2 )
+    <Complex128Array>[ 1.0, 2.0, 3.0, 4.0, 0.0, 0.0, 7.0, 8.0 ]
+
+
+{{alias}}.ndarray( M, N, k, A, sa1, sa2, oa, B, sb1, sb2, ob )
+    Copies the upper triangular part of a double-precision complex floating-
+    point matrix `A` to another matrix `B` using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    M: integer
+        Number of rows in `A`.
+
+    N: integer
+        Number of columns in `A`.
+
+    k: integer
+        Diagonal below which to ignore.
+
+    A: Complex128Array
+        Input matrix `A`.
+
+    sa1: integer
+        Stride of the first dimension of `A`.
+
+    sa2: integer
+        Stride of the second dimension of `A`.
+
+    oa: integer
+        Starting index for `A`.
+
+    B: Complex128Array
+        Output matrix `B`.
+
+    sb1: integer
+        Stride of the first dimension of `B`.
+
+    sb2: integer
+        Stride of the second dimension of `B`.
+
+    ob: integer
+        Starting index for `B`.
+
+    Returns
+    -------
+    B: Complex128Array
+        Output matrix.
+
+    Examples
+    --------
+    > var A = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+    > var B = new {{alias:@stdlib/array/complex128}}( 4 );
+    > {{alias}}.ndarray( 2, 2, 0, A, 2, 1, 0, B, 2, 1, 0 )
+    <Complex128Array>[ 1.0, 2.0, 3.0, 4.0, 0.0, 0.0, 7.0, 8.0 ]
+
+    See Also
+    --------
+

@@ -67,6 +67,8 @@ void API_SUFFIX(c_scopy_ndarray)( const CBLAS_INT N, const float *X, const CBLAS
 			Y[ iy+4 ] = X[ ix+4 ];
 			Y[ iy+5 ] = X[ ix+5 ];
 			Y[ iy+6 ] = X[ ix+6 ];
+			ix += M;
+			iy += M;
 		}
 		return;
 	}

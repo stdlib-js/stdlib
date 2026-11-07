@@ -1,6 +1,7 @@
 {
   "options": {
-    "task": "build"
+    "task": "build",
+    "wasm": false
   },
   "fields": [
     {
@@ -27,6 +28,7 @@
   "confs": [
     {
       "task": "build",
+      "wasm": false,
       "src": [
         "./src/main.c"
       ],
@@ -41,16 +43,17 @@
         "@stdlib/complex/float32/real",
         "@stdlib/complex/float32/imag",
         "@stdlib/strided/base/stride2offset",
+        "@stdlib/complex/float32/ctor",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-complex64",
         "@stdlib/napi/argv-int64",
-        "@stdlib/napi/argv-strided-complex64array",
-        "@stdlib/complex/float32/ctor"
+        "@stdlib/napi/argv-strided-complex64array"
       ]
     },
     {
       "task": "benchmark",
+      "wasm": false,
       "src": [
         "./src/main.c"
       ],
@@ -70,6 +73,27 @@
     },
     {
       "task": "examples",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/complex/float32/base/add",
+        "@stdlib/complex/float32/real",
+        "@stdlib/complex/float32/imag",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/complex/float32/ctor"
+      ]
+    },
+    {
+      "task": "build",
+      "wasm": true,
       "src": [
         "./src/main.c"
       ],

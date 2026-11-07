@@ -87,13 +87,13 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
 
-// Initial array...
+// Initial array:
 var x0 = new Float32Array( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
 
-// Create an offset view...
+// Create an offset view:
 var x1 = new Float32Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
-// Find index...
+// Find index:
 var idx = sindexOf( 3, -6.0, x1, 2 );
 // returns 2
 ```
@@ -136,7 +136,8 @@ var idx = sindexOf.ndarray( 3, 3.0, x, 1, x.length-3 );
 
 ## Notes
 
--   When searching for a search element, the function checks for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct, and `-0` and `+0` are considered the same.
+-   If `N <= 0`, both functions return `-1`.
+-   When searching for a search element, the functions check for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct, and `-0` and `+0` are considered the same.
 
 </section>
 
@@ -198,7 +199,7 @@ console.log( idx );
 Returns the first index of a specified search element in a single-precision floating-point strided array.
 
 ```c
-float x[] = { 1.0f, 2.0f, 3.0f, 4.0f };
+const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f };
 
 int idx = stdlib_strided_sindex_of( 4, 3.0f, x, 1 );
 // returns 2
@@ -220,7 +221,7 @@ CBLAS_INT N stdlib_strided_sindex_of( const CBLAS_INT N, const float searchEleme
 Returns the first index of a specified search element in a single-precision floating-point strided array using alternative indexing semantics.
 
 ```c
-float x[] = { 1.0f, 2.0f, 3.0f, 4.0f };
+const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f };
 
 int idx = stdlib_strided_sindex_of_ndarray( 4, 3.0f, x, 1, 0 );
 // returns 2
@@ -262,7 +263,7 @@ CBLAS_INT stdlib_strided_sindex_of_ndarray( const CBLAS_INT N, const float searc
 
 int main( void ) {
     // Create a strided array:
-    float x[] = { 1.0f, -2.0f, 3.0f, -4.0f, 5.0f, -6.0f, 7.0f, -8.0f };
+    const float x[] = { 1.0f, -2.0f, 3.0f, -4.0f, 5.0f, -6.0f, 7.0f, -8.0f };
 
     // Specify the number of indexed elements:
     const int N = 8;

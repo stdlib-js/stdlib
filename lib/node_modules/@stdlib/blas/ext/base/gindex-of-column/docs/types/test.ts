@@ -142,7 +142,7 @@ import gindexOfColumn = require( './index' );
 	gindexOfColumn( 'row-major', 2, 2, A ); // $ExpectError
 	gindexOfColumn( 'row-major', 2, 2, A, 2 ); // $ExpectError
 	gindexOfColumn( 'row-major', 2, 2, A, 2, x ); // $ExpectError
-	gindexOfColumn( 'row-major', 2, 2, A, 2, x, 1, 0 ); // $ExpectError
+	gindexOfColumn( 'row-major', 2, 2, A, 2, x, 1, {} ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a number...
@@ -298,5 +298,5 @@ import gindexOfColumn = require( './index' );
 	gindexOfColumn.ndarray( 2, 2, A, 2, 1, 0 ); // $ExpectError
 	gindexOfColumn.ndarray( 2, 2, A, 2, 1, 0, x ); // $ExpectError
 	gindexOfColumn.ndarray( 2, 2, A, 2, 1, 0, x, 1 ); // $ExpectError
-	gindexOfColumn.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0, 0 ); // $ExpectError
+	gindexOfColumn.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0, {} ); // $ExpectError
 }

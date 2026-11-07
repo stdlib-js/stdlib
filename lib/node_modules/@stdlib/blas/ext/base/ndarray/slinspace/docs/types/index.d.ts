@@ -44,11 +44,11 @@ import { float32ndarray, boolndarray } from '@stdlib/types/ndarray';
 * var x = new Float32Vector( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 *
 * var start = scalar2ndarray( 0.0, {
-*    'dtype': 'float32'
+*     'dtype': 'float32'
 * });
 *
 * var stop = scalar2ndarray( 100.0, {
-*    'dtype': 'float32'
+*     'dtype': 'float32'
 * });
 *
 * var endpoint = scalar2ndarray( true, {

@@ -39,6 +39,8 @@ This BLAS extension implements the operation
 
 <!-- </equation> -->
 
+where `⊘` denotes the [Hadamard division][hadamard-division].
+
 </section>
 
 <!-- /.intro -->
@@ -126,6 +128,8 @@ console.log( ndarray2array( y ) );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[hadamard-division]: https://en.wikipedia.org/wiki/Hadamard_product_(matrices)#Analogous_operations
 
 </section>
 

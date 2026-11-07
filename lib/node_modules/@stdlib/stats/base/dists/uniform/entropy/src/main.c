@@ -23,8 +23,8 @@
 /**
 * Returns the differential entropy of a uniform distribution.
 *
-* @param n   minimum support
-* @param p   maximum support
+* @param a   minimum support
+* @param b   maximum support
 * @return    differential entropy
 *
 * @example
