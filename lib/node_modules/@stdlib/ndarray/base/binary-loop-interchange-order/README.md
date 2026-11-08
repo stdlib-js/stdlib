@@ -66,6 +66,7 @@ The function returns an object having the following properties:
 -   **sx**: first input array strides sorted in loop order.
 -   **sy**: second input array strides sorted in loop order.
 -   **sz**: output array strides sorted in loop order.
+-   **idx**: dimension indices sorted in loop order.
 
 For all returned arrays, the first element corresponds to the innermost loop, and the last element corresponds to the outermost loop.
 

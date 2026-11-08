@@ -173,8 +173,6 @@ interface CountIf {
 	*
 	* @param x - input ndarray
 	* @param y - output ndarray
-	* @param options - function options
-	* @param options.dims - list of dimensions over which to perform a reduction
 	* @param predicate - predicate function
 	* @param thisArg - predicate function execution context
 	* @returns output ndarray

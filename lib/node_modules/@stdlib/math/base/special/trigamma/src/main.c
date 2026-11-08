@@ -33,6 +33,7 @@
 #include "stdlib/math/base/special/floor.h"
 #include "stdlib/math/base/special/sinpi.h"
 #include "stdlib/constants/float64/pi_squared.h"
+#include "stdlib/constants/float64/nan.h"
 
 static const double YOFFSET24 = 3.558437347412109375;
 
@@ -267,7 +268,7 @@ double stdlib_base_trigamma( const double x ) {
 	// Check for negative arguments and use reflection:
 	if ( x <= 0.0 ) {
 		if ( stdlib_base_floor( x ) == x ) {
-			return 0.0 / 0.0; // NaN
+			return STDLIB_CONSTANT_FLOAT64_NAN;
 		}
 		s = stdlib_base_sinpi( x );
 		z = 1.0 - x;

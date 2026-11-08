@@ -57,8 +57,8 @@ interface LoopOrderObject {
 *
 *     The purpose of this function is to order ndarray dimensions according to the magnitude of array strides. By using the ordered dimensions and associated strides, one can construct nested loops (one for each dimension) such that the innermost loop iterates over the dimension in which array elements are closest in memory and the outermost loop iterates over the dimension in which array elements are farthest apart in memory. As a consequence, element iteration is optimized to minimize cache misses and ensure locality of reference.
 *
-* @param sh - array dimensions
-* @param sx - array stride lengths
+* @param shape - array dimensions
+* @param stridesX - array stride lengths
 * @returns loop interchange data
 *
 * @example
@@ -78,7 +78,7 @@ interface LoopOrderObject {
 * var idx = o.idx;
 * // returns [ 2, 1, 0 ]
 */
-declare function nullaryLoopOrder( sh: ArrayLike<number>, sx: ArrayLike<number> ): LoopOrderObject;
+declare function nullaryLoopOrder( shape: ArrayLike<number>, stridesX: ArrayLike<number> ): LoopOrderObject;
 
 
 // EXPORTS //

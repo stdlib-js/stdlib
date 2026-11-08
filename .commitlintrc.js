@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var config = require( './etc/commitlint/.commitlintrc.js' ); // eslint-disable-line node/no-unpublished-require
+var config = require( './etc/commitlint/.commitlintrc.js' ); // eslint-disable-line n/no-unpublished-require
 
 
 // EXPORTS //

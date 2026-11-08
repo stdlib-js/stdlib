@@ -25,15 +25,19 @@ import { float32ndarray } from '@stdlib/types/ndarray';
 /**
 * Computes the arithmetic mean of a one-dimensional single-precision floating-point ndarray using a two-pass error correction algorithm.
 *
-* @param arrays - array-like object containing an input ndarray
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns arithmetic mean
 *
 * @example
-* var Float32Array = require( '@stdlib/array/float32' );
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
 *
-* var xbuf = new Float32Array( [ 1.0, 3.0, 4.0, 2.0 ] );
-* var x = new ndarray( 'float32', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+* var x = new Float32Vector( [ 1.0, 3.0, 4.0, 2.0 ] );
 *
 * var v = smeanpn( [ x ] );
 * // returns 2.5

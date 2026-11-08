@@ -239,10 +239,10 @@ interface Namespace {
 	median: typeof median;
 
 	/**
-	* Gamma distribution moment-generating function (MGF).
+	* Logistic distribution moment-generating function (MGF).
 	*
 	* @param t - input value
-	* @param mu - mean
+	* @param mu - location parameter
 	* @param s - scale parameter
 	* @returns evaluated MGF
 	*

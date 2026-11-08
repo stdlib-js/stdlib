@@ -50,5 +50,5 @@ double API_SUFFIX(stdlib_strided_dsmeanors_ndarray)( const CBLAS_INT N, const fl
 	if ( N == 1 || strideX == 0 ) {
 		return X[ offsetX ];
 	}
-	return stdlib_strided_dssumors_ndarray( N, X, strideX, offsetX ) / (double)N;
+	return API_SUFFIX(stdlib_strided_dssumors_ndarray)( N, X, strideX, offsetX ) / (double)N;
 }

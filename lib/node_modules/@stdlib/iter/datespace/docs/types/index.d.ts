@@ -81,7 +81,7 @@ declare function iterDatespace( start: number | string | Date, stop: number | st
 * @param start - starting date as either a `Date` object, JavaScript timestamp, or a date string (inclusive)
 * @param stop - stopping date as either a `Date` object, JavaScript timestamp, or a date string (inclusive)
 * @param options - function options
-* @param options.round - specifies how sub-millisecond times should be rounded: 'floor', 'ceil', or 'round' (default: 'floor' )
+* @param options.round - specifies how sub-millisecond times should be rounded: 'floor', 'ceil', or 'round' (default: 'floor')
 * @throws a numeric `start` argument must be a nonnegative integer
 * @throws a numeric `stop` argument must be a nonnegative integer
 * @throws unable to parse date string

@@ -45,6 +45,11 @@ interface LoopOrderObject {
 	* Output array strides sorted in loop order.
 	*/
 	sz: Array<number>;
+
+	/**
+	* Dimension indices sorted in loop order.
+	*/
+	idx: Array<number>;
 }
 
 /**
@@ -58,6 +63,7 @@ interface LoopOrderObject {
 *     -   **sx**: first input ndarray strides sorted in loop order.
 *     -   **sy**: second input ndarray strides sorted in loop order.
 *     -   **sz**: output ndarray strides sorted in loop order.
+*     -   **idx**: dimension indices sorted in loop order.
 *
 * -   When iterating over the elements of a multi-dimensional array, accessing elements which are closer in memory can improve performance. To this end, loop interchange is a technique used in loop nest optimization to improve locality of reference and take advantage of CPU cache.
 *
@@ -94,6 +100,9 @@ interface LoopOrderObject {
 *
 * var ssz = o.sz;
 * // returns [ 6, -2, 1 ]
+*
+* var idx = o.idx;
+* // returns [ 2, 1, 0 ]
 */
 declare function binaryLoopOrder( shape: ArrayLike<number>, stridesX: ArrayLike<number>, stridesY: ArrayLike<number>, stridesZ: ArrayLike<number> ): LoopOrderObject;
 

@@ -8,7 +8,7 @@
     Parameters
     ----------
     arrays: ArrayLikeObject<ndarray>
-        Array-like object containing the following ndarrays in order:
+        Array-like object containing the following ndarrays:
 
         - a one-dimensional input ndarray.
         - a one-dimensional output ndarray to store the mean and standard
@@ -33,16 +33,9 @@
 
     Examples
     --------
-    > var xbuf = new {{alias:@stdlib/array/float64}}( [ 2.0, 1.0, 2.0, -2.0 ] );
-    > var dt = 'float64';
-    > var sh = [ xbuf.length ];
-    > var sx = [ 1 ];
-    > var ox = 0;
-    > var ord = 'row-major';
-    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
-    > var obuf = new {{alias:@stdlib/array/float64}}( 2 );
-    > var out = new {{alias:@stdlib/ndarray/ctor}}( dt, obuf, [ 2 ], [ 1 ], ox, ord );
-    > var opts = { 'dtype': dt };
+    > var x = new {{alias:@stdlib/ndarray/vector/float64}}( [ 2.0, 1.0, 2.0, -2.0 ] );
+    > var out = new {{alias:@stdlib/ndarray/vector/float64}}( 2 );
+    > var opts = { 'dtype': 'float64' };
     > var correction = {{alias:@stdlib/ndarray/from-scalar}}( 1.0, opts );
     > {{alias}}( [ x, out, correction ] );
     > out

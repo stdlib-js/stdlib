@@ -50,5 +50,5 @@ double API_SUFFIX(c_ddot)( const CBLAS_INT N, const double *X, const CBLAS_INT s
 double API_SUFFIX(c_ddot_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
 	X += stdlib_strided_min_view_buffer_index( N, strideX, offsetX ); // adjust array pointer
 	Y += stdlib_strided_min_view_buffer_index( N, strideY, offsetY ); // adjust array pointer
-	return API_SUFFIX(cblas_ddot_ndarray)( N, X, strideX, Y, strideY );
+	return API_SUFFIX(cblas_ddot)( N, X, strideX, Y, strideY );
 }

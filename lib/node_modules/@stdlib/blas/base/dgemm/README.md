@@ -55,12 +55,12 @@ The function has the following parameters:
 -   **K**: number of columns in the matrix `op(A)` and number of rows in the matrix `op(B)`.
 -   **α**: scalar constant.
 -   **A**: first input matrix stored in linear memory as a [`Float64Array`][mdn-float64array].
--   **lda**: stride of the first dimension of `A` (leading dimension of `A`).
+-   **lda**: stride between successive contiguous vectors of the matrix `A` (a.k.a., leading dimension of `A`).
 -   **B**: second input matrix stored in linear memory as a [`Float64Array`][mdn-float64array].
--   **ldb**: stride of the first dimension of `B` (leading dimension of `B`).
+-   **ldb**: stride between successive contiguous vectors of the matrix `B` (a.k.a., leading dimension of `B`).
 -   **β**: scalar constant.
 -   **C**: third input matrix stored in linear memory as a [`Float64Array`][mdn-float64array].
--   **ldc**: stride of the first dimension of `C` (leading dimension of `C`).
+-   **ldc**: stride between successive contiguous vectors of the matrix `C` (a.k.a., leading dimension of `C`).
 
 The stride parameters determine how elements in the input arrays are accessed at runtime. For example, to perform matrix multiplication of two subarrays
 

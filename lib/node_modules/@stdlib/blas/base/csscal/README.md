@@ -149,6 +149,150 @@ console.log( x.toString() );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/blas/base/csscal.h"
+```
+
+#### c_csscal( N, alpha, \*X, strideX )
+
+Scales a single-precision complex floating-point vector by a single-precision floating-point constant.
+
+```c
+#include "stdlib/complex/float32/ctor.h"
+
+stdlib_complex64_t x[] = {
+    stdlib_complex64( 1.0f, 2.0f ),
+    stdlib_complex64( 3.0f, 4.0f ),
+    stdlib_complex64( 5.0f, 6.0f )
+};
+
+c_csscal( 3, 2.0f, x, 1 );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **alpha**: `[in] float` scalar constant.
+-   **X**: `[inout] stdlib_complex64_t*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `x`.
+
+```c
+void c_csscal( const CBLAS_INT N, const float alpha, void *X, const CBLAS_INT strideX );
+```
+
+#### c_csscal_ndarray( N, alpha, \*X, strideX, offsetX )
+
+Scales a single-precision complex floating-point vector by a single-precision floating-point constant using alternative indexing semantics.
+
+```c
+#include "stdlib/complex/float32/ctor.h"
+
+stdlib_complex64_t x[] = {
+    stdlib_complex64( 1.0f, 2.0f ),
+    stdlib_complex64( 3.0f, 4.0f ),
+    stdlib_complex64( 5.0f, 6.0f )
+};
+
+c_csscal_ndarray( 3, 2.0f, x, 1, 0 );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **alpha**: `[in] float` scalar constant.
+-   **X**: `[inout] void*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `x`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `x`.
+
+```c
+void c_csscal_ndarray( const CBLAS_INT N, const float alpha, void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/blas/base/csscal.h"
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/complex/float32/real.h"
+#include "stdlib/complex/float32/imag.h"
+#include <stdio.h>
+
+int main( void ) {
+    stdlib_complex64_t x[] = {
+        stdlib_complex64( 1.0f, 2.0f ),
+        stdlib_complex64( 3.0f, 4.0f ),
+        stdlib_complex64( 5.0f, 6.0f ),
+        stdlib_complex64( 7.0f, 8.0f )
+    };
+
+    // Specify the number of elements:
+    const int N = 4;
+
+    // Specify the stride length:
+    const int strideX = 1;
+
+    c_csscal( N, 2.0f, (void *)x, strideX );
+
+    // Print the result:
+    for ( int i = 0; i < N; i++ ) {
+        printf( "x[ %i ] = %f + %fj\n", i, stdlib_complex64_real( x[ i ] ), stdlib_complex64_imag( x[ i ] ) );
+    }
+
+    c_csscal_ndarray( N, 2.0f, (void *)x, strideX, 0 );
+
+    // Print the result:
+    for ( int i = 0; i < N; i++ ) {
+        printf( "x[ %i ] = %f + %fj\n", i, stdlib_complex64_real( x[ i ] ), stdlib_complex64_imag( x[ i ] ) );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
@@ -163,7 +307,7 @@ console.log( x.toString() );
 
 [blas]: http://www.netlib.org/blas
 
-[csscal]: https://www.netlib.org/lapack/explore-html/d2/de8/group__scal_ga40d50a435a5fcf16cf41fa80d746819f.html#ga40d50a435a5fcf16cf41fa80d746819f
+[csscal]: https://www.netlib.org/lapack/explore-html/d2/de8/group__scal_ga38234ecdfde7c9a45753af53d13b0187.html#ga38234ecdfde7c9a45753af53d13b0187
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 

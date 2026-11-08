@@ -209,14 +209,7 @@ The applied function is provided the same arguments as with [`map`](#fcn-map).
     var y = new Complex64Array( 4 );
 
     map.assign( x, y, scale );
-
-    var v = y.get( 0 );
-
-    var re = realf( v );
-    // returns 10.0
-
-    var im = imagf( v );
-    // returns 20.0
+    // y => <Complex64Array>[ 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0 ]
     ```
 
 -   When applying a function to [`ndarray`][@stdlib/ndarray/ctor]-like objects, performance will be best for [`ndarray`][@stdlib/ndarray/ctor]-like objects which are single-segment contiguous. For non-contiguous arrays, see [`@stdlib/ndarray/base/unary`][@stdlib/ndarray/base/unary].

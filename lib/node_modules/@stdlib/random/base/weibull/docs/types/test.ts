@@ -151,14 +151,14 @@ import weibull = require( './index' );
 	weibull.factory( 2, 2, { 'prng': null } ); // $ExpectError
 	weibull.factory( 2, 2, { 'prng': [] } ); // $ExpectError
 	weibull.factory( 2, 2, { 'prng': {} } ); // $ExpectError
-	weibull.factory( 2, 2, { 'prng': true ); // $ExpectError
+	weibull.factory( 2, 2, { 'prng': true } ); // $ExpectError
 
 	weibull.factory( { 'prng': 123 } ); // $ExpectError
 	weibull.factory( { 'prng': 'abc' } ); // $ExpectError
 	weibull.factory( { 'prng': null } ); // $ExpectError
 	weibull.factory( { 'prng': [] } ); // $ExpectError
 	weibull.factory( { 'prng': {} } ); // $ExpectError
-	weibull.factory( { 'prng': true ); // $ExpectError
+	weibull.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -185,7 +185,7 @@ import weibull = require( './index' );
 	weibull.factory( 2, 2, { 'state': null } ); // $ExpectError
 	weibull.factory( 2, 2, { 'state': [] } ); // $ExpectError
 	weibull.factory( 2, 2, { 'state': {} } ); // $ExpectError
-	weibull.factory( 2, 2, { 'state': true ); // $ExpectError
+	weibull.factory( 2, 2, { 'state': true } ); // $ExpectError
 	weibull.factory( 2, 2, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	weibull.factory( { 'state': 123 } ); // $ExpectError
@@ -193,7 +193,7 @@ import weibull = require( './index' );
 	weibull.factory( { 'state': null } ); // $ExpectError
 	weibull.factory( { 'state': [] } ); // $ExpectError
 	weibull.factory( { 'state': {} } ); // $ExpectError
-	weibull.factory( { 'state': true ); // $ExpectError
+	weibull.factory( { 'state': true } ); // $ExpectError
 	weibull.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

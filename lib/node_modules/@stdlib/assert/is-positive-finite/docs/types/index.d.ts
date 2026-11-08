@@ -70,7 +70,7 @@ interface IsPositiveFinite {
 	*
 	* @example
 	* var bool = isPositiveFinite.isPrimitive( 1.0/0.0 );
-	* // returns true
+	* // returns false
 	*
 	* @example
 	* var bool = isPositiveFinite.isPrimitive( new Number( 3.0 ) );

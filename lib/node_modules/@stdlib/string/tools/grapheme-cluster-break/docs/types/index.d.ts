@@ -73,11 +73,11 @@ interface Grapheme {
 	* @returns emoji property
 	*
 	* @example
-	* var out = emojiProperty( 0x23EC );
+	* var out = grapheme.emojiProperty( 0x23EC );
 	* // returns 101
 	*
 	* @example
-	* var out = emojiProperty( 0x1FFFE );
+	* var out = grapheme.emojiProperty( 0x1FFFE );
 	* // returns 11
 	*/
 	emojiProperty( code: number ): number;

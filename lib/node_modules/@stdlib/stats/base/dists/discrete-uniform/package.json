@@ -60,6 +60,7 @@
     "distribution",
     "dist",
     "uniform",
+    "univariate",
     "discrete"
   ]
 }

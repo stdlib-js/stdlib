@@ -40,9 +40,7 @@ var Complex64Array = require( '@stdlib/array/complex64' );
 var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 
 clacgv( 2, cx, 1 );
-
-var z = cx.get( 0 );
-// returns <Complex64>[ 1.0, -2.0 ]
+// cx => <Complex64Array>[ 1.0, -2.0, 3.0, -4.0 ]
 ```
 
 The function has the following parameters:
@@ -59,9 +57,7 @@ var Complex64Array = require( '@stdlib/array/complex64' );
 var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 
 clacgv( 2, cx, 2 );
-
-var z = cx.get( 0 );
-// returns <Complex64>[ 1.0, -2.0 ]
+// cx => <Complex64Array>[ 1.0, -2.0, 3.0, 4.0, 5.0, -6.0, 7.0, 8.0 ]
 ```
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
@@ -70,7 +66,6 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var Complex64 = require( '@stdlib/complex/float32/ctor' );
 
 // Initial array:
 var cx0 = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
@@ -80,9 +75,7 @@ var cx1 = new Complex64Array( cx0.buffer, cx0.BYTES_PER_ELEMENT*1 ); // start at
 
 // Conjugate every element in `cx1`:
 clacgv( 3, cx1, 1 );
-
-var z = cx0.get( 1 );
-// returns <Complex64>[ 3.0, -4.0 ]
+// cx0 => <Complex64Array>[ 1.0, 2.0, 3.0, -4.0, 5.0, -6.0, 7.0, -8.0 ]
 ```
 
 #### clacgv.ndarray( N, cx, strideCX, offsetCX )
@@ -95,9 +88,7 @@ var Complex64Array = require( '@stdlib/array/complex64' );
 var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 
 clacgv.ndarray( 3, cx, 1, 0 );
-
-var z = cx.get( 0 );
-// returns <Complex64>[ 1.0, -2.0 ]
+// cx => <Complex64Array>[ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ]
 ```
 
 The function has the following additional parameters:
@@ -112,9 +103,7 @@ var Complex64Array = require( '@stdlib/array/complex64' );
 var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 
 clacgv.ndarray( 2, cx, 2, 1 );
-
-var z = cx.get( 3 );
-// returns <Complex64>[ 7.0, -8.0 ]
+// cx => <Complex64Array>[ 1.0, 2.0, 3.0, -4.0, 5.0, 6.0, 7.0, -8.0 ]
 ```
 
 </section>

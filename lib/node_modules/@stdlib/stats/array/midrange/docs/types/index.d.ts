@@ -28,10 +28,10 @@ import { NumericArray, Collection, AccessorArrayLike } from '@stdlib/types/array
 type InputArray = NumericArray | Collection<number> | AccessorArrayLike<number>;
 
 /**
-* Computes the midrange of an array.
+* Computes the mid-range of an array.
 *
 * @param x - input array
-* @returns midrange
+* @returns mid-range
 *
 * @example
 * var x = [ 1.0, -2.0, 2.0 ];

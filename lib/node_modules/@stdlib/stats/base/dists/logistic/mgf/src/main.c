@@ -23,10 +23,10 @@
 #include "stdlib/math/base/special/sinc.h"
 
 /**
-* Evaluates the moment-generating function (MGF) for a logistic distribution with mean `mu` and scale parameter `s` at a value `t`.
+* Evaluates the moment-generating function (MGF) for a logistic distribution with location parameter `mu` and scale parameter `s` at a value `t`.
 *
 * @param t   input value
-* @param mu  mean
+* @param mu  location parameter
 * @param s   scale parameter
 * @return    evaluated MGF
 *

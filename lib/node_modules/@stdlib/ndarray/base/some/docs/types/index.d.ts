@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ndarray, typedndarray, genericndarray } from '@stdlib/types/ndarray';
+import { ndarray, typedndarray } from '@stdlib/types/ndarray';
 
 /**
 * Tests whether at least `n` elements in an ndarray are truthy.
@@ -55,7 +55,7 @@ import { ndarray, typedndarray, genericndarray } from '@stdlib/types/ndarray';
 * var out = some( [ x, n ] );
 * // returns true
 */
-declare function some( arrays: [ ndarray, typedndarray<number> | genericndarray<number> ] ): boolean;
+declare function some( arrays: [ ndarray, typedndarray<number> ] ): boolean;
 
 
 // EXPORTS //

@@ -18,6 +18,7 @@
 
 #include "stdlib/stats/base/dists/hypergeometric/stdev.h"
 #include "stdlib/math/base/special/sqrt.h"
+#include "stdlib/stats/base/dists/hypergeometric/variance.h"
 #include <stdint.h>
 
 /**
@@ -33,13 +34,5 @@
 * // returns ~0.829
 */
 double stdlib_base_dists_hypergeometric_stdev( const int32_t N, const int32_t K, const int32_t n ) {
-	double variance;
-	double p;
-
-	if (  N < 0 || K < 0 || n < 0 || K > N || n > N ) {
-		return 0.0/0.0; // NaN
-	}
-	p = (double)K / (double)N;
-	variance = n * p * ( 1.0-p ) * ( (double)(N-n)/(double)(N-1) );
-	return stdlib_base_sqrt( variance );
+	return stdlib_base_sqrt( stdlib_base_dists_hypergeometric_variance( N, K, n ) );
 }

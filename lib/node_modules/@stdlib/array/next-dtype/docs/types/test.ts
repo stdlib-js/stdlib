@@ -35,6 +35,7 @@ import nextDataType = require( './index' );
 
 	nextDataType( 'float64' ); // $ExpectType number
 	nextDataType( 'float32' ); // $ExpectType "float64"
+	nextDataType( 'float16' ); // $ExpectType "float32"
 
 	nextDataType( 'int32' ); // $ExpectType number
 	nextDataType( 'int16' ); // $ExpectType "int32"

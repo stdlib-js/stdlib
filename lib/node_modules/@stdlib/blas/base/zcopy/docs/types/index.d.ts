@@ -27,7 +27,7 @@ import { Complex128Array } from '@stdlib/types/array';
 */
 interface Routine {
 	/**
-	* Copies values from one complex double-precision floating-point vector to another complex double-precision floating-point vector.
+	* Copies values from one double-precision complex floating-point vector to another double-precision complex floating-point vector.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
@@ -48,7 +48,7 @@ interface Routine {
 	( N: number, x: Complex128Array, strideX: number, y: Complex128Array, strideY: number ): Complex128Array;
 
 	/**
-	* Copies values from one complex double-precision floating-point vector to another complex double-precision floating-point vector using alternative indexing semantics.
+	* Copies values from one double-precision complex floating-point vector to another double-precision complex floating-point vector using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
@@ -72,7 +72,7 @@ interface Routine {
 }
 
 /**
-* Copies values from one complex double-precision floating-point vector to another complex double-precision floating-point vector.
+* Copies values from one double-precision complex floating-point vector to another double-precision complex floating-point vector.
 *
 * @param N - number of indexed elements
 * @param x - input array

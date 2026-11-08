@@ -339,7 +339,7 @@ declare class BooleanArray implements BooleanArrayInterface {
 	* Returns an array element located at integer position (index) `i`, with support for both nonnegative and negative integer indices.
 	*
 	* @param i - element index
-	* @throws index argument must be a integer
+	* @throws index argument must be an integer
 	* @returns array element
 	*
 	* @example
@@ -660,9 +660,6 @@ declare class BooleanArray implements BooleanArrayInterface {
 	* arr.set( true, 2 );
 	*
 	* arr.forEach( log );
-	* // => 0: true
-	* // => 1: false
-	* // => 2: true
 	*/
 	forEach<U = unknown>( fcn: Callback<U>, thisArg?: ThisParameterType<Callback<U>> ): void;
 
@@ -1122,7 +1119,7 @@ declare class BooleanArray implements BooleanArrayInterface {
 	*
 	* arr.set( true, 0 );
 	* arr.set( false, 1 );
-	* arr.set( true, 1 );
+	* arr.set( true, 2 );
 	*
 	* var str = arr.toLocaleString();
 	* // returns 'true,false,true'
@@ -1181,7 +1178,7 @@ declare class BooleanArray implements BooleanArrayInterface {
 	* arr.set( false, 1 );
 	* arr.set( true, 2 );
 	*
-	* var out = arr.sort( compare );
+	* var out = arr.toSorted( compare );
 	* // returns <BooleanArray>
 	*
 	* var v = out.get( 0 );
@@ -1524,3 +1521,5 @@ declare var ctor: BooleanArrayConstructor;
 // EXPORTS //
 
 export = ctor;
+
+// eslint-doctest-alias: BooleanArray

@@ -151,14 +151,14 @@ import kumaraswamy = require( './index' );
 	kumaraswamy.factory( 2, 2, { 'prng': null } ); // $ExpectError
 	kumaraswamy.factory( 2, 2, { 'prng': [] } ); // $ExpectError
 	kumaraswamy.factory( 2, 2, { 'prng': {} } ); // $ExpectError
-	kumaraswamy.factory( 2, 2, { 'prng': true ); // $ExpectError
+	kumaraswamy.factory( 2, 2, { 'prng': true } ); // $ExpectError
 
 	kumaraswamy.factory( { 'prng': 123 } ); // $ExpectError
 	kumaraswamy.factory( { 'prng': 'abc' } ); // $ExpectError
 	kumaraswamy.factory( { 'prng': null } ); // $ExpectError
 	kumaraswamy.factory( { 'prng': [] } ); // $ExpectError
 	kumaraswamy.factory( { 'prng': {} } ); // $ExpectError
-	kumaraswamy.factory( { 'prng': true ); // $ExpectError
+	kumaraswamy.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -185,7 +185,7 @@ import kumaraswamy = require( './index' );
 	kumaraswamy.factory( 2, 2, { 'state': null } ); // $ExpectError
 	kumaraswamy.factory( 2, 2, { 'state': [] } ); // $ExpectError
 	kumaraswamy.factory( 2, 2, { 'state': {} } ); // $ExpectError
-	kumaraswamy.factory( 2, 2, { 'state': true ); // $ExpectError
+	kumaraswamy.factory( 2, 2, { 'state': true } ); // $ExpectError
 	kumaraswamy.factory( 2, 2, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	kumaraswamy.factory( { 'state': 123 } ); // $ExpectError
@@ -193,7 +193,7 @@ import kumaraswamy = require( './index' );
 	kumaraswamy.factory( { 'state': null } ); // $ExpectError
 	kumaraswamy.factory( { 'state': [] } ); // $ExpectError
 	kumaraswamy.factory( { 'state': {} } ); // $ExpectError
-	kumaraswamy.factory( { 'state': true ); // $ExpectError
+	kumaraswamy.factory( { 'state': true } ); // $ExpectError
 	kumaraswamy.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

@@ -70,7 +70,7 @@ interface IsNonPositiveFinite {
 	* Tests if a value is a number object having a nonpositive finite value.
 	*
 	* @param value - value to test
-	* @returns boolean indicating if a value is a number object having a nonpositive number value
+	* @returns boolean indicating if a value is a number object having a nonpositive finite number value
 	*
 	* @example
 	* var bool = isNonPositiveFinite.isObject( -3.0 );

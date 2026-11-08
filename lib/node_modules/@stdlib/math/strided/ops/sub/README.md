@@ -40,7 +40,7 @@ var sub = require( '@stdlib/math/strided/ops/sub' );
 
 #### sub( N, dtypeX, x, strideX, dtypeY, y, strideY, dtypeZ, z, strideZ )
 
-Subtracts each element in a strided array `x` to a corresponding element in a strided array `y` and assigns the results to elements in a strided array `z`.
+Subtracts each element in a strided array `y` from a corresponding element in a strided array `x` and assigns the results to elements in a strided array `z`.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -95,12 +95,12 @@ var y1 = new Float64Array( y0.buffer, y0.BYTES_PER_ELEMENT*3 ); // start at 4th 
 var z1 = new Float64Array( z0.buffer, z0.BYTES_PER_ELEMENT*2 ); // start at 3rd element
 
 sub( 3, 'float64', x1, -2, 'float64', y1, 1, 'float64', z1, 1 );
-// z0 => <Float64Array>[ 0.0, 0.0, -4.0, 0.0, -5.0, 0.0 ]
+// z0 => <Float64Array>[ 0.0, 0.0, -4.0, -10.0, -5.0, 0.0 ]
 ```
 
 #### sub.ndarray( N, dtypeX, x, strideX, offsetX, dtypeY, y, strideY, offsetY, dtypeZ, z, strideZ, offsetZ )
 
-Subtracts each element in a strided array `x` to a corresponding element in a strided array `y` and assigns the results to elements in a strided array `z` using alternative indexing semantics.
+Subtracts each element in a strided array `y` from a corresponding element in a strided array `x` and assigns the results to elements in a strided array `z` using alternative indexing semantics.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -129,7 +129,7 @@ var y = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var z = new Float64Array( x.length );
 
 sub.ndarray( 3, 'float64', x, 2, 1, 'float64', y, -1, y.length-1, 'float64', z, 1, 0 );
-// z => <Float64Array>[ -5.0, 0.0, -4.0, 0.0, 0.0, 0.0 ]
+// z => <Float64Array>[ -5.0, -10.0, -4.0, 0.0, 0.0, 0.0 ]
 ```
 
 </section>

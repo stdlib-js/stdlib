@@ -125,7 +125,7 @@ The function supports the following parameters:
 
 ## Examples
 
-<!-- eslint-disable node/no-process-exit -->
+<!-- eslint-disable n/no-process-exit -->
 
 <!-- eslint no-undef: "error" -->
 

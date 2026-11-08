@@ -1,0 +1,51 @@
+
+{{alias}}( x, dims, k, writable )
+    Returns a view of the diagonal of a matrix (or stack of matrices).
+
+    The order of the dimension indices contained in `dims` matters. The first
+    element specifies the row-like dimension. The second element specifies
+    the column-like dimension.
+
+    Each provided dimension index must reside on the interval [-ndims, ndims-1].
+
+    The diagonal offset `k` is interpreted as `column - row`. Accordingly,
+    when `k = 0`, the function returns the main diagonal; when `k > 0`, the
+    function returns the diagonal above the main diagonal; and when `k < 0`,
+    the function returns the diagonal below the main diagonal.
+
+    The returned ndarray is a *view* of the input ndarray. Accordingly,
+    writing to the original ndarray will mutate the returned ndarray and
+    vice versa.
+
+    The `writable` parameter only applies to ndarray constructors supporting
+    read-only instances.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    dims: ArrayLikeObject<integer>
+        Dimension indices defining the plane from which to extract the diagonal.
+
+    k: integer
+        Diagonal offset.
+
+    writable: boolean
+        Boolean indicating whether the returned ndarray should be writable.
+
+    Returns
+    -------
+    out: ndarray
+        Output array view.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] )
+    <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+    > var y = {{alias}}( x, [ 0, 1 ], 0, false )
+    <ndarray>[ 1.0, 4.0 ]
+
+    See Also
+    --------
+

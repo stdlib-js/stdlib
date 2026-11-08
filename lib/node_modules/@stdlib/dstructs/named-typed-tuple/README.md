@@ -1888,7 +1888,7 @@ var y = tuple[ 0 ];
 
 // Tuple field assignments do NOT change:
 x = tuple.x;
-// returns 0.0
+// returns 2.0
 ```
 
 By default, the method sorts tuple elements in ascending order. To impose a custom order, provide a `compareFunction`.

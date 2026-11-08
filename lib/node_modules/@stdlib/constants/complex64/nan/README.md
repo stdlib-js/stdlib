@@ -56,33 +56,14 @@ var im = imagf( COMPLEX64_NAN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 var Complex64Array = require( '@stdlib/array/complex64' );
 var COMPLEX64_NAN = require( '@stdlib/constants/complex64/nan' );
 
 var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
-// returns <Complex64Array>
-
-var v = x.get( 0 );
-// returns <Complex64>
-
-var re = realf( v );
-// returns 1.0
-
-var im = imagf( v );
-// returns 2.0
+// returns <Complex64Array>[ 1.0, 2.0, 3.0, 4.0 ]
 
 x.fill( COMPLEX64_NAN );
-
-v = x.get( 0 );
-// returns <Complex64>
-
-re = realf( v );
-// returns NaN
-
-im = imagf( v );
-// returns NaN
+// x => <Complex64Array>[ NaN, NaN, NaN, NaN ]
 ```
 
 </section>

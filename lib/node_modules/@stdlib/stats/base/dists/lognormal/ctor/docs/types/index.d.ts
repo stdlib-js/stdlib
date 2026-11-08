@@ -21,7 +21,7 @@
 /**
 * Lognormal distribution.
 */
-declare class Lognormal {
+declare class LogNormal {
 	/**
 	* Lognormal distribution constructor.
 	*
@@ -151,4 +151,4 @@ declare class Lognormal {
 
 // EXPORTS //
 
-export = Lognormal;
+export = LogNormal;

@@ -136,7 +136,6 @@ type UnaryWithOptions<T, U> = ( arrays: [ typedndarray<T> ], options: unknown, c
 * Strided reduction function.
 *
 * @param arrays - input ndarrays
-* @param options - function options
 * @param clbk - callback function
 * @param thisArg - callback function execution context
 * @returns result
@@ -147,6 +146,7 @@ type UnaryWithAdditionalArrays<T, U> = ( arrays: [ typedndarray<T>, ...Array<typ
 * Strided reduction function.
 *
 * @param arrays - input ndarrays
+* @param options - function options
 * @param clbk - callback function
 * @param thisArg - callback function execution context
 * @returns result

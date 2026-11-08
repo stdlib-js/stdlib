@@ -31,7 +31,7 @@ type Unary = ( x: number ) => number;
 */
 interface LogCDF {
 	/**
-	* Evaluates the logarithm of the cumulative distribution function (CDF) for a uniform distribution with minimum support `a` and maximum support `b` at a value `x`.
+	* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a uniform distribution with minimum support `a` and maximum support `b` at a value `x`.
 	*
 	* ## Notes
 	*

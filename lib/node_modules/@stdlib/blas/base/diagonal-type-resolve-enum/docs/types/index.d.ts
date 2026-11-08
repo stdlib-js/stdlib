@@ -29,7 +29,7 @@
 * @returns enumeration constant
 *
 * @example
-* var v = resolve( 'non-unit' );
+* var v = resolve( 'unit' );
 * // returns <number>
 */
 declare function resolve( value: any ): number | null;

@@ -62,8 +62,8 @@ interface LogCDF {
 	/**
 	* Returns a function for evaluating the natural logarithm of the cumulative distribution function (logCDF) of a degenerate distribution centered at a provided mean value.
 	*
-	* @param mu - value at which to center the distribution
-	* @returns logCDF
+	* @param mu - constant value of distribution
+	* @returns function to evaluate the natural logarithm of the cumulative distribution function
 	*
 	* @example
 	* var mylogcdf = logcdf.factory( 5.0 );

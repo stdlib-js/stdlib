@@ -103,18 +103,15 @@ var dmeanstdev = require( '@stdlib/stats/base/ndarray/dmeanstdev' );
 Computes the [arithmetic mean][arithmetic-mean] and [standard deviation][standard-deviation] of a one-dimensional double-precision floating-point ndarray.
 
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
+var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
 
 var opts = {
     'dtype': 'float64'
 };
 
-var xbuf = new Float64Array( [ 1.0, 3.0, 4.0, 2.0 ] );
-var x = new ndarray( opts.dtype, xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
-
-var out = new ndarray( opts.dtype, new Float64Array( 2 ), [ 2 ], [ 1 ], 0, 'row-major' );
+var x = new Float64Vector( [ 1.0, 3.0, 4.0, 2.0 ] );
+var out = new Float64Vector( 2 );
 
 var correction = scalar2ndarray( 1.0, opts );
 
@@ -124,11 +121,11 @@ var v = dmeanstdev( [ x, out, correction ] );
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing the following ndarrays in order:
+-   **arrays**: array-like object containing the following ndarrays:
 
-    1.  a one-dimensional input ndarray.
-    2.  a one-dimensional output ndarray to store the [mean][arithmetic-mean] and [standard deviation][standard-deviation].
-    3.  a zero-dimensional ndarray specifying the degrees of freedom adjustment. Setting this to a value other than `0` has the effect of adjusting the divisor during the calculation of the [standard deviation][standard-deviation] according to `N-c` where `c` corresponds to the provided degrees of freedom adjustment. When computing the [standard deviation][standard-deviation] of a population, setting this to `0` is the standard choice (i.e., the provided array contains data constituting an entire population). When computing the corrected sample [standard deviation][standard-deviation], setting this to `1` is the standard choice (i.e., the provided array contains data sampled from a larger population; this is commonly referred to as Bessel's correction).
+    -   a one-dimensional input ndarray.
+    -   a one-dimensional output ndarray to store the [mean][arithmetic-mean] and [standard deviation][standard-deviation].
+    -   a zero-dimensional ndarray specifying the degrees of freedom adjustment. Setting this to a value other than `0` has the effect of adjusting the divisor during the calculation of the [standard deviation][standard-deviation] according to `N-c` where `c` corresponds to the provided degrees of freedom adjustment. When computing the [standard deviation][standard-deviation] of a population, setting this to `0` is the standard choice (i.e., the provided array contains data constituting an entire population). When computing the corrected sample [standard deviation][standard-deviation], setting this to `1` is the standard choice (i.e., the provided array contains data sampled from a larger population; this is commonly referred to as Bessel's correction).
 
 </section>
 
@@ -152,10 +149,9 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var Float64Array = require( '@stdlib/array/float64' );
+var discreteUniform = require( '@stdlib/random/discrete-uniform' );
+var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var dmeanstdev = require( '@stdlib/stats/base/ndarray/dmeanstdev' );
 
@@ -163,12 +159,10 @@ var opts = {
     'dtype': 'float64'
 };
 
-var xbuf = discreteUniform( 10, -50, 50, opts );
-var x = new ndarray( opts.dtype, xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+var x = discreteUniform( [ 10 ], -50, 50, opts );
 console.log( ndarray2array( x ) );
 
-var out = new ndarray( opts.dtype, new Float64Array( 2 ), [ 2 ], [ 1 ], 0, 'row-major' );
-
+var out = new Float64Vector( 2 );
 var correction = scalar2ndarray( 1.0, opts );
 
 var v = dmeanstdev( [ x, out, correction ] );

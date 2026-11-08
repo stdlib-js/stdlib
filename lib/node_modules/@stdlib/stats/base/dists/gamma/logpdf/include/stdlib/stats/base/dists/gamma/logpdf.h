@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the logarithm of the probability density function (PDF) for a gamma distribution with shape parameter `alpha` and rate parameter `beta` at a value `x`.
+* Evaluates the natural logarithm of the probability density function (PDF) for a gamma distribution with shape parameter `alpha` and rate parameter `beta` at a value `x`.
 */
 double stdlib_base_dists_gamma_logpdf( const double x, const double alpha, const double beta );
 

@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/blas/ext/base/ndarray/ssumors",
   "version": "0.0.0",
-  "description": "Compute the sum of a one-dimensional single-precision floating-point ndarray using ordinary recursive summation.",
+  "description": "Compute the sum of all elements in a one-dimensional single-precision floating-point ndarray using ordinary recursive summation.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

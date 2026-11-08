@@ -21,14 +21,14 @@
 /// <reference types="@stdlib/types"/>
 
 /**
-* If provided a value, the accumulator function returns an updated accumulated value. If not provided a value, the accumulator function returns the current accumulated value.
+* If provided a value, returns an updated moving coefficient of variation; otherwise, returns the current moving coefficient of variation.
 *
 * ## Notes
 *
 * -   If provided `NaN` or a value which, when used in computations, results in `NaN`, the accumulated value is `NaN` for all future invocations.
 *
 * @param x - value
-* @returns accumulated value or null
+* @returns moving coefficient of variation
 */
 type accumulator = ( x?: number ) => number | null;
 

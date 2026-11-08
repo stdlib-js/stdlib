@@ -28,7 +28,7 @@ limitations under the License.
 
 The [standard deviation][standard-deviation] for a [half-normal][half-normal-distribution] random variable is
 
-<!-- <equation class="equation" label="eq:half_normal_stdev" align="center" raw="\sigma \sqrt{1-\frac{2}{\pi}}" alt="Standard deviation for a half-normal distribution."> -->
+<!-- <equation class="equation" label="eq:halfnormal_stdev" align="center" raw="\sigma \sqrt{1-\frac{2}{\pi}}" alt="Standard deviation for a half-normal distribution."> -->
 
 ```math
 \sigma \sqrt{1-\frac{2}{\pi}}

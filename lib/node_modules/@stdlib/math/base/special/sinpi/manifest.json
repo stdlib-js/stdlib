@@ -46,7 +46,8 @@
         "@stdlib/math/base/special/abs",
         "@stdlib/math/base/special/copysign",
         "@stdlib/math/base/special/fmod",
-        "@stdlib/constants/float64/pi"
+        "@stdlib/constants/float64/pi",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -69,7 +70,8 @@
         "@stdlib/math/base/special/abs",
         "@stdlib/math/base/special/copysign",
         "@stdlib/math/base/special/fmod",
-        "@stdlib/constants/float64/pi"
+        "@stdlib/constants/float64/pi",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -92,7 +94,8 @@
         "@stdlib/math/base/special/abs",
         "@stdlib/math/base/special/copysign",
         "@stdlib/math/base/special/fmod",
-        "@stdlib/constants/float64/pi"
+        "@stdlib/constants/float64/pi",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

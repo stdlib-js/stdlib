@@ -70,6 +70,16 @@ var num = dayOfQuarter( new Date() );
 
 <!-- /.usage -->
 
+<section class="notes">
+
+## Notes
+
+-   The function's return value is a generalization and does **not** take into account inaccuracies due to daylight savings conventions, crossing timezones, or other complications with time and dates.
+
+</section>
+
+<!-- /.notes -->
+
 <section class="examples">
 
 ## Examples

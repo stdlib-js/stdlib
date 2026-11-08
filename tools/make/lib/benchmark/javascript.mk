@@ -36,7 +36,7 @@
 # make benchmark-javascript BENCHMARKS_FILTER=".*/utils/group-by/.*"
 #/
 benchmark-javascript: $(NODE_MODULES)
-	$(QUIET) $(FIND_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+	$(QUIET) $(FIND_BENCHMARKS_CMD) | { grep '^[\/]\|^[a-zA-Z]:[/\]' || true; } | while read -r file; do \
 		echo ""; \
 		echo "Running benchmark: $$file"; \
 		NODE_ENV="$(NODE_ENV_BENCHMARK)" \

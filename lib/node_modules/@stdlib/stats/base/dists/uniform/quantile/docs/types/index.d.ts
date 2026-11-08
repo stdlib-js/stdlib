@@ -82,7 +82,7 @@ interface Quantile {
 	( p: number, a: number, b: number ): number;
 
 	/**
-	* Returns a function for evaluating the quantile function for a uniform distribution with minimum support `a` an maximum support `b`.
+	* Returns a function for evaluating the quantile function for a uniform distribution with minimum support `a` and maximum support `b`.
 	*
 	* @param a - minimum support
 	* @param b - maximum support

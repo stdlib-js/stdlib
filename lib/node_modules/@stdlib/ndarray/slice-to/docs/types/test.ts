@@ -30,6 +30,7 @@ import sliceTo = require( './index' );
 
 	sliceTo( empty( 'float64', sh, order ), s ); // $ExpectType float64ndarray
 	sliceTo( empty( 'float32', sh, order ), s ); // $ExpectType float32ndarray
+	sliceTo( empty( 'float16', sh, order ), s ); // $ExpectType float16ndarray
 	sliceTo( empty( 'complex128', sh, order ), s ); // $ExpectType complex128ndarray
 	sliceTo( empty( 'complex64', sh, order ), s ); // $ExpectType complex64ndarray
 	sliceTo( empty( 'int32', sh, order ), s ); // $ExpectType int32ndarray
@@ -42,6 +43,7 @@ import sliceTo = require( './index' );
 
 	sliceTo( empty( 'float64', sh, order ), 1, null ); // $ExpectType float64ndarray
 	sliceTo( empty( 'float32', sh, order ), 1, null ); // $ExpectType float32ndarray
+	sliceTo( empty( 'float16', sh, order ), 1, null ); // $ExpectType float16ndarray
 	sliceTo( empty( 'complex128', sh, order ), 1, null ); // $ExpectType complex128ndarray
 	sliceTo( empty( 'complex64', sh, order ), 1, null ); // $ExpectType complex64ndarray
 	sliceTo( empty( 'int32', sh, order ), 1, null ); // $ExpectType int32ndarray
@@ -54,6 +56,7 @@ import sliceTo = require( './index' );
 
 	sliceTo( empty( 'float64', sh, order ), s, { 'strict': false } ); // $ExpectType float64ndarray
 	sliceTo( empty( 'float32', sh, order ), s, { 'strict': false } ); // $ExpectType float32ndarray
+	sliceTo( empty( 'float16', sh, order ), s, { 'strict': false } ); // $ExpectType float16ndarray
 	sliceTo( empty( 'complex128', sh, order ), s, { 'strict': false } ); // $ExpectType complex128ndarray
 	sliceTo( empty( 'complex64', sh, order ), s, { 'strict': false } ); // $ExpectType complex64ndarray
 	sliceTo( empty( 'int32', sh, order ), s, { 'strict': false } ); // $ExpectType int32ndarray
@@ -66,6 +69,7 @@ import sliceTo = require( './index' );
 
 	sliceTo( empty( 'float64', sh, order ), 1, null, { 'strict': false } ); // $ExpectType float64ndarray
 	sliceTo( empty( 'float32', sh, order ), 1, null, { 'strict': false } ); // $ExpectType float32ndarray
+	sliceTo( empty( 'float16', sh, order ), 1, null, { 'strict': false } ); // $ExpectType float16ndarray
 	sliceTo( empty( 'complex128', sh, order ), 1, null, { 'strict': false } ); // $ExpectType complex128ndarray
 	sliceTo( empty( 'complex64', sh, order ), 1, null, { 'strict': false } ); // $ExpectType complex64ndarray
 	sliceTo( empty( 'int32', sh, order ), 1, null, { 'strict': false } ); // $ExpectType int32ndarray

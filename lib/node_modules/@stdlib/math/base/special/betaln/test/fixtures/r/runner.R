@@ -17,7 +17,7 @@
 # limitations under the License.
 
 # Set the precision to 22 digits:
-options( digits = 22 );
+options( digits = 22L );
 
 #' Generate test fixtures.
 #'
@@ -32,19 +32,19 @@ main <- function() {
 	#' filepath <- get_script_path();
 	get_script_path <- function() {
 		args <- commandArgs( trailingOnly = FALSE );
-		needle <- "--file=";
+		needle <- '--file=';
 		match <- grep( needle, args );
-		if ( length( match ) > 0 ) {
+		if ( length( match ) > 0L ) {
 			# Rscript:
-			filepath <- sub( needle, "", args[match] );
+			filepath <- sub( needle, '', args[match] );
 		} else {
-			ls_vars <- ls( sys.frames()[[1]] )
-			if ( "fileName" %in% ls_vars ) {
+			ls_vars <- ls( sys.frames()[[1L]] )
+			if ( 'fileName' %in% ls_vars ) {
 				# Source'd via RStudio:
-				filepath <- sys.frames()[[1]]$fileName; # nolint
+				filepath <- sys.frames()[[1L]]$fileName; # nolint
 			} else {
 				# Source'd via R console:
-				filepath <- sys.frames()[[1]]$ofile;
+				filepath <- sys.frames()[[1L]]$ofile;
 			}
 		}
 		return( normalizePath( filepath ) );
@@ -56,10 +56,10 @@ main <- function() {
 	#' @return JSON blob
 	#'
 	#' @examples
-	#' x <- seq( -6.5, 25, 0.5 );
+	#' x <- seq( -6.5, 25.0, 0.5 );
 	#' json <- to_json( x );
 	to_json <- function( x ) {
-		return( jsonlite::toJSON( x, digits = 18, auto_unbox = TRUE ) );
+		return( jsonlite::toJSON( x, digits = 18L, auto_unbox = TRUE ) );
 	}
 
 	#' Generate an output absolute filepath based on the script directory.
@@ -68,9 +68,9 @@ main <- function() {
 	#' @return An absolute filepath
 	#'
 	#' @examples
-	#' filepath <- get_filepath( "data.json" );
+	#' filepath <- get_filepath( 'data.json' );
 	get_filepath <- function( name ) {
-		return( paste( source_dir, "/", name, sep = "" ) );
+		return( paste( source_dir, '/', name, sep = '' ) );
 	}
 
 	# Get the directory of this script:
@@ -78,13 +78,14 @@ main <- function() {
 
 	# Generate test fixture data:
 
-	# TODO: better and more comprehensive tests
-	x <- sample( seq( 0.5, 100.0, by = 0.25 ), 1000, replace = TRUE );
-	y <- sample( seq( 0.5, 100.0, by = 0.25 ), 1000, replace = TRUE );
+	# TODO: better and more comprehensive tests # nolint: todo_comment_linter.
+	set.seed( 2068L );
+	x <- sample( seq( 0.5, 100.0, by = 0.25 ), 1000L, replace = TRUE );
+	y <- sample( seq( 0.5, 100.0, by = 0.25 ), 1000L, replace = TRUE );
 	z <- lbeta( x, y );
 
 	# Deal with NaNs:
-	cat( y, sep = ",\n" );
+	cat( y, sep = ',\n' );
 
 	# Convert fixture data to JSON:
 	x <- to_json( x );
@@ -92,13 +93,13 @@ main <- function() {
 	z <- to_json( z );
 
 	# Write the data to file...
-	filepath <- get_filepath( "arg1.json" );
+	filepath <- get_filepath( 'arg1.json' );
 	write( x, filepath );
 
-	filepath <- get_filepath( "arg2.json" );
+	filepath <- get_filepath( 'arg2.json' );
 	write( y, filepath );
 
-	filepath <- get_filepath( "expected.json" );
+	filepath <- get_filepath( 'expected.json' );
 	write( z, filepath );
 }
 

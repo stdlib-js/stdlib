@@ -20,7 +20,7 @@
 #include "stdlib/blas/base/shared.h"
 
 /**
-* Interchanges two complex double-precision floating-point vectors using alternative indexing semantics.
+* Interchanges two double-precision complex floating-point vectors using alternative indexing semantics.
 *
 * @param N        number of indexed elements
 * @param X        first input array

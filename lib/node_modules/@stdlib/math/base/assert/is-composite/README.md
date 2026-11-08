@@ -103,7 +103,7 @@ bool = isComposite( NaN );
 ### Usage
 
 ```c
-#include "stdlib/math/base/special/is_composite.h"
+#include "stdlib/math/base/assert/is_composite.h"
 ```
 
 #### stdlib_base_is_composite( x )

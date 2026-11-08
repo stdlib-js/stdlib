@@ -22,6 +22,7 @@
 
 var resolve = require( 'path' ).resolve;
 var bench = require( '@stdlib/bench' );
+var format = require( '@stdlib/string/format' );
 var tryRequire = require( '@stdlib/utils/try-require' );
 var pkg = require( './../package.json' ).name;
 
@@ -36,7 +37,7 @@ var opts = {
 
 // MAIN //
 
-bench( pkg+'::native', opts, function benchmark( b ) {
+bench( format( '%s::native', pkg ), opts, function benchmark( b ) {
 	var i;
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {

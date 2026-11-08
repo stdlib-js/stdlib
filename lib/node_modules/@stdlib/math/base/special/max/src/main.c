@@ -20,6 +20,7 @@
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/assert/is_positive_zero.h"
 #include "stdlib/constants/float64/pinf.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Returns the maximum value.
@@ -38,7 +39,7 @@
 */
 double stdlib_base_max( const double x, const double y ) {
 	if ( stdlib_base_is_nan( x ) || stdlib_base_is_nan( y ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( x == STDLIB_CONSTANT_FLOAT64_PINF || y == STDLIB_CONSTANT_FLOAT64_PINF ) {
 		return STDLIB_CONSTANT_FLOAT64_PINF;

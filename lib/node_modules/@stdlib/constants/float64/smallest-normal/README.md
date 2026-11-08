@@ -30,7 +30,7 @@ limitations under the License.
 var FLOAT64_SMALLEST_NORMAL = require( '@stdlib/constants/float64/smallest-normal' );
 ```
 
-##### FLOAT64_SMALLEST_NORMAL
+#### FLOAT64_SMALLEST_NORMAL
 
 Smallest positive **normalized** [double-precision floating-point number][ieee754].
 

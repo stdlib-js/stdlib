@@ -24,7 +24,7 @@
         Options.
 
     options.dtype: string|DataType (optional)
-        Array data type. Must be a real-valued or "generic" data type.
+        Array data type. Must be a real or "generic" data type.
 
     options.order: string (optional)
         Specifies whether an array is row-major (C-style) or column-major

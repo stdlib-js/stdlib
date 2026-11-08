@@ -476,7 +476,8 @@ interface Namespace {
 	* v = it.next().value;
 	* // returns true
 	*
-	* // ..
+	* var bool = it.next().done;
+	* // returns true
 	*/
 	iterCuSome: typeof iterCuSome;
 
@@ -484,7 +485,7 @@ interface Namespace {
 	* Returns an iterator which cumulatively tests whether at least `n` iterated values pass a test implemented by a predicate function.
 	*
 	* @param iterator - source iterator
-	* @param n - minimum number of truthy elements
+	* @param n - minimum number of successful values
 	* @param predicate - predicate function
 	* @param thisArg - execution context
 	* @returns iterator
@@ -525,7 +526,7 @@ interface Namespace {
 	* @param start - starting date as either a `Date` object, JavaScript timestamp, or a date string (inclusive)
 	* @param stop - stopping date as either a `Date` object, JavaScript timestamp, or a date string (inclusive)
 	* @param options - function options
-	* @param options.round - specifies how sub-millisecond times should be rounded: 'floor', 'ceil', or 'round' (default: 'floor' )
+	* @param options.round - specifies how sub-millisecond times should be rounded: 'floor', 'ceil', or 'round' (default: 'floor')
 	* @throws a numeric `start` argument must be a nonnegative integer
 	* @throws a numeric `stop` argument must be a nonnegative integer
 	* @throws unable to parse date string
@@ -661,7 +662,7 @@ interface Namespace {
 	* // returns 2
 	*
 	* r = it.next().value;
-	* // undefined
+	* // returns undefined
 	*
 	* // ...
 	*/
@@ -669,7 +670,7 @@ interface Namespace {
 
 	/**
 	* Returns an iterator which invokes a function for each iterated value **before** returning the iterated value until either a predicate function returns `false` or the iterator has iterated over all values.
-	* The condition is evaluated *after* executing the provided function; thus, fcn` *always* executes at least once.
+	* The condition is evaluated *after* executing the provided function; thus, `fcn` *always* executes at least once.
 	*
 	* ## Notes
 	*
@@ -780,7 +781,7 @@ interface Namespace {
 	*
 	* @param iterator - input iterator
 	* @param value - static (fill) value
-	* @param begin - start iteration index (inclusive)
+	* @param begin - start iteration index (inclusive; default: 0)
 	* @param end - end iteration index (non-inclusive)
 	* @returns iterator
 	*
@@ -1537,7 +1538,7 @@ interface Namespace {
 	iterReplicate: typeof iterReplicate;
 
 	/**
-	* Returns an iterator which invokes a function for each iterated value.
+	* Returns an iterator which replicates each iterated value according to a provided function.
 	*
 	* ## Notes
 	*
@@ -1724,7 +1725,7 @@ interface Namespace {
 	* @param iterator - input iterator
 	* @param stride - stride
 	* @param offset - offset
-	* @param eager - boolean indicating whether to eagerly advance an input iterator when provided a non-zero `offset`
+	* @param eager - boolean indicating whether to eagerly advance an input iterator when provided a non-zero `offset` (default: false)
 	* @returns iterator
 	*
 	* @example

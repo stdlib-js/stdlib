@@ -1,0 +1,50 @@
+
+{{alias}}( arrays )
+    Performs one of the matrix-vector operations `y = alpha*A*x + beta*y`
+    or `y = alpha*A^T*x + beta*y`, where `alpha` and `beta` are scalars, `x`
+    and `y` are one-dimensional ndarrays, and `A` is an `M` by `N` matrix.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a two-dimensional input ndarray corresponding to `A`.
+        - a one-dimensional input ndarray corresponding to `x`.
+        - a one-dimensional input/output ndarray corresponding to `y`.
+        - a zero-dimensional ndarray specifying whether `A` should be
+        transposed, conjugate-transposed, or not transposed.
+        - a zero-dimensional ndarray containing a scalar constant corresponding
+        to `alpha`.
+        - a zero-dimensional ndarray containing a scalar constant corresponding
+        to `beta`.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var abuf = [ [ 1.0, 2.0, 3.0 ], [ 4.0, 5.0, 6.0 ] ];
+    > var A = new {{alias:@stdlib/ndarray/matrix/float32}}( abuf );
+
+    > var xbuf = [ 1.0, 2.0, 3.0 ];
+    > var x = new {{alias:@stdlib/ndarray/vector/float32}}( xbuf );
+
+    > var ybuf = [ 4.0, 5.0 ];
+    > var y = new {{alias:@stdlib/ndarray/vector/float32}}( ybuf );
+
+    > var opts = { 'dtype': 'float32' };
+    > var alpha = {{alias:@stdlib/ndarray/from-scalar}}( 1.0, opts );
+    > var beta = {{alias:@stdlib/ndarray/from-scalar}}( 1.0, opts );
+
+    > var trans = {{alias:@stdlib/ndarray/from-scalar}}( 'no-transpose' );
+
+    > {{alias}}( [ A, x, y, trans, alpha, beta ] );
+    > y
+    <ndarray>[ 18.0, 37.0 ]
+
+    See Also
+    --------
+

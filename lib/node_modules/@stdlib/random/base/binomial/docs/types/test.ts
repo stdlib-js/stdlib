@@ -151,14 +151,14 @@ import binomial = require( './index' );
 	binomial.factory( 20, 0.3, { 'prng': null } ); // $ExpectError
 	binomial.factory( 20, 0.3, { 'prng': [] } ); // $ExpectError
 	binomial.factory( 20, 0.3, { 'prng': {} } ); // $ExpectError
-	binomial.factory( 20, 0.3, { 'prng': true ); // $ExpectError
+	binomial.factory( 20, 0.3, { 'prng': true } ); // $ExpectError
 
 	binomial.factory( { 'prng': 123 } ); // $ExpectError
 	binomial.factory( { 'prng': 'abc' } ); // $ExpectError
 	binomial.factory( { 'prng': null } ); // $ExpectError
 	binomial.factory( { 'prng': [] } ); // $ExpectError
 	binomial.factory( { 'prng': {} } ); // $ExpectError
-	binomial.factory( { 'prng': true ); // $ExpectError
+	binomial.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -185,7 +185,7 @@ import binomial = require( './index' );
 	binomial.factory( 20, 0.3, { 'state': null } ); // $ExpectError
 	binomial.factory( 20, 0.3, { 'state': [] } ); // $ExpectError
 	binomial.factory( 20, 0.3, { 'state': {} } ); // $ExpectError
-	binomial.factory( 20, 0.3, { 'state': true ); // $ExpectError
+	binomial.factory( 20, 0.3, { 'state': true } ); // $ExpectError
 	binomial.factory( 20, 0.3, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	binomial.factory( { 'state': 123 } ); // $ExpectError
@@ -193,7 +193,7 @@ import binomial = require( './index' );
 	binomial.factory( { 'state': null } ); // $ExpectError
 	binomial.factory( { 'state': [] } ); // $ExpectError
 	binomial.factory( { 'state': {} } ); // $ExpectError
-	binomial.factory( { 'state': true ); // $ExpectError
+	binomial.factory( { 'state': true } ); // $ExpectError
 	binomial.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

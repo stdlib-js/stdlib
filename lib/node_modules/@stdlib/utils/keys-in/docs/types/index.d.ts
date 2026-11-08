@@ -25,8 +25,8 @@
 *
 * -   Name order is not guaranteed, as object key enumeration is not specified according to the ECMAScript specification. In practice, however, most engines use insertion order to sort an object's keys, thus allowing for deterministic extraction.
 *
-* @param obj - input value
-* @returns key array
+* @param obj - input object
+* @returns a list of an object's own and inherited enumerable property names
 *
 * @example
 * function Foo() {

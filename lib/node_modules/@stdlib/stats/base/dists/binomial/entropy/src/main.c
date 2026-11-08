@@ -38,7 +38,7 @@
 * // returns NaN
 *
 * @example
-* double v = stdlib_base_dists_binomial_entropy( 20, NAN );
+* double v = stdlib_base_dists_binomial_entropy( 20, 0.0/0.0 );
 * // returns NaN
 */
 double stdlib_base_dists_binomial_entropy( const int32_t n, const double p ) {

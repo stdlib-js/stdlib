@@ -62,9 +62,7 @@ interface Routine {
 	* var y = new Complex128Array( x.length );
 	*
 	* zmap( x.length, x, 1, y, 1, scale );
-	*
-	* var v = y.get( 0 );
-	* // returns <Complex128>[ 10.0, 10.0 ]
+	* // y => <Complex128Array>[ 10.0, 10.0, 20.0, 20.0, 30.0, 30.0, 40.0, 40.0, 50.0, 50.0 ]
 	*/
 	( N: number, x: Complex128Array, strideX: number, y: Complex128Array, strideY: number, fcn: Unary ): Complex128Array;
 
@@ -97,9 +95,7 @@ interface Routine {
 	* var y = new Complex128Array( x.length );
 	*
 	* zmap.ndarray( x.length, x, 1, 0, y, 1, 0, scale );
-	*
-	* var v = y.get( 0 );
-	* // returns <Complex128>[ 10.0, 10.0 ]
+	* // y => <Complex128Array>[ 10.0, 10.0, 20.0, 20.0, 30.0, 30.0, 40.0, 40.0, 50.0, 50.0 ]
 	*/
 	ndarray( N: number, x: Complex128Array, strideX: number, offsetX: number, y: Complex128Array, strideY: number, offsetY: number, fcn: Unary ): Complex128Array;
 }
@@ -131,9 +127,7 @@ interface Routine {
 * var y = new Complex128Array( x.length );
 *
 * zmap( x.length, x, 1, y, 1, scale );
-*
-* var v = y.get( 0 );
-* // returns <Complex128>[ 10.0, 10.0 ]
+* // y => <Complex128Array>[ 10.0, 10.0, 20.0, 20.0, 30.0, 30.0, 40.0, 40.0, 50.0, 50.0 ]
 *
 * @example
 * var Complex128Array = require( '@stdlib/array/complex128' );
@@ -151,9 +145,7 @@ interface Routine {
 * var y = new Complex128Array( x.length );
 *
 * zmap.ndarray( x.length, x, 1, 0, y, 1, 0, scale );
-*
-* var v = y.get( 0 );
-* // returns <Complex128>[ 10.0, 10.0 ]
+* // y => <Complex128Array>[ 10.0, 10.0, 20.0, 20.0, 30.0, 30.0, 40.0, 40.0, 50.0, 50.0 ]
 */
 declare var zmap: Routine;
 

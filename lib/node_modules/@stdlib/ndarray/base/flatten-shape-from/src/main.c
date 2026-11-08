@@ -35,7 +35,7 @@
 * const int64_t shape[] = { 2, 3, 10 };
 * int64_t out[ 2 ];
 *
-* stdlib_ndarray_flatten_shape( ndims, shape, 1, out );
+* stdlib_ndarray_flatten_shape_from( ndims, shape, 1, out );
 */
 int8_t stdlib_ndarray_flatten_shape_from( const int64_t ndims, const int64_t *shape, const int64_t dim, int64_t *out ) {
 	int64_t d;

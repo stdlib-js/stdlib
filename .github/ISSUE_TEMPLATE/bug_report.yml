@@ -57,7 +57,6 @@ body:
         - a
         - b
         - c
-      render: shell
   - type: textarea
     id: expected
     attributes:
@@ -86,12 +85,14 @@ body:
       options:
         - N/A
         - Node.js
+        - Deno
         - Firefox
         - Chrome
         - Safari
         - Microsoft Edge
         - Internet Explorer
         - Other Browser
+        - Other Server Runtime
     validations:
       required: true
   - type: input

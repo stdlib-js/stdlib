@@ -29,14 +29,10 @@ interface Options {
 }
 
 /**
-* Returns a boolean indicating whether an object has a nested key path, either own or inherited.
+* Tests whether an object has a nested key path, either own or inherited.
 *
 * @param value - value to test
 * @returns boolean indicating whether an object has a nested property
-*
-* @example
-* var obj = { 'a': { 'b': { 'c': 'd' } } };
-* var bool = deepHasProp( obj, 'a' );
 */
 type HasFunction = ( value: any ) => boolean;
 
@@ -114,9 +110,12 @@ interface DeepHasProp {
 	* @returns function which tests whether an object has a nested key path
 	*
 	* @example
+	* var obj = { 'a': { 'b': { 'c': 'd' } } };
 	* var has = deepHasProp.factory( 'a/b/c', {
 	*     'sep': '/'
 	* });
+	* var bool = has( obj );
+	* // returns true
 	*/
 	factory( path: string | Array<string>, options?: Options ): HasFunction;
 }

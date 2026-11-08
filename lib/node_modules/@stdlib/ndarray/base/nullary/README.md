@@ -193,6 +193,8 @@ void stdlib_ndarray_f_as_d(...) {...}
 
 is a function which accepts one single-precision floating-point output ndarray. However, the callback returns double-precision floating-point numbers. Accordingly, the output values need to be cast using the following conversion sequence
 
+<!-- run-disable -->
+
 ```c
 // Evaluate the callback:
 double out = f();

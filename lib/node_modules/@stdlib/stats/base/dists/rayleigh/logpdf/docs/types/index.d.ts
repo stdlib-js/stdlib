@@ -31,7 +31,7 @@ type Unary = ( x: number ) => number;
 */
 interface LogPDF {
 	/**
-	* Evaluates the logarithm of the probability density function (PDF) for a Rayleigh distribution with scale parameter `sigma` at a value `x`.
+	* Evaluates the natural logarithm of the probability density function (PDF) for a Rayleigh distribution with scale parameter `sigma` at a value `x`.
 	*
 	* ## Notes
 	*

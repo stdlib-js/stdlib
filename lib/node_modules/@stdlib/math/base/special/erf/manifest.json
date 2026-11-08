@@ -43,7 +43,8 @@
         "@stdlib/constants/float64/ninf",
         "@stdlib/constants/float64/pinf",
         "@stdlib/math/base/special/exp",
-        "@stdlib/number/float64/base/set-low-word"
+        "@stdlib/number/float64/base/set-low-word",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -62,7 +63,8 @@
         "@stdlib/constants/float64/ninf",
         "@stdlib/constants/float64/pinf",
         "@stdlib/math/base/special/exp",
-        "@stdlib/number/float64/base/set-low-word"
+        "@stdlib/number/float64/base/set-low-word",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -81,7 +83,8 @@
         "@stdlib/constants/float64/ninf",
         "@stdlib/constants/float64/pinf",
         "@stdlib/math/base/special/exp",
-        "@stdlib/number/float64/base/set-low-word"
+        "@stdlib/number/float64/base/set-low-word",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -100,7 +103,8 @@
         "@stdlib/constants/float64/ninf",
         "@stdlib/constants/float64/pinf",
         "@stdlib/math/base/special/exp",
-        "@stdlib/number/float64/base/set-low-word"
+        "@stdlib/number/float64/base/set-low-word",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

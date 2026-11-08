@@ -27,7 +27,7 @@ import { float64ndarray } from '@stdlib/types/ndarray';
 *
 * ## Notes
 *
-* -   The function expects the following ndarrays in order:
+* -   The function expects the following ndarrays:
 *
 *     -   first one-dimensional input ndarray.
 *     -   second one-dimensional input ndarray.
@@ -35,23 +35,19 @@ import { float64ndarray } from '@stdlib/types/ndarray';
 *     -   a zero-dimensional ndarray specifying the mean of the first one-dimensional ndarray.
 *     -   a zero-dimensional ndarray specifying the mean of the second one-dimensional ndarray.
 *
-* @param arrays - array-like object containing input ndarrays
+* @param arrays - array-like object containing ndarrays
 * @returns covariance
 *
 * @example
-* var Float64Array = require( '@stdlib/array/float64' );
+* var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
 * var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
 *
 * var opts = {
 *     'dtype': 'float64'
 * };
 *
-* var xbuf = new Float64Array( [ 1.0, -2.0, 2.0 ] );
-* var x = new ndarray( opts.dtype, xbuf, [ 3 ], [ 1 ], 0, 'row-major' );
-*
-* var ybuf = new Float64Array( [ 2.0, -2.0, 1.0 ] );
-* var y = new ndarray( opts.dtype, ybuf, [ 3 ], [ 1 ], 0, 'row-major' );
+* var x = new Float64Vector( [ 1.0, -2.0, 2.0 ] );
+* var y = new Float64Vector( [ 2.0, -2.0, 1.0 ] );
 *
 * var correction = scalar2ndarray( 1.0, opts );
 * var meanx = scalar2ndarray( 1.0/3.0, opts );

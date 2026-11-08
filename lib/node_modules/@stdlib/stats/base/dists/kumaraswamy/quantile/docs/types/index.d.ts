@@ -111,7 +111,7 @@ interface Quantile {
 /**
 * Kumaraswamy's double bounded distribution quantile function.
 *
-* @param x - input value
+* @param p - input probability
 * @param a - first shape parameter
 * @param b - second shape parameter
 * @returns evaluated quantile function

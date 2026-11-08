@@ -19,4 +19,4 @@
 #include "stdlib/stats/base/dists/binomial/mode.h"
 #include "stdlib/math/base/napi/binary.h"
 
-STDLIB_MATH_BASE_NAPI_MODULE_ID_D( stdlib_base_dists_binomial_mode );
+STDLIB_MATH_BASE_NAPI_MODULE_ID_D( stdlib_base_dists_binomial_mode )

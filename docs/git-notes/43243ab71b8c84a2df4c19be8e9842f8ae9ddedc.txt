@@ -1,0 +1,11 @@
+---
+type: amend-message
+---
+chore: fix JavaScript lint errors
+
+PR-URL: #10731
+Closes: #10017
+
+Assisted-by: Claude Opus 4.6 <noreply@anthropic.com>
+Assisted-by: Egger <egger@horny-toad.com>
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>

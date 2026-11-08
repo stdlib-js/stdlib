@@ -98,7 +98,7 @@ void API_SUFFIX(stdlib_strided_dztest_ndarray)( const CBLAS_INT N, const enum ST
 	stderr = sigma / stdlib_base_sqrt( (double)N );
 
 	// Compute the arithmetic mean of the input array:
-	xmean = stdlib_strided_dmean_ndarray( N, X, strideX, offsetX );
+	xmean = API_SUFFIX(stdlib_strided_dmean_ndarray)( N, X, strideX, offsetX );
 
 	// Compute the test statistic (i.e., the z-score, which is the distance of the sample mean from the population mean in units of standard error):
 	stat = ( xmean - mu ) / stderr;

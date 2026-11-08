@@ -10,7 +10,7 @@
     "forceConsistentCasingInFileNames": true,
     "keyofStringsOnly": false,
     "lib": [
-      "es6"
+      "esnext"
     ],
     "module": "commonjs",
     "moduleResolution": "node",

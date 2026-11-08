@@ -115,7 +115,7 @@ console.log( 'Accessor protocol: %s', bool );
 
 // Retrieve an array element:
 var v = obj.accessors[ 0 ]( x, 1 );
-// returns <Complex64>
+// returns <Complex64>[ 2.0, 3.0 ]
 
 console.log( 'x[1] = %s', v.toString() );
 ```

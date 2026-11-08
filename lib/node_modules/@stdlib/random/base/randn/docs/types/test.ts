@@ -64,7 +64,7 @@ import randn = require( './index' );
 	randn.factory( { 'name': null } ); // $ExpectError
 	randn.factory( { 'name': [] } ); // $ExpectError
 	randn.factory( { 'name': {} } ); // $ExpectError
-	randn.factory( { 'name': true ); // $ExpectError
+	randn.factory( { 'name': true } ); // $ExpectError
 	randn.factory( { 'name': ( x: number ): number => x } ); // $ExpectError
 }
 
@@ -75,7 +75,7 @@ import randn = require( './index' );
 	randn.factory( { 'prng': null } ); // $ExpectError
 	randn.factory( { 'prng': [] } ); // $ExpectError
 	randn.factory( { 'prng': {} } ); // $ExpectError
-	randn.factory( { 'prng': true ); // $ExpectError
+	randn.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -95,7 +95,7 @@ import randn = require( './index' );
 	randn.factory( { 'state': null } ); // $ExpectError
 	randn.factory( { 'state': [] } ); // $ExpectError
 	randn.factory( { 'state': {} } ); // $ExpectError
-	randn.factory( { 'state': true ); // $ExpectError
+	randn.factory( { 'state': true } ); // $ExpectError
 	randn.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

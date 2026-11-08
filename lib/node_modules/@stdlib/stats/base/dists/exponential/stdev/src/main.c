@@ -27,7 +27,7 @@
 *
 * @example
 * double y = stdlib_base_dists_exponential_stdev( 9.0 );
-* // returns ~0.333
+* // returns ~0.111
 */
 double stdlib_base_dists_exponential_stdev( const double lambda ) {
 	if ( stdlib_base_is_nan( lambda ) || lambda <= 0.0 ) {

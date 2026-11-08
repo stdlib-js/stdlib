@@ -88,8 +88,8 @@ interface Routine {
 	/**
 	* Returns a function for returning an index according to a provided index mode.
 	*
-	* @param {string} mode - specifies how to handle an out-of-bounds index
-	* @returns {Function} function for returning an index
+	* @param mode - specifies how to handle an out-of-bounds index
+	* @returns function for returning an index
 	*
 	* @example
 	* var fcn = ind.factory( 'clamp' );

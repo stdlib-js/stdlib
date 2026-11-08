@@ -78,7 +78,7 @@ interface MGF {
 	* var y = mgf( 0.2, 0.5, 0.0 );
 	* // returns NaN
 	*/
-	( t: number, alpha: number, beta: number ): number;
+	( t: number, k: number, lambda: number ): number;
 
 	/**
 	* Returns a function for evaluating the moment-generating function (MGF) of a Weibull distribution with shape `k` and scale `lambda`.
@@ -96,7 +96,7 @@ interface MGF {
 	* y = myMGF( 0.08 );
 	* // returns ~2.137
 	*/
-	factory( alpha: number, beta: number ): Unary;
+	factory( k: number, lambda: number ): Unary;
 }
 
 /**

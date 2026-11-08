@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Computes the normalized cardinal sine of a single-precision floating-point number (in radians).
+* Computes the normalized cardinal sine of a single-precision floating-point number.
 *
 * @param x - input value
 * @returns cardinal sine

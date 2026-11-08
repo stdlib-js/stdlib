@@ -32,7 +32,7 @@ type RealOrComplexArray = ArrayLike<number> | ComplexTypedArray;
 */
 interface Routine {
 	/**
-	* Subtracts each element in a strided array `x` to a corresponding element in a strided array `y` and assigns the results to elements in a strided array `z`.
+	* Subtracts each element in a strided array `y` from a corresponding element in a strided array `x` and assigns the results to elements in a strided array `z`.
 	*
 	* @param N - number of indexed elements
 	* @param dtypeX - `x` data type
@@ -63,7 +63,7 @@ interface Routine {
 	( N: number, dtypeX: any, x: RealOrComplexArray, strideX: number, dtypeY: any, y: RealOrComplexArray, strideY: number, dtypeZ: any, z: RealOrComplexArray, strideZ: number ): RealOrComplexArray;
 
 	/**
-	* Subtracts each element in a strided array `x` to a corresponding element in a strided array `y` and assigns the results to elements in a strided array `z` using alternative indexing semantics.
+	* Subtracts each element in a strided array `y` from a corresponding element in a strided array `x` and assigns the results to elements in a strided array `z` using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
 	* @param dtypeX - `x` data type
@@ -98,7 +98,7 @@ interface Routine {
 }
 
 /**
-* Subtracts each element in a strided array `x` to a corresponding element in a strided array `y` and assigns the results to elements in a strided array `z`.
+* Subtracts each element in a strided array `y` from a corresponding element in a strided array `x` and assigns the results to elements in a strided array `z`.
 *
 * @param N - number of indexed elements
 * @param dtypeX - `x` data type

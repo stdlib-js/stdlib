@@ -151,7 +151,7 @@ Returns the [standard deviation][standard-deviation] of a [geometric][geometric-
 
 ```c
 double out = stdlib_base_dists_geometric_stdev( 0.5 );
-// returns 1.0
+// returns ~1.414
 ```
 
 The function accepts the following arguments:

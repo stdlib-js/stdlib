@@ -435,7 +435,7 @@ update_namespace_dependency_versions() {
 
 	echo 'Setting versions to latest versions...' >&2
 	for dependency in "${dependencies[@]}"; do
-		pkgVersion=$(npm view "${dependency}" version --loglevel=error)
+		pkgVersion=$(npm view "${dependency}" version --loglevel=error --cache="$(mktemp -d)")
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
 			echo "Error: unexpected error. Encountered an error when resolving the latest published version for ${dependency}." >&2

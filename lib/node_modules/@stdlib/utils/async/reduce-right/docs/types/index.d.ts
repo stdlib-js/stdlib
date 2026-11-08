@@ -188,13 +188,8 @@ interface ReduceRightAsync {
 	*
 	* @param collection - input collection
 	* @param initial - initial value
-	* @param options - function options
-	* @param options.thisArg - execution context
-	* @param options.limit - maximum number of pending invocations at any one time
-	* @param options.series - boolean indicating whether to wait for a previous invocation to complete before invoking a provided function for the next element in a collection (default: true)
 	* @param reducer - function to invoke for each element in a collection
 	* @param done - function to invoke upon completion
-	* @throws must provide valid options
 	*
 	* @example
 	* var readFile = require( '@stdlib/fs/read-file' );

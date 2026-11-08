@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Computes the cosecant of a degree.
+* Computes the cosecant of an angle measured in degrees.
 *
 * @param x - input value (in degrees)
 * @returns cosecant

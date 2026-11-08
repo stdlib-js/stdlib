@@ -103,7 +103,7 @@ type Callback = Nullary | Unary | Binary;
 type Fcn = ( index: number, next: Callback ) => void;
 
 /**
-* Maps keys from one object to a new object having the same values.
+* Invokes a function `n` times and returns an array of accumulated function return values.
 *
 * @param n - number of function invocations
 * @param done - function to invoke upon completion

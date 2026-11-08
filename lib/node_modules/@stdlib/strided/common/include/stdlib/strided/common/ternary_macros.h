@@ -28,7 +28,7 @@
 * Macro containing the preamble for a loop which applies a ternary function to strided array elements.
 *
 * @example
-* STDLIB_TERNARY_LOOP_PREMABLE {
+* STDLIB_TERNARY_LOOP_PREAMBLE {
 *     // Loop body...
 * }
 */
@@ -64,11 +64,11 @@
 * Macro containing the preamble for a loop which applies a ternary function to strided array elements and updates two strided output arrays.
 *
 * @example
-* STDLIB_TERNARY_LOOP_TWO_OUT_PREMABLE {
+* STDLIB_TERNARY_LOOP_TWO_OUT_PREAMBLE {
 *     // Loop body...
 * }
 */
-#define STDLIB_TERNARY_LOOP_TWO_OUT_PREMABLE               \
+#define STDLIB_TERNARY_LOOP_TWO_OUT_PREAMBLE               \
 	uint8_t *ip1 = arrays[ 0 ];                            \
 	uint8_t *ip2 = arrays[ 1 ];                            \
 	uint8_t *ip3 = arrays[ 2 ];                            \

@@ -151,14 +151,14 @@ import cauchy = require( './index' );
 	cauchy.factory( -2, 2, { 'prng': null } ); // $ExpectError
 	cauchy.factory( -2, 2, { 'prng': [] } ); // $ExpectError
 	cauchy.factory( -2, 2, { 'prng': {} } ); // $ExpectError
-	cauchy.factory( -2, 2, { 'prng': true ); // $ExpectError
+	cauchy.factory( -2, 2, { 'prng': true } ); // $ExpectError
 
 	cauchy.factory( { 'prng': 123 } ); // $ExpectError
 	cauchy.factory( { 'prng': 'abc' } ); // $ExpectError
 	cauchy.factory( { 'prng': null } ); // $ExpectError
 	cauchy.factory( { 'prng': [] } ); // $ExpectError
 	cauchy.factory( { 'prng': {} } ); // $ExpectError
-	cauchy.factory( { 'prng': true ); // $ExpectError
+	cauchy.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -185,7 +185,7 @@ import cauchy = require( './index' );
 	cauchy.factory( -2, 2, { 'state': null } ); // $ExpectError
 	cauchy.factory( -2, 2, { 'state': [] } ); // $ExpectError
 	cauchy.factory( -2, 2, { 'state': {} } ); // $ExpectError
-	cauchy.factory( -2, 2, { 'state': true ); // $ExpectError
+	cauchy.factory( -2, 2, { 'state': true } ); // $ExpectError
 	cauchy.factory( -2, 2, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	cauchy.factory( { 'state': 123 } ); // $ExpectError
@@ -193,7 +193,7 @@ import cauchy = require( './index' );
 	cauchy.factory( { 'state': null } ); // $ExpectError
 	cauchy.factory( { 'state': [] } ); // $ExpectError
 	cauchy.factory( { 'state': {} } ); // $ExpectError
-	cauchy.factory( { 'state': true ); // $ExpectError
+	cauchy.factory( { 'state': true } ); // $ExpectError
 	cauchy.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

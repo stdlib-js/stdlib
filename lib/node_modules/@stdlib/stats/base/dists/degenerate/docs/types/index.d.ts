@@ -142,7 +142,7 @@ interface Namespace {
 	*
 	* var mylogpmf = ns.logpmf.factory( 10.0 );
 	*
-	* var y = mylogpmf( 10.0 );
+	* y = mylogpmf( 10.0 );
 	* // returns 0.0
 	*/
 	logpmf: typeof logpmf;

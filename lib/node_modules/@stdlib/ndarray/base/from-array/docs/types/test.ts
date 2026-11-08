@@ -26,6 +26,7 @@ import array2ndarray = require( './index' );
 {
 	array2ndarray( zeros( 1, 'float64' ), 'row-major' ); // $ExpectType float64ndarray
 	array2ndarray( zeros( 1, 'float32' ), 'row-major' ); // $ExpectType float32ndarray
+	array2ndarray( zeros( 1, 'float16' ), 'row-major' ); // $ExpectType float16ndarray
 	array2ndarray( zeros( 1, 'complex128' ), 'row-major' ); // $ExpectType complex128ndarray
 	array2ndarray( zeros( 1, 'complex64' ), 'row-major' ); // $ExpectType complex64ndarray
 	array2ndarray( zeros( 1, 'int32' ), 'row-major' ); // $ExpectType int32ndarray

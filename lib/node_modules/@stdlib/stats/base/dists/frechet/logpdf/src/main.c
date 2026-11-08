@@ -24,7 +24,7 @@
 #include "stdlib/constants/float64/nan.h"
 
 /**
-* Evaluates the logarithm of the probability density function (PDF) for a Fréchet distribution with shape `alpha`, scale `s`, and location `m` at a value `x`.
+* Evaluates the natural logarithm of the probability density function (PDF) for a Fréchet distribution with shape `alpha`, scale `s`, and location `m` at a value `x`.
 *
 * @param x        input value
 * @param alpha    shape parameter

@@ -1,0 +1,34 @@
+
+{{alias}}( x, k )
+    Returns a new ndarray where a matrix (or a stack of matrices) is rotated 90
+    degrees clockwise.
+
+    If `k > 0`, the function rotates the matrix clockwise. If `k < 0`, the
+    function rotates the matrix counterclockwise.
+
+    If provided an ndarray with fewer than two dimensions, the function does not
+    perform a rotation and simply returns a copy of the input ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    k: integer
+        Number of times to rotate by 90 degrees.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1.0, 2.0, 3.0 ], [ 4.0, 5.0, 6.0 ] ] )
+    <ndarray>[ [ 1.0, 2.0, 3.0 ], [ 4.0, 5.0, 6.0 ] ]
+    > var y = {{alias}}( x, 1 )
+    <ndarray>[ [ 4.0, 1.0 ], [ 5.0, 2.0 ], [ 6.0, 3.0 ] ]
+
+    See Also
+    --------
+

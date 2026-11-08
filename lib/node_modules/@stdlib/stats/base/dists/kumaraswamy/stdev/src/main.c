@@ -17,9 +17,8 @@
 */
 
 #include "stdlib/stats/base/dists/kumaraswamy/stdev.h"
-#include "stdlib/math/base/assert/is_nan.h"
-#include "stdlib/math/base/special/beta.h"
 #include "stdlib/math/base/special/sqrt.h"
+#include "stdlib/stats/base/dists/kumaraswamy/variance.h"
 
 /**
 * Returns the standard deviation of a Kumaraswamy's double bounded distribution.
@@ -33,18 +32,5 @@
 * // returns ~0.298
 */
 double stdlib_base_dists_kumaraswamy_stdev( const double a, const double b ) {
-	double m1;
-	double m2;
-	if (
-		stdlib_base_is_nan( a ) ||
-		a <= 0.0 ||
-		stdlib_base_is_nan( b ) ||
-		b <= 0.0
-	) {
-		return 0.0/0.0; // NaN
-	}
-	m1 = b * stdlib_base_beta( 1.0 + ( 1.0/a ), b );
-	m2 = b * stdlib_base_beta( 1.0 + ( 2.0/a ), b );
-	return stdlib_base_sqrt( m2 - ( m1*m1 ) );
+	return stdlib_base_sqrt( stdlib_base_dists_kumaraswamy_variance( a, b ) );
 }
-

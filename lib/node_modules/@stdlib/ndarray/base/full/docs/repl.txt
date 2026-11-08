@@ -1,0 +1,45 @@
+
+{{alias}}( value, dtype, shape, order )
+    Returns an ndarray filled with a specified value and having a specified
+    shape and data type.
+
+    If `value` is a number and `dtype` is a complex data type, the function
+    returns an ndarray filled with a complex number whose real component equals
+    the provided scalar `value` and whose imaginary component is zero.
+
+    Parameters
+    ----------
+    value: any
+        Scalar value. Must be able to safely cast to the output ndarray data
+        type. Scalar values having floating-point data types (both real and
+        complex) are allowed to downcast to a lower precision data type of the
+        same kind (e.g., a scalar double-precision floating-point number can be
+        used to fill a 'float32' output ndarray).
+
+    dtype: string|DataType
+        Underlying data type.
+
+    shape: ArrayLikeObject<integer>
+        Array shape.
+
+    order: string
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style).
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var arr = {{alias}}( 10.0, 'float64', [ 2, 2 ], 'row-major' )
+    <ndarray>[ [ 10.0, 10.0 ], [ 10.0, 10.0 ] ]
+    > var sh = {{alias:@stdlib/ndarray/shape}}( arr )
+    [ 2, 2 ]
+    > var dt = String( {{alias:@stdlib/ndarray/dtype}}( arr ) )
+    'float64'
+
+    See Also
+    --------
+

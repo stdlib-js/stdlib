@@ -39,10 +39,6 @@
 *     napi_value value;
 *     napi_status status = stdlib_napi_create_double( env, 1.0, &value );
 *     assert( status == napi_ok );
-*     if ( err != NULL ) {
-*         assert( napi_throw( env, err ) == napi_ok );
-*         return NULL;
-*     }
 *
 *     // ...
 * }

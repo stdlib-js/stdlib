@@ -78,7 +78,7 @@ interface Meta {
 * // Set the properties:
 * setProps( meta, dtypes, obj );
 */
-declare function setProps( meta: Meta, dtypes: ArrayLike<any>, obj: any ): any;
+declare function setProps<T>( meta: Meta, dtypes: ArrayLike<any>, obj: T ): T;
 
 
 // EXPORTS //

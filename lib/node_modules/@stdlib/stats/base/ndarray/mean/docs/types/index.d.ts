@@ -20,24 +20,29 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ndarray } from '@stdlib/types/ndarray';
+import { typedndarray } from '@stdlib/types/ndarray';
 
 /**
 * Computes the arithmetic mean of a one-dimensional ndarray.
 *
-* @param arrays - array-like object containing an input ndarray
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns arithmetic mean
 *
 * @example
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var vector = require( '@stdlib/ndarray/vector/ctor' );
 *
-* var xbuf = [ 1.0, 3.0, 4.0, 2.0 ];
-* var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+* var x = vector( [ 1.0, 3.0, 4.0, 2.0 ], 'generic' );
 *
 * var v = mean( [ x ] );
 * // returns 2.5
 */
-declare function mean<T extends ndarray = ndarray>( arrays: [ T ] ): number;
+declare function mean( arrays: [ typedndarray<number> ] ): number;
 
 
 // EXPORTS //

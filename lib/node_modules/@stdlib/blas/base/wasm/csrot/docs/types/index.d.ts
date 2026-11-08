@@ -354,10 +354,10 @@ interface Routine extends ModuleWrapper {
 	* @param N - number of indexed elements
 	* @param cx - first input array
 	* @param strideX - `cx` stride length
-	* @param offsetX - starting index for `x`
+	* @param offsetX - starting index for `cx`
 	* @param cy - second input array
 	* @param strideY - `cy` stride length
-	* @param offsetY - starting index for `y`
+	* @param offsetY - starting index for `cy`
 	* @returns input array `cy`
 	*
 	* @example

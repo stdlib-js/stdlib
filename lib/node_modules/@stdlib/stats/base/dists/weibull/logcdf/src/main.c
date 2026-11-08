@@ -36,7 +36,7 @@
 *
 * @example
 * double y = stdlib_base_dists_weibull_logcdf( 2.0, 1.0, 1.0 );
-* // returns ~0.145
+* // returns ~-0.145
 */
 double stdlib_base_dists_weibull_logcdf( const double x, const double k, const double lambda ) {
 	double p;

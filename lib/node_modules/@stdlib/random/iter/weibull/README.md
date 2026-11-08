@@ -32,7 +32,7 @@ var iterator = require( '@stdlib/random/iter/weibull' );
 
 #### iterator( k, lambda\[, options] )
 
-Returns an iterator for generating pseudorandom numbers drawn from a [Weibull][weibull] distribution with parameters `k` (scale parameter) and `lambda` (shape parameter).
+Returns an iterator for generating pseudorandom numbers drawn from a [Weibull][weibull] distribution with parameters `k` (shape parameter) and `lambda` (scale parameter).
 
 ```javascript
 var it = iterator( 2.0, 5.0 );

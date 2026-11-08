@@ -159,7 +159,7 @@ Evaluates the [cumulative distribution function][cdf] (cdf) for an [exponential]
 
 ```c
 double out = stdlib_base_dists_exponential_cdf( 2.0, 0.7 );
-// returns ~0.173
+// returns ~0.753
 ```
 
 The function accepts the following arguments:

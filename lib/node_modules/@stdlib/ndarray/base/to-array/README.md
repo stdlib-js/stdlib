@@ -105,14 +105,11 @@ var arr = ndarray2array( buffer, shape, strides, offset, order );
 var shape2strides = require( '@stdlib/ndarray/base/shape2strides' );
 var strides2offset = require( '@stdlib/ndarray/base/strides2offset' );
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
+var zeroTo = require( '@stdlib/array/base/zero-to' );
 var ndarray2array = require( '@stdlib/ndarray/base/to-array' );
 
 // Create a data buffer:
-var buffer = [];
-var i;
-for ( i = 0; i < 27; i++ ) {
-    buffer.push( i );
-}
+var buffer = zeroTo( 27 );
 
 // Specify array meta data:
 var shape = [ 3, 3, 3 ];
@@ -129,6 +126,7 @@ console.log( 'Dims: %s', shape.join( 'x' ) );
 
 // Randomly flip strides and convert an ndarray to a nested array...
 var arr;
+var i;
 var j;
 for ( i = 0; i < 20; i++ ) {
     j = discreteUniform( 0, ndims-1 );

@@ -31,7 +31,7 @@ type Unary = ( x: number ) => number;
 */
 interface LogPDF {
 	/**
-	* Evaluates the logarithm of the probability density function (PDF) for a uniform distribution with minimum support `a` and maximum support `b` at a value `x`.
+	* Evaluates the natural logarithm of the probability density function (PDF) for a uniform distribution with minimum support `a` and maximum support `b` at a value `x`.
 	*
 	* ## Notes
 	*

@@ -66,7 +66,7 @@ static double rational_pq( const double x ) {
 * @return     Lanczos sum approximation
 *
 * @example
-* double v = stdlib_base_gammaLanczosSum( 4.0 );
+* double v = stdlib_base_gamma_lanczos_sum( 4.0 );
 * // returns ~950.366
 */
 double stdlib_base_gamma_lanczos_sum( const double x ) {

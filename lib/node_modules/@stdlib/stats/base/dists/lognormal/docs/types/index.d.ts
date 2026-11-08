@@ -139,8 +139,8 @@ interface Namespace {
 	* Lognormal distribution natural logarithm of cumulative distribution function (CDF).
 	*
 	* @param x - input value
-	* @param mu - mean
-	* @param sigma - standard deviation
+	* @param mu - location parameter
+	* @param sigma - scale parameter
 	* @returns evaluated logcdf
 	*
 	* @example
@@ -173,10 +173,10 @@ interface Namespace {
 	*
 	* var mylogpdf = ns.logpdf.factory( 4.0, 2.0 );
 	* y = mylogpdf( 10.0 );
-	* // returns ~-4.269
+	* // returns ~-4.275
 	*
 	* y = mylogpdf( 2.0 );
-	* // returns ~-3.689
+	* // returns ~-3.672
 	*/
 	logpdf: typeof logpdf;
 
@@ -310,8 +310,8 @@ interface Namespace {
 	* Lognormal distribution quantile function.
 	*
 	* @param p - input value
-	* @param mu - mean
-	* @param sigma - standard deviation
+	* @param mu - location parameter
+	* @param sigma - scale parameter
 	* @returns evaluated quantile function
 	*
 	* @example

@@ -1,0 +1,259 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2026 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# soneTo
+
+> Fill a one-dimensional single-precision floating-point ndarray with linearly spaced numeric elements which increment by `1` starting from one.
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var soneTo = require( '@stdlib/blas/ext/base/ndarray/sone-to' );
+```
+
+#### soneTo( arrays )
+
+Fills a one-dimensional single-precision floating-point ndarray with linearly spaced numeric elements which increment by `1` starting from one.
+
+```javascript
+var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
+
+var x = new Float32Vector( [ 0.0, 0.0, 0.0, 0.0 ] );
+// returns <ndarray>[ 0.0, 0.0, 0.0, 0.0 ]
+
+var out = soneTo( [ x ] );
+// returns <ndarray>[ 1.0, 2.0, 3.0, 4.0 ]
+```
+
+The function has the following parameters:
+
+-   **arrays**: array-like object containing a one-dimensional input ndarray.
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+## Notes
+
+-   The input ndarray is modified **in-place** (i.e., the input ndarray is **mutated**).
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var zeros = require( '@stdlib/ndarray/zeros' );
+var ndarray2array = require( '@stdlib/ndarray/to-array' );
+var soneTo = require( '@stdlib/blas/ext/base/ndarray/sone-to' );
+
+var opts = {
+    'dtype': 'float32'
+};
+
+var x = zeros( [ 10 ], opts );
+console.log( ndarray2array( x ) );
+
+soneTo( [ x ] );
+console.log( ndarray2array( x ) );
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/blas/ext/base/ndarray/sone_to.h"
+```
+
+#### stdlib_blas_ext_sone_to( arrays )
+
+Fills a one-dimensional single-precision floating-point ndarray with linearly spaced numeric elements which increment by `1` starting from one.
+
+```c
+#include "stdlib/ndarray/ctor.h"
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/base/bytes_per_element.h"
+#include <stdint.h>
+
+// Create an ndarray:
+float data[] = { 0.0f, 0.0f, 0.0f, 0.0f };
+int64_t shape[] = { 4 };
+int64_t strides[] = { STDLIB_NDARRAY_FLOAT32_BYTES_PER_ELEMENT };
+int8_t submodes[] = { STDLIB_NDARRAY_INDEX_ERROR };
+
+struct ndarray *x = stdlib_ndarray_allocate( STDLIB_NDARRAY_FLOAT32, (uint8_t *)data, 1, shape, strides, 0, STDLIB_NDARRAY_ROW_MAJOR, STDLIB_NDARRAY_INDEX_ERROR, 1, submodes );
+
+// Fill the ndarray:
+const struct ndarray *arrays[] = { x };
+stdlib_blas_ext_sone_to( arrays );
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` list containing a one-dimensional input ndarray.
+
+```c
+void stdlib_blas_ext_sone_to( const struct ndarray *arrays[] );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/blas/ext/base/ndarray/sone_to.h"
+#include "stdlib/ndarray/ctor.h"
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/base/bytes_per_element.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+int main( void ) {
+    // Create a data buffer:
+    float data[] = { 1.0f, -2.0f, 3.0f, -4.0f, 5.0f, -6.0f, 7.0f, -8.0f };
+
+    // Specify the number of array dimensions:
+    const int64_t ndims = 1;
+
+    // Specify the array shape:
+    int64_t shape[] = { 4 };
+
+    // Specify the array strides:
+    int64_t strides[] = { 2*STDLIB_NDARRAY_FLOAT32_BYTES_PER_ELEMENT };
+
+    // Specify the byte offset:
+    const int64_t offset = 0;
+
+    // Specify the array order:
+    const enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+    // Specify the index mode:
+    const enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+    // Specify the subscript index modes:
+    int8_t submodes[] = { STDLIB_NDARRAY_INDEX_ERROR };
+    const int64_t nsubmodes = 1;
+
+    // Create an ndarray:
+    struct ndarray *x = stdlib_ndarray_allocate( STDLIB_NDARRAY_FLOAT32, (uint8_t *)data, ndims, shape, strides, offset, order, imode, nsubmodes, submodes );
+    if ( x == NULL ) {
+        fprintf( stderr, "Error allocating memory.\n" );
+        exit( 1 );
+    }
+
+    // Define a list of ndarrays:
+    const struct ndarray *arrays[] = { x };
+
+    // Fill the ndarray:
+    stdlib_blas_ext_sone_to( arrays );
+
+    // Print the result:
+    for ( int i = 0; i < 8; i++ ) {
+        printf( "data[ %i ] = %f\n", i, data[ i ] );
+    }
+
+    // Free allocated memory:
+    stdlib_ndarray_free( x );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+</section>
+
+<!-- /.links -->

@@ -50,6 +50,7 @@
   ],
   "keywords": [
     "stdlib",
+    "stdstring",
     "string",
     "str",
     "base",
@@ -60,6 +61,8 @@
     "point",
     "codepoint",
     "utilities",
-    "utils"
+    "utility",
+    "utils",
+    "util"
   ]
 }

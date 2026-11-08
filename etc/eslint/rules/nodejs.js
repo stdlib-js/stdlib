@@ -28,10 +28,10 @@ var rules = {};
 /**
 * Warn when a callback may be unintentionally called multiple times.
 *
-* @name node/callback-return
+* @name n/callback-return
 * @memberof rules
 * @type {Array}
-* @see [node/callback-return]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/callback-return.md}
+* @see [n/callback-return]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/callback-return.md}
 *
 * @example
 * // Bad...
@@ -51,7 +51,7 @@ var rules = {};
 *     clbk();
 * }
 */
-rules[ 'node/callback-return' ] = [ 'warn', [
+rules[ 'n/callback-return' ] = [ 'warn', [
 	'callback',
 	'clbk',
 	'cb',
@@ -64,10 +64,10 @@ rules[ 'node/callback-return' ] = [ 'warn', [
 /**
 * Enforce use of `module.exports` as the export style over `exports`.
 *
-* @name node/file-extension-in-import
+* @name n/file-extension-in-import
 * @memberof rules
 * @type {Array}
-* @see [node/file-extension-in-import]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/file-extension-in-import.md}
+* @see [n/file-extension-in-import]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/file-extension-in-import.md}
 *
 * @example
 * // Bad...
@@ -78,19 +78,17 @@ rules[ 'node/callback-return' ] = [ 'warn', [
 * import eslint from 'eslint';
 * import foo from './path/to/a/file.js';
 */
-rules[ 'node/file-extension-in-import' ] = [ 'error', 'always', {
-	'tryExtensions': [ '.js', '.json', '.node', '.ts' ]
-}];
+rules[ 'n/file-extension-in-import' ] = [ 'error', 'always' ];
 
 /* eslint-enable */
 
 /**
 * Enforce use of `module.exports` as the export style over `exports`.
 *
-* @name node/exports-style
+* @name n/exports-style
 * @memberof rules
 * @type {Array}
-* @see [node/exports-style]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/exports-style.md}
+* @see [n/exports-style]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/exports-style.md}
 *
 * @example
 * // Bad...
@@ -104,36 +102,33 @@ rules[ 'node/file-extension-in-import' ] = [ 'error', 'always', {
 *     'bar': 2
 * };
 */
-rules[ 'node/exports-style' ] = [ 'error', 'module.exports' ];
+rules[ 'n/exports-style' ] = [ 'error', 'module.exports' ];
 
 /**
 * Allow `require` to be used in a nested scope.
 *
-* @name node/global-require
+* @name n/global-require
 * @memberof rules
 * @type {string}
 * @default 'off'
-* @see [node/global-require]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/global-require.md}
+* @see [n/global-require]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/global-require.md}
 *
 * @example
 * // Okay...
-* var f;
-* if ( x === 'foo' ) {
-*     f = require( 'foo' );
-* } else {
-*     f = require( 'bar' );
-* }
+* var foo = require( 'foo' );
+*
+* console.log( foo );
 */
-rules[ 'node/global-require' ] = 'off';
+rules[ 'n/global-require' ] = 'off';
 
 /**
 * Always handle callback error arguments.
 *
-* @name node/handle-callback-err
+* @name n/handle-callback-err
 * @memberof rules
 * @type {Array}
 * @default [ 'error', '^(err|error)$' ]
-* @see [node/handle-callback-err]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/handle-callback-err.md}
+* @see [n/handle-callback-err]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/handle-callback-err.md}
 *
 * @example
 * // Bad...
@@ -150,16 +145,16 @@ rules[ 'node/global-require' ] = 'off';
 *     return clbk();
 * }
 */
-rules[ 'node/handle-callback-err' ] = [ 'error', '^(err|error)$' ];
+rules[ 'n/handle-callback-err' ] = [ 'error', '^(err|error)$' ];
 
 /**
 * Disallow use of `exports = {}` aside from `module.exports = exports = {}`.
 *
-* @name node/no-exports-assign
+* @name n/no-exports-assign
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [node/no-exports-assign]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-exports-assign.md}
+* @see [n/no-exports-assign]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-exports-assign.md}
 *
 * @example
 * // Bad...
@@ -172,15 +167,15 @@ rules[ 'node/handle-callback-err' ] = [ 'error', '^(err|error)$' ];
 *
 * module.exports = {};
 */
-rules[ 'node/no-exports-assign' ] = 'error';
+rules[ 'n/no-exports-assign' ] = 'error';
 
 /**
 * Only allow `require`d modules to be grouped together.
 *
-* @name node/no-mixed-requires
+* @name n/no-mixed-requires
 * @memberof rules
 * @type {Array}
-* @see [node/no-mixed-requires]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-mixed-requires.md}
+* @see [n/no-mixed-requires]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-mixed-requires.md}
 *
 * @example
 * // Good...
@@ -189,7 +184,7 @@ rules[ 'node/no-exports-assign' ] = 'error';
 * var beep = require( '@stdlib/beep' );
 * var bar = require( './bar.js' );
 */
-rules[ 'node/no-mixed-requires' ] = [ 'error', {
+rules[ 'n/no-mixed-requires' ] = [ 'error', {
 	'grouping': false,
 	'allowCall': true
 }];
@@ -197,11 +192,11 @@ rules[ 'node/no-mixed-requires' ] = [ 'error', {
 /**
 * Never allow the use of `new require()`.
 *
-* @name node/no-new-require
+* @name n/no-new-require
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [node/no-new-require]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-new-require.md}
+* @see [n/no-new-require]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-new-require.md}
 *
 * @example
 * // Bad...
@@ -213,16 +208,16 @@ rules[ 'node/no-mixed-requires' ] = [ 'error', {
 *
 * var foo = new Foo();
 */
-rules[ 'node/no-new-require' ] = 'error';
+rules[ 'n/no-new-require' ] = 'error';
 
 /**
 * Never allow naive directory and file path concatenation.
 *
-* @name node/no-path-concat
+* @name n/no-path-concat
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [node/no-path-concat]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-path-concat.md}
+* @see [n/no-path-concat]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-path-concat.md}
 *
 * @example
 * // Bad...
@@ -233,39 +228,39 @@ rules[ 'node/no-new-require' ] = 'error';
 * var join = require( 'path' ).join;
 * var foo = require( join( __dirname, 'foo.js' ) );
 */
-rules[ 'node/no-path-concat' ] = 'error';
+rules[ 'n/no-path-concat' ] = 'error';
 
 /**
 * Discourage use of `process.env()`. Use `@stdlib` package instead.
 *
-* @name node/no-process-env
+* @name n/no-process-env
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [node/no-process-env]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-process-env.md}
+* @see [n/no-process-env]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-process-env.md}
 */
-rules[ 'node/no-process-env' ] = 'error';
+rules[ 'n/no-process-env' ] = 'error';
 
 /**
 * Warn when using `process.exit()`.
 *
-* @name node/no-process-exit
+* @name n/no-process-exit
 * @memberof rules
 * @type {string}
 * @default 'warn'
-* @see [node/no-process-exit]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-process-exit.md}
+* @see [n/no-process-exit]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-process-exit.md}
 */
-rules[ 'node/no-process-exit' ] = 'warn';
+rules[ 'n/no-process-exit' ] = 'warn';
 
 /**
 * Restrict the use of specific module when loaded by `require()`.
 *
-* @name node/no-restricted-require
+* @name n/no-restricted-require
 * @memberof rules
 * @type {Array}
-* @see [node/no-restricted-require]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-restricted-require.md}
+* @see [n/no-restricted-require]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-restricted-require.md}
 */
-rules[ 'node/no-restricted-require' ] = [ 'error', [
+rules[ 'n/no-restricted-require' ] = [ 'error', [
 	'underscore',
 	'lodash',
 	'async'
@@ -274,12 +269,12 @@ rules[ 'node/no-restricted-require' ] = [ 'error', [
 /**
 * Restrict the use of specific modules when loaded by `import` declarations.
 *
-* @name node/no-restricted-import
+* @name n/no-restricted-import
 * @memberof rules
 * @type {Array}
-* @see [node/no-restricted-import]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-restricted-import.md}
+* @see [n/no-restricted-import]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-restricted-import.md}
 */
-rules[ 'node/no-restricted-import' ] = [ 'error', [
+rules[ 'n/no-restricted-import' ] = [ 'error', [
 	'underscore',
 	'lodash',
 	'async'
@@ -288,33 +283,33 @@ rules[ 'node/no-restricted-import' ] = [ 'error', [
 /**
 * Warn when using synchronous methods when an asynchronous version exists.
 *
-* @name node/no-sync
+* @name n/no-sync
 * @memberof rules
 * @type {string}
 * @default 'warn'
-* @see [node/no-sync]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-sync.md}
+* @see [n/no-sync]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-sync.md}
 */
-rules[ 'node/no-sync' ] = 'warn';
+rules[ 'n/no-sync' ] = 'warn';
 
 /**
 * Disallow `bin` files that npm ignores.
 *
-* @name node/no-unpublished-bin
+* @name n/no-unpublished-bin
 * @memberof rules
 * @type {Array}
-* @see [node/no-unpublished-bin]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unpublished-bin.md}
+* @see [n/no-unpublished-bin]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-bin.md}
 */
-rules[ 'node/no-unpublished-bin' ] = [ 'error' ];
+rules[ 'n/no-unpublished-bin' ] = [ 'error' ];
 
 /**
 * Disallow `import` declarations which import private modules.
 *
-* @name node/no-unpublished-import
+* @name n/no-unpublished-import
 * @memberof rules
 * @type {Array}
-* @see [node/no-unpublished-import]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unpublished-import.md}
+* @see [n/no-unpublished-import]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-import.md}
 */
-rules[ 'node/no-unpublished-import' ] = [ 'error', {
+rules[ 'n/no-unpublished-import' ] = [ 'error', {
 	'allowModules': [],
 	'tryExtensions': [ '.js', '.json', '.node' ]
 }];
@@ -322,12 +317,12 @@ rules[ 'node/no-unpublished-import' ] = [ 'error', {
 /**
 * Disallow `require()` expressions which import private modules.
 *
-* @name node/no-unpublished-require
+* @name n/no-unpublished-require
 * @memberof rules
 * @type {Array}
-* @see [node/no-unpublished-require]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unpublished-require.md}
+* @see [n/no-unpublished-require]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-require.md}
 */
-rules[ 'node/no-unpublished-require' ] = [ 'error', {
+rules[ 'n/no-unpublished-require' ] = [ 'error', {
 	'allowModules': [],
 	'tryExtensions': [ '.js', '.json', '.node' ]
 }];
@@ -335,12 +330,12 @@ rules[ 'node/no-unpublished-require' ] = [ 'error', {
 /**
 * Disallow ECMAScript built-ins unsupported by Node.js version 0.12.
 *
-* @name node/no-unsupported-features/es-builtins
+* @name n/no-unsupported-features/es-builtins
 * @memberof rules
 * @type {Array}
-* @see [node/no-unsupported-features/es-builtins]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features/es-builtins.md}
+* @see [n/no-unsupported-features/es-builtins]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unsupported-features/es-builtins.md}
 */
-rules[ 'node/no-unsupported-features/es-builtins' ] = [ 'error', {
+rules[ 'n/no-unsupported-features/es-builtins' ] = [ 'error', {
 	'version': '>=0.12.18',
 	'ignores': []
 }];
@@ -348,25 +343,25 @@ rules[ 'node/no-unsupported-features/es-builtins' ] = [ 'error', {
 /**
 * Disallow ECMAScript syntax unsupported by Node.js version 0.12.
 *
-* @name node/no-unsupported-features/es-syntax
+* @name n/no-unsupported-features/es-syntax
 * @memberof rules
 * @type {Array}
-* @see [node/no-unsupported-features/es-syntax]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features/es-syntax.md}
+* @see [n/no-unsupported-features/es-syntax]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unsupported-features/es-syntax.md}
 */
-rules[ 'node/no-unsupported-features/es-syntax' ] = [ 'error', {
+rules[ 'n/no-unsupported-features/es-syntax' ] = [ 'error', {
 	'version': '>=0.12.18',
-	'ignores': []
+	'ignores': [ 'bigint', 'hashbang' ]
 }];
 
 /**
 * Disallow Node.js built-in APIs unsupported by Node.js version 0.12.
 *
-* @name node/no-unsupported-features/node-builtins
+* @name n/no-unsupported-features/node-builtins
 * @memberof rules
 * @type {Array}
-* @see [node/no-unsupported-features/node-builtins]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features/node-builtins.md}
+* @see [n/no-unsupported-features/node-builtins]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unsupported-features/node-builtins.md}
 */
-rules[ 'node/no-unsupported-features/node-builtins' ] = [ 'error', {
+rules[ 'n/no-unsupported-features/node-builtins' ] = [ 'error', {
 	'version': '>=0.12.18',
 	'ignores': []
 }];
@@ -374,23 +369,23 @@ rules[ 'node/no-unsupported-features/node-builtins' ] = [ 'error', {
 /**
 * Make ESLint come to address `process.exit()` as throw in code path analysis.
 *
-* @name node/process-exit-as-throw
+* @name n/process-exit-as-throw
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [node/process-exit-as-throw]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/process-exit-as-throw.md}
+* @see [n/process-exit-as-throw]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/process-exit-as-throw.md}
 */
-rules[ 'node/process-exit-as-throw' ] = 'error';
+rules[ 'n/process-exit-as-throw' ] = 'error';
 
 /**
 * Suggest correct usage of shebang for `bin` files.
 *
-* @name node/shebang
+* @name n/hashbang
 * @memberof rules
 * @type {Array}
-* @see [node/shebang]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/shebang.md}
+* @see [n/hashbang]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/hashbang.md}
 */
-rules[ 'node/shebang' ] = [ 'off' ];
+rules[ 'n/hashbang' ] = [ 'off' ];
 
 
 // EXPORTS //

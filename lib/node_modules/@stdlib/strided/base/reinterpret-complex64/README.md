@@ -101,8 +101,6 @@ var im = view[ 1 ];
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 var reinterpret = require( '@stdlib/strided/base/reinterpret-complex64' );
 
 // Define a complex number array:
@@ -116,16 +114,7 @@ var view = reinterpret( x, 0 );
 // Set view elements:
 view[ 0 ] = 9.0;
 view[ 1 ] = 10.0;
-
-// Get the first element of the complex number array:
-var z = x.get( 0 );
-// returns <Complex64>
-
-var re = real( z );
-// returns 9.0
-
-var im = imag( z );
-// returns 10.0
+// x => <Complex64Array>[ 9.0, 10.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ]
 ```
 
 </section>

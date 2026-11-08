@@ -81,13 +81,13 @@ import cuevery = require( './index' );
 	const x = [ false, false, true, false, false ];
 	const y = [ false, null, false, null, false, null, false, null, false, null ];
 
-	cuevery.assign( x, y , '1', 0 ); // $ExpectError
-	cuevery.assign( x, y , true, 0 ); // $ExpectError
-	cuevery.assign( x, y , false, 0 ); // $ExpectError
-	cuevery.assign( x, y , null, 0 ); // $ExpectError
-	cuevery.assign( x, y , void 0, 0 ); // $ExpectError
-	cuevery.assign( x, y , {}, 0 ); // $ExpectError
-	cuevery.assign( x, y , [], 0 ); // $ExpectError
+	cuevery.assign( x, y, '1', 0 ); // $ExpectError
+	cuevery.assign( x, y, true, 0 ); // $ExpectError
+	cuevery.assign( x, y, false, 0 ); // $ExpectError
+	cuevery.assign( x, y, null, 0 ); // $ExpectError
+	cuevery.assign( x, y, void 0, 0 ); // $ExpectError
+	cuevery.assign( x, y, {}, 0 ); // $ExpectError
+	cuevery.assign( x, y, [], 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `assign` method is provided a fourth argument which is not a number...

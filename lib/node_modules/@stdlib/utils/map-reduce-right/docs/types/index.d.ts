@@ -170,7 +170,7 @@ type ArrayReducer<U, V, T, W> = NullaryReducer<V, W> | UnaryReducer<V, W> | Bina
 *
 * ## Notes
 *
-* -   The mapping function is provided four arguments:
+* -   The mapping function is provided three arguments:
 *
 *     -   **value**: array element.
 *     -   **index**: element index.
@@ -213,7 +213,7 @@ declare function mapReduceRight<T = unknown, U = unknown, V = unknown, W = unkno
 *
 * ## Notes
 *
-* -   The mapping function is provided four arguments:
+* -   The mapping function is provided three arguments:
 *
 *     -   **value**: array element.
 *     -   **index**: element index.

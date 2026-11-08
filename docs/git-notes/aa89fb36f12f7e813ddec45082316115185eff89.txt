@@ -1,0 +1,11 @@
+---
+type: amend-message
+---
+feat: add `stats/incr/nanmmin`
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/5849
+Closes: https://github.com/stdlib-js/stdlib/issues/5594
+
+Co-authored-by: Philipp Burckhardt <pburckhardt@outlook.com>
+Co-authored-by: stdlib-bot <noreply@stdlib.io>
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>

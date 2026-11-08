@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-#include "stdlib/math/base/special/fast/pow.h"
+#include "stdlib/math/base/special/fast/pow_int.h"
 #include "stdlib/math/base/napi/binary.h"
 
 STDLIB_MATH_BASE_NAPI_MODULE_DI_D( stdlib_base_fast_pow )

@@ -22,7 +22,7 @@
 /**
 * Returns the variance of a geometric distribution.
 *
-* @param p    success probablity
+* @param p    success probability
 * @return     variance
 *
 * @example

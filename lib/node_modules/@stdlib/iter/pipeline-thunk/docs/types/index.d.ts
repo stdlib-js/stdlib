@@ -26,11 +26,11 @@ import { Iterator as Iter, IterableIterator } from '@stdlib/types/iter';
 type Iterator = Iter | IterableIterator;
 
 /**
-* Iterator function
+* Iterator function.
 *
 * @param iterator - input iterator
 * @param args - function arguments
-* @returns hash value
+* @returns iterator function result
 */
 type IteratorFunction = ( iterator: Iterator, ...args: Array<any> ) => any;
 

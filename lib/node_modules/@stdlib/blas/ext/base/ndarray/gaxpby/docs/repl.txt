@@ -1,0 +1,40 @@
+
+{{alias}}( arrays )
+    Multiplies a one-dimensional ndarray by a scalar constant and adds the
+    result to a second one-dimensional ndarray multiplied by a scalar constant.
+
+    The output ndarray is modified *in-place* (i.e., the output ndarray is
+    *mutated*).
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a one-dimensional output ndarray.
+        - a zero-dimensional ndarray containing the constant by which to
+        multiply the input ndarray.
+        - a zero-dimensional ndarray containing the constant by which to
+        multiply the output ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var xbuf = [ 1.0, 2.0, 3.0, 4.0 ];
+    > var x = {{alias:@stdlib/ndarray/vector/ctor}}( xbuf, 'generic' );
+    > var ybuf = [ 2.0, 3.0, 4.0, 5.0 ];
+    > var y = {{alias:@stdlib/ndarray/vector/ctor}}( ybuf, 'generic' );
+    > var opts = { 'dtype': 'generic' };
+    > var alpha = {{alias:@stdlib/ndarray/from-scalar}}( 5.0, opts );
+    > var beta = {{alias:@stdlib/ndarray/from-scalar}}( 2.0, opts );
+    > {{alias}}( [ x, y, alpha, beta ] )
+    <ndarray>[ 9.0, 16.0, 23.0, 30.0 ]
+
+    See Also
+    --------
+

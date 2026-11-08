@@ -1,0 +1,7 @@
+---
+type: amend-message
+---
+docs: update descriptions in `stats/strided/*abs` package descriptions
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/12310
+Reviewed-by: Athan Reines <kgryte@gmail.com>

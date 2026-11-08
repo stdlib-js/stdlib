@@ -53,7 +53,8 @@
         "@stdlib/constants/float64/two-pi",
         "@stdlib/constants/float64/sqrt-eps",
         "@stdlib/constants/float64/ln-sqrt-two-pi",
-        "@stdlib/constants/float64/max-nth-factorial"
+        "@stdlib/constants/float64/max-nth-factorial",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -83,7 +84,8 @@
         "@stdlib/constants/float64/two-pi",
         "@stdlib/constants/float64/sqrt-eps",
         "@stdlib/constants/float64/ln-sqrt-two-pi",
-        "@stdlib/constants/float64/max-nth-factorial"
+        "@stdlib/constants/float64/max-nth-factorial",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -113,7 +115,8 @@
         "@stdlib/constants/float64/two-pi",
         "@stdlib/constants/float64/sqrt-eps",
         "@stdlib/constants/float64/ln-sqrt-two-pi",
-        "@stdlib/constants/float64/max-nth-factorial"
+        "@stdlib/constants/float64/max-nth-factorial",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

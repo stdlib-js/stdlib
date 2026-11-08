@@ -41,6 +41,8 @@ function identity( x: any ): any {
 	map( zeros( 'float64', sh, ord ), identity, {} ); // $ExpectType float64ndarray
 	map( zeros( 'float32', sh, ord ), identity ); // $ExpectType float32ndarray
 	map( zeros( 'float32', sh, ord ), identity, {} ); // $ExpectType float32ndarray
+	map( zeros( 'float16', sh, ord ), identity ); // $ExpectType float16ndarray
+	map( zeros( 'float16', sh, ord ), identity, {} ); // $ExpectType float16ndarray
 	map( zeros( 'complex64', sh, ord ), identity ); // $ExpectType complex64ndarray
 	map( zeros( 'complex64', sh, ord ), identity, {} ); // $ExpectType complex64ndarray
 	map( zeros( 'complex128', sh, ord ), identity ); // $ExpectType complex128ndarray
@@ -69,6 +71,8 @@ function identity( x: any ): any {
 	map( zeros( 'generic', sh, ord ), { 'dtype': 'float64' }, identity, {} ); // $ExpectType float64ndarray
 	map( zeros( 'generic', sh, ord ), { 'dtype': 'float32' }, identity ); // $ExpectType float32ndarray
 	map( zeros( 'generic', sh, ord ), { 'dtype': 'float32' }, identity, {} ); // $ExpectType float32ndarray
+	map( zeros( 'generic', sh, ord ), { 'dtype': 'float16' }, identity ); // $ExpectType float16ndarray
+	map( zeros( 'generic', sh, ord ), { 'dtype': 'float16' }, identity, {} ); // $ExpectType float16ndarray
 	map( zeros( 'generic', sh, ord ), { 'dtype': 'complex64' }, identity ); // $ExpectType complex64ndarray
 	map( zeros( 'generic', sh, ord ), { 'dtype': 'complex64' }, identity, {} ); // $ExpectType complex64ndarray
 	map( zeros( 'generic', sh, ord ), { 'dtype': 'complex128' }, identity ); // $ExpectType complex128ndarray

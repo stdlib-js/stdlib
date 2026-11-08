@@ -25,26 +25,29 @@ import { typedndarray } from '@stdlib/types/ndarray';
 /**
 * Computes the variance of a one-dimensional ndarray using Welford's algorithm.
 *
-* @param arrays - array-like object containing a one-dimensional input ndarray and a zero-dimensional ndarray specifying a degrees of freedom adjustment
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*     -   a zero-dimensional ndarray specifying the degrees of freedom adjustment.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns variance
 *
 * @example
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var vector = require( '@stdlib/ndarray/vector/ctor' );
 * var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-* var Float64Array = require( '@stdlib/array/float64' );
 *
-* var opts = {
-*     'dtype': 'float64'
-* };
-*
-* var xbuf = new Float64Array( [ 1.0, -2.0, 2.0 ] );
-* var x = new ndarray( opts.dtype, xbuf, [ 3 ], [ 1 ], 0, 'row-major' );
-* var correction = scalar2ndarray( 1.0, opts );
+* var x = vector( [ 1.0, -2.0, 2.0 ], 'generic' );
+* var correction = scalar2ndarray( 1.0, {
+*     'dtype': 'generic'
+* });
 *
 * var v = variancewd( [ x, correction ] );
 * // returns ~4.3333
 */
-declare function variancewd<T extends typedndarray<number> = typedndarray<number>>( arrays: [ T, T ] ): number;
+declare function variancewd( arrays: [ typedndarray<number>, typedndarray<number> ] ): number;
 
 
 // EXPORTS //

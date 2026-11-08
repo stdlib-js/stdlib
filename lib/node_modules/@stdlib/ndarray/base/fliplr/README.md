@@ -47,7 +47,6 @@ Returns a view of an input ndarray in which the order of elements along the last
 ```javascript
 var ndarray = require( '@stdlib/ndarray/ctor' );
 var getShape = require( '@stdlib/ndarray/shape' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 
 var buffer = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
 var shape = [ 3, 2 ];

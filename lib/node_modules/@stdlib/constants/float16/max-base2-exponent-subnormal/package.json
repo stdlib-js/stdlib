@@ -58,6 +58,7 @@
     "flt",
     "floating-point",
     "float",
+    "float16",
     "ieee754",
     "bias",
     "exponent",

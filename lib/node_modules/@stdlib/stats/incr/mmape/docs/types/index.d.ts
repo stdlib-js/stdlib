@@ -21,16 +21,15 @@
 /// <reference types="@stdlib/types"/>
 
 /**
-* If provided input values, the accumulator function returns an updated mean arctangent absolute percentage error. If not provided input values, the accumulator function returns the current mean arctangent absolute percentage error.
+* If provided input values, the accumulator function returns an updated mean absolute percentage error. If not provided input values, the accumulator function returns the current mean absolute percentage error.
 *
 * ## Notes
 *
-* -   Note that, unlike the mean absolute percentage error (MAPE), the mean arctangent absolute percentage error is expressed in radians on the interval [0,π/2].
 * -   If provided `NaN` or a value which, when used in computations, results in `NaN`, the accumulated value is `NaN` for all future invocations.
 *
 * @param f - input value
 * @param a - input value
-* @returns mean arctangent absolute percentage error or null
+* @returns mean absolute percentage error or null
 */
 type accumulator = ( f?: number, a?: number ) => number | null;
 

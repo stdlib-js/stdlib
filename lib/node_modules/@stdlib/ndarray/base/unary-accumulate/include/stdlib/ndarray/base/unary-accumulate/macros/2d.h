@@ -36,7 +36,7 @@
 * @param tout  output type
 *
 * @example
-* STDLIB_NDARRAY_UNARY_ACCUMULATE_2D_LOOP_PREMABLE( double ) {
+* STDLIB_NDARRAY_UNARY_ACCUMULATE_2D_LOOP_PREAMBLE( double ) {
 *     // Innermost loop body...
 * }
 * STDLIB_NDARRAY_UNARY_ACCUMULATE_2D_LOOP_EPILOGUE( double )
@@ -87,7 +87,7 @@
 * @param tout  output type
 *
 * @example
-* STDLIB_NDARRAY_UNARY_ACCUMULATE_2D_LOOP_PREMABLE( double ) {
+* STDLIB_NDARRAY_UNARY_ACCUMULATE_2D_LOOP_PREAMBLE( double ) {
 *     // Innermost loop body...
 * }
 * STDLIB_NDARRAY_UNARY_ACCUMULATE_2D_LOOP_EPILOGUE( double )

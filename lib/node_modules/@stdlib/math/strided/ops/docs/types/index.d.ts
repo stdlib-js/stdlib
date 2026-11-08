@@ -112,7 +112,7 @@ interface Namespace {
 	addBy: typeof addBy;
 
 	/**
-	* Multiplies each element in a strided array `x` to a corresponding element in a strided array `y` and assigns the results to elements in a strided array `z`.
+	* Multiplies each element in a strided array `x` by a corresponding element in a strided array `y` and assigns the results to elements in a strided array `z`.
 	*
 	* @param N - number of indexed elements
 	* @param dtypeX - `x` data type
@@ -192,7 +192,7 @@ interface Namespace {
 	mulBy: typeof mulBy;
 
 	/**
-	* Subtracts each element in a strided array `x` to a corresponding element in a strided array `y` and assigns the results to elements in a strided array `z`.
+	* Subtracts each element in a strided array `y` from a corresponding element in a strided array `x` and assigns the results to elements in a strided array `z`.
 	*
 	* @param N - number of indexed elements
 	* @param dtypeX - `x` data type

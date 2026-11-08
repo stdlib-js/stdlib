@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Test if a value is an array-like object containing only `Date` objects.
+* Tests if a value is an array-like object containing only `Date` objects.
 *
 * @param value - value to test
 * @returns boolean indicating if a value is an array-like object containing only `Date` objects

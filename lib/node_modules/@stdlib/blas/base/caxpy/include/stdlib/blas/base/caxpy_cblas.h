@@ -17,7 +17,7 @@
 */
 
 /**
-* Header file containing function declarations for the C interface to the CBLAS Level 1 routine `cblas_ccopy`.
+* Header file containing function declarations for the C interface to the CBLAS Level 1 routine `cblas_caxpy`.
 */
 #ifndef STDLIB_BLAS_BASE_CAXPY_CBLAS_H
 #define STDLIB_BLAS_BASE_CAXPY_CBLAS_H

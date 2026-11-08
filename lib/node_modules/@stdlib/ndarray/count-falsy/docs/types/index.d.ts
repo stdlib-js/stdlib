@@ -119,7 +119,7 @@ interface CountFalsy {
 	* var out = countFalsy.assign( x, y );
 	* // returns <ndarray>[ 1 ]
 	*/
-	assign<T extends ndarray>( x: ndarray, y: T, options?: BaseOptions ): T;
+	assign<T extends ndarray = ndarray>( x: ndarray, y: T, options?: BaseOptions ): T;
 }
 
 /**

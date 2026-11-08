@@ -75,7 +75,7 @@ interface Namespace {
 	*
 	* ## Notes
 	*
-	* -   If provided `v < 0`, the function returns `NaN`.
+	* -   If provided `v <= 0`, the function returns `NaN`.
 	*
 	* @param v - degrees of freedom
 	* @returns entropy

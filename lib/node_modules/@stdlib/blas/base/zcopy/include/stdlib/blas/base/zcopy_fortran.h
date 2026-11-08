@@ -30,7 +30,7 @@ extern "C" {
 #endif
 
 /**
-* Copies values from one complex double-precision floating-point vector to another complex double-precision floating-point vector.
+* Copies values from one double-precision complex floating-point vector to another double-precision complex floating-point vector.
 */
 void zcopy( const int *, const void *, const int *, void *, const int * );
 

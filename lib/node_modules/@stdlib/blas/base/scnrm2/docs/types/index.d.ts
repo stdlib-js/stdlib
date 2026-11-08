@@ -27,7 +27,7 @@ import { Complex64Array } from '@stdlib/types/array';
 */
 interface Routine {
 	/**
-	* Computes the L2-norm of a complex single-precision floating-point vector.
+	* Computes the L2-norm of a single-precision complex floating-point vector.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
@@ -45,7 +45,7 @@ interface Routine {
 	( N: number, x: Complex64Array, strideX: number ): number;
 
 	/**
-	* Computes the L2-norm of a complex single-precision floating-point vector using alternative indexing semantics.
+	* Computes the L2-norm of a single-precision complex floating-point vector using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
@@ -65,7 +65,7 @@ interface Routine {
 }
 
 /**
-* Computes the L2-norm of a complex single-precision floating-point vector.
+* Computes the L2-norm of a single-precision complex floating-point vector.
 *
 * @param N - number of indexed elements
 * @param x - input array

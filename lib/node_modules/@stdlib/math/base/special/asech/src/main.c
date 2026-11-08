@@ -26,7 +26,7 @@
 * @return     output value
 *
 * @example
-* out = stdlib_base_asech( 1.0 );
+* double out = stdlib_base_asech( 1.0 );
 * // returns 0.0
 */
 double stdlib_base_asech( const double x ) {

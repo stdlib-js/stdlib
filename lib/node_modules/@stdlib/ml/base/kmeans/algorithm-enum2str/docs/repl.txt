@@ -1,0 +1,23 @@
+
+{{alias}}( value )
+    Returns the k-means clustering algorithm string associated with a k-means
+    clustering algorithm enumeration constant.
+
+    Parameters
+    ----------
+    value: integer
+        Clustering algorithm enumeration constant.
+
+    Returns
+    -------
+    out: string|null
+        Clustering algorithm string.
+
+    Examples
+    --------
+    > var out = {{alias}}( {{alias:@stdlib/ml/base/kmeans/algorithm-str2enum}}( 'lloyd' ) )
+    'lloyd'
+
+    See Also
+    --------
+

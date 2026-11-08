@@ -49,7 +49,7 @@ interface Options {
 * ## Notes
 *
 * -   When all elements of the `array` are different, the ranks are uniquely determined. When there are equal elements (called *ties*), the `method` option determines how they are handled. The default, `'average'`, replaces the ranks of the ties by their mean. Other possible options are `'min'` and `'max'`, which replace the ranks of the ties by their minimum and maximum, respectively. `'dense'` works like `'min'`, with the difference that the next highest element after a tie is assigned the next smallest integer. Finally, `ordinal` gives each element in `arr` a distinct rank, according to the position they appear in.
-* -   The `missing` option is used to specify how to handle missing data. By default, `NaN` or `null` are treated as missing values. `'last'`specifies that missing values are placed last, `'first'` that the are assigned the lowest ranks and `'remove'` means that they are removed from the array before the ranks are calculated.
+* -   The `missing` option is used to specify how to handle missing data. By default, `NaN` or `null` are treated as missing values. `'last'` specifies that missing values are placed last, `'first'` that they are assigned the lowest ranks and `'remove'` means that they are removed from the array before the ranks are calculated.
 *
 * @param x - data array
 * @param options - options object
@@ -74,7 +74,7 @@ interface Options {
 * // Missing values are placed last:
 * arr = [ null, 2, 2, 1, 4, 3, NaN, NaN ];
 * out = ranks( arr );
-* // returns [ 6, 2.5, 2.5, 1, 5, 4, 7 ,8 ]
+* // returns [ 6, 2.5, 2.5, 1, 5, 4, 7, 8 ]
 */
 declare function ranks( x: Collection<number>, options?: Options ): Array<number>;
 

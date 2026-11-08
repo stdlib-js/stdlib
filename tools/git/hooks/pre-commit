@@ -50,6 +50,9 @@ skip_editorconfig="${SKIP_LINT_EDITORCONFIG}"
 # Determine root directory:
 root=$(git rev-parse --show-toplevel)
 
+# Resolve the location of the Git directory:
+git_dir=$(git rev-parse --absolute-git-dir)
+
 # Define the path to a utility for linting filenames:
 lint_filenames="${root}/lib/node_modules/@stdlib/_tools/lint/filenames/bin/cli"
 
@@ -58,18 +61,6 @@ lint_package_json="${root}/lib/node_modules/@stdlib/_tools/lint/pkg-json/bin/cli
 
 # Define the path to a utility for linting REPL help files:
 lint_repl_help="${root}/lib/node_modules/@stdlib/_tools/lint/repl-txt/bin/cli"
-
-# Define the path to ESLint configuration file for linting examples:
-eslint_examples_conf="${root}/etc/eslint/.eslintrc.examples.js"
-
-# Define the path to ESLint configuration file for linting tests:
-eslint_tests_conf="${root}/etc/eslint/.eslintrc.tests.js"
-
-# Define the path to ESLint configuration file for linting benchmarks:
-eslint_benchmarks_conf="${root}/etc/eslint/.eslintrc.benchmarks.js"
-
-# Define the path to ESLint configuration file for linting TypeScript definition tests:
-eslint_typescript_tests_conf="${root}/etc/eslint/.eslintrc.typescript.tests.js"
 
 # Define the path to cppcheck configuration file for linting examples:
 cppcheck_examples_suppressions_list="${root}/etc/cppcheck/suppressions.examples.txt"
@@ -81,7 +72,7 @@ cppcheck_tests_fixtures_suppressions_list="${root}/etc/cppcheck/suppressions.tes
 cppcheck_benchmarks_suppressions_list="${root}/etc/cppcheck/suppressions.benchmarks.txt"
 
 # Define the path to a directory for caching hook results:
-cache_dir="${root}/.git/hooks-cache"
+cache_dir="${git_dir}/hooks-cache"
 
 # Define the path to a file for storing hook results:
 cache_file="${cache_dir}/pre_commit_report.yml"
@@ -216,10 +207,48 @@ run_lint() {
 	else
 		task_status 'skipped'
 	fi
-	# Lint Markdown files...
+	# Lint package README Markdown files...
+	add_task 'lint_markdown_pkg_readmes'
+	if [[ -z "${skip_markdown}" ]]; then
+		files=$(echo "${changed_files}" | grep '^lib/node_modules/@stdlib/.*/README\.md$' | tr '\n' ' ')
+		if [[ -n "${files}" ]]; then
+			make FILES="${files}" lint-markdown-package-readme-files > /dev/null >&2
+			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
+				echo '' >&2
+				echo 'Markdown lint errors for package README files.' >&2
+				return 1
+			fi
+			task_status 'passed'
+		else
+			task_status 'na'
+		fi
+	else
+		task_status 'skipped'
+	fi
+	# Lint docs Markdown files...
+	add_task 'lint_markdown_docs'
+	if [[ -z "${skip_markdown}" ]]; then
+		files=$(echo "${changed_files}" | grep '\.md$' | grep '^docs/' | tr '\n' ' ')
+		if [[ -n "${files}" ]]; then
+			make FILES="${files}" lint-markdown-docs-files > /dev/null >&2
+			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
+				echo '' >&2
+				echo 'Markdown lint errors for docs files.' >&2
+				return 1
+			fi
+			task_status 'passed'
+		else
+			task_status 'na'
+		fi
+	else
+		task_status 'skipped'
+	fi
+	# Lint other Markdown files...
 	add_task 'lint_markdown'
 	if [[ -z "${skip_markdown}" ]]; then
-		files=$(echo "${changed_files}" | grep '\.md$' | tr '\n' ' ')
+		files=$(echo "${changed_files}" | grep '\.md$' | grep -v '\.github/workflows/.*\.md$' | grep -v 'lib/node_modules/@stdlib/.*/README\.md$' | grep -v '^docs/' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make FILES="${files}" lint-markdown-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
@@ -316,7 +345,7 @@ run_lint() {
 	if [[ -z "${skip_javascript_examples}" ]]; then
 		files=$(echo "${changed_files}" | grep '/examples/.*\.js$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
-			make JAVASCRIPT_LINTER=eslint ESLINT_CONF="${eslint_examples_conf}" FILES="${files}" FIX=1 lint-javascript-files > /dev/null >&2
+			make JAVASCRIPT_LINTER=eslint FILES="${files}" FIX=1 lint-javascript-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
 				task_status 'failed'
 				echo '' >&2
@@ -335,7 +364,7 @@ run_lint() {
 	if [[ -z "${skip_javascript_tests}" ]]; then
 		files=$(echo "${changed_files}" | grep '/test/.*\.js$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
-			make JAVASCRIPT_LINTER=eslint ESLINT_CONF="${eslint_tests_conf}" FILES="${files}" FIX=1 lint-javascript-files > /dev/null >&2
+			make JAVASCRIPT_LINTER=eslint FILES="${files}" FIX=1 lint-javascript-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
 				task_status 'failed'
 				echo '' >&2
@@ -354,7 +383,7 @@ run_lint() {
 	if [[ -z "${skip_javascript_benchmarks}" ]]; then
 		files=$(echo "${changed_files}" | grep '/benchmark/.*\.js$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
-			make JAVASCRIPT_LINTER=eslint ESLINT_CONF="${eslint_benchmarks_conf}" FILES="${files}" FIX=1 lint-javascript-files > /dev/null >&2
+			make JAVASCRIPT_LINTER=eslint FILES="${files}" FIX=1 lint-javascript-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
 				task_status 'failed'
 				echo '' >&2
@@ -587,7 +616,7 @@ run_lint() {
 
 		# Lint all collected test files...
 		if [[ -n "${files}" ]]; then
-			make TYPESCRIPT_DECLARATIONS_LINTER=eslint FILES="${files}" ESLINT_TS_CONF="${eslint_typescript_tests_conf}" lint-typescript-declarations-files > /dev/null >&2
+			make TYPESCRIPT_DECLARATIONS_LINTER=eslint FILES="${files}" lint-typescript-declarations-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
 				task_status 'failed'
 				echo '' >&2
@@ -604,7 +633,7 @@ run_lint() {
 	# Lint license headers...
 	add_task 'lint_license_headers'
 	if [[ -z "${skip_license_headers}" ]]; then
-		files=$(echo "${changed_files}" | tr '\n' ' ')
+		files=$(echo "${changed_files}" | grep -v '\.github/workflows/.*\.md$' | grep -v '\.lock\.yml$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make FILES="${files}" lint-license-headers-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then

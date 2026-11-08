@@ -60,7 +60,8 @@
     "double",
     "double-precision",
     "dbl",
-    "float64"
+    "float64",
+    "number"
   ],
   "__stdlib__": {}
 }

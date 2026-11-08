@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the logarithm of the cumulative distribution function (CDF) for a Lévy distribution with location parameter `mu` and scale parameter `c` at value `x`.
+* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a Lévy distribution with location parameter `mu` and scale parameter `c` at value `x`.
 */
 double stdlib_base_dists_levy_logcdf( const double x, const double mu, const double c );
 

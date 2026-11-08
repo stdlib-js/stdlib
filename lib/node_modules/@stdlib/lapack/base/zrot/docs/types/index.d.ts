@@ -48,12 +48,8 @@ interface Routine {
 	* var s = new Complex128( 0.3, 0.4 );
 	*
 	* zrot( zx.length, zx, 1, zy, 1, 0.8, s );
-	*
-	* var z = zy.get( 0 );
-	* // returns <Complex128>[ ~-1.1, ~-0.2 ]
-	*
-	* z = zx.get( 0 );
-	* // returns <Complex128>[ ~0.8, ~1.6 ]
+	* // zy => <Complex128Array>[ ~-1.1, ~-0.2, ~-2.5, ~0.0, ~-3.9, ~0.2, ~-5.3, ~0.4 ]
+	* // zx => <Complex128Array>[ ~0.8, ~1.6, ~2.4, ~3.2, ~4.0, ~4.8, ~5.6, ~6.4 ]
 	*/
 	( N: number, zx: Complex128Array, strideX: number, zy: Complex128Array, strideY: number, c: number, s: Complex128 ): Complex128Array;
 
@@ -80,12 +76,8 @@ interface Routine {
 	* var s = new Complex128( 0.3, 0.4 );
 	*
 	* zrot.ndarray( zx.length, zx, 1, 0, zy, 1, 0, 0.8, s );
-	*
-	* var z = zy.get( 0 );
-	* // returns <Complex128>[ ~-1.1, ~-0.2 ]
-	*
-	* z = zx.get( 0 );
-	* // returns <Complex128>[ ~0.8, ~1.6 ]
+	* // zy => <Complex128Array>[ ~-1.1, ~-0.2, ~-2.5, ~0.0, ~-3.9, ~0.2, ~-5.3, ~0.4 ]
+	* // zx => <Complex128Array>[ ~0.8, ~1.6, ~2.4, ~3.2, ~4.0, ~4.8, ~5.6, ~6.4 ]
 	*/
 	ndarray( N: number, zx: Complex128Array, strideX: number, offsetX: number, zy: Complex128Array, strideY: number, offsetY: number, c: number, s: Complex128 ): Complex128Array;
 }
@@ -111,12 +103,8 @@ interface Routine {
 * var s = new Complex128( 0.3, 0.4 );
 *
 * zrot( 2, zx, 2, zy, 1, 0.8, s );
-*
-* var z = zy.get( 0 );
-* // returns <Complex128>[ ~-1.1, ~-0.2 ]
-*
-* z = zx.get( 0 );
-* // returns <Complex128>[ ~0.8, ~1.6 ]
+* // zy => <Complex128Array>[ ~-1.1, ~-0.2, ~-3.9, ~0.2, 0.0, 0.0, 0.0, 0.0 ]
+* // zx => <Complex128Array>[ ~0.8, ~1.6, 3.0, 4.0, 4.0, ~4.8, 7.0, 8.0 ]
 *
 * @example
 * var Complex128Array = require( '@stdlib/array/complex128' );
@@ -127,12 +115,8 @@ interface Routine {
 * var s = new Complex128( 0.3, 0.4 );
 *
 * zrot.ndarray( 2, zx, 2, 0, zy, 1, 0, 0.8, s );
-*
-* var z = zy.get( 0 );
-* // returns <Complex128>[ ~-1.1, ~-0.2 ]
-*
-* z = zx.get( 0 );
-* // returns <Complex128>[ ~0.8, ~1.6 ]
+* // zy => <Complex128Array>[ ~-1.1, ~-0.2, ~-3.9, ~0.2, 0.0, 0.0, 0.0, 0.0 ]
+* // zx => <Complex128Array>[ ~0.8, ~1.6, 3.0, 4.0, 4.0, ~4.8, 7.0, 8.0 ]
 */
 declare var zrot: Routine;
 

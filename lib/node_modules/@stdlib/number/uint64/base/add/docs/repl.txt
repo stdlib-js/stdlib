@@ -1,0 +1,117 @@
+
+{{alias}}( a, b )
+    Adds two 64-bit unsigned integers.
+
+    Parameters
+    ----------
+    a: Uint64
+        64-bit unsigned integer.
+
+    b: Uint64
+        64-bit unsigned integer.
+
+    Returns
+    -------
+    out: Uint64
+        Result.
+
+    Examples
+    --------
+    > var a = new {{alias:@stdlib/number/uint64/ctor}}( 5 )
+    <Uint64>[ 5n ]
+    > var b = new {{alias:@stdlib/number/uint64/ctor}}( 10 )
+    <Uint64>[ 10n ]
+    > var out = {{alias}}( a, b )
+    <Uint64>[ 15n ]
+
+
+{{alias}}.assign( ah, al, bh, bl, out, so, oo )
+    Adds two 64-bit unsigned integers and assigns results to a provided output
+    array.
+
+    Parameters
+    ----------
+    ah: integer
+        High 32-bit word of the first 64-bit unsigned integer.
+
+    al: integer
+        Low 32-bit word of the first 64-bit unsigned integer.
+
+    bh: integer
+        High 32-bit word of the second 64-bit unsigned integer.
+
+    bl: integer
+        Low 32-bit word of the second 64-bit unsigned integer.
+
+    out: ArrayLikeObject
+        Output array.
+
+    so: integer
+        Stride length.
+
+    oo: integer
+        Starting index.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > var out = new {{alias:@stdlib/array/uint32}}( 2 );
+    > {{alias}}.assign( 1, 2, 3, 4, out, 1, 0 )
+    <Uint32Array>[ 4, 6 ]
+
+
+{{alias}}.strided( a, sa, oa, b, sb, ob, out, so, oo )
+    Adds two 64-bit unsigned integers stored in integer-valued strided array
+    views and assigns results to a provided strided output array.
+
+    Parameters
+    ----------
+    a: ArrayLikeObject
+        First 64-bit unsigned integer strided array view containing interleaved
+        32-bit unsigned integer high and low order words.
+
+    sa: integer
+        Stride length for `a`.
+
+    oa: integer
+        Starting index for `a`.
+
+    b: ArrayLikeObject
+        Second 64-bit unsigned integer strided array view containing interleaved
+        32-bit unsigned integer high and low order words.
+
+    sb: integer
+        Stride length for `b`.
+
+    ob: integer
+        Starting index for `b`.
+
+    out: ArrayLikeObject
+        Output array.
+
+    so: integer
+        Stride length for `out`.
+
+    oo: integer
+        Starting index for `out`.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > var a = new {{alias:@stdlib/array/uint32}}( [ 1, 2 ] );
+    > var b = new {{alias:@stdlib/array/uint32}}( [ 3, 4 ] );
+    > var out = new {{alias:@stdlib/array/uint32}}( 2 );
+    > {{alias}}.strided( a, 1, 0, b, 1, 0, out, 1, 0 )
+    <Uint32Array>[ 4, 6 ]
+
+    See Also
+    --------
+

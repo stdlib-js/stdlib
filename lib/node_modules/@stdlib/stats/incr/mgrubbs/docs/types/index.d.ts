@@ -83,7 +83,7 @@ interface Results {
 	df: number;
 
 	/**
-	* Alternative hypothesis (`two-sided`, `less`, or `greater`).
+	* Alternative hypothesis (`two-sided`, `min`, or `max`).
 	*/
 	alt: string;
 
@@ -122,11 +122,10 @@ type accumulator = ( x?: number ) => Results | null;
 * @example
 * var rnorm = require( '@stdlib/random/base/normal' );
 *
-* var accumulator;
+* var accumulator = incrmgrubbs( 20 );
+*
+* var res;
 * var i;
-*
-* accumulator = incrmgrubbs( 20 );
-*
 * for ( i = 0; i < 200; i++ ) {
 *     res = accumulator( rnorm( 10.0, 5.0 ) );
 * }
