@@ -83,7 +83,7 @@ run_make_lint() {
 
 	local eslint_flags=""
 	if [ "${quiet}" -eq 1 ]; then
-		eslint_flags="ESLINT_FLAGS='--quiet'"
+		eslint_flags="ESLINT_CLI_FLAGS='--quiet'"
 	fi
 
 	local make_cmd="make lint-javascript-files FIX=${fix} FAST_FAIL=0 FILES=\"${files_to_lint}\" ${make_args} ${eslint_conf_arg} ${eslint_flags}"
@@ -92,7 +92,7 @@ run_make_lint() {
 	if ! eval "${make_cmd}"; then
 		if [ "${quiet}" -eq 0 ]; then
 			echo "Initial linting failed. Retrying with --quiet and logging errors..."
-			eval "make lint-javascript-files FIX=${fix} FAST_FAIL=0 FILES=\"${files_to_lint}\" ${make_args} ${eslint_conf_arg} ESLINT_FLAGS='--quiet'" >> "${err_file}" 2>&1
+			eval "make lint-javascript-files FIX=${fix} FAST_FAIL=0 FILES=\"${files_to_lint}\" ${make_args} ${eslint_conf_arg} ESLINT_CLI_FLAGS='--quiet'" >> "${err_file}" 2>&1
 		else
 			# Already running with --quiet, just log the error
 			echo "Linting failed for files." >> "${err_file}"
