@@ -146,7 +146,7 @@ interface ModuleConstructor {
 */
 interface Module extends ModuleWrapper {
 	/**
-	* Interchanges two double-precision floating point vectors.
+	* Interchanges two double-precision floating-point vectors.
 	*
 	* @param N - number of indexed elements
 	* @param xptr - first input array pointer (i.e., byte offset)
@@ -207,7 +207,7 @@ interface Module extends ModuleWrapper {
 	main( N: number, xptr: number, strideX: number, yptr: number, strideY: number ): number;
 
 	/**
-	* Interchanges two double-precision floating point vectors using alternative indexing semantics.
+	* Interchanges two double-precision floating-point vectors using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
 	* @param xptr - first input array pointer (i.e., byte offset)
@@ -275,7 +275,7 @@ interface Module extends ModuleWrapper {
 */
 interface Routine extends ModuleWrapper {
 	/**
-	* Interchanges two double-precision floating point vectors.
+	* Interchanges two double-precision floating-point vectors.
 	*
 	* @param N - number of indexed elements
 	* @param x - first input array
@@ -297,7 +297,7 @@ interface Routine extends ModuleWrapper {
 	main( N: number, x: Float64Array, strideX: number, y: Float64Array, strideY: number ): Float64Array;
 
 	/**
-	* Interchanges two double-precision floating point vectors using alternative indexing semantics.
+	* Interchanges two double-precision floating-point vectors using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
 	* @param x - first input array
@@ -379,7 +379,7 @@ interface Routine extends ModuleWrapper {
 }
 
 /**
-* Interchanges two double-precision floating point vectors.
+* Interchanges two double-precision floating-point vectors.
 *
 * @param N - number of indexed elements
 * @param x - first input array

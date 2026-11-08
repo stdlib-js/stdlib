@@ -50,6 +50,14 @@ var list = aliases( '@stdlib/math/base/special' );
 
 <!-- /.usage -->
 
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
 <section class="examples">
 
 <!-- TODO: more creative example. -->

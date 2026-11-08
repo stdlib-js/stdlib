@@ -43,7 +43,7 @@ interface Namespace {
 	* var dt = ns.array2dtype( [ 1, 2, 3 ] );
 	* // returns 'float64'
 	*
-	* var dt = ns.array2dtype( 'beep' );
+	* dt = ns.array2dtype( 'beep' );
 	* // returns 'float64'
 	*/
 	array2dtype: typeof array2dtype;

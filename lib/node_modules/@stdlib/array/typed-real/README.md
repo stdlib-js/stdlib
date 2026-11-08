@@ -53,6 +53,7 @@ The function recognizes the following data types:
 
 -   `float64`: double-precision floating-point numbers (IEEE 754)
 -   `float32`: single-precision floating-point numbers (IEEE 754)
+-   `float16`: half-precision floating-point numbers (IEEE 754)
 -   `int32`: 32-bit two's complement signed integers
 -   `uint32`: 32-bit unsigned integers
 -   `int16`: 16-bit two's complement signed integers

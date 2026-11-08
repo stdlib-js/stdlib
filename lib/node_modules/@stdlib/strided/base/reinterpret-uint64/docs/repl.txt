@@ -1,0 +1,28 @@
+
+{{alias}}( x, offset )
+    Returns a Uint32Array view of a Uint64Array.
+
+    Parameters
+    ----------
+    x: Uint64Array
+        Input array.
+
+    offset: integer
+        Starting index of the view relative to the Uint64Array.
+
+    Returns
+    -------
+    out: Uint32Array
+        Uint32Array view.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/uint64}}( 10 );
+    > var out = {{alias}}( x, 0 )
+    <Uint32Array>
+    > var bool = ( out.buffer === x.buffer )
+    true
+
+    See Also
+    --------
+

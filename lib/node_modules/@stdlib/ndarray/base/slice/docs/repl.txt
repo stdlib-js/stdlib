@@ -27,13 +27,13 @@
     --------
     > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
     <ndarray>
-    > x.shape
+    > {{alias:@stdlib/ndarray/shape}}( x )
     [ 2, 2 ]
     > var s = new {{alias:@stdlib/slice/multi}}( null, 1 )
     <MultiSlice>
     > var y = {{alias}}( x, s, false, false )
     <ndarray>
-    > y.shape
+    > {{alias:@stdlib/ndarray/shape}}( y )
     [ 2 ]
     > {{alias:@stdlib/ndarray/to-array}}( y )
     [ 2, 4 ]

@@ -22,6 +22,12 @@ limitations under the License.
 
 > [Continued fraction][continued-fraction] approximation.
 
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
@@ -166,6 +172,12 @@ function generator() {
 </section>
 
 <!-- /.usage -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
 
 <section class="examples">
 

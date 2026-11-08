@@ -41,6 +41,8 @@ function predicate( x: any ): boolean {
 	reject( zeros( 'float64', sh, ord ), predicate, {} ); // $ExpectType float64ndarray
 	reject( zeros( 'float32', sh, ord ), predicate ); // $ExpectType float32ndarray
 	reject( zeros( 'float32', sh, ord ), predicate, {} ); // $ExpectType float32ndarray
+	reject( zeros( 'float16', sh, ord ), predicate ); // $ExpectType float16ndarray
+	reject( zeros( 'float16', sh, ord ), predicate, {} ); // $ExpectType float16ndarray
 	reject( zeros( 'complex64', sh, ord ), predicate ); // $ExpectType complex64ndarray
 	reject( zeros( 'complex64', sh, ord ), predicate, {} ); // $ExpectType complex64ndarray
 	reject( zeros( 'complex128', sh, ord ), predicate ); // $ExpectType complex128ndarray
@@ -69,6 +71,8 @@ function predicate( x: any ): boolean {
 	reject( zeros( 'generic', sh, ord ), { 'dtype': 'float64' }, predicate, {} ); // $ExpectType float64ndarray
 	reject( zeros( 'generic', sh, ord ), { 'dtype': 'float32' }, predicate ); // $ExpectType float32ndarray
 	reject( zeros( 'generic', sh, ord ), { 'dtype': 'float32' }, predicate, {} ); // $ExpectType float32ndarray
+	reject( zeros( 'generic', sh, ord ), { 'dtype': 'float16' }, predicate ); // $ExpectType float16ndarray
+	reject( zeros( 'generic', sh, ord ), { 'dtype': 'float16' }, predicate, {} ); // $ExpectType float16ndarray
 	reject( zeros( 'generic', sh, ord ), { 'dtype': 'complex64' }, predicate ); // $ExpectType complex64ndarray
 	reject( zeros( 'generic', sh, ord ), { 'dtype': 'complex64' }, predicate, {} ); // $ExpectType complex64ndarray
 	reject( zeros( 'generic', sh, ord ), { 'dtype': 'complex128' }, predicate ); // $ExpectType complex128ndarray
@@ -97,6 +101,8 @@ function predicate( x: any ): boolean {
 	reject( zeros( 'float64', sh, ord ), { 'order': ord }, predicate, {} ); // $ExpectType float64ndarray
 	reject( zeros( 'float32', sh, ord ), { 'order': ord }, predicate ); // $ExpectType float32ndarray
 	reject( zeros( 'float32', sh, ord ), { 'order': ord }, predicate, {} ); // $ExpectType float32ndarray
+	reject( zeros( 'float16', sh, ord ), { 'order': ord }, predicate ); // $ExpectType float16ndarray
+	reject( zeros( 'float16', sh, ord ), { 'order': ord }, predicate, {} ); // $ExpectType float16ndarray
 	reject( zeros( 'complex64', sh, ord ), { 'order': ord }, predicate ); // $ExpectType complex64ndarray
 	reject( zeros( 'complex64', sh, ord ), { 'order': ord }, predicate, {} ); // $ExpectType complex64ndarray
 	reject( zeros( 'complex128', sh, ord ), { 'order': ord }, predicate ); // $ExpectType complex128ndarray
