@@ -37,13 +37,13 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/blas/ext/base/sindex-of-truthy",
         "@stdlib/strided/base/stride2offset",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-float32array",
-        "@stdlib/napi/create-int32"
+        "@stdlib/napi/create-int32",
+        "@stdlib/blas/ext/base/sindex-of-truthy"
       ]
     },
     {
@@ -58,8 +58,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/blas/ext/base/sindex-of-truthy",
-        "@stdlib/strided/base/stride2offset"
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/ext/base/sindex-of-truthy"
       ]
     },
     {
@@ -74,8 +74,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/blas/ext/base/sindex-of-truthy",
-        "@stdlib/strided/base/stride2offset"
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/ext/base/sindex-of-truthy"
       ]
     }
   ]

@@ -64,6 +64,7 @@ function clbk( i: number ): number {
 {
 	filledarrayBy(); // $ExpectType ArrayOrTypedArray
 	filledarrayBy( 'float32' ); // $ExpectType ArrayOrTypedArray
+	filledarrayBy( 'float16' ); // $ExpectType ArrayOrTypedArray
 
 	filledarrayBy( 10, clbk ); // $ExpectType ArrayOrTypedArray
 	filledarrayBy( 10, clbk, {} ); // $ExpectType ArrayOrTypedArray

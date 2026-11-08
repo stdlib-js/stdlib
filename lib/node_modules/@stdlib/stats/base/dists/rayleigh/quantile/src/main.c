@@ -33,7 +33,6 @@
 * // returns ~1.794
 */
 double stdlib_base_dists_rayleigh_quantile( const double p, const double sigma ) {
-	double s2;
 	if (
 		stdlib_base_is_nan( p ) ||
 		stdlib_base_is_nan( sigma ) ||
@@ -46,6 +45,5 @@ double stdlib_base_dists_rayleigh_quantile( const double p, const double sigma )
 	if ( sigma == 0.0 ) {
 		return 0.0;
 	}
-	s2 = sigma * sigma;
-	return stdlib_base_sqrt( -2.0 * s2 * stdlib_base_log1p( -p ) );
+	return sigma * stdlib_base_sqrt( -2.0 * stdlib_base_log1p( -p ) );
 }

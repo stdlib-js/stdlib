@@ -124,7 +124,7 @@ interface Namespace {
 	error: typeof error;
 
 	/**
-	* Standard library for interfacing with a fileystem.
+	* Standard library for interfacing with a filesystem.
 	*/
 	fs: typeof fs;
 
