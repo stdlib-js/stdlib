@@ -54,6 +54,8 @@
     "napi",
     "native",
     "addon",
+    "utilities",
+    "utils",
     "exports",
     "macros"
   ],

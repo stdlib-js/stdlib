@@ -18,6 +18,7 @@
 
 #include "stdlib/stats/base/dists/levy/mode.h"
 #include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Returns the mode for a Lévy distribution with location `mu` and scale `c`.
@@ -36,7 +37,7 @@ double stdlib_base_dists_levy_mode( const double mu, const double c ) {
 		stdlib_base_is_nan( c ) ||
 		c <= 0.0
 	) {
-		return 0.0/0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	return mu + ( c / 3.0 );
 }
