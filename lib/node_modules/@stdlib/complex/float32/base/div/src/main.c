@@ -1,0 +1,93 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2026 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+#include "stdlib/complex/float32/base/div.h"
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/complex/float32/reim.h"
+#include "stdlib/math/base/assert/is_infinite.h"
+#include "stdlib/math/base/assert/is_finite.h"
+#include "stdlib/math/base/special/signumf.h"
+
+/**
+* Divides two single-precision complex floating-point numbers.
+*
+* ## Notes
+*
+* -   The implementation computes intermediate results in double-precision arithmetic and rounds only final results to single-precision, following the approach used for single-precision complex division in [Julia][@julia:complex]. As input components are single-precision floating-point numbers, all intermediate products are exact in double-precision, and the squared magnitude of the denominator can neither overflow nor underflow in double-precision, thus avoiding the need for the scaling used in robust native-precision algorithms.
+* -   When dividing a finite complex number by an infinite complex number, the function returns signed zeros, with the signs derived from the signs of the respective input components.
+*
+* [@julia:complex]: https://github.com/JuliaLang/julia/blob/5bd20a13d21524e74fe61f5d699bd5640aff1216/base/complex.jl#L369-L382
+*
+* @param z1       input value
+* @param z2       input value
+* @return         result
+*
+* @example
+* #include "stdlib/complex/float32/ctor.h"
+* #include "stdlib/complex/float32/real.h"
+* #include "stdlib/complex/float32/imag.h"
+*
+* stdlib_complex64_t z1 = stdlib_complex64( -13.0f, -1.0f );
+* stdlib_complex64_t z2 = stdlib_complex64( -2.0f, 1.0f );
+*
+* stdlib_complex64_t out = stdlib_base_complex64_div( z1, z2 );
+*
+* float re = stdlib_complex64_real( out );
+* // returns 5.0f
+*
+* float im = stdlib_complex64_imag( out );
+* // returns 3.0f
+*/
+stdlib_complex64_t stdlib_base_complex64_div( const stdlib_complex64_t z1, const stdlib_complex64_t z2 ) {
+	float re1f;
+	float re2f;
+	float im1f;
+	float im2f;
+	double mag;
+	double re;
+	double im;
+	double a;
+	double b;
+	double c;
+	double d;
+
+	stdlib_complex64_reim( z1, &re1f, &im1f );
+	stdlib_complex64_reim( z2, &re2f, &im2f );
+
+	a = (double)re1f;
+	b = (double)im1f;
+	c = (double)re2f;
+	d = (double)im2f;
+
+	if ( stdlib_base_is_infinite( c ) || stdlib_base_is_infinite( d ) ) {
+		if ( !stdlib_base_is_finite( a ) || !stdlib_base_is_finite( b ) ) {
+			return stdlib_complex64( 0.0f/0.0f, 0.0f/0.0f );
+		}
+		// When dividing a finite complex number by an infinite complex number, the quotient underflows to signed zeros:
+		re = 0.0 * stdlib_base_signumf( re1f ) * stdlib_base_signumf( re2f );
+		im = -0.0 * stdlib_base_signumf( im1f ) * stdlib_base_signumf( im2f );
+		return stdlib_complex64( (float)re, (float)im );
+	}
+	// Compute intermediate results in double-precision arithmetic (note: `NaN` input components naturally propagate to both output components):
+	mag = 1.0 / ( ( c * c ) + ( d * d ) );
+	re = ( ( a * c ) + ( b * d ) ) * mag;
+	im = ( ( b * c ) - ( a * d ) ) * mag;
+
+	// Round the final results to single-precision:
+	return stdlib_complex64( (float)re, (float)im );
+}

@@ -83,8 +83,6 @@ var y = cabs2( new Complex128( 5.0, 3.0 ) );
 
 ## Examples
 
-<!-- eslint-disable max-len -->
-
 <!-- eslint no-undef: "error" -->
 
 ```javascript

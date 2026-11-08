@@ -65,6 +65,55 @@ v = cexp( new Complex128( 0.0, 1.0 ) );
 // returns <Complex128>[ ~0.540, ~0.841 ]
 ```
 
+#### cexp.assign( re, im, out, strideOut, offsetOut )
+
+Evaluates the [exponential][exponential-function] function for a double-precision complex floating-point number and assigns results to a provided output array.
+
+```javascript
+var Float64Array = require( '@stdlib/array/float64' );
+
+var out = new Float64Array( 2 );
+var v = cexp.assign( 0.0, 0.0, out, 1, 0 );
+// returns <Float64Array>[ 1.0, 0.0 ]
+
+var bool = ( out === v );
+// returns true
+```
+
+The function supports the following parameters:
+
+-   **re**: real component.
+-   **im**: imaginary component.
+-   **out**: output array.
+-   **strideOut**: stride length for `out`.
+-   **offsetOut**: starting index for `out`.
+
+#### cexp.strided( z, sz, oz, out, so, oo )
+
+Evaluates the [exponential][exponential-function] function for a double-precision complex floating-point number stored in a real-valued strided array view and assigns results to a provided strided output array.
+
+```javascript
+var Float64Array = require( '@stdlib/array/float64' );
+
+var z = new Float64Array( [ 0.0, 0.0 ] );
+var out = new Float64Array( 2 );
+
+var v = cexp.strided( z, 1, 0, out, 1, 0 );
+// returns <Float64Array>[ 1.0, 0.0 ]
+
+var bool = ( out === v );
+// returns true
+```
+
+The function supports the following parameters:
+
+-   **z**: complex number strided array view.
+-   **sz**: stride length for `z`.
+-   **oz**: starting index for `z`.
+-   **out**: output array.
+-   **so**: stride length for `out`.
+-   **oo**: starting index for `out`.
+
 </section>
 
 <!-- /.usage -->
@@ -76,24 +125,16 @@ v = cexp( new Complex128( 0.0, 1.0 ) );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
+var Complex128Array = require( '@stdlib/array/complex128' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var cexp = require( '@stdlib/math/base/special/cexp' );
 
-function randomComplex() {
-    var re = discreteUniform( -50, 50 );
-    var im = discreteUniform( -50, 50 );
-    return new Complex128( re, im );
-}
+// Create an array of random numbers:
+var arr = new Complex128Array( uniform( 200, -50.0, 50.0 ) );
 
-var z1;
-var z2;
-var i;
-for ( i = 0; i < 100; i++ ) {
-    z1 = randomComplex();
-    z2 = cexp( z1 );
-    console.log( 'cexp(%s) = %s', z1.toString(), z2.toString() );
-}
+// Compute the exponential function of each number in the array:
+logEachMap( 'cexp(%s) = %s', arr, cexp );
 ```
 
 </section>

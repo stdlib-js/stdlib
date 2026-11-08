@@ -164,14 +164,13 @@ var dcartesianProduct = require( '@stdlib/blas/ext/base/dcartesian-product' );
 
 var M = 3;
 var N = 2;
-var x = discreteUniform( M, 1, 10, {
+var opts = {
     'dtype': 'float64'
-});
+};
+var x = discreteUniform( M, 1, 10, opts );
 console.log( x );
 
-var y = discreteUniform( N, 1, 10, {
-    'dtype': 'float64'
-});
+var y = discreteUniform( N, 1, 10, opts );
 console.log( y );
 
 var out = new Float64Array( M * N * 2 );

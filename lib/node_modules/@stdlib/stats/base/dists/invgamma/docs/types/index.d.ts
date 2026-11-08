@@ -74,7 +74,7 @@ interface Namespace {
 	* -   If `alpha <= 0` or `beta <= 0`, the function returns `NaN`.
 	*
 	* @param alpha - shape parameter
-	* @param beta - rate parameter
+	* @param beta - scale parameter
 	* @returns entropy
 	*
 	* @example
@@ -115,7 +115,7 @@ interface Namespace {
 	* -   If `alpha <= 0` or `beta <= 0`, the function returns `NaN`.
 	*
 	* @param alpha - shape parameter
-	* @param beta - rate parameter
+	* @param beta - scale parameter
 	* @returns kurtosis
 	*
 	* @example
@@ -178,7 +178,7 @@ interface Namespace {
 	* -   If `alpha <= 0` or `beta <= 0`, the function returns `NaN`.
 	*
 	* @param alpha - shape parameter
-	* @param beta - rate parameter
+	* @param beta - scale parameter
 	* @returns expected value
 	*
 	* @example
@@ -219,7 +219,7 @@ interface Namespace {
 	* -   If `alpha <= 0` or `beta <= 0`, the function returns `NaN`.
 	*
 	* @param alpha - shape parameter
-	* @param beta - rate parameter
+	* @param beta - scale parameter
 	* @returns mode
 	*
 	* @example
@@ -257,7 +257,7 @@ interface Namespace {
 	*
 	* @param x - input value
 	* @param alpha - shape parameter
-	* @param beta - rate parameter
+	* @param beta - scale parameter
 	* @returns evaluated PDF
 	*
 	* @example
@@ -299,7 +299,7 @@ interface Namespace {
 	* -   If `alpha <= 0` or `beta <= 0`, the function returns `NaN`.
 	*
 	* @param alpha - shape parameter
-	* @param beta - rate parameter
+	* @param beta - scale parameter
 	* @returns skewness
 	*
 	* @example
@@ -340,7 +340,7 @@ interface Namespace {
 	* -   If `alpha <= 0` or `beta <= 0`, the function returns `NaN`.
 	*
 	* @param alpha - shape parameter
-	* @param beta - rate parameter
+	* @param beta - scale parameter
 	* @returns standard deviation
 	*
 	* @example
@@ -381,7 +381,7 @@ interface Namespace {
 	* -   If `alpha <= 0` or `beta <= 0`, the function returns `NaN`.
 	*
 	* @param alpha - shape parameter
-	* @param beta - rate parameter
+	* @param beta - scale parameter
 	* @returns variance
 	*
 	* @example

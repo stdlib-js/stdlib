@@ -1,0 +1,12 @@
+---
+type: amend-message
+---
+feat!: add `fromIndex` support to `blas/ext/base/ndarray/gindex-of-truthy`
+
+BREAKING CHANGE: add `fromIndex` support
+
+To maintain previous behavior, provide an additional zero-dimensional ndarray containing the value `0`.
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/14489
+Reviewed-by: Athan Reines <kgryte@gmail.com>
+Closes: https://github.com/stdlib-js/metr-issue-tracker/issues/1189

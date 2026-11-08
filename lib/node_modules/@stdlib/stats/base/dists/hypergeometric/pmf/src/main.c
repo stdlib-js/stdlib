@@ -44,13 +44,19 @@ double stdlib_base_dists_hypergeometric_pmf( const double x, const int32_t N, co
 	double lpmf;
 	double maxs;
 	double mins;
+	double dn;
+	double dK;
+	double dN;
 
 	if ( stdlib_base_is_nan( x ) || N < 0 || K < 0 || n < 0 || K > N || n > N ) {
 		return 0.0/0.0; // NaN
 	}
 
-	mins = stdlib_base_max( 0, n+K-N );
-	maxs = stdlib_base_min( K, n );
+	dn = (double)n;
+	dN = (double)N;
+	dK = (double)K;
+	mins = stdlib_base_max( 0.0, dn+dK-dN );
+	maxs = stdlib_base_min( dK, dn );
 
 	if ( stdlib_base_is_nonnegative_integer( x ) && mins <= x && x <= maxs ) {
 		lnum = stdlib_base_factorialln( n ) + stdlib_base_factorialln( K ) + stdlib_base_factorialln( N-n ) + stdlib_base_factorialln( N-K );

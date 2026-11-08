@@ -202,3 +202,4 @@ jsconfig.json
 ####################
 CLAUDE.md
 GEMINI.md
+.claude/

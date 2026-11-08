@@ -22,6 +22,22 @@ limitations under the License.
 
 > Compute `cos(x) - 1`.
 
+<section class="intro">
+
+The function computes `cos(x) - 1` accurately for small `x`
+
+<!-- <equation class="equation" label="eq:cosm1_function" align="center" raw="y = \cos(x) - 1" alt="Cosine minus one"> -->
+
+```math
+y = \cos(x) - 1
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

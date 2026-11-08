@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/blas/ext/base/gfirst-index-not-equal",
   "version": "0.0.0",
-  "description": "Return the index of the first element in a strided array which is not equal to the corresponding element in another strided array.",
+  "description": "Return the index of the first element in a strided array which is not equal to a corresponding element in another strided array.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -55,16 +55,10 @@
     "math",
     "blas",
     "extended",
-    "search",
-    "index",
-    "first",
-    "compare",
-    "comparison",
+    "not",
     "equal",
-    "equality",
-    "not equal",
-    "unequal",
-    "mismatch",
+    "index",
+    "compare",
     "strided",
     "array",
     "ndarray"

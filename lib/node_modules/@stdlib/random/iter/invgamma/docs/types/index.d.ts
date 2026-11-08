@@ -92,7 +92,7 @@ interface Iterator<T> extends TypedIterator<T> {
 * Returns an iterator for generating pseudorandom numbers drawn from an inverse gamma distribution.
 *
 * @param alpha - shape parameter
-* @param beta  - scale parameter
+* @param beta - scale parameter
 * @param options - function options
 * @throws `alpha` must be a positive number
 * @throws `beta` must be a positive number
