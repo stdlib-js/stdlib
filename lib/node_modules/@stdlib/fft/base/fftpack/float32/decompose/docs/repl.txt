@@ -1,0 +1,56 @@
+
+{{alias}}( N, M, initial, si, oi, out, so, oo )
+    Factorizes a sequence length into a product of integers and stores the
+    results in a 32-bit unsigned integer array.
+
+    Factorization results are stored in the output array sequentially, where
+    the first element contains the sequence length `N`, the second element
+    contains the number of factors into which `N` was decomposed, and subsequent
+    elements contain the individual integer factors.
+
+    Any remaining array space remains as unused storage.
+
+    Parameters
+    ----------
+    N: integer
+        Length of the sequence.
+
+    M: integer
+        Number of trial divisors.
+
+    initial: Uint32Array
+        Array of initial trial divisors.
+
+    si: integer
+        Stride length for `initial`.
+
+    oi: integer
+        Starting index for `initial`.
+
+    out: Uint32Array
+        Output array for storing factorization results.
+
+    so: integer
+        Stride length for `out`.
+
+    oo: integer
+        Starting index for `out`.
+
+    Returns
+    -------
+    numFactors: integer
+        Number of factors into which `N` was decomposed.
+
+    Examples
+    --------
+    > var N = 630;
+    > var initial = new {{alias:@stdlib/array/uint32}}( [ 3, 4, 2, 5 ] );
+    > var factors = new {{alias:@stdlib/array/uint32}}( 7 );
+    > var numFactors = {{alias}}( N, 4, initial, 1, 0, factors, 1, 0 )
+    5
+    > factors
+    <Uint32Array>[ 630, 5, 2, 3, 3, 5, 7 ]
+
+    See Also
+    --------
+

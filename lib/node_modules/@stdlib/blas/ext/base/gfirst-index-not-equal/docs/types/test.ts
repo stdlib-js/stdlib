@@ -41,6 +41,7 @@ import gfirstIndexNotEqual = require( './index' );
 	gfirstIndexNotEqual( false, x, 1, y, 1 ); // $ExpectError
 	gfirstIndexNotEqual( null, x, 1, y, 1 ); // $ExpectError
 	gfirstIndexNotEqual( {}, x, 1, y, 1 ); // $ExpectError
+	gfirstIndexNotEqual( ( x: number ): number => x, x, 1, y, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a collection...
@@ -66,6 +67,7 @@ import gfirstIndexNotEqual = require( './index' );
 	gfirstIndexNotEqual( x.length, x, false, y, 1 ); // $ExpectError
 	gfirstIndexNotEqual( x.length, x, null, y, 1 ); // $ExpectError
 	gfirstIndexNotEqual( x.length, x, {}, y, 1 ); // $ExpectError
+	gfirstIndexNotEqual( x.length, x, ( x: number ): number => x, y, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fourth argument which is not a collection...
@@ -90,6 +92,7 @@ import gfirstIndexNotEqual = require( './index' );
 	gfirstIndexNotEqual( x.length, x, 1, y, false ); // $ExpectError
 	gfirstIndexNotEqual( x.length, x, 1, y, null ); // $ExpectError
 	gfirstIndexNotEqual( x.length, x, 1, y, {} ); // $ExpectError
+	gfirstIndexNotEqual( x.length, x, 1, y, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -105,7 +108,7 @@ import gfirstIndexNotEqual = require( './index' );
 	gfirstIndexNotEqual( x.length, x, 1, y, 1, {} ); // $ExpectError
 }
 
-// Attached to the main export is an `ndarray` method which returns a number...
+// Attached to main export is an `ndarray` method which returns a number...
 {
 	const x = [ 0, 0, 1, 0 ];
 	const y = [ 0, 0, 0, 0 ];
@@ -124,6 +127,7 @@ import gfirstIndexNotEqual = require( './index' );
 	gfirstIndexNotEqual.ndarray( false, x, 1, 0, y, 1, 0 ); // $ExpectError
 	gfirstIndexNotEqual.ndarray( null, x, 1, 0, y, 1, 0 ); // $ExpectError
 	gfirstIndexNotEqual.ndarray( {}, x, 1, 0, y, 1, 0 ); // $ExpectError
+	gfirstIndexNotEqual.ndarray( ( x: number ): number => x, x, 1, 0, y, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a second argument which is not a collection...
@@ -149,6 +153,7 @@ import gfirstIndexNotEqual = require( './index' );
 	gfirstIndexNotEqual.ndarray( x.length, x, false, 0, y, 1, 0 ); // $ExpectError
 	gfirstIndexNotEqual.ndarray( x.length, x, null, 0, y, 1, 0 ); // $ExpectError
 	gfirstIndexNotEqual.ndarray( x.length, x, {}, 0, y, 1, 0 ); // $ExpectError
+	gfirstIndexNotEqual.ndarray( x.length, x, ( x: number ): number => x, 0, y, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fourth argument which is not a number...
@@ -161,6 +166,7 @@ import gfirstIndexNotEqual = require( './index' );
 	gfirstIndexNotEqual.ndarray( x.length, x, 1, false, y, 1, 0 ); // $ExpectError
 	gfirstIndexNotEqual.ndarray( x.length, x, 1, null, y, 1, 0 ); // $ExpectError
 	gfirstIndexNotEqual.ndarray( x.length, x, 1, {}, y, 1, 0 ); // $ExpectError
+	gfirstIndexNotEqual.ndarray( x.length, x, 1, ( x: number ): number => x, y, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fifth argument which is not a collection...
@@ -185,6 +191,7 @@ import gfirstIndexNotEqual = require( './index' );
 	gfirstIndexNotEqual.ndarray( x.length, x, 1, 0, y, false, 0 ); // $ExpectError
 	gfirstIndexNotEqual.ndarray( x.length, x, 1, 0, y, null, 0 ); // $ExpectError
 	gfirstIndexNotEqual.ndarray( x.length, x, 1, 0, y, {}, 0 ); // $ExpectError
+	gfirstIndexNotEqual.ndarray( x.length, x, 1, 0, y, ( x: number ): number => x, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a seventh argument which is not a number...
@@ -197,6 +204,7 @@ import gfirstIndexNotEqual = require( './index' );
 	gfirstIndexNotEqual.ndarray( x.length, x, 1, 0, y, 1, false ); // $ExpectError
 	gfirstIndexNotEqual.ndarray( x.length, x, 1, 0, y, 1, null ); // $ExpectError
 	gfirstIndexNotEqual.ndarray( x.length, x, 1, 0, y, 1, {} ); // $ExpectError
+	gfirstIndexNotEqual.ndarray( x.length, x, 1, 0, y, 1, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided an unsupported number of arguments...

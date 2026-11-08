@@ -153,19 +153,17 @@ swax.ndarray( 3, 5.0, x, 1, x.length-3, w, 1, w.length-3 );
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEach = require( '@stdlib/console/log-each' );
 var swax = require( '@stdlib/blas/ext/base/swax' );
 
 var opts = {
     'dtype': 'float32'
 };
 var x = discreteUniform( 10, -100, 100, opts );
-console.log( x );
-
 var w = discreteUniform( 10, -100, 100, opts );
-console.log( w );
 
 swax( x.length, 5.0, x, 1, w, 1 );
-console.log( w );
+logEach( '%d * %d = %d', 5.0, x, w );
 ```
 
 </section>

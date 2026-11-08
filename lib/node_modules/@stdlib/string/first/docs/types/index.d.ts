@@ -52,7 +52,7 @@ interface Options {
 *
 * @example
 * var out = first( '🐶🐮🐷🐰🐸', 2, {
-*    'mode': 'grapheme'
+*     'mode': 'grapheme'
 * });
 * // returns '🐶🐮'
 */
@@ -73,7 +73,7 @@ declare function first( str: string, n: number, options?: Options ): string;
 *
 * @example
 * var out = first( '🐶🐮🐷🐰🐸', {
-*    'mode': 'grapheme'
+*     'mode': 'grapheme'
 * });
 * // returns '🐶'
 */

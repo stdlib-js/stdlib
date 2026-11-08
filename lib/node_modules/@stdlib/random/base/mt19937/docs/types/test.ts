@@ -32,6 +32,18 @@ import mt19937 = require( './index' );
 	mt19937( 2, 3 ); // $ExpectError
 }
 
+// Attached to main export is a `normalized` method which returns a number...
+{
+	mt19937.normalized(); // $ExpectType number
+}
+
+// The compiler throws an error if the `normalized` method is provided any number of arguments...
+{
+	mt19937.normalized( true ); // $ExpectError
+	mt19937.normalized( 123 ); // $ExpectError
+	mt19937.normalized( 'abc' ); // $ExpectError
+}
+
 // Attached to main export is a `factory` method which returns a function...
 {
 	mt19937.factory(); // $ExpectType NullaryFunction

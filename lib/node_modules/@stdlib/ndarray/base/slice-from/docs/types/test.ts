@@ -30,6 +30,7 @@ import sliceFrom = require( './index' );
 
 	sliceFrom( empty( 'float64', sh, order ), s, false, false ); // $ExpectType float64ndarray
 	sliceFrom( empty( 'float32', sh, order ), s, false, false ); // $ExpectType float32ndarray
+	sliceFrom( empty( 'float16', sh, order ), s, false, false ); // $ExpectType float16ndarray
 	sliceFrom( empty( 'complex128', sh, order ), s, false, false ); // $ExpectType complex128ndarray
 	sliceFrom( empty( 'complex64', sh, order ), s, false, false ); // $ExpectType complex64ndarray
 	sliceFrom( empty( 'int32', sh, order ), s, false, false ); // $ExpectType int32ndarray
@@ -42,6 +43,7 @@ import sliceFrom = require( './index' );
 
 	sliceFrom( empty( 'float64', sh, order ), s, true, true ); // $ExpectType float64ndarray
 	sliceFrom( empty( 'float32', sh, order ), s, true, true ); // $ExpectType float32ndarray
+	sliceFrom( empty( 'float16', sh, order ), s, true, true ); // $ExpectType float16ndarray
 	sliceFrom( empty( 'complex128', sh, order ), s, true, true ); // $ExpectType complex128ndarray
 	sliceFrom( empty( 'complex64', sh, order ), s, true, true ); // $ExpectType complex64ndarray
 	sliceFrom( empty( 'int32', sh, order ), s, true, true ); // $ExpectType int32ndarray

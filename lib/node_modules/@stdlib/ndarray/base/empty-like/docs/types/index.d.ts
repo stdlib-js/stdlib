@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { typedndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, boolndarray, complex128ndarray, complex64ndarray } from '@stdlib/types/ndarray';
+import { typedndarray, float64ndarray, float32ndarray, float16ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, boolndarray, complex128ndarray, complex64ndarray } from '@stdlib/types/ndarray';
 
 /**
 * Creates an uninitialized array having the same shape and data type as a provided input ndarray.
@@ -79,6 +79,35 @@ declare function emptyLike( x: float64ndarray ): float64ndarray;
 * // returns 'float32'
 */
 declare function emptyLike( x: float32ndarray ): float32ndarray;
+
+/**
+* Creates an uninitialized array having the same shape and data type as a provided input ndarray.
+*
+* @param x - input array
+* @returns output array
+*
+* @example
+* var zeros = require( '@stdlib/ndarray/base/zeros' );
+*
+* var x = zeros( 'float16', [ 2, 2 ], 'row-major' );
+* // returns <ndarray>
+*
+* var sh = x.shape;
+* // returns [ 2, 2 ]
+*
+* var dt = x.dtype;
+* // returns 'float16'
+*
+* var y = emptyLike( x );
+* // returns <ndarray>
+*
+* sh = y.shape;
+* // returns [ 2, 2 ]
+*
+* dt = y.dtype;
+* // returns 'float16'
+*/
+declare function emptyLike( x: float16ndarray ): float16ndarray;
 
 /**
 * Creates an uninitialized array having the same shape and data type as a provided input ndarray.

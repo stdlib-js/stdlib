@@ -18,10 +18,31 @@
 
 # Script to set up a development environment.
 
+arch="$(uname -m)"
+
+sudo apt-get update
+
+# On ARM64, pin gcc/g++/gfortran to version 12 to avoid a GCC 16 and binutils version mismatch:
+if [ "${arch}" = "aarch64" ]; then
+	sudo apt-get install -y gfortran-12
+	sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-12 100
+	sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-12 100
+	sudo update-alternatives --install /usr/bin/cc cc /usr/bin/gcc-12 100
+	sudo update-alternatives --install /usr/bin/gfortran gfortran /usr/bin/gfortran-12 100
+else
+	sudo apt-get install -y gfortran
+fi
+
 make install
 make init
 
-sudo apt-get update
-sudo apt-get install -y gfortran
-
 make install-deps-r
+
+# On ARM64, replace the wrong-architecture shellcheck binary with the correct one:
+if [ "${arch}" = "aarch64" ]; then
+	sc_version="$(shellcheck --version 2>/dev/null | grep '^version:' | awk '{print $2}')"
+	if [ -n "${sc_version}" ]; then
+		curl -sL "https://github.com/koalaman/shellcheck/releases/download/v${sc_version}/shellcheck-v${sc_version}.linux.aarch64.tar.xz" \
+			| sudo tar xJ --strip-components=1 -C /usr/local/bin "shellcheck-v${sc_version}/shellcheck"
+	fi
+fi

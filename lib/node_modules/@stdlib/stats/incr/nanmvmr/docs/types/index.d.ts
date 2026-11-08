@@ -33,7 +33,7 @@
 type accumulator = ( x?: number ) => number | null;
 
 /**
-* Returns an accumulator function which incrementally computes a moving variance-to-mean ratio (VMR) while ignoring `NaN` values.
+* Returns an accumulator function which incrementally computes a moving variance-to-mean ratio (VMR), ignoring `NaN` values.
 *
 * @param W - window size
 * @param mean - mean value

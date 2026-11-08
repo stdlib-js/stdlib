@@ -111,7 +111,7 @@ static double benchmark( void ) {
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		stdlib_base_cpolarf( z[ i%100 ], &cabsf, &cphasef);
+		stdlib_base_cpolarf( z[ i%100 ], &cabsf, &cphasef );
 		if ( cabsf != cabsf ) {
 			printf( "should not return NaN\n" );
 			break;

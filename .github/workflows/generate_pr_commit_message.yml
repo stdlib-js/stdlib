@@ -21,9 +21,11 @@ name: generate_pr_commit_message
 
 # Workflow triggers:
 on:
-  pull_request_target:
-    types:
-      - labeled
+  workflow_dispatch:
+
+  # pull_request_target:
+    # types:
+      # - labeled
 
 # Global permissions:
 permissions:
