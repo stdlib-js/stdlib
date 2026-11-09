@@ -52,7 +52,7 @@ endif
 
 # Define the command-line options when compiling C++ files:
 CXXFLAGS ?= \
-	-std=c++11 \
+	-std=c++14 \
 	-O3 \
 	-Wall \
 	-pedantic
