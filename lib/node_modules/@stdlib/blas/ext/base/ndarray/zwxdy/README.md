@@ -33,7 +33,7 @@ This BLAS extension implements the operation
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\mathbf{w} = \mathbf{x} \oslash \mathbf{y}" data-equation="eq:wxdy">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@3b26f1758c24e4c3623211bed0a6bfb74c619c62/lib/node_modules/@stdlib/blas/ext/base/ndarray/zwxdy/docs/img/equation_wxdy.svg" alt="Equation for wxdy operation.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@c06f854a751068424276b824a478220177dc9b74/lib/node_modules/@stdlib/blas/ext/base/ndarray/zwxdy/docs/img/equation_wxdy.svg" alt="Equation for wxdy operation.">
     <br>
 </div> -->
 

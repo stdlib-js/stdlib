@@ -32,6 +32,11 @@ This BLAS extension implements the operation
 \mathbf{z} = \alpha \mathbf{x} \odot \mathbf{y} + \beta \mathbf{z}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\mathbf{z} = \alpha \mathbf{x} \odot \mathbf{y} + \beta \mathbf{z}" data-equation="eq:had">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@a461d75e253aeee23ce50a25edabce1f9796df37/lib/node_modules/@stdlib/blas/ext/base/ghad/docs/img/equation_had.svg" alt="Equation for had operation.">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 where `⊙` denotes the [Hadamard product][hadamard-product].

@@ -34,7 +34,7 @@ The physicist's [Hermite polynomials][hermite-polynomial] are given by
 H_{n}(x)=(-1)^{n} e^{x^2} \frac{\mathrm{d}^{n}}{\mathrm{d} x^{n}} e^{-x^2}
 ```
 
-<!-- <div class="equation" align="center" data-raw-text="H_{n}(x)=(-1)^{n} e^{x^2} \frac{\mathrm{d}^{n}}{\mathrm{d}x^n} e^{-x^2}" data-equation="eq:physicists_hermite_polynomials">
+<!-- <div class="equation" align="center" data-raw-text="H_{n}(x)=(-1)^{n} e^{x^2} \frac{\mathrm{d}^{n}}{\mathrm{d} x^{n}} e^{-x^2}" data-equation="eq:physicists_hermite_polynomials">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@58b02120eb58818177f6767ab495e7afac3618e8/lib/node_modules/@stdlib/math/base/tools/hermitepoly/docs/img/equation_physicists_hermite_polynomials.svg" alt="Equation for physicist's Hermite polynomials.">
     <br>
 </div> -->
