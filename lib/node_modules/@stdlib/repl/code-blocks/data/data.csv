@@ -3175,6 +3175,8 @@ functionSequence,"function a( x ) { return 2 * x; };\nfunction b( x ) { return x
 functionSequenceAsync,"function a( x, next ) {\nsetTimeout( onTimeout, 0 );\nfunction onTimeout() {\n    next( null, 2*x );\n}\n };\nfunction b( x, next ) {\nsetTimeout( onTimeout, 0 );\nfunction onTimeout() {\n    next( null, x+3 );\n}\n };\nfunction c( x, next ) {\nsetTimeout( onTimeout, 0 );\nfunction onTimeout() {\n    next( null, x/5 );\n}\n };\nvar f = functionSequenceAsync( a, b, c );\nfunction done( error, result ) {\nif ( error ) {\n    throw error;\n}\nconsole.log( result );\n };\nf( 6, done )\n"
 GAMMA_LANCZOS_G,"GAMMA_LANCZOS_G\n"
 gdot,"var x = array( new Float64Array( [ 4.0, 2.0, -3.0, 5.0, -1.0 ] ) );\nvar y = array( new Float64Array( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] ) );\ngdot( x, y )\nx = [ 4.0, 2.0, -3.0, 5.0, -1.0 ];\ny = [ 2.0, 6.0, -1.0, -4.0, 8.0 ];\ngdot( x, y )\n"
+GenericMatrix,"var arr = GenericMatrix()\nvar arr = GenericMatrix( [ 2, 2 ] )\nvar arr = GenericMatrix( 2, 2 )\nvar v = [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ];\nvar arr = GenericMatrix( v )\n"
+GenericVector,"var arr = GenericVector()\nvar arr = GenericVector( 5 )\nvar len = numel( arr )\nvar v = [ 1.0, 2.0, 3.0 ];\nvar arr = GenericVector( v )\nvar len = numel( arr )\n"
 getegid,"var gid = getegid()\n"
 geteuid,"var uid = geteuid()\n"
 getgid,"var gid = getgid()\n"

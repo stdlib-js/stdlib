@@ -58,7 +58,7 @@ The function accepts the following options:
 
 -   **order**: specifies whether an [ndarray][@stdlib/ndarray/ctor] is `'row-major'` (C-style) or `'column-major'` (Fortran-style). Default: `'row-major'`.
 -   **mode**: specifies how to handle indices which exceed array dimensions (see [`ndarray`][@stdlib/ndarray/ctor]). Default: `'throw'`.
--   **submode**: a mode array which specifies for each dimension how to handle subscripts which exceed array dimensions (see [`ndarray`][@stdlib/ndarray/ctor]). If provided fewer modes than dimensions, an [`ndarray`][@stdlib/ndarray/ctor]) instance recycles modes using modulo arithmetic. Default: `[ options.mode ]`.
+-   **submode**: a mode array which specifies for each dimension how to handle subscripts which exceed array dimensions (see [`ndarray`][@stdlib/ndarray/ctor]). If provided fewer modes than dimensions, an [`ndarray`][@stdlib/ndarray/ctor] instance recycles modes using modulo arithmetic. Default: `[ options.mode ]`.
 -   **readonly**: boolean indicating whether an array should be **read-only**. Default: `false`.
 
 #### GenericMatrix( shape\[, options] )
