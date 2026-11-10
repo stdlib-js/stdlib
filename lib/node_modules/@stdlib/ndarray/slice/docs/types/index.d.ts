@@ -54,6 +54,7 @@ type SliceArgument = Slice | number | null | undefined;
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ], 'float64' );
@@ -64,7 +65,7 @@ type SliceArgument = Slice | number | null | undefined;
 * var x = ndarray( 'float64', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -75,7 +76,7 @@ type SliceArgument = Slice | number | null | undefined;
 * var y = slice( x, s );
 * // returns <ndarray>[ [ 6.0, 5.0 ], [ 2.0, 1.0 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: float64ndarray, s: MultiSlice, options?: Options ): float64ndarray;
@@ -93,6 +94,7 @@ declare function slice( x: float64ndarray, s: MultiSlice, options?: Options ): f
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ], 'float64' );
@@ -103,7 +105,7 @@ declare function slice( x: float64ndarray, s: MultiSlice, options?: Options ): f
 * var x = ndarray( 'float64', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -112,7 +114,7 @@ declare function slice( x: float64ndarray, s: MultiSlice, options?: Options ): f
 * var y = slice( x, [ s0, s1 ] );
 * // returns <ndarray>[ [ 6.0, 5.0 ], [ 2.0, 1.0 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: float64ndarray, s: ArrayLike<SliceArgument>, options?: Options ): float64ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
@@ -130,6 +132,7 @@ declare function slice( x: float64ndarray, s: ArrayLike<SliceArgument>, options?
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ], 'float64' );
@@ -140,7 +143,7 @@ declare function slice( x: float64ndarray, s: ArrayLike<SliceArgument>, options?
 * var x = ndarray( 'float64', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -149,7 +152,7 @@ declare function slice( x: float64ndarray, s: ArrayLike<SliceArgument>, options?
 * var y = slice( x, s0, s1 );
 * // returns <ndarray>[ [ 6.0, 5.0 ], [ 2.0, 1.0 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: float64ndarray, ...slices: Array<SliceArgument | Options> ): float64ndarray;
@@ -167,6 +170,7 @@ declare function slice( x: float64ndarray, ...slices: Array<SliceArgument | Opti
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ], 'float32' );
@@ -177,7 +181,7 @@ declare function slice( x: float64ndarray, ...slices: Array<SliceArgument | Opti
 * var x = ndarray( 'float32', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -188,7 +192,7 @@ declare function slice( x: float64ndarray, ...slices: Array<SliceArgument | Opti
 * var y = slice( x, s );
 * // returns <ndarray>[ [ 6.0, 5.0 ], [ 2.0, 1.0 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: float32ndarray, s: MultiSlice, options?: Options ): float32ndarray;
@@ -206,6 +210,7 @@ declare function slice( x: float32ndarray, s: MultiSlice, options?: Options ): f
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ], 'float32' );
@@ -216,7 +221,7 @@ declare function slice( x: float32ndarray, s: MultiSlice, options?: Options ): f
 * var x = ndarray( 'float32', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -225,7 +230,7 @@ declare function slice( x: float32ndarray, s: MultiSlice, options?: Options ): f
 * var y = slice( x, [ s0, s1 ] );
 * // returns <ndarray>[ [ 6.0, 5.0 ], [ 2.0, 1.0 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: float32ndarray, s: ArrayLike<SliceArgument>, options?: Options ): float32ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
@@ -243,6 +248,7 @@ declare function slice( x: float32ndarray, s: ArrayLike<SliceArgument>, options?
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ], 'float32' );
@@ -253,7 +259,7 @@ declare function slice( x: float32ndarray, s: ArrayLike<SliceArgument>, options?
 * var x = ndarray( 'float32', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -262,7 +268,7 @@ declare function slice( x: float32ndarray, s: ArrayLike<SliceArgument>, options?
 * var y = slice( x, s0, s1 );
 * // returns <ndarray>[ [ 6.0, 5.0 ], [ 2.0, 1.0 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: float32ndarray, ...slices: Array<SliceArgument | Options> ): float32ndarray;
@@ -280,6 +286,7 @@ declare function slice( x: float32ndarray, ...slices: Array<SliceArgument | Opti
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'int32' );
@@ -290,7 +297,7 @@ declare function slice( x: float32ndarray, ...slices: Array<SliceArgument | Opti
 * var x = ndarray( 'int32', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -301,7 +308,7 @@ declare function slice( x: float32ndarray, ...slices: Array<SliceArgument | Opti
 * var y = slice( x, s );
 * // returns <ndarray>[ [ 6, 5 ], [ 2, 1 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: int32ndarray, s: MultiSlice, options?: Options ): int32ndarray;
@@ -319,6 +326,7 @@ declare function slice( x: int32ndarray, s: MultiSlice, options?: Options ): int
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'int32' );
@@ -329,7 +337,7 @@ declare function slice( x: int32ndarray, s: MultiSlice, options?: Options ): int
 * var x = ndarray( 'int32', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -338,7 +346,7 @@ declare function slice( x: int32ndarray, s: MultiSlice, options?: Options ): int
 * var y = slice( x, [ s0, s1 ] );
 * // returns <ndarray>[ [ 6, 5 ], [ 2, 1 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: int32ndarray, s: ArrayLike<SliceArgument>, options?: Options ): int32ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
@@ -356,6 +364,7 @@ declare function slice( x: int32ndarray, s: ArrayLike<SliceArgument>, options?: 
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'int32' );
@@ -366,7 +375,7 @@ declare function slice( x: int32ndarray, s: ArrayLike<SliceArgument>, options?: 
 * var x = ndarray( 'int32', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -375,7 +384,7 @@ declare function slice( x: int32ndarray, s: ArrayLike<SliceArgument>, options?: 
 * var y = slice( x, s0, s1 );
 * // returns <ndarray>[ [ 6, 5 ], [ 2, 1 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: int32ndarray, ...slices: Array<SliceArgument | Options> ): int32ndarray;
@@ -393,6 +402,7 @@ declare function slice( x: int32ndarray, ...slices: Array<SliceArgument | Option
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'int16' );
@@ -403,7 +413,7 @@ declare function slice( x: int32ndarray, ...slices: Array<SliceArgument | Option
 * var x = ndarray( 'int16', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -414,7 +424,7 @@ declare function slice( x: int32ndarray, ...slices: Array<SliceArgument | Option
 * var y = slice( x, s );
 * // returns <ndarray>[ [ 6, 5 ], [ 2, 1 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: int16ndarray, s: MultiSlice, options?: Options ): int16ndarray;
@@ -432,6 +442,7 @@ declare function slice( x: int16ndarray, s: MultiSlice, options?: Options ): int
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'int16' );
@@ -442,7 +453,7 @@ declare function slice( x: int16ndarray, s: MultiSlice, options?: Options ): int
 * var x = ndarray( 'int16', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -451,7 +462,7 @@ declare function slice( x: int16ndarray, s: MultiSlice, options?: Options ): int
 * var y = slice( x, [ s0, s1 ] );
 * // returns <ndarray>[ [ 6, 5 ], [ 2, 1 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: int16ndarray, s: ArrayLike<SliceArgument>, options?: Options ): int16ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
@@ -469,6 +480,7 @@ declare function slice( x: int16ndarray, s: ArrayLike<SliceArgument>, options?: 
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'int16' );
@@ -479,7 +491,7 @@ declare function slice( x: int16ndarray, s: ArrayLike<SliceArgument>, options?: 
 * var x = ndarray( 'int16', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -488,7 +500,7 @@ declare function slice( x: int16ndarray, s: ArrayLike<SliceArgument>, options?: 
 * var y = slice( x, s0, s1 );
 * // returns <ndarray>[ [ 6, 5 ], [ 2, 1 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: int16ndarray, ...slices: Array<SliceArgument | Options> ): int16ndarray;
@@ -506,6 +518,7 @@ declare function slice( x: int16ndarray, ...slices: Array<SliceArgument | Option
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'int8' );
@@ -516,7 +529,7 @@ declare function slice( x: int16ndarray, ...slices: Array<SliceArgument | Option
 * var x = ndarray( 'int8', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -527,7 +540,7 @@ declare function slice( x: int16ndarray, ...slices: Array<SliceArgument | Option
 * var y = slice( x, s );
 * // returns <ndarray>[ [ 6, 5 ], [ 2, 1 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: int8ndarray, s: MultiSlice, options?: Options ): int8ndarray;
@@ -545,6 +558,7 @@ declare function slice( x: int8ndarray, s: MultiSlice, options?: Options ): int8
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'int8' );
@@ -555,7 +569,7 @@ declare function slice( x: int8ndarray, s: MultiSlice, options?: Options ): int8
 * var x = ndarray( 'int8', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -564,7 +578,7 @@ declare function slice( x: int8ndarray, s: MultiSlice, options?: Options ): int8
 * var y = slice( x, [ s0, s1 ] );
 * // returns <ndarray>[ [ 6, 5 ], [ 2, 1 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: int8ndarray, s: ArrayLike<SliceArgument>, options?: Options ): int8ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
@@ -582,6 +596,7 @@ declare function slice( x: int8ndarray, s: ArrayLike<SliceArgument>, options?: O
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'int8' );
@@ -592,7 +607,7 @@ declare function slice( x: int8ndarray, s: ArrayLike<SliceArgument>, options?: O
 * var x = ndarray( 'int8', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -601,7 +616,7 @@ declare function slice( x: int8ndarray, s: ArrayLike<SliceArgument>, options?: O
 * var y = slice( x, s0, s1 );
 * // returns <ndarray>[ [ 6, 5 ], [ 2, 1 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: int8ndarray, ...slices: Array<SliceArgument | Options> ): int8ndarray;
@@ -619,6 +634,7 @@ declare function slice( x: int8ndarray, ...slices: Array<SliceArgument | Options
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint32' );
@@ -629,7 +645,7 @@ declare function slice( x: int8ndarray, ...slices: Array<SliceArgument | Options
 * var x = ndarray( 'uint32', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -640,7 +656,7 @@ declare function slice( x: int8ndarray, ...slices: Array<SliceArgument | Options
 * var y = slice( x, s );
 * // returns <ndarray>[ [ 6, 5 ], [ 2, 1 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: uint32ndarray, s: MultiSlice, options?: Options ): uint32ndarray;
@@ -658,6 +674,7 @@ declare function slice( x: uint32ndarray, s: MultiSlice, options?: Options ): ui
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint32' );
@@ -668,7 +685,7 @@ declare function slice( x: uint32ndarray, s: MultiSlice, options?: Options ): ui
 * var x = ndarray( 'uint32', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -677,7 +694,7 @@ declare function slice( x: uint32ndarray, s: MultiSlice, options?: Options ): ui
 * var y = slice( x, [ s0, s1 ] );
 * // returns <ndarray>[ [ 6, 5 ], [ 2, 1 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: uint32ndarray, s: ArrayLike<SliceArgument>, options?: Options ): uint32ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
@@ -695,6 +712,7 @@ declare function slice( x: uint32ndarray, s: ArrayLike<SliceArgument>, options?:
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint32' );
@@ -705,7 +723,7 @@ declare function slice( x: uint32ndarray, s: ArrayLike<SliceArgument>, options?:
 * var x = ndarray( 'uint32', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -714,7 +732,7 @@ declare function slice( x: uint32ndarray, s: ArrayLike<SliceArgument>, options?:
 * var y = slice( x, s0, s1 );
 * // returns <ndarray>[ [ 6, 5 ], [ 2, 1 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: uint32ndarray, ...slices: Array<SliceArgument | Options> ): uint32ndarray;
@@ -732,6 +750,7 @@ declare function slice( x: uint32ndarray, ...slices: Array<SliceArgument | Optio
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint16' );
@@ -742,7 +761,7 @@ declare function slice( x: uint32ndarray, ...slices: Array<SliceArgument | Optio
 * var x = ndarray( 'uint16', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -753,7 +772,7 @@ declare function slice( x: uint32ndarray, ...slices: Array<SliceArgument | Optio
 * var y = slice( x, s );
 * // returns <ndarray>[ [ 6, 5 ], [ 2, 1 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: uint16ndarray, s: MultiSlice, options?: Options ): uint16ndarray;
@@ -771,6 +790,7 @@ declare function slice( x: uint16ndarray, s: MultiSlice, options?: Options ): ui
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint16' );
@@ -781,7 +801,7 @@ declare function slice( x: uint16ndarray, s: MultiSlice, options?: Options ): ui
 * var x = ndarray( 'uint16', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -790,7 +810,7 @@ declare function slice( x: uint16ndarray, s: MultiSlice, options?: Options ): ui
 * var y = slice( x, [ s0, s1 ] );
 * // returns <ndarray>[ [ 6, 5 ], [ 2, 1 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: uint16ndarray, s: ArrayLike<SliceArgument>, options?: Options ): uint16ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
@@ -808,6 +828,7 @@ declare function slice( x: uint16ndarray, s: ArrayLike<SliceArgument>, options?:
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint16' );
@@ -818,7 +839,7 @@ declare function slice( x: uint16ndarray, s: ArrayLike<SliceArgument>, options?:
 * var x = ndarray( 'uint16', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -827,7 +848,7 @@ declare function slice( x: uint16ndarray, s: ArrayLike<SliceArgument>, options?:
 * var y = slice( x, s0, s1 );
 * // returns <ndarray>[ [ 6, 5 ], [ 2, 1 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: uint16ndarray, ...slices: Array<SliceArgument | Options> ): uint16ndarray;
@@ -845,6 +866,7 @@ declare function slice( x: uint16ndarray, ...slices: Array<SliceArgument | Optio
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint8' );
@@ -855,7 +877,7 @@ declare function slice( x: uint16ndarray, ...slices: Array<SliceArgument | Optio
 * var x = ndarray( 'uint8', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -866,7 +888,7 @@ declare function slice( x: uint16ndarray, ...slices: Array<SliceArgument | Optio
 * var y = slice( x, s );
 * // returns <ndarray>[ [ 6, 5 ], [ 2, 1 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: uint8ndarray, s: MultiSlice, options?: Options ): uint8ndarray;
@@ -884,6 +906,7 @@ declare function slice( x: uint8ndarray, s: MultiSlice, options?: Options ): uin
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint8' );
@@ -894,7 +917,7 @@ declare function slice( x: uint8ndarray, s: MultiSlice, options?: Options ): uin
 * var x = ndarray( 'uint8', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -903,7 +926,7 @@ declare function slice( x: uint8ndarray, s: MultiSlice, options?: Options ): uin
 * var y = slice( x, [ s0, s1 ] );
 * // returns <ndarray>[ [ 6, 5 ], [ 2, 1 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: uint8ndarray, s: ArrayLike<SliceArgument>, options?: Options ): uint8ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
@@ -921,6 +944,7 @@ declare function slice( x: uint8ndarray, s: ArrayLike<SliceArgument>, options?: 
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint8' );
@@ -931,7 +955,7 @@ declare function slice( x: uint8ndarray, s: ArrayLike<SliceArgument>, options?: 
 * var x = ndarray( 'uint8', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -940,7 +964,7 @@ declare function slice( x: uint8ndarray, s: ArrayLike<SliceArgument>, options?: 
 * var y = slice( x, s0, s1 );
 * // returns <ndarray>[ [ 6, 5 ], [ 2, 1 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: uint8ndarray, ...slices: Array<SliceArgument | Options> ): uint8ndarray;
@@ -958,6 +982,7 @@ declare function slice( x: uint8ndarray, ...slices: Array<SliceArgument | Option
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint8c' );
@@ -968,7 +993,7 @@ declare function slice( x: uint8ndarray, ...slices: Array<SliceArgument | Option
 * var x = ndarray( 'uint8c', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -979,7 +1004,7 @@ declare function slice( x: uint8ndarray, ...slices: Array<SliceArgument | Option
 * var y = slice( x, s );
 * // returns <ndarray>[ [ 6, 5 ], [ 2, 1 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: uint8cndarray, s: MultiSlice, options?: Options ): uint8cndarray;
@@ -997,6 +1022,7 @@ declare function slice( x: uint8cndarray, s: MultiSlice, options?: Options ): ui
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint8c' );
@@ -1007,7 +1033,7 @@ declare function slice( x: uint8cndarray, s: MultiSlice, options?: Options ): ui
 * var x = ndarray( 'uint8c', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -1016,7 +1042,7 @@ declare function slice( x: uint8cndarray, s: MultiSlice, options?: Options ): ui
 * var y = slice( x, [ s0, s1 ] );
 * // returns <ndarray>[ [ 6, 5 ], [ 2, 1 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: uint8cndarray, s: ArrayLike<SliceArgument>, options?: Options ): uint8cndarray; // eslint-disable-line @typescript-eslint/unified-signatures
@@ -1034,6 +1060,7 @@ declare function slice( x: uint8cndarray, s: ArrayLike<SliceArgument>, options?:
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint8c' );
@@ -1044,7 +1071,7 @@ declare function slice( x: uint8cndarray, s: ArrayLike<SliceArgument>, options?:
 * var x = ndarray( 'uint8c', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -1053,7 +1080,7 @@ declare function slice( x: uint8cndarray, s: ArrayLike<SliceArgument>, options?:
 * var y = slice( x, s0, s1 );
 * // returns <ndarray>[ [ 6, 5 ], [ 2, 1 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: uint8cndarray, ...slices: Array<SliceArgument | Options> ): uint8cndarray;
@@ -1071,6 +1098,7 @@ declare function slice( x: uint8cndarray, ...slices: Array<SliceArgument | Optio
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ], 'complex128' );
@@ -1081,7 +1109,7 @@ declare function slice( x: uint8cndarray, ...slices: Array<SliceArgument | Optio
 * var x = ndarray( 'complex128', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -1092,7 +1120,7 @@ declare function slice( x: uint8cndarray, ...slices: Array<SliceArgument | Optio
 * var y = slice( x, s );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: complex128ndarray, s: MultiSlice, options?: Options ): complex128ndarray;
@@ -1110,6 +1138,7 @@ declare function slice( x: complex128ndarray, s: MultiSlice, options?: Options )
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ], 'complex128' );
@@ -1120,7 +1149,7 @@ declare function slice( x: complex128ndarray, s: MultiSlice, options?: Options )
 * var x = ndarray( 'complex128', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -1129,7 +1158,7 @@ declare function slice( x: complex128ndarray, s: MultiSlice, options?: Options )
 * var y = slice( x, [ s0, s1 ] );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: complex128ndarray, s: ArrayLike<SliceArgument>, options?: Options ): complex128ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
@@ -1147,6 +1176,7 @@ declare function slice( x: complex128ndarray, s: ArrayLike<SliceArgument>, optio
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ], 'complex128' );
@@ -1157,7 +1187,7 @@ declare function slice( x: complex128ndarray, s: ArrayLike<SliceArgument>, optio
 * var x = ndarray( 'complex128', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -1166,7 +1196,7 @@ declare function slice( x: complex128ndarray, s: ArrayLike<SliceArgument>, optio
 * var y = slice( x, s0, s1 );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: complex128ndarray, ...slices: Array<SliceArgument | Options> ): complex128ndarray;
@@ -1184,6 +1214,7 @@ declare function slice( x: complex128ndarray, ...slices: Array<SliceArgument | O
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ], 'complex64' );
@@ -1194,7 +1225,7 @@ declare function slice( x: complex128ndarray, ...slices: Array<SliceArgument | O
 * var x = ndarray( 'complex64', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -1205,7 +1236,7 @@ declare function slice( x: complex128ndarray, ...slices: Array<SliceArgument | O
 * var y = slice( x, s );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: complex64ndarray, s: MultiSlice, options?: Options ): complex64ndarray;
@@ -1223,6 +1254,7 @@ declare function slice( x: complex64ndarray, s: MultiSlice, options?: Options ):
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ], 'complex64' );
@@ -1233,7 +1265,7 @@ declare function slice( x: complex64ndarray, s: MultiSlice, options?: Options ):
 * var x = ndarray( 'complex64', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -1242,7 +1274,7 @@ declare function slice( x: complex64ndarray, s: MultiSlice, options?: Options ):
 * var y = slice( x, [ s0, s1 ] );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: complex64ndarray, s: ArrayLike<SliceArgument>, options?: Options ): complex64ndarray; // eslint-disable-line @typescript-eslint/unified-signatures
@@ -1260,6 +1292,7 @@ declare function slice( x: complex64ndarray, s: ArrayLike<SliceArgument>, option
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ], 'complex64' );
@@ -1270,7 +1303,7 @@ declare function slice( x: complex64ndarray, s: ArrayLike<SliceArgument>, option
 * var x = ndarray( 'complex64', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -1279,7 +1312,7 @@ declare function slice( x: complex64ndarray, s: ArrayLike<SliceArgument>, option
 * var y = slice( x, s0, s1 );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: complex64ndarray, ...slices: Array<SliceArgument | Options> ): complex64ndarray;
@@ -1296,6 +1329,7 @@ declare function slice( x: complex64ndarray, ...slices: Array<SliceArgument | Op
 * @example
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = [ 1, 2, 3, 4, 5, 6 ];
@@ -1306,7 +1340,7 @@ declare function slice( x: complex64ndarray, ...slices: Array<SliceArgument | Op
 * var x = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -1317,7 +1351,7 @@ declare function slice( x: complex64ndarray, ...slices: Array<SliceArgument | Op
 * var y = slice( x, s );
 * // returns <ndarray>[ [ 6, 5 ], [ 2, 1 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice<T = unknown>( x: genericndarray<T>, s: MultiSlice, options?: Options ): genericndarray<T>;
@@ -1334,6 +1368,7 @@ declare function slice<T = unknown>( x: genericndarray<T>, s: MultiSlice, option
 * @example
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = [ 1, 2, 3, 4, 5, 6 ];
@@ -1344,7 +1379,7 @@ declare function slice<T = unknown>( x: genericndarray<T>, s: MultiSlice, option
 * var x = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -1353,7 +1388,7 @@ declare function slice<T = unknown>( x: genericndarray<T>, s: MultiSlice, option
 * var y = slice( x, [ s0, s1 ] );
 * // returns <ndarray>[ [ 6, 5 ], [ 2, 1 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice<T = unknown>( x: genericndarray<T>, s: ArrayLike<SliceArgument>, options?: Options ): genericndarray<T>; // eslint-disable-line @typescript-eslint/unified-signatures
@@ -1370,6 +1405,7 @@ declare function slice<T = unknown>( x: genericndarray<T>, s: ArrayLike<SliceArg
 * @example
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = [ 1, 2, 3, 4, 5, 6 ];
@@ -1380,7 +1416,7 @@ declare function slice<T = unknown>( x: genericndarray<T>, s: ArrayLike<SliceArg
 * var x = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -1389,7 +1425,7 @@ declare function slice<T = unknown>( x: genericndarray<T>, s: ArrayLike<SliceArg
 * var y = slice( x, s0, s1 );
 * // returns <ndarray>[ [ 6, 5 ], [ 2, 1 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice<T = unknown>( x: genericndarray<T>, ...slices: Array<SliceArgument | Options> ): genericndarray<T>;
@@ -1406,6 +1442,7 @@ declare function slice<T = unknown>( x: genericndarray<T>, ...slices: Array<Slic
 * @example
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = [ 1, 2, 3, 4, 5, 6 ];
@@ -1416,7 +1453,7 @@ declare function slice<T = unknown>( x: genericndarray<T>, ...slices: Array<Slic
 * var x = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -1427,7 +1464,7 @@ declare function slice<T = unknown>( x: genericndarray<T>, ...slices: Array<Slic
 * var y = slice( x, s );
 * // returns <ndarray>[ [ 6, 5 ], [ 2, 1 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice<T = unknown>( x: typedndarray<T>, s: MultiSlice, options?: Options ): typedndarray<T>;
@@ -1444,6 +1481,7 @@ declare function slice<T = unknown>( x: typedndarray<T>, s: MultiSlice, options?
 * @example
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = [ 1, 2, 3, 4, 5, 6 ];
@@ -1454,7 +1492,7 @@ declare function slice<T = unknown>( x: typedndarray<T>, s: MultiSlice, options?
 * var x = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -1463,7 +1501,7 @@ declare function slice<T = unknown>( x: typedndarray<T>, s: MultiSlice, options?
 * var y = slice( x, [ s0, s1 ] );
 * // returns <ndarray>[ [ 6, 5 ], [ 2, 1 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice<T = unknown>( x: typedndarray<T>, s: ArrayLike<SliceArgument>, options?: Options ): typedndarray<T>; // eslint-disable-line @typescript-eslint/unified-signatures
@@ -1480,6 +1518,7 @@ declare function slice<T = unknown>( x: typedndarray<T>, s: ArrayLike<SliceArgum
 * @example
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = [ 1, 2, 3, 4, 5, 6 ];
@@ -1490,7 +1529,7 @@ declare function slice<T = unknown>( x: typedndarray<T>, s: ArrayLike<SliceArgum
 * var x = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s0 = new Slice( null, null, -2 );
@@ -1499,7 +1538,7 @@ declare function slice<T = unknown>( x: typedndarray<T>, s: ArrayLike<SliceArgum
 * var y = slice( x, s0, s1 );
 * // returns <ndarray>[ [ 6, 5 ], [ 2, 1 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice<T = unknown>( x: typedndarray<T>, ...slices: Array<SliceArgument | Options> ): typedndarray<T>;

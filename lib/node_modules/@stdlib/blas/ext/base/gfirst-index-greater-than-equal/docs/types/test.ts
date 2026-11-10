@@ -106,11 +106,11 @@ import gfirstIndexGreaterThanEqual = require( './index' );
 	var y = [ 1.0, 2.0, 3.0 ];
 
 	gfirstIndexGreaterThanEqual(); // $ExpectError
-	gfirstIndexGreaterThanEqual( 3 ); // $ExpectError
-	gfirstIndexGreaterThanEqual( 3, x ); // $ExpectError
-	gfirstIndexGreaterThanEqual( 3, x, 1 ); // $ExpectError
-	gfirstIndexGreaterThanEqual( 3, x, 1, y ); // $ExpectError
-	gfirstIndexGreaterThanEqual( 3, x, 1, y, 1, {} ); // $ExpectError
+	gfirstIndexGreaterThanEqual( x.length ); // $ExpectError
+	gfirstIndexGreaterThanEqual( x.length, x ); // $ExpectError
+	gfirstIndexGreaterThanEqual( x.length, x, 1 ); // $ExpectError
+	gfirstIndexGreaterThanEqual( x.length, x, 1, y ); // $ExpectError
+	gfirstIndexGreaterThanEqual( x.length, x, 1, y, 1, {} ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a number...
@@ -227,11 +227,11 @@ import gfirstIndexGreaterThanEqual = require( './index' );
 	var y = [ 1.0, 2.0, 3.0 ];
 
 	gfirstIndexGreaterThanEqual.ndarray(); // $ExpectError
-	gfirstIndexGreaterThanEqual.ndarray( 3 ); // $ExpectError
-	gfirstIndexGreaterThanEqual.ndarray( 3, x ); // $ExpectError
-	gfirstIndexGreaterThanEqual.ndarray( 3, x, 1 ); // $ExpectError
-	gfirstIndexGreaterThanEqual.ndarray( 3, x, 1, 0 ); // $ExpectError
-	gfirstIndexGreaterThanEqual.ndarray( 3, x, 1, 0, y ); // $ExpectError
-	gfirstIndexGreaterThanEqual.ndarray( 3, x, 1, 0, y, 1 ); // $ExpectError
-	gfirstIndexGreaterThanEqual.ndarray( 3, x, 1, 0, y, 1, 0, {} ); // $ExpectError
+	gfirstIndexGreaterThanEqual.ndarray( x.length ); // $ExpectError
+	gfirstIndexGreaterThanEqual.ndarray( x.length, x ); // $ExpectError
+	gfirstIndexGreaterThanEqual.ndarray( x.length, x, 1 ); // $ExpectError
+	gfirstIndexGreaterThanEqual.ndarray( x.length, x, 1, 0 ); // $ExpectError
+	gfirstIndexGreaterThanEqual.ndarray( x.length, x, 1, 0, y ); // $ExpectError
+	gfirstIndexGreaterThanEqual.ndarray( x.length, x, 1, 0, y, 1 ); // $ExpectError
+	gfirstIndexGreaterThanEqual.ndarray( x.length, x, 1, 0, y, 1, 0, {} ); // $ExpectError
 }

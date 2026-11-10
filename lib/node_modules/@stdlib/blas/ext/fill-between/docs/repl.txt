@@ -1,0 +1,64 @@
+
+{{alias}}( x, value[, start[, end]][, options] )
+    Fills an input ndarray with a specified value along an ndarray dimension.
+
+    When a `start` and/or `end` index is negative, the respective index is
+    determined relative to the last indexed element, with out-of-bounds indices
+    clamped to index bounds.
+
+    The function fills an input ndarray in-place and thus mutates an input
+    ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    value: ndarray|any
+        Fill value. May be either a scalar value or an ndarray. Must be able to
+        safely cast to the input ndarray data type. Values having floating-point
+        data types (both real and complex) are allowed to downcast to a lower
+        precision data type of the same kind (e.g., a scalar double-precision
+        floating-point number can be used to fill a 'float32' input ndarray). If
+        provided an ndarray, the value must have a shape which is broadcast
+        compatible with the complement of the shape defined by `options.dim`.
+        For example, given the input shape `[2, 3, 4]` and `options.dim=0`, an
+        ndarray fill value must have a shape which is broadcast compatible with
+        the shape `[3, 4]`.
+
+    start: ndarray|integer (optional)
+        Starting index (inclusive). May be either an integer or an ndarray
+        having an integer index or "generic" data type and following the same
+        broadcasting semantics as an ndarray `value` argument. Default: `0`.
+
+    end: ndarray|integer (optional)
+        Ending index (exclusive). May be either an integer or an ndarray having
+        an integer index or "generic" data type and following the same
+        broadcasting semantics as an ndarray `value` argument. Default: `N`
+        where `N` is the number of elements along the operation dimension.
+
+    options: Object (optional)
+        Function options.
+
+    options.dim: integer (optional)
+        Dimension over which to perform operation. If provided a negative
+        integer, the dimension along which to perform the operation is
+        determined by counting backward from the last dimension (where `-1`
+        refers to the last dimension). Default: `-1`.
+
+    Returns
+    -------
+    out: ndarray
+        Input array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var y = {{alias}}( x, 10.0, 2 )
+    <ndarray>[ 1.0, 2.0, 10.0, 10.0 ]
+    > var bool = ( x === y )
+    true
+
+    See Also
+    --------
+

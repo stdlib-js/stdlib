@@ -67,7 +67,7 @@ r = it.next().value;
 // returns 2
 
 r = it.next().value;
-// undefined
+// returns undefined
 
 // ...
 ```
@@ -105,7 +105,7 @@ r = it.next().value;
 // returns 2
 
 r = it.next().value;
-// undefined
+// returns undefined
 
 // ...
 ```

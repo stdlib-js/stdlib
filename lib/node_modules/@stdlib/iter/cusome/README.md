@@ -83,6 +83,10 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 
 <section class="notes">
 
+## Notes
+
+-   If an environment supports `Symbol.iterator` **and** a provided [iterator][mdn-iterator-protocol] is iterable, the returned [iterator][mdn-iterator-protocol] is iterable.
+
 </section>
 
 <!-- /.notes -->
