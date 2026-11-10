@@ -29,6 +29,7 @@ import transpose = require( './index' );
 
 	transpose( zeros( 'float64', sh, ord ), false ); // $ExpectType float64ndarray
 	transpose( zeros( 'float32', sh, ord ), false ); // $ExpectType float32ndarray
+	transpose( zeros( 'float16', sh, ord ), false ); // $ExpectType float16ndarray
 	transpose( zeros( 'complex128', sh, ord ), false ); // $ExpectType complex128ndarray
 	transpose( zeros( 'complex64', sh, ord ), false ); // $ExpectType complex64ndarray
 	transpose( zeros( 'int32', sh, ord ), false ); // $ExpectType int32ndarray

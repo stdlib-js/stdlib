@@ -21,7 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 import { ComplexLike } from '@stdlib/types/complex';
-import { genericndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray, boolndarray, Float64DataType, Float32DataType, Complex128DataType, Complex64DataType, Int32DataType, Int16DataType, Int8DataType, Uint32DataType, Uint16DataType, Uint8DataType, Uint8cDataType, BooleanDataType, DataType, Order } from '@stdlib/types/ndarray';
+import { genericndarray, float64ndarray, float32ndarray, float16ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray, boolndarray, Float64DataType, Float32DataType, Float16DataType, Complex128DataType, Complex64DataType, Int32DataType, Int16DataType, Int8DataType, Uint32DataType, Uint16DataType, Uint8DataType, Uint8cDataType, BooleanDataType, DataType, Order } from '@stdlib/types/ndarray';
 
 /**
 * Returns a zero-dimensional ndarray containing a provided scalar value.
@@ -74,6 +74,32 @@ declare function scalar2ndarray( value: number, dtype: Float64DataType, order: O
 * // returns 1.0
 */
 declare function scalar2ndarray( value: number, dtype: Float32DataType, order: Order ): float32ndarray;
+
+/**
+* Returns a zero-dimensional ndarray containing a provided scalar value.
+*
+* @param value - scalar value
+* @param dtype - array data type
+* @param order - memory layout (row-major or column-major)
+* @returns zero-dimensional ndarray
+*
+* @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
+* var x = scalar2ndarray( 1.0, 'float16', 'row-major' );
+* // returns <ndarray>
+*
+* var sh = getShape( x );
+* // returns []
+*
+* var dt = String( getDType( x ) );
+* // returns 'float16'
+*
+* var v = x.get();
+* // returns 1.0
+*/
+declare function scalar2ndarray( value: number, dtype: Float16DataType, order: Order ): float16ndarray;
 
 /**
 * Returns a zero-dimensional ndarray containing a provided scalar value.

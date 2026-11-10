@@ -35,7 +35,7 @@ var cusomeBy = require( '@stdlib/array/base/cusome-by' );
 Cumulatively tests whether at least `n` array elements in a provided array pass a test implemented by a predicate function.
 
 ```javascript
-function fcn( value) {
+function fcn( value ) {
     return ( value > 0 );
 }
 

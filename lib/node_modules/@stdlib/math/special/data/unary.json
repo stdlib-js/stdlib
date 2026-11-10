@@ -10061,7 +10061,7 @@
     "base_alias": "cfloor",
     "alias": "cfloorf",
     "pkg_desc": "round each component of a single-precision complex floating-point number toward negative infinity",
-    "desc": "rounds each component a single-precision complex floating-point number toward negative infinity",
+    "desc": "rounds each component of a single-precision complex floating-point number toward negative infinity",
     "short_desc": "",
     "parameters": [
       {
@@ -10196,7 +10196,7 @@
     "base_alias": "cfloor",
     "alias": "cfloor",
     "pkg_desc": "round each component of a double-precision complex floating-point number toward negative infinity",
-    "desc": "rounds each component a double-precision complex floating-point number toward negative infinity",
+    "desc": "rounds each component of a double-precision complex floating-point number toward negative infinity",
     "short_desc": "",
     "parameters": [
       {
@@ -15514,7 +15514,6 @@
     },
     "keywords": [
       "csignum",
-      "signum",
       "sign",
       "sgn",
       "complex",
