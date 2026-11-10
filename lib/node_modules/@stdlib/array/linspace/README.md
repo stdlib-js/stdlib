@@ -101,8 +101,6 @@ When either `start` or `stop` is a complex number, the default output array data
 
 ```javascript
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var opts = {
     'dtype': 'generic'
@@ -115,22 +113,10 @@ var arr = linspace( start, stop, 6, opts );
 // returns [ <Complex128>, <Complex128>, <Complex128>, <Complex128>, <Complex128>, <Complex128> ]
 
 var z = arr[ 0 ];
-// returns <Complex128>
-
-var re = real( z );
-// returns 0.0
-
-var im = imag( z );
-// returns 0.0
+// returns <Complex128>[ 0.0, 0.0 ]
 
 z = arr[ 1 ];
-// returns <Complex128>
-
-re = real( z );
-// returns 20.0
-
-im = imag( z );
-// returns 2.0
+// returns <Complex128>[ 20.0, 2.0 ]
 
 // ...
 ```

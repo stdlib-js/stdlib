@@ -61,6 +61,7 @@
     "divide",
     "number",
     "float",
+    "single",
     "single-precision"
   ],
   "__stdlib__": {
