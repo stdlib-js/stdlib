@@ -1,0 +1,152 @@
+
+{{alias}}( N, alpha, x, strideX, y, strideY, beta, z, strideZ )
+    Multiplies the Hadamard product of strided arrays `x` and `y` by a constant
+    and adds the result to a strided array `z` multiplied by a constant.
+
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N <= 0`, the function returns `z` unchanged.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    alpha: number
+        First scalar constant.
+
+    x: Array<number>|TypedArray
+        First input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    y: Array<number>|TypedArray
+        Second input array.
+
+    strideY: integer
+        Stride length for `y`.
+
+    beta: number
+        Second scalar constant.
+
+    z: Array<number>|TypedArray
+        Output array.
+
+    strideZ: integer
+        Stride length for `z`.
+
+    Returns
+    -------
+    z: Array<number>|TypedArray
+        Output array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = [ 1.0, 2.0, 3.0, 4.0, 5.0 ];
+    > var y = [ 2.0, 3.0, 4.0, 5.0, 6.0 ];
+    > var z = [ 1.0, 1.0, 1.0, 1.0, 1.0 ];
+    > {{alias}}( x.length, 2.0, x, 1, y, 1, 3.0, z, 1 )
+    [ 7.0, 15.0, 27.0, 43.0, 63.0 ]
+
+    // Using `N` and stride parameters:
+    > x = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
+    > y = [ 2.0, 1.0, 3.0, 1.0, 4.0, 1.0 ];
+    > z = [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ];
+    > {{alias}}( 3, 2.0, x, 2, y, 2, 3.0, z, 2 )
+    [ 7.0, 1.0, 21.0, 1.0, 43.0, 1.0 ]
+
+    // Using view offsets:
+    > var bufX = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
+    > var bufY = [ 7.0, 8.0, 2.0, 3.0, 4.0, 12.0 ];
+    > var bufZ = [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ];
+    > var x0 = new {{alias:@stdlib/array/float64}}( bufX );
+    > var y0 = new {{alias:@stdlib/array/float64}}( bufY );
+    > var z0 = new {{alias:@stdlib/array/float64}}( bufZ );
+    > var offsetX = x0.BYTES_PER_ELEMENT * 1;
+    > var offsetY = y0.BYTES_PER_ELEMENT * 2;
+    > var offsetZ = z0.BYTES_PER_ELEMENT * 3;
+    > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, offsetX );
+    > var y1 = new {{alias:@stdlib/array/float64}}( y0.buffer, offsetY );
+    > var z1 = new {{alias:@stdlib/array/float64}}( z0.buffer, offsetZ );
+    > {{alias}}( 3, 2.0, x1, 1, y1, 1, 3.0, z1, 1 )
+    <Float64Array>[ 11.0, 21.0, 35.0 ]
+    > z0
+    <Float64Array>[ 1.0, 1.0, 1.0, 11.0, 21.0, 35.0 ]
+
+
+{{alias}}.ndarray( N, alpha, x, sx, ox, y, sy, oy, beta, z, sz, oz )
+    Multiplies the Hadamard product of strided arrays `x` and `y` by a constant
+    and adds the result to a strided array `z` multiplied by a constant using
+    alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    alpha: number
+        First scalar constant.
+
+    x: Array<number>|TypedArray
+        First input array.
+
+    sx: integer
+        Stride length for `x`.
+
+    ox: integer
+        Starting index for `x`.
+
+    y: Array<number>|TypedArray
+        Second input array.
+
+    sy: integer
+        Stride length for `y`.
+
+    oy: integer
+        Starting index for `y`.
+
+    beta: number
+        Second scalar constant.
+
+    z: Array<number>|TypedArray
+        Output array.
+
+    sz: integer
+        Stride length for `z`.
+
+    oz: integer
+        Starting index for `z`.
+
+    Returns
+    -------
+    z: Array<number>|TypedArray
+        Output array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = [ 1.0, 2.0, 3.0, 4.0, 5.0 ];
+    > var y = [ 2.0, 3.0, 4.0, 5.0, 6.0 ];
+    > var z = [ 1.0, 1.0, 1.0, 1.0, 1.0 ];
+    > {{alias}}.ndarray( x.length, 2.0, x, 1, 0, y, 1, 0, 3.0, z, 1, 0 )
+    [ 7.0, 15.0, 27.0, 43.0, 63.0 ]
+
+    // Using index offsets:
+    > x = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
+    > y = [ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ];
+    > z = [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ];
+    > {{alias}}.ndarray( 3, 2.0, x, 1, 3, y, 1, 3, 3.0, z, 1, 3 )
+    [ 1.0, 1.0, 1.0, 19.0, 23.0, 27.0 ]
+
+    See Also
+    --------
