@@ -21,7 +21,7 @@
 // MODULES //
 
 var assign = require( './../../lib/node_modules/@stdlib/object/assign' );
-var defaults = require( './../../eslint.flat.config.js' );
+var defaults = require( './../../eslint.config.js' );
 
 
 // VARIABLES //

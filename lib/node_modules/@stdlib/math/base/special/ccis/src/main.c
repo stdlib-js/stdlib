@@ -25,8 +25,8 @@
 /**
 * Evaluates the cis function for a double-precision complex floating-point number.
 *
-* @param z        input value
-* @return         result
+* @param z       input value
+* @return        result
 *
 * @example
 * #include "stdlib/complex/float64/ctor.h"
