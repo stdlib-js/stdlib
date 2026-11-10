@@ -55,9 +55,9 @@ static napi_value addon_method( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
 	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 2 );
 	STDLIB_NAPI_ARGV_INT64( env, offsetX, argv, 3 );
-	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY( env, X, N, strideX, argv, 1 );
 	STDLIB_NAPI_ARGV_INT64( env, strideY, argv, 5 );
 	STDLIB_NAPI_ARGV_INT64( env, offsetY, argv, 6 );
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY( env, X, N, strideX, argv, 1 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY( env, Y, N, strideY, argv, 4 );
 	STDLIB_NAPI_CREATE_INT32( env, API_SUFFIX(stdlib_strided_sfirst_index_equal_ndarray)( N, X, strideX, offsetX, Y, strideY, offsetY ), idx ); // TODO: Need to revisit in order to support int64_t for CBLAS_INT
 	return idx;

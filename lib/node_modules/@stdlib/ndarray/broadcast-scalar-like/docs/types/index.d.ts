@@ -21,7 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 import { ComplexLike } from '@stdlib/types/complex';
-import { ndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray, genericndarray, boolndarray, Shape, DataType, Order, Float64DataType, Float32DataType, Complex128DataType, Complex64DataType, BooleanDataType, Int32DataType, Int16DataType, Int8DataType, Uint32DataType, Uint16DataType, Uint8DataType, Uint8cDataType, GenericDataType } from '@stdlib/types/ndarray';
+import { ndarray, float64ndarray, float32ndarray, float16ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray, genericndarray, boolndarray, Shape, DataType, Order, Float64DataType, Float32DataType, Float16DataType, Complex128DataType, Complex64DataType, BooleanDataType, Int32DataType, Int16DataType, Int8DataType, Uint32DataType, Uint16DataType, Uint8DataType, Uint8cDataType, GenericDataType } from '@stdlib/types/ndarray';
 
 /**
 * Interface defining function options.
@@ -71,6 +71,16 @@ interface Float32Options extends BaseOptions {
 	* Output array data type.
 	*/
 	dtype: Float32DataType;
+}
+
+/**
+* Interface defining function options.
+*/
+interface Float16Options extends BaseOptions {
+	/**
+	* Output array data type.
+	*/
+	dtype: Float16DataType;
 }
 
 /**
@@ -270,6 +280,48 @@ declare function broadcastScalarLike( x: float32ndarray, value: number, options?
 * // returns <ndarray>
 */
 declare function broadcastScalarLike( x: ndarray, value: number, options: Float32Options ): float32ndarray;
+
+/**
+* Broadcasts a scalar value to an ndarray having the same shape and data type as a provided input ndarray.
+*
+* @param x - input ndarray
+* @param value - scalar value
+* @param options - function options
+* @returns ndarray
+*
+* @example
+* var empty = require( '@stdlib/ndarray/empty' );
+*
+* var x = empty( [ 2, 2 ], {
+*     'dtype': 'float16'
+* });
+* // returns <ndarray>
+*
+* var out = broadcastScalarLike( x, 1.0 );
+* // returns <ndarray>
+*/
+declare function broadcastScalarLike( x: float16ndarray, value: number, options?: BaseOptions ): float16ndarray;
+
+/**
+* Broadcasts a scalar value to an ndarray having the same shape and data type as a provided input ndarray.
+*
+* @param x - input ndarray
+* @param value - scalar value
+* @param options - function options
+* @returns ndarray
+*
+* @example
+* var empty = require( '@stdlib/ndarray/empty' );
+*
+* var x = empty( [ 2, 2 ] );
+* // returns <ndarray>
+*
+* var out = broadcastScalarLike( x, 1.0, {
+*     'dtype': 'float16'
+* });
+* // returns <ndarray>
+*/
+declare function broadcastScalarLike( x: ndarray, value: number, options: Float16Options ): float16ndarray;
 
 /**
 * Broadcasts a scalar value to an ndarray having the same shape and data type as a provided input ndarray.

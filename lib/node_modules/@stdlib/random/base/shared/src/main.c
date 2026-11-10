@@ -160,9 +160,9 @@ void * stdlib_base_prng_state( const struct BasePRNGObject *obj ) {
 *
 * -   The function returns `-1` if unable to set a PRNG state and `0` otherwise.
 *
-* @param obj    PRNG object
-* @param state  state
-* @return       status code
+* @param obj     PRNG object
+* @param vstate  state
+* @return        status code
 */
 int8_t stdlib_base_prng_set( struct BasePRNGObject *obj, const void *vstate ) {
 	if ( obj == NULL || vstate == NULL ) {

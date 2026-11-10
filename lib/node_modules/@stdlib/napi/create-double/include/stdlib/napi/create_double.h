@@ -29,7 +29,7 @@
 * @param name        output variable name
 *
 * @example
-# #include "stdlib/napi/create_double.h"
+* #include "stdlib/napi/create_double.h"
 * #include "stdlib/napi/argv_double.h"
 * #include "stdlib/napi/argv.h"
 * #include <node_api.h>

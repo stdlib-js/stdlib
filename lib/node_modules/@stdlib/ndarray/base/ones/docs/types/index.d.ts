@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Shape, Order, typedndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, genericndarray, complex128ndarray, complex64ndarray, NumericAndGenericDataType, Float64DataType, Float32DataType, Complex128DataType, Complex64DataType, Int32DataType, Int16DataType, Int8DataType, Uint32DataType, Uint16DataType, Uint8DataType, Uint8cDataType, GenericDataType } from '@stdlib/types/ndarray';
+import { Shape, Order, typedndarray, float64ndarray, float32ndarray, float16ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, genericndarray, complex128ndarray, complex64ndarray, NumericAndGenericDataType, Float64DataType, Float32DataType, Float16DataType, Complex128DataType, Complex64DataType, Int32DataType, Int16DataType, Int8DataType, Uint32DataType, Uint16DataType, Uint8DataType, Uint8cDataType, GenericDataType } from '@stdlib/types/ndarray';
 
 /**
 * Creates a ones-filled ndarray having a specified shape and data type.
@@ -67,6 +67,29 @@ declare function ones( dtype: Float64DataType, shape: Shape, order: Order ): flo
 * // returns 'float32'
 */
 declare function ones( dtype: Float32DataType, shape: Shape, order: Order ): float32ndarray;
+
+/**
+* Creates a ones-filled ndarray having a specified shape and data type.
+*
+* @param dtype - underlying data type
+* @param shape - array shape
+* @param order - specifies whether an array is row-major (C-style) or column-major (Fortran-style)
+* @returns ones-filled ndarray
+*
+* @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
+* var arr = ones( 'float16', [ 2, 2 ], 'row-major' );
+* // returns <ndarray>[ [ 1.0, 1.0 ], [ 1.0, 1.0 ] ]
+*
+* var sh = getShape( arr );
+* // returns [ 2, 2 ]
+*
+* var dt = String( getDType( arr ) );
+* // returns 'float16'
+*/
+declare function ones( dtype: Float16DataType, shape: Shape, order: Order ): float16ndarray;
 
 /**
 * Creates a ones-filled ndarray having a specified shape and data type.
