@@ -5,7 +5,7 @@
     Per RFC 6901, an empty string refers to the root, and, thus, the function
     returns an empty array. Non-empty pointers must begin with a '/' character.
 
-    Escape sequences are decoded:. During decoding, `~1` is unescaped to `/`
+    Escape sequences are decoded. During decoding, `~1` is unescaped to `/`
     before `~0` is unescaped to `~`.
 
     Parameters
