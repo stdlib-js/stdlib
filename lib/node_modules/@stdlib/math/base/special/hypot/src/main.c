@@ -21,6 +21,7 @@
 #include "stdlib/math/base/assert/is_infinite.h"
 #include "stdlib/math/base/special/sqrt.h"
 #include "stdlib/constants/float64/pinf.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Computes the hypotenuse avoiding overflow and underflow.
@@ -43,7 +44,7 @@ double stdlib_base_hypot( const double x, const double y ) {
 		return STDLIB_CONSTANT_FLOAT64_PINF;
 	}
 	if ( stdlib_base_is_nan( x ) || stdlib_base_is_nan( y ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	a = x;
 	b = y;

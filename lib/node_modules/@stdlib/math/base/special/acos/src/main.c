@@ -35,6 +35,7 @@
 #include "stdlib/math/base/special/asin.h"
 #include "stdlib/math/base/special/sqrt.h"
 #include "stdlib/constants/float64/fourth_pi.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdint.h>
 
 static const double MOREBITS = 6.123233995736765886130e-17; // pi/2 = PIO2 + MOREBITS.
@@ -81,10 +82,10 @@ static const double MOREBITS = 6.123233995736765886130e-17; // pi/2 = PIO2 + MOR
 double stdlib_base_acos( const double x ) {
 	double z;
 	if ( stdlib_base_is_nan( x ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( x < -1.0 || x > 1.0 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( x > 0.5 ) {
 		return 2.0 * stdlib_base_asin( stdlib_base_sqrt( 0.5 - ( 0.5 * x ) ) );

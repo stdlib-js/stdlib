@@ -37,6 +37,6 @@ int main( void ) {
 		b = random_uniform( 0.1, 20.0 );
 		t = random_uniform( -1.0/b, 1.0/b );
 		y = stdlib_base_dists_laplace_mgf( t, mu, b );
-		printf( "t: %lf, µ: %lf, b: %lf, M_X(t;µ,b): %lf\n", t, mu, b, y );
+		printf( "t: %lf, μ: %lf, b: %lf, M_X(t;μ,b): %lf\n", t, mu, b, y );
 	}
 }

@@ -42,7 +42,8 @@
         "@stdlib/constants/float64/high-word-exponent-mask",
         "@stdlib/math/base/special/kernel-cos",
         "@stdlib/math/base/special/kernel-sin",
-        "@stdlib/math/base/special/rempio2"
+        "@stdlib/math/base/special/rempio2",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -61,7 +62,8 @@
         "@stdlib/constants/float64/high-word-exponent-mask",
         "@stdlib/math/base/special/kernel-cos",
         "@stdlib/math/base/special/kernel-sin",
-        "@stdlib/math/base/special/rempio2"
+        "@stdlib/math/base/special/rempio2",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -80,7 +82,8 @@
         "@stdlib/constants/float64/high-word-exponent-mask",
         "@stdlib/math/base/special/kernel-cos",
         "@stdlib/math/base/special/kernel-sin",
-        "@stdlib/math/base/special/rempio2"
+        "@stdlib/math/base/special/rempio2",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

@@ -56,11 +56,11 @@ interface Frexp {
 	*
 	* @example
 	* var out = frexp( Infinity );
-	* // returns [ Infinity , 0 ]
+	* // returns [ Infinity, 0 ]
 	*
 	* @example
 	* var out = frexp( -Infinity );
-	* // returns [ -Infinity , 0 ]
+	* // returns [ -Infinity, 0 ]
 	*/
 	( x: number ): [ number, number ];
 
@@ -123,11 +123,11 @@ interface Frexp {
 *
 * @example
 * var out = frexp( Infinity );
-* // returns [ Infinity , 0 ]
+* // returns [ Infinity, 0 ]
 *
 * @example
 * var out = frexp( -Infinity );
-* // returns [ -Infinity , 0 ]
+* // returns [ -Infinity, 0 ]
 */
 declare var frexp: Frexp;
 

@@ -56,7 +56,7 @@ double stdlib_base_dists_wald_pdf( const double x, const double mu, const double
 		return 0.0;
 	}
 	A = stdlib_base_sqrt( lambda / STDLIB_CONSTANT_FLOAT64_TWO_PI );
-	B = -lambda / ( 2.0 * mu * mu );
-	v = x - mu;
-	return A / ( x * stdlib_base_sqrt( x ) ) * stdlib_base_exp( B * v * v / x );
+	B = -0.5 * lambda;
+	v = ( x - mu ) / mu;
+	return A / ( x * stdlib_base_sqrt( x ) ) * stdlib_base_exp( ( ( B / x ) * v ) * v );
 }

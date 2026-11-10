@@ -19,6 +19,7 @@
 #include "stdlib/math/base/special/dirac_delta.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/constants/float64/pinf.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Evaluates the Dirac delta function.
@@ -32,7 +33,7 @@
 */
 double stdlib_base_dirac_delta( const double x ) {
 	if ( stdlib_base_is_nan( x ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( x == 0.0 ) {
 		return STDLIB_CONSTANT_FLOAT64_PINF;

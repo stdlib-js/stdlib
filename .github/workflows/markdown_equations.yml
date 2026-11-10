@@ -59,8 +59,11 @@ jobs:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
 
-          # Limit clone depth to the most recent 100 commits:
-          fetch-depth: 100
+          # Fetch full history to find when SVGs were last modified:
+          fetch-depth: 0
+
+          # Use a blobless clone to speed up the checkout:
+          filter: blob:none
 
           # Specify whether to download Git-LFS files:
           lfs: false
@@ -95,6 +98,11 @@ jobs:
           git config --local user.email "82920195+stdlib-bot@users.noreply.github.com"
           git config --local user.name "stdlib-bot"
         timeout-minutes: 5
+
+      # Disable Git hooks:
+      - name: 'Disable Git hooks'
+        run: |
+          rm -rf .git/hooks
 
       # Import GPG key to sign commits:
       - name: 'Import GPG key to sign commits'
@@ -166,7 +174,7 @@ jobs:
             git commit -m "docs: update Markdown equation elements"
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
-        timeout-minutes: 15
+        timeout-minutes: 60
 
       # Delete remote PR branch to ensure a clean push when the branch has diverged:
       - name: 'Delete remote PR branch'
@@ -177,6 +185,9 @@ jobs:
           # Fetch the branch first so that --force-with-lease in the subsequent push has a local tracking reference and can verify the remote state:
           git fetch origin markdown-insert-equations 2>/dev/null || true
           gh api -X DELETE repos/stdlib-js/stdlib/git/refs/heads/markdown-insert-equations 2>/dev/null || true
+
+          # Delete the local tracking branch so that --force-with-lease does not reject the push due to stale info:
+          git branch -dr origin/markdown-insert-equations 2>/dev/null || true
         timeout-minutes: 5
 
       # Create a pull request with the updated equations:

@@ -23,6 +23,7 @@
 #include "stdlib/math/base/special/gcd.h"
 #include "stdlib/constants/float64/pinf.h"
 #include "stdlib/constants/float64/max_safe_integer.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Computes the binomial coefficient of two integers.
@@ -47,7 +48,7 @@ double stdlib_base_binomcoef( const double n, const double k ) {
 	double s;
 
 	if ( !stdlib_base_is_integer( n ) || !stdlib_base_is_integer( k ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 
 	if ( k < 0 ) {

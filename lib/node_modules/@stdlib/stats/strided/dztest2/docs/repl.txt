@@ -1,10 +1,10 @@
 
 {{alias}}( NX, NY, alt, alpha, d, sdx, x, sx, sdy, y, sy, out )
-    Computes a two-sample Z-test for two double-precision floating-point
-    strided arrays.
+    Computes a two-sample Z-test for two double-precision floating-point strided
+    arrays.
 
-    The `N` and stride parameters determine which elements in the strided
-    arrays are accessed at runtime.
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
 
     Indexing is relative to the first index. To introduce an offset, use a typed
     array view.
@@ -17,7 +17,7 @@
     NY: integer
         Number of indexed elements in `y`.
 
-    alternative: string
+    alt: string
         Alternative hypothesis. Must be one of the following:
 
         - two-sided: `x` has the same mean as `y`.
@@ -36,7 +36,7 @@
     x: Float64Array
         First input array.
 
-    strideX: integer
+    sx: integer
         Stride length for `x`.
 
     sdy: number
@@ -45,7 +45,7 @@
     y: Float64Array
         Second input array.
 
-    strideY: integer
+    sy: integer
         Stride length for `y`.
 
     out: Object
@@ -63,14 +63,16 @@
     > var NX = x.length;
     > var NY = y.length;
     > var alt = 'two-sided';
-    > var out = new {{alias:@stdlib/stats/base/ztest/two-sample/results/float64}}();
-    > var res = {{alias}}( NX, NY, alt, 0.05, 0.0, 1.0, x, 1, 2.0, y, 1, out );
-    > res.toString()
+    > var R = {{alias:@stdlib/stats/base/ztest/two-sample/results/float64}};
+    > var out = new R();
+    > var r = {{alias}}( NX, NY, alt, 0.05, 0.0, 1.0, x, 1, 2.0, y, 1, out );
+    > r.toString()
+    <string>
 
 
 {{alias}}.ndarray( NX, NY, alt, alpha, d, sdx, x, sx, ox, sdy, y, sy, oy, out )
-    Computes a two-sample Z-test for two double-precision floating-point
-    strided arrays using alternative indexing semantics.
+    Computes a two-sample Z-test for two double-precision floating-point strided
+    arrays using alternative indexing semantics.
 
     While typed array views mandate a view offset based on the underlying
     buffer, offset parameters support indexing semantics based on starting
@@ -84,7 +86,7 @@
     NY: integer
         Number of indexed elements in `y`.
 
-    alternative: string
+    alt: string
         Alternative hypothesis. Must be one of the following:
 
         - two-sided: `x` has the same mean as `y`.
@@ -103,10 +105,10 @@
     x: Float64Array
         First input array.
 
-    strideX: integer
+    sx: integer
         Stride length for `x`.
 
-    offsetX: integer
+    ox: integer
         Starting index for `x`.
 
     sdy: number
@@ -115,10 +117,10 @@
     y: Float64Array
         Second input array.
 
-    strideY: integer
+    sy: integer
         Stride length for `y`.
 
-    offsetY: integer
+    oy: integer
         Starting index for `y`.
 
     out: Object
@@ -136,9 +138,11 @@
     > var NX = x.length;
     > var NY = y.length;
     > var alt = 'two-sided';
-    > var out = new {{alias:@stdlib/stats/base/ztest/two-sample/results/float64}}();
-    > var res = {{alias}}.ndarray( NX, NY, alt, 0.05, 0.0, 1.0, x, 1, 0, 2.0, x, 1, 0, out );
-    > res.toString()
+    > var R = {{alias:@stdlib/stats/base/ztest/two-sample/results/float64}};
+    > var out = new R();
+    > var r = {{alias}}.ndarray(NX,NY,alt,0.05,0.0, 1.0,x,1,0, 2.0,y,1,0, out);
+    > r.toString()
+    <string>
 
     See Also
     --------

@@ -40,8 +40,6 @@ var cunitspace = require( '@stdlib/blas/ext/base/ndarray/cunitspace' );
 
 Fills a one-dimensional single-precision complex floating-point ndarray with linearly spaced numeric elements which increment by `1` starting from a specified value.
 
-<!-- eslint-disable max-len -->
-
 ```javascript
 var Complex64Vector = require( '@stdlib/ndarray/vector/complex64' );
 var Complex64 = require( '@stdlib/complex/float32/ctor' );

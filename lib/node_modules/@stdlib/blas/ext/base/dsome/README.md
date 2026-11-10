@@ -58,8 +58,6 @@ The function has the following parameters:
 
 The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to test every other element:
 
-<!-- eslint-disable max-len -->
-
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 

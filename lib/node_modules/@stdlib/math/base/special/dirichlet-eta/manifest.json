@@ -40,7 +40,8 @@
         "@stdlib/math/base/special/powm1",
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/riemann-zeta",
-        "@stdlib/constants/float64/ln-two"
+        "@stdlib/constants/float64/ln-two",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -57,7 +58,8 @@
         "@stdlib/math/base/special/powm1",
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/riemann-zeta",
-        "@stdlib/constants/float64/ln-two"
+        "@stdlib/constants/float64/ln-two",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -74,7 +76,8 @@
         "@stdlib/math/base/special/powm1",
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/riemann-zeta",
-        "@stdlib/constants/float64/ln-two"
+        "@stdlib/constants/float64/ln-two",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

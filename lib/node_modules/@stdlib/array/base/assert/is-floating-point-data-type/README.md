@@ -75,7 +75,10 @@ bool = isFloatingPointDataType( 'uint32' );
 ```javascript
 var isFloatingPointDataType = require( '@stdlib/array/base/assert/is-floating-point-data-type' );
 
-var bool = isFloatingPointDataType( 'float32' );
+var bool = isFloatingPointDataType( 'float16' );
+// returns true
+
+bool = isFloatingPointDataType( 'float32' );
 // returns true
 
 bool = isFloatingPointDataType( 'float64' );

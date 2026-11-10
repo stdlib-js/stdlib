@@ -91,6 +91,9 @@ var v = resolve( str2enum( 'float64' ) );
 v = resolve( str2enum( 'float32' ) );
 // returns 'float32'
 
+v = resolve( str2enum( 'float16' ) );
+// returns 'float16'
+
 v = resolve( str2enum( 'int32' ) );
 // returns 'int32'
 

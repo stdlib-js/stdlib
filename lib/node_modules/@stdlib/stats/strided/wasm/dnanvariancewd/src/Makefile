@@ -202,6 +202,7 @@ $(wasm_targets):
 #/
 $(wat_targets): %.wat: %.wasm
 	$(QUIET) $(WASM_TO_WAT) -o $@ $(wasm_targets)
+	$(QUIET) $(NODEJS) ./../scripts/postbuild.wat.js
 
 #/
 # Compiles WebAssembly binary files to JavaScript.

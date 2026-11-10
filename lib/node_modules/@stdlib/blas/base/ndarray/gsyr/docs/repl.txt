@@ -1,0 +1,42 @@
+
+{{alias}}( arrays )
+    Performs the symmetric rank 1 operation `A = alpha*x*x^T + A`,
+    where `alpha` is a scalar, `x` is a one-dimensional ndarray, and
+    `A` is an `N` by `N` symmetric matrix.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray corresponding to `x`.
+        - a two-dimensional input ndarray corresponding to `A`.
+        - a zero-dimensional ndarray specifying whether the upper or lower
+        triangular part of the symmetric matrix `A` should be referenced.
+        - a zero-dimensional ndarray containing a scalar constant corresponding
+        to `alpha`.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var xbuf = [ 1.0, 2.0, 3.0 ];
+    > var x = {{alias:@stdlib/ndarray/vector/ctor}}( xbuf, 'generic' );
+
+    > var abuf = [ [ 1.0, 2.0, 3.0 ], [ 2.0, 1.0, 2.0 ], [ 3.0, 2.0, 1.0 ] ];
+    > var A = {{alias:@stdlib/ndarray/matrix/ctor}}( abuf, 'generic' );
+
+    > var uplo = {{alias:@stdlib/ndarray/from-scalar}}( 'upper' );
+    > var opts = { 'dtype': 'generic' };
+    > var alpha = {{alias:@stdlib/ndarray/from-scalar}}( 2.0, opts );
+
+    > {{alias}}( [ x, A, uplo, alpha ] );
+    > A
+    <ndarray>[ [ 3.0, 6.0, 9.0 ], [ 2.0, 9.0, 14.0 ], [ 3.0, 2.0, 19.0 ] ]
+
+    See Also
+    --------
+

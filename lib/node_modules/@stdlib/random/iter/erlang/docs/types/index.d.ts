@@ -92,7 +92,7 @@ interface Iterator<T> extends TypedIterator<T> {
 * Returns an iterator for generating pseudorandom numbers drawn from an Erlang distribution.
 *
 * @param k - shape parameter
-* @param lambda  - rate parameter
+* @param lambda - rate parameter
 * @param options - function options
 * @throws `k` must be a positive integer
 * @throws `lambda` must be a positive number

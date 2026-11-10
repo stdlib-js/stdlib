@@ -4,7 +4,7 @@
 
     Parameters
     ----------
-    value: number|bigint
+    value: integer|bigint
         Integer value.
 
     Returns

@@ -1,0 +1,86 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-float",
+        "@stdlib/napi/create-double",
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/number/float32/base/to-word",
+        "@stdlib/constants/float32/sign-mask",
+        "@stdlib/math/base/special/abs"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/number/float32/base/to-word",
+        "@stdlib/constants/float32/sign-mask",
+        "@stdlib/math/base/special/abs"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/number/float32/base/to-word",
+        "@stdlib/constants/float32/sign-mask",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/constants/float32/eps",
+        "@stdlib/constants/float32/smallest-subnormal"
+      ]
+    }
+  ]
+}

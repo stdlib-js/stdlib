@@ -22,6 +22,24 @@ limitations under the License.
 
 > Compute `x - nπ/2 = r`.
 
+<section class="intro">
+
+The function computes `x - nπ/2 = r` for argument reduction
+
+<!-- <equation class="equation" label="eq:rempio2_function" align="center" raw="r = x - n \cdot \frac{\pi}{2}" alt="Argument reduction modulo pi over two"> -->
+
+```math
+r = x - n \cdot \frac{\pi}{2}
+```
+
+<!-- </equation> -->
+
+where `n` is the integer nearest to `2x/π` and `r` is the remainder.
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

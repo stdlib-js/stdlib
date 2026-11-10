@@ -48,6 +48,7 @@ Returns a view of an input ndarray.
 var Slice = require( '@stdlib/slice/ctor' );
 var MultiSlice = require( '@stdlib/slice/multi' );
 var ndarray = require( '@stdlib/ndarray/ctor' );
+var getShape = require( '@stdlib/ndarray/shape' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 
 var buffer = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
@@ -58,7 +59,7 @@ var offset = 0;
 var x = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
 // returns <ndarray>
 
-var sh = x.shape;
+var sh = getShape( x );
 // returns [ 3, 2 ]
 
 var arr = ndarray2array( x );
@@ -72,7 +73,7 @@ var s = new MultiSlice( s0, s1 );
 var y = slice( x, s, false, false );
 // returns <ndarray>
 
-sh = y.shape;
+sh = getShape( y );
 // returns [ 2, 2 ]
 
 arr = ndarray2array( y );

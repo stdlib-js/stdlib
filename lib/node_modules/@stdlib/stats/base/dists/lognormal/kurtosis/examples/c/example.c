@@ -35,6 +35,6 @@ int main( void ) {
 		sigma = random_uniform( 0.1, 5.0 );
 		mu = random_uniform( 0.0, 20.0 );
 		y = stdlib_base_dists_lognormal_kurtosis( mu, sigma );
-		printf( "µ: %lf, σ: %lf, Kurt(X;µ,σ): %lf\n", mu, sigma, y );
+		printf( "μ: %lf, σ: %lf, Kurt(X;μ,σ): %lf\n", mu, sigma, y );
 	}
 }

@@ -36,6 +36,6 @@ int main( void ) {
 		mu = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 10.0 );
 		lambda = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 20.0 );
 		y = stdlib_base_dists_wald_mode( mu, lambda );
-		printf( "µ: %.4f, λ: %.4f, mode(X;µ,λ): %.4f\n", mu, lambda, y );
+		printf( "μ: %.4f, λ: %.4f, mode(X;μ,λ): %.4f\n", mu, lambda, y );
 	}
 }

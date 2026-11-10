@@ -20,7 +20,7 @@ limitations under the License.
 
 # Beta Prime Random Numbers
 
-> Generate pseudorandom numbers drawn from a [betaprime][@stdlib/random/base/betaprime] distribution.
+> Generate pseudorandom numbers drawn from a [beta prime][@stdlib/random/base/betaprime] distribution.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var betaprime = require( '@stdlib/random/betaprime' );
 
 #### betaprime( shape, alpha, beta\[, options] )
 
-Returns an [ndarray][@stdlib/ndarray/ctor] containing pseudorandom numbers drawn from a [betaprime][@stdlib/random/base/betaprime] distribution.
+Returns an [ndarray][@stdlib/ndarray/ctor] containing pseudorandom numbers drawn from a [beta prime][@stdlib/random/base/betaprime] distribution.
 
 ```javascript
 var arr = betaprime( [ 3, 3 ], 2.0, 5.0 );
@@ -106,7 +106,7 @@ var dt = String( getDType( arr ) );
 
 #### betaprime.assign( alpha, beta, out )
 
-Fills an [ndarray][@stdlib/ndarray/ctor] with pseudorandom numbers drawn from a [betaprime][@stdlib/random/base/betaprime] distribution.
+Fills an [ndarray][@stdlib/ndarray/ctor] with pseudorandom numbers drawn from a [beta prime][@stdlib/random/base/betaprime] distribution.
 
 ```javascript
 var zeros = require( '@stdlib/ndarray/zeros' );
@@ -129,7 +129,7 @@ The method has the following parameters:
 
 #### betaprime.factory( \[options] )
 
-Returns a function for generating pseudorandom numbers drawn from a [betaprime][@stdlib/random/base/betaprime] distribution.
+Returns a function for generating pseudorandom numbers drawn from a [beta prime][@stdlib/random/base/betaprime] distribution.
 
 ```javascript
 var getShape = require( '@stdlib/ndarray/shape' );

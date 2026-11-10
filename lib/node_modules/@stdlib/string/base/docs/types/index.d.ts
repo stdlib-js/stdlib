@@ -1006,11 +1006,11 @@ interface Namespace {
 	* // returns 'Hello World!'
 	*
 	* @example
-	* var out = ns.replaceAfter( 'beep boop', ' ', 'foo' , 5 );
+	* var out = ns.replaceAfter( 'beep boop', ' ', 'foo', 5 );
 	* // returns 'beep boop'
 	*
 	* @example
-	* var out = ns.replaceAfter( 'beep boop beep baz', 'beep', 'foo' , 5 );
+	* var out = ns.replaceAfter( 'beep boop beep baz', 'beep', 'foo', 5 );
 	* // returns 'beep boop beepfoo'
 	*/
 	replaceAfter: typeof replaceAfter;

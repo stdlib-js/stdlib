@@ -46,7 +46,7 @@ double stdlib_base_dists_betaprime_logpdf( const double x, const double alpha, c
 		return 0.0 / 0.0;
 	}
 	if ( x <= 0.0 ) {
-		// Support of the BetaPrime distribution: (0,∞)
+		// Support of the beta prime distribution: (0,∞)
 		return STDLIB_CONSTANT_FLOAT64_NINF;
 	}
 	out = ( alpha-1.0 ) * stdlib_base_ln( x );
