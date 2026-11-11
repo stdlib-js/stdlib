@@ -51,6 +51,8 @@ Developing and running stdlib **requires** the following prerequisites:
     -   if Node `< 10.x.x`, version `> 2.7.0` and `< 6.0.0`
     -   if Node `< 14.17.0`, version `> 2.7.0` and `< 9.0.0`
 
+JavaScript and TypeScript linting uses ESLint 10 and requires Node.js `^20.19.0`, `^22.13.0`, or `>=24`. Use a supported Node.js version for development tools and editor integrations, even when testing stdlib on an older runtime.
+
 While not required to run stdlib, the following dependencies **may** be required for testing, benchmarking, and general development:
 
 -   [Julia][julia]: language for technical computing (version `>= 1.0`)

@@ -26,11 +26,11 @@ var path = require( 'path' );
 var globals = require( 'globals' );
 var tsParser = require( '@typescript-eslint/parser' );
 var tsPlugin = require( '@typescript-eslint/eslint-plugin' );
-var stylisticTs = require( '@stylistic/eslint-plugin-ts' );
+var stylistic = require( '@stylistic/eslint-plugin' );
 var pluginN = require( 'eslint-plugin-n' );
 var pluginCspell = require( '@cspell/eslint-plugin' );
 var pluginJsdoc = require( 'eslint-plugin-jsdoc' );
-var pluginImport = require( 'eslint-plugin-import' );
+var pluginImport = require( 'eslint-plugin-import-x' );
 var pluginExpectType = require( 'eslint-plugin-expect-type' );
 var assign = require( './lib/node_modules/@stdlib/object/assign' );
 var stdlibPlugin = require( './lib/node_modules/@stdlib/_tools/eslint/rules/scripts/plugin.js' );
@@ -215,9 +215,9 @@ var config = [
 		},
 		'plugins': {
 			'@typescript-eslint': tsPlugin,
-			'@stylistic/ts': stylisticTs,
+			'@stylistic': stylistic,
 			'jsdoc': pluginJsdoc,
-			'import': pluginImport,
+			'import-x': pluginImport,
 			'expect-type': pluginExpectType,
 			'stdlib': stdlibPlugin
 		},
