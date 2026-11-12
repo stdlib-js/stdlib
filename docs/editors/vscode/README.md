@@ -74,7 +74,7 @@ $ code .
     ```text
             ...
             "eslint.options": {
-                "configFile": "etc/eslint/.eslintrc.js"
+                "configFile": "eslint.config.js"
             }
             ...
     ```
