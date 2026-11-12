@@ -39,6 +39,7 @@ import gindexOfGreaterThanEqual = require( './index' );
 	gindexOfGreaterThanEqual( false, 2.0, x, 1 ); // $ExpectError
 	gindexOfGreaterThanEqual( null, 2.0, x, 1 ); // $ExpectError
 	gindexOfGreaterThanEqual( {}, 2.0, x, 1 ); // $ExpectError
+	gindexOfGreaterThanEqual( ( x: number ): number => x, 2.0, x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not a collection...
@@ -48,6 +49,7 @@ import gindexOfGreaterThanEqual = require( './index' );
 	gindexOfGreaterThanEqual( x.length, 1.0, false, 1 ); // $ExpectError
 	gindexOfGreaterThanEqual( x.length, 1.0, null, 1 ); // $ExpectError
 	gindexOfGreaterThanEqual( x.length, 1.0, {}, 1 ); // $ExpectError
+	gindexOfGreaterThanEqual( x.length, 1.0, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fourth argument which is not a number...
@@ -59,6 +61,7 @@ import gindexOfGreaterThanEqual = require( './index' );
 	gindexOfGreaterThanEqual( x.length, 2.0, x, false ); // $ExpectError
 	gindexOfGreaterThanEqual( x.length, 2.0, x, null ); // $ExpectError
 	gindexOfGreaterThanEqual( x.length, 2.0, x, {} ); // $ExpectError
+	gindexOfGreaterThanEqual( x.length, 2.0, x, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -86,6 +89,7 @@ import gindexOfGreaterThanEqual = require( './index' );
 	gindexOfGreaterThanEqual.ndarray( false, 2.0, x, 1, 1 ); // $ExpectError
 	gindexOfGreaterThanEqual.ndarray( null, 2.0, x, 1, 1 ); // $ExpectError
 	gindexOfGreaterThanEqual.ndarray( {}, 2.0, x, 1, 1 ); // $ExpectError
+	gindexOfGreaterThanEqual.ndarray( ( x: number ): number => x, 2.0, x, 1, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a third argument which is not a collection...
@@ -95,6 +99,7 @@ import gindexOfGreaterThanEqual = require( './index' );
 	gindexOfGreaterThanEqual.ndarray( x.length, 1.0, false, 1, 1 ); // $ExpectError
 	gindexOfGreaterThanEqual.ndarray( x.length, 1.0, null, 1, 1 ); // $ExpectError
 	gindexOfGreaterThanEqual.ndarray( x.length, 1.0, {}, 1, 1 ); // $ExpectError
+	gindexOfGreaterThanEqual.ndarray( x.length, 1.0, ( x: number ): number => x, 1, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fourth argument which is not a number...
@@ -106,6 +111,7 @@ import gindexOfGreaterThanEqual = require( './index' );
 	gindexOfGreaterThanEqual.ndarray( x.length, 2.0, x, false, 1 ); // $ExpectError
 	gindexOfGreaterThanEqual.ndarray( x.length, 2.0, x, null, 1 ); // $ExpectError
 	gindexOfGreaterThanEqual.ndarray( x.length, 2.0, x, {}, 1 ); // $ExpectError
+	gindexOfGreaterThanEqual.ndarray( x.length, 2.0, x, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fifth argument which is not a number...
@@ -117,6 +123,7 @@ import gindexOfGreaterThanEqual = require( './index' );
 	gindexOfGreaterThanEqual.ndarray( x.length, 2.0, x, 1, false ); // $ExpectError
 	gindexOfGreaterThanEqual.ndarray( x.length, 2.0, x, 1, null ); // $ExpectError
 	gindexOfGreaterThanEqual.ndarray( x.length, 2.0, x, 1, {} ); // $ExpectError
+	gindexOfGreaterThanEqual.ndarray( x.length, 2.0, x, 1, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided an unsupported number of arguments...

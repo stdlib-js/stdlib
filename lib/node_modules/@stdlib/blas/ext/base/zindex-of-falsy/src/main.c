@@ -27,10 +27,10 @@
 /**
 * Returns the index of the first falsy element in a double-precision complex floating-point strided array.
 *
-* @param N        number of indexed elements
-* @param X        input array
-* @param strideX  stride length
-* @return         index
+* @param N       number of indexed elements
+* @param X       input array
+* @param strideX stride length
+* @return        index
 */
 CBLAS_INT API_SUFFIX(stdlib_strided_zindex_of_falsy)( const CBLAS_INT N, const stdlib_complex128_t *X, const CBLAS_INT strideX ) {
 	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
@@ -40,11 +40,11 @@ CBLAS_INT API_SUFFIX(stdlib_strided_zindex_of_falsy)( const CBLAS_INT N, const s
 /**
 * Returns the index of the first falsy element in a double-precision complex floating-point strided array using alternative indexing semantics.
 *
-* @param N        number of indexed elements
-* @param X        input array
-* @param strideX  stride length
-* @param offsetX  starting index
-* @return         index
+* @param N       number of indexed elements
+* @param X       input array
+* @param strideX stride length
+* @param offsetX starting index
+* @return        index
 */
 CBLAS_INT API_SUFFIX(stdlib_strided_zindex_of_falsy_ndarray)( const CBLAS_INT N, const stdlib_complex128_t *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
 	stdlib_complex128_t v;

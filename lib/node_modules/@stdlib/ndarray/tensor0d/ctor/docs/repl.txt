@@ -1,0 +1,157 @@
+
+{{alias}}()
+    Returns a zero-dimensional ndarray having the default data type.
+
+    Returns
+    -------
+    out: ndarray
+        A zero-dimensional ndarray.
+
+    Examples
+    --------
+    > var arr = {{alias}}()
+    <ndarray>
+
+
+{{alias}}( dtype[, options] )
+    Returns a zero-dimensional ndarray.
+
+    Parameters
+    ----------
+    dtype: string|DataType
+        Underlying data type.
+
+    options: Object (optional)
+        Options.
+
+    options.order: string (optional)
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style). Default: 'row-major'.
+
+    options.readonly: boolean (optional)
+        Boolean indicating whether an array should be read-only. Default: false.
+
+    Returns
+    -------
+    out: ndarray
+        A zero-dimensional ndarray.
+
+    Examples
+    --------
+    > var arr = {{alias}}()
+    <ndarray>
+    > arr = {{alias}}( 'float32' )
+    <ndarray>
+
+
+{{alias}}( buffer[, byteOffset][, dtype][, options] )
+    Returns a zero-dimensional ndarray view of an ArrayBuffer.
+
+    Parameters
+    ----------
+    buffer: ArrayBuffer
+        Underlying ArrayBuffer.
+
+    byteOffset: integer (optional)
+        Integer byte offset specifying the location of the first indexed
+        element. Default: 0.
+
+    dtype: string|DataType (optional)
+        Underlying data type. Default: 'float64'.
+
+    options: Object (optional)
+        Options.
+
+    options.order: string (optional)
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style). Default: 'row-major'.
+
+    options.readonly: boolean (optional)
+        Boolean indicating whether an array should be read-only. Default: false.
+
+    Returns
+    -------
+    out: ndarray
+        A zero-dimensional ndarray.
+
+    Examples
+    --------
+    > var buf = new {{alias:@stdlib/array/buffer}}( 4 );
+    > var arr = {{alias}}( buf, 0, 'float32' )
+    <ndarray>
+
+
+{{alias}}( value[, dtype][, options] )
+    Creates a zero-dimensional ndarray from a scalar value.
+
+    Parameters
+    ----------
+    value: any
+        Scalar value.
+
+    dtype: string|DataType (optional)
+        Underlying data type. If not provided and `value`
+
+        - is a number, the default data type is the default real-valued
+        floating-point data type.
+        - is a boolean, the default data type is the default boolean data type.
+        - is a complex number object of a known complex data type, the data type
+        is the same as the provided value.
+        - is a complex number object of an unknown data type, the default data
+        type is the default complex-valued floating-point data type.
+        - is any other value type, the default data type is 'generic'.
+
+    options: Object (optional)
+        Options.
+
+    options.order: string (optional)
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style). Default: 'row-major'.
+
+    options.readonly: boolean (optional)
+        Boolean indicating whether an array should be read-only. Default: false.
+
+    Returns
+    -------
+    out: ndarray
+        A zero-dimensional ndarray.
+
+    Examples
+    --------
+    > var arr = {{alias}}( 1.0, 'float32' )
+    <ndarray>
+
+
+{{alias}}.factory( dtype[, options] )
+    Returns a function for creating a zero-dimensional ndarray.
+
+    Parameters
+    ----------
+    dtype: string|DataType
+        Underlying data type.
+
+    options: Object (optional)
+        Options.
+
+    options.order: string (optional)
+        Specifies whether the default memory layout should be row-major (C-
+        style) or column-major (Fortran-style). Default: 'row-major'.
+
+    options.readonly: boolean (optional)
+        Boolean indicating whether an array should be read-only by default.
+        Default: false.
+
+    Returns
+    -------
+    fcn: Function
+        Function for creating a zero-dimensional ndarray.
+
+    Examples
+    --------
+    > var f = {{alias}}.factory( 'float32' );
+    > var arr = f()
+    <ndarray>
+
+    See Also
+    --------
+
