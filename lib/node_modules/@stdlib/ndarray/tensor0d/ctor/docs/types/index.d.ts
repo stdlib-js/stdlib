@@ -47,12 +47,9 @@ interface GenericTensor0D {
 	/**
 	* Creates a zero-dimensional ndarray.
 	*
-	* @param options - function options
-	* @param options.readonly - boolean indicating whether to return a read-only ndarray
-	* @param options.order - memory layout (either row-major or column-major)
 	* @returns zero-dimensional ndarray
 	*/
-	( options?: Options ): DataTypeMap<number>['generic'];
+	(): DataTypeMap<number>['generic'];
 
 	/**
 	* Creates a zero-dimensional ndarray.
@@ -73,12 +70,9 @@ interface TypedTensor0D<T extends keyof TypedDataTypeMap> {
 	/**
 	* Creates a zero-dimensional ndarray.
 	*
-	* @param options - function options
-	* @param options.readonly - boolean indicating whether to return a read-only ndarray
-	* @param options.order - memory layout (either row-major or column-major)
 	* @returns zero-dimensional ndarray
 	*/
-	( options?: Options ): TypedDataTypeMap[T];
+	(): TypedDataTypeMap[T];
 
 	/**
 	* Creates a zero-dimensional ndarray.

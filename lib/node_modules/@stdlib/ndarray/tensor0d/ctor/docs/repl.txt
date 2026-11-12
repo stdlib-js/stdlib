@@ -1,11 +1,25 @@
 
-{{alias}}( [dtype][, options] )
+{{alias}}()
+    Returns a zero-dimensional ndarray having the default data type.
+
+    Returns
+    -------
+    out: ndarray
+        A zero-dimensional ndarray.
+
+    Examples
+    --------
+    > var arr = {{alias}}()
+    <ndarray>
+
+
+{{alias}}( dtype[, options] )
     Returns a zero-dimensional ndarray.
 
     Parameters
     ----------
-    dtype: string|DataType (optional)
-        Underlying data type. Default: 'float64'.
+    dtype: string|DataType
+        Underlying data type.
 
     options: Object (optional)
         Options.

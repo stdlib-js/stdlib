@@ -40,9 +40,9 @@ limitations under the License.
 var tensor0d = require( '@stdlib/ndarray/tensor0d/ctor' );
 ```
 
-#### tensor0d( \[dtype]\[, options] )
+#### tensor0d()
 
-Returns a zero-dimensional [ndarray][@stdlib/ndarray/ctor] having a specified [data type][@stdlib/ndarray/dtypes].
+Returns a zero-dimensional [ndarray][@stdlib/ndarray/ctor] having a [`float64`][@stdlib/ndarray/dtypes] data type.
 
 ```javascript
 var getDType = require( '@stdlib/ndarray/dtype' );
@@ -54,7 +54,9 @@ var dt = String( getDType( arr ) );
 // returns 'float64'
 ```
 
-By default, the function returns an [ndarray][@stdlib/ndarray/ctor] having a [`float64`][@stdlib/ndarray/dtypes] data type. To specify an alternative [data type][@stdlib/ndarray/dtypes], provide a `dtype` argument.
+#### tensor0d( dtype\[, options] )
+
+Returns a zero-dimensional [ndarray][@stdlib/ndarray/ctor] having a specified [data type][@stdlib/ndarray/dtypes].
 
 ```javascript
 var getDType = require( '@stdlib/ndarray/dtype' );
@@ -106,6 +108,8 @@ var dt4 = String( getDType( arr4 ) );
 // returns 'float32'
 ```
 
+The function accepts the same `options` as above.
+
 #### tensor0d( value\[, dtype]\[, options] )
 
 Creates a zero-dimensional [ndarray][@stdlib/ndarray/ctor] from a scalar value.
@@ -129,6 +133,8 @@ If a `dtype` argument is not provided and `value`
 If `value` is a number and `dtype` is a complex [data type][@stdlib/ndarray/dtypes], the function returns a zero-dimensional [ndarray][@stdlib/ndarray/ctor] containing a complex number whose real component equals the provided scalar `value` and whose imaginary component is zero.
 
 The function does not guard against precision loss when `value` is a number and the `dtype` argument is an integer [data type][@stdlib/ndarray/dtypes].
+
+The function accepts the same `options` as above.
 
 #### tensor0d.factory( dtype\[, options] )
 
