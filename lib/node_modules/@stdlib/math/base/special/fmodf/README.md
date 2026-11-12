@@ -32,6 +32,11 @@ The [modulus function][modulus-function] is defined as
 z = x \bmod y
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="z = x \bmod y" data-equation="eq:modulus_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@084e7f73049a6b09aa32af5a4f2abc6615e909de/lib/node_modules/@stdlib/math/base/special/fmodf/docs/img/equation_modulus_function.svg" alt="Modulus function">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 where `x` is the **dividend** and `y` is the **divisor**.

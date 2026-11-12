@@ -21,6 +21,7 @@
 import { AccessorArrayLike, ArrayLike } from '@stdlib/types/array';
 import Complex128Array = require( '@stdlib/array/complex128' );
 import Complex64Array = require( '@stdlib/array/complex64' );
+import Float16Array = require( '@stdlib/array/float16' );
 import strided2object = require( './index' );
 
 /**
@@ -79,38 +80,41 @@ function arrayLike(): ArrayLike<number> {
 	const x3 = new Float32Array( [ 1, 2, 3, 4, 5, 6 ] );
 	strided2object( 6, x3, 1, 0 ); // $ExpectType Float32AccessorObject
 
-	const x4 = new Int32Array( [ 1, 2, 3, 4, 5, 6 ] );
-	strided2object( 6, x4, 1, 0 ); // $ExpectType Int32AccessorObject
+	const x4 = new Float16Array( [ 1, 2, 3, 4, 5, 6 ] );
+	strided2object( 6, x4, 1, 0 ); // $ExpectType Float16AccessorObject
 
-	const x5 = new Int16Array( [ 1, 2, 3, 4, 5, 6 ] );
-	strided2object( 6, x5, 1, 0 ); // $ExpectType Int16AccessorObject
+	const x5 = new Int32Array( [ 1, 2, 3, 4, 5, 6 ] );
+	strided2object( 6, x5, 1, 0 ); // $ExpectType Int32AccessorObject
 
-	const x6 = new Int8Array( [ 1, 2, 3, 4, 5, 6 ] );
-	strided2object( 6, x6, 1, 0 ); // $ExpectType Int8AccessorObject
+	const x6 = new Int16Array( [ 1, 2, 3, 4, 5, 6 ] );
+	strided2object( 6, x6, 1, 0 ); // $ExpectType Int16AccessorObject
 
-	const x7 = new Uint32Array( [ 1, 2, 3, 4, 5, 6 ] );
-	strided2object( 6, x7, 1, 0 ); // $ExpectType Uint32AccessorObject
+	const x7 = new Int8Array( [ 1, 2, 3, 4, 5, 6 ] );
+	strided2object( 6, x7, 1, 0 ); // $ExpectType Int8AccessorObject
 
-	const x8 = new Uint16Array( [ 1, 2, 3, 4, 5, 6 ] );
-	strided2object( 6, x8, 1, 0 ); // $ExpectType Uint16AccessorObject
+	const x8 = new Uint32Array( [ 1, 2, 3, 4, 5, 6 ] );
+	strided2object( 6, x8, 1, 0 ); // $ExpectType Uint32AccessorObject
 
-	const x9 = new Uint8Array( [ 1, 2, 3, 4, 5, 6 ] );
-	strided2object( 6, x9, 1, 0 ); // $ExpectType Uint8AccessorObject
+	const x9 = new Uint16Array( [ 1, 2, 3, 4, 5, 6 ] );
+	strided2object( 6, x9, 1, 0 ); // $ExpectType Uint16AccessorObject
 
-	const x10 = new Uint8ClampedArray( [ 1, 2, 3, 4, 5, 6 ] );
-	strided2object( 6, x10, 1, 0 ); // $ExpectType Uint8cAccessorObject
+	const x10 = new Uint8Array( [ 1, 2, 3, 4, 5, 6 ] );
+	strided2object( 6, x10, 1, 0 ); // $ExpectType Uint8AccessorObject
 
-	const x11 = new Complex128Array( [ 1, 2, 3, 4, 5, 6 ] );
-	strided2object( 6, x11, 1, 0 ); // $ExpectType Complex128AccessorObject
+	const x11 = new Uint8ClampedArray( [ 1, 2, 3, 4, 5, 6 ] );
+	strided2object( 6, x11, 1, 0 ); // $ExpectType Uint8cAccessorObject
 
-	const x12 = new Complex64Array( [ 1, 2, 3, 4, 5, 6 ] );
-	strided2object( 6, x12, 1, 0 ); // $ExpectType Complex64AccessorObject
+	const x12 = new Complex128Array( [ 1, 2, 3, 4, 5, 6 ] );
+	strided2object( 6, x12, 1, 0 ); // $ExpectType Complex128AccessorObject
 
-	const x13 = accessorArray();
-	strided2object( 6, x13, 1, 0 ); // $ExpectType GetSetAccessorObject<number>
+	const x13 = new Complex64Array( [ 1, 2, 3, 4, 5, 6 ] );
+	strided2object( 6, x13, 1, 0 ); // $ExpectType Complex64AccessorObject
 
-	const x14 = arrayLike();
-	strided2object( 6, x14, 1, 0 ); // $ExpectType IndexedAccessorObject<number>
+	const x14 = accessorArray();
+	strided2object( 6, x14, 1, 0 ); // $ExpectType GetSetAccessorObject<number>
+
+	const x15 = arrayLike();
+	strided2object( 6, x15, 1, 0 ); // $ExpectType IndexedAccessorObject<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
