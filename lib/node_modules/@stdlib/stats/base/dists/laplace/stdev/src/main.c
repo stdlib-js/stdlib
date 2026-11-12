@@ -19,6 +19,7 @@
 #include "stdlib/stats/base/dists/laplace/stdev.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/constants/float64/sqrt_two.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Returns the standard deviation for a Laplace distribution with location `mu` and scale `b`.
@@ -37,7 +38,7 @@ double stdlib_base_dists_laplace_stdev( const double mu, const double b ) {
 		stdlib_base_is_nan( b ) ||
 		b <= 0.0
 	) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	return STDLIB_CONSTANT_FLOAT64_SQRT2 * b;
 }

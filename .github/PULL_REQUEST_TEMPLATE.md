@@ -16,6 +16,22 @@ This pull request has the following related issues:
 
 -   #{{TODO: add related issue number}}
 
+## Reference Packages
+
+> Did the content of this pull request follow one or more existing packages? Answering is optional.
+
+This pull request followed these packages:
+
+-   {{TODO: add package path (e.g., `blas/ext/base/gxmy`), or none, breaking new ground}}
+
+> What carried over from the reference(s)?
+
+-   {{TODO: add what carried over (e.g., package structure, naming, test shape, benchmark layout, and/or documentation)}}
+
+> What differed, or what did you have to work out yourself?
+
+-   {{TODO: add what you worked out without a reference}}
+
 ## Questions
 
 > Any questions for reviewers of this pull request?

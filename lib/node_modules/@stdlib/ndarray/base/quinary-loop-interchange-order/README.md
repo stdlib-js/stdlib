@@ -76,6 +76,7 @@ The function returns an object having the following properties:
 -   **sw**: fourth input array strides sorted in loop order.
 -   **su**: fifth input array strides sorted in loop order.
 -   **sv**: output array strides sorted in loop order.
+-   **idx**: dimension indices sorted in loop order.
 
 For all returned arrays, the first element corresponds to the innermost loop, and the last element corresponds to the outermost loop.
 

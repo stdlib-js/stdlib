@@ -30,6 +30,11 @@ limitations under the License.
 y = b^x - 1
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = b^x - 1" data-equation="eq:exponential_function_minus_one">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@084e7f73049a6b09aa32af5a4f2abc6615e909de/lib/node_modules/@stdlib/math/base/special/powm1f/docs/img/equation_exponential_function_minus_one.svg" alt="Exponential function minus one">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 When `b` is close to `1` and/or `x` is small, this implementation is more accurate than naively computing `bˣ` minus `1`.

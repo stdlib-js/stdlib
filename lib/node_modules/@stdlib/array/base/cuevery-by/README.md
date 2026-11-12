@@ -35,7 +35,7 @@ var cueveryBy = require( '@stdlib/array/base/cuevery-by' );
 Cumulatively tests whether every array element in a provided array passes a test implemented by a predicate function.
 
 ```javascript
-function fcn( value) {
+function fcn( value ) {
     return ( value > 0 );
 }
 
