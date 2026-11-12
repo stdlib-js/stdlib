@@ -43,6 +43,8 @@ import { MultiSlice } from '@stdlib/types/slice';
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 * var ndzeros = require( '@stdlib/ndarray/zeros' );
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * // Define an input array:
@@ -54,7 +56,7 @@ import { MultiSlice } from '@stdlib/types/slice';
 * var x = ndarray( 'float64', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -62,7 +64,7 @@ import { MultiSlice } from '@stdlib/types/slice';
 *
 * // Define an output array:
 * var y = ndzeros( [ 2, 3, 2 ], {
-*     'dtype': x.dtype
+*     'dtype': getDType( x )
 * });
 *
 * // Create a slice:
@@ -104,6 +106,8 @@ declare function sliceAssign( x: ndarray, y: float64ndarray, s: MultiSlice, stri
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 * var ndzeros = require( '@stdlib/ndarray/zeros' );
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * // Define an input array:
@@ -115,7 +119,7 @@ declare function sliceAssign( x: ndarray, y: float64ndarray, s: MultiSlice, stri
 * var x = ndarray( 'float32', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -123,7 +127,7 @@ declare function sliceAssign( x: ndarray, y: float64ndarray, s: MultiSlice, stri
 *
 * // Define an output array:
 * var y = ndzeros( [ 2, 3, 2 ], {
-*     'dtype': x.dtype
+*     'dtype': getDType( x )
 * });
 *
 * // Create a slice:
@@ -165,6 +169,8 @@ declare function sliceAssign( x: ndarray, y: float32ndarray, s: MultiSlice, stri
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 * var ndzeros = require( '@stdlib/ndarray/zeros' );
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * // Define an input array:
@@ -176,7 +182,7 @@ declare function sliceAssign( x: ndarray, y: float32ndarray, s: MultiSlice, stri
 * var x = ndarray( 'float16', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -184,7 +190,7 @@ declare function sliceAssign( x: ndarray, y: float32ndarray, s: MultiSlice, stri
 *
 * // Define an output array:
 * var y = ndzeros( [ 2, 3, 2 ], {
-*     'dtype': x.dtype
+*     'dtype': getDType( x )
 * });
 *
 * // Create a slice:
@@ -226,6 +232,8 @@ declare function sliceAssign( x: ndarray, y: float16ndarray, s: MultiSlice, stri
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 * var ndzeros = require( '@stdlib/ndarray/zeros' );
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * // Define an input array:
@@ -237,7 +245,7 @@ declare function sliceAssign( x: ndarray, y: float16ndarray, s: MultiSlice, stri
 * var x = ndarray( 'int32', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -245,7 +253,7 @@ declare function sliceAssign( x: ndarray, y: float16ndarray, s: MultiSlice, stri
 *
 * // Define an output array:
 * var y = ndzeros( [ 2, 3, 2 ], {
-*     'dtype': x.dtype
+*     'dtype': getDType( x )
 * });
 *
 * // Create a slice:
@@ -287,6 +295,8 @@ declare function sliceAssign( x: ndarray, y: int32ndarray, s: MultiSlice, strict
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 * var ndzeros = require( '@stdlib/ndarray/zeros' );
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * // Define an input array:
@@ -298,7 +308,7 @@ declare function sliceAssign( x: ndarray, y: int32ndarray, s: MultiSlice, strict
 * var x = ndarray( 'int16', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -306,7 +316,7 @@ declare function sliceAssign( x: ndarray, y: int32ndarray, s: MultiSlice, strict
 *
 * // Define an output array:
 * var y = ndzeros( [ 2, 3, 2 ], {
-*     'dtype': x.dtype
+*     'dtype': getDType( x )
 * });
 *
 * // Create a slice:
@@ -348,6 +358,8 @@ declare function sliceAssign( x: ndarray, y: int16ndarray, s: MultiSlice, strict
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 * var ndzeros = require( '@stdlib/ndarray/zeros' );
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * // Define an input array:
@@ -359,7 +371,7 @@ declare function sliceAssign( x: ndarray, y: int16ndarray, s: MultiSlice, strict
 * var x = ndarray( 'int8', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -367,7 +379,7 @@ declare function sliceAssign( x: ndarray, y: int16ndarray, s: MultiSlice, strict
 *
 * // Define an output array:
 * var y = ndzeros( [ 2, 3, 2 ], {
-*     'dtype': x.dtype
+*     'dtype': getDType( x )
 * });
 *
 * // Create a slice:
@@ -409,6 +421,8 @@ declare function sliceAssign( x: ndarray, y: int8ndarray, s: MultiSlice, strict:
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 * var ndzeros = require( '@stdlib/ndarray/zeros' );
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * // Define an input array:
@@ -420,7 +434,7 @@ declare function sliceAssign( x: ndarray, y: int8ndarray, s: MultiSlice, strict:
 * var x = ndarray( 'uint32', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -428,7 +442,7 @@ declare function sliceAssign( x: ndarray, y: int8ndarray, s: MultiSlice, strict:
 *
 * // Define an output array:
 * var y = ndzeros( [ 2, 3, 2 ], {
-*     'dtype': x.dtype
+*     'dtype': getDType( x )
 * });
 *
 * // Create a slice:
@@ -470,6 +484,8 @@ declare function sliceAssign( x: ndarray, y: uint32ndarray, s: MultiSlice, stric
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 * var ndzeros = require( '@stdlib/ndarray/zeros' );
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * // Define an input array:
@@ -481,7 +497,7 @@ declare function sliceAssign( x: ndarray, y: uint32ndarray, s: MultiSlice, stric
 * var x = ndarray( 'uint16', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -489,7 +505,7 @@ declare function sliceAssign( x: ndarray, y: uint32ndarray, s: MultiSlice, stric
 *
 * // Define an output array:
 * var y = ndzeros( [ 2, 3, 2 ], {
-*     'dtype': x.dtype
+*     'dtype': getDType( x )
 * });
 *
 * // Create a slice:
@@ -531,6 +547,8 @@ declare function sliceAssign( x: ndarray, y: uint16ndarray, s: MultiSlice, stric
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 * var ndzeros = require( '@stdlib/ndarray/zeros' );
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * // Define an input array:
@@ -542,7 +560,7 @@ declare function sliceAssign( x: ndarray, y: uint16ndarray, s: MultiSlice, stric
 * var x = ndarray( 'uint8', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -550,7 +568,7 @@ declare function sliceAssign( x: ndarray, y: uint16ndarray, s: MultiSlice, stric
 *
 * // Define an output array:
 * var y = ndzeros( [ 2, 3, 2 ], {
-*     'dtype': x.dtype
+*     'dtype': getDType( x )
 * });
 *
 * // Create a slice:
@@ -592,6 +610,8 @@ declare function sliceAssign( x: ndarray, y: uint8ndarray, s: MultiSlice, strict
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 * var ndzeros = require( '@stdlib/ndarray/zeros' );
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * // Define an input array:
@@ -603,7 +623,7 @@ declare function sliceAssign( x: ndarray, y: uint8ndarray, s: MultiSlice, strict
 * var x = ndarray( 'uint8c', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -611,7 +631,7 @@ declare function sliceAssign( x: ndarray, y: uint8ndarray, s: MultiSlice, strict
 *
 * // Define an output array:
 * var y = ndzeros( [ 2, 3, 2 ], {
-*     'dtype': x.dtype
+*     'dtype': getDType( x )
 * });
 *
 * // Create a slice:
@@ -653,6 +673,8 @@ declare function sliceAssign( x: ndarray, y: uint8cndarray, s: MultiSlice, stric
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 * var ndzeros = require( '@stdlib/ndarray/zeros' );
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * // Define an input array:
@@ -664,12 +686,12 @@ declare function sliceAssign( x: ndarray, y: uint8cndarray, s: MultiSlice, stric
 * var x = ndarray( 'complex128', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * // Define an output array:
 * var y = ndzeros( [ 2, 3, 2 ], {
-*     'dtype': x.dtype
+*     'dtype': getDType( x )
 * });
 *
 * // Create a slice:
@@ -708,6 +730,8 @@ declare function sliceAssign( x: ndarray, y: complex128ndarray, s: MultiSlice, s
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 * var ndzeros = require( '@stdlib/ndarray/zeros' );
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * // Define an input array:
@@ -719,12 +743,12 @@ declare function sliceAssign( x: ndarray, y: complex128ndarray, s: MultiSlice, s
 * var x = ndarray( 'complex64', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * // Define an output array:
 * var y = ndzeros( [ 2, 3, 2 ], {
-*     'dtype': x.dtype
+*     'dtype': getDType( x )
 * });
 *
 * // Create a slice:
@@ -762,6 +786,8 @@ declare function sliceAssign( x: ndarray, y: complex64ndarray, s: MultiSlice, st
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 * var ndzeros = require( '@stdlib/ndarray/zeros' );
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * // Define an input array:
@@ -773,7 +799,7 @@ declare function sliceAssign( x: ndarray, y: complex64ndarray, s: MultiSlice, st
 * var x = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -781,7 +807,7 @@ declare function sliceAssign( x: ndarray, y: complex64ndarray, s: MultiSlice, st
 *
 * // Define an output array:
 * var y = ndzeros( [ 2, 3, 2 ], {
-*     'dtype': x.dtype
+*     'dtype': getDType( x )
 * });
 *
 * // Create a slice:
@@ -822,6 +848,8 @@ declare function sliceAssign<T = unknown>( x: ndarray, y: genericndarray<T>, s: 
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 * var ndzeros = require( '@stdlib/ndarray/zeros' );
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * // Define an input array:
@@ -833,7 +861,7 @@ declare function sliceAssign<T = unknown>( x: ndarray, y: genericndarray<T>, s: 
 * var x = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -841,7 +869,7 @@ declare function sliceAssign<T = unknown>( x: ndarray, y: genericndarray<T>, s: 
 *
 * // Define an output array:
 * var y = ndzeros( [ 2, 3, 2 ], {
-*     'dtype': x.dtype
+*     'dtype': getDType( x )
 * });
 *
 * // Create a slice:

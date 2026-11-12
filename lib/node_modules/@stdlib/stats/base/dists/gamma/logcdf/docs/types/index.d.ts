@@ -110,7 +110,7 @@ interface LogCDF {
 * // returns ~-0.047
 *
 * var mylogcdf = logcdf.factory( 3.0, 1.5 );
-* var y = mylogcdf( 1.0 );
+* y = mylogcdf( 1.0 );
 * // returns ~-1.655
 */
 declare var logcdf: LogCDF;
