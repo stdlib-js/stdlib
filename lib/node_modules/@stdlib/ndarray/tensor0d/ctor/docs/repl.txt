@@ -53,8 +53,8 @@
         Underlying ArrayBuffer.
 
     byteOffset: integer (optional)
-        Integer byte offset specifying the location of the first indexed
-        element. Default: 0.
+        Integer byte offset specifying the location of the scalar value.
+        Default: 0.
 
     dtype: string|DataType (optional)
         Underlying data type. Default: 'float64'.
