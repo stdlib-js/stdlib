@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/stats/base/dists/beta/mean.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Returns the expected value of a beta distribution.
@@ -31,7 +32,7 @@
 */
 double stdlib_base_dists_beta_mean( const double alpha, const double beta ) {
 	if ( alpha <= 0.0 || beta <= 0.0 ) {
-		return 0.0/0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	return alpha / ( alpha + beta );
 }
