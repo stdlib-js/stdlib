@@ -34,7 +34,7 @@ eslint_flags := \
 	--report-unused-disable-directives
 
 # Define user-supplied command-line options:
-ESLINT_FLAGS ?=
+ESLINT_CLI_FLAGS ?=
 
 ifeq ($(AUTOFIX),true)
 	eslint_flags += --fix
@@ -50,7 +50,7 @@ endif
 endif
 
 # Append user-supplied command-line options:
-eslint_flags += $(ESLINT_FLAGS)
+eslint_flags += $(ESLINT_CLI_FLAGS)
 
 # RULES #
 

@@ -21,6 +21,7 @@
 #include "stdlib/math/base/special/abs.h"
 #include "stdlib/math/base/special/exp.h"
 #include "stdlib/math/base/special/pow.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Evaluates the moment-generating function (MGF) for a Laplace (double exponential) distribution with location parameter `mu` and scale parameter `b` at a value `t`.
@@ -43,7 +44,7 @@ double stdlib_base_dists_laplace_mgf( const double t, const double mu, const dou
 		b <= 0.0 ||
 		stdlib_base_abs( t ) >= 1.0/b
 	) {
-		return 0.0/0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	bt = b * t;
 	return stdlib_base_exp( mu * t ) / ( 1.0 - stdlib_base_pow( bt, 2.0 ) );
