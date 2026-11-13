@@ -46,7 +46,6 @@ function iterator() {
 *
 * @param v - iterated value
 * @param i - iteration index
-* @returns callback result
 */
 function fcn( v: any, i: number ) {
 	if ( v !== v || i !== i ) {

@@ -130,7 +130,7 @@ foo.boop( beep )
     ...
 
     Examples
-    ________
+    --------
     ...
 
     References
@@ -354,7 +354,7 @@ Conventional names for output values include
 -   `bool`: for `boolean` return values.
 -   `fcn`: for `Function` return values.
 -   `out`: for generic return values.
--   `y`: for `number` return values mathematical functions satisfying the form `y = f(x)`.
+-   `y`: for `number` return values of mathematical functions satisfying the form `y = f(x)`.
 
 For return values which can be more than one type, use a `|` separator.
 
