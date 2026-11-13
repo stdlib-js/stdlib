@@ -20,6 +20,7 @@
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/abs.h"
 #include "stdlib/math/base/special/exp.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Evaluates the probability density function (PDF) for a Laplace distribution with location parameter `mu` and scale parameter `b` at a value `x`.
@@ -41,7 +42,7 @@ double stdlib_base_dists_laplace_pdf( const double x, const double mu, const dou
 		stdlib_base_is_nan( b ) ||
 		b <= 0
 	) {
-		return 0.0/0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	z = ( x - mu ) / b;
 	return 0.5 / b * stdlib_base_exp( -stdlib_base_abs( z ) );

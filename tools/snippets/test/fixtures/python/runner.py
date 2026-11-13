@@ -57,6 +57,7 @@ def gen(x, name):
     # Write the data to the output filepath as JSON:
     with open(filepath, "w", encoding="utf-8") as outfile:
         json.dump(data, outfile)
+        outfile.write("\n")
 
 
 def main():

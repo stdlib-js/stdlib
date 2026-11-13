@@ -1,0 +1,31 @@
+
+{{alias}}( document, pointer )
+    Retrieves the value at a specified JSON Pointer from a document.
+
+    Per RFC 6901, an empty string refers to the root of the document.
+
+    Parameters
+    ----------
+    document: Object|Array
+        JSON document.
+
+    pointer: string
+        JSON Pointer string.
+
+    Returns
+    -------
+    out: any
+        Value at the pointer location.
+
+    Examples
+    --------
+    > var out = {{alias}}( { 'foo': [ 'bar', 'baz' ] }, '/foo/0' )
+    'bar'
+    > out = {{alias}}( { 'foo': 'bar' }, '/foo' )
+    'bar'
+    > out = {{alias}}( { 'foo': 'bar' }, '' )
+    { 'foo': 'bar' }
+
+    See Also
+    --------
+

@@ -20,6 +20,7 @@
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/abs.h"
 #include "stdlib/math/base/special/ln.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Evaluates the natural logarithm of the probability density function (PDF) for a Laplace distribution with location parameter `mu` and scale parameter `b` at a value `x`.
@@ -41,7 +42,7 @@ double stdlib_base_dists_laplace_logpdf( const double x, const double mu, const 
 		stdlib_base_is_nan( b ) ||
 		b <= 0.0
 	) {
-		return 0.0/0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	z = ( x - mu ) / b;
 	return -( stdlib_base_abs( z ) + stdlib_base_ln( 2.0 * b ) );
