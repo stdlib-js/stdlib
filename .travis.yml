@@ -27,7 +27,7 @@ language: node_js
 os: linux
 
 # Specify the Linux distribution:
-dist: xenial
+dist: noble
 
 # Specify the list of Node.js versions on which we want to build:
 node_js:
@@ -51,12 +51,12 @@ addons:
       - ubuntu-toolchain-r-test
     packages:
       - binutils
-      - gcc-9
-      - gcc-9-multilib
-      - g++-9
-      - g++-9-multilib
-      - gfortran-9
-      - gfortran-9-multilib
+      - gcc-14
+      - gcc-14-multilib
+      - g++-14
+      - g++-14-multilib
+      - gfortran-14
+      - gfortran-14-multilib
       - xvfb
       - unzip
 
@@ -86,9 +86,9 @@ jobs:
 before_install:
   # Perform platform-specific initialization:
   - mkdir -p $HOME/bin;
-    ln -s /usr/bin/gcc-9 $HOME/bin/gcc;
-    ln -s /usr/bin/g++-9 $HOME/bin/g++;
-    ln -s /usr/bin/gfortran-9 $HOME/bin/gfortran;
+    ln -s /usr/bin/gcc-14 $HOME/bin/gcc;
+    ln -s /usr/bin/g++-14 $HOME/bin/g++;
+    ln -s /usr/bin/gfortran-14 $HOME/bin/gfortran;
 
   # Configure the virtual display server (needed for electron):
   - export DISPLAY=':99.0'
