@@ -139,7 +139,7 @@ limitations under the License.
 
 [@bug:mozilla:686708]: https://bugzilla.mozilla.org/show_bug.cgi?id=686708
 
-[@bug:mozilla:703611]: https://bugzilla.mozilla.org/show_bug.cgi?id=703611
+[@bug:mozilla:703611]: https://web.archive.org/web/20230000000000*/https://bugzilla.mozilla.org/show_bug.cgi?id=703611
 
 [@bug:mozilla:1316557]: https://bugzilla.mozilla.org/show_bug.cgi?id=1316557
 
