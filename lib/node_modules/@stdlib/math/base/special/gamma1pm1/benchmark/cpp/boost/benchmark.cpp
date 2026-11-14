@@ -100,7 +100,7 @@ double benchmark() {
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
 		x = randu( rng );
-		y = boost::math::gamma1pm1( x );
+		y = boost::math::tgamma1pm1( x );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;
