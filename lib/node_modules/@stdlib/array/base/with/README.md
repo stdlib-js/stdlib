@@ -60,7 +60,7 @@ The function accepts the following arguments:
 -   **index**: element index.
 -   **value**: replacement value.
 
-### arrayWith.assign( x, index, value, out, stride, offset )
+#### arrayWith.assign( x, index, value, out, stride, offset )
 
 Copies elements from one array to another array and sets the element at the specified index to a provided value.
 

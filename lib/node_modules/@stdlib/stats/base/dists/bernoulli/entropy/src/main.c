@@ -48,5 +48,5 @@ double stdlib_base_dists_bernoulli_entropy( const double p ) {
 	}
 	q = 1.0 - p;
 	return ( -q * stdlib_base_ln( q ) ) - ( p * stdlib_base_ln( p ) );
-	
+
 }

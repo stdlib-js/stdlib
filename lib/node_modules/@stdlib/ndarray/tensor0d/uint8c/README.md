@@ -89,7 +89,7 @@ var arr2 = new Uint8ClampedTensor0D( buf, 8 );
 
 ## Notes
 
--   The function does **not** guard against precision loss when providing non-integer scalar values. Such values are truncated during [ndarray][@stdlib/ndarray/ctor] creation.
+-   The function does **not** guard against precision loss when providing non-integer scalar values. Such values are rounded to the nearest integer during [ndarray][@stdlib/ndarray/ctor] creation.
 
 </section>
 

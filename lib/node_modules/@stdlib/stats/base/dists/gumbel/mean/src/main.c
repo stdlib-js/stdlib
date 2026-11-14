@@ -19,6 +19,7 @@
 #include "stdlib/stats/base/dists/gumbel/mean.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/constants/float64/eulergamma.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Returns the expected value for a Gumbel distribution with location `mu` and scale `beta`.
@@ -37,7 +38,7 @@ double stdlib_base_dists_gumbel_mean( const double mu, const double beta ) {
 		stdlib_base_is_nan( beta ) ||
 		beta <= 0.0
 	) {
-		return 0.0/0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	return mu + ( beta * STDLIB_CONSTANT_FLOAT64_EULERGAMMA );
 }
