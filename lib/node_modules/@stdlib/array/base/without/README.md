@@ -59,7 +59,7 @@ The function accepts the following arguments:
 -   **x**: an input array.
 -   **index**: element index.
 
-### without.assign( x, index, out, stride, offset )
+#### without.assign( x, index, out, stride, offset )
 
 Copies every element from one array to another array, except for the element at a specified index.
 
