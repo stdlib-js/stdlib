@@ -60,7 +60,7 @@ The function accepts the following arguments:
 -   **index**: element index.
 -   **value**: value to insert.
 
-### toInsertedAt.assign( x, index, value, out, stride, offset )
+#### toInsertedAt.assign( x, index, value, out, stride, offset )
 
 Copies elements from one array to another array and inserts a provided value at a specified index.
 
