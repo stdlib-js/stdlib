@@ -4,4 +4,4 @@
 
 TODO
 
--   Julia [style guide](http://docs.julialang.org/en/release-0.4/manual/style-guide/).
+-   Julia [style guide](https://docs.julialang.org/en/v1/manual/style-guide/).
