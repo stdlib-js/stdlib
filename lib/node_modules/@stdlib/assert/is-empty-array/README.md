@@ -47,17 +47,12 @@ var bool = isEmptyArray( [] );
 
 ## Examples
 
-<!-- eslint-disable no-array-constructor -->
-
 <!-- eslint no-undef: "error" -->
 
 ```javascript
 var isEmptyArray = require( '@stdlib/assert/is-empty-array' );
 
 var bool = isEmptyArray( [] );
-// returns true
-
-bool = isEmptyArray( new Array() );
 // returns true
 
 bool = isEmptyArray( [ 1, 2, 3, 4 ] );
