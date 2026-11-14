@@ -826,7 +826,7 @@ See the [contributing guide][contributing-guide].
 
 [wasm]: https://github.com/WebAssembly/spec/
 
-[asm]: http://asmjs.org/spec/latest/
+[asm]: https://developer.mozilla.org/en-US/docs/Games/Tools/asm.js
 
 [gyp]: https://gyp.gsrc.io/
 
