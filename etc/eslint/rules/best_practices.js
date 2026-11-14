@@ -1503,7 +1503,7 @@ rules[ 'prefer-regex-literals' ] = 'error';
 * // Good...
 * var x = parseInt( '8', 10 );
 */
-rules[ 'radix' ] = [ 'error', 'always' ];
+rules[ 'radix' ] = 'error';
 
 /**
 * Always require `async` functions to have an `await` expression.

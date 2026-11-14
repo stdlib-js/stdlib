@@ -20,7 +20,7 @@
 
 // ESLint plugins:
 var plugins = [
-	'@stylistic/ts',
+	'@stylistic',
 	'jsdoc',
 	'n',
 	'stdlib',
