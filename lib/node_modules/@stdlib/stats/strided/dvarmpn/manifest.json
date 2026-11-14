@@ -81,7 +81,7 @@
       ]
     },
     {
-      "task": "",
+      "task": "build",
       "wasm": true,
       "src": [
         "./src/main.c"
