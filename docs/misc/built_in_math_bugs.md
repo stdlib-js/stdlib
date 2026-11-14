@@ -141,7 +141,7 @@ limitations under the License.
 
 [@bug:mozilla:703611]: https://bugzilla.mozilla.org/show_bug.cgi?id=703611
 
-[@bug:mozilla:1316557]: https://bugzilla.mozilla.org/show_bug.cgi?id=1316557
+[@bug:mozilla:1316557]: https://web.archive.org/web/20230000000000*/https://bugzilla.mozilla.org/show_bug.cgi?id=1316557
 
 [@bug:v8:2890]: https://bugs.chromium.org/p/v8/issues/detail?id=2890
 
@@ -157,7 +157,7 @@ limitations under the License.
 
 [ecma262-635]: https://github.com/tc39/ecma262/issues/635
 
-[@bug:mozilla:322529]: https://bugzilla.mozilla.org/show_bug.cgi?id=322529
+[@bug:mozilla:322529]: https://web.archive.org/web/20230000000000*/https://bugzilla.mozilla.org/show_bug.cgi?id=322529
 
 [@bug:webkit:151641]: https://bugs.webkit.org/show_bug.cgi?id=151641
 
