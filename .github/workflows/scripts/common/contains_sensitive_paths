@@ -1,0 +1,69 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2026 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Script to determine whether a list of file paths includes any path which can influence how the repository's build or lint tooling executes.
+#
+# When automatically fixing lint errors on a pull request, a workflow checks out the pull request's (potentially forked) code and runs the repository's build and lint tooling against it (e.g., `make install-node-modules`, `make init`, ESLint, and node-gyp). If a pull request modifies a file which can change how that tooling executes (e.g., a Makefile, a dependency manifest, a native add-on build descriptor, or a linter configuration file), an outside contributor could achieve arbitrary code execution in a privileged context. This script provides a defense-in-depth guard for refusing to operate on such pull requests.
+#
+# Usage: contains_sensitive_paths file1 [file2 file3 ...]
+#
+# Arguments:
+#
+#   file1       File path.
+#   file2       File path.
+#   file3       File path.
+#
+# Returns:
+#
+#   Exits with code `0` if one or more provided paths are sensitive, printing each matching path to `stdout`; otherwise, exits with a non-zero code.
+#
+# NOTE: the set of sensitive paths is a denylist and is not guaranteed to be exhaustive; it complements, but does not replace, the longer-term goal of never executing untrusted code in pull-request-triggered workflows.
+
+# Exit status (`1` => no sensitive paths found):
+status=1
+
+# Iterate over the provided file paths...
+for file in "$@"; do
+	case "$file" in
+		# Build tooling (Makefiles, `make` recipes, and helper tool packages which `make` executes):
+		Makefile|*/Makefile|*.mk|tools/*|lib/node_modules/@stdlib/_tools/*)
+			echo "${file}"
+			status=0
+			;;
+
+		# Dependency manifests and registry configuration (read and/or executed during `npm install`):
+		package.json|*/package.json|package-lock.json|*/package-lock.json|npm-shrinkwrap.json|*/npm-shrinkwrap.json|.npmrc|*/.npmrc)
+			echo "${file}"
+			status=0
+			;;
+
+		# Native add-on build descriptors (evaluated and run by node-gyp):
+		*.gyp|*.gypi)
+			echo "${file}"
+			status=0
+			;;
+
+		# Lint and formatting tool configuration (executed by the respective linters):
+		etc/*|.eslintrc*|*/.eslintrc*|.remarkrc*|*/.remarkrc*)
+			echo "${file}"
+			status=0
+			;;
+	esac
+done
+
+exit "${status}"
