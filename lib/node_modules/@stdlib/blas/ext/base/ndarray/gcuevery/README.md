@@ -22,6 +22,12 @@ limitations under the License.
 
 > Cumulatively test whether every element in a one-dimensional ndarray is truthy.
 
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

@@ -109,7 +109,29 @@ var config = [
 			'@cspell': pluginCspell,
 			'stdlib': stdlibPlugin
 		},
+		'settings': {
+			'jsdoc': {
+				'contexts': [
+					'ArrowFunctionExpression',
+					'ClassDeclaration',
+					'ClassExpression',
+					'FunctionDeclaration',
+					'FunctionExpression'
+				],
+				'tagNamePreference': {
+					'class': 'constructor'
+				}
+			}
+		},
 		'rules': rules
+	},
+
+	// ESLint rule definitions:
+	{
+		'files': [ 'etc/eslint/rules/*.js' ],
+		'rules': {
+			'stdlib/jsdoc-doctest': 'off'
+		}
 	},
 
 	// REPL namespace files:
@@ -131,6 +153,10 @@ var config = [
 				'skipComments': true
 			}],
 			'jsdoc/require-jsdoc': 'off',
+			'stdlib/jsdoc-private-annotation': 'off',
+			'stdlib/jsdoc-doctest': 'off',
+			'stdlib/no-unnecessary-nested-functions': 'off',
+			'stdlib/no-bench-string-concat': 'error',
 			'no-restricted-syntax': restrictedSyntaxConfig
 		}
 	},
@@ -139,10 +165,16 @@ var config = [
 	{
 		'files': [ '**/examples/**/*.js' ],
 		'rules': {
+			'no-new-wrappers': 'warn',
 			'no-console': 'off',
 			'vars-on-top': 'off',
 			'jsdoc/require-jsdoc': 'off',
 			'stdlib/jsdoc-private-annotation': 'off',
+			'stdlib/jsdoc-doctest': 'off',
+			'stdlib/doctest': 'error',
+			'stdlib/vars-order': 'off',
+			'stdlib/no-unnecessary-nested-functions': 'off',
+			'stdlib/require-last-path-relative': 'error',
 			'stdlib/require-order': 'off',
 			'stdlib/require-file-extensions': 'off',
 			'no-restricted-syntax': restrictedSyntaxConfig
@@ -154,7 +186,12 @@ var config = [
 		'files': [ '**/test/**/*.js' ],
 		'rules': {
 			'no-empty-function': 'off',
+			'no-new-wrappers': 'warn',
 			'jsdoc/require-jsdoc': 'off',
+			'stdlib/jsdoc-private-annotation': 'off',
+			'stdlib/jsdoc-doctest': 'off',
+			'stdlib/no-single-property-require': 'off',
+			'stdlib/no-unnecessary-nested-functions': 'off',
 			'no-undefined': 'off',
 			'max-lines': [ 'warn', {
 				'max': 1000,
@@ -167,7 +204,7 @@ var config = [
 
 	// TypeScript declarations:
 	{
-		'files': [ '**/*.d.ts' ],
+		'files': [ '**/*.d.ts', '**/docs/types/test.ts' ],
 		'languageOptions': {
 			'parser': tsParser,
 			'sourceType': 'module',
@@ -189,9 +226,15 @@ var config = [
 
 	// TypeScript test files:
 	{
-		'files': [ '**/test/**/*.ts' ],
+		'files': [ '**/docs/types/test.ts' ],
 		'rules': {
-			'jsdoc/require-jsdoc': 'off'
+			'@typescript-eslint/explicit-function-return-type': 'off',
+			'@typescript-eslint/no-use-before-define': 'off',
+			'brace-style': 'off',
+			'jsdoc/require-jsdoc': 'off',
+			'jsdoc/require-param': 'off',
+			'jsdoc/require-returns': 'off',
+			'jsdoc/require-throws': 'off'
 		}
 	}
 ];

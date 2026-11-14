@@ -22,6 +22,12 @@ limitations under the License.
 
 > Cumulatively test whether at least `k` elements in a one-dimensional ndarray are truthy.
 
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
