@@ -85,6 +85,18 @@ jsdoc-html: $(NODE_MODULES)
 
 .PHONY: jsdoc-html
 
+# Generate JSDoc HTML documentation.
+#
+# See issue #6583
+
+jsdoc-html-out: $(NODE_MODULES)
+	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(JSDOC_HTML_OUT)
+	$(QUIET) $(MKDIR_RECURSIVE) $(JSDOC_HTML_OUT)
+	$(QUIET) find . -type f -name "$(SOURCES_PATTERN)" > sources.txt
+	$(QUIET) cat sources.txt | xargs $(JSDOC) $(JSDOC_HTML_FLAGS) $(JSDOC_TYPEDEF)
+
+.PHONY: jsdoc-html-out
+
 
 # Generate JSDoc JSON.
 #
