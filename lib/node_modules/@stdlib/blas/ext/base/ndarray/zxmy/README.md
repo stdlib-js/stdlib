@@ -32,6 +32,11 @@ This BLAS extension implements the operation
 \mathbf{y} = \mathbf{x} \odot \mathbf{y}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\mathbf{y} = \mathbf{x} \odot \mathbf{y}" data-equation="eq:xmy">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@45c59ac45e2b4c50572b9f4191f45d75fdcaf80e/lib/node_modules/@stdlib/blas/ext/base/ndarray/zxmy/docs/img/equation_xmy.svg" alt="Equation for xmy operation.">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 where `⊙` denotes the [Hadamard product][hadamard-product].
