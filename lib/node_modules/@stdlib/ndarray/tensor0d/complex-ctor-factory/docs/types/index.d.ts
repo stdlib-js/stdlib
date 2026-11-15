@@ -87,6 +87,27 @@ interface Tensor0D {
 	/**
 	* Creates a zero-dimensional ndarray.
 	*
+	* @param re - real component
+	* @param im - imaginary component
+	* @param options - function options
+	* @param options.readonly - boolean indicating whether to return a read-only ndarray
+	* @param options.order - memory layout (either row-major or column-major)
+	* @returns zero-dimensional ndarray
+	*
+	* @example
+	* var isNumberOrComplexLike = require( '@stdlib/assert/is-number-or-complex-like' ).isPrimitive;
+	* var ZERO = require( '@stdlib/constants/complex128/zero' );
+	*
+	* var Complex128Tensor0D = factory( 'complex128', ZERO, isNumberOrComplexLike );
+	*
+	* var arr = new Complex128Tensor0D( 1.0, 2.0 );
+	* // returns <ndarray>[ <Complex128>[ 1.0, 2.0 ] ]
+	*/
+	new ( re: number, im: number, options?: Options ): complexndarray;
+
+	/**
+	* Creates a zero-dimensional ndarray.
+	*
 	* @param buffer - underlying ArrayBuffer
 	* @param options - function options
 	* @param options.readonly - boolean indicating whether to return a read-only ndarray
@@ -167,6 +188,27 @@ interface Tensor0D {
 	* // returns <ndarray>[ <Complex128>[ 1.0, 0.0 ] ]
 	*/
 	( value: number | ComplexLike, options?: Options ): complexndarray;
+
+	/**
+	* Creates a zero-dimensional ndarray.
+	*
+	* @param re - real component
+	* @param im - imaginary component
+	* @param options - function options
+	* @param options.readonly - boolean indicating whether to return a read-only ndarray
+	* @param options.order - memory layout (either row-major or column-major)
+	* @returns zero-dimensional ndarray
+	*
+	* @example
+	* var isNumberOrComplexLike = require( '@stdlib/assert/is-number-or-complex-like' ).isPrimitive;
+	* var ZERO = require( '@stdlib/constants/complex128/zero' );
+	*
+	* var Complex128Tensor0D = factory( 'complex128', ZERO, isNumberOrComplexLike );
+	*
+	* var arr = new Complex128Tensor0D( 1.0, 2.0 );
+	* // returns <ndarray>[ <Complex128>[ 1.0, 2.0 ] ]
+	*/
+	( re: number, im: number, options?: Options ): complexndarray;
 
 	/**
 	* Creates a zero-dimensional ndarray.
