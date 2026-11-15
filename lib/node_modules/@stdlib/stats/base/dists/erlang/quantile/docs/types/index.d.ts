@@ -41,7 +41,7 @@ interface Quantile {
 	*
 	* -   If `p < 0` or `p > 1`, the function returns `NaN`.
 	* -   If not provided a nonnegative integer for `k`, the function returns `NaN`.
-	* -   If provided a non-positive number for `lambda`, the function returns `NaN`.
+	* -   If provided a non-positive value for `lambda`, the function returns `NaN`.
 	*
 	* @param p - input value
 	* @param k - shape parameter
@@ -82,7 +82,7 @@ interface Quantile {
 	* // returns NaN
 	*
 	* @example
-	* // Non-positive shape parameter:
+	* // Negative shape parameter:
 	* var y = quantile( 0.5, -1, 1.0 );
 	* // returns NaN
 	*

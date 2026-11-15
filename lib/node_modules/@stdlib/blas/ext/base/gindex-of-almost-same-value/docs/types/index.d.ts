@@ -32,7 +32,7 @@ type InputArray = Collection<unknown> | AccessorArrayLike<unknown>;
 */
 interface Routine {
 	/**
-	* Returns the index of the first element in a strided array which is almost the same value as a provided search element.
+	* Returns the first index of an element in a strided array which is almost the same value as a specified search element.
 	*
 	* ## Notes
 	*
@@ -54,7 +54,7 @@ interface Routine {
 	( N: number, searchElement: unknown, maxULP: number, x: InputArray, strideX: number ): number;
 
 	/**
-	* Returns the index of the first element in a strided array which is almost the same value as a provided search element using alternative indexing semantics.
+	* Returns the first index of an element in a strided array which is almost the same value as a specified search element using alternative indexing semantics.
 	*
 	* ## Notes
 	*
@@ -78,7 +78,7 @@ interface Routine {
 }
 
 /**
-* Returns the index of the first element in a strided array which is almost the same value as a provided search element.
+* Returns the first index of an element in a strided array which is almost the same value as a specified search element.
 *
 * ## Notes
 *

@@ -58,6 +58,23 @@ var idx = gfindLastIndex( [ x, fromIndex ], isEven );
 // returns 3
 ```
 
+The function has the following parameters:
+
+-   **arrays**: array-like object containing the following ndarrays:
+
+    -   a one-dimensional input ndarray.
+    -   a zero-dimensional ndarray containing the index from which to begin searching.
+
+-   **clbk**: callback function.
+
+-   **thisArg**: callback execution context (_optional_).
+
+The callback function is provided the following arguments:
+
+-   **value**: current array element.
+-   **idx**: current array element index.
+-   **array**: the input ndarray.
+
 If no element passes a test implemented by a predicate function, the function returns `-1`.
 
 ```javascript
@@ -77,23 +94,6 @@ var fromIndex = scalar2ndarray( 3, {
 var idx = gfindLastIndex( [ x, fromIndex ], isEven );
 // returns -1
 ```
-
-The function has the following parameters:
-
--   **arrays**: array-like object containing the following ndarrays:
-
-    -   a one-dimensional input ndarray.
-    -   a zero-dimensional ndarray containing the index from which to begin searching.
-
--   **clbk**: callback function.
-
--   **thisArg**: callback execution context (_optional_).
-
-The callback function is provided the following arguments:
-
--   **value**: current array element.
--   **idx**: current array element index.
--   **array**: the input ndarray.
 
 To set the callback execution context, provide a `thisArg`.
 

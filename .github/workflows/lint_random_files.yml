@@ -564,7 +564,8 @@ jobs:
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/common/create_sub_issue" \
             'Fix C lint errors' \
             "$BODY_FILE" \
-            "3235"  # Number of C lint error tracking issue
+            "3235" \
+            "Good First Issue"
 
           rm "$BODY_FILE"
 

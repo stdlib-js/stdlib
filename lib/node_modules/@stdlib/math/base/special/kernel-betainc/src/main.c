@@ -200,6 +200,7 @@ static void ibetaFraction2t( const double a, const double b, const double x, dou
 *                -----
 *                b3 + ...
 * ```
+*
 * @param a      	function parameter
 * @param b      	function parameter
 * @param x      	function parameter

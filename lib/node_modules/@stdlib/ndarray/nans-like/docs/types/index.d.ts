@@ -324,7 +324,7 @@ declare function nansLike( x: ndarray, options: Float64Options ): float64ndarray
 declare function nansLike( x: ndarray, options: Float32Options ): float32ndarray;
 
 /**
-* Creates a NaN-filled single-precision floating-point array having the same shape as a provided input ndarray.
+* Creates a NaN-filled half-precision floating-point array having the same shape as a provided input ndarray.
 *
 * @param x - input array
 * @param options - options
