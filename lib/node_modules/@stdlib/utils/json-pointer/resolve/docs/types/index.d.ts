@@ -50,9 +50,9 @@ interface ResolveResult {
 *
 * @param document - JSON document
 * @param pointer - JSON Pointer string
-* @throws first argument must be an object or array
-* @throws pointer must resolve to an existing location
+* @throws pointer must resolve to an existing location in the document
 * @throws tokens must not be prototype pollution vectors
+* @throws array index must be within bounds
 * @returns result object
 *
 * @example

@@ -2171,6 +2171,7 @@ isNull
 isNullArray
 isNumber
 isNumberArray
+isNumberOrComplexLike
 isNumericArray
 isObject
 isObjectArray

@@ -2171,6 +2171,7 @@
 "@stdlib/assert/is-null-array",isNullArray
 "@stdlib/assert/is-number",isNumber
 "@stdlib/assert/is-number-array",isNumberArray
+"@stdlib/assert/is-number-or-complex-like",isNumberOrComplexLike
 "@stdlib/assert/is-numeric-array",isNumericArray
 "@stdlib/assert/is-object",isObject
 "@stdlib/assert/is-object-array",isObjectArray
