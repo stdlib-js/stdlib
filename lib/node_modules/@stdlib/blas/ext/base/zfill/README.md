@@ -255,7 +255,7 @@ void stdlib_strided_zfill_ndarray( const CBLAS_INT N, const stdlib_complex128_t 
 #include "stdlib/blas/ext/base/zfill.h"
 #include <stdio.h>
 
-int main() {
+int main( void ) {
     // Create a strided array of interleaved real and imaginary components:
     double x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
 

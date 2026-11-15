@@ -32,11 +32,11 @@ type InputArray = Collection<unknown> | AccessorArrayLike<unknown>;
 */
 interface Routine {
 	/**
-	* Returns the index of the last element in a strided array which is not equal to the corresponding element in another strided array.
+	* Returns the index of the last element in a strided array which is not equal to a corresponding element in another strided array.
 	*
 	* ## Notes
 	*
-	* -   If unable to find an element in `x` which is not equal to the corresponding element in `y`, the function returns `-1`.
+	* -   If the function is unable to find an element in `x` which is not equal to a corresponding element in `y`, the function returns `-1`.
 	*
 	* @param N - number of indexed elements
 	* @param x - first input array
@@ -55,11 +55,11 @@ interface Routine {
 	( N: number, x: InputArray, strideX: number, y: InputArray, strideY: number ): number;
 
 	/**
-	* Returns the index of the last element in a strided array which is not equal to the corresponding element in another strided array using alternative indexing semantics.
+	* Returns the index of the last element in a strided array which is not equal to a corresponding element in another strided array using alternative indexing semantics.
 	*
 	* ## Notes
 	*
-	* -   If unable to find an element in `x` which is not equal to the corresponding element in `y`, the function returns `-1`.
+	* -   If the function is unable to find an element in `x` which is not equal to a corresponding element in `y`, the function returns `-1`.
 	*
 	* @param N - number of indexed elements
 	* @param x - first input array
@@ -81,11 +81,11 @@ interface Routine {
 }
 
 /**
-* Returns the index of the last element in a strided array which is not equal to the corresponding element in another strided array.
+* Returns the index of the last element in a strided array which is not equal to a corresponding element in another strided array.
 *
 * ## Notes
 *
-* -   If unable to find an element in `x` which is not equal to the corresponding element in `y`, the function returns `-1`.
+* -   If the function is unable to find an element in `x` which is not equal to a corresponding element in `y`, the function returns `-1`.
 *
 * @param N - number of indexed elements
 * @param x - first input array

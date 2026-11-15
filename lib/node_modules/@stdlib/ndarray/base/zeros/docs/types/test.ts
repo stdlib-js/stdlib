@@ -25,6 +25,7 @@ import zeros = require( './index' );
 {
 	zeros( 'float64', [ 2, 2 ], 'row-major' ); // $ExpectType float64ndarray
 	zeros( 'float32', [ 2, 2 ], 'row-major' ); // $ExpectType float32ndarray
+	zeros( 'float16', [ 2, 2 ], 'row-major' ); // $ExpectType float16ndarray
 	zeros( 'complex128', [ 2, 2 ], 'row-major' ); // $ExpectType complex128ndarray
 	zeros( 'complex64', [ 2, 2 ], 'row-major' ); // $ExpectType complex64ndarray
 	zeros( 'int32', [ 2, 2 ], 'row-major' ); // $ExpectType int32ndarray
@@ -38,6 +39,7 @@ import zeros = require( './index' );
 
 	zeros( 'float64', [ 2, 2 ], 'column-major' ); // $ExpectType float64ndarray
 	zeros( 'float32', [ 2, 2 ], 'column-major' ); // $ExpectType float32ndarray
+	zeros( 'float16', [ 2, 2 ], 'column-major' ); // $ExpectType float16ndarray
 	zeros( 'complex128', [ 2, 2 ], 'column-major' ); // $ExpectType complex128ndarray
 	zeros( 'complex64', [ 2, 2 ], 'column-major' ); // $ExpectType complex64ndarray
 	zeros( 'int32', [ 2, 2 ], 'column-major' ); // $ExpectType int32ndarray

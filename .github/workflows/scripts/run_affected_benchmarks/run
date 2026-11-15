@@ -141,8 +141,8 @@ main() {
 
 	# Run JS benchmarks:
 	if [ -n "${js_bench_files}" ]; then
-		# Invoke make in batches to avoid "Argument list too long" errors:
-		printf '%s\n' ${js_bench_files} | xargs sh -c 'make benchmark-javascript-files FILES="$*"' _
+		# Invoke make in batches, capped well under the 128KiB Linux single-argument limit, in order to avoid "Argument list too long" errors:
+		printf '%s\n' ${js_bench_files} | xargs -s 40000 sh -c 'make benchmark-javascript-files FILES="$*"' _
 	else
 		echo 'No JavaScript benchmarks to run.' >&2
 	fi
@@ -173,8 +173,8 @@ main() {
 	fi
 
 	if [ -n "${c_bench_files}" ]; then
-		# Invoke make in batches to avoid "Argument list too long" errors:
-		printf '%s\n' ${c_bench_files} | xargs sh -c 'make benchmark-c-files FILES="$*"' _
+		# Invoke make in batches, capped well under the 128KiB Linux single-argument limit, in order to avoid "Argument list too long" errors:
+		printf '%s\n' ${c_bench_files} | xargs -s 40000 sh -c 'make benchmark-c-files FILES="$*"' _
 	else
 		echo 'No C benchmarks to run.' >&2
 	fi
