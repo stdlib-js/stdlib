@@ -192,7 +192,7 @@ declare function array2dtype( array: Uint8Array | Uint8ClampedArray | BooleanArr
 * var dt = array2dtype( [ 1, 2, 3 ] );
 * // returns 'float64'
 *
-* var dt = array2dtype( 'beep' );
+* dt = array2dtype( 'beep' );
 * // returns 'float64'
 */
 declare function array2dtype( array: Array<any> | RealOrComplexTypedArray | AccessorArrayLike<any> ): DataType;

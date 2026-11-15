@@ -28,7 +28,7 @@
 * var dt = dtype( [ 1, 2, 3 ] );
 * // returns 'generic'
 *
-* var dt = dtype( 'beep' );
+* dt = dtype( 'beep' );
 * // returns null
 */
 declare function dtype( value: any ): string | null; // FIXME: add support for `Struct` constructors

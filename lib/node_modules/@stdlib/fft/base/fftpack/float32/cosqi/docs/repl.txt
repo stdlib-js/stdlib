@@ -1,5 +1,5 @@
 
-{{alias}}( N, workspace, strideW, offsetW )
+{{alias}}( N, w, strideW, offsetW )
     Initializes a single-precision floating-point workspace array for performing
     a quarter-wave cosine transform.
 
@@ -27,14 +27,14 @@
     N: integer
         Length of the sequence.
 
-    workspace: Float32Array
+    w: Float32Array
         Workspace array.
 
     strideW: integer
-        Stride length for `workspace`.
+        Stride length for `w`.
 
     offsetW: integer
-        Starting index for `workspace`.
+        Starting index for `w`.
 
     Returns
     -------
@@ -44,17 +44,18 @@
     Examples
     --------
     > var N = 8;
-    > var workspace = new {{alias:@stdlib/array/float32}}( ( 3*N ) + 34 );
-    > var out = {{alias}}( N, workspace, 1, 0 )
+    > var w = new {{alias:@stdlib/array/float32}}( ( 3*N ) + 34 );
+    > var out = {{alias}}( N, w, 1, 0 )
     <Float32Array>
-    > var bool = ( out === workspace )
+    > var bool = ( out === w )
     true
-    > var cosineTable = workspace.slice( 0, N )
+    > var cosineTable = w.slice( 0, N )
     <Float32Array>[ ~0.98, ~0.92, ~0.83, ~0.7, ~0.56, ~0.38, ~0.2, ~0.0 ]
-    > var twiddleFactors = workspace.slice( 2*N, 3*N )
+    > var twiddleFactors = w.slice( 2*N, 3*N )
     <Float32Array>[ ~0.707, ~0.707, 0, 0, 0, 0, 0, 0 ]
-    > var factors = workspace.slice( 3*N, ( 3*N ) + 4 )
-    <Float32Array>[ 8, 2, 2, 4 ]
+    > var fview = new {{alias:@stdlib/array/uint32}}( w.buffer, w.byteOffset, w.length );
+    > var factors = fview.slice( 3*N, ( 3*N ) + 4 )
+    <Uint32Array>[ 8, 2, 2, 4 ]
 
     See Also
     --------
