@@ -101,7 +101,7 @@ interface PDF {
 * // returns ~0.01
 *
 * var mypdf = pdf.factory( 8 );
-* var y = mypdf( 4.0 );
+* y = mypdf( 4.0 );
 * // returns ~0.008
 */
 declare var pdf: PDF;
