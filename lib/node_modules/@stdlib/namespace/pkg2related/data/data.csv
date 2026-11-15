@@ -2171,6 +2171,7 @@
 "@stdlib/assert/is-null-array","@stdlib/assert/is-array,@stdlib/assert/is-null"
 "@stdlib/assert/is-number",""
 "@stdlib/assert/is-number-array","@stdlib/assert/is-array,@stdlib/assert/is-number,@stdlib/assert/is-numeric-array"
+"@stdlib/assert/is-number-or-complex-like","@stdlib/assert/is-complex-like,@stdlib/assert/is-number"
 "@stdlib/assert/is-numeric-array","@stdlib/assert/is-array,@stdlib/assert/is-number-array,@stdlib/assert/is-typed-array"
 "@stdlib/assert/is-object","@stdlib/assert/is-object-like,@stdlib/assert/is-plain-object"
 "@stdlib/assert/is-object-array","@stdlib/assert/is-array,@stdlib/assert/is-object"
