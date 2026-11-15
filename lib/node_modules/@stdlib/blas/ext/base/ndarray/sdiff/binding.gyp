@@ -29,6 +29,39 @@
     # Target name should match the add-on export name:
     'addon_target_name%': 'addon',
 
+    # Fortran compiler (to override -Dfortran_compiler=<compiler>):
+    'fortran_compiler%': 'gfortran',
+
+    # Fortran compiler flags:
+    'fflags': [
+      # Specify the Fortran standard to which a program is expected to conform:
+      '-std=f95',
+
+      # Indicate that the layout is free-form source code:
+      '-ffree-form',
+
+      # Aggressive optimization:
+      '-O3',
+
+      # Enable commonly used warning options:
+      '-Wall',
+
+      # Warn if source code contains problematic language features:
+      '-Wextra',
+
+      # Warn if a procedure is called without an explicit interface:
+      '-Wimplicit-interface',
+
+      # Do not transform names of entities specified in Fortran source files by appending underscores (i.e., don't mangle names, thus allowing easier usage in C wrappers):
+      '-fno-underscoring',
+
+      # Warn if source code contains Fortran 95 extensions and C-language constructs:
+      '-pedantic',
+
+      # Compile but do not link (output is an object file):
+      '-c',
+    ],
+
     # Set variables based on the host OS:
     'conditions': [
       [
@@ -128,6 +161,68 @@
           },
         ], # end condition (OS!="win")
       ], # end conditions
+
+      # Define custom build actions for particular inputs:
+      'rules': [
+        {
+          # Define a rule for processing Fortran files:
+          'extension': 'f',
+
+          # Define the pathnames to be used as inputs when performing processing:
+          'inputs': [
+            # Full path of the current input:
+            '<(RULE_INPUT_PATH)'
+          ],
+
+          # Define the outputs produced during processing:
+          'outputs': [
+            # Store an output object file in a directory for placing intermediate results (only accessible within a single target):
+            '<(INTERMEDIATE_DIR)/<(RULE_INPUT_ROOT).<(obj)'
+          ],
+
+          # Define the rule for compiling Fortran based on the host OS:
+          'conditions': [
+            [
+              'OS=="win"',
+
+              # Rule to compile Fortran on Windows:
+              {
+                'rule_name': 'compile_fortran_windows',
+                'message': 'Compiling Fortran file <(RULE_INPUT_PATH) on Windows...',
+
+                'process_outputs_as_sources': 0,
+
+                # Define the command-line invocation:
+                'action': [
+                  '<(fortran_compiler)',
+                  '<@(fflags)',
+                  '<@(_inputs)',
+                  '-o',
+                  '<@(_outputs)',
+                ],
+              },
+
+              # Rule to compile Fortran on non-Windows:
+              {
+                'rule_name': 'compile_fortran_linux',
+                'message': 'Compiling Fortran file <(RULE_INPUT_PATH) on Linux...',
+
+                'process_outputs_as_sources': 1,
+
+                # Define the command-line invocation:
+                'action': [
+                  '<(fortran_compiler)',
+                  '<@(fflags)',
+                  '-fPIC', # generate platform-independent code
+                  '<@(_inputs)',
+                  '-o',
+                  '<@(_outputs)',
+                ],
+              }
+            ], # end condition (OS=="win")
+          ], # end conditions
+        }, # end rule (extension=="f")
+      ], # end rules
     }, # end target <(addon_target_name)
 
     # Target to copy a generated add-on to a standard location:
