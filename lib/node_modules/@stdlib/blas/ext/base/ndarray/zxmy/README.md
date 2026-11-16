@@ -33,7 +33,7 @@ This BLAS extension implements the operation
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\mathbf{y} = \mathbf{x} \odot \mathbf{y}" data-equation="eq:xmy">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@45c59ac45e2b4c50572b9f4191f45d75fdcaf80e/lib/node_modules/@stdlib/blas/ext/base/ndarray/zxmy/docs/img/equation_xmy.svg" alt="Equation for xmy operation.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@0460153a946a0a5c4e5436ddfa7415232abdf67a/lib/node_modules/@stdlib/blas/ext/base/ndarray/zxmy/docs/img/equation_xmy.svg" alt="Equation for xmy operation.">
     <br>
 </div> -->
 
