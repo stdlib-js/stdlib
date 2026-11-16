@@ -43,7 +43,8 @@ benchmark-cpp:
 		cd `dirname $$file` && \
 		$(MAKE) clean && \
 		CXX_COMPILER="$(CXX)" \
-		BOOST="$(DEPS_BOOST_BUILD_OUT)" $(MAKE) && \
+		BOOST="$(DEPS_BOOST_BUILD_OUT)" \
+		HIGHWAY="$(DEPS_HIGHWAY_INCLUDE)" $(MAKE) && \
 		$(MAKE) run || exit 1; \
 	done
 
@@ -71,7 +72,8 @@ benchmark-cpp-files:
 		cd `dirname $$file` && \
 		$(MAKE) clean && \
 		CXX_COMPILER="$(CXX)" \
-		BOOST="$(DEPS_BOOST_BUILD_OUT)" $(MAKE) && \
+		BOOST="$(DEPS_BOOST_BUILD_OUT)" \
+		HIGHWAY="$(DEPS_HIGHWAY_INCLUDE)" $(MAKE) && \
 		$(MAKE) run || exit 1; \
 	done
 

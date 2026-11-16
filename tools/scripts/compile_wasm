@@ -39,6 +39,7 @@
 #   SOURCE_FILES    Source file list.
 #   LIBRARIES       Linked libraries (e.g., `-lopenblas -lpthreads`).
 #   LIBPATH         Library paths (e.g., `-L /foo/bar -L /a/b`).
+#   DEPS_HIGHWAY_INCLUDE  Path to a Highway installation include directory. Default: empty.
 #
 
 # shellcheck disable=SC2181,SC2153
@@ -102,6 +103,9 @@ libraries="${LIBRARIES}"
 
 # Define a list of library paths (e.g., `-L /foo/bar -L /beep/boop`):
 libpath="${LIBPATH}"
+
+# Define a path to a Highway installation include directory:
+deps_highway_include="${DEPS_HIGHWAY_INCLUDE}"
 
 
 # FUNCTIONS #
@@ -212,7 +216,7 @@ resolve_libpaths() {
 #
 # $1 - source directory
 compile() {
-	cd "$1" && CLANG_COMPILER="${clang_compiler}" CLANG_SYSROOT="${clang_sysroot}" EMCC_COMPILER="${emcc_compiler}" WASM2WAT="${wasm_to_wat}" WASM2JS="${wasm_to_js}" INCLUDE="${include}" SOURCE_FILES="${source_files}" LIBRARIES="${libraries}" LIBPATH="${libpath}" make wasm 2>&1
+	cd "$1" && CLANG_COMPILER="${clang_compiler}" CLANG_SYSROOT="${clang_sysroot}" EMCC_COMPILER="${emcc_compiler}" WASM2WAT="${wasm_to_wat}" WASM2JS="${wasm_to_js}" INCLUDE="${include}" SOURCE_FILES="${source_files}" LIBRARIES="${libraries}" LIBPATH="${libpath}" DEPS_HIGHWAY_INCLUDE="${deps_highway_include}" make wasm 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Error when attempting to compile WebAssembly.' >&2
 		return 1

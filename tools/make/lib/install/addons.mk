@@ -34,6 +34,9 @@ ifneq (, $(BLAS))
 ifdef BLAS_DIR
 	NODE_GYP_DEFINES += blas_dir=$(BLAS_DIR)
 endif
+ifeq ($(BLAS), highway)
+	NODE_GYP_DEFINES += highway_include=$(DEPS_HIGHWAY_INCLUDE) highway=1
+endif
 endif
 endif
 
