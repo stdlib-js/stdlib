@@ -52,19 +52,13 @@ Multiplies a one-dimensional single-precision complex floating-point ndarray by 
 
 ```javascript
 var Complex64Vector = require( '@stdlib/ndarray/vector/complex64' );
-var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var Complex64Tensor0D = require( '@stdlib/ndarray/tensor0d/complex64' );
 
 var x = new Complex64Vector( [ 1.0, 2.0, 3.0, -1.0, 0.0, 1.0 ] );
 var y = new Complex64Vector( [ 2.0, 1.0, -1.0, 3.0, 4.0, 0.0 ] );
 
-var alpha = scalar2ndarray( new Complex64( 2.0, 1.0 ), {
-    'dtype': 'complex64'
-});
-
-var beta = scalar2ndarray( new Complex64( 1.0, -1.0 ), {
-    'dtype': 'complex64'
-});
+var alpha = new Complex64Tensor0D( 2.0, 1.0 );
+var beta = new Complex64Tensor0D( 1.0, -1.0 );
 
 var out = caxpby( [ x, y, alpha, beta ] );
 // returns <ndarray>[ <Complex64>[ 3.0, 4.0 ], <Complex64>[ 9.0, 5.0 ], <Complex64>[ 3.0, -2.0 ] ]
@@ -102,8 +96,7 @@ The function has the following parameters:
 ```javascript
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var Complex64Vector = require( '@stdlib/ndarray/vector/complex64' );
-var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var Complex64Tensor0D = require( '@stdlib/ndarray/tensor0d/complex64' );
 var ndarraylike2scalar = require( '@stdlib/ndarray/ndarraylike2scalar' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var caxpby = require( '@stdlib/blas/ext/base/ndarray/caxpby' );
@@ -118,14 +111,10 @@ console.log( ndarray2array( x ) );
 var y = new Complex64Vector( discreteUniform( 20, -100, 100, opts ) );
 console.log( ndarray2array( y ) );
 
-var alpha = scalar2ndarray( new Complex64( 2.0, 1.0 ), {
-    'dtype': 'complex64'
-});
+var alpha = new Complex64Tensor0D( 2.0, 1.0 );
 console.log( 'Alpha:', ndarraylike2scalar( alpha ) );
 
-var beta = scalar2ndarray( new Complex64( 1.0, -1.0 ), {
-    'dtype': 'complex64'
-});
+var beta = new Complex64Tensor0D( 1.0, -1.0 );
 console.log( 'Beta:', ndarraylike2scalar( beta ) );
 
 caxpby( [ x, y, alpha, beta ] );
