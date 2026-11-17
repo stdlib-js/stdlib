@@ -25,7 +25,7 @@ import { ComplexLike } from '@stdlib/types/complex';
 /**
 * Interface defining `isNumberOrComplexLike` with methods for testing for primitives and objects, respectively.
 */
-interface IsNumber {
+interface IsNumberOrComplexLike {
 	/**
 	* Tests if a value is a number or complex number-like object.
 	*
@@ -145,7 +145,7 @@ interface IsNumber {
 * var bool = isNumberOrComplexLike.isObject( new Number( 3.14 ) );
 * // returns true
 */
-declare var isNumberOrComplexLike: IsNumber;
+declare var isNumberOrComplexLike: IsNumberOrComplexLike;
 
 
 // EXPORTS //
