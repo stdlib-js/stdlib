@@ -29,6 +29,7 @@
 *
 * @param pointer - JSON Pointer string
 * @throws input argument must be either empty or start with a `/` character
+* @throws input argument must not contain invalid escape sequences
 * @returns array of reference tokens
 *
 * @example
