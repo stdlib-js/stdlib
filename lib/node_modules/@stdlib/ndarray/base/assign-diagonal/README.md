@@ -33,7 +33,7 @@ D_k = \{\, A_{i,j} : j - i = k \,\}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="D_k = \{\, A_{i,j} : j - i = k \,\}" data-equation="eq:diagonal_definition">
-    <img src="" alt="Definition of the k-th diagonal of a matrix.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@114dd7b9c7ddc9c8719541e1ff3a6e21da429a80/lib/node_modules/@stdlib/ndarray/base/assign-diagonal/docs/img/equation_diagonal_definition.svg" alt="Definition of the k-th diagonal of a matrix.">
     <br>
 </div> -->
 

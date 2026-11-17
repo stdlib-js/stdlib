@@ -33,7 +33,7 @@ This BLAS extension implements the operation
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\mathbf{y} = \mathbf{x} - \mathbf{y}" data-equation="eq:xsy">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@b723b1f42ec3ae8a412903faa0fbae047f724d98/lib/node_modules/@stdlib/blas/ext/base/ndarray/zxsy/docs/img/equation_xsy.svg" alt="Equation for xsy operation.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@93e1d363badf331d0995544cde0d1f37f4b706c8/lib/node_modules/@stdlib/blas/ext/base/ndarray/zxsy/docs/img/equation_xsy.svg" alt="Equation for xsy operation.">
     <br>
 </div> -->
 
