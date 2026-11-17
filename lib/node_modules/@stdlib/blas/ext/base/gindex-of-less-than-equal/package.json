@@ -59,7 +59,6 @@
     "less",
     "equal",
     "index",
-    "get",
     "compare",
     "strided",
     "array",

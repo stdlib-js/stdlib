@@ -36,7 +36,7 @@
 
     Examples
     --------
-    > var x = {{alias:@stdlib/ndarray/from-scalar}}( 1.0 )
+    > var x = new {{alias:@stdlib/ndarray/tensor0d/float64}}( 1.0 )
     <ndarray>
     > var y = {{alias:@stdlib/ndarray/zeros}}( [ 3, 3 ] )
     <ndarray>

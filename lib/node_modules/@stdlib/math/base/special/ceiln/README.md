@@ -192,7 +192,7 @@ double stdlib_base_ceiln( const double x, const int32_t n );
 #include "stdlib/math/base/special/ceiln.h"
 #include <stdio.h>
 
-int main() {
+int main( void ) {
     const double x[] = { 3.14, -3.14, 0.0, 0.0/0.0 };
 
     double y;

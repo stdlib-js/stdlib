@@ -37,6 +37,7 @@ import { MultiSlice } from '@stdlib/types/slice';
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ], 'float64' );
@@ -47,7 +48,7 @@ import { MultiSlice } from '@stdlib/types/slice';
 * var x = ndarray( 'float64', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -59,7 +60,7 @@ import { MultiSlice } from '@stdlib/types/slice';
 * var y = slice( x, s, false, false );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
 * arr = ndarray2array( y );
@@ -81,6 +82,7 @@ declare function slice( x: float64ndarray, s: MultiSlice, strict: boolean, writa
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ], 'float32' );
@@ -91,7 +93,7 @@ declare function slice( x: float64ndarray, s: MultiSlice, strict: boolean, writa
 * var x = ndarray( 'float32', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -103,7 +105,7 @@ declare function slice( x: float64ndarray, s: MultiSlice, strict: boolean, writa
 * var y = slice( x, s, false, false );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
 * arr = ndarray2array( y );
@@ -125,6 +127,7 @@ declare function slice( x: float32ndarray, s: MultiSlice, strict: boolean, writa
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ], 'float16' );
@@ -135,7 +138,7 @@ declare function slice( x: float32ndarray, s: MultiSlice, strict: boolean, writa
 * var x = ndarray( 'float16', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -147,7 +150,7 @@ declare function slice( x: float32ndarray, s: MultiSlice, strict: boolean, writa
 * var y = slice( x, s, false, false );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
 * arr = ndarray2array( y );
@@ -169,6 +172,7 @@ declare function slice( x: float16ndarray, s: MultiSlice, strict: boolean, writa
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'int32' );
@@ -179,7 +183,7 @@ declare function slice( x: float16ndarray, s: MultiSlice, strict: boolean, writa
 * var x = ndarray( 'int32', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -191,7 +195,7 @@ declare function slice( x: float16ndarray, s: MultiSlice, strict: boolean, writa
 * var y = slice( x, s, false, false );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
 * arr = ndarray2array( y );
@@ -213,6 +217,7 @@ declare function slice( x: int32ndarray, s: MultiSlice, strict: boolean, writabl
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'int16' );
@@ -223,7 +228,7 @@ declare function slice( x: int32ndarray, s: MultiSlice, strict: boolean, writabl
 * var x = ndarray( 'int16', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -235,7 +240,7 @@ declare function slice( x: int32ndarray, s: MultiSlice, strict: boolean, writabl
 * var y = slice( x, s, false, false );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
 * arr = ndarray2array( y );
@@ -257,6 +262,7 @@ declare function slice( x: int16ndarray, s: MultiSlice, strict: boolean, writabl
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'int8' );
@@ -267,7 +273,7 @@ declare function slice( x: int16ndarray, s: MultiSlice, strict: boolean, writabl
 * var x = ndarray( 'int8', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -279,7 +285,7 @@ declare function slice( x: int16ndarray, s: MultiSlice, strict: boolean, writabl
 * var y = slice( x, s, false, false );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
 * arr = ndarray2array( y );
@@ -301,6 +307,7 @@ declare function slice( x: int8ndarray, s: MultiSlice, strict: boolean, writable
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint32' );
@@ -311,7 +318,7 @@ declare function slice( x: int8ndarray, s: MultiSlice, strict: boolean, writable
 * var x = ndarray( 'uint32', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -323,7 +330,7 @@ declare function slice( x: int8ndarray, s: MultiSlice, strict: boolean, writable
 * var y = slice( x, s, false, false );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
 * arr = ndarray2array( y );
@@ -345,6 +352,7 @@ declare function slice( x: uint32ndarray, s: MultiSlice, strict: boolean, writab
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint16' );
@@ -355,7 +363,7 @@ declare function slice( x: uint32ndarray, s: MultiSlice, strict: boolean, writab
 * var x = ndarray( 'uint16', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -367,7 +375,7 @@ declare function slice( x: uint32ndarray, s: MultiSlice, strict: boolean, writab
 * var y = slice( x, s, false, false );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
 * arr = ndarray2array( y );
@@ -389,6 +397,7 @@ declare function slice( x: uint16ndarray, s: MultiSlice, strict: boolean, writab
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint8' );
@@ -399,7 +408,7 @@ declare function slice( x: uint16ndarray, s: MultiSlice, strict: boolean, writab
 * var x = ndarray( 'uint8', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -411,7 +420,7 @@ declare function slice( x: uint16ndarray, s: MultiSlice, strict: boolean, writab
 * var y = slice( x, s, false, false );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
 * arr = ndarray2array( y );
@@ -433,6 +442,7 @@ declare function slice( x: uint8ndarray, s: MultiSlice, strict: boolean, writabl
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint8c' );
@@ -443,7 +453,7 @@ declare function slice( x: uint8ndarray, s: MultiSlice, strict: boolean, writabl
 * var x = ndarray( 'uint8c', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -455,7 +465,7 @@ declare function slice( x: uint8ndarray, s: MultiSlice, strict: boolean, writabl
 * var y = slice( x, s, false, false );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
 * arr = ndarray2array( y );
@@ -477,6 +487,7 @@ declare function slice( x: uint8cndarray, s: MultiSlice, strict: boolean, writab
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ], 'complex128' );
@@ -487,7 +498,7 @@ declare function slice( x: uint8cndarray, s: MultiSlice, strict: boolean, writab
 * var x = ndarray( 'complex128', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s = new MultiSlice( new Slice( null, null, -2 ), new Slice( null, null, -1 ) );
@@ -496,7 +507,7 @@ declare function slice( x: uint8cndarray, s: MultiSlice, strict: boolean, writab
 * var y = slice( x, s, false, false );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: complex128ndarray, s: MultiSlice, strict: boolean, writable: boolean ): complex128ndarray;
@@ -515,6 +526,7 @@ declare function slice( x: complex128ndarray, s: MultiSlice, strict: boolean, wr
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ], 'complex64' );
@@ -525,7 +537,7 @@ declare function slice( x: complex128ndarray, s: MultiSlice, strict: boolean, wr
 * var x = ndarray( 'complex64', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var s = new MultiSlice( new Slice( null, null, -2 ), new Slice( null, null, -1 ) );
@@ -534,7 +546,7 @@ declare function slice( x: complex128ndarray, s: MultiSlice, strict: boolean, wr
 * var y = slice( x, s, false, false );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 */
 declare function slice( x: complex64ndarray, s: MultiSlice, strict: boolean, writable: boolean ): complex64ndarray;
@@ -552,6 +564,7 @@ declare function slice( x: complex64ndarray, s: MultiSlice, strict: boolean, wri
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = [ 1, 2, 3, 4, 5, 6 ];
@@ -562,7 +575,7 @@ declare function slice( x: complex64ndarray, s: MultiSlice, strict: boolean, wri
 * var x = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -574,7 +587,7 @@ declare function slice( x: complex64ndarray, s: MultiSlice, strict: boolean, wri
 * var y = slice( x, s, false, false );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
 * arr = ndarray2array( y );
@@ -595,6 +608,7 @@ declare function slice<T = unknown>( x: genericndarray<T>, s: MultiSlice, strict
 * var Slice = require( '@stdlib/slice/ctor' );
 * var MultiSlice = require( '@stdlib/slice/multi' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = [ 1, 2, 3, 4, 5, 6 ];
@@ -605,7 +619,7 @@ declare function slice<T = unknown>( x: genericndarray<T>, s: MultiSlice, strict
 * var x = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -617,7 +631,7 @@ declare function slice<T = unknown>( x: genericndarray<T>, s: MultiSlice, strict
 * var y = slice( x, s, false, false );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
 * arr = ndarray2array( y );

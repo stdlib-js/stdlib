@@ -107,7 +107,7 @@ static double benchmark( void ) {
 		re = ( 1000.0*rand_double() ) - 500.0;
 		im = ( 1000.0*rand_double() ) - 500.0;
 		z = stdlib_complex128( re, im );
-		stdlib_base_cpolar( z, &cabs, &cphase);
+		stdlib_base_cpolar( z, &cabs, &cphase );
 		if ( cabs != cabs ) {
 			printf( "should not return NaN\n" );
 			break;

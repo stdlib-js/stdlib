@@ -29,7 +29,7 @@ int main( void ) {
 	// Specify a stride:
 	const int strideX = 1;
 
-	// Find the index of the last truthy element:
+	// Perform a search:
 	int idx = stdlib_strided_slast_index_of_truthy( N, x, strideX );
 
 	// Print the result:

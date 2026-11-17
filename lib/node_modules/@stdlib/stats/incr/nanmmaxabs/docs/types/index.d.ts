@@ -30,7 +30,7 @@
 type accumulator = ( x?: number ) => number | null;
 
 /**
-* Returns an accumulator function which incrementally computes a moving maximum absolute value while ignoring `NaN` values.
+* Returns an accumulator function which incrementally computes a moving maximum absolute value, ignoring `NaN` values.
 *
 * ## Notes
 *
