@@ -18,6 +18,7 @@
 
 #include "stdlib/stats/base/dists/binomial/mode.h"
 #include "stdlib/math/base/special/floor.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Returns the mode of a binomial distribution.
@@ -36,7 +37,7 @@ double stdlib_base_dists_binomial_mode( const int32_t n, const double p ) {
 		p < 0.0 ||
 		p > 1.0
 	) {
-		return 0.0 / 0.0;
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	return stdlib_base_floor( ( n + 1.0 ) * p );
 }

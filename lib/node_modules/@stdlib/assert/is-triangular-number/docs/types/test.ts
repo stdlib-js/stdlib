@@ -33,27 +33,27 @@ import isTriangularNumber = require( './index' );
 	isTriangularNumber( 0.2, 123 ); // $ExpectError
 }
 
-// Attached to main export is an isPrimitive method which returns a boolean...
+// Attached to main export is an `isPrimitive` method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers
 	isTriangularNumber.isPrimitive( new Number( 0.2 ) ); // $ExpectType boolean
 	isTriangularNumber.isPrimitive( 0.2 ); // $ExpectType boolean
 }
 
-// The compiler throws an error if the isPrimitive method is provided an unsupported number of arguments...
+// The compiler throws an error if the `isPrimitive` method is provided an unsupported number of arguments...
 {
 	isTriangularNumber.isPrimitive(); // $ExpectError
 	isTriangularNumber.isPrimitive( 0.2, 123 ); // $ExpectError
 }
 
-// Attached to main export is an isPrimitive method which returns a boolean...
+// Attached to main export is an `isObject` method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers
 	isTriangularNumber.isObject( new Number( 0.2 ) ); // $ExpectType boolean
 	isTriangularNumber.isObject( 0.2 ); // $ExpectType boolean
 }
 
-// The compiler throws an error if the isObject method is provided an unsupported number of arguments...
+// The compiler throws an error if the `isObject` method is provided an unsupported number of arguments...
 {
 	isTriangularNumber.isObject(); // $ExpectError
 	isTriangularNumber.isObject( 0.2, 123 ); // $ExpectError

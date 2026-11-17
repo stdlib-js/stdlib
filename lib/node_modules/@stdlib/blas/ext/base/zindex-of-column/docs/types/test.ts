@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+import Complex128Array = require( '@stdlib/array/complex128' );
 import zindexOfColumn = require( './index' );
 
 
@@ -183,7 +184,7 @@ import zindexOfColumn = require( './index' );
 	zindexOfColumn( 'row-major', 2, 2, A, 2, x ); // $ExpectError
 	zindexOfColumn( 'row-major', 2, 2, A, 2, x, 1 ); // $ExpectError
 	zindexOfColumn( 'row-major', 2, 2, A, 2, x, 1, w ); // $ExpectError
-	zindexOfColumn( 'row-major', 2, 2, A, 2, x, 1, w, 1, 0 ); // $ExpectError
+	zindexOfColumn( 'row-major', 2, 2, A, 2, x, 1, w, 1, {} ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a number...
@@ -399,5 +400,5 @@ import zindexOfColumn = require( './index' );
 	zindexOfColumn.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0 ); // $ExpectError
 	zindexOfColumn.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0, w ); // $ExpectError
 	zindexOfColumn.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0, w, 1 ); // $ExpectError
-	zindexOfColumn.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0, w, 1, 0, 0 ); // $ExpectError
+	zindexOfColumn.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0, w, 1, 0, {} ); // $ExpectError
 }

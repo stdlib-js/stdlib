@@ -1,0 +1,92 @@
+
+{{alias}}( [options] )
+    Returns a zero-dimensional boolean ndarray.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Options.
+
+    options.order: string (optional)
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style). Default: 'row-major'.
+
+    options.readonly: boolean (optional)
+        Boolean indicating whether an array should be read-only. Default: false.
+
+    Returns
+    -------
+    out: ndarray
+        A zero-dimensional ndarray.
+
+    Examples
+    --------
+    > var arr = {{alias}}()
+    <ndarray>[ false ]
+
+
+{{alias}}( value[, options] )
+    Creates a zero-dimensional boolean ndarray from a scalar value.
+
+    Parameters
+    ----------
+    value: boolean
+        Scalar value.
+
+    options: Object (optional)
+        Options.
+
+    options.order: string (optional)
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style). Default: 'row-major'.
+
+    options.readonly: boolean (optional)
+        Boolean indicating whether an array should be read-only. Default: false.
+
+    Returns
+    -------
+    out: ndarray
+        A zero-dimensional ndarray.
+
+    Examples
+    --------
+    > var arr = {{alias}}( true )
+    <ndarray>[ true ]
+
+
+{{alias}}( buffer[, byteOffset][, options] )
+    Returns a zero-dimensional boolean ndarray view of an ArrayBuffer.
+
+    Parameters
+    ----------
+    buffer: ArrayBuffer
+        Underlying ArrayBuffer.
+
+    byteOffset: integer (optional)
+        Integer byte offset specifying the location of the scalar value.
+        Default: 0.
+
+    options: Object (optional)
+        Options.
+
+    options.order: string (optional)
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style). Default: 'row-major'.
+
+    options.readonly: boolean (optional)
+        Boolean indicating whether an array should be read-only. Default: false.
+
+    Returns
+    -------
+    out: ndarray
+        A zero-dimensional ndarray.
+
+    Examples
+    --------
+    > var buf = new {{alias:@stdlib/array/buffer}}( 32 );
+    > var arr = {{alias}}( buf, 8 )
+    <ndarray>[ false ]
+
+    See Also
+    --------
+
