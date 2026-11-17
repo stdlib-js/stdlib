@@ -52,18 +52,13 @@ Multiplies a one-dimensional single-precision floating-point ndarray by a scalar
 
 ```javascript
 var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
-var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var Float32Tensor0D = require( '@stdlib/ndarray/tensor0d/float32' );
 
 var x = new Float32Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 var y = new Float32Vector( [ 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 
-var alpha = scalar2ndarray( 5.0, {
-    'dtype': 'float32'
-});
-
-var beta = scalar2ndarray( 2.0, {
-    'dtype': 'float32'
-});
+var alpha = new Float32Tensor0D( 5.0 );
+var beta = new Float32Tensor0D( 2.0 );
 
 saxpby( [ x, y, alpha, beta ] );
 // y => <ndarray>[ 9.0, 16.0, 23.0, 30.0, 37.0 ]
@@ -100,7 +95,7 @@ The function has the following parameters:
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/discrete-uniform' );
-var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var Float32Tensor0D = require( '@stdlib/ndarray/tensor0d/float32' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var ndarraylike2scalar = require( '@stdlib/ndarray/ndarraylike2scalar' );
 var saxpby = require( '@stdlib/blas/ext/base/ndarray/saxpby' );
@@ -115,10 +110,10 @@ console.log( ndarray2array( x ) );
 var y = discreteUniform( [ 10 ], -100, 100, opts );
 console.log( ndarray2array( y ) );
 
-var alpha = scalar2ndarray( 5.0, opts );
+var alpha = new Float32Tensor0D( 5.0 );
 console.log( 'Alpha: %d', ndarraylike2scalar( alpha ) );
 
-var beta = scalar2ndarray( 2.0, opts );
+var beta = new Float32Tensor0D( 2.0 );
 console.log( 'Beta: %d', ndarraylike2scalar( beta ) );
 
 saxpby( [ x, y, alpha, beta ] );
