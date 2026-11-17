@@ -32,6 +32,11 @@ This BLAS extension implements the operation
 \mathbf{y} = \alpha \mathbf{x} + \beta \mathbf{y}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\mathbf{y} = \alpha \mathbf{x} + \beta \mathbf{y}" data-equation="eq:axpby">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@114dd7b9c7ddc9c8719541e1ff3a6e21da429a80/lib/node_modules/@stdlib/blas/ext/base/ndarray/caxpby/docs/img/equation_axpby.svg" alt="Equation for axpby operation.">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>
