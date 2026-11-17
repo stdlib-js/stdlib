@@ -33,27 +33,27 @@ import isPrime = require( './index' );
 	isPrime( 0.2, 123 ); // $ExpectError
 }
 
-// Attached to main export is an isPrimitive method which returns a boolean...
+// Attached to main export is an `isPrimitive` method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers
 	isPrime.isPrimitive( new Number( 0.2 ) ); // $ExpectType boolean
 	isPrime.isPrimitive( 0.2 ); // $ExpectType boolean
 }
 
-// The compiler throws an error if the isPrimitive method is provided an unsupported number of arguments...
+// The compiler throws an error if the `isPrimitive` method is provided an unsupported number of arguments...
 {
 	isPrime.isPrimitive(); // $ExpectError
 	isPrime.isPrimitive( 0.2, 123 ); // $ExpectError
 }
 
-// Attached to main export is an isPrimitive method which returns a boolean...
+// Attached to main export is an `isObject` method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers
 	isPrime.isObject( new Number( 0.2 ) ); // $ExpectType boolean
 	isPrime.isObject( 0.2 ); // $ExpectType boolean
 }
 
-// The compiler throws an error if the isObject method is provided an unsupported number of arguments...
+// The compiler throws an error if the `isObject` method is provided an unsupported number of arguments...
 {
 	isPrime.isObject(); // $ExpectError
 	isPrime.isObject( 0.2, 123 ); // $ExpectError

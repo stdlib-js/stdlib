@@ -1,0 +1,32 @@
+
+{{alias}}( value[, options] )
+    Creates a "generic" zero-dimensional ndarray from a scalar value.
+
+    Parameters
+    ----------
+    value: any
+        Scalar value.
+
+    options: Object (optional)
+        Options.
+
+    options.order: string (optional)
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style). Default: 'row-major'.
+
+    options.readonly: boolean (optional)
+        Boolean indicating whether an array should be read-only. Default: false.
+
+    Returns
+    -------
+    out: ndarray
+        A zero-dimensional ndarray.
+
+    Examples
+    --------
+    > var arr = {{alias}}( 2.0 )
+    <ndarray>[ 2.0 ]
+
+    See Also
+    --------
+

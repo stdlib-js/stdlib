@@ -135,6 +135,7 @@ var count = ctx.count;
 ## Notes
 
 -   A `predicate` function is invoked for each iterated value until the `nth` truthy `predicate` function return value. The returned iterator continues iterating until it reaches the end of the input iterator, even after the condition is met.
+-   If an environment supports `Symbol.iterator` **and** a provided [iterator][mdn-iterator-protocol] is iterable, the returned [iterator][mdn-iterator-protocol] is iterable.
 
 </section>
 

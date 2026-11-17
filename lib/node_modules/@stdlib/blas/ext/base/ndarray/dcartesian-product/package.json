@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/blas/ext/base/ndarray/dcartesian-product",
   "version": "0.0.0",
-  "description": "Compute the Cartesian product for two double-precision floating-point ndarrays.",
+  "description": "Compute the Cartesian product for two one-dimensional double-precision floating-point ndarrays.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

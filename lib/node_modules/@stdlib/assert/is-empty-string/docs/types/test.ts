@@ -33,27 +33,27 @@ import isEmptyString = require( './index' );
 	isEmptyString( 'abc', 123 ); // $ExpectError
 }
 
-// Attached to main export is an isPrimitive method which returns a boolean...
+// Attached to main export is an `isPrimitive` method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers
 	isEmptyString.isPrimitive( new String( 'abc' ) ); // $ExpectType boolean
 	isEmptyString.isPrimitive( '' ); // $ExpectType boolean
 }
 
-// The compiler throws an error if the isPrimitive method is provided an unsupported number of arguments...
+// The compiler throws an error if the `isPrimitive` method is provided an unsupported number of arguments...
 {
 	isEmptyString.isPrimitive(); // $ExpectError
 	isEmptyString.isPrimitive( 'abc', 123 ); // $ExpectError
 }
 
-// Attached to main export is an isPrimitive method which returns a boolean...
+// Attached to main export is an `isObject` method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers
 	isEmptyString.isObject( new String( '' ) ); // $ExpectType boolean
 	isEmptyString.isObject( '' ); // $ExpectType boolean
 }
 
-// The compiler throws an error if the isObject method is provided an unsupported number of arguments...
+// The compiler throws an error if the `isObject` method is provided an unsupported number of arguments...
 {
 	isEmptyString.isObject(); // $ExpectError
 	isEmptyString.isObject( 'abc', 123 ); // $ExpectError
