@@ -33,7 +33,7 @@
 * // returns ~0.5
 *
 * @example
-* var v = cosd( 90.0);
+* var v = cosd( 90.0 );
 * // returns 0
 *
 * @example

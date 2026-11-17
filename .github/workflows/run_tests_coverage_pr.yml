@@ -120,9 +120,9 @@ jobs:
         id: changed-directories
         continue-on-error: true
         run: |
-          # Get changed files using git diff against base branch:
-          git fetch origin ${{ github.base_ref }} --depth=1
-          files=$(git diff --diff-filter=AM --name-only origin/${{ github.base_ref }}...HEAD)
+          # Get the list of changed files in pull request:
+          ancestor_commit=$(git merge-base ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }})
+          files=$(git diff --diff-filter=AM --name-only $ancestor_commit ${{ github.event.pull_request.head.sha }})
           directories=$(for file in $files; do dirname $file; done | sort -u | tr '\n' ' ' | sed 's/ $//')
           echo "directories=${directories}" >> $GITHUB_OUTPUT
 

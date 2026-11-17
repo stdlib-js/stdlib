@@ -23,7 +23,7 @@
 import { float64ndarray } from '@stdlib/types/ndarray';
 
 /**
-* Computes the Cartesian product for two double-precision floating-point ndarrays.
+* Computes the Cartesian product for two one-dimensional double-precision floating-point ndarrays.
 *
 * ## Notes
 *

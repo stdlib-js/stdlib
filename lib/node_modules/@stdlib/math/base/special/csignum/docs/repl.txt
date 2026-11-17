@@ -18,6 +18,77 @@
     > var v = {{alias}}( new {{alias:@stdlib/complex/float64/ctor}}( -4.2, 5.5 ) )
     <Complex128>[ -0.6069136033622302, 0.79476781392673 ]
 
+
+{{alias}}.assign( re, im, out, strideOut, offsetOut )
+    Evaluates the signum function of a double-precision complex floating-point
+    number and assigns results to a provided output array.
+
+    Parameters
+    ----------
+    re: number
+        Real component.
+
+    im: number
+        Imaginary component.
+
+    out: ArrayLikeObject
+        Output array.
+
+    strideOut: integer
+        Stride length.
+
+    offsetOut: integer
+        Starting index.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > var out = new {{alias:@stdlib/array/float64}}( 2 );
+    > {{alias}}.assign( 3.0, -4.0, out, 1, 0 )
+    <Float64Array>[ 0.6, -0.8 ]
+
+
+{{alias}}.strided( z, sz, oz, out, so, oo )
+    Evaluates the signum function of a double-precision complex floating-point
+    number stored in a real-valued strided array view and assigns results to a
+    provided strided output array.
+
+    Parameters
+    ----------
+    z: ArrayLikeObject
+        Complex number view.
+
+    sz: integer
+        Stride length for `z`.
+
+    oz: integer
+        Starting index for `z`.
+
+    out: ArrayLikeObject
+        Output array.
+
+    so: integer
+        Stride length for `out`.
+
+    oo: integer
+        Starting index for `out`.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > var z = new {{alias:@stdlib/array/float64}}( [ 3.0, -4.0 ] );
+    > var out = new {{alias:@stdlib/array/float64}}( 2 );
+    > {{alias}}.strided( z, 1, 0, out, 1, 0 )
+    <Float64Array>[ 0.6, -0.8 ]
+
     See Also
     --------
 

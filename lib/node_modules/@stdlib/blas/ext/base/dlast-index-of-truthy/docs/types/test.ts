@@ -37,6 +37,7 @@ import dlastIndexOfTruthy = require( './index' );
 	dlastIndexOfTruthy( false, x, 1 ); // $ExpectError
 	dlastIndexOfTruthy( null, x, 1 ); // $ExpectError
 	dlastIndexOfTruthy( {}, x, 1 ); // $ExpectError
+	dlastIndexOfTruthy( ( x: number ): number => x, x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a Float64Array...
@@ -46,6 +47,7 @@ import dlastIndexOfTruthy = require( './index' );
 	dlastIndexOfTruthy( x.length, false, 1 ); // $ExpectError
 	dlastIndexOfTruthy( x.length, null, 1 ); // $ExpectError
 	dlastIndexOfTruthy( x.length, {}, 1 ); // $ExpectError
+	dlastIndexOfTruthy( x.length, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not a number...
@@ -57,6 +59,7 @@ import dlastIndexOfTruthy = require( './index' );
 	dlastIndexOfTruthy( x.length, x, false ); // $ExpectError
 	dlastIndexOfTruthy( x.length, x, null ); // $ExpectError
 	dlastIndexOfTruthy( x.length, x, {} ); // $ExpectError
+	dlastIndexOfTruthy( x.length, x, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -64,7 +67,7 @@ import dlastIndexOfTruthy = require( './index' );
 	dlastIndexOfTruthy(); // $ExpectError
 	dlastIndexOfTruthy( 3 ); // $ExpectError
 	dlastIndexOfTruthy( 3, new Float64Array( [ 1.0, 2.0, 3.0 ] ) ); // $ExpectError
-	dlastIndexOfTruthy( 3, new Float64Array( [ 1.0, 2.0, 3.0 ] ), 1, 0 ); // $ExpectError
+	dlastIndexOfTruthy( 3, new Float64Array( [ 1.0, 2.0, 3.0 ] ), 1, {} ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a number...
@@ -83,6 +86,7 @@ import dlastIndexOfTruthy = require( './index' );
 	dlastIndexOfTruthy.ndarray( false, x, 1, 1 ); // $ExpectError
 	dlastIndexOfTruthy.ndarray( null, x, 1, 1 ); // $ExpectError
 	dlastIndexOfTruthy.ndarray( {}, x, 1, 1 ); // $ExpectError
+	dlastIndexOfTruthy.ndarray( ( x: number ): number => x, x, 1, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a second argument which is not a Float64Array...
@@ -92,6 +96,7 @@ import dlastIndexOfTruthy = require( './index' );
 	dlastIndexOfTruthy.ndarray( x.length, false, 1, 1 ); // $ExpectError
 	dlastIndexOfTruthy.ndarray( x.length, null, 1, 1 ); // $ExpectError
 	dlastIndexOfTruthy.ndarray( x.length, {}, 1, 1 ); // $ExpectError
+	dlastIndexOfTruthy.ndarray( x.length, ( x: number ): number => x, 1, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a third argument which is not a number...
@@ -103,6 +108,7 @@ import dlastIndexOfTruthy = require( './index' );
 	dlastIndexOfTruthy.ndarray( x.length, x, false, 1 ); // $ExpectError
 	dlastIndexOfTruthy.ndarray( x.length, x, null, 1 ); // $ExpectError
 	dlastIndexOfTruthy.ndarray( x.length, x, {}, 1 ); // $ExpectError
+	dlastIndexOfTruthy.ndarray( x.length, x, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fourth argument which is not a number...
@@ -114,6 +120,7 @@ import dlastIndexOfTruthy = require( './index' );
 	dlastIndexOfTruthy.ndarray( x.length, x, 1, false ); // $ExpectError
 	dlastIndexOfTruthy.ndarray( x.length, x, 1, null ); // $ExpectError
 	dlastIndexOfTruthy.ndarray( x.length, x, 1, {} ); // $ExpectError
+	dlastIndexOfTruthy.ndarray( x.length, x, 1, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided an unsupported number of arguments...
@@ -122,5 +129,5 @@ import dlastIndexOfTruthy = require( './index' );
 	dlastIndexOfTruthy.ndarray( 3 ); // $ExpectError
 	dlastIndexOfTruthy.ndarray( 3, new Float64Array( [ 1.0, 2.0, 3.0 ] ) ); // $ExpectError
 	dlastIndexOfTruthy.ndarray( 3, new Float64Array( [ 1.0, 2.0, 3.0 ] ), 1 ); // $ExpectError
-	dlastIndexOfTruthy.ndarray( 3, new Float64Array( [ 1.0, 2.0, 3.0 ] ), 1, 0, 0 ); // $ExpectError
+	dlastIndexOfTruthy.ndarray( 3, new Float64Array( [ 1.0, 2.0, 3.0 ] ), 1, 0, {} ); // $ExpectError
 }

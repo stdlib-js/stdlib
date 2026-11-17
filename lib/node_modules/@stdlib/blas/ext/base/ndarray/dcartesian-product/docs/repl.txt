@@ -1,7 +1,7 @@
 
 {{alias}}( arrays )
-    Computes the Cartesian product for two double-precision floating-point
-    ndarrays.
+    Computes the Cartesian product for two one-dimensional double-precision
+    floating-point ndarrays.
 
     Pairs are stored as rows in the output matrix, where the first column
     contains the first element of each pair and the second column contains the
