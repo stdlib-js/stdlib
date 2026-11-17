@@ -54,7 +54,7 @@ interface Namespace {
 	*
 	* var myCDF = ns.cdf.factory( 0.5, 0.5 );
 	*
-	* var y = myCDF( 0.8 );
+	* y = myCDF( 0.8 );
 	* // returns ~0.465
 	*
 	* y = myCDF( 0.3 );
@@ -129,7 +129,7 @@ interface Namespace {
 	*
 	* var mylogcdf = ns.logcdf.factory( 0.5, 0.5 );
 	*
-	* var y = mylogcdf( 0.8 );
+	* y = mylogcdf( 0.8 );
 	* // returns ~-0.767
 	*
 	* y = mylogcdf( 0.3 );
@@ -154,7 +154,7 @@ interface Namespace {
 	*
 	* var mylogpdf = ns.logpdf.factory( 0.5, 0.5 );
 	*
-	* var y = mylogpdf( 0.8 );
+	* y = mylogpdf( 0.8 );
 	* // returns ~-1.62
 	*
 	* y = mylogpdf( 0.3 );
@@ -269,7 +269,7 @@ interface Namespace {
 	*
 	* var mypdf = ns.pdf.factory( 0.5, 0.5 );
 	*
-	* var y = mypdf( 0.8 );
+	* y = mypdf( 0.8 );
 	* // returns ~0.198
 	*
 	* y = mypdf( 0.3 );
@@ -294,7 +294,7 @@ interface Namespace {
 	*
 	* var myQuantile = ns.quantile.factory( 2.0, 2.0 );
 	*
-	* var y = myQuantile( 0.8 );
+	* y = myQuantile( 0.8 );
 	* // returns ~2.483
 	*
 	* y = myQuantile( 0.4 );
