@@ -22,7 +22,7 @@
 DEPS_HIGHWAY_URL ?= https://codeload.github.com/google/highway/tar.gz/refs/tags/$(DEPS_HIGHWAY_VERSION)
 
 # Determine the basename for the download:
-deps_highway_basename := highway-$(DEPS_HIGHWAY_VERSION).tar.gz
+deps_highway_basename := highway_$(DEPS_HIGHWAY_VERSION).tar.gz
 
 # Define the path to the file containing a checksum to verify a download:
 DEPS_HIGHWAY_CHECKSUM ?= $(shell $(CAT) $(DEPS_CHECKSUMS_DIR)/$(subst .,_,$(subst -,_,$(deps_highway_basename)))/sha256)
@@ -42,11 +42,22 @@ DEPS_HIGHWAY_TEST_INSTALL ?= $(DEPS_HIGHWAY_TEST_DIR)/test_install.cpp
 # Define the output path for a test file:
 DEPS_HIGHWAY_TEST_INSTALL_OUT ?= $(DEPS_HIGHWAY_TEST_OUT)/test_install
 
-# Define the command for running CMake tests:
-CTEST ?= ctest
+# Define the path to a test file for checking the Highway runtime:
+DEPS_HIGHWAY_TEST_RUNTIME ?= $(DEPS_HIGHWAY_TEST_DIR)/test_runtime.cpp
+
+# Define the output path for a runtime test file:
+DEPS_HIGHWAY_TEST_RUNTIME_OUT ?= $(DEPS_HIGHWAY_TEST_OUT)/test_runtime
 
 # Define the native runtime build configuration:
 DEPS_HIGHWAY_BUILD_TYPE ?= Release
+
+# Define compilation flags:
+DEPS_HIGHWAY_CFLAGS ?=
+DEPS_HIGHWAY_CXXFLAGS ?=
+DEPS_HIGHWAY_LDFLAGS ?=
+
+# FIXME: Define the command for running CMake tests:
+CTEST ?= ctest
 
 
 # RULES #
@@ -82,7 +93,7 @@ $(DEPS_HIGHWAY_TEST_OUT):
 #
 # @private
 #/
-$(DEPS_HIGHWAY_TEST_INSTALL_OUT): $(DEPS_HIGHWAY_BUILD_OUT) $(DEPS_HIGHWAY_TEST_INSTALL) | $(DEPS_HIGHWAY_TEST_OUT)
+$(DEPS_HIGHWAY_TEST_INSTALL_OUT): $(DEPS_HIGHWAY_BUILD_OUT) $(DEPS_HIGHWAY_TEST_OUT)
 	$(QUIET) $(CXX) -std=c++17 -I $(DEPS_HIGHWAY_INCLUDE) $(DEPS_HIGHWAY_TEST_INSTALL) -o $(DEPS_HIGHWAY_TEST_INSTALL_OUT)
 
 #/
@@ -124,6 +135,30 @@ deps-extract-highway: $(DEPS_HIGHWAY_BUILD_OUT)
 .PHONY: deps-extract-highway
 
 #/
+# Builds and tests the native Highway runtime.
+#
+# @example
+# make deps-install-highway
+#/
+deps-install-highway: $(DEPS_HIGHWAY_BUILD_OUT) | $(DEPS_HIGHWAY_TEST_OUT)
+	$(QUIET) $(MKDIR_RECURSIVE) $(DEPS_HIGHWAY_RUNTIME_OUT)
+	$(QUIET) cd $(DEPS_HIGHWAY_RUNTIME_OUT) && $(CMAKE) \
+		-DHIGHWAY_SOURCE="$(DEPS_HIGHWAY_INCLUDE)" \
+		-DHIGHWAY_TEST_SOURCE="$(DEPS_HIGHWAY_TEST_RUNTIME)" \
+		-DHIGHWAY_TEST_OUT="$(DEPS_HIGHWAY_TEST_OUT)" \
+		-DCMAKE_BUILD_TYPE="$(DEPS_HIGHWAY_BUILD_TYPE)" \
+		-DCMAKE_C_COMPILER="$(CC)" \
+		-DCMAKE_CXX_COMPILER="$(CXX)" \
+		-DCMAKE_C_FLAGS="$(DEPS_HIGHWAY_CFLAGS)" \
+		-DCMAKE_CXX_FLAGS="$(DEPS_HIGHWAY_CXXFLAGS)" \
+		-DCMAKE_EXE_LINKER_FLAGS="$(DEPS_HIGHWAY_LDFLAGS)" \
+		$(TOOLS_DIR)/make/lib/install/highway
+	$(QUIET) MAKEFLAGS= MFLAGS= $(CMAKE) --build $(DEPS_HIGHWAY_RUNTIME_OUT) --config $(DEPS_HIGHWAY_BUILD_TYPE) --target stdlib_highway_test
+	$(QUIET) cd $(DEPS_HIGHWAY_RUNTIME_OUT) && $(CTEST) -C $(DEPS_HIGHWAY_BUILD_TYPE) --output-on-failure
+
+.PHONY: deps-install-highway
+
+#/
 # Tests an installed Highway distribution.
 #
 # @private
@@ -145,36 +180,9 @@ deps-test-highway: $(DEPS_HIGHWAY_TEST_INSTALL_OUT)
 # @example
 # make install-deps-highway
 #/
-install-deps-highway: deps-download-highway deps-verify-highway deps-extract-highway deps-test-highway deps-build-highway
+install-deps-highway: deps-download-highway deps-verify-highway deps-extract-highway deps-install-highway deps-test-highway
 
 .PHONY: install-deps-highway
-
-#/
-# Builds and tests the native Highway runtime.
-#
-# @example
-# make deps-build-highway
-#/
-deps-build-highway: CFLAGS ?=
-deps-build-highway: CXXFLAGS ?=
-deps-build-highway: LDFLAGS ?=
-deps-build-highway: $(DEPS_HIGHWAY_BUILD_OUT) | $(DEPS_HIGHWAY_TEST_OUT)
-	$(QUIET) $(MKDIR_RECURSIVE) $(DEPS_HIGHWAY_RUNTIME_OUT)
-	$(QUIET) cd $(DEPS_HIGHWAY_RUNTIME_OUT) && $(CMAKE) \
-		-DHIGHWAY_SOURCE="$(DEPS_HIGHWAY_INCLUDE)" \
-		-DHIGHWAY_TEST_SOURCE="$(DEPS_HIGHWAY_TEST_DIR)/test_runtime.cpp" \
-		-DHIGHWAY_TEST_OUT="$(DEPS_HIGHWAY_TEST_OUT)" \
-		-DCMAKE_BUILD_TYPE="$(DEPS_HIGHWAY_BUILD_TYPE)" \
-		-DCMAKE_C_COMPILER="$(CC)" \
-		-DCMAKE_CXX_COMPILER="$(CXX)" \
-		-DCMAKE_C_FLAGS="$(CFLAGS)" \
-		-DCMAKE_CXX_FLAGS="$(CXXFLAGS)" \
-		-DCMAKE_EXE_LINKER_FLAGS="$(LDFLAGS)" \
-		$(TOOLS_DIR)/make/lib/install/highway
-	$(QUIET) MAKEFLAGS= MFLAGS= $(CMAKE) --build $(DEPS_HIGHWAY_RUNTIME_OUT) --config $(DEPS_HIGHWAY_BUILD_TYPE) --target stdlib_highway_test
-	$(QUIET) cd $(DEPS_HIGHWAY_RUNTIME_OUT) && $(CTEST) -C $(DEPS_HIGHWAY_BUILD_TYPE) --output-on-failure
-
-.PHONY: deps-build-highway
 
 #/
 # Removes an installed Highway distribution.
@@ -201,17 +209,3 @@ clean-deps-highway-tests:
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(DEPS_HIGHWAY_TEST_OUT)
 
 .PHONY: clean-deps-highway-tests
-
-#/
-# Tests the native Highway build metadata.
-#
-# @example
-# make deps-test-highway-build
-#/
-deps-test-highway-build: deps-build-highway
-	$(QUIET) STDLIB_TEST_HIGHWAY_RUNTIME="$(DEPS_HIGHWAY_RUNTIME_OUT)" \
-		STDLIB_TEST_HIGHWAY_SOURCE="$(DEPS_HIGHWAY_INCLUDE)" \
-		FILES="$(TOOLS_DIR)/make/test/test.highway.js" \
-		$(MAKE) -f $(this_file) test-javascript-files
-
-.PHONY: deps-test-highway-build
