@@ -21,11 +21,11 @@ import resolve = require( './index' );
 
 // TESTS //
 
-// The function returns a resolve result object...
+// The function returns a result object or `undefined`...
 {
-	resolve( { 'foo': 'bar' }, '/foo' ); // $ExpectType ResolveResult
-	resolve( [ 1, 2, 3 ], '/0' ); // $ExpectType ResolveResult
-	resolve( { 'foo': 'bar' }, '' ); // $ExpectType ResolveResult
+	resolve( { 'foo': 'bar' }, '/foo' ); // $ExpectType void | ResolveResult
+	resolve( [ 1, 2, 3 ], '/0' ); // $ExpectType void | ResolveResult
+	resolve( { 'foo': 'bar' }, '' ); // $ExpectType void | ResolveResult
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an object or array...

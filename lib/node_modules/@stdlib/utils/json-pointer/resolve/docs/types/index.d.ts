@@ -45,15 +45,17 @@ interface ResolveResult {
 *
 * -   Implements resolution per RFC 6901.
 * -   An empty string pointer refers to the root of the document.
+* -   If a pointer references a nonexistent location in the document, the function returns `undefined`.
 * -   The `-` token on the last segment of a pointer targeting an array resolves to the array's length (i.e., past-the-end index).
 * -   Tokens `__proto__`, `constructor`, and `prototype` are rejected to prevent prototype pollution.
 *
 * @param document - JSON document
 * @param pointer - JSON Pointer string
-* @throws pointer must resolve to an existing location in the document
+* @throws first argument must be an object or an array
+* @throws second argument must be a string
+* @throws pointer must be an empty string or begin with `/`
 * @throws tokens must not be prototype pollution vectors
-* @throws array index must be within bounds
-* @returns result object
+* @returns result
 *
 * @example
 * var out = resolve( { 'foo': [ 'bar', 'baz' ] }, '/foo/0' );
@@ -66,8 +68,12 @@ interface ResolveResult {
 * @example
 * var out = resolve( { 'foo': 'bar' }, '' );
 * // returns { 'target': null, 'key': null, 'value': { 'foo': 'bar' } }
+*
+* @example
+* var out = resolve( { 'foo': 'bar' }, '/missing' );
+* // returns undefined
 */
-declare function resolve( document: Record<string, any> | Array<any>, pointer: string ): ResolveResult;
+declare function resolve( document: Record<string, any> | Array<any>, pointer: string ): ResolveResult | void;
 
 
 // EXPORTS //
