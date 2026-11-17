@@ -28,11 +28,11 @@
 static const double INV_SQRT_TWO = 0.7071067811865475; // 1/sqrt(2)
 
 /**
-* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a lognormal distribution with mean `mu` and standard deviation `sigma` at a value `x`.
+* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a lognormal distribution with location parameter `mu` and scale parameter `sigma` at a value `x`.
 *
 * @param x        input value
-* @param mu       mean
-* @param sigma    standard deviation
+* @param mu       location parameter
+* @param sigma    scale parameter
 * @return         evaluated logCDF
 *
 * @example

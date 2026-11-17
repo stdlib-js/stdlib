@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a lognormal distribution with mean `mu` and standard deviation `sigma` at a value `x`.
+* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a lognormal distribution with location parameter `mu` and scale parameter `sigma` at a value `x`.
 */
 double stdlib_base_dists_lognormal_logcdf( const double x, const double mu, const double sigma );
 

@@ -249,7 +249,7 @@ The namespace exports the following:
 -   <span class="signature">[`symmetric`][@stdlib/array/base/symmetric]</span><span class="delimiter">: </span><span class="description">symmetric array utilities.</span>
 -   <span class="signature">[`takeIndexed( x, indices )`][@stdlib/array/base/take-indexed]</span><span class="delimiter">: </span><span class="description">take elements from an indexed array.</span>
 -   <span class="signature">[`takeIndexed2( x, y, indices )`][@stdlib/array/base/take-indexed2]</span><span class="delimiter">: </span><span class="description">take elements from two indexed arrays in a single pass.</span>
--   <span class="signature">[`takeMap`][@stdlib/array/base/take-map]</span><span class="delimiter">: </span><span class="description">take elements from an array and return a new array after applying a mapping function.</span>
+-   <span class="signature">[`takeMap( x, indices, mode, clbk )`][@stdlib/array/base/take-map]</span><span class="delimiter">: </span><span class="description">take elements from an array and return a new array after applying a mapping function.</span>
 -   <span class="signature">[`take( x, indices, mode )`][@stdlib/array/base/take]</span><span class="delimiter">: </span><span class="description">take elements from an array.</span>
 -   <span class="signature">[`take2d( x, indices, dimension, mode )`][@stdlib/array/base/take2d]</span><span class="delimiter">: </span><span class="description">take elements from a two-dimensional nested array.</span>
 -   <span class="signature">[`take3d( x, indices, dimension, mode )`][@stdlib/array/base/take3d]</span><span class="delimiter">: </span><span class="description">take elements from a three-dimensional nested array.</span>

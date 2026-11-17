@@ -1,5 +1,5 @@
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="35.346ex" height="3.343ex" style="vertical-align: -1.005ex;" viewBox="0 -1006.6 15218.4 1439.2" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-1-Title">
-<title id="MathJax-SVG-1-Title">double-struck upper E left-bracket upper X right-bracket equals b normal upper Gamma left-parenthesis 1 plus StartFraction 1 Over a EndFraction right-parenthesis normal upper Gamma left-parenthesis b right-parenthesis normal upper Gamma left-parenthesis 1 plus StartFraction 1 Over a EndFraction plus b right-parenthesis</title>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="23.374ex" height="7.509ex" style="vertical-align: -3.171ex;" viewBox="0 -1867.7 10063.6 3233.2" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-1-Title">
+<title id="MathJax-SVG-1-Title">double-struck upper E left-bracket upper X right-bracket equals StartStartFraction b normal upper Gamma left-parenthesis 1 plus StartFraction 1 Over a EndFraction right-parenthesis normal upper Gamma left-parenthesis b right-parenthesis OverOver normal upper Gamma left-parenthesis 1 plus StartFraction 1 Over a EndFraction plus b right-parenthesis EndEndFraction</title>
 <defs aria-hidden="true">
 <path stroke-width="1" id="E1-MJAMS-45" d="M12 666Q12 675 24 683H582Q590 680 593 672V588Q593 514 591 502T575 490Q567 490 563 495T555 517Q552 556 517 590Q486 623 445 634T340 648H282Q266 636 264 620T260 492V370H277Q329 375 358 391T404 439Q420 480 420 506Q420 529 436 529Q445 529 451 521Q455 517 455 361Q455 333 455 298T456 253Q456 217 453 207T437 197Q420 196 420 217Q420 240 406 270Q377 328 284 335H260V201Q261 174 261 134Q262 73 264 61T278 38Q281 36 282 35H331Q400 35 449 50Q571 93 602 179Q605 203 622 203Q629 203 634 197T640 183Q638 181 624 95T604 3L600 -1H24Q12 5 12 16Q12 35 51 35Q92 38 97 52Q102 60 102 341T97 632Q91 645 51 648Q12 648 12 666ZM137 341Q137 131 136 89T130 37Q129 36 129 35H235Q233 41 231 48L226 61V623L231 635L235 648H129Q132 641 133 638T135 603T137 517T137 341ZM557 603V648H504Q504 646 515 639Q527 634 542 619L557 603ZM420 317V397L406 383Q394 370 380 363L366 355Q373 350 382 346Q400 333 409 328L420 317ZM582 61L586 88Q585 88 582 83Q557 61 526 46L511 37L542 35H577Q577 36 578 39T580 49T582 61Z"></path>
 <path stroke-width="1" id="E1-MJMAIN-5B" d="M118 -250V750H255V710H158V-210H255V-250H118Z"></path>
@@ -22,7 +22,10 @@
  <use xlink:href="#E1-MJMAIN-5D" x="1131" y="0"></use>
 </g>
  <use xlink:href="#E1-MJMAIN-3D" x="2521" y="0"></use>
-<g transform="translate(3577,0)">
+<g transform="translate(3299,0)">
+<g transform="translate(397,0)">
+<rect stroke="none" width="6245" height="60" x="0" y="220"></rect>
+<g transform="translate(60,872)">
  <use xlink:href="#E1-MJMATHI-62" x="0" y="0"></use>
  <use xlink:href="#E1-MJMAIN-393" x="429" y="0"></use>
  <use xlink:href="#E1-MJMAIN-28" x="1055" y="0"></use>
@@ -41,7 +44,7 @@
  <use xlink:href="#E1-MJMATHI-62" x="5306" y="0"></use>
  <use xlink:href="#E1-MJMAIN-29" x="5736" y="0"></use>
 </g>
-<g transform="translate(9703,0)">
+<g transform="translate(365,-937)">
  <use xlink:href="#E1-MJMAIN-393" x="0" y="0"></use>
  <use xlink:href="#E1-MJMAIN-28" x="625" y="0"></use>
  <use xlink:href="#E1-MJMAIN-31" x="1015" y="0"></use>
@@ -56,6 +59,8 @@
  <use xlink:href="#E1-MJMAIN-2B" x="3695" y="0"></use>
  <use xlink:href="#E1-MJMATHI-62" x="4695" y="0"></use>
  <use xlink:href="#E1-MJMAIN-29" x="5125" y="0"></use>
+</g>
+</g>
 </g>
 </g>
 </svg>

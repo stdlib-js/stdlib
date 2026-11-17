@@ -38,8 +38,8 @@
 * @return     underlying byte array pointer
 */
 uint8_t * stdlib_ndarray_iget_ptr( const struct ndarray *arr, const int64_t idx ) {
-	int64_t *strides;
-	int64_t *shape;
+	const int64_t *strides;
+	const int64_t *shape;
 	int64_t ndims;
 	uint8_t *ind;
 	int64_t s;

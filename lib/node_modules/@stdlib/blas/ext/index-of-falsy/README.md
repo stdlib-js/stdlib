@@ -128,7 +128,7 @@ var idx = indexOfFalsy( x, {
 });
 // returns <ndarray>
 
-var dt = dtype( idx );
+var dt = String( dtype( idx ) );
 // returns 'generic'
 ```
 

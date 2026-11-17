@@ -86,13 +86,13 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
 
-// Initial array...
+// Initial array:
 var x0 = new Float32Array( [ 0.0, 0.0, 0.0, 3.0, 5.0, 0.0 ] );
 
-// Create an offset view...
+// Create an offset view:
 var x1 = new Float32Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
-// Find index...
+// Find index:
 var idx = slastIndexOfTruthy( 3, x1, 2 );
 // returns 1
 ```
@@ -135,6 +135,7 @@ var idx = slastIndexOfTruthy.ndarray( 3, x, 1, x.length-3 );
 
 ## Notes
 
+-   If `N <= 0`, both functions return `-1`.
 -   Both functions explicitly treat `NaN` values as falsy.
 
 </section>
@@ -271,7 +272,7 @@ int main( void ) {
     // Specify a stride:
     const int strideX = 1;
 
-    // Find the index of the last truthy element:
+    // Perform a search:
     int idx = stdlib_strided_slast_index_of_truthy( N, x, strideX );
 
     // Print the result:

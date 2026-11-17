@@ -29,6 +29,7 @@ import nansLike = require( './index' );
 
 	nansLike( zeros( 'float64', sh, ord ) ); // $ExpectType float64ndarray
 	nansLike( zeros( 'float32', sh, ord ) ); // $ExpectType float32ndarray
+	nansLike( zeros( 'float16', sh, ord ) ); // $ExpectType float16ndarray
 	nansLike( zeros( 'complex128', sh, ord ) ); // $ExpectType complex128ndarray
 	nansLike( zeros( 'complex64', sh, ord ) ); // $ExpectType complex64ndarray
 	nansLike( zeros( 'generic', sh, ord ) ); // $ExpectType genericndarray<number>
@@ -36,6 +37,7 @@ import nansLike = require( './index' );
 
 	nansLike( zeros( 'float64', sh, ord ), {} ); // $ExpectType float64ndarray
 	nansLike( zeros( 'float32', sh, ord ), {} ); // $ExpectType float32ndarray
+	nansLike( zeros( 'float16', sh, ord ), {} ); // $ExpectType float16ndarray
 	nansLike( zeros( 'complex128', sh, ord ), {} ); // $ExpectType complex128ndarray
 	nansLike( zeros( 'complex64', sh, ord ), {} ); // $ExpectType complex64ndarray
 	nansLike( zeros( 'generic', sh, ord ), {} ); // $ExpectType genericndarray<number>
@@ -43,6 +45,7 @@ import nansLike = require( './index' );
 
 	nansLike( zeros( 'float64', sh, ord ), { 'shape': [ 2, 2, 2 ] } ); // $ExpectType float64ndarray
 	nansLike( zeros( 'float32', sh, ord ), { 'shape': [ 2, 2, 2 ] } ); // $ExpectType float32ndarray
+	nansLike( zeros( 'float16', sh, ord ), { 'shape': [ 2, 2, 2 ] } ); // $ExpectType float16ndarray
 	nansLike( zeros( 'complex128', sh, ord ), { 'shape': [ 2, 2, 2 ] } ); // $ExpectType complex128ndarray
 	nansLike( zeros( 'complex64', sh, ord ), { 'shape': [ 2, 2, 2 ] } ); // $ExpectType complex64ndarray
 	nansLike( zeros( 'generic', sh, ord ), { 'shape': [ 2, 2, 2 ] } ); // $ExpectType genericndarray<number>
@@ -50,6 +53,7 @@ import nansLike = require( './index' );
 
 	nansLike( zeros( 'float64', sh, ord ), { 'order': 'column-major' } ); // $ExpectType float64ndarray
 	nansLike( zeros( 'float32', sh, ord ), { 'order': 'column-major' } ); // $ExpectType float32ndarray
+	nansLike( zeros( 'float16', sh, ord ), { 'order': 'column-major' } ); // $ExpectType float16ndarray
 	nansLike( zeros( 'complex128', sh, ord ), { 'order': 'column-major' } ); // $ExpectType complex128ndarray
 	nansLike( zeros( 'complex64', sh, ord ), { 'order': 'column-major' } ); // $ExpectType complex64ndarray
 	nansLike( zeros( 'generic', sh, ord ), { 'order': 'column-major' } ); // $ExpectType genericndarray<number>
@@ -57,6 +61,7 @@ import nansLike = require( './index' );
 
 	nansLike( zeros( 'generic', sh, ord ), { 'dtype': 'float64' } ); // $ExpectType float64ndarray
 	nansLike( zeros( 'generic', sh, ord ), { 'dtype': 'float32' } ); // $ExpectType float32ndarray
+	nansLike( zeros( 'generic', sh, ord ), { 'dtype': 'float16' } ); // $ExpectType float16ndarray
 	nansLike( zeros( 'generic', sh, ord ), { 'dtype': 'complex128' } ); // $ExpectType complex128ndarray
 	nansLike( zeros( 'generic', sh, ord ), { 'dtype': 'complex64' } ); // $ExpectType complex64ndarray
 	nansLike( zeros( 'generic', sh, ord ), { 'dtype': 'generic' } ); // $ExpectType genericndarray<number>
