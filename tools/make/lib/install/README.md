@@ -438,12 +438,12 @@ This optional installation downloads the source distribution, builds the native 
 $ make install-deps-highway
 ```
 
-#### deps-build-highway
+#### deps-install-highway
 
 Builds Highway's `hwy` target as a static library and tests runtime linkage. Highway's test suite, examples, and contrib libraries are not built.
 
 ```bash
-$ make deps-build-highway
+$ make deps-install-highway
 ```
 
 The build directory defaults to `DEPS_HIGHWAY_BUILD_OUT/build` and can be overridden with `DEPS_HIGHWAY_RUNTIME_OUT`. CMake maintains the incremental build there and writes `highway.json`, which records the headers, public compile definitions, static library, and additional link dependencies needed by add-ons.
@@ -462,19 +462,11 @@ Use matching compilers and build configurations for the runtime and add-ons. `DE
 Compiled tests default to `deps/test/highway/build`. When keeping multiple runtime builds, set `DEPS_HIGHWAY_TEST_OUT` to a separate absolute directory for each build to avoid overwriting test executables. Reuse the same runtime and test output directory pair on subsequent builds.
 
 ```bash
-$ make deps-build-highway DEPS_HIGHWAY_BUILD_TYPE=Debug DEPS_HIGHWAY_RUNTIME_OUT=/path/to/highway-debug DEPS_HIGHWAY_TEST_OUT=/path/to/stdlib/deps/test/highway/build/debug
+$ make deps-install-highway DEPS_HIGHWAY_BUILD_TYPE=Debug DEPS_HIGHWAY_RUNTIME_OUT=/path/to/highway-debug DEPS_HIGHWAY_TEST_OUT=/path/to/stdlib/deps/test/highway/build/debug
 $ make install-node-addons SIMD_BACKEND=highway HIGHWAY_DIR=/path/to/highway-debug NODE_GYP_FLAGS=--debug
 ```
 
 For an alternate toolchain, pass the same `C_COMPILER` and `CXX_COMPILER` to both commands. This path does not configure standalone npm native builds or cross-compilation.
-
-#### deps-test-highway-build
-
-Builds and tests the runtime, then runs JS/Tape checks for the native manifest and generated link metadata through the project's JavaScript test runner.
-
-```bash
-$ make deps-test-highway-build
-```
 
 #### clean-deps-highway
 

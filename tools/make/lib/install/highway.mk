@@ -56,9 +56,6 @@ DEPS_HIGHWAY_CFLAGS ?=
 DEPS_HIGHWAY_CXXFLAGS ?=
 DEPS_HIGHWAY_LDFLAGS ?=
 
-# FIXME: Define the command for running CMake tests:
-CTEST ?= ctest
-
 
 # RULES #
 

@@ -227,6 +227,9 @@ GIT_BRANCH ?= $(GIT) rev-parse --abbrev-ref HEAD
 # Define the command for CMake:
 CMAKE ?= cmake
 
+# Define the command for running CMake tests:
+CTEST ?= ctest
+
 # Define the command for clang-format:
 CLANG_FORMAT ?= $(DEPS_LLVM_CLANG_FORMAT)
 
