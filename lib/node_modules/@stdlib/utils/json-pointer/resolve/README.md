@@ -49,6 +49,9 @@ out = resolve( obj, '/foo' );
 
 out = resolve( obj, '' );
 // returns { 'target': null, 'key': null, 'value': { 'foo': 'bar' } }
+
+out = resolve( obj, '/missing' );
+// returns undefined
 ```
 
 </section>
@@ -60,6 +63,7 @@ out = resolve( obj, '' );
 ## Notes
 
 -   Per [RFC 6901][rfc-6901], an empty string refers to the root of the document.
+-   If a pointer references a nonexistent location in the document, the function returns `undefined`.
 -   The `-` token on the last segment of a pointer targeting an array resolves to the array's length (i.e., past-the-end index).
 -   Tokens `__proto__`, `constructor`, and `prototype` are rejected to prevent prototype pollution.
 -   The returned `target` is the parent container (object or array) holding the referenced value. For root pointers, `target` and `key` are both `null`.
@@ -101,6 +105,9 @@ out = resolve( doc, '/m~0n' );
 
 out = resolve( doc, '' );
 // returns { 'target': null, 'key': null, 'value': { 'foo': [ 'bar', 'baz' ], '': 0, 'a/b': 1, 'm~n': 8 } }
+
+out = resolve( doc, '/missing' );
+// returns undefined
 ```
 
 </section>

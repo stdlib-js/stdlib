@@ -19,8 +19,7 @@
 /* eslint-disable space-in-parens */
 
 import zeros = require( '@stdlib/ndarray/zeros' );
-import scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-import Complex128 = require( '@stdlib/complex/float64/ctor' );
+import Complex128Tensor0D = require( '@stdlib/ndarray/tensor0d/complex128' );
 import zwxsa = require( './index' );
 
 
@@ -34,9 +33,7 @@ import zwxsa = require( './index' );
 	const w = zeros( [ 10 ], {
 		'dtype': 'complex128'
 	});
-	const alpha = scalar2ndarray( new Complex128( 5.0, 0.0 ), {
-		'dtype': 'complex128'
-	});
+	const alpha = new Complex128Tensor0D( 5.0, 0.0 );
 
 	zwxsa( [ x, w, alpha ] ); // $ExpectType complex128ndarray
 }
@@ -62,9 +59,7 @@ import zwxsa = require( './index' );
 	const w = zeros( [ 10 ], {
 		'dtype': 'complex128'
 	});
-	const alpha = scalar2ndarray( new Complex128( 5.0, 0.0 ), {
-		'dtype': 'complex128'
-	});
+	const alpha = new Complex128Tensor0D( 5.0, 0.0 );
 
 	zwxsa(); // $ExpectError
 	zwxsa( [ x, w, alpha ], {} ); // $ExpectError

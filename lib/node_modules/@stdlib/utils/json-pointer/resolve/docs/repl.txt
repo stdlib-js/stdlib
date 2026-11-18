@@ -5,6 +5,9 @@
 
     Per RFC 6901, an empty string refers to the root of the document.
 
+    If a pointer references a nonexistent location in the document, the
+    function returns `undefined`.
+
     The `-` token on the last segment of a pointer targeting an array resolves
     to the array's length (i.e., past-the-end index).
 
@@ -21,8 +24,9 @@
 
     Returns
     -------
-    out: Object
-        Result object.
+    out: Object|void
+        Result object or undefined if pointer does not resolve to an existing
+        location.
 
     out.target: Object|Array|null
         Parent container. Null for root pointer.
@@ -41,6 +45,8 @@
     { 'target': { 'foo': 'bar' }, 'key': 'foo', 'value': 'bar' }
     > out = {{alias}}( { 'foo': 'bar' }, '' )
     { 'target': null, 'key': null, 'value': { 'foo': 'bar' } }
+    > out = {{alias}}( { 'foo': 'bar' }, '/missing' )
+    undefined
 
     See Also
     --------

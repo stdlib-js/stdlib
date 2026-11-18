@@ -1,0 +1,141 @@
+
+{{alias}}( N, a, b, c, d, x, strideX, y, strideY )
+    Rescales each element in a strided array from the range [a, b] to the range
+    [c, d] and assigns the results to a strided array `y`.
+
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N <= 0`, the function returns `y` unchanged.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    a: number
+        Lower bound of the input range.
+
+    b: number
+        Upper bound of the input range.
+
+    c: number
+        Lower bound of the output range.
+
+    d: number
+        Upper bound of the output range.
+
+    x: Array<number>|TypedArray
+        Input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    y: Array<number>|TypedArray
+        Output array.
+
+    strideY: integer
+        Stride length for `y`.
+
+    Returns
+    -------
+    y: Array<number>|TypedArray
+        Output array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
+    > var y = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+    > {{alias}}( x.length, 1.0, 9.0, 2.0, 6.0, x, 1, y, 1 )
+    [ 0.5, 2.0, 3.0, -1.0, 3.5, 1.5, 1.0, 0.0 ]
+
+    // Using `N` and stride parameters:
+    > x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
+    > y = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+    > {{alias}}( 4, 1.0, 9.0, 2.0, 6.0, x, 2, y, 2 )
+    [ 0.5, 0.0, 3.0, 0.0, 3.5, 0.0, 1.0, 0.0 ]
+
+    // Using view offsets:
+    > var bufX = [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ];
+    > var bufY = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+    > var x0 = new {{alias:@stdlib/array/float64}}( bufX );
+    > var y0 = new {{alias:@stdlib/array/float64}}( bufY );
+    > var offsetX = x0.BYTES_PER_ELEMENT * 1;
+    > var offsetY = y0.BYTES_PER_ELEMENT * 1;
+    > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, offsetX );
+    > var y1 = new {{alias:@stdlib/array/float64}}( y0.buffer, offsetY );
+    > {{alias}}( 3, 1.0, 9.0, 2.0, 6.0, x1, 2, y1, 2 )
+    <Float64Array>[ 0.5, 0.0, -0.5, 0.0, -1.5 ]
+    > y0
+    <Float64Array>[ 0.0, 0.5, 0.0, -0.5, 0.0, -1.5 ]
+
+
+{{alias}}.ndarray( N, a, b, c, d, x, strideX, offsetX, y, strideY, offsetY )
+    Rescales each element in a strided array from the range [a, b] to the range
+    [c, d] and assigns the results to a strided array `y` using alternative
+    indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    a: number
+        Lower bound of the input range.
+
+    b: number
+        Upper bound of the input range.
+
+    c: number
+        Lower bound of the output range.
+
+    d: number
+        Upper bound of the output range.
+
+    x: Array<number>|TypedArray
+        Input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    offsetX: integer
+        Starting index for `x`.
+
+    y: Array<number>|TypedArray
+        Output array.
+
+    strideY: integer
+        Stride length for `y`.
+
+    offsetY: integer
+        Starting index for `y`.
+
+    Returns
+    -------
+    y: Array<number>|TypedArray
+        Output array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
+    > var y = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+    > {{alias}}.ndarray( x.length, 1.0, 9.0, 2.0, 6.0, x, 1, 0, y, 1, 0 )
+    [ 0.5, 2.0, 3.0, -1.0, 3.5, 1.5, 1.0, 0.0 ]
+
+    // Using index offsets:
+    > x = [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ];
+    > y = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+    > {{alias}}.ndarray( 3, 1.0, 9.0, 2.0, 6.0, x, 1, 3, y, 1, 3 )
+    [ 0.0, 0.0, 0.0, -0.5, 4.0, -1.5 ]
+
+    See Also
+    --------
