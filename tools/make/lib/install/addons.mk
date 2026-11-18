@@ -35,14 +35,12 @@ ifdef BLAS_DIR
 	NODE_GYP_DEFINES += blas_dir=$(BLAS_DIR)
 endif
 endif
-endif
-node_gyp_defines := $(NODE_GYP_DEFINES)
 ifneq (, $(SIMD))
-	node_gyp_defines += simd=$(SIMD)
+	NODE_GYP_DEFINES += simd=$(SIMD)
+ifdef SIMD_DIR
+	NODE_GYP_DEFINES += simd_dir=$(SIMD_DIR)
 endif
-ifeq ($(SIMD), highway)
-	node_gyp_defines += highway_dir=$(HIGHWAY_DIR)
-	export CC CXX
+endif
 endif
 
 # Define an add-on package pattern filter:
@@ -87,7 +85,7 @@ ifeq ($(FAIL_FAST), true)
 		cd $$pkg && \
 			MAKEFLAGS= \
 			NODE_PATH="$(NODE_PATH)" \
-			GYP_DEFINES="$(node_gyp_defines)" \
+			GYP_DEFINES="$(NODE_GYP_DEFINES)" \
 			$(NODE_GYP) $(NODE_GYP_FLAGS) rebuild \
 		|| { echo "Error: failed to build add-on: $$pkg"; exit 1; } \
 	done
@@ -101,7 +99,7 @@ else
 		cd $$pkg && \
 			MAKEFLAGS= \
 			NODE_PATH="$(NODE_PATH)" \
-			GYP_DEFINES="$(node_gyp_defines)" \
+			GYP_DEFINES="$(NODE_GYP_DEFINES)" \
 			$(NODE_GYP) $(NODE_GYP_FLAGS) rebuild \
 		|| { echo "Error: failed to build add-on: $$pkg"; exit 0; } \
 	done

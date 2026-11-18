@@ -35,6 +35,9 @@ set(HWY_ENABLE_EXAMPLES OFF CACHE BOOL "" FORCE)
 set(HWY_ENABLE_TESTS OFF CACHE BOOL "" FORCE)
 set(HWY_ENABLE_INSTALL OFF CACHE BOOL "" FORCE)
 
+# Write the static library to the same directory as the headers so that the directory can be used for both includes and linking:
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "$<1:${HIGHWAY_SOURCE}>")
+
 add_subdirectory("${HIGHWAY_SOURCE}" highway)
 add_executable(stdlib_highway_test "${HIGHWAY_TEST_SOURCE}")
 target_link_libraries(stdlib_highway_test PRIVATE hwy)
@@ -42,29 +45,3 @@ set_target_properties(stdlib_highway_test PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY "${HIGHWAY_TEST_OUT}")
 enable_testing()
 add_test(NAME highway_runtime COMMAND stdlib_highway_test)
-
-get_target_property(defines hwy INTERFACE_COMPILE_DEFINITIONS)
-string(REPLACE ";" "\", \"" defines "${defines}")
-set(libraries "$<TARGET_FILE:hwy>")
-get_target_property(dependencies hwy LINK_LIBRARIES)
-if(dependencies)
-    foreach(dependency IN LISTS dependencies)
-        if(TARGET "${dependency}")
-            list(APPEND libraries "$<TARGET_FILE:${dependency}>")
-        elseif(IS_ABSOLUTE "${dependency}" OR dependency MATCHES "^-")
-            list(APPEND libraries "${dependency}")
-        elseif(WIN32)
-            list(APPEND libraries "${dependency}.lib")
-        else()
-            list(APPEND libraries "-l${dependency}")
-        endif()
-    endforeach()
-endif()
-string(REPLACE ";" "\", \"" libraries "${libraries}")
-file(GENERATE OUTPUT "${CMAKE_BINARY_DIR}/highway.json" CONTENT
-"{
-  \"include\": [\"${HIGHWAY_SOURCE}\"],
-  \"defines\": [\"${defines}\"],
-  \"libraries\": [\"${libraries}\"]
-}
-" CONDITION "$<CONFIG:${CMAKE_BUILD_TYPE}>")
