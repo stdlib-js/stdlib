@@ -23,8 +23,7 @@
     Examples
     --------
     > var x = new {{alias:@stdlib/ndarray/vector/complex128}}( [ 0.0, 0.0, 0.0, 0.0 ] );
-    > var s = new {{alias:@stdlib/complex/float64/ctor}}( 3.0, 0.0 );
-    > var start = {{alias:@stdlib/ndarray/from-scalar}}( s, { 'dtype': 'complex128' } );
+    > var start = new {{alias:@stdlib/ndarray/tensor0d/complex128}}( 3.0, 0.0 );
     > {{alias}}( [ x, start ] )
     <ndarray>[ <Complex128>[ 3.0, 0.0 ], <Complex128>[ 4.0, 0.0 ] ]
 
