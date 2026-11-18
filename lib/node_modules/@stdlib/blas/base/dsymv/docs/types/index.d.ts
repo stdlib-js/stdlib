@@ -30,10 +30,10 @@ interface Routine {
 	* Performs the matrix-vector operation `y = alpha*A*x + beta*y` where `alpha` and `beta` are scalars, `x` and `y` are `N` element vectors, and `A` is an `N` by `N` symmetric matrix.
 	*
 	* @param order - storage layout
-	* @param uplo - specifies whether the upper or lower triangular part of the symmetric matrix `A` is to be referenced
+	* @param uplo - specifies whether the upper or lower triangular part of the symmetric matrix `A` should be referenced
 	* @param N - number of elements along each dimension in the matrix `A`
 	* @param alpha - scalar constant
-	* @param A - matrix
+	* @param A - input matrix
 	* @param LDA - stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`)
 	* @param x - first input array
 	* @param strideX - `x` stride length
@@ -61,7 +61,7 @@ interface Routine {
 	* @param uplo - specifies whether the upper or lower triangular part of the symmetric matrix `A` should be referenced
 	* @param N - number of elements along each dimension in the matrix `A`
 	* @param alpha - scalar constant
-	* @param A - matrix
+	* @param A - input matrix
 	* @param LDA - stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`)
 	* @param x - first input array
 	* @param strideX - `x` stride length
@@ -89,10 +89,10 @@ interface Routine {
 * Performs the matrix-vector operation `y = alpha*A*x + beta*y` where `alpha` and `beta` are scalars, `x` and `y` are `N` element vectors, and `A` is an `N` by `N` symmetric matrix.
 *
 * @param order - storage layout
-* @param uplo - specifies whether the upper or lower triangular part of the symmetric matrix `A` is to be referenced
+* @param uplo - specifies whether the upper or lower triangular part of the symmetric matrix `A` should be referenced
 * @param N - number of elements along each dimension in the matrix `A`
 * @param alpha - scalar constant
-* @param A - matrix
+* @param A - input matrix
 * @param LDA - stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`)
 * @param x - first input array
 * @param strideX - `x` stride length

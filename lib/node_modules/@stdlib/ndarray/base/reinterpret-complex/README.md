@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# reinterpret
+# reinterpretComplex
 
 > Reinterpret a complex-valued floating-point [ndarray][@stdlib/ndarray/base/ctor] as a real-valued floating-point [ndarray][@stdlib/ndarray/base/ctor] having the same precision.
 

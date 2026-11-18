@@ -25,6 +25,7 @@ import fullBy = require( './index' );
 {
 	fullBy( 'float64', [ 2, 2 ], 'row-major', () => 10.0 ); // $ExpectType float64ndarray
 	fullBy( 'float32', [ 2, 2 ], 'row-major', () => 10.0 ); // $ExpectType float32ndarray
+	fullBy( 'float16', [ 2, 2 ], 'row-major', () => 10.0 ); // $ExpectType float16ndarray
 	fullBy( 'complex128', [ 2, 2 ], 'row-major', () => 10.0 ); // $ExpectType complex128ndarray
 	fullBy( 'complex64', [ 2, 2 ], 'row-major', () => 10.0 ); // $ExpectType complex64ndarray
 	fullBy( 'int32', [ 2, 2 ], 'row-major', () => 10 ); // $ExpectType int32ndarray
@@ -39,6 +40,7 @@ import fullBy = require( './index' );
 
 	fullBy( 'float64', [ 2, 2 ], 'column-major', () => 10.0 ); // $ExpectType float64ndarray
 	fullBy( 'float32', [ 2, 2 ], 'column-major', () => 10.0 ); // $ExpectType float32ndarray
+	fullBy( 'float16', [ 2, 2 ], 'column-major', () => 10.0 ); // $ExpectType float16ndarray
 	fullBy( 'complex128', [ 2, 2 ], 'column-major', () => 10.0 ); // $ExpectType complex128ndarray
 	fullBy( 'complex64', [ 2, 2 ], 'column-major', () => 10.0 ); // $ExpectType complex64ndarray
 	fullBy( 'int32', [ 2, 2 ], 'column-major', () => 10 ); // $ExpectType int32ndarray
@@ -53,6 +55,7 @@ import fullBy = require( './index' );
 
 	fullBy( 'float64', [ 2, 2 ], 'row-major', () => 10.0, {} ); // $ExpectType float64ndarray
 	fullBy( 'float32', [ 2, 2 ], 'row-major', () => 10.0, {} ); // $ExpectType float32ndarray
+	fullBy( 'float16', [ 2, 2 ], 'row-major', () => 10.0, {} ); // $ExpectType float16ndarray
 	fullBy( 'complex128', [ 2, 2 ], 'row-major', () => 10.0, {} ); // $ExpectType complex128ndarray
 	fullBy( 'complex64', [ 2, 2 ], 'row-major', () => 10.0, {} ); // $ExpectType complex64ndarray
 	fullBy( 'int32', [ 2, 2 ], 'row-major', () => 10, {} ); // $ExpectType int32ndarray

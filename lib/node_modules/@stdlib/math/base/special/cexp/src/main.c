@@ -24,6 +24,7 @@
 #include "stdlib/constants/float64/pinf.h"
 #include "stdlib/math/base/special/copysign.h"
 #include "stdlib/constants/float64/ninf.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/float64/reim.h"
 
@@ -55,18 +56,18 @@ stdlib_complex128_t stdlib_base_cexp( const stdlib_complex128_t z ) {
 	stdlib_complex128_reim( z, &re, &im );
 
 	if ( stdlib_base_is_nan( re ) ) {
-		re = 0.0 / 0.0; // NaN
+		re = STDLIB_CONSTANT_FLOAT64_NAN;
 		im = ( im == 0.0 ) ? im : re;
 	} else if ( stdlib_base_is_infinite( im ) ) {
 		if ( re == STDLIB_CONSTANT_FLOAT64_PINF ) {
 			re = -re;
-			im = 0.0 / 0.0; // NaN
+			im = STDLIB_CONSTANT_FLOAT64_NAN;
 		} else if ( re == STDLIB_CONSTANT_FLOAT64_NINF ) {
 			re = -0.0;
 			im = stdlib_base_copysign( 0.0, im );
 		} else {
-			re = 0.0 / 0.0; // NaN
-			im = 0.0 / 0.0; // NaN
+			re = STDLIB_CONSTANT_FLOAT64_NAN;
+			im = STDLIB_CONSTANT_FLOAT64_NAN;
 		}
 	} else {
 		e = stdlib_base_exp( re );

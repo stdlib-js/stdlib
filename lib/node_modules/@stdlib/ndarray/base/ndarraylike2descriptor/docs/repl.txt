@@ -1,0 +1,45 @@
+
+{{alias}}( x )
+    Converts an ndarray-like object to an ndarray descriptor.
+
+    Parameters
+    ----------
+    x: ndarrayLike
+        Input ndarray.
+
+    Returns
+    -------
+    out: object
+        ndarray descriptor.
+
+    out.dtype: string|DataType
+        Data type.
+
+    out.data: ArrayLikeObject|TypedArray|Buffer
+        Data buffer.
+
+    out.shape: ArrayLikeObject<integer>
+        Array shape.
+
+    out.strides: ArrayLikeObject<integer>
+        Array strides.
+
+    out.offset: integer
+        Index offset.
+
+    out.order: string
+        Array order.
+
+    Examples
+    --------
+    // Create an ndarray:
+    > var x = {{alias:@stdlib/random/discrete-uniform}}( [ 2, 2 ], 0, 10 )
+    <ndarray>
+
+    // Convert to a descriptor object:
+    > var obj = {{alias}}( x )
+    {...}
+
+    See Also
+    --------
+

@@ -43,6 +43,8 @@ function clbk( v: any ): void {
 	forEach( zeros( 'float64', sh, ord ), clbk, {} ); // $ExpectType void
 	forEach( zeros( 'float32', sh, ord ), clbk ); // $ExpectType void
 	forEach( zeros( 'float32', sh, ord ), clbk, {} ); // $ExpectType void
+	forEach( zeros( 'float16', sh, ord ), clbk ); // $ExpectType void
+	forEach( zeros( 'float16', sh, ord ), clbk, {} ); // $ExpectType void
 	forEach( zeros( 'complex64', sh, ord ), clbk ); // $ExpectType void
 	forEach( zeros( 'complex64', sh, ord ), clbk, {} ); // $ExpectType void
 	forEach( zeros( 'complex128', sh, ord ), clbk ); // $ExpectType void

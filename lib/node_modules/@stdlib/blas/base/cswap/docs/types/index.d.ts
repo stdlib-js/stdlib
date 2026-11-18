@@ -27,7 +27,7 @@ import { Complex64Array } from '@stdlib/types/array';
 */
 interface Routine {
 	/**
-	* Interchanges two complex single-precision floating-point vectors.
+	* Interchanges two single-precision complex floating-point vectors.
 	*
 	* @param N - number of indexed elements
 	* @param x - first input array
@@ -49,7 +49,7 @@ interface Routine {
 	( N: number, x: Complex64Array, strideX: number, y: Complex64Array, strideY: number ): Complex64Array;
 
 	/**
-	* Interchanges two complex single-precision floating-point vectors using alternative indexing semantics.
+	* Interchanges two single-precision complex floating-point vectors using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
 	* @param x - first input array
@@ -74,7 +74,7 @@ interface Routine {
 }
 
 /**
-* Interchanges two complex single-precision floating-point vectors.
+* Interchanges two single-precision complex floating-point vectors.
 *
 * @param N - number of indexed elements
 * @param x - first input array

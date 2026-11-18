@@ -1,0 +1,560 @@
+
+{{alias}}()
+    A typed array constructor which returns a typed array representing an array
+    of 64-bit unsigned integers in the platform byte order.
+
+    Returns
+    -------
+    out: Uint64Array
+        A typed array.
+
+    Examples
+    --------
+    > var arr = new {{alias}}()
+    <Uint64Array>
+
+
+{{alias}}( length )
+    Returns a typed array having a specified length.
+
+    Parameters
+    ----------
+    length: integer
+        Typed array length.
+
+    Returns
+    -------
+    out: Uint64Array
+        A typed array.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( 5 )
+    <Uint64Array>[ 0n, 0n, 0n, 0n, 0n ]
+
+
+{{alias}}( typedarray )
+    Creates a typed array from another typed array.
+
+    Parameters
+    ----------
+    typedarray: TypedArray
+        Typed array from which to generate another typed array.
+
+    Returns
+    -------
+    out: Uint64Array
+        A typed array.
+
+    Examples
+    --------
+    > var arr1 = new {{alias:@stdlib/array/int32}}( [ 5, 5, 5 ] );
+    > var arr2 = new {{alias}}( arr1 )
+    <Uint64Array>[ 5n, 5n, 5n ]
+
+
+{{alias}}( obj )
+    Creates a typed array from an array-like object or iterable.
+
+    Parameters
+    ----------
+    obj: Object
+        Array-like object or iterable from which to generate a typed array.
+
+    Returns
+    -------
+    out: Uint64Array
+        A typed array.
+
+    Examples
+    --------
+    > var arr1 = [ 5, 5, 5 ];
+    > var arr2 = new {{alias}}( arr1 )
+    <Uint64Array>[ 5n, 5n, 5n ]
+
+
+{{alias}}( buffer[, byteOffset[, length]] )
+    Returns a typed array view of an ArrayBuffer.
+
+    Parameters
+    ----------
+    buffer: ArrayBuffer
+        Underlying ArrayBuffer.
+
+    byteOffset: integer (optional)
+        Integer byte offset specifying the location of the first typed array
+        element. Default: 0.
+
+    length: integer (optional)
+        View length. If not provided, the view spans from the byteOffset to
+        the end of the underlying ArrayBuffer.
+
+    Returns
+    -------
+    out: Uint64Array
+        A typed array.
+
+    Examples
+    --------
+    > var buf = new {{alias:@stdlib/array/buffer}}( 32 );
+    > var arr = new {{alias}}( buf, 0, 4 )
+    <Uint64Array>[ 0n, 0n, 0n, 0n ]
+
+
+{{alias}}.from( src[, map[, thisArg]] )
+    Creates a new typed array from an array-like object or an iterable.
+
+    A callback is provided the following arguments:
+
+    - value: source value.
+    - index: source index.
+
+    Parameters
+    ----------
+    src: ArrayLike|Iterable
+        Source of array elements.
+
+    map: Function (optional)
+        Callback to invoke for each source element.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    out: Uint64Array
+        A typed array.
+
+    Examples
+    --------
+    > function mapFcn( v ) { return v; };
+    > var arr = {{alias}}.from( [ 1, 2 ], mapFcn )
+    <Uint64Array>[ 1n, 2n ]
+
+
+{{alias}}.of( element0[, element1[, ...elementN]] )
+    Creates a new typed array from a variable number of arguments.
+
+    Parameters
+    ----------
+    element0: number
+        Array element.
+
+    element1: number (optional)
+        Array element.
+
+    elementN: ...number (optional)
+        Array elements.
+
+    Returns
+    -------
+    out: Uint64Array
+        A typed array.
+
+    Examples
+    --------
+    > var arr = {{alias}}.of( 1, 2 )
+    <Uint64Array>[ 1n, 2n ]
+
+
+{{alias}}.BYTES_PER_ELEMENT
+    Number of bytes per view element.
+
+    Examples
+    --------
+    > {{alias}}.BYTES_PER_ELEMENT
+    8
+
+
+{{alias}}.name
+    Typed array constructor name.
+
+    Examples
+    --------
+    > {{alias}}.name
+    'Uint64Array'
+
+
+{{alias}}.prototype.buffer
+    Read-only property which returns the ArrayBuffer referenced by the typed
+    array.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( 5 );
+    > arr.buffer
+    <ArrayBuffer>
+
+
+{{alias}}.prototype.byteLength
+    Read-only property which returns the length (in bytes) of the typed array.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( 5 );
+    > arr.byteLength
+    40
+
+
+{{alias}}.prototype.byteOffset
+    Read-only property which returns the offset (in bytes) of the typed array
+    from the start of its ArrayBuffer.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( 5 );
+    > arr.byteOffset
+    0
+
+
+{{alias}}.prototype.BYTES_PER_ELEMENT
+    Number of bytes per view element.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( 5 );
+    > arr.BYTES_PER_ELEMENT
+    8
+
+
+{{alias}}.prototype.length
+    Read-only property which returns the number of view elements.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( 5 );
+    > arr.length
+    5
+
+
+{{alias}}.prototype.at( i )
+    Returns an array element located at integer position (index) `i`, with
+    support for both nonnegative and negative integer positions.
+
+    If provided an index outside the array index range, the method returns
+    `undefined`.
+
+    Parameters
+    ----------
+    i: integer
+        Element index.
+
+    Returns
+    -------
+    out: Uint64|void
+        Array element or `undefined`.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( [ 1, 2 ] )
+    <Uint64Array>[ 1n, 2n ]
+    > var u = arr.at( 1 )
+    <Uint64>[ 2n ]
+
+
+{{alias}}.prototype.copyWithin( target, start[, end] )
+    Copies a sequence of elements within the array starting at `start` and
+    ending at `end` (non-inclusive) to the position starting at `target`.
+
+    Parameters
+    ----------
+    target: integer
+        Target start index position.
+
+    start: integer
+        Source start index position.
+
+    end: integer (optional)
+        Source end index position. Default: out.length.
+
+    Returns
+    -------
+    out: Uint64Array
+        Modified array.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( [ 1, 2, 3, 4 ] );
+    > arr.copyWithin( 0, 2 )
+    <Uint64Array>[ 3n, 4n, 3n, 4n ]
+
+
+{{alias}}.prototype.entries()
+    Returns an iterator for iterating over array key-value pairs.
+
+    Returns
+    -------
+    iterator: Iterator
+        Iterator for iterating over array key-value pairs.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( [ 1, 2, 3 ] )
+    <Uint64Array>[ 1n, 2n, 3n ]
+    > var it = arr.entries();
+    > var v = it.next().value
+    [ 0, <Uint64>[ 1n ] ]
+    > v = it.next().value
+    [ 1, <Uint64>[ 2n ] ]
+    > v = it.next().value
+    [ 2, <Uint64>[ 3n ] ]
+    > var bool = it.next().done
+    true
+
+
+{{alias}}.prototype.every( predicate[, thisArg] )
+    Returns a boolean indicating whether all elements in the array pass a test.
+
+    A predicate function is provided the following arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the array on which the method was called.
+
+    Parameters
+    ----------
+    predicate: Function
+        Predicate function which tests array elements. If a predicate function
+        returns a truthy value, an array element passes; otherwise, an array
+        element fails.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether all elements pass the test.
+
+    Examples
+    --------
+    > function predicate( v ) { return ( {{alias:@stdlib/assert/is-even}}.isPrimitive( {{alias:@stdlib/number/ctor}}( v ) ) ); };
+    > var arr = new {{alias}}( [ 2, 4, 6 ] );
+    > var bool = arr.every( predicate )
+    true
+
+
+{{alias}}.prototype.fill( value[, start[, end]] )
+    Fills an array from a start index to an end index (non-inclusive) with a
+    provided value.
+
+    Parameters
+    ----------
+    value: Uint64|number|bigint
+        Fill value.
+
+    start: integer (optional)
+        Start index. If less than zero, the start index is resolved relative to
+        the last array element. Default: 0.
+
+    end: integer (optional)
+        End index (non-inclusive). If less than zero, the end index is resolved
+        relative to the last array element. Default: out.length.
+
+    Returns
+    -------
+    out: Uint64Array
+        Modified array.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( 3 );
+    > arr.fill( 1 )
+    <Uint64Array>[ 1n, 1n, 1n ]
+
+
+{{alias}}.prototype.filter( predicate[, thisArg] )
+    Returns a new array containing the elements of an array which pass a test
+    implemented by a predicate function.
+
+    A predicate function is provided the following arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the array on which the method was called.
+
+    The returned array has the same data type as the host array.
+
+    Parameters
+    ----------
+    predicate: Function
+        Predicate function which filters array elements. If a predicate function
+        returns a truthy value, an array element is included in the output
+        array; otherwise, an array element is not included in the output array.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: Uint64Array
+        A new typed array.
+
+    Examples
+    --------
+    > function predicate( v ) { return ( {{alias:@stdlib/assert/is-even}}.isPrimitive( {{alias:@stdlib/number/ctor}}( v ) ) ); };
+    > var arr = new {{alias}}( [ 1, 2, 3, 4, 5, 6 ] );
+    > var out = arr.filter( predicate )
+    <Uint64Array>[ 2n, 4n, 6n ]
+    > var len = out.length
+    3
+
+
+{{alias}}.prototype.find( predicate[, thisArg] )
+    Returns the first element in an array for which a predicate function
+    returns a truthy value.
+
+    A predicate function is provided the following arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the array on which the method was called.
+
+    If a predicate function never returns a truthy value, the method returns
+    `undefined`.
+
+    Parameters
+    ----------
+    predicate: Function
+        Predicate function which tests array elements.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: Uint64|void
+        Array element or `undefined`.
+
+    Examples
+    --------
+    > function predicate( v ) { return ( {{alias:@stdlib/assert/is-even}}.isPrimitive( {{alias:@stdlib/number/ctor}}( v ) ) ); };
+    > var arr = new {{alias}}( [ 1, 3, 4, 5 ] );
+    > var u = arr.find( predicate )
+    <Uint64>[ 4n ]
+
+
+{{alias}}.prototype.findIndex( predicate[, thisArg] )
+    Returns the index of the first element in an array for which a predicate
+    function returns a truthy value.
+
+    A predicate function is provided the following arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the array on which the method was called.
+
+    If a predicate function never returns a truthy value, the method returns
+    `-1`.
+
+    Parameters
+    ----------
+    predicate: Function
+        Predicate function which tests array elements.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: integer
+        Array index or `-1`.
+
+    Examples
+    --------
+    > function predicate( v ) { return ( {{alias:@stdlib/assert/is-even}}.isPrimitive( {{alias:@stdlib/number/ctor}}( v ) ) ); };
+    > var arr = new {{alias}}( [ 1, 3, 4, 6 ] );
+    > var idx = arr.findIndex( predicate )
+    2
+
+
+{{alias}}.prototype.findLast( predicate[, thisArg] )
+    Returns the last element in an array for which a predicate function returns
+    a truthy value.
+
+    A predicate function is provided the following arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the array on which the method was called.
+
+    If a predicate function never returns a truthy value, the method returns
+    `undefined`.
+
+    Parameters
+    ----------
+    predicate: Function
+        Predicate function which tests array elements.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: Uint64|void
+        Array element or `undefined`.
+
+    Examples
+    --------
+    > function predicate( v ) { return ( {{alias:@stdlib/assert/is-even}}.isPrimitive( {{alias:@stdlib/number/ctor}}( v ) ) ); };
+    > var arr = new {{alias}}( [ 1, 2, 3, 4, 5 ] );
+    > var u = arr.findLast( predicate )
+    <Uint64>[ 4n ]
+
+
+{{alias}}.prototype.get( i )
+    Returns an array element located at integer position (index) `i`.
+
+    If provided an index outside the array index range, the method returns
+    `undefined`.
+
+    Parameters
+    ----------
+    i: integer
+        Element index.
+
+    Returns
+    -------
+    out: Uint64|void
+        Array element or `undefined`.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( [ 1, 2 ] )
+    <Uint64Array>[ 1n, 2n ]
+    > var u = arr.get( 1 )
+    <Uint64>[ 2n ]
+
+
+{{alias}}.prototype.set( v[, i] )
+    Sets one or more array elements.
+
+    If provided a single argument, the method sets array elements starting at
+    position (index) `i = 0`. To set elements starting elsewhere in the array,
+    provide an index argument `i`.
+
+    To set one or more array elements, provide an array-like object.
+
+    Parameters
+    ----------
+    v: Uint64|number|bigint|ArrayLikeObject
+        Scalar or source array containing array values to set.
+
+    i: integer (optional)
+        Array index at which to start setting elements. Default: 0.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( [ 1, 2, 3 ] );
+    > arr.set( new {{alias:@stdlib/number/uint64/ctor}}( 4 ), 1 );
+    > var u = arr.get( 1 )
+    <Uint64>[ 4n ]
+    > arr.set( [ 5, 6 ], 1 );
+    > u = arr.get( 1 )
+    <Uint64>[ 5n ]
+    > u = arr.get( 2 )
+    <Uint64>[ 6n ]
+
+    See Also
+    --------
+

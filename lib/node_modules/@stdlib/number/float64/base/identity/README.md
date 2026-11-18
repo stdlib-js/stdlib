@@ -24,7 +24,7 @@ limitations under the License.
 
 <section class="intro">
 
-The [identity-function][identity-function] is defined as
+The [identity function][identity-function] is defined as
 
 <!-- <equation class="equation" label="eq:identity_function" align="center" raw="f(x) = x" alt="Identity function"> -->
 

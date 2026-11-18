@@ -1,0 +1,53 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2026 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+#include "stdlib/stats/base/dists/wald/mgf.h"
+#include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/math/base/special/sqrt.h"
+#include "stdlib/constants/float64/nan.h"
+#include "stdlib/math/base/special/exp.h"
+
+/**
+* Evaluates the moment-generating function (MGF) for a Wald distribution with mean `mu` and shape parameter `lambda` at a value `t`.
+*
+* @param t      input value
+* @param mu     mean
+* @param lambda shape parameter
+* @return       evaluated MGF
+*
+* @example
+* double y = stdlib_base_dists_wald_mgf( 0.1, 2.0, 3.0 );
+* // returns ~1.2405
+*/
+double stdlib_base_dists_wald_mgf( const double t, const double mu, const double lambda ) {
+	double mu2Lambda;
+	double lambdaMu;
+	if (
+		stdlib_base_is_nan( t ) ||
+		stdlib_base_is_nan( mu ) ||
+		stdlib_base_is_nan( lambda ) ||
+		mu <= 0.0 ||
+		lambda <= 0.0 ||
+		t > lambda / ( 2.0 * mu * mu )
+	) {
+		return STDLIB_CONSTANT_FLOAT64_NAN;
+	}
+	lambdaMu = lambda / mu;
+	mu2Lambda = 2.0 * mu * mu / lambda;
+	return stdlib_base_exp( lambdaMu * ( 1.0 - stdlib_base_sqrt( 1.0 - ( mu2Lambda * t ) ) ) );
+}

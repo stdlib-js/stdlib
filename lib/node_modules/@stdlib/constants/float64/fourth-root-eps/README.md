@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# FOURTH_ROOT_EPS
+# FLOAT64_FOURTH_ROOT_EPS
 
 > [Fourth root][nth-root] of [double-precision floating-point epsilon][@stdlib/constants/float64/eps].
 
@@ -27,15 +27,15 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var FOURTH_ROOT_EPS = require( '@stdlib/constants/float64/fourth-root-eps' );
+var FLOAT64_FOURTH_ROOT_EPS = require( '@stdlib/constants/float64/fourth-root-eps' );
 ```
 
-#### FOURTH_ROOT_EPS
+#### FLOAT64_FOURTH_ROOT_EPS
 
 [Fourth root][nth-root] of [double-precision floating-point epsilon][@stdlib/constants/float64/eps].
 
 ```javascript
-var bool = ( FOURTH_ROOT_EPS === 0.0001220703125 );
+var bool = ( FLOAT64_FOURTH_ROOT_EPS === 0.0001220703125 );
 // returns true
 ```
 
@@ -50,9 +50,9 @@ var bool = ( FOURTH_ROOT_EPS === 0.0001220703125 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var FOURTH_ROOT_EPS = require( '@stdlib/constants/float64/fourth-root-eps' );
+var FLOAT64_FOURTH_ROOT_EPS = require( '@stdlib/constants/float64/fourth-root-eps' );
 
-var out = FOURTH_ROOT_EPS;
+var out = FLOAT64_FOURTH_ROOT_EPS;
 // returns 0.0001220703125
 ```
 

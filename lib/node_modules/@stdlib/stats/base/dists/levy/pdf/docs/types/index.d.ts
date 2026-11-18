@@ -21,7 +21,7 @@
 /**
 * Evaluates the probability density function (PDF) for a Lévy distribution.
 *
-* @param  x - input value
+* @param x - input value
 * @returns evaluated PDF
 */
 type Unary = ( x: number ) => number;

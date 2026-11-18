@@ -25,19 +25,24 @@ import { typedndarray } from '@stdlib/types/ndarray';
 /**
 * Computes the mid-range of a one-dimensional ndarray, ignoring `NaN` values.
 *
-* @param arrays - array-like object containing an input ndarray
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns mid-range
 *
 * @example
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var vector = require( '@stdlib/ndarray/vector/ctor' );
 *
-* var xbuf = [ 1.0, -2.0, NaN, 2.0 ];
-* var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+* var x = vector( [ 1.0, -2.0, NaN, 2.0 ], 'generic' );
 *
 * var v = nanmidrange( [ x ] );
 * // returns 0.0
 */
-declare function nanmidrange<T extends typedndarray<number> = typedndarray<number>>( arrays: [ T ] ): number;
+declare function nanmidrange( arrays: [ typedndarray<number> ] ): number;
 
 
 // EXPORTS //

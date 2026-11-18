@@ -36,15 +36,12 @@ Copies all or part of a matrix `A` to another matrix `B`.
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var reinterpret = require( '@stdlib/strided/base/reinterpret-complex64' );
 
 var A = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 var B = new Complex64Array( 4 );
 
 clacpy( 'row-major', 'all', 2, 2, A, 2, B, 2 );
-
-var viewB = reinterpret( B, 0 );
-// returns <Float32Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ]
+// B => <Complex64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ]
 ```
 
 The function has the following parameters:
@@ -64,7 +61,6 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var reinterpret = require( '@stdlib/strided/base/reinterpret-complex64' );
 
 // Initial arrays...
 var A0 = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ] );
@@ -75,9 +71,7 @@ var A1 = new Complex64Array( A0.buffer, A0.BYTES_PER_ELEMENT*1 ); // start at 2n
 var B1 = new Complex64Array( B0.buffer, B0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
 clacpy( 'row-major', 'all', 2, 2, A1, 2, B1, 2 );
-
-var viewB = reinterpret( B0, 0 );
-// returns <Float32Array>[ 0.0, 0.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ]
+// B0 => <Complex64Array>[ 0.0, 0.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ]
 ```
 
 #### clacpy.ndarray( uplo, M, N, A, sa1, sa2, oa, B, sb1, sb2, ob )
@@ -86,15 +80,12 @@ Copies all or part of a matrix `A` to another matrix `B` using alternative index
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var reinterpret = require( '@stdlib/strided/base/reinterpret-complex64' );
 
 var A = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 var B = new Complex64Array( 4 );
 
 clacpy.ndarray( 'all', 2, 2, A, 2, 1, 0, B, 2, 1, 0 );
-
-var viewB = reinterpret( B, 0 );
-// returns <Float32Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ]
+// B => <Complex64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ]
 ```
 
 The function has the following parameters:
@@ -117,15 +108,12 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var reinterpret = require( '@stdlib/strided/base/reinterpret-complex64' );
 
 var A = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ] );
 var B = new Complex64Array( 6 );
 
 clacpy.ndarray( 'all', 2, 2, A, 2, 1, 1, B, 2, 1, 2 );
-
-var viewB = reinterpret( B, 0 );
-// returns <Float32Array>[ 0.0, 0.0, 0.0, 0.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ]
+// B => <Complex64Array>[ 0.0, 0.0, 0.0, 0.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ]
 ```
 
 </section>

@@ -114,7 +114,7 @@ var idx = isamax.ndarray( 5, x, 1, 1 );
 
 Returns a new WebAssembly [module wrapper][@stdlib/wasm/module-wrapper] instance which uses the provided WebAssembly [memory][@stdlib/wasm/memory] instance as its underlying memory.
 
-<!-- eslint-disable node/no-sync -->
+<!-- eslint-disable n/no-sync -->
 
 ```javascript
 var Memory = require( '@stdlib/wasm/memory' );
@@ -137,7 +137,7 @@ mod.initializeSync();
 
 Finds the index of the first element having the maximum absolute value.
 
-<!-- eslint-disable node/no-sync -->
+<!-- eslint-disable n/no-sync -->
 
 ```javascript
 var Memory = require( '@stdlib/wasm/memory' );
@@ -183,7 +183,7 @@ The function has the following parameters:
 
 Finds the index of the first element having the maximum absolute value using alternative indexing semantics.
 
-<!-- eslint-disable node/no-sync -->
+<!-- eslint-disable n/no-sync -->
 
 ```javascript
 var Memory = require( '@stdlib/wasm/memory' );

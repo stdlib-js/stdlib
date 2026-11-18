@@ -27,7 +27,7 @@ static const float SQRT5 = 2.23606797749979f;
 static const float LN_PHI = 0.48121182506f;
 
 /**
-* Computes the nth non-Fibonacci single-precision floating-point number.
+* Computes the nth non-Fibonacci number as a single-precision floating-point number.
 *
 * @param n    input value
 * @return     output value

@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-#include "stdlib/blas/ext/base/scartesiansquare.h"
+#include "stdlib/blas/ext/base/scartesian_square.h"
 #include "stdlib/blas/base/shared.h"
 #include <stdio.h>
 

@@ -23,7 +23,7 @@
 import { float64ndarray } from '@stdlib/types/ndarray';
 
 /**
-* Computes the sum of a one-dimensional double-precision floating-point ndarray, ignoring NaN values.
+* Computes the sum of a one-dimensional double-precision floating-point ndarray, ignoring `NaN` values.
 *
 * ## Notes
 *

@@ -19,9 +19,11 @@
 
     Examples
     --------
-    > var out = {{alias}}( 'two-sided' )
+    > var str = 'two-sided';
+    > var out = {{alias}}( str )
     <number>
-    > out = {{alias}}( {{alias:@stdlib/stats/base/ztest/alternative-str2enum}}( 'two-sided' ) )
+    > var v = {{alias:@stdlib/stats/base/ztest/alternative-str2enum}}( str );
+    > out = {{alias}}( v )
     <number>
 
     See Also

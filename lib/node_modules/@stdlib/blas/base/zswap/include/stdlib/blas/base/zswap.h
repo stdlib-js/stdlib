@@ -32,12 +32,12 @@ extern "C" {
 #endif
 
 /**
-* Interchanges two complex double-precision floating-point vectors.
+* Interchanges two double-precision complex floating-point vectors.
 */
 void API_SUFFIX(c_zswap)( const CBLAS_INT N, void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY );
 
 /**
-* Interchanges two complex double-precision floating-point vectors using alternative indexing semantics.
+* Interchanges two double-precision complex floating-point vectors using alternative indexing semantics.
 */
 void API_SUFFIX(c_zswap_ndarray)( const CBLAS_INT N, void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, void *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY );
 

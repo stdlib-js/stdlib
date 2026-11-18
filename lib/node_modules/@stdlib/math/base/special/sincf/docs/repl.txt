@@ -1,7 +1,7 @@
 
 {{alias}}( x )
     Computes the normalized cardinal sine of a single-precision floating-point
-    number (in radians).
+    number.
 
     Parameters
     ----------

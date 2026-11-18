@@ -60,14 +60,15 @@ type Closure<
 * @returns curry function
 *
 * @example
-* function add( x, y ) {
-*     return x + y;
+* function subtract( x, y ) {
+*     return x - y;
 * }
 *
-* var f = curryRight( add );
+* var f = curryRight( subtract );
 *
-* var sum = f( 2 )( 3 );
-* // returns 5
+* // First supplied argument binds the rightmost parameter (y):
+* var v = f( 2 )( 3 );
+* // returns 1
 */
 declare function curryRight<
 	TThis extends object,
@@ -92,14 +93,15 @@ declare function curryRight<
 * @returns curry function
 *
 * @example
-* function add( x, y ) {
-*     return x + y;
+* function subtract( x, y ) {
+*     return x - y;
 * }
 *
-* var f = curryRight( add );
+* var f = curryRight( subtract );
 *
-* var sum = f( 2 )( 3 );
-* // returns 5
+* // First supplied argument binds the rightmost parameter (y):
+* var v = f( 2 )( 3 );
+* // returns 1
 */
 declare function curryRight<
 	TThis extends object,

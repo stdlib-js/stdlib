@@ -159,7 +159,7 @@ interface Routine {
 *     -   the list of known means should be an `M` element vector.
 *
 * @param order - storage layout
-* @param orient - specifies whether variables are stored along columns or along roes
+* @param orient - specifies whether variables are stored along columns or along rows
 * @param uplo - specifies whether to overwrite the upper or lower triangular part of matrix `B`
 * @param M - number of rows in the matrix `A`
 * @param N - number of columns in the matrix `A`

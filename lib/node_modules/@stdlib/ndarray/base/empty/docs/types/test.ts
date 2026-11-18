@@ -25,6 +25,7 @@ import empty = require( './index' );
 {
 	empty( 'float64', [ 2, 2 ], 'row-major' ); // $ExpectType float64ndarray
 	empty( 'float32', [ 2, 2 ], 'row-major' ); // $ExpectType float32ndarray
+	empty( 'float16', [ 2, 2 ], 'row-major' ); // $ExpectType float16ndarray
 	empty( 'complex128', [ 2, 2 ], 'row-major' ); // $ExpectType complex128ndarray
 	empty( 'complex64', [ 2, 2 ], 'row-major' ); // $ExpectType complex64ndarray
 	empty( 'int32', [ 2, 2 ], 'row-major' ); // $ExpectType int32ndarray
@@ -39,6 +40,7 @@ import empty = require( './index' );
 
 	empty( 'float64', [ 2, 2 ], 'column-major' ); // $ExpectType float64ndarray
 	empty( 'float32', [ 2, 2 ], 'column-major' ); // $ExpectType float32ndarray
+	empty( 'float16', [ 2, 2 ], 'column-major' ); // $ExpectType float16ndarray
 	empty( 'complex128', [ 2, 2 ], 'column-major' ); // $ExpectType complex128ndarray
 	empty( 'complex64', [ 2, 2 ], 'column-major' ); // $ExpectType complex64ndarray
 	empty( 'int32', [ 2, 2 ], 'column-major' ); // $ExpectType int32ndarray

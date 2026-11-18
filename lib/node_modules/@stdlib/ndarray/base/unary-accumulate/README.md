@@ -204,6 +204,8 @@ void stdlib_ndarray_accumulate_ff_f_as_dd_d(...) {...}
 
 is a function which performs accumulation in single-precision and accepts one single-precision floating-point input ndarray and one single-precision floating-point output ndarray. However, the callback accepts and returns double-precision floating-point numbers. Accordingly, the input and output values need to be cast using the following conversion sequence
 
+<!-- run-disable -->
+
 ```c
 // Convert the current accumulated value to double-precision:
 double curr = (double)acc;
