@@ -260,7 +260,7 @@ Compiles Node.js native [add-ons][node-js-add-ons].
 $ make install-node-addons
 ```
 
-`SIMD_BACKEND=highway` enables Highway for supported add-ons and requires a Highway installation and a C++17-capable compiler. Highway handles CPU target selection; unsupported architectures or toolchains may fail to compile without falling back to the default native implementation. Leaving `SIMD_BACKEND` unset preserves the default build.
+`SIMD=highway` enables Highway for supported add-ons and requires a Highway installation and a C++17-capable compiler. Highway handles CPU target selection; unsupported architectures or toolchains may fail to compile without falling back to the default native implementation. Leaving `SIMD` unset preserves the default build.
 
 #### clean-node-addons
 
@@ -452,7 +452,7 @@ Install the runtime before enabling the native backend:
 
 ```bash
 $ make install-deps-highway
-$ make install-node-addons SIMD_BACKEND=highway
+$ make install-node-addons SIMD=highway
 ```
 
 `install-node-addons` reads the runtime metadata from `HIGHWAY_DIR`, which defaults to `DEPS_HIGHWAY_RUNTIME_OUT`. It does not build the runtime automatically. A missing runtime is an error when Highway is requested; leaving the backend unset does not require Highway or CMake. Direct GYP builds use `-Dsimd=highway -Dhighway_dir=<absolute-build-directory>`.
@@ -463,7 +463,7 @@ Compiled tests default to `deps/test/highway/build`. When keeping multiple runti
 
 ```bash
 $ make deps-install-highway DEPS_HIGHWAY_BUILD_TYPE=Debug DEPS_HIGHWAY_RUNTIME_OUT=/path/to/highway-debug DEPS_HIGHWAY_TEST_OUT=/path/to/stdlib/deps/test/highway/build/debug
-$ make install-node-addons SIMD_BACKEND=highway HIGHWAY_DIR=/path/to/highway-debug NODE_GYP_FLAGS=--debug
+$ make install-node-addons SIMD=highway HIGHWAY_DIR=/path/to/highway-debug NODE_GYP_FLAGS=--debug
 ```
 
 For an alternate toolchain, pass the same `C_COMPILER` and `CXX_COMPILER` to both commands. This path does not configure standalone npm native builds or cross-compilation.

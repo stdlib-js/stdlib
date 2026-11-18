@@ -37,10 +37,10 @@ endif
 endif
 endif
 node_gyp_defines := $(NODE_GYP_DEFINES)
-ifneq (, $(SIMD_BACKEND))
-	node_gyp_defines += simd=$(SIMD_BACKEND)
+ifneq (, $(SIMD))
+	node_gyp_defines += simd=$(SIMD)
 endif
-ifeq ($(SIMD_BACKEND), highway)
+ifeq ($(SIMD), highway)
 	node_gyp_defines += highway_dir=$(HIGHWAY_DIR)
 	export CC CXX
 endif

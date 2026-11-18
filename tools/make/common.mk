@@ -703,10 +703,10 @@ deps_fftpack_version_slug := $(subst .,_,$(DEPS_FFTPACK_VERSION))
 # Define the output path when building FFTPACK:
 DEPS_FFTPACK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/pffft-$(DEPS_FFTPACK_VERSION)
 
-# SIMD...
+# SIMD (general)...
 
-# Define the SIMD backend:
-SIMD_BACKEND ?=
+# Define the SIMD library to use:
+SIMD ?=
 
 # Highway...
 

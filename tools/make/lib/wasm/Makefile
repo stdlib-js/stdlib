@@ -65,7 +65,7 @@ wasm: validate-wasm-simd-backend $(NODE_MODULES)
 		EMXX_COMPILER="$(DEPS_EMSDK_EMSCRIPTEN_EMXX)" \
 		WASM2WAT="$(DEPS_WABT_WASM2WAT)" \
 		WASM2JS="$(DEPS_EMSDK_EMSCRIPTEN_WASM2JS)" \
-		SIMD_BACKEND="$(SIMD_BACKEND)" \
+		SIMD="$(SIMD)" \
 		DEPS_HIGHWAY_INCLUDE="$(DEPS_HIGHWAY_INCLUDE)" \
 		"${compile_wasm_bin}" $$pkg \
 		|| { echo "Error: failed to compile WebAssembly: $$pkg"; exit 0; } \
@@ -79,8 +79,8 @@ wasm: validate-wasm-simd-backend $(NODE_MODULES)
 # @private
 #/
 validate-wasm-simd-backend:
-ifneq ($(strip $(SIMD_BACKEND)),)
-ifneq ($(strip $(SIMD_BACKEND)),highway)
+ifneq ($(strip $(SIMD)),)
+ifneq ($(strip $(SIMD)),highway)
 	$(QUIET) echo 'Error: unsupported SIMD backend.' >&2
 	$(QUIET) exit 1
 endif
