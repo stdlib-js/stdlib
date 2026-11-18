@@ -32,7 +32,7 @@ var isndarrayDescriptor = require( '@stdlib/assert/is-ndarray-descriptor' );
 
 #### isndarrayDescriptor( value )
 
-Tests if a value is [ndarray][@stdlib/ndarray/ctor] descriptor.
+Tests if a value is an [ndarray][@stdlib/ndarray/ctor] descriptor.
 
 ```javascript
 var zeros = require( '@stdlib/ndarray/zeros' );
@@ -44,7 +44,7 @@ var bool = isndarrayDescriptor( zeros( [ 2, 2 ] ) );
 A value is an [ndarray][@stdlib/ndarray/ctor] descriptor if a value is an object with the following properties:
 
 -   **dtype**: an ndarray's underlying data type.
--   **data**: array-like object object pointing to an underlying data buffer.
+-   **data**: array-like object pointing to an underlying data buffer.
 -   **shape**: array-like object containing dimensions.
 -   **strides**: array-like object containing stride lengths.
 -   **offset**: number specifying the index offset.

@@ -1,7 +1,7 @@
 
 {{alias}}( x, λ )
-    Evaluates the logarithm of the probability mass function (PMF) for a Planck
-    distribution with shape parameter `λ` at a value `x`.
+    Evaluates the natural logarithm of the probability mass function (PMF) for a
+    Planck distribution with shape parameter `λ` at a value `x`.
 
     If provided `NaN` as any argument, the function returns `NaN`.
 

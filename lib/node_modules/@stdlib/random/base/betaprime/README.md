@@ -416,7 +416,7 @@ for ( i = 0; i < 100; i++ ) {
 -   <span class="package-name">[`@stdlib/random/array/betaprime`][@stdlib/random/array/betaprime]</span><span class="delimiter">: </span><span class="description">create an array containing pseudorandom numbers drawn from a beta prime distribution.</span>
 -   <span class="package-name">[`@stdlib/random/iter/betaprime`][@stdlib/random/iter/betaprime]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a beta prime distribution.</span>
 -   <span class="package-name">[`@stdlib/random/streams/betaprime`][@stdlib/random/streams/betaprime]</span><span class="delimiter">: </span><span class="description">create a readable stream for generating pseudorandom numbers drawn from a beta prime distribution.</span>
--   <span class="package-name">[`@stdlib/random/betaprime`][@stdlib/random/betaprime]</span><span class="delimiter">: </span><span class="description">generate pseudorandom numbers drawn from a betaprime distribution.</span>
+-   <span class="package-name">[`@stdlib/random/betaprime`][@stdlib/random/betaprime]</span><span class="delimiter">: </span><span class="description">generate pseudorandom numbers drawn from a beta prime distribution.</span>
 
 </section>
 

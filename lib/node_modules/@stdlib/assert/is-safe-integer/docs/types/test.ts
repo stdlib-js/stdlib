@@ -33,27 +33,27 @@ import isSafeInteger = require( './index' );
 	isSafeInteger( 2, 123 ); // $ExpectError
 }
 
-// Attached to main export is an isPrimitive method which returns a boolean...
+// Attached to main export is an `isPrimitive` method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers
 	isSafeInteger.isPrimitive( new Number( 2 ) ); // $ExpectType boolean
 	isSafeInteger.isPrimitive( 2 ); // $ExpectType boolean
 }
 
-// The compiler throws an error if the isPrimitive method is provided an unsupported number of arguments...
+// The compiler throws an error if the `isPrimitive` method is provided an unsupported number of arguments...
 {
 	isSafeInteger.isPrimitive(); // $ExpectError
 	isSafeInteger.isPrimitive( 2, 123 ); // $ExpectError
 }
 
-// Attached to main export is an isPrimitive method which returns a boolean...
+// Attached to main export is an `isObject` method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers
 	isSafeInteger.isObject( new Number( 2 ) ); // $ExpectType boolean
 	isSafeInteger.isObject( 2 ); // $ExpectType boolean
 }
 
-// The compiler throws an error if the isObject method is provided an unsupported number of arguments...
+// The compiler throws an error if the `isObject` method is provided an unsupported number of arguments...
 {
 	isSafeInteger.isObject(); // $ExpectError
 	isSafeInteger.isObject( 2, 123 ); // $ExpectError

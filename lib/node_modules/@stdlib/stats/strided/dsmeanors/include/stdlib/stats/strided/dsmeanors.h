@@ -34,7 +34,7 @@ extern "C" {
 double API_SUFFIX(stdlib_strided_dsmeanors)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX );
 
 /**
-* Computes the arithmetic mean value of a single-precision floating-point strided array using ordinary recursive summation with extended accumulation and alternative indexing semantics and returning an extended precision result.
+* Computes the arithmetic mean of a single-precision floating-point strided array using ordinary recursive summation with extended accumulation and alternative indexing semantics and returning an extended precision result.
 */
 double API_SUFFIX(stdlib_strided_dsmeanors_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 

@@ -20,7 +20,7 @@ limitations under the License.
 
 # Logarithm of Probability Density Function
 
-> [Gamma][gamma-distribution] distribution logarithm of probability density function (PDF).
+> [Gamma][gamma-distribution] distribution natural logarithm of probability density function (PDF).
 
 <section class="intro">
 
@@ -179,7 +179,7 @@ logEachMap( 'x: %0.4f, α: %0.4f, β: %0.4f, ln(f(x;α,β)): %0.4f', x, alpha, b
 
 #### stdlib_base_dists_gamma_logpdf( x, alpha, beta )
 
-Evaluates the logarithm of the probability density function (PDF) for a gamma distribution with shape parameter `alpha` and rate parameter `beta` at a value `x`.
+Evaluates the natural logarithm of the probability density function (PDF) for a gamma distribution with shape parameter `alpha` and rate parameter `beta` at a value `x`.
 
 ```c
 double out = stdlib_base_dists_gamma_logpdf( 2.0, 0.5, 1.0 );

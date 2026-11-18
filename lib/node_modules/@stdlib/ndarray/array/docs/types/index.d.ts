@@ -43,7 +43,7 @@ interface Options {
 	mode?: Mode;
 
 	/**
-	* Specifies how to handle subscripts which exceed array dimensions on a per dimension basis (default: ['throw']).
+	* Specifies how to handle subscripts which exceed array dimensions on a per dimension basis (default: [options.mode]).
 	*/
 	submode?: Array<string>;
 
@@ -139,7 +139,7 @@ interface ExtendedOptions extends Options {
 * @param options.order - specifies the memory layout of the array as either row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
 * @param options.shape - array shape
 * @param options.mode - specifies how to handle indices which exceed array dimensions (default: 'throw')
-* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis (default: ['throw'])
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis (default: [options.mode])
 * @param options.copy - boolean indicating whether to copy source data to a new data buffer (default: false)
 * @param options.flatten - boolean indicating whether to automatically flatten generic array data sources (default: true)
 * @param options.ndmin - minimum number of dimensions (default: 0)
@@ -176,7 +176,7 @@ declare function array<T = unknown>( options: OptionsWithShape | OptionsWithBuff
 * @param options.order - specifies the memory layout of the array as either row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
 * @param options.shape - array shape
 * @param options.mode - specifies how to handle indices which exceed array dimensions (default: 'throw')
-* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis (default: ['throw'])
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis (default: [options.mode])
 * @param options.copy - boolean indicating whether to copy source data to a new data buffer (default: false)
 * @param options.flatten - boolean indicating whether to automatically flatten generic array data sources (default: true)
 * @param options.ndmin - minimum number of dimensions (default: 0)

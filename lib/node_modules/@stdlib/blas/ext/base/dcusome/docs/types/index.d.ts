@@ -27,7 +27,7 @@ import { BooleanArray } from '@stdlib/types/array';
 */
 interface Routine {
 	/**
-	* Cumulatively tests whether at least k elements in a double-precision floating-point strided array are truthy.
+	* Cumulatively tests whether at least `k` elements in a double-precision floating-point strided array are truthy.
 	*
 	* @param N - number of indexed elements
 	* @param k - minimum number of truthy elements
@@ -50,7 +50,7 @@ interface Routine {
 	( N: number, k: number, x: Float64Array, strideX: number, out: BooleanArray, strideOut: number ): BooleanArray;
 
 	/**
-	* Cumulatively tests whether at least k elements in a double-precision floating-point strided array are truthy using alternative indexing semantics.
+	* Cumulatively tests whether at least `k` elements in a double-precision floating-point strided array are truthy using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
 	* @param k - minimum number of truthy elements
@@ -76,7 +76,7 @@ interface Routine {
 }
 
 /**
-* Cumulatively tests whether at least k elements in a double-precision floating-point strided array are truthy.
+* Cumulatively tests whether at least `k` elements in a double-precision floating-point strided array are truthy.
 *
 * @param N - number of indexed elements
 * @param k - minimum number of truthy elements

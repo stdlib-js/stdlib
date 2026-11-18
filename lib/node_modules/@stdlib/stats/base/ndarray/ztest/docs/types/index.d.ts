@@ -78,7 +78,7 @@ import { typedndarray, ndarray } from '@stdlib/types/ndarray';
 *
 * console.log( v.get().toString() );
 */
-declare function ztest<T extends ndarray>( arrays: [ typedndarray<number>, T, typedndarray<number>, typedndarray<number>, typedndarray<number>, typedndarray<number> ] ): T;
+declare function ztest<T extends ndarray = ndarray>( arrays: [ typedndarray<number>, T, typedndarray<number>, typedndarray<number>, typedndarray<number>, typedndarray<number> ] ): T;
 
 
 // EXPORTS //

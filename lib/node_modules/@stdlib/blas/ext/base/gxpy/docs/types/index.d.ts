@@ -48,7 +48,7 @@ interface Routine {
 	* gxpy( x.length, x, 1, y, 1 );
 	* // y => [ 3.0, 5.0, 7.0, 9.0, 11.0 ]
 	*/
-	<T extends InputArray, U extends InputArray>( N: number, x: T, strideX: number, y: U, strideY: number ): U;
+	<T extends InputArray = InputArray>( N: number, x: InputArray, strideX: number, y: T, strideY: number ): T;
 
 	/**
 	* Adds elements of a strided array `x` to the corresponding elements of a strided array `y` and assigns the results to `y` using alternative indexing semantics.
@@ -69,7 +69,7 @@ interface Routine {
 	* gxpy.ndarray( x.length, x, 1, 0, y, 1, 0 );
 	* // y => [ 3.0, 5.0, 7.0, 9.0, 11.0 ]
 	*/
-	ndarray<T extends InputArray, U extends InputArray>( N: number, x: T, strideX: number, offsetX: number, y: U, strideY: number, offsetY: number ): U;
+	ndarray<T extends InputArray = InputArray>( N: number, x: InputArray, strideX: number, offsetX: number, y: T, strideY: number, offsetY: number ): T;
 }
 
 /**

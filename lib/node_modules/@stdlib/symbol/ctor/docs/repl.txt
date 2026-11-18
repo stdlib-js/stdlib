@@ -21,6 +21,7 @@
     Examples
     --------
     > var s = ( {{alias}} ) ? {{alias}}( 'beep' ) : null
+    e.g., <symbol>
 
     See Also
     --------

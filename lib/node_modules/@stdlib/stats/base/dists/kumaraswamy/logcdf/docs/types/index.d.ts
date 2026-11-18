@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Evaluates the logarithm of the cumulative distribution function (CDF) for a Kumaraswamy's double bounded distribution.
+* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a Kumaraswamy's double bounded distribution.
 *
 * @param x - input value
 * @returns evaluated logCDF

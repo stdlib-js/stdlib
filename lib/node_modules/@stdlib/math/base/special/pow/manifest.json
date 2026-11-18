@@ -55,7 +55,8 @@
         "@stdlib/math/base/assert/is-integer",
         "@stdlib/math/base/special/sqrt",
         "@stdlib/number/float64/base/to-words",
-        "@stdlib/constants/float64/num-high-word-significand-bits"
+        "@stdlib/constants/float64/num-high-word-significand-bits",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -87,7 +88,8 @@
         "@stdlib/math/base/assert/is-integer",
         "@stdlib/math/base/special/sqrt",
         "@stdlib/number/float64/base/to-words",
-        "@stdlib/constants/float64/num-high-word-significand-bits"
+        "@stdlib/constants/float64/num-high-word-significand-bits",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -119,7 +121,8 @@
         "@stdlib/math/base/assert/is-integer",
         "@stdlib/math/base/special/sqrt",
         "@stdlib/number/float64/base/to-words",
-        "@stdlib/constants/float64/num-high-word-significand-bits"
+        "@stdlib/constants/float64/num-high-word-significand-bits",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

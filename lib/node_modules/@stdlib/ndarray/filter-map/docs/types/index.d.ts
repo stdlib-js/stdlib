@@ -22,7 +22,7 @@
 
 /* eslint-disable max-lines */
 
-import { typedndarray, DataType, Order, float64ndarray, float32ndarray, complex128ndarray, complex64ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, boolndarray, genericndarray } from '@stdlib/types/ndarray';
+import { typedndarray, DataType, Order, float64ndarray, float32ndarray, float16ndarray, complex128ndarray, complex64ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, boolndarray, genericndarray } from '@stdlib/types/ndarray';
 import { Complex64, Complex128, ComplexLike } from '@stdlib/types/complex';
 
 /**
@@ -137,6 +137,20 @@ interface Float32Options extends Options {
 	* -   This option overrides using the input ndarray's inferred data type.
 	*/
 	dtype?: 'float32';
+}
+
+/**
+* Interface describing function options.
+*/
+interface Float16Options extends Options {
+	/**
+	* Output ndarray data type.
+	*
+	* ## Notes
+	*
+	* -   This option overrides using the input ndarray's inferred data type.
+	*/
+	dtype?: 'float16';
 }
 
 /**
@@ -354,6 +368,37 @@ declare function filterMap<V = unknown>( x: float64ndarray, fcn: Callback<number
 * // returns <ndarray>[ 80.0, 90.0, 100.0 ]
 */
 declare function filterMap<V = unknown>( x: float32ndarray, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): float32ndarray;
+
+/**
+* Filters and maps elements in an input ndarray to elements in a new output ndarray according to a callback function.
+*
+* @param x - input ndarray
+* @param fcn - callback function
+* @param thisArg - callback function execution context
+* @returns output ndarray
+*
+* @example
+* var Float16Array = require( '@stdlib/array/float16' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+*
+* function scale( z ) {
+*     if ( z > 5.0 ) {
+*         return z * 10.0;
+*     }
+* }
+*
+* var buffer = new Float16Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+* var shape = [ 2, 3 ];
+* var strides = [ 6, 1 ];
+* var offset = 1;
+*
+* var x = ndarray( 'float16', buffer, shape, strides, offset, 'row-major' );
+* // returns <ndarray>
+*
+* var y = filterMap( x, scale );
+* // returns <ndarray>[ 80.0, 90.0, 100.0 ]
+*/
+declare function filterMap<V = unknown>( x: float16ndarray, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): float16ndarray;
 
 /**
 * Filters and maps elements in an input ndarray to elements in a new output ndarray according to a callback function.
@@ -766,6 +811,42 @@ declare function filterMap<V = unknown>( x: float64ndarray, options: OrderOption
 * // returns <ndarray>[ 80.0, 90.0, 100.0 ]
 */
 declare function filterMap<V = unknown>( x: float32ndarray, options: OrderOptions, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): float32ndarray;
+
+/**
+* Filters and maps elements in an input ndarray to elements in a new output ndarray according to a callback function.
+*
+* @param x - input ndarray
+* @param options - function options
+* @param options.order - iteration order
+* @param fcn - callback function
+* @param thisArg - callback function execution context
+* @returns output ndarray
+*
+* @example
+* var Float16Array = require( '@stdlib/array/float16' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+*
+* function scale( z ) {
+*     if ( z > 5.0 ) {
+*         return z * 10.0;
+*     }
+* }
+*
+* var buffer = new Float16Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+* var shape = [ 2, 3 ];
+* var strides = [ 6, 1 ];
+* var offset = 1;
+*
+* var x = ndarray( 'float16', buffer, shape, strides, offset, 'row-major' );
+* // returns <ndarray>
+*
+* var opts = {
+*     'order': 'row-major'
+* };
+* var y = filterMap( x, opts, scale );
+* // returns <ndarray>[ 80.0, 90.0, 100.0 ]
+*/
+declare function filterMap<V = unknown>( x: float16ndarray, options: OrderOptions, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): float16ndarray;
 
 /**
 * Filters and maps elements in an input ndarray to elements in a new output ndarray according to a callback function.
@@ -1235,6 +1316,43 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarr
 * // returns <ndarray>[ 80.0, 90.0, 100.0 ]
 */
 declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarray<T>, options: Float32Options, fcn: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): float32ndarray;
+
+/**
+* Filters and maps elements in an input ndarray to elements in a new output ndarray according to a callback function.
+*
+* @param x - input ndarray
+* @param options - options
+* @param options.dtype - output ndarray data type
+* @param options.order - iteration order
+* @param fcn - callback function
+* @param thisArg - callback function execution context
+* @returns output ndarray
+*
+* @example
+* var Float64Array = require( '@stdlib/array/float64' );
+* var ndarray = require( '@stdlib/ndarray/ctor' );
+*
+* function scale( z ) {
+*     if ( z > 5.0 ) {
+*         return z * 10.0;
+*     }
+* }
+*
+* var buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+* var shape = [ 2, 3 ];
+* var strides = [ 6, 1 ];
+* var offset = 1;
+*
+* var x = ndarray( 'float64', buffer, shape, strides, offset, 'row-major' );
+* // returns <ndarray>
+*
+* var opts = {
+*     'dtype': 'float16'
+* };
+* var y = filterMap( x, opts, scale );
+* // returns <ndarray>[ 80.0, 90.0, 100.0 ]
+*/
+declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarray<T>, options: Float16Options, fcn: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): float16ndarray;
 
 /**
 * Filters and maps elements in an input ndarray to elements in a new output ndarray according to a callback function.

@@ -40,7 +40,8 @@
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/sqrt",
         "@stdlib/math/base/special/ln",
-        "@stdlib/math/base/assert/is-infinite"
+        "@stdlib/math/base/assert/is-infinite",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -57,7 +58,8 @@
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/sqrt",
         "@stdlib/math/base/special/ln",
-        "@stdlib/math/base/assert/is-infinite"
+        "@stdlib/math/base/assert/is-infinite",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -74,7 +76,8 @@
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/sqrt",
         "@stdlib/math/base/special/ln",
-        "@stdlib/math/base/assert/is-infinite"
+        "@stdlib/math/base/assert/is-infinite",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

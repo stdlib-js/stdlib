@@ -22,6 +22,22 @@ limitations under the License.
 
 > Simultaneously compute the [sine][@stdlib/math/base/special/sin] and [cosine][@stdlib/math/base/special/cos] of an angle measured in radians.
 
+<section class="intro">
+
+The function simultaneously computes the [sine][sine] and [cosine][cosine] of a number
+
+<!-- <equation class="equation" label="eq:sincos_function" align="center" raw="(y_s, y_c) = (\sin(x),\; \cos(x))" alt="Simultaneous sine and cosine"> -->
+
+```math
+(y_s, y_c) = (\sin(x),\; \cos(x))
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
@@ -197,6 +213,10 @@ int main( void ) {
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[cosine]: https://en.wikipedia.org/wiki/Cosine
+
+[sine]: https://en.wikipedia.org/wiki/Sine
 
 <!-- <related-links> -->
 
