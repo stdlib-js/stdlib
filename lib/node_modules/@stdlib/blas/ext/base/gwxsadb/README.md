@@ -153,7 +153,7 @@ var x = discreteUniform( 10, -100, 100, opts );
 var w = discreteUniform( 10, -100, 100, opts );
 
 gwxsadb( x.length, 3.0, 2.0, x, 1, w, 1 );
-logEach( '(%d - %d) / %d = %d', x, 3.0, 2.0, w );
+logEach( '(%d - %d) / %d = %0.4f', x, 3.0, 2.0, w );
 ```
 
 </section>
