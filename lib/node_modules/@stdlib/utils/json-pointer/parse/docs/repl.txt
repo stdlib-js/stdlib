@@ -8,6 +8,9 @@
     Escape sequences are decoded. During decoding, `~1` is unescaped to `/`
     before `~0` is unescaped to `~`.
 
+    If a pointer contains an invalid escape sequence (i.e., a `~` character not
+    followed by `0` or `1`), the function throws an error.
+
     Parameters
     ----------
     pointer: string

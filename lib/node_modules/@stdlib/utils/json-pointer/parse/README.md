@@ -56,6 +56,7 @@ tokens = parse( '' );
 -   Per [RFC 6901][rfc-6901], an empty string refers to the root of the document, and, thus, the function returns an empty array `[]`.
 -   Non-empty pointers must begin with a `/` character.
 -   Escape sequences are decoded. During decoding, `~1` is unescaped to `/` before `~0` is unescaped to `~`.
+-   If a pointer contains an invalid escape sequence (i.e., a `~` character not followed by `0` or `1`), the function throws an error.
 
 </section>
 

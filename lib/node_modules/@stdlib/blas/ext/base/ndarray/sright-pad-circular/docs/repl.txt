@@ -29,7 +29,7 @@
 
     Examples
     --------
-    > var x = {{alias:@stdlib/ndarray/vector/float32}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var x = new {{alias:@stdlib/ndarray/vector/float32}}( [ 1.0, 2.0, 3.0, 4.0 ] );
     > var y = {{alias:@stdlib/ndarray/zeros}}( [ 10 ], { 'dtype': 'float32' } );
     > var k = {{alias:@stdlib/ndarray/from-scalar}}( 6, { 'dtype': 'generic' } );
     > {{alias}}( [ x, y, k ] )

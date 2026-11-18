@@ -860,14 +860,10 @@ interface Namespace {
 	*
 	* @example
 	* var Complex64Vector = require( '@stdlib/ndarray/vector/complex64' );
-	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
-	* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+	* var Complex64Tensor0D = require( '@stdlib/ndarray/tensor0d/complex64' );
 	*
 	* var x = new Complex64Vector( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
-	*
-	* var start = scalar2ndarray( new Complex64( 3.0, 0.0 ), {
-	*     'dtype': 'complex64'
-	* });
+	* var start = new Complex64Tensor0D( 3.0, 0.0 );
 	*
 	* var out = ns.cunitspace( [ x, start ] );
 	* // returns <ndarray>[ <Complex64>[ 3.0, 0.0 ], <Complex64>[ 4.0, 0.0 ], <Complex64>[ 5.0, 0.0 ], <Complex64>[ 6.0, 0.0 ] ]
@@ -6314,18 +6310,13 @@ interface Namespace {
 	*
 	* @example
 	* var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
-	* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+	* var Float32Tensor0D = require( '@stdlib/ndarray/tensor0d/float32' );
 	*
 	* var x = new Float32Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 	* var y = new Float32Vector( [ 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 	*
-	* var alpha = scalar2ndarray( 5.0, {
-	*     'dtype': 'float32'
-	* });
-	*
-	* var beta = scalar2ndarray( 2.0, {
-	*     'dtype': 'float32'
-	* });
+	* var alpha = new Float32Tensor0D( 5.0 );
+	* var beta = new Float32Tensor0D( 2.0 );
 	*
 	* var out = ns.saxpby( [ x, y, alpha, beta ] );
 	* // returns <ndarray>[ 9.0, 16.0, 23.0, 30.0, 37.0 ]
