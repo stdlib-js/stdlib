@@ -607,6 +607,28 @@ declare class Int64Array implements Int64ArrayInterface {
 	findLast<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): Int64 | void;
 
 	/**
+	* Returns the index of the last element in an array for which a predicate function returns a truthy value.
+	*
+	* @param predicate - test function
+	* @param thisArg - predicate function execution context
+	* @returns index or -1
+	*
+	* @example
+	* var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
+	* var Number = require( '@stdlib/number/ctor' );
+	*
+	* function predicate( v ) {
+	*     return ( isEven( Number( v ) ) );
+	* }
+	*
+	* var arr = new Int64Array( [ -1, 2, 3, -4, 5 ] );
+	*
+	* var idx = arr.findLastIndex( predicate );
+	* // returns 3
+	*/
+	findLastIndex<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): number;
+
+	/**
 	* Returns an array element.
 	*
 	* @param i - element index
