@@ -63,7 +63,6 @@ interface Constructor {
 	* @param options.readonly - specifies whether an array should be read-only (default: false)
 	* @throws `buffer` argument `get` and `set` properties must be functions
 	* @throws `shape` argument must be an array-like object containing nonnegative integers
-	* @throws `shape` argument length must equal the number of dimensions
 	* @throws `strides` argument must be an array-like object containing integers
 	* @throws `strides` argument length must equal the number of dimensions (except for zero-dimensional arrays; in which case, the `strides` argument length must be equal to `1`)
 	* @throws for zero-dimensional ndarrays, the `strides` argument must contain a single element equal to `0`
@@ -98,7 +97,6 @@ interface Constructor {
 	* @param options.readonly - specifies whether an array should be read-only (default: false)
 	* @throws `buffer` argument `get` and `set` properties must be functions
 	* @throws `shape` argument must be an array-like object containing nonnegative integers
-	* @throws `shape` argument length must equal the number of dimensions
 	* @throws `strides` argument must be an array-like object containing integers
 	* @throws `strides` argument length must equal the number of dimensions (except for zero-dimensional arrays; in which case, the `strides` argument length must be equal to `1`)
 	* @throws for zero-dimensional ndarrays, the `strides` argument must contain a single element equal to `0`
@@ -134,7 +132,6 @@ interface Constructor {
 * @param options.readonly - specifies whether an array should be read-only (default: false)
 * @throws `buffer` argument `get` and `set` properties must be functions
 * @throws `shape` argument must be an array-like object containing nonnegative integers
-* @throws `shape` argument length must equal the number of dimensions
 * @throws `strides` argument must be an array-like object containing integers
 * @throws `strides` argument length must equal the number of dimensions (except for zero-dimensional arrays; in which case, the `strides` argument length must be equal to `1`)
 * @throws for zero-dimensional ndarrays, the `strides` argument must contain a single element equal to `0`
@@ -158,3 +155,5 @@ declare var ctor: Constructor;
 // EXPORTS //
 
 export = ctor;
+
+// eslint-doctest-alias: FancyArray

@@ -40,6 +40,15 @@ var bool = RE.test( '\\\\?\\C:\\foo\\bar' );
 // returns true
 ```
 
+#### reExtendedLengthPath.REGEXP
+
+[Regular expression][regexp] to detect an [extended-length path][extended-length-path].
+
+```javascript
+var bool = reExtendedLengthPath.REGEXP.test( 'C:\\foo\\bar' );
+// returns false
+```
+
 </section>
 
 <!-- /.usage -->
@@ -54,11 +63,9 @@ var bool = RE.test( '\\\\?\\C:\\foo\\bar' );
 var reExtendedLengthPath = require( '@stdlib/regexp/extended-length-path' );
 
 var RE_EXTENDED_LENGTH_PATH = reExtendedLengthPath();
-var bool;
-var path;
 
-path = '\\\\?\\C:\\foo\\bar';
-bool = RE_EXTENDED_LENGTH_PATH.test( path );
+var path = '\\\\?\\C:\\foo\\bar';
+var bool = RE_EXTENDED_LENGTH_PATH.test( path );
 // returns true
 
 path = '\\\\?\\UNC\\server\\share';
