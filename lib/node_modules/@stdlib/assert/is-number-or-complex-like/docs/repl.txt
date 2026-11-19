@@ -1,0 +1,81 @@
+
+{{alias}}( value )
+    Tests if a value is a number or complex number-like object.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a number or complex number-like
+        object.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 3.14 )
+    true
+    > bool = {{alias}}( new {{alias:@stdlib/number/ctor}}( 3.14 ) )
+    true
+    > bool = {{alias}}( new {{alias:@stdlib/complex/float64/ctor}}( 3.0, 5.0 ) )
+    true
+    > bool = {{alias}}( NaN )
+    true
+    > bool = {{alias}}( null )
+    false
+
+
+{{alias}}.isPrimitive( value )
+    Tests if a value is a number primitive or complex number-like object.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a number primitive or complex
+        number-like object.
+
+    Examples
+    --------
+    > var bool = {{alias}}.isPrimitive( 3.14 )
+    true
+    > bool = {{alias}}.isPrimitive( NaN )
+    true
+    > bool = {{alias}}.isPrimitive( new {{alias:@stdlib/number/ctor}}( 3.14 ) )
+    false
+    > bool = {{alias}}.isPrimitive( new {{alias:@stdlib/complex/float64/ctor}}( 3.0, 5.0 ) )
+    true
+
+
+{{alias}}.isObject( value )
+    Tests if a value is a `Number` object or complex number-like object.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a `Number` object or complex
+        number-like object.
+
+    Examples
+    --------
+    > var bool = {{alias}}.isObject( 3.14 )
+    false
+    > bool = {{alias}}.isObject( new {{alias:@stdlib/number/ctor}}( 3.14 ) )
+    true
+    > bool = {{alias}}.isObject( new {{alias:@stdlib/complex/float64/ctor}}( 3.0, 5.0 ) )
+    true
+
+    See Also
+    --------
+
