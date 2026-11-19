@@ -1157,14 +1157,10 @@ interface Namespace {
 	*
 	* @example
 	* var Complex64Vector = require( '@stdlib/ndarray/vector/complex64' );
-	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
-	* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+	* var Complex64Tensor0D = require( '@stdlib/ndarray/tensor0d/complex64' );
 	*
 	* var x = new Complex64Vector( [ -2.0, 1.0, 3.0, -5.0 ] );
-	*
-	* var alpha = scalar2ndarray( new Complex64( 5.0, 0.0 ), {
-	*     'dtype': 'complex64'
-	* });
+	* var alpha = new Complex64Tensor0D( 5.0, 0.0 );
 	*
 	* var out = ns.cxsa( [ x, alpha ] );
 	* // returns <ndarray>[ <Complex64>[ -7.0, 1.0 ], <Complex64>[ -2.0, -5.0 ] ]
@@ -3470,13 +3466,10 @@ interface Namespace {
 	*
 	* @example
 	* var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
-	* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+	* var Float64Tensor0D = require( '@stdlib/ndarray/tensor0d/float64' );
 	*
 	* var x = new Float64Vector( [ -2.0, 1.0, 3.0, -5.0 ] );
-	*
-	* var alpha = scalar2ndarray( 5.0, {
-	*     'dtype': 'float64'
-	* });
+	* var alpha = new Float64Tensor0D( 5.0 );
 	*
 	* var out = ns.dxsa( [ x, alpha ] );
 	* // returns <ndarray>[ -7.0, -4.0, -2.0, -10.0 ]
@@ -8847,14 +8840,10 @@ interface Namespace {
 	*
 	* @example
 	* var Complex128Vector = require( '@stdlib/ndarray/vector/complex128' );
-	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
-	* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+	* var Complex128Tensor0D = require( '@stdlib/ndarray/tensor0d/complex128' );
 	*
 	* var x = new Complex128Vector( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
-	*
-	* var start = scalar2ndarray( new Complex128( 3.0, 0.0 ), {
-	*     'dtype': 'complex128'
-	* });
+	* var start = new Complex128Tensor0D( 3.0, 0.0 );
 	*
 	* var out = ns.zunitspace( [ x, start ] );
 	* // returns <ndarray>[ <Complex128>[ 3.0, 0.0 ], <Complex128>[ 4.0, 0.0 ], <Complex128>[ 5.0, 0.0 ], <Complex128>[ 6.0, 0.0 ] ]
@@ -9020,15 +9009,11 @@ interface Namespace {
 	*
 	* @example
 	* var Complex128Vector = require( '@stdlib/ndarray/vector/complex128' );
-	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
-	* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+	* var Complex128Tensor0D = require( '@stdlib/ndarray/tensor0d/complex128' );
 	*
 	* var x = new Complex128Vector( [ -2.0, 1.0, 3.0, -5.0 ] );
 	* var w = new Complex128Vector( 2 );
-	*
-	* var alpha = scalar2ndarray( new Complex128( 5.0, 0.0 ), {
-	*     'dtype': 'complex128'
-	* });
+	* var alpha = new Complex128Tensor0D( 5.0, 0.0 );
 	*
 	* var out = ns.zwxsa( [ x, w, alpha ] );
 	* // returns <ndarray>[ <Complex128>[ -7.0, 1.0 ], <Complex128>[ -2.0, -5.0 ] ]
