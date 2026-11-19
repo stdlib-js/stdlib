@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# Floor
+# cfloor
 
-> Round a double-precision complex floating-point number toward negative infinity.
+> Round each component of a double-precision complex floating-point number toward negative infinity.
 
 <section class="intro">
 
@@ -51,7 +51,7 @@ var cfloor = require( '@stdlib/math/base/special/cfloor' );
 
 #### cfloor( z )
 
-Rounds a double-precision complex floating-point number toward negative infinity.
+Rounds each component of a double-precision complex floating-point number toward negative infinity.
 
 ```javascript
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
@@ -69,6 +69,55 @@ v = cfloor( new Complex128( NaN, NaN ) );
 // returns <Complex128>[ NaN, NaN ]
 ```
 
+#### cfloor.assign( re, im, out, strideOut, offsetOut )
+
+Rounds each component of a double-precision complex floating-point number toward negative infinity and assigns results to a provided output array.
+
+```javascript
+var Float64Array = require( '@stdlib/array/float64' );
+
+var out = new Float64Array( 2 );
+var v = cfloor.assign( -1.5, 2.5, out, 1, 0 );
+// returns <Float64Array>[ -2.0, 2.0 ]
+
+var bool = ( out === v );
+// returns true
+```
+
+The function supports the following parameters:
+
+-   **re**: real component.
+-   **im**: imaginary component.
+-   **out**: output array.
+-   **strideOut**: stride length for `out`.
+-   **offsetOut**: starting index for `out`.
+
+#### cfloor.strided( z, sz, oz, out, so, oo )
+
+Rounds each component of a double-precision complex floating-point number stored in a real-valued strided array view toward negative infinity and assigns results to a provided strided output array.
+
+```javascript
+var Float64Array = require( '@stdlib/array/float64' );
+
+var z = new Float64Array( [ -1.5, 2.5 ] );
+var out = new Float64Array( 2 );
+
+var v = cfloor.strided( z, 1, 0, out, 1, 0 );
+// returns <Float64Array>[ -2.0, 2.0 ]
+
+var bool = ( out === v );
+// returns true
+```
+
+The function supports the following parameters:
+
+-   **z**: complex number strided array view.
+-   **sz**: stride length for `z`.
+-   **oz**: starting index for `z`.
+-   **out**: output array.
+-   **so**: stride length for `out`.
+-   **oo**: starting index for `out`.
+
 </section>
 
 <!-- /.usage -->
@@ -80,23 +129,16 @@ v = cfloor( new Complex128( NaN, NaN ) );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var randu = require( '@stdlib/random/base/randu' );
+var Complex128Array = require( '@stdlib/array/complex128' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var cfloor = require( '@stdlib/math/base/special/cfloor' );
 
-var re;
-var im;
-var z;
-var w;
-var i;
+// Create an array of random numbers:
+var arr = new Complex128Array( uniform( 200, -50.0, 50.0 ) );
 
-for ( i = 0; i < 100; i++ ) {
-    re = ( randu()*100.0 ) - 50.0;
-    im = ( randu()*100.0 ) - 50.0;
-    z = new Complex128( re, im );
-    w = cfloor( z );
-    console.log( 'floor(%s) = %s', z.toString(), w.toString() );
-}
+// Round each component of each complex number toward negative infinity:
+logEachMap( 'cfloor(%s) = %s', arr, cfloor );
 ```
 
 </section>
@@ -131,7 +173,7 @@ for ( i = 0; i < 100; i++ ) {
 
 #### stdlib_base_cfloor( z )
 
-Rounds a double-precision complex floating-point number toward negative infinity.
+Rounds each component of a double-precision complex floating-point number toward negative infinity.
 
 ```c
 #include "stdlib/complex/float64/ctor.h"

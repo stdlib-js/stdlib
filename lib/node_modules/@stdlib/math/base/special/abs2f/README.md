@@ -24,6 +24,16 @@ limitations under the License.
 
 <section class="intro">
 
+The squared [absolute value][absolute-value] is defined as
+
+<!-- <equation class="equation" label="eq:squared_absolute_value" align="center" raw="y = |x|^2 = x^2" alt="Squared absolute value"> -->
+
+```math
+y = |x|^2 = x^2
+```
+
+<!-- </equation> -->
+
 </section>
 
 <!-- /.intro -->
