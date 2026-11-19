@@ -66,6 +66,8 @@
     "numbers",
     "ulp",
     "float32",
-    "float"
+    "float",
+    "single",
+    "number"
   ]
 }

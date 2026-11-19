@@ -20,7 +20,7 @@ limitations under the License.
 
 # dcartesianProduct
 
-> Compute the Cartesian product for two double-precision floating-point ndarrays.
+> Compute the Cartesian product for two one-dimensional double-precision floating-point ndarrays.
 
 <section class="intro">
 
@@ -38,7 +38,7 @@ var dcartesianProduct = require( '@stdlib/blas/ext/base/ndarray/dcartesian-produ
 
 #### dcartesianProduct( arrays )
 
-Computes the Cartesian product for two double-precision floating-point ndarrays.
+Computes the Cartesian product for two one-dimensional double-precision floating-point ndarrays.
 
 ```javascript
 var Float64Vector = require( '@stdlib/ndarray/vector/float64' );

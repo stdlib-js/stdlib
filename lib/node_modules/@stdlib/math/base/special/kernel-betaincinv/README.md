@@ -68,8 +68,10 @@ y = kernelBetaincinv( 1.0, 6.0, 0.8, 0.2 );
 
 ```javascript
 var randu = require( '@stdlib/random/base/randu' );
+var EPS = require( '@stdlib/constants/float64/eps' );
 var kernelBetaincinv = require( '@stdlib/math/base/special/kernel-betaincinv' );
 
+var out;
 var i;
 var p;
 var a;
@@ -77,15 +79,120 @@ var b;
 
 for ( i = 0; i < 100; i++ ) {
     p = randu();
-    a = randu() * 10.0;
-    b = randu() * 10.0;
-    console.log( 'p: %d, \t a: %d, \t b: %d, \t f(p,a,b): %d', p.toFixed( 4 ), a.toFixed( 4 ), b.toFixed( 4 ), kernelBetaincinv( a, b, p, 1.0-p )[ 0 ] );
+    a = ( randu() * 10.0 ) + EPS;
+    b = ( randu() * 10.0 ) + EPS;
+    out = kernelBetaincinv( a, b, p, 1.0-p );
+    console.log( 'p: %d, \t a: %d, \t b: %d, \t y: %d, \t 1-y: %d', p.toFixed( 4 ), a.toFixed( 4 ), b.toFixed( 4 ), out[ 0 ].toFixed( 4 ), out[ 1 ].toFixed( 4 ) );
 }
 ```
 
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/kernel_betaincinv.h"
+```
+
+#### stdlib_base_kernel_betaincinv( a, b, p, q, &out1, &out2 )
+
+Computes the inverse of the lower incomplete beta function.
+
+```c
+double out1;
+double out2;
+
+stdlib_base_kernel_betaincinv( 3.0, 3.0, 0.2, 0.8, &out1, &out2 );
+```
+
+The function accepts the following arguments:
+
+-   **a**: `[in] double` first function parameter (a positive number).
+-   **b**: `[in] double` second function parameter (a positive number).
+-   **p**: `[in] double` probability.
+-   **q**: `[in] double` probability equal to `1-p`.
+-   **out1**: `[out] double*` destination pointer to store the function value `y`.
+-   **out2**: `[out] double*` destination pointer to store `1-y`.
+
+```c
+void stdlib_base_kernel_betaincinv( const double a, const double b, const double p, const double q, double *out1, double *out2 );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/kernel_betaincinv.h"
+#include "stdlib/constants/float64/eps.h"
+#include "stdlib/random/base/randu.h"
+#include <stdio.h>
+#include <stdint.h>
+
+int main( void ) {
+    struct BasePRNGObject *obj = stdlib_base_random_randu_allocate( 0 );
+    double out1;
+    double out2;
+    int32_t i;
+    double p;
+    double a;
+    double b;
+
+    for ( i = 0; i < 100; i++ ) {
+        p = stdlib_base_random_randu( obj );
+        a = ( stdlib_base_random_randu( obj ) * 10.0 ) + STDLIB_CONSTANT_FLOAT64_EPS;
+        b = ( stdlib_base_random_randu( obj ) * 10.0 ) + STDLIB_CONSTANT_FLOAT64_EPS;
+        stdlib_base_kernel_betaincinv( a, b, p, 1.0-p, &out1, &out2 );
+        printf( "p: %lf, a: %lf, b: %lf, y: %lf, 1-y: %lf\n", p, a, b, out1, out2 );
+    }
+
+    stdlib_base_random_randu_free( obj );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

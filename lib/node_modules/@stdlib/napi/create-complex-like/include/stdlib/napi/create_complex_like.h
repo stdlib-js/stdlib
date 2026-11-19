@@ -30,7 +30,7 @@
 * @param name        output variable name
 *
 * @example
-# #include "stdlib/napi/create_complex_like.h"
+* #include "stdlib/napi/create_complex_like.h"
 * #include "stdlib/napi/argv_complex128.h"
 * #include "stdlib/napi/argv.h"
 * #include "stdlib/complex/float64/ctor.h"
