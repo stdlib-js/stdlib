@@ -629,6 +629,24 @@ declare class Int64Array implements Int64ArrayInterface {
 	findLastIndex<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): number;
 
 	/**
+	* Invokes a function once for each array element.
+	*
+	* @param fcn - function to invoke
+	* @param thisArg - execution context
+	* @returns undefined
+	*
+	* @example
+	* function log( v, i ) {
+	*     console.log( '%s: %s', i, v.toString() );
+	* }
+	*
+	* var arr = new Int64Array( [ -1, 2, -3 ] );
+	*
+	* arr.forEach( log );
+	*/
+	forEach<U = unknown>( fcn: Callback<U>, thisArg?: ThisParameterType<Callback<U>> ): void;
+
+	/**
 	* Returns an array element.
 	*
 	* @param i - element index
