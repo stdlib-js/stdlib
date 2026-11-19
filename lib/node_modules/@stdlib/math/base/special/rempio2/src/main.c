@@ -615,7 +615,7 @@ medium:
 		// Skip zero term...
 		nx--;
 	}
-	n = rempio2Kernel( TX, TY, e0, nx);
+	n = rempio2Kernel( TX, TY, e0, nx );
 	if ( hx < 0 ) {
 		*rem1 = -TY[ 0 ];
 		*rem2 = -TY[ 1 ];

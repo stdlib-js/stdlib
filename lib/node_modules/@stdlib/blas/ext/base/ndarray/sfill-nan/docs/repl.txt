@@ -6,6 +6,10 @@
     The input ndarray is modified *in-place* (i.e., the input ndarray is
     *mutated*).
 
+    If a specified `start` or `end` index is negative, the function resolves
+    the respective index by counting backward from the last element (where `-1`
+    refers to the last element).
+
     Parameters
     ----------
     arrays: ArrayLikeObject<ndarray>
@@ -13,6 +17,8 @@
 
         - a one-dimensional input ndarray.
         - a zero-dimensional ndarray containing the scalar constant.
+        - a zero-dimensional ndarray containing the starting index (inclusive).
+        - a zero-dimensional ndarray containing the ending index (exclusive).
 
     Returns
     -------
@@ -22,9 +28,12 @@
     Examples
     --------
     > var x = new {{alias:@stdlib/ndarray/vector/float32}}( [ NaN, -2.0, 3.0, NaN, 4.0, -6.0 ] );
-    > var alpha = {{alias:@stdlib/ndarray/from-scalar}}( 0.0, { 'dtype': 'float32' } );
-    > {{alias}}( [ x, alpha ] )
-    <ndarray>[ 0.0, -2.0, 3.0, 0.0, 4.0, -6.0 ]
+    > var opts = { 'dtype': 'float32' };
+    > var alpha = {{alias:@stdlib/ndarray/from-scalar}}( 0.0, opts );
+    > var st = {{alias:@stdlib/ndarray/from-scalar}}( 0, opts );
+    > var en = {{alias:@stdlib/ndarray/from-scalar}}( 3, opts );
+    > {{alias}}( [ x, alpha, st, en ] )
+    <ndarray>[ 0.0, -2.0, 3.0, NaN, 4.0, -6.0 ]
 
     See Also
     --------

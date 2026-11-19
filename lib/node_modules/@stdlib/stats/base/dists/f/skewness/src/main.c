@@ -22,9 +22,9 @@
 /**
 * Returns the skewness of an F distribution.
 *
-* @param a    numerator degrees of freedom
-* @param b    denominator degrees of freedom
-* @return     skewness
+* @param d1    numerator degrees of freedom
+* @param d2    denominator degrees of freedom
+* @return      skewness
 *
 * @example
 * double y = stdlib_base_dists_f_skewness( 3.0, 7.0 );

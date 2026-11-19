@@ -33,6 +33,8 @@ import { Complex64 } from '@stdlib/types/complex';
 *     -   a one-dimensional input ndarray.
 *     -   a zero-dimensional ndarray containing the search element.
 *     -   a zero-dimensional ndarray containing the scalar constant.
+*     -   a zero-dimensional ndarray containing the starting index (inclusive).
+*     -   a zero-dimensional ndarray containing the ending index (exclusive).
 *
 * -   When comparing elements, the function checks for equality of real and imaginary components using the strict equality operator `===`. As a consequence, `NaN` components are considered distinct (i.e., as `NaN === NaN` always evaluates to `false`, elements having one or more `NaN` components are never replaced), and `-0` and `+0` are considered the same.
 *
@@ -54,10 +56,18 @@ import { Complex64 } from '@stdlib/types/complex';
 *     'dtype': 'complex64'
 * });
 *
-* var out = cfillEqual( [ x, searchElement, alpha ] );
-* // returns <ndarray>[ <Complex64>[ 5.0, 5.0 ], <Complex64>[ -2.0, 3.0 ], <Complex64>[ 5.0, 5.0 ], <Complex64>[ 4.0, -6.0 ] ]
+* var start = scalar2ndarray( 0, {
+*     'dtype': 'generic'
+* });
+*
+* var end = scalar2ndarray( 2, {
+*     'dtype': 'generic'
+* });
+*
+* var out = cfillEqual( [ x, searchElement, alpha, start, end ] );
+* // returns <ndarray>[ <Complex64>[ 5.0, 5.0 ], <Complex64>[ -2.0, 3.0 ], <Complex64>[ 0.0, 0.0 ], <Complex64>[ 4.0, -6.0 ] ]
 */
-declare function cfillEqual( arrays: [ complex64ndarray, typedndarray<Complex64>, typedndarray<Complex64> ] ): complex64ndarray;
+declare function cfillEqual( arrays: [ complex64ndarray, typedndarray<Complex64>, typedndarray<Complex64>, typedndarray<number>, typedndarray<number> ] ): complex64ndarray;
 
 
 // EXPORTS //
