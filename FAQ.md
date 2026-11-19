@@ -784,7 +784,7 @@ See the [contributing guide][contributing-guide].
 
 [compute-shaders]: https://www.khronos.org/opengl/wiki/Compute_Shader
 
-[vulkan]: https://www.khronos.org/vulkan/
+[vulkan]: https://www.vulkan.org/
 
 [shiny]: http://shiny.rstudio.com/
 

@@ -120,7 +120,7 @@ interface PDF {
 *
 * var mypdf = pdf.factory( 0.5, 0.5 );
 *
-* var y = mypdf( 0.8 );
+* y = mypdf( 0.8 );
 * // returns ~0.198
 *
 * y = mypdf( 0.3 );

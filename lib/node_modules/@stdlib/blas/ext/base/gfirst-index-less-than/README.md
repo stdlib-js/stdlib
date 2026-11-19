@@ -55,9 +55,9 @@ var idx = gfirstIndexLessThan( x.length, x, 1, y, 1 );
 The function has the following parameters:
 
 -   **N**: number of indexed elements.
--   **x**: first input array.
+-   **x**: first input [`Array`][mdn-array] or [`typed array`][mdn-typed-array].
 -   **strideX**: stride length for `x`.
--   **y**: second input array.
+-   **y**: second input [`Array`][mdn-array] or [`typed array`][mdn-typed-array].
 -   **strideY**: stride length for `y`.
 
 If the function is unable to find an element in `x` which is less than a corresponding element in `y`, the function returns `-1`.
@@ -93,7 +93,7 @@ var y0 = new Float64Array( [ 9.0, 0.0, 9.0, 9.0 ] );
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 var y1 = new Float64Array( y0.buffer, y0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
-// Find index...
+// Find index:
 var idx = gfirstIndexLessThan( 2, x1, 1, y1, 1 );
 // returns 1
 ```
@@ -135,7 +135,8 @@ var idx = gfirstIndexLessThan.ndarray( 3, x, 1, x.length-3, y, 1, y.length-3 );
 
 ## Notes
 
--   When comparing elements, the function checks whether an element in `x` is less than a corresponding element in `y` using the less-than operator `<`. As a consequence, comparisons involving `NaN` always evaluate to `false`.
+-   If `N <= 0`, both functions return `-1`.
+-   When comparing elements, the functions use the less-than operator `<`. As a consequence, comparisons involving `NaN` always evaluate to `false`, and `-0` and `+0` are considered the same.
 -   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array/base/accessor`][@stdlib/array/base/accessor]).
 
 </section>
@@ -191,6 +192,8 @@ console.log( idx );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[mdn-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 

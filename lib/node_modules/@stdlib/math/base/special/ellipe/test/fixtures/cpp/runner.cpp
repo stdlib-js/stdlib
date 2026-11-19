@@ -253,7 +253,6 @@ void generate( double *x, const unsigned int len, const char *name ) {
 	double *y;
 	double k;
 	double m;
-	double K;
 	unsigned int i;
 	FILE *f;
 
@@ -286,7 +285,6 @@ void generate( double *x, const unsigned int len, const char *name ) {
 			*/
 			m = abs( m );
 			k = sqrt( m/(1.0+m) );
-			K = ellint_1( k );
 			y[ i ] = ellint_2( k ) / sqrt( 1.0+m );
 		}
 	}

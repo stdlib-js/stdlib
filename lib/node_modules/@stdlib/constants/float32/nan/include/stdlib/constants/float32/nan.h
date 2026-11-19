@@ -22,6 +22,6 @@
 /**
 * Macro for single-precision floating-point NaN.
 */
-#define STDLIB_CONSTANT_FLOAT32_NAN 0.0f/0.0f
+#define STDLIB_CONSTANT_FLOAT32_NAN ( 0.0f / 0.0f )
 
 #endif // !STDLIB_CONSTANTS_FLOAT32_NAN_H

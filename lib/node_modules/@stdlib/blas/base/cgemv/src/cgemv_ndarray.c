@@ -139,7 +139,7 @@ void API_SUFFIX(c_cgemv_ndarray)( const CBLAS_TRANSPOSE trans, const CBLAS_INT M
 		if ( trans != CblasConjTrans ) {
 			for ( i1 = 0; i1 < xlen; i1++ ) {
 				tmp = stdlib_base_complex64_mul( alpha, xp[ ix ] );
-				if ( stdlib_base_complex64_is_equal( tmp, zero )) {
+				if ( stdlib_base_complex64_is_equal( tmp, zero ) ) {
 					ia += da0 * ylen;
 				} else {
 					iy = offsetY;
@@ -157,7 +157,7 @@ void API_SUFFIX(c_cgemv_ndarray)( const CBLAS_TRANSPOSE trans, const CBLAS_INT M
 		}
 		for ( i1 = 0; i1 < xlen; i1++ ) {
 			tmp = stdlib_base_complex64_mul( alpha, xp[ ix ] );
-			if ( stdlib_base_complex64_is_equal( tmp, zero )) {
+			if ( stdlib_base_complex64_is_equal( tmp, zero ) ) {
 				ia += da0 * ylen;
 			} else {
 				iy = offsetY;

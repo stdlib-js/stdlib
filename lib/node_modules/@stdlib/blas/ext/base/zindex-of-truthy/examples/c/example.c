@@ -22,15 +22,15 @@
 
 int main( void ) {
 	// Create a strided array (interleaved real and imaginary components):
-	const double x[] = { 0.0, 0.0, 1.0, 2.0, 4.0, 5.0, 6.0, 7.0 };
+	const double x[] = { 0.0, 0.0, 0.0, 0.0, 3.0, 0.0, 0.0, 0.0, 4.0, 0.0, 0.0, 0.0, -1.0, 0.0, 3.0, 0.0 };
 
 	// Specify the number of indexed elements:
-	const int N = 4;
+	const int N = 8;
 
 	// Specify a stride:
 	const int strideX = 1;
 
-	// Find the index of the first truthy element:
+	// Perform a search:
 	int idx = stdlib_strided_zindex_of_truthy( N, (const stdlib_complex128_t *)x, strideX );
 
 	// Print the result:

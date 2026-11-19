@@ -1,0 +1,133 @@
+
+{{alias}}( [options] )
+    Returns a zero-dimensional double-precision complex floating-point ndarray.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Options.
+
+    options.order: string (optional)
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style). Default: 'row-major'.
+
+    options.readonly: boolean (optional)
+        Boolean indicating whether an array should be read-only. Default: false.
+
+    Returns
+    -------
+    out: ndarray
+        A zero-dimensional ndarray.
+
+    Examples
+    --------
+    > var arr = {{alias}}()
+    <ndarray>[ <Complex128>[ 0.0, 0.0 ] ]
+
+
+{{alias}}( value[, options] )
+    Creates a zero-dimensional double-precision complex floating-point ndarray
+    from a scalar value.
+
+    If `value` is a number, the function returns a zero-dimensional ndarray
+    containing a complex number whose real component equals the provided scalar
+    value and whose imaginary component is zero.
+
+    Parameters
+    ----------
+    value: number|ComplexLike
+        Scalar value.
+
+    options: Object (optional)
+        Options.
+
+    options.order: string (optional)
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style). Default: 'row-major'.
+
+    options.readonly: boolean (optional)
+        Boolean indicating whether an array should be read-only. Default: false.
+
+    Returns
+    -------
+    out: ndarray
+        A zero-dimensional ndarray.
+
+    Examples
+    --------
+    > var arr = {{alias}}( 2.0 )
+    <ndarray>[ <Complex128>[ 2.0, 0.0 ] ]
+    > arr = {{alias}}( new {{alias:@stdlib/complex/float64/ctor}}( 2.0, 3.0 ) )
+    <ndarray>[ <Complex128>[ 2.0, 3.0 ] ]
+
+
+{{alias}}( re, im[, options] )
+    Creates a zero-dimensional double-precision complex floating-point ndarray
+    from real and imaginary components.
+
+    Parameters
+    ----------
+    re: number
+        Real component.
+
+    im: number
+        Imaginary component.
+
+    options: Object (optional)
+        Options.
+
+    options.order: string (optional)
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style). Default: 'row-major'.
+
+    options.readonly: boolean (optional)
+        Boolean indicating whether an array should be read-only. Default: false.
+
+    Returns
+    -------
+    out: ndarray
+        A zero-dimensional ndarray.
+
+    Examples
+    --------
+    > var arr = {{alias}}( 2.0, 3.0 )
+    <ndarray>[ <Complex128>[ 2.0, 3.0 ] ]
+
+
+{{alias}}( buffer[, byteOffset][, options] )
+    Returns a zero-dimensional double-precision complex floating-point ndarray
+    view of an ArrayBuffer.
+
+    Parameters
+    ----------
+    buffer: ArrayBuffer
+        Underlying ArrayBuffer.
+
+    byteOffset: integer (optional)
+        Integer byte offset specifying the location of the scalar value.
+        Default: 0.
+
+    options: Object (optional)
+        Options.
+
+    options.order: string (optional)
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style). Default: 'row-major'.
+
+    options.readonly: boolean (optional)
+        Boolean indicating whether an array should be read-only. Default: false.
+
+    Returns
+    -------
+    out: ndarray
+        A zero-dimensional ndarray.
+
+    Examples
+    --------
+    > var buf = new {{alias:@stdlib/array/buffer}}( 32 );
+    > var arr = {{alias}}( buf, 16 )
+    <ndarray>[ <Complex128>[ 0.0, 0.0 ] ]
+
+    See Also
+    --------
+

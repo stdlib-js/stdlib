@@ -168,8 +168,8 @@ main() {
 	files=$(echo "${files}" | grep -v '/fixtures/') || true
 
 	if [[ -n "${files}" ]]; then
-		# Invoke make in batches to avoid "Argument list too long" errors:
-		printf '%s\n' ${files} | xargs sh -c 'make test-javascript-files-min FILES="$*"' _
+		# Invoke make in batches, capped well under the 128KiB Linux single-argument limit, in order to avoid "Argument list too long" errors:
+		printf '%s\n' ${files} | xargs -s 40000 sh -c 'make test-javascript-files-min FILES="$*"' _
 	fi
 
 	cleanup

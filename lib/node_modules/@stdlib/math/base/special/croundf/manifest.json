@@ -37,9 +37,9 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/napi/unary",
-        "@stdlib/math/base/special/roundf",
         "@stdlib/complex/float32/ctor",
-        "@stdlib/complex/float32/reim"
+        "@stdlib/complex/float32/reim",
+        "@stdlib/math/base/special/roundf"
       ]
     },
     {
@@ -53,9 +53,9 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/special/roundf",
         "@stdlib/complex/float32/ctor",
-        "@stdlib/complex/float32/reim"
+        "@stdlib/complex/float32/reim",
+        "@stdlib/math/base/special/roundf"
       ]
     },
     {
@@ -69,9 +69,9 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/special/roundf",
         "@stdlib/complex/float32/ctor",
-        "@stdlib/complex/float32/reim"
+        "@stdlib/complex/float32/reim",
+        "@stdlib/math/base/special/roundf"
       ]
     }
   ]
