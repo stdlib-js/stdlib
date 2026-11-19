@@ -33,27 +33,27 @@ import isnan = require( './index' );
 	isnan( NaN, 123 ); // $ExpectError
 }
 
-// Attached to main export is an isPrimitive method which returns a boolean...
+// Attached to main export is an `isPrimitive` method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers
 	isnan.isPrimitive( new Number( NaN ) ); // $ExpectType boolean
 	isnan.isPrimitive( NaN ); // $ExpectType boolean
 }
 
-// The compiler throws an error if the isPrimitive method is provided an unsupported number of arguments...
+// The compiler throws an error if the `isPrimitive` method is provided an unsupported number of arguments...
 {
 	isnan.isPrimitive(); // $ExpectError
 	isnan.isPrimitive( NaN, 123 ); // $ExpectError
 }
 
-// Attached to main export is an isPrimitive method which returns a boolean...
+// Attached to main export is an `isObject` method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers
 	isnan.isObject( new Number( NaN ) ); // $ExpectType boolean
 	isnan.isObject( NaN ); // $ExpectType boolean
 }
 
-// The compiler throws an error if the isObject method is provided an unsupported number of arguments...
+// The compiler throws an error if the `isObject` method is provided an unsupported number of arguments...
 {
 	isnan.isObject(); // $ExpectError
 	isnan.isObject( NaN, 123 ); // $ExpectError

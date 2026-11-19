@@ -20,6 +20,7 @@
 #include "stdlib/math/base/assert/is_nanf.h"
 #include "stdlib/math/base/assert/is_positive_zerof.h"
 #include "stdlib/constants/float32/pinf.h"
+#include "stdlib/constants/float32/nan.h"
 
 /**
 * Returns the maximum single-precision floating-point number.
@@ -38,7 +39,7 @@
 */
 float stdlib_base_maxf( const float x, const float y ) {
 	if ( stdlib_base_is_nanf( x ) || stdlib_base_is_nanf( y ) ) {
-		return 0.0f / 0.0f; // NaN
+		return STDLIB_CONSTANT_FLOAT32_NAN;
 	}
 	if ( x == STDLIB_CONSTANT_FLOAT32_PINF || y == STDLIB_CONSTANT_FLOAT32_PINF ) {
 		return STDLIB_CONSTANT_FLOAT32_PINF;

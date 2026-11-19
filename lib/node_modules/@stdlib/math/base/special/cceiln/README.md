@@ -217,7 +217,7 @@ stdlib_complex128_t stdlib_base_cceiln( const stdlib_complex128_t z, int32_t n )
 #include "stdlib/complex/float64/reim.h"
 #include <stdio.h>
 
-int main() {
+int main( void ) {
     const stdlib_complex128_t x[] = {
         stdlib_complex128( 3.14, 1.5 ),
         stdlib_complex128( -3.14, -1.5 ),

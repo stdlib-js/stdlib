@@ -1,0 +1,84 @@
+
+{{alias}}( dtype, buffer, shape, strides, byteOffset, order[, options] )
+    Creates an ndarray from an ArrayBuffer.
+
+    Parameters
+    ----------
+    dtype: string|DataType
+        Underlying data type.
+
+    buffer: ArrayBuffer
+        Data buffer.
+
+    shape: ArrayLikeObject<integer>
+        Array shape.
+
+    strides: ArrayLikeObject<integer>
+        Array strides.
+
+    byteOffset: integer
+        Byte offset (in units of bytes) specifying the location of the
+        first indexed element in the data buffer (i.e., the start of the
+        ndarray view).
+
+    order: string
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style).
+
+    options: Object (optional)
+        Options.
+
+    options.mode: string (optional)
+        Specifies how to handle indices which exceed array dimensions. If equal
+        to 'throw', an ndarray instance throws an error when an index exceeds
+        array dimensions. If equal to 'normalize', an ndarray instance
+        normalizes negative indices and throws an error when an index exceeds
+        array dimensions. If equal to 'wrap', an ndarray instance wraps around
+        indices exceeding array dimensions using modulo arithmetic. If equal to
+        'clamp', an ndarray instance sets an index exceeding array dimensions
+        to either `0` (minimum index) or the maximum index. Default: 'throw'.
+
+    options.submode: Array<string> (optional)
+        Specifies how to handle subscripts which exceed array dimensions. If a
+        mode for a corresponding dimension is equal to 'throw', an ndarray
+        instance throws an error when a subscript exceeds array dimensions. If
+        equal to 'normalize', an ndarray instance normalizes negative
+        subscripts and throws an error when a subscript exceeds array
+        dimensions. If equal to 'wrap', an ndarray instance wraps around
+        subscripts exceeding array dimensions using modulo arithmetic. If equal
+        to 'clamp', an ndarray instance sets a subscript exceeding array
+        dimensions to either `0` (minimum index) or the maximum index. If the
+        number of modes is fewer than the number of dimensions, the function
+        recycles modes using modulo arithmetic. Default: [ options.mode ].
+
+    options.readonly: boolean (optional)
+        Boolean indicating whether an array should be read-only. Default: false.
+
+    Returns
+    -------
+    ndarray: ndarray
+        ndarray instance.
+
+    Examples
+    --------
+    // Create a new instance...
+    > var b = new {{alias:@stdlib/array/buffer}}( 32 );
+    > var d = [ 2, 2 ];
+    > var s = [ 2, 1 ];
+    > var o = 0;
+    > var arr = {{alias}}( 'float64', b, d, s, o, 'row-major' )
+    <ndarray>
+
+    // Set an element using subscripts:
+    > arr.set( 1, 1, 40.0 );
+    > arr.get( 1, 1 )
+    40.0
+
+    // Set an element using a linear index:
+    > arr.iset( 3, 99.0 );
+    > arr.get( 1, 1 )
+    99.0
+
+    See Also
+    --------
+

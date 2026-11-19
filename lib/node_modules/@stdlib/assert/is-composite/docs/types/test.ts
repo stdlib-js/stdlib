@@ -33,27 +33,27 @@ import isComposite = require( './index' );
 	isComposite( 0.2, 123 ); // $ExpectError
 }
 
-// Attached to main export is an isPrimitive method which returns a boolean...
+// Attached to main export is an `isPrimitive` method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers
 	isComposite.isPrimitive( new Number( 0.2 ) ); // $ExpectType boolean
 	isComposite.isPrimitive( 0.2 ); // $ExpectType boolean
 }
 
-// The compiler throws an error if the isPrimitive method is provided an unsupported number of arguments...
+// The compiler throws an error if the `isPrimitive` method is provided an unsupported number of arguments...
 {
 	isComposite.isPrimitive(); // $ExpectError
 	isComposite.isPrimitive( 0.2, 123 ); // $ExpectError
 }
 
-// Attached to main export is an isPrimitive method which returns a boolean...
+// Attached to main export is an `isObject` method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers
 	isComposite.isObject( new Number( 0.2 ) ); // $ExpectType boolean
 	isComposite.isObject( 0.2 ); // $ExpectType boolean
 }
 
-// The compiler throws an error if the isObject method is provided an unsupported number of arguments...
+// The compiler throws an error if the `isObject` method is provided an unsupported number of arguments...
 {
 	isComposite.isObject(); // $ExpectError
 	isComposite.isObject( 0.2, 123 ); // $ExpectError

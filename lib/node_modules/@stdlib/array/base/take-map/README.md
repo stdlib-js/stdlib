@@ -30,7 +30,7 @@ limitations under the License.
 var takeMap = require( '@stdlib/array/base/take-map' );
 ```
 
-### takeMap( x, indices, mode, clbk )
+#### takeMap( x, indices, mode, clbk )
 
 Takes elements from an array and returns a new array after applying a mapping function.
 
@@ -52,7 +52,7 @@ The function supports the following parameters:
 -   **mode**: index [mode][@stdlib/ndarray/base/ind].
 -   **clbk**: function to apply.
 
-### takeMap.assign( x, indices, mode, out, stride, offset, clbk )
+#### takeMap.assign( x, indices, mode, out, stride, offset, clbk )
 
 > Takes elements from an array and assigns the values to elements in a provided output array.
 
