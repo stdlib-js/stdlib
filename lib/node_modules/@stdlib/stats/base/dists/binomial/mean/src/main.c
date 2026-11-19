@@ -18,6 +18,7 @@
 
 #include "stdlib/stats/base/dists/binomial/mean.h"
 #include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdint.h>
 
 /**
@@ -38,7 +39,7 @@ double stdlib_base_dists_binomial_mean( const int32_t n, const double p ) {
 		p < 0.0 ||
 		p > 1.0
 	) {
-		return 0.0 / 0.0;
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	return n * p;
 }

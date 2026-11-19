@@ -42,14 +42,12 @@ Multiplies a one-dimensional double-precision floating-point ndarray `x` by a co
 
 ```javascript
 var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
-var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var Float64Tensor0D = require( '@stdlib/ndarray/tensor0d/float64' );
 
 var x = new Float64Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 var y = new Float64Vector( [ 1.0, 1.0, 1.0, 1.0, 1.0 ] );
 
-var alpha = scalar2ndarray( 5.0, {
-    'dtype': 'float64'
-});
+var alpha = new Float64Tensor0D( 5.0 );
 
 var z = daxpy( [ x, y, alpha ] );
 // returns <ndarray>[ 6.0, 11.0, 16.0, 21.0, 26.0 ]
@@ -84,7 +82,7 @@ The function has the following parameters:
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/discrete-uniform' );
-var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var Float64Tensor0D = require( '@stdlib/ndarray/tensor0d/float64' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var daxpy = require( '@stdlib/blas/base/ndarray/daxpy' );
 
@@ -98,7 +96,7 @@ console.log( ndarray2array( x ) );
 var y = discreteUniform( [ 10 ], 0, 10, opts );
 console.log( ndarray2array( y ) );
 
-var alpha = scalar2ndarray( 5.0, opts );
+var alpha = new Float64Tensor0D( 5.0 );
 
 var out = daxpy( [ x, y, alpha ] );
 console.log( ndarray2array( out ) );

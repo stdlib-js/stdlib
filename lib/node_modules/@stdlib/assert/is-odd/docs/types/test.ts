@@ -33,27 +33,27 @@ import isOdd = require( './index' );
 	isOdd( 3, 123 ); // $ExpectError
 }
 
-// Attached to main export is an isPrimitive method which returns a boolean...
+// Attached to main export is an `isPrimitive` method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers
 	isOdd.isPrimitive( new Number( 3 ) ); // $ExpectType boolean
 	isOdd.isPrimitive( 3 ); // $ExpectType boolean
 }
 
-// The compiler throws an error if the isPrimitive method is provided an unsupported number of arguments...
+// The compiler throws an error if the `isPrimitive` method is provided an unsupported number of arguments...
 {
 	isOdd.isPrimitive(); // $ExpectError
 	isOdd.isPrimitive( 3, 123 ); // $ExpectError
 }
 
-// Attached to main export is an isPrimitive method which returns a boolean...
+// Attached to main export is an `isObject` method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers
 	isOdd.isObject( new Number( 3 ) ); // $ExpectType boolean
 	isOdd.isObject( 3 ); // $ExpectType boolean
 }
 
-// The compiler throws an error if the isObject method is provided an unsupported number of arguments...
+// The compiler throws an error if the `isObject` method is provided an unsupported number of arguments...
 {
 	isOdd.isObject(); // $ExpectError
 	isOdd.isObject( 3, 123 ); // $ExpectError

@@ -42,14 +42,10 @@ Subtracts a scalar constant from each element in a one-dimensional single-precis
 
 ```javascript
 var Complex64Vector = require( '@stdlib/ndarray/vector/complex64' );
-var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var Complex64Tensor0D = require( '@stdlib/ndarray/tensor0d/complex64' );
 
 var x = new Complex64Vector( [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ] );
-
-var alpha = scalar2ndarray( new Complex64( 5.0, 0.0 ), {
-    'dtype': 'complex64'
-});
+var alpha = new Complex64Tensor0D( 5.0, 0.0 );
 
 cxsa( [ x, alpha ] );
 // x => <ndarray>[ <Complex64>[ -7.0, 1.0 ], <Complex64>[ -2.0, -5.0 ], <Complex64>[ -1.0, 0.0 ], <Complex64>[ -6.0, -3.0 ] ]
@@ -85,8 +81,7 @@ The function has the following parameters:
 ```javascript
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var Complex64Vector = require( '@stdlib/ndarray/vector/complex64' );
-var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var Complex64Tensor0D = require( '@stdlib/ndarray/tensor0d/complex64' );
 var ndarraylike2scalar = require( '@stdlib/ndarray/ndarraylike2scalar' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var cxsa = require( '@stdlib/blas/ext/base/ndarray/cxsa' );
@@ -98,9 +93,7 @@ var opts = {
 var x = new Complex64Vector( discreteUniform( 20, -100, 100, opts ) );
 console.log( ndarray2array( x ) );
 
-var alpha = scalar2ndarray( new Complex64( 5.0, -3.0 ), {
-    'dtype': 'complex64'
-});
+var alpha = new Complex64Tensor0D( 5.0, -3.0 );
 console.log( 'Alpha:', ndarraylike2scalar( alpha ) );
 
 cxsa( [ x, alpha ] );
