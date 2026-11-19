@@ -36,8 +36,14 @@ import gfillNotEqual = require( './index' );
 	const alpha = scalar2ndarray( 5.0, {
 		'dtype': 'generic'
 	});
+	const start = scalar2ndarray( 0, {
+		'dtype': 'generic'
+	});
+	const end = scalar2ndarray( 10, {
+		'dtype': 'generic'
+	});
 
-	gfillNotEqual( [ x, searchElement, alpha ] ); // $ExpectType genericndarray<number>
+	gfillNotEqual( [ x, searchElement, alpha, start, end ] ); // $ExpectType genericndarray<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array of ndarrays...
@@ -64,7 +70,13 @@ import gfillNotEqual = require( './index' );
 	const alpha = scalar2ndarray( 5.0, {
 		'dtype': 'generic'
 	});
+	const start = scalar2ndarray( 0, {
+		'dtype': 'generic'
+	});
+	const end = scalar2ndarray( 10, {
+		'dtype': 'generic'
+	});
 
 	gfillNotEqual(); // $ExpectError
-	gfillNotEqual( [ x, searchElement, alpha ], {} ); // $ExpectError
+	gfillNotEqual( [ x, searchElement, alpha, start, end ], {} ); // $ExpectError
 }

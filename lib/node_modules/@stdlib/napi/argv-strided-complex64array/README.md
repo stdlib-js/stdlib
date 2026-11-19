@@ -214,7 +214,7 @@ The macro expects the following arguments:
 
 <section class="notes">
 
-## Notes
+### Notes
 
 -   A single-precision complex floating-point array is a single-precision floating-point array having interleaved real and imaginary components, such that each element of the single-precision complex floating-point array consists of two adjacent (in memory) single-precision floating-point numbers.
 

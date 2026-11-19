@@ -58,7 +58,6 @@
     "search",
     "index",
     "falsy",
-    "get",
     "strided",
     "array",
     "ndarray"

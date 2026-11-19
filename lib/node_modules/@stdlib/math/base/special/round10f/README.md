@@ -22,6 +22,12 @@ limitations under the License.
 
 > Round a single-precision floating-point number to the nearest power of 10 on a linear scale.
 
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

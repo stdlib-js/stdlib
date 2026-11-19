@@ -108,7 +108,7 @@ var v = polyval( 0.5 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu');
+var randu = require( '@stdlib/random/base/randu' );
 var hermitepoly = require( '@stdlib/math/base/tools/hermitepoly' );
 
 var x;

@@ -1,7 +1,8 @@
 
 {{alias}}( ndims )
     Returns a kernel for applying a one-dimensional strided array function to an
-    input ndarray and assigning results to an output ndarray using loop tiling.
+    input ndarray and assigning results to an output ndarray using loop
+    blocking.
 
     The returned function has the following parameters:
 
@@ -35,6 +36,330 @@
     --------
     > var f = {{alias}}( 2 )
     <Function>
+
+
+{{alias}}.kernel2d( fcn, arr, views, sh, sx, sy, strategyX, strategyY, opts )
+    Applies a one-dimensional strided array function to a list of specified
+    dimensions in an input ndarray and assigns results to a provided output
+    ndarray via loop blocking.
+
+    Parameters
+    ----------
+    fcn: Function
+        Wrapper for a one-dimensional strided array function.
+
+    arr: Array<Object>
+        Array containing one input ndarray descriptor and one output ndarray
+        descriptor, followed by any additional ndarray arguments.
+
+    views: Array<Object>
+        Initialized ndarray descriptors representing subarray views.
+
+    sh: Array<integer>
+        Loop dimensions. Should have two elements.
+
+    sx: Array<integer>
+        Loop dimension strides for the input ndarray.
+
+    sy: Array<integer>
+        Loop dimension strides for the output ndarray.
+
+    strategyX: Object
+        Strategy for marshaling data to and from an input ndarray view.
+
+    strategyY: Object
+        Strategy for marshaling data to and from an output ndarray view.
+
+    opts: Object
+        Function options which are passed through to `fcn`.
+
+
+{{alias}}.kernel3d( fcn, arr, views, sh, sx, sy, strategyX, strategyY, opts )
+    Applies a one-dimensional strided array function to a list of specified
+    dimensions in an input ndarray and assigns results to a provided output
+    ndarray via loop blocking.
+
+    Parameters
+    ----------
+    fcn: Function
+        Wrapper for a one-dimensional strided array function.
+
+    arr: Array<Object>
+        Array containing one input ndarray descriptor and one output ndarray
+        descriptor, followed by any additional ndarray arguments.
+
+    views: Array<Object>
+        Initialized ndarray descriptors representing subarray views.
+
+    sh: Array<integer>
+        Loop dimensions. Should have three elements.
+
+    sx: Array<integer>
+        Loop dimension strides for the input ndarray.
+
+    sy: Array<integer>
+        Loop dimension strides for the output ndarray.
+
+    strategyX: Object
+        Strategy for marshaling data to and from an input ndarray view.
+
+    strategyY: Object
+        Strategy for marshaling data to and from an output ndarray view.
+
+    opts: Object
+        Function options which are passed through to `fcn`.
+
+
+{{alias}}.kernel4d( fcn, arr, views, sh, sx, sy, strategyX, strategyY, opts )
+    Applies a one-dimensional strided array function to a list of specified
+    dimensions in an input ndarray and assigns results to a provided output
+    ndarray via loop blocking.
+
+    Parameters
+    ----------
+    fcn: Function
+        Wrapper for a one-dimensional strided array function.
+
+    arr: Array<Object>
+        Array containing one input ndarray descriptor and one output ndarray
+        descriptor, followed by any additional ndarray arguments.
+
+    views: Array<Object>
+        Initialized ndarray descriptors representing subarray views.
+
+    sh: Array<integer>
+        Loop dimensions. Should have four elements.
+
+    sx: Array<integer>
+        Loop dimension strides for the input ndarray.
+
+    sy: Array<integer>
+        Loop dimension strides for the output ndarray.
+
+    strategyX: Object
+        Strategy for marshaling data to and from an input ndarray view.
+
+    strategyY: Object
+        Strategy for marshaling data to and from an output ndarray view.
+
+    opts: Object
+        Function options which are passed through to `fcn`.
+
+
+{{alias}}.kernel5d( fcn, arr, views, sh, sx, sy, strategyX, strategyY, opts )
+    Applies a one-dimensional strided array function to a list of specified
+    dimensions in an input ndarray and assigns results to a provided output
+    ndarray via loop blocking.
+
+    Parameters
+    ----------
+    fcn: Function
+        Wrapper for a one-dimensional strided array function.
+
+    arr: Array<Object>
+        Array containing one input ndarray descriptor and one output ndarray
+        descriptor, followed by any additional ndarray arguments.
+
+    views: Array<Object>
+        Initialized ndarray descriptors representing subarray views.
+
+    sh: Array<integer>
+        Loop dimensions. Should have five elements.
+
+    sx: Array<integer>
+        Loop dimension strides for the input ndarray.
+
+    sy: Array<integer>
+        Loop dimension strides for the output ndarray.
+
+    strategyX: Object
+        Strategy for marshaling data to and from an input ndarray view.
+
+    strategyY: Object
+        Strategy for marshaling data to and from an output ndarray view.
+
+    opts: Object
+        Function options which are passed through to `fcn`.
+
+
+{{alias}}.kernel6d( fcn, arr, views, sh, sx, sy, strategyX, strategyY, opts )
+    Applies a one-dimensional strided array function to a list of specified
+    dimensions in an input ndarray and assigns results to a provided output
+    ndarray via loop blocking.
+
+    Parameters
+    ----------
+    fcn: Function
+        Wrapper for a one-dimensional strided array function.
+
+    arr: Array<Object>
+        Array containing one input ndarray descriptor and one output ndarray
+        descriptor, followed by any additional ndarray arguments.
+
+    views: Array<Object>
+        Initialized ndarray descriptors representing subarray views.
+
+    sh: Array<integer>
+        Loop dimensions. Should have six elements.
+
+    sx: Array<integer>
+        Loop dimension strides for the input ndarray.
+
+    sy: Array<integer>
+        Loop dimension strides for the output ndarray.
+
+    strategyX: Object
+        Strategy for marshaling data to and from an input ndarray view.
+
+    strategyY: Object
+        Strategy for marshaling data to and from an output ndarray view.
+
+    opts: Object
+        Function options which are passed through to `fcn`.
+
+
+{{alias}}.kernel7d( fcn, arr, views, sh, sx, sy, strategyX, strategyY, opts )
+    Applies a one-dimensional strided array function to a list of specified
+    dimensions in an input ndarray and assigns results to a provided output
+    ndarray via loop blocking.
+
+    Parameters
+    ----------
+    fcn: Function
+        Wrapper for a one-dimensional strided array function.
+
+    arr: Array<Object>
+        Array containing one input ndarray descriptor and one output ndarray
+        descriptor, followed by any additional ndarray arguments.
+
+    views: Array<Object>
+        Initialized ndarray descriptors representing subarray views.
+
+    sh: Array<integer>
+        Loop dimensions. Should have seven elements.
+
+    sx: Array<integer>
+        Loop dimension strides for the input ndarray.
+
+    sy: Array<integer>
+        Loop dimension strides for the output ndarray.
+
+    strategyX: Object
+        Strategy for marshaling data to and from an input ndarray view.
+
+    strategyY: Object
+        Strategy for marshaling data to and from an output ndarray view.
+
+    opts: Object
+        Function options which are passed through to `fcn`.
+
+
+{{alias}}.kernel8d( fcn, arr, views, sh, sx, sy, strategyX, strategyY, opts )
+    Applies a one-dimensional strided array function to a list of specified
+    dimensions in an input ndarray and assigns results to a provided output
+    ndarray via loop blocking.
+
+    Parameters
+    ----------
+    fcn: Function
+        Wrapper for a one-dimensional strided array function.
+
+    arr: Array<Object>
+        Array containing one input ndarray descriptor and one output ndarray
+        descriptor, followed by any additional ndarray arguments.
+
+    views: Array<Object>
+        Initialized ndarray descriptors representing subarray views.
+
+    sh: Array<integer>
+        Loop dimensions. Should have eight elements.
+
+    sx: Array<integer>
+        Loop dimension strides for the input ndarray.
+
+    sy: Array<integer>
+        Loop dimension strides for the output ndarray.
+
+    strategyX: Object
+        Strategy for marshaling data to and from an input ndarray view.
+
+    strategyY: Object
+        Strategy for marshaling data to and from an output ndarray view.
+
+    opts: Object
+        Function options which are passed through to `fcn`.
+
+
+{{alias}}.kernel9d( fcn, arr, views, sh, sx, sy, strategyX, strategyY, opts )
+    Applies a one-dimensional strided array function to a list of specified
+    dimensions in an input ndarray and assigns results to a provided output
+    ndarray via loop blocking.
+
+    Parameters
+    ----------
+    fcn: Function
+        Wrapper for a one-dimensional strided array function.
+
+    arr: Array<Object>
+        Array containing one input ndarray descriptor and one output ndarray
+        descriptor, followed by any additional ndarray arguments.
+
+    views: Array<Object>
+        Initialized ndarray descriptors representing subarray views.
+
+    sh: Array<integer>
+        Loop dimensions. Should have nine elements.
+
+    sx: Array<integer>
+        Loop dimension strides for the input ndarray.
+
+    sy: Array<integer>
+        Loop dimension strides for the output ndarray.
+
+    strategyX: Object
+        Strategy for marshaling data to and from an input ndarray view.
+
+    strategyY: Object
+        Strategy for marshaling data to and from an output ndarray view.
+
+    opts: Object
+        Function options which are passed through to `fcn`.
+
+
+{{alias}}.kernel10d( fcn, arr, views, sh, sx, sy, strategyX, strategyY, opts )
+    Applies a one-dimensional strided array function to a list of specified
+    dimensions in an input ndarray and assigns results to a provided output
+    ndarray via loop blocking.
+
+    Parameters
+    ----------
+    fcn: Function
+        Wrapper for a one-dimensional strided array function.
+
+    arr: Array<Object>
+        Array containing one input ndarray descriptor and one output ndarray
+        descriptor, followed by any additional ndarray arguments.
+
+    views: Array<Object>
+        Initialized ndarray descriptors representing subarray views.
+
+    sh: Array<integer>
+        Loop dimensions. Should have ten elements.
+
+    sx: Array<integer>
+        Loop dimension strides for the input ndarray.
+
+    sy: Array<integer>
+        Loop dimension strides for the output ndarray.
+
+    strategyX: Object
+        Strategy for marshaling data to and from an input ndarray view.
+
+    strategyY: Object
+        Strategy for marshaling data to and from an output ndarray view.
+
+    opts: Object
+        Function options which are passed through to `fcn`.
 
     See Also
     --------
