@@ -19,7 +19,7 @@
 /* eslint-disable space-in-parens */
 
 import zeros = require( '@stdlib/ndarray/zeros' );
-import scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+import Float32Tensor0D = require( '@stdlib/ndarray/tensor0d/float32' );
 import saxpby = require( './index' );
 
 
@@ -33,12 +33,8 @@ import saxpby = require( './index' );
 	const y = zeros( [ 10 ], {
 		'dtype': 'float32'
 	});
-	const alpha = scalar2ndarray( 5.0, {
-		'dtype': 'float32'
-	});
-	const beta = scalar2ndarray( 2.0, {
-		'dtype': 'float32'
-	});
+	const alpha = new Float32Tensor0D( 5.0 );
+	const beta = new Float32Tensor0D( 2.0 );
 
 	saxpby( [ x, y, alpha, beta ] ); // $ExpectType float32ndarray
 }
@@ -64,12 +60,8 @@ import saxpby = require( './index' );
 	const y = zeros( [ 10 ], {
 		'dtype': 'float32'
 	});
-	const alpha = scalar2ndarray( 5.0, {
-		'dtype': 'float32'
-	});
-	const beta = scalar2ndarray( 2.0, {
-		'dtype': 'float32'
-	});
+	const alpha = new Float32Tensor0D( 5.0 );
+	const beta = new Float32Tensor0D( 2.0 );
 
 	saxpby(); // $ExpectError
 	saxpby( [ x, y, alpha, beta ], {} ); // $ExpectError

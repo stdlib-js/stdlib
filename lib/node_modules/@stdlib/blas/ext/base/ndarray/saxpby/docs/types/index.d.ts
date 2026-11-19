@@ -39,18 +39,13 @@ import { float32ndarray, typedndarray } from '@stdlib/types/ndarray';
 *
 * @example
 * var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
-* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+* var Float32Tensor0D = require( '@stdlib/ndarray/tensor0d/float32' );
 *
 * var x = new Float32Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 * var y = new Float32Vector( [ 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 *
-* var alpha = scalar2ndarray( 5.0, {
-*     'dtype': 'float32'
-* });
-*
-* var beta = scalar2ndarray( 2.0, {
-*     'dtype': 'float32'
-* });
+* var alpha = new Float32Tensor0D( 5.0 );
+* var beta = new Float32Tensor0D( 2.0 );
 *
 * var out = saxpby( [ x, y, alpha, beta ] );
 * // returns <ndarray>[ 9.0, 16.0, 23.0, 30.0, 37.0 ]

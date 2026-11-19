@@ -73,7 +73,7 @@
       "base_alias": "cfloor",
       "alias": "cfloor",
       "pkg_desc": "round each component of a double-precision complex floating-point number toward negative infinity",
-      "desc": "rounds each component a double-precision complex floating-point number toward negative infinity",
+      "desc": "rounds each component of a double-precision complex floating-point number toward negative infinity",
       "short_desc": "",
       "parameters": [
         {
