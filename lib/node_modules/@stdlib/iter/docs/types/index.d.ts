@@ -710,7 +710,7 @@ interface Namespace {
 	* // returns 2
 	*
 	* r = it.next().value;
-	* // undefined
+	* // returns undefined
 	*
 	* // ...
 	*/
@@ -2090,7 +2090,7 @@ interface Namespace {
 	* // returns 2
 	*
 	* r = it.next().value;
-	* // undefined
+	* // returns undefined
 	*
 	* // ...
 	*/
@@ -2137,7 +2137,7 @@ interface Namespace {
 	* // returns 2
 	*
 	* r = it.next().value;
-	* // undefined
+	* // returns undefined
 	*
 	* // ...
 	*/

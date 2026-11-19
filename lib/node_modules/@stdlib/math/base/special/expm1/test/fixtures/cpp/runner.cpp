@@ -30,10 +30,17 @@
 #include <boost/random/uniform_int_distribution.hpp>
 #include <boost/random/uniform_real_distribution.hpp>
 #include <boost/math/special_functions/expm1.hpp>
+#include <boost/math/policies/policy.hpp>
 
 using boost::random::uniform_real_distribution;
 using boost::random::uniform_int_distribution;
 using boost::random::mt19937;
+using boost::math::policies::policy;
+using boost::math::policies::overflow_error;
+using boost::math::policies::errno_on_error;
+
+// Define an evaluation policy which leaves overflow to `std::expm1` (as of Boost 1.89.0, the default policy raises an overflow error for any `x >= 709`, although `expm1(x)` is finite up to `ln(DBL_MAX) ~ 709.78`):
+typedef policy< overflow_error<errno_on_error> > expm1_policy;
 
 // Define a new pseudorandom number generator:
 mt19937 rng;
@@ -232,7 +239,7 @@ void generate( double *x, const unsigned int len, const char *name ) {
 
 	// Generate fixture data:
 	for ( i = 0; i < len; i++ ) {
-		y[ i ] = boost::math::expm1( x[ i ] );
+		y[ i ] = boost::math::expm1( x[ i ], expm1_policy() );
 	}
 	// Open a new file:
 	f = fopen( name, "w" );
