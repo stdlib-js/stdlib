@@ -42,13 +42,10 @@ Subtracts a scalar constant from each element in a one-dimensional double-precis
 
 ```javascript
 var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
-var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var Float64Tensor0D = require( '@stdlib/ndarray/tensor0d/float64' );
 
 var x = new Float64Vector( [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ] );
-
-var alpha = scalar2ndarray( 5.0, {
-    'dtype': 'float64'
-});
+var alpha = new Float64Tensor0D( 5.0 );
 
 dxsa( [ x, alpha ] );
 // x => <ndarray>[ -7.0, -4.0, -2.0, -10.0, -1.0, -5.0, -6.0, -8.0 ]
@@ -83,7 +80,7 @@ The function has the following parameters:
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/discrete-uniform' );
-var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var Float64Tensor0D = require( '@stdlib/ndarray/tensor0d/float64' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var ndarraylike2scalar = require( '@stdlib/ndarray/ndarraylike2scalar' );
 var dxsa = require( '@stdlib/blas/ext/base/ndarray/dxsa' );
@@ -95,7 +92,7 @@ var opts = {
 var x = discreteUniform( [ 10 ], -100, 100, opts );
 console.log( ndarray2array( x ) );
 
-var alpha = scalar2ndarray( 5.0, opts );
+var alpha = new Float64Tensor0D( 5.0 );
 console.log( 'Alpha: %d', ndarraylike2scalar( alpha ) );
 
 dxsa( [ x, alpha ] );

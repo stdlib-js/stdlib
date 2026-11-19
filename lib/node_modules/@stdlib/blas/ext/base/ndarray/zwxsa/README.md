@@ -42,15 +42,11 @@ Subtracts a scalar constant from each element in an input one-dimensional double
 
 ```javascript
 var Complex128Vector = require( '@stdlib/ndarray/vector/complex128' );
-var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var Complex128Tensor0D = require( '@stdlib/ndarray/tensor0d/complex128' );
 
 var x = new Complex128Vector( [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ] );
 var w = new Complex128Vector( 4 );
-
-var alpha = scalar2ndarray( new Complex128( 5.0, 0.0 ), {
-    'dtype': 'complex128'
-});
+var alpha = new Complex128Tensor0D( 5.0, 0.0 );
 
 zwxsa( [ x, w, alpha ] );
 // w => <ndarray>[ <Complex128>[ -7.0, 1.0 ], <Complex128>[ -2.0, -5.0 ], <Complex128>[ -1.0, 0.0 ], <Complex128>[ -6.0, -3.0 ] ]
@@ -83,8 +79,7 @@ The function has the following parameters:
 ```javascript
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var Complex128Vector = require( '@stdlib/ndarray/vector/complex128' );
-var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var Complex128Tensor0D = require( '@stdlib/ndarray/tensor0d/complex128' );
 var ndarraylike2scalar = require( '@stdlib/ndarray/ndarraylike2scalar' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var zwxsa = require( '@stdlib/blas/ext/base/ndarray/zwxsa' );
@@ -99,9 +94,7 @@ console.log( ndarray2array( x ) );
 var w = new Complex128Vector( 10 );
 console.log( ndarray2array( w ) );
 
-var alpha = scalar2ndarray( new Complex128( 5.0, -3.0 ), {
-    'dtype': 'complex128'
-});
+var alpha = new Complex128Tensor0D( 5.0, -3.0 );
 console.log( 'Alpha:', ndarraylike2scalar( alpha ) );
 
 zwxsa( [ x, w, alpha ] );

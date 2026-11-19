@@ -1,0 +1,7 @@
+---
+type: amend-message
+---
+feat: add `copyWithin` method to `array/uint64`
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/13940
+Reviewed-by: Athan Reines <kgryte@gmail.com>

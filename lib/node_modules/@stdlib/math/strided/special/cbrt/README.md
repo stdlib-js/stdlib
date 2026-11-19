@@ -36,7 +36,7 @@ limitations under the License.
 var cbrt = require( '@stdlib/math/strided/special/cbrt' );
 ```
 
-#### cbrt( N, x, strideX, y, strideY )
+#### cbrt( N, dtypeX, x, strideX, dtypeY, y, strideY )
 
 Computes the [cube root][@stdlib/math/base/special/cbrt] of each element in a strided array `x` and assigns the results to elements in a strided array `y`.
 
@@ -89,7 +89,7 @@ cbrt( 3, 'float64', x1, -2, 'float64', y1, 1 );
 // y0 => <Float64Array>[ 0.0, 0.0, 0.0, 5.0, 3.0, 1.0 ]
 ```
 
-#### cbrt.ndarray( N, x, strideX, offsetX, y, strideY, offsetY )
+#### cbrt.ndarray( N, dtypeX, x, strideX, offsetX, dtypeY, y, strideY, offsetY )
 
 Computes the [cube root][@stdlib/math/base/special/cbrt] of each element in a strided array `x` and assigns the results to elements in a strided array `y` using alternative indexing semantics.
 
