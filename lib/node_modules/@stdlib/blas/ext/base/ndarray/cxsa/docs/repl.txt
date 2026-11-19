@@ -23,9 +23,7 @@
     --------
     > var buf = [ -2.0, 1.0, 3.0, -5.0 ];
     > var x = new {{alias:@stdlib/ndarray/vector/complex64}}( buf );
-    > var opts = { 'dtype': 'complex64' };
-    > var a = new {{alias:@stdlib/complex/float32/ctor}}( 5.0, 0.0 );
-    > var alpha = {{alias:@stdlib/ndarray/from-scalar}}( a, opts );
+    > var alpha = new {{alias:@stdlib/ndarray/tensor0d/complex64}}( 5.0, 0.0 );
     > {{alias}}( [ x, alpha ] )
     <ndarray>[ <Complex64>[ -7.0, 1.0 ], <Complex64>[ -2.0, -5.0 ] ]
 

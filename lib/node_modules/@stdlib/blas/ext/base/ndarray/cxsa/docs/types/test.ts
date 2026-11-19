@@ -19,8 +19,7 @@
 /* eslint-disable space-in-parens */
 
 import zeros = require( '@stdlib/ndarray/zeros' );
-import scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-import Complex64 = require( '@stdlib/complex/float32/ctor' );
+import Complex64Tensor0D = require( '@stdlib/ndarray/tensor0d/complex64' );
 import cxsa = require( './index' );
 
 
@@ -31,9 +30,7 @@ import cxsa = require( './index' );
 	const x = zeros( [ 10 ], {
 		'dtype': 'complex64'
 	});
-	const alpha = scalar2ndarray( new Complex64( 5.0, 0.0 ), {
-		'dtype': 'complex64'
-	});
+	const alpha = new Complex64Tensor0D( 5.0, 0.0 );
 
 	cxsa( [ x, alpha ] ); // $ExpectType complex64ndarray
 }
@@ -56,9 +53,7 @@ import cxsa = require( './index' );
 	const x = zeros( [ 10 ], {
 		'dtype': 'complex64'
 	});
-	const alpha = scalar2ndarray( new Complex64( 5.0, 0.0 ), {
-		'dtype': 'complex64'
-	});
+	const alpha = new Complex64Tensor0D( 5.0, 0.0 );
 
 	cxsa(); // $ExpectError
 	cxsa( [ x, alpha ], {} ); // $ExpectError

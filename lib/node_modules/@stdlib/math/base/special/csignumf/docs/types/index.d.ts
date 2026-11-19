@@ -21,6 +21,69 @@
 /// <reference types="@stdlib/types"/>
 
 import { Complex64 } from '@stdlib/types/complex';
+import { Collection, NumericArray } from '@stdlib/types/array';
+
+/**
+* Interface for evaluating the signum function of a single-precision complex floating-point number.
+*/
+interface Csignumf {
+	/**
+	* Evaluates the signum function of a single-precision complex floating-point number.
+	*
+	* @param z - input value
+	* @returns result
+	*
+	* @example
+	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
+	*
+	* var v = csignumf( new Complex64( -4.2, 5.5 ) );
+	* // returns <Complex64>[ ~-0.607, ~0.795 ]
+	*/
+	( z: Complex64 ): Complex64;
+
+	/**
+	* Evaluates the signum function of a single-precision complex floating-point number and assigns results to a provided output array.
+	*
+	* @param re - real component
+	* @param im - imaginary component
+	* @param out - output array
+	* @param strideOut - stride length
+	* @param offsetOut - starting index
+	* @returns output array
+	*
+	* @example
+	* var Float32Array = require( '@stdlib/array/float32' );
+	*
+	* var out = new Float32Array( 2 );
+	* var v = csignumf.assign( 3.0, -4.0, out, 1, 0 );
+	* // returns <Float32Array>[ ~0.6, ~-0.8 ]
+	*
+	* var bool = ( out === v );
+	* // returns true
+	*/
+	assign<T extends NumericArray | Collection<number>>( re: number, im: number, out: T, strideOut: number, offsetOut: number ): T;
+
+	/**
+	* Evaluates the signum function of a single-precision complex floating-point number stored in a real-valued strided array view and assigns results to a provided strided output array.
+	*
+	* @param z - complex number view
+	* @param strideZ - stride length for `z`
+	* @param offsetZ - starting index for `z`
+	* @param out - output array
+	* @param strideOut - stride length for `out`
+	* @param offsetOut - starting index for `out`
+	* @returns output array
+	*
+	* @example
+	* var Float32Array = require( '@stdlib/array/float32' );
+	*
+	* var z = new Float32Array( [ 3.0, -4.0 ] );
+	*
+	* var out = csignumf.strided( z, 1, 0, new Float32Array( 2 ), 1, 0 );
+	* // returns <Float32Array>[ ~0.6, ~-0.8 ]
+	*/
+	strided<T extends NumericArray | Collection<number>, U extends NumericArray | Collection<number>>( z: T, strideZ: number, offsetZ: number, out: U, strideOut: number, offsetOut: number ): U;
+}
 
 /**
 * Evaluates the signum function of a single-precision complex floating-point number.
@@ -33,8 +96,26 @@ import { Complex64 } from '@stdlib/types/complex';
 *
 * var v = csignumf( new Complex64( -4.2, 5.5 ) );
 * // returns <Complex64>[ ~-0.607, ~0.795 ]
+*
+* @example
+* var Float32Array = require( '@stdlib/array/float32' );
+*
+* var out = new Float32Array( 2 );
+* var v = csignumf.assign( 3.0, -4.0, out, 1, 0 );
+* // returns <Float32Array>[ ~0.6, ~-0.8 ]
+*
+* var bool = ( out === v );
+* // returns true
+*
+* @example
+* var Float32Array = require( '@stdlib/array/float32' );
+*
+* var z = new Float32Array( [ 3.0, -4.0 ] );
+*
+* var out = csignumf.strided( z, 1, 0, new Float32Array( 2 ), 1, 0 );
+* // returns <Float32Array>[ ~0.6, ~-0.8 ]
 */
-declare function csignumf( z: Complex64 ): Complex64;
+declare var csignumf: Csignumf;
 
 
 // EXPORTS //

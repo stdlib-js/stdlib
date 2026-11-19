@@ -230,7 +230,7 @@ declare function dtype( value: Array<any> ): 'generic';
 * var dt = dtype( [ 1, 2, 3 ] );
 * // returns 'generic'
 *
-* var dt = dtype( 'beep' );
+* dt = dtype( 'beep' );
 * // returns null
 */
 declare function dtype( value: Array<any> | RealOrComplexTypedArray ): DataType | null;

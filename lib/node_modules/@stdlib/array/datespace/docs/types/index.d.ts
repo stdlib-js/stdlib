@@ -51,7 +51,7 @@ interface Options {
 * // returns [...]
 *
 * // Equivalent of Math.round():
-* var arr = datespace( 1417503655000, 1417503655001, 3, { 'round': 'round' } );
+* arr = datespace( 1417503655000, 1417503655001, 3, { 'round': 'round' } );
 * // returns [...]
 */
 declare function datespace( start: Date | number | string, stop: Date | number | string, options?: Options ): Array<Date>;
@@ -81,7 +81,7 @@ declare function datespace( start: Date | number | string, stop: Date | number |
 * // returns [...]
 *
 * // Equivalent of Math.round():
-* var arr = datespace( 1417503655000, 1417503655001, 3, { 'round': 'round' } );
+* arr = datespace( 1417503655000, 1417503655001, 3, { 'round': 'round' } );
 * // returns [...]
 */
 declare function datespace( start: Date | number | string, stop: Date | number | string, length: number, options?: Options ): Array<Date>;
