@@ -38,14 +38,10 @@ import { Complex64 } from '@stdlib/types/complex';
 *
 * @example
 * var Complex64Vector = require( '@stdlib/ndarray/vector/complex64' );
-* var Complex64 = require( '@stdlib/complex/float32/ctor' );
-* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+* var Complex64Tensor0D = require( '@stdlib/ndarray/tensor0d/complex64' );
 *
 * var x = new Complex64Vector( [ -2.0, 1.0, 3.0, -5.0 ] );
-*
-* var alpha = scalar2ndarray( new Complex64( 5.0, 0.0 ), {
-*     'dtype': 'complex64'
-* });
+* var alpha = new Complex64Tensor0D( 5.0, 0.0 );
 *
 * var out = cxsa( [ x, alpha ] );
 * // returns <ndarray>[ <Complex64>[ -7.0, 1.0 ], <Complex64>[ -2.0, -5.0 ] ]

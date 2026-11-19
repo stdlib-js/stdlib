@@ -41,6 +41,7 @@ interface Quantile {
 	*
 	* -   If `p < 0` or `p > 1`, the function returns `NaN`.
 	* -   If provided a negative value for `lambda`, the function returns `NaN`.
+	* -   If provided `lambda` equal to positive infinity, the function returns `NaN`.
 	*
 	* @param p - input value
 	* @param lambda - mean parameter
@@ -72,6 +73,10 @@ interface Quantile {
 	*
 	* @example
 	* var y = quantile( 0.0, NaN );
+	* // returns NaN
+	*
+	* @example
+	* var y = quantile( 0.5, Infinity );
 	* // returns NaN
 	*/
 	( p: number, lambda: number ): number;

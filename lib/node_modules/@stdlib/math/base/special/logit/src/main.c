@@ -27,7 +27,7 @@
 /**
 * Evaluates the logit function.
 *
-* @param x    input value
+* @param p    input value
 * @return     output value
 *
 * @example

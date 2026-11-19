@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# gfillGreaterThanEqualEqual
+# gfillGreaterThanEqual
 
 > Replace elements in a one-dimensional ndarray greater than or equal to a provided search element with a specified scalar constant.
 
@@ -36,7 +36,7 @@ limitations under the License.
 var gfillGreaterThanEqual = require( '@stdlib/blas/ext/base/ndarray/gfill-greater-than-equal' );
 ```
 
-#### gfillGreaterThanEqualEqual( arrays )
+#### gfillGreaterThanEqual( arrays )
 
 Replaces elements in a one-dimensional ndarray greater than or equal to a provided search element with a specified scalar constant.
 
