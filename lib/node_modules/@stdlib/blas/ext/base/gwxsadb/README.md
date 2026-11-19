@@ -30,6 +30,11 @@ limitations under the License.
 \mathbf{w} = \frac{\mathbf{x} - \alpha}{\beta}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\mathbf{w} = \frac{\mathbf{x} - \alpha}{\beta}" data-equation="eq:wxsadb">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@1fd7e186453ddeb76ce49e67bc410526e641989a/lib/node_modules/@stdlib/blas/ext/base/gwxsadb/docs/img/equation_wxsadb.svg" alt="Equation for wxsadb operation.">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

@@ -32,6 +32,11 @@ This BLAS extension implements the operation
 \mathbf{w} = \mathbf{x} + \beta \mathbf{y}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\mathbf{w} = \mathbf{x} + \beta \mathbf{y}" data-equation="eq:wxpby">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@1fd7e186453ddeb76ce49e67bc410526e641989a/lib/node_modules/@stdlib/blas/ext/base/gwxpby/docs/img/equation_wxpby.svg" alt="Equation for wxpby operation.">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 This API is a specialized version of the package [`@stdlib/blas/ext/base/gwaxpby`][@stdlib/blas/ext/base/gwaxpby] with `α = 1` and performs element-wise addition between a vector and a scaled vector with assignment to a third vector.
