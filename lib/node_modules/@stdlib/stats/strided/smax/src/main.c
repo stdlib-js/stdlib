@@ -21,6 +21,7 @@
 #include "stdlib/math/base/assert/is_positive_zerof.h"
 #include "stdlib/blas/base/shared.h"
 #include "stdlib/strided/base/stride2offset.h"
+#include "stdlib/constants/float32/nan.h"
 
 /**
 * Computes the maximum value of a single-precision floating-point strided array.
@@ -51,7 +52,7 @@ float API_SUFFIX(stdlib_strided_smax_ndarray)( const CBLAS_INT N, const float *X
 	float v;
 
 	if ( N <= 0 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT32_NAN;
 	}
 	if ( N == 1 || strideX == 0 ) {
 		return X[ offsetX ];

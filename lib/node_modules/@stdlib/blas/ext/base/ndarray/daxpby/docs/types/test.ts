@@ -19,7 +19,7 @@
 /* eslint-disable space-in-parens */
 
 import zeros = require( '@stdlib/ndarray/zeros' );
-import scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+import Float64Tensor0D = require( '@stdlib/ndarray/tensor0d/float64' );
 import daxpby = require( './index' );
 
 
@@ -33,12 +33,8 @@ import daxpby = require( './index' );
 	const y = zeros( [ 10 ], {
 		'dtype': 'float64'
 	});
-	const alpha = scalar2ndarray( 5.0, {
-		'dtype': 'float64'
-	});
-	const beta = scalar2ndarray( 2.0, {
-		'dtype': 'float64'
-	});
+	const alpha = new Float64Tensor0D( 5.0 );
+	const beta = new Float64Tensor0D( 2.0 );
 
 	daxpby( [ x, y, alpha, beta ] ); // $ExpectType float64ndarray
 }
@@ -64,12 +60,8 @@ import daxpby = require( './index' );
 	const y = zeros( [ 10 ], {
 		'dtype': 'float64'
 	});
-	const alpha = scalar2ndarray( 5.0, {
-		'dtype': 'float64'
-	});
-	const beta = scalar2ndarray( 2.0, {
-		'dtype': 'float64'
-	});
+	const alpha = new Float64Tensor0D( 5.0 );
+	const beta = new Float64Tensor0D( 2.0 );
 
 	daxpby(); // $ExpectError
 	daxpby( [ x, y, alpha, beta ], {} ); // $ExpectError
