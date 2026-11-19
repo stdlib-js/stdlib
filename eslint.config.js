@@ -109,7 +109,29 @@ var config = [
 			'@cspell': pluginCspell,
 			'stdlib': stdlibPlugin
 		},
+		'settings': {
+			'jsdoc': {
+				'contexts': [
+					'ArrowFunctionExpression',
+					'ClassDeclaration',
+					'ClassExpression',
+					'FunctionDeclaration',
+					'FunctionExpression'
+				],
+				'tagNamePreference': {
+					'class': 'constructor'
+				}
+			}
+		},
 		'rules': rules
+	},
+
+	// ESLint rule definitions:
+	{
+		'files': [ 'etc/eslint/rules/*.js' ],
+		'rules': {
+			'stdlib/jsdoc-doctest': 'off'
+		}
 	},
 
 	// REPL namespace files:
@@ -131,6 +153,10 @@ var config = [
 				'skipComments': true
 			}],
 			'jsdoc/require-jsdoc': 'off',
+			'stdlib/jsdoc-private-annotation': 'off',
+			'stdlib/jsdoc-doctest': 'off',
+			'stdlib/no-unnecessary-nested-functions': 'off',
+			'stdlib/no-bench-string-concat': 'error',
 			'no-restricted-syntax': restrictedSyntaxConfig
 		}
 	},
@@ -139,10 +165,16 @@ var config = [
 	{
 		'files': [ '**/examples/**/*.js' ],
 		'rules': {
+			'no-new-wrappers': 'warn',
 			'no-console': 'off',
 			'vars-on-top': 'off',
 			'jsdoc/require-jsdoc': 'off',
 			'stdlib/jsdoc-private-annotation': 'off',
+			'stdlib/jsdoc-doctest': 'off',
+			'stdlib/doctest': 'error',
+			'stdlib/vars-order': 'off',
+			'stdlib/no-unnecessary-nested-functions': 'off',
+			'stdlib/require-last-path-relative': 'error',
 			'stdlib/require-order': 'off',
 			'stdlib/require-file-extensions': 'off',
 			'no-restricted-syntax': restrictedSyntaxConfig

@@ -267,7 +267,7 @@ static inline int8_t normalized( struct BasePRNGObject *obj, double *out ) {
 	if ( obj == NULL || obj->prng != &mt19937_prng ) {
 		return -1;
 	}
-	next( obj, &x);
+	next( obj, &x );
 	x >>= 5;
 
 	next( obj, &y );

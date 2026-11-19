@@ -31,7 +31,7 @@ limitations under the License.
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\mathbf{x} = \frac{\mathbf{x} - \alpha}{\beta}" data-equation="eq:xsadb">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@00e2e239c0c339cc9ac9c2d2d938d296f6446d39/lib/node_modules/@stdlib/blas/ext/base/gxsadb/docs/img/equation_xsadb.svg" alt="Equation for xsadb operation.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@3d7afbaeb2c522d39ca247a460c80356ab8955ee/lib/node_modules/@stdlib/blas/ext/base/gxsadb/docs/img/equation_xsadb.svg" alt="Equation for xsadb operation.">
     <br>
 </div> -->
 
