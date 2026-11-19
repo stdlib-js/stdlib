@@ -30,6 +30,11 @@ limitations under the License.
 \mathbf{y} = \frac{\mathbf{x} - a}{b - a}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\mathbf{y} = \frac{\mathbf{x} - a}{b - a}" data-equation="eq:rescale_unit_range_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@1fd7e186453ddeb76ce49e67bc410526e641989a/lib/node_modules/@stdlib/blas/ext/base/grescale-unit-range/docs/img/equation_rescale_unit_range_function.svg" alt="Equation for rescale unit range operation.">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

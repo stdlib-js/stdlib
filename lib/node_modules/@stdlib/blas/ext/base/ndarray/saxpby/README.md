@@ -33,7 +33,7 @@ This BLAS extension implements the operation
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\mathbf{y} = \alpha \mathbf{x} + \beta \mathbf{y}" data-equation="eq:axpby">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@479348ebe090467aebad2d2aaebc3ba5e8a1772c/lib/node_modules/@stdlib/blas/ext/base/ndarray/saxpby/docs/img/equation_axpby.svg" alt="Equation for axpby operation.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@5a84d0c231e0712a8b057e6735d4d51798c7bb9f/lib/node_modules/@stdlib/blas/ext/base/ndarray/saxpby/docs/img/equation_axpby.svg" alt="Equation for axpby operation.">
     <br>
 </div> -->
 

@@ -30,6 +30,11 @@ limitations under the License.
 \mathbf{y} = c + \frac{\mathbf{x} - a}{b - a} \cdot (d - c)
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\mathbf{y} = c + \frac{\mathbf{x} - a}{b - a} \cdot (d - c)" data-equation="eq:rescale_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@1fd7e186453ddeb76ce49e67bc410526e641989a/lib/node_modules/@stdlib/blas/ext/base/grescale/docs/img/equation_rescale_function.svg" alt="Equation for rescale operation.">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>
