@@ -1,0 +1,30 @@
+
+{{alias}}( dtype, defaultValue, isValidScalar )
+    Returns a function for creating zero-dimensional ndarrays.
+
+    Parameters
+    ----------
+    dtype: string|DataType
+        Data type.
+
+    defaultValue: any
+        Default scalar value.
+
+    isValidScalar: Function
+        Function for checking whether a value is a valid scalar value.
+
+    Returns
+    -------
+    ctor: Function
+        Function for creating zero-dimensional ndarrays.
+
+    Examples
+    --------
+    > var f = {{alias}}( 'float64', 0.0, {{alias:@stdlib/assert/is-number}}.isPrimitive )
+    <Function>
+    > var arr = f()
+    <ndarray>[ 0.0 ]
+
+    See Also
+    --------
+

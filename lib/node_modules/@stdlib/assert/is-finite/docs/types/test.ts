@@ -33,27 +33,27 @@ import isFinite = require( './index' );
 	isFinite( 4, 123 ); // $ExpectError
 }
 
-// Attached to main export is an isPrimitive method which returns a boolean...
+// Attached to main export is an `isPrimitive` method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers
 	isFinite.isPrimitive( new Number( 4 ) ); // $ExpectType boolean
 	isFinite.isPrimitive( 4 ); // $ExpectType boolean
 }
 
-// The compiler throws an error if the isPrimitive method is provided an unsupported number of arguments...
+// The compiler throws an error if the `isPrimitive` method is provided an unsupported number of arguments...
 {
 	isFinite.isPrimitive(); // $ExpectError
 	isFinite.isPrimitive( 4, 123 ); // $ExpectError
 }
 
-// Attached to main export is an isPrimitive method which returns a boolean...
+// Attached to main export is an `isObject` method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers
 	isFinite.isObject( new Number( 4 ) ); // $ExpectType boolean
 	isFinite.isObject( 4 ); // $ExpectType boolean
 }
 
-// The compiler throws an error if the isObject method is provided an unsupported number of arguments...
+// The compiler throws an error if the `isObject` method is provided an unsupported number of arguments...
 {
 	isFinite.isObject(); // $ExpectError
 	isFinite.isObject( 4, 123 ); // $ExpectError
