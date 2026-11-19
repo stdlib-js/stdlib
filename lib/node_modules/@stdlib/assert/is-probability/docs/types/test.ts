@@ -33,27 +33,27 @@ import isProbability = require( './index' );
 	isProbability( 0.2, 123 ); // $ExpectError
 }
 
-// Attached to main export is an isPrimitive method which returns a boolean...
+// Attached to main export is an `isPrimitive` method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers
 	isProbability.isPrimitive( new Number( 0.2 ) ); // $ExpectType boolean
 	isProbability.isPrimitive( 0.2 ); // $ExpectType boolean
 }
 
-// The compiler throws an error if the isPrimitive method is provided an unsupported number of arguments...
+// The compiler throws an error if the `isPrimitive` method is provided an unsupported number of arguments...
 {
 	isProbability.isPrimitive(); // $ExpectError
 	isProbability.isPrimitive( 0.2, 123 ); // $ExpectError
 }
 
-// Attached to main export is an isPrimitive method which returns a boolean...
+// Attached to main export is an `isObject` method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers
 	isProbability.isObject( new Number( 0.2 ) ); // $ExpectType boolean
 	isProbability.isObject( 0.2 ); // $ExpectType boolean
 }
 
-// The compiler throws an error if the isObject method is provided an unsupported number of arguments...
+// The compiler throws an error if the `isObject` method is provided an unsupported number of arguments...
 {
 	isProbability.isObject(); // $ExpectError
 	isProbability.isObject( 0.2, 123 ); // $ExpectError

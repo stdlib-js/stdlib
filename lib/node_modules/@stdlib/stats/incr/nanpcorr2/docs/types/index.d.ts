@@ -55,17 +55,20 @@ declare function incrnanpcorr2( meanx: number, meany: number ): accumulator;
 * r2 = accumulator( 2.0, 1.0 );
 * // returns 0.0
 *
+* r2 = accumulator( 1.0, 90.0 );
+* // returns 1.0
+*
 * r2 = accumulator( -5.0, NaN );
-* // returns ~0.0
+* // returns ~1.0
 *
 * r2 = accumulator( NaN, NaN );
-* // returns ~0.0
+* // returns ~1.0
 *
 * r2 = accumulator( NaN, 8.0 );
-* // returns ~0.0
+* // returns ~1.0
 *
 * r2 = accumulator();
-* // returns ~0.0
+* // returns ~1.0
 */
 declare function incrnanpcorr2(): accumulator;
 

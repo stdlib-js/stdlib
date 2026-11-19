@@ -42,6 +42,10 @@ import { DataTypeMap } from '@stdlib/types/array';
 * @example
 * var arr = empty( 2, 'float32' );
 * // returns <Float32Array>
+*
+* @example
+* var arr = empty( 2, 'float16' );
+* // returns <Float16Array>
 */
 declare function empty<T extends keyof DataTypeMap<number> = 'float64'>( length: number, dtype?: T ): DataTypeMap<number>[T];
 

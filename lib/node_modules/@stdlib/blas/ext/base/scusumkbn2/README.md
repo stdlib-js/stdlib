@@ -151,14 +151,13 @@ scusumkbn2.ndarray( 4, 0.0, x, 2, 1, y, -1, y.length-1 );
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var scusumkbn2 = require( '@stdlib/blas/ext/base/scusumkbn2' );
 
-var x = discreteUniform( 10, -100, 100, {
+var opts = {
     'dtype': 'float32'
-});
+};
+var x = discreteUniform( 10, -100, 100, opts );
 console.log( x );
 
-var y = discreteUniform( 10, -100, 100, {
-    'dtype': 'float32'
-});
+var y = discreteUniform( 10, -100, 100, opts );
 console.log( y );
 
 scusumkbn2( x.length, 0.0, x, 1, y, -1 );

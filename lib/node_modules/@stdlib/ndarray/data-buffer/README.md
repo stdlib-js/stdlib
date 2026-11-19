@@ -100,6 +100,16 @@ x = zeros( [ 2, 2 ], opts );
 buf = data( x );
 // returns <Float32Array>
 
+// Create a 'float16' array...
+opts = {
+    'dtype': 'float16'
+};
+x = zeros( [ 2, 2 ], opts );
+// returns <ndarray>
+
+buf = data( x );
+// returns <Float16Array>
+
 // Create a 'complex128' array...
 opts = {
     'dtype': 'complex128'

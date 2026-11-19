@@ -26,6 +26,7 @@ import nans = require( './index' );
 	nans( 10 ); // $ExpectType Float64Array
 	nans( 10, 'float64' ); // $ExpectType Float64Array
 	nans( 10, 'float32' ); // $ExpectType Float32Array
+	nans( 10, 'float16' ); // $ExpectType Float16ArrayFallback
 	nans( 10, 'complex128' ); // $ExpectType Complex128Array
 	nans( 10, 'complex64' ); // $ExpectType Complex64Array
 	nans( 10, 'generic' ); // $ExpectType number[]

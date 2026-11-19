@@ -35,6 +35,7 @@
 #include "stdlib/math/base/special/ln.h"
 #include "stdlib/constants/float64/pinf.h"
 #include "stdlib/constants/float64/ninf.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdint.h>
 
 static const double Y1 = 8.91314744949340820313e-2;
@@ -272,7 +273,7 @@ double stdlib_base_erfinv( const double x ) {
 
 	// Special case: NaN
 	if ( stdlib_base_is_nan( x ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	// Special case: 1
 	if ( x == 1.0 ) {
@@ -288,7 +289,7 @@ double stdlib_base_erfinv( const double x ) {
 	}
 	// Special case: |x| > 1 (range error)
 	if ( x > 1.0 || x < -1.0 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	// Argument reduction (reduce to interval [0,1]). If `x` is negative, we can safely negate the value, taking advantage of the error function being an odd function; i.e., `erf(-x) = -erf(x)`.
 	if ( x < 0.0 ) {

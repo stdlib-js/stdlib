@@ -152,14 +152,13 @@ scusumpw.ndarray( 4, 0.0, x, 2, 1, y, -1, y.length-1 );
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var scusumpw = require( '@stdlib/blas/ext/base/scusumpw' );
 
-var x = discreteUniform( 10, -100, 100, {
+var opts = {
     'dtype': 'float32'
-});
+};
+var x = discreteUniform( 10, -100, 100, opts );
 console.log( x );
 
-var y = discreteUniform( 10, -100, 100, {
-    'dtype': 'float32'
-});
+var y = discreteUniform( 10, -100, 100, opts );
 console.log( y );
 
 scusumpw( x.length, 0.0, x, 1, y, -1 );

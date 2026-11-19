@@ -22,13 +22,14 @@ import cround = require( './index' );
 
 // TESTS //
 
-// The function returns a double-precision complex floating-point number...
+// The function returns a complex number...
 {
 	cround( new Complex128( 1.0, 2.0 ) ); // $ExpectType Complex128
 }
 
-// The compiler throws an error if the function is provided a real component which is not a number...
+// The compiler throws an error if the function is provided a value other than a complex number...
 {
+	cround( 2 ); // $ExpectError
 	cround( true ); // $ExpectError
 	cround( false ); // $ExpectError
 	cround( null ); // $ExpectError
@@ -42,4 +43,204 @@ import cround = require( './index' );
 // The compiler throws an error if the function is provided insufficient arguments...
 {
 	cround(); // $ExpectError
+}
+
+// Attached to the main export is an `assign` method which returns a collection...
+{
+	cround.assign( 1.0, 1.0, new Float64Array( 2 ), 1, 0 ); // $ExpectType Float64Array
+	cround.assign( 1.0, 1.0, new Float32Array( 2 ), 1, 0 ); // $ExpectType Float32Array
+	cround.assign( 1.0, 1.0, [ 0.0, 0.0 ], 1, 0 ); // $ExpectType number[]
+}
+
+// The compiler throws an error if the `assign` method is provided a first argument which is not a number...
+{
+	const out = new Float64Array( 2 );
+
+	cround.assign( true, 2.0, out, 1, 0 ); // $ExpectError
+	cround.assign( false, 2.0, out, 1, 0 ); // $ExpectError
+	cround.assign( null, 2.0, out, 1, 0 ); // $ExpectError
+	cround.assign( undefined, 2.0, out, 1, 0 ); // $ExpectError
+	cround.assign( '5', 2.0, out, 1, 0 ); // $ExpectError
+	cround.assign( [], 2.0, out, 1, 0 ); // $ExpectError
+	cround.assign( {}, 2.0, out, 1, 0 ); // $ExpectError
+	cround.assign( ( x: number ): number => x, 2.0, out, 1, 0 ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided a second argument which is not a number...
+{
+	const out = new Float64Array( 2 );
+
+	cround.assign( 1.0, true, out, 1, 0 ); // $ExpectError
+	cround.assign( 1.0, false, out, 1, 0 ); // $ExpectError
+	cround.assign( 1.0, null, out, 1, 0 ); // $ExpectError
+	cround.assign( 1.0, undefined, out, 1, 0 ); // $ExpectError
+	cround.assign( 1.0, '5', out, 1, 0 ); // $ExpectError
+	cround.assign( 1.0, [], out, 1, 0 ); // $ExpectError
+	cround.assign( 1.0, {}, out, 1, 0 ); // $ExpectError
+	cround.assign( 1.0, ( x: number ): number => x, out, 1, 0 ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided a third argument which is not a collection...
+{
+	cround.assign( 1.0, 2.0, 1, 1, 0 ); // $ExpectError
+	cround.assign( 1.0, 2.0, true, 1, 0 ); // $ExpectError
+	cround.assign( 1.0, 2.0, false, 1, 0 ); // $ExpectError
+	cround.assign( 1.0, 2.0, null, 1, 0 ); // $ExpectError
+	cround.assign( 1.0, 2.0, undefined, 1, 0 ); // $ExpectError
+	cround.assign( 1.0, 2.0, '5', 1, 0 ); // $ExpectError
+	cround.assign( 1.0, 2.0, [ '5' ], 1, 0 ); // $ExpectError
+	cround.assign( 1.0, 2.0, {}, 1, 0 ); // $ExpectError
+	cround.assign( 1.0, 2.0, ( x: number ): number => x, 1, 0 ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided a fourth argument which is not a number...
+{
+	const out = new Float64Array( 2 );
+
+	cround.assign( 1.0, 2.0, out, true, 0 ); // $ExpectError
+	cround.assign( 1.0, 2.0, out, false, 0 ); // $ExpectError
+	cround.assign( 1.0, 2.0, out, null, 0 ); // $ExpectError
+	cround.assign( 1.0, 2.0, out, undefined, 0 ); // $ExpectError
+	cround.assign( 1.0, 2.0, out, '5', 0 ); // $ExpectError
+	cround.assign( 1.0, 2.0, out, [], 0 ); // $ExpectError
+	cround.assign( 1.0, 2.0, out, {}, 0 ); // $ExpectError
+	cround.assign( 1.0, 2.0, out, ( x: number ): number => x, 0 ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided a fifth argument which is not a number...
+{
+	const out = new Float64Array( 2 );
+
+	cround.assign( 1.0, 2.0, out, 1, true ); // $ExpectError
+	cround.assign( 1.0, 2.0, out, 1, false ); // $ExpectError
+	cround.assign( 1.0, 2.0, out, 1, null ); // $ExpectError
+	cround.assign( 1.0, 2.0, out, 1, undefined ); // $ExpectError
+	cround.assign( 1.0, 2.0, out, 1, '5' ); // $ExpectError
+	cround.assign( 1.0, 2.0, out, 1, [] ); // $ExpectError
+	cround.assign( 1.0, 2.0, out, 1, {} ); // $ExpectError
+	cround.assign( 1.0, 2.0, out, 1, ( x: number ): number => x ); // $ExpectError
+}
+
+// The compiler throws an error if the `assign` method is provided an unsupported number of arguments...
+{
+	const out = new Float64Array( 2 );
+
+	cround.assign(); // $ExpectError
+	cround.assign( 1.0 ); // $ExpectError
+	cround.assign( 1.0, 2.0 ); // $ExpectError
+	cround.assign( 1.0, 2.0, out ); // $ExpectError
+	cround.assign( 1.0, 2.0, out, 1 ); // $ExpectError
+	cround.assign( 1.0, 2.0, out, 1, 0, {} ); // $ExpectError
+}
+
+// Attached to the main export is a `strided` method which returns a collection...
+{
+	const z = new Float64Array( 2 );
+
+	cround.strided( z, 1, 0, new Float64Array( 2 ), 1, 0 ); // $ExpectType Float64Array
+	cround.strided( z, 1, 0, new Float32Array( 2 ), 1, 0 ); // $ExpectType Float32Array
+	cround.strided( z, 1, 0, [ 0.0, 0.0 ], 1, 0 ); // $ExpectType number[]
+}
+
+// The compiler throws an error if the `strided` method is provided a first argument which is not a collection...
+{
+	const out = new Float64Array( 2 );
+
+	cround.strided( true, 1, 0, out, 1, 0 ); // $ExpectError
+	cround.strided( false, 1, 0, out, 1, 0 ); // $ExpectError
+	cround.strided( null, 1, 0, out, 1, 0 ); // $ExpectError
+	cround.strided( undefined, 1, 0, out, 1, 0 ); // $ExpectError
+	cround.strided( '5', 1, 0, out, 1, 0 ); // $ExpectError
+	cround.strided( [ '5' ], 1, 0, out, 1, 0 ); // $ExpectError
+	cround.strided( {}, 1, 0, out, 1, 0 ); // $ExpectError
+	cround.strided( ( x: number ): number => x, 1, 0, out, 1, 0 ); // $ExpectError
+}
+
+// The compiler throws an error if the `strided` method is provided a second argument which is not a number...
+{
+	const z = new Float64Array( 2 );
+	const out = new Float64Array( 2 );
+
+	cround.strided( z, true, 0, out, 1, 0 ); // $ExpectError
+	cround.strided( z, false, 0, out, 1, 0 ); // $ExpectError
+	cround.strided( z, null, 0, out, 1, 0 ); // $ExpectError
+	cround.strided( z, undefined, 0, out, 1, 0 ); // $ExpectError
+	cround.strided( z, '5', 0, out, 1, 0 ); // $ExpectError
+	cround.strided( z, [], 0, out, 1, 0 ); // $ExpectError
+	cround.strided( z, {}, 0, out, 1, 0 ); // $ExpectError
+	cround.strided( z, ( x: number ): number => x, 0, out, 1, 0 ); // $ExpectError
+}
+
+// The compiler throws an error if the `strided` method is provided a third argument which is not a number...
+{
+	const z = new Float64Array( 2 );
+	const out = new Float64Array( 2 );
+
+	cround.strided( z, 1, true, out, 1, 0 ); // $ExpectError
+	cround.strided( z, 1, false, out, 1, 0 ); // $ExpectError
+	cround.strided( z, 1, null, out, 1, 0 ); // $ExpectError
+	cround.strided( z, 1, undefined, out, 1, 0 ); // $ExpectError
+	cround.strided( z, 1, '5', out, 1, 0 ); // $ExpectError
+	cround.strided( z, 1, [], out, 1, 0 ); // $ExpectError
+	cround.strided( z, 1, {}, out, 1, 0 ); // $ExpectError
+	cround.strided( z, 1, ( x: number ): number => x, out, 1, 0 ); // $ExpectError
+}
+
+// The compiler throws an error if the `strided` method is provided a fourth argument which is not a collection...
+{
+	const z = new Float64Array( 2 );
+
+	cround.strided( z, 1, 0, 1, 1, 0 ); // $ExpectError
+	cround.strided( z, 1, 0, true, 1, 0 ); // $ExpectError
+	cround.strided( z, 1, 0, false, 1, 0 ); // $ExpectError
+	cround.strided( z, 1, 0, null, 1, 0 ); // $ExpectError
+	cround.strided( z, 1, 0, undefined, 1, 0 ); // $ExpectError
+	cround.strided( z, 1, 0, '5', 1, 0 ); // $ExpectError
+	cround.strided( z, 1, 0, [ '5' ], 1, 0 ); // $ExpectError
+	cround.strided( z, 1, 0, {}, 1, 0 ); // $ExpectError
+	cround.strided( z, 1, 0, ( x: number ): number => x, 1, 0 ); // $ExpectError
+}
+
+// The compiler throws an error if the `strided` method is provided a fifth argument which is not a number...
+{
+	const z = new Float64Array( 2 );
+	const out = new Float64Array( 2 );
+
+	cround.strided( z, 1, 0, out, true, 0 ); // $ExpectError
+	cround.strided( z, 1, 0, out, false, 0 ); // $ExpectError
+	cround.strided( z, 1, 0, out, null, 0 ); // $ExpectError
+	cround.strided( z, 1, 0, out, undefined, 0 ); // $ExpectError
+	cround.strided( z, 1, 0, out, '5', 0 ); // $ExpectError
+	cround.strided( z, 1, 0, out, [], 0 ); // $ExpectError
+	cround.strided( z, 1, 0, out, {}, 0 ); // $ExpectError
+	cround.strided( z, 1, 0, out, ( x: number ): number => x, 0 ); // $ExpectError
+}
+
+// The compiler throws an error if the `strided` method is provided a sixth argument which is not a number...
+{
+	const z = new Float64Array( 2 );
+	const out = new Float64Array( 2 );
+
+	cround.strided( z, 1, 0, out, 1, true ); // $ExpectError
+	cround.strided( z, 1, 0, out, 1, false ); // $ExpectError
+	cround.strided( z, 1, 0, out, 1, null ); // $ExpectError
+	cround.strided( z, 1, 0, out, 1, undefined ); // $ExpectError
+	cround.strided( z, 1, 0, out, 1, '5' ); // $ExpectError
+	cround.strided( z, 1, 0, out, 1, [] ); // $ExpectError
+	cround.strided( z, 1, 0, out, 1, {} ); // $ExpectError
+	cround.strided( z, 1, 0, out, 1, ( x: number ): number => x ); // $ExpectError
+}
+
+// The compiler throws an error if the `strided` method is provided an unsupported number of arguments...
+{
+	const z = new Float64Array( 2 );
+	const out = new Float64Array( 2 );
+
+	cround.strided(); // $ExpectError
+	cround.strided( z ); // $ExpectError
+	cround.strided( z, 1 ); // $ExpectError
+	cround.strided( z, 1, 0 ); // $ExpectError
+	cround.strided( z, 1, 0, out ); // $ExpectError
+	cround.strided( z, 1, 0, out, 1 ); // $ExpectError
+	cround.strided( z, 1, 0, out, 1, 0, {} ); // $ExpectError
 }

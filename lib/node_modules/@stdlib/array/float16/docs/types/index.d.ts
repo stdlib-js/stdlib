@@ -341,6 +341,11 @@ declare class Float16Array implements Float16ArrayInterface {
 	constructor( arg?: number | ArrayLike<number> | ArrayBuffer | Iterable<number>, byteOffset?: number, length?: number );
 
 	/**
+	* Indexed properties.
+	*/
+	[ index: number ]: number;
+
+	/**
 	* Returns an array element located at integer position (index) `i`, with support for both nonnegative and negative integer indices.
 	*
 	* @param i - element index

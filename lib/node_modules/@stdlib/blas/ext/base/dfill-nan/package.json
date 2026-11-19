@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/blas/ext/base/dfill-nan",
   "version": "0.0.0",
-  "description": "Replace double-precision floating-point strided array elements equal to `NaN` with a specified scalar constant.",
+  "description": "Replace double-precision floating-point strided array elements equal to NaN with a specified scalar constant.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

@@ -44,7 +44,8 @@
         "@stdlib/math/base/special/kernel-cos",
         "@stdlib/math/base/special/signum",
         "@stdlib/math/base/special/abs",
-        "@stdlib/math/base/special/fmod"
+        "@stdlib/math/base/special/fmod",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -65,7 +66,8 @@
         "@stdlib/math/base/special/kernel-cos",
         "@stdlib/math/base/special/signum",
         "@stdlib/math/base/special/abs",
-        "@stdlib/math/base/special/fmod"
+        "@stdlib/math/base/special/fmod",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -86,7 +88,8 @@
         "@stdlib/math/base/special/kernel-cos",
         "@stdlib/math/base/special/signum",
         "@stdlib/math/base/special/abs",
-        "@stdlib/math/base/special/fmod"
+        "@stdlib/math/base/special/fmod",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

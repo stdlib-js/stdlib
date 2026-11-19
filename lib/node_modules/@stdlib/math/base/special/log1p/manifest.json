@@ -42,7 +42,8 @@
         "@stdlib/number/float64/base/set-high-word",
         "@stdlib/constants/float64/ninf",
         "@stdlib/constants/float64/pinf",
-        "@stdlib/constants/float64/exponent-bias"
+        "@stdlib/constants/float64/exponent-bias",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -61,7 +62,8 @@
         "@stdlib/number/float64/base/set-high-word",
         "@stdlib/constants/float64/ninf",
         "@stdlib/constants/float64/pinf",
-        "@stdlib/constants/float64/exponent-bias"
+        "@stdlib/constants/float64/exponent-bias",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -80,7 +82,8 @@
         "@stdlib/number/float64/base/set-high-word",
         "@stdlib/constants/float64/ninf",
         "@stdlib/constants/float64/pinf",
-        "@stdlib/constants/float64/exponent-bias"
+        "@stdlib/constants/float64/exponent-bias",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]
