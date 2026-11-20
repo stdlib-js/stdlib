@@ -18,6 +18,7 @@
 
 #include "stdlib/stats/base/dists/gumbel/skewness.h"
 #include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/constants/float64/nan.h"
 
 static const double SKEWNESS = 1.1395470994046488;
 
@@ -38,7 +39,7 @@ double stdlib_base_dists_gumbel_skewness( const double mu, const double beta ) {
 		stdlib_base_is_nan( beta ) ||
 		beta <= 0.0
 	) {
-		return 0.0/0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	return SKEWNESS;
 }
