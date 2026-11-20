@@ -33,7 +33,7 @@ This BLAS extension implements the operation
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\mathbf{w} = \mathbf{x} + \beta \mathbf{y}" data-equation="eq:wxpby">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@1fd7e186453ddeb76ce49e67bc410526e641989a/lib/node_modules/@stdlib/blas/ext/base/gwxpby/docs/img/equation_wxpby.svg" alt="Equation for wxpby operation.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@3f5e844be1ae43267b90f69505e7744bf5540fb1/lib/node_modules/@stdlib/blas/ext/base/gwxpby/docs/img/equation_wxpby.svg" alt="Equation for wxpby operation.">
     <br>
 </div> -->
 

@@ -31,7 +31,7 @@ limitations under the License.
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\mathbf{y} = \frac{\mathbf{x} - a}{b - a}" data-equation="eq:rescale_unit_range_function">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@1fd7e186453ddeb76ce49e67bc410526e641989a/lib/node_modules/@stdlib/blas/ext/base/grescale-unit-range/docs/img/equation_rescale_unit_range_function.svg" alt="Equation for rescale unit range operation.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@3f5e844be1ae43267b90f69505e7744bf5540fb1/lib/node_modules/@stdlib/blas/ext/base/grescale-unit-range/docs/img/equation_rescale_unit_range_function.svg" alt="Equation for rescale unit range operation.">
     <br>
 </div> -->
 
