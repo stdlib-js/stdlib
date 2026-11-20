@@ -34,6 +34,13 @@
 #   INCLUDE             Includes (e.g., `-I /foo/bar -I /a/b`).
 #   SOURCE_FILES        Source file list.
 #
+#
+# Notes:
+#
+#   -   Source files are resolved from the package `manifest.json` `build` task,
+#       filtering for Fortran (`.f`) files only. This ensures that Fortran
+#       dependencies (e.g., `xerbla`) are included transitively without
+#       hardcoding paths.
 
 
 # VARIABLES #
@@ -58,18 +65,22 @@ if [[ -z "${node_cmd}" ]]; then
 fi
 
 # Define the node path:
+# shellcheck disable=SC2153
 node_path="${NODE_PATH}"
 
 # Define the path to a Fortran compiler:
+# shellcheck disable=SC2153
 fortran_compiler="${FORTRAN_COMPILER}"
 if [[ -z "${fortran_compiler}" ]]; then
 	fortran_compiler='gfortran'
 fi
 
 # Define a list of `include` directories (e.g., `-I /foo/bar -I /beep/boop/include`):
+# shellcheck disable=SC2153
 include="${INCLUDE}"
 
 # Define a list of source files:
+# shellcheck disable=SC2153
 source_files="${SOURCE_FILES}"
 
 
@@ -146,16 +157,34 @@ resolve_includes() {
 	echo "${includes}"
 }
 
+# Resolves Fortran source files.
+#
+# Uses the `build` task from `manifest.json` (rather than `benchmark`) because
+# Fortran benchmark source files are listed there. Only `.f` files are returned
+# so that C sources from mixed-language packages are excluded.
+#
+# $1 - package directory
+resolve_source_files() {
+	local src
+	local script
+	local opts
+
+	opts="{'task':'build'}"
+
+	# Generate the script for resolving Fortran source files:
+	script='"'"var path = require('path'); var arr = require('@stdlib/utils/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).src; var str = ''; for (var i = 0; i < arr.length; i++){ if(/\\.f$/i.test(arr[i])){ var p = path.resolve('$1', arr[i]); str += p+' '; } } console.log(str.trim());"'"'
+
+	# Resolve source files:
+	src=$(eval NODE_PATH="${node_path}" "${node_cmd}" -e "${script}")
+
+	echo "${src}"
+}
+
 # Compiles benchmark.
 #
 # $1 - source directory
 compile() {
-	if [[ -z "${source_files}" ]]; then
-		cd "$1" && FORTRAN_COMPILER="${fortran_compiler}" INCLUDE="${include}" make 2>&1
-	else
-		cd "$1" && FORTRAN_COMPILER="${fortran_compiler}" INCLUDE="${include}" SOURCE_FILES="${source_files}" make 2>&1
-	fi
-	if [[ "$?" -ne 0 ]]; then
+	if ! { cd "$1" && FORTRAN_COMPILER="${fortran_compiler}" INCLUDE="${include}" SOURCE_FILES="${source_files}" make 2>&1; }; then
 		echo 'Error when attempting to compile benchmark.' >&2
 		return 1
 	fi
@@ -169,24 +198,28 @@ compile() {
 # Main execution sequence.
 main() {
 	local pkg_path
-	local manifest
 	local src_dir
 
+	src_dir=$(dirname "${file_path}")
+
 	echo 'Resolving package path...' >&2
-	pkg_path=$(resolve_pkg_path "${src_dir}")
-	if [[ "$?" -ne 0 ]]; then
+	if ! pkg_path=$(resolve_pkg_path "${src_dir}"); then
 		on_error 1
 	fi
 	echo "Package path: ${pkg_path}" >&2
 
 	echo 'Resolving package manifest...' >&2
-	manifest=$(resolve_pkg_manifest "${pkg_path}")
-	if [[ "$?" -eq 0 ]]; then
+	if resolve_pkg_manifest "${pkg_path}"; then
 		echo 'Successfully resolved package manifest.' >&2
 		if [[ -z "${include}" ]]; then
 			echo 'Resolving include directories...' >&2
-			include=$(resolve_includes "${pkg_path}")
-			if [[ "$?" -ne 0 ]]; then
+			if ! include=$(resolve_includes "${pkg_path}"); then
+				on_error 1
+			fi
+		fi
+		if [[ -z "${source_files}" ]]; then
+			echo 'Resolving source files...' >&2
+			if ! source_files=$(resolve_source_files "${pkg_path}"); then
 				on_error 1
 			fi
 		fi
@@ -194,9 +227,7 @@ main() {
 		echo 'Unable to resolve package manifest.' >&2
 	fi
 	echo 'Compiling benchmark...' >&2
-	src_dir=$(dirname "${file_path}")
-	compile "${src_dir}"
-	if [[ "$?" -ne 0 ]]; then
+	if ! compile "${src_dir}"; then
 		on_error 1
 	fi
 	print_success
