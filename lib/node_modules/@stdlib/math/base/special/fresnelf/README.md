@@ -104,7 +104,7 @@ var opts = {
     'dtype': 'float32'
 };
 var x = uniform( 100, 0.0, 10.0, opts );
-logEachMap( 'fresnelf(%d) = [%s]', x, fresnelf );
+logEachMap( 'fresnelf(%0.4f) = [%s]', x, fresnelf );
 ```
 
 </section>

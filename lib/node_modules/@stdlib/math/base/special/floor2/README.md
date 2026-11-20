@@ -111,7 +111,7 @@ var opts = {
 };
 var x = uniform( 100, -50.0, 50.0, opts );
 
-logEachMap( 'x: %0.4f. Rounded: %d.', x, floor2 );
+logEachMap( 'x: %0.4f. Rounded: %0.4f.', x, floor2 );
 ```
 
 </section>
