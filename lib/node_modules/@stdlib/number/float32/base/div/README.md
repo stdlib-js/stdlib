@@ -89,7 +89,7 @@ var divf = require( '@stdlib/number/float32/base/div' );
 var x = discreteUniform( 100, -50, 50 );
 var y = discreteUniform( 100, -50, 50 );
 
-logEachMap( '%d / %d = %d', x, y, divf );
+logEachMap( '%d / %d = %0.4f', x, y, divf );
 ```
 
 </section>
