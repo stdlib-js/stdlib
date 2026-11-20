@@ -18,6 +18,7 @@
 
 #include "stdlib/stats/base/dists/gumbel/median.h"
 #include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/constants/float64/nan.h"
 
 static const double LLN2 = -0.36651292058166432701243915823266946945426813397; // ln( ln( 2.0 ) )
 
@@ -38,7 +39,7 @@ double stdlib_base_dists_gumbel_median( const double mu, const double beta ) {
 		stdlib_base_is_nan( beta ) ||
 		beta <= 0.0
 	) {
-		return 0.0/0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	return mu - ( beta * LLN2 );
 }
