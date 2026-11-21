@@ -3548,6 +3548,7 @@ Int64Array.prototype.findIndex,"\nInt64Array.prototype.findIndex( predicate:Func
 Int64Array.prototype.findLast,"\nInt64Array.prototype.findLast( predicate:Function[, thisArg:any] )\n    Returns the last element in an array for which a predicate function returns\n    a truthy value.\n"
 Int64Array.prototype.findLastIndex,"\nInt64Array.prototype.findLastIndex( predicate:Function[, thisArg:any] )\n    Returns the index of the last element in an array for which a predicate\n    function returns a truthy value.\n"
 Int64Array.prototype.get,"\nInt64Array.prototype.get( i:integer )\n    Returns an array element located at integer position (index) `i`.\n"
+Int64Array.prototype.keys,"\nInt64Array.prototype.keys()\n    Returns an iterator for iterating over each index key in a typed array.\n"
 Int64Array.prototype.set,"\nInt64Array.prototype.set( v:Int64|number|bigint|ArrayLikeObject[, i:integer] )\n    Sets one or more array elements.\n"
 IS_BIG_ENDIAN,"\nIS_BIG_ENDIAN\n    Boolean indicating if the environment is big endian.\n"
 IS_BROWSER,"\nIS_BROWSER\n    Boolean indicating if the runtime is a web browser.\n"

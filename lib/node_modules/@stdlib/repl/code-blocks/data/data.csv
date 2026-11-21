@@ -3547,6 +3547,7 @@ Int64Array.prototype.findIndex,"function predicate( v ) { return ( isEven.isPrim
 Int64Array.prototype.findLast,"function predicate( v ) { return ( isEven.isPrimitive( Number( v ) ) ); };\nvar arr = new Int64Array( [ -1, 2, 3, -4, 5 ] );\nvar u = arr.findLast( predicate )\n"
 Int64Array.prototype.findLastIndex,"function predicate( v ) { return ( isEven.isPrimitive( Number( v ) ) ); };\nvar arr = new Int64Array( [ -1, 2, 3, -4, 5 ] );\nvar idx = arr.findLastIndex( predicate )\n"
 Int64Array.prototype.get,"var arr = new Int64Array( [ 1, 2 ] )\nvar z = arr.get( 1 )\n"
+Int64Array.prototype.keys,"var arr = new Int64Array( [ 1, 2 ] )\nvar it = arr.keys();\nvar v = it.next().value\nv = it.next().value\nv = it.next().done\n"
 Int64Array.prototype.set,"var arr = new Int64Array( [ 1, 2, 3 ] );\narr.set( new Int64( 4 ), 1 );\nvar z = arr.get( 1 )\narr.set( [ 5, 6 ], 1 );\nz = arr.get( 1 )\nz = arr.get( 2 )\n"
 IS_BIG_ENDIAN,"IS_BIG_ENDIAN\n"
 IS_BROWSER,"IS_BROWSER\n"
