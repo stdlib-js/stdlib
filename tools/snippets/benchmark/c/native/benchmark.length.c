@@ -36,9 +36,9 @@ static void print_version( void );
 static void print_summary( int total, int passing );
 static void print_results( int iterations, double elapsed );
 static double tic( void );
-static float rand_float( void );
-static double rand_double( void );
-static double benchmark( void );
+static float random_uniformf( const float min, const float max );
+static double random_uniform( const double min, const double max );
+static double benchmark( int iterations, int len );
 
 /**
 * Prints the TAP version.
@@ -89,23 +89,27 @@ static double tic( void ) {
 }
 
 /**
-* Generates a random number on the interval [0,1].
+* Generates a random number on the interval [min,max).
 *
-* @return random number
+* @param min    minimum value (inclusive)
+* @param max    maximum value (exclusive)
+* @return       random number
 */
-static float rand_float( void ) {
-	int r = rand();
-	return (float)r / ( (float)RAND_MAX + 1.0f );
+static float random_uniformf( const float min, const float max ) {
+	float v = (float)rand() / ( (float)RAND_MAX + 1.0f );
+	return min + ( v*(max-min) );
 }
 
 /**
-* Generates a random number on the interval [0,1].
+* Generates a random number on the interval [min,max).
 *
-* @return random number
+* @param min    minimum value (inclusive)
+* @param max    maximum value (exclusive)
+* @return       random number
 */
-static double rand_double( void ) {
-	int r = rand();
-	return (double)r / ( (double)RAND_MAX + 1.0 );
+static double random_uniform( const double min, const double max ) {
+	double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+	return min + ( v*(max-min) );
 }
 
 /**
@@ -124,7 +128,7 @@ static double benchmark( int iterations, int len ) {
 
 	x = (double *) malloc( len * sizeof( double ) );
 	for ( i = 0; i < len; i++ ) {
-		x[ i ] = ( rand_double()*20000.0 ) - 10000.0;
+		x[ i ] = random_uniform( -10000.0, 10000.0 );
 	}
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
