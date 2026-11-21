@@ -227,6 +227,9 @@ GIT_BRANCH ?= $(GIT) rev-parse --abbrev-ref HEAD
 # Define the command for CMake:
 CMAKE ?= cmake
 
+# Define the command for running CMake tests:
+CTEST ?= ctest
+
 # Define the command for clang-format:
 CLANG_FORMAT ?= $(DEPS_LLVM_CLANG_FORMAT)
 
@@ -699,3 +702,33 @@ deps_fftpack_version_slug := $(subst .,_,$(DEPS_FFTPACK_VERSION))
 
 # Define the output path when building FFTPACK:
 DEPS_FFTPACK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/pffft-$(DEPS_FFTPACK_VERSION)
+
+# SIMD (general)...
+
+# Define the SIMD library to use:
+SIMD ?=
+
+# Define the path to the SIMD library (used for includes and linking):
+SIMD_DIR ?=
+
+# Highway...
+
+# Define the Highway version:
+DEPS_HIGHWAY_VERSION ?= 1.4.0
+
+# Define the output path when building Highway:
+DEPS_HIGHWAY_BUILD_OUT ?= $(DEPS_BUILD_DIR)/highway-$(DEPS_HIGHWAY_VERSION)
+
+# Define the path to the Highway include directory:
+DEPS_HIGHWAY_INCLUDE ?= $(DEPS_HIGHWAY_BUILD_OUT)
+
+# Define the native Highway build directory:
+DEPS_HIGHWAY_RUNTIME_OUT ?= $(DEPS_HIGHWAY_BUILD_OUT)/build
+
+# Attempt to resolve a SIMD directory:
+ifeq ($(SIMD), highway)
+ifeq (, $(SIMD_DIR))
+	# Use the `wildcard` function to check for the Highway external library:
+	SIMD_DIR := $(wildcard $(DEPS_HIGHWAY_BUILD_OUT))
+endif
+endif

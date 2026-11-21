@@ -35,6 +35,12 @@ ifdef BLAS_DIR
 	NODE_GYP_DEFINES += blas_dir=$(BLAS_DIR)
 endif
 endif
+ifneq (, $(SIMD))
+	NODE_GYP_DEFINES += simd=$(SIMD)
+ifdef SIMD_DIR
+	NODE_GYP_DEFINES += simd_dir=$(SIMD_DIR)
+endif
+endif
 endif
 
 # Define an add-on package pattern filter:
