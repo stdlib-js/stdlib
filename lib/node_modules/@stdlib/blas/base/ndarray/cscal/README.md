@@ -42,14 +42,11 @@ Multiplies a one-dimensional single-precision complex floating-point ndarray by 
 
 ```javascript
 var Complex64Vector = require( '@stdlib/ndarray/vector/complex64' );
-var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var Complex64Tensor0D = require( '@stdlib/ndarray/tensor0d/complex64' );
 
 var x = new Complex64Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 
-var alpha = scalar2ndarray( new Complex64( 2.0, 0.0 ), {
-    'dtype': 'complex64'
-});
+var alpha = new Complex64Tensor0D( 2.0, 0.0 );
 
 var y = cscal( [ x, alpha ] );
 // returns <ndarray>[ <Complex64>[ 2.0, 4.0 ], <Complex64>[ 6.0, 8.0 ], <Complex64>[ 10.0, 12.0 ] ]
@@ -84,8 +81,7 @@ The function has the following parameters:
 ```javascript
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var Complex64Vector = require( '@stdlib/ndarray/vector/complex64' );
-var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var Complex64Tensor0D = require( '@stdlib/ndarray/tensor0d/complex64' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var cscal = require( '@stdlib/blas/base/ndarray/cscal' );
 
@@ -96,9 +92,7 @@ var opts = {
 var x = new Complex64Vector( discreteUniform( 10, 0, 100, opts ) );
 console.log( ndarray2array( x ) );
 
-var alpha = scalar2ndarray( new Complex64( 2.0, 0.0 ), {
-    'dtype': 'complex64'
-});
+var alpha = new Complex64Tensor0D( 2.0, 0.0 );
 
 var out = cscal( [ x, alpha ] );
 console.log( ndarray2array( out ) );
