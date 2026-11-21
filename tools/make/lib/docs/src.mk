@@ -47,6 +47,23 @@ endif
 .PHONY: src-docs
 
 
+# Generate source documentation.
+#
+# use this if you get error
+# "Argument Listing too long"
+#
+# ```bash
+# make src-docs-out
+# ```
+
+src-docs-out:
+ifeq ($(SRC_DOC_GENERATOR), jsdoc)
+	$(QUIET) $(MAKE) -f $(this_file) jsdoc-html-out
+endif
+
+.PHONY: src-docs-out
+
+
 # View HTML documentation.
 #
 # This target opens source HTML documentation in a local web browser.

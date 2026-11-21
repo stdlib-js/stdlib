@@ -405,6 +405,12 @@ To generate documentation from [JSDoc][jsdoc] source code comments,
 $ make src-docs
 ```
 
+sometimes you might get an error `Argument listing too long` then use,
+
+```bash
+$ make src-docs-out
+```
+
 To view the documentation in a local web browser,
 
 ```bash
