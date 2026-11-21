@@ -109,7 +109,7 @@ var opts = {
     'dtype': 'float32'
 };
 var x = uniform( 100, -100.0, 100.0, opts );
-logEachMap( 'sincospif(%d) = [%s]', x, sincospif );
+logEachMap( 'sincospif(%0.4f) = [%s]', x, sincospif );
 ```
 
 </section>
