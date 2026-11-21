@@ -99,15 +99,12 @@ interface Namespace {
 	*
 	* @example
 	* var Complex64Vector = require( '@stdlib/ndarray/vector/complex64' );
-	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
-	* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+	* var Complex64Tensor0D = require( '@stdlib/ndarray/tensor0d/complex64' );
 	*
 	* var x = new Complex64Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ] );
 	* var y = new Complex64Vector( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
 	*
-	* var alpha = scalar2ndarray( new Complex64( 1.0, 2.0 ), {
-	*     'dtype': 'complex64'
-	* });
+	* var alpha = new Complex64Tensor0D( 1.0, 2.0 );
 	*
 	* var z = ns.caxpy( [ x, y, alpha ] );
 	* // returns <ndarray>[ <Complex64>[ -2.0, 5.0 ], <Complex64>[ -4.0, 11.0 ], <Complex64>[ -6.0, 17.0 ], <Complex64>[ -8.0, 23.0 ], <Complex64>[ -10.0, 29.0 ] ]
