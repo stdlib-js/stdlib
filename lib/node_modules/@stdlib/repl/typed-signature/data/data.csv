@@ -3694,6 +3694,7 @@ Int64Array.prototype.findIndex,"Int64Array.prototype.findIndex( predicate:Functi
 Int64Array.prototype.findLast,"Int64Array.prototype.findLast( predicate:Function[, thisArg:any] )"
 Int64Array.prototype.findLastIndex,"Int64Array.prototype.findLastIndex( predicate:Function[, thisArg:any] )"
 Int64Array.prototype.get,"Int64Array.prototype.get( i:integer )"
+Int64Array.prototype.keys,"Int64Array.prototype.keys()"
 Int64Array.prototype.set,"Int64Array.prototype.set( v:Int64|number|bigint|ArrayLikeObject[, i:integer] )"
 IS_BIG_ENDIAN,"IS_BIG_ENDIAN"
 IS_BROWSER,"IS_BROWSER"
