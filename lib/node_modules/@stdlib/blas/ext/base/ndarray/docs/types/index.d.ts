@@ -1702,14 +1702,12 @@ interface Namespace {
 	*
 	* @example
 	* var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
-	* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+	* var Float64Tensor0D = require( '@stdlib/ndarray/tensor0d/float64' );
 	*
 	* var x = new Float64Vector( [ 1.0, 3.0, 4.0, 2.0 ] );
 	* var y = new Float64Vector( [ 0.0, 0.0, 0.0, 0.0 ] );
 	*
-	* var initial = scalar2ndarray( 0.0, {
-	*     'dtype': 'float64'
-	* });
+	* var initial = new Float64Tensor0D( 0.0 );
 	*
 	* var z = ns.dcusumors( [ x, y, initial ] );
 	* // returns <ndarray>[ 1.0, 4.0, 8.0, 10.0 ]
