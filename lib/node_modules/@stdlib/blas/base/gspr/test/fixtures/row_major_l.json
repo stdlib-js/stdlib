@@ -1,0 +1,13 @@
+{
+  "order": "row-major",
+  "uplo": "lower",
+  "N": 3,
+  "alpha": 1.0,
+  "x": [ 1.0, 2.0, 3.0 ],
+  "strideX": 1,
+  "offsetX": 0,
+  "AP": [ 1.0, 1.0, 2.0, 1.0, 2.0, 3.0 ],
+  "strideAP": 1,
+  "offsetAP": 0,
+  "AP_out": [ 2.0, 3.0, 6.0, 4.0, 8.0, 12.0 ]
+}
