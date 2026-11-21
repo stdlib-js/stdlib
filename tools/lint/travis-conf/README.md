@@ -46,7 +46,7 @@ $ <lint> /absolute/file/path/to/.travis.yml
 
 <section class="links">
 
-[travis-ci]: https://docs.travis-ci.com/user/customizing-the-build
+[travis-ci]: https://web.archive.org/web/20230000000000*/https://docs.travis-ci.com/user/customizing-the-build
 
 </section>
 
