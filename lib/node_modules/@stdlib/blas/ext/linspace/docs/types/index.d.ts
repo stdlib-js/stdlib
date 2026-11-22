@@ -306,6 +306,7 @@ interface Linspace {
 * @param stop - end of interval
 * @param endpoint - specifies whether to include the end of the interval when writing values to the output ndarray
 * @param options - function options
+* @returns output ndarray
 *
 * @example
 * var out = linspace( [ 2, 4 ], 0.0, 3.0 );

@@ -23,10 +23,10 @@
 import { realcomplexndarray, genericndarray } from '@stdlib/types/ndarray';
 
 /**
-* Creates a NaN-filled array having the same shape and data type as a provided input ndarray.
+* Creates a NaN-filled ndarray having the same shape and data type as a provided input ndarray.
 *
 * @param x - input array
-* @returns NaN-filled array
+* @returns NaN-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );

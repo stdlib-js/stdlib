@@ -47,7 +47,7 @@ import { float32ndarray, typedndarray } from '@stdlib/types/ndarray';
 * var v = sstdevyc( [ x, correction ] );
 * // returns ~2.0817
 */
-declare function sstdevyc<T extends typedndarray<number> = typedndarray<number>>( arrays: [ float32ndarray, T ] ): number;
+declare function sstdevyc( arrays: [ float32ndarray, typedndarray<number> ] ): number;
 
 
 // EXPORTS //

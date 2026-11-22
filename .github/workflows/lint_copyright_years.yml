@@ -75,9 +75,11 @@ jobs:
 
       # Check copyright years in newly added files:
       - name: 'Check copyright years'
+        env:
+          FILES: ${{ steps.added-files.outputs.files }}
         run: |
           current_year=$(date +"%Y")
-          files="${{ steps.added-files.outputs.files }}"
+          files="$FILES"
           exit_code=0
 
           echo "## 📄 Copyright Year Check Results" >> $GITHUB_STEP_SUMMARY

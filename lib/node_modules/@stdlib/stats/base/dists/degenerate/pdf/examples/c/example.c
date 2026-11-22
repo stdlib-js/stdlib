@@ -36,6 +36,6 @@ int main( void ) {
 		x = stdlib_base_round( random_uniform( 0.0, 5.0 ) );
 		mu = stdlib_base_round( random_uniform( 0.0, 5.0 ) );
 		result = stdlib_base_dists_degenerate_pdf( x, mu );
-		printf( "x: %lf, µ: %lf, f(x;µ): %lf \n", x, mu, result );
+		printf( "x: %lf, μ: %lf, f(x;μ): %lf \n", x, mu, result );
 	}
 }

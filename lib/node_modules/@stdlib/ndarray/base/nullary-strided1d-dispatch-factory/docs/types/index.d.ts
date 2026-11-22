@@ -298,7 +298,7 @@ interface DispatchTable<T, U> extends BaseDispatchTable<T, U> {
 */
 interface NullaryFunction1<T> {
 	/**
-	* Applies a strided function and assign results to a provided output ndarray.
+	* Applies a strided function and assigns results to a provided output ndarray.
 	*
 	* @param out - output ndarray
 	* @param options - function options

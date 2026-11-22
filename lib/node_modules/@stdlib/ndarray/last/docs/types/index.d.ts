@@ -65,7 +65,7 @@ interface Options {
 * });
 * // returns <ndarray>[ 3.0, 4.0 ]
 */
-declare function last<T extends ndarray>( x: T, options?: Options ): T;
+declare function last<T extends ndarray = ndarray>( x: T, options?: Options ): T;
 
 
 // EXPORTS //

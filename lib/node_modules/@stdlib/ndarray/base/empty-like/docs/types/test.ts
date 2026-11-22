@@ -30,6 +30,7 @@ import emptyLike = require( './index' );
 
 	emptyLike( zeros( 'float64', sh, ord ) ); // $ExpectType float64ndarray
 	emptyLike( zeros( 'float32', sh, ord ) ); // $ExpectType float32ndarray
+	emptyLike( zeros( 'float16', sh, ord ) ); // $ExpectType float16ndarray
 	emptyLike( zeros( 'complex128', sh, ord ) ); // $ExpectType complex128ndarray
 	emptyLike( zeros( 'complex64', sh, ord ) ); // $ExpectType complex64ndarray
 	emptyLike( zeros( 'int32', sh, ord ) ); // $ExpectType int32ndarray

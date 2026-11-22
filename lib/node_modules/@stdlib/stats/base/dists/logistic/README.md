@@ -46,8 +46,8 @@ The namespace contains the following distribution functions:
 <div class="namespace-toc">
 
 -   <span class="signature">[`cdf( x, mu, s )`][@stdlib/stats/base/dists/logistic/cdf]</span><span class="delimiter">: </span><span class="description">logistic distribution cumulative distribution function.</span>
--   <span class="signature">[`logcdf( x, mu, s )`][@stdlib/stats/base/dists/logistic/logcdf]</span><span class="delimiter">: </span><span class="description">logistic distribution logarithm of cumulative distribution function.</span>
--   <span class="signature">[`logpdf( x, mu, s )`][@stdlib/stats/base/dists/logistic/logpdf]</span><span class="delimiter">: </span><span class="description">logistic distribution logarithm of probability density function (PDF).</span>
+-   <span class="signature">[`logcdf( x, mu, s )`][@stdlib/stats/base/dists/logistic/logcdf]</span><span class="delimiter">: </span><span class="description">logistic distribution natural logarithm of cumulative distribution function.</span>
+-   <span class="signature">[`logpdf( x, mu, s )`][@stdlib/stats/base/dists/logistic/logpdf]</span><span class="delimiter">: </span><span class="description">logistic distribution natural logarithm of probability density function (PDF).</span>
 -   <span class="signature">[`mgf( t, mu, s )`][@stdlib/stats/base/dists/logistic/mgf]</span><span class="delimiter">: </span><span class="description">logistic distribution moment-generating function (MGF).</span>
 -   <span class="signature">[`pdf( x, mu, s )`][@stdlib/stats/base/dists/logistic/pdf]</span><span class="delimiter">: </span><span class="description">logistic distribution probability density function (PDF).</span>
 -   <span class="signature">[`quantile( p, mu, s )`][@stdlib/stats/base/dists/logistic/quantile]</span><span class="delimiter">: </span><span class="description">logistic distribution quantile function.</span>

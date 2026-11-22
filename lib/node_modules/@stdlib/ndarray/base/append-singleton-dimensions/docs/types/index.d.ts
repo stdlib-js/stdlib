@@ -39,7 +39,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * var y = appendSingletonDimensions( x, 3, false );
 * // returns <ndarray>[ [ [ [ [ 1 ] ] ], [ [ [ 2 ] ] ] ], [ [ [ [ 3 ] ] ], [ [ [ 4 ] ] ] ] ]
 */
-declare function appendSingletonDimensions<T extends ndarray>( x: T, n: number, writable: boolean ): T;
+declare function appendSingletonDimensions<T extends ndarray = ndarray>( x: T, n: number, writable: boolean ): T;
 
 
 // EXPORTS //

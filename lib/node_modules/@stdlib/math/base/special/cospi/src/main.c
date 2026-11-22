@@ -26,6 +26,7 @@
 #include "stdlib/math/base/special/fmod.h"
 #include "stdlib/constants/float64/pi.h"
 #include "stdlib/constants/float64/max_safe_integer.h"
+#include "stdlib/constants/float64/nan.h"
 
 static const double MAX_INTEGER_P1 = STDLIB_CONSTANT_FLOAT64_MAX_SAFE_INTEGER + 1;
 
@@ -54,7 +55,7 @@ double stdlib_base_cospi( const double x ) {
 	double y;
 
 	if ( stdlib_base_is_nan( x ) || stdlib_base_is_infinite( x ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	ax = stdlib_base_abs( x );
 	if ( ax > MAX_INTEGER_P1 ) {

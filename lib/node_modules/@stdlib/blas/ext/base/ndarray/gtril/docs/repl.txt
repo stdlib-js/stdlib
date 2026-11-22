@@ -1,0 +1,41 @@
+
+{{alias}}( arrays )
+    Copies the lower triangular part of a matrix `A` to another matrix `B`.
+
+    The diagonal parameter `k` specifies the diagonal above which to ignore. A
+    value of `k = 0` refers to the main diagonal, `k > 0` refers to a diagonal
+    above the main diagonal, and `k < 0` refers to a diagonal below the main
+    diagonal.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a two-dimensional input ndarray corresponding to `A`.
+        - a two-dimensional output ndarray corresponding to `B`.
+        - a zero-dimensional ndarray specifying the diagonal above which to
+        ignore.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var abuf = [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ];
+    > var A = {{alias:@stdlib/ndarray/matrix/ctor}}( abuf, 'generic' );
+
+    > var bbuf = [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ];
+    > var B = {{alias:@stdlib/ndarray/matrix/ctor}}( bbuf, 'generic' );
+
+    > var k = {{alias:@stdlib/ndarray/from-scalar}}( 0, { 'dtype': 'generic' } );
+
+    > {{alias}}( [ A, B, k ] );
+    > B
+    <ndarray>[ [ 1.0, 0.0 ], [ 3.0, 4.0 ] ]
+
+    See Also
+    --------
+

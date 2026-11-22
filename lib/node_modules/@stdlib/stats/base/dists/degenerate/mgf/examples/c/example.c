@@ -36,6 +36,6 @@ int main( void ) {
 		t = stdlib_base_round( random_uniform( 0.0, 5.0 ) );
 		mu = stdlib_base_round( random_uniform( 0.0, 5.0 ) );
 		result = stdlib_base_dists_degenerate_mgf( t, mu );
-		printf( "t: %lf, µ: %lf, M_X(t;µ): %lf\n", t, mu, result );
+		printf( "t: %lf, μ: %lf, M_X(t;μ): %lf\n", t, mu, result );
 	}
 }

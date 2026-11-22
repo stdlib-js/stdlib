@@ -16,18 +16,8 @@
 
     Examples
     --------
-    > var M = {};
-    > M.data = new {{alias:@stdlib/array/complex128}}( [ 0, 0, 0, 0, 0, 0, 0, 0 ] );
-    > M.ndims = 1;
-    > M.shape = [ 4 ];
-    > M.strides = [ 1 ];
-    > M.offset = 0;
-    > M.order = 'row-major';
-    > M.dtype = 'complex128';
-    > M.length = 4;
-    > M.flags = {};
-    > M.get = function get( i, j ) {};
-    > M.set = function set( i, j ) {};
+    > var opts = { 'dtype': 'complex128' };
+    > var M = {{alias:@stdlib/ndarray/zeros}}( [ 4 ], opts );
     > var bool = {{alias}}( M )
     true
     > bool = {{alias}}( [ 1, 2, 3, 4 ] )

@@ -45,12 +45,12 @@ const obj = {
 
 // The compiler throws an error if the function is provided a second argument which is not a function...
 {
-	noneOwnBy( obj , 2 ); // $ExpectError
-	noneOwnBy( obj , false ); // $ExpectError
-	noneOwnBy( obj , true ); // $ExpectError
-	noneOwnBy( obj , 'abc' ); // $ExpectError
-	noneOwnBy( obj , {} ); // $ExpectError
-	noneOwnBy( obj , [] ); // $ExpectError
+	noneOwnBy( obj, 2 ); // $ExpectError
+	noneOwnBy( obj, false ); // $ExpectError
+	noneOwnBy( obj, true ); // $ExpectError
+	noneOwnBy( obj, 'abc' ); // $ExpectError
+	noneOwnBy( obj, {} ); // $ExpectError
+	noneOwnBy( obj, [] ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an invalid number of arguments...

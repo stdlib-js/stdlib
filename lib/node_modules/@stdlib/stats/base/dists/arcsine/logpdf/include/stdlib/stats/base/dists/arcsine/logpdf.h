@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the logarithm of the probability density function (PDF) for an arcsine distribution with minimum support `a` and maximum support `b` at a value `x`.
+* Evaluates the natural logarithm of the probability density function (PDF) for an arcsine distribution with minimum support `a` and maximum support `b` at a value `x`.
 */
 double stdlib_base_dists_arcsine_logpdf( const double x, const double a, const double b );
 

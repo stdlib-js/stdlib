@@ -83,8 +83,6 @@ The function accepts the following arguments:
 
 ## Examples
 
-<!-- eslint-disable max-len -->
-
 <!-- eslint no-undef: "error" -->
 
 ```javascript

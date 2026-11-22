@@ -28,7 +28,7 @@ Generate fixture data and write to file.
 
 * `x`: input value
 * `alpha`: shape parameter
-* `beta`: rate parameter
+* `beta`: scale parameter
 * `name::AbstractString`: output filename
 
 # Examples
@@ -76,7 +76,7 @@ alpha = ( rand( 1000 ) .* 10.0 ) .+ 10.0;
 beta = rand( 1000 ) .* 10.0;
 gen( x, alpha, beta, "large_shape.json" );
 
-# Large rate parameter:
+# Large scale parameter:
 x = rand( 1000 ) .* 5.0;
 alpha = rand( 1000 ) .* 10.0;
 beta = ( rand( 1000 ) .* 10.0 ) .+ 10.0;

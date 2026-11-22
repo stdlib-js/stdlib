@@ -93,12 +93,12 @@ interface CDF {
 * @returns evaluated CDF
 *
 * @example
-* var y = cdf( 2.0, 0.0, 1.0 );
-* // returns 1.0
+* var y = cdf( 2.0, 3.0 );
+* // returns ~0.199
 *
-* var myCDF = cdf.factory( 10.0, 2.0 );
-* y = myCDF( 10.0 );
-* // returns ~0.393
+* var myCDF = cdf.factory( 2.0 );
+* y = myCDF( 3.0 );
+* // returns ~0.675
 */
 declare var cdf: CDF;
 

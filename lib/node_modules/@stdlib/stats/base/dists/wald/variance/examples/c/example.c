@@ -36,6 +36,6 @@ int main( void ) {
 		mu = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 10.0 );
 		lambda = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 20.0 );
 		y = stdlib_base_dists_wald_variance( mu, lambda );
-		printf( "µ: %lf, λ: %lf, Var(X;µ,λ): %lf\n", mu, lambda, y );
+		printf( "μ: %lf, λ: %lf, Var(X;μ,λ): %lf\n", mu, lambda, y );
 	}
 }

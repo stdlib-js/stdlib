@@ -47,7 +47,7 @@ var arr = logspace( 0, 2, 6 );
 
 ## Notes
 
--   The output `array` includes the values `10^a` and `10^b`. **Beware** of floating point errors, including for the first and last `array` elements.
+-   The output `array` includes the values `10^a` and `10^b`. **Beware** of floating-point errors, including for the first and last `array` elements.
 
 </section>
 

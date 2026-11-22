@@ -165,7 +165,7 @@ interface ToSortedhp {
 	<T extends InputArray = InputArray, U extends OutputArray = OutputArray>( x: T, sortOrder: SortOrder, options?: Options ): U; // NOTE: we lose type specificity here. We can likely address this with type maps
 
 	/**
-	* Sorts the elements in an input ndarray along along one or more ndarray dimensions using heapsort and assigns the results to an output ndarray.
+	* Sorts the elements in an input ndarray along one or more ndarray dimensions using heapsort and assigns the results to an output ndarray.
 	*
 	* ## Notes
 	*
@@ -197,7 +197,7 @@ interface ToSortedhp {
 	assign<T extends InputArray = InputArray, U extends OutputArray = OutputArray>( x: T, out: U, options?: BaseOptions ): U;
 
 	/**
-	* Sorts the elements in an input ndarray along along one or more ndarray dimensions using heapsort and assigns the results to an output ndarray.
+	* Sorts the elements in an input ndarray along one or more ndarray dimensions using heapsort and assigns the results to an output ndarray.
 	*
 	* ## Notes
 	*
@@ -221,7 +221,7 @@ interface ToSortedhp {
 	*
 	* var y = zeros( [ 3 ] );
 	*
-	* var out = toSortedhp.assign( x, y, 1);
+	* var out = toSortedhp.assign( x, y, 1.0 );
 	* // returns <ndarray>[ -3.0, -1.0, 2.0 ]
 	*
 	* var bool = ( out === y );

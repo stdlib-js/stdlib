@@ -151,14 +151,14 @@ import uniform = require( './index' );
 	uniform.factory( -2, 2, { 'prng': null } ); // $ExpectError
 	uniform.factory( -2, 2, { 'prng': [] } ); // $ExpectError
 	uniform.factory( -2, 2, { 'prng': {} } ); // $ExpectError
-	uniform.factory( -2, 2, { 'prng': true ); // $ExpectError
+	uniform.factory( -2, 2, { 'prng': true } ); // $ExpectError
 
 	uniform.factory( { 'prng': 123 } ); // $ExpectError
 	uniform.factory( { 'prng': 'abc' } ); // $ExpectError
 	uniform.factory( { 'prng': null } ); // $ExpectError
 	uniform.factory( { 'prng': [] } ); // $ExpectError
 	uniform.factory( { 'prng': {} } ); // $ExpectError
-	uniform.factory( { 'prng': true ); // $ExpectError
+	uniform.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -185,7 +185,7 @@ import uniform = require( './index' );
 	uniform.factory( -2, 2, { 'state': null } ); // $ExpectError
 	uniform.factory( -2, 2, { 'state': [] } ); // $ExpectError
 	uniform.factory( -2, 2, { 'state': {} } ); // $ExpectError
-	uniform.factory( -2, 2, { 'state': true ); // $ExpectError
+	uniform.factory( -2, 2, { 'state': true } ); // $ExpectError
 	uniform.factory( -2, 2, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	uniform.factory( { 'state': 123 } ); // $ExpectError
@@ -193,7 +193,7 @@ import uniform = require( './index' );
 	uniform.factory( { 'state': null } ); // $ExpectError
 	uniform.factory( { 'state': [] } ); // $ExpectError
 	uniform.factory( { 'state': {} } ); // $ExpectError
-	uniform.factory( { 'state': true ); // $ExpectError
+	uniform.factory( { 'state': true } ); // $ExpectError
 	uniform.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

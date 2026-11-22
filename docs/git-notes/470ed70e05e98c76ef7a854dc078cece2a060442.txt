@@ -1,0 +1,12 @@
+---
+type: amend-message
+---
+refactor!: update `fft/base/fftpack/float32/cosqi` to use integer array view
+
+BREAKING CHANGE: require accessing factors as a Uint32Array view
+
+This ensures we can avoid loss in precision when storing large integer values in a `Float32Array`.
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/15329
+Reviewed-by: Athan Reines <kgryte@gmail.com>
+Ref: https://github.com/stdlib-js/metr-issue-tracker/issues/1321

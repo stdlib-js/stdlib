@@ -23,7 +23,7 @@
 */
 interface Routine {
 	/**
-	* Adds a constant to each single-precision floating-point strided array element, and computes the sum using pairwise summation with extended accumulation and returning an extended precision result.
+	* Adds a scalar constant to each single-precision floating-point strided array element, and computes the sum using pairwise summation with extended accumulation and returning an extended precision result.
 	*
 	* @param N - number of indexed elements
 	* @param alpha - scalar constant
@@ -42,7 +42,7 @@ interface Routine {
 	( N: number, alpha: number, x: Float32Array, strideX: number ): number;
 
 	/**
-	* Adds a constant to each single-precision floating-point strided array element, and computes the sum using extended accumulation and alternative indexing semantics and returning an extended precision result.
+	* Adds a scalar constant to each single-precision floating-point strided array element, and computes the sum using pairwise summation with extended accumulation and alternative indexing semantics and returning an extended precision result.
 	*
 	* @param N - number of indexed elements
 	* @param alpha - scalar constant
@@ -63,7 +63,7 @@ interface Routine {
 }
 
 /**
-* Adds a constant to each single-precision floating-point strided array element, and computes the sum using pairwise summation with extended accumulation and returning an extended precision result.
+* Adds a scalar constant to each single-precision floating-point strided array element, and computes the sum using pairwise summation with extended accumulation and returning an extended precision result.
 *
 * @param N - number of indexed elements
 * @param alpha - scalar constant

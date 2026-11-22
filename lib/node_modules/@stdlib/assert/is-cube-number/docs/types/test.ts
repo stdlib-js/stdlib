@@ -33,27 +33,27 @@ import isCubeNumber = require( './index' );
 	isCubeNumber( 0.2, 123 ); // $ExpectError
 }
 
-// Attached to main export is an isPrimitive method which returns a boolean...
+// Attached to main export is an `isPrimitive` method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers
 	isCubeNumber.isPrimitive( new Number( 0.2 ) ); // $ExpectType boolean
 	isCubeNumber.isPrimitive( 0.2 ); // $ExpectType boolean
 }
 
-// The compiler throws an error if the isPrimitive method is provided an unsupported number of arguments...
+// The compiler throws an error if the `isPrimitive` method is provided an unsupported number of arguments...
 {
 	isCubeNumber.isPrimitive(); // $ExpectError
 	isCubeNumber.isPrimitive( 0.2, 123 ); // $ExpectError
 }
 
-// Attached to main export is an isPrimitive method which returns a boolean...
+// Attached to main export is an `isObject` method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers
 	isCubeNumber.isObject( new Number( 0.2 ) ); // $ExpectType boolean
 	isCubeNumber.isObject( 0.2 ); // $ExpectType boolean
 }
 
-// The compiler throws an error if the isObject method is provided an unsupported number of arguments...
+// The compiler throws an error if the `isObject` method is provided an unsupported number of arguments...
 {
 	isCubeNumber.isObject(); // $ExpectError
 	isCubeNumber.isObject( 0.2, 123 ); // $ExpectError

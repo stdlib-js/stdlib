@@ -39,6 +39,7 @@
 #include "stdlib/constants/float64/high_word_significand_mask.h"
 #include "stdlib/constants/float64/exponent_bias.h"
 #include "stdlib/constants/float64/ninf.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/kernel_log1p.h"
 #include <stdint.h>
@@ -87,7 +88,7 @@ double stdlib_base_log10( const double x ) {
 	double y;
 
 	if ( stdlib_base_is_nan( x ) || x < 0.0 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	xc = x;
 	stdlib_base_float64_to_words( xc, &hx, &lx );

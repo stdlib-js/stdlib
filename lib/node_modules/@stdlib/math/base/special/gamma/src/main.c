@@ -42,6 +42,7 @@
 #include "stdlib/constants/float64/pi.h"
 #include "stdlib/constants/float64/eulergamma.h"
 #include "stdlib/constants/float64/sqrt_two_pi.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/math/base/special/pow.h"
 #include "stdlib/math/base/special/exp.h"
 #include <stdint.h>
@@ -187,7 +188,7 @@ double stdlib_base_gamma( const double x ) {
 	double z;
 
 	if ( ( stdlib_base_is_integer( x ) && x < 0 ) || x == STDLIB_CONSTANT_FLOAT64_NINF || stdlib_base_is_nan( x ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( x == 0.0 ) {
 		if ( stdlib_base_is_negative_zero( x ) ) {
@@ -207,7 +208,7 @@ double stdlib_base_gamma( const double x ) {
 			return stirlingApprox( x );
 		}
 		p = stdlib_base_floor( q );
-		
+
 		// Check whether `x` is even...
 		i = (int32_t)p;
 		if ( ( i & 1 ) == 0 ) {
@@ -223,7 +224,7 @@ double stdlib_base_gamma( const double x ) {
 		z = q * stdlib_base_sin( STDLIB_CONSTANT_FLOAT64_PI * z );
 		return sign * STDLIB_CONSTANT_FLOAT64_PI / ( stdlib_base_abs( z ) * stirlingApprox( q ) );
 	}
-	
+
 	// Reduce `x`...
 	z = 1.0;
 	xc = x;

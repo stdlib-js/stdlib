@@ -21,7 +21,7 @@
 #include "stdlib/math/base/special/erfcinv.h"
 
 /**
-* Returns the quantile for a Lévy distribution with location `mu` and scale `c`.
+* Evaluates the quantile function for a Lévy distribution with location parameter `mu` and scale parameter `c` at a probability `p`.
 *
 * @param p   input value
 * @param mu  location parameter

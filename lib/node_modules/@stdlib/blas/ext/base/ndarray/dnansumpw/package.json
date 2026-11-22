@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/blas/ext/base/ndarray/dnansumpw",
   "version": "0.0.0",
-  "description": "Compute the sum of a one-dimensional double-precision floating-point ndarray, ignoring `NaN` values and using pairwise summation.",
+  "description": "Compute the sum of a one-dimensional double-precision floating-point ndarray, ignoring NaN values and using pairwise summation.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
