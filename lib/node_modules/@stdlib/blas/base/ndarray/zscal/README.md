@@ -42,14 +42,11 @@ Multiplies a one-dimensional double-precision complex floating-point ndarray by 
 
 ```javascript
 var Complex128Vector = require( '@stdlib/ndarray/vector/complex128' );
-var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var Complex128Tensor0D = require( '@stdlib/ndarray/tensor0d/complex128' );
 
 var x = new Complex128Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 
-var alpha = scalar2ndarray( new Complex128( 2.0, 0.0 ), {
-    'dtype': 'complex128'
-});
+var alpha = new Complex128Tensor0D( 2.0, 0.0 );
 
 var y = zscal( [ x, alpha ] );
 // returns <ndarray>[ <Complex128>[ 2.0, 4.0 ], <Complex128>[ 6.0, 8.0 ], <Complex128>[ 10.0, 12.0 ] ]
@@ -84,8 +81,7 @@ The function has the following parameters:
 ```javascript
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var Complex128Vector = require( '@stdlib/ndarray/vector/complex128' );
-var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var Complex128Tensor0D = require( '@stdlib/ndarray/tensor0d/complex128' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var zscal = require( '@stdlib/blas/base/ndarray/zscal' );
 
@@ -96,9 +92,7 @@ var opts = {
 var x = new Complex128Vector( discreteUniform( 10, 0, 100, opts ) );
 console.log( ndarray2array( x ) );
 
-var alpha = scalar2ndarray( new Complex128( 2.0, 0.0 ), {
-    'dtype': 'complex128'
-});
+var alpha = new Complex128Tensor0D( 2.0, 0.0 );
 
 var out = zscal( [ x, alpha ] );
 console.log( ndarray2array( out ) );
