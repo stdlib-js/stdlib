@@ -21,7 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 import { Complex64, Complex128 } from '@stdlib/types/complex';
-import { Collection, Complex64Array, Complex128Array, AccessorArrayLike } from '@stdlib/types/array';
+import { Collection, Complex64Array, Complex128Array, AccessorArrayLike, Float16Array } from '@stdlib/types/array';
 
 /**
 * Returns an element from a `Float64Array`.
@@ -40,6 +40,15 @@ type GetFloat64 = ( arr: Float64Array, idx: number ) => number | void;
 * @returns element value
 */
 type GetFloat32 = ( arr: Float32Array, idx: number ) => number | void;
+
+/**
+* Returns an element from a `Float16Array`.
+*
+* @param arr - input array
+* @param idx - element index
+* @returns element value
+*/
+type GetFloat16 = ( arr: Float16Array, idx: number ) => number | void;
 
 /**
 * Returns an element from a `Complex128Array`.
@@ -182,6 +191,23 @@ declare function resolveGetter( x: Float64Array ): GetFloat64;
 * // returns 3.0
 */
 declare function resolveGetter( x: Float32Array ): GetFloat32;
+
+/**
+* Returns an accessor function for retrieving an element from a `Float16Array`.
+*
+* @param x - input array
+* @returns accessor function
+*
+* @example
+* var Float16Array = require( '@stdlib/array/float16' );
+*
+* var arr = new Float16Array( [ 1, 2, 3, 4 ] );
+*
+* var get = resolveGetter( arr );
+* var v = get( arr, 2 );
+* // returns 3.0
+*/
+declare function resolveGetter( x: Float16Array ): GetFloat16;
 
 /**
 * Returns an accessor function for retrieving an element from a `Complex128Array`.

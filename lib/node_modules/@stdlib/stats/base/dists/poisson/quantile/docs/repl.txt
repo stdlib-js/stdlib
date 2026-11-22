@@ -9,6 +9,8 @@
 
     If provided a negative value for `λ`, the function returns `NaN`.
 
+    If provided `λ` equal to positive infinity, the function returns `NaN`.
+
     Parameters
     ----------
     p: number
@@ -30,12 +32,10 @@
     7
     > y = {{alias}}( 0.1, 200.0 )
     182
-
     > y = {{alias}}( 1.1, 0.0 )
     NaN
     > y = {{alias}}( -0.2, 0.0 )
     NaN
-
     > y = {{alias}}( NaN, 0.5 )
     NaN
     > y = {{alias}}( 0.0, NaN )

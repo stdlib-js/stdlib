@@ -26,7 +26,7 @@
 /**
 * Computes the logit function for a single-precision floating-point number.
 *
-* @param x    input value
+* @param p    input value
 * @return     output value
 *
 * @example

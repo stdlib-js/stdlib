@@ -21,20 +21,101 @@
 /// <reference types="@stdlib/types"/>
 
 import { Complex128 } from '@stdlib/types/complex';
+import { Collection, NumericArray } from '@stdlib/types/array';
 
 /**
-* Rounds a double-precision complex floating-point number toward negative infinity.
+* Interface for rounding each component of a double-precision complex floating-point number toward negative infinity.
+*/
+interface Cfloor {
+	/**
+	* Rounds each component of a double-precision complex floating-point number toward negative infinity.
+	*
+	* @param z - complex number
+	* @returns result
+	*
+	* @example
+	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
+	*
+	* var v = cfloor( new Complex128( -1.5, 2.5 ) );
+	* // returns <Complex128>[ -2.0, 2.0 ]
+	*/
+	( z: Complex128 ): Complex128;
+
+	/**
+	* Rounds each component of a double-precision complex floating-point number toward negative infinity and assigns results to a provided output array.
+	*
+	* @param re - real component
+	* @param im - imaginary component
+	* @param out - output array
+	* @param strideOut - stride length
+	* @param offsetOut - starting index
+	* @returns output array
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	*
+	* var out = new Float64Array( 2 );
+	* var v = cfloor.assign( -1.5, 2.5, out, 1, 0 );
+	* // returns <Float64Array>[ -2.0, 2.0 ]
+	*
+	* var bool = ( out === v );
+	* // returns true
+	*/
+	assign<T extends NumericArray | Collection<number>>( re: number, im: number, out: T, strideOut: number, offsetOut: number ): T;
+
+	/**
+	* Rounds each component of a double-precision complex floating-point number stored in a real-valued strided array view toward negative infinity and assigns results to a provided strided output array.
+	*
+	* @param z - complex number view
+	* @param strideZ - stride length for `z`
+	* @param offsetZ - starting index for `z`
+	* @param out - output array
+	* @param strideOut - stride length for `out`
+	* @param offsetOut - starting index for `out`
+	* @returns output array
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	*
+	* var z = new Float64Array( [ -1.5, 2.5 ] );
+	*
+	* var out = cfloor.strided( z, 1, 0, new Float64Array( 2 ), 1, 0 );
+	* // returns <Float64Array>[ -2.0, 2.0 ]
+	*/
+	strided<T extends NumericArray | Collection<number>, U extends NumericArray | Collection<number>>( z: T, strideZ: number, offsetZ: number, out: U, strideOut: number, offsetOut: number ): U;
+}
+
+/**
+* Rounds each component of a double-precision complex floating-point number toward negative infinity.
 *
-* @param z - input value
+* @param z - complex number
 * @returns result
 *
 * @example
 * var Complex128 = require( '@stdlib/complex/float64/ctor' );
 *
-* var v = cfloor( new Complex128( 5.5, 3.3 ) );
-* // returns <Complex128>[ 5.0, 3.0 ]
+* var v = cfloor( new Complex128( -1.5, 2.5 ) );
+* // returns <Complex128>[ -2.0, 2.0 ]
+*
+* @example
+* var Float64Array = require( '@stdlib/array/float64' );
+*
+* var out = new Float64Array( 2 );
+* var v = cfloor.assign( -1.5, 2.5, out, 1, 0 );
+* // returns <Float64Array>[ -2.0, 2.0 ]
+*
+* var bool = ( out === v );
+* // returns true
+*
+* @example
+* var Float64Array = require( '@stdlib/array/float64' );
+*
+* var z = new Float64Array( [ -1.5, 2.5 ] );
+*
+* var out = cfloor.strided( z, 1, 0, new Float64Array( 2 ), 1, 0 );
+* // returns <Float64Array>[ -2.0, 2.0 ]
 */
-declare function cfloor( z: Complex128 ): Complex128;
+declare var cfloor: Cfloor;
 
 
 // EXPORTS //

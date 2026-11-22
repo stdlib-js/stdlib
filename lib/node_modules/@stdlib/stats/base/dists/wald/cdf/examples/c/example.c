@@ -20,7 +20,6 @@
 #include "stdlib/constants/float64/eps.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <time.h>
 
 static double random_uniform( const double min, const double max ) {
 	double v = (double)rand() / ( (double)RAND_MAX + 1.0 );

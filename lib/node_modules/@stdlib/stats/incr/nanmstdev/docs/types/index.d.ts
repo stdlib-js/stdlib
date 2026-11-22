@@ -33,7 +33,7 @@
 type accumulator = ( x?: number ) => number | null;
 
 /**
-* Returns an accumulator function which incrementally computes a moving corrected sample standard deviation, ignoring NaN values.
+* Returns an accumulator function which incrementally computes a moving corrected sample standard deviation, ignoring `NaN` values.
 *
 * ## Notes
 *

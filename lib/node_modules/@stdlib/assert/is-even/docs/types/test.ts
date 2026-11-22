@@ -33,27 +33,27 @@ import isEven = require( './index' );
 	isEven( 4, 123 ); // $ExpectError
 }
 
-// Attached to main export is an isPrimitive method which returns a boolean...
+// Attached to main export is an `isPrimitive` method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers
 	isEven.isPrimitive( new Number( 4 ) ); // $ExpectType boolean
 	isEven.isPrimitive( 4 ); // $ExpectType boolean
 }
 
-// The compiler throws an error if the isPrimitive method is provided an unsupported number of arguments...
+// The compiler throws an error if the `isPrimitive` method is provided an unsupported number of arguments...
 {
 	isEven.isPrimitive(); // $ExpectError
 	isEven.isPrimitive( 4, 123 ); // $ExpectError
 }
 
-// Attached to main export is an isPrimitive method which returns a boolean...
+// Attached to main export is an `isObject` method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers
 	isEven.isObject( new Number( 4 ) ); // $ExpectType boolean
 	isEven.isObject( 4 ); // $ExpectType boolean
 }
 
-// The compiler throws an error if the isObject method is provided an unsupported number of arguments...
+// The compiler throws an error if the `isObject` method is provided an unsupported number of arguments...
 {
 	isEven.isObject(); // $ExpectError
 	isEven.isObject( 4, 123 ); // $ExpectError

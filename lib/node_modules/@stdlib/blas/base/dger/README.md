@@ -247,8 +247,6 @@ void c_dger( const CBLAS_LAYOUT layout, const CBLAS_INT M, const CBLAS_INT N, co
 Performs the rank 1 operation `A = alpha*x*y^T + A`, using alternative indexing semantics and where `alpha` is a scalar, `X` is an `M` element vector, `Y` is an `N` element vector, and `A` is an `M`-by-`N` matrix.
 
 ```c
-#include "stdlib/blas/base/shared.h"
-
 double A[ 3*4 ] = {
    0.0, 0.0, 0.0, 0.0,
    0.0, 0.0, 0.0, 0.0,

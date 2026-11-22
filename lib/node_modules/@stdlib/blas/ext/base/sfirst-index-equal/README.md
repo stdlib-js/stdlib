@@ -62,7 +62,7 @@ The function has the following parameters:
 -   **y**: second input [`Float32Array`][@stdlib/array/float32].
 -   **strideY**: stride length for `y`.
 
-If the function is unable to find matching elements, the function returns `-1`.
+If the function is unable to find an element in `x` which is equal to a corresponding element in `y`, the function returns `-1`.
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -74,7 +74,7 @@ var idx = sfirstIndexEqual( x.length, x, 1, y, 1 );
 // returns -1
 ```
 
-The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to compare every other element:
+The `N` and stride parameters determine which elements in the strided arrays are accessed at runtime. For example, to compare every other element:
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -99,7 +99,7 @@ var y0 = new Float32Array( [ 0.0, 0.0, 3.0, 0.0 ] );
 var x1 = new Float32Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 var y1 = new Float32Array( y0.buffer, y0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
-// Find index...
+// Find index:
 var idx = sfirstIndexEqual( 2, x1, 1, y1, 1 );
 // returns 1
 ```
@@ -123,7 +123,7 @@ The function has the following additional parameters:
 -   **offsetX**: starting index for `x`.
 -   **offsetY**: starting index for `y`.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to access only the last three elements of each strided array:
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameters support indexing semantics based on starting indices. For example, to access only the last three elements of each strided array:
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -145,7 +145,8 @@ var idx = sfirstIndexEqual.ndarray( 3, x, 1, x.length-3, y, 1, y.length-3 );
 
 ## Notes
 
--   When comparing elements, the function checks for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct, and `-0` and `+0` are considered the same.
+-   If `N <= 0`, both functions return `-1`.
+-   When comparing elements, the functions check for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct, and `-0` and `+0` are considered the same.
 
 </section>
 

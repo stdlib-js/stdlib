@@ -54,7 +54,7 @@ var idx = glastIndexOfTruthy( x.length, x, 1 );
 The function has the following parameters:
 
 -   **N**: number of indexed elements.
--   **x**: input array.
+-   **x**: input [`Array`][mdn-array] or [`typed array`][mdn-typed-array].
 -   **strideX**: stride length.
 
 If the function is unable to find a truthy element, the function returns `-1`.
@@ -80,13 +80,13 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 
-// Initial array...
+// Initial array:
 var x0 = new Float64Array( [ 0.0, 3.0, 0.0, 5.0, 0.0, 7.0 ] );
 
-// Create an offset view...
+// Create an offset view:
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
-// Find index...
+// Find index:
 var idx = glastIndexOfTruthy( 3, x1, 2 );
 // returns 2
 ```
@@ -125,7 +125,8 @@ var idx = glastIndexOfTruthy.ndarray( 3, x, 1, x.length-3 );
 
 ## Notes
 
--   If unable to find a truthy element, both functions return `-1`.
+-   If `N <= 0`, both functions return `-1`.
+-   Both functions explicitly treat `NaN` values as falsy.
 -   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array/base/accessor`][@stdlib/array/base/accessor]).
 
 </section>
@@ -176,6 +177,8 @@ console.log( idx );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[mdn-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
