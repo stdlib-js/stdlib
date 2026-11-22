@@ -19,8 +19,7 @@
 /* eslint-disable space-in-parens */
 
 import zeros = require( '@stdlib/ndarray/zeros' );
-import scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-import Complex64 = require( '@stdlib/complex/float32/ctor' );
+import Complex64Tensor0D = require( '@stdlib/ndarray/tensor0d/complex64' );
 import caxpby = require( './index' );
 
 
@@ -34,12 +33,8 @@ import caxpby = require( './index' );
 	const y = zeros( [ 10 ], {
 		'dtype': 'complex64'
 	});
-	const alpha = scalar2ndarray( new Complex64( 2.0, 1.0 ), {
-		'dtype': 'complex64'
-	});
-	const beta = scalar2ndarray( new Complex64( 1.0, -1.0 ), {
-		'dtype': 'complex64'
-	});
+	const alpha = new Complex64Tensor0D( 2.0, 1.0 );
+	const beta = new Complex64Tensor0D( 1.0, -1.0 );
 
 	caxpby( [ x, y, alpha, beta ] ); // $ExpectType complex64ndarray
 }
@@ -65,12 +60,8 @@ import caxpby = require( './index' );
 	const y = zeros( [ 10 ], {
 		'dtype': 'complex64'
 	});
-	const alpha = scalar2ndarray( new Complex64( 2.0, 1.0 ), {
-		'dtype': 'complex64'
-	});
-	const beta = scalar2ndarray( new Complex64( 1.0, -1.0 ), {
-		'dtype': 'complex64'
-	});
+	const alpha = new Complex64Tensor0D( 2.0, 1.0 );
+	const beta = new Complex64Tensor0D( 1.0, -1.0 );
 
 	caxpby(); // $ExpectError
 	caxpby( [ x, y, alpha, beta ], {} ); // $ExpectError

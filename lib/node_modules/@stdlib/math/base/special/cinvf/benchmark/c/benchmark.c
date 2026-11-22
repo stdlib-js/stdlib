@@ -20,9 +20,10 @@
 #include <stdio.h>
 #include <math.h>
 #include <complex.h>
+#include <time.h>
 #include <sys/time.h>
 
-#define NAME "inv"
+#define NAME "cinvf"
 #define ITERATIONS 1000000
 #define REPEATS 3
 
@@ -74,13 +75,15 @@ static double tic( void ) {
 }
 
 /**
-* Generates a random number on the interval [0,1).
+* Generates a random number on the interval [min,max).
 *
-* @return random number
+* @param min    minimum value (inclusive)
+* @param max    maximum value (exclusive)
+* @return       random number
 */
-static float rand_float( void ) {
-	int r = rand();
-	return (float)r / ( (float)RAND_MAX + 1.0f );
+static float random_uniform( const float min, const float max ) {
+	float v = (float)rand() / ( (float)RAND_MAX + 1.0f );
+	return min + ( v*(max-min) );
 }
 
 /**
@@ -89,32 +92,30 @@ static float rand_float( void ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
-	float re[ 100 ];
-	float im[ 100 ];
+	float complex z[ 100 ];
+	float complex w;
 	double elapsed;
 	double t;
+	float re;
+	float im;
 	int i;
 
-	float complex z1;
-	float complex z2;
-
 	for ( i = 0; i < 100; i++ ) {
-		re[ i ] = ( 1000.0f*rand_float() ) - 500.0f;
-		im[ i ] = ( 1000.0f*rand_float() ) - 500.0f;
+		re = random_uniform( -500.0f, 500.0f );
+		im = random_uniform( -500.0f, 500.0f );
+		z[ i ] = re + im*I;
 	}
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		z1 = re[ i%100 ] + im[ i%100 ]*I;
-
-		z2 = 1.0f / z1;
-		if ( z2 != z2 ) {
+		w = 1.0f / z[ i%100 ];
+		if ( w != w ) {
 			printf( "should not return NaN\n" );
 			break;
 		}
 	}
 	elapsed = tic() - t;
-	if ( z2 != z2 ) {
+	if ( w != w ) {
 		printf( "should not return NaN\n" );
 	}
 	return elapsed;
