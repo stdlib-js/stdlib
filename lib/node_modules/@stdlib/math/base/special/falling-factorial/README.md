@@ -107,7 +107,7 @@ var opts = {
 var x = uniform( 100, -20.0, 20.0, opts );
 var n = discreteUniform( 100, 0, 20, opts );
 
-logEachMap( 'fallingFactorial(%0.4f,%0.4f) = %d', x, n, fallingFactorial );
+logEachMap( 'fallingFactorial(%0.4f,%d) = %0.4f', x, n, fallingFactorial );
 ```
 
 </section>
