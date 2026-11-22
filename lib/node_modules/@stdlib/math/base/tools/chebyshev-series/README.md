@@ -120,7 +120,7 @@ for ( i = 0; i < v.length; i++ ) {
 // Generate a chebyshev series evaluation function:
 var evaluate = chebyshevSeries.factory( coef );
 var x = uniform( 100, -2.0, 2.0 );
-logEachMap( 'f(%d) = %d', x, evaluate );
+logEachMap( 'f(%0.4f) = %0.4f', x, evaluate );
 ```
 
 </section>
