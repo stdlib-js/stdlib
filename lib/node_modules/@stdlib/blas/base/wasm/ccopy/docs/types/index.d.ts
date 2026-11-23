@@ -41,7 +41,7 @@ interface ModuleConstructor {
 	* var Complex64Array = require( '@stdlib/array/complex64' );
 	* var reinterpretComplex64 = require( '@stdlib/strided/base/reinterpret-complex64' );
 	*
-	* // Create a new memory instance with an initial size of 10 pages (320KiB) and a maximum size of 100 pages (6.4MiB):
+	* // Create a new memory instance with an initial size of 10 pages (640KiB) and a maximum size of 100 pages (6.4MiB):
 	* var mem = new Memory({
 	*     'initial': 10,
 	*     'maximum': 100
@@ -103,7 +103,7 @@ interface ModuleConstructor {
 	* var Complex64Array = require( '@stdlib/array/complex64' );
 	* var reinterpretComplex64 = require( '@stdlib/strided/base/reinterpret-complex64' );
 	*
-	* // Create a new memory instance with an initial size of 10 pages (320KiB) and a maximum size of 100 pages (6.4MiB):
+	* // Create a new memory instance with an initial size of 10 pages (640KiB) and a maximum size of 100 pages (6.4MiB):
 	* var mem = new Memory({
 	*     'initial': 10,
 	*     'maximum': 100
@@ -174,7 +174,7 @@ interface Module extends ModuleWrapper {
 	* var Complex64Array = require( '@stdlib/array/complex64' );
 	* var reinterpretComplex64 = require( '@stdlib/strided/base/reinterpret-complex64' );
 	*
-	* // Create a new memory instance with an initial size of 10 pages (320KiB) and a maximum size of 100 pages (6.4MiB):
+	* // Create a new memory instance with an initial size of 10 pages (640KiB) and a maximum size of 100 pages (6.4MiB):
 	* var mem = new Memory({
 	*     'initial': 10,
 	*     'maximum': 100
@@ -242,7 +242,7 @@ interface Module extends ModuleWrapper {
 	* var Complex64Array = require( '@stdlib/array/complex64' );
 	* var reinterpretComplex64 = require( '@stdlib/strided/base/reinterpret-complex64' );
 	*
-	* // Create a new memory instance with an initial size of 10 pages (320KiB) and a maximum size of 100 pages (6.4MiB):
+	* // Create a new memory instance with an initial size of 10 pages (640KiB) and a maximum size of 100 pages (6.4MiB):
 	* var mem = new Memory({
 	*     'initial': 10,
 	*     'maximum': 100
@@ -356,7 +356,7 @@ interface Routine extends ModuleWrapper {
 	* var Complex64Array = require( '@stdlib/array/complex64' );
 	* var reinterpretComplex64 = require( '@stdlib/strided/base/reinterpret-complex64' );
 	*
-	* // Create a new memory instance with an initial size of 10 pages (320KiB) and a maximum size of 100 pages (6.4MiB):
+	* // Create a new memory instance with an initial size of 10 pages (640KiB) and a maximum size of 100 pages (6.4MiB):
 	* var mem = new Memory({
 	*     'initial': 10,
 	*     'maximum': 100

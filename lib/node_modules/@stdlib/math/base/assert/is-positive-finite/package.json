@@ -71,6 +71,9 @@
     "positive",
     "pos",
     "ispositive",
-    "isfinite"
+    "isfinite",
+    "is",
+    "type",
+    "check"
   ]
 }

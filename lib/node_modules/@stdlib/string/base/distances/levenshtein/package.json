@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/string/base/distances/levenshtein",
   "version": "0.0.0",
-  "description": "Calculates the Levenshtein (edit) distance between two strings.",
+  "description": "Calculate the Levenshtein (edit) distance between two strings.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

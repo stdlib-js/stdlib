@@ -151,14 +151,14 @@ import gamma = require( './index' );
 	gamma.factory( 2, 2, { 'prng': null } ); // $ExpectError
 	gamma.factory( 2, 2, { 'prng': [] } ); // $ExpectError
 	gamma.factory( 2, 2, { 'prng': {} } ); // $ExpectError
-	gamma.factory( 2, 2, { 'prng': true ); // $ExpectError
+	gamma.factory( 2, 2, { 'prng': true } ); // $ExpectError
 
 	gamma.factory( { 'prng': 123 } ); // $ExpectError
 	gamma.factory( { 'prng': 'abc' } ); // $ExpectError
 	gamma.factory( { 'prng': null } ); // $ExpectError
 	gamma.factory( { 'prng': [] } ); // $ExpectError
 	gamma.factory( { 'prng': {} } ); // $ExpectError
-	gamma.factory( { 'prng': true ); // $ExpectError
+	gamma.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -185,7 +185,7 @@ import gamma = require( './index' );
 	gamma.factory( 2, 2, { 'state': null } ); // $ExpectError
 	gamma.factory( 2, 2, { 'state': [] } ); // $ExpectError
 	gamma.factory( 2, 2, { 'state': {} } ); // $ExpectError
-	gamma.factory( 2, 2, { 'state': true ); // $ExpectError
+	gamma.factory( 2, 2, { 'state': true } ); // $ExpectError
 	gamma.factory( 2, 2, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	gamma.factory( { 'state': 123 } ); // $ExpectError
@@ -193,7 +193,7 @@ import gamma = require( './index' );
 	gamma.factory( { 'state': null } ); // $ExpectError
 	gamma.factory( { 'state': [] } ); // $ExpectError
 	gamma.factory( { 'state': {} } ); // $ExpectError
-	gamma.factory( { 'state': true ); // $ExpectError
+	gamma.factory( { 'state': true } ); // $ExpectError
 	gamma.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

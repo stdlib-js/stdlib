@@ -22,6 +22,20 @@ limitations under the License.
 
 > Multiply a [single-precision floating-point number][ieee754] by an integer power of two.
 
+<section class="intro">
+
+<!-- <equation class="equation" label="eq:ldexp_function" align="center" raw="y = x \cdot 2^n" alt="Load exponent function"> -->
+
+```math
+y = x \cdot 2^n
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
@@ -35,10 +49,10 @@ var ldexpf = require( '@stdlib/math/base/special/ldexpf' );
 Multiplies a [single-precision floating-point number][ieee754] by an integer power of two (i.e., `x = frac * 2^exp`).
 
 ```javascript
-var x = ldexpf( 0.5, 3 ); // => 0.5 * 2^3 = 0.5 * 8
+var x = ldexpf( 0.5, 3 );
 // returns 4.0
 
-x = ldexpf( 4.0, -2 ); // => 4 * 2^(-2) = 4 * (1/4)
+x = ldexpf( 4.0, -2 );
 // returns 1.0
 ```
 

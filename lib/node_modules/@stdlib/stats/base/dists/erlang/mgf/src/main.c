@@ -30,7 +30,7 @@
 * @return        evaluated MGF
 *
 * @example
-* double v = stdlib_base_dists_erlang_mgf( 0.3, 1, 1.0 );
+* double v = stdlib_base_dists_erlang_mgf( 0.3, 1.0, 1.0 );
 * // returns ~1.429
 */
 double stdlib_base_dists_erlang_mgf( const double t, const double k, const double lambda ) {

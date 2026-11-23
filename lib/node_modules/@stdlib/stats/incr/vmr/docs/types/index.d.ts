@@ -55,6 +55,12 @@ type accumulator = ( x?: number ) => number | null;
 *
 * @example
 * var accumulator = incrvmr( 3.14 );
+*
+* var D = accumulator();
+* // returns null
+*
+* D = accumulator( 5.0 );
+* // returns ~1.1
 */
 declare function incrvmr( mean?: number ): accumulator;
 

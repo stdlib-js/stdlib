@@ -75,13 +75,15 @@ static double tic( void ) {
 }
 
 /**
-* Generates a random number on the interval [0,1).
+* Generates a random number on the interval [min,max).
 *
-* @return random number
+* @param min    minimum value (inclusive)
+* @param max    maximum value (exclusive)
+* @return       random number
 */
-static float rand_float( void ) {
-	int r = rand();
-	return (float)r / ( (float)RAND_MAX + 1.0f );
+static float random_uniform( const float min, const float max ) {
+	float v = (float)rand() / ( (float)RAND_MAX + 1.0f );
+	return min + ( v*( max-min ) );
 }
 
 /**
@@ -91,15 +93,18 @@ static float rand_float( void ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	float x;
+	float *x;
 	float y;
 	double t;
 	int i;
 
+	x = (float *) malloc( 100 * sizeof( float ) );
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = random_uniform( -500.0f, 500.0f );
+	}
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( 1000.0f*rand_float() ) - 500.0f;
-		y = stdlib_base_float32_mul( x, 5.0f );
+		y = stdlib_base_float32_mul( x[ i%100 ], 5.0f );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;
@@ -109,6 +114,7 @@ static double benchmark( void ) {
 	if ( y != y ) {
 		printf( "should not return NaN\n" );
 	}
+	free( x );
 	return elapsed;
 }
 

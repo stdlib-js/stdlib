@@ -30,7 +30,7 @@ interface IsSymbolArray {
 	* -   In pre-ES2015 environments, the function always returns `false`.
 	*
 	* @param value - value to test
-	* @returns boolean indicating whether value is an array of strings
+	* @returns boolean indicating whether value is an array-like object containing only symbols
 	*
 	* @example
 	* var bool = isSymbolArray( [ Symbol( 'abc' ), Symbol( 'def' ) ] );
@@ -50,7 +50,7 @@ interface IsSymbolArray {
 	* -   In pre-ES2015 environments, the function always returns `false`.
 	*
 	* @param value - value to test
-	* @returns boolean indicating whether value is an array containing only string primitives
+	* @returns boolean indicating whether value is an array-like object containing only symbol primitives
 	*
 	* @example
 	* var bool = isSymbolArray.primitives( [ Symbol( 'abc' ), Symbol( 'def' ) ] );
@@ -92,7 +92,7 @@ interface IsSymbolArray {
 * -   In pre-ES2015 environments, the function always returns `false`.
 *
 * @param value - value to test
-* @returns boolean indicating whether value is an array of strings
+* @returns boolean indicating whether value is an array-like object containing only symbols
 *
 * @example
 * var bool = isSymbolArray( [ Symbol( 'abc' ), Symbol( 'def' ) ] );

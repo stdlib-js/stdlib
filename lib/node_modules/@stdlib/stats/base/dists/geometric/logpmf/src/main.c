@@ -23,7 +23,7 @@
 #include "stdlib/constants/float64/ninf.h"
 
 /**
-* Evaluates the logarithm of the probability mass function (PMF) for a geometric distribution with success probability `p` at a value `x`.
+* Evaluates the natural logarithm of the probability mass function (PMF) for a geometric distribution with success probability `p` at a value `x`.
 *
 * @param x  input value
 * @param p  success probability

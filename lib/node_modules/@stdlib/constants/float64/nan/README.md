@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# NAN
+# FLOAT64_NAN
 
 > [Double-precision floating-point][ieee754] `NaN`.
 

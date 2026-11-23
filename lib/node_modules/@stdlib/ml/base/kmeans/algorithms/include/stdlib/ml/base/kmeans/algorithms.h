@@ -22,7 +22,7 @@
 /**
 * Enumeration of k-means clustering algorithms.
 */
-enum STDLIB_ML_KMEANS_ALGORITHMS {
+enum STDLIB_ML_KMEANS_ALGORITHM {
 	// Classic EM-style algorithm:
 	STDLIB_ML_KMEANS_LLOYD = 0,
 

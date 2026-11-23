@@ -22,8 +22,7 @@
     Examples
     --------
     > var x = new {{alias:@stdlib/ndarray/vector/complex64}}( [ 4.0, 2.0, -3.0, 5.0 ] );
-    > var ca = new {{alias:@stdlib/complex/float32/ctor}}( 2.0, 0.0 );
-    > var alpha = {{alias:@stdlib/ndarray/from-scalar}}( ca, { 'dtype': 'complex64' } );
+    > var alpha = new {{alias:@stdlib/ndarray/tensor0d/complex64}}( 2.0, 0.0 );
 
     > {{alias}}( [ x, alpha ] );
     > x

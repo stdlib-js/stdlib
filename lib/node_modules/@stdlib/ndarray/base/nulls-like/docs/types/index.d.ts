@@ -23,10 +23,10 @@
 import { genericndarray } from '@stdlib/types/ndarray';
 
 /**
-* Creates a null-filled array having the same shape and data type as a provided input ndarray.
+* Creates a null-filled ndarray having the same shape and data type as a provided input ndarray.
 *
 * @param x - input array
-* @returns null-filled array
+* @returns null-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );

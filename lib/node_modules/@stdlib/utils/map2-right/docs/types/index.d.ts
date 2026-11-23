@@ -85,8 +85,7 @@ type ArrayQuaternary<T, U, V, W> = ( this: W, v1: T, v2: U, index: number, array
 * @param v1 - element from the first input array
 * @param v2 - element from the second input array
 * @param index - element index
-* @param x - first input array
-* @param y - second input array
+* @param arrays - input arrays
 * @returns result
 */
 type Callback<T, U, V, W> = Nullary<V, W> | Unary<T, V, W> | Binary<T, U, V, W> | Ternary<T, U, V, W> | Quaternary<T, U, V, W>;
@@ -97,8 +96,7 @@ type Callback<T, U, V, W> = Nullary<V, W> | Unary<T, V, W> | Binary<T, U, V, W> 
 * @param v1 - element from the first input array
 * @param v2 - element from the second input array
 * @param index - element index
-* @param x - first input array
-* @param y - second input array
+* @param arrays - input arrays
 * @returns result
 */
 type ArrayCallback<T, U, V, W> = Nullary<V, W> | Unary<T, V, W> | Binary<T, U, V, W> | Ternary<T, U, V, W> | ArrayQuaternary<T, U, V, W>;

@@ -50,7 +50,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * sh = getShape( y );
 * // returns [ 3, 2 ]
 */
-declare function toFlippedud<T extends ndarray>( x: T ): T;
+declare function toFlippedud<T extends ndarray = ndarray>( x: T ): T;
 
 
 // EXPORTS //

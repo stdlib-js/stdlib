@@ -75,7 +75,7 @@ type DoneBinary = ( error: Error | null, ...args: Array<any> ) => void;
 type DoneCallback = DoneNullary | DoneUnary | DoneBinary;
 
 /**
-* Checks whether an element in a collection passes a test.
+* Checks whether to continue invoking a function.
 *
 * @param i - iteration number (starting from one)
 * @param clbk - a callback indicating whether to invoke `fcn`

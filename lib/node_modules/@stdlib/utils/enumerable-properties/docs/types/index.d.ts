@@ -27,7 +27,7 @@
 * -   If provided `null` or `undefined`, the function returns an empty array.
 *
 * @param value - input object
-* @returns a list of own property enumerable names and symbols
+* @returns a list of own enumerable property names and symbols
 *
 * @example
 * var obj = {

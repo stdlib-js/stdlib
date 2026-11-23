@@ -19,6 +19,7 @@
 #include "stdlib/stats/base/dists/laplace/cdf.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/exp.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Evaluates the cumulative distribution function (CDF) for a Laplace distribution with location parameter `mu` and scale parameter `b` at a value `x`.
@@ -40,7 +41,7 @@ double stdlib_base_dists_laplace_cdf( const double x, const double mu, const dou
 		stdlib_base_is_nan( b ) ||
 		b <= 0.0
 	) {
-		return 0.0/0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	z = ( x - mu ) / b;
 	if ( x < mu ) {

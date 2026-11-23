@@ -16,14 +16,12 @@
 * limitations under the License.
 */
 
-'use strict';
-
 import stdlib from './../lib/index.js';
 
 // List sub-namespaces:
-var keys = stdlib.utils.objectKeys( stdlib );
+const keys = stdlib.utils.objectKeys( stdlib );
 console.log( keys );
 
 // Compute the value of sine:
-var y = stdlib.math.base.special.sin( 3.14 );
+const y = stdlib.math.base.special.sin( 3.14 );
 console.log( y );

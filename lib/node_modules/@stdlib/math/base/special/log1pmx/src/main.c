@@ -34,6 +34,7 @@
 #include "stdlib/math/base/special/ln.h"
 #include "stdlib/math/base/special/abs.h"
 #include "stdlib/constants/float64/eps.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Evaluates \\( \operatorname{log1pmx}(x) = \ln(1+x) - x \\).
@@ -48,7 +49,7 @@
 double stdlib_base_log1pmx( const double x ) {
 	double ax;
 	if ( x <= -1.0 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	ax = stdlib_base_abs( x );
 	if ( ax > 0.95 ) {

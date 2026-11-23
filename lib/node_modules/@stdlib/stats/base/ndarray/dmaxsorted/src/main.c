@@ -17,7 +17,7 @@
 */
 
 #include "stdlib/stats/base/ndarray/dmaxsorted.h"
-#include "stdlib/stats/strided/dmaxsorted.h"
+#include "stdlib/stats/strided/dmax_sorted.h"
 #include "stdlib/ndarray/ctor.h"
 #include "stdlib/blas/base/shared.h"
 
@@ -29,5 +29,5 @@
 */
 double stdlib_stats_dmaxsorted( const struct ndarray *arrays[] ) {
 	const struct ndarray *x = arrays[ 0 ];
-	return API_SUFFIX(stdlib_strided_dmaxsorted_ndarray)( stdlib_ndarray_dimension( x, 0 ), (const double *)stdlib_ndarray_data( x ), stdlib_ndarray_stride_elements( x, 0 ), stdlib_ndarray_offset_elements( x ) );
+	return API_SUFFIX(stdlib_strided_dmax_sorted_ndarray)( stdlib_ndarray_dimension( x, 0 ), (const double *)stdlib_ndarray_data( x ), stdlib_ndarray_stride_elements( x, 0 ), stdlib_ndarray_offset_elements( x ) );
 }

@@ -42,7 +42,6 @@ Fills an input [ndarray][@stdlib/ndarray/ctor] according to a callback function.
 
 ```javascript
 var zeros = require( '@stdlib/ndarray/zeros' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 
 function fcn( value ) {
     return value + 10.0;
@@ -53,13 +52,10 @@ var x = zeros( [ 3, 1, 2 ], {
 });
 
 var y = fillBy( x, fcn );
-// returns <ndarray>
+// returns <ndarray>[ [ [ 10.0, 10.0 ] ], [ [ 10.0, 10.0 ] ], [ [ 10.0, 10.0 ] ] ]
 
 var bool = ( y === x );
 // returns true
-
-var arr = ndarray2array( y );
-// returns [ [ [ 10.0, 10.0 ] ], [ [ 10.0, 10.0 ] ], [ [ 10.0, 10.0 ] ] ]
 ```
 
 The function accepts the following arguments:
@@ -74,7 +70,6 @@ To set the callback function execution context, provide a `thisArg`.
 
 ```javascript
 var zeros = require( '@stdlib/ndarray/zeros' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 
 function fcn( value ) {
     return value + this.factor;
@@ -88,10 +83,7 @@ var ctx = {
     'factor': 10.0
 };
 var y = fillBy( x, fcn, ctx );
-// returns <ndarray>
-
-var arr = ndarray2array( y );
-// returns [ [ [ 10.0, 10.0 ] ], [ [ 10.0, 10.0 ] ], [ [ 10.0, 10.0 ] ] ]
+// returns <ndarray>[ [ [ 10.0, 10.0 ] ], [ [ 10.0, 10.0 ] ], [ [ 10.0, 10.0 ] ] ]
 ```
 
 The callback function is provided the following arguments:
