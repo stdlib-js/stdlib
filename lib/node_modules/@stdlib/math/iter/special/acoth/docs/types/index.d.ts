@@ -30,7 +30,7 @@ type Iterator = Iter | IterableIterator;
 *
 * ## Notes
 *
-* -   The domain of inverse hyperbolic cotangent is restricted to `(-inf,-1]` and `[1,inf)`. If an iterated value is outside of the domain, the returned iterator returns `NaN`.
+* -   The domain of inverse hyperbolic cotangent is restricted to `(-infinity,-1]` and `[1,+infinity)`. If an iterated value is outside of the domain, the returned iterator returns `NaN`.
 * -   If an environment supports `Symbol.iterator` **and** a provided iterator is iterable, the returned iterator is iterable.
 *
 * @param iterator - input iterator

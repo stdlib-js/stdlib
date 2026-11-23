@@ -228,11 +228,11 @@ int8_t stdlib_ndarray_unary_accumulate_dispatch( const struct ndarrayUnaryAccumu
 	struct ndarray *x1;
 	struct ndarray *x2;
 	struct ndarray *x3;
+	const int64_t *s1;
 	int8_t status;
 	int64_t ndims;
 	int64_t mab1;
 	int64_t mib1;
-	int64_t *s1;
 	int64_t len;
 	int64_t bp1;
 	int8_t io1;

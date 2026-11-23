@@ -164,7 +164,7 @@ logEachMap( 'x: %0.4f, a: %0.4f, b: %0.4f, f(x;a,b): %0.4f', x, a, b, pdf );
 Evaluates the probability density function (PDF) for an arcsine distribution.
 
 ```c
-double out = stdlib_base_dists_arcsine_pdf( 0.5, 0.0, 4.0 );
+double out = stdlib_base_dists_arcsine_pdf( 2.0, 0.0, 4.0 );
 // returns ~0.159
 ```
 

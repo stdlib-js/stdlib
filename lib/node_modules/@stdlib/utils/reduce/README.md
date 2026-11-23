@@ -139,13 +139,7 @@ var mean = out / ctx.count;
     var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 
     var v = reduce( x, new Complex64( 0.0, 0.0 ), sum );
-    // returns <Complex64>
-
-    var re = realf( v );
-    // returns 16.0
-
-    var im = imagf( v );
-    // returns 20.0
+    // returns <Complex64>[ 16.0, 20.0 ]
     ```
 
 -   For [`ndarray`][@stdlib/ndarray/ctor]-like objects, the function performs a reduction over the entire input [`ndarray`][@stdlib/ndarray/ctor] (i.e., higher-order [`ndarray`][@stdlib/ndarray/ctor] dimensions are flattened to a single-dimension).

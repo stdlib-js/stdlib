@@ -52,5 +52,7 @@ stdlib_complex64_t stdlib_base_csignumf( const stdlib_complex64_t z ) {
 		return z;
 	}
 	stdlib_complex64_reim( z, &re, &im );
-	return stdlib_complex64( re/az, im/az );
+	re = re / az;
+	im = im / az;
+	return stdlib_complex64( re, im );
 }

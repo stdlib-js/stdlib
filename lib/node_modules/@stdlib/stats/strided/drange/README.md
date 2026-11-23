@@ -182,7 +182,7 @@ Computes the [range][range] of a double-precision floating-point strided array `
 const double x[] = { 1.0, -2.0, 3.0, -4.0 };
 
 double v = stdlib_strided_drange( 4, x, 1 );
-// returns 4.0
+// returns 7.0
 ```
 
 The function accepts the following arguments:

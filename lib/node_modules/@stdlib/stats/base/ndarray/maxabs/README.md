@@ -41,10 +41,9 @@ var maxabs = require( '@stdlib/stats/base/ndarray/maxabs' );
 Computes the maximum absolute value of a one-dimensional ndarray.
 
 ```javascript
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var vector = require( '@stdlib/ndarray/vector/ctor' );
 
-var xbuf = [ -1.0, 3.0, -4.0, 2.0 ];
-var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = vector( [ -1.0, 3.0, -4.0, 2.0 ], 'generic' );
 
 var v = maxabs( [ x ] );
 // returns 4.0
@@ -75,15 +74,15 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var discreteUniform = require( '@stdlib/random/discrete-uniform' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var maxabs = require( '@stdlib/stats/base/ndarray/maxabs' );
 
-var xbuf = discreteUniform( 10, -50, 50, {
+var opts = {
     'dtype': 'generic'
-});
-var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+};
+
+var x = discreteUniform( [ 10 ], -50, 50, opts );
 console.log( ndarray2array( x ) );
 
 var v = maxabs( [ x ] );

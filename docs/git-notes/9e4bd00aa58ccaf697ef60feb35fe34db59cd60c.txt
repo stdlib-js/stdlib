@@ -1,0 +1,8 @@
+---
+type: amend-message
+---
+bench: refactor to use string interpolation in `blas/base/layout-resolve-str`
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/11219
+Ref: https://github.com/stdlib-js/stdlib/issues/8647
+Reviewed-by: Athan Reines <kgryte@gmail.com>

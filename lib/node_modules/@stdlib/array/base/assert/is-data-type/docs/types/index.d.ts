@@ -25,7 +25,10 @@
 * @returns boolean indicating whether an input value is a supported array data type
 *
 * @example
-* var bool = isDataType( 'float32' );
+* var bool = isDataType( 'float16' );
+* // returns true
+*
+* bool = isDataType( 'float32' );
 * // returns true
 *
 * bool = isDataType( 'float64' );

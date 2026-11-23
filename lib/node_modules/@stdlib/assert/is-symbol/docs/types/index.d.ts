@@ -104,32 +104,14 @@ interface IsSymbol {
 * @example
 * var Symbol = require( '@stdlib/symbol/ctor' );
 *
-* var bool = isSymbol.isPrimitive( Symbol( 'beep' ) );
+* var bool = isSymbol( Symbol( 'beep' ) );
 * // returns true
-*
-* @example
-* var Symbol = require( '@stdlib/symbol/ctor' );
-*
-* var bool = isSymbol.isPrimitive( Object( Symbol( 'beep' ) ) );
-* // returns false
 *
 * @example
 * var Symbol = require( '@stdlib/symbol/ctor' );
 *
 * var bool = isSymbol.isPrimitive( Symbol( 'beep' ) );
 * // returns true
-*
-* @example
-* var Symbol = require( '@stdlib/symbol/ctor' );
-*
-* var bool = isSymbol.isPrimitive( Object( Symbol( 'beep' ) ) );
-* // returns false
-*
-* @example
-* var Symbol = require( '@stdlib/symbol/ctor' );
-*
-* var bool = isSymbol.isObject( Symbol( 'beep' ) );
-* // returns false
 *
 * @example
 * var Symbol = require( '@stdlib/symbol/ctor' );

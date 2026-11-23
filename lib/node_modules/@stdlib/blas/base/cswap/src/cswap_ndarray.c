@@ -20,7 +20,7 @@
 #include "stdlib/blas/base/shared.h"
 
 /**
-* Interchanges two complex single-precision floating-point vectors.
+* Interchanges two single-precision complex floating-point vectors.
 *
 * @param N        number of indexed elements
 * @param X        first input array

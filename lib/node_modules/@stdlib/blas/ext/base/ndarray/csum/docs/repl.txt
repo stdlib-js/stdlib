@@ -12,18 +12,12 @@
 
     Returns
     -------
-    out: number
+    out: Complex64
         Sum.
 
     Examples
     --------
-    > var xbuf = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
-    > var dt = 'complex64';
-    > var sh = [ xbuf.length ];
-    > var sx = [ 1 ];
-    > var ox = 0;
-    > var ord = 'row-major';
-    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
+    > var x = new {{alias:@stdlib/ndarray/vector/complex64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
     > {{alias}}( [ x ] )
     <Complex64>[ 4.0, 6.0 ]
 

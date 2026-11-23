@@ -56,15 +56,6 @@ eslint.env = require( './env' );
 eslint.rules = require( './rules' );
 
 /**
-* Overrides.
-*
-* @name overrides
-* @memberof eslint
-* @type {Array}
-*/
-eslint.overrides = require( './overrides/repl_namespace.js' );
-
-/**
 * Parser options.
 *
 * @name parserOptions
@@ -81,6 +72,28 @@ eslint.parserOptions = require( './parser-options' );
 * @type {Object}
 */
 eslint.plugins = require( './plugins' );
+
+/**
+* Shared settings.
+*
+* @name settings
+* @memberof eslint
+* @type {Object}
+*/
+eslint.settings = {
+	'jsdoc': {
+		'contexts': [
+			'ArrowFunctionExpression',
+			'ClassDeclaration',
+			'ClassExpression',
+			'FunctionDeclaration',
+			'FunctionExpression'
+		],
+		'tagNamePreference': {
+			'class': 'constructor'
+		}
+	}
+};
 
 
 // EXPORTS //

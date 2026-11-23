@@ -21,7 +21,7 @@
 #include "stdlib/strided/base/stride2offset.h"
 
 /**
-* Interchanges two complex double-precision floating-point vectors.
+* Interchanges two double-precision complex floating-point vectors.
 *
 * @param N        number of indexed elements
 * @param X        first input array

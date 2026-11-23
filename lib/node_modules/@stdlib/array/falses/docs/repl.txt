@@ -1,0 +1,34 @@
+
+{{alias}}( length[, dtype] )
+    Returns an array filled with false values and having a specified length.
+
+    The function supports the following data types:
+
+    - bool: boolean values
+    - generic: generic JavaScript values
+
+    The default array data type is `bool`.
+
+    Parameters
+    ----------
+    length: integer
+        Array length.
+
+    dtype: string (optional)
+        Data type. Default: 'bool'.
+
+    Returns
+    -------
+    out: Array
+        Output array.
+
+    Examples
+    --------
+    > var arr = {{alias}}( 2 )
+    <BooleanArray>[ false, false ]
+    > arr = {{alias}}( 2, 'generic' )
+    [ false, false ]
+
+    See Also
+    --------
+

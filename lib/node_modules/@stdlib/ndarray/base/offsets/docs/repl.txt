@@ -1,0 +1,24 @@
+
+{{alias}}( arrays )
+    Returns the index offset specifying the underlying buffer index of the first
+    iterated element for each ndarray in a provided list of ndarrays.
+
+    Parameters
+    ----------
+    arrays: Array<ndarray>
+        List of ndarrays.
+
+    Returns
+    -------
+    out: Array<integer>
+        Index offsets.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/zeros}}( [ 3, 3, 3 ] );
+    > var out = {{alias}}( [ x ] )
+    [ 0 ]
+
+    See Also
+    --------
+

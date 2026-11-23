@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/math/base/special/boxcox1pinv.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/math/base/special/expm1.h"
 #include "stdlib/math/base/special/log1p.h"
 #include "stdlib/math/base/special/abs.h"
@@ -37,7 +38,7 @@ double stdlib_base_boxcox1pinv( const double y, const double lambda ) {
 	double ly;
 
 	if ( stdlib_base_is_nan( y ) || stdlib_base_is_nan( lambda ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( lambda == 0.0 ) {
 		return stdlib_base_expm1( y );

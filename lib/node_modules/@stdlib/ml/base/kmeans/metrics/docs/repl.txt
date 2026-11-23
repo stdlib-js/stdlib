@@ -1,0 +1,24 @@
+
+{{alias}}()
+    Returns a list of distance metrics.
+
+    The output array contains the following metrics:
+
+    - sqeuclidean: squared euclidean distance.
+    - cosine: cosine distance.
+    - cityblock: cityblock (taxicab) distance.
+    - correlation: correlation distance.
+
+    Returns
+    -------
+    out: Array<string>
+        List of metrics.
+
+    Examples
+    --------
+    > var out = {{alias}}()
+    [ 'sqeuclidean', 'cosine', 'cityblock', 'correlation' ]
+
+    See Also
+    --------
+

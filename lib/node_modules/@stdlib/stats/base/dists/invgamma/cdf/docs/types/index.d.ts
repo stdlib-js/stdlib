@@ -108,7 +108,7 @@ interface CDF {
 *
 * @param x - input value
 * @param alpha - shape parameter
-* @param beta - rate parameter
+* @param beta - scale parameter
 * @returns evaluated CDF
 *
 * @example

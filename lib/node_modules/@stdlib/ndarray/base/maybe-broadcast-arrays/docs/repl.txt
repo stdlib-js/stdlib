@@ -19,7 +19,7 @@
     broadcast ndarray-like objects within internal implementations and to do so
     with minimal overhead.
 
-    The function throws an error if a provided broadcast-incompatible ndarrays.
+    The function throws an error if provided broadcast-incompatible ndarrays.
 
     Parameters
     ----------

@@ -41,11 +41,9 @@ var zsumkbn = require( '@stdlib/blas/ext/base/ndarray/zsumkbn' );
 Computes the sum of all elements in a one-dimensional double-precision complex floating-point ndarray using an improved Kahan–Babuška algorithm.
 
 ```javascript
-var Complex128Array = require( '@stdlib/array/complex128' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var Complex128Vector = require( '@stdlib/ndarray/vector/complex128' );
 
-var xbuf = new Complex128Array( [ 1.0, 3.0, 4.0, 2.0 ] );
-var x = new ndarray( 'complex128', xbuf, [ 2 ], [ 1 ], 0, 'row-major' );
+var x = new Complex128Vector( [ 1.0, 3.0, 4.0, 2.0 ] );
 
 var v = zsumkbn( [ x ] );
 // returns <Complex128>[ 5.0, 5.0 ]
@@ -77,17 +75,15 @@ The function has the following parameters:
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var Complex128Array = require( '@stdlib/array/complex128' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var Complex128Vector = require( '@stdlib/ndarray/vector/complex128' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var zsumkbn = require( '@stdlib/blas/ext/base/ndarray/zsumkbn' );
 
-var xbuf = discreteUniform( 10, -50, 50, {
+var opts = {
     'dtype': 'float64'
-});
-xbuf = new Complex128Array( xbuf );
+};
 
-var x = new ndarray( 'complex128', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+var x = new Complex128Vector( discreteUniform( 10, -50, 50, opts ) );
 console.log( ndarray2array( x ) );
 
 var v = zsumkbn( [ x ] );

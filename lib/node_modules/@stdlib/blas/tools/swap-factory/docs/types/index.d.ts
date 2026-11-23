@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ndarray } from '@stdlib/types/ndarray';
+import { ndarray, DataType } from '@stdlib/types/ndarray';
 import { Collection, AccessorArrayLike } from '@stdlib/types/array';
 
 /**
@@ -81,7 +81,7 @@ type SwapFunction = ( x: ndarray, y: ndarray, dim?: number ) => ndarray;
 * var ybuf = y.data;
 * // returns <Float64Array>[ 4.0, 2.0, -3.0, 5.0, -1.0 ]
 */
-declare function factory<T extends Collection | AccessorArrayLike<any>>( base: BaseFunction<T>, dtype: any ): SwapFunction;
+declare function factory<T extends Collection | AccessorArrayLike<any>>( base: BaseFunction<T>, dtype: DataType ): SwapFunction;
 
 
 // EXPORTS //

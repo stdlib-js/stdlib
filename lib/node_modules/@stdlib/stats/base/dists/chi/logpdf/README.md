@@ -169,7 +169,7 @@ Evaluates the natural logarithm of the [probability density function][pdf] (PDF)
 
 ```c
 double out = stdlib_base_dists_chi_logpdf( 2.0, 2.0 );
-// returns ~-1.309
+// returns ~-1.307
 ```
 
 The function accepts the following arguments:

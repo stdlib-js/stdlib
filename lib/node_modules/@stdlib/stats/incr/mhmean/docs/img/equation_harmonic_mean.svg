@@ -104,8 +104,8 @@
 </g>
 <g transform="translate(0,-3137)">
  <use xlink:href="#E1-MJMAIN-3D" x="277" y="0"></use>
- <use xlink:href="#E1-MJSZ3-28" x="1056" y="-1"></use>
-<g transform="translate(1792,0)">
+ <use xlink:href="#E1-MJSZ3-28" x="1334" y="-1"></use>
+<g transform="translate(2070,0)">
 <g transform="translate(120,0)">
 <rect stroke="none" width="3806" height="60" x="0" y="220"></rect>
 <g transform="translate(60,1007)">
@@ -134,7 +134,7 @@
  <use xlink:href="#E1-MJMATHI-6E" x="1602" y="-686"></use>
 </g>
 </g>
-<g transform="translate(5838,0)">
+<g transform="translate(6116,0)">
  <use xlink:href="#E1-MJSZ3-29" x="0" y="-1"></use>
 <g transform="translate(736,1177)">
  <use transform="scale(0.707)" xlink:href="#E1-MJMAIN-2212" x="0" y="0"></use>

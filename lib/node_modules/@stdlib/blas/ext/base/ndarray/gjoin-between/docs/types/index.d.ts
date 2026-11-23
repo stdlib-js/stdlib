@@ -25,15 +25,23 @@ import { typedndarray } from '@stdlib/types/ndarray';
 /**
 * Returns a string by joining one-dimensional ndarray elements using a specified separator for each pair of consecutive elements.
 *
-* @param arrays - array-like object containing a one-dimensional input ndarray, a zero-dimensional ndarray containing a prefix string, a zero-dimensional ndarray containing a suffix string, and a one-dimensional ndarray containing separator strings
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*     -   a zero-dimensional ndarray containing a prefix string.
+*     -   a zero-dimensional ndarray containing a suffix string.
+*     -   a one-dimensional ndarray containing separator strings.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns joined string
 *
 * @example
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var vector = require( '@stdlib/ndarray/vector/ctor' );
 * var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 *
-* var xbuf = [ 1, 2, 3, 4 ];
-* var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+* var x = vector( [ 1, 2, 3, 4 ], 'generic' );
 *
 * var prefix = scalar2ndarray( 'op: ', {
 *     'dtype': 'generic'
@@ -43,8 +51,7 @@ import { typedndarray } from '@stdlib/types/ndarray';
 *     'dtype': 'generic'
 * });
 *
-* var sbuf = [ ' + ', ' - ', ' != ' ];
-* var separators = new ndarray( 'generic', sbuf, [ 3 ], [ 1 ], 0, 'row-major' );
+* var separators = vector( [ ' + ', ' - ', ' != ' ], 'generic' );
 *
 * var v = gjoinBetween( [ x, prefix, suffix, separators ] );
 * // returns 'op: 1 + 2 - 3 != 4'

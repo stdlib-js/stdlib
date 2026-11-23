@@ -17,9 +17,8 @@
 */
 
 #include "stdlib/stats/base/dists/lognormal/stdev.h"
-#include "stdlib/math/base/assert/is_nan.h"
-#include "stdlib/math/base/special/exp.h"
 #include "stdlib/math/base/special/sqrt.h"
+#include "stdlib/stats/base/dists/lognormal/variance.h"
 
 /**
 * Returns the standard deviation for a lognormal distribution with location `mu` and scale `sigma`.
@@ -33,14 +32,5 @@
 * // returns ~2.161
 */
 double stdlib_base_dists_lognormal_stdev( const double mu, const double sigma ) {
-	double s2;
-	if (
-		stdlib_base_is_nan( mu ) ||
-		stdlib_base_is_nan( sigma ) ||
-		sigma <= 0.0
-	) {
-		return 0.0 / 0.0; // NaN
-	}
-	s2 = sigma * sigma;
-	return stdlib_base_sqrt( ( stdlib_base_exp( s2 ) - 1.0 ) * stdlib_base_exp( ( 2.0 * mu ) + s2 ) );
+	return stdlib_base_sqrt( stdlib_base_dists_lognormal_variance( mu, sigma ) );
 }

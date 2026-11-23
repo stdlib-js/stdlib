@@ -280,6 +280,7 @@ The function accepts the same `options` as `forEachAsync()`.
 ```javascript
 var resolve = require( 'path' ).resolve;
 var readFile = require( '@stdlib/fs/read-file' );
+var format = require( '@stdlib/string/format' );
 var forEachAsync = require( '@stdlib/utils/async/for-each' );
 
 var files = [
@@ -302,7 +303,7 @@ function read( file, next ) {
 
     function onFile( error ) {
         if ( error ) {
-            error = new Error( 'unable to read file: '+file );
+            error = new Error( format( 'unable to read file: %s', file ) );
             return next( error );
         }
         console.log( 'Successfully read file: %s', file );

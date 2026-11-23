@@ -41,10 +41,9 @@ var mediansorted = require( '@stdlib/stats/base/ndarray/mediansorted' );
 Computes the median value of a sorted one-dimensional ndarray.
 
 ```javascript
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var vector = require( '@stdlib/ndarray/vector/ctor' );
 
-var xbuf = [ 1.0, 2.0, 3.0 ];
-var x = new ndarray( 'generic', xbuf, [ 3 ], [ 1 ], 0, 'row-major' );
+var x = vector( [ 1.0, 2.0, 3.0 ], 'generic' );
 
 var v = mediansorted( [ x ] );
 // returns 2.0
@@ -76,15 +75,14 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var linspace = require( '@stdlib/blas/ext/linspace' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var mediansorted = require( '@stdlib/stats/base/ndarray/mediansorted' );
 
 // Create a linearly spaced sorted array:
-var xbuf = linspace( 0.0, 10.0, 11 );
-
-var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+var x = linspace( [ 11 ], 0.0, 10.0, {
+    'dtype': 'generic'
+});
 console.log( ndarray2array( x ) );
 
 var v = mediansorted( [ x ] );

@@ -41,7 +41,8 @@
         "@stdlib/math/base/napi/unary",
         "@stdlib/math/base/special/floor",
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/assert/is-negative-zero"
+        "@stdlib/math/base/assert/is-negative-zero",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -58,7 +59,8 @@
       "dependencies": [
         "@stdlib/math/base/special/floor",
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/assert/is-negative-zero"
+        "@stdlib/math/base/assert/is-negative-zero",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -75,7 +77,8 @@
       "dependencies": [
         "@stdlib/math/base/special/floor",
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/assert/is-negative-zero"
+        "@stdlib/math/base/assert/is-negative-zero",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -92,7 +95,8 @@
       "dependencies": [
         "@stdlib/math/base/special/floor",
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/assert/is-negative-zero"
+        "@stdlib/math/base/assert/is-negative-zero",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

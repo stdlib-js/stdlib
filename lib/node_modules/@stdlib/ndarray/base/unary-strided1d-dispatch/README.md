@@ -88,7 +88,6 @@ Applies a strided function to a provided input ndarray.
 
 ```javascript
 var ndarray = require( '@stdlib/ndarray/base/ctor' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var base = require( '@stdlib/stats/base/ndarray/cumax' );
 
 var table = {
@@ -107,10 +106,7 @@ var xbuf = [ -1.0, 2.0, -3.0 ];
 var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
 
 var y = unary.apply( x );
-// returns <ndarray>
-
-var arr = ndarray2array( y );
-// returns [ -1.0, 2.0, 2.0 ]
+// returns <ndarray>[ -1.0, 2.0, 2.0 ]
 ```
 
 The method has the following parameters:
@@ -151,7 +147,7 @@ var y = unary.apply( x, {
 });
 // returns <ndarray>
 
-var dt = getDType( y );
+var dt = String( getDType( y ) );
 // returns 'float64'
 ```
 
@@ -161,7 +157,6 @@ Applies a strided function a provided input ndarray and assigns results to a pro
 
 ```javascript
 var base = require( '@stdlib/stats/base/ndarray/cumax' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var dtypes = require( '@stdlib/ndarray/dtypes' );
 var ndarray = require( '@stdlib/ndarray/base/ctor' );
 
@@ -184,10 +179,7 @@ var ybuf = [ 0.0, 0.0, 0.0 ];
 var y = new ndarray( 'generic', ybuf, [ ybuf.length ], [ 1 ], 0, 'row-major' );
 
 var out = unary.assign( x, y );
-// returns <ndarray>
-
-var arr = ndarray2array( y );
-// returns [ -1.0, 2.0, 2.0 ]
+// returns <ndarray>[ -1.0, 2.0, 2.0 ]
 
 var bool = ( out === y );
 // returns true

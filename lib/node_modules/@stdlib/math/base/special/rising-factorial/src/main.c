@@ -31,6 +31,7 @@
 
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/gamma_delta_ratio.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/math/base/special/falling_factorial.h"
 #include <stdint.h>
 #include <stdbool.h>
@@ -67,7 +68,7 @@ double stdlib_base_rising_factorial( const double x, const int32_t n ) {
 	bool inv;
 
 	if ( stdlib_base_is_nan( x ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	nc = n;
 	xc = x;

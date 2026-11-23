@@ -25,16 +25,22 @@ import { float64ndarray, typedndarray } from '@stdlib/types/ndarray';
 /**
 * Returns the first index of a search element in a one-dimensional double-precision floating-point ndarray.
 *
-* @param arrays - array-like object containing a one-dimensional input ndarray, a zero-dimensional ndarray containing the search element, and a zero-dimensional ndarray containing the index from which to begin searching
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*     -   a zero-dimensional ndarray containing the search element.
+*     -   a zero-dimensional ndarray containing the index from which to begin searching.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns index
 *
 * @example
-* var Float64Array = require( '@stdlib/array/float64' );
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
 * var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 *
-* var xbuf = new Float64Array( [ 1.0, 3.0, 4.0, 2.0 ] );
-* var x = new ndarray( 'float64', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+* var x = new Float64Vector( [ 1.0, 3.0, 4.0, 2.0 ] );
 *
 * var searchElement = scalar2ndarray( 2.0, {
 *     'dtype': 'float64'

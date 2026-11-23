@@ -17,11 +17,12 @@
 */
 
 #include "stdlib/math/base/special/nanmin.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdio.h>
 
 int main( void ) {
-	const double x[] = { 1.0, 0.45, -0.89, 0.0 / 0.0, -0.78, -0.22, 0.66, 0.11, -0.55, 0.0 };
-	const double y[] = { -0.22, 0.66, 0.0, -0.55, 0.33, 1.0, 0.0 / 0.0, 0.11, 0.45, -0.78 };
+	const double x[] = { 1.0, 0.45, -0.89, STDLIB_CONSTANT_FLOAT64_NAN, -0.78, -0.22, 0.66, 0.11, -0.55, 0.0 };
+	const double y[] = { -0.22, 0.66, 0.0, -0.55, 0.33, 1.0, STDLIB_CONSTANT_FLOAT64_NAN, 0.11, 0.45, -0.78 };
 
 	double v;
 	int i;

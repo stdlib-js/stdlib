@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Calculates the inverse of the incomplete beta function.
+* Computes the inverse of the lower incomplete beta function.
 *
 * ## Notes
 *
@@ -28,7 +28,7 @@
 * @param a - function parameter
 * @param b - function parameter
 * @param p - function parameter
-* @param q - probability equal to `1 - p`
+* @param q - probability equal to `1-p`
 * @returns two-element array holding function value `y` and `1-y`
 *
 * @example

@@ -27,7 +27,7 @@ Generate fixture data and write to file.
 # Arguments
 
 * `alpha`: shape parameter
-* `beta`: rate parameter
+* `beta`: scale parameter
 * `name::AbstractString`: output filename
 
 # Examples

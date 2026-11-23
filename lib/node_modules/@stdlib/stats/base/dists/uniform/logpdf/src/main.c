@@ -22,7 +22,7 @@
 #include "stdlib/math/base/special/ln.h"
 
 /**
-* Evaluates the logarithm of the probability density function (PDF) for a uniform distribution with minimum support `a` and maximum support `b` at a value `x`.
+* Evaluates the natural logarithm of the probability density function (PDF) for a uniform distribution with minimum support `a` and maximum support `b` at a value `x`.
 *
 * @param x   input value
 * @param a   minimum support

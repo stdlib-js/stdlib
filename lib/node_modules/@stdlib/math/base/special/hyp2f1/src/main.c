@@ -39,6 +39,7 @@
 #include "stdlib/math/base/special/ln.h"
 #include "stdlib/math/base/special/abs.h"
 #include "stdlib/math/base/special/pow.h"
+#include "stdlib/math/base/special/max.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/constants/float64/pinf.h"
 #include "stdlib/constants/float64/nan.h"
@@ -236,6 +237,38 @@ static double hys2f1( double a, double b, const double c, const double x, double
 }
 
 /**
+* Evaluates 2F1(a, b; b; x) when `b = c` is a negative integer using AMS55 #15.4.2.
+*
+* @param a      first parameter
+* @param b      second parameter (equals c, a non-positive integer)
+* @param x      argument
+* @return       function value, or NaN if precision is insufficient
+*/
+static double hyp2f1NegCEqualBC( const double a, const double b, const double x ) {
+	double collectorMax;
+	double collector;
+	double sum;
+	double k;
+
+	collectorMax = 1.0;
+	collector = 1.0;
+	sum = 1.0;
+
+	if ( stdlib_base_abs( b ) >= 1.0e5 ) {
+		return STDLIB_CONSTANT_FLOAT64_NAN;
+	}
+	for ( k = 1.0; k <= -b; k ++ ) {
+		collector *= ( ( a + k - 1.0 ) * x ) / k;
+		collectorMax = stdlib_base_max( stdlib_base_abs( collector ), collectorMax );
+		sum += collector;
+	}
+	if ( 1.0e-16 * ( 1.0 + ( collectorMax / stdlib_base_abs( sum ) ) ) > 1.0e-7 ) {
+		return STDLIB_CONSTANT_FLOAT64_NAN;
+	}
+	return sum;
+}
+
+/**
 * Applies transformations for `|x|` near unity before performing a power series expansion.
 *
 * @param a        input value
@@ -289,7 +322,7 @@ static double hyt2f1( const double a, const double b, const double c, const doub
 	d = c - a - b;
 	id = stdlib_base_round( d );
 
-	if ( x > 0.9 && !negIntA && !negIntB ) {
+	if ( x > 0.85 && !negIntA && !negIntB ) {
 		if ( isInteger( d ) == false ) {
 			// Try the power series first:
 			y = hys2f1( a, b, c, x, &err );
@@ -386,7 +419,11 @@ static double hyt2f1( const double a, const double b, const double c, const doub
 				y = -y;
 			}
 			q = stdlib_base_pow( s, id );
-			y = ( id > 0.0 ) ? y*q : y1*q;
+			if ( id > 0.0 ) {
+				y *= q;
+			} else {
+				y1 *= q;
+			}
 			y += y1;
 		}
 		*loss = err;
@@ -477,6 +514,11 @@ double stdlib_base_hyp2f1( const double a, const double b, const double c, const
 	if ( ax < 1.0 || x == -1.0 ) {
 		if ( b == c ) {
 			// 2F1(a,b;b;x) = (1-x)**(-a):
+			if ( negIntB ) {
+				// For negative integer b=c use the finite polynomial (AMS55 #15.4.2):
+				y = hyp2f1NegCEqualBC( a, b, x );
+				return y;
+			}
 			y = stdlib_base_pow( s, -a );
 			return y;
 		}

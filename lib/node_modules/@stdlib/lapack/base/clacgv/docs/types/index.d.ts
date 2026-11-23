@@ -40,9 +40,7 @@ interface Routine {
 	* var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 	*
 	* clacgv( 3, cx, 1 );
-	*
-	* var z = cx.get( 0 );
-	* // returns <Complex64>[ 1.0, -2.0 ]
+	* // cx => <Complex64Array>[ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ]
 	*/
 	( N: number, cx: Complex64Array, strideCX: number ): Complex64Array;
 
@@ -61,9 +59,7 @@ interface Routine {
 	* var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 	*
 	* clacgv.ndarray( 3, cx, 1, 0 );
-	*
-	* var z = cx.get( 0 );
-	* // returns <Complex64>[ 1.0, -2.0 ]
+	* // cx => <Complex64Array>[ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ]
 	*/
 	ndarray( N: number, cx: Complex64Array, strideCX: number, offsetCX: number ): Complex64Array;
 }
@@ -82,9 +78,7 @@ interface Routine {
 * var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 *
 * clacgv( 3, cx, 1 );
-*
-* var z = cx.get( 1 );
-* // returns <Complex64>[ 3.0, -4.0 ]
+* // cx => <Complex64Array>[ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ]
 *
 * @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
@@ -92,9 +86,7 @@ interface Routine {
 * var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 *
 * clacgv.ndarray( 2, cx, 1, 1 );
-*
-* var z = cx.get( 1 );
-* // returns <Complex64>[ 3.0, -4.0 ]
+* // cx => <Complex64Array>[ 1.0, 2.0, 3.0, -4.0, 5.0, -6.0 ]
 */
 declare var clacgv: Routine;
 

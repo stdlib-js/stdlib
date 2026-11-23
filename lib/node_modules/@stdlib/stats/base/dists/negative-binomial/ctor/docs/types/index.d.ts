@@ -122,7 +122,7 @@ declare class NegativeBinomial {
 	/**
 	* Evaluates the moment-generating function (MGF).
 	*
-	* @param x - input value
+	* @param t - input value
 	* @returns evaluated MGF
 	*/
 	mgf( t: number ): number;

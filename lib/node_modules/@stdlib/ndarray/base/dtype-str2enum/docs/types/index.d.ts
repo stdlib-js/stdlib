@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Returns the enumeration constant associated with a ndarray data type string.
+* Returns the enumeration constant associated with an ndarray data type string.
 *
 * ## Notes
 *

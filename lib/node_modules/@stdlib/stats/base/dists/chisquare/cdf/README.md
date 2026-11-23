@@ -125,6 +125,31 @@ y = mycdf( 1.5 );
 
 <!-- /.usage -->
 
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
+var cdf = require( '@stdlib/stats/base/dists/chisquare/cdf' );
+
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 20, 0.0, 10.0, opts );
+var k = discreteUniform( 20, 0, 10, opts );
+
+logEachMap( 'x: %0.4f, k: %d, F(x;k): %0.4f', x, k, cdf );
+```
+
+</section>
+
+<!-- /.examples -->
+
 * * *
 
 <section class="c">
@@ -206,33 +231,6 @@ int main( void ) {
 </section>
 
 <!-- /.c -->
-
-* * *
-
-<section class="examples">
-
-## Examples
-
-<!-- eslint no-undef: "error" -->
-
-```javascript
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var uniform = require( '@stdlib/random/array/uniform' );
-var logEachMap = require( '@stdlib/console/log-each-map' );
-var cdf = require( '@stdlib/stats/base/dists/chisquare/cdf' );
-
-var opts = {
-    'dtype': 'float64'
-};
-var x = uniform( 20, 0.0, 10.0, opts );
-var k = discreteUniform( 20, 0, 10, opts );
-
-logEachMap( 'x: %0.4f, k: %d, F(x;k): %0.4f', x, k, cdf );
-```
-
-</section>
-
-<!-- /.examples -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

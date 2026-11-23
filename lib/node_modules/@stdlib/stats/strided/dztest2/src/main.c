@@ -117,8 +117,8 @@ void API_SUFFIX(stdlib_strided_dztest2_ndarray)( const CBLAS_INT NX, const CBLAS
 	stderr = stdlib_base_sqrt( ( xvar / (double)NX ) + ( yvar / (double)NY ) );
 
 	// Compute the arithmetic means of the input arrays:
-	xmean = stdlib_strided_dmean_ndarray( NX, X, strideX, offsetX );
-	ymean = stdlib_strided_dmean_ndarray( NY, Y, strideY, offsetY );
+	xmean = API_SUFFIX(stdlib_strided_dmean_ndarray)( NX, X, strideX, offsetX );
+	ymean = API_SUFFIX(stdlib_strided_dmean_ndarray)( NY, Y, strideY, offsetY );
 
 	// Compute the test statistic (i.e., the z-score, which is the standardized difference between the sample means of x and y, adjusted by the hypothesized difference, in units of the standard error):
 	stat = ( xmean - ymean - diff ) / stderr;

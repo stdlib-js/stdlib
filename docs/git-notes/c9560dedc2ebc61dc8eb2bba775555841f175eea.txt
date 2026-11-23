@@ -1,0 +1,8 @@
+---
+type: amend-message
+---
+docs: refactor to use `logEachMap` in examples
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/11454
+Reviewed-by: Athan Reines <kgryte@gmail.com>
+Reviewed-by: Neeraj Pathak <neerajrpathak710@gmail.com>

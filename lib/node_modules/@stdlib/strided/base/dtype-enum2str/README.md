@@ -91,6 +91,9 @@ var str = enum2str( str2enum( 'float64' ) );
 str = enum2str( str2enum( 'float32' ) );
 // returns 'float32'
 
+str = enum2str( str2enum( 'float16' ) );
+// returns 'float16'
+
 str = enum2str( str2enum( 'int32' ) );
 // returns 'int32'
 

@@ -35,7 +35,6 @@
     > {{alias:@stdlib/ndarray/shape}}( y )
     [ 2, 2 ]
 
-
     See Also
     --------
 

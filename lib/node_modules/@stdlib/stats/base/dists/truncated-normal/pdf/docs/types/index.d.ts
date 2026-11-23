@@ -63,7 +63,7 @@ interface PDF {
 	( x: number, a: number, b: number, mu: number, sigma: number ): number;
 
 	/**
-	* Returns a function for evaluating the probability density function (PDF) for a truncated normal distribution with endpoints `a` and `b`, mean `mu`, and standard deviation `sigma`.
+	* Returns a function for evaluating the probability density function (PDF) for a truncated normal distribution with endpoints `a` and `b`, location parameter `mu`, and scale parameter `sigma`.
 	*
 	* @param a - minimum support
 	* @param b - maximum support

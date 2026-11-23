@@ -23,7 +23,7 @@
 #include <time.h>
 #include <sys/time.h>
 
-#define NAME "dlastindexof"
+#define NAME "dlast_index_of"
 #define ITERATIONS 10000000
 #define REPEATS 3
 #define MIN 1
