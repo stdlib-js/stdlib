@@ -19,6 +19,7 @@
 #include "stdlib/number/float64/base/ulp_difference.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/constants/float64/high_word_sign_mask.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdint.h>
 
 static const uint64_t SIGN_MASK = (uint64_t)STDLIB_CONSTANT_FLOAT64_HIGH_WORD_SIGN_MASK << 32;
@@ -50,7 +51,9 @@ static uint64_t monotone_key( const uint64_t word ) {
 * // returns 1.0
 *
 * @example
-* double d = stdlib_base_float64_ulp_difference( 0.0 / 0.0, 1.0 );
+* #include "stdlib/constants/float64/nan.h"
+*
+* double d = stdlib_base_float64_ulp_difference( STDLIB_CONSTANT_FLOAT64_NAN, 1.0 );
 * // returns NaN
 */
 double stdlib_base_float64_ulp_difference( const double x, const double y ) {
@@ -60,7 +63,7 @@ double stdlib_base_float64_ulp_difference( const double x, const double y ) {
 	uint64_t wy;
 
 	if ( stdlib_base_is_nan( x ) || stdlib_base_is_nan( y ) ) {
-		return 0.0 / 0.0;
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	ux.value = x;
 	uy.value = y;
