@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# hasProperty
+# hasProp
 
 > Test if an object has a specified property, either own or inherited.
 
@@ -32,7 +32,7 @@ var hasProp = require( '@stdlib/assert/has-property' );
 
 #### hasProp( value, property )
 
-Returns a `boolean` indicating if a `value` has a specified `property`, either own or inherited.
+Returns a boolean indicating if a `value` has a specified `property`, either own or inherited.
 
 ```javascript
 var value = {
@@ -67,14 +67,14 @@ bool = hasProp( value, 'bap' );
     // returns false
     ```
 
--   Value arguments other than `null` or `undefined` are coerced to `objects`.
+-   Value arguments other than `null` or `undefined` are coerced to objects.
 
     ```javascript
     var bool = hasProp( 'beep', 'length' );
     // returns true
     ```
 
--   Non-symbol property arguments are coerced to `strings`.
+-   Non-symbol property arguments are coerced to strings.
 
     ```javascript
     var value = {
@@ -98,7 +98,7 @@ bool = hasProp( value, 'bap' );
 
 ## Examples
 
-<!-- eslint-disable object-curly-newline, object-curly-spacing -->
+<!-- eslint-disable object-curly-newline, object-curly-spacing, stdlib/eol-open-bracket-spacing -->
 
 <!-- eslint no-undef: "error" -->
 

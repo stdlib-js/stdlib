@@ -112,17 +112,17 @@ interface PDF {
 *
 * @example
 * var y = pdf( 10.0, 2.0, 3.0, 5.0 );
-* // returns ~0.698
+* // returns ~0.1
 *
 * y = pdf( 0.0, 2.0, 3.0, 2.0 );
 * // returns 0.0
 *
 * var mypdf = pdf.factory( 3.0, 3.0, 5.0 );
 * y = mypdf( 10.0 );
-* // returns ~0.806
+* // returns ~0.104
 *
 * y = mypdf( 7.0 );
-* // returns ~0.034
+* // returns ~0.173
 */
 declare var pdf: PDF;
 

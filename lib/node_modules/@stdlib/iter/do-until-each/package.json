@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/iter/until-each",
+  "name": "@stdlib/iter/do-until-each",
   "version": "0.0.0",
   "description": "Create an iterator which, while a test condition is false, invokes a function for each iterated value before returning the iterated value.",
   "license": "Apache-2.0",

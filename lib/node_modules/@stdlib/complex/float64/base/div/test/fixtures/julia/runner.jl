@@ -81,14 +81,14 @@ re1 = rand( 500 ) .* 1.0e300;
 re2 = rand( 500 ) .* 1.0e300;
 im1 = ( rand( 500 ) .* 20.0 ) .- 10.0;
 im2 = ( rand( 500 ) .* 20.0 ) .- 10.0;
-gen( re1, re2, im1, im2, "large_positive_real_components.json" );
+gen( re1, im1, re2, im2, "large_positive_real_components.json" );
 
 # Large negative real components:
 re1 = -rand( 500 ) .* 1.0e300;
 re2 = -rand( 500 ) .* 1.0e300;
 im1 = ( rand( 500 ) .* 20.0 ) .- 10.0;
 im2 = ( rand( 500 ) .* 20.0 ) .- 10.0;
-gen( re1, im1, re2,  im2, "large_negative_real_components.json" );
+gen( re1, im1, re2, im2, "large_negative_real_components.json" );
 
 # Large positive imaginary components:
 re1 = ( rand( 500 ) .* 20.0 ) .- 10.0;

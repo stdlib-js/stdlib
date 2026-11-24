@@ -25,6 +25,8 @@
 * @returns boolean indicating whether value is a Uint16Array
 *
 * @example
+* var Uint16Array = require( '@stdlib/array/uint16' );
+*
 * var bool = isUint16Array( new Uint16Array( 10 ) );
 * // returns true
 *

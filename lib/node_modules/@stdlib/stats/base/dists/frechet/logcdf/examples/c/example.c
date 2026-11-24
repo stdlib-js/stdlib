@@ -40,6 +40,6 @@ int main( void ) {
 		s = random_uniform( 0.0, 10.0 );
 		m = random_uniform( 0.0, 10.0 );
 		y = stdlib_base_dists_frechet_logcdf( x, alpha, s, m );
-		printf( "x: %lf, alpha: %lf, s: %lf, m: %lf, ln(F(x;alpha,s,m)): %lf\n", x, alpha, s, m, y );
+		printf( "x: %lf, α: %lf, s: %lf, m: %lf, ln(F(x;α,s,m)): %lf\n", x, alpha, s, m, y );
 	}
 }

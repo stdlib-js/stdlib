@@ -137,7 +137,7 @@ rules[ '@typescript-eslint/ban-ts-comment' ] = 'off';
 * type foo = {};
 * type bar = object;
 */
-rules[ '@typescript-eslint/ban-types' ] = 'off';
+rules[ '@typescript-eslint/no-restricted-types' ] = 'off';
 
 /**
 * Enforces the use of consistent type assertions.
@@ -286,7 +286,7 @@ rules[ '@typescript-eslint/explicit-module-boundary-types' ] = 'error';
 *     return true;
 * }
 */
-rules[ '@typescript-eslint/indent' ] = [ 'error', 'tab' ];
+rules[ '@stylistic/ts/indent' ] = [ 'error', 'tab' ];
 
 /**
 * Enforces a specific member delimiter style in interfaces and type literals.
@@ -310,7 +310,7 @@ rules[ '@typescript-eslint/indent' ] = [ 'error', 'tab' ];
 *     age: number;
 * }
 */
-rules[ '@typescript-eslint/member-delimiter-style' ] = [
+rules[ '@stylistic/ts/member-delimiter-style' ] = [
 	'error',
 	{
 		'multiline': {
@@ -882,7 +882,7 @@ rules[ '@typescript-eslint/promise-function-async' ] = 'off';
 * const good = 'good';
 * const goodEscape = "good's";
 */
-rules[ '@typescript-eslint/quotes' ] = [
+rules[ '@stylistic/ts/quotes' ] = [
 	'error',
 	'single',
 	{
@@ -946,7 +946,7 @@ rules[ '@typescript-eslint/restrict-plus-operands' ] = 'error';
 * // Good...
 * const good = 'semi';
 */
-rules[ '@typescript-eslint/semi' ] = [ 'error', 'always' ];
+rules[ '@stylistic/ts/semi' ] = [ 'error', 'always' ];
 
 /**
 * Disables the rule for strict boolean expressions.
@@ -1004,7 +1004,7 @@ rules[ '@typescript-eslint/triple-slash-reference' ] = [
 * // Good...
 * let good: number;
 */
-rules[ '@typescript-eslint/type-annotation-spacing' ] = 'error';
+rules[ '@stylistic/ts/type-annotation-spacing' ] = 'error';
 
 /**
 * Requires type annotations to exist.
@@ -1366,7 +1366,7 @@ rules[ 'import/no-deprecated' ] = 'error';
 * @name import/no-extraneous-dependencies
 * @memberof rules
 * @type {string}
-* @default 'error'
+* @default 'off'
 * @see [import/no-extraneous-dependencies]{@link https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md}
 *
 * @example
@@ -1376,7 +1376,7 @@ rules[ 'import/no-deprecated' ] = 'error';
 * // Bad...
 * import foo from 'some-extranous-module';
 */
-rules[ 'import/no-extraneous-dependencies' ] = 'error';
+rules[ 'import/no-extraneous-dependencies' ] = 'off'; // NOTE: disabled to allow imports of `@stdlib/*` type declarations
 
 /**
 * Prevents importing the submodules of other modules.
@@ -1384,14 +1384,20 @@ rules[ 'import/no-extraneous-dependencies' ] = 'error';
 * @name import/no-internal-modules
 * @memberof rules
 * @type {string}
-* @default 'error'
+* @default 'off'
 * @see [import/no-internal-modules]{@link https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-internal-modules.md}
 *
 * @example
 * // Bad...
 * import something from 'module/some/internal/path';
 */
-rules[ 'import/no-internal-modules' ] = 'error';
+rules[ 'import/no-internal-modules' ] = [
+	'error', {
+		'allow': [
+			'@stdlib/**'
+		]
+	}
+];
 
 /**
 * Forbids import statements that import nothing.
@@ -2605,13 +2611,13 @@ rules[ 'radix' ] = 'error';
 /**
 * Enforces consistent spacing before function parentheses.
 *
-* @name @typescript-eslint/space-before-function-paren
+* @name @stylistic/ts/space-before-function-paren
 * @memberof rules
 * @type {Array}
 * @default [ 'error', { 'anonymous': 'always', 'named': 'never', 'asyncArrow': 'always' } ]
 * @see [space-before-function-paren]{@link https://typescript-eslint.io/rules/space-before-function-paren}
 */
-rules[ '@typescript-eslint/space-before-function-paren' ] = [
+rules[ '@stylistic/ts/space-before-function-paren' ] = [
 	'error',
 	{
 		'anonymous': 'always',
@@ -2705,6 +2711,17 @@ rules[ 'yoda' ] = 'error';
 * const val = 9001; // $ExpectType number
 */
 rules[ 'expect-type/expect' ] = 'error';
+
+/**
+* Ensures return annotations in TSDoc examples match the actual output.
+*
+* @name stdlib/tsdoc-declarations-doctest
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see {@link module:@stdlib/_tools/eslint/rules/tsdoc-declarations-doctest}
+*/
+rules[ 'stdlib/tsdoc-declarations-doctest' ] = 'error';
 
 
 // EXPORTS //

@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the BLAS Level 1 routine `scopy`.
 */
-#ifndef SCOPY_H
-#define SCOPY_H
+#ifndef STDLIB_BLAS_BASE_SCOPY_H
+#define STDLIB_BLAS_BASE_SCOPY_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -45,4 +45,4 @@ void API_SUFFIX(c_scopy_ndarray)( const CBLAS_INT N, const float *X, const CBLAS
 }
 #endif
 
-#endif // !SCOPY_H
+#endif // !STDLIB_BLAS_BASE_SCOPY_H

@@ -107,7 +107,7 @@ var json = error2json( err );
 
 -   Supported built-in [`error`][mdn-error] types:
 
-    -   [`Error`][mdn-error] 
+    -   [`Error`][mdn-error]
     -   [`TypeError`][mdn-type-error]
     -   [`SyntaxError`][mdn-syntax-error]
     -   [`ReferenceError`][mdn-reference-error]

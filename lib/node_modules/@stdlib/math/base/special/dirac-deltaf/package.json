@@ -64,5 +64,87 @@
     "kronecker",
     "spike",
     "impulse"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "diracDeltaf",
+      "alias": "diracDeltaf",
+      "pkg_desc": "evaluate the Dirac delta function for a single-precision floating-point number",
+      "desc": "evaluates the Dirac delta function for a single-precision floating-point number",
+      "short_desc": "Dirac delta",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "float",
+            "dtype": "float32"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": -1.4e-45
+            },
+            {
+              "min": 1.4e-45,
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              0.5,
+              50
+            ]
+          },
+          "example_values": [
+            -28.7,
+            -10.5,
+            -0.73,
+            -1.92,
+            -7.81,
+            0.64,
+            1.31,
+            3.85,
+            9.76,
+            18.4,
+            -4.27,
+            6.12,
+            -16.4,
+            24.9,
+            -21.3,
+            13.6,
+            -1.78,
+            35.2,
+            -11.6,
+            7.44
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "result",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        }
+      },
+      "keywords": [
+        "dirac",
+        "delta",
+        "distribution",
+        "dist",
+        "continuous",
+        "kronecker",
+        "spike",
+        "impulse"
+      ],
+      "extra_keywords": []
+    }
+  }
 }

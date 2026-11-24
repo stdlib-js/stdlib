@@ -1,0 +1,26 @@
+
+{{alias}}( arrays )
+    Computes the arithmetic mean of a one-dimensional ndarray using a second-
+    order Kahan–Babuška algorithm.
+
+    If provided an empty ndarray, the function returns `NaN`.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing a one-dimensional input ndarray.
+
+    Returns
+    -------
+    out: number
+        Arithmetic mean.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/vector/ctor}}( [ 1.0, -2.0, 2.0 ], 'generic' );
+    > {{alias}}( [ x ] )
+    ~0.3333
+
+    See Also
+    --------
+

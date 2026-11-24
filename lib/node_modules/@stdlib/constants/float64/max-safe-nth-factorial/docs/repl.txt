@@ -6,7 +6,7 @@
     Examples
     --------
     > {{alias}}
-    170
+    18
 
     See Also
     --------

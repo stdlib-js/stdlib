@@ -1,0 +1,38 @@
+
+{{alias}}( ndims, x, dims )
+    Returns a read-only view of an input ndarray where the dimensions of the
+    input ndarray are expanded to a specified dimensionality by spreading
+    dimensions to specified dimension indices and inserting dimensions of size
+    one for the remaining dimensions.
+
+    Parameters
+    ----------
+    ndims: integer
+        Number of dimensions in the output ndarray. Must be greater than or
+        equal to the number of dimensions in the input ndarray.
+
+    x: ndarray
+        Input ndarray.
+
+    dims: ArrayLikeObject<integer>
+        Dimension indices at which to spread array dimensions. Must resolve to
+        normalized indices arranged in ascending order. If provided an integer
+        less than zero, the dimension index is resolved relative to the last
+        dimension, with the last dimension corresponding to the value `-1`.
+
+    Returns
+    -------
+    out: ndarray
+        A read-only view of an input ndarray where the dimensions of the input
+        ndarray are expanded to a specified dimensionality.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
+    <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
+    > var y = {{alias}}( 3, x, [ 0, 1 ] )
+    <ndarray>[ [ [ 1 ], [ 2 ] ], [ [ 3 ], [ 4 ] ] ]
+
+    See Also
+    --------
+

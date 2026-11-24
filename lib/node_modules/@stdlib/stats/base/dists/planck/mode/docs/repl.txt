@@ -2,7 +2,7 @@
 {{alias}}( λ )
     Returns the mode of a Planck distribution with shape parameter `λ`.
 
-    If `lambda <= 0`, the function returns `NaN`.
+    If `λ <= 0`, the function returns `NaN`.
 
     Parameters
     ----------
@@ -11,15 +11,15 @@
 
     Returns
     -------
-    out: integer
+    out: number
         Mode.
 
     Examples
     --------
     > var v = {{alias}}( 0.1 )
-    0
+    0.0
     > v = {{alias}}( 1.5 )
-    0
+    0.0
 
     See Also
     --------

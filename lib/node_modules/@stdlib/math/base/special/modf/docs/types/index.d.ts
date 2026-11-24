@@ -36,7 +36,7 @@ interface Modf {
 	* var parts = modf( 3.14 );
 	* // returns [ 3.0, 0.14000000000000012 ]
 	*/
-	( x: number ): Array<number>;
+	( x: number ): [ number, number ];
 
 	/**
 	* Decomposes a double-precision floating-point number into integral and fractional parts, each having the same type and sign as the input value.

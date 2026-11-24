@@ -224,7 +224,7 @@ interface Where {
 * var out = [ 0, 0, 0, 0 ];
 * var condition = [ true, false, true, false ];
 *
-* var arr = assign( condition, x, y, out, 1, 0 );
+* var arr = where.assign( condition, x, y, out, 1, 0 );
 * // returns [ 1, 6, 3, 8 ]
 *
 * var bool = ( arr === out );

@@ -1,0 +1,41 @@
+
+{{alias}}( xdtype, ydtype, zdtype, policy )
+    Resolves the output ndarray data type for a ternary function.
+
+    The function always applies type promotion to the provided data types,
+    except for the following policies:
+
+    - default
+    - default_index
+    - same
+    - <dtype>
+
+    Parameters
+    ----------
+    xdtype: string|DataType
+        First input ndarray data type.
+
+    ydtype: string|DataType
+        Second input ndarray data type.
+
+    zdtype: string|DataType
+        Third input ndarray data type.
+
+    policy: string|DataType
+        Output ndarray data type policy. If `policy` is a data type, the
+        function returns the `policy` value.
+
+    Returns
+    -------
+    out: DataType
+        Output ndarray data type.
+
+    Examples
+    --------
+    > var dt = {{alias}}( 'float64', 'float32', 'float32', 'real' );
+    > String( dt )
+    'float64'
+
+    See Also
+    --------
+

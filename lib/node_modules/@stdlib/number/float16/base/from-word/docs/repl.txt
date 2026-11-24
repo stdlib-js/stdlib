@@ -1,0 +1,25 @@
+
+{{alias}}( word )
+    Creates a half-precision floating-point number from an unsigned integer
+    corresponding to an IEEE 754 binary representation.
+
+    Parameters
+    ----------
+    word: integer
+        Unsigned integer.
+
+    Returns
+    -------
+    out: float
+        Half-precision floating-point number.
+
+    Examples
+    --------
+    // Bit sequence: 0 01111 0000110011
+    > var word = 15411;
+    > var f16 = {{alias}}( word )
+    1.0498046875
+
+    See Also
+    --------
+

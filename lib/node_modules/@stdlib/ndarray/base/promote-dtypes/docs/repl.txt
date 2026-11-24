@@ -1,0 +1,28 @@
+
+{{alias}}( dtypes )
+    Returns a data type that results from applying promotion rules to a provided
+    list of data types.
+
+    The function returns `null` if provided data types which cannot be safely
+    cast to a promoted data type.
+
+    Parameters
+    ----------
+    dtypes: Array<string>
+        List of data types.
+
+    Returns
+    -------
+    out: string|null
+        Result.
+
+    Examples
+    --------
+    > var dt = {{alias}}( [ 'float32', 'float64' ] )
+    'float64'
+    > dt = {{alias}}( [ 'binary', 'complex128' ] )
+    null
+
+    See Also
+    --------
+

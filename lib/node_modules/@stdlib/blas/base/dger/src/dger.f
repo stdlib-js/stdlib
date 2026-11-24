@@ -54,9 +54,9 @@
 ! @param {integer} N - number of columns in the matrix `A`
 ! @param {double} alpha - scalar constant
 ! @param {Array<double>} X - an `M` element vector
-! @param {integer} strideX - `X` stride length
+! @param {integer} strideX - stride length for `X`
 ! @param {Array<double>} Y - an `N` element vector
-! @param {integer} strideY - `Y` stride length
+! @param {integer} strideY - stride length for `Y`
 ! @param {Array<double>} A - matrix of coefficients
 ! @param {integer} LDA - stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`)
 !<

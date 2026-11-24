@@ -1,0 +1,25 @@
+
+{{alias}}( value )
+    Returns the matrix orientation string associated with a supported matrix
+    orientation value.
+
+    Parameters
+    ----------
+    value: any
+        Matrix orientation value.
+
+    Returns
+    -------
+    out: string|null
+        Matrix orientation string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'rows' )
+    'rows'
+    > out = {{alias}}( {{alias:@stdlib/blas/base/matrix-orientation-str2enum}}( 'rows' ) )
+    'rows'
+
+    See Also
+    --------
+

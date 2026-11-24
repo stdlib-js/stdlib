@@ -14,7 +14,7 @@
         Data source. If provided along with a `buffer` argument, the argument
         takes precedence.
 
-    options.dtype: string (optional)
+    options.dtype: string|DataType (optional)
         Underlying storage data type. If not specified and a data source is
         provided, the data type is inferred from the provided data source. If an
         input data source is not of the same type, this option specifies the
@@ -33,10 +33,10 @@
         - 'row-major': the order of the returned array is row-major.
         - 'column-major': the order of the returned array is column-major.
         - 'any': if a data source is column-major and not row-major, the order
-          of the returned array is column-major; otherwise, the order of the
-          returned array is row-major.
+        of the returned array is column-major; otherwise, the order of the
+        returned array is row-major.
         - 'same': the order of the returned array matches the order of an input
-          data source.
+        data source.
 
         Note that specifying an order which differs from the order of a
         provided data source does *not* entail a conversion from one memory
@@ -82,11 +82,11 @@
         - 'equiv': allow casting between identical and byte swapped types.
         - 'safe': only allow "safe" casts.
         - 'mostly-safe': allow "safe casts" and, for floating-point data types,
-          downcasts.
+        downcasts.
         - 'same-kind': allow "safe" casts and casts within the same kind (e.g.,
-          between signed integers or between floats).
+        between signed integers or between floats).
         - 'unsafe': allow casting between all types (including between integers
-          and floats).
+        and floats).
 
         Default: 'safe'.
 
@@ -100,13 +100,13 @@
         option may be one of the following values:
 
         - 'throw': an ndarray instance throws an error when an index exceeds
-          array dimensions.
+        array dimensions.
         - 'normalize': an ndarray instance normalizes negative indices and
-          throws an error when an index exceeds array dimensions.
+        throws an error when an index exceeds array dimensions.
         - 'wrap': an ndarray instance wraps around indices exceeding array
-          dimensions using modulo arithmetic.
+        dimensions using modulo arithmetic.
         - 'clamp', an ndarray instance sets an index exceeding array dimensions
-          to either `0` (minimum index) or the maximum index.
+        to either `0` (minimum index) or the maximum index.
 
         Default: 'throw'.
 
@@ -115,13 +115,13 @@
         mode for a corresponding dimension is equal to
 
         - 'throw': an ndarray instance throws an error when a subscript exceeds
-          array dimensions.
+        array dimensions.
         - 'normalize': an ndarray instance normalizes negative subscripts and
-          throws an error when a subscript exceeds array dimensions.
+        throws an error when a subscript exceeds array dimensions.
         - 'wrap': an ndarray instance wraps around subscripts exceeding array
-          dimensions using modulo arithmetic.
+        dimensions using modulo arithmetic.
         - 'clamp': an ndarray instance sets a subscript exceeding array
-          dimensions to either `0` (minimum index) or the maximum index.
+        dimensions to either `0` (minimum index) or the maximum index.
 
         If the number of modes is fewer than the number of dimensions, the
         function recycles modes using modulo arithmetic.

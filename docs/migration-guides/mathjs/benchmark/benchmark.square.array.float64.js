@@ -25,6 +25,7 @@ var bench = require( '@stdlib/bench' );
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var filledBy = require( '@stdlib/array/filled-by' );
 var zeros = require( '@stdlib/array/zeros' );
+var format = require( '@stdlib/string/format' );
 var uniform = require( '@stdlib/random/base/uniform' ).factory;
 var strided = require( '@stdlib/math/strided/special/abs2' );
 var dabs2 = require( '@stdlib/math/strided/special/dabs2' );
@@ -42,7 +43,7 @@ var opts = {
 
 // MAIN //
 
-bench( pkg+'::stdlib:math/strided/special/abs2:value=array,dtype=float64,len=100', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:math/strided/special/abs2:value=array,dtype=float64,len=100', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var i;
@@ -65,7 +66,7 @@ bench( pkg+'::stdlib:math/strided/special/abs2:value=array,dtype=float64,len=100
 	b.end();
 });
 
-bench( pkg+'::stdlib:math/strided/special/dabs2:value=array,dtype=float64,len=100', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:math/strided/special/dabs2:value=array,dtype=float64,len=100', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var i;
@@ -94,7 +95,7 @@ bench( pkg+'::stdlib:math/strided/special/dabs2:value=array,dtype=float64,len=10
 opts = {
 	'skip': true
 };
-bench( pkg+'::mathjs:square:value=array,dtype=float64,len=100', opts, function benchmark( b ) {
+bench( format( '%s::mathjs:square:value=array,dtype=float64,len=100', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var i;

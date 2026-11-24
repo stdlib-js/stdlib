@@ -2,7 +2,7 @@
 #
 # @license Apache-2.0
 #
-# Copyright (c) 2025 The Stdlib Authors.
+# Copyright (c) 2026 The Stdlib Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -57,6 +57,7 @@ def gen(x, name):
     # Write the data to the output filepath as JSON:
     with open(filepath, "w", encoding="utf-8") as outfile:
         json.dump(data, outfile)
+        outfile.write("\n")
 
 
 def main():

@@ -62,7 +62,7 @@ var bool = ( reBasename.REGEXP.toString() === reBasename().toString() );
 
 #### reBasename.REGEXP_POSIX
 
-[Regular expression][@stdlib/regexp/basename-posix] to capture the last part of a [POSIX][posix] path. 
+[Regular expression][@stdlib/regexp/basename-posix] to capture the last part of a [POSIX][posix] path.
 
 ```javascript
 var base = reBasename.REGEXP_POSIX.exec( '/foo/bar/index.js' )[ 1 ];
@@ -71,7 +71,7 @@ var base = reBasename.REGEXP_POSIX.exec( '/foo/bar/index.js' )[ 1 ];
 
 #### reBasename.REGEXP_WIN32
 
-[Regular expression][@stdlib/regexp/basename-windows] to capture the last part of a Windows path. 
+[Regular expression][@stdlib/regexp/basename-windows] to capture the last part of a Windows path.
 
 ```javascript
 var base = reBasename.REGEXP_WIN32.exec( 'C:\\foo\\bar\\index.js' )[ 1 ];

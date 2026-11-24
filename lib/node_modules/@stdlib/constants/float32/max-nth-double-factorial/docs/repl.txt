@@ -1,0 +1,13 @@
+
+{{alias}}
+    Maximum nth double factorial when stored in single-precision floating-point
+    format.
+
+    Examples
+    --------
+    > {{alias}}
+    56
+
+    See Also
+    --------
+

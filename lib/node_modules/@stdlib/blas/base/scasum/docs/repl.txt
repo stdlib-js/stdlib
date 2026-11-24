@@ -1,5 +1,5 @@
 
-{{alias}}( N, cx, strideX )
+{{alias}}( N, x, strideX )
     Computes the sum of the absolute values of the real and imaginary components
     of a single-precision complex floating-point vector.
 
@@ -16,11 +16,11 @@
     N: integer
         Number of indexed elements.
 
-    cx: Complex64Array
+    x: Complex64Array
         Input array.
 
     strideX: integer
-        Index increment for `cx`.
+        Index increment for `x`.
 
     Returns
     -------
@@ -30,23 +30,23 @@
     Examples
     --------
     // Standard Usage:
-    > var cx = new {{alias:@stdlib/array/complex64}}( [ 0.3, 0.1, 0.5, 0.0, 0.0, 0.5, 0.0, 0.2 ] );
-    > var out = {{alias}}( 4, cx, 1 )
+    > var x = new {{alias:@stdlib/array/complex64}}( [ 0.3, 0.1, 0.5, 0.0, 0.0, 0.5, 0.0, 0.2 ] );
+    > var out = {{alias}}( 4, x, 1 )
     ~1.6
 
     // Using `N` and stride parameters:
-    > cx = new {{alias:@stdlib/array/complex64}}( [ 3.0, -4.0, 0.0, 0.0, 5.0, -6.0 ] );
-    > out = {{alias}}( 2, cx, 2 )
+    > x = new {{alias:@stdlib/array/complex64}}( [ 3.0, -4.0, 0.0, 0.0, 5.0, -6.0 ] );
+    > out = {{alias}}( 2, x, 2 )
     18.0
 
     // Using view offsets:
-    > var cx0 = new {{alias:@stdlib/array/complex64}}( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
-    > var cx1 = new {{alias:@stdlib/array/complex64}}( cx0.buffer, cx0.BYTES_PER_ELEMENT*1 );
-    > out = {{alias}}( 2, cx1, 1 )
+    > var x0 = new {{alias:@stdlib/array/complex64}}( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
+    > var x1 = new {{alias:@stdlib/array/complex64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > out = {{alias}}( 2, x1, 1 )
     18.0
 
 
-{{alias}}.ndarray( N, cx, strideX, offsetX )
+{{alias}}.ndarray( N, x, strideX, offsetX )
     Computes the sum of the absolute values of the real and imaginary components
     of a single-precision complex floating-point vector using alternative
     indexing semantics.
@@ -60,14 +60,14 @@
     N: integer
         Number of indexed elements.
 
-    cx: Complex64Array
+    x: Complex64Array
         Input array.
 
     strideX: integer
-        Index increment for `cx`.
+        Index increment for `x`.
 
     offsetX: integer
-        Starting index of `cx`.
+        Starting index of `x`.
 
     Returns
     -------
@@ -77,13 +77,13 @@
     Examples
     --------
     // Standard Usage:
-    > var cx = new {{alias:@stdlib/array/complex64}}( [ 3.0, -4.0, 0.0, 0.0, 5.0, -6.0 ] );
-    > var out = {{alias}}.ndarray( 2, cx, 2, 0 )
+    > var x = new {{alias:@stdlib/array/complex64}}( [ 3.0, -4.0, 0.0, 0.0, 5.0, -6.0 ] );
+    > var out = {{alias}}.ndarray( 2, x, 2, 0 )
     18.0
 
     // Using an index offset:
-    > cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
-    > out = {{alias}}.ndarray( 2, cx, 1, 1 )
+    > x = new {{alias:@stdlib/array/complex64}}( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
+    > out = {{alias}}.ndarray( 2, x, 1, 1 )
     18.0
 
     See Also

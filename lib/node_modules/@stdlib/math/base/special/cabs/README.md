@@ -181,7 +181,7 @@ int main( void ) {
         v = x[ i ];
         y = stdlib_base_cabs( v );
         stdlib_complex128_reim( v, &re, &im );
-        printf( "f(%lf + %lf) = %lf\n", re, im, y );
+        printf( "cabs(%lf + %lfi) = %lf\n", re, im, y );
     }
 }
 ```

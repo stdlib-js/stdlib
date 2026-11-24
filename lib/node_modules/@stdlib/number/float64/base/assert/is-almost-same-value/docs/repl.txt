@@ -1,0 +1,43 @@
+
+{{alias}}( a, b, maxULP )
+    Tests if two double-precision floating-point numbers are approximately the
+    same value within a specified number of ULPs (units in the last place).
+
+    The function differs from the `===` operator in that the function treats
+    `-0` and `+0` as distinct and `NaNs` as the same.
+
+    Parameters
+    ----------
+    a: number
+        First input value.
+
+    b: number
+        Second input value.
+
+    maxULP: number
+        Maximum allowed ULP difference.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether two double-precision floating-point numbers
+        are approximately the same value within a specified number of ULPs.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 1, 1+{{alias:@stdlib/constants/float64/eps}}, 1 )
+    true
+    > bool = {{alias}}( 1+{{alias:@stdlib/constants/float64/eps}}, 1, 1 )
+    true
+    > bool = {{alias}}( 1, 1+{{alias:@stdlib/constants/float64/eps}}*2, 1 )
+    false
+    > bool = {{alias}}( 0.0, -0.0, 0 )
+    false
+    > bool = {{alias}}( NaN, 1.0, 1 )
+    false
+    > bool = {{alias}}( NaN, NaN, 0 )
+    true
+
+    See Also
+    --------
+

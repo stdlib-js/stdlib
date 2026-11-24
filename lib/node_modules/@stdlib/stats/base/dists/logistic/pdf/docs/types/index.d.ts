@@ -85,11 +85,11 @@ interface PDF {
 	* @returns PDF
 	*
 	* @example
-	* var pdf = factory( 10.0, 2.0 );
-	* var y = pdf( 10.0 );
+	* var mypdf = pdf.factory( 10.0, 2.0 );
+	* var y = mypdf( 10.0 );
 	* // returns 0.125
 	*
-	* y = pdf( 5.0 );
+	* y = mypdf( 5.0 );
 	* // returns ~0.035
 	*/
 	factory( mu: number, s: number ): Unary;

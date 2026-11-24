@@ -111,7 +111,7 @@ interface Routine {
 	* }
 	*
 	* gfillBy( x.length, x, 1, fill );
-	* // x => [ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
+	* // x => [ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ]
 	*/
 	<T = unknown, U = unknown, V = unknown, W = unknown>( N: number, x: Collection<V>, strideX: number, clbk: Callback<T, U, V, W>, thisArg?: ThisParameterType<Callback<T, U, V, W>> ): Collection<U | V>;
 
@@ -145,7 +145,7 @@ interface Routine {
 	* }
 	*
 	* gfillBy.ndarray( x.length, x, 1, 0, fill );
-	* // x => [ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
+	* // x => [ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ]
 	*/
 	ndarray<T = unknown, U = unknown, V = unknown, W = unknown>( N: number, x: Collection<V>, strideX: number, offsetX: number, clbk: Callback<T, U, V, W>, thisArg?: ThisParameterType<Callback<T, U, V, W>> ): Collection<U | V>;
 }
@@ -179,7 +179,7 @@ interface Routine {
 * }
 *
 * gfillBy( x.length, x, 1, fill );
-* // x => [ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
+* // x => [ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ]
 *
 * @example
 * var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
@@ -189,7 +189,7 @@ interface Routine {
 * }
 *
 * gfillBy.ndarray( x.length, x, 1, 0, fill );
-* // x => [ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
+* // x => [ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ]
 */
 declare var gfillBy: Routine;
 

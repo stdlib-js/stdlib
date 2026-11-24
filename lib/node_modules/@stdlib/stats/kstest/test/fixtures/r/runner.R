@@ -32,19 +32,19 @@ main <- function() {
 	#' filepath <- get_script_path();
 	get_script_path <- function() {
 		args <- commandArgs( trailingOnly = FALSE );
-		needle <- "--file=";
+		needle <- '--file=';
 		match <- grep( needle, args );
-		if ( length( match ) > 0 ) {
+		if ( length( match ) > 0L ) {
 			# Rscript:
-			filepath <- sub( needle, "", args[match] );
+			filepath <- sub( needle, '', args[match] );
 		} else {
-			ls_vars <- ls( sys.frames()[[1]] )
-			if ( "fileName" %in% ls_vars ) {
+			ls_vars <- ls( sys.frames()[[1L]] )
+			if ( 'fileName' %in% ls_vars ) {
 				# Source'd via RStudio:
-				filepath <- sys.frames()[[1]]$fileName; # nolint
+				filepath <- sys.frames()[[1L]]$fileName; # nolint
 			} else {
 				# Source'd via R console:
-				filepath <- sys.frames()[[1]]$ofile;
+				filepath <- sys.frames()[[1L]]$ofile;
 			}
 		}
 		return( normalizePath( filepath ) );
@@ -56,10 +56,10 @@ main <- function() {
 	#' @return JSON blob
 	#'
 	#' @examples
-	#' x <- seq( -6.5, 25, 0.5 );
+	#' x <- seq( -6.5, 25.0, 0.5 );
 	#' json <- to_json( x );
 	to_json <- function( x ) {
-		return( jsonlite::toJSON( x, digits = 16, auto_unbox = TRUE ) );
+		return( jsonlite::toJSON( x, digits = 16L, auto_unbox = TRUE ) );
 	}
 
 	#' Generate an output absolute filepath based on the script directory.
@@ -68,21 +68,21 @@ main <- function() {
 	#' @return An absolute filepath
 	#'
 	#' @examples
-	#' filepath <- get_filepath( "data.json" );
+	#' filepath <- get_filepath( 'data.json' );
 	get_filepath <- function( name ) {
-		return( paste( source_dir, "/", name, sep = "" ) );
+		return( paste( source_dir, '/', name, sep = '' ) );
 	}
 
 	# Get the directory of this script:
 	source_dir <- dirname( get_script_path() );
 
 	# Generate test fixture data:
-	x <- runif( 100 );
-	twosided <- ks.test( x, punif, alternative = "two.sided", exact = TRUE );
+	x <- runif( 100L );
+	twosided <- ks.test( x, punif, alternative = 'two.sided', exact = TRUE );
 	twosided <- list( pvalue = twosided$p.value, statistic = twosided$statistic );
-	less <- ks.test( x, punif, alternative = "less", exact = TRUE );
+	less <- ks.test( x, punif, alternative = 'less', exact = TRUE );
 	less <- list( pvalue = less$p.value, statistic = less$statistic );
-	greater <- ks.test( x, punif, alternative = "greater", exact = TRUE );
+	greater <- ks.test( x, punif, alternative = 'greater', exact = TRUE );
 	greater <- list( pvalue = greater$p.value, statistic = greater$statistic );
 
 	# Convert fixture data to JSON:
@@ -92,16 +92,16 @@ main <- function() {
 	twosided <- to_json( twosided );
 
 	# Write the data to file...
-	filepath <- get_filepath( "data.json" );
+	filepath <- get_filepath( 'data.json' );
 	write( x, filepath );
 
-	filepath <- get_filepath( "less.json" );
+	filepath <- get_filepath( 'less.json' );
 	write( less, filepath );
 
-	filepath <- get_filepath( "greater.json" );
+	filepath <- get_filepath( 'greater.json' );
 	write( greater, filepath );
 
-	filepath <- get_filepath( "twosided.json" );
+	filepath <- get_filepath( 'twosided.json' );
 	write( twosided, filepath );
 }
 

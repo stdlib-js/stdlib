@@ -53,5 +53,5 @@ import smax = require( './index' );
 	});
 
 	smax(); // $ExpectError
-	smax( x, {} ); // $ExpectError
+	smax( [ x ], {} ); // $ExpectError
 }

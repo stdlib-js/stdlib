@@ -1,0 +1,501 @@
+{
+  "options": {
+    "task": "build",
+    "os": "linux",
+    "blas": "",
+    "wasm": false
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "os": "linux",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/zdscal.f",
+        "./src/zdscal_f.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/blas/base/shared",
+        "@stdlib/napi/argv-double",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-complex128array",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float64/ctor"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "linux",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/zdscal.c",
+        "./src/zdscal_ndarray.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/real",
+        "@stdlib/complex/float64/imag",
+        "@stdlib/complex/float64/base/scale"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "linux",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/zdscal.c",
+        "./src/zdscal_ndarray.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/real",
+        "@stdlib/complex/float64/imag",
+        "@stdlib/complex/float64/base/scale"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "linux",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/zdscal_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/blas/base/shared",
+        "@stdlib/napi/argv-double",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-complex128array",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float64/ctor"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "linux",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/zdscal_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/real",
+        "@stdlib/complex/float64/imag"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "linux",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/zdscal_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/real",
+        "@stdlib/complex/float64/imag"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "mac",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/zdscal.f",
+        "./src/zdscal_f.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/blas/base/shared",
+        "@stdlib/napi/argv-double",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-complex128array",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float64/ctor"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "mac",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/zdscal.c",
+        "./src/zdscal_ndarray.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/real",
+        "@stdlib/complex/float64/imag",
+        "@stdlib/complex/float64/base/scale"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "mac",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/zdscal.c",
+        "./src/zdscal_ndarray.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/real",
+        "@stdlib/complex/float64/imag",
+        "@stdlib/complex/float64/base/scale"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "mac",
+      "blas": "apple_accelerate_framework",
+      "wasm": false,
+      "src": [
+        "./src/zdscal_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lblas"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/blas/base/shared",
+        "@stdlib/napi/argv-double",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-complex128array",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float64/ctor"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "mac",
+      "blas": "apple_accelerate_framework",
+      "wasm": false,
+      "src": [
+        "./src/zdscal_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lblas"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/real",
+        "@stdlib/complex/float64/imag"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "mac",
+      "blas": "apple_accelerate_framework",
+      "wasm": false,
+      "src": [
+        "./src/zdscal_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lblas"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/real",
+        "@stdlib/complex/float64/imag"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "mac",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/zdscal_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/blas/base/shared",
+        "@stdlib/napi/argv-double",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-complex128array",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float64/ctor"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "mac",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/zdscal_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/real",
+        "@stdlib/complex/float64/imag"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "mac",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/zdscal_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/real",
+        "@stdlib/complex/float64/imag"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "win",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/zdscal.c",
+        "./src/zdscal_ndarray.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/blas/base/shared",
+        "@stdlib/napi/argv-double",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-complex128array",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/base/scale"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "win",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/zdscal.c",
+        "./src/zdscal_ndarray.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/real",
+        "@stdlib/complex/float64/imag",
+        "@stdlib/complex/float64/base/scale"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "win",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/zdscal.c",
+        "./src/zdscal_ndarray.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/real",
+        "@stdlib/complex/float64/imag",
+        "@stdlib/complex/float64/base/scale"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "",
+      "blas": "",
+      "wasm": true,
+      "src": [
+        "./src/zdscal.c",
+        "./src/zdscal_ndarray.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/base/scale"
+      ]
+    }
+  ]
+}

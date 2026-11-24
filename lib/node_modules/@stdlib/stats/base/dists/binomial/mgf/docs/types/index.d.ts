@@ -119,7 +119,7 @@ interface MGF {
 * y = mgf( 5.0, 20, 0.2 );
 * // returns ~4.798e29
 *
-* y = mgf( 0.9, 10, 0.4 )
+* y = mgf( 0.9, 10, 0.4 );
 * // returns ~99.338
 *
 * var mymgf = mgf.factory( 10, 0.5 );

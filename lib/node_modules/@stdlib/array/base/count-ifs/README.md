@@ -40,7 +40,7 @@ limitations under the License.
 var countIfs = require( '@stdlib/array/base/count-ifs' );
 ```
 
-#### countIfs( x0, predicate0\[, x1, predicate1\[, x2, predicate2\[, ...args]] )
+#### countIfs( x0, predicate0\[, x1, predicate1\[, x2, predicate2\[, ...args]]] )
 
 Performs element-wise evaluation of one or more input arrays according to provided predicate functions and counts the number of elements for which all predicates respectively return `true`.
 

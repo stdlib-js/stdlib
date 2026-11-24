@@ -58,7 +58,7 @@ The function accepts the following `options`:
 
     -   `hinge`: hinge loss function. Corresponds to a soft-margin linear Support Vector Machine (SVM), which can handle non-linearly separable data.
     -   `log`: logistic loss function. Corresponds to Logistic Regression.
-    -   `modifiedHuber`: Huber loss function [variant][@zhang:2004a] for classification. 
+    -   `modifiedHuber`: Huber loss function [variant][@zhang:2004a] for classification.
     -   `perceptron`: hinge loss function without a margin. Corresponds to the original perceptron by Rosenblatt (1957).
     -   `squaredHinge`: squared hinge loss function SVM (L2-SVM).
 

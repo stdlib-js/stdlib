@@ -1,0 +1,41 @@
+
+{{alias}}( v1, v2, maxULP )
+    Tests if two arguments are both Complex64Arrays and contain respective
+    elements which are approximately the same value within a specified number of
+    ULPs (units in the last place).
+
+    The function differs from the `===` operator in that the function treats
+    `-0` and `+0` as distinct and `NaNs` as the same.
+
+    Parameters
+    ----------
+    v1: any
+        First input value.
+
+    v2: any
+        Second input value.
+
+    maxULP: integer
+        Maximum allowed ULP difference.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether two arguments are approximately the same
+        value.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var y = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var bool = {{alias}}( x, y, 0 )
+    true
+
+    > x = new {{alias:@stdlib/array/complex64}}( [ NaN, NaN, NaN, NaN ] );
+    > y = new {{alias:@stdlib/array/complex64}}( [ NaN, NaN, NaN, NaN ] );
+    > bool = {{alias}}( x, y, 1 )
+    true
+
+    See Also
+    --------
+

@@ -796,7 +796,7 @@ rules[ 'no-labels' ] = [ 'error', {
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-line-blocks]{@link https://eslint.org/docs/rules/no-lone-blocks}
+* @see [no-lone-blocks]{@link https://eslint.org/docs/rules/no-lone-blocks}
 *
 * @example
 * // Bad...
@@ -902,7 +902,7 @@ rules[ 'no-multi-spaces' ] = [ 'error', {
 * var str = 'Hello \
 *            world!';
 *
-* @example;
+* @example
 * // Good...
 * var str = 'Hello\nworld!';
 */
@@ -1102,8 +1102,6 @@ rules[ 'no-restricted-properties' ] = 'off';
 */
 rules[ 'no-return-assign' ] = [ 'error', 'always' ];
 
-/* eslint-disable stdlib/jsdoc-doctest-marker, stdlib/jsdoc-doctest-quote-props */
-
 /**
 * Never allow `return await`.
 *
@@ -1120,8 +1118,6 @@ rules[ 'no-return-assign' ] = [ 'error', 'always' ];
 * }
 */
 rules[ 'no-return-await' ] = 'error';
-
-/* eslint-enable stdlib/jsdoc-doctest-marker stdlib/jsdoc-doctest-quote-props */
 
 /**
 * Never allow using `javascript:` in urls.
@@ -1390,7 +1386,7 @@ rules[ 'no-useless-escape' ] = 'error';
 *     return;
 * }
 *
-*@ example
+* @example
 * // Good...
 * function foo( x ) {
 *     if ( x === x ) {
@@ -1509,8 +1505,6 @@ rules[ 'prefer-regex-literals' ] = 'error';
 */
 rules[ 'radix' ] = [ 'error', 'always' ];
 
-/* eslint-disable stdlib/jsdoc-doctest-marker, stdlib/jsdoc-doctest-quote-props */
-
 /**
 * Always require `async` functions to have an `await` expression.
 *
@@ -1533,8 +1527,6 @@ rules[ 'radix' ] = [ 'error', 'always' ];
 * }
 */
 rules[ 'require-await' ] = 'error';
-
-/* eslint-enable stdlib/jsdoc-doctest-marker, stdlib/jsdoc-doctest-quote-props */
 
 /**
 * Don't require the `u` flag on a regular expression.

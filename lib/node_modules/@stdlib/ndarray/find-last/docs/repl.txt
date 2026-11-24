@@ -1,0 +1,98 @@
+
+{{alias}}( x[, options], predicate[, thisArg] )
+    Returns a new ndarray containing the last elements which pass a test
+    implemented by a predicate function along one or more ndarray dimensions.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    options: Object (optional)
+        Function options.
+
+    options.dims: Array<integer> (optional)
+        List of dimensions over which to perform a reduction. If not provided,
+        the function performs a reduction over all elements in a provided input
+        ndarray.
+
+    options.keepdims: boolean (optional)
+        Boolean indicating whether the reduced dimensions should be included in
+        the returned ndarray as singleton dimensions. Default: false.
+
+    options.sentinel: any|ndarray (optional)
+        Value to return when no element passes the test. May be either a scalar
+        value or a zero-dimensional ndarray.
+
+    predicate: Function
+        Predicate function.
+
+    thisArg: Any (optional)
+        Predicate execution context.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray. When performing a reduction over all elements, the
+        function returns a zero-dimensional ndarray containing the result.
+
+    Examples
+    --------
+    > function f ( v ) { return v > 1.0; };
+    > var x = {{alias:@stdlib/ndarray/array}}( [[[1,2],[3,4]],[[5,6],[7,8]]] );
+    > var y = {{alias}}( x, f )
+    <ndarray>[ 8 ]
+    > y = {{alias}}( x, { 'keepdims': true }, f )
+    <ndarray>[ [ [ 8 ] ] ]
+
+
+{{alias}}.assign( x, out[, options], predicate[, thisArg] )
+    Finds the last elements which pass a test implemented by a predicate
+    function along one or more ndarray dimensions and assigns results to a
+    provided output ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    out: ndarray
+        Output ndarray. The output shape must match the shape of the non-reduced
+        dimensions of the input ndarray.
+
+    options: Object (optional)
+        Function options.
+
+    options.dims: Array<integer> (optional)
+        List of dimensions over which to perform a reduction. If not provided,
+        the function performs a reduction over all elements in a provided input
+        ndarray.
+
+    options.sentinel: any|ndarray (optional)
+        Value to return when no element passes the test. May be either a scalar
+        value or a zero-dimensional ndarray.
+
+    predicate: Function
+        Predicate function.
+
+    thisArg: Any (optional)
+        Predicate execution context.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > function f ( v ) { return v > 1.0; };
+    > var x = {{alias:@stdlib/ndarray/array}}( [[[1,2],[3,4]],[[5,6],[7,8]]] );
+    > var y = {{alias:@stdlib/ndarray/from-scalar}}( 0 );
+    > var out = {{alias}}.assign( x, y, f )
+    <ndarray>[ 8 ]
+    > var bool = ( out === y )
+    true
+
+    See Also
+    --------
+

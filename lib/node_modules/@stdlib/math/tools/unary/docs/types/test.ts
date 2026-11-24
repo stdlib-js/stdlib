@@ -18,79 +18,19 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ndarray } from '@stdlib/types/ndarray';
-import dispatch = require( './index' );
+import { DataType, OutputPolicy, InputCastingPolicy, typedndarray } from '@stdlib/types/ndarray';
+import factory = require( './index' );
 
 /**
-* Identity function.
+* Returns an output ndarray.
 *
-* @param x - input value
-* @returns return value
+* @param x - input ndarray
+* @param y - output ndarray
+* @returns output ndarray
 */
-function identity( x: number ): number {
-	return x;
-}
-
-/**
-* Function which operates on a strided array.
-*
-* @param N - number of indexed elements
-* @param x - input array
-* @param strideX - `x` stride length
-* @param y - destination array
-* @param strideY - `y` stride length
-* @returns `y`
-*/
-function stridedArrayFunction( N: number, x: ArrayLike<number>, strideX: number, y: ArrayLike<number>, strideY: number ): ArrayLike<number> {
-	let ix;
-	let iy;
-	if ( N <= 0 ) {
-		return y;
-	}
-	if ( strideX < 0 ) {
-		ix = ( 1 - N ) * strideX;
-	} else {
-		ix = 0;
-	}
-	if ( strideY < 0 ) {
-		iy = ( 1 - N ) * strideY;
-	} else {
-		iy = 0;
-	}
-	if ( x[ ix ] !== x[ ix ] ) {
-		return y;
-	}
-	if ( y[ iy ] !== y[ iy ] ) {
-		return y;
-	}
-	return y;
-}
-
-/**
-* Function which operates on a strided array using alternative indexing semantics.
-*
-* @param N - number of indexed elements
-* @param x - input array
-* @param strideX - `x` stride length
-* @param offsetX - starting index for `x`
-* @param y - destination array
-* @param strideY - `y` stride length
-* @param offsetY - starting index for `y`
-* @returns `y`
-*/
-function stridedArrayFunctionWithOffsets( N: number, x: ArrayLike<number>, strideX: number, offsetX: number, y: ArrayLike<number>, strideY: number, offsetY: number ): ArrayLike<number> {
-	let ix;
-	let iy;
-	if ( N <= 0 ) {
-		return y;
-	}
-	ix = offsetX;
-	iy = offsetY;
-	if ( x[ ix + strideX ] !== x[ ix + strideX ] ) {
-		return y;
-	}
-	if ( y[ iy + strideY ] !== y[ iy + strideY ] ) {
-		return y;
+function unary( x: typedndarray<unknown>, y: typedndarray<unknown> ): typedndarray<unknown> {
+	if ( !x ) {
+		throw new Error( 'unexpected error' );
 	}
 	return y;
 }
@@ -98,191 +38,97 @@ function stridedArrayFunctionWithOffsets( N: number, x: ArrayLike<number>, strid
 
 // TESTS //
 
-// The function returns a dispatch function...
+// The function returns a function...
 {
-	const t1 = {};
-	dispatch( t1 ); // $ExpectType DispatchFunction
-
-	const t2 = {
-		'scalar': [ 'number', identity ]
+	const dtypes: Array<DataType> = [ 'float64', 'float32' ];
+	const policies = {
+		'output': 'same' as OutputPolicy,
+		'casting': 'none' as InputCastingPolicy
 	};
-	dispatch( t2 ); // $ExpectType DispatchFunction
 
-	const t3 = {
-		'array': [ 'generic', stridedArrayFunction ]
-	};
-	dispatch( t3 ); // $ExpectType DispatchFunction
-
-	const t4 = {
-		'ndarray': [ 'generic', stridedArrayFunctionWithOffsets ]
-	};
-	dispatch( t4 ); // $ExpectType DispatchFunction
-
-	const t5 = {
-		'scalar': [ 'number', identity ],
-		'array': [ 'generic', stridedArrayFunction ]
-	};
-	dispatch( t5 ); // $ExpectType DispatchFunction
-
-	const t6 = {
-		'scalar': [ 'number', identity ],
-		'ndarray': [ 'generic', stridedArrayFunctionWithOffsets ]
-	};
-	dispatch( t6 ); // $ExpectType DispatchFunction
-
-	const t7 = {
-		'array': [ 'generic', stridedArrayFunction ],
-		'ndarray': [ 'generic', stridedArrayFunctionWithOffsets ]
-	};
-	dispatch( t7 ); // $ExpectType DispatchFunction
-
-	const t8 = {
-		'scalar': [ 'number', identity ],
-		'array': [ 'generic', stridedArrayFunction ],
-		'ndarray': [ 'generic', stridedArrayFunctionWithOffsets ]
-	};
-	dispatch( t8 ); // $ExpectType DispatchFunction
+	factory( unary, [ dtypes ], dtypes, policies ); // $ExpectType Unary
 }
 
-// The function does not compile if not provided a table resolution object...
+// The compiler throws an error if the function is not provided a first argument which is function...
 {
-	dispatch( '5' ); // $ExpectError
-	dispatch( 5 ); // $ExpectError
-	dispatch( true ); // $ExpectError
-	dispatch( false ); // $ExpectError
-	dispatch( null ); // $ExpectError
-	dispatch( undefined ); // $ExpectError
-	dispatch( [ '5' ] ); // $ExpectError
-	dispatch( ( x: number ): number => x ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided a table resolution object having an invalid `scalar` field...
-{
-	dispatch( { 'scalar': 5 } ); // $ExpectError
-	dispatch( { 'scalar': true } ); // $ExpectError
-	dispatch( { 'scalar': false } ); // $ExpectError
-	dispatch( { 'scalar': null } ); // $ExpectError
-	dispatch( { 'scalar': [ 5 ] } ); // $ExpectError
-	dispatch( { 'scalar': [ '5', 5 ] } ); // $ExpectError
-	dispatch( { 'scalar': ( x: number ): number => x } ); // $ExpectError
-	dispatch( { 'scalar': [ '5', ( x: string ): string => x ] } ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided a table resolution object having an invalid `array` field...
-{
-	dispatch( { 'array': 5 } ); // $ExpectError
-	dispatch( { 'array': true } ); // $ExpectError
-	dispatch( { 'array': false } ); // $ExpectError
-	dispatch( { 'array': null } ); // $ExpectError
-	dispatch( { 'array': [ 5 ] } ); // $ExpectError
-	dispatch( { 'array': [ '5', 5 ] } ); // $ExpectError
-	dispatch( { 'array': ( x: number ): number => x } ); // $ExpectError
-	dispatch( { 'array': [ '5', ( x: string ): string => x ] } ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided a table resolution object having an invalid `ndarray` field...
-{
-	dispatch( { 'ndarray': 5 } ); // $ExpectError
-	dispatch( { 'ndarray': true } ); // $ExpectError
-	dispatch( { 'ndarray': false } ); // $ExpectError
-	dispatch( { 'ndarray': null } ); // $ExpectError
-	dispatch( { 'ndarray': [ 5 ] } ); // $ExpectError
-	dispatch( { 'ndarray': [ '5', 5 ] } ); // $ExpectError
-	dispatch( { 'ndarray': ( x: number ): number => x } ); // $ExpectError
-	dispatch( { 'ndarray': [ '5', ( x: string ): string => x ] } ); // $ExpectError
-}
-
-// The function returns a function which returns a number if provided a number...
-{
-	const t = {
-		'scalar': [ 'number', identity ],
-		'array': [ 'generic', stridedArrayFunction ],
-		'ndarray': [ 'generic', stridedArrayFunctionWithOffsets ]
-	};
-	const abs = dispatch( t ); // $ExpectType DispatchFunction
-
-	abs( 8 ); // $ExpectType number
-}
-
-// The function returns a function which returns an array-like object if provided an array-like object...
-{
-	const t = {
-		'scalar': [ 'number', identity ],
-		'array': [ 'generic', stridedArrayFunction ],
-		'ndarray': [ 'generic', stridedArrayFunctionWithOffsets ]
-	};
-	const abs = dispatch( t ); // $ExpectType DispatchFunction
-
-	const x = new Float64Array( 10 );
-
-	abs( x ); // $ExpectType ArrayLike<number>
-}
-
-// The function returns a function which returns an ndarray if provided an ndarray...
-{
-	const t = {
-		'scalar': [ 'number', identity ],
-		'array': [ 'generic', stridedArrayFunction ],
-		'ndarray': [ 'generic', stridedArrayFunctionWithOffsets ]
-	};
-	const abs = dispatch( t ); // $ExpectType DispatchFunction
-
-	const buf = [ 1, 2, 3, 4 ];
-
-	const x: ndarray = {
-		'byteLength': null,
-		'BYTES_PER_ELEMENT': null,
-		'data': buf,
-		'dtype': 'generic',
-		'flags': {
-			'ROW_MAJOR_CONTIGUOUS': true,
-			'COLUMN_MAJOR_CONTIGUOUS': false
-		},
-		'length': 4,
-		'ndims': 1,
-		'offset': 0,
-		'order': 'row-major',
-		'shape': [ 4 ],
-		'strides': [ 1 ],
-		'get': ( i: number ): number => {
-			return buf[ i ];
-		},
-		'set': ( i: number, v: number ): ndarray => {
-			buf[ i ] = v;
-			return x;
-		}
+	const dtypes: Array<DataType> = [ 'float64', 'float32' ];
+	const policies = {
+		'output': 'same' as OutputPolicy,
+		'casting': 'none' as InputCastingPolicy
 	};
 
-	abs( x ); // $ExpectType ndarray
+	factory( '5', [ dtypes ], dtypes, policies ); // $ExpectError
+	factory( 5, [ dtypes ], dtypes, policies ); // $ExpectError
+	factory( true, [ dtypes ], dtypes, policies ); // $ExpectError
+	factory( false, [ dtypes ], dtypes, policies ); // $ExpectError
+	factory( null, [ dtypes ], dtypes, policies ); // $ExpectError
+	factory( void 0, [ dtypes ], dtypes, policies ); // $ExpectError
+	factory( [], [ dtypes ], dtypes, policies ); // $ExpectError
+	factory( {}, [ dtypes ], dtypes, policies ); // $ExpectError
+	factory( ( x: number ): number => x, [ dtypes ], dtypes, policies ); // $ExpectError
 }
 
-// The function returns a function which does not compile if provided a value other than an ndarray, array-like object, or number...
+// The compiler throws an error if the function is not provided a second argument which is list of data type lists...
 {
-	const t = {
-		'scalar': [ 'number', identity ],
-		'array': [ 'generic', stridedArrayFunction ],
-		'ndarray': [ 'generic', stridedArrayFunctionWithOffsets ]
+	const dtypes: Array<DataType> = [ 'float64', 'float32' ];
+	const policies = {
+		'output': 'same' as OutputPolicy,
+		'casting': 'none' as InputCastingPolicy
 	};
-	const abs = dispatch( t ); // $ExpectType DispatchFunction
 
-	abs( '5' ); // $ExpectError
-	abs( true ); // $ExpectError
-	abs( false ); // $ExpectError
-	abs( null ); // $ExpectError
-	abs( undefined ); // $ExpectError
-	abs( {} ); // $ExpectError
-	abs( [ '5' ] ); // $ExpectError
-	abs( ( x: number ): number => x ); // $ExpectError
+	factory( unary, '5', dtypes, policies ); // $ExpectError
+	factory( unary, 5, dtypes, policies ); // $ExpectError
+	factory( unary, true, dtypes, policies ); // $ExpectError
+	factory( unary, false, dtypes, policies ); // $ExpectError
+	factory( unary, null, dtypes, policies ); // $ExpectError
+	factory( unary, void 0, dtypes, policies ); // $ExpectError
+	factory( unary, {}, dtypes, policies ); // $ExpectError
+	factory( unary, ( x: number ): number => x, dtypes, policies ); // $ExpectError
 }
 
-// The function returns a function which does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is not provided a third argument which is list of data types...
 {
-	const t = {
-		'scalar': [ 'number', identity ],
-		'array': [ 'generic', stridedArrayFunction ],
-		'ndarray': [ 'generic', stridedArrayFunctionWithOffsets ]
+	const dtypes: Array<DataType> = [ 'float64', 'float32' ];
+	const policies = {
+		'output': 'same' as OutputPolicy,
+		'casting': 'none' as InputCastingPolicy
 	};
-	const abs = dispatch( t ); // $ExpectType DispatchFunction
 
-	abs(); // $ExpectError
+	factory( unary, [ dtypes ], '5', policies ); // $ExpectError
+	factory( unary, [ dtypes ], 5, policies ); // $ExpectError
+	factory( unary, [ dtypes ], true, policies ); // $ExpectError
+	factory( unary, [ dtypes ], false, policies ); // $ExpectError
+	factory( unary, [ dtypes ], null, policies ); // $ExpectError
+	factory( unary, [ dtypes ], void 0, policies ); // $ExpectError
+	factory( unary, [ dtypes ], {}, policies ); // $ExpectError
+	factory( unary, [ dtypes ], ( x: number ): number => x, policies ); // $ExpectError
+}
+
+// The compiler throws an error if the function is not provided a fourth argument which is a valid policy object...
+{
+	const dtypes: Array<DataType> = [ 'float64', 'float32' ];
+
+	factory( unary, [ dtypes ], dtypes, '5' ); // $ExpectError
+	factory( unary, [ dtypes ], dtypes, 5 ); // $ExpectError
+	factory( unary, [ dtypes ], dtypes, true ); // $ExpectError
+	factory( unary, [ dtypes ], dtypes, false ); // $ExpectError
+	factory( unary, [ dtypes ], dtypes, null ); // $ExpectError
+	factory( unary, [ dtypes ], dtypes, void 0 ); // $ExpectError
+	factory( unary, [ dtypes ], dtypes, [] ); // $ExpectError
+	factory( unary, [ dtypes ], dtypes, ( x: number ): number => x ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided an unsupported number of arguments...
+{
+	const dtypes: Array<DataType> = [ 'float64', 'float32' ];
+	const policies = {
+		'output': 'same' as OutputPolicy,
+		'casting': 'none' as InputCastingPolicy
+	};
+
+	factory(); // $ExpectError
+	factory( unary ); // $ExpectError
+	factory( unary, [ dtypes ] ); // $ExpectError
+	factory( unary, [ dtypes ], dtypes ); // $ExpectError
+	factory( unary, [ dtypes ], dtypes, policies, {} ); // $ExpectError
 }

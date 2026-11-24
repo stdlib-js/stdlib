@@ -53,16 +53,6 @@
     clbk: Function
         Callback to invoke after executing all scripts.
 
-    Examples
-    --------
-    > function done( error ) { if ( error ) { throw error; } };
-    > var files = [ './a.js', './b.js' ];
-    > {{alias}}( files, done );
-
-    // Specify the number of workers:
-    > var opts = { 'workers': 8 };
-    > {{alias}}( files, opts, done );
-
     See Also
     --------
 

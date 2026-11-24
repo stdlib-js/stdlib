@@ -1,0 +1,28 @@
+
+{{alias}}( c )
+    Returns the skewness of a Bradford distribution.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `c <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    c: number
+        Shape Parameter.
+
+    Returns
+    -------
+    out: number
+        Skewness.
+
+    Examples
+    --------
+    > var v = {{alias}}( 11.0 )
+    ~0.829
+    > v = {{alias}}( 1.5 )
+    ~0.316
+
+    See Also
+    --------
+

@@ -38,7 +38,7 @@ interface Sici {
 	*
 	* @example
 	* var v = sici( 0.0 );
-	* // returns [ 0.0, -Infinity  ]
+	* // returns [ 0.0, -Infinity ]
 	*
 	* @example
 	* var v = sici( -9.0 );
@@ -85,7 +85,7 @@ interface Sici {
 *
 * @example
 * var v = sici( 0.0 );
-* // returns [ 0.0, -Infinity  ]
+* // returns [ 0.0, -Infinity ]
 *
 * @example
 * var v = sici( -9.0 );

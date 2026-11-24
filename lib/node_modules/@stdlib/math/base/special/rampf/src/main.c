@@ -26,12 +26,12 @@
 * @return        function value
 *
 * @example
-* float v = stdlib_base_rampf( 3.14 );
-* // returns 3.14
+* float v = stdlib_base_rampf( 3.14f );
+* // returns 3.14f
 *
 * @example
-* float v = stdlib_base_rampf( -3.14 );
-* // returns 0.0
+* float v = stdlib_base_rampf( -3.14f );
+* // returns 0.0f
 */
 float stdlib_base_rampf( const float x ) {
 	if ( stdlib_base_is_nanf( x ) ) {

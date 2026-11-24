@@ -37,7 +37,7 @@ interface Routine {
 	* var x = new Float64Array( [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ] );
 	*
 	* dfill( x.length, 5.0, x, 1 );
-	* // x => <Float64Array>[ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
+	* // x => <Float64Array>[ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ]
 	*/
 	( N: number, alpha: number, x: Float64Array, strideX: number ): Float64Array;
 
@@ -57,7 +57,7 @@ interface Routine {
 	* var x = new Float64Array( [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ] );
 	*
 	* dfill.ndarray( x.length, 5.0, x, 1, 0 );
-	* // x => <Float64Array>[ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
+	* // x => <Float64Array>[ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ]
 	*/
 	ndarray( N: number, alpha: number, x: Float64Array, strideX: number, offsetX: number ): Float64Array;
 }
@@ -77,7 +77,7 @@ interface Routine {
 * var x = new Float64Array( [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ] );
 *
 * dfill( x.length, 5.0, x, 1 );
-* // x => <Float64Array>[ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
+* // x => <Float64Array>[ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ]
 *
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
@@ -85,7 +85,7 @@ interface Routine {
 * var x = new Float64Array( [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ] );
 *
 * dfill.ndarray( x.length, 5.0, x, 1, 0 );
-* // x => <Float64Array>[ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
+* // x => <Float64Array>[ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ]
 */
 declare var dfill: Routine;
 

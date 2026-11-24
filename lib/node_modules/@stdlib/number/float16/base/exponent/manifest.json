@@ -1,0 +1,45 @@
+{
+  "options": {},
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/constants/float16/exponent-bias",
+        "@stdlib/constants/float16/exponent-mask",
+        "@stdlib/constants/float16/num-significand-bits",
+        "@stdlib/number/float16/base/to-word",
+        "@stdlib/number/float16/ctor",
+        "@stdlib/number/float64/base/to-float16"
+      ]
+    }
+  ]
+}

@@ -51,9 +51,7 @@ interface Options {
 * @example
 * var array = require( '@stdlib/ndarray/array' );
 *
-* var x = array( [ [ [ 1, 2 ], [ 3, 4 ] ], [ [ 5, 6 ], [ 7, 8 ] ] ], {
-*     'dtype': 'float64'
-* });
+* var x = array( [ [ [ 1, 2 ], [ 3, 4 ] ], [ [ 5, 6 ], [ 7, 8 ] ] ] );
 * // returns <ndarray>
 *
 * var iter = nditerValues( x );

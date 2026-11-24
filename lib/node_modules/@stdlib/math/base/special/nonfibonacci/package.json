@@ -65,5 +65,79 @@
     "seq",
     "number",
     "integer"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "nonfibonacci",
+      "alias": "nonfibonacci",
+      "pkg_desc": "compute the nth non-Fibonacci number",
+      "desc": "computes the nth non-Fibonacci number",
+      "short_desc": "non-Fibonacci number",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": 0,
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/discrete-uniform",
+            "parameters": [
+              0,
+              100
+            ]
+          },
+          "example_values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "non-Fibonacci number",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "fibonacci",
+        "fib",
+        "sequence",
+        "seq"
+      ],
+      "extra_keywords": []
+    }
+  }
 }

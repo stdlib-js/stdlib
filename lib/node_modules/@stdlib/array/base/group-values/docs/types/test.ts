@@ -26,7 +26,7 @@ import groupValues = require( './index' );
 	const x = [ 1, 2, 3 ];
 	const g = [ 0, 0, 0 ];
 
-	groupValues( x, g ); // $ExpectType ValuesResults<Key, number>
+	groupValues( x, g ); // $ExpectType ValuesResults<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array...

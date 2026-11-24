@@ -46,41 +46,21 @@ Negates a double-precision complex floating-point number.
 
 ```javascript
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var z = new Complex128( -4.2, 5.5 );
 
 var out = cneg( z );
-// returns <Complex128>
-
-var re = real( out );
-// returns 4.2
-
-var im = imag( out );
-// returns -5.5
+// returns <Complex128>[ 4.2, -5.5 ]
 
 z = new Complex128( 0.0, 0.0 );
 
 out = cneg( z );
-// returns <Complex128>
-
-re = real( out );
-// returns -0.0
-
-im = imag( out );
-// returns -0.0
+// returns <Complex128>[ -0.0, -0.0 ]
 
 z = new Complex128( NaN, NaN );
 
 out = cneg( z );
-// returns <Complex128>
-
-re = real( out );
-// returns NaN
-
-im = imag( out );
-// returns NaN
+// returns <Complex128>[ NaN, NaN ]
 ```
 
 </section>

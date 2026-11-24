@@ -94,7 +94,7 @@ The function has the following parameters:
 -   **x**: input array.
 -   **correction**: degrees of freedom adjustment. Setting this parameter to a value other than `0` has the effect of adjusting the divisor during the calculation of the [variance][variance] according to `N-c` where  `N` corresponds to the number of array elements and `c` corresponds to the provided degrees of freedom adjustment. When computing the [variance][variance] of a population, setting this parameter to `0` is the standard choice (i.e., the provided array contains data constituting an entire population). When computing the unbiased sample [variance][variance], setting this parameter to `1` is the standard choice (i.e., the provided array contains data sampled from a larger population; this is commonly referred to as Bessel's correction). Default: `1.0`.
 
-By default, the function computes the sample [variance][variance]. To use adjust the degrees of freedom when computing the [variance][variance], provide a `correction` argument.
+By default, the function computes the sample [variance][variance]. To adjust the degrees of freedom when computing the [variance][variance], provide a `correction` argument.
 
 ```javascript
 var x = [ 1.0, -2.0, 2.0 ];

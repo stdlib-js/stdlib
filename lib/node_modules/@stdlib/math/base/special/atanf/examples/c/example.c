@@ -26,6 +26,6 @@ int main( void ) {
 	int i;
 	for ( i = 0; i < 10; i++ ) {
 		v = stdlib_base_atanf( x[ i ] );
-		printf( "atan(%f) = %f\n", x[ i ], v );
+		printf( "atanf(%f) = %f\n", x[ i ], v );
 	}
 }

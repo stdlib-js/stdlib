@@ -19,8 +19,6 @@
 #ifndef STDLIB_MATH_BASE_SPECIAL_TRIBONACCI_H
 #define STDLIB_MATH_BASE_SPECIAL_TRIBONACCI_H
 
-#include <stdint.h>
-
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -28,7 +26,7 @@ extern "C" {
 /**
 * Computes the nth Tribonacci number.
 */
-double stdlib_base_tribonacci( const int32_t n );
+double stdlib_base_tribonacci( const double n );
 
 #ifdef __cplusplus
 };

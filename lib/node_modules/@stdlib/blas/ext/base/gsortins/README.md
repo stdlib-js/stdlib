@@ -46,7 +46,7 @@ The function has the following parameters:
 -   **N**: number of indexed elements.
 -   **order**: sort order. If `order < 0.0`, the input strided array is sorted in **decreasing** order. If `order > 0.0`, the input strided array is sorted in **increasing** order. If `order == 0.0`, the input strided array is left unchanged.
 -   **x**: input [`Array`][mdn-array] or [`typed array`][mdn-typed-array].
--   **stride**: stride length.
+-   **strideX**: stride length.
 
 The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to sort every other element:
 
@@ -106,7 +106,7 @@ gsortins.ndarray( 3, 1.0, x, 1, x.length-3 );
 ## Notes
 
 -   If `N <= 0` or `order == 0.0`, both functions return `x` unchanged.
--   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array/base/accessor`][@stdlib/array/base/accessor])
+-   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array/base/accessor`][@stdlib/array/base/accessor]).
 -   The algorithm distinguishes between `-0` and `+0`. When sorted in increasing order, `-0` is sorted before `+0`. When sorted in decreasing order, `-0` is sorted after `+0`.
 -   The algorithm sorts `NaN` values to the end. When sorted in increasing order, `NaN` values are sorted last. When sorted in decreasing order, `NaN` values are sorted first.
 -   The algorithm has space complexity `O(1)` and worst case time complexity `O(N^2)`.

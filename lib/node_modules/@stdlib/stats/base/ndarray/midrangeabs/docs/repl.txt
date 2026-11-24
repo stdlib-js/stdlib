@@ -1,0 +1,25 @@
+
+{{alias}}( arrays )
+    Computes the mid-range of absolute values of a one-dimensional ndarray.
+
+    If provided an empty ndarray, the function returns `NaN`.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing a one-dimensional input ndarray.
+
+    Returns
+    -------
+    out: number
+        Mid-range.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/vector/ctor}}( [ 1.0, -2.0, 2.0, 4.0 ], 'generic' );
+    > {{alias}}( [ x ] )
+    2.5
+
+    See Also
+    --------
+

@@ -1,0 +1,38 @@
+
+{{alias}}( arr, fields )
+    Converts array entries to an array of composite views.
+
+    The list of field names should be a two-element array where the first
+    element corresponds to the field name of input array element index and the
+    second element corresponds to the field name of the input array element
+    value.
+
+    For each element of the returned array, the index view field is read-only
+    and cannot be mutated.
+
+    Parameters
+    ----------
+    arr: ArrayLikeObject
+        Input array.
+
+    fields: ArrayLikeObject
+        List of field names.
+
+    Returns
+    -------
+    out: Array<Object>
+        Output array.
+
+    Examples
+    --------
+    > var x = [ 1, 2 ];
+    > var f = [ 'x', 'y' ];
+    > var out = {{alias}}( x, f );
+    > var v = out[ 0 ].toJSON()
+    { 'x': 0, 'y': 1 }
+    > v = out[ 1 ].toJSON()
+    { 'x': 1, 'y': 2 }
+
+    See Also
+    --------
+

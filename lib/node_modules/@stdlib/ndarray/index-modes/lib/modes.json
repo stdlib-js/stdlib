@@ -1,6 +1,6 @@
 [
-	"throw",
+  "throw",
   "normalize",
-	"clamp",
-	"wrap"
+  "clamp",
+  "wrap"
 ]

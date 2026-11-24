@@ -12,7 +12,7 @@
 
     Returns
     -------
-    out: string|null
+    out: string|Function|null
         Data type.
 
     Examples

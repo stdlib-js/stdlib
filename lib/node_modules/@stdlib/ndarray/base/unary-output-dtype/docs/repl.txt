@@ -4,21 +4,22 @@
 
     Parameters
     ----------
-    dtype: string
+    dtype: string|DataType
         Input ndarray data type.
 
-    policy: string
+    policy: string|DataType
         Output ndarray data type policy. If `policy` is a data type, the
         function returns the `policy` value.
 
     Returns
     -------
-    out: string
+    out: DataType
         Output ndarray data type.
 
     Examples
     --------
-    > var out = {{alias}}( 'float64', 'real' )
+    > var dt = {{alias}}( 'float64', 'real' );
+    > String( dt )
     'float64'
 
     See Also

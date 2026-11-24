@@ -139,14 +139,14 @@ float stdlib_base_lnf( const float x ) {
 		return ( xc + xc );
 	}
 	k += ( ( ix >> 23 ) - STDLIB_CONSTANT_FLOAT32_EXPONENT_BIAS );
-	ix &= STDLIB_CONSTANT_FLOAT_SIGNIFICAND_MASK;
+	ix &= STDLIB_CONSTANT_FLOAT32_SIGNIFICAND_MASK;
 	i = ( ix + ( 0x95f64 << 3 ) ) & 0x800000;
 	// normalize x or x/2
 	stdlib_base_float32_from_word( (uint32_t)( ix | ( i ^ 0x3f800000 ) ), &xc );
 	k += ( i >> 23 );
 	f = ( xc - 1.0f );
 	// -2**-9 <= f < 2**-9
-	if ( ( STDLIB_CONSTANT_FLOAT_SIGNIFICAND_MASK & ( 0x8000 + ix ) ) < 0xc000 ) {
+	if ( ( STDLIB_CONSTANT_FLOAT32_SIGNIFICAND_MASK & ( 0x8000 + ix ) ) < 0xc000 ) {
 		if ( f == 0.0f ) {
 			if ( k == 0 ) {
 				return 0.0f;

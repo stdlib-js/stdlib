@@ -148,7 +148,7 @@ interface ArrayWith {
 	* var out = toAccessorArray( [ 0, 0, 0 ] );
 	* var arr = without.assign( x, 0, out, 1, 0 );
 	*
-	* var v = out[ 0 ];
+	* var v = out.get( 0 );
 	* // returns 2
 	*
 	* var bool = ( arr === out );

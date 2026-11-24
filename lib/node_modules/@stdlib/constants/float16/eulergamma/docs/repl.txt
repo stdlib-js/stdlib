@@ -1,0 +1,12 @@
+
+{{alias}}
+    The Euler–Mascheroni constant `γ`.
+
+    Examples
+    --------
+    > {{alias}}
+    0.5771484375
+
+    See Also
+    --------
+

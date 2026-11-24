@@ -1,16 +1,16 @@
 {
-	"opts": {
-		"encoding": "utf8",
-		"destination": "./build/",
-		"package": "",
-		"readme": ""
-	},
-	"plugins": [
-		"plugins/markdown"
-	],
-	"templates": {
-		"default": {
-			"useLongnameInNav": false
-		}
-	}
+  "opts": {
+    "encoding": "utf8",
+    "destination": "./build/",
+    "package": "",
+    "readme": ""
+  },
+  "plugins": [
+    "plugins/markdown"
+  ],
+  "templates": {
+    "default": {
+      "useLongnameInNav": false
+    }
+  }
 }

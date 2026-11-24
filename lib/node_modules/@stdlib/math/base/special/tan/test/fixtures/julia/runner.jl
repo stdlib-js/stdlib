@@ -19,7 +19,7 @@
 import JSON
 
 """
-    gen( domain, name )
+	gen( domain, name )
 
 Generate fixture data and write to file.
 
@@ -114,5 +114,5 @@ x = range( -2.0^60*(pi/2.0), stop = -2.0^1000*(pi/2.0), length = 1000 )
 gen( x, "huge_negative.json" );
 
 # Huge positive values:
-x = range( 2.0^20*(pi/2.0), stop = 2.0^60*(pi/2.0), length = 1000 )
+x = range( 2.0^60*(pi/2.0), stop = 2.0^1000*(pi/2.0), length = 1000 )
 gen( x, "huge_positive.json" );

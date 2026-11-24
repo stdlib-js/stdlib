@@ -134,7 +134,7 @@ interface Flatten2dBy {
 	*
 	* var x = [ [ 1, 2 ], [ 3, 4 ] ];
 	*
-	* var out = flatten2dBy( x, [ 2, 2 ], false, new Float64Array( 4 ), 1, 0, scale );
+	* var out = flatten2dBy.assign( x, [ 2, 2 ], false, new Float64Array( 4 ), 1, 0, scale );
 	* // returns <Float64Array>[ 2, 4, 6, 8 ]
 	*
 	* @example
@@ -146,7 +146,7 @@ interface Flatten2dBy {
 	*
 	* var x = [ [ 1, 2 ], [ 3, 4 ] ];
 	*
-	* var out = flatten2dBy( x, [ 2, 2 ], true, new Float64Array( 4 ), 1, 0, scale );
+	* var out = flatten2dBy.assign( x, [ 2, 2 ], true, new Float64Array( 4 ), 1, 0, scale );
 	* // returns <Float64Array>[ 2, 6, 4, 8 ]
 	*/
 	assign<T = unknown, U = unknown, V = unknown, W = unknown>( x: Array2D<T>, shape: Shape2D, colexicographic: boolean, out: Collection<V>, stride: number, offset: number, clbk: Callback<T, U, W>, thisArg?: ThisParameterType<Callback<T, U, W>> ): Collection<U | V>;

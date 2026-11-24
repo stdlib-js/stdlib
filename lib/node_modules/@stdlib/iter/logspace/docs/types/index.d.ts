@@ -52,7 +52,7 @@ interface Options {
 * @returns iterator
 *
 * @example
-* var iter = iterLogspace( 0, 1000, 4 );
+* var iter = iterLogspace( 0, 3, 4 );
 *
 * var v = iter.next().value;
 * // returns 1

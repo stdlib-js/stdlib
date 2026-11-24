@@ -25,6 +25,7 @@ var bench = require( '@stdlib/bench' );
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var filledBy = require( '@stdlib/array/filled-by' );
 var zeros = require( '@stdlib/array/zeros' );
+var format = require( '@stdlib/string/format' );
 var uniform = require( '@stdlib/random/base/uniform' ).factory;
 var strided = require( '@stdlib/math/strided/ops/mul' );
 var tryRequire = require( '@stdlib/utils/try-require' );
@@ -41,7 +42,7 @@ var opts = {
 
 // MAIN //
 
-bench( pkg+'::stdlib:math/strided/ops/mul:value=array,dtype=generic,len=100', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:math/strided/ops/mul:value=array,dtype=generic,len=100', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var z;
@@ -68,7 +69,7 @@ bench( pkg+'::stdlib:math/strided/ops/mul:value=array,dtype=generic,len=100', op
 
 // TODO: add math/ops/mul benchmarks
 
-bench( pkg+'::mathjs:dotMultiply:value=array,dtype=generic,len=100', opts, function benchmark( b ) {
+bench( format( '%s::mathjs:dotMultiply:value=array,dtype=generic,len=100', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var z;

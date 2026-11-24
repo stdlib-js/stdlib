@@ -23,6 +23,7 @@
 var resolve = require( 'path' ).resolve;
 var bench = require( '@stdlib/bench' );
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
+var format = require( '@stdlib/string/format' );
 var isBoolean = require( '@stdlib/assert/is-boolean' ).isPrimitive;
 var tryRequire = require( '@stdlib/utils/try-require' );
 var every = require( '@stdlib/utils/every' );
@@ -39,7 +40,7 @@ var opts = {
 
 // MAIN //
 
-bench( pkg+'::stdlib:utils/every', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:utils/every', pkg ), opts, function benchmark( b ) {
 	var bool;
 	var arr;
 	var i;
@@ -66,7 +67,7 @@ bench( pkg+'::stdlib:utils/every', opts, function benchmark( b ) {
 	}
 });
 
-bench( pkg+'::lodash:every', opts, function benchmark( b ) {
+bench( format( '%s::lodash:every', pkg ), opts, function benchmark( b ) {
 	var bool;
 	var arr;
 	var i;

@@ -23,7 +23,7 @@
 #include "stdlib/complex/float64/reim.h"
 
 /**
-* Computes the absolute value and the phase of a complex double-precision complex floating-point number.
+* Computes the absolute value and the phase of a double-precision complex floating-point number.
 *
 * @param z       input value
 * @param cabs    destination for absolute value

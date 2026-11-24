@@ -107,14 +107,18 @@ static double add( const double x, const double y ) {
 * @return             elapsed time in seconds
 */
 static double benchmark( int iterations, int len ) {
-	uint8_t m[ len ];
 	double elapsed;
-	double x[ len ];
-	double y[ len ];
-	double z[ len ];
+	uint8_t *m;
+	double *x;
+	double *y;
+	double *z;
 	double t;
 	int i;
 
+	m = (uint8_t *)malloc( len * sizeof( uint8_t ) );
+	x = (double *)malloc( len * sizeof( double ) );
+	y = (double *)malloc( len * sizeof( double ) );
+	z = (double *)malloc( len * sizeof( double ) );
 	for ( i = 0; i < len; i++ ) {
 		x[ i ] = ( rand_double()*200.0 ) - 100.0;
 		y[ i ] = ( rand_double()*200.0 ) - 100.0;
@@ -133,6 +137,10 @@ static double benchmark( int iterations, int len ) {
 	if ( z[ i%len ] != z[ i%len ] ) {
 		printf( "should not return NaN\n" );
 	}
+	free( m );
+	free( x );
+	free( y );
+	free( z );
 	return elapsed;
 }
 

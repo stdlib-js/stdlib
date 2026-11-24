@@ -1,0 +1,37 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2025 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+#include "stdlib/lapack/base/xerbla.h"
+#include "stdlib/lapack/base/shared.h"
+#include <stdio.h>
+
+/**
+* Prints an error message.
+*
+* @param name    routine name (e.g., "dlacpy")
+* @param info    error code (e.g., a negative argument index)
+*/
+void API_SUFFIX(lapack_xerbla)( const char *name, LAPACK_INT info ) {
+	if( info == LAPACK_WORK_MEMORY_ERROR ) {
+		printf( "Error: insufficient memory. Not enough memory to allocate work array in %s.\n", name );
+	} else if( info == LAPACK_TRANSPOSE_MEMORY_ERROR ) {
+		printf( "Error: insufficient memory. Not enough memory to transpose matrix in %s.\n", name );
+	} else if( info < 0 ) {
+		printf( "Error: invalid argument. Must provide a valid argument to routine `%s`. Argument: %" LAPACK_IFMT ".\n", name, -info );
+	}
+}

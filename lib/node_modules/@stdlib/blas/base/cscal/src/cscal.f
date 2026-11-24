@@ -49,19 +49,19 @@
 ! > * We will gladly answer any questions regarding the software. If a modification is done, however, it is the responsibility of the person who modified the routine to provide support.
 !
 ! @param {integer} N - number of indexed elements
-! @param {complex} ca - scalar constant
-! @param {Array<complex>} cx - input array
-! @param {integer} strideX - `cx` stride length
+! @param {complex} alpha - scalar constant
+! @param {Array<complex>} x - input array
+! @param {integer} strideX - `x` stride length
 !<
-subroutine cscal( N, ca, cx, strideX )
+subroutine cscal( N, alpha, x, strideX )
   implicit none
   ! ..
   ! Scalar arguments:
-  complex :: ca
+  complex :: alpha
   integer :: strideX, N
   ! ..
   ! Array arguments:
-  complex :: cx(*)
+  complex :: x(*)
   ! ..
   ! Local scalars:
   integer :: ix, i
@@ -72,12 +72,12 @@ subroutine cscal( N, ca, cx, strideX )
   ! ..
   if ( strideX == 1 ) then
     do i = 1, N
-      cx(i) = ca * cx(i)
+      x(i) = alpha * x(i)
     end do
   else
     ix = 1
     do i = 1, N
-      cx(ix) = ca * cx(ix)
+      x(ix) = alpha * x(ix)
       ix = ix + strideX
     end do
   end if

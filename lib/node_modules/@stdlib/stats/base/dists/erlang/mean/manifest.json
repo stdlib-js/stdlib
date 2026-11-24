@@ -56,8 +56,7 @@
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/constants/float64/eps",
-        "@stdlib/math/base/special/ceil",
-        "@stdlib/math/base/special/round"
+        "@stdlib/math/base/special/ceil"
       ]
     },
     {
@@ -74,7 +73,6 @@
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/constants/float64/eps",
-        "@stdlib/math/base/special/ceil",
         "@stdlib/math/base/special/round"
       ]
     }

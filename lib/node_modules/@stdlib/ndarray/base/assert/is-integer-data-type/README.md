@@ -42,7 +42,7 @@ var isIntegerDataType = require( '@stdlib/ndarray/base/assert/is-integer-data-ty
 
 #### isIntegerDataType( value )
 
-Tests if an input `value` is a supported ndarray integer (i.e., signed or unsigned integer) data type.
+Tests if an input value is a supported ndarray integer (i.e., signed or unsigned integer) data type.
 
 ```javascript
 var bool = isIntegerDataType( 'float32' );

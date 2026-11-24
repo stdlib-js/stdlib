@@ -19,7 +19,7 @@
 #ifndef STDLIB_MATH_BASE_SPECIAL_CFLIPSIGNF_H
 #define STDLIB_MATH_BASE_SPECIAL_CFLIPSIGNF_H
 
-#include <complex.h>
+#include "stdlib/complex/float32/ctor.h"
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
@@ -31,7 +31,7 @@ extern "C" {
 /**
 * Returns a single-precision complex floating-point number with the same magnitude as `z` and the sign of `y*z`.
 */
-float complex stdlib_base_cflipsignf( const float complex z, const float y );
+stdlib_complex64_t stdlib_base_cflipsignf( const stdlib_complex64_t z, const float y );
 
 #ifdef __cplusplus
 }

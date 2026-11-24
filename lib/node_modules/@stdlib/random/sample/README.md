@@ -108,7 +108,7 @@ The `probs` option **must** be a numeric array consisting of nonnegative values 
 
 #### sample.factory( \[pool, ]\[options] )
 
-Returns a `function` to sample elements from an `array`-like object. 
+Returns a `function` to sample elements from an `array`-like object.
 
 ```javascript
 var mysample = sample.factory();

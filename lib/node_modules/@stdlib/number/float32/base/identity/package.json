@@ -60,7 +60,8 @@
     "single",
     "single-precision",
     "float",
-    "float32"
+    "float32",
+    "number"
   ],
   "__stdlib__": {}
 }

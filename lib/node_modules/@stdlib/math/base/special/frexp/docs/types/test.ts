@@ -25,7 +25,7 @@ import frexp = require( './index' );
 
 // The function returns an array of numbers...
 {
-	frexp( 4.0 ); // $ExpectType number[]
+	frexp( 4.0 ); // $ExpectType [number, number]
 }
 
 // The compiler throws an error if the function is provided an argument which is not a number...

@@ -1,0 +1,110 @@
+{
+  "options": {
+    "task": "build",
+    "wasm": false
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/number/float16/ctor",
+        "@stdlib/constants/float32/sign-mask",
+        "@stdlib/constants/float32/exponent-mask",
+        "@stdlib/constants/float32/significand-mask",
+        "@stdlib/constants/float32/num-significand-bits",
+        "@stdlib/number/float32/base/exponent"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/number/float16/ctor",
+        "@stdlib/constants/float32/sign-mask",
+        "@stdlib/constants/float32/exponent-mask",
+        "@stdlib/constants/float32/significand-mask",
+        "@stdlib/constants/float32/num-significand-bits",
+        "@stdlib/number/float32/base/exponent"
+      ]
+    },
+    {
+      "task": "examples",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/number/float16/ctor",
+        "@stdlib/constants/float32/sign-mask",
+        "@stdlib/constants/float32/exponent-mask",
+        "@stdlib/constants/float32/significand-mask",
+        "@stdlib/constants/float32/num-significand-bits",
+        "@stdlib/number/float32/base/exponent"
+      ]
+    },
+    {
+      "task": "",
+      "wasm": true,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/number/float16/ctor",
+        "@stdlib/constants/float32/sign-mask",
+        "@stdlib/constants/float32/exponent-mask",
+        "@stdlib/constants/float32/significand-mask",
+        "@stdlib/constants/float32/num-significand-bits",
+        "@stdlib/number/float32/base/exponent"
+      ]
+    }
+  ]
+}

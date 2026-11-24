@@ -1,7 +1,7 @@
 #/
 # @license Apache-2.0
 #
-# Copyright (c) 2025 The Stdlib Authors.
+# Copyright (c) 2026 The Stdlib Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -57,7 +57,7 @@ endif
 
 # Define the command-line options when compiling C++ files:
 CXXFLAGS ?= \
-	-std=c++11 \
+	-std=c++14 \
 	-O3 \
 	-Wall \
 	-pedantic

@@ -119,10 +119,8 @@ interface Model {
 * @returns regression model
 *
 * @example
-* var incrSGDRegression = require( '@stdlib/streams/ml/incr/sgd-regression' );
-*
 * var accumulator = incrSGDRegression({
-*     'intercept': true
+*     'intercept': true,
 *     'lambda': 1e-5
 * });
 *

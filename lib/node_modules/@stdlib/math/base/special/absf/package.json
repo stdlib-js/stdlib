@@ -67,5 +67,82 @@
     "float",
     "single-precision"
   ],
-  "__stdlib__": {}
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "abs",
+      "alias": "absf",
+      "pkg_desc": "compute the absolute value of a single-precision floating-point number",
+      "desc": "computes the absolute value of a single-precision floating-point number",
+      "short_desc": "absolute value",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "float",
+            "dtype": "float32"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -10,
+              10
+            ]
+          },
+          "example_values": [
+            64,
+            27,
+            0,
+            0.1,
+            -9,
+            8,
+            -1,
+            125,
+            -10.2,
+            11.3,
+            -12.4,
+            3.5,
+            -1.6,
+            15.7,
+            -16,
+            17.9,
+            -188,
+            19.11,
+            -200,
+            21.15
+          ]
+        }
+      ],
+      "output_policy": "same",
+      "returns": {
+        "desc": "absolute value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        }
+      },
+      "keywords": [
+        "abs",
+        "absf",
+        "fabsf",
+        "absolute",
+        "magnitude",
+        "value"
+      ],
+      "extra_keywords": [
+        "math.abs"
+      ]
+    }
+  }
 }

@@ -1,0 +1,45 @@
+
+{{alias}}( n )
+    Computes the nth Bernoulli number as a single-precision floating-point
+    number.
+
+    If not provided a nonnegative integer value, the function returns `NaN`.
+
+    If provided `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    n: integer
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Bernoulli number.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0 )
+    1.0
+    > y = {{alias}}( 1 )
+    0.5
+    > y = {{alias}}( 2 )
+    ~0.167
+    > y = {{alias}}( 3 )
+    0.0
+    > y = {{alias}}( 4 )
+    ~-0.033
+    > y = {{alias}}( 5 )
+    0.0
+    > y = {{alias}}( 20 )
+    ~-529.124
+    > y = {{alias}}( 66 )
+    Infinity
+    > y = {{alias}}( 68 )
+    -Infinity
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

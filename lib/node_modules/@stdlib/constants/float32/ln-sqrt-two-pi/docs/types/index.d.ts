@@ -23,7 +23,7 @@
 *
 * @example
 * var val = FLOAT32_LN_SQRT_TWO_PI;
-* // returns 0.9189385332046728
+* // returns 0.9189385175704956
 */
 declare const FLOAT32_LN_SQRT_TWO_PI: number;
 

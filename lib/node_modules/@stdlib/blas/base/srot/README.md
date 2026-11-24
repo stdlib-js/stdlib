@@ -69,7 +69,7 @@ The function has the following parameters:
 -   **c**: cosine of the angle of rotation.
 -   **s**: sine of the angle of rotation.
 
-The `N` and stride parameters determine how values in the strided arrays are accessed at runtime. For example, to apply a plane rotation to every other element, 
+The `N` and stride parameters determine how values in the strided arrays are accessed at runtime. For example, to apply a plane rotation to every other element,
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -169,7 +169,7 @@ console.log( x );
 var y = discreteUniform( x.length, 0, 255, opts );
 console.log( y );
 
-// Applies a plane rotation :
+// Apply a plane rotation:
 srot( x.length, x, 1, y, 1, 0.8, 0.6 );
 console.log( x );
 console.log( y );

@@ -16,6 +16,10 @@
 * limitations under the License.
 */
 
+// FIXME: Re-enable `stdlib/tsdoc-declarations-doctest` lint rule once `@stdlib/ndarray/base/ternary`, `@stdlib/ndarray/base/quaternary`, and `@stdlib/ndarray/base/quinary` exist...
+
+/* eslint-disable stdlib/tsdoc-declarations-doctest */
+
 // TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>

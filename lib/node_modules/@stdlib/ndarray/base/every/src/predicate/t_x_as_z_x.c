@@ -105,7 +105,7 @@
 *
 * // Define a callback:
 * static bool fcn( const stdlib_complex128_t x ) {
-*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) == 0.0 );
 * }
 *
 * // Test elements:
@@ -211,7 +211,7 @@ int8_t stdlib_ndarray_every_by_t_x_as_z_x_0d( struct ndarray *arrays[], void *fc
 *
 * // Define a callback:
 * static bool fcn( const stdlib_complex128_t x ) {
-*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) == 0.0 );
 * }
 *
 * // Test elements:
@@ -309,7 +309,7 @@ int8_t stdlib_ndarray_every_by_t_x_as_z_x_1d( struct ndarray *arrays[], void *fc
 *
 * // Define a callback:
 * static bool fcn( const stdlib_complex128_t x ) {
-*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) == 0.0 );
 * }
 *
 * // Test elements:
@@ -407,7 +407,7 @@ int8_t stdlib_ndarray_every_by_t_x_as_z_x_2d( struct ndarray *arrays[], void *fc
 *
 * // Define a callback:
 * static bool fcn( const stdlib_complex128_t x ) {
-*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) == 0.0 );
 * }
 *
 * // Test elements:
@@ -505,7 +505,7 @@ int8_t stdlib_ndarray_every_by_t_x_as_z_x_2d_blocked( struct ndarray *arrays[], 
 *
 * // Define a callback:
 * static bool fcn( const stdlib_complex128_t x ) {
-*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) == 0.0 );
 * }
 *
 * // Test elements:
@@ -603,7 +603,7 @@ int8_t stdlib_ndarray_every_by_t_x_as_z_x_3d( struct ndarray *arrays[], void *fc
 *
 * // Define a callback:
 * static bool fcn( const stdlib_complex128_t x ) {
-*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) == 0.0 );
 * }
 *
 * // Test elements:
@@ -701,7 +701,7 @@ int8_t stdlib_ndarray_every_by_t_x_as_z_x_3d_blocked( struct ndarray *arrays[], 
 *
 * // Define a callback:
 * static bool fcn( const stdlib_complex128_t x ) {
-*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) == 0.0 );
 * }
 *
 * // Test elements:
@@ -799,7 +799,7 @@ int8_t stdlib_ndarray_every_by_t_x_as_z_x_4d( struct ndarray *arrays[], void *fc
 *
 * // Define a callback:
 * static bool fcn( const stdlib_complex128_t x ) {
-*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) == 0.0 );
 * }
 *
 * // Test elements:
@@ -897,7 +897,7 @@ int8_t stdlib_ndarray_every_by_t_x_as_z_x_4d_blocked( struct ndarray *arrays[], 
 *
 * // Define a callback:
 * static bool fcn( const stdlib_complex128_t x ) {
-*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) == 0.0 );
 * }
 *
 * // Test elements:
@@ -995,7 +995,7 @@ int8_t stdlib_ndarray_every_by_t_x_as_z_x_5d( struct ndarray *arrays[], void *fc
 *
 * // Define a callback:
 * static bool fcn( const stdlib_complex128_t x ) {
-*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) == 0.0 );
 * }
 *
 * // Test elements:
@@ -1093,7 +1093,7 @@ int8_t stdlib_ndarray_every_by_t_x_as_z_x_5d_blocked( struct ndarray *arrays[], 
 *
 * // Define a callback:
 * static bool fcn( const stdlib_complex128_t x ) {
-*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) == 0.0 );
 * }
 *
 * // Test elements:
@@ -1191,7 +1191,7 @@ int8_t stdlib_ndarray_every_by_t_x_as_z_x_6d( struct ndarray *arrays[], void *fc
 *
 * // Define a callback:
 * static bool fcn( const stdlib_complex128_t x ) {
-*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) == 0.0 );
 * }
 *
 * // Test elements:
@@ -1289,7 +1289,7 @@ int8_t stdlib_ndarray_every_by_t_x_as_z_x_6d_blocked( struct ndarray *arrays[], 
 *
 * // Define a callback:
 * static bool fcn( const stdlib_complex128_t x ) {
-*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) == 0.0 );
 * }
 *
 * // Test elements:
@@ -1387,7 +1387,7 @@ int8_t stdlib_ndarray_every_by_t_x_as_z_x_7d( struct ndarray *arrays[], void *fc
 *
 * // Define a callback:
 * static bool fcn( const stdlib_complex128_t x ) {
-*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) == 0.0 );
 * }
 *
 * // Test elements:
@@ -1485,7 +1485,7 @@ int8_t stdlib_ndarray_every_by_t_x_as_z_x_7d_blocked( struct ndarray *arrays[], 
 *
 * // Define a callback:
 * static bool fcn( const stdlib_complex128_t x ) {
-*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) == 0.0 );
 * }
 *
 * // Test elements:
@@ -1583,7 +1583,7 @@ int8_t stdlib_ndarray_every_by_t_x_as_z_x_8d( struct ndarray *arrays[], void *fc
 *
 * // Define a callback:
 * static bool fcn( const stdlib_complex128_t x ) {
-*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) == 0.0 );
 * }
 *
 * // Test elements:
@@ -1681,7 +1681,7 @@ int8_t stdlib_ndarray_every_by_t_x_as_z_x_8d_blocked( struct ndarray *arrays[], 
 *
 * // Define a callback:
 * static bool fcn( const stdlib_complex128_t x ) {
-*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) == 0.0 );
 * }
 *
 * // Test elements:
@@ -1779,7 +1779,7 @@ int8_t stdlib_ndarray_every_by_t_x_as_z_x_9d( struct ndarray *arrays[], void *fc
 *
 * // Define a callback:
 * static bool fcn( const stdlib_complex128_t x ) {
-*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) == 0.0 );
 * }
 *
 * // Test elements:
@@ -1877,7 +1877,7 @@ int8_t stdlib_ndarray_every_by_t_x_as_z_x_9d_blocked( struct ndarray *arrays[], 
 *
 * // Define a callback:
 * static bool fcn( const stdlib_complex128_t x ) {
-*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) == 0.0 );
 * }
 *
 * // Test elements:
@@ -1975,7 +1975,7 @@ int8_t stdlib_ndarray_every_by_t_x_as_z_x_10d( struct ndarray *arrays[], void *f
 *
 * // Define a callback:
 * static bool fcn( const stdlib_complex128_t x ) {
-*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) == 0.0 );
 * }
 *
 * // Test elements:
@@ -2073,7 +2073,7 @@ int8_t stdlib_ndarray_every_by_t_x_as_z_x_10d_blocked( struct ndarray *arrays[],
 *
 * // Define a callback:
 * static bool fcn( const stdlib_complex128_t x ) {
-*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) == 0.0 );
 * }
 *
 * // Test elements:
@@ -2215,7 +2215,7 @@ static const struct ndarrayEveryDispatchObject obj = {
 *
 * // Define a callback:
 * static bool fcn( const stdlib_complex128_t x ) {
-*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+*     return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) == 0.0 );
 * }
 *
 * // Test elements:

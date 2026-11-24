@@ -1,0 +1,39 @@
+
+{{alias}}( x[, correction] )
+    Computes the standard deviation of an array ignoring `NaN` values and using
+    a one-pass algorithm proposed by Youngs and Cramer.
+
+    If provided an empty array, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: Array<number>|TypedArray
+        Input array.
+
+    correction: number (optional)
+        Degrees of freedom adjustment. Setting this parameter to a value other
+        than `0` has the effect of adjusting the divisor during the calculation
+        of the standard deviation according to `N-c` where `N` corresponds to
+        the number of non-NaN array elements and `c` corresponds to the provided
+        degrees of freedom adjustment. When computing the standard deviation of
+        a population, setting this parameter to `0` is the standard choice
+        (i.e., the provided array contains data constituting an entire
+        population). When computing the unbiased sample standard deviation,
+        setting this parameter to `1` is the standard choice (i.e., the
+        provided array contains data sampled from a larger population; this is
+        commonly referred to as Bessel's correction). Default: 1.0.
+
+    Returns
+    -------
+    out: number
+        The standard deviation.
+
+    Examples
+    --------
+    > var x = [ 1.0, -2.0, NaN, 2.0 ];
+    > {{alias}}( x, 1.0 )
+    ~2.0817
+
+    See Also
+    --------
+

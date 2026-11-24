@@ -93,7 +93,7 @@ bool = isInt8Array( new Float32Array( 10 ) );
 bool = isInt8Array( new Float64Array( 10 ) );
 // returns false
 
-bool = isInt8Array( new Array( 10 ) );
+bool = isInt8Array( [] );
 // returns false
 
 bool = isInt8Array( {} );

@@ -1,0 +1,62 @@
+
+{{alias}}( prng, idtypes, odtypes, policies[, options] )
+    Returns a function for generating pseudorandom values drawn from a binary
+    PRNG.
+
+    Parameters
+    ----------
+    prng: Function
+        Binary pseudorandom value generator. Must have the following methods:
+
+        - factory: returns a new binary pseudorandom value generator.
+
+    idtypes: Array<Array<string|DataType>>
+        List containing a list of supported input data types for each PRNG
+        parameter.
+
+    odtypes: Array<string|DataType>
+        List of supported output data types.
+
+    policies: Object
+        Interface policies. Must have the following properties:
+
+        - output: output data type policy.
+
+    options: Object (optional)
+        Function options.
+
+    options.order: string (optional)
+        Default memory layout order.
+
+    Returns
+    -------
+    fcn: Function
+        Factory function for generating pseudorandom values drawn from a binary
+        PRNG. The function accepts a single optional argument:
+
+        - options: function options.
+
+        The function supports the following options:
+
+        - prng: pseudorandom number generator which generates uniformly
+        distributed pseudorandom numbers.
+        - seed: pseudorandom value generator seed.
+        - state: pseudorandom value generator state.
+        - copy: boolean indicating whether to copy a provided pseudorandom value
+        generator state.
+
+    Examples
+    --------
+    > var dts = [ 'float64', 'float32', 'generic' ];
+    > var p = { 'output': 'real_floating_point_and_generic' };
+    > var r = {{alias:@stdlib/random/base/uniform}};
+    > var f = {{alias}}( r, [ dts, dts ], dts, p );
+    > var fcn = f();
+    > fcn( [ 2, 2 ], 0.0, 1.0 )
+    <ndarray>
+    > fcn( [ 2, 2 ], 0.0, 1.0, { 'dtype': 'float32' } )
+    <ndarray>
+
+    See Also
+    --------
+

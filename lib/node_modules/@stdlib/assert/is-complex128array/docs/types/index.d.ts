@@ -29,6 +29,8 @@ import { Complex128Array } from '@stdlib/types/array';
 * @returns boolean indicating whether value is a Complex128Array
 *
 * @example
+* var Complex128Array = require( '@stdlib/array/complex128' );
+*
 * var bool = isComplex128Array( new Complex128Array( 10 ) );
 * // returns true
 *

@@ -16,7 +16,8 @@
   ],
   "main": "./package.json",
   "directories": {
-    "benchmark": "./benchmark"
+    "benchmark": "./benchmark",
+    "data": "./data"
   },
   "scripts": {
     "bench": "make benchmark"
@@ -33,6 +34,7 @@
     "@tensorflow/tfjs": "^4.20.0",
     "@tensorflow/tfjs-node": "^4.20.0"
   },
+  "devDependencies": {},
   "engines": {},
   "os": [
     "aix",

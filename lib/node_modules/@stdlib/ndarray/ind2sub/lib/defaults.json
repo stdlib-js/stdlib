@@ -1,4 +1,4 @@
 {
-	"mode": "throw",
-	"order": "row-major"
+  "mode": "throw",
+  "order": "row-major"
 }

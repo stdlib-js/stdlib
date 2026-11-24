@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the Fortran interface to the BLAS Level 1 routine `zscal`.
 */
-#ifndef ZSCAL_FORTRAN_H
-#define ZSCAL_FORTRAN_H
+#ifndef STDLIB_BLAS_BASE_ZSCAL_FORTRAN_H
+#define STDLIB_BLAS_BASE_ZSCAL_FORTRAN_H
 
 #include "stdlib/complex/float64/ctor.h"
 
@@ -40,4 +40,4 @@ void zscal( const int *, const stdlib_complex128_t *, void *, const int * );
 }
 #endif
 
-#endif // !ZSCAL_FORTRAN_H
+#endif // !STDLIB_BLAS_BASE_ZSCAL_FORTRAN_H

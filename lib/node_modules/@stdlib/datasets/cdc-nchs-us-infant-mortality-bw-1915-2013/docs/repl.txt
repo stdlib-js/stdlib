@@ -10,7 +10,7 @@
 
     Returns
     -------
-    out: Array<Object>
+    out: Object
         Infant mortality data.
 
     Examples

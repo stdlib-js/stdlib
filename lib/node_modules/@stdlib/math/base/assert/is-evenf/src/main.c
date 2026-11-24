@@ -18,6 +18,7 @@
 
 #include "stdlib/math/base/assert/is_evenf.h"
 #include "stdlib/math/base/assert/is_integerf.h"
+#include <stdbool.h>
 
 /**
 * Test if a finite single-precision floating-point number is an even number.

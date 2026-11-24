@@ -26,7 +26,7 @@
 * @returns array of parsed values or an error
 *
 * @example
-* var arr = parseNDJSON( '{"beep":"boop"}\\n{"example":42}\\n{"data":[1,2,3]}' );
+* var arr = parseNDJSON( '{"beep":"boop"}\n{"example":42}\n{"data":[1,2,3]}' );
 * // returns [ { 'beep': 'boop' }, { 'example': 42 }, { 'data': [ 1, 2, 3 ] } ]
 */
 

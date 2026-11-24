@@ -62,6 +62,7 @@
     "sqrt1_2",
     "math.sqrt1_2",
     "ieee754",
+    "float",
     "single",
     "floating-point",
     "float32"

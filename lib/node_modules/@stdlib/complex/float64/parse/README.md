@@ -45,19 +45,10 @@ var parseComplex128 = require( '@stdlib/complex/float64/parse' );
 Parses a string representation of a 128-bit [complex number][@stdlib/complex/float64/ctor].
 
 ```javascript
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
-
 var str = '5 + 3i';
 
 var z = parseComplex128( str );
-// returns <Complex128>
-
-var re = real( z );
-// returns 5.0
-
-var im = imag( z );
-// returns 3.0
+// returns <Complex128>[ 5.0, 3.0 ]
 ```
 
 For details on the string format, see [Complex128][@stdlib/complex/float64/ctor].

@@ -68,7 +68,7 @@ var bool = everyBy( arr, isPositive );
 // returns false
 ```
 
-The invoked `function` is provided three arguments:
+The invoked `predicate` function is provided three arguments:
 
 -   **value**: collection element.
 -   **index**: collection index.

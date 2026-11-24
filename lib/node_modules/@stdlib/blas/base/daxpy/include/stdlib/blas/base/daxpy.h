@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the BLAS Level 1 routine `daxpy`.
 */
-#ifndef DAXPY_H
-#define DAXPY_H
+#ifndef STDLIB_BLAS_BASE_DAXPY_H
+#define STDLIB_BLAS_BASE_DAXPY_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -45,4 +45,4 @@ void API_SUFFIX(c_daxpy_ndarray)( const CBLAS_INT N, const double alpha, const d
 }
 #endif
 
-#endif // !DAXPY_H
+#endif // !STDLIB_BLAS_BASE_DAXPY_H

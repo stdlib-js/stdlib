@@ -16,6 +16,8 @@
 * limitations under the License.
 */
 
+/* eslint-disable @typescript-eslint/no-unused-expressions */
+
 import Complex64 = require( './index' );
 
 
@@ -25,16 +27,9 @@ import Complex64 = require( './index' );
 {
 	const x = new Complex64( 5.0, 3.0 ); // $ExpectType Complex64
 
-	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	x.im; // $ExpectType number
-
-	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	x.re; // $ExpectType number
-
-	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	x.BYTES_PER_ELEMENT; // $ExpectType 4
-
-	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	x.byteLength; // $ExpectType 8
 }
 
@@ -42,7 +37,6 @@ import Complex64 = require( './index' );
 {
 	const x = new Complex64( 5.0, 3.0 ); // $ExpectType Complex64
 
-	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	x.toString(); // $ExpectType string
 }
 
@@ -50,7 +44,6 @@ import Complex64 = require( './index' );
 {
 	const x = new Complex64( 5.0, 3.0 ); // $ExpectType Complex64
 
-	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	x.toJSON(); // $ExpectType any
 }
 
@@ -61,9 +54,6 @@ import Complex64 = require( './index' );
 
 // The compiler throws an error if the constructor is provided an unsupported number of arguments...
 {
-	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	new Complex64( 5.0 ); // $ExpectError
-
-	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	new Complex64( 5.0, 3.0, 1.0 ); // $ExpectError
 }

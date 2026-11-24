@@ -54,7 +54,7 @@ v = resolve( str2enum( 'left' ) );
 // returns 'left'
 ```
 
-If unable to resolve a operation side string, the function returns `null`.
+If unable to resolve an operation side string, the function returns `null`.
 
 ```javascript
 var v = resolve( 'beep' );

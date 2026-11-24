@@ -1,0 +1,31 @@
+
+{{alias}}( x, n )
+    Returns a read-only view of an input ndarray with a specified number of
+    prepended singleton dimensions.
+
+    If `n` is equal to zero, the function returns a read-only view of the input
+    ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    n: integer
+        Number of singleton dimensions to prepend.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
+    <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
+    > var y = {{alias}}( x, 3 )
+    <ndarray>[ [ [ [ [ 1, 2 ], [ 3, 4 ] ] ] ] ]
+
+    See Also
+    --------
+

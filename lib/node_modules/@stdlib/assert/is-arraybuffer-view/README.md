@@ -109,7 +109,7 @@ bool = isArrayBufferView( null );
 ## See Also
 
 -   <span class="package-name">[`@stdlib/assert/is-dataview`][@stdlib/assert/is-dataview]</span><span class="delimiter">: </span><span class="description">test if a value is a DataView.</span>
--   <span class="package-name">[`@stdlib/assert/is-typed-array`][@stdlib/assert/is-typed-array]</span><span class="delimiter">: </span><span class="description">test if a value is a typed array.</span>
+-   <span class="package-name">[`@stdlib/assert/is-typed-array`][@stdlib/assert/is-typed-array]</span><span class="delimiter">: </span><span class="description">test if a value is a built-in typed array.</span>
 
 </section>
 

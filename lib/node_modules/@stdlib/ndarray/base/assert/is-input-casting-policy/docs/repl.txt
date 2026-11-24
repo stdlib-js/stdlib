@@ -1,0 +1,31 @@
+
+{{alias}}( value )
+    Tests if an input value is a supported input ndarray casting policy.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an input value is a supported input ndarray
+        casting policy.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 'none' )
+    true
+    > bool = {{alias}}( 'promoted' )
+    true
+    > bool = {{alias}}( 'output' )
+    true
+    > bool = {{alias}}( '' )
+    false
+    > bool = {{alias}}( 'beep' )
+    false
+
+    See Also
+    --------
+

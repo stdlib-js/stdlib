@@ -1,0 +1,142 @@
+
+{{alias}}( N, correction, meanx, x, sx, meany, y, sy )
+    Computes the covariance of two single-precision floating-point strided
+    arrays provided known means and using a one-pass textbook algorithm.
+
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use a typed
+    array view.
+
+    If `N <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    correction: number
+        Degrees of freedom adjustment. Setting this parameter to a value other
+        than `0` has the effect of adjusting the divisor during the calculation
+        of the covariance according to `N - c` where `c` corresponds to the
+        provided degrees of freedom adjustment. When computing the population
+        covariance, setting this parameter to `0` is the standard choice (i.e.,
+        the provided arrays contain data constituting entire populations). When
+        computing the unbiased sample covariance, setting this parameter to `1`
+        is the standard choice (i.e., the provided array contains data sampled
+        from larger populations; this is commonly referred to as Bessel's
+        correction).
+
+    meanx: number
+        Mean of `x`.
+
+    x: Float32Array
+        First input array.
+
+    sx: integer
+        Stride length of `x`.
+
+    meany: number
+        Mean of `y`.
+
+    y: Float32Array
+        Second input array.
+
+    sy: integer
+        Stride length of `y`.
+
+    Returns
+    -------
+    out: number
+        The covariance.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 2.0 ] );
+    > {{alias}}( x.length, 1, 1.0/3.0, x, 1, 1.0/3.0, x, 1 )
+    ~4.3333
+
+    // Using `N` and stride parameters:
+    > x = new {{alias:@stdlib/array/float32}}( [ -2.0, 1.0, 1.0, -5.0, 2.0, -1.0 ] );
+    > {{alias}}( 3, 1, 1.0/3.0, x, 2, 1.0/3.0, x, 2 )
+    ~4.3333
+
+    // Using view offsets:
+    > var x0 = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 3.0, 2.0, 5.0, 1.0 ] );
+    > var x1 = new {{alias:@stdlib/array/float32}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > {{alias}}( 3, 1, 1.0/3.0, x1, 2, 1.0/3.0, x1, 2 )
+    ~4.3333
+
+
+{{alias}}.ndarray( N, correction, meanx, x, sx, ox, meany, y, sy, oy )
+    Computes the covariance of two single-precision floating-point strided
+    arrays provided known means and using a one-pass textbook algorithm and
+    alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    correction: number
+        Degrees of freedom adjustment. Setting this parameter to a value other
+        than `0` has the effect of adjusting the divisor during the calculation
+        of the covariance according to `N - c` where `c` corresponds to the
+        provided degrees of freedom adjustment. When computing the population
+        covariance, setting this parameter to `0` is the standard choice (i.e.,
+        the provided arrays contain data constituting entire populations). When
+        computing the unbiased sample covariance, setting this parameter to
+        `1` is the standard choice (i.e., the provided arrays contain data
+        sampled from larger populations; this is commonly referred to as
+        Bessel's correction).
+
+    meanx: number
+        Mean of `x`.
+
+    x: Float32Array
+        First input array.
+
+    sx: integer
+        Stride length of `x`.
+
+    ox: integer
+        Starting index of `x`.
+
+    meany: number
+        Mean of `y`.
+
+    y: Float32Array
+        Second input array.
+
+    sy: integer
+        Stride length of `y`.
+
+    oy: integer
+        Starting index of `y`.
+
+    Returns
+    -------
+    out: number
+        The covariance.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 2.0 ] );
+    > {{alias}}.ndarray( x.length, 1, 1.0/3.0, x, 1, 0, 1.0/3.0, x, 1, 0 )
+    ~4.3333
+
+    // Using offset parameters:
+    > var x = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 3.0, 2.0, 5.0, 1.0 ] );
+    > {{alias}}.ndarray( 3, 1, 1.0/3.0, x, 2, 1, 1.0/3.0, x, 2, 1 )
+    ~4.3333
+
+    See Also
+    --------
+

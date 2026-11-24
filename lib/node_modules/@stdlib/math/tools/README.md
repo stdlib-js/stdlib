@@ -45,7 +45,7 @@ The namespace exposes the following functions:
 
 <div class="namespace-toc">
 
--   <span class="signature">[`unary( table )`][@stdlib/math/tools/unary]</span><span class="delimiter">: </span><span class="description">multiple dispatch for unary mathematical functions.</span>
+-   <span class="signature">[`unary( fcn, idtypes, odtypes, policies )`][@stdlib/math/tools/unary]</span><span class="delimiter">: </span><span class="description">create a function which performs element-wise computation by applying a unary function to each element in an input ndarray.</span>
 
 </div>
 

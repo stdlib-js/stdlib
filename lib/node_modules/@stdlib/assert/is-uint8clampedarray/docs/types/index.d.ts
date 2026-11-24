@@ -25,6 +25,8 @@
 * @returns boolean indicating whether value is a Uint8ClampedArray
 *
 * @example
+* var Uint8ClampedArray = require( '@stdlib/array/uint8c' );
+*
 * var bool = isUint8ClampedArray( new Uint8ClampedArray( 10 ) );
 * // returns true
 *

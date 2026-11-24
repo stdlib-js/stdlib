@@ -156,7 +156,7 @@ import random = require( './index' );
 	random.factory( { 'name': null } ); // $ExpectError
 	random.factory( { 'name': [] } ); // $ExpectError
 	random.factory( { 'name': {} } ); // $ExpectError
-	random.factory( { 'name': true ); // $ExpectError
+	random.factory( { 'name': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -176,7 +176,7 @@ import random = require( './index' );
 	random.factory( { 'state': null } ); // $ExpectError
 	random.factory( { 'state': [] } ); // $ExpectError
 	random.factory( { 'state': {} } ); // $ExpectError
-	random.factory( { 'state': true ); // $ExpectError
+	random.factory( { 'state': true } ); // $ExpectError
 	random.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

@@ -62,8 +62,8 @@ import triangular = require( './index' );
 // Attached to main export is a `factory` method which returns a function...
 {
 	triangular.factory( 2, 4, 2.7 ); // $ExpectType NullaryFunction
-	triangular.factory(); // $ExpectType BinaryFunction
-	triangular.factory( { 'copy': false } ); // $ExpectType BinaryFunction
+	triangular.factory(); // $ExpectType TernaryFunction
+	triangular.factory( { 'copy': false } ); // $ExpectType TernaryFunction
 }
 
 // The `factory` method returns a function which returns a number...
@@ -180,14 +180,14 @@ import triangular = require( './index' );
 	triangular.factory( 2, 4, 2.5, { 'prng': null } ); // $ExpectError
 	triangular.factory( 2, 4, 2.5, { 'prng': [] } ); // $ExpectError
 	triangular.factory( 2, 4, 2.5, { 'prng': {} } ); // $ExpectError
-	triangular.factory( 2, 4, 2.5, { 'prng': true ); // $ExpectError
+	triangular.factory( 2, 4, 2.5, { 'prng': true } ); // $ExpectError
 
 	triangular.factory( { 'prng': 123 } ); // $ExpectError
 	triangular.factory( { 'prng': 'abc' } ); // $ExpectError
 	triangular.factory( { 'prng': null } ); // $ExpectError
 	triangular.factory( { 'prng': [] } ); // $ExpectError
 	triangular.factory( { 'prng': {} } ); // $ExpectError
-	triangular.factory( { 'prng': true ); // $ExpectError
+	triangular.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -214,7 +214,7 @@ import triangular = require( './index' );
 	triangular.factory( 2, 4, 2.5, { 'state': null } ); // $ExpectError
 	triangular.factory( 2, 4, 2.5, { 'state': [] } ); // $ExpectError
 	triangular.factory( 2, 4, 2.5, { 'state': {} } ); // $ExpectError
-	triangular.factory( 2, 4, 2.5, { 'state': true ); // $ExpectError
+	triangular.factory( 2, 4, 2.5, { 'state': true } ); // $ExpectError
 	triangular.factory( 2, 4, 2.5, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	triangular.factory( { 'state': 123 } ); // $ExpectError
@@ -222,7 +222,7 @@ import triangular = require( './index' );
 	triangular.factory( { 'state': null } ); // $ExpectError
 	triangular.factory( { 'state': [] } ); // $ExpectError
 	triangular.factory( { 'state': {} } ); // $ExpectError
-	triangular.factory( { 'state': true ); // $ExpectError
+	triangular.factory( { 'state': true } ); // $ExpectError
 	triangular.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

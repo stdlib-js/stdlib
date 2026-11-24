@@ -18,14 +18,13 @@
 
 #include "stdlib/math/base/special/lucasf.h"
 #include <stdio.h>
-#include <stdint.h>
 
 int main( void ) {
-	int32_t i;
+	float i;
 	float v;
 
-	for ( i = 0; i < 35; i++ ) {
+	for ( i = 0.0f; i < 35.0f; i++ ) {
 		v = stdlib_base_lucasf( i );
-		printf( "lucasf(%d) = %f\n", i, v );
+		printf( "lucasf(%f) = %f\n", i, v );
 	}
 }

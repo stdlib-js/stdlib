@@ -19,6 +19,7 @@
 #include "stdlib/blas/ext/base/sapxsumors.h"
 #include "stdlib/blas/base/shared.h"
 #include "stdlib/strided/base/stride2offset.h"
+#include "stdlib/blas/ext/base/ssumors.h"
 
 /**
 * Adds a scalar constant to each single-precision floating-point strided array element and computes the sum using ordinary recursive summation.
@@ -45,21 +46,8 @@ float API_SUFFIX(stdlib_strided_sapxsumors)( const CBLAS_INT N, const float alph
 * @return         output value
 */
 float API_SUFFIX(stdlib_strided_sapxsumors_ndarray)( const CBLAS_INT N, const float alpha, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
-	CBLAS_INT ix;
-	CBLAS_INT i;
-	float sum;
-
 	if ( N <= 0 ) {
 		return 0.0f;
 	}
-	ix = offsetX;
-	if ( strideX == 0 ) {
-		return N * ( alpha + X[ ix ] );
-	}
-	sum = 0.0f;
-	for ( i = 0; i < N; i++ ) {
-		sum += alpha + X[ ix ];
-		ix += strideX;
-	}
-	return sum;
+	return ( N * alpha ) + API_SUFFIX(stdlib_strided_ssumors_ndarray)( N, X, strideX, offsetX );
 }

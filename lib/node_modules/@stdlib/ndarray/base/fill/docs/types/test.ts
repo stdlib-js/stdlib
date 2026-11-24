@@ -22,14 +22,13 @@ import fill = require( './index' );
 
 // TESTS //
 
-// The function returns `undefined`...
+// The function returns an ndarray...
 {
-	fill( zeros( 'float64', [ 2, 2 ], 'row-major' ), 10.0 ); // $ExpectType void
-	fill( zeros( 'complex128', [ 2, 2 ], 'row-major' ), 10.0 ); // $ExpectType void
-	fill( zeros( 'complex128', [ 2, 2 ], 'row-major' ), { 're': 10.0, 'im': 10.0 } ); // $ExpectType void
+	fill( zeros( 'float64', [ 2, 2 ], 'row-major' ), 10.0 ); // $ExpectType float64ndarray
+	fill( zeros( 'complex128', [ 2, 2 ], 'row-major' ), 10.0 ); // $ExpectType complex128ndarray
+	fill( zeros( 'complex128', [ 2, 2 ], 'row-major' ), { 're': 10.0, 'im': 10.0 } ); // $ExpectType complex128ndarray
 
-	fill( zeros( 'generic', [ 2, 2 ], 'row-major' ), 10.0 ); // $ExpectType void
-	fill<number | string>( zeros( 'generic', [ 2, 2 ], 'row-major' ), 'beep' ); // $ExpectType void
+	fill( zeros( 'generic', [ 2, 2 ], 'row-major' ), 10.0 ); // $ExpectType genericndarray<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an ndarray-like object...

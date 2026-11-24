@@ -144,7 +144,7 @@ logEachMap( 'abs(%d) = %d', x, abs );
 Computes the absolute value of a double-precision floating-point number.
 
 ```c
-double y = stdlib_base_fats_abs( -5.0 );
+double y = stdlib_base_fast_abs( -5.0 );
 // returns 5.0
 ```
 

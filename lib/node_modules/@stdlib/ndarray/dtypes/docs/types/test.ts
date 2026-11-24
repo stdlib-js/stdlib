@@ -23,12 +23,14 @@ import dtypes = require( './index' );
 
 // The function returns an array of data types...
 {
-	dtypes(); // $ExpectType DataType[]
-	dtypes( 'floating_point' ); // $ExpectType DataType[]
-	dtypes( 'floating_point_and_generic' ); // $ExpectType DataType[]
+	dtypes(); // $ExpectType DataTypeString[]
+	dtypes( 'floating_point' ); // $ExpectType DataTypeString[]
+	dtypes( 'floating_point_and_generic' ); // $ExpectType DataTypeString[]
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	dtypes( 'floating_point', 2 ); // $ExpectError
 }
+
+// TODO: add `DataType` property tests

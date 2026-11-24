@@ -18,6 +18,10 @@
 
 // TypeScript Version: 4.1
 
+/// <reference types="@stdlib/types"/>
+
+import { DataType } from '@stdlib/types/ndarray';
+
 /**
 * Returns a loop block size for multi-dimensional array tiled loops.
 *
@@ -28,7 +32,7 @@
 * var bsize = nullaryBlockSize( 'float64' );
 * // returns <number>
 */
-declare function nullaryBlockSize( dtypeX: string ): number;
+declare function nullaryBlockSize( dtypeX: DataType ): number;
 
 
 // EXPORTS //

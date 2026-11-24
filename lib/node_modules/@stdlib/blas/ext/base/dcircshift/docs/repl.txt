@@ -1,0 +1,102 @@
+
+{{alias}}( N, k, x, strideX )
+    Circularly shifts the elements of a double-precision floating-point
+    strided array by a specified number of positions.
+
+    If `k > 0`, elements are shifted to the right. If `k < 0`, elements are
+    shifted to the left.
+
+    The `N` and stride parameters determine which elements in the strided array
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N <= 0`, the function returns `x` unchanged.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    k: integer
+        Number of positions to shift.
+
+    x: Float64Array
+        Input array.
+
+    strideX: integer
+        Stride length.
+
+    Returns
+    -------
+    x: Float64Array
+        Input array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
+    > {{alias}}( x.length, 2, x, 1 )
+    <Float64Array>[ 4.0, 5.0, 1.0, 2.0, 3.0 ]
+
+    // Using `N` and stride parameters:
+    > x = new {{alias:@stdlib/array/float64}}( [ 1.0, 0.0, 2.0, 0.0, 3.0, 0.0, 4.0, 0.0 ] );
+    > {{alias}}( 4, 1, x, 2 )
+    <Float64Array>[ 4.0, 0.0, 1.0, 0.0, 2.0, 0.0, 3.0, 0.0 ]
+
+    // Using view offsets:
+    > var x0 = new {{alias:@stdlib/array/float64}}( [ 0.0, 1.0, 2.0, 3.0, 4.0, 5.0 ] );
+    > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > {{alias}}( 5, 2, x1, 1 )
+    <Float64Array>[ 4.0, 5.0, 1.0, 2.0, 3.0 ]
+    > x0
+    <Float64Array>[ 0.0, 4.0, 5.0, 1.0, 2.0, 3.0 ]
+
+
+{{alias}}.ndarray( N, k, x, strideX, offsetX )
+    Circularly shifts the elements of a double-precision floating-point
+    strided array by a specified number of positions using alternative
+    indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameter supports indexing semantics based on a
+    starting index.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    k: integer
+        Number of positions to shift.
+
+    x: Float64Array
+        Input array.
+
+    strideX: integer
+        Stride length.
+
+    offsetX: integer
+        Starting index.
+
+    Returns
+    -------
+    x: Float64Array
+        Input array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
+    > {{alias}}.ndarray( x.length, 2, x, 1, 0 )
+    <Float64Array>[ 4.0, 5.0, 1.0, 2.0, 3.0 ]
+
+    // Using an index offset:
+    > x = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > {{alias}}.ndarray( 3, 1, x, 2, 1 )
+    <Float64Array>[ 1.0, 6.0, 3.0, 2.0, 5.0, 4.0 ]
+
+    See Also
+    --------
+

@@ -44,7 +44,8 @@
         "@stdlib/math/base/special/ln",
         "@stdlib/math/base/special/abs",
         "@stdlib/math/base/special/floor",
-        "@stdlib/number/float64/base/exponent"
+        "@stdlib/number/float64/base/exponent",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -65,7 +66,8 @@
         "@stdlib/math/base/special/ln",
         "@stdlib/math/base/special/abs",
         "@stdlib/math/base/special/floor",
-        "@stdlib/number/float64/base/exponent"
+        "@stdlib/number/float64/base/exponent",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -86,7 +88,8 @@
         "@stdlib/math/base/special/ln",
         "@stdlib/math/base/special/abs",
         "@stdlib/math/base/special/floor",
-        "@stdlib/number/float64/base/exponent"
+        "@stdlib/number/float64/base/exponent",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

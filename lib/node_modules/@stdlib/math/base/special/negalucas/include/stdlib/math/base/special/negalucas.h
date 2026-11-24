@@ -19,8 +19,6 @@
 #ifndef STDLIB_MATH_BASE_SPECIAL_NEGALUCAS_H
 #define STDLIB_MATH_BASE_SPECIAL_NEGALUCAS_H
 
-#include <stdint.h>
-
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
 */
@@ -31,7 +29,7 @@ extern "C" {
 /**
 * Computes the nth negaLucas number.
 */
-double stdlib_base_negalucas( const int32_t n );
+double stdlib_base_negalucas( const double n );
 
 #ifdef __cplusplus
 }

@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the Fortran interface to the BLAS Level 1 routine `dcabs1`.
 */
-#ifndef DCABS1_FORTRAN_H
-#define DCABS1_FORTRAN_H
+#ifndef STDLIB_BLAS_BASE_DCABS1_FORTRAN_H
+#define STDLIB_BLAS_BASE_DCABS1_FORTRAN_H
 
 #include "stdlib/complex/float64/ctor.h"
 
@@ -40,4 +40,4 @@ void dcabs1sub( const stdlib_complex128_t *, double * );
 }
 #endif
 
-#endif // !DCABS1_FORTRAN_H
+#endif // !STDLIB_BLAS_BASE_DCABS1_FORTRAN_H

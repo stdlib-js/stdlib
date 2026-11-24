@@ -23,7 +23,7 @@
 #include "stdlib/strided/base/min_view_buffer_index.h"
 
 /**
-* Interchanges two complex single-precision floating-point vectors.
+* Interchanges two single-precision complex floating-point vectors.
 *
 * @param N        number of indexed elements
 * @param X        first input array
@@ -36,7 +36,7 @@ void API_SUFFIX(c_cswap)( const CBLAS_INT N, void *X, const CBLAS_INT strideX, v
 }
 
 /**
-* Interchanges two complex single-precision floating-point vectors using alternative indexing semantics.
+* Interchanges two single-precision complex floating-point vectors using alternative indexing semantics.
 *
 * @param N        number of indexed elements
 * @param X        first input array

@@ -38,10 +38,10 @@
 * stdlib_complex128_t out = stdlib_base_croundn( z, -2 );
 *
 * double re = stdlib_complex128_real( out );
-* // returns 3.14
+* // returns -3.14
 *
 * double im = stdlib_complex128_imag( out );
-* // returns -3.14
+* // returns 3.14
 */
 stdlib_complex128_t stdlib_base_croundn( const stdlib_complex128_t z, const int32_t n ) {
 	double re;

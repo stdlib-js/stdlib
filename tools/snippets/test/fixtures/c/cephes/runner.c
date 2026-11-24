@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2025 The Stdlib Authors.
+* Copyright (c) 2026 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -249,7 +249,7 @@ void write_data_as_json( FILE *f, const double *x, const double *y, const unsign
 	write_named_array_f64( f, "x", x, len );
 	fprintf( f, "," );
 	write_named_array_f64( f, "expected", y, len ); // TODO: update or erase this comment
-	fprintf( f, "}" );
+	fprintf( f, "}\n" );
 }
 
 /**

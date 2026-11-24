@@ -4,10 +4,10 @@
 
     Parameters
     ----------
-    dtypeX: string
+    dtypeX: string|DataType
         Input array data type.
 
-    dtypeY: string
+    dtypeY: string|DataType
         Output array data type.
 
     Returns

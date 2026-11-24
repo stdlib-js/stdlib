@@ -47,19 +47,33 @@ double API_SUFFIX(stdlib_strided_dsnansumors_ndarray)( const CBLAS_INT N, const 
 	CBLAS_INT ix;
 	CBLAS_INT i;
 	double sum;
+	double v;
 
-	sum = 0.0;
 	if ( N <= 0 ) {
-		return sum;
+		return 0.0;
 	}
 	ix = offsetX;
 	if ( strideX == 0 ) {
 		if ( stdlib_base_is_nanf( X[ ix ] ) ) {
-			return sum;
+			return 0.0;
 		}
 		return N * X[ ix ];
 	}
+	// Find the first non-NaN element...
 	for ( i = 0; i < N; i++ ) {
+		v = X[ ix ];
+		if ( !stdlib_base_is_nanf( v ) ) {
+			break;
+		}
+		ix += strideX;
+	}
+	if ( i == N ) {
+		return 0.0;
+	}
+	sum = (double)v;
+	ix += strideX;
+	i += 1;
+	for ( ; i < N; i++ ) {
 		if ( !stdlib_base_is_nanf( X[ ix ] ) ) {
 			sum += (double)X[ ix ];
 		}

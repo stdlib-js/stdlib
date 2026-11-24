@@ -1,0 +1,79 @@
+
+{{alias}}( x, index, value )
+    Returns a new array containing every element from an input array and with a
+    provided value inserted at a specified index.
+
+    Negative indices are resolved relative to the last array element, with the
+    last element corresponding to `-1`.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    index: integer
+        Index at which to insert a value.
+
+    value: any
+        Value to insert.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > var x = [ 1, 2, 3, 4 ];
+    > {{alias}}( x, 0, 5 )
+    [ 5, 1, 2, 3, 4 ]
+    > {{alias}}( x, -1, 6 )
+    [ 1, 2, 3, 4, 6 ]
+    > x
+    [ 1, 2, 3, 4 ]
+
+
+{{alias}}.assign( x, index, value, out, stride, offset )
+    Copies elements from one array to another array and inserts a provided value
+    at a specified index.
+
+    Negative indices are resolved relative to the last array element, with the
+    last element corresponding to `-1`.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    index: integer
+        Index at which to insert a value.
+
+    value: any
+        Value to insert.
+
+    out: ArrayLikeObject
+        Output array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array offset.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > var x = [ 1, 2, 3, 4 ];
+    > var out = [ 0, 0, 0, 0, 0 ];
+    > var arr = {{alias}}.assign( x, 0, 5, out, 1, 0 )
+    [ 5, 1, 2, 3, 4 ]
+    > var bool = ( arr === out )
+    true
+
+    See Also
+    --------
+

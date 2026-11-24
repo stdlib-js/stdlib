@@ -23,6 +23,7 @@
 var resolve = require( 'path' ).resolve;
 var bench = require( '@stdlib/bench' );
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
+var format = require( '@stdlib/string/format' );
 var tryRequire = require( '@stdlib/utils/try-require' );
 var forEach = require( '@stdlib/utils/for-each' );
 var pkg = require( './../package.json' ).name;
@@ -38,7 +39,7 @@ var opts = {
 
 // MAIN //
 
-bench( pkg+'::stdlib:utils/for-each', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:utils/for-each', pkg ), opts, function benchmark( b ) {
 	var arr;
 	var i;
 
@@ -66,7 +67,7 @@ bench( pkg+'::stdlib:utils/for-each', opts, function benchmark( b ) {
 	}
 });
 
-bench( pkg+'::lodash:forEach', opts, function benchmark( b ) {
+bench( format( '%s::lodash:forEach', pkg ), opts, function benchmark( b ) {
 	var arr;
 	var i;
 

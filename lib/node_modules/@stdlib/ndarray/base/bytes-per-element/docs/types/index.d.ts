@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Returns the number of bytes per element provided an underlying array data type.
+* Returns the number of bytes per element for a provided underlying ndarray data type.
 *
 * @param dtype - data type
 * @returns number of bytes per element
@@ -31,7 +31,7 @@
 * nbytes = bytesPerElement( 'generic' );
 * // returns null
 */
-declare function bytesPerElement( dtype: string ): number | null;
+declare function bytesPerElement( dtype: any ): number | null;
 
 
 // EXPORTS //

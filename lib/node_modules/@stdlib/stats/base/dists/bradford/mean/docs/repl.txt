@@ -1,7 +1,7 @@
 
 {{alias}}( c )
-    Returns the expected value of a Bradford distribution with shape
-    parameter `c`.
+    Returns the expected value of a Bradford distribution with shape parameter
+    `c`.
 
     If `c <= 0`, the function returns `NaN`.
 

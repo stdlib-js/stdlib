@@ -153,7 +153,7 @@ The function accepts the following arguments:
 -   **x**: `[in] float` input value.
 
 ```c
-float stdlib_base_dirac_delta( const float x );
+float stdlib_base_dirac_deltaf( const float x );
 ```
 
 </section>

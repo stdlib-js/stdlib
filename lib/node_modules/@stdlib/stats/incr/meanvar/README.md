@@ -54,6 +54,10 @@ s^2 = \frac{1}{n-1} \sum_{i=0}^{n-1} ( x_i - \bar{x} )^2
 
 <!-- </equation> -->
 
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

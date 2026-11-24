@@ -66,7 +66,7 @@ var obj = {};
 setProps( meta, dtypes, obj );
 ```
 
-The `meta` data argument should be an `object` with the following properties:
+The `meta` data argument should be an object with the following properties:
 
 -   **nargs**: total number of arguments. This value is one more than might be expected, as the output array is treated as an implicit argument, even when not explicitly provided.
 -   **nin**: number of input ndarrays.

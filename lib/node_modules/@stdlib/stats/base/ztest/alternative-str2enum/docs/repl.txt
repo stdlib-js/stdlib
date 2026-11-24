@@ -1,0 +1,27 @@
+
+{{alias}}( alternative )
+    Returns the enumeration constant associated with a Z-test alternative
+    hypothesis string.
+
+    Downstream consumers of this function should *not* rely on specific integer
+    values (e.g., `TWO_SIDED == 0`). Instead, the function should be used in an
+    opaque manner.
+
+    Parameters
+    ----------
+    alternative: string
+        Alternative hypothesis.
+
+    Returns
+    -------
+    out: integer|null
+        Enumeration constant.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'greater' )
+    <number>
+
+    See Also
+    --------
+

@@ -21,17 +21,17 @@
 #include "stdlib/blas/base/shared.h"
 
 /**
-* Performs the symmetric rank 1 operation `A = α*x*x^T + A`.
+* Performs the symmetric rank 1 operation `A = α*x*x^T + A` where `α` is a scalar, `x` is an `N` element vector, and `A` is an `N` by `N` symmetric matrix.
 *
-* @param order    storage layout
+* @param layout   storage layout
 * @param uplo     specifies whether the upper or lower triangular part of the symmetric matrix `A` should be referenced
 * @param N        number of elements along each dimension of `A`
-* @param alpha    scalar
-* @param x        input vector
+* @param alpha    scalar constant
+* @param X        input vector
 * @param strideX  `X` stride length
 * @param A        input matrix
 * @param LDA      stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`)
 */
-void API_SUFFIX(c_ssyr)( const CBLAS_LAYOUT order, const CBLAS_UPLO uplo, const CBLAS_INT N, const float alpha, const float *X, const CBLAS_INT strideX, float *A, const CBLAS_INT LDA ) {
-	API_SUFFIX(cblas_ssyr)( order, uplo, N, alpha, X, strideX, A, LDA );
+void API_SUFFIX(c_ssyr)( const CBLAS_LAYOUT layout, const CBLAS_UPLO uplo, const CBLAS_INT N, const float alpha, const float *X, const CBLAS_INT strideX, float *A, const CBLAS_INT LDA ) {
+	API_SUFFIX(cblas_ssyr)( layout, uplo, N, alpha, X, strideX, A, LDA );
 }

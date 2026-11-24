@@ -1,0 +1,12 @@
+---
+type: amend-message
+---
+feat: add C implementation for stats/base/dists/weibull/skewness
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/4053
+Closes: https://github.com/stdlib-js/stdlib/issues/3849
+
+Co-authored-by: Philipp Burckhardt <pburckhardt@outlook.com>
+Co-authored-by: stdlib-bot <noreply@stdlib.io>
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>
+Signed-off-by: Philipp Burckhardt <pburckhardt@outlook.com>

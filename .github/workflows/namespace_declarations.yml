@@ -54,7 +54,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -65,14 +65,17 @@ jobs:
           # Specify whether to download Git-LFS files:
           lfs: false
 
-          # Avoid storing GitHub token in local Git configuration:
-          persist-credentials: false
+          # Provide a GitHub token for authentication
+          token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+
+          # Store GitHub token in local Git configuration:
+          persist-credentials: true
         timeout-minutes: 10
 
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
-        uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
         with:
           node-version: '20' # 'lts/*'
         timeout-minutes: 5
@@ -91,7 +94,7 @@ jobs:
       # Import GPG key to sign commits:
       - name: 'Import GPG key to sign commits'
         # Pin action to full length commit SHA
-        uses: crazy-max/ghaction-import-gpg@e89d40939c28e39f97cf32126055eeae86ba74ec # v6.3.0
+        uses: crazy-max/ghaction-import-gpg@2dc316deee8e90f13e1a351ab510b4d5bc0c82cd # v7.0.0
         with:
           gpg_private_key: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
@@ -107,7 +110,20 @@ jobs:
           # Process each namespace:
           while IFS= read -r namespace; do
             if [ -n "$namespace" ] && [[ $namespace != *"_tools"* ]]; then
-              branch_name="update-$(echo "$namespace" | sed 's/@stdlib\///' | sed 's/\//-/g')-declarations"
+              # Namespace without the '@stdlib/' scope for display in commit messages and PR titles:
+              display_namespace="${namespace#@stdlib/}"
+
+              # Branch name slug with slashes replaced by dashes:
+              branch_name="update-${display_namespace//\//-}-declarations"
+
+              # If an open PR already exists for this branch, skip this namespace entirely:
+              existing_pr=$(gh pr list --head "$branch_name" --state open --json number -q '.[0].number' || true)
+              if [ -n "$existing_pr" ]; then
+                echo "Open PR exists for $branch_name (#$existing_pr). Skipping $namespace."
+                continue
+              fi
+
+              # Switch to the new branch:
               git checkout -b "$branch_name"
 
               # Generate declarations for this namespace:
@@ -119,13 +135,13 @@ jobs:
                 git add lib/node_modules/@stdlib
 
                 # Commit changes:
-                git commit -m "feat: update \`${namespace}\` TypeScript declarations" --signoff
+                git commit -m "feat: update \`${display_namespace}\` TypeScript declarations" --signoff
 
-                # Push branch and create PR:
-                git push origin "$branch_name"
+                # Push branch and create PR (force push to handle stale remote branches from previously merged/closed PRs):
+                git push --force origin "$branch_name"
 
                 gh pr create \
-                  --title "feat: update \`${namespace}\` TypeScript declarations" \
+                  --title "feat: update \`${display_namespace}\` TypeScript declarations" \
                   --body "This PR updates TypeScript declarations for the \`${namespace}\` namespace.
 
           ## Reviewer Checklist
@@ -138,7 +154,7 @@ jobs:
           - [ ] Approve the PR once you are confident about the classification and changes made." \
                   --label "Documentation" \
                   --label "automated-pr" \
-                  --reviewer "reviewers" \
+                  --reviewer "stdlib-js/reviewers" \
                   --base develop \
                   --head "$branch_name"
               fi

@@ -42,14 +42,14 @@
 ! > * We will gladly answer any questions regarding the software. If a modification is done, however, it is the responsibility of the person who modified the routine to provide support.
 !
 ! @param {integer} N - number of indexed elements
-! @param {Array<complex>} cx - first input array
-! @param {integer} strideX - `cx` stride length
-! @param {Array<complex>} cy - second input array
-! @param {integer} strideY - `cy` stride length
+! @param {Array<complex>} x - first input array
+! @param {integer} strideX - `x` stride length
+! @param {Array<complex>} y - second input array
+! @param {integer} strideY - `y` stride length
 ! @param {real} c - cosine of the angle of rotation
 ! @param {real} s - sine of the angle of rotation
 !<
-subroutine csrot( N, cx, strideX, cy, strideY, c, s )
+subroutine csrot( N, x, strideX, y, strideY, c, s )
   implicit none
   ! ..
   ! Scalar arguments:
@@ -57,7 +57,7 @@ subroutine csrot( N, cx, strideX, cy, strideY, c, s )
   real :: c, s
   ! ..
   ! Array arguments:
-  complex :: cx(*), cy(*)
+  complex :: x(*), y(*)
   ! ..
   ! Local scalars:
   integer :: ix, iy, i
@@ -69,9 +69,9 @@ subroutine csrot( N, cx, strideX, cy, strideY, c, s )
   ! ..
   if ( strideX == 1 .AND. strideY == 1 ) then
     do i = 1, N
-      ctmp = ( c*cx( i ) ) + ( s*cy( i ) )
-      cy( i ) = ( c*cy( i ) ) - ( s*cx( i ) )
-      cx( i ) = ctmp
+      ctmp = ( c*x( i ) ) + ( s*y( i ) )
+      y( i ) = ( c*y( i ) ) - ( s*x( i ) )
+      x( i ) = ctmp
     end do
   else
     if ( strideX < 0 ) then
@@ -85,9 +85,9 @@ subroutine csrot( N, cx, strideX, cy, strideY, c, s )
       iy = 1
     end if
     do i = 1, N
-      ctmp = ( c*cx( ix ) ) + ( s*cy( iy ) )
-      cy( iy ) = ( c*cy( iy ) ) - ( s*cx( ix ) )
-      cx( ix ) = ctmp
+      ctmp = ( c*x( ix ) ) + ( s*y( iy ) )
+      y( iy ) = ( c*y( iy ) ) - ( s*x( ix ) )
+      x( ix ) = ctmp
       ix = ix + strideX
       iy = iy + strideY
     end do

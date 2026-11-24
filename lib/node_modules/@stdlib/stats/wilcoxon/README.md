@@ -186,7 +186,7 @@ table = out.print();
 */
 ```
 
-By default, all zero-differences are discarded before calculating the ranks. Set `zeroMethod` to `pratt` when you wish differences of zero to be used in the rank calculation but then drop them or to `zsplit` when differences of zero are shall be used in the ranking procedure and the ranks then split between positive and negative ones. 
+By default, all zero-differences are discarded before calculating the ranks. Set `zeroMethod` to `pratt` when you wish differences of zero to be used in the rank calculation but then drop them or to `zsplit` when differences of zero are shall be used in the ranking procedure and the ranks then split between positive and negative ones.
 
 ```javascript
 var arr = [ 0, 2, 3, -1, -4, 0, 0, 8, 9 ];
@@ -220,21 +220,14 @@ out = wilcoxon( arr, {
 By default, the test uses the exact distribution of the rank statistic to calculate the critical values for the test in case of no ties and no zero-differences. Since it is more computationally efficient, starting with fifty observations a normal approximation is employed. If you would like the test to use the correct distribution even for larger samples, set the `exact` option to `true`.
 
 ```javascript
-var normal = require( '@stdlib/random/base/normal' ).factory;
-var rnorm;
-var arr;
-var out;
-var i;
+var normal = require( '@stdlib/random/array/normal' );
 
-rnorm = normal( 0.0, 4.0, {
+var rnorm = normal.factory( 0.0, 4.0, {
     'seed': 100
 });
-arr = new Array( 100 );
-for ( i = 0; i < arr.length; i++ ) {
-    arr[ i ] = rnorm();
-}
+var arr = rnorm( 100 );
 
-out = wilcoxon( arr, {
+var out = wilcoxon( arr, {
     'exact': false
 });
 /* e.g., returns
@@ -264,21 +257,14 @@ out = wilcoxon( arr, {
 By default, when using the normal approximation, the test uses a continuity correction, which adjusts the Wilcoxon rank statistic by `0.5` towards the mean. To disable this correction, set `correction` to `false`.
 
 ```javascript
-var normal = require( '@stdlib/random/base/normal' ).factory;
-var rnorm;
-var arr;
-var out;
-var i;
+var normal = require( '@stdlib/random/array/normal' );
 
-rnorm = normal( 0.0, 4.0, {
+var rnorm = normal.factory( 0.0, 4.0, {
     'seed': 100
 });
-arr = new Array( 100 );
-for ( i = 0; i < arr.length; i++ ) {
-    arr[ i ] = rnorm();
-}
+var arr = rnorm( 100 );
 
-out = wilcoxon( arr, {
+var out = wilcoxon( arr, {
     'correction': false
 });
 /* e.g., returns
@@ -316,26 +302,17 @@ out = wilcoxon( arr, {
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var uniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
+var uniform = require( '@stdlib/random/array/discrete-uniform' );
 var wilcoxon = require( '@stdlib/stats/wilcoxon' );
 
-var table;
-var runif;
-var arr;
-var out;
-var i;
-
-runif = uniform( -50.0, 50.0, {
+var runif = uniform.factory( -50.0, 50.0, {
     'seed': 37827
 });
-arr = new Array( 100 );
-for ( i = 0; i < arr.length; i++ ) {
-    arr[ i ] = runif();
-}
+var arr = runif( 100 );
 
 // Test whether distribution is symmetric around zero:
-out = wilcoxon( arr );
-table = out.print();
+var out = wilcoxon( arr );
+var table = out.print();
 /* e.g., returns
     One-Sample Wilcoxon signed rank test
 

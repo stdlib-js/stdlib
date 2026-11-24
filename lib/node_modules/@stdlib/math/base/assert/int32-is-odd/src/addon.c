@@ -18,6 +18,7 @@
 
 #include "stdlib/math/base/assert/int32_is_odd.h"
 #include <node_api.h>
+#include <stdbool.h>
 #include <stdint.h>
 #include <assert.h>
 

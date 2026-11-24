@@ -1,0 +1,42 @@
+
+{{alias}}( results[, options] )
+    Serializes a one-sample Z-test results object as a formatted string.
+
+    Parameters
+    ----------
+    results: Object
+        One-sample Z-test results object.
+
+    options: Object (optional)
+        Function options.
+
+    options.digits: number (optional)
+        Number of digits to display after decimal points. Default: 4.
+
+    options.decision: boolean (optional)
+        Boolean indicating whether to show the test decision. Default: true.
+
+    Returns
+    -------
+    out: string
+        Serialized results.
+
+    Examples
+    --------
+    > var res = {
+    ...    'rejected': false,
+    ...    'alpha': 0.05,
+    ...    'pValue': 0.3364,
+    ...    'statistic': 11.7586,
+    ...    'nullValue': 0.0,
+    ...    'sd': 0.4563,
+    ...    'ci': new {{alias:@stdlib/array/float64}}( [ 9.9983, 11.4123 ] ),
+    ...    'alternative': 'two-sided',
+    ...    'method': 'One-sample Z-test'
+    ... };
+    > var s = {{alias}}( res )
+    <string>
+
+    See Also
+    --------
+

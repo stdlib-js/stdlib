@@ -148,8 +148,8 @@ interface MinMaxAbsN {
 	*
 	* @example
 	* var out = [ 0.0, 0.0 ];
-	* var v = minmaxabsn( out, 1, 0 );
-	* // returns [ Infinity, -Infinity ]
+	* var v = minmaxabsn.assign( out, 1, 0 );
+	* // returns [ Infinity, Infinity ]
 	*
 	* var bool = ( v === out );
 	* // returns true
@@ -167,7 +167,7 @@ interface MinMaxAbsN {
 	*
 	* @example
 	* var out = [ 0.0, 0.0 ];
-	* var v = minmaxabsn( 3.14, out, 1, 0 );
+	* var v = minmaxabsn.assign( 3.14, out, 1, 0 );
 	* // returns [ 3.14, 3.14 ]
 	*
 	* var bool = ( v === out );
@@ -187,7 +187,7 @@ interface MinMaxAbsN {
 	*
 	* @example
 	* var out = [ 0.0, 0.0 ];
-	* var v = minmaxabsn( 3.14, -8.0, out, 1, 0 );
+	* var v = minmaxabsn.assign( 3.14, -8.0, out, 1, 0 );
 	* // returns [ 3.14, 8.0 ]
 	*
 	* var bool = ( v === out );
@@ -208,7 +208,7 @@ interface MinMaxAbsN {
 	*
 	* @example
 	* var out = [ 0.0, 0.0 ];
-	* var v = minmaxabsn( 3.14, -8.0, 6.5, out, 1, 0 );
+	* var v = minmaxabsn.assign( 3.14, -8.0, 6.5, out, 1, 0 );
 	* // returns [ 3.14, 8.0 ]
 	*
 	* var bool = ( v === out );
@@ -230,7 +230,7 @@ interface MinMaxAbsN {
 	*
 	* @example
 	* var out = [ 0.0, 0.0 ];
-	* var v = minmaxabsn( 3.14, -8.0, 6.5, 7.2, out, 1, 0 );
+	* var v = minmaxabsn.assign( 3.14, -8.0, 6.5, 7.2, out, 1, 0 );
 	* // returns [ 3.14, 8.0 ]
 	*
 	* var bool = ( v === out );
@@ -253,7 +253,7 @@ interface MinMaxAbsN {
 	*
 	* @example
 	* var out = [ 0.0, 0.0 ];
-	* var v = minmaxabsn( 3.14, -8.0, 6.5, 7.2, 5.2, out, 1, 0 );
+	* var v = minmaxabsn.assign( 3.14, -8.0, 6.5, 7.2, 5.2, out, 1, 0 );
 	* // returns [ 3.14, 8.0 ]
 	*
 	* var bool = ( v === out );
@@ -274,7 +274,7 @@ interface MinMaxAbsN {
 	*
 	* @example
 	* var out = [ 0.0, 0.0 ];
-	* var v = minmaxabsn( 3.14, -8.0, 6.5, 7.2, 5.2, -5.4, out, 1, 0 );
+	* var v = minmaxabsn.assign( 3.14, -8.0, 6.5, 7.2, 5.2, -5.4, out, 1, 0 );
 	* // returns [ 3.14, 8.0 ]
 	*
 	* var bool = ( v === out );

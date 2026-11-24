@@ -1,13 +1,16 @@
 
-{{alias}}( a, b )
-    Performs C-like multiplication of two unsigned 32-bit integers.
+{{alias}}( x, y )
+    Multiples two unsigned 32-bit integers.
+
+    The function performs C-like multiplication of two unsigned 32-bit integers,
+    including wraparound semantics.
 
     Parameters
     ----------
-    a: integer
+    x: integer
         Unsigned 32-bit integer.
 
-    b: integer
+    y: integer
         Unsigned 32-bit integer.
 
     Returns

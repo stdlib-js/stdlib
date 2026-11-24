@@ -48,12 +48,9 @@ Returns the [complex conjugate][complex-conjugate] of a double-precision complex
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
 
 var z = new Complex128( 5.0, 3.0 );
-var str = z.toString();
-// returns '5 + 3i'
 
 var v = conj( z );
-str = v.toString();
-// returns '5 - 3i'
+// returns <Complex128>[ 5.0, -3.0 ]
 ```
 
 </section>

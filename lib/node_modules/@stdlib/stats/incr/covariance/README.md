@@ -52,7 +52,7 @@ For known population means, the [unbiased sample covariance][covariance] is defi
     <br>
 </div> -->
 
-<!-- </equation> --> 
+<!-- </equation> -->
 
 </section>
 

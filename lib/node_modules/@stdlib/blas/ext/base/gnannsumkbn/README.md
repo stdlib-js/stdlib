@@ -119,7 +119,7 @@ var v = gnannsumkbn.ndarray( 4, x, 2, 1, out, 2, 1 );
 ## Notes
 
 -   If `N <= 0`, both functions return a sum equal to `0.0`.
--   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array/base/accessor`][@stdlib/array/base/accessor])
+-   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array/base/accessor`][@stdlib/array/base/accessor]).
 
 </section>
 

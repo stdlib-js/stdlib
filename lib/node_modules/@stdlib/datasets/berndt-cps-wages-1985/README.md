@@ -38,7 +38,7 @@ var cps = require( '@stdlib/datasets/berndt-cps-wages-1985' );
 
 #### cps()
 
-Returns a random sample of 534 workers from the Current Population Survey (CPS) from 1985, including their wages and and other characteristics.
+Returns a random sample of 534 workers from the Current Population Survey (CPS) from 1985, including their wages and other characteristics.
 
 ```javascript
 var data = cps();

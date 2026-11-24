@@ -84,7 +84,6 @@ static double rand_double( void ) {
 	return (double)r / ( (double)RAND_MAX + 1.0 );
 }
 
-
 /**
 * Runs a benchmark.
 *

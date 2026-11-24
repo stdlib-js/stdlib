@@ -6,7 +6,7 @@
     Examples
     --------
     > {{alias}}
-    300
+    29
 
     See Also
     --------

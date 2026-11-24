@@ -39,7 +39,7 @@ interface Hypot {
 	* @returns hypotenuse
 	*
 	* @example
-	* var h = ampbm( -5.0, 12.0 );
+	* var h = hypot( -5.0, 12.0 );
 	* // returns ~13.5
 	*/
 	( x: number, y: number ): number;
@@ -54,10 +54,10 @@ interface Hypot {
 	* @returns function to compute a hypotenuse
 	*
 	* @example
-	* var hypot = ampbm.factory( 1.0, 0.5 );
+	* var fcn = hypot.factory( 1.0, 0.5 );
 	* // returns <Function>
 	*
-	* var h = hypot( -5.0, 12.0 );
+	* var h = fcn( -5.0, 12.0 );
 	* // returns 14.5
 	*/
 	factory( alpha: number, beta: number, nonnegative?: boolean, ints?: boolean ): HypotFunction;
@@ -71,14 +71,14 @@ interface Hypot {
 * @returns hypotenuse
 *
 * @example
-* var h = ampbm( -5.0, 12.0 );
+* var h = hypot( -5.0, 12.0 );
 * // returns ~13.5
 *
 * @example
-* var hypot = ampbm.factory( 1.0, 0.5 );
+* var fcn = hypot.factory( 1.0, 0.5 );
 * // returns <Function>
 *
-* var h = hypot( -5.0, 12.0 );
+* var h = fcn( -5.0, 12.0 );
 * // returns 14.5
 */
 declare var hypot: Hypot;

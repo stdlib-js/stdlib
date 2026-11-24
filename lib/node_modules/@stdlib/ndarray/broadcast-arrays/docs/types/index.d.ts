@@ -53,7 +53,7 @@ import { typedndarray } from '@stdlib/types/ndarray';
 * // returns [ 3, 2, 2 ]
 *
 * var out = broadcastArrays( [ x1, y1 ] );
-* // returns <ndarray>
+* // returns [ <ndarray>, <ndarray> ]
 *
 * var x2 = out[ 0 ];
 * // returns <ndarray>
@@ -129,7 +129,7 @@ declare function broadcastArrays<T = unknown>( arrays: ArrayLike<typedndarray<T>
 * // returns [ 3, 2, 2 ]
 *
 * var out = broadcastArrays( [ x1, y1 ] );
-* // returns <ndarray>
+* // returns [ <ndarray>, <ndarray> ]
 *
 * var x2 = out[ 0 ];
 * // returns <ndarray>

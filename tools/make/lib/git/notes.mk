@@ -25,7 +25,7 @@ GIT_NOTES_DIR ?= $(ROOT_DIR)/docs/git-notes
 # RULES #
 
 #/
-# Applies Git notes from the `docs/git-notes` directory.
+# Applies Git notes.
 #
 # ## Notes
 #
@@ -39,9 +39,9 @@ apply-git-notes:
 	$(QUIET) for note in $(GIT_NOTES_DIR)/*.txt; do \
 		if [ -f "$$note" ]; then \
 			commit_hash=$$(basename "$$note" .txt); \
-			git notes add -f -F "$$note" "$$commit_hash" || echo "Failed to apply note for commit $$commit_hash"; \
+			$(GIT) notes add -f -F "$$note" "$$commit_hash" || echo "Failed to apply note for commit $$commit_hash"; \
 		fi; \
 	done
-	$(QUIET) echo "Git notes application complete."
+	$(QUIET) echo "Finished applying Git notes."
 
 .PHONY: apply-git-notes

@@ -1,0 +1,28 @@
+
+{{alias}}( value )
+    Tests if an input value is a matrix orientation.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an input value is a matrix orientation.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 'rows' )
+    true
+    > bool = {{alias}}( 'columns' )
+    true
+    > bool = {{alias}}( '' )
+    false
+    > bool = {{alias}}( 'beep' )
+    false
+
+    See Also
+    --------
+

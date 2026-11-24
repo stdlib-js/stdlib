@@ -129,7 +129,7 @@ gcusumors.ndarray( 4, 0.0, x, 2, 1, y, -1, y.length-1 );
 
 -   If `N <= 0`, both functions return `y` unchanged.
 -   Ordinary recursive summation (i.e., a "simple" sum) is performant, but can incur significant numerical error. If performance is paramount and error tolerated, using ordinary recursive summation is acceptable; in all other cases, exercise due caution.
--   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array/base/accessor`][@stdlib/array/base/accessor])
+-   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array/base/accessor`][@stdlib/array/base/accessor]).
 -   Depending on the environment, the typed versions ([`dcusumors`][@stdlib/blas/ext/base/dcusumors], [`scusumors`][@stdlib/blas/ext/base/scusumors], etc.) are likely to be significantly more performant.
 
 </section>

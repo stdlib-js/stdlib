@@ -26,7 +26,7 @@
 *
 * @example
 * var v = acsch( 0 );
-* // returns NaN
+* // returns Infinity
 *
 * @example
 * var v = acsch( -1.0 );

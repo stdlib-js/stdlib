@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the CBLAS Level 1 routine `cblas_ddot`.
 */
-#ifndef DDOT_CBLAS_H
-#define DDOT_CBLAS_H
+#ifndef STDLIB_BLAS_BASE_DDOT_CBLAS_H
+#define STDLIB_BLAS_BASE_DDOT_CBLAS_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -40,4 +40,4 @@ double API_SUFFIX(cblas_ddot)( const CBLAS_INT N, const double *X, const CBLAS_I
 }
 #endif
 
-#endif // !DDOT_CBLAS_H
+#endif // !STDLIB_BLAS_BASE_DDOT_CBLAS_H

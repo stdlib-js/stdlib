@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the BLAS Level 1 routine `sasum`.
 */
-#ifndef SASUM_H
-#define SASUM_H
+#ifndef STDLIB_BLAS_BASE_SASUM_H
+#define STDLIB_BLAS_BASE_SASUM_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -45,4 +45,4 @@ float API_SUFFIX(c_sasum_ndarray)( const CBLAS_INT N, const float *X, const CBLA
 }
 #endif
 
-#endif // !SASUM_H
+#endif // !STDLIB_BLAS_BASE_SASUM_H

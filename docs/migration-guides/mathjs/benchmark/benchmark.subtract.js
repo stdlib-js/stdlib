@@ -26,6 +26,7 @@ var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var filledBy = require( '@stdlib/array/filled-by' );
 var uniform = require( '@stdlib/random/base/uniform' ).factory;
 var base = require( '@stdlib/number/float64/base/sub' );
+var format = require( '@stdlib/string/format' );
 var tryRequire = require( '@stdlib/utils/try-require' );
 var pkg = require( './../package.json' ).name;
 
@@ -40,7 +41,7 @@ var opts = {
 
 // MAIN //
 
-bench( pkg+'::stdlib:number/float64/base/sub:value=number', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:number/float64/base/sub:value=number', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var z;
@@ -68,7 +69,7 @@ bench( pkg+'::stdlib:number/float64/base/sub:value=number', opts, function bench
 
 // TODO: add math/ops/sub benchmarks
 
-bench( pkg+'::mathjs:subtract:value=number', opts, function benchmark( b ) {
+bench( format( '%s::mathjs:subtract:value=number', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var z;

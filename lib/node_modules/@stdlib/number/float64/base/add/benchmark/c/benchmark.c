@@ -88,7 +88,7 @@ static double rand_double( void ) {
 *
 * @return sum
 */
-double add( const double x, const double y ) {
+static double add( const double x, const double y ) {
 	return x + y;
 }
 
@@ -99,15 +99,18 @@ double add( const double x, const double y ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	double x;
+	double x[ 100 ];
 	double y;
 	double t;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = ( 1000.0*rand_double() ) - 500.0;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( 1000.0*rand_double() ) - 500.0;
-		y = add( x, 5.0 );
+		y = add( x[ i%100 ], 5.0 );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;

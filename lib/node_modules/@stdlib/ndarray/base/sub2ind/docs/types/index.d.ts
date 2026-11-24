@@ -16,6 +16,8 @@
 * limitations under the License.
 */
 
+/* eslint-disable jsdoc/check-param-names */
+
 // TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
@@ -118,7 +120,7 @@ import { ArrayLike } from '@stdlib/types/array';
 * var shape = [ 3, 3, 3 ];
 * var strides = [ 9, 3, 1 ];
 * var offset = 0;
-* var mode = [ 'throw' ]
+* var mode = [ 'throw' ];
 *
 * var idx = sub2ind( shape, strides, offset, 1, 2, 2, mode );
 * // returns 17

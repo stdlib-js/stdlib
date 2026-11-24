@@ -18,8 +18,10 @@
 
 #include "stdlib/stats/base/dists/cauchy/logcdf.h"
 #include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/math/base/assert/is_infinite.h"
 #include "stdlib/math/base/special/atan2.h"
 #include "stdlib/math/base/special/ln.h"
+#include "stdlib/constants/float64/ninf.h"
 
 static const double ONE_OVER_PI = 0.3183098861837907;
 
@@ -43,6 +45,9 @@ double stdlib_base_dists_cauchy_logcdf( const double x, const double x0, const d
 		gamma <= 0.0
 	) {
 		return 0.0/0.0; // NaN
+	}
+	if ( stdlib_base_is_infinite( x ) ) {
+		return ( x < 0.0 ) ? STDLIB_CONSTANT_FLOAT64_NINF : 0.0;
 	}
 	return stdlib_base_ln( ( ONE_OVER_PI * stdlib_base_atan2( x-x0, gamma ) ) + 0.5 );
 }

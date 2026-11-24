@@ -19,9 +19,9 @@
 // TypeScript Version: 4.1
 
 /**
-* Tests for native `toStringTag` support.
+* Tests for native `Symbol.toStringTag` support.
 *
-* @returns boolean indicating if an environment has `toStringTag` support
+* @returns boolean indicating if an environment has `Symbol.toStringTag` support
 *
 * @example
 * var bool = hasToStringTagSupport();

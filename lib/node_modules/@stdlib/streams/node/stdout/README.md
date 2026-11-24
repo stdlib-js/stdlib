@@ -49,7 +49,7 @@ stdout.write( 'beep', 'utf8' );
 ## Notes
 
 -   Unlike other streams, `stdout` can **never** be closed and, thus, never emits a `'finish'` event.
--   Although rare, writes can block when output is redirected to a file. 
+-   Although rare, writes can block when output is redirected to a file.
 
 </section>
 

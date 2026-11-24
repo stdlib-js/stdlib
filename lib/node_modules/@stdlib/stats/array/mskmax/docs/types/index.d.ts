@@ -41,9 +41,9 @@ type InputArray = NumericArray | Collection<number> | AccessorArrayLike<number>;
 * var v = mskmax( x, mask );
 * // returns 2.0
 */
-declare function max( x: InputArray, mask: InputArray ): number;
+declare function mskmax( x: InputArray, mask: InputArray ): number;
 
 
 // EXPORTS //
 
-export = max;
+export = mskmax;

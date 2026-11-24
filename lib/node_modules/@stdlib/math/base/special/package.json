@@ -56,5 +56,10 @@
     "lib",
     "mathematics",
     "math"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "alias_prefix": "stdlib_base_"
+    }
+  }
 }

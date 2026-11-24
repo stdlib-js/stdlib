@@ -1,0 +1,12 @@
+
+{{alias}}
+    The golden ratio `φ`.
+
+    Examples
+    --------
+    > {{alias}}
+    1.6181640625
+
+    See Also
+    --------
+

@@ -79,7 +79,7 @@ var bool = ( reFilename.REGEXP.toString() === reFilename().toString() );
 
 #### reFilename.REGEXP_POSIX
 
-[Regular expression][@stdlib/regexp/filename-posix] to split a [POSIX][posix] filename. 
+[Regular expression][@stdlib/regexp/filename-posix] to split a [POSIX][posix] filename.
 
 ```javascript
 var parts = reFilename.REGEXP_POSIX.exec( '/foo/bar/index.js' ).slice();

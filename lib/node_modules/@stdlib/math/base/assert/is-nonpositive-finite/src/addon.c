@@ -18,6 +18,7 @@
 
 #include "stdlib/math/base/assert/is_nonpositive_finite.h"
 #include <node_api.h>
+#include <stdbool.h>
 #include <stdint.h>
 #include <assert.h>
 

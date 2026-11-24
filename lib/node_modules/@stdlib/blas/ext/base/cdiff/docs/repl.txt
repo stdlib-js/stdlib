@@ -1,0 +1,175 @@
+
+{{alias}}( N, k, x,sx, N1,p,sp, N2,a,sa, out,so, w,sw )
+    Calculates the k-th discrete forward difference of a single-precision
+    complex floating-point strided array.
+
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use a typed
+    array view.
+
+    When `k <= 1`, the workspace array is unused and thus ignored.
+
+    If `N + N1 + N2 <= 1` or `k >= N + N1 + N2`, the function returns the
+    output array unchanged.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    k: integer
+        Number of times to recursively compute differences.
+
+    x: Complex64Array
+        Input array.
+
+    sx: integer
+        Stride length for `x`.
+
+    N1: integer
+        Number of elements to prepend.
+
+    p: Complex64Array
+        Array containing values to prepend prior to computing differences.
+
+    sp: integer
+        Stride length for `p`.
+
+    N2: integer
+        Number of elements to append.
+
+    a: Complex64Array
+        Array containing values to append prior to computing differences.
+
+    sa: integer
+        Stride length for `a`.
+
+    out: Complex64Array
+        Output array. Must have `N + N1 + N2 - k` indexed elements.
+
+    so: integer
+        Stride length for `out`.
+
+    w: Complex64Array
+        Workspace array. Must have `N + N1 + N2 - 1` indexed elements.
+
+    sw: integer
+        Stride length for `w`.
+
+    Returns
+    -------
+    out: Complex64Array
+        Output array.
+
+    Examples
+    --------
+    // Standard usage:
+    > var x = new {{alias:@stdlib/array/complex64}}( [ 2.0, 3.0, 4.0, 7.0 ] );
+    > var p = new {{alias:@stdlib/array/complex64}}( [ 1.0, 1.0 ] );
+    > var a = new {{alias:@stdlib/array/complex64}}( [ 5.0, 9.0 ] );
+    > var out = new {{alias:@stdlib/array/complex64}}( 3 );
+    > var w = new {{alias:@stdlib/array/complex64}}( 3 );
+    > {{alias}}( x.length, 1, x, 1, 1, p, 1, 1, a, 1, out, 1, w, 1 )
+    <Complex64Array>[ 1.0, 2.0, 2.0, 4.0, 1.0, 2.0 ]
+
+    // Using `N` and stride parameters:
+    > out = new {{alias:@stdlib/array/complex64}}( 3 );
+    > w = new {{alias:@stdlib/array/complex64}}( 3 );
+    > {{alias}}( x.length, 1, x, -1, 1, p, 1, 1, a, 1, out, 1, w, 1 )
+    <Complex64Array>[ 3.0, 6.0, -2.0, -4.0, 3.0, 6.0 ]
+
+
+{{alias}}.ndarray( N, k, x,sx,ox, N1, p,sp,op, N2, a,sa,oa, out,so,oo, w,sw,ow )
+    Calculates the k-th discrete forward difference of a single-precision
+    complex floating-point strided array using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    k: integer
+        Number of times to recursively compute differences.
+
+    x: Complex64Array
+        Input array.
+
+    sx: integer
+        Stride length for `x`.
+
+    ox: integer
+        Starting index for `x`.
+
+    N1: integer
+        Number of elements to prepend.
+
+    p: Complex64Array
+        Array containing values to prepend prior to computing differences.
+
+    sp: integer
+        Stride length for `p`.
+
+    op: integer
+        Starting index for `p`.
+
+    N2: integer
+        Number of elements to append.
+
+    a: Complex64Array
+        Array containing values to append prior to computing differences.
+
+    sa: integer
+        Stride length for `a`.
+
+    oa: integer
+        Starting index for `a`.
+
+    out: Complex64Array
+        Output array. Must have `N + N1 + N2 - k` indexed elements.
+
+    so: integer
+        Stride length for `out`.
+
+    oo: integer
+        Starting index for `out`.
+
+    w: Complex64Array
+        Workspace array. Must have `N + N1 + N2 - 1` indexed elements.
+
+    sw: integer
+        Stride length for `w`.
+
+    ow: integer
+        Starting index for `w`.
+
+    Returns
+    -------
+    out: Complex64Array
+        Output array.
+
+    Examples
+    --------
+    // Standard usage:
+    > var x = new {{alias:@stdlib/array/complex64}}( [ 2.0, 3.0, 4.0, 7.0 ] );
+    > var p = new {{alias:@stdlib/array/complex64}}( [ 1.0, 1.0 ] );
+    > var a = new {{alias:@stdlib/array/complex64}}( [ 5.0, 9.0 ] );
+    > var out = new {{alias:@stdlib/array/complex64}}( 3 );
+    > var w = new {{alias:@stdlib/array/complex64}}( 3 );
+    > {{alias}}.ndarray( 2, 1, x,1,0, 1, p,1,0, 1, a,1,0, out,1,0, w,1,0 )
+    <Complex64Array>[ 1.0, 2.0, 2.0, 4.0, 1.0, 2.0 ]
+
+    // Advanced indexing:
+    > out = new {{alias:@stdlib/array/complex64}}( 2 );
+    > w = new {{alias:@stdlib/array/complex64}}( 2 );
+    > {{alias}}.ndarray( 1, 1, x,1,1, 1, p,1,0, 1, a,1,0, out,1,0, w,1,0 )
+    <Complex64Array>[ 3.0, 6.0, 1.0, 2.0 ]
+
+    See Also
+    --------
+

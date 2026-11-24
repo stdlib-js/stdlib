@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the BLAS Level 1 routine `dcopy`.
 */
-#ifndef DCOPY_H
-#define DCOPY_H
+#ifndef STDLIB_BLAS_BASE_DCOPY_H
+#define STDLIB_BLAS_BASE_DCOPY_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -45,4 +45,4 @@ void API_SUFFIX(c_dcopy_ndarray)( const CBLAS_INT N, const double *X, const CBLA
 }
 #endif
 
-#endif // !DCOPY_H
+#endif // !STDLIB_BLAS_BASE_DCOPY_H

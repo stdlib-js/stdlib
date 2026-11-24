@@ -173,11 +173,11 @@ interface Namespace {
 	*
 	* @example
 	* var y = ns.logpdf( 2.0, 1.0, 0.5 );
-	* // returns ~-3.297
+	* // returns ~-3.307
 	*
 	* var mylogpdf = ns.logpdf.factory( 7.0, 6.0 );
 	* y = mylogpdf( 7.0 );
-	* // returns ~-1.864
+	* // returns ~-1.863
 	*/
 	logpdf: typeof logpdf;
 
@@ -284,7 +284,7 @@ interface Namespace {
 	* // returns ~3150.149
 	*
 	* y = myMGF( 0.08 );
-	* // returns ~2.137s
+	* // returns ~2.137
 	*/
 	mgf: typeof mgf;
 

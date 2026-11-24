@@ -27,11 +27,11 @@
 * @return        function value
 *
 * @example
-* float v = stdlib_base_kronecker_delta( 3.0f, 3.0f );
+* float v = stdlib_base_kronecker_deltaf( 3.0f, 3.0f );
 * // returns 1.0f
 *
 * @example
-* float v = stdlib_base_kronecker_delta( 3.0f, 3.14f );
+* float v = stdlib_base_kronecker_deltaf( 3.0f, 3.14f );
 * // returns 0.0f
 */
 float stdlib_base_kronecker_deltaf( const float i, const float j ) {

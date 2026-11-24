@@ -262,6 +262,8 @@ BREAKING CHANGE: remove `dmax`
 
 To migrate, users should access the same symbol via the
 `@stdlib/stats/strided` namespace.
+
+Ref: https://github.com/stdlib-js/stdlib/issues/4797
 ```
 
 ### 8. Update paths using a global find-and-replace

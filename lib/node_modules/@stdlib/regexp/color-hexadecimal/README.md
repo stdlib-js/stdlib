@@ -32,7 +32,7 @@ var reColorHexadecimal = require( '@stdlib/regexp/color-hexadecimal' );
 
 #### reColorHexadecimal( \[mode] )
 
-Returns a [regular expression][mdn-regexp] to match a full hexadecimal color. 
+Returns a [regular expression][mdn-regexp] to match a full hexadecimal color.
 
 ```javascript
 var RE = reColorHexadecimal();
@@ -67,7 +67,7 @@ var bool = RE.test( '000' );
 
 #### reColorHexadecimal.REGEXP
 
-[Regular expression][mdn-regexp] to match a full length hexadecimal color. 
+[Regular expression][mdn-regexp] to match a full length hexadecimal color.
 
 ```javascript
 var bool = reColorHexadecimal.REGEXP.test( 'ffffff' );
@@ -79,7 +79,7 @@ bool = reColorHexadecimal.REGEXP.test( '000' );
 
 #### reColorHexadecimal.REGEXP_SHORTHAND
 
-[Regular expression][mdn-regexp] to match a shorthand hexadecimal color. 
+[Regular expression][mdn-regexp] to match a shorthand hexadecimal color.
 
 ```javascript
 var bool = reColorHexadecimal.REGEXP_SHORTHAND.test( 'ffffff' );
@@ -91,7 +91,7 @@ bool = reColorHexadecimal.REGEXP_SHORTHAND.test( '000' );
 
 #### reColorHexadecimal.REGEXP_EITHER
 
-[Regular expression][mdn-regexp] to match **either** a shorthand or a full length hexadecimal color. 
+[Regular expression][mdn-regexp] to match **either** a shorthand or a full length hexadecimal color.
 
 ```javascript
 var bool = reColorHexadecimal.REGEXP_EITHER.test( 'ffffff' );

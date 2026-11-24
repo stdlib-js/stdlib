@@ -64,5 +64,87 @@
     "kronecker",
     "spike",
     "impulse"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "diracDelta",
+      "alias": "diracDelta",
+      "pkg_desc": "evaluate the Dirac delta function for a double-precision floating-point number",
+      "desc": "evaluates the Dirac delta function for a double-precision floating-point number",
+      "short_desc": "Dirac delta",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": -5e-324
+            },
+            {
+              "min": 5e-324,
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              0.5,
+              50
+            ]
+          },
+          "example_values": [
+            -37.2,
+            -14.6,
+            -0.81,
+            -2.37,
+            -9.94,
+            0.73,
+            1.58,
+            4.91,
+            12.4,
+            23.7,
+            -5.13,
+            7.68,
+            -19.8,
+            33.2,
+            -28.5,
+            16.1,
+            -2.25,
+            41.9,
+            -13.7,
+            9.03
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "result",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "dirac",
+        "delta",
+        "distribution",
+        "dist",
+        "continuous",
+        "kronecker",
+        "spike",
+        "impulse"
+      ],
+      "extra_keywords": []
+    }
+  }
 }

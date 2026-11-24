@@ -144,7 +144,7 @@ declare function countIfs<T = unknown, U extends InputArray<T> = InputArray<T>>(
 * var x1 = [ -1, -2, 4, 5, -8 ];
 * var x2 = [ 0, 4, 3, 2, 12 ];
 *
-* var n = countIfs( x0, predicate0, x1, predicate1 );
+* var n = countIfs( x0, predicate0, x1, predicate1, x2, predicate2 );
 * // returns 2
 */
 declare function countIfs<T = unknown, U extends InputArray<T> = InputArray<T>>( x0: U, predicate0: Predicate<T, U>, x1: U, predicate1: Predicate<T, U>, x2: U, predicate2: Predicate<T, U> ): number;
@@ -230,7 +230,7 @@ declare function countIfs<T = unknown, U extends InputArray<T> = InputArray<T>>(
 * var x1 = [ -1, -2, 4, 5, -8 ];
 * var x2 = [ 0, 4, 3, 2, 12 ];
 * var x3 = [ 2, 9, 3, 6, 5 ];
-* var x4 = [ false, true, false, true, true ]
+* var x4 = [ false, true, false, true, true ];
 *
 * var n = countIfs( x0, predicate0, x1, predicate1, x3, predicate3, x4, predicate4 );
 * // returns 2

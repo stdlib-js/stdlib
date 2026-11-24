@@ -1,0 +1,105 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/binary",
+        "@stdlib/math/base/special/absf",
+        "@stdlib/math/base/special/floorf",
+        "@stdlib/math/base/special/powf",
+        "@stdlib/math/base/assert/is-infinitef",
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/constants/float32/min-base10-exponent",
+        "@stdlib/constants/float32/max-base10-exponent",
+        "@stdlib/constants/float32/max-safe-integer",
+        "@stdlib/constants/float32/min-base10-exponent-subnormal",
+        "@stdlib/constants/float32/ninf"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/absf",
+        "@stdlib/math/base/special/floorf",
+        "@stdlib/math/base/special/powf",
+        "@stdlib/math/base/assert/is-infinitef",
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/constants/float32/min-base10-exponent",
+        "@stdlib/constants/float32/max-base10-exponent",
+        "@stdlib/constants/float32/max-safe-integer",
+        "@stdlib/constants/float32/min-base10-exponent-subnormal",
+        "@stdlib/constants/float32/ninf"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/absf",
+        "@stdlib/math/base/special/floorf",
+        "@stdlib/math/base/special/powf",
+        "@stdlib/math/base/assert/is-infinitef",
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/constants/float32/min-base10-exponent",
+        "@stdlib/constants/float32/max-base10-exponent",
+        "@stdlib/constants/float32/max-safe-integer",
+        "@stdlib/constants/float32/min-base10-exponent-subnormal",
+        "@stdlib/constants/float32/ninf"
+      ]
+    }
+  ]
+}

@@ -40,7 +40,7 @@
     [...]
     > var labels = data.labels
     [...]
-    > var river = data.river
+    > var rivers = data.rivers
     {...}
     > var t = data.temperature
     [...]

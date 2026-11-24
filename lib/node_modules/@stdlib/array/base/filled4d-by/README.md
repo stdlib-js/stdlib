@@ -72,7 +72,7 @@ var ctx = {
 };
 
 var out = filled4dBy( [ 1, 1, 2, 3 ], clbk, ctx );
-// returns [ [ [ [ 1.0, 1.0, 1.0 ], [ 1.0, 1.0, 1.0 ] ] ] ];
+// returns [ [ [ [ 1.0, 1.0, 1.0 ], [ 1.0, 1.0, 1.0 ] ] ] ]
 
 var cnt = ctx.count;
 // returns 6

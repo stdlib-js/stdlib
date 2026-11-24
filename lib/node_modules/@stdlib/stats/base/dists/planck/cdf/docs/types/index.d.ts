@@ -62,8 +62,8 @@ interface CDF {
 	* // returns NaN
 	*
 	* @example
-	* // Invalid probability
-	* var y = cdf( 2.0, 1.4 );
+	* // Invalid shape parameter
+	* var y = cdf( 2.0, -1.4 );
 	* // returns NaN
 	*/
 	( x: number, lambda: number ): number;

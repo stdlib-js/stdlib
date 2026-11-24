@@ -127,30 +127,24 @@ interface PMF {
 * @returns evaluated PMF
 *
 * @example
-* var y = pmf( 5.0, 20.0, 0.8 );
-* // returns ~0.157
+* var y = pmf( 1.0, 8, 4, 2 );
+* // returns ~0.571
 *
-* y = pmf( 21.0, 20.0, 0.5 );
-* // returns ~0.06
+* y = pmf( 2.0, 8, 4, 2 );
+* // returns ~0.214
 *
-* y = pmf( 5.0, 10.0, 0.4 );
-* // returns ~0.016
+* y = pmf( 0.0, 8, 4, 2 );
+* // returns ~0.214
 *
-* y = pmf( 0.0, 10.0, 0.9 );
-* // returns ~0.349
+* y = pmf( 1.5, 8, 4, 2 );
+* // returns 0.0
 *
-* y = pmf( 21.0, 15.5, 0.5 );
-* // returns ~0.037
+* var mypmf = pmf.factory( 30, 20, 5 );
+* y = mypmf( 4.0 );
+* // returns ~0.34
 *
-* y = pmf( 5.0, 7.4, 0.4 );
-* // returns ~0.051
-*
-* var mypmf = pmf.factory( 10, 0.5 );
-* y = mypmf( 3.0 );
-* // returns ~0.027
-*
-* y = mypmf( 5.0 );
-* // returns ~0.061
+* y = mypmf( 1.0 );
+* // returns ~0.029
 */
 declare var pmf: PMF;
 

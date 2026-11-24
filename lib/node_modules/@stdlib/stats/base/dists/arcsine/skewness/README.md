@@ -26,7 +26,7 @@ limitations under the License.
 
 <section class="intro">
 
-The [skewness][skewness] for an [arcsine][arcsine-distribution] random variable with with minimum support `a` and maximum support `b` is
+The [skewness][skewness] for an [arcsine][arcsine-distribution] random variable with minimum support `a` and maximum support `b` is
 
 <!-- <equation class="equation" label="eq:arcsine_skewness" align="center" raw="\operatorname{skew}\left( X \right) = 0" alt="Skewness for an arcsine distribution."> -->
 

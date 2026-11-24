@@ -28,7 +28,7 @@
 * @return        evaluated MGF
 *
 * @example
-* double v = mgf( 2.0, 3.0 );
+* double v = stdlib_base_dists_exponential_mgf( 2.0, 3.0 );
 * // returns 3.0
 */
 double stdlib_base_dists_exponential_mgf( const double t, const double lambda ) {

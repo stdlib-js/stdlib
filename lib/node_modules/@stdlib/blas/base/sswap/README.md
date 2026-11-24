@@ -235,7 +235,7 @@ The function accepts the following arguments:
 -   **offsetY**: `[in] CBLAS_INT` starting index for `Y`.
 
 ```c
-void c_sswap_ndarray( const CBLAS_INT N, float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, float *Y, const CBLAS_INT strideY, CBLAS_INT offsetY );
+void c_sswap_ndarray( const CBLAS_INT N, float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, float *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY );
 ```
 
 </section>

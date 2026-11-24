@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Async Iterator Symbol
+# AsyncIteratorSymbol
 
 > Async iterator [symbol][mdn-symbol] which specifies the default async iterator for an object.
 

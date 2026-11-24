@@ -39,7 +39,7 @@ The maximum [safe][safe-integers] nth [factorial][factorial] when stored in [sin
 <!-- eslint-disable id-length -->
 
 ```javascript
-var bool = ( FLOAT32_MAX_SAFE_NTH_FACTORIAL === 34 );
+var bool = ( FLOAT32_MAX_SAFE_NTH_FACTORIAL === 10 );
 // returns true
 ```
 
@@ -71,7 +71,7 @@ function factorial( n ) {
 
 var v;
 var i;
-for ( i = 0; i < 100; i++ ) {
+for ( i = 0; i < 20; i++ ) {
     v = factorial( i );
     if ( i > FLOAT32_MAX_SAFE_NTH_FACTORIAL ) {
         console.log( 'Unsafe: %d', v );

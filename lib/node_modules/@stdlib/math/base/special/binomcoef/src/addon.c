@@ -19,4 +19,4 @@
 #include "stdlib/math/base/special/binomcoef.h"
 #include "stdlib/math/base/napi/binary.h"
 
-STDLIB_MATH_BASE_NAPI_MODULE_LL_D( stdlib_base_binomcoef )
+STDLIB_MATH_BASE_NAPI_MODULE_DD_D( stdlib_base_binomcoef )

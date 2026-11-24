@@ -93,7 +93,7 @@ bool = isInt32Array( new Float32Array( 10 ) );
 bool = isInt32Array( new Float64Array( 10 ) );
 // returns false
 
-bool = isInt32Array( new Array( 10 ) );
+bool = isInt32Array( [] );
 // returns false
 
 bool = isInt32Array( {} );

@@ -105,7 +105,7 @@ The namespace contains the following functions for creating iterator protocol-co
 
 ```javascript
 var roundn = require( '@stdlib/math/base/special/roundn' );
-var mean = require( '@stdlib/stats/base/mean' );
+var mean = require( '@stdlib/stats/strided/mean' );
 var iter = require( '@stdlib/random/iter' );
 
 var initialPrice = 100.0;

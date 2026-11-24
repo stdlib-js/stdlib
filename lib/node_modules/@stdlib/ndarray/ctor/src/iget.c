@@ -42,7 +42,7 @@
 * @return     status code
 */
 int8_t stdlib_ndarray_iget( const struct ndarray *arr, const int64_t idx, void *out ) {
-	uint8_t *ptr = stdlib_ndarray_iget_ptr( arr, idx );
+	const uint8_t *ptr = stdlib_ndarray_iget_ptr( arr, idx );
 	if ( ptr == NULL ) {
 		return -1;
 	}
@@ -64,7 +64,7 @@ int8_t stdlib_ndarray_iget( const struct ndarray *arr, const int64_t idx, void *
 * @return     status code
 */
 int8_t stdlib_ndarray_iget_float64( const struct ndarray *arr, const int64_t idx, double *out ) {
-	uint8_t *ptr = stdlib_ndarray_iget_ptr( arr, idx );
+	const uint8_t *ptr = stdlib_ndarray_iget_ptr( arr, idx );
 	if ( ptr == NULL ) {
 		return -1;
 	}
@@ -86,7 +86,7 @@ int8_t stdlib_ndarray_iget_float64( const struct ndarray *arr, const int64_t idx
 * @return     status code
 */
 int8_t stdlib_ndarray_iget_float32( const struct ndarray *arr, const int64_t idx, float *out ) {
-	uint8_t *ptr = stdlib_ndarray_iget_ptr( arr, idx );
+	const uint8_t *ptr = stdlib_ndarray_iget_ptr( arr, idx );
 	if ( ptr == NULL ) {
 		return -1;
 	}
@@ -108,7 +108,7 @@ int8_t stdlib_ndarray_iget_float32( const struct ndarray *arr, const int64_t idx
 * @return     status code
 */
 int8_t stdlib_ndarray_iget_uint64( const struct ndarray *arr, const int64_t idx, uint64_t *out ) {
-	uint8_t *ptr = stdlib_ndarray_iget_ptr( arr, idx );
+	const uint8_t *ptr = stdlib_ndarray_iget_ptr( arr, idx );
 	if ( ptr == NULL ) {
 		return -1;
 	}
@@ -130,7 +130,7 @@ int8_t stdlib_ndarray_iget_uint64( const struct ndarray *arr, const int64_t idx,
 * @return     status code
 */
 int8_t stdlib_ndarray_iget_int64( const struct ndarray *arr, const int64_t idx, int64_t *out ) {
-	uint8_t *ptr = stdlib_ndarray_iget_ptr( arr, idx );
+	const uint8_t *ptr = stdlib_ndarray_iget_ptr( arr, idx );
 	if ( ptr == NULL ) {
 		return -1;
 	}
@@ -152,7 +152,7 @@ int8_t stdlib_ndarray_iget_int64( const struct ndarray *arr, const int64_t idx, 
 * @return     status code
 */
 int8_t stdlib_ndarray_iget_uint32( const struct ndarray *arr, const int64_t idx, uint32_t *out ) {
-	uint8_t *ptr = stdlib_ndarray_iget_ptr( arr, idx );
+	const uint8_t *ptr = stdlib_ndarray_iget_ptr( arr, idx );
 	if ( ptr == NULL ) {
 		return -1;
 	}
@@ -174,7 +174,7 @@ int8_t stdlib_ndarray_iget_uint32( const struct ndarray *arr, const int64_t idx,
 * @return     status code
 */
 int8_t stdlib_ndarray_iget_int32( const struct ndarray *arr, const int64_t idx, int32_t *out ) {
-	uint8_t *ptr = stdlib_ndarray_iget_ptr( arr, idx );
+	const uint8_t *ptr = stdlib_ndarray_iget_ptr( arr, idx );
 	if ( ptr == NULL ) {
 		return -1;
 	}
@@ -196,7 +196,7 @@ int8_t stdlib_ndarray_iget_int32( const struct ndarray *arr, const int64_t idx, 
 * @return     status code
 */
 int8_t stdlib_ndarray_iget_uint16( const struct ndarray *arr, const int64_t idx, uint16_t *out ) {
-	uint8_t *ptr = stdlib_ndarray_iget_ptr( arr, idx );
+	const uint8_t *ptr = stdlib_ndarray_iget_ptr( arr, idx );
 	if ( ptr == NULL ) {
 		return -1;
 	}
@@ -218,7 +218,7 @@ int8_t stdlib_ndarray_iget_uint16( const struct ndarray *arr, const int64_t idx,
 * @return     status code
 */
 int8_t stdlib_ndarray_iget_int16( const struct ndarray *arr, const int64_t idx, int16_t *out ) {
-	uint8_t *ptr = stdlib_ndarray_iget_ptr( arr, idx );
+	const uint8_t *ptr = stdlib_ndarray_iget_ptr( arr, idx );
 	if ( ptr == NULL ) {
 		return -1;
 	}
@@ -240,7 +240,7 @@ int8_t stdlib_ndarray_iget_int16( const struct ndarray *arr, const int64_t idx, 
 * @return     status code
 */
 int8_t stdlib_ndarray_iget_uint8( const struct ndarray *arr, const int64_t idx, uint8_t *out ) {
-	uint8_t *ptr = stdlib_ndarray_iget_ptr( arr, idx );
+	const uint8_t *ptr = stdlib_ndarray_iget_ptr( arr, idx );
 	if ( ptr == NULL ) {
 		return -1;
 	}
@@ -262,7 +262,7 @@ int8_t stdlib_ndarray_iget_uint8( const struct ndarray *arr, const int64_t idx, 
 * @return     status code
 */
 int8_t stdlib_ndarray_iget_int8( const struct ndarray *arr, const int64_t idx, int8_t *out ) {
-	uint8_t *ptr = stdlib_ndarray_iget_ptr( arr, idx );
+	const uint8_t *ptr = stdlib_ndarray_iget_ptr( arr, idx );
 	if ( ptr == NULL ) {
 		return -1;
 	}
@@ -284,7 +284,7 @@ int8_t stdlib_ndarray_iget_int8( const struct ndarray *arr, const int64_t idx, i
 * @return     status code
 */
 int8_t stdlib_ndarray_iget_complex128( const struct ndarray *arr, const int64_t idx, stdlib_complex128_t *out ) {
-	uint8_t *ptr = stdlib_ndarray_iget_ptr( arr, idx );
+	const uint8_t *ptr = stdlib_ndarray_iget_ptr( arr, idx );
 	if ( ptr == NULL ) {
 		return -1;
 	}
@@ -306,7 +306,7 @@ int8_t stdlib_ndarray_iget_complex128( const struct ndarray *arr, const int64_t 
 * @return     status code
 */
 int8_t stdlib_ndarray_iget_complex64( const struct ndarray *arr, const int64_t idx, stdlib_complex64_t *out ) {
-	uint8_t *ptr = stdlib_ndarray_iget_ptr( arr, idx );
+	const uint8_t *ptr = stdlib_ndarray_iget_ptr( arr, idx );
 	if ( ptr == NULL ) {
 		return -1;
 	}
@@ -328,7 +328,7 @@ int8_t stdlib_ndarray_iget_complex64( const struct ndarray *arr, const int64_t i
 * @return     status code
 */
 int8_t stdlib_ndarray_iget_bool( const struct ndarray *arr, const int64_t idx, bool *out ) {
-	uint8_t *ptr = stdlib_ndarray_iget_ptr( arr, idx );
+	const uint8_t *ptr = stdlib_ndarray_iget_ptr( arr, idx );
 	if ( ptr == NULL ) {
 		return -1;
 	}

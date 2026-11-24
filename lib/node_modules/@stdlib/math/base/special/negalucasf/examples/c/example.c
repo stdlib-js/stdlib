@@ -18,14 +18,13 @@
 
 #include "stdlib/math/base/special/negalucasf.h"
 #include <stdio.h>
-#include <stdint.h>
 
 int main( void ) {
-	int32_t i;
+	float i;
 	float v;
 
-	for ( i = 0; i > -35; i-- ) {
+	for ( i = 0.0f; i > -35.0f; i-- ) {
 		v = stdlib_base_negalucasf( i );
-		printf( "negalucasf(%d) = %f\n", i, v );
+		printf( "negalucasf(%f) = %f\n", i, v );
 	}
 }

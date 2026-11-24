@@ -59,10 +59,14 @@ The returned object has the following properties:
     -   **floating_point**: default floating-point data type.
     -   **real_floating_point**: default real-valued floating-point data type.
     -   **complex_floating_point**: default complex-valued floating-point data type.
-    -   **boolean**: default boolean data type.
     -   **integer**: default integer data type.
     -   **signed_integer**: default signed integer data type.
     -   **unsigned_integer**: default unsigned integer data type.
+    -   **boolean**: default boolean data type.
+    -   **index**: default index data type.
+    -   **integer_index**: default integer index data type.
+    -   **boolean_index**: default boolean index data type.
+    -   **mask_index**: default mask index data type.
 
 #### defaults.get( name )
 

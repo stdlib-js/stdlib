@@ -1,0 +1,26 @@
+
+{{alias}}( arrays )
+    Computes the sum of all elements in a one-dimensional double-precision
+    complex floating-point ndarray.
+
+    If provided an empty ndarray, the function returns `0.0`.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing a one-dimensional input ndarray.
+
+    Returns
+    -------
+    out: Complex128
+        Sum.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/ndarray/vector/complex128}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > {{alias}}( [ x ] )
+    <Complex128>[ 4.0, 6.0 ]
+
+    See Also
+    --------
+

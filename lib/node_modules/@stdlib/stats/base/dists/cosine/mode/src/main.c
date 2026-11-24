@@ -31,7 +31,7 @@
 * // returns 0.0
 */
 double stdlib_base_dists_cosine_mode( const double mu, const double s ) {
-	if ( 
+	if (
 		stdlib_base_is_nan( mu ) ||
 		stdlib_base_is_nan( s ) ||
 		s <= 0.0

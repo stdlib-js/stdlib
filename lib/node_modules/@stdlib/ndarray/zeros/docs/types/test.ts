@@ -27,6 +27,7 @@ import zeros = require( './index' );
 
 	zeros( [ 2, 2 ], { 'dtype': 'float64' } ); // $ExpectType float64ndarray
 	zeros( [ 2, 2 ], { 'dtype': 'float32' } ); // $ExpectType float32ndarray
+	zeros( [ 2, 2 ], { 'dtype': 'float16' } ); // $ExpectType float16ndarray
 	zeros( [ 2, 2 ], { 'dtype': 'complex128' } ); // $ExpectType complex128ndarray
 	zeros( [ 2, 2 ], { 'dtype': 'complex64' } ); // $ExpectType complex64ndarray
 	zeros( [ 2, 2 ], { 'dtype': 'int32' } ); // $ExpectType int32ndarray

@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the CBLAS Level 1 routine `cblas_sasum`.
 */
-#ifndef SASUM_CBLAS_H
-#define SASUM_CBLAS_H
+#ifndef STDLIB_BLAS_BASE_SASUM_CBLAS_H
+#define STDLIB_BLAS_BASE_SASUM_CBLAS_H
 
 #include "stdlib/blas/base/shared"
 
@@ -40,4 +40,4 @@ float API_SUFFIX(cblas_sasum)( const CBLAS_INT N, const float *X, const CBLAS_IN
 }
 #endif
 
-#endif // !SASUM_CBLAS_H
+#endif // !STDLIB_BLAS_BASE_SASUM_CBLAS_H

@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Iterator Symbol Support
+# hasIteratorSymbolSupport
 
 > Detect native [`Symbol.iterator`][mdn-iterator-symbol] support.
 

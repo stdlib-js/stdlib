@@ -34,6 +34,15 @@
     3.0
 
 
+{{alias}}.name
+    Constructor name.
+
+    Examples
+    --------
+    > var str = {{alias}}.name
+    'Complex64'
+
+
 {{alias}}.BYTES_PER_ELEMENT
     Size (in bytes) of each component.
 

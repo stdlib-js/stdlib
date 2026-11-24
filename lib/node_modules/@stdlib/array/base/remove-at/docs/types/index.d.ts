@@ -32,7 +32,7 @@
 * @example
 * var x = [ 1, 1, 2, 3, 3 ];
 *
-* var y = removeAt( x, -2 );
+* var y = removeAt( x, -3 );
 * // returns [ 1, 1, 3, 3 ]
 *
 * var bool = ( x === y );

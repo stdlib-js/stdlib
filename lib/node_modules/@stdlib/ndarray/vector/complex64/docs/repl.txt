@@ -1,0 +1,175 @@
+
+{{alias}}( [options] )
+    Returns a one-dimensional single-precision complex floating-point ndarray.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Options.
+
+    options.order: string (optional)
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style). Default: 'row-major'.
+
+    options.mode: string (optional)
+        Specifies how to handle indices which exceed array dimensions. If equal
+        to 'throw', an ndarray instance throws an error when an index exceeds
+        array dimensions. If equal to 'normalize', an ndarray instance
+        normalizes negative indices and throws an error when an index exceeds
+        array dimensions. If equal to 'wrap', an ndarray instance wraps around
+        indices exceeding array dimensions using modulo arithmetic. If equal to
+        'clamp', an ndarray instance sets an index exceeding array dimensions
+        to either `0` (minimum index) or the maximum index. Default: 'throw'.
+
+    options.readonly: boolean (optional)
+        Boolean indicating whether an array should be read-only. Default: false.
+
+    Returns
+    -------
+    out: ndarray
+        A one-dimensional ndarray.
+
+    Examples
+    --------
+    > var arr = {{alias}}()
+    <ndarray>
+
+
+{{alias}}( length[, options] )
+    Returns a one-dimensional single-precision complex floating-point ndarray
+    having a specified length.
+
+    Parameters
+    ----------
+    length: integer
+        Number of elements.
+
+    options: Object (optional)
+        Options.
+
+    options.order: string (optional)
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style). Default: 'row-major'.
+
+    options.mode: string (optional)
+        Specifies how to handle indices which exceed array dimensions. If equal
+        to 'throw', an ndarray instance throws an error when an index exceeds
+        array dimensions. If equal to 'normalize', an ndarray instance
+        normalizes negative indices and throws an error when an index exceeds
+        array dimensions. If equal to 'wrap', an ndarray instance wraps around
+        indices exceeding array dimensions using modulo arithmetic. If equal to
+        'clamp', an ndarray instance sets an index exceeding array dimensions
+        to either `0` (minimum index) or the maximum index. Default: 'throw'.
+
+    options.readonly: boolean (optional)
+        Boolean indicating whether an array should be read-only. Default: false.
+
+    Returns
+    -------
+    out: ndarray
+        A one-dimensional ndarray.
+
+    Examples
+    --------
+    > var arr = {{alias}}( 5 )
+    <ndarray>
+    > var len = {{alias:@stdlib/ndarray/numel}}( arr )
+    5
+
+
+{{alias}}( obj[, options] )
+    Creates a one-dimensional single-precision complex floating-point ndarray
+    from an array-like object or iterable.
+
+    Parameters
+    ----------
+    obj: Object
+        Array-like object or iterable from which to generate an ndarray.
+
+    options: Object (optional)
+        Options.
+
+    options.order: string (optional)
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style). Default: 'row-major'.
+
+    options.mode: string (optional)
+        Specifies how to handle indices which exceed array dimensions. If equal
+        to 'throw', an ndarray instance throws an error when an index exceeds
+        array dimensions. If equal to 'normalize', an ndarray instance
+        normalizes negative indices and throws an error when an index exceeds
+        array dimensions. If equal to 'wrap', an ndarray instance wraps around
+        indices exceeding array dimensions using modulo arithmetic. If equal to
+        'clamp', an ndarray instance sets an index exceeding array dimensions
+        to either `0` (minimum index) or the maximum index. Default: 'throw'.
+
+    options.readonly: boolean (optional)
+        Boolean indicating whether an array should be read-only. Default: false.
+
+    Returns
+    -------
+    out: ndarray
+        A one-dimensional ndarray.
+
+    Examples
+    --------
+    > var v = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
+    > var arr = {{alias}}( v )
+    <ndarray>
+    > var len = {{alias:@stdlib/ndarray/numel}}( arr )
+    3
+
+
+{{alias}}( buffer[, byteOffset[, length]][, options] )
+    Returns a one-dimensional single-precision complex floating-point ndarray
+    view of an ArrayBuffer.
+
+    Parameters
+    ----------
+    buffer: ArrayBuffer
+        Underlying ArrayBuffer.
+
+    byteOffset: integer (optional)
+        Integer byte offset specifying the location of the first indexed
+        element. Default: 0.
+
+    length: integer (optional)
+        View length. If not provided, the view spans from the byteOffset to
+        the end of the underlying ArrayBuffer.
+
+    options: Object (optional)
+        Options.
+
+    options.order: string (optional)
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style). Default: 'row-major'.
+
+    options.mode: string (optional)
+        Specifies how to handle indices which exceed array dimensions. If equal
+        to 'throw', an ndarray instance throws an error when an index exceeds
+        array dimensions. If equal to 'normalize', an ndarray instance
+        normalizes negative indices and throws an error when an index exceeds
+        array dimensions. If equal to 'wrap', an ndarray instance wraps around
+        indices exceeding array dimensions using modulo arithmetic. If equal to
+        'clamp', an ndarray instance sets an index exceeding array dimensions
+        to either `0` (minimum index) or the maximum index. Default: 'throw'.
+
+    options.readonly: boolean (optional)
+        Boolean indicating whether an array should be read-only. Default: false.
+
+    Returns
+    -------
+    out: ndarray
+        A one-dimensional ndarray.
+
+    Examples
+    --------
+    > var buf = new {{alias:@stdlib/array/buffer}}( 32 );
+    > var arr = {{alias}}( buf, 0, 2 )
+    <ndarray>
+    > var len = {{alias:@stdlib/ndarray/numel}}( arr )
+    2
+
+    See Also
+    --------
+

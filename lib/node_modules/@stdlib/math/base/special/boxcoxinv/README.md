@@ -26,7 +26,7 @@ limitations under the License.
 
 <section class="intro">
 
-To compute the inverse of a one-parameter [Box-Cox transformation][box-cox-transformation], one finds the `x` such that 
+To compute the inverse of a one-parameter [Box-Cox transformation][box-cox-transformation], one finds the `x` such that
 
 <!-- <equation class="equation" label="eq:inverse_boxcox_transformation_one_parameter" align="center" raw="y = \begin{cases}\frac{x^{\lambda} - 1}{\lambda} & \textrm{if}\ \lambda \neq 0 \\ \ln(x) & \textrm{if}\ \lambda = 0 \end{cases}" alt="Inverse One-Parameter Box-Cox Transformation"> -->
 

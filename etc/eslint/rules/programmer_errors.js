@@ -80,11 +80,11 @@ rules[ 'getter-return' ] = 'error';
 /**
 * Never allow using an async function as a `Promise` executor.
 *
-* @name no-async-promise-executor)
+* @name no-async-promise-executor
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-async-promise-executor)]{@link https://eslint.org/docs/rules/no-async-promise-executor}
+* @see [no-async-promise-executor]{@link https://eslint.org/docs/rules/no-async-promise-executor}
 */
 rules[ 'no-async-promise-executor' ] = 'error';
 
@@ -832,6 +832,7 @@ rules[ 'require-atomic-updates' ] = 'error';
 * @example
 * // Good...
 * var isnan = require( '@stdlib/math/base/assert/is-nan' );
+*
 * if ( isnan( x ) ) {
 *     // Do something...
 * }
@@ -839,26 +840,107 @@ rules[ 'require-atomic-updates' ] = 'error';
 rules[ 'use-isnan' ] = 'error';
 
 /**
-* Require valid JSDoc.
+* Ensure JSDoc parameter names match function parameters.
 *
-* @name valid-jsdoc
+* @name jsdoc/check-param-names
 * @memberof rules
 * @type {Array}
-* @see [valid-jsdoc]{@link https://eslint.org/docs/rules/valid-jsdoc}
+* @see [check-param-names]{@link https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-param-names.md}
 */
-rules[ 'valid-jsdoc' ] = [ 'error', {
-	'prefer': {
-		'arg': 'param',
-		'argument': 'param',
-		'class': 'constructor',
-		'return': 'returns'
-	},
-	'requireReturn': false,
-	'requireReturnType': true,
-	'matchDescription': '.+',
-	'requireParamDescription': true,
-	'requireReturnDescription': true
+rules[ 'jsdoc/check-param-names' ] = [ 'error', {
+	'allowExtraTrailingParamDocs': true,
+	'checkDestructured': false
 }];
+
+/**
+* Require a JSDoc description.
+*
+* @name jsdoc/require-description
+* @memberof rules
+* @type {string}
+* @see [require-description]{@link https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-description.md}
+*/
+rules[ 'jsdoc/require-description' ] = 'error';
+
+/**
+* Require JSDoc for function parameters.
+*
+* @name jsdoc/require-param
+* @memberof rules
+* @type {Array}
+* @see [require-param]{@link https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-param.md}
+*/
+rules[ 'jsdoc/require-param' ] = [ 'error', {
+	'checkDestructured': false,
+	'checkDestructuredRoots': false
+}];
+
+/**
+* Require `@param` description.
+*
+* @name jsdoc/require-param-description
+* @memberof rules
+* @type {string}
+* @see [require-param-description]{@link https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-param-description.md}
+*/
+rules[ 'jsdoc/require-param-description' ] = 'error';
+
+/**
+* Require `@param` type.
+*
+* @name jsdoc/require-param-type
+* @memberof rules
+* @type {string}
+* @see [require-param-type]{@link https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-param-type.md}
+*/
+rules[ 'jsdoc/require-param-type' ] = 'error';
+
+/**
+* Require `@returns` when a function returns a value.
+*
+* @name jsdoc/require-returns
+* @memberof rules
+* @type {Array}
+* @see [require-returns]{@link https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-returns.md}
+*/
+rules[ 'jsdoc/require-returns' ] = [ 'error', {
+	'checkGetters': false,
+	'contexts': [
+		'ArrowFunctionExpression:not([async=true])',
+		'FunctionDeclaration:not([async=true])',
+		'FunctionExpression:not([async=true])'
+	]
+}];
+
+/**
+* Require `@returns` type.
+*
+* @name jsdoc/require-returns-type
+* @memberof rules
+* @type {string}
+* @see [require-returns-type]{@link https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-returns-type.md}
+*/
+rules[ 'jsdoc/require-returns-type' ] = 'error';
+
+/**
+* Require `@returns` description.
+*
+* @name jsdoc/require-returns-description
+* @memberof rules
+* @type {string}
+* @see [require-returns-description]{@link https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-returns-description.md}
+*/
+rules[ 'jsdoc/require-returns-description' ] = 'error';
+
+/**
+* Enforce valid JSDoc tag names.
+*
+* @name jsdoc/check-tag-names
+* @memberof rules
+* @type {string}
+* @see [check-tag-names]{@link https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-tag-names.md}
+*/
+rules[ 'jsdoc/check-tag-names' ] = 'error';
 
 /**
 * Only allow the result of `typeof` to be compared against a select subset of known strings (e.g., 'string', 'undefined', etc.).

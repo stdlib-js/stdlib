@@ -190,15 +190,15 @@ import smskmin = require( './index' );
 {
 	const x = new Float32Array( 10 );
 
-	smskmin.ndarray( x.length, 1, 0, 10, 1, 0 ); // $ExpectError
-	smskmin.ndarray( x.length, 1, 0, '10', 1, 0 ); // $ExpectError
-	smskmin.ndarray( x.length, 1, 0, true, 1, 0 ); // $ExpectError
-	smskmin.ndarray( x.length, 1, 0, false, 1, 0 ); // $ExpectError
-	smskmin.ndarray( x.length, 1, 0, null, 1, 0 ); // $ExpectError
-	smskmin.ndarray( x.length, 1, 0, undefined, 1, 0 ); // $ExpectError
-	smskmin.ndarray( x.length, 1, 0, [], 1, 0 ); // $ExpectError
-	smskmin.ndarray( x.length, 1, 0, {}, 1, 0 ); // $ExpectError
-	smskmin.ndarray( x.length, 1, 0, ( x: number ): number => x, 1, 0 ); // $ExpectError
+	smskmin.ndarray( x.length, x, 1, 0, 10, 1, 0 ); // $ExpectError
+	smskmin.ndarray( x.length, x, 1, 0, '10', 1, 0 ); // $ExpectError
+	smskmin.ndarray( x.length, x, 1, 0, true, 1, 0 ); // $ExpectError
+	smskmin.ndarray( x.length, x, 1, 0, false, 1, 0 ); // $ExpectError
+	smskmin.ndarray( x.length, x, 1, 0, null, 1, 0 ); // $ExpectError
+	smskmin.ndarray( x.length, x, 1, 0, undefined, 1, 0 ); // $ExpectError
+	smskmin.ndarray( x.length, x, 1, 0, [], 1, 0 ); // $ExpectError
+	smskmin.ndarray( x.length, x, 1, 0, {}, 1, 0 ); // $ExpectError
+	smskmin.ndarray( x.length, x, 1, 0, ( x: number ): number => x, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a sixth argument which is not a number...

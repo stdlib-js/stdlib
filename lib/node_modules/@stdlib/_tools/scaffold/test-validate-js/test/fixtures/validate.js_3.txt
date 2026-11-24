@@ -39,7 +39,7 @@ var format = require( '@stdlib/string/format' );
 * @param {(Buffer|string)} [options.html] - HTML content to serve
 * @param {(Buffer|string)} [options.javascript] - JavaScript script to serve
 * @param {boolean} [options.open] - indicates whether to launch a web browser
-* @returns {Error|null} error or null
+* @returns {(Error|null)} error or null
 *
 * @example
 * var options = {

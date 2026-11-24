@@ -8,7 +8,7 @@
     - shape: array shape.
     - dtype: underlying array data type.
     - order: whether the array order is row-major (C-style) or column-major
-      (Fortran-style).
+    (Fortran-style).
 
     Parameters
     ----------
@@ -21,8 +21,9 @@
     options.shape: ArrayLikeObject<integer>|integer (optional)
         Array shape. Overrides the input array's inferred shape.
 
-    options.dtype: string (optional)
-        Array data type. Overrides the input array's inferred data type.
+    options.dtype: string|DataType (optional)
+        Array data type. Must be a numeric or "generic" data type. Overrides the
+        input array's inferred data type.
 
     options.order: string (optional)
         Array order (either 'row-major' (C-style) or 'column-major' (Fortran-
@@ -61,18 +62,10 @@
 
     Examples
     --------
-    > var x = {{alias:@stdlib/ndarray/base/zeros}}( 'float64', [ 2, 2 ], 'row-major' )
-    <ndarray>
-    > var sh = x.shape
-    [ 2, 2 ]
-    > var dt = x.dtype
-    'float64'
+    > var x = {{alias:@stdlib/ndarray/zeros}}( [ 2, 2 ] )
+    <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
     > var y = {{alias}}( x )
-    <ndarray>
-    > sh = y.shape
-    [ 2, 2 ]
-    > dt = y.dtype
-    'float64'
+    <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 
     See Also
     --------

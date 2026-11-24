@@ -27,11 +27,11 @@
 * @return        positive difference
 *
 * @example
-* float v = pdiff( 6.0f, 3.0f );
+* float v = stdlib_base_pdifff( 6.0f, 3.0f );
 * // returns 3.0f
 *
 * @example
-* float v = pdiff( 3.0f, 4.0f );
+* float v = stdlib_base_pdifff( 3.0f, 4.0f );
 * // returns 0.0f
 */
 float stdlib_base_pdifff( const float x, const float y ) {

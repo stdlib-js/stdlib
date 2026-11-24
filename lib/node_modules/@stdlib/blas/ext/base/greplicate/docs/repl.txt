@@ -1,0 +1,118 @@
+
+{{alias}}( N, k, x, strideX, out, strideOut )
+    Replicates each strided array element a specified number of times.
+
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use a typed
+    array view.
+
+    If `N <= 0` or `k <= 0`, the function returns `out` unchanged.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    k: integer
+        Number of times to replicate each element.
+
+    x: ArrayLikeObject
+        Input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    out: ArrayLikeObject
+        Output array.
+
+    strideOut: integer
+        Stride length for `out`.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = [ 1.0, 2.0, 3.0 ];
+    > var out = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+    > {{alias}}( x.length, 2, x, 1, out, 1 )
+    [ 1.0, 1.0, 2.0, 2.0, 3.0, 3.0 ]
+
+    // Using `N` and stride parameters:
+    > x = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
+    > out = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+    > {{alias}}( 3, 2, x, 2, out, 1 )
+    [ 1.0, 1.0, 3.0, 3.0, 5.0, 5.0 ]
+
+    // Using view offsets:
+    > var x0 = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > var out0 = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+    > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > var out1 = new {{alias:@stdlib/array/float64}}( out0.buffer, out0.BYTES_PER_ELEMENT*2 );
+    > {{alias}}( 3, 2, x1, 2, out1, 1 )
+    <Float64Array>[ 2.0, 2.0, 4.0, 4.0, 6.0, 6.0 ]
+    > out0
+    <Float64Array>[ 0.0, 0.0, 2.0, 2.0, 4.0, 4.0, 6.0, 6.0 ]
+
+
+{{alias}}.ndarray( N, k, x, strideX, offsetX, out, strideOut, offsetOut )
+    Replicates each strided array element a specified number of times using
+    alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    k: integer
+        Number of times to replicate each element.
+
+    x: ArrayLikeObject
+        Input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    offsetX: integer
+        Starting index for `x`.
+
+    out: ArrayLikeObject
+        Output array.
+
+    strideOut: integer
+        Stride length for `out`.
+
+    offsetOut: integer
+        Starting index for `out`.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = [ 1.0, 2.0, 3.0 ];
+    > var out = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+    > {{alias}}.ndarray( x.length, 2, x, 1, 0, out, 1, 0 )
+    [ 1.0, 1.0, 2.0, 2.0, 3.0, 3.0 ]
+
+    // Advanced indexing:
+    > x = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
+    > out = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+    > {{alias}}.ndarray( 3, 2, x, 2, 1, out, -1, out.length-1 )
+    [ 6.0, 6.0, 4.0, 4.0, 2.0, 2.0 ]
+
+    See Also
+    --------
+

@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/datasets/standard-card-deck",
   "version": "0.0.0",
-  "description": "A list of cards.",
+  "description": "A list of two or three letter abbreviations for each card in a standard 52-card deck.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

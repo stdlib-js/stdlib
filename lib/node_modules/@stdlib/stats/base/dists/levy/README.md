@@ -46,8 +46,8 @@ The namespace contains the following distribution functions:
 <div class="namespace-toc">
 
 -   <span class="signature">[`cdf( x, mu, c )`][@stdlib/stats/base/dists/levy/cdf]</span><span class="delimiter">: </span><span class="description">Lévy distribution cumulative distribution function.</span>
--   <span class="signature">[`logcdf( x, mu, c )`][@stdlib/stats/base/dists/levy/logcdf]</span><span class="delimiter">: </span><span class="description">Lévy distribution logarithm of cumulative distribution function.</span>
--   <span class="signature">[`logpdf( x, mu, c )`][@stdlib/stats/base/dists/levy/logpdf]</span><span class="delimiter">: </span><span class="description">Lévy distribution logarithm of probability density function (PDF).</span>
+-   <span class="signature">[`logcdf( x, mu, c )`][@stdlib/stats/base/dists/levy/logcdf]</span><span class="delimiter">: </span><span class="description">Lévy distribution natural logarithm of cumulative distribution function.</span>
+-   <span class="signature">[`logpdf( x, mu, c )`][@stdlib/stats/base/dists/levy/logpdf]</span><span class="delimiter">: </span><span class="description">Lévy distribution natural logarithm of probability density function (PDF).</span>
 -   <span class="signature">[`pdf( x, mu, c )`][@stdlib/stats/base/dists/levy/pdf]</span><span class="delimiter">: </span><span class="description">Lévy distribution probability density function (PDF).</span>
 -   <span class="signature">[`quantile( p, mu, c )`][@stdlib/stats/base/dists/levy/quantile]</span><span class="delimiter">: </span><span class="description">Lévy distribution quantile function.</span>
 

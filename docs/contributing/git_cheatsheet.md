@@ -482,7 +482,7 @@ Assuming you've already cloned the repository and set up your identity:
 
 Congratulations! You now have all the essential Git commands to navigate your workflow smoothly while contributing to `stdlib`. Whether you're fixing a bug, adding a feature, or just getting started, this cheatsheet will help you stay organized and avoid common pitfalls. Keep practicing, stay curious, and enjoy the process. Happy coding!
 
-To get started with your first contribution, check out the [Contributing Guide][stdlib-contributing] and [Development Guide][stdlib-development]. If you have any further questions, feel free to join our [Gitter][stdlib-gitter] channel to connect with the community and get support.
+To get started with your first contribution, check out the [Contributing Guide][stdlib-contributing] and [Development Guide][stdlib-development]. If you have any further questions, feel free to join our [Zulip][stdlib-zulip] chat to connect with the community and get support.
 
 ## Other Links
 
@@ -495,7 +495,7 @@ To get started with your first contribution, check out the [Contributing Guide][
 
 [stdlib-development]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md
 
-[stdlib-gitter]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[stdlib-zulip]: https://stdlib.zulipchat.com
 
 [git]: http://git-scm.com/
 

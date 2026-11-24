@@ -30,11 +30,11 @@
 *
 * @example
 * var v = mode( 0.1 );
-* // returns 0
+* // returns 0.0
 *
 * @example
 * var v = mode( 1.5 );
-* // returns 0
+* // returns 0.0
 *
 * @example
 * var v = mode( -1.1 );
