@@ -33,7 +33,9 @@
 * // returns 3.14
 *
 * @example
-* double v = stdlib_base_nanmin( 4.14, 0.0 / 0.0 );
+* #include "stdlib/constants/float64/nan.h"
+*
+* double v = stdlib_base_nanmin( 4.14, STDLIB_CONSTANT_FLOAT64_NAN );
 * // returns 4.14
 */
 double stdlib_base_nanmin( const double x, const double y ) {

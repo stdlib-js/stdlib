@@ -652,6 +652,27 @@ declare class Int64Array implements Int64ArrayInterface {
 	get( i: number ): Int64 | void;
 
 	/**
+	* Returns an iterator for iterating over each index key in a typed array.
+	*
+	* @returns iterator
+	*
+	* @example
+	* var arr = new Int64Array( [ 0, 1 ] );
+	*
+	* var iter = arr.keys();
+	*
+	* var v = iter.next().value;
+	* // returns 0
+	*
+	* v = iter.next().value;
+	* // returns 1
+	*
+	* var bool = iter.next().done;
+	* // returns true
+	*/
+	keys(): TypedIterator<number>;
+
+	/**
 	* Sets an array element.
 	*
 	* ## Notes

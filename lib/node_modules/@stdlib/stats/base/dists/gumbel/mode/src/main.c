@@ -18,6 +18,7 @@
 
 #include "stdlib/stats/base/dists/gumbel/mode.h"
 #include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Returns the mode for a Gumbel distribution with location `mu` and scale `beta`.
@@ -36,7 +37,7 @@ double stdlib_base_dists_gumbel_mode( const double mu, const double beta ) {
 		stdlib_base_is_nan( beta ) ||
 		beta <= 0.0
 	) {
-		return 0.0/0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	return mu;
 }
