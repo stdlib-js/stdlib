@@ -22,6 +22,7 @@
 #include "stdlib/math/base/assert/is_infinite.h"
 #include "stdlib/math/base/assert/is_finite.h"
 #include "stdlib/math/base/special/signumf.h"
+#include "stdlib/constants/float32/nan.h"
 
 /**
 * Divides two single-precision complex floating-point numbers.
@@ -76,7 +77,7 @@ stdlib_complex64_t stdlib_base_complex64_div( const stdlib_complex64_t z1, const
 
 	if ( stdlib_base_is_infinite( c ) || stdlib_base_is_infinite( d ) ) {
 		if ( !stdlib_base_is_finite( a ) || !stdlib_base_is_finite( b ) ) {
-			return stdlib_complex64( 0.0f/0.0f, 0.0f/0.0f );
+			return stdlib_complex64( STDLIB_CONSTANT_FLOAT32_NAN, STDLIB_CONSTANT_FLOAT32_NAN );
 		}
 		// When dividing a finite complex number by an infinite complex number, the quotient underflows to signed zeros:
 		re = 0.0 * stdlib_base_signumf( re1f ) * stdlib_base_signumf( re2f );
