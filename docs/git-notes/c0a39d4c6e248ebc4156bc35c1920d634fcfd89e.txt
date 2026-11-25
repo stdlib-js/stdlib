@@ -1,0 +1,7 @@
+---
+type: amend-message
+---
+feat: update `blas/base/ndarray` TypeScript declarations
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/16775
+Reviewed-by: Athan Reines <kgryte@gmail.com>
