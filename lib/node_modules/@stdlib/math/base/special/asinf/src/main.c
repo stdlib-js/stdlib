@@ -34,6 +34,7 @@
 #include "stdlib/math/base/assert/is_nanf.h"
 #include "stdlib/math/base/special/sqrtf.h"
 #include "stdlib/constants/float32/half_pi.h"
+#include "stdlib/constants/float32/nan.h"
 #include <stdint.h>
 
 /* Begin auto-generated functions. The following functions are auto-generated. Do not edit directly. */
@@ -99,7 +100,7 @@ float stdlib_base_asinf( const float x ) {
 	float z;
 
 	if ( stdlib_base_is_nanf( x ) ) {
-		return 0.0f / 0.0f; // NaN
+		return STDLIB_CONSTANT_FLOAT32_NAN;
 	}
 	if ( x > 0.0f ) {
 		sgn = 1;
@@ -109,7 +110,7 @@ float stdlib_base_asinf( const float x ) {
 		ax = -x;
 	}
 	if ( ax > 1.0f ) {
-		return 0.0f / 0.0f; // NaN
+		return STDLIB_CONSTANT_FLOAT32_NAN;
 	}
 	if ( ax < 1.0e-4f ) {
 		return x;
