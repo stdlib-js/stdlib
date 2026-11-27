@@ -26,11 +26,9 @@
     Examples
     --------
     > var x = {{alias}}( 1.0, 'float64', 'row-major' )
-    <ndarray>
+    <ndarray>[ 1.0 ]
     > var sh = {{alias:@stdlib/ndarray/shape}}( x )
     []
-    > var v = x.get()
-    1.0
 
     See Also
     --------

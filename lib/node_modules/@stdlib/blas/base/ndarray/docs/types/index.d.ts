@@ -202,14 +202,11 @@ interface Namespace {
 	*
 	* @example
 	* var Complex64Vector = require( '@stdlib/ndarray/vector/complex64' );
-	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
-	* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+	* var Complex64Tensor0D = require( '@stdlib/ndarray/tensor0d/complex64' );
 	*
 	* var x = new Complex64Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 	*
-	* var alpha = scalar2ndarray( new Complex64( 2.0, 0.0 ), {
-	*     'dtype': 'complex64'
-	* });
+	* var alpha = new Complex64Tensor0D( 2.0, 0.0 );
 	*
 	* var y = ns.cscal( [ x, alpha ] );
 	* // returns <ndarray>[ <Complex64>[ 2.0, 4.0 ], <Complex64>[ 6.0, 8.0 ], <Complex64>[ 10.0, 12.0 ] ]

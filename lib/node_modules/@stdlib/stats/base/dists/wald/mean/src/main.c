@@ -18,6 +18,7 @@
 
 #include "stdlib/stats/base/dists/wald/mean.h"
 #include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Returns the expected value for a Wald distribution with mean `mu` and shape parameter `lambda`.
@@ -37,7 +38,7 @@ double stdlib_base_dists_wald_mean( const double mu, const double lambda ) {
 		lambda <= 0.0 ||
 		mu <= 0.0
 	) {
-		return 0.0/0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	return mu;
 }
