@@ -21,6 +21,7 @@
 #include "stdlib/math/base/assert/is_infinitef.h"
 #include "stdlib/math/base/special/lnf.h"
 #include "stdlib/math/base/special/sqrtf.h"
+#include "stdlib/constants/float32/nan.h"
 
 /**
 * Computes the hyperbolic arccosine of a single-precision floating-point number.
@@ -34,7 +35,7 @@
 */
 float stdlib_base_fast_acoshf( const float x ) {
 	if ( x < 1.0f ) {
-		return 0.0f / 0.0f; // NaN
+		return STDLIB_CONSTANT_FLOAT32_NAN;
 	}
 	if ( stdlib_base_is_nanf( x ) || stdlib_base_is_infinitef( x ) ) {
 		return x;
