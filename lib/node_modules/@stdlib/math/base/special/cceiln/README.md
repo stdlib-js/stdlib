@@ -87,21 +87,13 @@ v = cceiln( new Complex128( NaN, NaN ), 2 );
 
     ```javascript
     var Complex128 = require( '@stdlib/complex/float64/ctor' );
-    var real = require( '@stdlib/complex/float64/real' );
-    var imag = require( '@stdlib/complex/float64/imag' );
 
     var x = 0.2 + 0.1;
     // returns 0.30000000000000004
 
     // Should round components to 0.3:
     var v = cceiln( new Complex128( x, x ), -16 );
-    // returns <Complex128>
-
-    var re = real( v );
-    // returns 0.3000000000000001
-
-    var im = imag( v );
-    // returns 0.3000000000000001
+    // returns <Complex128>[ 0.3000000000000001, 0.3000000000000001 ]
     ```
 
 </section>

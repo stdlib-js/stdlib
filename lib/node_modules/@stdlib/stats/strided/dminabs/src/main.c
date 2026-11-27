@@ -21,6 +21,7 @@
 #include "stdlib/blas/base/shared.h"
 #include "stdlib/strided/base/stride2offset.h"
 #include "stdlib/math/base/special/abs.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Computes the minimum absolute value of a double-precision floating-point strided array.
@@ -51,7 +52,7 @@ double API_SUFFIX(stdlib_strided_dminabs_ndarray)( const CBLAS_INT N, const doub
 	double v;
 
 	if ( N <= 0 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( N == 1 || strideX == 0 ) {
 		return stdlib_base_abs( X[ offsetX ] );

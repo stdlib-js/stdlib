@@ -43,15 +43,13 @@ Performs the rank 1 operation `A = alpha*x*y^T + A`, where `alpha` is a scalar, 
 ```javascript
 var Float32Matrix = require( '@stdlib/ndarray/matrix/float32' );
 var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
-var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var Float32Tensor0D = require( '@stdlib/ndarray/tensor0d/float32' );
 
 var x = new Float32Vector( [ 1.0, 2.0 ] );
 var y = new Float32Vector( [ 3.0, 4.0, 5.0 ] );
 var A = new Float32Matrix( [ [ 1.0, 2.0, 3.0 ], [ 4.0, 5.0, 6.0 ] ] );
 
-var alpha = scalar2ndarray( 1.0, {
-    'dtype': 'float32'
-});
+var alpha = new Float32Tensor0D( 1.0 );
 
 var out = sger( [ x, y, A, alpha ] );
 // returns <ndarray>[ [ 4.0, 6.0, 8.0 ], [ 10.0, 13.0, 16.0 ] ]
@@ -87,7 +85,7 @@ The function has the following parameters:
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/discrete-uniform' );
-var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var Float32Tensor0D = require( '@stdlib/ndarray/tensor0d/float32' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var sger = require( '@stdlib/blas/base/ndarray/sger' );
 
@@ -99,7 +97,7 @@ var x = discreteUniform( [ 3 ], 0, 10, opts );
 var y = discreteUniform( [ 4 ], 0, 10, opts );
 var A = discreteUniform( [ 3, 4 ], 0, 10, opts );
 
-var alpha = scalar2ndarray( 1.0, opts );
+var alpha = new Float32Tensor0D( 1.0 );
 
 var out = sger( [ x, y, A, alpha ] );
 console.log( ndarray2array( out ) );

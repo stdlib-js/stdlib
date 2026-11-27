@@ -18,6 +18,7 @@
 
 #include "stdlib/random/base/uniform.h"
 #include "stdlib/random/base/shared.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdlib.h>
 
 /**
@@ -64,7 +65,7 @@
 double stdlib_base_random_uniform( struct BasePRNGObject *randu, const double a, const double b ) {
 	double r;
 	if ( randu == NULL ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	randu->prng->normalized( randu, &r );
 	return ( b*r ) + ( (1.0-r)*a );
