@@ -49,16 +49,13 @@ var getShape = require( '@stdlib/ndarray/shape' );
 var getDType = require( '@stdlib/ndarray/dtype' );
 
 var x = scalar2ndarray( 1.0, 'float64', 'row-major' );
-// returns <ndarray>
+// returns <ndarray>[ 1.0 ]
 
 var sh = getShape( x );
 // returns []
 
 var dt = String( getDType( x ) );
 // returns 'float64'
-
-var v = x.get();
-// returns 1.0
 ```
 
 </section>
