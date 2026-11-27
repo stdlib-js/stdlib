@@ -36,6 +36,7 @@
 #include "stdlib/math/base/special/sqrtf.h"
 #include "stdlib/math/base/special/lnf.h"
 #include "stdlib/constants/float32/ln_two.h"
+#include "stdlib/constants/float32/nan.h"
 #include <stdint.h>
 
 static const float HUGE = 1 << 28; // 2**28
@@ -80,7 +81,7 @@ float stdlib_base_acoshf( const float x ) {
 	float t;
 
 	if ( stdlib_base_is_nanf( x ) || x < 1.0f ) {
-		return 0.0f / 0.0f; // NaN
+		return STDLIB_CONSTANT_FLOAT32_NAN;
 	}
 	if ( x == 1.0f ) {
 		return 0.0f;
