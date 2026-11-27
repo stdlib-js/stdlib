@@ -21,6 +21,7 @@
 #include "stdlib/math/base/special/digamma.h"
 #include "stdlib/math/base/special/gamma.h"
 #include "stdlib/math/base/special/ln.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Returns the differential entropy of a chi-squared distribution.
@@ -35,7 +36,7 @@
 double stdlib_base_dists_chisquare_entropy( const double k ) {
 	double kh;
 	if ( stdlib_base_is_nan( k ) || k <= 0.0 ) {
-		return 0.0/0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	kh = k / 2.0;
 	return kh + stdlib_base_ln( 2.0*stdlib_base_gamma( kh ) ) + ( ( 1.0-kh ) * stdlib_base_digamma( kh ) );
