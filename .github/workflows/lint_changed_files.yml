@@ -97,6 +97,12 @@ jobs:
           make init
         timeout-minutes: 5
 
+      # Verify ESLint configuration and executable doctest exclusions:
+      - name: 'Verify ESLint configuration'
+        run: |
+          make test-javascript-files FILES="etc/eslint/test/test.js"
+        timeout-minutes: 5
+
       # Get list of changed files:
       - name: 'Get list of changed files'
         id: changed-files
@@ -222,15 +228,6 @@ jobs:
           # Determine root directory:
           root=$(git rev-parse --show-toplevel)
 
-          # Define the path to ESLint configuration file for linting examples:
-          eslint_examples_conf="${root}/etc/eslint/.eslintrc.examples.js"
-
-          # Define the path to ESLint configuration file for linting tests:
-          eslint_tests_conf="${root}/etc/eslint/.eslintrc.tests.js"
-
-          # Define the path to ESLint configuration file for linting benchmarks:
-          eslint_benchmarks_conf="${root}/etc/eslint/.eslintrc.benchmarks.js"
-
           # Lint JavaScript source files:
           files=$(echo "$FILES" | tr ' ' '\n' | grep '\.js$' | grep -v -e '/examples' -e '/test' -e '/benchmark' -e '^dist/' | tr '\n' ' ' | sed 's/ $//')
 
@@ -255,19 +252,19 @@ jobs:
           # Lint JavaScript example files:
           files=$(echo "$FILES" | tr ' ' '\n' | grep '/examples/.*\.js$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
-            make lint-javascript-files FILES="${files}" ESLINT_CONF="${eslint_examples_conf}"
+            make lint-javascript-files FILES="${files}"
           fi
 
           # Lint JavaScript test files:
           files=$(echo "$FILES" | tr ' ' '\n' | grep '/test/.*\.js$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
-            make lint-javascript-files FILES="${files}" ESLINT_CONF="${eslint_tests_conf}"
+            make lint-javascript-files FILES="${files}"
           fi
 
           # Lint JavaScript benchmark files:
           files=$(echo "$FILES" | tr ' ' '\n' | grep '/benchmark/.*\.js$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
-            make lint-javascript-files FILES="${files}" ESLINT_CONF="${eslint_benchmarks_conf}"
+            make lint-javascript-files FILES="${files}"
           fi
 
       # Lint Python files:
@@ -389,9 +386,6 @@ jobs:
           # Determine root directory:
           root=$(git rev-parse --show-toplevel)
 
-          # Define the path to ESLint configuration file for linting TypeScript tests:
-          eslint_typescript_tests_conf="${root}/etc/eslint/.eslintrc.typescript.tests.js"
-
           # Get changed files:
           changed_files=$(echo "$FILES" | tr ' ' '\n')
 
@@ -416,7 +410,7 @@ jobs:
           fi
 
           if [[ -n "${files}" ]]; then
-            make lint-typescript-declarations-files FILES="${files}" ESLINT_TS_CONF="${eslint_typescript_tests_conf}"
+            make lint-typescript-declarations-files FILES="${files}"
           fi
 
       # Lint license headers:

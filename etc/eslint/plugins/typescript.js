@@ -24,7 +24,7 @@ var plugins = [
 	'eslint-plugin-expect-type',
 
 	// Lint rules for import/export syntax:
-	'eslint-plugin-import',
+	'eslint-plugin-import-x',
 
 	// Required for JSDoc support:
 	'eslint-plugin-jsdoc',

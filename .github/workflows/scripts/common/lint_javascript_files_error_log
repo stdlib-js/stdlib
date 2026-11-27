@@ -41,9 +41,6 @@ set -o pipefail
 
 # VARIABLES #
 
-# Determine root directory:
-root=$(git rev-parse --show-toplevel)
-
 # Flag indicating whether to automatically fix errors:
 fix="${FIX:-0}"
 
@@ -56,15 +53,6 @@ err_file="${ERR_FILE:-${TMPDIR:-/tmp}/lint_javascript_errors_$$.txt}"
 # Files to lint:
 files_to_lint="$*"
 
-# Define the path to ESLint configuration file for linting examples:
-eslint_examples_conf="${root}/etc/eslint/.eslintrc.examples.js"
-
-# Define the path to ESLint configuration file for linting tests:
-eslint_tests_conf="${root}/etc/eslint/.eslintrc.tests.js"
-
-# Define the path to ESLint configuration file for linting benchmarks:
-eslint_benchmarks_conf="${root}/etc/eslint/.eslintrc.benchmarks.js"
-
 # Initialize error flag:
 error_occurred=0
 
@@ -75,24 +63,22 @@ error_occurred=0
 #
 # $1 - files to lint
 # $2 - additional make arguments
-# $3 - ESLint configuration argument
 run_make_lint() {
 	local files_to_lint="$1"
 	local make_args="$2"
-	local eslint_conf_arg="$3"
 
 	local eslint_flags=""
 	if [ "${quiet}" -eq 1 ]; then
 		eslint_flags="ESLINT_CLI_FLAGS='--quiet'"
 	fi
 
-	local make_cmd="make lint-javascript-files FIX=${fix} FAST_FAIL=0 FILES=\"${files_to_lint}\" ${make_args} ${eslint_conf_arg} ${eslint_flags}"
+	local make_cmd="make lint-javascript-files FIX=${fix} FAST_FAIL=0 FILES=\"${files_to_lint}\" ${make_args} ${eslint_flags}"
 
 	echo "Running: ${make_cmd}"
 	if ! eval "${make_cmd}"; then
 		if [ "${quiet}" -eq 0 ]; then
 			echo "Initial linting failed. Retrying with --quiet and logging errors..."
-			eval "make lint-javascript-files FIX=${fix} FAST_FAIL=0 FILES=\"${files_to_lint}\" ${make_args} ${eslint_conf_arg} ESLINT_CLI_FLAGS='--quiet'" >> "${err_file}" 2>&1
+			eval "make lint-javascript-files FIX=${fix} FAST_FAIL=0 FILES=\"${files_to_lint}\" ${make_args} ESLINT_CLI_FLAGS='--quiet'" >> "${err_file}" 2>&1
 		else
 			# Already running with --quiet, just log the error
 			echo "Linting failed for files." >> "${err_file}"
@@ -120,35 +106,35 @@ done
 files=$(echo "${files_to_lint}" | tr ' ' '\n' | grep '\.js$' | grep -v -e '/examples' -e '/test' -e '/benchmark' -e '^dist/' | tr '\n' ' ' | sed 's/ $//')
 if [ -n "${files}" ]; then
 	echo "Linting JavaScript source files..."
-	run_make_lint "${files}" "" ""
+	run_make_lint "${files}" ""
 fi
 
 # Lint JavaScript command-line interfaces:
 files=$(echo "${files_to_lint}" | tr ' ' '\n' | grep '\.js$' | grep -E '/bin/cli$' | tr '\n' ' ' | sed 's/ $//')
 if [ -n "${files}" ]; then
 	echo "Linting JavaScript CLI files..."
-	run_make_lint "${files}" "" ""
+	run_make_lint "${files}" ""
 fi
 
 # Lint JavaScript example files:
 files=$(echo "${files_to_lint}" | tr ' ' '\n' | grep '/examples/.*\.js$' | tr '\n' ' ' | sed 's/ $//')
 if [ -n "${files}" ]; then
 	echo "Linting JavaScript example files..."
-	run_make_lint "${files}" "" "ESLINT_CONF=\"${eslint_examples_conf}\""
+	run_make_lint "${files}" ""
 fi
 
 # Lint JavaScript test files:
 files=$(echo "${files_to_lint}" | tr ' ' '\n' | grep '/test/.*\.js$' | tr '\n' ' ' | sed 's/ $//')
 if [ -n "${files}" ]; then
 	echo "Linting JavaScript test files..."
-	run_make_lint "${files}" "" "ESLINT_CONF=\"${eslint_tests_conf}\""
+	run_make_lint "${files}" ""
 fi
 
 # Lint JavaScript benchmark files:
 files=$(echo "${files_to_lint}" | tr ' ' '\n' | grep '/benchmark/.*\.js$' | tr '\n' ' ' | sed 's/ $//')
 if [ -n "${files}" ]; then
 	echo "Linting JavaScript benchmark files..."
-	run_make_lint "${files}" "" "ESLINT_CONF=\"${eslint_benchmarks_conf}\""
+	run_make_lint "${files}" ""
 fi
 
 # Report results:

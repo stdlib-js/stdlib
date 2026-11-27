@@ -286,7 +286,7 @@ rules[ '@typescript-eslint/explicit-module-boundary-types' ] = 'error';
 *     return true;
 * }
 */
-rules[ '@stylistic/ts/indent' ] = [ 'error', 'tab' ];
+rules[ '@stylistic/indent' ] = [ 'error', 'tab' ];
 
 /**
 * Enforces a specific member delimiter style in interfaces and type literals.
@@ -310,7 +310,7 @@ rules[ '@stylistic/ts/indent' ] = [ 'error', 'tab' ];
 *     age: number;
 * }
 */
-rules[ '@stylistic/ts/member-delimiter-style' ] = [
+rules[ '@stylistic/member-delimiter-style' ] = [
 	'error',
 	{
 		'multiline': {
@@ -882,7 +882,7 @@ rules[ '@typescript-eslint/promise-function-async' ] = 'off';
 * const good = 'good';
 * const goodEscape = "good's";
 */
-rules[ '@stylistic/ts/quotes' ] = [
+rules[ '@stylistic/quotes' ] = [
 	'error',
 	'single',
 	{
@@ -946,7 +946,7 @@ rules[ '@typescript-eslint/restrict-plus-operands' ] = 'error';
 * // Good...
 * const good = 'semi';
 */
-rules[ '@stylistic/ts/semi' ] = [ 'error', 'always' ];
+rules[ '@stylistic/semi' ] = [ 'error', 'always' ];
 
 /**
 * Disables the rule for strict boolean expressions.
@@ -1004,7 +1004,7 @@ rules[ '@typescript-eslint/triple-slash-reference' ] = [
 * // Good...
 * let good: number;
 */
-rules[ '@stylistic/ts/type-annotation-spacing' ] = 'error';
+rules[ '@stylistic/type-annotation-spacing' ] = 'error';
 
 /**
 * Requires type annotations to exist.
@@ -1330,26 +1330,26 @@ rules[ 'id-match' ] = 'off';
 /**
 * Allow default exports in modules.
 *
-* @name import/no-default-export
+* @name import-x/no-default-export
 * @memberof rules
 * @type {string}
 * @default 'off'
-* @see [import/no-default-export]{@link https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-default-export.md}
+* @see [import-x/no-default-export]{@link https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/no-default-export.md}
 *
 * @example
 * // Okay...
 * export default function myFunction() { }
 */
-rules[ 'import/no-default-export' ] = 'off';
+rules[ 'import-x/no-default-export' ] = 'off';
 
 /**
 * Reports use of a deprecated name.
 *
-* @name import/no-deprecated
+* @name import-x/no-deprecated
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [import/no-deprecated]{@link https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-deprecated.md}
+* @see [import-x/no-deprecated]{@link https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/no-deprecated.md}
 *
 * @example
 * // Bad...
@@ -1358,16 +1358,16 @@ rules[ 'import/no-default-export' ] = 'off';
 * // Good...
 * import { newFunction } from 'lib';
 */
-rules[ 'import/no-deprecated' ] = 'error';
+rules[ 'import-x/no-deprecated' ] = 'error';
 
 /**
 * Ensures that there are no extraneous dependencies being imported.
 *
-* @name import/no-extraneous-dependencies
+* @name import-x/no-extraneous-dependencies
 * @memberof rules
 * @type {string}
 * @default 'off'
-* @see [import/no-extraneous-dependencies]{@link https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md}
+* @see [import-x/no-extraneous-dependencies]{@link https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/no-extraneous-dependencies.md}
 *
 * @example
 * // Good...
@@ -1376,22 +1376,22 @@ rules[ 'import/no-deprecated' ] = 'error';
 * // Bad...
 * import foo from 'some-extranous-module';
 */
-rules[ 'import/no-extraneous-dependencies' ] = 'off'; // NOTE: disabled to allow imports of `@stdlib/*` type declarations
+rules[ 'import-x/no-extraneous-dependencies' ] = 'off'; // NOTE: disabled to allow imports of `@stdlib/*` type declarations
 
 /**
 * Prevents importing the submodules of other modules.
 *
-* @name import/no-internal-modules
+* @name import-x/no-internal-modules
 * @memberof rules
 * @type {string}
 * @default 'off'
-* @see [import/no-internal-modules]{@link https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-internal-modules.md}
+* @see [import-x/no-internal-modules]{@link https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/no-internal-modules.md}
 *
 * @example
 * // Bad...
 * import something from 'module/some/internal/path';
 */
-rules[ 'import/no-internal-modules' ] = [
+rules[ 'import-x/no-internal-modules' ] = [
 	'error', {
 		'allow': [
 			'@stdlib/**'
@@ -1402,11 +1402,11 @@ rules[ 'import/no-internal-modules' ] = [
 /**
 * Forbids import statements that import nothing.
 *
-* @name import/no-unassigned-import
+* @name import-x/no-unassigned-import
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [import/no-unassigned-import]{@link https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unassigned-import.md}
+* @see [import-x/no-unassigned-import]{@link https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/no-unassigned-import.md}
 *
 * @example
 * // Bad...
@@ -1415,15 +1415,15 @@ rules[ 'import/no-internal-modules' ] = [
 * // Good...
 * import foo from 'foo';
 */
-rules[ 'import/no-unassigned-import' ] = 'error';
+rules[ 'import-x/no-unassigned-import' ] = 'error';
 
 /**
 * Enforces a specific order for import statements.
 *
-* @name import/order
+* @name import-x/order
 * @memberof rules
 * @type {Array}
-* @see [import/order]{@link https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md}
+* @see [import-x/order]{@link https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/order.md}
 *
 * @example
 * // Given the configuration above, the following order is enforced:
@@ -1442,7 +1442,7 @@ rules[ 'import/no-unassigned-import' ] = 'error';
 * import fs from 'fs';
 * import sibling from './sibling';
 */
-rules[ 'import/order' ] = [
+rules[ 'import-x/order' ] = [
 	'error',
 	{
 		'alphabetize': {
@@ -2611,13 +2611,13 @@ rules[ 'radix' ] = 'error';
 /**
 * Enforces consistent spacing before function parentheses.
 *
-* @name @stylistic/ts/space-before-function-paren
+* @name @stylistic/space-before-function-paren
 * @memberof rules
 * @type {Array}
 * @default [ 'error', { 'anonymous': 'always', 'named': 'never', 'asyncArrow': 'always' } ]
 * @see [space-before-function-paren]{@link https://typescript-eslint.io/rules/space-before-function-paren}
 */
-rules[ '@stylistic/ts/space-before-function-paren' ] = [
+rules[ '@stylistic/space-before-function-paren' ] = [
 	'error',
 	{
 		'anonymous': 'always',
