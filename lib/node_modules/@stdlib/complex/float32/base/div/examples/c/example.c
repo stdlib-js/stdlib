@@ -19,6 +19,7 @@
 #include "stdlib/complex/float32/base/div.h"
 #include "stdlib/complex/float32/ctor.h"
 #include "stdlib/complex/float32/reim.h"
+#include "stdlib/constants/float32/nan.h"
 #include <stdio.h>
 
 int main( void ) {
@@ -26,13 +27,13 @@ int main( void ) {
 		stdlib_complex64( -13.0f, -1.0f ),
 		stdlib_complex64( 3.14f, 1.5f ),
 		stdlib_complex64( 0.0f, -0.0f ),
-		stdlib_complex64( 0.0f/0.0f, 0.0f/0.0f )
+		stdlib_complex64( STDLIB_CONSTANT_FLOAT32_NAN, STDLIB_CONSTANT_FLOAT32_NAN )
 	};
 	const stdlib_complex64_t y[] = {
 		stdlib_complex64( -2.0f, 1.0f ),
 		stdlib_complex64( -3.14f, 1.5f ),
 		stdlib_complex64( 1.0f, 2.0f ),
-		stdlib_complex64( 0.0f/0.0f, 0.0f/0.0f )
+		stdlib_complex64( STDLIB_CONSTANT_FLOAT32_NAN, STDLIB_CONSTANT_FLOAT32_NAN )
 	};
 
 	stdlib_complex64_t v;
