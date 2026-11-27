@@ -303,7 +303,7 @@ static double poly_p12( const double x ) {
 /**
 * Computes the complete elliptic integral of the second kind.
 *
-* @param x    input value
+* @param m    input value
 * @return     output value
 *
 * @example

@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { AnyArray, Collection, Complex128Array, Complex64Array, BooleanArray } from '@stdlib/types/array';
+import { AnyArray, Collection, Float16Array, Complex128Array, Complex64Array, BooleanArray } from '@stdlib/types/array';
 
 /**
 * Converts an array to a `Float64Array`.
@@ -57,6 +57,24 @@ declare function convertSame( x: Collection, y: Float64Array ): Float64Array;
 * // returns <Float32Array>[ 1.0, 2.0, 3.0, 4.0 ]
 */
 declare function convertSame( x: Collection, y: Float32Array ): Float32Array;
+
+/**
+* Converts an array to a `Float16Array`.
+*
+* @param x - array to convert
+* @param y - array having the desired output data type
+* @returns output array
+*
+* @example
+* var Float16Array = require( '@stdlib/array/float16' );
+*
+* var x = [ 1.0, 2.0, 3.0, 4.0 ];
+* var y = new Float16Array( 0 );
+*
+* var out = convertSame( x, y );
+* // returns <Float16Array>[ 1.0, 2.0, 3.0, 4.0 ]
+*/
+declare function convertSame( x: Collection, y: Float16Array ): Float16Array;
 
 /**
 * Converts an array to an `Int32Array`.

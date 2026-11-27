@@ -117,6 +117,123 @@ console.log( bool );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/number/float64/base/assert/is_almost_same_value.h"
+```
+
+#### stdlib_base_float64_is_almost_same_value( a, b, maxULP )
+
+Tests if two double-precision floating-point numbers `a` and `b` are approximately the same value within a specified number of ULPs (units in the last place).
+
+```c
+#include <stdbool.h>
+
+bool v = stdlib_base_float64_is_almost_same_value( 1.0, 1.0 + 2.220446049250313e-16, 1 );
+// returns true
+
+v = stdlib_base_float64_is_almost_same_value( 0.0, -0.0, 0 );
+// returns false
+```
+
+The function accepts the following arguments:
+
+-   **a**: `[in] double` first input value.
+-   **b**: `[in] double` second input value.
+-   **maxULP**: `[in] int32_t` maximum allowed ULP difference.
+
+```c
+bool stdlib_base_float64_is_almost_same_value( const double a, const double b, const int32_t maxULP );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/number/float64/base/assert/is_almost_same_value.h"
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+
+int main( void ) {
+    const double a[] = {
+        5.0,
+        -2.0,
+        0.0,
+        0.0/0.0,
+        1.0,
+        1.0 + 2.220446049250313e-16
+    };
+    const double b[] = {
+        5.0,
+        2.0,
+        -0.0,
+        0.0/0.0,
+        1.0 + 2.220446049250313e-16,
+        1.0
+    };
+    const int32_t maxULP[] = {
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+    };
+
+    bool v;
+    int i;
+    for ( i = 0; i < 6; i++ ) {
+        v = stdlib_base_float64_is_almost_same_value( a[ i ], b[ i ], maxULP[ i ] );
+        printf( "Almost same value? %s\n", ( v ) ? "True" : "False" );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

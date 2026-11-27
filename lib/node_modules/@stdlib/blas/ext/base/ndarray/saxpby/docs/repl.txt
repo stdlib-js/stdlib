@@ -30,9 +30,8 @@
     > var x = new {{alias:@stdlib/ndarray/vector/float32}}( xbuf );
     > var ybuf = [ 2.0, 3.0, 4.0, 5.0 ];
     > var y = new {{alias:@stdlib/ndarray/vector/float32}}( ybuf );
-    > var opts = { 'dtype': 'float32' };
-    > var alpha = {{alias:@stdlib/ndarray/from-scalar}}( 5.0, opts );
-    > var beta = {{alias:@stdlib/ndarray/from-scalar}}( 2.0, opts );
+    > var alpha = new {{alias:@stdlib/ndarray/tensor0d/float32}}( 5.0 );
+    > var beta = new {{alias:@stdlib/ndarray/tensor0d/float32}}( 2.0 );
     > {{alias}}( [ x, y, alpha, beta ] )
     <ndarray>[ 9.0, 16.0, 23.0, 30.0 ]
 

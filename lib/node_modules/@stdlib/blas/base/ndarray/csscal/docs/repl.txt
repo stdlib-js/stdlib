@@ -22,7 +22,7 @@
     Examples
     --------
     > var x = new {{alias:@stdlib/ndarray/vector/complex64}}( [ 4.0, 2.0, -3.0, 5.0 ] );
-    > var alpha = {{alias:@stdlib/ndarray/from-scalar}}( 2.0, { 'dtype': 'float32' } );
+    > var alpha = new {{alias:@stdlib/ndarray/tensor0d/float32}}( 2.0 );
 
     > {{alias}}( [ x, alpha ] );
     > x

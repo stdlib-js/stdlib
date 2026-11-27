@@ -84,7 +84,7 @@ var buf = buffer( 'float', 3 );
 var dtypes = require( '@stdlib/ndarray/dtypes' );
 var buffer = require( '@stdlib/ndarray/base/buffer' );
 
-var DTYPES = dtypes();
+var DTYPES = dtypes( 'integer_and_generic' );
 
 var buf;
 var i;

@@ -52,15 +52,9 @@ void API_SUFFIX(stdlib_strided_dmeanstdevpn)( const CBLAS_INT N, const double co
 * @param offsetOut   starting index for Out
 */
 void API_SUFFIX(stdlib_strided_dmeanstdevpn_ndarray)( const CBLAS_INT N, const double correction, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, double *Out, const CBLAS_INT strideOut, const CBLAS_INT offsetOut ) {
-	CBLAS_INT io;
+	const CBLAS_INT io = offsetOut + strideOut;
 
 	API_SUFFIX(stdlib_strided_dmeanvarpn_ndarray)( N, correction, X, strideX, offsetX, Out, strideOut, offsetOut );
-
-	if ( strideOut < 0 ) {
-		io = 0;
-	} else {
-		io = strideOut + offsetOut;
-	}
 	Out[ io ] = stdlib_base_sqrt( Out[ io ] );
 	return;
 }
