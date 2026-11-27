@@ -95,6 +95,35 @@ jobs:
           # File path to checkout to:
           path: './'
 
+          # Avoid persisting the access token in the local Git configuration, where scripts running against the untrusted PR checkout could read it:
+          persist-credentials: false
+
+      # Checkout trusted workflow scripts from the base repository (so that we never execute helper scripts from the untrusted PR checkout):
+      - name: 'Checkout trusted workflow scripts'
+        # Pin action to full length commit SHA
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          # Always use the base repository, never the PR's (potentially forked) repository:
+          repository: 'stdlib-js/stdlib'
+
+          # Pin to the base repository's default branch:
+          ref: 'develop'
+
+          # Checkout into a separate directory, outside the PR working tree:
+          path: './_trusted'
+
+          # Only fetch the workflow helper scripts:
+          sparse-checkout: |
+            .github/workflows/scripts
+          sparse-checkout-cone-mode: false
+
+          # Limit clone depth to the most recent commit:
+          fetch-depth: 1
+
+          # Avoid persisting any token in the local Git configuration:
+          persist-credentials: false
+        timeout-minutes: 10
+
       # Get list of added files:
       - name: 'Get list of added files'
         id: added-files
@@ -119,8 +148,11 @@ jobs:
         env:
           FILES: ${{ steps.added-files.outputs.files }}
         run: |
-          files="$FILES"
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/update_pr_copyright_years/run" "$files"
+          # Run the trusted copyright-years script from the base repository (not the untrusted PR checkout):
+          . "$GITHUB_WORKSPACE/_trusted/.github/workflows/scripts/update_pr_copyright_years/run" "$FILES"
+
+          # Remove the trusted checkout so that it is not included in the subsequent commit:
+          rm -rf "$GITHUB_WORKSPACE/_trusted"
 
       # Disable Git hooks:
       - name: 'Disable Git hooks'
