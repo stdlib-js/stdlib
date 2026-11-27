@@ -251,6 +251,12 @@ main() {
 	sub_issue_success=$(echo "$sub_issue_response" | jq -r '.data.addSubIssue.subIssue.number')
 
 	if [ -z "$sub_issue_success" ] || [ "$sub_issue_success" = "null" ]; then
+		# Check whether the parent issue has reached GitHub's maximum number of sub-issues, in which case the child issue was still created successfully and linking is not possible until the parent is replaced or pruned:
+		if echo "$sub_issue_response" | jq -e '.errors // [] | any(.message // "" | test("cannot have more than 100 sub-issues"; "i"))' > /dev/null 2>&1; then
+			echo -e "Warning: parent issue #${parent_issue_number} has reached the maximum number of sub-issues. Child issue #${child_issue_number} was created but could not be linked."
+			print_success
+			exit 0
+		fi
 		echo -e "Failed to create sub-issue relationship. Response: ${sub_issue_response}"
 		exit 1
 	fi
