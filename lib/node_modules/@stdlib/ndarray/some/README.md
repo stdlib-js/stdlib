@@ -182,7 +182,7 @@ var bool = ( out === y );
 ```javascript
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
-var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var Int8Tensor0D = require( '@stdlib/ndarray/tensor0d/int8' );
 var fillBy = require( '@stdlib/ndarray/fill-by' );
 var zeros = require( '@stdlib/ndarray/zeros' );
 var some = require( '@stdlib/ndarray/some' );
@@ -193,9 +193,7 @@ var x = zeros( [ 2, 4, 5 ], {
 x = fillBy( x, discreteUniform( 0, 10 ) );
 console.log( ndarray2array( x ) );
 
-var n = scalar2ndarray( 4, {
-    'dtype': 'int8'
-});
+var n = new Int8Tensor0D( 4 );
 var y = some( x, n );
 console.log( y.get() );
 ```

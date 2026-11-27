@@ -20,7 +20,7 @@ limitations under the License.
 
 # iterLogspace
 
-> Create an iterator which returns evenly spaced numbers over a specified interval.
+> Create an iterator which returns evenly spaced numbers on a log scale.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 

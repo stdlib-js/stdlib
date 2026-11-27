@@ -19,6 +19,7 @@
 #include "stdlib/stats/base/dists/chisquare/mode.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/max.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Returns the mode of a chi-squared distribution.
@@ -32,7 +33,7 @@
 */
 double stdlib_base_dists_chisquare_mode( const double k ) {
 	if ( stdlib_base_is_nan( k ) || k < 0.0 ) {
-		return 0.0/0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	return stdlib_base_max( k - 2.0, 0.0 );
 }
