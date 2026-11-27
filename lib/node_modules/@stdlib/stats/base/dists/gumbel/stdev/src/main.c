@@ -18,6 +18,7 @@
 
 #include "stdlib/stats/base/dists/gumbel/stdev.h"
 #include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/constants/float64/nan.h"
 
 static const double PI_OVER_SQRT6 = 1.282549830161864; // Pi divided by the square root of 6
 
@@ -38,7 +39,7 @@ double stdlib_base_dists_gumbel_stdev( const double mu, const double beta ) {
 		stdlib_base_is_nan( beta ) ||
 		beta <= 0.0
 	) {
-		return 0.0/0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	return PI_OVER_SQRT6 * beta;
 }

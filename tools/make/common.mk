@@ -381,7 +381,7 @@ CXX := $(CXX_COMPILER)
 
 # Define common C++ compiler options:
 COMMON_CXXFLAGS ?= \
-	-std=c++11 \
+	-std=c++14 \
 	-O3 \
 	-Wall \
 	-pedantic
@@ -408,7 +408,7 @@ DEPS_BUILD_DIR ?= $(DEPS_DIR)/build
 # Boost...
 
 # Define the Boost version:
-DEPS_BOOST_VERSION ?= 1.69.0
+DEPS_BOOST_VERSION ?= 1.92.0
 
 # Generate a version slug:
 deps_boost_version_slug := $(subst .,_,$(DEPS_BOOST_VERSION))

@@ -55,17 +55,9 @@ Rounds each component of a double-precision complex floating-point number toward
 
 ```javascript
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var v = cceil( new Complex128( -1.5, 2.5 ) );
-// returns <Complex128>
-
-var re = real( v );
-// returns -1.0
-
-var im = imag( v );
-// returns 3.0
+// returns <Complex128>[ -1.0, 3.0 ]
 ```
 
 #### cceil.assign( re, im, out, strideOut, offsetOut )

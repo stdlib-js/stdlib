@@ -18,6 +18,7 @@
 
 #include "stdlib/stats/base/dists/degenerate/mode.h"
 #include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Returns the mode of a degenerate distribution.
@@ -31,7 +32,7 @@
 */
 double stdlib_base_dists_degenerate_mode( const double mu ) {
 	if ( stdlib_base_is_nan( mu ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	return mu;
 }

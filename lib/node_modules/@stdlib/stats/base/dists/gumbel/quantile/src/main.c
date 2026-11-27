@@ -19,6 +19,7 @@
 #include "stdlib/stats/base/dists/gumbel/quantile.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/ln.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Evaluates the quantile function for a Gumbel distribution with location `mu` and scale `beta`.
@@ -41,7 +42,7 @@ double stdlib_base_dists_gumbel_quantile( const double p, const double mu, const
 		p < 0.0 ||
 		p > 1.0
 	) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	return mu - beta * stdlib_base_ln( -stdlib_base_ln( p ) );
 }

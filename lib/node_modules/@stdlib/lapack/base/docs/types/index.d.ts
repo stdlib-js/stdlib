@@ -655,26 +655,31 @@ interface Namespace {
 	* @param N - number of indexed elements
 	* @param X - input array
 	* @param strideX - stride length for `X`
-	* @param scale - scaling factor
-	* @param sumsq - basic sum of squares from which output is factored out
-	* @returns output array
+	* @param scale - array containing a single element which specifies the scaling factor and is overwritten by the updated scaling factor
+	* @param sumsq - array containing a single element which specifies the basic sum of squares from which output is factored out and is overwritten by the updated sum of squares
+	* @returns void
 	*
 	* @example
 	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var X = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+	* var scale = new Float64Array( [ 1.0 ] );
+	* var sumsq = new Float64Array( [ 0.0 ] );
 	*
-	* var out = ns.dlassq( 4, X, 1, 1.0, 0.0 );
-	* // returns <Float64Array>[ 1.0, 30.0 ]
+	* ns.dlassq( 4, X, 1, scale, sumsq );
+	* // scale => <Float64Array>[ 1.0 ]
+	* // sumsq => <Float64Array>[ 30.0 ]
 	*
 	* @example
 	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var X = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
-	* var out = new Float64Array( [ 0.0, 0.0 ] );
+	* var scale = new Float64Array( [ 1.0 ] );
+	* var sumsq = new Float64Array( [ 0.0 ] );
 	*
-	* ns.dlassq.ndarray( 4, X, 1, 0, 1.0, 0.0, out, 1, 0 );
-	* // out => <Float64Array>[ 1.0, 30.0 ]
+	* ns.dlassq.ndarray( 4, X, 1, 0, scale, 0, sumsq, 0 );
+	* // scale => <Float64Array>[ 1.0 ]
+	* // sumsq => <Float64Array>[ 30.0 ]
 	*/
 	dlassq: typeof dlassq;
 

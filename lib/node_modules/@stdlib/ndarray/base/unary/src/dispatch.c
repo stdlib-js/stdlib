@@ -257,14 +257,14 @@ int8_t stdlib_ndarray_unary_dispatch( const struct ndarrayUnaryDispatchObject *o
 	const int64_t *sh2;
 	struct ndarray *x1;
 	struct ndarray *x2;
+	const int64_t *s1;
+	const int64_t *s2;
 	int8_t status;
 	int64_t ndims;
 	int64_t mab1;
 	int64_t mab2;
 	int64_t mib1;
 	int64_t mib2;
-	int64_t *s1;
-	int64_t *s2;
 	int64_t len;
 	int64_t bp1;
 	int64_t bp2;
