@@ -665,6 +665,29 @@ declare class Uint64Array implements Uint64ArrayInterface {
 	get( i: number ): Uint64 | void;
 
 	/**
+	* Returns a boolean indicating whether an array includes a provided value.
+	*
+	* @param searchElement - search element
+	* @param fromIndex - starting index (inclusive)
+	* @returns boolean indicating whether an array includes a provided value
+	*
+	* @example
+	* var Uint64 = require( '@stdlib/number/uint64/ctor' );
+	*
+	* var arr = new Uint64Array( [ 1, 2, 3, 4, 5 ] );
+	*
+	* var bool = arr.includes( new Uint64( 3 ) );
+	* // returns true
+	*
+	* bool = arr.includes( 3, 3 );
+	* // returns false
+	*
+	* bool = arr.includes( 4n, -3 );
+	* // returns true
+	*/
+	includes( searchElement: Uint, fromIndex?: number ): boolean;
+
+	/**
 	* Sets an array element.
 	*
 	* ## Notes
