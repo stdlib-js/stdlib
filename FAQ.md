@@ -836,7 +836,7 @@ See the [contributing guide][contributing-guide].
 
 [numpy]: https://numpy.org/
 
-[scipy]: https://www.scipy.org/scipylib/index.html
+[scipy]: https://scipy.org/
 
 [scikit-learn]: http://scikit-learn.org/stable/
 
