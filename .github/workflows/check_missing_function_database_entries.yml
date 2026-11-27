@@ -1,0 +1,85 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2026 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: check_missing_function_database_entries
+
+# Workflow triggers:
+on:
+  schedule:
+    # Run the workflow every week on Sunday at 00:00 UTC:
+    - cron: '0 0 * * 0'
+
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for checking missing function database entries...
+  check:
+
+    # Define a display name:
+    name: 'Check missing function database entries'
+
+    # Ensure the job does not run on forks:
+    if: github.repository == 'stdlib-js/stdlib'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
+    steps:
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        # Pin action to full length commit SHA
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: true
+
+          # Limit clone depth to the most recent commit:
+          fetch-depth: 1
+
+          # Specify whether to download Git-LFS files:
+          lfs: false
+        timeout-minutes: 10
+
+      # Create content of tracking issue for missing function database entries:
+      - name: 'Create content of tracking issue for missing function database entries'
+        run: |
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/check_missing_function_database_entries/run" > tracking_issue.md
+          cat tracking_issue.md >> $GITHUB_STEP_SUMMARY
+
+      # Create or update tracking issue for missing function database entries:
+      - name: 'Create or update tracking issue for missing function database entries'
+        # Pin action to full length commit SHA
+        uses: peter-evans/create-issue-from-file@fca9117c27cdc29c6c4db3b86c48e4115a786710 # v6.0.0
+        with:
+          title: 'Missing function database entries'
+          content-filepath: ./tracking_issue.md
+          # issue-number: TODO
+          token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          labels: |
+            function-database
+            automated-issue
