@@ -46,19 +46,11 @@ Parses a string representation of a 64-bit [complex number][@stdlib/complex/floa
 
 ```javascript
 var parseComplex64 = require( '@stdlib/complex/float32/parse' );
-var real = require( '@stdlib/complex/float32/real' );
-var imag = require( '@stdlib/complex/float32/imag' );
 
 var str = '5 + 3i';
 
 var z = parseComplex64( str );
-// returns <Complex64>
-
-var re = real( z );
-// returns 5.0
-
-var im = imag( z );
-// returns 3.0
+// returns <Complex64>[ 5.0, 3.0 ]
 ```
 
 For details on the string format, see [Complex64][@stdlib/complex/float32/ctor].

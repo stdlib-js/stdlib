@@ -210,11 +210,11 @@ static int8_t stdlib_ndarray_nullary_1d_flatten( const ndarrayNullaryFcn f, cons
 int8_t stdlib_ndarray_nullary_dispatch( const struct ndarrayNullaryDispatchObject *obj, struct ndarray *arrays[], void *fcn ) {
 	const int64_t *sh1;
 	struct ndarray *x1;
+	const int64_t *s1;
 	int8_t status;
 	int64_t ndims;
 	int64_t mab1;
 	int64_t mib1;
-	int64_t *s1;
 	int64_t len;
 	int64_t bp1;
 	int8_t io1;

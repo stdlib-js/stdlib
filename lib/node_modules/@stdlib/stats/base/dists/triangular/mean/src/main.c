@@ -18,6 +18,7 @@
 
 #include "stdlib/stats/base/dists/triangular/mean.h"
 #include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Returns the expected value of a triangular distribution.
@@ -40,7 +41,7 @@ double stdlib_base_dists_triangular_mean( const double a, const double b, const 
 		a > c ||
 		b < c
 	) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	return ( a + b + c ) / 3.0;
 }
