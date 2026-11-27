@@ -117,7 +117,7 @@ limitations under the License.
 
 [@bug:v8:3599]: https://bugs.chromium.org/p/v8/issues/detail?id=3599
 
-[@bug:mozilla:618251]: https://bugzilla.mozilla.org/show_bug.cgi?id=618251
+[@bug:mozilla:618251]: https://web.archive.org/web/20230000000000*/https://bugzilla.mozilla.org/show_bug.cgi?id=618251
 
 [@bug:paulmiller:es6-shim:334]: https://github.com/paulmillr/es6-shim/issues/334
 
