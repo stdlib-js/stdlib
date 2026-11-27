@@ -40,7 +40,8 @@
         "@stdlib/math/base/assert/is-nanf",
         "@stdlib/math/base/special/sqrtf",
         "@stdlib/math/base/special/lnf",
-        "@stdlib/math/base/assert/is-infinitef"
+        "@stdlib/math/base/assert/is-infinitef",
+        "@stdlib/constants/float32/nan"
       ]
     },
     {
@@ -57,7 +58,8 @@
         "@stdlib/math/base/assert/is-nanf",
         "@stdlib/math/base/special/sqrtf",
         "@stdlib/math/base/special/lnf",
-        "@stdlib/math/base/assert/is-infinitef"
+        "@stdlib/math/base/assert/is-infinitef",
+        "@stdlib/constants/float32/nan"
       ]
     },
     {
@@ -74,7 +76,8 @@
         "@stdlib/math/base/assert/is-nanf",
         "@stdlib/math/base/special/sqrtf",
         "@stdlib/math/base/special/lnf",
-        "@stdlib/math/base/assert/is-infinitef"
+        "@stdlib/math/base/assert/is-infinitef",
+        "@stdlib/constants/float32/nan"
       ]
     }
   ]

@@ -33,7 +33,7 @@ A [Chebyshev series][chebyshev-series] in a variable `x` can be expressed as
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\sum_{i=0}^{n} c_i T_i(x/2)" data-equation="eq:chebyshev_series">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@1ad0391490d48cc006d6222c553ba6df0b61326c/lib/node_modules/@stdlib/math/base/tools/chebyshev-series/docs/img/equation_chebyshev_series.svg" alt="Chebyshev series expression.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@3a627f07dba028f23fceabc48cbdda8cc1beca69/lib/node_modules/@stdlib/math/base/tools/chebyshev-series/docs/img/equation_chebyshev_series.svg" alt="Chebyshev series expression.">
     <br>
 </div> -->
 
