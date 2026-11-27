@@ -18,6 +18,7 @@
 
 #include "stdlib/stats/base/dists/logistic/mean.h"
 #include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Returns the mean for a logistic distribution with location `mu` and scale `s`.
@@ -36,7 +37,7 @@ double stdlib_base_dists_logistic_mean( const double mu, const double s ) {
 		stdlib_base_is_nan( s ) ||
 		s <= 0.0
 	) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	return mu;
 }

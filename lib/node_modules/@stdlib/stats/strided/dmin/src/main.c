@@ -21,6 +21,7 @@
 #include "stdlib/math/base/assert/is_negative_zero.h"
 #include "stdlib/blas/base/shared.h"
 #include "stdlib/strided/base/stride2offset.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Computes the minimum value of a double-precision floating-point strided array.
@@ -51,7 +52,7 @@ double API_SUFFIX(stdlib_strided_dmin_ndarray)( const CBLAS_INT N, const double 
 	double v;
 
 	if ( N <= 0 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( N == 1 || strideX == 0 ) {
 		return X[ 0 ];
