@@ -24,7 +24,7 @@
     --------
     > var x = new {{alias:@stdlib/ndarray/vector/float64}}( [ 1.0, -2.0, 2.0 ] );
     > var y = new {{alias:@stdlib/ndarray/vector/float64}}( [ 0.0, 0.0, 0.0 ] );
-    > var s = {{alias:@stdlib/ndarray/from-scalar}}( 0.0, { 'dtype': 'float64' } );
+    > var s = new {{alias:@stdlib/ndarray/tensor0d/float64}}( 0.0 );
     > {{alias}}( [ x, y, s ] )
     <ndarray>[ 1.0, -1.0, 1.0 ]
 

@@ -18,6 +18,7 @@
 
 #include "stdlib/stats/base/dists/uniform/mean.h"
 #include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Returns the mean of a uniform distribution.
@@ -40,7 +41,7 @@ double stdlib_base_dists_uniform_mean( const double a, const double b ) {
 		stdlib_base_is_nan( b ) ||
 		a >= b
 	) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	return ( a + b ) / 2.0;
 }

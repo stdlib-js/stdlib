@@ -33,27 +33,27 @@ import isBoolean = require( './index' );
 	isBoolean( true, 123 ); // $ExpectError
 }
 
-// Attached to main export is an isPrimitive method which returns a boolean...
+// Attached to main export is an `isPrimitive` method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers
 	isBoolean.isPrimitive( new Boolean( true ) ); // $ExpectType boolean
 	isBoolean.isPrimitive( true ); // $ExpectType boolean
 }
 
-// The compiler throws an error if the isPrimitive method is provided an unsupported number of arguments...
+// The compiler throws an error if the `isPrimitive` method is provided an unsupported number of arguments...
 {
 	isBoolean.isPrimitive(); // $ExpectError
 	isBoolean.isPrimitive( true, 123 ); // $ExpectError
 }
 
-// Attached to main export is an isPrimitive method which returns a boolean...
+// Attached to main export is an `isObject` method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers
 	isBoolean.isObject( new Boolean( true ) ); // $ExpectType boolean
 	isBoolean.isObject( true ); // $ExpectType boolean
 }
 
-// The compiler throws an error if the isObject method is provided an unsupported number of arguments...
+// The compiler throws an error if the `isObject` method is provided an unsupported number of arguments...
 {
 	isBoolean.isObject(); // $ExpectError
 	isBoolean.isObject( true, 123 ); // $ExpectError

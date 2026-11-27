@@ -18,6 +18,7 @@
 
 #include "stdlib/stats/base/dists/chisquare/kurtosis.h"
 #include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Returns the excess kurtosis of a chi-squared distribution.
@@ -31,7 +32,7 @@
 */
 double stdlib_base_dists_chisquare_kurtosis( const double k ) {
 	if ( stdlib_base_is_nan( k ) || k <= 0.0 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	return 12.0 / k;
 }

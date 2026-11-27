@@ -2601,7 +2601,7 @@ static double benchmark52( void ) {
 	}
 	elapsed = tic() - t;
 
-	if ( s != 0 || *(stdlib_ndarray_iget_ptr( arr, idx)) != v ) {
+	if ( s != 0 || *(stdlib_ndarray_iget_ptr( arr, idx )) != v ) {
 		printf( "unexpected result\n" );
 	}
 	stdlib_ndarray_free( arr );
@@ -2799,7 +2799,7 @@ static double benchmark56( void ) {
 	}
 	elapsed = tic() - t;
 
-	if ( s != 0 || *(stdlib_ndarray_iget_ptr( arr, idx)) != v ) {
+	if ( s != 0 || *(stdlib_ndarray_iget_ptr( arr, idx )) != v ) {
 		printf( "unexpected result\n" );
 	}
 	stdlib_ndarray_free( arr );

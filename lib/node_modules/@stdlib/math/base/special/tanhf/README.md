@@ -33,7 +33,7 @@ y = \tanh(x) = \frac{\sinh(x)}{\cosh(x)} = \frac{e^x - e^{-x}}{e^x + e^{-x}}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="y = \tanh(x) = \frac{\sinh(x)}{\cosh(x)} = \frac{e^x - e^{-x}}{e^x + e^{-x}}" data-equation="eq:hyperbolic_tangent">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@8c9002b5cbf072bfeddc04679725bec689ecc7a7/lib/node_modules/@stdlib/math/base/special/tanhf/docs/img/equation_hyperbolic_tangent.svg" alt="Hyperbolic tangent function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@9167d6643ae29f18c83dd328124a71794bf84697/lib/node_modules/@stdlib/math/base/special/tanhf/docs/img/equation_hyperbolic_tangent.svg" alt="Hyperbolic tangent function">
     <br>
 </div> -->
 
