@@ -85,7 +85,7 @@ limitations under the License.
 
 [@bug:v8:3089]: https://bugs.chromium.org/p/v8/issues/detail?id=3089
 
-[@bug:mozilla:967709]: https://bugzilla.mozilla.org/show_bug.cgi?id=967709
+[@bug:mozilla:967709]: https://web.archive.org/web/20230000000000*/https://bugzilla.mozilla.org/show_bug.cgi?id=967709
 
 [@bug:chromium:78263005]: https://github.com/v8/v8/commit/33b5db090258c2a2dc825659c3ad109bd02110c1
 
