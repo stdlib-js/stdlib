@@ -693,6 +693,29 @@ declare class Int64Array implements Int64ArrayInterface {
 	includes( searchElement: Int, fromIndex?: number ): boolean;
 
 	/**
+	* Returns the first index at which a given element can be found.
+	*
+	* @param searchElement - element to find
+	* @param fromIndex - starting index (inclusive)
+	* @returns index or -1
+	*
+	* @example
+	* var Int64 = require( '@stdlib/number/int64/ctor' );
+	*
+	* var arr = new Int64Array( [ -1, 2, -3, 4, 5 ] );
+	*
+	* var idx = arr.indexOf( new Int64( -3 ) );
+	* // returns 2
+	*
+	* idx = arr.indexOf( -3, 3 );
+	* // returns -1
+	*
+	* idx = arr.indexOf( 4n, -3 );
+	* // returns 3
+	*/
+	indexOf( searchElement: Int, fromIndex?: number ): number;
+
+	/**
 	* Returns an iterator for iterating over each index key in a typed array.
 	*
 	* @returns iterator
