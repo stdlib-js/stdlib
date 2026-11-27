@@ -19,6 +19,7 @@
 #include "stdlib/stats/base/dists/chisquare/mgf.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/pow.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Evaluates the moment-generating function (MGF) for a chi-squared distribution with degrees of freedom `k` at a value `t`.
@@ -33,7 +34,7 @@
 */
 double stdlib_base_dists_chisquare_mgf( const double t, const double k ) {
 	if ( stdlib_base_is_nan( t ) || stdlib_base_is_nan( k ) || k < 0.0 || t >= 0.5 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	return stdlib_base_pow( 1.0 - ( 2.0 * t ), -k / 2.0 );
 }
