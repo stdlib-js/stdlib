@@ -135,7 +135,7 @@ limitations under the License.
 
 [@bug:chromium:246054]: https://bugs.chromium.org/p/chromium/issues/detail?id=246054
 
-[@bug:mozilla:681357]: https://bugzilla.mozilla.org/show_bug.cgi?id=681357
+[@bug:mozilla:681357]: https://web.archive.org/web/20230000000000*/https://bugzilla.mozilla.org/show_bug.cgi?id=681357
 
 [@bug:mozilla:686708]: https://bugzilla.mozilla.org/show_bug.cgi?id=686708
 
