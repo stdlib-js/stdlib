@@ -165,7 +165,7 @@ limitations under the License.
 
 [@bug:mozilla:969203]: https://bugzilla.mozilla.org/show_bug.cgi?id=969203#c8
 
-[@bug:mozilla:948321]: https://bugzilla.mozilla.org/show_bug.cgi?id=948321
+[@bug:mozilla:948321]: https://web.archive.org/web/20230000000000*/https://bugzilla.mozilla.org/show_bug.cgi?id=948321
 
 [@bug:v8:5086]: https://bugs.chromium.org/p/v8/issues/detail?id=5086
 
