@@ -42,13 +42,11 @@ Multiplies a one-dimensional single-precision floating-point ndarray by a scalar
 
 ```javascript
 var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
-var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var Float32Tensor0D = require( '@stdlib/ndarray/tensor0d/float32' );
 
 var x = new Float32Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 
-var alpha = scalar2ndarray( 5.0, {
-    'dtype': 'float32'
-});
+var alpha = new Float32Tensor0D( 5.0 );
 
 var y = sscal( [ x, alpha ] );
 // returns <ndarray>[ 5.0, 10.0, 15.0, 20.0, 25.0 ]
@@ -82,7 +80,7 @@ The function has the following parameters:
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/discrete-uniform' );
-var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var Float32Tensor0D = require( '@stdlib/ndarray/tensor0d/float32' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var sscal = require( '@stdlib/blas/base/ndarray/sscal' );
 
@@ -93,7 +91,7 @@ var opts = {
 var x = discreteUniform( [ 10 ], 0, 100, opts );
 console.log( ndarray2array( x ) );
 
-var alpha = scalar2ndarray( 5.0, opts );
+var alpha = new Float32Tensor0D( 5.0 );
 
 var out = sscal( [ x, alpha ] );
 console.log( ndarray2array( out ) );
