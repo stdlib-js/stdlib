@@ -42,14 +42,12 @@ Computes the cumulative sum of a one-dimensional double-precision floating-point
 
 ```javascript
 var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
-var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var Float64Tensor0D = require( '@stdlib/ndarray/tensor0d/float64' );
 
 var x = new Float64Vector( [ 1.0, 3.0, 4.0, 2.0 ] );
 var y = new Float64Vector( [ 0.0, 0.0, 0.0, 0.0 ] );
 
-var initial = scalar2ndarray( 0.0, {
-    'dtype': 'float64'
-});
+var initial = new Float64Tensor0D( 0.0 );
 
 var z = dcusumkbn( [ x, y, initial ] );
 // returns <ndarray>[ 1.0, 4.0, 8.0, 10.0 ]
@@ -89,7 +87,7 @@ The function has the following parameters:
 ```javascript
 var discreteUniform = require( '@stdlib/random/discrete-uniform' );
 var zerosLike = require( '@stdlib/ndarray/zeros-like' );
-var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var Float64Tensor0D = require( '@stdlib/ndarray/tensor0d/float64' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var dcusumkbn = require( '@stdlib/blas/ext/base/ndarray/dcusumkbn' );
 
@@ -103,7 +101,7 @@ console.log( ndarray2array( x ) );
 var y = zerosLike( x );
 console.log( ndarray2array( y ) );
 
-var initial = scalar2ndarray( 100.0, opts );
+var initial = new Float64Tensor0D( 100.0 );
 
 var v = dcusumkbn( [ x, y, initial ] );
 console.log( ndarray2array( v ) );

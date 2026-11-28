@@ -18,6 +18,7 @@
 
 #include "stdlib/stats/base/dists/arcsine/mean.h"
 #include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Returns the expected value of an arcsine distribution.
@@ -32,7 +33,7 @@
 */
 double stdlib_base_dists_arcsine_mean( const double a, const double b ) {
 	if ( stdlib_base_is_nan( a ) || stdlib_base_is_nan( b ) || a >= b ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	return 0.5 * ( a + b );
 }

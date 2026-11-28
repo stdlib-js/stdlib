@@ -18,6 +18,7 @@
 
 #include "stdlib/stats/base/dists/t/mean.h"
 #include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Evaluates the mean for a t-distribution with degrees of freedom `v`.
@@ -31,7 +32,7 @@
 */
 double stdlib_base_dists_t_mean( const double v ) {
 	if ( stdlib_base_is_nan( v ) || v <= 1.0 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	return 0.0;
 }

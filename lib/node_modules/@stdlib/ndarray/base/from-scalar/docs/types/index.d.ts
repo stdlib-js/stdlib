@@ -36,16 +36,13 @@ import { genericndarray, float64ndarray, float32ndarray, float16ndarray, int32nd
 * var getDType = require( '@stdlib/ndarray/dtype' );
 *
 * var x = scalar2ndarray( 1.0, 'float64', 'row-major' );
-* // returns <ndarray>
+* // returns <ndarray>[ 1.0 ]
 *
 * var sh = getShape( x );
 * // returns []
 *
 * var dt = String( getDType( x ) );
 * // returns 'float64'
-*
-* var v = x.get();
-* // returns 1.0
 */
 declare function scalar2ndarray( value: number, dtype: Float64DataType, order: Order ): float64ndarray;
 
@@ -62,16 +59,13 @@ declare function scalar2ndarray( value: number, dtype: Float64DataType, order: O
 * var getDType = require( '@stdlib/ndarray/dtype' );
 *
 * var x = scalar2ndarray( 1.0, 'float32', 'row-major' );
-* // returns <ndarray>
+* // returns <ndarray>[ 1.0 ]
 *
 * var sh = getShape( x );
 * // returns []
 *
 * var dt = String( getDType( x ) );
 * // returns 'float32'
-*
-* var v = x.get();
-* // returns 1.0
 */
 declare function scalar2ndarray( value: number, dtype: Float32DataType, order: Order ): float32ndarray;
 
@@ -88,16 +82,13 @@ declare function scalar2ndarray( value: number, dtype: Float32DataType, order: O
 * var getDType = require( '@stdlib/ndarray/dtype' );
 *
 * var x = scalar2ndarray( 1.0, 'float16', 'row-major' );
-* // returns <ndarray>
+* // returns <ndarray>[ 1.0 ]
 *
 * var sh = getShape( x );
 * // returns []
 *
 * var dt = String( getDType( x ) );
 * // returns 'float16'
-*
-* var v = x.get();
-* // returns 1.0
 */
 declare function scalar2ndarray( value: number, dtype: Float16DataType, order: Order ): float16ndarray;
 
@@ -116,23 +107,19 @@ declare function scalar2ndarray( value: number, dtype: Float16DataType, order: O
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
 * var getDType = require( '@stdlib/ndarray/dtype' );
-* var getData = require( '@stdlib/ndarray/data-buffer' );
 *
 * var Complex128 = require( '@stdlib/complex/float64/ctor' );
 *
 * var v = new Complex128( 1.0, 2.0 );
 *
 * var x = scalar2ndarray( v, 'complex128', 'row-major' );
-* // returns <ndarray>
+* // returns <ndarray>[ <Complex128>[ 1.0, 2.0 ] ]
 *
 * var sh = getShape( x );
 * // returns []
 *
 * var dt = String( getDType( x ) );
 * // returns 'complex128'
-*
-* var buf = getData( x );
-* // returns <Complex128Array>[ 1.0, 2.0 ]
 */
 declare function scalar2ndarray( value: number | ComplexLike, dtype: Complex128DataType, order: Order ): complex128ndarray;
 
@@ -151,23 +138,19 @@ declare function scalar2ndarray( value: number | ComplexLike, dtype: Complex128D
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
 * var getDType = require( '@stdlib/ndarray/dtype' );
-* var getData = require( '@stdlib/ndarray/data-buffer' );
 *
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
 *
 * var v = new Complex64( 1.0, 2.0 );
 *
 * var x = scalar2ndarray( v, 'complex64', 'row-major' );
-* // returns <ndarray>
+* // returns <ndarray>[ <Complex64>[ 1.0, 2.0 ] ]
 *
 * var sh = getShape( x );
 * // returns []
 *
 * var dt = String( getDType( x ) );
 * // returns 'complex64'
-*
-* var buf = getData( x );
-* // returns <Complex64Array>[ 1.0, 2.0 ]
 */
 declare function scalar2ndarray( value: number | ComplexLike, dtype: Complex64DataType, order: Order ): complex64ndarray;
 
@@ -184,16 +167,13 @@ declare function scalar2ndarray( value: number | ComplexLike, dtype: Complex64Da
 * var getDType = require( '@stdlib/ndarray/dtype' );
 *
 * var x = scalar2ndarray( 1, 'int32', 'row-major' );
-* // returns <ndarray>
+* // returns <ndarray>[ 1 ]
 *
 * var sh = getShape( x );
 * // returns []
 *
 * var dt = String( getDType( x ) );
 * // returns 'int32'
-*
-* var v = x.get();
-* // returns 1
 */
 declare function scalar2ndarray( value: number, dtype: Int32DataType, order: Order ): int32ndarray;
 
@@ -210,16 +190,13 @@ declare function scalar2ndarray( value: number, dtype: Int32DataType, order: Ord
 * var getDType = require( '@stdlib/ndarray/dtype' );
 *
 * var x = scalar2ndarray( 1, 'int16', 'row-major' );
-* // returns <ndarray>
+* // returns <ndarray>[ 1 ]
 *
 * var sh = getShape( x );
 * // returns []
 *
 * var dt = String( getDType( x ) );
 * // returns 'int16'
-*
-* var v = x.get();
-* // returns 1
 */
 declare function scalar2ndarray( value: number, dtype: Int16DataType, order: Order ): int16ndarray;
 
@@ -236,16 +213,13 @@ declare function scalar2ndarray( value: number, dtype: Int16DataType, order: Ord
 * var getDType = require( '@stdlib/ndarray/dtype' );
 *
 * var x = scalar2ndarray( 1, 'int8', 'row-major' );
-* // returns <ndarray>
+* // returns <ndarray>[ 1 ]
 *
 * var sh = getShape( x );
 * // returns []
 *
 * var dt = String( getDType( x ) );
 * // returns 'int8'
-*
-* var v = x.get();
-* // returns 1
 */
 declare function scalar2ndarray( value: number, dtype: Int8DataType, order: Order ): int8ndarray;
 
@@ -262,16 +236,13 @@ declare function scalar2ndarray( value: number, dtype: Int8DataType, order: Orde
 * var getDType = require( '@stdlib/ndarray/dtype' );
 *
 * var x = scalar2ndarray( 1, 'uint32', 'row-major' );
-* // returns <ndarray>
+* // returns <ndarray>[ 1 ]
 *
 * var sh = getShape( x );
 * // returns []
 *
 * var dt = String( getDType( x ) );
 * // returns 'uint32'
-*
-* var v = x.get();
-* // returns 1
 */
 declare function scalar2ndarray( value: number, dtype: Uint32DataType, order: Order ): uint32ndarray;
 
@@ -288,16 +259,13 @@ declare function scalar2ndarray( value: number, dtype: Uint32DataType, order: Or
 * var getDType = require( '@stdlib/ndarray/dtype' );
 *
 * var x = scalar2ndarray( 1, 'uint16', 'row-major' );
-* // returns <ndarray>
+* // returns <ndarray>[ 1 ]
 *
 * var sh = getShape( x );
 * // returns []
 *
 * var dt = String( getDType( x ) );
 * // returns 'uint16'
-*
-* var v = x.get();
-* // returns 1
 */
 declare function scalar2ndarray( value: number, dtype: Uint16DataType, order: Order ): uint16ndarray;
 
@@ -314,16 +282,13 @@ declare function scalar2ndarray( value: number, dtype: Uint16DataType, order: Or
 * var getDType = require( '@stdlib/ndarray/dtype' );
 *
 * var x = scalar2ndarray( 1, 'uint8', 'row-major' );
-* // returns <ndarray>
+* // returns <ndarray>[ 1 ]
 *
 * var sh = getShape( x );
 * // returns []
 *
 * var dt = String( getDType( x ) );
 * // returns 'uint8'
-*
-* var v = x.get();
-* // returns 1
 */
 declare function scalar2ndarray( value: number, dtype: Uint8DataType, order: Order ): uint8ndarray;
 
@@ -340,16 +305,13 @@ declare function scalar2ndarray( value: number, dtype: Uint8DataType, order: Ord
 * var getDType = require( '@stdlib/ndarray/dtype' );
 *
 * var x = scalar2ndarray( 1, 'uint8c', 'row-major' );
-* // returns <ndarray>
+* // returns <ndarray>[ 1 ]
 *
 * var sh = getShape( x );
 * // returns []
 *
 * var dt = String( getDType( x ) );
 * // returns 'uint8c'
-*
-* var v = x.get();
-* // returns 1
 */
 declare function scalar2ndarray( value: number, dtype: Uint8cDataType, order: Order ): uint8cndarray;
 
@@ -366,16 +328,13 @@ declare function scalar2ndarray( value: number, dtype: Uint8cDataType, order: Or
 * var getDType = require( '@stdlib/ndarray/dtype' );
 *
 * var x = scalar2ndarray( true, 'bool', 'row-major' );
-* // returns <ndarray>
+* // returns <ndarray>[ true ]
 *
 * var sh = getShape( x );
 * // returns []
 *
 * var dt = String( getDType( x ) );
 * // returns 'bool'
-*
-* var v = x.get();
-* // returns true
 */
 declare function scalar2ndarray( value: boolean, dtype: BooleanDataType, order: Order ): boolndarray;
 
@@ -392,16 +351,13 @@ declare function scalar2ndarray( value: boolean, dtype: BooleanDataType, order: 
 * var getDType = require( '@stdlib/ndarray/dtype' );
 *
 * var x = scalar2ndarray( 1.0, 'generic', 'row-major' );
-* // returns <ndarray>
+* // returns <ndarray>[ 1.0 ]
 *
 * var sh = getShape( x );
 * // returns []
 *
 * var dt = String( getDType( x ) );
 * // returns 'generic'
-*
-* var v = x.get();
-* // returns 1.0
 */
 declare function scalar2ndarray<T = unknown>( value: T, dtype: DataType, order: Order ): genericndarray<T>;
 

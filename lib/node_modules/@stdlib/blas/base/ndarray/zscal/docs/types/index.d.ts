@@ -37,14 +37,11 @@ import { complex128ndarray } from '@stdlib/types/ndarray';
 *
 * @example
 * var Complex128Vector = require( '@stdlib/ndarray/vector/complex128' );
-* var Complex128 = require( '@stdlib/complex/float64/ctor' );
-* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+* var Complex128Tensor0D = require( '@stdlib/ndarray/tensor0d/complex128' );
 *
 * var x = new Complex128Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 *
-* var alpha = scalar2ndarray( new Complex128( 2.0, 0.0 ), {
-*     'dtype': 'complex128'
-* });
+* var alpha = new Complex128Tensor0D( 2.0, 0.0 );
 *
 * var y = zscal( [ x, alpha ] );
 * // returns <ndarray>[ <Complex128>[ 2.0, 4.0 ], <Complex128>[ 6.0, 8.0 ], <Complex128>[ 10.0, 12.0 ] ]

@@ -32,7 +32,7 @@ extern "C" {
 /**
 * Generates a stride array from an array shape.
 */
-int8_t stdlib_ndarray_shape2strides( int64_t ndims, int64_t *shape, enum STDLIB_NDARRAY_ORDER order, int64_t *out );
+int8_t stdlib_ndarray_shape2strides( const int64_t ndims, const int64_t *shape, const enum STDLIB_NDARRAY_ORDER order, int64_t *out );
 
 #ifdef __cplusplus
 }
