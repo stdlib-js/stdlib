@@ -3,7 +3,7 @@
     Computes the arccosecant of (in degrees) a double-precision floating-point
     number.
 
-    If `x` does not satisy `x >= 1` or `x <= -1`, the function returns NaN.
+    If `x` does not satisfy `x >= 1` or `x <= -1`, the function returns NaN.
 
     Parameters
     ----------
