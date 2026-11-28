@@ -42,12 +42,12 @@ Converts a list of values (scalars and/or ndarrays) to ndarrays having at least 
 
 ```javascript
 var array = require( '@stdlib/ndarray/array' );
-var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var Float64Tensor0D = require( '@stdlib/ndarray/tensor0d/float64' );
 
 var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ] ] );
 // returns <ndarray>[ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ] ]
 
-var y = scalar2ndarray( 3.14 );
+var y = new Float64Tensor0D( 3.14 );
 // returns <ndarray>[ 3.14 ]
 
 var out = atleast1d( [ x, y ] );
@@ -90,14 +90,14 @@ The function accepts the following arguments:
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/discrete-uniform' );
-var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var Float64Tensor0D = require( '@stdlib/ndarray/tensor0d/float64' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var atleast1d = require( '@stdlib/ndarray/base/atleast1d' );
 
 var x = discreteUniform( [ 2, 2, 2 ], -100, 100 );
 console.log( ndarray2array( x ) );
 
-var y = scalar2ndarray( 3.14 );
+var y = new Float64Tensor0D( 3.14 );
 console.log( ndarray2array( y ) );
 
 var out = atleast1d( [ x, y ] );
