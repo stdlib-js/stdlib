@@ -37,13 +37,11 @@ import { float64ndarray } from '@stdlib/types/ndarray';
 *
 * @example
 * var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
-* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+* var Float64Tensor0D = require( '@stdlib/ndarray/tensor0d/float64' );
 *
 * var x = new Float64Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 *
-* var alpha = scalar2ndarray( 5.0, {
-*     'dtype': 'float64'
-* });
+* var alpha = new Float64Tensor0D( 5.0 );
 *
 * var y = dscal( [ x, alpha ] );
 * // returns <ndarray>[ 5.0, 10.0, 15.0, 20.0, 25.0 ]

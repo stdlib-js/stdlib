@@ -74,7 +74,7 @@
     Examples
     --------
     > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 0 ], [ 3, 4 ] ] );
-    > var y = {{alias:@stdlib/ndarray/from-scalar}}( false );
+    > var y = new {{alias:@stdlib/ndarray/tensor0d/bool}}( false );
     > var out = {{alias}}.assign( x, 3, y )
     <ndarray>[ true ]
     > var bool = ( out === y )

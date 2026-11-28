@@ -34,7 +34,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/random/base/shared",
-        "@stdlib/random/base/randu"
+        "@stdlib/random/base/randu",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

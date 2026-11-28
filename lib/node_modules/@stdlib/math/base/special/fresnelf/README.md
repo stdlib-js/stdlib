@@ -33,7 +33,7 @@ The [Fresnel integrals][fresnel-integral] are defined as
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\begin{align} S(x) &amp;= \int_0^x \sin\left(\frac{\pi}{2} t^2\right)\,\mathrm{d}t, \\ C(x) &amp;= \int_0^x \cos\left(\frac{\pi}{2} t^2\right)\,\mathrm{d}t. \end{align}" data-equation="eq:fresnel_integrals">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@1ad0391490d48cc006d6222c553ba6df0b61326c/lib/node_modules/@stdlib/math/base/special/fresnelf/docs/img/equation_fresnel_integrals.svg" alt="Fresnel integral">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@3a627f07dba028f23fceabc48cbdda8cc1beca69/lib/node_modules/@stdlib/math/base/special/fresnelf/docs/img/equation_fresnel_integrals.svg" alt="Fresnel integral">
     <br>
 </div> -->
 
