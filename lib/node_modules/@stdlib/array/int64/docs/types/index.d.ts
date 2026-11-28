@@ -754,6 +754,32 @@ declare class Int64Array implements Int64ArrayInterface {
 	keys(): TypedIterator<number>;
 
 	/**
+	* Returns the last index at which a given element can be found.
+	*
+	* @param searchElement - element to find
+	* @param fromIndex - index at which to start searching backward (inclusive)
+	* @returns index or -1
+	*
+	* @example
+	* var Int64 = require( '@stdlib/number/int64/ctor' );
+	*
+	* var arr = new Int64Array( [ 1, 2, -3, 4, -3 ] );
+	*
+	* var idx = arr.lastIndexOf( new Int64( -3 ) );
+	* // returns 4
+	*
+	* idx = arr.lastIndexOf( -3, 3 );
+	* // returns 2
+	*
+	* idx = arr.lastIndexOf( 5, 3 );
+	* // returns -1
+	*
+	* idx = arr.lastIndexOf( 2n, -3 );
+	* // returns 1
+	*/
+	lastIndexOf( searchElement: Int, fromIndex?: number ): number;
+
+	/**
 	* Sets an array element.
 	*
 	* ## Notes
