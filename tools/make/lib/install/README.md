@@ -37,6 +37,7 @@ This directory contains [`make`][make] rules for running the project's installat
     -   [Cppcheck](#cppcheck)
     -   [Electron](#electron)
     -   [Emscripten SDK](#emscripten-sdk)
+    -   [Highway](#highway)
     -   [LLVM](#llvm)
     -   [OpenBLAS](#openblas)
     -   [Python](#python)
@@ -259,6 +260,16 @@ Compiles Node.js native [add-ons][node-js-add-ons].
 $ make install-node-addons
 ```
 
+To compile add-ons which provide an implementation using a SIMD library (e.g., [Highway][highway]), set `SIMD`.
+
+<!-- run-disable -->
+
+```bash
+$ make install-node-addons SIMD=highway
+```
+
+The library is located using `SIMD_DIR`, which is used for both includes and linking. If `SIMD_DIR` is not set and `SIMD=highway`, the directory defaults to the directory created by `make install-deps-highway` (`DEPS_HIGHWAY_BUILD_OUT`), if that directory exists. Otherwise, the compiler's default search paths (e.g., a system installation) are used. Compiling these add-ons requires a C++17-capable compiler. Add-ons which do not provide a SIMD implementation are compiled as usual, and leaving `SIMD` unset preserves the default build.
+
 #### clean-node-addons
 
 Removes Node.js native [add-ons][node-js-add-ons].
@@ -417,6 +428,57 @@ Removes [Emscripten SDK][emscripten-sdk] installation tests.
 
 ```bash
 $ make clean-deps-emscripten-tests
+```
+
+* * *
+
+<a name="highway"></a>
+
+### Highway
+
+#### install-deps-highway
+
+Installs [Highway][highway].
+
+This optional installation downloads the source distribution, builds the native runtime, and runs installation tests. It requires CMake 3.10 or newer and a C++17-capable compiler; `install-deps-dev` does not install Highway.
+
+```bash
+$ make install-deps-highway
+```
+
+#### deps-install-highway
+
+Builds Highway's `hwy` target as a static library and tests runtime linkage. Highway's test suite, examples, and contrib libraries are not built.
+
+```bash
+$ make deps-install-highway
+```
+
+The static library is written to the Highway source directory (by default, `DEPS_HIGHWAY_BUILD_OUT`), next to the headers, so that the directory can be used for both includes and linking. The CMake build directory defaults to `DEPS_HIGHWAY_BUILD_OUT/build` and can be overridden with `DEPS_HIGHWAY_RUNTIME_OUT`.
+
+To pass flags to the Highway build, set `DEPS_HIGHWAY_CFLAGS`, `DEPS_HIGHWAY_CXXFLAGS`, and `DEPS_HIGHWAY_LDFLAGS`. `DEPS_HIGHWAY_BUILD_TYPE` accepts `Release` (the default) or `Debug`.
+
+Install Highway before compiling add-ons which use it:
+
+```bash
+$ make install-deps-highway
+$ make install-node-addons SIMD=highway
+```
+
+#### clean-deps-highway
+
+Removes an installed [Highway][highway] distribution.
+
+```bash
+$ make clean-deps-highway
+```
+
+#### clean-deps-highway-tests
+
+Removes compiled [Highway][highway] installation tests.
+
+```bash
+$ make clean-deps-highway-tests
 ```
 
 * * *
@@ -656,6 +718,8 @@ $ make clean-deps-wasi-libc-tests
 [electron]: https://www.electronjs.org/
 
 [emscripten-sdk]: https://github.com/emscripten-core/emsdk
+
+[highway]: https://github.com/google/highway
 
 [llvm]: https://llvm.org
 

@@ -40,6 +40,7 @@ include $(TOOLS_MAKE_LIB_DIR)/install/cppcheck.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/electron.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/emsdk.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/fftpack.mk
+include $(TOOLS_MAKE_LIB_DIR)/install/highway.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/llvm.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/node.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/openblas.mk
