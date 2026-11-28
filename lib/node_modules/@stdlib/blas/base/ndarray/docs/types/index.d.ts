@@ -231,13 +231,11 @@ interface Namespace {
 	*
 	* @example
 	* var Complex64Vector = require( '@stdlib/ndarray/vector/complex64' );
-	* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+	* var Float32Tensor0D = require( '@stdlib/ndarray/tensor0d/float32' );
 	*
 	* var x = new Complex64Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 	*
-	* var alpha = scalar2ndarray( 2.0, {
-	*     'dtype': 'float32'
-	* });
+	* var alpha = new Float32Tensor0D( 2.0 );
 	*
 	* var y = ns.csscal( [ x, alpha ] );
 	* // returns <ndarray>[ <Complex64>[ 2.0, 4.0 ], <Complex64>[ 6.0, 8.0 ], <Complex64>[ 10.0, 12.0 ] ]
@@ -490,15 +488,13 @@ interface Namespace {
 	* @example
 	* var Float64Matrix = require( '@stdlib/ndarray/matrix/float64' );
 	* var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
-	* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+	* var Float64Tensor0D = require( '@stdlib/ndarray/tensor0d/float64' );
 	*
 	* var x = new Float64Vector( [ 1.0, 2.0 ] );
 	* var y = new Float64Vector( [ 3.0, 4.0, 5.0 ] );
 	* var A = new Float64Matrix( [ [ 1.0, 2.0, 3.0 ], [ 4.0, 5.0, 6.0 ] ] );
 	*
-	* var alpha = scalar2ndarray( 1.0, {
-	*     'dtype': 'float64'
-	* });
+	* var alpha = new Float64Tensor0D( 1.0 );
 	*
 	* var z = ns.dger( [ x, y, A, alpha ] );
 	* // returns <ndarray>[ [ 4.0, 6.0, 8.0 ], [ 10.0, 13.0, 16.0 ] ]
@@ -545,13 +541,11 @@ interface Namespace {
 	*
 	* @example
 	* var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
-	* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+	* var Float64Tensor0D = require( '@stdlib/ndarray/tensor0d/float64' );
 	*
 	* var x = new Float64Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 	*
-	* var alpha = scalar2ndarray( 5.0, {
-	*     'dtype': 'float64'
-	* });
+	* var alpha = new Float64Tensor0D( 5.0 );
 	*
 	* var y = ns.dscal( [ x, alpha ] );
 	* // returns <ndarray>[ 5.0, 10.0, 15.0, 20.0, 25.0 ]
@@ -1485,15 +1479,13 @@ interface Namespace {
 	* @example
 	* var Float32Matrix = require( '@stdlib/ndarray/matrix/float32' );
 	* var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
-	* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+	* var Float32Tensor0D = require( '@stdlib/ndarray/tensor0d/float32' );
 	*
 	* var x = new Float32Vector( [ 1.0, 2.0 ] );
 	* var y = new Float32Vector( [ 3.0, 4.0, 5.0 ] );
 	* var A = new Float32Matrix( [ [ 1.0, 2.0, 3.0 ], [ 4.0, 5.0, 6.0 ] ] );
 	*
-	* var alpha = scalar2ndarray( 1.0, {
-	*     'dtype': 'float32'
-	* });
+	* var alpha = new Float32Tensor0D( 1.0 );
 	*
 	* var z = ns.sger( [ x, y, A, alpha ] );
 	* // returns <ndarray>[ [ 4.0, 6.0, 8.0 ], [ 10.0, 13.0, 16.0 ] ]
@@ -1540,13 +1532,11 @@ interface Namespace {
 	*
 	* @example
 	* var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
-	* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+	* var Float32Tensor0D = require( '@stdlib/ndarray/tensor0d/float32' );
 	*
 	* var x = new Float32Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 	*
-	* var alpha = scalar2ndarray( 5.0, {
-	*     'dtype': 'float32'
-	* });
+	* var alpha = new Float32Tensor0D( 5.0 );
 	*
 	* var y = ns.sscal( [ x, alpha ] );
 	* // returns <ndarray>[ 5.0, 10.0, 15.0, 20.0, 25.0 ]

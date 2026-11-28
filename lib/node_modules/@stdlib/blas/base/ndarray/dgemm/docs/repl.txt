@@ -38,12 +38,12 @@
     > var cbuf = [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ];
     > var C = new {{alias:@stdlib/ndarray/matrix/float64}}( cbuf );
 
-    > var opts = { 'dtype': 'float64' };
-    > var alpha = {{alias:@stdlib/ndarray/from-scalar}}( 1.0, opts );
-    > var beta = {{alias:@stdlib/ndarray/from-scalar}}( 1.0, opts );
+    > var alpha = new {{alias:@stdlib/ndarray/tensor0d/float64}}( 1.0 );
+    > var beta = new {{alias:@stdlib/ndarray/tensor0d/float64}}( 1.0 );
 
-    > var transA = {{alias:@stdlib/ndarray/from-scalar}}( 'no-transpose' );
-    > var transB = {{alias:@stdlib/ndarray/from-scalar}}( 'no-transpose' );
+    > var re = {{alias:@stdlib/blas/base/transpose-operation-resolve-enum}};
+    > var transA = new {{alias:@stdlib/ndarray/tensor0d/int32}}( re( 'no-transpose' ) );
+    > var transB = new {{alias:@stdlib/ndarray/tensor0d/int32}}( re( 'no-transpose' ) );
 
     > {{alias}}( [ A, B, C, transA, transB, alpha, beta ] );
     > C
