@@ -42,25 +42,18 @@ Performs the matrix-matrix operation `C = alpha*op(A)*op(B) + beta*C`, where `op
 
 ```javascript
 var Float64Matrix = require( '@stdlib/ndarray/matrix/float64' );
-var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var Float64Tensor0D = require( '@stdlib/ndarray/tensor0d/float64' );
+var Int32Tensor0D = require( '@stdlib/ndarray/tensor0d/int32' );
 var resolveEnum = require( '@stdlib/blas/base/transpose-operation-resolve-enum' );
 
 var A = new Float64Matrix( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );
 var B = new Float64Matrix( [ [ 1.0, 1.0 ], [ 0.0, 1.0 ] ] );
 var C = new Float64Matrix( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );
 
-var transA = scalar2ndarray( resolveEnum( 'no-transpose' ), {
-    'dtype': 'int32'
-});
-var transB = scalar2ndarray( resolveEnum( 'no-transpose' ), {
-    'dtype': 'int32'
-});
-var alpha = scalar2ndarray( 1.0, {
-    'dtype': 'float64'
-});
-var beta = scalar2ndarray( 1.0, {
-    'dtype': 'float64'
-});
+var transA = new Int32Tensor0D( resolveEnum( 'no-transpose' ) );
+var transB = new Int32Tensor0D( resolveEnum( 'no-transpose' ) );
+var alpha = new Float64Tensor0D( 1.0 );
+var beta = new Float64Tensor0D( 1.0 );
 
 var out = dgemm( [ A, B, C, transA, transB, alpha, beta ] );
 // returns <ndarray>[ [ 2.0, 5.0 ], [ 6.0, 11.0 ] ]
@@ -99,7 +92,8 @@ The function has the following parameters:
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/discrete-uniform' );
-var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+var Float64Tensor0D = require( '@stdlib/ndarray/tensor0d/float64' );
+var Int32Tensor0D = require( '@stdlib/ndarray/tensor0d/int32' );
 var resolveEnum = require( '@stdlib/blas/base/transpose-operation-resolve-enum' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var dgemm = require( '@stdlib/blas/base/ndarray/dgemm' );
@@ -112,14 +106,10 @@ var A = discreteUniform( [ 3, 4 ], 0, 10, opts );
 var B = discreteUniform( [ 4, 2 ], 0, 10, opts );
 var C = discreteUniform( [ 3, 2 ], 0, 10, opts );
 
-var transA = scalar2ndarray( resolveEnum( 'no-transpose' ), {
-    'dtype': 'int32'
-});
-var transB = scalar2ndarray( resolveEnum( 'no-transpose' ), {
-    'dtype': 'int32'
-});
-var alpha = scalar2ndarray( 1.0, opts );
-var beta = scalar2ndarray( 1.0, opts );
+var transA = new Int32Tensor0D( resolveEnum( 'no-transpose' ) );
+var transB = new Int32Tensor0D( resolveEnum( 'no-transpose' ) );
+var alpha = new Float64Tensor0D( 1.0 );
+var beta = new Float64Tensor0D( 1.0 );
 
 var out = dgemm( [ A, B, C, transA, transB, alpha, beta ] );
 console.log( ndarray2array( out ) );
